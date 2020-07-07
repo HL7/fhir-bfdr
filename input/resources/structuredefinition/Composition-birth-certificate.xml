@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Composition-birth-certificate"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-06-22T07:02:27.552+00:00"/>
+        <source value="#tXP7r4H5HNL2npst"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-birth-certificate"/>
+    <version value="1.0.0"/>
+    <name value="CompositionBirthCertificate"/>
+    <title value="Birth Certificate"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Composition profile represents the U.S. Standard Certificate of Live Birth"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-newborn"/>
+            </type>
+        </element>
+        <element id="Composition.encounter">
+            <path value="Composition.encounter"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:slice2191">
+            <path value="Composition.section"/>
+            <sliceName value="slice2191"/>
+        </element>
+    </differential>
+</StructureDefinition>

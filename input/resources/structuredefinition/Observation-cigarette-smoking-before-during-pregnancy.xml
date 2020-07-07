@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-cigarette-smoking-before-during-pregnancy"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-06-29T08:51:34.810+00:00"/>
+        <source value="#LgRj98WCfy0VlcZ2"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+    <version value="1.0.0"/>
+    <name value="ObservationCigaretteSmokingBeforeDuringPregnancy"/>
+    <title value="Observation - Cigarette Smoking Before and During Pregnancy"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This profile represents the average number of cigarettes smoked for each time period indicated by the value selected for code:&#xA;        •	Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;        •	Number of Cigarettes Smoked in 1st 3 months&#xA;        •	Number of Cigarettes Smoked in 2nd 3 months&#xA;        •	Number of Cigarettes Smoked in third or last trimester&#xA;        "/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy"/>
+            </binding>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="integer"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

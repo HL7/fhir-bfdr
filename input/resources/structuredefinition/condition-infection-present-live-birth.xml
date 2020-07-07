@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="condition-infection-present-live-birth"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-06-22T07:02:03.426+00:00"/>
+        <source value="#QqGPoOJ2KzqmA7eV"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/condition-infection-present-live-birth"/>
+    <version value="1.0.0"/>
+    <name value="ConditionInfectionPresentLiveBirth"/>
+    <title value="Infection Present During Pregnancy - Live Birth"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+            <short value="Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."/>
+        </element>
+        <element id="Condition.category">
+            <path value="Condition.category"/>
+            <short value="Infections present and/or treated during this pregnancy for live birth"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="https://fhir.loinc.org"/>
+                    <code value="72519-2"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <short value="Infections present and/or treated during this pregnancy for live birth as required by the National US Standards. Note: Genital herpes simplex (SNOMED code 33839006) is only a Michigan state-specific requirement. "/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6070"/>
+            </binding>
+        </element>
+        <element id="Condition.subject">
+            <path value="Condition.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

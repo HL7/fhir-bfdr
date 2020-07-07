@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-cigarette-smoking-before-during-pregnancy"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-06-29T08:49:17.951+00:00"/>
+        <source value="#svn2dn7rWnZqbEOT"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy"/>
+    <name value="Cigarette Smoking Before and During Pregnancy"/>
+    <title value="Cigarette Smoking Before and During Pregnancy"/>
+    <status value="active"/>
+    <description value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="87298-6"/>
+                <display value="Number of Cigarettes Smoked in 1st 3 months"/>
+            </concept>
+            <concept>
+                <code value="87299-4"/>
+                <display value="Number of Cigarettes Smoked in 2nd 3 months"/>
+            </concept>
+            <concept>
+                <code value="64794-1"/>
+                <display value="Number of Cigarettes Smoked in 3 months prior to Pregnancy"/>
+            </concept>
+            <concept>
+                <code value="64795-8"/>
+                <display value="Number of Cigarettes Smoked in third or last trimester"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

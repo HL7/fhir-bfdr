@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="hl7-fhir-us-bfdr"/>
+    <meta>
+        <versionId value="94"/>
+        <lastUpdated value="2020-07-06T05:01:09.837+00:00"/>
+        <source value="#36TdFnaxDm2eXmVF"/>
+    </meta>
+    <!--<contained>
+        <DocumentReference>
+            <id value="package-list"/>
+            <status value="current"/>
+            <type>
+                <coding>
+                    <code value="package-list"/>
+                </coding>
+            </type>
+            <content>
+                <attachment>
+                    <contentType value="application/json"/>
+                    <data value="ewoJImxpc3QiOiBbCgkJewoJCQkidmVyc2lvbiI6ICJjdXJyZW50IiwKCQkJInBhdGgiOiAiaHR0cDovL2J1aWxkLmZoaXIub3JnL2lnL0hMNy9iZmRyIiwKCQkJImRlc2MiOiAiQ29udGludW91cyBJbnRlZ3JhdGlvbiBCdWlsZCAobGF0ZXN0IGluIHZlcnNpb24gY29udHJvbCkiLAoJCQkiZmhpcnZlcnNpb24iOiAiNC4wLjEiLAoJCQkic3RhdHVzIjogImNpLWJ1aWxkIiwKCQkJImN1cnJlbnQiOiB0cnVlCgkJfQoJXSwKCSJwYWNrYWdlLWlkIjogImhsNy5maGlyLnVzLmJmZHIiLAoJInRpdGxlIjogIlZpdGFsIFJlY29yZHMgQmlydGggYW5kIEZldGFsIERlYXRoIFJlcG9ydGluZyIsCgkiY2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvYmZkciIKfQ=="/>
+                </attachment>
+            </content>
+        </DocumentReference>
+    </contained>-->
+    <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
+    <version value="1.0.0"/>
+    <name value="Vital_Records_Birth_and_Fetal_Death_Reporting"/>
+    <title value="Vital Records Birth and Fetal Death Reporting"/>
+    <status value="draft"/>
+    <publisher value="HL7 International - Public Health Work Group"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="Project Scope: The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources implementation Guide (FHIR BFDR IG) standard to support the needs of NCHS and its jurisdictions to successfully implement the electronic reporting of birth and fetal death information. The scope of this HL7 FHIR BFDR IG will include the content of medical/health information on live births and fetal deaths for select state and Federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it will include the content that is exchanged between EHRs, jurisdictions, and NCHS. In the case of fetal death, return coded cause of death, and race and ethnicity information back to the state.&#xA;&#xA;Project Need: To continue support of interoperability among public health systems, there is a need to develop a FHIR IG for birth and fetal death reporting. Development of the FHIR IG for birth and fetal death will provide national data standards that will support the implementation of FHIR for NCHS, Jurisdictional partners and EHR vendors. "/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166:-2"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <packageId value="hl7.fhir.us.bfdr"/>
+    <fhirVersion value="4.0.1"/>
+    <dependsOn>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core-3.1.0"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="3.1.0"/>
+    </dependsOn>
+    <definition>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-birth-certificate"/>
+                <display value="Birth Certificate"/>
+            </reference>
+            <name value="Birth Certificate"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/condition-infection-present-live-birth"/>
+                <display value="condition-infection-present-live-birth"/>
+            </reference>
+            <name value="Infections Present During Pregnancy - Live Birth"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Encounter-Birth"/>
+                <display value="Encounter - Birth"/>
+            </reference>
+            <name value="Encounter - Birth"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-Newborn"/>
+                <display value="Patient Newborn"/>
+            </reference>
+            <name value="Patient Newborn"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participant-group"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Encounter-Maternity"/>
+                <display value="Encounter - Maternity"/>
+            </reference>
+            <name value="Encounter - Maternity"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-Mother"/>
+                <display value="Patient Mother"/>
+            </reference>
+            <name value="Patient Mother"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participant-group"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-Father"/>
+                <display value="RelatedPerson Father"/>
+            </reference>
+            <name value="RelatedPerson Father"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participant-group"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-Mother"/>
+                <display value="RelatedPerson Mother"/>
+            </reference>
+            <name value="RelatedPerson Mother"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participant-group"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-fetus"/>
+                <display value="Patient Fetus"/>
+            </reference>
+            <name value="Patient Fetus"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participant-group"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-ssn-requested-for-child"/>
+                <display value="Observation - Social Security Number Requested For Child"/>
+            </reference>
+            <name value="Observation - Social Security Number Requested For Child"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-planned-to-deliver-at-home"/>
+                <display value="Observation - Planned to Deliver at Home"/>
+            </reference>
+            <name value="Observation - Planned to Deliver at Home"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+                <display value="Observation - Date of First Prenatal Care Visit"/>
+            </reference>
+            <name value="Observation - Date of First Prenatal Care Visit"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-mother-received-wic-food"/>
+                <display value="Observation - Mother Recieved WIC Food"/>
+            </reference>
+            <name value="Observation - Mother Recieved WIC Food"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy"/>
+                <display value="Cigarette Smoking Before and During Pregnancy"/>
+            </reference>
+            <name value="Cigarette Smoking Before and During Pregnancy"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+                <display value="Observation - Cigarette Smoking Before and During Pregnancy"/>
+            </reference>
+            <name value="Observation - Cigarette Smoking Before and During Pregnancy"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-fetal-presentation"/>
+                <display value="Condition - Fetal Presentation at Birth/Delivery"/>
+            </reference>
+            <name value="Condition - Fetal Presentation at Birth/Delivery"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-infant-breastfed-at-discharge"/>
+                <display value="Observation - Infant Breastfed at Discharge"/>
+            </reference>
+            <name value="Observation - Infant Breastfed at Discharge"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-maternal-transfer"/>
+                <display value="Observation - Maternal Transfer"/>
+            </reference>
+            <name value="Observation - Maternal Transfer"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <page>
+            <nameUrl value="index.md"/>
+            <title value="Home Page"/>
+            <generation value="markdown"/>
+        </page>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI build"/>
+        </parameter>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
+        </parameter>
+    </definition>
+</ImplementationGuide>
