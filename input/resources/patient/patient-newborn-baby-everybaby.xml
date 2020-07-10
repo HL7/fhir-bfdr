@@ -58,9 +58,7 @@
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
         <valueCode value="F"/>
     </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-        <valueDateTime value="2020-06-07T10:00:00-07:00"/>
-    </extension>
+    
     <identifier>
         <use value="usual"/>
         <type>
@@ -80,5 +78,9 @@
         <given value="B"/>
     </name>
     <gender value="female"/>
-    <birthDate value="2020-06-07"/>
+    <birthDate value="2020-06-07">
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+            <valueDateTime value="2020-06-07T10:00:00-07:00"/>
+        </extension>
+    </birthDate>
 </Patient>
