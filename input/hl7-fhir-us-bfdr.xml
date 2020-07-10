@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir">
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="142"/>
-        <lastUpdated value="2020-07-10T06:33:53.748+00:00"/>
-        <source value="#ITPtXHEonXY1VVjf"/>
+        <versionId value="143"/>
+        <lastUpdated value="2020-07-10T07:55:37.181+00:00"/>
+        <source value="#3ko7NYX7jw7XM2Xm"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -19,8 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description
-        value="Project Scope: The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources implementation Guide (FHIR BFDR IG) standard to support the needs of NCHS and its jurisdictions to successfully implement the electronic reporting of birth and fetal death information. The scope of this HL7 FHIR BFDR IG will include the content of medical/health information on live births and fetal deaths for select state and Federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it will include the content that is exchanged between EHRs, jurisdictions, and NCHS. In the case of fetal death, return coded cause of death, and race and ethnicity information back to the state.&#xA;&#xA;Project Need: To continue support of interoperability among public health systems, there is a need to develop a FHIR IG for birth and fetal death reporting. Development of the FHIR IG for birth and fetal death will provide national data standards that will support the implementation of FHIR for NCHS, Jurisdictional partners and EHR vendors."/>
+    <description value="Project Scope: The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources implementation Guide (FHIR BFDR IG) standard to support the needs of NCHS and its jurisdictions to successfully implement the electronic reporting of birth and fetal death information. The scope of this HL7 FHIR BFDR IG will include the content of medical/health information on live births and fetal deaths for select state and Federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it will include the content that is exchanged between EHRs, jurisdictions, and NCHS. In the case of fetal death, return coded cause of death, and race and ethnicity information back to the state.&#xA;&#xA;Project Need: To continue support of interoperability among public health systems, there is a need to develop a FHIR IG for birth and fetal death reporting. Development of the FHIR IG for birth and fetal death will provide national data standards that will support the implementation of FHIR for NCHS, Jurisdictional partners and EHR vendors."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -45,8 +45,7 @@
         </grouping>
         <grouping id="live-birth-fetal-death">
             <name value="Live Birth &amp; Fetal Death"/>
-            <description
-                value="Profiles included in both the live birth and fetal death data flows."/>
+            <description value="Profiles included in both the live birth and fetal death data flows."/>
         </grouping>
         <resource>
             <reference>
@@ -54,8 +53,7 @@
                 <display value="Birth Certificate"/>
             </reference>
             <name value="Birth Certificate"/>
-            <description
-                value="This Composition profile represents the U.S. Standard Certificate of Live Birth"/>
+            <description value="This Composition profile represents the U.S. Standard Certificate of Live Birth"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -65,8 +63,7 @@
                 <display value="condition-infection-present-live-birth"/>
             </reference>
             <name value="Infections Present During Pregnancy - Live Birth"/>
-            <description
-                value="Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."/>
+            <description value="Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -76,8 +73,7 @@
                 <display value="Encounter - Birth"/>
             </reference>
             <name value="Encounter - Birth"/>
-            <description
-                value="This Encounter profile represents the child's birth encounter. This Encounter and will reference the mother's maternity encounter using the partOf property."/>
+            <description value="This Encounter profile represents the child's birth encounter. This Encounter and will reference the mother's maternity encounter using the partOf property."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -97,8 +93,7 @@
                 <display value="Encounter - Maternity"/>
             </reference>
             <name value="Encounter - Maternity"/>
-            <description
-                value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
+            <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -128,8 +123,7 @@
                 <display value="RelatedPerson Mother"/>
             </reference>
             <name value="RelatedPerson Mother"/>
-            <description
-                value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
+            <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -149,8 +143,7 @@
                 <display value="Observation - Social Security Number Requested For Child"/>
             </reference>
             <name value="Observation - Social Security Number Requested For Child"/>
-            <description
-                value="This profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element."/>
+            <description value="This profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -160,8 +153,7 @@
                 <display value="Observation - Planned to Deliver at Home"/>
             </reference>
             <name value="Observation - Planned to Deliver at Home"/>
-            <description
-                value="This profile represents whether or not a home birth was planned for the infant."/>
+            <description value="This profile represents whether or not a home birth was planned for the infant."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -171,8 +163,7 @@
                 <display value="Observation - Date of First Prenatal Care Visit"/>
             </reference>
             <name value="Observation - Date of First Prenatal Care Visit"/>
-            <description
-                value="This profile represents template represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy."/>
+            <description value="This profile represents template represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -182,8 +173,7 @@
                 <display value="Observation - Mother Recieved WIC Food"/>
             </reference>
             <name value="Observation - Mother Recieved WIC Food"/>
-            <description
-                value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
+            <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -193,19 +183,16 @@
                 <display value="Cigarette Smoking Before and During Pregnancy"/>
             </reference>
             <name value="Cigarette Smoking Before and During Pregnancy"/>
-            <description
-                value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/>
+            <description value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
-                <reference
-                    value="StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+                <reference value="StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
                 <display value="Observation - Cigarette Smoking Before and During Pregnancy"/>
             </reference>
             <name value="Observation - Cigarette Smoking Before and During Pregnancy"/>
-            <description
-                value="This profile represents the average number of cigarettes smoked for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester"/>
+            <description value="This profile represents the average number of cigarettes smoked for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -225,8 +212,7 @@
                 <display value="Observation - Infant Breastfed at Discharge"/>
             </reference>
             <name value="Observation - Infant Breastfed at Discharge"/>
-            <description
-                value="This profile represents whether or not the infant was being breastfed at discharge"/>
+            <description value="This profile represents whether or not the infant was being breastfed at discharge"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -236,8 +222,7 @@
                 <display value="Observation - Maternal Transfer"/>
             </reference>
             <name value="Observation - Maternal Transfer"/>
-            <description
-                value="This profile represents whether or not the mother had been transferred to the delivery facility from another facility based on maternal medical or fetal indications.&#xA;**NOTE** Might not need this - Encounter has transfer information that might be sufficient. **TODO**"/>
+            <description value="This profile represents whether or not the mother had been transferred to the delivery facility from another facility based on maternal medical or fetal indications.&#xA;**NOTE** Might not need this - Encounter has transfer information that might be sufficient. **TODO**"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -247,56 +232,46 @@
                 <display value="Procedure - Obstetric"/>
             </reference>
             <name value="Procedure - Obstetric"/>
-            <description
-                value="This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery."/>
+            <description value="This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-eve-everywoman"/>
-            </reference>
+                <reference value="Patient/patient-mother-eve-everywoman"/></reference>
             <name value="Example: Patient - Mother (Eve Everywoman)"/>
             <description value="Example of Patient - Mother profile (Eve Everywoman)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"
-            />
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Procedure/procedure-external-cephalic-version"/>
-                <display
-                    value="Procedure - Obstetric Example (External cephalic version: successful)"/>
+                <display value="Procedure - Obstetric Example (External cephalic version: successful)"/>
             </reference>
             <name value="Example: Procedure - Obstetric (External cephalic version)"/>
-            <description
-                value="Example of Procedure - Obstetric profile (External cephalic version: successful)"/>
+            <description value="Example of Procedure - Obstetric profile (External cephalic version: successful)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical
-                value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-newborn-baby-everybaby"/>
-            </reference>
+                <reference value="Patient/patient-newborn-baby-everybaby"/></reference>
             <name value="Example: Patient - Baby (Baby Everybaby)"/>
             <description value="Example of Patient - Newborn profile (Baby Everybaby)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical
-                value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/practitioner-us-core-henry-seven"/>
-            </reference>
+                <reference value="Practitioner/practitioner-us-core-henry-seven"/></reference>
             <name value="Example: US Core Practitioner (Henry Seven)"/>
             <description value="Example of US Core Practitioner profile (Henry Seven)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/practitionerrole-henry-seven"/>
-            </reference>
+                <reference value="PractitionerRole/practitionerrole-henry-seven"/></reference>
             <name value="Example: US Core PractitionerRole (Henry Seven)"/>
             <description value="Example of US Core PractitionerRole profile (Henry Seven)"/>
             <exampleBoolean value="true"/>
@@ -306,34 +281,26 @@
                 <reference value="Composition/composition-birth-certificate-baby-everybaby"/>
                 <display value="U.S. standard certificate of live birth - 2003 revision"/>
             </reference>
-            <name
-                value="Example: Composition Birth Certificate (U.S. standard certificate of live birth - 2003 revision)"/>
-            <description
-                value="Example of Composition Birth Certificate profile (U.S. standard certificate of live birth - 2003 revision)"/>
+            <name value="Example: Composition Birth Certificate (U.S. standard certificate of live birth - 2003 revision)"/>
+            <description value="Example of Composition Birth Certificate profile (U.S. standard certificate of live birth - 2003 revision)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical
-                value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-birth-certificate"
-            />
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-birth-certificate"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Encounter/encounter-maternity-eve-everywoman"/>
-            </reference>
+                <reference value="Encounter/encounter-maternity-eve-everywoman"/></reference>
             <name value="Example: Encounter - Maternity (Eve Everywoman)"/>
             <description value="Example of Encounter - Maternity profile (Eve Everywoman)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical
-                value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Encounter/encounter-birth-baby-everybaby"/>
-            </reference>
+                <reference value="Encounter/encounter-birth-baby-everybaby"/></reference>
             <name value="Example: Encounter - Birth (Baby Everybaby)"/>
             <description value="Example of Encounter - Birth profile (Baby Everybaby)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical
-                value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/>
         </resource>
         <resource>
             <reference>
@@ -350,24 +317,17 @@
                 <display value="Clinic Bldg A, Salem Medical Center"/>
             </reference>
             <name value="Example: US Core Location (Clinic Bldg A, Salem Medical Center)"/>
-            <description
-                value="Example of US Core Location profile (Clinic Bldg A, Salem Medical Center)"/>
+            <description value="Example of US Core Location profile (Clinic Bldg A, Salem Medical Center)"/>
             <exampleBoolean value="true"/>
         </resource>
         <page>
-            <!-- The root will always be toc.html - the template will force it if you don't do it -->
-            <nameUrl value="toc.html"/>
-            <title value="Table of Contents"/>
-            <generation value="html"/>
+            <nameUrl value="index.html"/>
+            <title value="Home Page"/>
+            <generation value="markdown"/>
             <page>
-                <nameUrl value="index.html"/>
-                <title value="Home Page"/>
+                <nameUrl value="test.html"/>
+                <title value="test"/>
                 <generation value="markdown"/>
-                <page>
-                    <nameUrl value="test.html"/>
-                    <title value="test"/>
-                    <generation value="markdown"/>
-                </page>
             </page>
         </page>
         <parameter>
