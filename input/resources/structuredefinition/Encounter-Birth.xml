@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-Birth"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2020-06-22T07:03:17.865+00:00"/>
-        <source value="#AYLfDHS3pqtKzs8H"/>
+        <versionId value="18"/>
+        <lastUpdated value="2020-07-10T04:22:27.362+00:00"/>
+        <source value="#4LhdunWbvfse8kFE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/>
     <version value="1.0.0"/>
@@ -14,6 +14,13 @@
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
     <description value="This Encounter profile represents the child's birth encounter. This Encounter and will reference the mother's maternity encounter using the partOf property."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -42,7 +49,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-newborn"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -52,6 +59,14 @@
         </element>
         <element id="Encounter.location">
             <path value="Encounter.location"/>
+        </element>
+        <element id="Encounter.partOf">
+            <path value="Encounter.partOf"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

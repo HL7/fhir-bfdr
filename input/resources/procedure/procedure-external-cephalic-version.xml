@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="procedure-external-cephalic-version"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-07-10T01:52:32.025+00:00"/>
+        <source value="#K2j0aOfgIjHKU2vl"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
+    </meta>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="240278000"/>
+            <display value="External cephalic version (procedure)"/>
+        </coding>
+        <text value="External cephalic version: Successful"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-mother-eve-everywoman"/>
+    </subject>
+    <performedPeriod>
+        <start value="2020-06-07T08:30:00-07:00"/>
+        <end value="2020-06-07T08:45:00-07:00"/>
+    </performedPeriod>
+    <outcome>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="385669000"/>
+            <display value="Successful"/>
+        </coding>
+        <text value="External cephalic version: Successful"/>
+    </outcome>
+</Procedure>

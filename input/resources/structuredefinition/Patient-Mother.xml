@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-Mother"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-06-22T07:04:02.517+00:00"/>
-        <source value="#GqCM3SdR5H3lcaPf"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-07-10T02:49:04.629+00:00"/>
+        <source value="#hyk6MfZe2F0LsGW5"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
     <version value="1.0.0"/>
@@ -15,6 +15,13 @@
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
     <description value="The woman who gave birth to, or delivered the infant."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -36,11 +43,14 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.link:sliceRelatedPersonMother">
             <path value="Patient.link"/>
             <sliceName value="sliceRelatedPersonMother"/>
-            <min value="1"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

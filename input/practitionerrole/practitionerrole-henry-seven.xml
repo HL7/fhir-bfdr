@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+   <id value="practitionerrole-henry-seven"/>
+   <meta>
+      <versionId value="8"/>
+      <lastUpdated value="2019-10-14T01:24:13.000-04:00"/>
+      <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+   </meta>
+   <identifier>
+      <system value="http://hl7.org/fhir/sid/us-npi"/>
+      <value value="9941339108"/>
+   </identifier>
+   <practitioner>
+      <reference value="Practitioner/practitioner-us-core-henry-seven"/>
+      <display value="Henry Seven, MD"/>
+   </practitioner>
+   <organization>
+      <reference value="Organization/organization-salem-medical-center"/>
+      <display value="Salem Medical Center"/>
+   </organization>
+   <code>
+      <coding>
+         <system value="http://nucc.org/provider-taxonomy"/>
+         <code value="261QP2300X"/>
+         <display value="Primary Care"/>
+      </coding>
+   </code>
+   <specialty>
+      <coding>
+         <system value="http://snomed.info/sct"/>
+         <code value="419772000"/>
+         <display value="Family Practice"/>
+      </coding>
+   </specialty>
+   <location>
+      <reference value="Location/location-salem-medical-center"/>
+      <display value="Salem Medical Center"/>
+   </location>
+   <telecom>
+      <system value="email"/>
+      <value value="henry.seven@example.com"/>
+   </telecom>
+</PractitionerRole>

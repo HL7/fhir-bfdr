@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-birth-certificate"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-06-22T07:02:27.552+00:00"/>
-        <source value="#tXP7r4H5HNL2npst"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-07-10T02:49:04.415+00:00"/>
+        <source value="#Cv0AkRdEj2MsRvCy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-birth-certificate"/>
     <version value="1.0.0"/>
@@ -15,6 +15,13 @@
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
     <description value="This Composition profile represents the U.S. Standard Certificate of Live Birth"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -30,14 +37,14 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-newborn"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
             </type>
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/>
             </type>
             <mustSupport value="true"/>
         </element>

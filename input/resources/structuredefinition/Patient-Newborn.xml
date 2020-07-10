@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-Newborn"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-06-22T07:04:07.517+00:00"/>
-        <source value="#NEAHj59NgB0RTs8y"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-07-10T05:54:17.676+00:00"/>
+        <source value="#1DkLkdEjgt5Mglmh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
     <version value="1.0.0"/>
@@ -15,6 +15,13 @@
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
     <description value="The newborn who is the subject of the live birth report."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -25,6 +32,17 @@
         <element id="Patient">
             <path value="Patient"/>
             <short value="The newborn who is the subject of the live birth report."/>
+        </element>
+        <element id="Patient.extension:birthTime">
+            <path value="Patient.extension"/>
+            <sliceName value="birthTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
