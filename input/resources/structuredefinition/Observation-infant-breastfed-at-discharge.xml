@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-infant-breastfed-at-discharge"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-06-29T20:58:15.911+00:00"/>
-        <source value="#nShnpqb6vL1WnABz"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-07-11T06:04:19.421+00:00"/>
+        <source value="#RmR10osz5YpjrrRg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile represents whether or not the infant was being breastfed at discharge"/>
+    <description value="This profile represents whether or not the infant was being breastfed at discharge.&#xA;&#xA;This concept is mapped to:&#xA;* Item **58. Is the infant being breastfed at discharge?** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34,7 +34,7 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="Infant is being breastfed at discharge"/>
+            <short value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"/>
             <min value="1"/>
             <max value="1"/>
             <patternCodeableConcept>
@@ -47,6 +47,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <short value="Is the infant being breastfed at discharge?"/>
             <min value="1"/>
             <max value="1"/>
             <type>

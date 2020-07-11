@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-Maternity"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2020-07-10T03:53:26.617+00:00"/>
-        <source value="#crD8ShViZgl0jwxP"/>
+        <versionId value="14"/>
+        <lastUpdated value="2020-07-11T03:55:46.952+00:00"/>
+        <source value="#3F99hVDeoValFkM1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
     <version value="1.0.0"/>
@@ -13,7 +13,7 @@
     <title value="Encounter - Maternity"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
+    <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property.&#xA;&#xA;In the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*:&#xA;* Encounter.hospitalization.admitSource=&quot;hosp-trans&quot; is mapped to * Item **28. Mother transferred for maternal medication or fetal indications for delivery? (Yes)**&#xA;* Encounter.hospitalization.origin is mapped to * Item **28. Name of facility mother transferred from**&#xA;&#xA;This profile is based on and further constrains the [US Core Encounter](http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter) profile."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -31,18 +31,6 @@
         <element id="Encounter">
             <path value="Encounter"/>
         </element>
-        <element id="Encounter.identifier">
-            <path value="Encounter.identifier"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Encounter.status">
-            <path value="Encounter.status"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Encounter.class">
-            <path value="Encounter.class"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Encounter.subject">
             <path value="Encounter.subject"/>
             <min value="1"/>
@@ -53,12 +41,19 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Encounter.period">
-            <path value="Encounter.period"/>
+        <element id="Encounter.hospitalization.origin">
+            <path value="Encounter.hospitalization.origin"/>
+            <short value="If mother transferred, facility transferred from"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+            </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Encounter.location">
-            <path value="Encounter.location"/>
+        <element id="Encounter.hospitalization.admitSource">
+            <path value="Encounter.hospitalization.admitSource"/>
+            <short value="If mother transferred for maternal or fetal indications for delivery, set to &quot;hosp-trans&quot;"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

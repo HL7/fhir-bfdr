@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="encounter-maternity-eve-everywoman"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-10T05:17:50.397+00:00"/>
-        <source value="#RFdvZQp4wcC6QglJ"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-11T02:42:19.691+00:00"/>
+        <source value="#6jd5iAVrBxG7gMsw"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
     </meta>
     <identifier>
@@ -46,6 +46,16 @@
         <start value="2020-06-07T01:00:00-07:00"/>
         <end value="2020-06-09T10:00:00-07:00"/>
     </period>
+    <hospitalization>
+        <admitSource>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+                <code value="hosp-trans"/>
+                <display value="Transferred from other hospital"/>
+            </coding>
+            <text value="The Patient has been transferred from another hospital for this encounter."/>
+        </admitSource>
+    </hospitalization>
     <location>
         <location>
             <reference value="Location/location-salem-medical-center"/>

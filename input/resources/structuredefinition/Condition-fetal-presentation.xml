@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-fetal-presentation"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-06-29T08:58:26.456+00:00"/>
-        <source value="#Zz8HSjj5dI0jGfA7"/>
+        <versionId value="14"/>
+        <lastUpdated value="2020-07-11T03:52:49.188+00:00"/>
+        <source value="#Yptf1bHeFN7I4Mr7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile represents the fetal presentation at birth/delivery."/>
+    <description value="This Condition profile represents the fetal presentation at birth/delivery.&#xA;&#xA;This concept is mapped to:&#xA;* Item **46c. Fetal presentation at birth** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;* Item **38c. Fetal presentation at delivery** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*&#xA;&#xA;This profile is based on and further constrains the [US Core Condition](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) profile."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -23,6 +23,18 @@
         </coding>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="live-birth-certificate"/>
+        <uri value="https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf"/>
+        <name value="U.S. Standard Certificate of Live Birth (rev. 2003)"/>
+        <comment value="This table maps profile elements to U.S. Standard Certificate of Live Birth (rev. 2003)"/>
+    </mapping>
+    <mapping>
+        <identity value="fetal-death-report"/>
+        <uri value="https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf"/>
+        <name value="U.S. Standard Report of Fetal Death (rev. 2003)"/>
+        <comment value="This table maps profile elements to  U.S. Standard Report of Fetal Death (rev. 2003)"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Condition"/>
@@ -34,10 +46,19 @@
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
+            <short value="Fetal presentation at delivery"/>
             <binding>
                 <strength value="extensible"/>
                 <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7113"/>
             </binding>
+            <mapping>
+                <identity value="live-birth-certificate"/>
+                <map value="46c. Fetal presentation at birth"/>
+            </mapping>
+            <mapping>
+                <identity value="fetal-death-report"/>
+                <map value="38c. Fetal presentation at delivery"/>
+            </mapping>
         </element>
     </differential>
 </StructureDefinition>

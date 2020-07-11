@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="143"/>
-        <lastUpdated value="2020-07-10T07:55:37.181+00:00"/>
-        <source value="#3ko7NYX7jw7XM2Xm"/>
+        <versionId value="160"/>
+        <lastUpdated value="2020-07-11T02:43:54.720+00:00"/>
+        <source value="#9mn5O7BgfDjP4Dyb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -53,7 +53,7 @@
                 <display value="Birth Certificate"/>
             </reference>
             <name value="Birth Certificate"/>
-            <description value="This Composition profile represents the U.S. Standard Certificate of Live Birth"/>
+            <description value="This Composition profile represents the [U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf). &#xA;&#xA;The subject of the Composition is the [Patient Newborn](http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn) and it references the [Encounter - Birth](http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth). &#xA;&#xA;The newborn's mother's [Encounter - Maternity](http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity) is referenced in the Encounter.partOf element of the [Encounter - Birth](http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth).&#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -63,7 +63,7 @@
                 <display value="condition-infection-present-live-birth"/>
             </reference>
             <name value="Infections Present During Pregnancy - Live Birth"/>
-            <description value="Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."/>
+            <description value="This Condition profile represents infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record. &#xA;&#xA;This concept is mapped to:&#xA;* Item **42. infections present and/or treated during this pregnancy** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;&#xA;This profile is based on and further constrains the [US Core Condition](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -73,7 +73,7 @@
                 <display value="Encounter - Birth"/>
             </reference>
             <name value="Encounter - Birth"/>
-            <description value="This Encounter profile represents the child's birth encounter. This Encounter and will reference the mother's maternity encounter using the partOf property."/>
+            <description value="This Encounter profile represents the child's birth encounter. This Encounter can reference the mother's maternity encounter using the partOf data element.&#xA;&#xA;In the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*:&#xA;* Encounter.hospitalization.destination=&quot;hosp-trans&quot; is mapped to * Item **56. Was infant transferred within 24 hours of delivery? (Yes)**&#xA;* Encounter.hospitalization.origin is mapped to * Item **28. Name of facility infant transferred**&#xA;&#xA;This profile is based on and further constrains the [US Core Encounter](http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter) profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -93,7 +93,7 @@
                 <display value="Encounter - Maternity"/>
             </reference>
             <name value="Encounter - Maternity"/>
-            <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
+            <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property.&#xA;&#xA;In the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*:&#xA;* Encounter.hospitalization.admitSource=&quot;hosp-trans&quot; is mapped to * Item **28. Mother transferred for maternal medication or fetal indications for delivery? (Yes)**&#xA;* Encounter.hospitalization.origin is mapped to * Item **28. Name of facility mother transferred from**&#xA;&#xA;This profile is based on and further constrains the [US Core Encounter](http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter) profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -103,7 +103,7 @@
                 <display value="Patient Mother"/>
             </reference>
             <name value="Patient Mother"/>
-            <description value="The woman who gave birth to, or delivered the infant."/>
+            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant.&#xA;&#xA;In the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*:&#xA;* Patient.us-core-race is mapped to * Item **22. Mother's race**&#xA;* Patient.us-core-ethnicity is mapped to * Item **21. Mother of Hispanic origin**&#xA;* Patient.identifier is mapped to * Item **Mother's medical record number**&#xA;* Patient.name:sliceCurrentLegalName&quot; is mapped to * Item **8a. Mother's current legal name (First, Middle, Last, Suffix)**&#xA;* Patient.name:sliceNamePriorToFirstMarriage&quot; is mapped to * Item **8c. Mother's name prior to first marriage (First, Middle, Last, Suffix)**&#xA;* Patient.birthDate&quot; is mapped to * Item **8b. Date of birth**&#xA;* Patient.address.line&quot; is mapped to * Item **9d. Street and number**&#xA;* Patient.address.city&quot; is mapped to * Item **9c. City, town, or location**&#xA;* Patient.address.district&quot; is mapped to * Item **9b. County**&#xA;* Patient.address.state&quot; is mapped to * Item **9a. Resident of mother - state**&#xA;* Patient.address.postalCode&quot; is mapped to * Item **9a. Zip code**&#xA;&#xA;&#xA;&#xA;&#xA;**TODO**&#xA;&#xA;* Inside city limits - look at VRDR&#xA;&#xA;&#xA;"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -143,7 +143,7 @@
                 <display value="Observation - Social Security Number Requested For Child"/>
             </reference>
             <name value="Observation - Social Security Number Requested For Child"/>
-            <description value="This profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element."/>
+            <description value="This Observation profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element.&#xA;&#xA;This concept is mapped to:&#xA;* Item **16. Social security number requested for child** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -153,7 +153,7 @@
                 <display value="Observation - Planned to Deliver at Home"/>
             </reference>
             <name value="Observation - Planned to Deliver at Home"/>
-            <description value="This profile represents whether or not a home birth was planned for the infant."/>
+            <description value="This Observation profile represents whether or not a home birth was planned for the infant.&#xA;&#xA;This concept is mapped to:&#xA;* Item **26. Planned to deliver at home?** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;* Item **7. Planned to deliver at home?** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*&#xA;&#xA;**TODO**&#xA;&#xA;Would this be better as an extension?&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -163,7 +163,7 @@
                 <display value="Observation - Date of First Prenatal Care Visit"/>
             </reference>
             <name value="Observation - Date of First Prenatal Care Visit"/>
-            <description value="This profile represents template represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy."/>
+            <description value="This profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy.&#xA;&#xA;This concept is mapped to:&#xA;* Item **29a. Date of first prenatal care visit ** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;* Item **23a. Date of first prenatal care visit** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers) "/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -173,7 +173,7 @@
                 <display value="Observation - Mother Recieved WIC Food"/>
             </reference>
             <name value="Observation - Mother Recieved WIC Food"/>
-            <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
+            <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy.&#xA;&#xA;This concept is mapped to:&#xA;* Item **34. Did mother get WIC food for herself during this pregnancy?** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;* Item **28. Did mother get WIC food for herself during this pregnancy?** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -192,7 +192,7 @@
                 <display value="Observation - Cigarette Smoking Before and During Pregnancy"/>
             </reference>
             <name value="Observation - Cigarette Smoking Before and During Pregnancy"/>
-            <description value="This profile represents the average number of cigarettes smoked for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester"/>
+            <description value="This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester&#xA;&#xA;Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number.&#xA;&#xA;This concept is mapped to:&#xA;* Item **37. Cigarette smoking before and during pregnancy** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;* Item **31. Cigarette smoking before and during pregnancy** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers) "/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -202,7 +202,7 @@
                 <display value="Condition - Fetal Presentation at Birth/Delivery"/>
             </reference>
             <name value="Condition - Fetal Presentation at Birth/Delivery"/>
-            <description value="This profile represents the fetal presentation at birth/delivery."/>
+            <description value="This Condition profile represents the fetal presentation at birth/delivery.&#xA;&#xA;This concept is mapped to:&#xA;* Item **46c. Fetal presentation at birth** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;* Item **38c. Fetal presentation at delivery** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*&#xA;&#xA;This profile is based on and further constrains the [US Core Condition](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -212,7 +212,7 @@
                 <display value="Observation - Infant Breastfed at Discharge"/>
             </reference>
             <name value="Observation - Infant Breastfed at Discharge"/>
-            <description value="This profile represents whether or not the infant was being breastfed at discharge"/>
+            <description value="This profile represents whether or not the infant was being breastfed at discharge.&#xA;&#xA;This concept is mapped to:&#xA;* Item **58. Is the infant being breastfed at discharge?** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -222,7 +222,7 @@
                 <display value="Observation - Maternal Transfer"/>
             </reference>
             <name value="Observation - Maternal Transfer"/>
-            <description value="This profile represents whether or not the mother had been transferred to the delivery facility from another facility based on maternal medical or fetal indications.&#xA;**NOTE** Might not need this - Encounter has transfer information that might be sufficient. **TODO**"/>
+            <description value="This profile represents whether or not the mother had been transferred to the delivery facility from another facility based on maternal medical or fetal indications.&#xA;**NOTE** Might not need this - Encounter has transfer information that might be sufficient. **TODO**&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -318,6 +318,79 @@
             </reference>
             <name value="Example: US Core Location (Clinic Bldg A, Salem Medical Center)"/>
             <description value="Example of US Core Location profile (Clinic Bldg A, Salem Medical Center)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-fetal-presentation"/></reference>
+            <name value="Example: Condition - Fetal Presentation (Vertex presentation (finding))"/>
+            <description value="Example of Condition - Fetal Presentation profile (Vertex presentation (finding))"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-1"/>
+                <display value="observation-cigarette-smoking-before-during-pregnancy-1"/>
+            </reference>
+            <name value="Example: Observation - Cigarette Smoking Before/During Pregnancy (3 months prior)"/>
+            <description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the 3 months prior to pregnancy)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-2"/>
+                <display value="observation-cigarette-smoking-before-during-pregnancy-2"/>
+            </reference>
+            <name value="Example: Observation - Cigarette Smoking Before/During Pregnancy (first 3 month)"/>
+            <description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the first 3 months of pregnancy)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-3"/>
+                <display value="observation-cigarette-smoking-before-during-pregnancy-3"/>
+            </reference>
+            <name value="Example: Observation - Cigarette Smoking Before/During Pregnancy (second 3 months)"/>
+            <description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the second 3 months of pregnancy)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-4"/>
+                <display value="observation-cigarette-smoking-before-during-pregnancy-4"/>
+            </reference>
+            <name value="Example: Observation - Cigarette Smoking Before/During Pregnancy (last 3 months)"/>
+            <description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the last 3 months of pregnancy)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-date-of-first-prenatal-care-visit-eve-everywoman"/></reference>
+            <name value="Example: Observation - Date of First Prenatal Care Visit"/>
+            <description value="Example of Observation - Date of First Prenatal Care Visit profile"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-infant-breastfed-at-discharge-baby-everybaby"/></reference>
+            <name value="Example: Observation - Infant Breastfed at Discharge (true)"/>
+            <description value="Example of Observation - Infant Breastfed at Discharge profile (true)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-general-city-hospital"/>
+                <display value="General City Hospital"/>
+            </reference>
+            <name value="Example: US Core Location (General City Hospital)"/>
+            <description value="Example of US Core Location profile (General City Hospital) used for the name of facility mother transferred from for maternal or fetal indications for delivery."/>
             <exampleBoolean value="true"/>
         </resource>
         <page>

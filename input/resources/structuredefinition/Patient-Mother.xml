@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-Mother"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-07-10T02:49:04.629+00:00"/>
-        <source value="#hyk6MfZe2F0LsGW5"/>
+        <versionId value="16"/>
+        <lastUpdated value="2020-07-11T06:00:46.484+00:00"/>
+        <source value="#pfyFz1Xt7t7qBhNX"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="The woman who gave birth to, or delivered the infant."/>
+    <description value="This Patient profile represents the woman who gave birth to, or delivered the infant.&#xA;&#xA;In the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*:&#xA;* Patient.us-core-race is mapped to * Item **22. Mother's race**&#xA;* Patient.us-core-ethnicity is mapped to * Item **21. Mother of Hispanic origin**&#xA;* Patient.identifier is mapped to * Item **Mother's medical record number**&#xA;* Patient.name:sliceCurrentLegalName&quot; is mapped to * Item **8a. Mother's current legal name (First, Middle, Last, Suffix)**&#xA;* Patient.name:sliceNamePriorToFirstMarriage&quot; is mapped to * Item **8c. Mother's name prior to first marriage (First, Middle, Last, Suffix)**&#xA;* Patient.birthDate&quot; is mapped to * Item **8b. Date of birth**&#xA;* Patient.address.line&quot; is mapped to * Item **9d. Street and number**&#xA;* Patient.address.city&quot; is mapped to * Item **9c. City, town, or location**&#xA;* Patient.address.district&quot; is mapped to * Item **9b. County**&#xA;* Patient.address.state&quot; is mapped to * Item **9a. Resident of mother - state**&#xA;* Patient.address.postalCode&quot; is mapped to * Item **9a. Zip code**&#xA;&#xA;&#xA;&#xA;&#xA;**TODO**&#xA;&#xA;* Inside city limits - look at VRDR&#xA;&#xA;&#xA;"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33,6 +33,43 @@
             <path value="Patient"/>
             <short value="The woman who gave birth to, or delivered the infant."/>
             <definition value="Definition"/>
+        </element>
+        <element id="Patient.name">
+            <path value="Patient.name"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="use"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Patient.name:sliceCurrentLegalName">
+            <path value="Patient.name"/>
+            <sliceName value="sliceCurrentLegalName"/>
+            <short value="Mother's current legal name"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name:sliceCurrentLegalName.use">
+            <path value="Patient.name.use"/>
+            <short value="Mother's name prior to first marriage"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="official"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name:sliceNamePriorToFirstMarriage">
+            <path value="Patient.name"/>
+            <sliceName value="sliceNamePriorToFirstMarriage"/>
+            <min value="0"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name:sliceNamePriorToFirstMarriage.use">
+            <path value="Patient.name.use"/>
+            <min value="1"/>
+            <fixedCode value="maiden"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.link">
             <path value="Patient.link"/>
