@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="162"/>
-        <lastUpdated value="2020-07-12T00:07:36.837+00:00"/>
-        <source value="#e6YJRfSeaS6GQJRo"/>
+        <versionId value="191"/>
+        <lastUpdated value="2020-07-12T04:59:43.897+00:00"/>
+        <source value="#6uoRiPn3nQaq7Q0P"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -52,18 +52,8 @@
                 <reference value="StructureDefinition/Composition-birth-certificate"/>
                 <display value="Birth Certificate"/>
             </reference>
-            <name value="Birth Certificate"/>
+            <name value="Composition - Birth Certificate"/>
             <description value="This Composition profile represents the [U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf). &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="live-birth"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/condition-infection-present-live-birth"/>
-                <display value="condition-infection-present-live-birth"/>
-            </reference>
-            <name value="Infections Present During Pregnancy - Live Birth"/>
-            <description value="This Condition profile represents infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth"/>
         </resource>
@@ -103,7 +93,7 @@
                 <display value="Patient Mother"/>
             </reference>
             <name value="Patient Mother"/>
-            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant.&#xA;&#xA;&#xA;"/>
+            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -133,7 +123,7 @@
                 <display value="Patient Fetus"/>
             </reference>
             <name value="Patient Fetus"/>
-            <description value="The fetus who is the subject of the fetal death report."/>
+            <description value="The fetus who is the subject of the fetal death report.&#xA;&#xA;Not based on US Core due to:&#xA;* US Core Requires name"/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death"/>
         </resource>
@@ -163,7 +153,7 @@
                 <display value="Observation - Date of First Prenatal Care Visit"/>
             </reference>
             <name value="Observation - Date of First Prenatal Care Visit"/>
-            <description value="This profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy.&#xA;&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers) "/>
+            <description value="This profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy.&#xA;&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -173,7 +163,7 @@
                 <display value="Observation - Mother Recieved WIC Food"/>
             </reference>
             <name value="Observation - Mother Recieved WIC Food"/>
-            <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers) "/>
+            <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -192,7 +182,7 @@
                 <display value="Observation - Cigarette Smoking Before and During Pregnancy"/>
             </reference>
             <name value="Observation - Cigarette Smoking Before and During Pregnancy"/>
-            <description value="This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester&#xA;&#xA;Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number.&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers) "/>
+            <description value="This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester&#xA;&#xA;Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number.&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
         </resource>
@@ -395,10 +385,103 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-received-wic-food"/></reference>
+                <reference value="Observation/observation-planned-to-deliver-at-home-baby-everybaby"/></reference>
+            <name value="Example: Observation - Planned to Deliver at Home (false)"/>
+            <description value="Example of Observation - Planned to Deliver at Home profile (false)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-received-wic-food-baby-everybaby"/></reference>
             <name value="Example: Observation - Mother Received WIC Food (true)"/>
             <description value="Example of Observation - Mother Received WIC Food profile (true)"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-ssn-requested-for-child-baby-everybaby"/></reference>
+            <name value="Example: Observation - SSN Requested for Child (true)"/>
+            <description value="Example of Observation - SSN Requested for Child profile (true)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-fetus-fetus-everybaby"/></reference>
+            <name value="Example: Patient - Fetus (Fetus Everybaby)"/>
+            <description value="Example of Patient - Fetus profile (Fetus Everybaby)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-fetus"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-everyfather"/></reference>
+            <name value="Example: RelatedPerson - Father (Father Everyfather)"/>
+            <description value="Example of RelatedPerson - Father profile (Father Everyfather)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Father"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-eve-everywoman"/></reference>
+            <name value="Example: RelatedPerson - Mother (Eve Everywoman)"/>
+            <description value="Example of RelatedPerson - Mother profile (Eve Everywoman)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Mother"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-infection-present-during-pregnancy"/>
+                <display value="ConditionInfectionPresentDuringPregnancy"/>
+            </reference>
+            <name value="Condition - Infection Present During Pregnancy"/>
+            <description value="This Condition profile represents infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record.&#xA;&#xA;**TODO**: Is this a value use of category?"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-infection-present-during-pregnancy-eve-everywoman"/></reference>
+            <name value="Example: Condition - Infection Present During Pregnancy (Viral hepatitis type B)"/>
+            <description value="Example of Condition - Infection Present During Pregnancy profile (Viral hepatitis type B)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
+                <display value="Observation-characteristic-of-labor-and-delivery"/>
+            </reference>
+            <name value="Observation - Characteristic of Labor and Delivery"/>
+            <description value="This Observation profile represents any of a set of defined characteristics of labor and delivery.***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-congenital-anomaly-of-newborn-baby-everybaby"/></reference>
+            <name value="Example: Condition - Congenital Anomaly of Newborn (Anomaly of chromosome pair 21)"/>
+            <description value="Example: Condition - Congenital Anomaly of Newborn (Anomaly of chromosome pair 21)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
+                <display value="ConditionCongenitalAnomalyOfNewborn"/>
+            </reference>
+            <name value="ConditionCongenitalAnomalyOfNewborn"/>
+            <description value="This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-baby-everybaby"/></reference>
+            <name value="Example: Observation - Characteristic of Labor and Delivery (Augmentation of labor)"/>
+            <description value="Example of Observation - Characteristic of Labor and Delivery profile (Augmentation of labor)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

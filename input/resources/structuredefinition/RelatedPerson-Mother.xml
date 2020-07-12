@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="RelatedPerson-Mother"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-07-10T03:54:55.791+00:00"/>
-        <source value="#9Ohh9XLhm8HVy7yo"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-07-12T01:22:14.734+00:00"/>
+        <source value="#uDh8h7xZUX7eYktz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Mother"/>
     <version value="1.0.0"/>
@@ -42,15 +42,15 @@
         </element>
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship"/>
+            <short value="natural mother"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
                     <code value="NMTH"/>
-                    <display value="natural mother"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
         </element>
     </differential>
 </StructureDefinition>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-Maternity"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2020-07-12T00:14:01.329+00:00"/>
-        <source value="#AsPIv5sp38q3fwCW"/>
+        <versionId value="17"/>
+        <lastUpdated value="2020-07-12T01:57:14.611+00:00"/>
+        <source value="#2VLGrnj9qGUUuDeK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
     <version value="1.0.0"/>
@@ -25,7 +25,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Encounter"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Encounter">
@@ -40,6 +40,9 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.hospitalization">
+            <path value="Encounter.hospitalization"/>
         </element>
         <element id="Encounter.hospitalization.origin">
             <path value="Encounter.hospitalization.origin"/>

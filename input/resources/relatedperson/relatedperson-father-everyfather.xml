@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelatedPerson
+    xmlns="http://hl7.org/fhir">
+    <id value="relatedperson-father-everyfather"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-07-12T01:16:19.521+00:00"/>
+        <source value="#iihNYyce8bM8ITGn"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Father"/>
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="SS"/>
+            </coding>
+        </type>
+        <system value="http://hl7.org/fhir/sid/us-ssn"/>
+        <value value="444222222"/>
+    </identifier>
+    <active value="true"/>
+    <patient>
+        <reference value="Patient/patient-newborn-baby-everybaby"/>
+    </patient>
+    <relationship>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="NFTH"/>
+            <display value="natural father"/>
+        </coding>
+        <text value="Natural Father"/>
+    </relationship>
+    <name>
+        <use value="official"/>
+        <family value="Everyfather"/>
+        <given value="Father"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="1972-11-24"/>
+</RelatedPerson>
