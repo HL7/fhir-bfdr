@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-planned-to-deliver-at-home"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-07-11T04:21:28.635+00:00"/>
-        <source value="#QJ1ohv7ydh7sUHvf"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-07-12T00:16:27.016+00:00"/>
+        <source value="#jHczF9uh2rJzbTeD"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Observation profile represents whether or not a home birth was planned for the infant.&#xA;&#xA;This concept is mapped to:&#xA;* Item **26. Planned to deliver at home?** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*&#xA;* Item **7. Planned to deliver at home?** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*&#xA;&#xA;**TODO**&#xA;&#xA;Would this be better as an extension?&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
+    <description value="This Observation profile represents whether or not a home birth was planned for the infant.&#xA;&#xA;**TODO**&#xA;&#xA;Would this be better as an extension?&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34,6 +34,7 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
+            <short value="Planned to deliver at home"/>
             <min value="1"/>
             <max value="1"/>
             <patternCodeableConcept>
@@ -43,10 +44,6 @@
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>
-        </element>
-        <element id="Observation.code.coding">
-            <path value="Observation.code.coding"/>
-            <short value="Planned to deliver at home"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

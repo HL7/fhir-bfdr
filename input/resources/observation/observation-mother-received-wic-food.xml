@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-mother-received-wic-food"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-07-12T00:06:39.284+00:00"/>
+        <source value="#lNPOKWlfUYqoPqKg"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="87303-4"/>
+            <display value="Mother WIC food recipient"/>
+        </coding>
+        <text value="Did mother get WIC food for herself during this pregnancy?"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-newborn-baby-everybaby"/>
+        <display value="Baby Everybaby"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-mother-eve-everywoman"/>
+        <display value="Eve Everywoman"/>
+    </focus>
+    <issued value="2020-06-09T10:01:00-07:00"/>
+    <valueBoolean value="true"/>
+</Observation>
