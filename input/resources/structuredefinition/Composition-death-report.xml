@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Composition-death-report"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-07-15T04:19:47.577+00:00"/>
+        <source value="#g27NMZYZ3SRFIP8g"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-death-report"/>
+    <version value="1.0.0"/>
+    <name value="CompositionDeathReport"/>
+    <title value="Death Report"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Composition profile represents the [U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf). &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"/>
+            </type>
+        </element>
+        <element id="Composition.encounter">
+            <path value="Composition.encounter"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:sliceTBD">
+            <path value="Composition.section"/>
+            <sliceName value="sliceTBD"/>
+        </element>
+    </differential>
+</StructureDefinition>

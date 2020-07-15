@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="191"/>
-        <lastUpdated value="2020-07-12T04:59:43.897+00:00"/>
-        <source value="#6uoRiPn3nQaq7Q0P"/>
+        <versionId value="202"/>
+        <lastUpdated value="2020-07-15T04:27:30.300+00:00"/>
+        <source value="#OXp9lsg1XG2ATLsF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -116,16 +116,6 @@
             <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-fetus"/>
-                <display value="Patient Fetus"/>
-            </reference>
-            <name value="Patient Fetus"/>
-            <description value="The fetus who is the subject of the fetal death report.&#xA;&#xA;Not based on US Core due to:&#xA;* US Core Requires name"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="fetal-death"/>
         </resource>
         <resource>
             <reference>
@@ -413,7 +403,7 @@
             <name value="Example: Patient - Fetus (Fetus Everybaby)"/>
             <description value="Example of Patient - Fetus profile (Fetus Everybaby)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-fetus"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"/>
         </resource>
         <resource>
             <reference>
@@ -455,8 +445,9 @@
                 <display value="Observation-characteristic-of-labor-and-delivery"/>
             </reference>
             <name value="Observation - Characteristic of Labor and Delivery"/>
-            <description value="This Observation profile represents any of a set of defined characteristics of labor and delivery.***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <description value="This Observation profile represents any of a set of defined characteristics of labor and delivery.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
             <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -471,9 +462,10 @@
                 <reference value="StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
                 <display value="ConditionCongenitalAnomalyOfNewborn"/>
             </reference>
-            <name value="ConditionCongenitalAnomalyOfNewborn"/>
+            <name value="Condition - Congenital Anomaly of Newborn"/>
             <description value="This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."/>
             <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -482,6 +474,43 @@
             <description value="Example of Observation - Characteristic of Labor and Delivery profile (Augmentation of labor)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-abnormal-condition-of-newborn"/>
+                <display value="Condition - Abnormal Condition of Newborn"/>
+            </reference>
+            <name value="Condition - Abnormal Condition of Newborn"/>
+            <description value="This Condition profile represents information about one or more disorders or significant morbidities experienced by the newborn."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-abnormal-condition-of-newborn-baby-everybaby"/></reference>
+            <name value="Example: Condition - Abnormal Condition of Newborn (Seizure)"/>
+            <description value="Example of Condition - Abnormal Condition of Newborn profile (Seizure)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-death-report"/>
+                <display value="Death Report"/>
+            </reference>
+            <name value="Death Report"/>
+            <description value="This Composition profile represents the [U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf). &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-decedent-fetus"/>
+                <display value="Patient_Decedent_Fetus"/>
+            </reference>
+            <name value="Patient_Decedent_Fetus"/>
+            <description value="The fetus who is the subject of the fetal death report.&#xA;&#xA;Not based on US Core due to:&#xA;* US Core Requires name"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="fetal-death"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

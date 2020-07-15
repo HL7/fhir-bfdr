@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-Newborn"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-07-10T06:57:00.495+00:00"/>
-        <source value="#9xIlAd92Jw4m4CKR"/>
+        <versionId value="13"/>
+        <lastUpdated value="2020-07-12T23:02:45.125+00:00"/>
+        <source value="#X59ELCDIruvGR3xk"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
     <version value="1.0.0"/>
@@ -33,8 +33,27 @@
             <path value="Patient"/>
             <short value="The newborn who is the subject of the live birth report."/>
         </element>
+        <element id="Patient.extension:birthPlace">
+            <path value="Patient.extension"/>
+            <sliceName value="birthPlace"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
+        </element>
+        <element id="Patient.deceased[x]">
+            <path value="Patient.deceased[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.multipleBirth[x]">
+            <path value="Patient.multipleBirth[x]"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.birthDate.extension:birthTime">
             <path value="Patient.birthDate.extension"/>
