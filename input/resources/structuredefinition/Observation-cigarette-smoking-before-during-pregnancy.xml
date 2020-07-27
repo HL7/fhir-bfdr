@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-cigarette-smoking-before-during-pregnancy"/>
+    <meta>
+        <versionId value="19"/>
+        <lastUpdated value="2020-07-12T01:49:17.087+00:00"/>
+        <source value="#Tgv3tfdfJaBug1qC"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+    <version value="1.0.0"/>
+    <name value="ObservationCigaretteSmokingBeforeDuringPregnancy"/>
+    <title value="Observation - Cigarette Smoking Before and During Pregnancy"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester&#xA;&#xA;Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number.&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="false"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy"/>
+            </binding>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <short value="Average number of cigarettes smoked per day"/>
+            <definition value="Average number of cigarettes smoked per day. Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="integer"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

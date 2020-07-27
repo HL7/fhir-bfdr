@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Patient-Newborn"/>
+    <meta>
+        <versionId value="13"/>
+        <lastUpdated value="2020-07-12T23:02:45.125+00:00"/>
+        <source value="#X59ELCDIruvGR3xk"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
+    <version value="1.0.0"/>
+    <name value="PatientNewborn"/>
+    <title value="Patient Newborn"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="The newborn who is the subject of the live birth report."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Patient"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Patient">
+            <path value="Patient"/>
+            <short value="The newborn who is the subject of the live birth report."/>
+        </element>
+        <element id="Patient.extension:birthPlace">
+            <path value="Patient.extension"/>
+            <sliceName value="birthPlace"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.birthDate">
+            <path value="Patient.birthDate"/>
+        </element>
+        <element id="Patient.deceased[x]">
+            <path value="Patient.deceased[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.multipleBirth[x]">
+            <path value="Patient.multipleBirth[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.birthDate.extension:birthTime">
+            <path value="Patient.birthDate.extension"/>
+            <sliceName value="birthTime"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

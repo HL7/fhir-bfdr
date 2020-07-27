@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Encounter-Maternity"/>
+    <meta>
+        <versionId value="17"/>
+        <lastUpdated value="2020-07-12T01:57:14.611+00:00"/>
+        <source value="#2VLGrnj9qGUUuDeK"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
+    <version value="1.0.0"/>
+    <name value="EncounterMaternity"/>
+    <title value="Encounter - Maternity"/>
+    <status value="active"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Encounter"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Encounter">
+            <path value="Encounter"/>
+        </element>
+        <element id="Encounter.subject">
+            <path value="Encounter.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.hospitalization">
+            <path value="Encounter.hospitalization"/>
+        </element>
+        <element id="Encounter.hospitalization.origin">
+            <path value="Encounter.hospitalization.origin"/>
+            <short value="If mother transferred, facility transferred from"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.hospitalization.admitSource">
+            <path value="Encounter.hospitalization.admitSource"/>
+            <short value="If mother transferred for maternal or fetal indications for delivery, set to &quot;hosp-trans&quot;"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

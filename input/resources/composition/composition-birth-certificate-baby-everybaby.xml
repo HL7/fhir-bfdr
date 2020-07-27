@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="composition-birth-certificate-baby-everybaby"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-20T10:24:04.774+00:00"/>
+        <source value="#hKc7qs1Xx67tiIxd"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+    </meta>
+    <identifier>
+        <value value="c03eab8c-11e8-4d0c-ad2a-b385395e27de"/>
+    </identifier>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="68998-4"/>
+            <display value="U.S. standard certificate of live birth - 2003 revision"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/patient-newborn-baby-everybaby"/>
+        <display value="Baby Everybaby"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/encounter-birth-baby-everybaby"/>
+        <display value="Birth Encounter - Baby Everybaby"/>
+    </encounter>
+    <date value="2020-06-07"/>
+    <author>
+        <reference value="PractitionerRole/practitionerrole-henry-seven"/>
+        <display value="Henry Seven, MD"/>
+    </author>
+    <title value="U.S. standard certificate of live birth - 2003 revision"/>
+</Composition>

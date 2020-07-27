@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Condition-maternal-morbidity"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-20T07:13:24.371+00:00"/>
+        <source value="#yrkXAaeVmjedFOjU"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
+    <version value="1.0.0"/>
+    <name value="ConditionMaternalMorbidity"/>
+    <title value="Condition - Maternal Morbidity"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Condition profile represents whether the mother suffered from one or more of a list of recognized maternal morbidities during the labor and delivery process."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+            <short value="Information on whether the mother suffered from one or more of a list of recognized maternal morbidities during the labor and delivery process"/>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <short value="Maternal morbidity values when serious complications were experienced by the mother associated with labor and delivery"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7119"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

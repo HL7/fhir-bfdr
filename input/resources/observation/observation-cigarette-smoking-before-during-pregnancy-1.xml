@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-cigarette-smoking-before-during-pregnancy-1"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-11T01:39:10.138+00:00"/>
+        <source value="#5RLg3Q0a1LgFhDlW"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="64794-1"/>
+            <display value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
+        </coding>
+        <text value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-newborn-baby-everybaby"/>
+        <display value="Baby Everybaby"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-mother-eve-everywoman"/>
+        <display value="Eve Everywoman"/>
+    </focus>
+    <issued value="2020-06-09T14:34:25-07:00"/>
+    <valueInteger value="0"/>
+</Observation>
