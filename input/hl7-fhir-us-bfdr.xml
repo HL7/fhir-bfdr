@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="252"/>
-        <lastUpdated value="2020-07-27T02:03:36.831+00:00"/>
-        <source value="#bMKlh3AzgJ2Urb4D"/>
+        <versionId value="254"/>
+        <lastUpdated value="2020-07-27T06:12:28.059+00:00"/>
+        <source value="#Qv9RZO2gMUU7IPpr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -65,73 +65,639 @@
             <name value="Examples - Live Birth: Newborn"/>
             <description value="Concepts contained in the Live Birth: Newborn section of the U.S. Standard Certificate of Live Birth (rev. 2003)."/>
         </grouping>
-        <resource><reference><reference value="Composition/composition-birth-certificate-baby-everybaby"/><display value="U.S. standard certificate of live birth - 2003 revision"/></reference><name value="Composition Birth Certificate (U.S. standard certificate of live birth - 2003 revision)"/><description value="Example of Composition Birth Certificate profile (U.S. standard certificate of live birth - 2003 revision)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/></resource>
-        <resource><reference><reference value="Condition/condition-abnormal-condition-of-newborn-baby-everybaby"/></reference><name value="Condition - Abnormal Condition of Newborn (Seizure)"/><description value="Example of Condition - Abnormal Condition of Newborn profile (Seizure)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn"/><groupingId value="examples-live-birth-newborn"/></resource>
-        <resource><reference><reference value="Condition/condition-congenital-anomaly-of-newborn-baby-everybaby"/></reference><name value="Condition - Congenital Anomaly of Newborn (Anomaly of chromosome pair 21)"/><description value="Example: Condition - Congenital Anomaly of Newborn (Anomaly of chromosome pair 21)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/><groupingId value="examples-live-birth-newborn"/></resource>
-        <resource><reference><reference value="Condition/condition-fetal-presentation"/></reference><name value="Condition - Fetal Presentation (Vertex presentation (finding))"/><description value="Example of Condition - Fetal Presentation profile (Vertex presentation (finding))"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/></resource>
-        <resource><reference><reference value="Condition/condition-infection-present-during-pregnancy-eve-everywoman"/></reference><name value="Condition - Infection Present During Pregnancy (Viral hepatitis type B)"/><description value="Example of Condition - Infection Present During Pregnancy profile (Viral hepatitis type B)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy"/><groupingId value="examples-live-birth-medical-health-information"/></resource>
-        <resource><reference><reference value="Encounter/encounter-birth-baby-everybaby"/></reference><name value="Encounter - Birth (Baby Everybaby)"/><description value="Example of Encounter - Birth profile (Baby Everybaby)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/></resource>
-        <resource><reference><reference value="Encounter/encounter-maternity-eve-everywoman"/></reference><name value="Encounter - Maternity (Eve Everywoman)"/><description value="Example of Encounter - Maternity profile (Eve Everywoman)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/></resource>
-        <resource><reference><reference value="Location/location-general-city-hospital"/><display value="General City Hospital"/></reference><name value="US Core Location (General City Hospital)"/><description value="Example of US Core Location profile (General City Hospital) used for the name of facility mother transferred from for maternal or fetal indications for delivery."/><exampleBoolean value="true"/></resource>
-        <resource><reference><reference value="Location/location-salem-medical-center"/><display value="Clinic Bldg A, Salem Medical Center"/></reference><name value="US Core Location (Clinic Bldg A, Salem Medical Center)"/><description value="Example of US Core Location profile (Clinic Bldg A, Salem Medical Center)"/><exampleBoolean value="true"/></resource>
-        <resource><reference><reference value="Observation/observation-characteristic-of-labor-and-delivery-baby-everybaby"/></reference><name value="Observation - Characteristic of Labor and Delivery (Augmentation of labor)"/><description value="Example of Observation - Characteristic of Labor and Delivery profile (Augmentation of labor)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/><groupingId value="examples-live-birth-medical-health-information"/></resource>
-        <resource><reference><reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-1"/><display value="observation-cigarette-smoking-before-during-pregnancy-1"/></reference><name value="Observation - Cigarette Smoking Before/During Pregnancy (3 months prior)"/><description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the 3 months prior to pregnancy)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/></resource>
-        <resource><reference><reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-2"/><display value="observation-cigarette-smoking-before-during-pregnancy-2"/></reference><name value="Observation - Cigarette Smoking Before/During Pregnancy (first 3 month)"/><description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the first 3 months of pregnancy)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/></resource>
-        <resource><reference><reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-3"/><display value="observation-cigarette-smoking-before-during-pregnancy-3"/></reference><name value="Observation - Cigarette Smoking Before/During Pregnancy (second 3 months)"/><description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the second 3 months of pregnancy)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/></resource>
-        <resource><reference><reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-4"/><display value="observation-cigarette-smoking-before-during-pregnancy-4"/></reference><name value="Observation - Cigarette Smoking Before/During Pregnancy (last 3 months)"/><description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the last 3 months of pregnancy)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/></resource>
-        <resource><reference><reference value="Observation/observation-date-of-first-prenatal-care-visit-eve-everywoman"/></reference><name value="Observation - Date of First Prenatal Care Visit"/><description value="Example of Observation - Date of First Prenatal Care Visit profile"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/></resource>
-        <resource><reference><reference value="Observation/observation-delivery-method-attempted-unsuccessful-forceps"/></reference><name value="Observation - Delivery Method Attempted Unsuccessful (Forceps Delivery Unsuccessful - false)"/><description value="Example of Observation - Delivery Method Attempted Unsuccessful profile (Forceps Delivery Unsuccessful - false)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/><groupingId value="examples-live-birth-medical-health-information"/></resource>
-        <resource><reference><reference value="Observation/observation-delivery-method-attempted-unsuccessful-vacuum"/></reference><name value="Observation - Delivery Method Attempted Unsuccessful (Vacuum Delivery Unsuccessful - true))"/><description value="Example of Observation - Delivery Method Attempted Unsuccessful profile (Vacuum Delivery Unsuccessful - true)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/><groupingId value="examples-live-birth-medical-health-information"/></resource>
-        <resource><reference><reference value="Observation/observation-infant-breastfed-at-discharge-baby-everybaby"/></reference><name value="Observation - Infant Breastfed at Discharge (true)"/><description value="Example of Observation - Infant Breastfed at Discharge profile (true)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge"/><groupingId value="examples-live-birth-newborn"/></resource>
-        <resource><reference><reference value="Observation/observation-labor-trial-attempted-baby-everybaby"/></reference><name value="Observation - Labor Trial Attempted (true)"/><description value="Example of Observation - Labor Trial Attempted profile (true)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/><groupingId value="examples-live-birth-medical-health-information"/></resource>
-        <resource><reference><reference value="Observation/observation-mother-received-wic-food-baby-everybaby"/></reference><name value="Observation - Mother Received WIC Food (true)"/><description value="Example of Observation - Mother Received WIC Food profile (true)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/></resource>
-        <resource><reference><reference value="Observation/observation-planned-to-deliver-at-home-baby-everybaby"/></reference><name value="Observation - Planned to Deliver at Home (false)"/><description value="Example of Observation - Planned to Deliver at Home profile (false)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/></resource>
-        <resource><reference><reference value="Observation/observation-ssn-requested-for-child-baby-everybaby"/></reference><name value="Observation - SSN Requested for Child (true)"/><description value="Example of Observation - SSN Requested for Child profile (true)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child"/></resource>
-        <resource><reference><reference value="Organization/organization-salem-medical-center"/><display value="Salem Medical Center"/></reference><name value="US Core Organization (Salem Medical Center)"/><description value="Example of US Core Organization profile (Salem Medical Center)"/><exampleBoolean value="true"/></resource>
-        <resource><reference><reference value="Patient/patient-fetus-fetus-everybaby"/></reference><name value="Patient - Fetus (Fetus Everybaby)"/><description value="Example of Patient - Fetus profile (Fetus Everybaby)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"/></resource>
-        <resource><reference><reference value="Patient/patient-mother-eve-everywoman"/></reference><name value="Patient - Mother (Eve Everywoman)"/><description value="Example of Patient - Mother profile (Eve Everywoman)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/></resource>
-        <resource><reference><reference value="Patient/patient-newborn-baby-everybaby"/></reference><name value="Patient - Baby (Baby Everybaby)"/><description value="Example of Patient - Newborn profile (Baby Everybaby)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/></resource>
-        <resource><reference><reference value="Practitioner/practitioner-us-core-henry-seven"/></reference><name value="US Core Practitioner (Henry Seven)"/><description value="Example of US Core Practitioner profile (Henry Seven)"/><exampleBoolean value="true"/></resource>
-        <resource><reference><reference value="PractitionerRole/practitionerrole-henry-seven"/></reference><name value="US Core PractitionerRole (Henry Seven)"/><description value="Example of US Core PractitionerRole profile (Henry Seven)"/><exampleBoolean value="true"/></resource>
-        <resource><reference><reference value="Procedure/procedure-external-cephalic-version"/><display value="Procedure - Obstetric Example (External cephalic version: successful)"/></reference><name value="Procedure - Obstetric (External cephalic version)"/><description value="Example of Procedure - Obstetric profile (External cephalic version: successful)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/><groupingId value="examples-live-birth-medical-health-information"/></resource>
-        <resource><reference><reference value="Procedure/procedure-final-route-method-delivery-cesarean"/></reference><name value="Procedure - Final Route and Method of Delivery (Cesarean section)"/><description value="Example of Procedure - Final Route and Method of Delivery profile (Cesarean section)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/><groupingId value="examples-live-birth-medical-health-information"/></resource>
-        <resource><reference><reference value="RelatedPerson/relatedperson-eve-everywoman"/></reference><name value="RelatedPerson - Mother (Eve Everywoman)"/><description value="Example of RelatedPerson - Mother profile (Eve Everywoman)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Mother"/></resource>
-        <resource><reference><reference value="RelatedPerson/relatedperson-father-everyfather"/></reference><name value="RelatedPerson - Father (Father Everyfather)"/><description value="Example of RelatedPerson - Father profile (Father Everyfather)"/><exampleBoolean value="false"/><exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Father"/></resource>
-        <resource><reference><reference value="StructureDefinition/Composition-jurisdiction-fetal-death-report"/><display value="Jurisdiction Fetal Death Report"/></reference><name value="Composition - Jurisdiction Fetal Death Report"/><description value="This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to NCHS.&#xA;&#xA;The data requirements for jurisdictional reporting of fetal deaths are based on the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.&#xA;&#xA;**TODO**&#xA;* Link to specs&#xA;* Consider adding a diagram here for the relationships"/><exampleBoolean value="false"/><groupingId value="fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Composition-jurisdiction-live-birth-report"/><display value="Jurisdiction Live Birth Report"/></reference><name value="Composition - Jurisdiction Live Birth Report"/><description value="This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS.&#xA;&#xA;The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth.&#xA;&#xA;**TODO**&#xA;* Link to Birth certificate and Birth edit specs&#xA;* Consider adding a diagram here for the relationships"/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/Composition-provider-facility-fetal-death-report"/><display value="Composition - Provider Supplied Facility Fetal Death Report"/></reference><name value="Composition - Provider Supplied Facility Fetal Death Report"/><description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and relevant information for the fetus collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/><exampleBoolean value="false"/><groupingId value="fetal-death-compositions-ehr-jvr"/></resource>
-        <resource><reference><reference value="StructureDefinition/Composition-provider-facility-live-birth-report"/><display value="Composition - Provider Supplied Facility Live Birth Facility Report"/></reference><name value="Composition - Provider Supplied Facility Live Birth Facility Report"/><description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and the condition of the newborn collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/><exampleBoolean value="false"/><groupingId value="live-birth-compositions-ehr-jvr"/></resource>
-        <resource><reference><reference value="StructureDefinition/Composition-provider-fetal-death-report"/><display value="Provider Fetal Death Report"/></reference><name value="Composition - Provider Fetal Death Report"/><description value="This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office.&#xA;For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the fetus is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdictional Vital Records Office at the same time (using this document) or separately (using the Provider Supplied Mother's Fetal Death Reporting Document and the Provider Supplied Facility Fetal Death Reporting Document).&#xA;The data requirements for provider supplied fetal death information are based on the U.S. Standard Report of Fetal Death, the 2004 US Standard Facility Worksheet for the Report of Fetal Death, and the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.&#xA;The 1992 Revision of the Model State Vital Statistics Act and Regulations recommends the following definition of fetal death:&#xA;&quot;Fetal death&quot; means death prior to the complete expulsion or extraction from its mother of a product of human conception, irrespective of the duration of pregnancy and which is not an induced termination of pregnancy. The death is indicated by the fact that after such expulsion or extraction, the fetus does not breathe or show any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of voluntary muscles. Heartbeats are to be distinguished from transient cardiac contractions; respirations are to be distinguished from fleeting respiratory efforts or gasps.&#xA;&#xA;&#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/><exampleBoolean value="false"/><groupingId value="fetal-death-compositions-ehr-jvr"/></resource>
-        <resource><reference><reference value="StructureDefinition/Composition-provider-live-birth-report"/><display value="Provider Live Birth Report"/></reference><name value="Composition - Provider Live Birth Report"/><description value="This Composition profile defines constraints to address the use case in which information for live birth information to be recorded and communicated to the jurisdicational Vital Records Office.&#xA;&#xA;For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdiction vital records office at the same time (using this Composition) or separately (using Composition - Provider Supplied Mother's Live Birth Report and Composition - Provider Supplied Facility Live Birth Report).&#xA;&#xA;The data requirements for provider supplied live birth information are based on the Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth, the 2016 US Standard Facility Worksheet for the Live Birth Certificate, the 2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births, and the 2016 US Standard Mothers Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.&#xA; &#xA;&#xA;&#xA;"/><exampleBoolean value="false"/><groupingId value="live-birth-compositions-ehr-jvr"/></resource>
-        <resource><reference><reference value="StructureDefinition/Composition-provider-mothers-fetal-death-report"/><display value="Composition - Provider Supplied Mother's Fetal Death Report"/></reference><name value="Composition - Provider Supplied Mother's Fetal Death Report"/><description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Patient's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office.&#xA;        &#xA;        The data requirements for fetal death mother's information are based on the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit  specifications that will be addressed at the jurisdictional level. &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/><exampleBoolean value="false"/><groupingId value="fetal-death-compositions-ehr-jvr"/></resource>
-        <resource><reference><reference value="StructureDefinition/Composition-provider-mothers-live-birth-report"/><display value="Composition - Provider Supplied Mother's Live Birth Report"/></reference><name value="Composition - Provider Supplied Mother's Live Birth Report"/><description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Mother's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office.&#xA;        &#xA;The data requirements for live birth mother's information are based on the Mother's Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level. &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/><exampleBoolean value="false"/><groupingId value="live-birth-compositions-ehr-jvr"/></resource>
-        <resource><reference><reference value="StructureDefinition/Condition-abnormal-condition-of-newborn"/><display value="Condition - Abnormal Condition of Newborn"/></reference><name value="Condition - Abnormal Condition of Newborn"/><description value="This Condition profile represents information about one or more disorders or significant morbidities experienced by the newborn."/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/Condition-congenital-anomaly-of-newborn"/><display value="ConditionCongenitalAnomalyOfNewborn"/></reference><name value="Condition - Congenital Anomaly of Newborn"/><description value="This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/Condition-fetal-presentation"/><display value="Condition - Fetal Presentation at Birth/Delivery"/></reference><name value="Condition - Fetal Presentation at Birth/Delivery"/><description value="This Condition profile represents the fetal presentation (orientation within the mother's womb) of a fetus prior to delivery/birth."/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Condition-infection-present-during-pregnancy"/><display value="ConditionInfectionPresentDuringPregnancy"/></reference><name value="Condition - Infection Present During Pregnancy"/><description value="This Condition profile represents infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record.&#xA;&#xA;**TODO**: Is this a value use of category?"/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/Condition-maternal-morbidity"/><display value="Condition - Maternal Morbidity"/></reference><name value="Condition - Maternal Morbidity"/><description value="This Condition profile represents whether the mother suffered from one or more of a list of recognized maternal morbidities during the labor and delivery process."/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Encounter-Birth"/><display value="Encounter - Birth"/></reference><name value="Encounter - Birth"/><description value="This Encounter profile represents the child's birth encounter. This Encounter can reference the mother's maternity encounter using the partOf data element."/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/Encounter-Maternity"/><display value="Encounter - Maternity"/></reference><name value="Encounter - Maternity"/><description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Extension-relatedperson-father"/><display value="Extension - RelatedPerson Father"/></reference><name value="Extension - RelatedPerson Father"/><exampleBoolean value="false"/></resource>
-        <resource><reference><reference value="StructureDefinition/Extension-relatedperson-mother"/><display value="Extension-relatedperson-mother"/></reference><name value="Extension - RelatedPerson Mother"/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-characteristic-of-labor-and-delivery"/><display value="Observation-characteristic-of-labor-and-delivery"/></reference><name value="Observation - Characteristic of Labor and Delivery"/><description value="This Observation profile represents any of a set of defined characteristics of labor and delivery.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/><display value="Observation - Cigarette Smoking Before and During Pregnancy"/></reference><name value="Observation - Cigarette Smoking Before and During Pregnancy"/><description value="This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester&#xA;&#xA;Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number.&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-date-of-first-prenatal-care-visit"/><display value="Observation - Date of First Prenatal Care Visit"/></reference><name value="Observation - Date of First Prenatal Care Visit"/><description value="This profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy.&#xA;&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/><display value="Observation - Delivery Method Attempted Unsuccessful"/></reference><name value="Observation - Delivery Method Attempted Unsuccessful"/><description value="This Observation profile represents whether delivery methods were attempted but unsuccessful.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-infant-breastfed-at-discharge"/><display value="Observation - Infant Breastfed at Discharge"/></reference><name value="Observation - Infant Breastfed at Discharge"/><description value="This profile represents whether or not the infant was being breastfed at discharge.&#xA;&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-labor-trial-attempted"/><display value="Observation - Labor Trial Attempted"/></reference><name value="Observation - Labor Trial Attempted"/><description value="This Observation profile represents whether, in the case of a cesarean delivery, a trial of labor was attempted.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-maternal-transfer"/><display value="Observation - Maternal Transfer"/></reference><name value="Observation - Maternal Transfer"/><description value="This profile represents whether or not the mother had been transferred to the delivery facility from another facility based on maternal medical or fetal indications.&#xA;**NOTE** Might not need this - Encounter has transfer information that might be sufficient. **TODO**&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-mother-received-wic-food"/><display value="Observation - Mother Recieved WIC Food"/></reference><name value="Observation - Mother Recieved WIC Food"/><description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-planned-to-deliver-at-home"/><display value="Observation - Planned to Deliver at Home"/></reference><name value="Observation - Planned to Deliver at Home"/><description value="This Observation profile represents whether or not a home birth was planned for the infant.&#xA;&#xA;**TODO**&#xA;&#xA;Would this be better as an extension?&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Observation-ssn-requested-for-child"/><display value="Observation - Social Security Number Requested For Child"/></reference><name value="Observation - Social Security Number Requested For Child"/><description value="This Observation profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/Patient-decedent-fetus"/><display value="Patient_Decedent_Fetus"/></reference><name value="Patient Decedent Fetus"/><description value="The fetus who is the subject of the fetal death report.&#xA;&#xA;Not based on US Core due to:&#xA;* US Core Requires name"/><exampleBoolean value="false"/><groupingId value="participants"/></resource>
-        <resource><reference><reference value="StructureDefinition/Patient-Mother"/><display value="Patient Mother"/></reference><name value="Patient Mother"/><description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/><exampleBoolean value="false"/><groupingId value="participants"/></resource>
-        <resource><reference><reference value="StructureDefinition/Patient-Newborn"/><display value="Patient Newborn"/></reference><name value="Patient Newborn"/><description value="The newborn who is the subject of the live birth report."/><exampleBoolean value="false"/><groupingId value="participants"/></resource>
-        <resource><reference><reference value="StructureDefinition/Procedure-final-route-method-delivery"/><display value="Procedure - Final Route and Method of Delivery"/></reference><name value="Procedure - Final Route and Method of Delivery"/><description value="This profile represents the final route and method of delivery."/><exampleBoolean value="false"/><groupingId value="live-birth-fetal-death"/></resource>
-        <resource><reference><reference value="StructureDefinition/Procedure-obstetric"/><display value="Procedure - Obstetric"/></reference><name value="Procedure - Obstetric"/><description value="This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery."/><exampleBoolean value="false"/><groupingId value="live-birth"/></resource>
-        <resource><reference><reference value="StructureDefinition/RelatedPerson-Father"/><display value="RelatedPerson Father"/></reference><name value="RelatedPerson Father"/><description value="The biological father of the newborn or fetus."/><exampleBoolean value="false"/><groupingId value="participants"/></resource>
-        <resource><reference><reference value="StructureDefinition/RelatedPerson-Mother"/><display value="RelatedPerson Mother"/></reference><name value="RelatedPerson Mother"/><description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/><exampleBoolean value="false"/><groupingId value="participants"/></resource>
-        <resource><reference><reference value="ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy"/><display value="Cigarette Smoking Before and During Pregnancy"/></reference><name value="Cigarette Smoking Before and During Pregnancy"/><description value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/><exampleBoolean value="false"/></resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Encounter-Birth"/>
+                <display value="Encounter - Birth"/>
+            </reference>
+            <name value="Encounter - Birth"/>
+            <description value="This Encounter profile represents the child's birth encounter. This Encounter can reference the mother's maternity encounter using the partOf data element."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-Newborn"/>
+                <display value="Patient Newborn"/>
+            </reference>
+            <name value="Patient Newborn"/>
+            <description value="The newborn who is the subject of the live birth report."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Encounter-Maternity"/>
+                <display value="Encounter - Maternity"/>
+            </reference>
+            <name value="Encounter - Maternity"/>
+            <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-Mother"/>
+                <display value="Patient Mother"/>
+            </reference>
+            <name value="Patient Mother"/>
+            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-Father"/>
+                <display value="RelatedPerson Father"/>
+            </reference>
+            <name value="RelatedPerson Father"/>
+            <description value="The biological father of the newborn or fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/RelatedPerson-Mother"/>
+                <display value="RelatedPerson Mother"/>
+            </reference>
+            <name value="RelatedPerson Mother"/>
+            <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-ssn-requested-for-child"/>
+                <display value="Observation - Social Security Number Requested For Child"/>
+            </reference>
+            <name value="Observation - Social Security Number Requested For Child"/>
+            <description value="This Observation profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-planned-to-deliver-at-home"/>
+                <display value="Observation - Planned to Deliver at Home"/>
+            </reference>
+            <name value="Observation - Planned to Deliver at Home"/>
+            <description value="This Observation profile represents whether or not a home birth was planned for the infant.&#xA;&#xA;**TODO**&#xA;&#xA;Would this be better as an extension?&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+                <display value="Observation - Date of First Prenatal Care Visit"/>
+            </reference>
+            <name value="Observation - Date of First Prenatal Care Visit"/>
+            <description value="This profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy.&#xA;&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-mother-received-wic-food"/>
+                <display value="Observation - Mother Recieved WIC Food"/>
+            </reference>
+            <name value="Observation - Mother Recieved WIC Food"/>
+            <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy"/>
+                <display value="Cigarette Smoking Before and During Pregnancy"/>
+            </reference>
+            <name value="Cigarette Smoking Before and During Pregnancy"/>
+            <description value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+                <display value="Observation - Cigarette Smoking Before and During Pregnancy"/>
+            </reference>
+            <name value="Observation - Cigarette Smoking Before and During Pregnancy"/>
+            <description value="This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester&#xA;&#xA;Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number.&#xA;***Reason for not basing on US Core - no suitable Observation profile.***&#xA;&#xA;**TODO**&#xA;&#xA;Having a hard time reconciling this - get feedback from SMEs/stakeholders&#xA;&#xA;* subject = baby&#xA;* focus = mother&#xA;&#xA;See: [https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Recording.20Mothers.20and.20Fathers)"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-fetal-presentation"/>
+                <display value="Condition - Fetal Presentation at Birth/Delivery"/>
+            </reference>
+            <name value="Condition - Fetal Presentation at Birth/Delivery"/>
+            <description value="This Condition profile represents the fetal presentation (orientation within the mother's womb) of a fetus prior to delivery/birth."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-infant-breastfed-at-discharge"/>
+                <display value="Observation - Infant Breastfed at Discharge"/>
+            </reference>
+            <name value="Observation - Infant Breastfed at Discharge"/>
+            <description value="This profile represents whether or not the infant was being breastfed at discharge.&#xA;&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-maternal-transfer"/>
+                <display value="Observation - Maternal Transfer"/>
+            </reference>
+            <name value="Observation - Maternal Transfer"/>
+            <description value="This profile represents whether or not the mother had been transferred to the delivery facility from another facility based on maternal medical or fetal indications.&#xA;**NOTE** Might not need this - Encounter has transfer information that might be sufficient. **TODO**&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-obstetric"/>
+                <display value="Procedure - Obstetric"/>
+            </reference>
+            <name value="Procedure - Obstetric"/>
+            <description value="This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-mother-eve-everywoman"/></reference>
+            <name value="Patient - Mother (Eve Everywoman)"/>
+            <description value="Example of Patient - Mother profile (Eve Everywoman)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-external-cephalic-version"/>
+                <display value="Procedure - Obstetric Example (External cephalic version: successful)"/>
+            </reference>
+            <name value="Procedure - Obstetric (External cephalic version)"/>
+            <description value="Example of Procedure - Obstetric profile (External cephalic version: successful)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
+            <groupingId value="examples-live-birth-medical-health-information"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-newborn-baby-everybaby"/></reference>
+            <name value="Patient - Baby (Baby Everybaby)"/>
+            <description value="Example of Patient - Newborn profile (Baby Everybaby)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-us-core-henry-seven"/></reference>
+            <name value="US Core Practitioner (Henry Seven)"/>
+            <description value="Example of US Core Practitioner profile (Henry Seven)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/practitionerrole-henry-seven"/></reference>
+            <name value="US Core PractitionerRole (Henry Seven)"/>
+            <description value="Example of US Core PractitionerRole profile (Henry Seven)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-birth-certificate-baby-everybaby"/>
+                <display value="U.S. standard certificate of live birth - 2003 revision"/>
+            </reference>
+            <name value="Composition Birth Certificate (U.S. standard certificate of live birth - 2003 revision)"/>
+            <description value="Example of Composition Birth Certificate profile (U.S. standard certificate of live birth - 2003 revision)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-maternity-eve-everywoman"/></reference>
+            <name value="Encounter - Maternity (Eve Everywoman)"/>
+            <description value="Example of Encounter - Maternity profile (Eve Everywoman)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-birth-baby-everybaby"/></reference>
+            <name value="Encounter - Birth (Baby Everybaby)"/>
+            <description value="Example of Encounter - Birth profile (Baby Everybaby)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-salem-medical-center"/>
+                <display value="Salem Medical Center"/>
+            </reference>
+            <name value="US Core Organization (Salem Medical Center)"/>
+            <description value="Example of US Core Organization profile (Salem Medical Center)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-salem-medical-center"/>
+                <display value="Clinic Bldg A, Salem Medical Center"/>
+            </reference>
+            <name value="US Core Location (Clinic Bldg A, Salem Medical Center)"/>
+            <description value="Example of US Core Location profile (Clinic Bldg A, Salem Medical Center)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-fetal-presentation"/></reference>
+            <name value="Condition - Fetal Presentation (Vertex presentation (finding))"/>
+            <description value="Example of Condition - Fetal Presentation profile (Vertex presentation (finding))"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-1"/>
+                <display value="observation-cigarette-smoking-before-during-pregnancy-1"/>
+            </reference>
+            <name value="Observation - Cigarette Smoking Before/During Pregnancy (3 months prior)"/>
+            <description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the 3 months prior to pregnancy)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-2"/>
+                <display value="observation-cigarette-smoking-before-during-pregnancy-2"/>
+            </reference>
+            <name value="Observation - Cigarette Smoking Before/During Pregnancy (first 3 month)"/>
+            <description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the first 3 months of pregnancy)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-3"/>
+                <display value="observation-cigarette-smoking-before-during-pregnancy-3"/>
+            </reference>
+            <name value="Observation - Cigarette Smoking Before/During Pregnancy (second 3 months)"/>
+            <description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the second 3 months of pregnancy)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cigarette-smoking-before-during-pregnancy-4"/>
+                <display value="observation-cigarette-smoking-before-during-pregnancy-4"/>
+            </reference>
+            <name value="Observation - Cigarette Smoking Before/During Pregnancy (last 3 months)"/>
+            <description value="Example of Observation - Cigarette Smoking Before/During Pregnancy profile (Average number of cigarettes smoked per day in the last 3 months of pregnancy)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-date-of-first-prenatal-care-visit-eve-everywoman"/></reference>
+            <name value="Observation - Date of First Prenatal Care Visit"/>
+            <description value="Example of Observation - Date of First Prenatal Care Visit profile"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-infant-breastfed-at-discharge-baby-everybaby"/></reference>
+            <name value="Observation - Infant Breastfed at Discharge (true)"/>
+            <description value="Example of Observation - Infant Breastfed at Discharge profile (true)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge"/>
+            <groupingId value="examples-live-birth-newborn"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-general-city-hospital"/>
+                <display value="General City Hospital"/>
+            </reference>
+            <name value="US Core Location (General City Hospital)"/>
+            <description value="Example of US Core Location profile (General City Hospital) used for the name of facility mother transferred from for maternal or fetal indications for delivery."/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-planned-to-deliver-at-home-baby-everybaby"/></reference>
+            <name value="Observation - Planned to Deliver at Home (false)"/>
+            <description value="Example of Observation - Planned to Deliver at Home profile (false)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-received-wic-food-baby-everybaby"/></reference>
+            <name value="Observation - Mother Received WIC Food (true)"/>
+            <description value="Example of Observation - Mother Received WIC Food profile (true)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-ssn-requested-for-child-baby-everybaby"/></reference>
+            <name value="Observation - SSN Requested for Child (true)"/>
+            <description value="Example of Observation - SSN Requested for Child profile (true)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-fetus-fetus-everybaby"/></reference>
+            <name value="Patient - Fetus (Fetus Everybaby)"/>
+            <description value="Example of Patient - Fetus profile (Fetus Everybaby)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-everyfather"/></reference>
+            <name value="RelatedPerson - Father (Father Everyfather)"/>
+            <description value="Example of RelatedPerson - Father profile (Father Everyfather)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Father"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-eve-everywoman"/></reference>
+            <name value="RelatedPerson - Mother (Eve Everywoman)"/>
+            <description value="Example of RelatedPerson - Mother profile (Eve Everywoman)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Mother"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-infection-present-during-pregnancy"/>
+                <display value="ConditionInfectionPresentDuringPregnancy"/>
+            </reference>
+            <name value="Condition - Infection Present During Pregnancy"/>
+            <description value="This Condition profile represents infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record.&#xA;&#xA;**TODO**: Is this a value use of category?"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-infection-present-during-pregnancy-eve-everywoman"/></reference>
+            <name value="Condition - Infection Present During Pregnancy (Viral hepatitis type B)"/>
+            <description value="Example of Condition - Infection Present During Pregnancy profile (Viral hepatitis type B)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy"/>
+            <groupingId value="examples-live-birth-medical-health-information"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
+                <display value="Observation-characteristic-of-labor-and-delivery"/>
+            </reference>
+            <name value="Observation - Characteristic of Labor and Delivery"/>
+            <description value="This Observation profile represents any of a set of defined characteristics of labor and delivery.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-congenital-anomaly-of-newborn-baby-everybaby"/></reference>
+            <name value="Condition - Congenital Anomaly of Newborn (Anomaly of chromosome pair 21)"/>
+            <description value="Example: Condition - Congenital Anomaly of Newborn (Anomaly of chromosome pair 21)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
+            <groupingId value="examples-live-birth-newborn"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
+                <display value="ConditionCongenitalAnomalyOfNewborn"/>
+            </reference>
+            <name value="Condition - Congenital Anomaly of Newborn"/>
+            <description value="This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-baby-everybaby"/></reference>
+            <name value="Observation - Characteristic of Labor and Delivery (Augmentation of labor)"/>
+            <description value="Example of Observation - Characteristic of Labor and Delivery profile (Augmentation of labor)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
+            <groupingId value="examples-live-birth-medical-health-information"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-abnormal-condition-of-newborn"/>
+                <display value="Condition - Abnormal Condition of Newborn"/>
+            </reference>
+            <name value="Condition - Abnormal Condition of Newborn"/>
+            <description value="This Condition profile represents information about one or more disorders or significant morbidities experienced by the newborn."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-abnormal-condition-of-newborn-baby-everybaby"/></reference>
+            <name value="Condition - Abnormal Condition of Newborn (Seizure)"/>
+            <description value="Example of Condition - Abnormal Condition of Newborn profile (Seizure)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn"/>
+            <groupingId value="examples-live-birth-newborn"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-decedent-fetus"/>
+                <display value="Patient_Decedent_Fetus"/>
+            </reference>
+            <name value="Patient Decedent Fetus"/>
+            <description value="The fetus who is the subject of the fetal death report.&#xA;&#xA;Not based on US Core due to:&#xA;* US Core Requires name"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/>
+                <display value="Observation - Delivery Method Attempted Unsuccessful"/>
+            </reference>
+            <name value="Observation - Delivery Method Attempted Unsuccessful"/>
+            <description value="This Observation profile represents whether delivery methods were attempted but unsuccessful.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-delivery-method-attempted-unsuccessful-vacuum"/></reference>
+            <name value="Observation - Delivery Method Attempted Unsuccessful (Vacuum Delivery Unsuccessful - true))"/>
+            <description value="Example of Observation - Delivery Method Attempted Unsuccessful profile (Vacuum Delivery Unsuccessful - true)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/>
+            <groupingId value="examples-live-birth-medical-health-information"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-delivery-method-attempted-unsuccessful-forceps"/></reference>
+            <name value="Observation - Delivery Method Attempted Unsuccessful (Forceps Delivery Unsuccessful - false)"/>
+            <description value="Example of Observation - Delivery Method Attempted Unsuccessful profile (Forceps Delivery Unsuccessful - false)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/>
+            <groupingId value="examples-live-birth-medical-health-information"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-final-route-method-delivery"/>
+                <display value="Procedure - Final Route and Method of Delivery"/>
+            </reference>
+            <name value="Procedure - Final Route and Method of Delivery"/>
+            <description value="This profile represents the final route and method of delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-labor-trial-attempted"/>
+                <display value="Observation - Labor Trial Attempted"/>
+            </reference>
+            <name value="Observation - Labor Trial Attempted"/>
+            <description value="This Observation profile represents whether, in the case of a cesarean delivery, a trial of labor was attempted.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-labor-trial-attempted-baby-everybaby"/></reference>
+            <name value="Observation - Labor Trial Attempted (true)"/>
+            <description value="Example of Observation - Labor Trial Attempted profile (true)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/>
+            <groupingId value="examples-live-birth-medical-health-information"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-final-route-method-delivery-cesarean"/></reference>
+            <name value="Procedure - Final Route and Method of Delivery (Cesarean section)"/>
+            <description value="Example of Procedure - Final Route and Method of Delivery profile (Cesarean section)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
+            <groupingId value="examples-live-birth-medical-health-information"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-maternal-morbidity"/>
+                <display value="Condition - Maternal Morbidity"/>
+            </reference>
+            <name value="Condition - Maternal Morbidity"/>
+            <description value="This Condition profile represents whether the mother suffered from one or more of a list of recognized maternal morbidities during the labor and delivery process."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-relatedperson-mother"/>
+                <display value="Extension-relatedperson-mother"/>
+            </reference>
+            <name value="Extension - RelatedPerson Mother"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-relatedperson-father"/>
+                <display value="Extension - RelatedPerson Father"/>
+            </reference>
+            <name value="Extension - RelatedPerson Father"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+                <display value="Jurisdiction Live Birth Report"/>
+            </reference>
+            <name value="Composition - Jurisdiction Live Birth Report"/>
+            <description value="This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS.&#xA;&#xA;The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth.&#xA;&#xA;**TODO**&#xA;* Link to Birth certificate and Birth edit specs&#xA;* Consider adding a diagram here for the relationships"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
+                <display value="Jurisdiction Fetal Death Report"/>
+            </reference>
+            <name value="Composition - Jurisdiction Fetal Death Report"/>
+            <description value="This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to NCHS.&#xA;&#xA;The data requirements for jurisdictional reporting of fetal deaths are based on the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.&#xA;&#xA;**TODO**&#xA;* Link to specs&#xA;* Consider adding a diagram here for the relationships"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="fetal-death"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-provider-fetal-death-report"/>
+                <display value="Provider Fetal Death Report"/>
+            </reference>
+            <name value="Composition - Provider Fetal Death Report"/>
+            <description value="This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office.&#xA;For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the fetus is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdictional Vital Records Office at the same time (using this document) or separately (using the Provider Supplied Mother's Fetal Death Reporting Document and the Provider Supplied Facility Fetal Death Reporting Document).&#xA;The data requirements for provider supplied fetal death information are based on the U.S. Standard Report of Fetal Death, the 2004 US Standard Facility Worksheet for the Report of Fetal Death, and the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.&#xA;The 1992 Revision of the Model State Vital Statistics Act and Regulations recommends the following definition of fetal death:&#xA;&quot;Fetal death&quot; means death prior to the complete expulsion or extraction from its mother of a product of human conception, irrespective of the duration of pregnancy and which is not an induced termination of pregnancy. The death is indicated by the fact that after such expulsion or extraction, the fetus does not breathe or show any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of voluntary muscles. Heartbeats are to be distinguished from transient cardiac contractions; respirations are to be distinguished from fleeting respiratory efforts or gasps.&#xA;&#xA;&#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="fetal-death-compositions-ehr-jvr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-provider-live-birth-report"/>
+                <display value="Provider Live Birth Report"/>
+            </reference>
+            <name value="Composition - Provider Live Birth Report"/>
+            <description value="This Composition profile defines constraints to address the use case in which information for live birth information to be recorded and communicated to the jurisdicational Vital Records Office.&#xA;&#xA;For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdiction vital records office at the same time (using this Composition) or separately (using Composition - Provider Supplied Mother's Live Birth Report and Composition - Provider Supplied Facility Live Birth Report).&#xA;&#xA;The data requirements for provider supplied live birth information are based on the Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth, the 2016 US Standard Facility Worksheet for the Live Birth Certificate, the 2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births, and the 2016 US Standard Mothers Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.&#xA; &#xA;&#xA;&#xA;"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-compositions-ehr-jvr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-provider-mothers-live-birth-report"/>
+                <display value="Composition - Provider Supplied Mother's Live Birth Report"/>
+            </reference>
+            <name value="Composition - Provider Supplied Mother's Live Birth Report"/>
+            <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Mother's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office.&#xA;        &#xA;The data requirements for live birth mother's information are based on the Mother's Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level. &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-compositions-ehr-jvr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-provider-facility-live-birth-report"/>
+                <display value="Composition - Provider Supplied Facility Live Birth Facility Report"/>
+            </reference>
+            <name value="Composition - Provider Supplied Facility Live Birth Facility Report"/>
+            <description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and the condition of the newborn collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="live-birth-compositions-ehr-jvr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-provider-mothers-fetal-death-report"/>
+                <display value="Composition - Provider Supplied Mother's Fetal Death Report"/>
+            </reference>
+            <name value="Composition - Provider Supplied Mother's Fetal Death Report"/>
+            <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Patient's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office.&#xA;        &#xA;        The data requirements for fetal death mother's information are based on the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit  specifications that will be addressed at the jurisdictional level. &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="fetal-death-compositions-ehr-jvr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-provider-facility-fetal-death-report"/>
+                <display value="Composition - Provider Supplied Facility Fetal Death Report"/>
+            </reference>
+            <name value="Composition - Provider Supplied Facility Fetal Death Report"/>
+            <description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and relevant information for the fetus collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. &#xA;&#xA;**TODO**&#xA;&#xA;Consider adding a diagram here for the relationships"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="fetal-death-compositions-ehr-jvr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-newborn-unknown-name"/></reference>
+            <name value="Patient - Newborn (Unknown Name)"/>
+            <description value="Example of Patient - Newborn profile (Unknown Name)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>

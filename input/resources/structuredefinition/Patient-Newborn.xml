@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-Newborn"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-07-27T01:50:40.311+00:00"/>
-        <source value="#f6LOoVzDMoWyGnhR"/>
+        <versionId value="15"/>
+        <lastUpdated value="2020-07-27T04:05:55.888+00:00"/>
+        <source value="#90KvsCPHKhXc3S0z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
     <version value="1.0.0"/>
@@ -41,6 +41,29 @@
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.name.family">
+            <path value="Patient.name.family"/>
+        </element>
+        <element id="Patient.name.family.extension">
+            <path value="Patient.name.family.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Patient.name.family.extension:sliceDataAbsentReason">
+            <path value="Patient.name.family.extension"/>
+            <sliceName value="sliceDataAbsentReason"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
             </type>
             <mustSupport value="true"/>
         </element>
