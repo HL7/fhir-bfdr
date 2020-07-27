@@ -1,3 +1,0 @@
-The subject of the Composition is the [Patient Newborn](http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn) and it references the [Encounter - Birth](http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth). 
-
-The newborn's mother's [Encounter - Maternity](http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity) is referenced in the Encounter.partOf element of the [Encounter - Birth](http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth).

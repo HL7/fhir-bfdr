@@ -12,13 +12,13 @@ Project Need: To continue support of interoperability among public health system
 <thead>
 <tr>
 <th>Name</th>
-<th>Email</th>
+<th>Email/URL</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>HL7 International - Public Health</td>
-<td></td>
+<td><a href="http://www.hl7.org/Special/committees/pher" target="_new">http://www.hl7.org/Special/committees/pher</a></td>
 </tr>
 </tbody>
 </table>

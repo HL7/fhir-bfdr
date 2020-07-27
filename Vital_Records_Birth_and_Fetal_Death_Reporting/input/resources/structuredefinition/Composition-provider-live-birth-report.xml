@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Composition-provider-live-birth-report"/>
+    <meta>
+        <versionId value="12"/>
+        <lastUpdated value="2020-07-24T19:13:49.324+00:00"/>
+        <source value="#PP3eOyYYdCEmSDhW"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
+    <version value="1.0.0"/>
+    <name value="CompositionProviderLiveBirthReport"/>
+    <title value="Composition - Provider Live Birth Report"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Composition profile defines constraints to address the use case in which information for live birth information to be recorded and communicated to the jurisdicational Vital Records Office.&#xA;&#xA;For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdiction vital records office at the same time (using this Composition) or separately (using Composition - Provider Supplied Mother's Live Birth Report and Composition - Provider Supplied Facility Live Birth Report).&#xA;&#xA;The data requirements for provider supplied live birth information are based on the Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth, the 2016 US Standard Facility Worksheet for the Live Birth Certificate, the 2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births, and the 2016 US Standard Mothers Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.&#xA; &#xA;&#xA;&#xA;"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.extension">
+            <path value="Composition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.extension:extensionRelatedPersonMother">
+            <path value="Composition.extension"/>
+            <sliceName value="extensionRelatedPersonMother"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-relatedperson-mother"/>
+            </type>
+        </element>
+        <element id="Composition.extension:extensionRelatedPersonFather">
+            <path value="Composition.extension"/>
+            <sliceName value="extensionRelatedPersonFather"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-relatedperson-father"/>
+            </type>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
+            </type>
+        </element>
+        <element id="Composition.encounter">
+            <path value="Composition.encounter"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:slicePregnancy">
+            <path value="Composition.section"/>
+            <sliceName value="slicePregnancy"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry">
+            <path value="Composition.section.entry"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.focus">
+            <path value="Composition.section.focus"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceFirstPrenatalCareVisit">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceFirstPrenatalCareVisit"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceNumberPrenatalCareVisits">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceNumberPrenatalCareVisits"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceMotherGetWICFood">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceMotherGetWICFood"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceNumberNowLiving">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceNumberNowLiving"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceNumberNowDead">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceNumberNowDead"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceDateLastLiveBirth">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceDateLastLiveBirth"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceNumberOtherOutcomes">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceNumberOtherOutcomes"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceDateLastOtherOutcome">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceDateLastOtherOutcome"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceCigaretteSmoking">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceCigaretteSmoking"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            </type>
+        </element>
+        <element id="Composition.section:slicePregnancy.entry:sliceDateLastNormalMenses">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceDateLastNormalMenses"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:sliceLaborAndDelivery">
+            <path value="Composition.section"/>
+            <sliceName value="sliceLaborAndDelivery"/>
+        </element>
+        <element id="Composition.section:sliceLaborAndDelivery.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:sliceLaborAndDelivery.entry:sliceTest">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceTest"/>
+        </element>
+        <element id="Composition.section:sliceNewbornDelivery">
+            <path value="Composition.section"/>
+            <sliceName value="sliceNewbornDelivery"/>
+        </element>
+        <element id="Composition.section:sliceMothersInformation">
+            <path value="Composition.section"/>
+            <sliceName value="sliceMothersInformation"/>
+        </element>
+        <element id="Composition.section:sliceFathersInformation">
+            <path value="Composition.section"/>
+            <sliceName value="sliceFathersInformation"/>
+        </element>
+        <element id="Composition.section:sliceNewbornInformation">
+            <path value="Composition.section"/>
+            <sliceName value="sliceNewbornInformation"/>
+        </element>
+        <element id="Composition.section:sliceMothersVitalSigns">
+            <path value="Composition.section"/>
+            <sliceName value="sliceMothersVitalSigns"/>
+        </element>
+    </differential>
+</StructureDefinition>

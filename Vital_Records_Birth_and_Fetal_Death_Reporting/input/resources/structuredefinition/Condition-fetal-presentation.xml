@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-fetal-presentation"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2020-07-12T00:13:08.818+00:00"/>
-        <source value="#xFXC8epixhdFKse3"/>
+        <versionId value="18"/>
+        <lastUpdated value="2020-07-21T23:30:11.946+00:00"/>
+        <source value="#w3DeIrGPxYy6yjcS"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Condition profile represents the fetal presentation at birth/delivery."/>
+    <description value="This Condition profile represents the fetal presentation (orientation within the mother's womb) of a fetus prior to delivery/birth."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -46,7 +46,8 @@
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
-            <short value="Fetal presentation at delivery"/>
+            <short value="Fetal presentation at birth/delivery"/>
+            <definition value="The presentation (orientation within the mother's womb) that a fetus may be in prior to delivery/birth."/>
             <binding>
                 <strength value="extensible"/>
                 <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7113"/>
