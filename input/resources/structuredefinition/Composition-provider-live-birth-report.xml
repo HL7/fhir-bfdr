@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-07-27T01:41:10.839+00:00"/>
-        <source value="#DFqvNJq1NhZIq0yA"/>
+        <versionId value="19"/>
+        <lastUpdated value="2020-07-27T02:17:15.884+00:00"/>
+        <source value="#q247yTAILefmBB83"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -195,9 +195,53 @@
             <path value="Composition.section"/>
             <sliceName value="sliceMothersInformation"/>
         </element>
+        <element id="Composition.section:sliceMothersInformation.focus">
+            <path value="Composition.section.focus"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:sliceMothersInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:sliceMothersInformation.entry:sliceEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceEducation"/>
+        </element>
         <element id="Composition.section:sliceFathersInformation">
             <path value="Composition.section"/>
             <sliceName value="sliceFathersInformation"/>
+        </element>
+        <element id="Composition.section:sliceFathersInformation.focus">
+            <path value="Composition.section.focus"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Father"/>
+            </type>
+        </element>
+        <element id="Composition.section:sliceFathersInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:sliceFathersInformation.entry:sliceEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceEducation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:sliceNewbornInformation">
             <path value="Composition.section"/>
@@ -206,6 +250,13 @@
         <element id="Composition.section:sliceMothersVitalSigns">
             <path value="Composition.section"/>
             <sliceName value="sliceMothersVitalSigns"/>
+        </element>
+        <element id="Composition.section:sliceMothersVitalSigns.focus">
+            <path value="Composition.section.focus"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>
