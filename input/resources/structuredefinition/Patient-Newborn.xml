@@ -47,14 +47,6 @@
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
         </element>
-        <element id="Patient.deceased[x]">
-            <path value="Patient.deceased[x]"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Patient.multipleBirth[x]">
-            <path value="Patient.multipleBirth[x]"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Patient.birthDate.extension:birthTime">
             <path value="Patient.birthDate.extension"/>
             <sliceName value="birthTime"/>
@@ -64,6 +56,14 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-birthTime"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.deceased[x]">
+            <path value="Patient.deceased[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.multipleBirth[x]">
+            <path value="Patient.multipleBirth[x]"/>
             <mustSupport value="true"/>
         </element>
     </differential>
