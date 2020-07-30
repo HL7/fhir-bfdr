@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="254"/>
-        <lastUpdated value="2020-07-27T06:12:28.059+00:00"/>
-        <source value="#Qv9RZO2gMUU7IPpr"/>
+        <versionId value="255"/>
+        <lastUpdated value="2020-07-27T07:29:28.761+00:00"/>
+        <source value="#7xX4Owc9PzzJEBBT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -516,34 +516,6 @@
             <description value="The fetus who is the subject of the fetal death report.&#xA;&#xA;Not based on US Core due to:&#xA;* US Core Requires name"/>
             <exampleBoolean value="false"/>
             <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/>
-                <display value="Observation - Delivery Method Attempted Unsuccessful"/>
-            </reference>
-            <name value="Observation - Delivery Method Attempted Unsuccessful"/>
-            <description value="This Observation profile represents whether delivery methods were attempted but unsuccessful.&#xA;&#xA;***Reason for not basing on US Core - no suitable Observation profile.***"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="live-birth-fetal-death"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-delivery-method-attempted-unsuccessful-vacuum"/></reference>
-            <name value="Observation - Delivery Method Attempted Unsuccessful (Vacuum Delivery Unsuccessful - true))"/>
-            <description value="Example of Observation - Delivery Method Attempted Unsuccessful profile (Vacuum Delivery Unsuccessful - true)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/>
-            <groupingId value="examples-live-birth-medical-health-information"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-delivery-method-attempted-unsuccessful-forceps"/></reference>
-            <name value="Observation - Delivery Method Attempted Unsuccessful (Forceps Delivery Unsuccessful - false)"/>
-            <description value="Example of Observation - Delivery Method Attempted Unsuccessful profile (Forceps Delivery Unsuccessful - false)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-delivery-method-attempted-unsuccessful"/>
-            <groupingId value="examples-live-birth-medical-health-information"/>
         </resource>
         <resource>
             <reference>
