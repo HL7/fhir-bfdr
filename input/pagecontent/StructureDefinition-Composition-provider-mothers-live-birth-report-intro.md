@@ -1,0 +1,5 @@
+ The data requirements for live birth mother's information are based on the Mother's Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level. 
+
+**TODO**
+
+Consider adding a diagram here for the relationships

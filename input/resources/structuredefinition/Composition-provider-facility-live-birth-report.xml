@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-facility-live-birth-report"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-30T03:30:02.572+00:00"/>
-        <source value="#VAa0d7hoQillEOUF"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-07-30T06:29:04.828+00:00"/>
+        <source value="#EvJUIppq4TuQhObr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
     <version value="1.0.0"/>
@@ -14,13 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and the condition of the newborn collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office.
-        
-        For detailed definitions, instructions, information on sources, and common key words and abbreviations please see 'The Guide to Completing Facility Worksheets for the Certificate of Live Birth'. 
-        
-        All birth certificate information reported for the mother should be for the woman who delivered the infant. In cases of surrogacy or gestational carrier, the information reported should be that for the surrogate or the gestaional carrier, that is **the woman who delivered the infant**. (TODO: Add link) 
-        
-        Data Sources include: Prenatal care records, mother's medical records, labor and delivery records, and newborn's medical records."/>
+    <description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and the condition of the newborn collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -168,8 +162,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
-        
         <element id="Composition.section:sliceLaborAndDelivery">
             <path value="Composition.section"/>
             <sliceName value="sliceLaborAndDelivery"/>
