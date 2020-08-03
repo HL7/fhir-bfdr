@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="265"/>
-        <lastUpdated value="2020-08-03T06:30:21.052+00:00"/>
-        <source value="#muf1XGSIgkphoamV"/>
+        <versionId value="275"/>
+        <lastUpdated value="2020-08-03T09:57:39.008+00:00"/>
+        <source value="#XwbH7zpgFr9uSGe2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -33,11 +33,6 @@
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="3.1.0"/>
-    </dependsOn>
-    <dependsOn>
-        <uri value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
-        <packageId value="hl7.fhir.us.fhir-vr-common-ig"/>
-        <version value="1.0.0"/>
     </dependsOn>
     <definition>
         <grouping id="participants">
@@ -194,8 +189,7 @@
                 <reference value="Patient/patient-mother-eve-everywoman"/></reference>
             <name value="Patient - Mother (Eve Everywoman)"/>
             <description value="Example of Patient - Mother profile (Eve Everywoman)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -213,8 +207,7 @@
                 <reference value="Patient/patient-newborn-baby-everybaby"/></reference>
             <name value="Patient - Baby (Baby Everybaby)"/>
             <description value="Example of Patient - Newborn profile (Baby Everybaby)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -377,24 +370,21 @@
                 <reference value="Patient/patient-fetus-fetus-everybaby"/></reference>
             <name value="Patient - Fetus (Fetus Everybaby)"/>
             <description value="Example of Patient - Fetus profile (Fetus Everybaby)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-father-everyfather"/></reference>
             <name value="RelatedPerson - Father (Father Everyfather)"/>
             <description value="Example of RelatedPerson - Father profile (Father Everyfather)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Father"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-eve-everywoman"/></reference>
             <name value="RelatedPerson - Mother (Eve Everywoman)"/>
             <description value="Example of RelatedPerson - Mother profile (Eve Everywoman)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/RelatedPerson-Mother"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -622,8 +612,7 @@
                 <reference value="Patient/patient-newborn-unknown-name"/></reference>
             <name value="Patient - Newborn (Unknown Name)"/>
             <description value="Example of Patient - Newborn profile (Unknown Name)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -633,6 +622,16 @@
                 <nameUrl value="use_cases.html"/>
                 <title value="Use Cases"/>
                 <generation value="markdown"/>
+                <page>
+                    <nameUrl value="provider_supplied_facility_live_birth_report.html"/>
+                    <title value="Provider Supplied Facility Live Birth Report"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="provider_supplied_facility_fetal_death_report.html"/>
+                    <title value="Provider Supplied Facility Fetal Death Report"/>
+                    <generation value="markdown"/>
+                </page>
             </page>
         </page>
         <parameter>
