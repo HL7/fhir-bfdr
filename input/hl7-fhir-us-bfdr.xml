@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="258"/>
-        <lastUpdated value="2020-07-30T06:37:54.750+00:00"/>
-        <source value="#6stErulvNtVaWwJp"/>
+        <versionId value="265"/>
+        <lastUpdated value="2020-08-03T06:30:21.052+00:00"/>
+        <source value="#muf1XGSIgkphoamV"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -33,6 +33,11 @@
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="3.1.0"/>
+    </dependsOn>
+    <dependsOn>
+        <uri value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
+        <packageId value="hl7.fhir.us.fhir-vr-common-ig"/>
+        <version value="1.0.0"/>
     </dependsOn>
     <definition>
         <grouping id="participants">
@@ -77,16 +82,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Patient-Newborn"/>
-                <display value="Patient Newborn"/>
-            </reference>
-            <name value="Patient Newborn"/>
-            <description value="The newborn who is the subject of the live birth report."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Encounter-Maternity"/>
                 <display value="Encounter - Maternity"/>
             </reference>
@@ -94,36 +89,6 @@
             <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-fetal-death"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-Mother"/>
-                <display value="Patient Mother"/>
-            </reference>
-            <name value="Patient Mother"/>
-            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-Father"/>
-                <display value="RelatedPerson Father"/>
-            </reference>
-            <name value="RelatedPerson Father"/>
-            <description value="The biological father of the newborn or fetus."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RelatedPerson-Mother"/>
-                <display value="RelatedPerson Mother"/>
-            </reference>
-            <name value="RelatedPerson Mother"/>
-            <description value="The woman who gave birth to, or delivered the infant. The RelatedPerson structure is required in order to link the mother to the newborn or fetus."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
@@ -506,16 +471,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn"/>
             <groupingId value="examples-live-birth-newborn"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Patient-decedent-fetus"/>
-                <display value="Patient_Decedent_Fetus"/>
-            </reference>
-            <name value="Patient Decedent Fetus"/>
-            <description value="The fetus who is the subject of the fetal death report."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
         </resource>
         <resource>
             <reference>
