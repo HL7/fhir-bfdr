@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-07-30T06:30:15.923+00:00"/>
-        <source value="#IXKr97jzLHlXFMA9"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-05T04:50:54.514+00:00"/>
+        <source value="#CP2wzO9gguBda0F1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -37,14 +37,14 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Newborn"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
             </type>
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
             </type>
             <mustSupport value="true"/>
         </element>

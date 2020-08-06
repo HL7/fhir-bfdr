@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-facility-live-birth-report"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-07-30T07:16:25.464+00:00"/>
-        <source value="#kvAuM4gW5ix3TAwX"/>
+        <versionId value="13"/>
+        <lastUpdated value="2020-08-05T07:11:21.090+00:00"/>
+        <source value="#7gZPvJaYh4okjWnT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
     <version value="1.0.0"/>
@@ -37,15 +37,11 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
             </type>
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
-            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section">
@@ -68,7 +64,7 @@
             <path value="Composition.section.focus"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-Mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Composition.section:slicePrenatal.entry">

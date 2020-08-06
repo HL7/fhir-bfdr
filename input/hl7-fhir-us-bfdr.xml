@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="276"/>
-        <lastUpdated value="2020-08-03T10:22:37.989+00:00"/>
-        <source value="#z3zuyWD4WRsLsTqm"/>
+        <versionId value="306"/>
+        <lastUpdated value="2020-08-05T21:49:08.477+00:00"/>
+        <source value="#9jMSXbhQGyIIcE9P"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -70,26 +70,6 @@
             <name value="Examples - Live Birth: Newborn"/>
             <description value="Concepts contained in the Live Birth: Newborn section of the U.S. Standard Certificate of Live Birth (rev. 2003)."/>
         </grouping>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Encounter-Birth"/>
-                <display value="Encounter - Birth"/>
-            </reference>
-            <name value="Encounter - Birth"/>
-            <description value="This Encounter profile represents the child's birth encounter. This Encounter can reference the mother's maternity encounter using the partOf data element."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="live-birth"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Encounter-Maternity"/>
-                <display value="Encounter - Maternity"/>
-            </reference>
-            <name value="Encounter - Maternity"/>
-            <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="live-birth-fetal-death"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-ssn-requested-for-child"/>
@@ -243,8 +223,7 @@
                 <reference value="Encounter/encounter-maternity-eve-everywoman"/></reference>
             <name value="Encounter - Maternity (Eve Everywoman)"/>
             <description value="Example of Encounter - Maternity profile (Eve Everywoman)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Maternity"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -252,7 +231,7 @@
             <name value="Encounter - Birth (Baby Everybaby)"/>
             <description value="Example of Encounter - Birth profile (Baby Everybaby)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-Birth"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
         </resource>
         <resource>
             <reference>
@@ -375,20 +354,6 @@
                 <reference value="Patient/patient-fetus-fetus-everybaby"/></reference>
             <name value="Patient - Fetus (Fetus Everybaby)"/>
             <description value="Example of Patient - Fetus profile (Fetus Everybaby)"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/relatedperson-father-everyfather"/></reference>
-            <name value="RelatedPerson - Father (Father Everyfather)"/>
-            <description value="Example of RelatedPerson - Father profile (Father Everyfather)"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/relatedperson-eve-everywoman"/></reference>
-            <name value="RelatedPerson - Mother (Eve Everywoman)"/>
-            <description value="Example of RelatedPerson - Mother profile (Eve Everywoman)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -618,6 +583,45 @@
             <name value="Patient - Newborn (Unknown Name)"/>
             <description value="Example of Patient - Newborn profile (Unknown Name)"/>
             <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Encounter-birth"/>
+                <display value="Encounter - Birth"/>
+            </reference>
+            <name value="Encounter - Birth"/>
+            <description value="This Encounter profile represents the child's birth encounter. This Encounter can reference the mother's maternity encounter using the partOf data element."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-eve-everywoman"/></reference>
+            <name value="Example"/>
+            <description value="Example"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-everyfather"/></reference>
+            <name value="Example"/>
+            <description value="Example"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/></reference>
+            <name value="Example"/>
+            <description value="Example"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Encounter-maternity"/>
+                <display value="Encounter - Maternity"/>
+            </reference>
+            <name value="Encounter - Maternity"/>
+            <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
