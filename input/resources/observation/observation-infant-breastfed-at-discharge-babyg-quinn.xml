@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-infant-breastfed-at-discharge-babyg-quinn"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="73756-9"/>
+            <display value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"/>
+        </coding>
+        <text value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <issued value="2019-02-15T09:45:00-07:00"/>
+    <valueBoolean value="true"/>
+</Observation>

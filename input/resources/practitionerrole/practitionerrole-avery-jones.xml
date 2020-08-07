@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="practitionerrole-avery-jones"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+    </meta>
+    <identifier>
+        <system value="http://hl7.org/fhir/sid/us-npi"/>
+        <value value="112247003"/>
+    </identifier>
+    <practitioner>
+        <reference value="Practitioner/practitioner-us-core-avery-jones"/>
+        <display value="Avery Jones, MD"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/organization-south-hospital"/>
+        <display value="South Hospital"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="261QP2300X"/>
+            <display value="Primary Care"/>
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="419772000"/>
+            <display value="Family Practice"/>
+        </coding>
+    </specialty>
+    <location>
+        <reference value="Location/location-south-hospital"/>
+        <display value="South Hospital"/>
+    </location>
+    <telecom>
+        <system value="email"/>
+        <value value="avery.jones@example.com"/>
+    </telecom>
+</PractitionerRole>

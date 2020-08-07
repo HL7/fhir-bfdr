@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="306"/>
-        <lastUpdated value="2020-08-05T21:49:08.477+00:00"/>
-        <source value="#9jMSXbhQGyIIcE9P"/>
+        <versionId value="311"/>
+        <lastUpdated value="2020-08-07T00:59:58.858+00:00"/>
+        <source value="#K75YhqsxWsjGUCzR"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -596,23 +596,26 @@
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-eve-everywoman"/></reference>
-            <name value="Example"/>
-            <description value="Example"/>
-            <exampleBoolean value="true"/>
+            <name value="RelatedPerson - Mother (Eve Everywoman)"/>
+            <description value="Example of RelatedPerson-mother profile (Eve Everywoman)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-mother"/>
         </resource>
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-father-everyfather"/></reference>
-            <name value="Example"/>
-            <description value="Example"/>
-            <exampleBoolean value="true"/>
+            <name value="RelatedPerson - Father (Father Everyfather)"/>
+            <description value="Example of RelatedPerson-father profile (Father Everyfather)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father"/>
         </resource>
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/></reference>
-            <name value="Example"/>
-            <description value="Example"/>
-            <exampleBoolean value="true"/>
+            <name value="RelatedPerson - Mother (Jada Ann Quinn)"/>
+            <description value="Example of RelatedPerson-mother profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-mother"/>
         </resource>
         <resource>
             <reference>
@@ -622,6 +625,24 @@
             <name value="Encounter - Maternity"/>
             <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-mother-jada-ann-quinn"/></reference>
+            <name value="Patient - Mother (Eve Everywoman)"/>
+            <description value="Example of Patient-mother profile (Eve Everywoman)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Patient-mother"/>
+                <display value="PatientMother"/>
+            </reference>
+            <name value="Patient - Mother"/>
+            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="participants"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

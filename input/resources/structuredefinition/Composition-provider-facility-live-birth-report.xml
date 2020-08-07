@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-facility-live-birth-report"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2020-08-06T07:41:07.484+00:00"/>
-        <source value="#KRUrL0fbS62Qpljl"/>
+        <versionId value="23"/>
+        <lastUpdated value="2020-08-06T07:47:26.613+00:00"/>
+        <source value="#Qac23n7z5zu56kDW"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
     <version value="1.0.0"/>
@@ -62,6 +62,8 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <short value="The Composition is broken into sections that align with the sections in the Facility Worksheet for the Live Birth Certificate."/>
+            <definition value="The Composition is broken into sections that align with the sections in the Facility Worksheet for the Live Birth Certificate. The sections are Prenatal, Labor and Delivery, and Newborn. The data at the start of the worksheet is contained in various locations in the Composition, such as the Patient and Encounter profiles."/>
         </element>
         <element id="Composition.section:prenatal">
             <path value="Composition.section"/>

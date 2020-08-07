@@ -1,38 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient
     xmlns="http://hl7.org/fhir">
-    <id value="patient-newborn-baby-everybaby"/>
+    <id value="patient-mother-jada-ann-quinn"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-03T22:12:29.824+00:00"/>
-        <source value="#xNPMWTwx6QX9qEyX"/>
-        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-07T00:43:54.562+00:00"/>
+        <source value="#06bOurBqV4jlabaj"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">Baby B 
-                
-                
-                <b>EVERYBABY </b>
-            </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Identifier</td>
-                        <td>9932702</td>
-                    </tr>
-                    <tr>
-                        <td>Date of birth</td>
-                        <td>
-                            <span>07 June 2020</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="ombCategory">
             <valueCoding>
@@ -70,18 +45,31 @@
             </coding>
         </type>
         <system value="http://hospital.smarthealthit.org"/>
-        <value value="9932702"/>
+        <value value="1032702"/>
     </identifier>
     <active value="true"/>
     <name>
-        <family value="Everybaby"/>
-        <given value="Baby"/>
-        <given value="B"/>
+        <use value="official"/>
+        <family value="Quinn"/>
+        <given value="Jada"/>
+        <given value="Ann"/>
     </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="1-(404)555-1212"/>
+        <use value="home"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="jadaann.quinn@example.com"/>
+    </telecom>
     <gender value="female"/>
-    <birthDate value="2019-12-02">
-        <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-            <valueDateTime value="2019-12-02T13:00:00-07:00"/>
-        </extension>
-    </birthDate>
+    <birthDate value="1974-11-24"/>
+    <address>
+        <line value="1875 West Morton Avenue"/>
+        <city value="Salt Lake City"/>
+        <state value="UT"/>
+        <postalCode value="84116"/>
+        <country value="US"/>
+    </address>
 </Patient>

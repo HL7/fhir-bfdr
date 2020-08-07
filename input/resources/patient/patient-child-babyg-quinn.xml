@@ -1,38 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient
     xmlns="http://hl7.org/fhir">
-    <id value="patient-newborn-baby-everybaby"/>
+    <id value="patient-child-babyg-quinn"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-03T22:12:29.824+00:00"/>
-        <source value="#xNPMWTwx6QX9qEyX"/>
         <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">Baby B 
-                
-                
-                <b>EVERYBABY </b>
-            </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Identifier</td>
-                        <td>9932702</td>
-                    </tr>
-                    <tr>
-                        <td>Date of birth</td>
-                        <td>
-                            <span>07 June 2020</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="ombCategory">
             <valueCoding>
@@ -74,9 +46,9 @@
     </identifier>
     <active value="true"/>
     <name>
-        <family value="Everybaby"/>
+        <family value="Quinn"/>
         <given value="Baby"/>
-        <given value="B"/>
+        <given value="G"/>
     </name>
     <gender value="female"/>
     <birthDate value="2019-12-02">
@@ -84,4 +56,11 @@
             <valueDateTime value="2019-12-02T13:00:00-07:00"/>
         </extension>
     </birthDate>
+    <address>
+        <line value="1875 West Morton Avenue"/>
+        <city value="Salt Lake City"/>
+        <state value="UT"/>
+        <postalCode value="84116"/>
+        <country value="US"/>
+    </address>
 </Patient>

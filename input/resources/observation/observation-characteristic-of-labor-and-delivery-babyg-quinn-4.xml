@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="73813-8"/>
+            <display value="Characteristics of labor and delivery [US Standard Certificate of Live Birth]"/>
+        </coding>
+        <text value="Characteristics of labor and delivery"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+        <display value="Jada Ann Quinn"/>
+    </focus>
+    <issued value="2019-02-12T09:34:30-07:00"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="231064003"/>
+            <display value="Epidural or spinal anesthesia"/>
+        </coding>
+        <text value="Epidural or spinal anesthesia"/>
+    </valueCodeableConcept>
+</Observation>

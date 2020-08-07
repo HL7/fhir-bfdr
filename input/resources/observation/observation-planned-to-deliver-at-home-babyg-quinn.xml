@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-planned-to-deliver-at-home-babyg-quinn"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="73765-0"/>
+            <display value="Mother Planned to deliver at home [US Standard Certificate of Live Birth]"/>
+        </coding>
+        <text value="Planned to deliver at home?"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+        <display value="Jada Ann Quinn"/>
+    </focus>
+    <issued value="2019-02-11T20:02:00-07:00"/>
+    <valueBoolean value="true"/>
+</Observation>
