@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="311"/>
-        <lastUpdated value="2020-08-07T00:59:58.858+00:00"/>
-        <source value="#K75YhqsxWsjGUCzR"/>
+        <versionId value="331"/>
+        <lastUpdated value="2020-08-07T05:12:50.641+00:00"/>
+        <source value="#hqemZGXRZb7DI1YJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -62,6 +62,10 @@
         <grouping id="live-birth-fetal-death">
             <name value="Live Birth &amp; Fetal Death"/>
             <description value="Profiles included in both the live birth and fetal death data flows."/>
+        </grouping>
+        <grouping id="examples-test-data-live-birth-facility-worksheet">
+            <name value="Examples - Based on Test Data for Live Birth Facility Worksheet"/>
+            <description value="See: [Live Birth Facility Worksheet data element Google sheet](https://docs.google.com/spreadsheets/d/1bG1EkFnyHZGIdSNJe62R59dF6KXUf8kLUVVJtUlhvbo/edit?usp=sharing)"/>
         </grouping>
         <grouping id="examples-live-birth-medical-health-information">
             <name value="Examples - Live Birth: Medical and Health Information"/>
@@ -223,7 +227,8 @@
                 <reference value="Encounter/encounter-maternity-eve-everywoman"/></reference>
             <name value="Encounter - Maternity (Eve Everywoman)"/>
             <description value="Example of Encounter - Maternity profile (Eve Everywoman)"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
         </resource>
         <resource>
             <reference>
@@ -598,24 +603,21 @@
                 <reference value="RelatedPerson/relatedperson-eve-everywoman"/></reference>
             <name value="RelatedPerson - Mother (Eve Everywoman)"/>
             <description value="Example of RelatedPerson-mother profile (Eve Everywoman)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-mother"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-father-everyfather"/></reference>
             <name value="RelatedPerson - Father (Father Everyfather)"/>
             <description value="Example of RelatedPerson-father profile (Father Everyfather)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/></reference>
             <name value="RelatedPerson - Mother (Jada Ann Quinn)"/>
             <description value="Example of RelatedPerson-mother profile (Jada Ann Quinn)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-mother"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -631,18 +633,121 @@
                 <reference value="Patient/patient-mother-jada-ann-quinn"/></reference>
             <name value="Patient - Mother (Eve Everywoman)"/>
             <description value="Example of Patient-mother profile (Eve Everywoman)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Patient-mother"/>
-                <display value="PatientMother"/>
+                <reference value="Patient/patient-child-babyg-quinn"/></reference>
+            <name value="Patient - Child (Baby G Quinn)"/>
+            <description value="Example of Patient-child profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"/></reference>
+            <name value="Condition - Infection Present During Pregnancy (Jada Ann Quinn)"/>
+            <description value="Example of Condition-infection-present-during-pregnancy profile (Jada Ann Quinn"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-abnormal-condition-of-newborn-babyg-quinn"/></reference>
+            <name value="Condition-abnormal-condition-of-newborn (Baby G Quinn)"/>
+            <description value="Example of Condition-abnormal-condition-of-newborn (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-maternity-jada-ann-quinn"/></reference>
+            <name value="Encounter - Maternity (Jada Ann Quinn)"/>
+            <description value="Example of Encounter-maternity profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-birth-babyg-quinn"/></reference>
+            <name value="Encounter-birth (Baby G Quinn)"/>
+            <description value="Example of Encounter-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/location-south-hospital"/>
+                <display value="South Hospital"/>
             </reference>
-            <name value="Patient - Mother"/>
-            <description value="This Patient profile represents the woman who gave birth to, or delivered the infant."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="participants"/>
+            <name value="Location (South Hospital)"/>
+            <description value="Example of US Core Location (South Hospital)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/></reference>
+            <name value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Induction of labor)"/>
+            <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Induction of labor)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-2"/></reference>
+            <name value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Antibiotics received during labor)"/>
+            <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Antibiotics received during labor)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-1"/></reference>
+            <name value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Chorioamnionitis)"/>
+            <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Chorioamnionitis)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/></reference>
+            <name value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Epidural or spinal anesthesia)"/>
+            <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Epidural or spinal anesthesia)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/></reference>
+            <name value="Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)"/>
+            <description value="Example of Observation-date-of-first-prenatal-care-visit (Jada Ann Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/></reference>
+            <name value="Observation - Infant Breastfed at Discharge (Baby G Quinn)"/>
+            <description value="Example of Observation-infant-breastfed-at-discharge profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-labor-trial-attempted-babyg-quinn"/></reference>
+            <name value="Observation - Labor Trial Attempted (Baby G Quinn)"/>
+            <description value="Example of Observation-labor-trial-attempted profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-planned-to-deliver-at-home-babyg-quinn"/></reference>
+            <name value="Observation - Planned to Deliver at Home (Baby G Quinn)"/>
+            <description value="Example of Observation - Planned to Deliver at Home profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
