@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="380"/>
-        <lastUpdated value="2020-08-10T06:58:14.241+00:00"/>
-        <source value="#4zvj96ag6NkJyF17"/>
+        <versionId value="381"/>
+        <lastUpdated value="2020-08-10T07:05:02.564+00:00"/>
+        <source value="#v2FX8b2ns9P0xORY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -894,6 +894,15 @@
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 5 min)"/>
             <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Coverage-principal-payer-for-delivery"/>
+                <display value="Coverage - Principal Payer for Delivery"/>
+            </reference>
+            <name value="Coverage - Principal Payer for Delivery"/>
+            <description value="This coverage profile represents the principal payer for this delivery."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
