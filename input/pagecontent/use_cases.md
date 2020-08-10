@@ -13,3 +13,5 @@
 | Void Certificate Report | Jurisdictional Vital Records Office | National Statistical Agency  | | 
 | Coded Race and Ethnicity | Report National Statistical Agency | Jurisdictional Vital Records Office  | | 
  | Coded Cause of Fetal Death Report | National Statistical Agency | Jurisdictional Vital Records Office | | 
+ 
+ <table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
