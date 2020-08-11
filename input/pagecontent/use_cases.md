@@ -1,4 +1,4 @@
-[Previous Page - Provider Supplied Facility Fetal Death Report](provider_supplied_facility_fetal_death_report.html)
+[Previous Page - Provider Supplied Fetal Death Report](provider_supplied_fetal_death_report.html)
 
 | Title | Data source | Data receiver | Form(s) | 
 | -------- | -------- | -------- | -------- |
