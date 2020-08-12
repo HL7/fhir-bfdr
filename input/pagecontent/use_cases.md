@@ -1,4 +1,4 @@
-[Previous Page - Provider Supplied Fetal Death Report](provider_supplied_fetal_death_report.html)
+[Previous Page - Jurisdication Fetal Death Report](jurisdication_fetal_death_report.html)
 
 | Title | Data source | Data receiver | Form(s) | 
 | -------- | -------- | -------- | -------- |
@@ -15,3 +15,5 @@
  | Coded Cause of Fetal Death Report | National Statistical Agency | Jurisdictional Vital Records Office | | 
  
  <table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
+
+[Next Page - Provider Supplied Live Birth Report](provider_supplied_live_birth_report.html)

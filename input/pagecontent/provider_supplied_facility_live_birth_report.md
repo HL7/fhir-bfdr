@@ -10,4 +10,4 @@ Example instances have been created for all of the data in the above worksheet. 
 
 
 
-[Next Page - Provider Supplied Live Birth Report](provider_supplied_live_birth_report.html)
+[Next Page - Jurisdiction Supplied Live Birth Report](jurisdiction_live_birth_report.html)

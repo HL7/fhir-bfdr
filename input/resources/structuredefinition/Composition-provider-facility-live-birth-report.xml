@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-facility-live-birth-report"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2020-08-06T07:47:26.613+00:00"/>
-        <source value="#Qac23n7z5zu56kDW"/>
+        <versionId value="24"/>
+        <lastUpdated value="2020-08-12T03:57:05.782+00:00"/>
+        <source value="#uSNmcu4qPCrtqSDq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
     <version value="1.0.0"/>
@@ -252,7 +252,7 @@
             <short value="Entries that are contained in the labor and delivery section"/>
             <definition value="Entries that are contained in the labor and delivery section"/>
         </element>
-        <element id="Composition.section:prenatal.entry:principalSourceOfPayment">
+        <element id="Composition.section:laborAndDelivery.entry:principalSourceOfPayment">
             <path value="Composition.section.entry"/>
             <sliceName value="principalSourceOfPayment"/>
             <short value="Principal source of payment for this delivery"/>
@@ -260,7 +260,7 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:prenatal.entry:motherTransferred">
+        <element id="Composition.section:laborAndDelivery.entry:motherTransferred">
             <path value="Composition.section.entry"/>
             <sliceName value="motherTransferred"/>
             <short value="Mother transferred for maternal medical or fetal indications for delivery"/>
@@ -272,7 +272,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:prenatal.entry:mothersWeightAtDelivery">
+        <element id="Composition.section:laborAndDelivery.entry:mothersWeightAtDelivery">
             <path value="Composition.section.entry"/>
             <sliceName value="mothersWeightAtDelivery"/>
             <short value="Mother's weight at delivery"/>
@@ -284,7 +284,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:prenatal.entry:characteristicsLaborDelivery">
+        <element id="Composition.section:laborAndDelivery.entry:characteristicsLaborDelivery">
             <path value="Composition.section.entry"/>
             <sliceName value="characteristicsLaborDelivery"/>
             <short value="Characteristics fo labor and delivery"/>
@@ -295,7 +295,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:prenatal.entry:fetalPresentation">
+        <element id="Composition.section:laborAndDelivery.entry:fetalPresentation">
             <path value="Composition.section.entry"/>
             <sliceName value="fetalPresentation"/>
             <short value="Fetal presentation at birth"/>
@@ -307,7 +307,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:prenatal.entry:finalRouteMethodDelivery">
+        <element id="Composition.section:laborAndDelivery.entry:finalRouteMethodDelivery">
             <path value="Composition.section.entry"/>
             <sliceName value="finalRouteMethodDelivery"/>
             <short value="Final route and method of delivery"/>
@@ -319,7 +319,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:prenatal.entry:trialLaborAttempted">
+        <element id="Composition.section:laborAndDelivery.entry:trialLaborAttempted">
             <path value="Composition.section.entry"/>
             <sliceName value="trialLaborAttempted"/>
             <short value="If cesearean, was a trial of labor attempted?"/>
@@ -331,7 +331,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:prenatal.entry:maternalMorbidity">
+        <element id="Composition.section:laborAndDelivery.entry:maternalMorbidity">
             <path value="Composition.section.entry"/>
             <sliceName value="maternalMorbidity"/>
             <short value="Maternal morbidity (complications associated with labor and delivery)"/>

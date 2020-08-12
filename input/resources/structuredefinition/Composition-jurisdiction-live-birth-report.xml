@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-05T04:50:54.514+00:00"/>
-        <source value="#CP2wzO9gguBda0F1"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-12T04:57:23.202+00:00"/>
+        <source value="#utKQScSSSIMdnhs8"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -31,9 +31,12 @@
     <differential>
         <element id="Composition">
             <path value="Composition"/>
+            <short value="This composition represents the jurisdiction live birth report."/>
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
+            <short value="The subject of the composition is the newborn baby"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. Different sections in the composition have different focus (e.g.: the mother)."/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
@@ -42,6 +45,8 @@
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
+            <short value="The Encounter for the Composition is the newborn's birth encounter."/>
+            <definition value="The Encounter for the Composition is the newborn's birth encounter. This Encounter links to the mother's encounter by the Encounter.partOf data element."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
@@ -57,10 +62,461 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <short value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate."/>
+            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and Newborn. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
         </element>
-        <element id="Composition.section:slice2191">
+        <element id="Composition.section:motherPrenatal">
             <path value="Composition.section"/>
-            <sliceName value="slice2191"/>
+            <sliceName value="motherPrenatal"/>
+            <short value="Mother (prenatal) section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the Mother (prenatal) on theLive Birth Certificate."/>
+        </element>
+        <element id="Composition.section:motherPrenatal.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the mother"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the Mother Prenatal section"/>
+            <definition value="Entries that are contained in the Mother Prenatal section"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:motherTransferred">
+            <path value="Composition.section.entry"/>
+            <sliceName value="motherTransferred"/>
+            <short value="Mother transferred for maternal medical or fetal indications for delivery"/>
+            <definition value="Information of the transfer status of the mother prior to delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-maternal-transfer"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:firstPrenatalCareVisit">
+            <path value="Composition.section.entry"/>
+            <sliceName value="firstPrenatalCareVisit"/>
+            <short value="First prenatal care visit"/>
+            <definition value="Date that mother had her first prenatal care visit."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:numberPrenatalCareVisits">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberPrenatalCareVisits"/>
+            <short value="Number of prenatal care visits"/>
+            <definition value="Those visits which are listed in the mother's prenatal care and/or facility records."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-prenatal-visits"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:dateLastNormalMenses">
+            <path value="Composition.section.entry"/>
+            <sliceName value="dateLastNormalMenses"/>
+            <short value="Date last normal menses began"/>
+            <definition value="Date that the mother's last normal menses began. This item is used to compute the gestational age of the infant."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-last-menstrual-period"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:numberNowLiving">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberNowLiving"/>
+            <short value="Number of previous live births now living"/>
+            <definition value="The pregnancy history of the mother with respect to previous children born alive"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-births-now-living"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:numberNowDead">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberNowDead"/>
+            <short value="Number of previous live births now dead"/>
+            <definition value="The pregnancy history of the mother with respect to previous children born alive"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-births-now-dead"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:dateLastLiveBirth">
+            <path value="Composition.section.entry"/>
+            <sliceName value="dateLastLiveBirth"/>
+            <short value="Date of last live birth"/>
+            <definition value="The pregnancy history of the mother with respect to previous children born alive"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:numberOtherOutcomes">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberOtherOutcomes"/>
+            <short value="Number of other pregnancy outcomes"/>
+            <definition value="The pregnancy history of the mother with respect to other pregnancy outcomes (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies)."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-other-pregnancy-outcomes"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:dateLastOtherOutcome">
+            <path value="Composition.section.entry"/>
+            <sliceName value="dateLastOtherOutcome"/>
+            <short value="Date of last other pregnancy outcome"/>
+            <definition value="The pregnancy history of the mother with respect to other pregnancy outcomes (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies)."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:principalSourceOfPayment">
+            <path value="Composition.section.entry"/>
+            <sliceName value="principalSourceOfPayment"/>
+            <short value="Principal source of payment for this delivery"/>
+            <definition value="The principal payer for this delivery"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:mothersWeightAtDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersWeightAtDelivery"/>
+            <short value="Mother's weight at delivery"/>
+            <definition value="The mother's weight at the time of delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-delivery-weight"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:mothersHeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersHeight"/>
+            <short value="Mother's height"/>
+            <definition value="The mother's height"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-height"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:mothersPrepregnancyWeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersPrepregnancyWeight"/>
+            <short value="Mother's prepregnancy weight"/>
+            <definition value="The mother's prepregnancy weight"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:motherReceivedWICFood">
+            <path value="Composition.section.entry"/>
+            <sliceName value="motherReceivedWICFood"/>
+            <short value="Use of the WIC nutritional program by the mother"/>
+            <definition value="Use of the Women, Infant's, and Children (WIC) nutritional program by the mother during the pregnancy."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:cigaretteSmokingBeforeDuringPregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="cigaretteSmokingBeforeDuringPregnancy"/>
+            <short value="Cigarettes smoked by the mother before and during the pregnancy"/>
+            <definition value="The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation">
+            <path value="Composition.section"/>
+            <sliceName value="medicalHealthInformation"/>
+            <short value="Medical and Health Informatino section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the Medical and Health Information section on the Live Birth Certificate."/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the mother"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the medical and health information section"/>
+            <definition value="Entries that are contained in the medical and health information section"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:pregnancyRiskFactors">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pregnancyRiskFactors"/>
+            <short value="Risk factors in this pregnancy"/>
+            <definition value="Selected medical risk factors of the mother during this pregnancy"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:numberPreviousCesareans">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberPreviousCesareans"/>
+            <short value="If mother had a previous cesarean delivery, how many"/>
+            <definition value="Number of previous cesarean deliveries."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-number-previous-cesareans"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:infectionsDuringPregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="infectionsDuringPregnancy"/>
+            <short value="Infections present and/or treated during this pregnancy"/>
+            <definition value="Selected infections that the mother had or was treated for during the course of this pregnancy"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:obstetricProcedures">
+            <path value="Composition.section.entry"/>
+            <sliceName value="obstetricProcedures"/>
+            <short value="Obstetric procedures"/>
+            <definition value="Selected medical treatments or invasive/manipulative procedures performed during this pregnancy specifically for management of labor and delivery"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:characteristicsLaborDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="characteristicsLaborDelivery"/>
+            <short value="Characteristics fo labor and delivery"/>
+            <definition value="Information about the course of labor and delivery"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:fetalPresentation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="fetalPresentation"/>
+            <short value="Fetal presentation at birth"/>
+            <definition value="Fetal presentation at birth"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:finalRouteMethodDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="finalRouteMethodDelivery"/>
+            <short value="Final route and method of delivery"/>
+            <definition value="Final route and method of delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:trialLaborAttempted">
+            <path value="Composition.section.entry"/>
+            <sliceName value="trialLaborAttempted"/>
+            <short value="If cesearean, was a trial of labor attempted?"/>
+            <definition value="If cesarean, was a trial of labor attempted? (Labor was allowed, augmented, or induced with plans for a vaginal delivery.)"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:maternalMorbidity">
+            <path value="Composition.section.entry"/>
+            <sliceName value="maternalMorbidity"/>
+            <short value="Maternal morbidity (complications associated with labor and delivery)"/>
+            <definition value="Serious complications experienced by the mother associated with labor and delivery"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn">
+            <path value="Composition.section"/>
+            <sliceName value="newborn"/>
+            <short value="Newborn section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the newborn section on the Live Birth Certificate."/>
+        </element>
+        <element id="Composition.section:newborn.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the newborn section"/>
+            <definition value="Entries that are contained in the newborn section"/>
+        </element>
+        <element id="Composition.section:newborn.entry:birthWeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="birthWeight"/>
+            <short value="Birthweight"/>
+            <definition value="The weight of the infant/fetus at birth/delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-birth-weight"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:gestationalAgeAtDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="gestationalAgeAtDelivery"/>
+            <short value="Obstetric estimate of gestation"/>
+            <definition value="The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-gestational-age-at-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:APGARScore">
+            <path value="Composition.section.entry"/>
+            <sliceName value="APGARScore"/>
+            <short value="APGAR Score"/>
+            <definition value="The Apgar Score for the child."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-apgar-score"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:plurality">
+            <path value="Composition.section.entry"/>
+            <sliceName value="plurality"/>
+            <short value="Plurality - Single, Twin, Triplet, etc."/>
+            <definition value="Plurality – The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. (“Reabsorbed” fetuses, those which are not “delivered” (expulsed or extracted from the mother) should not be counted.)"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-plurality"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:birthOrder">
+            <path value="Composition.section.entry"/>
+            <sliceName value="birthOrder"/>
+            <short value="If not single birth - born first, second, third, etc."/>
+            <definition value="If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:abnormalConditionsNewborn">
+            <path value="Composition.section.entry"/>
+            <sliceName value="abnormalConditionsNewborn"/>
+            <short value="Abnormal conditions of the newborn"/>
+            <definition value="Disorders or significant morbidity experienced by the newborn infant"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:congenitalAnomaliesNewborn">
+            <path value="Composition.section.entry"/>
+            <sliceName value="congenitalAnomaliesNewborn"/>
+            <short value="Congenital anomolies of the newborn"/>
+            <definition value="Malformations of the newborn diagnosed prenatally or after delivery"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:infantTransferred">
+            <path value="Composition.section.entry"/>
+            <sliceName value="infantTransferred"/>
+            <short value="Was infant trasnferred within 24 hours of delivery?"/>
+            <definition value="Information on the transfer status of the infant wtihin 24 hours after delivery"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:infantLiving">
+            <path value="Composition.section.entry"/>
+            <sliceName value="infantLiving"/>
+            <short value="Is infant living at time of report?"/>
+            <definition value="Information on the infant's survival"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-infant-living"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:infantBreastfedAtDischarge">
+            <path value="Composition.section.entry"/>
+            <sliceName value="infantBreastfedAtDischarge"/>
+            <short value="Is infant being breastfed at discharge?"/>
+            <definition value="Information on whether the infant is being breastfed at discharge from the hospital"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
