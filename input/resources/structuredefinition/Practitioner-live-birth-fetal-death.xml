@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Practitioner-live-birth-fetal-death"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-13T02:26:56.884+00:00"/>
+        <source value="#QhEkjNw03OoQs1kG"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+    <version value="1.0"/>
+    <name value="PractitionerLiveBirthFetalDeath"/>
+    <title value="Practitioner - Live Birth and Fetal Death"/>
+    <status value="draft"/>
+    <date value="2020-08-12T11:13:12+00:00"/>
+    <publisher value="Health Level Seven International"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="This Practitioner profile represents a practitioner who is involved in the live birth and fetal death as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="US Realm"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Practitioner"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Practitioner">
+            <path value="Practitioner"/>
+        </element>
+        <element id="Practitioner.qualification">
+            <path value="Practitioner.qualification"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="BackboneElement"/>
+            </type>
+        </element>
+        <element id="Practitioner.qualification.code">
+            <path value="Practitioner.qualification.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <binding>
+                <strength value="required"/>
+                <description value="Live Birth/Fetal Death Practitioner title"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7111"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

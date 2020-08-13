@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-birth"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-05T22:26:31.583+00:00"/>
-        <source value="#zj2TNSohaY2oWCUb"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-08-13T02:23:11.597+00:00"/>
+        <source value="#Mr0ao1VPjXAIz6fb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
     <version value="1.0.0"/>
@@ -39,6 +39,85 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant">
+            <path value="Encounter.participant"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="type"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Encounter.participant:certifier">
+            <path value="Encounter.participant"/>
+            <sliceName value="certifier"/>
+            <short value="The individual who certifies to the fact that the birth occurred."/>
+            <definition value="The individual who certifies to the fact that the birth occurred. May be, but need not be, the same as the attendant at birth."/>
+        </element>
+        <element id="Encounter.participant:certifier.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:certifier.type">
+            <path value="Encounter.participant.type"/>
+            <short value="LOINC fully specified name: Birth certifier"/>
+            <definition value="LOINC fully specified name: Birth certifier"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="87287-9"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:certifier.period">
+            <path value="Encounter.participant.period"/>
+        </element>
+        <element id="Encounter.participant:certifier.period.start">
+            <path value="Encounter.participant.period.start"/>
+            <short value="Date certified"/>
+            <definition value="Date certified."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:certifier.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:attendant">
+            <path value="Encounter.participant"/>
+            <sliceName value="attendant"/>
+        </element>
+        <element id="Encounter.participant:attendant.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:attendant.type">
+            <path value="Encounter.participant.type"/>
+            <label value="LOINC fully specified name: Birth attendant"/>
+            <definition value="LOINC fully specified name: Birth attendant"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="87286-1"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Encounter.hospitalization">
