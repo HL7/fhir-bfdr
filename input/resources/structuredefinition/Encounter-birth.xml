@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-birth"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-08-13T02:23:11.597+00:00"/>
-        <source value="#Mr0ao1VPjXAIz6fb"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-08-13T04:42:46.564+00:00"/>
+        <source value="#eexpqVtCj9dNuDNX"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
     <version value="1.0.0"/>
@@ -91,10 +91,12 @@
         <element id="Encounter.participant:attendant">
             <path value="Encounter.participant"/>
             <sliceName value="attendant"/>
+            <short value="The person responsible for delivering the child."/>
+            <definition value="The attendant at birth is defined as the individual at the delivery who is responsible for the delivery. For example, if an intern or nurse-midwife delivers an infant under the supervision of an obstetrician who is present in the delivery room, the obstetrician is to be reported as the attendant. However, a person who is not physically present at the delivery should not be reported as the attendant. For example, if the obstetrician is not physically present, the intern or nurse-midwife MUST be reported as the attendant."/>
         </element>
         <element id="Encounter.participant:attendant.type">
             <path value="Encounter.participant.type"/>
-            <label value="LOINC fully specified name: Birth attendant"/>
+            <short value="LOINC fully specified name: Birth attendant"/>
             <definition value="LOINC fully specified name: Birth attendant"/>
             <min value="1"/>
             <patternCodeableConcept>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="410"/>
-        <lastUpdated value="2020-08-13T02:21:14.698+00:00"/>
-        <source value="#nZKSayfhgfUFR1Qn"/>
+        <versionId value="415"/>
+        <lastUpdated value="2020-08-13T05:36:33.138+00:00"/>
+        <source value="#V3Hmj2QYxSWW4mkG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -427,38 +427,6 @@
             <description value="Example of RelatedPerson-mother profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-us-core-avery-jones"/></reference>
-            <name value="Practitioner - US Core (Avery Jones)"/>
-            <description value="Example of us-core-practitioner profile (Avery Jones)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-us-core-henry-seven"/></reference>
-            <name value="US Core Practitioner (Henry Seven)"/>
-            <description value="Example of US Core Practitioner profile (Henry Seven)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/practitionerrole-avery-jones"/></reference>
-            <name value="PractitionerRole - US Core (Avery Jones)"/>
-            <description value="Example of us-core-practitionerrole (Avery Jones)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/practitionerrole-henry-seven"/></reference>
-            <name value="US Core PractitionerRole (Henry Seven)"/>
-            <description value="Example of US Core PractitionerRole profile (Henry Seven)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
         </resource>
         <resource>
             <reference>
@@ -947,6 +915,22 @@
             <name value="Practitioner - Live Birth and Fetal Death"/>
             <description value="This Practitioner profile represents a practitioner who is involved in the live birth and fetal death as a certifier or an attendant. This profile is based on the US Core Practitioner and adds a further constraint to capture the title of the practitioner."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/></reference>
+            <name value="Practitioner - Live Birth and Fetal Death (Avery Jones, MD)"/>
+            <description value="Example of practitioner-live-birth-fetal-death profile (Avery Jones, MD)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-henry-seven"/></reference>
+            <name value="Practitioner - Live Birth and Fetal Death (Henry Seven, MD)"/>
+            <description value="Example of practitioner-live-birth-fetal-death profile (Henry Seven, MD)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
