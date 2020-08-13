@@ -57,15 +57,6 @@
             <short value="The individual who certifies to the fact that the birth occurred."/>
             <definition value="The individual who certifies to the fact that the birth occurred. May be, but need not be, the same as the attendant at birth."/>
         </element>
-        <element id="Encounter.participant:certifier.individual">
-            <path value="Encounter.participant.individual"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Encounter.participant:certifier.type">
             <path value="Encounter.participant.type"/>
             <short value="LOINC fully specified name: Birth certifier"/>
@@ -91,21 +82,15 @@
         <element id="Encounter.participant:certifier.individual">
             <path value="Encounter.participant.individual"/>
             <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Encounter.participant:attendant">
-            <path value="Encounter.participant"/>
-            <sliceName value="attendant"/>
-        </element>
-        <element id="Encounter.participant:attendant.individual">
-            <path value="Encounter.participant.individual"/>
-            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:attendant">
+            <path value="Encounter.participant"/>
+            <sliceName value="attendant"/>
         </element>
         <element id="Encounter.participant:attendant.type">
             <path value="Encounter.participant.type"/>
@@ -118,6 +103,15 @@
                     <code value="87286-1"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:attendant.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Encounter.hospitalization">
