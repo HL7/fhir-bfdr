@@ -119,6 +119,23 @@
         <element id="Encounter.hospitalization">
             <path value="Encounter.hospitalization"/>
         </element>
+        
+        <element id="Encounter.hospitalization.destination">
+            <path value="Encounter.hospitalization.destination"/>
+            <short value="If infant transferred, facility transferred to"/>
+            <definition value="If infant transferred, facility transferred to"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.hospitalization.dischargeDisposition">
+            <path value="Encounter.hospitalization.dischargeDisposition"/>
+            <short value="If infant transferred within 24 hours of delivery, set code = &quot;other-hcf&quot; (Other healthcare facility)"/>
+            <definition value="If infant transferred within 24 hours of delivery, set code = &quot;other-hcf&quot; (Other healthcare facility): the patient was transferred to another healthcare facility."/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Encounter.location">
             <path value="Encounter.location"/>
             <slicing>
@@ -144,22 +161,6 @@
                 <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7124"/>
             </binding>
         </element>
-        <element id="Encounter.hospitalization.destination">
-            <path value="Encounter.hospitalization.destination"/>
-            <short value="If infant transferred, facility transferred to"/>
-            <definition value="If infant transferred, facility transferred to"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Encounter.hospitalization.dischargeDisposition">
-            <path value="Encounter.hospitalization.dischargeDisposition"/>
-            <short value="If infant transferred within 24 hours of delivery, set code = &quot;other-hcf&quot; (Other healthcare facility)"/>
-            <definition value="If infant transferred within 24 hours of delivery, set code = &quot;other-hcf&quot; (Other healthcare facility): the patient was transferred to another healthcare facility."/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Encounter.partOf">
             <path value="Encounter.partOf"/>
             <type>
@@ -168,5 +169,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        
     </differential>
 </StructureDefinition>
