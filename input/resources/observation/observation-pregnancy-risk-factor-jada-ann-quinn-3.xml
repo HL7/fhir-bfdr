@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-pregnancy-risk-factor-jada-ann-quinn-3"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-10T05:59:33.769+00:00"/>
-        <source value="#aAOhruzb11zzrzm8"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-14T01:17:03.807+00:00"/>
+        <source value="#VqYaGRnatjVXTjS2"/>
         <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-pregnancy-risk-factor"/>
     </meta>
     <status value="final"/>
@@ -18,9 +18,13 @@
         <text value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
     </code>
     <subject>
-        <reference value="Patient/patient-mother-jada-ann-quinn"/>
-        <display value="Jada Ann Quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="Baby G Quinn"/>
     </subject>
+    <focus>
+        <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+        <display value="Jada Ann Quinn"/>
+    </focus>
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>

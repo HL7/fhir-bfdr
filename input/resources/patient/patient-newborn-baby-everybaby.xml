@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-newborn-baby-everybaby"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-03T22:12:29.824+00:00"/>
-        <source value="#xNPMWTwx6QX9qEyX"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-14T03:13:10.897+00:00"/>
+        <source value="#wMOYXs1a9DykLmTy"/>
         <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
     </meta>
     <text>
@@ -13,6 +13,7 @@
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <div class="hapiHeaderText">Baby B 
+                
                 
                 
                 <b>EVERYBABY </b>
@@ -60,6 +61,13 @@
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
         <valueCode value="F"/>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+        <valueAddress>
+            <city value="Salt Lake City"/>
+            <district value="Salt Lake"/>
+            <state value="UT"/>
+        </valueAddress>
+    </extension>
     <identifier>
         <use value="usual"/>
         <type>
@@ -72,7 +80,6 @@
         <system value="http://hospital.smarthealthit.org"/>
         <value value="9932702"/>
     </identifier>
-    <active value="true"/>
     <name>
         <family value="Everybaby"/>
         <given value="Baby"/>

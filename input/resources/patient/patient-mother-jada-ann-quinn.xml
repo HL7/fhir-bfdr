@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-mother-jada-ann-quinn"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-13T01:05:25.490+00:00"/>
-        <source value="#2t2jxpekPGCwggwv"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-14T03:13:10.854+00:00"/>
+        <source value="#6i1Kg1s0ONVTTqCN"/>
         <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
     </meta>
     <text>
@@ -13,6 +13,7 @@
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <div class="hapiHeaderText">Jada Ann 
+                
                 
                 <b>QUINN </b>
             </div>
@@ -76,6 +77,11 @@
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
         <valueCode value="F"/>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+        <valueAddress>
+            <state value="UT"/>
+        </valueAddress>
+    </extension>
     <identifier>
         <use value="usual"/>
         <type>
@@ -100,7 +106,6 @@
         <system value="http://hospital.smarthealthit.org"/>
         <value value="1032702"/>
     </identifier>
-    <active value="true"/>
     <name>
         <use value="official"/>
         <family value="Quinn"/>

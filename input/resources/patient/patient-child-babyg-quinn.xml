@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-child-babyg-quinn"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-10T06:07:43.549+00:00"/>
-        <source value="#fypXrcFxMDAWE99u"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-08-14T03:13:10.888+00:00"/>
+        <source value="#OPxqPQ3v3VeT5WSm"/>
         <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
     </meta>
     <text>
@@ -13,6 +13,7 @@
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <div class="hapiHeaderText">Baby G 
+                
                 
                 <b>QUINN </b>
             </div>
@@ -69,6 +70,13 @@
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
         <valueCode value="F"/>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+        <valueAddress>
+            <city value="Salt Lake City"/>
+            <district value="Salt Lake"/>
+            <state value="UT"/>
+        </valueAddress>
+    </extension>
     <identifier>
         <use value="usual"/>
         <type>
@@ -81,7 +89,6 @@
         <system value="http://hospital.smarthealthit.org"/>
         <value value="9932702"/>
     </identifier>
-    <active value="true"/>
     <name>
         <family value="Quinn"/>
         <given value="Baby"/>

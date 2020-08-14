@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="coverage-principal-payer-for-delivery-jada-ann-quinn"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-13T06:49:22.447+00:00"/>
-        <source value="#LOqEIkm6MJ4REojG"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-14T00:29:18.829+00:00"/>
+        <source value="#DRiTifEzKOg7FJvi"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery"/>
     </meta>
     <status value="active"/>
@@ -17,4 +17,13 @@
         </coding>
         <text value="Private Health Insurance"/>
     </type>
+    <beneficiary>
+        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+        <display value="Jada Ann Quinn"/>
+    </beneficiary>
+    <payor>
+        <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="not-asked"/>
+        </extension>
+    </payor>
 </Coverage>

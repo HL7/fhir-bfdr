@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Coverage-principal-payer-for-delivery"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-10T07:19:27.942+00:00"/>
-        <source value="#SR0jBTZsFOYANoEI"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-14T00:30:44.251+00:00"/>
+        <source value="#TcWmQcHB0KaRNwSw"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery"/>
     <version value="1.0.0"/>
@@ -39,6 +39,29 @@
                 <strength value="extensible"/>
                 <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7163"/>
             </binding>
+        </element>
+        <element id="Coverage.payor">
+            <path value="Coverage.payor"/>
+        </element>
+        <element id="Coverage.payor.extension">
+            <path value="Coverage.payor.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Coverage.payor.extension:dataAbsentReason">
+            <path value="Coverage.payor.extension"/>
+            <sliceName value="dataAbsentReason"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

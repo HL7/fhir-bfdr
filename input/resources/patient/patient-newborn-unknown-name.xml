@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-newborn-unknown-name"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-08-07T19:12:38.258+00:00"/>
-        <source value="#LHWA60zxlXIMk85P"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-08-14T03:13:10.855+00:00"/>
+        <source value="#4ZUh80Tn51U2c1fd"/>
         <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
     </meta>
     <text>
@@ -58,6 +58,13 @@
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
         <valueCode value="F"/>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+        <valueAddress>
+            <city value="Salt Lake City"/>
+            <district value="Salt Lake"/>
+            <state value="UT"/>
+        </valueAddress>
+    </extension>
     <identifier>
         <use value="usual"/>
         <type>
@@ -70,7 +77,6 @@
         <system value="http://hospital.smarthealthit.org"/>
         <value value="9932799"/>
     </identifier>
-    <active value="true"/>
     <name>
         <family value="UNK">
             <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">

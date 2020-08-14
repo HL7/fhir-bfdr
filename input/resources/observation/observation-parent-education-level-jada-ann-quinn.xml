@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-parent-education-level-jada-ann-quinn"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-14T03:49:30.902+00:00"/>
+        <source value="#kbrbvXfPaDTPc8ET"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-parent-education-level"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="57712-2"/>
+            <display value="Highest level of education Mother"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/Patient-child-babyg-quinn"/>
+    </subject>
+    <focus>
+        <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+    </focus>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-EducationLevel"/>
+            <code value="POSTG"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

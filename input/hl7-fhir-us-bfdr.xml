@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="422"/>
-        <lastUpdated value="2020-08-13T06:50:49.235+00:00"/>
-        <source value="#0gCk4xXbnLHIMhk1"/>
+        <versionId value="429"/>
+        <lastUpdated value="2020-08-14T03:50:50.720+00:00"/>
+        <source value="#9KiMPfc3R3lZtmgt"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -104,7 +104,7 @@
                 <display value="Composition - Provider Supplied Facility Fetal Death Report"/>
             </reference>
             <name value="Composition - Provider Supplied Facility Fetal Death Report"/>
-            <description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and relevant information for the fetus collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. "/>
+            <description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and relevant information for the fetus collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-compositions-ehr-jvr"/>
         </resource>
@@ -984,6 +984,32 @@
             <description value="Example of coverage-principal-payer-for-delivery profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-james-brandon-quinn"/>
+                <display value="relatedperson-father-james-brandon-quinn"/>
+            </reference>
+            <name value="RelatedPerson - Father (James Brandon Quinn)"/>
+            <description value="Example of RelatedPerson-father profile (James Brandon Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-parent-education-level-james-quinn"/></reference>
+            <name value="Observation - Parent Education Level (James Quinn)"/>
+            <description value="Example of observation-parent-education-level profile (James Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-parent-education-level-jada-ann-quinn"/></reference>
+            <name value="Observation - Parent Education Level (Jada Ann Quinn)"/>
+            <description value="Example of observation-parent-education-level profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
         </resource>
         <page>
