@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-mother-height-jada-ann-quinn"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-14T07:31:14.691+00:00"/>
+        <source value="#ze2HY865GefbDd0b"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-height"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="3137-7"/>
+            <display value="Body height Measured"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+        <display value="Jada Ann Quinn"/>
+    </subject>
+    <effectiveDateTime value="2020-04-28"/>
+    <valueQuantity>
+        <value value="67"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="in"/>
+    </valueQuantity>
+</Observation>

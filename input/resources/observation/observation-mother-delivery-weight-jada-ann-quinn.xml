@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-mother-delivery-weight-jada-ann-quinn"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-14T07:26:07.389+00:00"/>
+        <source value="#fHO58t6bEtAUPS9L"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-delivery-weight"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="69461-2"/>
+            <display value="Mother's body weight --at delivery"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+        <display value="Jada Ann Quinn"/>
+    </subject>
+    <effectiveDateTime value="2019-02-12"/>
+    <valueQuantity>
+        <value value="175"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="lb"/>
+    </valueQuantity>
+</Observation>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-birth"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-08-13T05:53:47.971+00:00"/>
-        <source value="#8GkwZYuhnmo4EfhJ"/>
+        <versionId value="14"/>
+        <lastUpdated value="2020-08-14T04:46:36.661+00:00"/>
+        <source value="#KwE2eWsZrlX9xQ6N"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
     <version value="1.0.0"/>
@@ -119,18 +119,45 @@
         <element id="Encounter.hospitalization">
             <path value="Encounter.hospitalization"/>
         </element>
-        <element id="Encounter.hospitalization.admitSource">
-            <path value="Encounter.hospitalization.admitSource"/>
-            <short value="If infant transferred within 24 hours of delivery, set to &quot;hosp-trans&quot;"/>
+        <element id="Encounter.location">
+            <path value="Encounter.location"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="physicalType"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Encounter.location:placeDeliveryOccurred">
+            <path value="Encounter.location"/>
+            <sliceName value="placeDeliveryOccurred"/>
+            <max value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.location:placeDeliveryOccurred.physicalType">
+            <path value="Encounter.location.physicalType"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7124"/>
+            </binding>
         </element>
         <element id="Encounter.hospitalization.destination">
             <path value="Encounter.hospitalization.destination"/>
             <short value="If infant transferred, facility transferred to"/>
+            <definition value="If infant transferred, facility transferred to"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.hospitalization.dischargeDisposition">
+            <path value="Encounter.hospitalization.dischargeDisposition"/>
+            <short value="If infant transferred within 24 hours of delivery, set code = &quot;other-hcf&quot; (Other healthcare facility)"/>
+            <definition value="If infant transferred within 24 hours of delivery, set code = &quot;other-hcf&quot; (Other healthcare facility): the patient was transferred to another healthcare facility."/>
             <mustSupport value="true"/>
         </element>
         <element id="Encounter.partOf">

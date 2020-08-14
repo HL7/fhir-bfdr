@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-mother-prepregnancy-weight-jada-ann-quinn"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-14T07:32:43.612+00:00"/>
+        <source value="#mZYYOdD9CRdC7xHm"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="56077-1"/>
+            <display value="Body weight --pre current pregnancy"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+        <display value="Jada Ann Quinn"/>
+    </subject>
+    <effectiveDateTime value="2019-06-20"/>
+    <valueQuantity>
+        <value value="145"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="lb"/>
+    </valueQuantity>
+</Observation>

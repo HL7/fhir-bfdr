@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="encounter-birth-babyg-quinn"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-08-14T03:14:17.752+00:00"/>
-        <source value="#StwI9yCMD1X9hWgD"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-08-14T07:00:02.999+00:00"/>
+        <source value="#nVmZf6i0npVUCG4v"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
     </meta>
     <identifier>
@@ -62,11 +62,32 @@
         <start value="2019-02-12T13:00:00-07:00"/>
         <end value="2019-02-15T10:00:00-07:00"/>
     </period>
+    <hospitalization>
+        <destination>
+            <reference value="Location/location-east-hospital"/>
+            <display value="East Hospital Location"/>
+        </destination>
+        <dischargeDisposition>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+                <code value="other-hcf"/>
+                <display value="Other healthcare facility"/>
+            </coding>
+            <text value="The patient was transferred to another healthcare facility."/>
+        </dischargeDisposition>
+    </hospitalization>
     <location>
         <location>
             <reference value="Location/location-south-hospital"/>
             <display value="South Hospital Location"/>
         </location>
+        <physicalType>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="22232009"/>
+                <display value="Hospital"/>
+            </coding>
+        </physicalType>
     </location>
     <partOf>
         <reference value="Encounter/encounter-maternity-jada-ann-quinn"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="encounter-maternity-jada-ann-quinn"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-13T05:56:13.182+00:00"/>
-        <source value="#JkokX1FWE6yQi5mZ"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-14T07:00:02.998+00:00"/>
+        <source value="#mUBJIYsWGjzLfxSQ"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
     </meta>
     <identifier>
@@ -47,6 +47,10 @@
         <end value="2019-02-15T10:00:00-07:00"/>
     </period>
     <hospitalization>
+        <origin>
+            <reference value="Location/location-north-hospital"/>
+            <display value="North Hospital Location"/>
+        </origin>
         <admitSource>
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
@@ -61,6 +65,13 @@
             <reference value="Location/location-south-hospital"/>
             <display value="South Hospital Location"/>
         </location>
+        <physicalType>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="22232009"/>
+                <display value="Hospital"/>
+            </coding>
+        </physicalType>
     </location>
     <serviceProvider>
         <reference value="Organization/organization-south-hospital"/>
