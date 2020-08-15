@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-received-wic-food"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-07-30T06:44:18.610+00:00"/>
-        <source value="#8ScFsetgNwsJouH0"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-08-15T00:16:42.980+00:00"/>
+        <source value="#NzYnM7IW9IvxUJiP"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
     <version value="1.0.0"/>
@@ -43,6 +43,15 @@
                     <code value="87303-4"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
