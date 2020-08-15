@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="446"/>
-        <lastUpdated value="2020-08-15T00:19:32.985+00:00"/>
-        <source value="#2sIQp7DysvhuvFl6"/>
+        <versionId value="453"/>
+        <lastUpdated value="2020-08-15T00:48:18.777+00:00"/>
+        <source value="#IqW20c08feKMgB4p"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -1105,6 +1105,25 @@
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
             <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-date-of-last-live-birth"/>
+                <display value="Observation - Date of Last Live Birth"/>
+            </reference>
+            <name value="Observation - Date of Last Live Birth"/>
+            <description value="This profile represents the date of the mother's last live born infant (do not include this birth)."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mother-prenatal-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-date-of-last-live-birth-jada-ann-quinn"/></reference>
+            <name value="Observation - Date of Last Live Birth (Jada Ann Quinn)"/>
+            <description value="Example of observation-date-of-last-live-birth profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
@@ -1146,6 +1165,21 @@
                 <page>
                     <nameUrl value="provider_supplied_fetal_death_report.html"/>
                     <title value="Provider Supplied Fetal Death Report"/>
+                    <generation value="markdown"/>
+                </page>
+            </page>
+            <page>
+                <nameUrl value="appendices.html"/>
+                <title value="Appendices"/>
+                <generation value="markdown"/>
+                <page>
+                    <nameUrl value="appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html"/>
+                    <title value="Appendix A - Example Facility Worksheet for the Live Birth Certificate"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="appendix_b_-_example_live_birth_certificate.html"/>
+                    <title value="Appendix B - Example Live Birth Certificate"/>
                     <generation value="markdown"/>
                 </page>
             </page>
