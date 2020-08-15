@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="procedure-final-route-method-delivery-babyg-quinn"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-15T02:06:02.102+00:00"/>
+        <source value="#2Uu63IforayUxMYO"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
+    </meta>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="11466000"/>
+            <display value="Cesarean section"/>
+        </coding>
+        <text value="Cesarean section"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="Baby G Quinn"/>
+    </subject>
+    <performedPeriod>
+        <start value="2019-02-12T12:45:00-07:00"/>
+        <end value="2019-02-12T13:15:00-07:00"/>
+    </performedPeriod>
+    <reasonReference>
+        <reference value="Observation/observation-labor-trial-attempted-babyg-quinn"/>
+        <display value="Labor trial attempted - true"/>
+    </reasonReference>
+</Procedure>
