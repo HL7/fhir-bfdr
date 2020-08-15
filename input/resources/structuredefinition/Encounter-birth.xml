@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-birth"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-08-14T04:46:36.661+00:00"/>
-        <source value="#KwE2eWsZrlX9xQ6N"/>
+        <versionId value="20"/>
+        <lastUpdated value="2020-08-15T00:01:47.204+00:00"/>
+        <source value="#Q0NpjhWHH8qJVOKQ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
     <version value="1.0.0"/>
@@ -119,7 +119,6 @@
         <element id="Encounter.hospitalization">
             <path value="Encounter.hospitalization"/>
         </element>
-        
         <element id="Encounter.hospitalization.destination">
             <path value="Encounter.hospitalization.destination"/>
             <short value="If infant transferred, facility transferred to"/>
@@ -138,37 +137,34 @@
         </element>
         <element id="Encounter.location">
             <path value="Encounter.location"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="physicalType"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Encounter.location:placeDeliveryOccurred">
-            <path value="Encounter.location"/>
-            <sliceName value="placeDeliveryOccurred"/>
-            <max value="1"/>
+            <short value="Information about the location of birth"/>
+            <definition value="Information about the location of birth"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Encounter.location:placeDeliveryOccurred.physicalType">
+        <element id="Encounter.location.location">
+            <path value="Encounter.location.location"/>
+            <short value="Facility name (if not institution, give street and number)"/>
+            <definition value="Facility name (if not institution, give street and number)"/>
+        </element>
+        <element id="Encounter.location.physicalType">
             <path value="Encounter.location.physicalType"/>
-            <min value="1"/>
+            <short value="Place where birth occurred (type of place)"/>
+            <definition value="Place where birth occurred (type of place)"/>
             <mustSupport value="true"/>
             <binding>
-                <strength value="extensible"/>
+                <strength value="preferred"/>
                 <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7124"/>
             </binding>
         </element>
         <element id="Encounter.partOf">
             <path value="Encounter.partOf"/>
+            <short value="Reference to the mother's maternity encounter"/>
+            <definition value="Reference to the mother's maternity encounter"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
             </type>
             <mustSupport value="true"/>
         </element>
-        
     </differential>
 </StructureDefinition>
