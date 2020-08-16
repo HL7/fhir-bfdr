@@ -124,6 +124,18 @@
             <short value="Entries that are contained in the Mother Prenatal section"/>
             <definition value="Entries that are contained in the Mother Prenatal section"/>
         </element>
+        <element id="Composition.section:motherPrenatal.entry:plannedToDeliverAtHome">
+            <path value="Composition.section.entry"/>
+            <sliceName value="plannedToDeliverAtHome"/>
+            <short value="Planned to deliver at home"/>
+            <definition value="Planned to deliver at home"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:motherPrenatal.entry:firstPrenatalCareVisit">
             <path value="Composition.section.entry"/>
             <sliceName value="firstPrenatalCareVisit"/>
@@ -558,5 +570,59 @@
             </type>
             <mustSupport value="true"/>
         </element>
+   <!--  -->
+        <element id="Composition.section:fatherInformation">
+            <path value="Composition.section"/>
+            <sliceName value="fatherInformation"/>
+            <short value="Father section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the father section on the Live Birth Certificate."/>
+        </element>
+        <element id="Composition.section:fatherInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Father's administrative information"/>
+            <definition value="Father's administrative information"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92013-2"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:motherPrenatal.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the father"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-father"/>
+            </type>
+        </element>
+        
+        <element id="Composition.section:fatherInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the fatherInformation section"/>
+            <definition value="Entries that are contained in the fatherInformation section"/>
+        </element>
+        <element id="Composition.section:fatherInformation.entry:education">
+            <path value="Composition.section.entry"/>
+            <sliceName value="education"/>
+            <short value="Father's education"/>
+            <definition value="Father's education"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-parent-education-level"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
     </differential>
 </StructureDefinition>
