@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-date-filed-by-registrar"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-15T03:58:39.993+00:00"/>
+        <source value="#tPm5nZmLl4BuCZ5d"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-date-filed-by-registrar"/>
+    <version value="1.0"/>
+    <name value="ExtensionDateFiledByRegistrar"/>
+    <title value="Extension - Date Filed by Registrar"/>
+    <status value="draft"/>
+    <date value="2020-08-14T10:40:28+00:00"/>
+    <publisher value="Health Level Seven International"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="Date filed by registrar"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="US Realm"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Composition"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-date-filed-by-registrar"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

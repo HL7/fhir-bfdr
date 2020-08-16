@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="474"/>
-        <lastUpdated value="2020-08-15T03:15:49.542+00:00"/>
-        <source value="#XC0hesseArAyqzoa"/>
+        <versionId value="481"/>
+        <lastUpdated value="2020-08-15T05:36:55.114+00:00"/>
+        <source value="#VYMa7NUD3TC9LYUI"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -686,7 +686,7 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn"/></reference>
-            <name value="Observation - Number Prenatal Visits"/>
+            <name value="Observation - Number Prenatal Visits (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-prenatal-visits profile (BabyG Quinn/Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
@@ -900,6 +900,36 @@
             <name value="Value Set - Cigarette Smoking Before and During Pregnancy"/>
             <description value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-filed-by-registrar"/>
+                <display value="Extension - Date Filed by Registrar"/>
+            </reference>
+            <name value="Extension - Date Filed by Registrar"/>
+            <description value="Date filed by registrar"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-jurisdiction-live-birth-babyg-quinn"/>
+                <display value="Jurisdiction live birth report Document"/>
+            </reference>
+            <name value="Composition - Jurisdiction Live Birth Report (Baby G Quinn)"/>
+            <description value="Example of composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-jurisdiction-live-birth-babyg-quinn"/>
+                <display value="bundle-jurisdiction-live-birth-babyg-quinn"/>
+            </reference>
+            <name value="Bundle - Jurisdiction Live Birth Report (Baby G Quinn)"/>
+            <description value="Example of document bundle containing composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

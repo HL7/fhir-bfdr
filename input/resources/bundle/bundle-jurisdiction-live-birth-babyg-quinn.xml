@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="bundle-jurisdiction-live-birth-babyg-quinn"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-15T05:48:47.814+00:00"/>
+        <source value="#AaAlNccHeJqox9q8"/>
+    </meta>
+    <type value="document"/>
+    <entry>
+        <fullUrl value="Composition/composition-jurisdiction-live-birth-babyg-quinn"/>
+        <resource>
+            <Composition>
+                <id value="composition-jurisdiction-live-birth-babyg-quinn"/>
+                <extension url="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-date-filed-by-registrar">
+                    <valueDateTime value="2019-02-12"/>
+                </extension>
+                <identifier>
+                    <value value="c03eab8c-11e8-4d0c-ad2a-b385395e27df"/>
+                </identifier>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="92011-6"/>
+                        <display value="Jurisdiction live birth report Document"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+                <encounter>
+                    <reference value="Encounter/encounter-birth-babyg-quinn"/>
+                    <display value="Birth Encounter - Baby G Quinn"/>
+                </encounter>
+                <date value="2019-02-12"/>
+                <author>
+                    <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
+                    <display value="Avery Jones, MD"/>
+                </author>
+                <title value="Jurisdiction live birth report Document"/>
+                <section>
+                    <title value="Mother (prenatal) Section on the Live Birth Certificate"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="57073-9"/>
+                            <display value="Prenatal records"/>
+                        </coding>
+                    </code>
+                    <focus>
+                        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                        <display value="Jada Ann Quinn"/>
+                    </focus>
+                    <entry>
+                        <reference value="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/>
+                        <display value="Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn"/>
+                        <display value="Observation - Number Prenatal Visits (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-last-menstrual-period-jada-ann-quinn"/>
+                        <display value="Observation - Last Menstrual Period (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-number-births-now-living-jada-ann-quinn"/>
+                        <display value="Observation - Number Births Now Living (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-number-births-now-dead-jada-ann-quinn"/>
+                        <display value="observation-number-births-now-dead-jada-ann-quinn"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-date-of-last-live-birth-jada-ann-quinn"/>
+                        <display value="Observation - Date of Last Live Birth (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn"/>
+                        <display value="Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"/>
+                        <display value="Observation - Date of Last Other Pregnancy Outcome (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"/>
+                        <display value="Coverage - Principal Payer for Delivery (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn"/>
+                        <display value="Observation - Mother Delivery Weight (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-mother-height-jada-ann-quinn"/>
+                        <display value="Observation - Mother Height (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-mother-height-jada-ann-quinn"/>
+                        <display value="Observation - Mother Prepregnancy Weight (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-mother-received-wic-food-jada-ann-quinn"/>
+                        <display value="Observation - Mother Received WIC Food (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"/>
+                        <display value="Observation - Cigarette Smoking Before/During Pregnancy (3 months prior: Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn"/>
+                        <display value="Observation - Cigarette Smoking Before/During Pregnancy (first 3 months: Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn"/>
+                        <display value="Observation - Cigarette Smoking Before/During Pregnancy (last 3 months: Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"/>
+                        <display value="Observation - Cigarette Smoking Before/During Pregnancy (second 3 months: Jada Ann Quinn)"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Medical and Health Information on the Live Birth Certificate"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="55752-0"/>
+                            <display value="Clinical information"/>
+                        </coding>
+                    </code>
+                    <focus>
+                        <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                        <display value="Jada Ann Quinn"/>
+                    </focus>
+                    <entry>
+                        <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"/>
+                        <display value="Observation - Preganancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-2"/>
+                        <display value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Fertility enhancing drug therapy)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-3"/>
+                        <display value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Assisted fertilization)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"/>
+                        <display value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-number-previous-cesareans-jada-ann-quinn"/>
+                        <display value="Observation - Number Previous Cesareans (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"/>
+                        <display value="Condition - Infection Present During Pregnancy (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Procedure/procedure-obstetric-procedure-jada-ann-quinn"/>
+                        <display value="Procedure - Obstetric Procedure (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-1"/>
+                        <display value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Chorioamnionitis)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-2"/>
+                        <display value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Antibiotics received during labor)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/>
+                        <display value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Induction of labor)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/>
+                        <display value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Epidural or spinal anesthesia)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Condition/condition-fetal-presentation-babyg-quinn"/>
+                        <display value="Condition - Fetal Presentation (Baby G Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Procedure/procedure-final-route-method-delivery-babyg-quinn"/>
+                        <display value="Procedure - Final Route and Method of Delivery (Baby G Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-labor-trial-attempted-babyg-quinn"/>
+                        <display value="Observation - Labor Trial Attempted (Baby G Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn"/>
+                        <display value="Condition - Maternal Morbidity (Jada Ann Quinn)"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Newborn section on the Live Birth Certificate"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="57075-4"/>
+                            <display value="Newborn delivery information"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Observation/observation-birth-weight-babyg-quinn"/>
+                        <display value="Observation - Birth Weight (Baby G Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-gestational-age-at-delivery-babyg-quinn"/>
+                        <display value="Observation - Gestational Age at Delivery (Baby G Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-apgar-score-babyg-quinn-1-min"/>
+                        <display value="Observation - APGAR Score (BabyG Quinn: 1 min)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-apgar-score-babyg-quinn-5-min"/>
+                        <display value="Observation - APGAR Score (BabyG Quinn: 5 min)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-plurality-jada-ann-quinn"/>
+                        <display value="Observation - Plurality (Jada Ann Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Condition/condition-abnormal-condition-of-newborn-babyg-quinn"/>
+                        <display value="Condition - Abnormal Condition of Newborn (Baby G Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"/>
+                        <display value="Condition - Congenital Anomaly of Newborn (BabyG Quinn) 1"/>
+                    </entry>
+                    <entry>
+                        <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2"/>
+                        <display value="Condition - Congenital Anomaly of Newborn (Baby G Quinn) 2"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-infant-living-babyg-quinn"/>
+                        <display value="Observation - Infant Living (Baby G Quinn)"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/>
+                        <display value="Observation - Infant Breastfed at Discharge (Baby G Quinn)"/>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Patient/patient-child-babyg-quinn"/>
+        <resource>
+            <Patient>
+                <id value="patient-child-babyg-quinn"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="hapiHeaderText">Baby G 
+                     
+                            
+                            <b>QUINN </b>
+                        </div>
+                        <table class="hapiPropertyTable">
+                            <tbody>
+                                <tr>
+                                    <td>Identifier</td>
+                                    <td>9932702</td>
+                                </tr>
+                                <tr>
+                                    <td>Date of birth</td>
+                                    <td>
+                                        <span>12 February 2019</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </text>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2106-3"/>
+                            <display value="White"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="White"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2186-5"/>
+                            <display value="Not Hispanic or Latino"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Not Hispanic or Latino"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+                    <valueCode value="F"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+                    <valueAddress>
+                        <city value="Salt Lake City"/>
+                        <district value="Salt Lake"/>
+                        <state value="UT"/>
+                    </valueAddress>
+                </extension>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                            <display value="Medical Record Number"/>
+                        </coding>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="9932702"/>
+                </identifier>
+                <name>
+                    <family value="Quinn"/>
+                    <given value="Baby"/>
+                    <given value="G"/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="2019-02-12">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+                        <valueDateTime value="2019-02-12T13:00:00-07:00"/>
+                    </extension>
+                </birthDate>
+                <multipleBirthInteger value="1"/>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-mother-received-wic-food-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-mother-received-wic-food-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="87303-4"/>
+                        <display value="Mother WIC food recipient"/>
+                    </coding>
+                    <text value="Did mother get WIC food for herself during this pregnancy?"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueBoolean value="true"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/condition-abnormal-condition-of-newborn-babyg-quinn"/>
+        <resource>
+            <Condition>
+                <id value="condition-abnormal-condition-of-newborn-babyg-quinn"/>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73812-0"/>
+                        <display value="Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct/731000124108"/>
+                        <code value="434621000124103"/>
+                        <display value="Antibiotic given for suspected neonatal sepsis (situation)"/>
+                    </coding>
+                    <text value="Antibiotic given for suspected neonatal sepsis (situation)"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-number-other-pregnancy-outcomes-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69043-8"/>
+                        <display value="Other pregnancy outcomes #"/>
+                    </coding>
+                    <text value="Other pregnancy outcomes #"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueInteger value="0"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"/>
+        <resource>
+            <Condition>
+                <id value="condition-infection-present-during-pregnancy-jada-ann-quinn"/>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="72519-2"/>
+                        <display value="Infections present AndOr treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="105629000"/>
+                        <display value="Chlamydial infection (disorder)"/>
+                    </coding>
+                    <text value="Chlamydial infection (disorder)"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"/>
+        <resource>
+            <Observation>
+                <id value="observation-pregnancy-risk-factor-jada-ann-quinn-1"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73775-9"/>
+                        <display value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="48194001"/>
+                        <display value="Pregnancy-induced hypertension (disorder)"/>
+                    </coding>
+                    <text value="Pregnancy-induced hypertension (disorder)"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Encounter/encounter-birth-babyg-quinn"/>
+        <resource>
+            <Encounter>
+                <id value="encounter-birth-babyg-quinn"/>
+                <identifier>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="9937012"/>
+                </identifier>
+                <status value="finished"/>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="IMP"/>
+                    <display value="inpatient encounter"/>
+                </class>
+                <type>
+                    <coding>
+                        <system value="http://www.ama-assn.org/go/cpt"/>
+                        <code value="99234"/>
+                    </coding>
+                    <text value="Under Observation or Inpatient Care Services (Including Admission and Discharge Services)"/>
+                </type>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <participant>
+                    <type>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="87287-9"/>
+                            <display value="Birth certifier [Extended Identifier]"/>
+                        </coding>
+                    </type>
+                    <period>
+                        <start value="2019-02-12T13:30:00-07:00"/>
+                    </period>
+                    <individual>
+                        <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
+                        <display value="Avery Jones, MD"/>
+                    </individual>
+                </participant>
+                <participant>
+                    <type>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="87286-1"/>
+                            <display value="Birth attendant [Extended Identifier]"/>
+                        </coding>
+                    </type>
+                    <individual>
+                        <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
+                        <display value="Avery Jones, MD"/>
+                    </individual>
+                </participant>
+                <period>
+                    <start value="2019-02-12T13:00:00-07:00"/>
+                    <end value="2019-02-15T10:00:00-07:00"/>
+                </period>
+                <hospitalization>
+                    <destination>
+                        <reference value="Location/location-east-hospital"/>
+                        <display value="East Hospital Location"/>
+                    </destination>
+                    <dischargeDisposition>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+                            <code value="other-hcf"/>
+                            <display value="Other healthcare facility"/>
+                        </coding>
+                        <text value="The patient was transferred to another healthcare facility."/>
+                    </dischargeDisposition>
+                </hospitalization>
+                <location>
+                    <location>
+                        <reference value="Location/location-south-hospital"/>
+                        <display value="South Hospital Location"/>
+                    </location>
+                    <physicalType>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="22232009"/>
+                            <display value="Hospital"/>
+                        </coding>
+                    </physicalType>
+                </location>
+                <partOf>
+                    <reference value="Encounter/encounter-maternity-jada-ann-quinn"/>
+                    <display value="Maternity Encounter - Jada Ann Quinn"/>
+                </partOf>
+            </Encounter>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-date-of-last-live-birth-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-date-of-last-live-birth-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="68499-3"/>
+                        <display value="Date last live birth"/>
+                    </coding>
+                    <text value="Date of last live birth"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueDateTime value="2014-11-20"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-2"/>
+        <resource>
+            <Observation>
+                <id value="observation-pregnancy-risk-factor-jada-ann-quinn-2"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73775-9"/>
+                        <display value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="445151000124101"/>
+                        <display value="Fertility enhancing drug therapy"/>
+                    </coding>
+                    <text value="Fertility enhancing drug therapy"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-3"/>
+        <resource>
+            <Observation>
+                <id value="observation-pregnancy-risk-factor-jada-ann-quinn-3"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73775-9"/>
+                        <display value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="63487001"/>
+                        <display value="Assisted fertilization"/>
+                    </coding>
+                    <text value="Assisted fertilization"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"/>
+        <resource>
+            <Observation>
+                <id value="observation-pregnancy-risk-factor-jada-ann-quinn-4"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73775-9"/>
+                        <display value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="200144004"/>
+                        <display value="Deliveries by cesarean (finding)"/>
+                    </coding>
+                    <text value="Deliveries by cesarean (finding)"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/>
+        <resource>
+            <Observation>
+                <id value="observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73813-8"/>
+                        <display value="Characteristics of labor and delivery [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Characteristics of labor and delivery"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <issued value="2019-02-12T09:34:30-07:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="11612004"/>
+                        <display value="Chorioamnionitis"/>
+                    </coding>
+                    <text value="Chorioamnionitis"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2"/>
+        <resource>
+            <Condition>
+                <id value="condition-congenital-anomaly-of-newborn-babyg-quinn-2"/>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73780-9"/>
+                        <display value="Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="70156005"/>
+                        <display value="Anomaly of chromosome pair 21 (disorder)"/>
+                    </coding>
+                    <text value="Anomaly of chromosome pair 21 (disorder)"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+                <evidence>
+                    <code>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="312948004"/>
+                            <display value="Karyotype determination"/>
+                        </coding>
+                        <text value="Karyotype determination pending"/>
+                    </code>
+                </evidence>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-1"/>
+        <resource>
+            <Observation>
+                <id value="observation-characteristic-of-labor-and-delivery-babyg-quinn-1"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73813-8"/>
+                        <display value="Characteristics of labor and delivery [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Characteristics of labor and delivery"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <issued value="2019-02-12T09:34:30-07:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="236958009"/>
+                        <display value="Induction of labor"/>
+                    </coding>
+                    <text value="Induction of labor"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-2"/>
+        <resource>
+            <Observation>
+                <id value="observation-characteristic-of-labor-and-delivery-babyg-quinn-2"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73813-8"/>
+                        <display value="Characteristics of labor and delivery [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Characteristics of labor and delivery"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <issued value="2019-02-12T09:34:30-07:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="434691000124101"/>
+                        <display value="Antibiotics received during labor"/>
+                    </coding>
+                    <text value="Antibiotics received during labor"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-number-births-now-dead-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-number-births-now-dead-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="68496-9"/>
+                        <display value="Previous live births now dead #"/>
+                    </coding>
+                    <text value="Previous live births now dead #"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueInteger value="0"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/>
+        <resource>
+            <Observation>
+                <id value="observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73813-8"/>
+                        <display value="Characteristics of labor and delivery [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Characteristics of labor and delivery"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <issued value="2019-02-12T09:34:30-07:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="231064003"/>
+                        <display value="Intrathecal injection of local anesthetic agent (procedure)"/>
+                    </coding>
+                    <text value="Epidural or spinal anesthesia"/>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-cig-smoking-pregnancy-1-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="64794-1"/>
+                        <display value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
+                    </coding>
+                    <text value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueInteger value="20"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-cig-smoking-pregnancy-3-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="87299-4"/>
+                        <display value="Cigarettes smoked per day by Mother--2nd trimester"/>
+                    </coding>
+                    <text value="Cigarettes smoked per day by Mother--2nd trimester"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueInteger value="1"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-cig-smoking-pregnancy-4-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="64795-8"/>
+                        <display value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
+                    </coding>
+                    <text value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueInteger value="0"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Procedure/procedure-obstetric-procedure-jada-ann-quinn"/>
+        <resource>
+            <Procedure>
+                <id value="procedure-obstetric-procedure-jada-ann-quinn"/>
+                <status value="completed"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="240278000"/>
+                        <display value="External cephalic version (procedure)"/>
+                    </coding>
+                    <text value="External cephalic version: Failed"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <performedPeriod>
+                    <start value="2019-02-07T08:30:00-07:00"/>
+                    <end value="2019-02-07T08:45:00-07:00"/>
+                </performedPeriod>
+                <outcome>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="385671000"/>
+                        <display value="Unsuccessful"/>
+                    </coding>
+                    <text value="External cephalic version: Unsuccessful"/>
+                </outcome>
+            </Procedure>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-cig-smoking-pregnancy-2-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="87298-6"/>
+                        <display value="Cigarettes smoked per day by Mother--1st trimester"/>
+                    </coding>
+                    <text value="Cigarettes smoked per day by Mother--1st trimester"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueInteger value="3"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-number-births-now-living-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-number-births-now-living-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="11638-4"/>
+                        <display value="[#] Births.still living"/>
+                    </coding>
+                    <text value="[#] Births.still living"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueInteger value="1"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-birth-weight-babyg-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-birth-weight-babyg-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8339-4"/>
+                        <display value="Birth weight Measured"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <valueQuantity>
+                    <value value="2500"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="g"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-number-previous-cesareans-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-number-previous-cesareans-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="68497-7"/>
+                        <display value="Previous cesarean deliveries #"/>
+                    </coding>
+                    <text value="Previous cesarean deliveries #"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueInteger value="1"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69044-6"/>
+                        <display value="Date first prenatal visit"/>
+                    </coding>
+                    <text value="Date of first prenatal care visit"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueDateTime value="2018-07-20"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-infant-living-babyg-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-infant-living-babyg-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73757-7"/>
+                        <display value="Infant living at time of report [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <valueBoolean value="true"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/condition-maternal-morbidity-jada-ann-quinn"/>
+        <resource>
+            <Condition>
+                <id value="condition-maternal-morbidity-jada-ann-quinn"/>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73781-7"/>
+                        <display value="Maternal morbidity [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34430009"/>
+                        <display value="Rupture of uterus (disorder)"/>
+                    </coding>
+                    <text value="Rupture of uterus (disorder)"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-infant-breastfed-at-discharge-babyg-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73756-9"/>
+                        <display value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <issued value="2019-02-15T09:45:00-07:00"/>
+                <valueBoolean value="true"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"/>
+        <resource>
+            <Coverage>
+                <id value="coverage-principal-payer-for-delivery-jada-ann-quinn"/>
+                <status value="active"/>
+                <type>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.3.221.5"/>
+                        <code value="5"/>
+                        <display value="Private Health Insurance"/>
+                    </coding>
+                    <text value="Private Health Insurance"/>
+                </type>
+                <beneficiary>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </beneficiary>
+                <payor>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                        <valueCode value="not-asked"/>
+                    </extension>
+                </payor>
+            </Coverage>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-labor-trial-attempted-babyg-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-labor-trial-attempted-babyg-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73760-1"/>
+                        <display value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                    <text value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <issued value="2019-02-12T08:55:30-07:00"/>
+                <valueBoolean value="true"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-mother-delivery-weight-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-mother-delivery-weight-jada-ann-quinn"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="69461-2"/>
+                        <display value="Mother's body weight --at delivery"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <effectiveDateTime value="2019-02-12"/>
+                <valueQuantity>
+                    <value value="175"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="[lb_av]"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-mother-height-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-mother-height-jada-ann-quinn"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="3137-7"/>
+                        <display value="Body height Measured"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <effectiveDateTime value="2020-04-28"/>
+                <valueQuantity>
+                    <value value="67"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="[in_i]"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-gestational-age-at-delivery-babyg-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-gestational-age-at-delivery-babyg-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="11884-4"/>
+                        <display value="Gestational age Estimated"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <valueQuantity>
+                    <value value="36"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="wk"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-plurality-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-plurality-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="57722-1"/>
+                        <display value="Birth plurality of Pregnancy"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueInteger value="2"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="68500-8"/>
+                        <display value="Date last other pregnancy outcome"/>
+                    </coding>
+                    <text value="Date of last other pregnancy outcome"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueDateTime value="2015-05"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-number-prenatal-visits-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-number-prenatal-visits-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="68493-6"/>
+                        <display value="Prenatal visits for this pregnancy #"/>
+                    </coding>
+                    <text value="Prenatal visits for this pregnancy #"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </focus>
+                <valueInteger value="8"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/condition-fetal-presentation-babyg-quinn"/>
+        <resource>
+            <Condition>
+                <id value="condition-fetal-presentation-babyg-quinn"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                        <code value="encounter-diagnosis"/>
+                        <display value="Encounter Diagnosis"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="6096002"/>
+                        <display value="Breech presentation (finding)"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+                <asserter>
+                    <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
+                    <display value="Avery Jones, MD"/>
+                </asserter>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
+        <resource>
+            <Practitioner>
+                <id value="practitioner-live-birth-fetal-death-avery-jones"/>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi"/>
+                    <value value="112247003"/>
+                </identifier>
+                <name>
+                    <family value="Jones"/>
+                    <given value="Avery"/>
+                    <suffix value="M.D."/>
+                </name>
+                <qualification>
+                    <code>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="112247003"/>
+                            <display value="Medical doctor"/>
+                        </coding>
+                    </code>
+                </qualification>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-last-menstrual-period-jada-ann-quinn"/>
+        <resource>
+            <Observation>
+                <id value="observation-last-menstrual-period-jada-ann-quinn"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8665-2"/>
+                        <display value="Last menstrual period start date"/>
+                    </coding>
+                    <text value="Last menstrual period start date"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <valueDateTime value="2018-06-05"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Procedure/procedure-final-route-method-delivery-babyg-quinn"/>
+        <resource>
+            <Procedure>
+                <id value="procedure-final-route-method-delivery-babyg-quinn"/>
+                <status value="completed"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="11466000"/>
+                        <display value="Cesarean section"/>
+                    </coding>
+                    <text value="Cesarean section"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="Baby G Quinn"/>
+                </subject>
+                <performedPeriod>
+                    <start value="2019-02-12T12:45:00-07:00"/>
+                    <end value="2019-02-12T13:15:00-07:00"/>
+                </performedPeriod>
+                <reasonReference>
+                    <reference value="Observation/observation-labor-trial-attempted-babyg-quinn"/>
+                    <display value="Labor trial attempted - true"/>
+                </reasonReference>
+            </Procedure>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"/>
+        <resource>
+            <Condition>
+                <id value="condition-congenital-anomaly-of-newborn-babyg-quinn"/>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73780-9"/>
+                        <display value="Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="12770006"/>
+                        <display value="Cyanotic congenital heart disease (disorder)"/>
+                    </coding>
+                    <text value="Cyanotic congenital heart disease (disorder)"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-apgar-score-babyg-quinn-1-min"/>
+        <resource>
+            <Observation>
+                <id value="observation-apgar-score-babyg-quinn-1-min"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="9272-6"/>
+                        <display value="1 minute Apgar Score"/>
+                    </coding>
+                    <text value="1 minute Apgar Score"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <valueInteger value="5"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/observation-apgar-score-babyg-quinn-5-min"/>
+        <resource>
+            <Observation>
+                <id value="observation-apgar-score-babyg-quinn-5-min"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="9274-2"/>
+                        <display value="5 minute Apgar Score"/>
+                    </coding>
+                    <text value="5 minute Apgar Score"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                    <display value="BabyG Quinn"/>
+                </subject>
+                <valueInteger value="7"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Encounter/encounter-maternity-jada-ann-quinn"/>
+        <resource>
+            <Encounter>
+                <id value="encounter-maternity-jada-ann-quinn"/>
+                <identifier>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="9937012"/>
+                </identifier>
+                <status value="finished"/>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="IMP"/>
+                    <display value="inpatient encounter"/>
+                </class>
+                <type>
+                    <coding>
+                        <system value="http://www.ama-assn.org/go/cpt"/>
+                        <code value="99234"/>
+                    </coding>
+                    <text value="Under Observation or Inpatient Care Services (Including Admission and Discharge Services)"/>
+                </type>
+                <subject>
+                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                    <display value="Jada Ann Quinn"/>
+                </subject>
+                <participant>
+                    <type>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="87286-1"/>
+                            <display value="Birth attendant [Extended Identifier]"/>
+                        </coding>
+                    </type>
+                    <individual>
+                        <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
+                        <display value="Avery Jones, MD"/>
+                    </individual>
+                </participant>
+                <period>
+                    <start value="2019-02-11T10:00:00-07:00"/>
+                    <end value="2019-02-15T10:00:00-07:00"/>
+                </period>
+                <hospitalization>
+                    <origin>
+                        <reference value="Location/location-north-hospital"/>
+                        <display value="North Hospital Location"/>
+                    </origin>
+                    <admitSource>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+                            <code value="hosp-trans"/>
+                            <display value="Transferred from other hospital"/>
+                        </coding>
+                        <text value="The Patient has been transferred from another hospital for this encounter."/>
+                    </admitSource>
+                </hospitalization>
+                <location>
+                    <location>
+                        <reference value="Location/location-south-hospital"/>
+                        <display value="South Hospital Location"/>
+                    </location>
+                    <physicalType>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="22232009"/>
+                            <display value="Hospital"/>
+                        </coding>
+                    </physicalType>
+                </location>
+                <serviceProvider>
+                    <reference value="Organization/organization-south-hospital"/>
+                    <display value="South Hospital Organization"/>
+                </serviceProvider>
+            </Encounter>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Location/location-south-hospital"/>
+        <resource>
+            <Location>
+                <id value="location-south-hospital"/>
+                <status value="active"/>
+                <name value="South Hospital"/>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+                        <code value="HOSP"/>
+                        <display value="Hospital"/>
+                    </coding>
+                </type>
+            </Location>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Patient/patient-mother-jada-ann-quinn"/>
+        <resource>
+            <Patient>
+                <id value="patient-mother-jada-ann-quinn"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="hapiHeaderText">Jada Ann 
+                     
+                            
+                            <b>QUINN </b>
+                        </div>
+                        <table class="hapiPropertyTable">
+                            <tbody>
+                                <tr>
+                                    <td>Identifier</td>
+                                    <td>1032702</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>
+                                        <span>1875 West Morton Avenue </span>
+                                        <br/>
+                                        <span>Salt Lake City </span>
+                                        <span>UT </span>
+                                        <span>US </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Date of birth</td>
+                                    <td>
+                                        <span>24 November 1974</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </text>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2106-3"/>
+                            <display value="White"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="1002-5"/>
+                            <display value="American Indian or Alaska Native"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="White, American Indian or Alaska Native"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2186-5"/>
+                            <display value="Not Hispanic or Latino"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Not Hispanic or Latino"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+                    <valueCode value="F"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+                    <valueAddress>
+                        <state value="UT"/>
+                    </valueAddress>
+                </extension>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="SS"/>
+                            <display value="Social Security number"/>
+                        </coding>
+                    </type>
+                    <system value="http://hl7.org/fhir/sid/us-ssn"/>
+                    <value value="132225986"/>
+                </identifier>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                            <display value="Medical Record Number"/>
+                        </coding>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="1032702"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Quinn"/>
+                    <given value="Jada"/>
+                    <given value="Ann"/>
+                </name>
+                <name>
+                    <use value="maiden"/>
+                    <family value="King"/>
+                    <given value="Jada"/>
+                    <given value="Ann"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="1-(404)555-1212"/>
+                    <use value="home"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="jadaann.quinn@example.com"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="1985-01-15"/>
+                <address>
+                    <extension url="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-within-city-limits-indicator">
+                        <valueCoding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="Y"/>
+                            <display value="Yes"/>
+                        </valueCoding>
+                    </extension>
+                    <use value="home"/>
+                    <line value="1875 West Morton Avenue"/>
+                    <city value="Salt Lake City"/>
+                    <district value="Salt Lake"/>
+                    <state value="UT"/>
+                    <postalCode value="84116"/>
+                    <country value="US"/>
+                </address>
+                <address>
+                    <use value="billing"/>
+                    <line value="1848 South 1300 East"/>
+                    <city value="Salt Lake City"/>
+                    <state value="UT"/>
+                    <postalCode value="84401"/>
+                    <country value="US"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+        <resource>
+            <RelatedPerson>
+                <id value="relatedperson-mother-jada-ann-quinn"/>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="SS"/>
+                            <display value="Social Security number"/>
+                        </coding>
+                    </type>
+                    <system value="http://hl7.org/fhir/sid/us-ssn"/>
+                    <value value="132225986"/>
+                </identifier>
+                <active value="true"/>
+                <patient>
+                    <reference value="Patient/patient-child-babyg-quinn"/>
+                </patient>
+                <relationship>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+                        <code value="NMTH"/>
+                        <display value="natural mother"/>
+                    </coding>
+                    <text value="Natural Mother"/>
+                </relationship>
+                <name>
+                    <use value="official"/>
+                    <family value="Quinn"/>
+                    <given value="Jada"/>
+                    <given value="Ann"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="1-(404)555-1212"/>
+                    <use value="home"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="jadaann.quinn@example.com"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="1985-01-15"/>
+                <address>
+                    <use value="home"/>
+                    <line value="1875 West Morton Avenue"/>
+                    <city value="Salt Lake City"/>
+                    <district value="Salt Lake"/>
+                    <state value="UT"/>
+                    <postalCode value="84116"/>
+                    <country value="US"/>
+                </address>
+            </RelatedPerson>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Organization/organization-south-hospital"/>
+        <resource>
+            <Organization>
+                <id value="organization-south-hospital"/>
+                <identifier>
+                    <system value="http://hl7.org.fhir/sid/us-npi"/>
+                    <value value="5555512"/>
+                </identifier>
+                <active value="true"/>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+                        <code value="HOSP"/>
+                        <display value="Hospital"/>
+                    </coding>
+                </type>
+                <name value="South Hospital"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="+1-555-555-1111"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="mail@southhospital.com"/>
+                </telecom>
+                <address>
+                    <line value="2100 North Ave"/>
+                    <city value="Salt Lake City"/>
+                    <state value="UT"/>
+                    <postalCode value="84116"/>
+                    <country value="US"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+</Bundle>

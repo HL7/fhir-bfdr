@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-facility-live-birth-report"/>
     <meta>
-        <versionId value="25"/>
-        <lastUpdated value="2020-08-12T05:24:06.214+00:00"/>
-        <source value="#D57khNrbBBk2di1N"/>
+        <versionId value="29"/>
+        <lastUpdated value="2020-08-15T06:03:57.236+00:00"/>
+        <source value="#K7fETRbcICN7BfTa"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
     <version value="1.0.0"/>
@@ -84,8 +84,8 @@
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -180,7 +180,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -244,8 +244,8 @@
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -258,18 +258,6 @@
             <short value="Principal source of payment for this delivery"/>
             <definition value="The principal payer for this delivery"/>
             <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:laborAndDelivery.entry:motherTransferred">
-            <path value="Composition.section.entry"/>
-            <sliceName value="motherTransferred"/>
-            <short value="Mother transferred for maternal medical or fetal indications for delivery"/>
-            <definition value="Information of the transfer status of the mother prior to delivery"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-maternal-transfer"/>
-            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:laborAndDelivery.entry:mothersWeightAtDelivery">
@@ -352,8 +340,8 @@
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -408,14 +396,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:birthOrder">
-            <path value="Composition.section.entry"/>
-            <sliceName value="birthOrder"/>
-            <short value="If not single birth - born first, second, third, etc."/>
-            <definition value="If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Composition.section:newborn.entry:numberInfantsBornAlive">
             <path value="Composition.section.entry"/>
             <sliceName value="numberInfantsBornAlive"/>
@@ -448,14 +428,6 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
             </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:newborn.entry:infantTransferred">
-            <path value="Composition.section.entry"/>
-            <sliceName value="infantTransferred"/>
-            <short value="Was infant trasnferred within 24 hours of delivery?"/>
-            <definition value="Information on the transfer status of the infant wtihin 24 hours after delivery"/>
-            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:newborn.entry:infantLiving">

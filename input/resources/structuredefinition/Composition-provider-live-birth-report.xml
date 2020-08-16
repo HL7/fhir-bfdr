@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2020-08-06T00:14:15.224+00:00"/>
-        <source value="#cMz3kLD0nv7HF7sv"/>
+        <versionId value="28"/>
+        <lastUpdated value="2020-08-15T06:03:57.215+00:00"/>
+        <source value="#a1IFCJLu0LLh5tdH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -42,21 +42,16 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Composition.extension:extensionRelatedPersonMother">
-            <path value="Composition.extension"/>
-            <sliceName value="extensionRelatedPersonMother"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-relatedperson-mother"/>
-            </type>
-        </element>
-        <element id="Composition.extension:extensionRelatedPersonFather">
-            <path value="Composition.extension"/>
-            <sliceName value="extensionRelatedPersonFather"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-relatedperson-father"/>
-            </type>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <short value="U.S. standard certificate of live birth - 2003 revision"/>
+            <definition value="U.S. standard certificate of live birth - 2003 revision"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="68998-4"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
@@ -99,8 +94,8 @@
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -177,8 +172,8 @@
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -206,8 +201,8 @@
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -231,8 +226,8 @@
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
