@@ -225,6 +225,10 @@
             <short value="Principal source of payment for this delivery"/>
             <definition value="The principal payer for this delivery"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Coverage-principal-payer-for-delivery"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal.entry:mothersWeightAtDelivery">
@@ -330,6 +334,10 @@
             <sliceName value="pregnancyRiskFactors"/>
             <short value="Risk factors in this pregnancy"/>
             <definition value="Selected medical risk factors of the mother during this pregnancy"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-pregnancy-risk-factor"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicalHealthInformation.entry:numberPreviousCesareans">
