@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="487"/>
-        <lastUpdated value="2020-08-17T00:16:27.914+00:00"/>
-        <source value="#cJJCy7dDUYu5MTfE"/>
+        <versionId value="491"/>
+        <lastUpdated value="2020-08-17T03:20:28.991+00:00"/>
+        <source value="#MZC2mYWxgUoQD1Iy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -958,6 +958,25 @@
             <description value="Example of Observation-mother-married-during-pregnancy (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-paternity-acknowledgement-signed"/>
+                <display value="Observation - Paternity Acknowledgement Signed"/>
+            </reference>
+            <name value="Observation - Paternity Acknowledgement Signed"/>
+            <description value="This Observation represents whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="parent-information-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-paternity-acknowledgement-signed-jada-ann-quinn"/></reference>
+            <name value="Observation  - Paternity Acknowledgement Signed (Jada Ann Quinn)"/>
+            <description value="Example of observation-paternity-acknowledgement-signed profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
             <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
         </resource>
         <page>
