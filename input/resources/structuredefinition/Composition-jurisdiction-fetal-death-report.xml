@@ -32,7 +32,7 @@
         <element id="Composition">
             <path value="Composition"/>
         </element>
-        <element id="Composition.extension:dateReceivedByRegistrar">
+        <element id="Composition.extension">
             <path value="Composition.extension"/>
             <min value="1"/>
             <max value="1"/>
@@ -41,7 +41,7 @@
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"/>
             </type>
         </element>
-        <element id="Composition.extension:relatedPersonFather">
+        <element id="Composition.extension">
             <path value="Composition.extension"/>
             <min value="1"/>
             <max value="1"/>
@@ -398,12 +398,12 @@
         </element>
         <element id="Composition.section:fetus.code">
             <path value="Composition.section.code"/>
-            <short value="Fetal delivery information Document [US Standard Report of Fetal Death]"/>
-            <definition value="Fetal delivery information Document [US Standard Report of Fetal Death]"/>
+            <short value="fetus delivery information"/>
+            <definition value="fetus delivery information"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="76400-1"/>
+                    <code value="57075-4"/>
                 </coding>
             </patternCodeableConcept>
         </element>
