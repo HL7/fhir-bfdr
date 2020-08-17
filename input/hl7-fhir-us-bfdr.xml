@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="502"/>
-        <lastUpdated value="2020-08-17T05:19:55.119+00:00"/>
-        <source value="#6Y4104jIy38AUp9J"/>
+        <versionId value="513"/>
+        <lastUpdated value="2020-08-17T07:54:32.235+00:00"/>
+        <source value="#hGxCaxIrKHftX5g3"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -73,19 +73,38 @@
         </grouping>
         <grouping id="new-group2">
             <name value="Examples: Bundle &amp; Composition Test Data for Live Birth"/>
+            <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
         <grouping id="new-group3">
             <name value="Examples: Participant Test Data for Live Birth"/>
+            <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
         <grouping id="new-group4">
             <name value="Examples: Encounter Test Data for Live Birth"/>
+            <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
         <grouping id="examples-test-data-live-birth">
             <name value="Examples: Clinical and Other Test Data for Live Birth"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
+        <grouping id="new-group5">
+            <name value="Examples: Bundle &amp; Composition Test Data for Fetal Death"/>
+            <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Certificate (see Appendix D)."/>
+        </grouping>
+        <grouping id="new-group6">
+            <name value="Examples: Participant Test Data for Fetal Death"/>
+            <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Certificate (see Appendix D)."/>
+        </grouping>
+        <grouping id="new-group7">
+            <name value="Examples: Encounter Test Data for Fetal Death"/>
+            <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Certificate (see Appendix D)."/>
+        </grouping>
+        <grouping id="new-group8">
+            <name value="Examples: Clinical and Other Test Data for Fetal Death"/>
+            <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Certificate (see Appendix D)."/>
+        </grouping>
         <grouping id="other-examples">
-            <name value="Examples: Other"/>
+            <name value="Other examples"/>
         </grouping>
         <resource>
             <reference>
@@ -1006,6 +1025,61 @@
             <description value="Example of a Document Bundle containing composition-provider-facility-live-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-decedent-fetus-not-named"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-received-by-registrar"/>
+                <display value="Extension - Date received by Registrar"/>
+            </reference>
+            <name value="Extension - Date received by Registrar"/>
+            <description value="Date received by registrar"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition"/>
+                <display value="Condition - Fetal Death Other Significant Cause or Condition"/>
+            </reference>
+            <name value="Condition - Fetal Death Other Significant Cause or Condition"/>
+            <description value="This Condition profile represents another significant cause or condition for the death of the fetus. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="medical-and-health-information-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-fetal-death-cause-or-condition"/>
+                <display value="Condition - Fetal Death Cause or Condition"/>
+            </reference>
+            <name value="Condition - Fetal Death Cause or Condition"/>
+            <description value="This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause. One or more optional contained Other Significant Cause/Condition of Fetal Death profiles represent another significant cause or condition for the death of the fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="medical-and-health-information-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-method-of-disposition"/>
+                <display value="Observation - Method of Disposition"/>
+            </reference>
+            <name value="Observation - Method of Disposition"/>
+            <description value="This Observation profile represents the method of disposition of the deceased fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="medical-and-health-information-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-jurisdiction-fetal-death-not-named"/>
+                <display value="Jurisdiction fetal death report Document"/>
+            </reference>
+            <name value="Composition - Jurisdiction Fetal Death (Fetus Not Named)"/>
+            <description value="Example of composition-jurisdiction-fetal-death profile (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
+            <groupingId value="new-group5"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

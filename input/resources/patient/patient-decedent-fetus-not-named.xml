@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient
+    xmlns="http://hl7.org/fhir">
+    <id value="patient-decedent-fetus-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-17T06:37:30.233+00:00"/>
+        <source value="#ymPmm44ydAZY2tsO"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-decedent-fetus"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">
+                <b>null </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>9932702</td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>09 January 2019</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+        <valueCode value="F"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+        <valueAddress>
+            <city value="Ann Arbor"/>
+            <state value="MI"/>
+        </valueAddress>
+    </extension>
+    <identifier>
+        <use value="usual"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MR"/>
+                <display value="Medical Record Number"/>
+            </coding>
+        </type>
+        <system value="http://hospital.smarthealthit.org"/>
+        <value value="9932702"/>
+    </identifier>
+    <name/>
+    <gender value="female"/>
+    <birthDate value="2019-01-09">
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+            <valueDateTime value="2019-01-09T18:23:00-07:00"/>
+        </extension>
+    </birthDate>
+    <multipleBirthInteger value="1"/>
+</Patient>

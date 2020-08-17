@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Condition-fetal-death-other-significant-cause-or-condition"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-17T07:23:19.551+00:00"/>
+        <source value="#KUzbOMYQyYMixJZw"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition"/>
+    <version value="1.0.0"/>
+    <name value="ConditionFetalDeathOtherSignificantCauseOrCondition"/>
+    <title value="Condition - Fetal Death Other Significant Cause or Condition"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Condition profile represents another significant cause or condition for the death of the fetus. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+            <short value="Another significant cause or condition for the death of the fetus."/>
+        </element>
+        <element id="Condition.category">
+            <path value="Condition.category"/>
+            <short value="Death cause other significant conditions Fetus [US Standard Report of Fetal Death]"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="76061-1"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <short value="The value sets contains the list of values used to report initiating cause or condition or other significant causes or conditions contributing to fetal death."/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7422"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-method-of-disposition"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-17T07:36:22.989+00:00"/>
+        <source value="#QIKy080zNIQUbWeK"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition"/>
+    <version value="1.0.0"/>
+    <name value="ObservationMethodOfDisposition"/>
+    <title value="Observation - Method of Disposition"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This Observation profile represents the method of disposition of the deceased fetus."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="Fetal remains disposition method"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="88241-5"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <short value="Fetal Remains Disposition Method (NCHS)"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7585"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

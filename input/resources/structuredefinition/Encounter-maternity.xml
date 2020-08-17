@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-maternity"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-14T04:53:55.665+00:00"/>
-        <source value="#IbTuB0eRgXvWl1iz"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-17T06:37:46.010+00:00"/>
+        <source value="#qKS6UIlPWoXRMKso"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
     <version value="1.0.0"/>
@@ -50,6 +50,44 @@
             <path value="Encounter.period"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Encounter.participant">
+            <path value="Encounter.participant"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="type"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Encounter.participant:attendant">
+            <path value="Encounter.participant"/>
+            <sliceName value="attendant"/>
+            <short value="The person responsible for delivering the child/fetus."/>
+            <definition value="The attendant at birth/delivery is defined as the individual at the delivery who is responsible for the delivery. For example, if an intern or nurse-midwife delivers an infant/fetus under the supervision of an obstetrician who is present in the delivery room, the obstetrician is to be reported as the attendant. However, a person who is not physically present at the delivery should not be reported as the attendant. For example, if the obstetrician is not physically present, the intern or nurse-midwife MUST be reported as the attendant."/>
+        </element>
+        <element id="Encounter.participant:attendant.type">
+            <path value="Encounter.participant.type"/>
+            <short value="Birth attendant [Extended Identifier]"/>
+            <definition value="Birth attendant [Extended Identifier]"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="87286-1"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:attendant.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Encounter.hospitalization">
             <path value="Encounter.hospitalization"/>
         </element>
@@ -67,6 +105,24 @@
         </element>
         <element id="Encounter.location">
             <path value="Encounter.location"/>
+            <short value="Information about the location of delivery"/>
+            <definition value="Information about the location of devivery"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.location.location">
+            <path value="Encounter.location.location"/>
+            <short value="Facility name (if not institution, give street and number)"/>
+            <definition value="Facility name (if not institution, give street and number)"/>
+        </element>
+        <element id="Encounter.location.physicalType">
+            <path value="Encounter.location.physicalType"/>
+            <short value="Place where birth/delivery occurred (type of place)"/>
+            <definition value="Place where birth/delivery occurred (type of place)"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7124"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>
