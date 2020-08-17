@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="483"/>
-        <lastUpdated value="2020-08-16T07:24:13.567+00:00"/>
-        <source value="#GRXuI772Eosfdg9d"/>
+        <versionId value="487"/>
+        <lastUpdated value="2020-08-17T00:16:27.914+00:00"/>
+        <source value="#cJJCy7dDUYu5MTfE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -940,6 +940,25 @@
             <description value="test"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-mother-married-during-pregnancy"/>
+                <display value="Observation - Mother Married During Pregnancy"/>
+            </reference>
+            <name value="Observation - Mother Married During Pregnancy"/>
+            <description value="This profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="parent-information-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"/></reference>
+            <name value="Observation  - Mother Married During Pregnancy (Jada Ann Quinn)"/>
+            <description value="Example of Observation-mother-married-during-pregnancy (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
+            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

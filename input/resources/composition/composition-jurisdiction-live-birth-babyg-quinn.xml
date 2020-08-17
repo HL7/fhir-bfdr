@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-jurisdiction-live-birth-babyg-quinn"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-16T02:35:38.844+00:00"/>
-        <source value="#NYSseTTuCAt9NfUt"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-17T01:40:12.569+00:00"/>
+        <source value="#hMpvOuca9031V2er"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-date-filed-by-registrar">
@@ -240,6 +240,32 @@
         <entry>
             <reference value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/>
             <display value="Observation - Infant Breastfed at Discharge (Baby G Quinn)"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Mother Administrative Section on the Live Birth Certificate"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="92014-0"/>
+                <display value="Mother's administrative information"/>
+            </coding>
+        </code>
+        <focus>
+            <reference value="RelatedPerson/relatedperson-father-jada-ann-quinn"/>
+            <display value="Jada Ann Quinn"/>
+        </focus>
+        <entry>
+            <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"/>
+            <display value="Observation - Mother Married During Pregnancy (Jada Ann Quinn)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-ssn-requested-for-child-babyg-quinn"/>
+            <display value="Observation - SSN Requested for Child (Baby G Quinn)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-parent-education-level-jada-ann-quinn"/>
+            <display value="Observation - Parent Education Level (Jada Ann Quinn)"/>
         </entry>
     </section>
     <section>
