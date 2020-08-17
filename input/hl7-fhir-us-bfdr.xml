@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="515"/>
-        <lastUpdated value="2020-08-17T08:21:10.832+00:00"/>
-        <source value="#NwOsDfLFH3CYsqLu"/>
+        <versionId value="524"/>
+        <lastUpdated value="2020-08-17T10:25:07.870+00:00"/>
+        <source value="#o6lPJqzVjUyKmdhK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -67,6 +67,9 @@
         </grouping>
         <grouping id="medical-and-health-information-profiles">
             <name value="Medical and Health Information Profiles"/>
+        </grouping>
+        <grouping id="new-group9">
+            <name value="Fetal Death Information Profiles"/>
         </grouping>
         <grouping id="parent-information-profiles">
             <name value="Parent Information Profiles"/>
@@ -1051,7 +1054,7 @@
             <name value="Condition - Fetal Death Other Significant Cause or Condition"/>
             <description value="This Condition profile represents another significant cause or condition for the death of the fetus. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause."/>
             <exampleBoolean value="false"/>
-            <groupingId value="medical-and-health-information-profiles"/>
+            <groupingId value="new-group9"/>
         </resource>
         <resource>
             <reference>
@@ -1061,7 +1064,7 @@
             <name value="Condition - Fetal Death Cause or Condition"/>
             <description value="This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause. One or more optional contained Other Significant Cause/Condition of Fetal Death profiles represent another significant cause or condition for the death of the fetus."/>
             <exampleBoolean value="false"/>
-            <groupingId value="medical-and-health-information-profiles"/>
+            <groupingId value="new-group9"/>
         </resource>
         <resource>
             <reference>
@@ -1071,7 +1074,7 @@
             <name value="Observation - Method of Disposition"/>
             <description value="This Observation profile represents the method of disposition of the deceased fetus."/>
             <exampleBoolean value="false"/>
-            <groupingId value="medical-and-health-information-profiles"/>
+            <groupingId value="new-group9"/>
         </resource>
         <resource>
             <reference>
@@ -1083,6 +1086,61 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
             <groupingId value="new-group5"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-maternity-carmen-teresa-lee"/></reference>
+            <name value="Encounter - Maternity (Carmen Teresa Lee)"/>
+            <description value="Example of Encounter-maternity profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group7"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-mother-carmen-teresa-lee"/></reference>
+            <name value="Patient - Mother (Carmen Teresa Lee)"/>
+            <description value="Example of patient-mother profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group6"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito"/></reference>
+            <name value="Practitioner - Live Birth Fetal Death (Janet Seito)"/>
+            <description value="Example of practitioner-live-birth-fetal-death profile (Janet Seito)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            <groupingId value="new-group6"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-histological-placental-exam"/>
+                <display value="Observation - Histological Placental Exam"/>
+            </reference>
+            <name value="Observation - Histological Placental Exam"/>
+            <description value="This profile represents whether or not a histological placental examination was performed."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-autopsy-or-histological-exam-used"/>
+                <display value="Observation - Autopsy or Histological Exam Used"/>
+            </reference>
+            <name value="Observation - Autopsy or Histological Exam Used"/>
+            <description value="This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-estimated-fetal-death-time-point"/>
+                <display value="Observation - Estimated Fetal Death Time Point"/>
+            </reference>
+            <name value="Observation - Estimated Fetal Death Time Point"/>
+            <description value="This Observation profile represents the estimated time of fetal death; the time of death is characterized by relationship to the time of delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

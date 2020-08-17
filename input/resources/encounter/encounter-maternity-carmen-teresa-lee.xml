@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter
+    xmlns="http://hl7.org/fhir">
+    <id value="encounter-maternity-carmen-teresa-lee"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-17T09:52:48.659+00:00"/>
+        <source value="#NYHYdKqytYufj2kA"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
+    </meta>
+    <identifier>
+        <system value="http://hospital.smarthealthit.org"/>
+        <value value="8937015"/>
+    </identifier>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="IMP"/>
+        <display value="inpatient encounter"/>
+    </class>
+    <type>
+        <coding>
+            <system value="http://www.ama-assn.org/go/cpt"/>
+            <code value="99234"/>
+        </coding>
+        <text value="Under Observation or Inpatient Care Services (Including Admission and Discharge Services)"/>
+    </type>
+    <subject>
+        <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+        <display value="Carmen Teresa Lee"/>
+    </subject>
+    <participant>
+        <type>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="87286-1"/>
+                <display value="Birth attendant [Extended Identifier]"/>
+            </coding>
+        </type>
+        <individual>
+            <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito"/>
+            <display value="Janet Seito, MD"/>
+        </individual>
+    </participant>
+    <period>
+        <start value="2019-01-08T10:00:00-07:00"/>
+        <end value="2019-01-09T17:00:00-07:00"/>
+    </period>
+    <location>
+        <location>
+            <reference value="Location/location-south-hospital"/>
+            <display value="South Hospital Location"/>
+        </location>
+        <physicalType>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="22232009"/>
+                <display value="Hospital"/>
+            </coding>
+        </physicalType>
+    </location>
+    <serviceProvider>
+        <reference value="Organization/organization-south-hospital"/>
+        <display value="South Hospital Organization"/>
+    </serviceProvider>
+</Encounter>
