@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-08-17T07:52:59.154+00:00"/>
-        <source value="#ADD2v3Zu5XvCD729"/>
+        <versionId value="12"/>
+        <lastUpdated value="2020-08-17T08:17:40.889+00:00"/>
+        <source value="#N6XtNtz5PoXlrjgb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -32,7 +32,7 @@
         <element id="Composition">
             <path value="Composition"/>
         </element>
-        <element id="Composition.extension">
+        <element id="Composition.extension:dateReceivedByRegistrar">
             <path value="Composition.extension"/>
             <min value="1"/>
             <max value="1"/>
@@ -41,7 +41,7 @@
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"/>
             </type>
         </element>
-        <element id="Composition.extension">
+        <element id="Composition.extension:relatedPersonFather">
             <path value="Composition.extension"/>
             <min value="1"/>
             <max value="1"/>
@@ -398,12 +398,12 @@
         </element>
         <element id="Composition.section:fetus.code">
             <path value="Composition.section.code"/>
-            <short value="fetus delivery information"/>
-            <definition value="fetus delivery information"/>
+            <short value="Fetal delivery information Document [US Standard Report of Fetal Death]"/>
+            <definition value="Fetal delivery information Document [US Standard Report of Fetal Death]"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="57075-4"/>
+                    <code value="76400-1"/>
                 </coding>
             </patternCodeableConcept>
         </element>
