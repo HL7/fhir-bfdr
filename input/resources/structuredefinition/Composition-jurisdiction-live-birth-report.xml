@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
-    <meta>
-        <versionId value="25"/>
-        <lastUpdated value="2020-08-17T01:40:12.521+00:00"/>
-        <source value="#ezWnRkYDhPMxfoLr"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
     <name value="CompositionJurisdictionLiveBirthReport"/>
@@ -292,6 +287,18 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:motherPrenatal.entry:cigaretteSmokingBeforeDuringPregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="cigaretteSmokingBeforeDuringPregnancy"/>
+            <short value="Cigarettes smoked by the mother before and during the pregnancy"/>
+            <definition value="The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"/>
+            <max value="4"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:medicalHealthInformation">
             <path value="Composition.section"/>
             <sliceName value="medicalHealthInformation"/>
@@ -354,6 +361,28 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:medicalHealthInformation.entry:infectionsDuringPregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="infectionsDuringPregnancy"/>
+            <short value="Infections present and/or treated during this pregnancy"/>
+            <definition value="Selected infections that the mother had or was treated for during the course of this pregnancy"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:obstetricProcedures">
+            <path value="Composition.section.entry"/>
+            <sliceName value="obstetricProcedures"/>
+            <short value="Obstetric procedures"/>
+            <definition value="Selected medical treatments or invasive/manipulative procedures performed during this pregnancy specifically for management of labor and delivery"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:medicalHealthInformation.entry:characteristicsLaborDelivery">
             <path value="Composition.section.entry"/>
             <sliceName value="characteristicsLaborDelivery"/>
@@ -362,6 +391,18 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:fetalPresentation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="fetalPresentation"/>
+            <short value="Fetal presentation at birth"/>
+            <definition value="Fetal presentation at birth"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -374,6 +415,29 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:trialLaborAttempted">
+            <path value="Composition.section.entry"/>
+            <sliceName value="trialLaborAttempted"/>
+            <short value="If cesearean, was a trial of labor attempted?"/>
+            <definition value="If cesarean, was a trial of labor attempted? (Labor was allowed, augmented, or induced with plans for a vaginal delivery.)"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:maternalMorbidity">
+            <path value="Composition.section.entry"/>
+            <sliceName value="maternalMorbidity"/>
+            <short value="Maternal morbidity (complications associated with labor and delivery)"/>
+            <definition value="Serious complications experienced by the mother associated with labor and delivery"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -431,6 +495,18 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:newborn.entry:APGARScore">
+            <path value="Composition.section.entry"/>
+            <sliceName value="APGARScore"/>
+            <short value="APGAR Score"/>
+            <definition value="The Apgar Score for the child."/>
+            <max value="2"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-apgar-score"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:newborn.entry:plurality">
             <path value="Composition.section.entry"/>
             <sliceName value="plurality"/>
@@ -440,6 +516,28 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-plurality"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:abnormalConditionsNewborn">
+            <path value="Composition.section.entry"/>
+            <sliceName value="abnormalConditionsNewborn"/>
+            <short value="Abnormal conditions of the newborn"/>
+            <definition value="Disorders or significant morbidity experienced by the newborn infant"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn.entry:congenitalAnomaliesNewborn">
+            <path value="Composition.section.entry"/>
+            <sliceName value="congenitalAnomaliesNewborn"/>
+            <short value="Congenital anomolies of the newborn"/>
+            <definition value="Malformations of the newborn diagnosed prenatally or after delivery"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -493,6 +591,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
             </type>
         </element>
+        
         <element id="Composition.section:motherInformation.entry">
             <path value="Composition.section.entry"/>
             <slicing>
@@ -542,6 +641,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
+   
         <element id="Composition.section:fatherInformation">
             <path value="Composition.section"/>
             <sliceName value="fatherInformation"/>
@@ -568,6 +668,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-father"/>
             </type>
         </element>
+        
         <element id="Composition.section:fatherInformation.entry">
             <path value="Composition.section.entry"/>
             <slicing>
@@ -593,5 +694,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        
     </differential>
 </StructureDefinition>
