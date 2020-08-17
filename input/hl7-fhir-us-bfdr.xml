@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="497"/>
-        <lastUpdated value="2020-08-17T04:43:51.734+00:00"/>
-        <source value="#szUn5rDoliNrUBUN"/>
+        <versionId value="502"/>
+        <lastUpdated value="2020-08-17T05:19:55.119+00:00"/>
+        <source value="#6Y4104jIy38AUp9J"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -71,9 +71,18 @@
         <grouping id="parent-information-profiles">
             <name value="Parent Information Profiles"/>
         </grouping>
-        <grouping id="examples-test-data-live-birth-facility-worksheet">
-            <name value="Examples: Baby G Quinn and Jada Ann Quinn - Test Data for Live Birth Facility Worksheet and Certificate"/>
-            <description value="See: [Live Birth Facility Worksheet data element Google sheet](https://docs.google.com/spreadsheets/d/1bG1EkFnyHZGIdSNJe62R59dF6KXUf8kLUVVJtUlhvbo/edit?usp=sharing)"/>
+        <grouping id="new-group2">
+            <name value="Examples: Bundle &amp; Composition Test Data for Live Birth"/>
+        </grouping>
+        <grouping id="new-group3">
+            <name value="Examples: Participant Test Data for Live Birth"/>
+        </grouping>
+        <grouping id="new-group4">
+            <name value="Examples: Encounter Test Data for Live Birth"/>
+        </grouping>
+        <grouping id="examples-test-data-live-birth">
+            <name value="Examples: Clinical and Other Test Data for Live Birth"/>
+            <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
         <grouping id="other-examples">
             <name value="Examples: Other"/>
@@ -185,7 +194,7 @@
             <description value="Example of Condition-congenital-anomaly-of-newborn profile (Baby G Quinn): Anomaly of chromosome pair 21 (disorder) with Karyotype determination pending"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -193,7 +202,7 @@
             <name value="Condition - Congenital Anomaly of Newborn (BabyG Quinn)"/>
             <description value="Example of Condition-congenital-anomaly-of-newborn profile (Babyg Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -202,7 +211,7 @@
             <description value="Example of condition-fetal-presentation (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -230,7 +239,7 @@
             <name value="Condition - Infection Present During Pregnancy (Jada Ann Quinn)"/>
             <description value="Example of Condition-infection-present-during-pregnancy profile (Jada Ann Quinn"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -249,7 +258,7 @@
             <description value="Example of Condition-maternal-morbidity (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -257,7 +266,7 @@
             <name value="Condition - Abnormal Condition of Newborn (Baby G Quinn)"/>
             <description value="Example of Condition-abnormal-condition-of-newborn (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -276,7 +285,7 @@
             <description value="Example of coverage-principal-payer-for-delivery profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -304,7 +313,7 @@
             <name value="Encounter - Maternity (Jada Ann Quinn)"/>
             <description value="Example of Encounter-maternity profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group4"/>
         </resource>
         <resource>
             <reference>
@@ -312,7 +321,7 @@
             <name value="Encounter-birth (Baby G Quinn)"/>
             <description value="Example of Encounter-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group4"/>
         </resource>
         <resource>
             <reference>
@@ -340,7 +349,7 @@
             <name value="Location - US Core Location (East Hospital)"/>
             <description value="Example of us-core-location profile (East Hospital)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
@@ -350,7 +359,7 @@
             <name value="Location - US Core Location (North Hospital)"/>
             <description value="Example of us-core-location profile (North Hospital)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
@@ -360,7 +369,7 @@
             <name value="Location (South Hospital)"/>
             <description value="Example of US Core Location (South Hospital)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
@@ -368,7 +377,7 @@
             <name value="Observation - APGAR Score (BabyG Quinn: 1 min)"/>
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 1 min)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -376,7 +385,7 @@
             <name value="Observation - APGAR Score (BabyG Quinn: 5 min)"/>
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 5 min)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -384,7 +393,7 @@
             <name value="Observation - Birth Weight (Baby G Quinn)"/>
             <description value="Example of observation-birth-weight profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -403,7 +412,7 @@
             <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Antibiotics received during labor)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -412,7 +421,7 @@
             <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Chorioamnionitis)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -421,7 +430,7 @@
             <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Epidural or spinal anesthesia)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -430,7 +439,7 @@
             <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Induction of labor)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -449,7 +458,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 month prior: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -458,7 +467,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -467,7 +476,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -476,7 +485,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -494,7 +503,7 @@
             <name value="Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)"/>
             <description value="Example of Observation-date-of-first-prenatal-care-visit (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -513,7 +522,7 @@
             <description value="Example of observation-date-of-last-live-birth profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -532,7 +541,7 @@
             <description value="Example of Observation-date-of-last-other-pregnancy-outcome (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -540,7 +549,7 @@
             <name value="Observation - Gestational Age at Delivery (Baby G Quinn)"/>
             <description value="Example of  profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -558,7 +567,7 @@
             <name value="Observation - Infant Breastfed at Discharge (Baby G Quinn)"/>
             <description value="Example of Observation-infant-breastfed-at-discharge profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -566,7 +575,7 @@
             <name value="Observation - Infant Living (Baby G Quinn)"/>
             <description value="Example of observation-infant-living profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -584,7 +593,7 @@
             <name value="Observation - Labor Trial Attempted (Baby G Quinn)"/>
             <description value="Example of Observation-labor-trial-attempted profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -592,7 +601,7 @@
             <name value="Observation - Last Menstrual Period (Jada Ann Quinn)"/>
             <description value="Example of Observation-last-menstrual-period profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -610,7 +619,7 @@
             <name value="Observation - Mother Delivery Weight (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-delivery-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -618,7 +627,7 @@
             <name value="Observation - Mother Height (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-height profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -626,7 +635,7 @@
             <name value="Observation - Mother Prepregnancy Weight (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-prepregnancy-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -635,7 +644,7 @@
             <description value="Example of Observation-mother-received-wic-food profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -655,7 +664,7 @@
             <name value="Observation - Number Births Now Dead"/>
             <description value="Example of Observation-number-births-now-dead (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -665,7 +674,7 @@
             <name value="Observation - Number Births Now Living (Jada Ann Quinn)"/>
             <description value="Example of observation-number-births-now-living-jada-ann-quinn profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -673,7 +682,7 @@
             <name value="Observation - Number Live Births This Delivery (Jada Ann Quinn)"/>
             <description value="Example of observation-number-live-births-this-delivery profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -681,7 +690,7 @@
             <name value="Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-other-pregnancy-outcomes profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -689,7 +698,7 @@
             <name value="Observation - Number Prenatal Visits (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-prenatal-visits profile (BabyG Quinn/Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -699,7 +708,7 @@
             <name value="Observation - Number Previous Cesareans (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-previous-cesareans (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -707,7 +716,7 @@
             <name value="Observation - Parent Education Level (Jada Ann Quinn)"/>
             <description value="Example of observation-parent-education-level profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -715,7 +724,7 @@
             <name value="Observation - Parent Education Level (James Quinn)"/>
             <description value="Example of observation-parent-education-level profile (James Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -733,7 +742,7 @@
             <name value="Observation - Planned to Deliver at Home (Baby G Quinn)"/>
             <description value="Example of Observation - Planned to Deliver at Home profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -741,7 +750,7 @@
             <name value="Observation - Plurality (Jada Ann Quinn)"/>
             <description value="Example of observation-plurality profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -749,7 +758,7 @@
             <name value="Observation - Preganancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -757,7 +766,7 @@
             <name value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Assisted fertilization)"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Assisted fertilization)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -765,7 +774,7 @@
             <name value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -773,7 +782,7 @@
             <name value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Fertility enhancing drug therapy)"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Fertility enhancing drug therapy)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -792,7 +801,7 @@
             <description value="Example of observation-ssn-requested-for-child profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -802,7 +811,7 @@
             <name value="Organization - US Core Organization (South Hospital)"/>
             <description value="Example of us-core-organization profile (South Hospital)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -810,7 +819,7 @@
             <name value="Patient - Child (Baby G Quinn)"/>
             <description value="Example of Patient-child profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
@@ -818,7 +827,7 @@
             <name value="Patient - Mother (Eve Everywoman)"/>
             <description value="Example of Patient-mother profile (Eve Everywoman)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
@@ -835,7 +844,7 @@
             <name value="Practitioner - Live Birth and Fetal Death (Avery Jones, MD)"/>
             <description value="Example of practitioner-live-birth-fetal-death profile (Avery Jones, MD)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
@@ -854,7 +863,7 @@
             <description value="Example of procedure-final-route-method-delivery (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -872,7 +881,7 @@
             <name value="Procedure - Obstetric Procedure (Jada Ann Quinn)"/>
             <description value="Example of Procedure-obstetric profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -882,7 +891,7 @@
             <name value="RelatedPerson - Father (James Brandon Quinn)"/>
             <description value="Example of RelatedPerson-father profile (James Brandon Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
@@ -890,7 +899,7 @@
             <name value="RelatedPerson - Mother (Jada Ann Quinn)"/>
             <description value="Example of RelatedPerson-mother profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
@@ -919,7 +928,7 @@
             <description value="Example of composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group2"/>
         </resource>
         <resource>
             <reference>
@@ -927,9 +936,9 @@
                 <display value="bundle-jurisdiction-live-birth-babyg-quinn"/>
             </reference>
             <name value="Bundle - Jurisdiction Live Birth Report (Baby G Quinn)"/>
-            <description value="Example of document bundle containing composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
+            <description value="Example of a Document Bundle containing composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group2"/>
         </resource>
         <resource>
             <reference>
@@ -958,7 +967,7 @@
             <description value="Example of Observation-mother-married-during-pregnancy (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -977,7 +986,7 @@
             <description value="Example of observation-paternity-acknowledgement-signed profile (James Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -988,7 +997,15 @@
             <description value="Example of composition-provider-facility-live-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
-            <groupingId value="examples-test-data-live-birth-facility-worksheet"/>
+            <groupingId value="new-group2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-provider-facility-live-birth-babyg-quinn"/></reference>
+            <name value="Bundle - Provider Facility Live Birth Report (Baby G Quinn)"/>
+            <description value="Example of a Document Bundle containing composition-provider-facility-live-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group2"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
