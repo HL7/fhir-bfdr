@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2020-08-17T01:50:17.119+00:00"/>
-        <source value="#8XQreeN3U8txLzMm"/>
+        <versionId value="27"/>
+        <lastUpdated value="2020-08-17T03:40:02.946+00:00"/>
+        <source value="#ni2RzSKHQkzwby5x"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -683,6 +683,18 @@
             </slicing>
             <short value="Entries that are contained in the fatherInformation section"/>
             <definition value="Entries that are contained in the fatherInformation section"/>
+        </element>
+        <element id="Composition.section:fatherInformation.entry:paternityAcknowledgementSigned">
+            <path value="Composition.section.entry"/>
+            <sliceName value="paternityAcknowledgementSigned"/>
+            <short value="Paternity acknowledgement signed by father"/>
+            <definition value="Whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:fatherInformation.entry:fathersEducation">
             <path value="Composition.section.entry"/>

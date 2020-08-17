@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="composition-jurisdiction-live-birth-babyg-quinn"/>
+    <id value="composition-provider-facility-live-birth-babyg-quinn"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-08-17T03:40:02.851+00:00"/>
-        <source value="#ca0PzK1UTlA8lGWU"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-17T04:42:02.750+00:00"/>
+        <source value="#leuzTYIk0qvAAAeR"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
     </meta>
-    <extension url="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-date-filed-by-registrar">
-        <valueDateTime value="2019-02-12"/>
-    </extension>
     <identifier>
-        <value value="c03eab8c-11e8-4d0c-ad2a-b385395e27df"/>
+        <value value="c03eab8c-11e8-4d0c-ad2a-b385395e27de"/>
     </identifier>
     <status value="final"/>
     <type>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="92011-6"/>
-            <display value="Jurisdiction live birth report Document"/>
+            <code value="92020-7"/>
+            <display value="Provider supplied facility live birth report Document"/>
         </coding>
     </type>
     <subject>
@@ -35,7 +32,7 @@
         <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
         <display value="Avery Jones, MD"/>
     </author>
-    <title value="Jurisdiction live birth report Document"/>
+    <title value="Provider supplied facility live birth report Document"/>
     <section>
         <title value="Mother (prenatal) Section on the Live Birth Certificate"/>
         <code>
@@ -88,34 +85,6 @@
         <entry>
             <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn"/>
             <display value="Observation - Mother Delivery Weight (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-mother-height-jada-ann-quinn"/>
-            <display value="Observation - Mother Height (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"/>
-            <display value="Observation - Mother Prepregnancy Weight (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-mother-received-wic-food-jada-ann-quinn"/>
-            <display value="Observation - Mother Received WIC Food (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"/>
-            <display value="Observation - Cigarette Smoking Before/During Pregnancy (3 months prior: Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn"/>
-            <display value="Observation - Cigarette Smoking Before/During Pregnancy (first 3 months: Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn"/>
-            <display value="Observation - Cigarette Smoking Before/During Pregnancy (last 3 months: Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"/>
-            <display value="Observation - Cigarette Smoking Before/During Pregnancy (second 3 months: Jada Ann Quinn)"/>
         </entry>
     </section>
     <section>
@@ -240,54 +209,6 @@
         <entry>
             <reference value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/>
             <display value="Observation - Infant Breastfed at Discharge (Baby G Quinn)"/>
-        </entry>
-    </section>
-    <section>
-        <title value="Mother Administrative Section on the Live Birth Certificate"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="92014-0"/>
-                <display value="Mother's administrative information"/>
-            </coding>
-        </code>
-        <focus>
-            <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
-            <display value="Jada Ann Quinn"/>
-        </focus>
-        <entry>
-            <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"/>
-            <display value="Observation - Mother Married During Pregnancy (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-ssn-requested-for-child-babyg-quinn"/>
-            <display value="Observation - SSN Requested for Child (Baby G Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-parent-education-level-jada-ann-quinn"/>
-            <display value="Observation - Parent Education Level (Jada Ann Quinn)"/>
-        </entry>
-    </section>
-    <section>
-        <title value="Father Section on the Live Birth Certificate"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="92013-2"/>
-                <display value="Father's administrative information"/>
-            </coding>
-        </code>
-        <focus>
-            <reference value="RelatedPerson/relatedperson-father-james-brandon-quinn"/>
-            <display value="James Brandon Quinn"/>
-        </focus>
-        <entry>
-            <reference value="Observation/observation-paternity-acknowledgement-signed-james-quinn"/>
-            <display value="Observation - Paternity Acknowledgement Signed (James Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-parent-education-level-james-quinn"/>
-            <display value="Observation - Parent Education Level (James Quinn)"/>
         </entry>
     </section>
 </Composition>
