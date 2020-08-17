@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-17T10:34:32.138+00:00"/>
+        <source value="#EoBLA2FpyHeVHo6K"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="69044-6"/>
+            <display value="Date first prenatal visit"/>
+        </coding>
+        <text value="Date of first prenatal care visit"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-not-named"/>
+        <display value="Fetus Not Named"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+        <display value="Carmen Teresa Lee"/>
+    </focus>
+    <valueDateTime value="2018-05-18"/>
+</Observation>
