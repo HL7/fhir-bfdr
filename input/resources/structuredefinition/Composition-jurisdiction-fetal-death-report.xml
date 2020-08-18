@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2020-08-18T22:58:06.073+00:00"/>
-        <source value="#2LtjgDx7GHj31mie"/>
+        <versionId value="14"/>
+        <lastUpdated value="2020-08-18T23:12:41.374+00:00"/>
+        <source value="#1EiBPf5JSlLEHBXC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -34,6 +34,7 @@
         </element>
         <element id="Composition.extension:dateReceivedByRegistrar">
             <path value="Composition.extension"/>
+            <sliceName value="dateReceivedByRegistrar"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -43,7 +44,8 @@
         </element>
         <element id="Composition.extension:relatedPersonFather">
             <path value="Composition.extension"/>
-            <min value="1"/>
+            <sliceName value="relatedPersonFather"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
