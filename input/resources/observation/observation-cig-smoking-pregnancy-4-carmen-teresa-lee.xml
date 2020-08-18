@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-18T18:43:21.073+00:00"/>
+        <source value="#DhygZq5SXC960VjC"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="64795-8"/>
+            <display value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
+        </coding>
+        <text value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+        <display value="Carmen Teresa Lee"/>
+    </focus>
+    <valueInteger value="0"/>
+</Observation>

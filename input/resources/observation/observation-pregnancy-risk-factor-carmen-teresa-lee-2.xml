@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-pregnancy-risk-factor-carmen-teresa-lee-2"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-18T18:53:59.408+00:00"/>
+        <source value="#SYY1lRV7O5BJS70Q"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-pregnancy-risk-factor"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="73775-9"/>
+            <display value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+        </coding>
+        <text value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="Baby G Quinn"/>
+    </subject>
+    <focus>
+        <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/>
+        <display value="Carmen Teresa Lee"/>
+    </focus>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="11687002"/>
+            <display value="Gestational diabetes mellitus (disorder)"/>
+        </coding>
+        <text value="Gestational diabetes mellitus (disorder)"/>
+    </valueCodeableConcept>
+</Observation>

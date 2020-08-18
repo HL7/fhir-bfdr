@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-mother-prepregnancy-weight-carmen-teresa-lee"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-18T18:31:09.685+00:00"/>
+        <source value="#WIkNa86awdmeNS1r"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="56077-1"/>
+            <display value="Body weight --pre current pregnancy"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+        <display value="Carmen Teresa Lee"/>
+    </subject>
+    <effectiveDateTime value="2019-05-20"/>
+    <valueQuantity>
+        <value value="180"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[lb_av]"/>
+    </valueQuantity>
+</Observation>

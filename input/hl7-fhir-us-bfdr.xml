@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="544"/>
-        <lastUpdated value="2020-08-18T18:20:15.728+00:00"/>
-        <source value="#vjKnEK4nKKCaJYLS"/>
+        <versionId value="565"/>
+        <lastUpdated value="2020-08-18T19:56:26.034+00:00"/>
+        <source value="#a9KkbRB4XJAKOkLK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -673,7 +673,7 @@
                 <reference value="StructureDefinition/Observation-mother-received-wic-food"/>
                 <display value="Observation - Mother Recieved WIC Food"/>
             </reference>
-            <name value="Observation - Mother Recieved WIC Food"/>
+            <name value="Observation - Mother Received WIC Food"/>
             <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
@@ -1221,6 +1221,127 @@
             <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
             <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-height-carmen-teresa-lee"/></reference>
+            <name value=" Observation - Mother Height (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-mother-height profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"/></reference>
+            <name value="Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-mother-prepregnancy-weight profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-received-wic-food-carmen-teresa-lee"/></reference>
+            <name value="Observation - Mother Received WIC Food (Carmen Teresa Lee)"/>
+            <description value="Example of observation-mother-received-wic-food profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-date-of-last-live-birth-carmen-teresa-lee"/></reference>
+            <name value="Observation - Date of Last Live Birth (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-date-of-last-live-birth profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/></reference>
+            <name value="Observation - Cigarette Smoking Before During Pregancy (3 month prior: Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 month prior: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/></reference>
+            <name value=" (first 3 months:Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/></reference>
+            <name value=" (last 3 months: Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/></reference>
+            <name value=" (second 3 months: Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-2"/></reference>
+            <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
+            <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1"/></reference>
+            <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
+            <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee"/></reference>
+            <name value="Observations - Number Previous Cesareans (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-fetal-presentation-not-named"/></reference>
+            <name value="Condition - Fetal Presentation (Fetus Not Named)"/>
+            <description value="Example of condition-fetal-presentation profile (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-final-route-method-delivery-not-named"/></reference>
+            <name value="Procedure - Final Route / Method of Delivery (Fetus Not Named)"/>
+            <description value="Example of Procedure-final-route-method-delivery profile (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-maternal-morbidity-carmen-teresa-lee"/></reference>
+            <name value="Condition - Maternal Morbidity (Carmen Teresa Lee)"/>
+            <description value="Example of Cndition-maternal-morbidity profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
             <groupingId value="new-group8"/>
         </resource>
         <page>
