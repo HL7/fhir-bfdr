@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="573"/>
-        <lastUpdated value="2020-08-18T22:54:39.783+00:00"/>
-        <source value="#rFKe2QhqjZi7cnPM"/>
+        <versionId value="577"/>
+        <lastUpdated value="2020-08-18T23:53:11.419+00:00"/>
+        <source value="#J15pYMtdwDNGxlkr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -636,7 +636,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/></reference>
             <name value="Observation - Cigarette Smoking Before During Pregancy (3 months prior: Carmen Teresa Lee)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 month prior: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -645,9 +645,18 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/></reference>
-            <name value="Observation - Cigarette Smoking Before During Pregancy (last 3 months: Carmen Teresa Lee)"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Carmen Teresa Lee)"/>
+                <reference value="Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/></reference>
+            <name value="Observation - Cigarette Smoking Before During Pregancy (first 3 months:Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/></reference>
+            <name value="Observation - Cigarette Smoking Before During Pregancy (second 3 months: Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
             <groupingId value="new-group8"/>
@@ -655,8 +664,8 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/></reference>
-            <name value="Observation - Cigarette Smoking Before During Pregancy (second 3 months: Carmen Teresa Lee)"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"/>
+            <name value="Observation - Cigarette Smoking Before During Pregancy (last 3 months: Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
             <groupingId value="new-group8"/>
@@ -1036,15 +1045,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/></reference>
-            <name value="Observation - Observation - Cigarette Smoking Before During Pregancy (first 3 months:Carmen Teresa Lee)"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/observation-parent-education-level-carmen-teresa-lee"/></reference>
             <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
             <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
@@ -1350,6 +1350,15 @@
             <name value="Value Set - Cigarette Smoking Before and During Pregnancy"/>
             <description value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-jessica-leung"/></reference>
+            <name value="Practitioner - Live Birth Fetal Death (Jessica Leung)"/>
+            <description value="Example of Practitioner-live-birth-fetal-death profile (Jessica Leung)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            <groupingId value="new-group6"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
