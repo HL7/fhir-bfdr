@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-planned-to-deliver-at-home-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-18T01:55:58.151+00:00"/>
+        <source value="#Djb9NYqrSZ4Sdgen"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="73765-0"/>
+            <display value="Mother Planned to deliver at home [US Standard Certificate of Live Birth]"/>
+        </coding>
+        <text value="Planned to deliver at home?"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Fetus Not Named"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+        <display value="Carmen Teresa Lee"/>
+    </focus>
+    <valueBoolean value="false"/>
+</Observation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelatedPerson
+    xmlns="http://hl7.org/fhir">
+    <id value="relatedperson-father-tom-yan-lee"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-18T02:10:37.776+00:00"/>
+        <source value="#A0CBzfQuxRONyOks"/>
+        <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-relatedperson-birthplace">
+        <valueAddress>
+            <state value="NY"/>
+        </valueAddress>
+    </extension>
+    <active value="true"/>
+    <patient>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Fetus Not Named"/>
+    </patient>
+    <relationship>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="NFTH"/>
+            <display value="natural father"/>
+        </coding>
+        <text value="Natural Father"/>
+    </relationship>
+    <name>
+        <use value="official"/>
+        <family value="Lee"/>
+        <given value="Tom"/>
+        <given value="Yan"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="1984-02-27"/>
+</RelatedPerson>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-parent-education-level-jada-ann-quinn"/>
+    <id value="observation-parent-education-level-carmen-teresa-lee"/>
     <meta>
-        <versionId value="4"/>
+        <versionId value="2"/>
         <lastUpdated value="2020-08-18T07:31:32.360+00:00"/>
-        <source value="#OtfbyeIZSofNWPqQ"/>
+        <source value="#sKgWOCqZr3NmyUxn"/>
         <profile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-parent-education-level"/>
     </meta>
     <status value="final"/>
@@ -17,17 +17,19 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Fetus Not Named"/>
     </subject>
     <focus>
-        <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+        <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+        <display value="Carmen Teresa Lee"/>
     </focus>
     <valueCodeableConcept>
         <coding>
             <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-            <code value="PHC1455"/>
-            <display value="Doctorate Degree or Professional Degree"/>
+            <code value="PHC1449"/>
+            <display value="9th through 12th grade; no diploma"/>
         </coding>
-        <text value="Doctorate Degree or Professional Degree"/>
+        <text value="9th through 12th grade; no diploma"/>
     </valueCodeableConcept>
 </Observation>
