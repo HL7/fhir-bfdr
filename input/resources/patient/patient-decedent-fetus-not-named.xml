@@ -52,12 +52,18 @@
         <system value="http://hospital.smarthealthit.org"/>
         <value value="9932702"/>
     </identifier>
-    <name/>
+    <name>
+        <family value="UNK">
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                <valueCode value="not-applicable"/>
+            </extension>
+        </family>
+    </name>
     <gender value="female"/>
     <birthDate value="2019-01-09">
         <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
             <valueDateTime value="2019-01-09T18:23:00-07:00"/>
         </extension>
     </birthDate>
-    <multipleBirthInteger value="1"/>
+    <deceasedBoolean value="true"/>
 </Patient>

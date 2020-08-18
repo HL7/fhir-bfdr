@@ -46,10 +46,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Encounter.period">
-            <path value="Encounter.period"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Encounter.participant">
             <path value="Encounter.participant"/>
             <slicing>
@@ -86,6 +82,10 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.period">
+            <path value="Encounter.period"/>
             <mustSupport value="true"/>
         </element>
         <element id="Encounter.hospitalization">
