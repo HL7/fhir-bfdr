@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="569"/>
-        <lastUpdated value="2020-08-18T22:05:18.567+00:00"/>
-        <source value="#S05dmTpQxVm9yK5r"/>
+        <versionId value="573"/>
+        <lastUpdated value="2020-08-18T22:54:39.783+00:00"/>
+        <source value="#rFKe2QhqjZi7cnPM"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -111,6 +111,35 @@
         </grouping>
         <resource>
             <reference>
+                <reference value="Bundle/bundle-jurisdiction-live-birth-babyg-quinn"/>
+                <display value="bundle-jurisdiction-live-birth-babyg-quinn"/>
+            </reference>
+            <name value="Bundle - Jurisdiction Live Birth Report (Baby G Quinn)"/>
+            <description value="Example of a Document Bundle containing composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-provider-facility-live-birth-babyg-quinn"/></reference>
+            <name value="Bundle - Provider Facility Live Birth Report (Baby G Quinn)"/>
+            <description value="Example of a Document Bundle containing composition-provider-facility-live-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-jurisdiction-fetal-death-not-named"/>
+                <display value="Jurisdiction fetal death report Document"/>
+            </reference>
+            <name value="Composition - Jurisdiction Fetal Death (Fetus Not Named)"/>
+            <description value="Example of composition-jurisdiction-fetal-death profile (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
+            <groupingId value="new-group5"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
                 <display value="Jurisdiction Fetal Death Report"/>
             </reference>
@@ -128,6 +157,28 @@
             <description value="This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS.&#xA;&#xA;The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-jvr-nchs"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-jurisdiction-live-birth-babyg-quinn"/>
+                <display value="Jurisdiction live birth report Document"/>
+            </reference>
+            <name value="Composition - Jurisdiction Live Birth Report (Baby G Quinn)"/>
+            <description value="Example of composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+            <groupingId value="new-group2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-provider-facility-live-birth-babyg-quinn"/>
+                <display value="Provider supplied facility live birth report Document"/>
+            </reference>
+            <name value="Composition - Provider Facility Live Birth (Baby G Quinn)"/>
+            <description value="Example of composition-provider-facility-live-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
+            <groupingId value="new-group2"/>
         </resource>
         <resource>
             <reference>
@@ -201,6 +252,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Condition/condition-abnormal-condition-of-newborn-babyg-quinn"/></reference>
+            <name value="Condition - Abnormal Condition of Newborn (Baby G Quinn)"/>
+            <description value="Example of Condition-abnormal-condition-of-newborn (Baby G Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
                 <display value="ConditionCongenitalAnomalyOfNewborn"/>
             </reference>
@@ -228,12 +287,41 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Condition-fetal-death-cause-or-condition"/>
+                <display value="Condition - Fetal Death Cause or Condition"/>
+            </reference>
+            <name value="Condition - Fetal Death Cause or Condition"/>
+            <description value="This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause. One or more optional contained Other Significant Cause/Condition of Fetal Death profiles represent another significant cause or condition for the death of the fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition"/>
+                <display value="Condition - Fetal Death Other Significant Cause or Condition"/>
+            </reference>
+            <name value="Condition - Fetal Death Other Significant Cause or Condition"/>
+            <description value="This Condition profile represents another significant cause or condition for the death of the fetus. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Condition/condition-fetal-presentation-babyg-quinn"/></reference>
             <name value="Condition - Fetal Presentation (Baby G Quinn)"/>
             <description value="Example of condition-fetal-presentation (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
             <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-fetal-presentation-not-named"/></reference>
+            <name value="Condition - Fetal Presentation (Fetus Not Named)"/>
+            <description value="Example of condition-fetal-presentation profile (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
+            <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
@@ -275,19 +363,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Condition/condition-maternal-morbidity-carmen-teresa-lee"/></reference>
+            <name value="Condition - Maternal Morbidity (Carmen Teresa Lee)"/>
+            <description value="Example of Cndition-maternal-morbidity profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn"/></reference>
             <name value="Condition - Maternal Morbidity (Jada Ann Quinn)"/>
             <description value="Example of Condition-maternal-morbidity (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
-            <groupingId value="examples-test-data-live-birth"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-abnormal-condition-of-newborn-babyg-quinn"/></reference>
-            <name value="Condition - Abnormal Condition of Newborn (Baby G Quinn)"/>
-            <description value="Example of Condition-abnormal-condition-of-newborn (Baby G Quinn)"/>
-            <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
@@ -331,6 +420,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Encounter/encounter-maternity-carmen-teresa-lee"/></reference>
+            <name value="Encounter - Maternity (Carmen Teresa Lee)"/>
+            <description value="Example of Encounter-maternity profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group7"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Encounter/encounter-maternity-jada-ann-quinn"/></reference>
             <name value="Encounter - Maternity (Jada Ann Quinn)"/>
             <description value="Example of Encounter-maternity profile (Jada Ann Quinn)"/>
@@ -344,6 +441,24 @@
             <description value="Example of Encounter-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group4"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-filed-by-registrar"/>
+                <display value="Extension - Date Filed by Registrar"/>
+            </reference>
+            <name value="Extension - Date Filed by Registrar"/>
+            <description value="Date filed by registrar"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-date-received-by-registrar"/>
+                <display value="Extension - Date received by Registrar"/>
+            </reference>
+            <name value="Extension - Date received by Registrar"/>
+            <description value="Date received by registrar"/>
+            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
@@ -362,6 +477,16 @@
             <name value="Extension - RelatedPerson Mother"/>
             <exampleBoolean value="false"/>
             <groupingId value="parent-information-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-test"/>
+                <display value="Jurisdiction live birth report Document"/>
+            </reference>
+            <name value="Jurisdiction live birth report Document"/>
+            <description value="test"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
         </resource>
         <resource>
             <reference>
@@ -395,6 +520,24 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"/></reference>
+            <name value="Observation  - Mother Married During Pregnancy (Jada Ann Quinn)"/>
+            <description value="Example of Observation-mother-married-during-pregnancy (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
+            <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-paternity-acknowledgement-signed-james-quinn"/></reference>
+            <name value="Observation  - Paternity Acknowledgement Signed (James Quinn)"/>
+            <description value="Example of observation-paternity-acknowledgement-signed profile (James Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
+            <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-apgar-score-babyg-quinn-1-min"/></reference>
             <name value="Observation - APGAR Score (BabyG Quinn: 1 min)"/>
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 1 min)"/>
@@ -411,11 +554,29 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
+                <display value="ObservationAutopsyHistologicalExamResultsUsed"/>
+            </reference>
+            <name value="Observation - Autopsy/Histological Exam Results Used"/>
+            <description value="This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-birth-weight-babyg-quinn"/></reference>
             <name value="Observation - Birth Weight (Baby G Quinn)"/>
             <description value="Example of observation-birth-weight profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-birth-weight-not-named"/></reference>
+            <name value="Observation - Birth Weight (Fetus Not Named)"/>
+            <description value="Example of Observation-birth-weight (Fetus Not Named)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
@@ -475,6 +636,33 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/></reference>
+            <name value="Observation - Cigarette Smoking Before During Pregancy (3 months prior: Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 month prior: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/></reference>
+            <name value="Observation - Cigarette Smoking Before During Pregancy (last 3 months: Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/></reference>
+            <name value="Observation - Cigarette Smoking Before During Pregancy (second 3 months: Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"/></reference>
             <name value="Observation - Cigarette Smoking Before/During Pregnancy (3 months prior: Jada Ann Quinn)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 months prior: Jada Ann Quinn)"/>
@@ -521,6 +709,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"/></reference>
+            <name value="Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-date-of-first-prenatal-care-visit profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/></reference>
             <name value="Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)"/>
             <description value="Example of Observation-date-of-first-prenatal-care-visit (Jada Ann Quinn)"/>
@@ -536,6 +732,15 @@
             <description value="This profile represents the date of the mother's last live born infant (do not include this birth)."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-date-of-last-live-birth-carmen-teresa-lee"/></reference>
+            <name value="Observation - Date of Last Live Birth (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-date-of-last-live-birth profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
+            <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
@@ -567,11 +772,39 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-estimated-fetal-death-time-point"/>
+                <display value="Observation - Estimated Fetal Death Time Point"/>
+            </reference>
+            <name value="Observation - Estimated Fetal Death Time Point"/>
+            <description value="This Observation profile represents the estimated time of fetal death; the time of death is characterized by relationship to the time of delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-gestational-age-at-delivery-babyg-quinn"/></reference>
             <name value="Observation - Gestational Age at Delivery (Baby G Quinn)"/>
             <description value="Example of  profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-gestational-age-at-delivery-not-named"/></reference>
+            <name value="Observation - Gestational Age at Delivery (Fetus Not Named)"/>
+            <description value="Example of Observation-gestational-age-at-delivery profile (Fetus Not Named)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-histological-placental-exam-performed"/>
+                <display value="Observation-histological-placental-exam-performed"/>
+            </reference>
+            <name value="Observation - Histological Placental Exam"/>
+            <description value="This profile represents whether or not a histological placental examination was performed."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
         </resource>
         <resource>
             <reference>
@@ -619,6 +852,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-last-menstrual-period-carmen-teresa-lee"/></reference>
+            <name value="Observation - Last Menstrual Period (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-last-menstrual-period profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-last-menstrual-period-jada-ann-quinn"/></reference>
             <name value="Observation - Last Menstrual Period (Jada Ann Quinn)"/>
             <description value="Example of Observation-last-menstrual-period profile (Jada Ann Quinn)"/>
@@ -637,11 +878,29 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-method-of-disposition"/>
+                <display value="Observation - Method of Disposition"/>
+            </reference>
+            <name value="Observation - Method of Disposition"/>
+            <description value="This Observation profile represents the method of disposition of the deceased fetus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn"/></reference>
             <name value="Observation - Mother Delivery Weight (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-delivery-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-height-carmen-teresa-lee"/></reference>
+            <name value="Observation - Mother Height (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-mother-height profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
@@ -653,19 +912,28 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-mother-married-during-pregnancy"/>
+                <display value="Observation - Mother Married During Pregnancy"/>
+            </reference>
+            <name value="Observation - Mother Married During Pregnancy"/>
+            <description value="This profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="parent-information-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"/></reference>
+            <name value="Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-mother-prepregnancy-weight profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"/></reference>
             <name value="Observation - Mother Prepregnancy Weight (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-prepregnancy-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="examples-test-data-live-birth"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-mother-received-wic-food-jada-ann-quinn"/></reference>
-            <name value="Observation - Mother Received WIC Food (Jada Ann Quinn)"/>
-            <description value="Example of Observation-mother-received-wic-food profile (Jada Ann Quinn)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
             <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
@@ -677,6 +945,24 @@
             <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-received-wic-food-carmen-teresa-lee"/></reference>
+            <name value="Observation - Mother Received WIC Food (Carmen Teresa Lee)"/>
+            <description value="Example of observation-mother-received-wic-food profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-mother-received-wic-food-jada-ann-quinn"/></reference>
+            <name value="Observation - Mother Received WIC Food (Jada Ann Quinn)"/>
+            <description value="Example of Observation-mother-received-wic-food profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+            <groupingId value="examples-test-data-live-birth"/>
         </resource>
         <resource>
             <reference>
@@ -708,6 +994,22 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee"/></reference>
+            <name value="Observation - Number of Births Now Dead (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-number-births-now-dead profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-number-births-now-living-carmen-teresa-lee"/></reference>
+            <name value="Observation - Number of Births Now Living (Carmen Teresa Lee)"/>
+            <description value="Example of observation-number-births-now-living profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn"/></reference>
             <name value="Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-other-pregnancy-outcomes profile (Jada Ann Quinn)"/>
@@ -734,6 +1036,23 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/></reference>
+            <name value="Observation - Observation - Cigarette Smoking Before During Pregancy (first 3 months:Carmen Teresa Lee)"/>
+            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Carmen Teresa Lee)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee"/></reference>
+            <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
+            <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-parent-education-level-jada-ann-quinn"/></reference>
             <name value="Observation - Parent Education Level (Jada Ann Quinn)"/>
             <description value="Example of observation-parent-education-level profile (Jada Ann Quinn)"/>
@@ -747,6 +1066,16 @@
             <description value="Example of observation-parent-education-level profile (James Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-paternity-acknowledgement-signed"/>
+                <display value="Observation - Paternity Acknowledgement Signed"/>
+            </reference>
+            <name value="Observation - Paternity Acknowledgement Signed"/>
+            <description value="This Observation represents whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="parent-information-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -768,6 +1097,23 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-planned-to-deliver-at-home-not-named"/></reference>
+            <name value="Observation - Planned to Delivery at Home (Fetus Not Named)"/>
+            <description value="Example of observation-planned-to-deliver-at-home profile (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-plurality-carmen-teresa-lee"/></reference>
+            <name value="Observation - Plurality (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-plurality profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-plurality-jada-ann-quinn"/></reference>
             <name value="Observation - Plurality (Jada Ann Quinn)"/>
             <description value="Example of observation-plurality profile (Jada Ann Quinn)"/>
@@ -781,6 +1127,22 @@
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <exampleBoolean value="true"/>
             <groupingId value="examples-test-data-live-birth"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-2"/></reference>
+            <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
+            <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1"/></reference>
+            <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
+            <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
@@ -827,6 +1189,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee"/></reference>
+            <name value="Observations - Number Previous Cesareans (Carmen Teresa Lee)"/>
+            <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group8"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Organization/organization-south-hospital"/>
                 <display value="South Hospital"/>
             </reference>
@@ -842,6 +1212,22 @@
             <description value="Example of Patient-child profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-decedent-fetus-not-named"/></reference>
+            <name value="Patient - Decedent Fetus (Fetus Not Named)"/>
+            <description value="Example of patient-decedent-fetus (Fetus Not Named)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group6"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-mother-carmen-teresa-lee"/></reference>
+            <name value="Patient - Mother (Carmen Teresa Lee)"/>
+            <description value="Example of patient-mother profile (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group6"/>
         </resource>
         <resource>
             <reference>
@@ -867,6 +1253,24 @@
             <description value="Example of practitioner-live-birth-fetal-death profile (Avery Jones, MD)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito"/></reference>
+            <name value="Practitioner - Live Birth Fetal Death (Janet Seito)"/>
+            <description value="Example of practitioner-live-birth-fetal-death profile (Janet Seito)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+            <groupingId value="new-group6"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-final-route-method-delivery-not-named"/></reference>
+            <name value="Procedure - Final Route / Method of Delivery (Fetus Not Named)"/>
+            <description value="Example of Procedure-final-route-method-delivery profile (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
+            <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
@@ -917,6 +1321,21 @@
         </resource>
         <resource>
             <reference>
+                <reference value="RelatedPerson/relatedperson-father-tom-yan-lee"/></reference>
+            <name value="RelatedPerson - Father (Tom Yan Lee)"/>
+            <description value="Example of relatedperson-father (Tom Yan Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group6"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/></reference>
+            <name value="RelatedPerson - Mother (Carmen Teresa Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group6"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/></reference>
             <name value="RelatedPerson - Mother (Jada Ann Quinn)"/>
             <description value="Example of RelatedPerson-mother profile (Jada Ann Quinn)"/>
@@ -931,425 +1350,6 @@
             <name value="Value Set - Cigarette Smoking Before and During Pregnancy"/>
             <description value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-date-filed-by-registrar"/>
-                <display value="Extension - Date Filed by Registrar"/>
-            </reference>
-            <name value="Extension - Date Filed by Registrar"/>
-            <description value="Date filed by registrar"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-jurisdiction-live-birth-babyg-quinn"/>
-                <display value="Jurisdiction live birth report Document"/>
-            </reference>
-            <name value="Composition - Jurisdiction Live Birth Report (Baby G Quinn)"/>
-            <description value="Example of composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-jurisdiction-live-birth-babyg-quinn"/>
-                <display value="bundle-jurisdiction-live-birth-babyg-quinn"/>
-            </reference>
-            <name value="Bundle - Jurisdiction Live Birth Report (Baby G Quinn)"/>
-            <description value="Example of a Document Bundle containing composition-jurisdiction-live-birth profile (Baby G Quinn)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-test"/>
-                <display value="Jurisdiction live birth report Document"/>
-            </reference>
-            <name value="Jurisdiction live birth report Document"/>
-            <description value="test"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-mother-married-during-pregnancy"/>
-                <display value="Observation - Mother Married During Pregnancy"/>
-            </reference>
-            <name value="Observation - Mother Married During Pregnancy"/>
-            <description value="This profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="parent-information-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"/></reference>
-            <name value="Observation  - Mother Married During Pregnancy (Jada Ann Quinn)"/>
-            <description value="Example of Observation-mother-married-during-pregnancy (Jada Ann Quinn)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
-            <groupingId value="examples-test-data-live-birth"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-paternity-acknowledgement-signed"/>
-                <display value="Observation - Paternity Acknowledgement Signed"/>
-            </reference>
-            <name value="Observation - Paternity Acknowledgement Signed"/>
-            <description value="This Observation represents whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="parent-information-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-paternity-acknowledgement-signed-james-quinn"/></reference>
-            <name value="Observation  - Paternity Acknowledgement Signed (James Quinn)"/>
-            <description value="Example of observation-paternity-acknowledgement-signed profile (James Quinn)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
-            <groupingId value="examples-test-data-live-birth"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-provider-facility-live-birth-babyg-quinn"/>
-                <display value="Provider supplied facility live birth report Document"/>
-            </reference>
-            <name value="Composition - Provider Facility Live Birth (Baby G Quinn)"/>
-            <description value="Example of composition-provider-facility-live-birth profile (Baby G Quinn)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-provider-facility-live-birth-babyg-quinn"/></reference>
-            <name value="Bundle - Provider Facility Live Birth Report (Baby G Quinn)"/>
-            <description value="Example of a Document Bundle containing composition-provider-facility-live-birth profile (Baby G Quinn)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/patient-decedent-fetus-not-named"/></reference>
-            <name value="Patient - Decedent Fetus (Fetus Not Named)"/>
-            <description value="Example of patient-decedent-fetus (Fetus Not Named)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-date-received-by-registrar"/>
-                <display value="Extension - Date received by Registrar"/>
-            </reference>
-            <name value="Extension - Date received by Registrar"/>
-            <description value="Date received by registrar"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition"/>
-                <display value="Condition - Fetal Death Other Significant Cause or Condition"/>
-            </reference>
-            <name value="Condition - Fetal Death Other Significant Cause or Condition"/>
-            <description value="This Condition profile represents another significant cause or condition for the death of the fetus. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-fetal-death-cause-or-condition"/>
-                <display value="Condition - Fetal Death Cause or Condition"/>
-            </reference>
-            <name value="Condition - Fetal Death Cause or Condition"/>
-            <description value="This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause. One or more optional contained Other Significant Cause/Condition of Fetal Death profiles represent another significant cause or condition for the death of the fetus."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-method-of-disposition"/>
-                <display value="Observation - Method of Disposition"/>
-            </reference>
-            <name value="Observation - Method of Disposition"/>
-            <description value="This Observation profile represents the method of disposition of the deceased fetus."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-jurisdiction-fetal-death-not-named"/>
-                <display value="Jurisdiction fetal death report Document"/>
-            </reference>
-            <name value="Composition - Jurisdiction Fetal Death (Fetus Not Named)"/>
-            <description value="Example of composition-jurisdiction-fetal-death profile (Fetus Not Named)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
-            <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/encounter-maternity-carmen-teresa-lee"/></reference>
-            <name value="Encounter - Maternity (Carmen Teresa Lee)"/>
-            <description value="Example of Encounter-maternity profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group7"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/patient-mother-carmen-teresa-lee"/></reference>
-            <name value="Patient - Mother (Carmen Teresa Lee)"/>
-            <description value="Example of patient-mother profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito"/></reference>
-            <name value="Practitioner - Live Birth Fetal Death (Janet Seito)"/>
-            <description value="Example of practitioner-live-birth-fetal-death profile (Janet Seito)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Practitioner-live-birth-fetal-death"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-histological-placental-exam"/>
-                <display value="Observation - Histological Placental Exam"/>
-            </reference>
-            <name value="Observation - Histological Placental Exam"/>
-            <description value="This profile represents whether or not a histological placental examination was performed."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-autopsy-or-histological-exam-used"/>
-                <display value="Observation - Autopsy or Histological Exam Used"/>
-            </reference>
-            <name value="Observation - Autopsy or Histological Exam Used"/>
-            <description value="This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-estimated-fetal-death-time-point"/>
-                <display value="Observation - Estimated Fetal Death Time Point"/>
-            </reference>
-            <name value="Observation - Estimated Fetal Death Time Point"/>
-            <description value="This Observation profile represents the estimated time of fetal death; the time of death is characterized by relationship to the time of delivery."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-birth-weight-not-named"/></reference>
-            <name value="Observation - Birth Weight (Fetus Not Named)"/>
-            <description value="Example of Observation-birth-weight (Fetus Not Named)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-gestational-age-at-delivery-not-named"/></reference>
-            <name value="Observation - Gestational Age at Delivery (Fetus Not Named)"/>
-            <description value="Example of Observation-gestational-age-at-delivery profile (Fetus Not Named)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"/></reference>
-            <name value="Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"/>
-            <description value="Example of Observation-date-of-first-prenatal-care-visit profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-last-menstrual-period-carmen-teresa-lee"/></reference>
-            <name value="Observation - Last Menstrual Period (Carmen Teresa Lee)"/>
-            <description value="Example of Observation-last-menstrual-period profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-number-births-now-living-carmen-teresa-lee"/></reference>
-            <name value="Observation - Number of Births Now Living (Carmen Teresa Lee)"/>
-            <description value="Example of observation-number-births-now-living profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee"/></reference>
-            <name value="Observation - Number of Births Now Dead (Carmen Teresa Lee)"/>
-            <description value="Example of Observation-number-births-now-dead profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-plurality-carmen-teresa-lee"/></reference>
-            <name value="Observation - Plurality (Carmen Teresa Lee)"/>
-            <description value="Example of Observation-plurality profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-planned-to-deliver-at-home-not-named"/></reference>
-            <name value="Observation - Planned to Delivery at Home (Fetus Not Named)"/>
-            <description value="Example of observation-planned-to-deliver-at-home profile (Fetus Not Named)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/relatedperson-father-tom-yan-lee"/></reference>
-            <name value="RelatedPerson - Father (Tom Yan Lee)"/>
-            <description value="Example of relatedperson-father (Tom Yan Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee"/></reference>
-            <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
-            <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-mother-height-carmen-teresa-lee"/></reference>
-            <name value=" Observation - Mother Height (Carmen Teresa Lee)"/>
-            <description value="Example of Observation-mother-height profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"/></reference>
-            <name value="Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"/>
-            <description value="Example of Observation-mother-prepregnancy-weight profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-mother-received-wic-food-carmen-teresa-lee"/></reference>
-            <name value="Observation - Mother Received WIC Food (Carmen Teresa Lee)"/>
-            <description value="Example of observation-mother-received-wic-food profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-date-of-last-live-birth-carmen-teresa-lee"/></reference>
-            <name value="Observation - Date of Last Live Birth (Carmen Teresa Lee)"/>
-            <description value="Example of Observation-date-of-last-live-birth profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/></reference>
-            <name value="Observation - Cigarette Smoking Before During Pregancy (3 months prior: Carmen Teresa Lee)"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 month prior: Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/></reference>
-            <name value="Observation - Observation - Cigarette Smoking Before During Pregancy (first 3 months:Carmen Teresa Lee)"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/></reference>
-            <name value="Observation - Cigarette Smoking Before During Pregancy (last 3 months: Carmen Teresa Lee)"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/></reference>
-            <name value="Observation - Cigarette Smoking Before During Pregancy (second 3 months: Carmen Teresa Lee)"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-2"/></reference>
-            <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
-            <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1"/></reference>
-            <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
-            <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee"/></reference>
-            <name value="Observations - Number Previous Cesareans (Carmen Teresa Lee)"/>
-            <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-fetal-presentation-not-named"/></reference>
-            <name value="Condition - Fetal Presentation (Fetus Not Named)"/>
-            <description value="Example of condition-fetal-presentation profile (Fetus Not Named)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-final-route-method-delivery-not-named"/></reference>
-            <name value="Procedure - Final Route / Method of Delivery (Fetus Not Named)"/>
-            <description value="Example of Procedure-final-route-method-delivery profile (Fetus Not Named)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-maternal-morbidity-carmen-teresa-lee"/></reference>
-            <name value="Condition - Maternal Morbidity (Carmen Teresa Lee)"/>
-            <description value="Example of Cndition-maternal-morbidity profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/></reference>
-            <name value="RelatedPerson - Mother (Carmen Teresa Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group6"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

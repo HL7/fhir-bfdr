@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-autopsy-or-histological-exam-used"/>
+    <id value="Observation-histological-placental-exam-performed"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2020-08-17T10:11:51.475+00:00"/>
-        <source value="#M8LlnD2ajb6q4xOK"/>
+        <lastUpdated value="2020-08-18T22:48:08.254+00:00"/>
+        <source value="#JaFIeGZaxcNHJnmj"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-or-histological-exam-used"/>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"/>
     <version value="1.0.0"/>
-    <name value="ObservationAutopsyOrHistologicalExamUsed"/>
-    <title value="Observation - Autopsy or Histological Exam Used"/>
+    <name value="ObservationHistologicalPlacentalExam"/>
+    <title value="Observation - Histological Placental Exam"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."/>
+    <description value="This profile represents whether or not a histological placental examination was performed."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34,20 +34,20 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"/>
+            <short value="Histological placental examination was performed [US Standard Report of Fetal Death]"/>
             <min value="1"/>
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="74498-7"/>
+                    <code value="73767-6"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="Were autopsy or histological placental examinations results used in determining the cause of fetal death?"/>
+            <short value="Was a histological placental examination performed?"/>
             <min value="1"/>
             <max value="1"/>
             <type>
