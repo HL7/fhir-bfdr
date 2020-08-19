@@ -3,14 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-test"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-18T23:19:39.551+00:00"/>
-        <source value="#tTw5VPWvvde9JMQL"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-19T05:08:05.017+00:00"/>
+        <source value="#R3n6IM9t6BEOAvaY"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-test"/>
     </meta>
-    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-filed-by-registrar">
-        <valueDateTime value="2019-02-12"/>
-    </extension>
     <identifier>
         <value value="c03eab8c-11e8-4d0c-ad2a-b385395e27df"/>
     </identifier>
@@ -37,7 +34,7 @@
     </author>
     <title value="Jurisdiction live birth report Document"/>
     <section>
-        <title value="Mother (prenatal) Section on the Live Birth Certificate"/>
+        <title value="Test Section 1"/>
         <code>
             <coding>
                 <system value="http://loinc.org"/>
@@ -49,6 +46,10 @@
             <reference value="Patient/patient-mother-jada-ann-quinn"/>
             <display value="Jada Ann Quinn"/>
         </focus>
+        <entry>
+            <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn"/>
+            <display value="Observation - Mother Delivery Weight (Jada Ann Quinn)"/>
+        </entry>
         <entry>
             <reference value="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/>
             <display value="Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)"/>
@@ -74,116 +75,4 @@
             <display value="Observation - Cigarette Smoking Before/During Pregnancy (second 3 months: Jada Ann Quinn)"/>
         </entry>
     </section>
-    <!--<section>
-        <title value="Medical and Health Information on the Live Birth Certificate"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="55752-0"/>
-                <display value="Clinical information"/>
-            </coding>
-        </code>
-        <focus>
-            <reference value="Patient/patient-mother-jada-ann-quinn"/>
-            <display value="Jada Ann Quinn"/>
-        </focus>
-        <entry>
-            <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"/>
-            <display value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-3"/>
-            <display value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Assisted fertilization)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"/>
-            <display value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-number-previous-cesareans-jada-ann-quinn"/>
-            <display value="Observation - Number Previous Cesareans (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"/>
-            <display value="Condition - Infection Present During Pregnancy (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Procedure/procedure-obstetric-procedure-jada-ann-quinn"/>
-            <display value="Procedure - Obstetric Procedure (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-1"/>
-            <display value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Chorioamnionitis)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/>
-            <display value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Induction of labor)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/>
-            <display value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Epidural or spinal anesthesia)"/>
-        </entry>
-        <entry>
-            <reference value="Condition/condition-fetal-presentation-babyg-quinn"/>
-            <display value="Condition - Fetal Presentation (Baby G Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Procedure/procedure-final-route-method-delivery-babyg-quinn"/>
-            <display value="Procedure - Final Route and Method of Delivery (Baby G Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-labor-trial-attempted-babyg-quinn"/>
-            <display value="Observation - Labor Trial Attempted (Baby G Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn"/>
-            <display value="Condition - Maternal Morbidity (Jada Ann Quinn)"/>
-        </entry>
-    </section>
-    <section>
-        <title value="Newborn section on the Live Birth Certificate"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="57075-4"/>
-                <display value="Newborn delivery information"/>
-            </coding>
-        </code>
-        <entry>
-            <reference value="Observation/observation-birth-weight-babyg-quinn"/>
-            <display value="Observation - Birth Weight (Baby G Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-gestational-age-at-delivery-babyg-quinn"/>
-            <display value="Observation - Gestational Age at Delivery (Baby G Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-apgar-score-babyg-quinn-1-min"/>
-            <display value="Observation - APGAR Score (BabyG Quinn: 1 min)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-apgar-score-babyg-quinn-5-min"/>
-            <display value="Observation - APGAR Score (BabyG Quinn: 5 min)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-plurality-jada-ann-quinn"/>
-            <display value="Observation - Plurality (Jada Ann Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"/>
-            <display value="Condition - Congenital Anomaly of Newborn (BabyG Quinn) 1"/>
-        </entry>
-        <entry>
-            <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2"/>
-            <display value="Condition - Congenital Anomaly of Newborn (Baby G Quinn) 2"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-infant-living-babyg-quinn"/>
-            <display value="Observation - Infant Living (Baby G Quinn)"/>
-        </entry>
-        <entry>
-            <reference value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/>
-            <display value="Observation - Infant Breastfed at Discharge (Baby G Quinn)"/>
-        </entry>
-    </section>-->
 </Composition>

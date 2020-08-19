@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Composition-test"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-19T05:08:05.018+00:00"/>
+        <source value="#0cPYwVBZX9rT3Wk9"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-test"/>
+    <version value="1.0.0"/>
+    <name value="CompositionTest"/>
+    <title value="Composition - Test"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="Slicing test"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+            <short value="This composition represents the jurisdiction live birth report."/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <short value="Jurisdiction live birth report Document"/>
+            <definition value="Jurisdiction live birth report Document"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92011-6"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <short value="The subject of the composition is the newborn baby"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. Different sections in the composition have different focus (e.g.: the mother)."/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
+            </type>
+        </element>
+        <element id="Composition.encounter">
+            <path value="Composition.encounter"/>
+            <short value="The Encounter for the Composition is the newborn's birth encounter."/>
+            <definition value="The Encounter for the Composition is the newborn's birth encounter. This Encounter links to the mother's encounter by the Encounter.partOf data element."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:testSection1">
+            <path value="Composition.section"/>
+            <sliceName value="testSection1"/>
+            <short value="Mother (prenatal) section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the Mother (prenatal) on theLive Birth Certificate."/>
+        </element>
+        <element id="Composition.section:testSection1.code">
+            <path value="Composition.section.code"/>
+            <short value="Prenatal records"/>
+            <definition value="Prenatal records"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="57073-9"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:testSection1.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the mother"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:testSection1.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the Mother Prenatal section"/>
+            <definition value="Entries that are contained in the Mother Prenatal section"/>
+        </element>
+        <element id="Composition.section:testSection1.entry:testEntrySliceHC1">
+            <path value="Composition.section.entry"/>
+            <sliceName value="testEntrySliceHC1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Observation-mother-delivery-weight"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:testSection1.entry:testEntrySliceHC2">
+            <path value="Composition.section.entry"/>
+            <sliceName value="testEntrySliceHC2"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:testSection1.entry:testEntrySliceVS1">
+            <path value="Composition.section.entry"/>
+            <sliceName value="testEntrySliceVS1"/>
+            <max value="4"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>
