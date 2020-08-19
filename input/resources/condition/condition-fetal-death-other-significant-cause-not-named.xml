@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="condition-fetal-death-other-significant-cause-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-19T02:25:34.355+00:00"/>
+        <source value="#WhijqVXCwQfEd7Pz"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition"/>
+    </meta>
+    <category>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="76061-1"/>
+            <display value="Death cause other significant conditions Fetus [US Standard Report of Fetal Death]"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="237292005"/>
+            <display value="Placental insufficiency (disorder)"/>
+        </coding>
+        <text value="Placental insufficiency (disorder)"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Fetus Not Named"/>
+    </subject>
+</Condition>

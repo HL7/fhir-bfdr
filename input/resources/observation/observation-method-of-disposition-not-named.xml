@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-method-of-disposition-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-19T02:17:07.730+00:00"/>
+        <source value="#YaGGEO15acf2lYcm"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="88241-5"/>
+            <display value="Fetal remains disposition method"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Fetus Not Named"/>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="449971000124106"/>
+            <display value="Patient status determination, deceased and buried (finding)"/>
+        </coding>
+        <text value="Patient status determination, deceased and buried (finding)"/>
+    </valueCodeableConcept>
+</Observation>

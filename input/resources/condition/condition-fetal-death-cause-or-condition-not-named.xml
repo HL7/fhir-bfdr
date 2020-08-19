@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="condition-fetal-death-cause-or-condition-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-19T02:22:58.443+00:00"/>
+        <source value="#XaUUKhjmspwnkErY"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition"/>
+    </meta>
+    <category>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="76060-3"/>
+            <display value="Initiating cause or condition of fetal death [US Standard Report of Fetal Death]"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="44223004"/>
+            <display value="Premature rupture of membranes (disorder)"/>
+        </coding>
+        <text value="Premature rupture of membranes (disorder)"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Fetus Not Named"/>
+    </subject>
+</Condition>
