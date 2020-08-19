@@ -93,8 +93,8 @@
             <path value="Composition.author"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
-                    <path value="type"/>
+                    <type value="profile"/>
+                    <path value="type.resolve()"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
