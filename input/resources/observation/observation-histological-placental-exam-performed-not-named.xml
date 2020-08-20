@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-histological-placental-exam-performed-not-named"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-20T02:47:17.229+00:00"/>
-        <source value="#vhM2QRjHxeo9JoFE"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-20T03:36:17.563+00:00"/>
+        <source value="#QIsyYcz9IGTqpjfI"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"/>
     </meta>
     <status value="final"/>
@@ -20,5 +20,11 @@
         <reference value="Patient/patient-decedent-fetus-not-named"/>
         <display value="Fetus Not Named"/>
     </subject>
-    <valueBoolean value="true"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="398166005"/>
+            <display value="Performed"/>
+        </coding>
+    </valueCodeableConcept>
 </Observation>

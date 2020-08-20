@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-histological-placental-exam-performed"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-19T02:28:43.771+00:00"/>
-        <source value="#TDrLVrCbfTwQTTrs"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-20T03:35:09.679+00:00"/>
+        <source value="#l4cZoZ0Fl694isJH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"/>
     <version value="1.0.0"/>
@@ -51,9 +51,13 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="boolean"/>
+                <code value="CodeableConcept"/>
             </type>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7138"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

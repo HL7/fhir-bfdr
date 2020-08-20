@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="597"/>
-        <lastUpdated value="2020-08-20T02:52:19.353+00:00"/>
-        <source value="#8tSk6CTKdjeVt1Ui"/>
+        <versionId value="603"/>
+        <lastUpdated value="2020-08-20T03:19:27.245+00:00"/>
+        <source value="#7BRaJYnzBUYSjYh2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -141,7 +141,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
-                <display value="Jurisdiction Fetal Death Report"/>
+                <display value="Composition - Jurisdiction Fetal Death Report"/>
             </reference>
             <name value="Composition - Jurisdiction Fetal Death Report"/>
             <description value="This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to NCHS.&#xA;&#xA;The data requirements for jurisdictional reporting of fetal deaths are based on the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
@@ -151,7 +151,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-jurisdiction-live-birth-report"/>
-                <display value="Jurisdiction Live Birth Report"/>
+                <display value="Composition - Jurisdiction Live Birth Report"/>
             </reference>
             <name value="Composition - Jurisdiction Live Birth Report"/>
             <description value="This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS.&#xA;&#xA;The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth."/>
@@ -183,7 +183,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-provider-fetal-death-report"/>
-                <display value="Provider Fetal Death Report"/>
+                <display value="Composition - Provider Fetal Death Report"/>
             </reference>
             <name value="Composition - Provider Fetal Death Report"/>
             <description value="This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office."/>
@@ -193,7 +193,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-provider-live-birth-report"/>
-                <display value="Provider Live Birth Report"/>
+                <display value="Composition - Provider Live Birth Report"/>
             </reference>
             <name value="Composition - Provider Live Birth Report"/>
             <description value="This Composition profile defines constraints to address the use case in which information for live birth information to be recorded and communicated to the jurisdicational Vital Records Office.&#xA;&#xA;&#xA;"/>
@@ -203,9 +203,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-provider-facility-fetal-death-report"/>
-                <display value="Composition - Provider Supplied Facility Fetal Death Report"/>
+                <display value="Composition - Provider Facility Fetal Death Report"/>
             </reference>
-            <name value="Composition - Provider Supplied Facility Fetal Death Report"/>
+            <name value="Composition - Provider Facility Fetal Death Report"/>
             <description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and relevant information for the fetus collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-compositions-ehr-jvr"/>
@@ -213,9 +213,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-provider-facility-live-birth-report"/>
-                <display value="Composition - Provider Supplied Facility Live Birth Facility Report"/>
+                <display value="Composition - Provider Facility Live Birth Report"/>
             </reference>
-            <name value="Composition - Provider Supplied Facility Live Birth Report"/>
+            <name value="Composition - Provider Facility Live Birth Report"/>
             <description value="This Composition profile defines constraints to address the use case in which information for labor and delivery and the condition of the newborn collected by healthcare provider staff, as primarily defined using the Facility Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-ehr-jvr"/>
@@ -223,9 +223,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-provider-mothers-fetal-death-report"/>
-                <display value="Composition - Provider Supplied Mother's Fetal Death Report"/>
+                <display value="Composition - Provider Mother's Fetal Death Report"/>
             </reference>
-            <name value="Composition - Provider Supplied Mother's Fetal Death Report"/>
+            <name value="Composition - Provider Mother's Fetal Death Report"/>
             <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Patient's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-compositions-ehr-jvr"/>
@@ -233,9 +233,9 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Composition-provider-mothers-live-birth-report"/>
-                <display value="Composition - Provider Supplied Mother's Live Birth Report"/>
+                <display value="Composition - Provider Mother's Live Birth Report"/>
             </reference>
-            <name value="Composition - Provider Supplied Mother's Live Birth Report"/>
+            <name value="Composition - Provider Mother's Live Birth Report"/>
             <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Mother's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-ehr-jvr"/>
@@ -1438,6 +1438,17 @@
             <description value="Example of Observation-autopsy-histological-exam-results-used profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-provider-facility-fetal-death-not-named"/>
+                <display value="Jurisdiction fetal death report Document"/>
+            </reference>
+            <name value="Composition - Provider Facility Fetal Dath (Fetus Not Named)"/>
+            <description value="Example of composition-provider-facility-fetal-death (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-fetal-death-report"/>
+            <groupingId value="new-group5"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
