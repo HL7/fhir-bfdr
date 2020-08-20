@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-provider-facility-fetal-death-not-named"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-20T04:37:41.242+00:00"/>
-        <source value="#zk5p9WZNlIElEEMg"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-20T23:33:29.337+00:00"/>
+        <source value="#4cAA2YTsfv1OENDL"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -34,20 +34,20 @@
                 </type>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <encounter>
                     <reference value="Encounter/encounter-maternity-carmen-teresa-lee"/>
-                    <display value="Maternity Encounter - Carmen Teresa Lee"/>
+                    <display value="Encounter - Maternity (Carmen Teresa Lee)"/>
                 </encounter>
                 <date value="2019-01-09"/>
                 <author>
                     <reference value="Practitioner/practitioner-live-birth-fetal-death-jessica-leung"/>
-                    <display value="Jessica Leung"/>
+                    <display value="Practitioner - Live Birth Fetal Death (Jessica Leung)"/>
                 </author>
                 <title value="Provider supplied facility fetal death report Document"/>
                 <section>
-                    <title value="Mother (prenatal) Section on the Fetal Death Certificate"/>
+                    <title value="Mother (prenatal) Section on the Fetal Death Report"/>
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
@@ -57,7 +57,7 @@
                     </code>
                     <focus>
                         <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                        <display value="Carmen Teresa Lee"/>
+                        <display value="Patient - Mother (Carmen Teresa Lee)"/>
                     </focus>
                     <entry>
                         <reference value="Observation/observation-planned-to-deliver-at-home-not-named"/>
@@ -85,7 +85,7 @@
                     </entry>
                 </section>
                 <section>
-                    <title value="Medical and Health Information on the Fetal Death Certificate"/>
+                    <title value="Medical and Health Information on the Fetal Death Report"/>
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
@@ -95,7 +95,7 @@
                     </code>
                     <focus>
                         <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                        <display value="Carmen Teresa Lee"/>
+                        <display value="Patient - Mother (Carmen Teresa Lee)"/>
                     </focus>
                     <entry>
                         <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1"/>
@@ -123,7 +123,7 @@
                     </entry>
                 </section>
                 <section>
-                    <title value="Fetal delivery information section on the Fetal Death Certificate"/>
+                    <title value="Fetal delivery information section on the Fetal Death Report"/>
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
@@ -186,7 +186,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <valueBoolean value="true"/>
             </Observation>
@@ -208,7 +208,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <valueInteger value="1"/>
             </Observation>
@@ -230,7 +230,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <valueInteger value="0"/>
             </Observation>
@@ -252,11 +252,11 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="Baby G Quinn"/>
+                    <display value="Patient - Child (Baby G Quinn)"/>
                 </subject>
                 <focus>
                     <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </focus>
                 <valueCodeableConcept>
                     <coding>
@@ -285,11 +285,11 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="Baby G Quinn"/>
+                    <display value="Patient - Child (Baby G Quinn)"/>
                 </subject>
                 <focus>
                     <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </focus>
                 <valueCodeableConcept>
                     <coding>
@@ -318,7 +318,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <valueInteger value="1"/>
             </Observation>
@@ -345,7 +345,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
             </Condition>
         </resource>
@@ -393,7 +393,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
             </Condition>
         </resource>
@@ -414,7 +414,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <performedPeriod>
                     <start value="2019-01-19T18:00:00-07:00"/>
@@ -505,11 +505,11 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <focus>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </focus>
                 <valueBoolean value="false"/>
             </Observation>
@@ -537,7 +537,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
             </Condition>
         </resource>
@@ -557,7 +557,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <valueInteger value="1"/>
             </Observation>
@@ -578,7 +578,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <valueCodeableConcept>
                     <coding>
@@ -612,7 +612,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
             </Condition>
         </resource>
@@ -632,7 +632,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <valueQuantity>
                     <value value="1530"/>
@@ -657,7 +657,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <valueCodeableConcept>
                     <coding>
@@ -693,7 +693,7 @@
                 </type>
                 <subject>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <participant>
                     <type>
@@ -705,7 +705,7 @@
                     </type>
                     <individual>
                         <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito"/>
-                        <display value="Janet Seito, MD"/>
+                        <display value="Practitioner - Live Birth Fetal Death (Janet Seito, MD)"/>
                     </individual>
                 </participant>
                 <period>
@@ -715,7 +715,7 @@
                 <location>
                     <location>
                         <reference value="Location/location-south-hospital"/>
-                        <display value="South Hospital Location"/>
+                        <display value="Location - US Core Location (South Hospital)"/>
                     </location>
                     <physicalType>
                         <coding>
@@ -727,7 +727,7 @@
                 </location>
                 <serviceProvider>
                     <reference value="Organization/organization-south-hospital"/>
-                    <display value="South Hospital Organization"/>
+                    <display value="Organization - US Core Organization (South Hospital Organization)"/>
                 </serviceProvider>
             </Encounter>
         </resource>
@@ -747,7 +747,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <valueQuantity>
                     <value value="20"/>
@@ -773,11 +773,11 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <focus>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </focus>
                 <valueDateTime value="2018-05-18"/>
             </Observation>
@@ -798,7 +798,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Fetus Not Named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
                 <valueCodeableConcept>
                     <coding>
@@ -827,7 +827,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <valueDateTime value="2018-04-18"/>
             </Observation>
@@ -849,7 +849,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Carmen Teresa Lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <valueDateTime value="2016-01-28"/>
             </Observation>
@@ -865,6 +865,8 @@
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Baby G 
+                            
+                            
                             <b>QUINN </b>
                         </div>
                         <table class="hapiPropertyTable">
@@ -990,6 +992,8 @@
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Carmen Teresa 
+                            
+                            
                             <b>LEE </b>
                         </div>
                         <table class="hapiPropertyTable">
