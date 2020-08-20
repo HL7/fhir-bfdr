@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-jurisdiction-fetal-death-not-named"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-19T01:07:34.681+00:00"/>
-        <source value="#Hl5nGWpndF1MB9Lm"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-20T02:54:48.092+00:00"/>
+        <source value="#VwSsbsg1Ilb3Mqdd"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar">
@@ -32,8 +32,8 @@
     </encounter>
     <date value="2019-01-09"/>
     <author>
-        <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
-        <display value="Avery Jones, MD"/>
+        <reference value="Practitioner/practitioner-live-birth-fetal-death-jessica-leung"/>
+        <display value="Jessica Leung"/>
     </author>
     <title value="Jurisdiction fetal death report Document"/>
     <section>
@@ -49,6 +49,10 @@
             <reference value="Patient/patient-mother-carmen-teresa-lee"/>
             <display value="Carmen Teresa Lee"/>
         </focus>
+        <entry>
+            <reference value="Observation/observation-planned-to-deliver-at-home-not-named"/>
+            <display value="Observation - Planned to Deliver at Home (Carmen Teresa Lee)"/>
+        </entry>
         <entry>
             <reference value="Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"/>
             <display value="Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"/>
@@ -156,6 +160,30 @@
         <entry>
             <reference value="Observation/observation-gestational-age-at-delivery-not-named"/>
             <display value="Observation - Gestational Age at Delivery (Fetus Not Named)"/>
+        </entry>
+        <entry>
+            <reference value="Condition/condition-fetal-death-cause-or-condition-not-named"/>
+            <display value="Condition - Fetal Death Cause or Condition (Fetus Not Named)"/>
+        </entry>
+        <entry>
+            <reference value="Condition/condition-fetal-death-other-significant-cause-not-named"/>
+            <display value="Example of Condition-fetal-death-other-significant-cause profile (Fetus Not Named)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-estimated-fetal-death-time-point-not-named"/>
+            <display value="Example of Observation-estimated-fetal-death-time-point profile (Fetus Not Named)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-autopsy-performed-not-named"/>
+            <display value="Example of Observation-autopsy-performed profile (Fetus Not Named)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-histological-placental-exam-performed-not-named"/>
+            <display value="Observation - Histological Placental Exam Performed (Fetus Not Named)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-autopsy-histological-exam-results-used-not-named"/>
+            <display value="Observation - Autopsy or Histological Exam Results Used"/>
         </entry>
         <entry>
             <reference value="Observation/observation-plurality-carmen-teresa-lee"/>

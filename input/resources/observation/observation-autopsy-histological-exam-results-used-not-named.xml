@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-autopsy-histological-exam-results-used-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-08-20T02:50:40.447+00:00"/>
+        <source value="#goyxTKrNcaOMgKf1"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="74498-7"/>
+            <display value="Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Fetus Not Named"/>
+    </subject>
+    <valueBoolean value="true"/>
+</Observation>
