@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="603"/>
-        <lastUpdated value="2020-08-20T03:19:27.245+00:00"/>
-        <source value="#7BRaJYnzBUYSjYh2"/>
+        <versionId value="606"/>
+        <lastUpdated value="2020-08-20T04:28:05.705+00:00"/>
+        <source value="#6qG2KhzTVqiBvXMG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -1438,6 +1438,7 @@
             <description value="Example of Observation-autopsy-histological-exam-results-used profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
+            <groupingId value="new-group8"/>
         </resource>
         <resource>
             <reference>
@@ -1448,6 +1449,22 @@
             <description value="Example of composition-provider-facility-fetal-death (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-fetal-death-report"/>
+            <groupingId value="new-group5"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-jurisdiction-fetal-death-not-named"/></reference>
+            <name value="Bundle - Jurisdiction Fetal Report (Fetus Not Named)"/>
+            <description value="Example of a Document Bundle containing composition-jurisdiction-fetal-death profile (Fetus Not Named)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group5"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-provider-facility-fetal-death-not-named"/></reference>
+            <name value="Bundle - Provider Facility Fetal Death Report (Fetus Not Named)"/>
+            <description value="Example of a Document Bundle containing composition-provider-facility-fetal-death profile (Fetus Not Named)"/>
+            <exampleBoolean value="true"/>
             <groupingId value="new-group5"/>
         </resource>
         <page>

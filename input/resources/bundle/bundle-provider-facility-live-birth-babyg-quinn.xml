@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-provider-facility-live-birth-babyg-quinn"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-08-17T05:02:44.053+00:00"/>
-        <source value="#pqmPEBRAzVlZqtQf"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-20T04:37:41.228+00:00"/>
+        <source value="#AyVJ5O9fiUtG49Ll"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:0c3eec0b-145b-4694-a1b8-1ea4de5a0cb3"/>
+        <value value="urn:uuid:9eeb1854-dee1-470a-9534-5cb25e18a327"/>
     </identifier>
     <type value="document"/>
     <timestamp value="2019-02-12T17:45:14.637+00:00"/>
@@ -1052,6 +1052,7 @@
                     <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
                         <valueCode value="not-asked"/>
                     </extension>
+                    <display value="Not asked"/>
                 </payor>
             </Coverage>
         </resource>
@@ -1154,10 +1155,10 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
-                    <display value="Jada Ann Quinn"/>
+                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+                    <display value="Carmen Teresa Lee"/>
                 </subject>
-                <valueInteger value="2"/>
+                <valueInteger value="1"/>
             </Observation>
         </resource>
     </entry>
@@ -1462,6 +1463,120 @@
                     <display value="South Hospital Organization"/>
                 </serviceProvider>
             </Encounter>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Patient/patient-mother-carmen-teresa-lee"/>
+        <resource>
+            <Patient>
+                <id value="patient-mother-carmen-teresa-lee"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="hapiHeaderText">Carmen Teresa 
+                            <b>LEE </b>
+                        </div>
+                        <table class="hapiPropertyTable">
+                            <tbody>
+                                <tr>
+                                    <td>Identifier</td>
+                                    <td>9992702</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>
+                                        <span>3670 Miller Road </span>
+                                        <br/>
+                                        <span>Ann Arbor </span>
+                                        <span>MI </span>
+                                        <span>US </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Date of birth</td>
+                                    <td>
+                                        <span>15 February 1986</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </text>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2054-5"/>
+                            <display value="Black or African American"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Black or African America"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2135-2"/>
+                            <display value="Hispanic or Latino"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Hispanic or Latino"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+                    <valueCode value="F"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+                    <valueAddress>
+                        <state value="PR"/>
+                    </valueAddress>
+                </extension>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                            <display value="Medical Record Number"/>
+                        </coding>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="9992702"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Lee"/>
+                    <given value="Carmen"/>
+                    <given value="Teresa"/>
+                </name>
+                <name>
+                    <use value="maiden"/>
+                    <family value="Santos"/>
+                    <given value="Carmen"/>
+                    <given value="Teresa"/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="1986-02-15"/>
+                <address>
+                    <extension url="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Extension-within-city-limits-indicator">
+                        <valueCoding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="N"/>
+                            <display value="No"/>
+                        </valueCoding>
+                    </extension>
+                    <use value="home"/>
+                    <line value="3670 Miller Road"/>
+                    <city value="Ann Arbor"/>
+                    <state value="MI"/>
+                    <postalCode value="48103"/>
+                    <country value="US"/>
+                </address>
+            </Patient>
         </resource>
     </entry>
     <entry>
