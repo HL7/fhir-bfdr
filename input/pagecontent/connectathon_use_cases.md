@@ -7,4 +7,4 @@ This page contains information specific to the FHIR Connectathon 25 - September 
 
 <table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
 
-[Next Page - Provider Supplied Facility Live Birth Report](provider_supplied_facility_live_birth_report.html)
+[Next Page - Provider Facility Live Birth Report](provider_facility_live_birth_report.html)

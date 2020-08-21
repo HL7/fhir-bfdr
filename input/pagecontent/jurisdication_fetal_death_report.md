@@ -1,4 +1,4 @@
-[Previous Page - Provider Supplied Facility Fetal Death Report](provider_supplied_facility_fetal_death_report.html)
+[Previous Page - Provider Facility Fetal Death Report](provider_facility_fetal_death_report.html)
 
 The Jurisdiction Fetal Death report is represented by the [Composition - Jurisdiction Fetal Death Report](StructureDefinition-Composition-jurisdiction-fetal-death-report.html).
 
