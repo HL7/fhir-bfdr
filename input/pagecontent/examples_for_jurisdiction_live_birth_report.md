@@ -1,22 +1,31 @@
-[Previous Page - Examples](examples.html)
+[Previous Page - Examples for Provider Facility Live Birth Report](examples_for_provider_facility_live_birth_report.html)
 
 ### Participants
 * [Patient - Child (Baby G Quinn)](Patient-patient-child-babyg-quinn.html)
 * [Encounter - Birth (Baby G Quinn)](Encounter-encounter-birth-babyg-quinn.html)
 * [Practitioner - Live Birth Fetal Death (Dr. Avery Jones, MD)](Practitioner-practitioner-live-birth-fetal-death-avery-jones.html)
 * [Patient - Mother (Jada Ann Quinn)](Patient-patient-mother-jada-ann-quinn.html)
+* [RelatedPerson - Mother (Jada Ann Quinn)](RelatedPerson-relatedperson-mother-jada-ann-quinn)
+* [RelatedPerson - Father (James Brandon Quinn)](RelatedPerson-relatedperson-father-james-brandon-quinn)
 
 ### Examples for Mother (prenatal) Section on the Live Birth Certificate
 * [Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)](Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn.html)
 * [Observation - Number Prenatal Visits (Jada Ann Quinn)](Observation-observation-number-prenatal-visits-jada-ann-quinn.html)
 * [Observation - Last Menstrual Period (Jada Ann Quinn)](Observation-observation-last-menstrual-period-jada-ann-quinn.html)
 * [Observation - Number Births Now Living (Jada Ann Quinn)](Observation-observation-number-births-now-living-jada-ann-quinn.html)
-* [Observation - Number Births Now Dead (Jada Ann Quinn)](Observation-observation-number-births-now-dead-jada-ann-quinn.html)
+* [observation-number-births-now-dead-jada-ann-quinn](Observation-observation-number-births-now-dead-jada-ann-quinn.html)
 * [Observation - Date of Last Live Birth (Jada Ann Quinn)](Observation-observation-date-of-last-live-birth-jada-ann-quinn.html)
 * [Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)](Observation-observation-number-other-pregnancy-outcomes-jada-ann-quinn.html)
 * [Observation - Date of Last Other Pregnancy Outcome (Jada Ann Quinn)](Observation-observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn.html)
 * [Coverage - Principal Payer for Delivery (Jada Ann Quinn)](Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn.html)
 * [Observation - Mother Delivery Weight (Jada Ann Quinn)](Observation-observation-mother-delivery-weight-jada-ann-quinn.html)
+* [Observation - Mother Height (Jada Ann Quinn)](Observation-observation-mother-height-jada-ann-quinn.html)
+* [Observation - Mother Prepregnancy Weight (Jada Ann Quinn)](Observation-observation-mother-prepregnancy-weight-jada-ann-quinn.html)
+* [Observation - Mother Received WIC Food (Jada Ann Quinn)](Observation-observation-mother-received-wic-food-jada-ann-quinn.html)
+* [Observation - Cigarette Smoking Before/During Pregnancy (3 months prior: Jada Ann Quinn)](Observation-observation-cig-smoking-pregnancy-1-jada-ann-quinn.html)
+* [Observation - Cigarette Smoking Before/During Pregnancy (first 3 months: Jada Ann Quinn)](Observation-observation-cig-smoking-pregnancy-2-jada-ann-quinn.html)
+* [Observation - Cigarette Smoking Before/During Pregnancy (last 3 months: Jada Ann Quinn)](Observation-observation-cig-smoking-pregnancy-3-jada-ann-quinn.html)
+* [Observation - Cigarette Smoking Before/During Pregnancy (second 3 months: Jada Ann Quinn)](Observation-observation-cig-smoking-pregnancy-4-jada-ann-quinn.html)
 
 ### Examples for Medical and Health Information on the Live Birth Certificate
 * [Observation - Pregnancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)](Observation-observation-pregnancy-risk-factor-jada-ann-quinn-1.html)
@@ -47,4 +56,13 @@
 * [Observation - Infant Living (Baby G Quinn)](Observation-observation-infant-living-babyg-quinn.html)
 * [Observation - Infant Breastfed at Discharge (Baby G Quinn)](Observation-observation-infant-breastfed-at-discharge-babyg-quinn.html)
 
-[Next Page - Examples for Jurisdiction Live Birth Report](examples_for_jurisdiction_live_birth_report.html)
+### Examples for Mother Administrative Section on the Live Birth Certificate
+* [Observation - Mother Married During Pregnancy (Jada Ann Quinn)](Observation-observation-mother-married-during-pregnancy-jada-ann-quinn.html)
+* [Observation - SSN Requested for Child (Baby G Quinn)](Observation-observation-ssn-requested-for-child-babyg-quinn.html)
+* [Observation - Parent Education Level (Jada Ann Quinn)](Observation-observation-parent-education-level-jada-ann-quinn.html)
+
+### Examples for Father Section on the Live Birth Certificate
+* [Observation - Paternity Acknowledgement Signed (James Quinn)](Observation-observation-paternity-acknowledgement-signed-james-quinn.html)
+* [Observation - Parent Education Level (James Quinn)](Observation-observation-parent-education-level-james-quinn.html)
+
+[Next Page - Examples for Provider Facility Fetal Death Report](examples_for_provider_facility_fetal_death_report.html)

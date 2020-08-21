@@ -1,4 +1,4 @@
-[Previous Page - Examples for Jurisdication Live Birth Report](examples_for_jurisdication_live_birth_report.html)
+[Previous Page - Examples for Jurisdiction Live Birth Report](examples_for_jurisdiction_live_birth_report.html)
 
 ### Participants
 l* [Patient - Decedent (Fetus Not Named)](Patient-patient-decedent-fetus-not-named.html)
