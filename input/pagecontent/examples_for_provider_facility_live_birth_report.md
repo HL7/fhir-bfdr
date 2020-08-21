@@ -1,15 +1,12 @@
 [Previous Page - Examples](examples.html)
 
-Example Provider Facility Live Birth Report
-
-Example Provider Facility Live Birth Report Scenario text
-
+### Participants
 * [Patient - Child (Baby G Quinn)](Patient-patient-child-babyg-quinn.html)
 * [Encounter - Birth (Baby G Quinn)](Encounter-encounter-birth-babyg-quinn.html)
 * [Practitioner - Live Birth Fetal Death (Dr. Avery Jones, MD)](Practitioner-practitioner-live-birth-fetal-death-avery-jones.html)
 * [Patient - Mother (Jada Ann Quinn)](Patient-patient-mother-jada-ann-quinn.html)
 
-# Examples for Mother (prenatal) Section on the Live Birth Certificate
+### Examples for Mother (prenatal) Section on the Live Birth Certificate
 * [Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)](Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn.html)
 * [Observation - Number Prenatal Visits (Jada Ann Quinn)](Observation-observation-number-prenatal-visits-jada-ann-quinn.html)
 * [Observation - Last Menstrual Period (Jada Ann Quinn)](Observation-observation-last-menstrual-period-jada-ann-quinn.html)
@@ -21,7 +18,7 @@ Example Provider Facility Live Birth Report Scenario text
 * [Coverage - Principal Payer for Delivery (Jada Ann Quinn)](Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn.html)
 * [Observation - Mother Delivery Weight (Jada Ann Quinn)](Observation-observation-mother-delivery-weight-jada-ann-quinn.html)
 
-# Examples for Medical and Health Information on the Live Birth Certificate
+### Examples for Medical and Health Information on the Live Birth Certificate
 * [Observation - Pregnancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)](Observation-observation-pregnancy-risk-factor-jada-ann-quinn-1.html)
 * [Observation - Pregnancy Risk Factor (Jada Ann Quinn: Fertility enhancing drug therapy)](Observation-observation-pregnancy-risk-factor-jada-ann-quinn-2.html)
 * [Observation - Pregnancy Risk Factor (Jada Ann Quinn: Assisted fertilization)](Observation-observation-pregnancy-risk-factor-jada-ann-quinn-3.html)
@@ -38,7 +35,7 @@ Example Provider Facility Live Birth Report Scenario text
 * [Observation - Labor Trial Attempted (Baby G Quinn)](Observation-observation-labor-trial-attempted-babyg-quinn.html)
 * [Condition - Maternal Morbidity (Jada Ann Quinn)](Condition-condition-maternal-morbidity-jada-ann-quinn.html)
 
-# Examples for Newborn section on the Live Birth Certificate
+### Examples for Newborn section on the Live Birth Certificate
 * [Observation - Birth Weight (Baby G Quinn)](Observation-observation-birth-weight-babyg-quinn.html)
 * [Observation - Gestational Age at Delivery (Baby G Quinn)](Observation-observation-gestational-age-at-delivery-babyg-quinn.html)
 * [Observation - APGAR Score (BabyG Quinn: 1 min)](Observation-observation-apgar-score-babyg-quinn-1-min.html)

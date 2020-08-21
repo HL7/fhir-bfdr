@@ -1,15 +1,14 @@
 [Previous Page - Examples for Provider Facility Live Birth Report](examples_for_provider_facility_live_birth_report.html)
 
-Example Jurisdiction Live Birth Report
-
-Example Jurisdiction Live Birth Report Scenario text
-
+### Participants
 * [Patient - Child (Baby G Quinn)](Patient-patient-child-babyg-quinn.html)
 * [Encounter - Birth (Baby G Quinn)](Encounter-encounter-birth-babyg-quinn.html)
 * [Practitioner - Live Birth Fetal Death (Dr. Avery Jones, MD)](Practitioner-practitioner-live-birth-fetal-death-avery-jones.html)
 * [Patient - Mother (Jada Ann Quinn)](Patient-patient-mother-jada-ann-quinn.html)
+* [RelatedPerson - Mother (Jada Ann Quinn)](RelatedPerson-relatedperson-father-jada-ann-quinn)
+* [RelatedPerson - Father (James Brandon Quinn)](RelatedPerson-relatedperson-father-james-brandon-quinn)
 
-# Examples for Mother (prenatal) Section on the Live Birth Certificate
+### Examples for Mother (prenatal) Section on the Live Birth Certificate
 * [Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)](Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn.html)
 * [Observation - Number Prenatal Visits (Jada Ann Quinn)](Observation-observation-number-prenatal-visits-jada-ann-quinn.html)
 * [Observation - Last Menstrual Period (Jada Ann Quinn)](Observation-observation-last-menstrual-period-jada-ann-quinn.html)
@@ -28,7 +27,7 @@ Example Jurisdiction Live Birth Report Scenario text
 * [Observation - Cigarette Smoking Before/During Pregnancy (last 3 months: Jada Ann Quinn)](Observation-observation-cig-smoking-pregnancy-3-jada-ann-quinn.html)
 * [Observation - Cigarette Smoking Before/During Pregnancy (second 3 months: Jada Ann Quinn)](Observation-observation-cig-smoking-pregnancy-4-jada-ann-quinn.html)
 
-# Examples for Medical and Health Information on the Live Birth Certificate
+### Examples for Medical and Health Information on the Live Birth Certificate
 * [Observation - Pregnancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)](Observation-observation-pregnancy-risk-factor-jada-ann-quinn-1.html)
 * [Observation - Pregnancy Risk Factor (Jada Ann Quinn: Fertility enhancing drug therapy)](Observation-observation-pregnancy-risk-factor-jada-ann-quinn-2.html)
 * [Observation - Pregnancy Risk Factor (Jada Ann Quinn: Assisted fertilization)](Observation-observation-pregnancy-risk-factor-jada-ann-quinn-3.html)
@@ -45,7 +44,7 @@ Example Jurisdiction Live Birth Report Scenario text
 * [Observation - Labor Trial Attempted (Baby G Quinn)](Observation-observation-labor-trial-attempted-babyg-quinn.html)
 * [Condition - Maternal Morbidity (Jada Ann Quinn)](Condition-condition-maternal-morbidity-jada-ann-quinn.html)
 
-# Examples for Newborn section on the Live Birth Certificate
+### Examples for Newborn section on the Live Birth Certificate
 * [Observation - Birth Weight (Baby G Quinn)](Observation-observation-birth-weight-babyg-quinn.html)
 * [Observation - Gestational Age at Delivery (Baby G Quinn)](Observation-observation-gestational-age-at-delivery-babyg-quinn.html)
 * [Observation - APGAR Score (BabyG Quinn: 1 min)](Observation-observation-apgar-score-babyg-quinn-1-min.html)
@@ -57,12 +56,12 @@ Example Jurisdiction Live Birth Report Scenario text
 * [Observation - Infant Living (Baby G Quinn)](Observation-observation-infant-living-babyg-quinn.html)
 * [Observation - Infant Breastfed at Discharge (Baby G Quinn)](Observation-observation-infant-breastfed-at-discharge-babyg-quinn.html)
 
-# Examples for Mother Administrative Section on the Live Birth Certificate
+### Examples for Mother Administrative Section on the Live Birth Certificate
 * [Observation - Mother Married During Pregnancy (Jada Ann Quinn)](Observation-observation-mother-married-during-pregnancy-jada-ann-quinn.html)
 * [Observation - SSN Requested for Child (Baby G Quinn)](Observation-observation-ssn-requested-for-child-babyg-quinn.html)
 * [Observation - Parent Education Level (Jada Ann Quinn)](Observation-observation-parent-education-level-jada-ann-quinn.html)
 
-# Examples for Father Section on the Live Birth Certificate
+### Examples for Father Section on the Live Birth Certificate
 * [Observation - Paternity Acknowledgement Signed (James Quinn)](Observation-observation-paternity-acknowledgement-signed-james-quinn.html)
 * [Observation - Parent Education Level (James Quinn)](Observation-observation-parent-education-level-james-quinn.html)
 

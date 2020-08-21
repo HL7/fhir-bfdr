@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2020-08-20T02:53:43.855+00:00"/>
-        <source value="#VYOrh3GPM41G5O54"/>
+        <versionId value="18"/>
+        <lastUpdated value="2020-08-21T04:42:34.370+00:00"/>
+        <source value="#JkKBxNWlRZdNu8K8"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -121,14 +121,14 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-            <short value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Certificate."/>
-            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Certificate. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and fetus. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
+            <short value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report."/>
+            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and fetus. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
         </element>
         <element id="Composition.section:motherPrenatal">
             <path value="Composition.section"/>
             <sliceName value="motherPrenatal"/>
-            <short value="Mother (prenatal) section on the Fetal Death Certificate"/>
-            <definition value="This section contains items from the Mother (prenatal) on theFetal Death Certificate."/>
+            <short value="Mother (prenatal) section on the Fetal Death Report"/>
+            <definition value="This section contains items from the Mother (prenatal) on the Fetal Death Report."/>
         </element>
         <element id="Composition.section:motherPrenatal.code">
             <path value="Composition.section.code"/>
@@ -286,8 +286,8 @@
         <element id="Composition.section:medicalHealthInformation">
             <path value="Composition.section"/>
             <sliceName value="medicalHealthInformation"/>
-            <short value="Medical and Health Informatino section on the Fetal Death Certificate"/>
-            <definition value="This section contains items from the Medical and Health Information section on the Fetal Death Certificate."/>
+            <short value="Medical and Health Informatino section on the Fetal Death Report"/>
+            <definition value="This section contains items from the Medical and Health Information section on the Fetal Death Report."/>
         </element>
         <element id="Composition.section:medicalHealthInformation.code">
             <path value="Composition.section.code"/>
@@ -395,8 +395,8 @@
         <element id="Composition.section:fetus">
             <path value="Composition.section"/>
             <sliceName value="fetus"/>
-            <short value="fetus section on the Fetal Death Certificate"/>
-            <definition value="This section contains items from the fetus section on the Fetal Death Certificate."/>
+            <short value="fetus section on the Fetal Death Report"/>
+            <definition value="This section contains items from the fetus section on the Fetal Death Report."/>
         </element>
         <element id="Composition.section:fetus.code">
             <path value="Composition.section.code"/>
@@ -531,8 +531,8 @@
         <element id="Composition.section:motherInformation">
             <path value="Composition.section"/>
             <sliceName value="motherInformation"/>
-            <short value="Mother administrative section on the Fetal Death Certificate"/>
-            <definition value="This section contains items from the Mother administrative section on the Fetal Death Certificate."/>
+            <short value="Mother administrative section on the Fetal Death Report"/>
+            <definition value="This section contains items from the Mother administrative section on the Fetal Death Report."/>
         </element>
         <element id="Composition.section:motherInformation.code">
             <path value="Composition.section.code"/>
