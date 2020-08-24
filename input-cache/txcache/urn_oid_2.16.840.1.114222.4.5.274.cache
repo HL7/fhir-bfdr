@@ -99,3 +99,20 @@ v: {
   "error" : "CodeSystem uri 'urn:oid:2.16.840.1.114222.4.5.274' is unknown (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.114222.4.5.274",
+      "version" : "20200526",
+      "concept" : [{
+        "code" : "PHC1297",
+        "display" : "Unknown Intention Home Birth"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system urn:oid:2.16.840.1.114222.4.5.274"
+}
+-------------------------------------------------------------------------------------

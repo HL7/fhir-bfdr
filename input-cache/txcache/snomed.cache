@@ -21,8 +21,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:29355a22-ee2a-4248-bc68-106b77753429",
-    "timestamp" : "2020-08-24T06:56:07.753Z",
+    "identifier" : "urn:uuid:7f9efecc-35cc-454b-a987-6f0e61c020b8",
+    "timestamp" : "2020-08-24T23:17:03.520Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -855,7 +855,7 @@ e: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "22232009",
         "display" : "Hospital"
@@ -880,7 +880,52 @@ e: {
   }
 }}####
 e: {
-  "error" : "Error from server: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301"
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:04a239c2-48fa-4dca-ac7d-b3c371fa8938",
+    "timestamp" : "2020-08-24T23:17:10.426Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20200301"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "22232009",
+      "display" : "Hospital"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "91154008",
+      "display" : "Freestanding birthing center"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "408839006",
+      "display" : "Planned home birth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "408838003",
+      "display" : "Unplanned home birth"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "67190003",
+      "display" : "Clinic/Doctor office"
+    }]
+  }
+},
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1111,7 +1156,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -1160,9 +1205,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "High blood pressure",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1174,7 +1219,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -1223,9 +1268,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "High blood pressure",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1246,7 +1291,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -1295,9 +1340,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Gestational diabetes mellitus",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1309,7 +1354,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -1358,9 +1403,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Gestational diabetes mellitus",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1381,7 +1426,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "70028003",
         "display" : "Cephalic"
@@ -1398,9 +1443,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1412,7 +1457,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "70028003",
         "display" : "Cephalic"
@@ -1437,9 +1482,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1460,7 +1505,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "70028003",
         "display" : "Cephalic"
@@ -1479,7 +1524,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#260413007) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1491,7 +1536,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "70028003",
         "display" : "Cephalic"
@@ -1516,9 +1561,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "None",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1539,7 +1584,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "116859006",
         "display" : "Blood transfusion"
@@ -1572,9 +1617,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "None",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1586,7 +1631,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "116859006",
         "display" : "Blood transfusion"
@@ -1619,9 +1664,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "None",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1632,7 +1677,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "48782003",
         "display" : "Vaginal/Spontaneous"
@@ -1657,9 +1702,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Delivery normal",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1671,7 +1716,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "48782003",
         "display" : "Vaginal/Spontaneous"
@@ -1696,9 +1741,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Delivery normal",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1719,7 +1764,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "116859006",
         "display" : "Blood transfusion"
@@ -1754,7 +1799,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#6096002) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1766,7 +1811,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "116859006",
         "display" : "Blood transfusion"
@@ -1799,9 +1844,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1812,7 +1857,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "434681000124104",
         "display" : "Dead at time of first assessment, no labor ongoing"
@@ -1829,9 +1874,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Fetal intrapartum death after first assessment (event)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1843,7 +1888,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "434681000124104",
         "display" : "Dead at time of first assessment, no labor ongoing"
@@ -1868,9 +1913,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Fetal intrapartum death after first assessment (event)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1891,7 +1936,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "719828003",
         "display" : "Was an autopsy performed? No"
@@ -1908,9 +1953,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1922,7 +1967,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "719828003",
         "display" : "Was an autopsy performed? No"
@@ -1939,9 +1984,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1962,7 +2007,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "398166005",
         "display" : "Was an histological placental examination performed? Yes"
@@ -1979,9 +2024,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Performed (qualifier value)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1993,7 +2038,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "398166005",
         "display" : "Was an histological placental examination performed? Yes"
@@ -2010,9 +2055,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Performed (qualifier value)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2033,7 +2078,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "44223004",
         "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
@@ -2070,9 +2115,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Premature rupture of membranes",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2104,7 +2149,7 @@ v: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "44223004",
         "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
@@ -2149,9 +2194,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Premature rupture of membranes",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2172,7 +2217,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "44223004",
         "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
@@ -2209,9 +2254,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Placental insufficiency",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2243,7 +2288,7 @@ v: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "44223004",
         "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
@@ -2288,9 +2333,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Placental insufficiency",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2311,7 +2356,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "434681000124104",
         "display" : "Dead at time of first assessment, no labor ongoing"
@@ -2330,7 +2375,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#719828003) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2342,7 +2387,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "434681000124104",
         "display" : "Dead at time of first assessment, no labor ongoing"
@@ -2367,9 +2412,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2380,7 +2425,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "434681000124104",
         "display" : "Dead at time of first assessment, no labor ongoing"
@@ -2399,7 +2444,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#398166005) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2411,7 +2456,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "434681000124104",
         "display" : "Dead at time of first assessment, no labor ongoing"
@@ -2436,9 +2481,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Performed (qualifier value)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2449,7 +2494,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "719828003",
         "display" : "Was an autopsy performed? No"
@@ -2468,7 +2513,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#434631000124100) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2480,7 +2525,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "719828003",
         "display" : "Was an autopsy performed? No"
@@ -2497,9 +2542,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Fetal intrapartum death after first assessment (event)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2510,7 +2555,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "719828003",
         "display" : "Was an autopsy performed? No"
@@ -2529,7 +2574,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#398166005) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2541,7 +2586,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "719828003",
         "display" : "Was an autopsy performed? No"
@@ -2558,9 +2603,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Performed (qualifier value)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2571,7 +2616,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "398166005",
         "display" : "Was an histological placental examination performed? Yes"
@@ -2590,7 +2635,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#434631000124100) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2602,7 +2647,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "398166005",
         "display" : "Was an histological placental examination performed? Yes"
@@ -2619,9 +2664,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Fetal intrapartum death after first assessment (event)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2632,7 +2677,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "398166005",
         "display" : "Was an histological placental examination performed? Yes"
@@ -2651,7 +2696,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#719828003) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2663,7 +2708,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "398166005",
         "display" : "Was an histological placental examination performed? Yes"
@@ -2680,9 +2725,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2693,7 +2738,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -2742,9 +2787,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Pregnancy-induced hypertension",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2756,7 +2801,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -2805,9 +2850,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Pregnancy-induced hypertension",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2828,7 +2873,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -2877,9 +2922,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Fertility enhancing drug therapy (procedure)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2891,7 +2936,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -2940,9 +2985,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Fertility enhancing drug therapy (procedure)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -2963,7 +3008,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3012,9 +3057,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Assisted fertilization",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3026,7 +3071,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3075,9 +3120,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Assisted fertilization",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3098,7 +3143,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3147,9 +3192,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Deliveries by cesarean",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3161,7 +3206,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3210,9 +3255,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Deliveries by cesarean",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3233,7 +3278,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3284,7 +3329,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#236958009) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3296,7 +3341,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3345,9 +3390,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "IOL - Induction of labor",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3368,7 +3413,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -3413,9 +3458,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "IOL - Induction of labor",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3427,7 +3472,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -3472,9 +3517,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "IOL - Induction of labor",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3485,7 +3530,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3536,7 +3581,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#434691000124101) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3548,7 +3593,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3597,9 +3642,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Antibacterial administered during labor",
+  "severity" : "warning",
+  "error" : "The display \"Antibiotics received during labor\" is not a valid display for the code {http://snomed.info/sct}434691000124101 - should be one of [\"Antibacterial administered during labor\",\"Antibacterial administered during labor (situation)\"] (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3620,7 +3665,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -3665,9 +3710,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Antibacterial administered during labor",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3679,7 +3724,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -3724,9 +3769,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Antibacterial administered during labor",
+  "severity" : "warning",
+  "error" : "The display \"Antibiotics received during labor\" is not a valid display for the code {http://snomed.info/sct}434691000124101 - should be one of [\"Antibacterial administered during labor\",\"Antibacterial administered during labor (situation)\"] (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3737,7 +3782,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3788,7 +3833,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#11612004) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3800,7 +3845,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -3849,9 +3894,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Chorioamnionitis",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3872,7 +3917,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -3917,9 +3962,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Chorioamnionitis",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3931,7 +3976,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -3976,9 +4021,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Chorioamnionitis",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3989,7 +4034,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -4040,7 +4085,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#231064003) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4052,7 +4097,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "73211009",
         "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
@@ -4101,9 +4146,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Intrathecal injection of local anesthetic agent",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4124,7 +4169,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -4169,9 +4214,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Intrathecal injection of local anesthetic agent",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4183,7 +4228,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -4228,9 +4273,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Intrathecal injection of local anesthetic agent",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4241,7 +4286,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "15628003",
         "display" : "Gonorrhea"
@@ -4274,9 +4319,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Chlamydial infection",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4288,7 +4333,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "15628003",
         "display" : "Gonorrhea"
@@ -4329,9 +4374,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Chlamydial infection",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4352,7 +4397,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "15628003",
         "display" : "Gonorrhea"
@@ -4387,7 +4432,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#6096002) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4399,7 +4444,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "15628003",
         "display" : "Gonorrhea"
@@ -4440,9 +4485,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4453,7 +4498,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "15628003",
         "display" : "Gonorrhea"
@@ -4488,7 +4533,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#34430009) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4500,7 +4545,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "15628003",
         "display" : "Gonorrhea"
@@ -4541,9 +4586,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Rupture of uterus",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4564,7 +4609,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "116859006",
         "display" : "Blood transfusion"
@@ -4597,9 +4642,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Rupture of uterus",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4611,7 +4656,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "116859006",
         "display" : "Blood transfusion"
@@ -4644,9 +4689,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Rupture of uterus",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4657,7 +4702,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "240278000",
         "display" : "External cephalic version"
@@ -4670,9 +4715,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "ECV - External cephalic version",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4684,7 +4729,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "240278000",
         "display" : "External cephalic version"
@@ -4697,9 +4742,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "ECV - External cephalic version",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4783,7 +4828,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "240278000",
         "display" : "External cephalic version"
@@ -4798,7 +4843,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#11466000) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4810,7 +4855,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "240278000",
         "display" : "External cephalic version"
@@ -4823,9 +4868,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Cesarean section",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4846,7 +4891,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "48782003",
         "display" : "Vaginal/Spontaneous"
@@ -4871,9 +4916,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Cesarean section",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4885,7 +4930,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "48782003",
         "display" : "Vaginal/Spontaneous"
@@ -4910,9 +4955,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Cesarean section",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4923,7 +4968,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -4970,7 +5015,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#48194001) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -4982,7 +5027,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -5027,9 +5072,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Pregnancy-induced hypertension",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5040,7 +5085,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -5087,7 +5132,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#445151000124101) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5099,7 +5144,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -5144,9 +5189,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Fertility enhancing drug therapy (procedure)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5157,7 +5202,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -5204,7 +5249,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#63487001) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5216,7 +5261,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -5261,9 +5306,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Assisted fertilization",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5274,7 +5319,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -5321,7 +5366,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#200144004) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5333,7 +5378,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "236958009",
         "display" : "Induction of labor"
@@ -5378,9 +5423,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Deliveries by cesarean",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5391,7 +5436,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "70028003",
         "display" : "Cephalic"
@@ -5410,7 +5455,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#105629000) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5422,7 +5467,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "70028003",
         "display" : "Cephalic"
@@ -5447,9 +5492,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Chlamydial infection",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5460,7 +5505,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "70028003",
         "display" : "Cephalic"
@@ -5479,7 +5524,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#34430009) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5491,7 +5536,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "70028003",
         "display" : "Cephalic"
@@ -5516,9 +5561,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Rupture of uterus",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5529,7 +5574,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "48782003",
         "display" : "Vaginal/Spontaneous"
@@ -5556,7 +5601,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#240278000) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5568,7 +5613,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "48782003",
         "display" : "Vaginal/Spontaneous"
@@ -5593,9 +5638,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "ECV - External cephalic version",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5606,7 +5651,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "116859006",
         "display" : "Blood transfusion"
@@ -5641,7 +5686,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#105629000) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5653,7 +5698,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "116859006",
         "display" : "Blood transfusion"
@@ -5686,9 +5731,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Chlamydial infection",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5699,7 +5744,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "405269005",
         "display" : "NICU admission"
@@ -5728,9 +5773,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Antibiotic given for suspected neonatal sepsis (situation)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5754,7 +5799,7 @@ v: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "405269005",
         "display" : "NICU admission"
@@ -5783,9 +5828,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Antibiotic given for suspected neonatal sepsis (situation)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5806,7 +5851,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "405269005",
         "display" : "NICU admission"
@@ -5837,7 +5882,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#12770006) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5861,7 +5906,7 @@ v: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "405269005",
         "display" : "NICU admission"
@@ -5890,9 +5935,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Cyanotic congenital heart disease",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5913,7 +5958,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "89369001",
         "display" : "Anencephaly"
@@ -5970,9 +6015,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Cyanotic congenital heart disease",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -5984,7 +6029,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "89369001",
         "display" : "Anencephaly"
@@ -6041,9 +6086,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Cyanotic congenital heart disease",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6054,7 +6099,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "405269005",
         "display" : "NICU admission"
@@ -6085,7 +6130,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#70156005) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6109,7 +6154,7 @@ v: {
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "405269005",
         "display" : "NICU admission"
@@ -6138,9 +6183,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Anomaly of chromosome pair 21",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6172,7 +6217,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "442124003",
         "display" : "Down Syndrome / Karyotype confirmed"
@@ -6185,9 +6230,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Karyotype determination",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6198,7 +6243,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "442124003",
         "display" : "Suspected chromosomal disorder / Karyotype confirmed"
@@ -6211,9 +6256,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Karyotype determination",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6224,7 +6269,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "89369001",
         "display" : "Anencephaly"
@@ -6281,9 +6326,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Anomaly of chromosome pair 21",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6295,7 +6340,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "89369001",
         "display" : "Anencephaly"
@@ -6352,9 +6397,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Anomaly of chromosome pair 21",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6366,7 +6411,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "442124003",
         "display" : "Down Syndrome / Karyotype confirmed"
@@ -6379,9 +6424,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Karyotype determination",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6402,7 +6447,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "89369001",
         "display" : "Anencephaly"
@@ -6461,7 +6506,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "error" : "The code provided (http://snomed.info/sct#434621000124103) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6473,7 +6518,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "89369001",
         "display" : "Anencephaly"
@@ -6530,9 +6575,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Antibiotic given for suspected neonatal sepsis (situation)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6543,7 +6588,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "22232009",
         "display" : "Hospital"
@@ -6568,9 +6613,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Hospital",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6582,7 +6627,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "22232009",
         "display" : "Hospital"
@@ -6627,9 +6672,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Hospital",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6672,7 +6717,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "112247003",
         "display" : "MD (Medical Doctor)"
@@ -6693,9 +6738,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Medical doctor",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6707,7 +6752,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "112247003",
         "display" : "MD (Medical Doctor)"
@@ -6740,9 +6785,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Medical doctor",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6763,7 +6808,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "449971000124106",
         "display" : "Burial"
@@ -6784,9 +6829,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Patient status determination, deceased and buried (finding)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -6798,7 +6843,7 @@ v: {
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "449971000124106",
         "display" : "Burial"
@@ -6831,9 +6876,9 @@ v: {
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct|http://snomed.info/sct/731000124108/20200301 (from http://tx.fhir.org/r4)"
+  "display" : "Patient status determination, deceased and buried (finding)",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
