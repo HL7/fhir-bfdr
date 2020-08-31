@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-fetal-presentation"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2020-08-20T01:03:46.624+00:00"/>
-        <source value="#OJOtGiltaWNCjhuw"/>
+        <versionId value="21"/>
+        <lastUpdated value="2020-08-31T21:37:48.016+00:00"/>
+        <source value="#NQKVYRe06bx5Ny8C"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
     <version value="1.0.0"/>
@@ -60,6 +60,13 @@
                 <identity value="fetal-death-report"/>
                 <map value="38c. Fetal presentation at delivery"/>
             </mapping>
+        </element>
+        <element id="Condition.subject">
+            <path value="Condition.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>

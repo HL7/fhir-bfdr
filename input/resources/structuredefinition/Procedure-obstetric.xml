@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-obstetric"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-20T01:26:23.719+00:00"/>
-        <source value="#kZnsRaM1Nm3S0boE"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-08-31T21:34:53.891+00:00"/>
+        <source value="#twsK42uJeYUFULIq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
     <version value="1.0"/>
@@ -39,6 +39,13 @@
                 <strength value="required"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7136"/>
             </binding>
+        </element>
+        <element id="Procedure.subject">
+            <path value="Procedure.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+            </type>
         </element>
         <element id="Procedure.outcome">
             <path value="Procedure.outcome"/>

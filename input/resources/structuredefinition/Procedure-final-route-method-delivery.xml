@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-final-route-method-delivery"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-08-20T01:08:25.321+00:00"/>
-        <source value="#JweeytVDy7NjUoe5"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-08-31T21:38:21.270+00:00"/>
+        <source value="#SWOhcVMLj3sQ58TH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
     <version value="1.0"/>
@@ -39,6 +39,13 @@
                 <strength value="required"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7118"/>
             </binding>
+        </element>
+        <element id="Procedure.subject">
+            <path value="Procedure.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+            </type>
         </element>
         <element id="Procedure.reasonReference">
             <path value="Procedure.reasonReference"/>
