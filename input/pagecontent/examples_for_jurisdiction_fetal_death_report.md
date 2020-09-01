@@ -1,10 +1,16 @@
 [Previous Page - Examples for Provider Facility Fetal Death Report](examples_for_provider_facility_fetal_death_report.html)
 
-### Participants
-* [Encounter - Maternity (Carmen Teresa Lee)](Encounter-encounter-maternity-carmen-teresa-lee.html)
-* [Practitioner - Live Birth Fetal Death (Jessica Leung)](Practitioner-practitioner-live-birth-fetal-death-jessica-leung.html)
+### Example Composition and Bundle
+* [Composition - Jurisdiction Fetal Death (Fetus Not Named)](Composition-composition-jurisdiction-fetal-death-not-named.html)
+* [Bundle - Jurisdiction Fetal Death (Fetus Not Named)](Bundle-bundle-jurisdiction-fetal-death-not-named.html)
+
+ ### Participants
 * [Patient - Mother (Carmen Teresa Lee)](Patient-patient-mother-carmen-teresa-lee.html)
 * [RelatedPerson - Father (James Brandon Quinn)](RelatedPerson-relatedperson-father-james-brandon-quinn.html)
+* [Practitioner - Live Birth Fetal Death (Jessica Leung)](Practitioner-practitioner-live-birth-fetal-death-jessica-leung.html)
+
+### Example Encounter
+* [Encounter - Maternity (Carmen Teresa Lee)](Encounter-encounter-maternity-carmen-teresa-lee.html)
 
 ### Examples for Mother (prenatal) Section on the Fetal Death Report
 * [Observation - Planned to Deliver at Home (Carmen Teresa Lee)](Observation-observation-planned-to-deliver-at-home-not-named.html)
@@ -33,9 +39,9 @@
 * [Observation - Birth Weight (Fetus Not Named)](Observation-observation-birth-weight-not-named.html)
 * [Observation - Gestational Age at Delivery (Fetus Not Named)](Observation-observation-gestational-age-at-delivery-not-named.html)
 * [Condition - Fetal Death Cause or Condition (Fetus Not Named)](Condition-condition-fetal-death-cause-or-condition-not-named.html)
-* [Example of Condition-fetal-death-other-significant-cause profile (Fetus Not Named)](Condition-condition-fetal-death-other-significant-cause-not-named.html)
-* [Example of Observation-estimated-fetal-death-time-point profile (Fetus Not Named)](Observation-observation-estimated-fetal-death-time-point-not-named.html)
-* [Example of Observation-autopsy-performed profile (Fetus Not Named)](Observation-observation-autopsy-performed-not-named.html)
+* [Condition - Fetal Death Other Significant Cause (Fetus Not Named)](Condition-condition-fetal-death-other-significant-cause-not-named.html)
+* [Observation - Estimated Fetal Death Time Point (Fetus Not Named)](Observation-observation-estimated-fetal-death-time-point-not-named.html)
+* [Observation - Autopsy Performed (Fetus Not Named)](Observation-observation-autopsy-performed-not-named.html)
 * [Observation - Histological Placental Exam Performed (Fetus Not Named)](Observation-observation-histological-placental-exam-performed-not-named.html)
 * [Observation - Autopsy or Histological Exam Results Used](Observation-observation-autopsy-histological-exam-results-used-not-named.html)
 * [Observation - Plurality (Carmen Teresa Lee)](Observation-observation-plurality-carmen-teresa-lee.html)

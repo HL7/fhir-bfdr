@@ -1,10 +1,17 @@
 [Previous Page - Examples](examples.html)
 
-### Participants
+### Example Composition and Bundle
+* [Composition - Provider Facility Live Birth (Baby G Quinn)](Composition-composition-provider-facility-live-birth-babyg-quinn.html)
+* [Bundle - Provider Facility Live Birth (Baby G Quinn)](Bundle-bundle-provider-facility-live-birth-babyg-quinn.html)
+
+### Example Participants
 * [Patient - Child (Baby G Quinn)](Patient-patient-child-babyg-quinn.html)
-* [Encounter - Birth (Baby G Quinn)](Encounter-encounter-birth-babyg-quinn.html)
-* [Practitioner - Live Birth Fetal Death (Dr. Avery Jones, MD)](Practitioner-practitioner-live-birth-fetal-death-avery-jones.html)
 * [Patient - Mother (Jada Ann Quinn)](Patient-patient-mother-jada-ann-quinn.html)
+* [Practitioner - Live Birth Fetal Death (Dr. Avery Jones, MD)](Practitioner-practitioner-live-birth-fetal-death-avery-jones.html)
+
+## Example Encounters
+* [Encounter - Birth (Baby G Quinn)](Encounter-encounter-birth-babyg-quinn.html)
+* [Encounter - Maternity (Jada Ann Quinn)](Encounter-encounter-maternity-jada-ann-quinn.html)
 
 ### Examples for Mother (prenatal) Section on the Live Birth Certificate
 * [Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)](Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn.html)

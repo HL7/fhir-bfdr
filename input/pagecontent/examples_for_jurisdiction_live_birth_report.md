@@ -1,19 +1,26 @@
 [Previous Page - Examples for Provider Facility Live Birth Report](examples_for_provider_facility_live_birth_report.html)
 
-### Participants
+### Example Composition and Bundle
+* [Composition - Jurisdiction Live Birth (Baby G Quinn)](Composition-composition-jurisdiction-live-birth-babyg-quinn.html)
+* [Bundle - Jurisdiction Live Birth (Baby G Quinn)](Bundle-bundle-jurisdiction-live-birth-babyg-quinn.html)
+
+### Example Participants
 * [Patient - Child (Baby G Quinn)](Patient-patient-child-babyg-quinn.html)
-* [Encounter - Birth (Baby G Quinn)](Encounter-encounter-birth-babyg-quinn.html)
-* [Practitioner - Live Birth Fetal Death (Dr. Avery Jones, MD)](Practitioner-practitioner-live-birth-fetal-death-avery-jones.html)
 * [Patient - Mother (Jada Ann Quinn)](Patient-patient-mother-jada-ann-quinn.html)
-* [RelatedPerson - Mother (Jada Ann Quinn)](RelatedPerson-relatedperson-mother-jada-ann-quinn)
-* [RelatedPerson - Father (James Brandon Quinn)](RelatedPerson-relatedperson-father-james-brandon-quinn)
+* [RelatedPerson - Mother (Jada Ann Quinn)](RelatedPerson-relatedperson-mother-jada-ann-quinn.html)
+* [RelatedPerson - Father (James Brandon Quinn)](RelatedPerson-relatedperson-father-james-brandon-quinn.html)
+* [Practitioner - Live Birth Fetal Death (Dr. Avery Jones, MD)](Practitioner-practitioner-live-birth-fetal-death-avery-jones.html)
+
+## Example Encounters
+* [Encounter - Birth (Baby G Quinn)](Encounter-encounter-birth-babyg-quinn.html)
+* [Encounter - Maternity (Jada Ann Quinn)](Encounter-encounter-maternity-jada-ann-quinn.html)
 
 ### Examples for Mother (prenatal) Section on the Live Birth Certificate
 * [Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)](Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn.html)
 * [Observation - Number Prenatal Visits (Jada Ann Quinn)](Observation-observation-number-prenatal-visits-jada-ann-quinn.html)
 * [Observation - Last Menstrual Period (Jada Ann Quinn)](Observation-observation-last-menstrual-period-jada-ann-quinn.html)
 * [Observation - Number Births Now Living (Jada Ann Quinn)](Observation-observation-number-births-now-living-jada-ann-quinn.html)
-* [observation-number-births-now-dead-jada-ann-quinn](Observation-observation-number-births-now-dead-jada-ann-quinn.html)
+* [Observation - Number Births Now Dead (Jada Ann Quinn)](Observation-observation-number-births-now-dead-jada-ann-quinn.html)
 * [Observation - Date of Last Live Birth (Jada Ann Quinn)](Observation-observation-date-of-last-live-birth-jada-ann-quinn.html)
 * [Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)](Observation-observation-number-other-pregnancy-outcomes-jada-ann-quinn.html)
 * [Observation - Date of Last Other Pregnancy Outcome (Jada Ann Quinn)](Observation-observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn.html)

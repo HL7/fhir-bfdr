@@ -1,10 +1,16 @@
 [Previous Page - Examples for Jurisdiction Live Birth Report](examples_for_jurisdiction_live_birth_report.html)
 
-### Participants
-l* [Patient - Decedent (Fetus Not Named)](Patient-patient-decedent-fetus-not-named.html)
-* [Encounter - Maternity (Carmen Teresa Lee)](Encounter-encounter-maternity-carmen-teresa-lee.html)
-* [Practitioner - Live Birth Fetal Death (Jessica Leung)](Practitioner-practitioner-live-birth-fetal-death-jessica-leung.html)
+### Example Composition and Bundle
+* [Composition - Provider Facility Fetal Death (Fetus Not Named)](Composition-composition-provider-facility-fetal-death-not-named.html)
+* [Bundle - Provider Facility Fetal Death (Fetus Not Named)](Bundle-bundle-provider-facility-fetal-death-not-named.html)
+
+### Example Participants
+* [Patient - Decedent (Fetus Not Named)](Patient-patient-decedent-fetus-not-named.html)
 * [Patient - Mother (Carmen Teresa Lee)](Patient-patient-mother-carmen-teresa-lee.html)
+* [Practitioner - Live Birth Fetal Death (Jessica Leung)](Practitioner-practitioner-live-birth-fetal-death-jessica-leung.html)
+
+### Example Encounter
+* [Encounter - Maternity (Carmen Teresa Lee)](Encounter-encounter-maternity-carmen-teresa-lee.html)
 
 ### Examples for Mother (prenatal) Section on the Fetal Death Report
 * [Observation - Planned to Deliver at Home (Carmen Teresa Lee)](Observation-observation-planned-to-deliver-at-home-not-named.html)
@@ -22,7 +28,7 @@ l* [Patient - Decedent (Fetus Not Named)](Patient-patient-decedent-fetus-not-nam
 * [Procedure - Final Route and Method of Delivery (Fetus Not Named)](Procedure-procedure-final-route-method-delivery-not-named.html)
 * [Condition - Maternal Morbidity (Carmen Teresa Lee)](Condition-condition-maternal-morbidity-carmen-teresa-lee.html)
 
-### Examples for Fetal delivery information section on the Fetal Death Report
+### Examples for Fetal Delivery Information Section on the Fetal Death Report
 * [Observation - Birth Weight (Fetus Not Named)](Observation-observation-birth-weight-not-named.html)
 * [Observation - Gestational Age at Delivery (Fetus Not Named)](Observation-observation-gestational-age-at-delivery-not-named.html)
 * [Condition - Fetal Death Cause or Condition (Fetus Not Named)](Condition-condition-fetal-death-cause-or-condition-not-named.html)
