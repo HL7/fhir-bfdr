@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="647"/>
-        <lastUpdated value="2020-09-01T03:57:32.976+00:00"/>
-        <source value="#8u9bl91exzPgFNdG"/>
+        <versionId value="652"/>
+        <lastUpdated value="2020-09-01T04:41:46.858+00:00"/>
+        <source value="#lzJL3ejuTGBSoxIL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -100,7 +100,7 @@
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Report (see Appendix D)."/>
         </grouping>
         <grouping id="new-group6">
-            <name value=" Fetal Death Examples: Participant Test Data"/>
+            <name value="Fetal Death Examples: Participant Test Data"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Report (see Appendix D)."/>
         </grouping>
         <grouping id="new-group7">
@@ -201,7 +201,7 @@
                 <display value="Composition - Provider Live Birth Report"/>
             </reference>
             <name value="Composition - Provider Live Birth Report"/>
-            <description value="This Composition profile defines constraints to address the use case in which information for live birth information to be recorded and communicated to the jurisdicational Vital Records Office.&#xA;&#xA;&#xA;"/>
+            <description value="This Composition profile defines constraints to address the use case in which information for live birth information to be recorded and communicated to the jurisdicational Vital Records Office."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-ehr-jvr"/>
         </resource>
@@ -1450,6 +1450,14 @@
             <description value="Example of a Document Bundle containing composition-provider-facility-fetal-death profile (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group5"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/expansion-parameters"/>
+                <display value="expansion-parameters"/>
+            </reference>
+            <name value="expansion-parameters"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
