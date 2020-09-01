@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-congenital-anomaly-of-newborn"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-09-01T05:44:59.797+00:00"/>
-        <source value="#25vyUIlTT7WzfXN2"/>
+        <versionId value="12"/>
+        <lastUpdated value="2020-09-01T05:54:56.339+00:00"/>
+        <source value="#9njOB7TPOLamzXpq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
     <version value="1.0.0"/>
@@ -79,6 +79,16 @@
             <path value="Condition.evidence.code"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7116"/>
+            </binding>
+        </element>
+        <element id="Condition.evidence:sliceDownSyndromeKaryotypeStatus.code">
+            <path value="Condition.evidence.code"/>
+            <min value="1"/>
+            <max value="1"/>
             <binding>
                 <strength value="required"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7116"/>
@@ -89,6 +99,16 @@
             <sliceName value="sliceSuspectedChromosomalDisorderStatus"/>
             <max value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Condition.evidence:sliceSuspectedChromosomalDisorderStatus.code">
+            <path value="Condition.evidence.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7115"/>
+            </binding>
         </element>
         <element id="Condition.evidence:sliceSuspectedChromosomalDisorderStatus.code">
             <path value="Condition.evidence.code"/>
