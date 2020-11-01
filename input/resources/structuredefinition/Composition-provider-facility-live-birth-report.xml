@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-facility-live-birth-report"/>
     <meta>
-        <versionId value="32"/>
-        <lastUpdated value="2020-11-01T04:02:16.041+00:00"/>
-        <source value="#p0o0wueHwvuk6HKg"/>
+        <versionId value="33"/>
+        <lastUpdated value="2020-11-01T05:45:37.582+00:00"/>
+        <source value="#NM73uVQlu2P4Vnf7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
     <version value="1.0.0"/>
@@ -32,6 +32,34 @@
         <element id="Composition">
             <path value="Composition"/>
             <short value="This composition represents the provider supplied facility live birth report."/>
+        </element>
+        <element id="Composition.extension">
+            <path value="Composition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateId">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateId"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id"/>
+            </type>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateFileNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateFileNumber"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
+            </type>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>

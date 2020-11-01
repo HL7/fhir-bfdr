@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="31"/>
-        <lastUpdated value="2020-11-01T04:02:16.029+00:00"/>
-        <source value="#huJt5bGA3VLitCcZ"/>
+        <versionId value="32"/>
+        <lastUpdated value="2020-11-01T05:45:12.046+00:00"/>
+        <source value="#loaXl5ndqLDgDuQt"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -32,6 +32,34 @@
         <element id="Composition">
             <path value="Composition"/>
             <short value="This composition represents the jurisdiction live birth report."/>
+        </element>
+        <element id="Composition.extension">
+            <path value="Composition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateId">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateId"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id"/>
+            </type>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateFileNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateFileNumber"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
+            </type>
         </element>
         <element id="Composition.extension:dateFiledByRegistrar">
             <path value="Composition.extension"/>

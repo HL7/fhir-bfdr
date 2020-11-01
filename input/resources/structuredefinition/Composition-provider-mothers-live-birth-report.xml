@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-mothers-live-birth-report"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-11-01T04:02:16.327+00:00"/>
-        <source value="#hKRXRSiMkXRJWS3b"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-11-01T05:47:20.273+00:00"/>
+        <source value="#fAvITlZ8ZDAbU8pn"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-mothers-live-birth-report"/>
     <version value="1.0.0"/>
@@ -31,6 +31,34 @@
     <differential>
         <element id="Composition">
             <path value="Composition"/>
+        </element>
+        <element id="Composition.extension">
+            <path value="Composition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateId">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateId"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id"/>
+            </type>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateFileNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateFileNumber"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
+            </type>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>

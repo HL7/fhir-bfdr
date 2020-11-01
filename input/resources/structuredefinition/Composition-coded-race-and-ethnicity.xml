@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-coded-race-and-ethnicity"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-11-01T04:26:09.463+00:00"/>
-        <source value="#LPg7C6l5dKdU1qvD"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-11-01T05:40:18.811+00:00"/>
+        <source value="#b6c5WhJSD2vfDnja"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
     <version value="1.0.0"/>
@@ -249,11 +249,15 @@
         </element>
         <element id="Composition.extension">
             <path value="Composition.extension"/>
-            <short value="Additional content defined by implementations"/>
-            <definition value="May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
-            <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-            <alias value="extensions"/>
-            <alias value="user content"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="Extension"/>
+            <definition value="An Extension"/>
             <min value="0"/>
             <max value="*"/>
             <base>
@@ -266,10 +270,146 @@
             </type>
             <isModifier value="false"/>
             <isSummary value="false"/>
-            <mapping>
-                <identity value="rim"/>
-                <map value="N/A"/>
-            </mapping>
+        </element>
+        <element id="Composition.extension:sliceFetalDeathReportId">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceFetalDeathReportId"/>
+            <short value="Extension"/>
+            <definition value="An Extension"/>
+            <min value="0"/>
+            <max value="1"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-id"/>
+            </type>
+            <condition value="ele-1"/>
+            <constraint>
+                <key value="ele-1"/>
+                <severity value="error"/>
+                <human value="All FHIR elements must have a @value or children"/>
+                <expression value="hasValue() or (children().count() &gt; id.count())"/>
+                <xpath value="@value|f:*|h:div"/>
+                <source value="Element"/>
+            </constraint>
+            <constraint>
+                <key value="ext-1"/>
+                <severity value="error"/>
+                <human value="Must have either extensions or value[x], not both"/>
+                <expression value="extension.exists() != value.exists()"/>
+                <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+                <source value="Extension"/>
+            </constraint>
+            <isModifier value="false"/>
+        </element>
+        <element id="Composition.extension:sliceFetalDeathReportFileNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceFetalDeathReportFileNumber"/>
+            <short value="Extension"/>
+            <definition value="An Extension"/>
+            <min value="0"/>
+            <max value="1"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number"/>
+            </type>
+            <condition value="ele-1"/>
+            <constraint>
+                <key value="ele-1"/>
+                <severity value="error"/>
+                <human value="All FHIR elements must have a @value or children"/>
+                <expression value="hasValue() or (children().count() &gt; id.count())"/>
+                <xpath value="@value|f:*|h:div"/>
+                <source value="Element"/>
+            </constraint>
+            <constraint>
+                <key value="ext-1"/>
+                <severity value="error"/>
+                <human value="Must have either extensions or value[x], not both"/>
+                <expression value="extension.exists() != value.exists()"/>
+                <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+                <source value="Extension"/>
+            </constraint>
+            <isModifier value="false"/>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateId">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateId"/>
+            <short value="Extension"/>
+            <definition value="An Extension"/>
+            <min value="0"/>
+            <max value="1"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id"/>
+            </type>
+            <condition value="ele-1"/>
+            <constraint>
+                <key value="ele-1"/>
+                <severity value="error"/>
+                <human value="All FHIR elements must have a @value or children"/>
+                <expression value="hasValue() or (children().count() &gt; id.count())"/>
+                <xpath value="@value|f:*|h:div"/>
+                <source value="Element"/>
+            </constraint>
+            <constraint>
+                <key value="ext-1"/>
+                <severity value="error"/>
+                <human value="Must have either extensions or value[x], not both"/>
+                <expression value="extension.exists() != value.exists()"/>
+                <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+                <source value="Extension"/>
+            </constraint>
+            <isModifier value="false"/>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateFileNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateFileNumber"/>
+            <short value="Extension"/>
+            <definition value="An Extension"/>
+            <min value="0"/>
+            <max value="1"/>
+            <base>
+                <path value="DomainResource.extension"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
+            </type>
+            <condition value="ele-1"/>
+            <constraint>
+                <key value="ele-1"/>
+                <severity value="error"/>
+                <human value="All FHIR elements must have a @value or children"/>
+                <expression value="hasValue() or (children().count() &gt; id.count())"/>
+                <xpath value="@value|f:*|h:div"/>
+                <source value="Element"/>
+            </constraint>
+            <constraint>
+                <key value="ext-1"/>
+                <severity value="error"/>
+                <human value="Must have either extensions or value[x], not both"/>
+                <expression value="extension.exists() != value.exists()"/>
+                <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+                <source value="Extension"/>
+            </constraint>
+            <isModifier value="false"/>
         </element>
         <element id="Composition.modifierExtension">
             <path value="Composition.modifierExtension"/>
@@ -2818,6 +2958,52 @@
     <differential>
         <element id="Composition">
             <path value="Composition"/>
+        </element>
+        <element id="Composition.extension">
+            <path value="Composition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.extension:sliceFetalDeathReportId">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceFetalDeathReportId"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-id"/>
+            </type>
+        </element>
+        <element id="Composition.extension:sliceFetalDeathReportFileNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceFetalDeathReportFileNumber"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number"/>
+            </type>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateId">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateId"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id"/>
+            </type>
+        </element>
+        <element id="Composition.extension:sliceBirthCertificateFileNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceBirthCertificateFileNumber"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
+            </type>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>

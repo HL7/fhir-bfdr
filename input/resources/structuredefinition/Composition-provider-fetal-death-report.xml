@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-fetal-death-report"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-11-01T04:02:15.978+00:00"/>
-        <source value="#3dXijDuO3djNO7zT"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-11-01T05:46:02.794+00:00"/>
+        <source value="#p5yyEgpwj8jD9CQ8"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -31,6 +31,34 @@
     <differential>
         <element id="Composition">
             <path value="Composition"/>
+        </element>
+        <element id="Composition.extension">
+            <path value="Composition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.extension:sliceFetalDeathReportId">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceFetalDeathReportId"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-id"/>
+            </type>
+        </element>
+        <element id="Composition.extension:sliceFetalDeathReportFileNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="sliceFetalDeathReportFileNumber"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number"/>
+            </type>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
