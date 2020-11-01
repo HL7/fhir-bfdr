@@ -54,4 +54,4 @@
 * [Observation - Infant Living (Baby G Quinn)](Observation-observation-infant-living-babyg-quinn.html)
 * [Observation - Infant Breastfed at Discharge (Baby G Quinn)](Observation-observation-infant-breastfed-at-discharge-babyg-quinn.html)
 
-[Next Page - Examples for Jurisdiction Live Birth Report](examples_for_jurisdiction_live_birth_report.html)
+[Next Page - Examples for Provider Facility Fetal Death Report](examples_for_provider_facility_fetal_death_report.html)

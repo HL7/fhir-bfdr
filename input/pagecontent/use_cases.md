@@ -1,4 +1,4 @@
-[Previous Page - Jurisdication Fetal Death Report](jurisdication_fetal_death_report.html)
+[Previous Page - The Specification](the_specification.html)
 
 | Title | Data source | Data receiver | Form(s) | 
 | -------- | -------- | -------- | -------- |
@@ -16,4 +16,4 @@
  
  <table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
 
-[Next Page - Provider Supplied Live Birth Report](provider_supplied_live_birth_report.html)
+[Next Page - Provider Facility Live Birth Report](provider_facility_live_birth_report.html)

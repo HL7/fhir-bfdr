@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="652"/>
-        <lastUpdated value="2020-09-01T04:41:46.858+00:00"/>
-        <source value="#lzJL3ejuTGBSoxIL"/>
+        <versionId value="670"/>
+        <lastUpdated value="2020-11-01T04:41:35.096+00:00"/>
+        <source value="#lLF7vhqZaltmy7DU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -35,8 +35,8 @@
         <version value="3.1.0"/>
     </dependsOn>
     <dependsOn>
-        <uri value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/fhir-vr-common-ig"/>
-        <packageId value="hl7.fhir.us.fhir-vr-common-ig"/>
+        <uri value="http://hl7.org/fhir/us/fhir-vr-common-library/ImplementationGuide/hl7.fhir.us.fhir-vr-common-library"/>
+        <packageId value="hl7.fhir.us.fhir-vr-common-library"/>
         <version value="current"/>
     </dependsOn>
     <dependsOn>
@@ -61,7 +61,10 @@
             <name value="Fetal Death - Jurisdictional Vital Records Office to National Statistical Agency: Composition Profiles"/>
             <description value="Compositions that define the information needed for the data flow from the Jurisdictional Vital Records Office to the National Statistic Agency for fetal death."/>
         </grouping>
-        <grouping id="new-group1">
+        <grouping id="nsa-2-jvr">
+            <name value="National Statistical Agency to Jurisdictional Vital Records Office: Composition Profiles"/>
+        </grouping>
+        <grouping id="encounter-profiles">
             <name value="Encounter Profiles"/>
         </grouping>
         <grouping id="newborn-fetus-profiles">
@@ -73,7 +76,7 @@
         <grouping id="medical-and-health-information-profiles">
             <name value="Medical and Health Information Profiles"/>
         </grouping>
-        <grouping id="new-group9">
+        <grouping id="fetal-death-information-profiles">
             <name value="Fetal Death Information Profiles"/>
         </grouping>
         <grouping id="parent-information-profiles">
@@ -298,7 +301,7 @@
             <name value="Condition - Fetal Death Cause or Condition"/>
             <description value="This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause. One or more optional contained Other Significant Cause/Condition of Fetal Death profiles represent another significant cause or condition for the death of the fetus."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
+            <groupingId value="fetal-death-information-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -308,7 +311,7 @@
             <name value="Condition - Fetal Death Other Significant Cause or Condition"/>
             <description value="This Condition profile represents another significant cause or condition for the death of the fetus. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
+            <groupingId value="fetal-death-information-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -326,7 +329,7 @@
             <description value="Example of condition-fetal-presentation profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -373,7 +376,7 @@
             <description value="Example of Cndition-maternal-morbidity profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -411,7 +414,7 @@
             <name value="Encounter - Birth"/>
             <description value="This Encounter profile represents the child's birth encounter. This Encounter can reference the mother's maternity encounter using the partOf data element."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group1"/>
+            <groupingId value="encounter-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -421,7 +424,7 @@
             <name value="Encounter - Maternity"/>
             <description value="This Encounter profile represents the mother's maternity encounter. After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group1"/>
+            <groupingId value="encounter-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -565,7 +568,7 @@
             <name value="Observation - Autopsy/Histological Exam Results Used"/>
             <description value="This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
+            <groupingId value="fetal-death-information-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -581,7 +584,7 @@
             <name value="Observation - Birth Weight (Fetus Not Named)"/>
             <description value="Example of Observation-birth-weight (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -646,7 +649,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 month prior: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -655,7 +658,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -664,7 +667,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -673,7 +676,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -727,7 +730,7 @@
             <name value="Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"/>
             <description value="Example of Observation-date-of-first-prenatal-care-visit profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -754,7 +757,7 @@
             <description value="Example of Observation-date-of-last-live-birth profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -792,7 +795,7 @@
             <name value="Observation - Estimated Fetal Death Time Point"/>
             <description value="This Observation profile represents the estimated time of fetal death; the time of death is characterized by relationship to the time of delivery."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
+            <groupingId value="fetal-death-information-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -808,7 +811,7 @@
             <name value="Observation - Gestational Age at Delivery (Fetus Not Named)"/>
             <description value="Example of Observation-gestational-age-at-delivery profile (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -818,7 +821,7 @@
             <name value="Observation - Histological Placental Exam"/>
             <description value="This profile represents whether or not a histological placental examination was performed."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
+            <groupingId value="fetal-death-information-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -870,7 +873,7 @@
             <name value="Observation - Last Menstrual Period (Carmen Teresa Lee)"/>
             <description value="Example of Observation-last-menstrual-period profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -888,7 +891,7 @@
             <name value="Observation - Method of Disposition"/>
             <description value="This Observation profile represents the method of disposition of the deceased fetus."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group9"/>
+            <groupingId value="fetal-death-information-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -904,7 +907,7 @@
             <name value="Observation - Mother Height (Carmen Teresa Lee)"/>
             <description value="Example of Observation-mother-height profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -930,7 +933,7 @@
             <name value="Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"/>
             <description value="Example of Observation-mother-prepregnancy-weight profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -957,7 +960,7 @@
             <description value="Example of observation-mother-received-wic-food profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1002,7 +1005,7 @@
             <name value="Observation - Number of Births Now Dead (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-births-now-dead profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1010,7 +1013,7 @@
             <name value="Observation - Number of Births Now Living (Carmen Teresa Lee)"/>
             <description value="Example of observation-number-births-now-living profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1044,7 +1047,7 @@
             <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
             <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1097,7 +1100,7 @@
             <description value="Example of observation-planned-to-deliver-at-home profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1105,7 +1108,7 @@
             <name value="Observation - Plurality (Carmen Teresa Lee)"/>
             <description value="Example of Observation-plurality profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1129,7 +1132,7 @@
             <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
             <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1137,7 +1140,7 @@
             <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1188,7 +1191,7 @@
             <name value="Observations - Number Previous Cesareans (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1255,7 +1258,7 @@
             <description value="Example of Procedure-final-route-method-delivery profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1351,7 +1354,7 @@
             <name value="Observation - Number Live Births This Delivery (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-live-births-this-delivery profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1360,7 +1363,7 @@
             <description value="Example of Observation-method-of-disposition profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1369,7 +1372,7 @@
             <description value="Example of Condition-fetal-death-cause-or-condition profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1378,7 +1381,7 @@
             <description value="Example of Condition-fetal-death-other-significant-cause profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1386,7 +1389,7 @@
             <name value="Observation - Autopsy Performed (Fetus Not Named)"/>
             <description value="Example of Observation-autopsy-performed profile (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1395,7 +1398,7 @@
             <description value="Example of Observation-histological-placental-exam-performed profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1404,16 +1407,7 @@
             <description value="Example of Observation-estimated-fetal-death-time-point profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Composition-test"/>
-                <display value="Composition - Test"/>
-            </reference>
-            <name value="Composition - Test"/>
-            <description value="Slicing test"/>
-            <exampleBoolean value="false"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1422,7 +1416,7 @@
             <description value="Example of Observation-autopsy-histological-exam-results-used profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -1451,25 +1445,101 @@
             <exampleBoolean value="true"/>
             <groupingId value="new-group5"/>
         </resource>
-        <!--<resource>
+        <resource>
             <reference>
                 <reference value="Parameters/expansion-parameters"/>
                 <display value="expansion-parameters"/>
             </reference>
             <name value="expansion-parameters"/>
             <exampleBoolean value="true"/>
-        </resource>-->
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-bridged-race"/>
+                <display value="Observation - Bridged Race"/>
+            </reference>
+            <name value="Observation - Bridged Race"/>
+            <description value="This profile represents a single race code assigned to the person. In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race from the 'bridged race' codes. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.&#xA;&#xA;Race bridging refers to making data collected using one set of race categories consistent with data collected using a different set of race categories, to permit estimation and comparison of race-specific statistics at a point in time or over time. More specifically, race bridging is a method used to make multiple-race and single-race data collection systems sufficiently comparable to permit estimation and analysis of race-specific statistics. The National Center for Health Statistics releases bridged-race population estimates of the resident population of the United States for use in calculating vital rates.&#xA;&#xA;With a probabilistic rule, an individual is randomly assigned to one and only one of the possible racial categories according to a set of probabilities. For example, a probabilistic rule might assign an AIAN/White multiple-race individual to either the AIAN category or the White category with probabilities of 0.5 and 0.5. Thus, an AIAN/White individual would have a 50 percent chance of being allocated to AIAN and a 50 percent chance of being allocated to White. The result would be that about 50 percent of the AIAN/White individuals would be assigned to the AIAN category and about 50 percent would be assigned to the White category. [https://www.cdc.gov/nchs/data/series/sr_02/sr02_135.pdf](https://www.cdc.gov/nchs/data/series/sr_02/sr02_135.pdf)"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-tabulated-ethnicity"/>
+                <display value="Observation - Tabulated Ethnicity"/>
+            </reference>
+            <name value="Observation - Tabulated Ethnicity"/>
+            <description value="This profile records a code representing the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-coded-race-and-ethnicity"/>
+                <display value="Composition - Coded Race"/>
+            </reference>
+            <name value="Composition - Coded Race"/>
+            <description value="This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office. It contains data that are a coded form of the race and ethnicity data that has been submitted to the NCHS. Two sets of codes will be used to address two objectives. These objectives are:&#xA;* to generate codes for race or ethnicity data provided as text entries&#xA;* to generate a single race code in cases where multiple races have been reported&#xA;&#xA;In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. &#xA;&#xA;Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="nsa-2-jvr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition"/>
+                <display value="Condition - Coded Initiation Fetal Death Cause or Condition"/>
+            </reference>
+            <name value="Condition - Coded Initiation Fetal Death Cause or Condition"/>
+            <description value="This profile represents the coded initiating cause/condition of fetal death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-coded-other-significant-fetal-death-cause-or-condition"/>
+                <display value="Condition - Coded Other Significant Fetal Death Cause or Condition"/>
+            </reference>
+            <name value="Condition - Coded Other Significant Fetal Death Cause or Condition"/>
+            <description value="This profile represents a coded other significant cause/condition of fetal death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-coded-cause-of-fetal-death"/>
+                <display value="Composition - Coded Cause of Fetal Death"/>
+            </reference>
+            <name value="Composition - Coded Cause of Fetal Death"/>
+            <description value="This profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices. Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this profile."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="nsa-2-jvr"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
             <page>
-                <nameUrl value="connectathon_use_cases.html"/>
-                <title value="Connectathon Use Cases"/>
+                <nameUrl value="background.html"/>
+                <title value="Background"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="the_specification.html"/>
+                <title value="The Specification"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="use_cases.html"/>
+                <title value="Use Cases"/>
                 <generation value="markdown"/>
                 <page>
                     <nameUrl value="provider_facility_live_birth_report.html"/>
                     <title value="Provider Facility Live Birth Report"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="provider_mothers_live_birth_report.html"/>
+                    <title value="Provider Mother's Live Birth Report"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="provider_live_birth_report.html"/>
+                    <title value="Provider Live Birth Report"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
@@ -1483,23 +1553,33 @@
                     <generation value="markdown"/>
                 </page>
                 <page>
+                    <nameUrl value="provider_fetal_death_report.html"/>
+                    <title value="Provider Fetal Death Report"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
                     <nameUrl value="jurisdication_fetal_death_report.html"/>
                     <title value="Jurisdication Fetal Death Report"/>
                     <generation value="markdown"/>
                 </page>
-            </page>
-            <page>
-                <nameUrl value="use_cases.html"/>
-                <title value="Use Cases"/>
-                <generation value="markdown"/>
                 <page>
-                    <nameUrl value="provider_supplied_live_birth_report.html"/>
-                    <title value="Provider Supplied Live Birth Report"/>
+                    <nameUrl value="provider_mothers_fetal_death_report.html"/>
+                    <title value="Provider Mother's Fetal Death Report"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
-                    <nameUrl value="provider_supplied_fetal_death_report.html"/>
-                    <title value="Provider Supplied Fetal Death Report"/>
+                    <nameUrl value="void_certificate_report.html"/>
+                    <title value="Void Certificate Report"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="coded_race_and_ethnicity.html"/>
+                    <title value="Coded Race and Ethnicity"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="coded_cause_of_fetal_death.html"/>
+                    <title value="Coded Cause of Fetal Death"/>
                     <generation value="markdown"/>
                 </page>
             </page>
@@ -1538,11 +1618,6 @@
                     <generation value="markdown"/>
                 </page>
                 <page>
-                    <nameUrl value="examples_for_jurisdiction_live_birth_report.html"/>
-                    <title value="Examples for Jurisdiction Live Birth Report"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
                     <nameUrl value="examples_for_provider_facility_fetal_death_report.html"/>
                     <title value="Examples for Provider Facility Fetal Death Report"/>
                     <generation value="markdown"/>
@@ -1550,6 +1625,11 @@
                 <page>
                     <nameUrl value="examples_for_jurisdiction_fetal_death_report.html"/>
                     <title value="Examples for Jurisdiction Fetal Death Report"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="examples_for_jurisdiction_live_birth_report.html"/>
+                    <title value="Examples for Jurisdiction Live Birth Report"/>
                     <generation value="markdown"/>
                 </page>
             </page>

@@ -1,4 +1,4 @@
-[Previous Page - Examples for Jurisdiction Live Birth Report](examples_for_jurisdiction_live_birth_report.html)
+[Previous Page - Examples for Provider Facility Live Birth Report](examples_for_provider_facility_live_birth_report.html)
 
 ### Example Composition and Bundle
 * [Composition - Provider Facility Fetal Death (Fetus Not Named)](Composition-composition-provider-facility-fetal-death-not-named.html)

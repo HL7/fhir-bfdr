@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="30"/>
-        <lastUpdated value="2020-09-01T04:10:06.472+00:00"/>
-        <source value="#LJAUx0CqkpXShzb1"/>
+        <versionId value="31"/>
+        <lastUpdated value="2020-11-01T04:02:16.006+00:00"/>
+        <source value="#hxskoKikvNAMmUj0"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -48,7 +48,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
             </type>
         </element>
         <element id="Composition.encounter">
@@ -77,7 +77,7 @@
             <path value="Composition.section.focus"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Composition.section:slicePregnancy.entry">
@@ -184,7 +184,7 @@
             <path value="Composition.section.focus"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Composition.section:sliceMothersInformation.entry">
@@ -209,7 +209,7 @@
             <path value="Composition.section.focus"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/RelatedPerson-father"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father"/>
             </type>
         </element>
         <element id="Composition.section:sliceFathersInformation.entry">
@@ -240,7 +240,7 @@
             <path value="Composition.section.focus"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-ig/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
     </differential>

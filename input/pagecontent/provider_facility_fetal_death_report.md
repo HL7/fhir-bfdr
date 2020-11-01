@@ -8,5 +8,4 @@ A completed example facility worksheet is located here: [Completed Facility Work
 
 Example instances have been created for all of the data in the above worksheet. Those examples are on the [artifacts page](artifacts.html) and are also linked in the [Google Sheet filter view](https://docs.google.com/spreadsheets/d/1bG1EkFnyHZGIdSNJe62R59dF6KXUf8kLUVVJtUlhvbo/edit#gid=2096686200&fvid=1384512937).
 
-
-[Next Page - Jurisdication Fetal Death Report](jurisdication_fetal_death_report.html)
+[Next Page - Provider Fetal Death Report](provider_fetal_death_report.html)

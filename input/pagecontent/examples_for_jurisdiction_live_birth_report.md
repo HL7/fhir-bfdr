@@ -1,4 +1,4 @@
-[Previous Page - Examples for Provider Facility Live Birth Report](examples_for_provider_facility_live_birth_report.html)
+[Previous Page - Examples for Jurisdiction Fetal Death Report](examples_for_jurisdiction_fetal_death_report.html)
 
 ### Example Composition and Bundle
 * [Composition - Jurisdiction Live Birth (Baby G Quinn)](Composition-composition-jurisdiction-live-birth-babyg-quinn.html)
@@ -71,5 +71,3 @@
 ### Examples for Father Section on the Live Birth Certificate
 * [Observation - Paternity Acknowledgement Signed (James Quinn)](Observation-observation-paternity-acknowledgement-signed-james-quinn.html)
 * [Observation - Parent Education Level (James Quinn)](Observation-observation-parent-education-level-james-quinn.html)
-
-[Next Page - Examples for Provider Facility Fetal Death Report](examples_for_provider_facility_fetal_death_report.html)

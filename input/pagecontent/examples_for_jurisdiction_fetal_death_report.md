@@ -48,3 +48,5 @@
 
 ### Examples for Mother Administrative Section on the Fetal Death Report
 * [Observation - Parent Education Level (Carmen Teresa Lee)](Observation-observation-parent-education-level-carmen-teresa-lee.html)
+
+[Next Page - Examples for Jurisdiction Live Birth Report](examples_for_jurisdiction_live_birth_report.html)

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Condition-coded-other-significant-fetal-death-cause-or-condition"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-11-01T03:22:44.722+00:00"/>
+        <source value="#6EDVUIDjdtIeU0RJ"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-other-significant-fetal-death-cause-or-condition"/>
+    <version value="1.0.0"/>
+    <name value="ConditionCodedOtherSignificantFetalDeathCauseOrCondition"/>
+    <title value="Condition - Coded Other Significant Fetal Death Cause or Condition"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This profile represents a coded other significant cause/condition of fetal death."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+            <short value="This profile represents a coded other significant cause/condition of fetal death."/>
+        </element>
+        <element id="Condition.category">
+            <path value="Condition.category"/>
+            <short value="Coded other significant causes or conditions of fetal death"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92023-1"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <short value="The list provides ICD-10 codes and associated cause-of-death titles for the most detailed listing of causes of death. This list is maintained by CDC NCHS."/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/.16.840.1.114222.4.11.3593"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

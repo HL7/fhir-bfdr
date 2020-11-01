@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Composition-coded-cause-of-fetal-death"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-11-01T03:35:36.412+00:00"/>
+        <source value="#KMkLX0J97q4J4EdW"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
+    <version value="1.0.0"/>
+    <name value="CompositionCodedCauseOfFetalDeath"/>
+    <title value="Composition - Coded Cause of Fetal Death"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices. Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this profile."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <short value="Cause of death classification and related information Document"/>
+            <definition value="Cause of death classification and related information Document"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="86804-2"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+            </type>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:codedCauseOfFetalDeath">
+            <path value="Composition.section"/>
+            <sliceName value="codedCauseOfFetalDeath"/>
+            <short value="Coded cause of fetal death"/>
+            <definition value="Coded cause of fetal death"/>
+        </element>
+        <element id="Composition.section:codedCauseOfFetalDeath.code">
+            <path value="Composition.section.code"/>
+            <short value="Cause of death classification and related information Document"/>
+            <definition value="Cause of death classification and related information Document"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="86804-2"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:codedCauseOfFetalDeath.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the coded cause of fetal death section"/>
+            <definition value="Entries that are contained in the coded cause of fetal death section"/>
+        </element>
+        <element id="Composition.section:codedCauseOfFetalDeath.entry:codedInitiatingFetalDeathCauseOrCondition">
+            <path value="Composition.section.entry"/>
+            <sliceName value="codedInitiatingFetalDeathCauseOrCondition"/>
+            <short value="Coded initiating cause or condition of fetal death"/>
+            <definition value="Coded initiating cause or condition of fetal death"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:codedCauseOfFetalDeath.entry:codedOtherSignificantFetalDeathCauseOrCondition">
+            <path value="Composition.section.entry"/>
+            <sliceName value="codedOtherSignificantFetalDeathCauseOrCondition"/>
+            <short value="Coded other significant cause or condition of fetal death"/>
+            <definition value="Coded other significant cause or condition of fetal death"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-other-significant-fetal-death-cause-or-condition"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>
