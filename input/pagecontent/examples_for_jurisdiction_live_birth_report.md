@@ -71,3 +71,5 @@
 ### Examples for Father Section on the Live Birth Certificate
 * [Observation - Paternity Acknowledgement Signed (James Quinn)](Observation-observation-paternity-acknowledgement-signed-james-quinn.html)
 * [Observation - Parent Education Level (James Quinn)](Observation-observation-parent-education-level-james-quinn.html)
+
+[Next Page - Downloads](downloads.html)
