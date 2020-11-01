@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="671"/>
-        <lastUpdated value="2020-11-01T05:06:19.507+00:00"/>
-        <source value="#lTUjaX6eeaNRz8Zs"/>
+        <versionId value="677"/>
+        <lastUpdated value="2020-11-01T06:02:05.936+00:00"/>
+        <source value="#DSBdtLkQ2Czg9vrv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -63,6 +63,9 @@
         </grouping>
         <grouping id="nsa-2-jvr">
             <name value="National Statistical Agency to Jurisdictional Vital Records Office: Composition Profiles"/>
+        </grouping>
+        <grouping id="voided-documents">
+            <name value="Voided Documents: Composition Profiles"/>
         </grouping>
         <grouping id="encounter-profiles">
             <name value="Encounter Profiles"/>
@@ -1509,6 +1512,62 @@
             <exampleBoolean value="false"/>
             <groupingId value="nsa-2-jvr"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-void-live-birth-certificate"/>
+                <display value="Composition - Void Live Birth Certificate"/>
+            </reference>
+            <name value="Composition - Void Live Birth Certificate"/>
+            <description value="This profile communicates void live birth certificates from appropriate jurisdictional vital statistics agencies to the national statistical agency. In many jurisdictions, birth certificate identifiers (certificate number) are directly linked to the printed certificate. As a result, in some cases it becomes relevant to indicate that a particular certificate number is not to be used, that the certificate is to be “voided”."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="voided-documents"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-void-fetal-death-report"/>
+                <display value="Composition - Void Fetal Death Report"/>
+            </reference>
+            <name value="Composition - Void Fetal Death Report"/>
+            <description value="This profile communicates void fetal death reports from appropriate jurisdictional vital statistics agencies to the NCHS. In many jurisdictions, fetal death report identifiers (report number) are directly linked to the printed certificate. As a result, in some cases it becomes relevant to indicate that a particular certificate number is not to be used, that the certificate is to be “voided”."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="voided-documents"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-birth-certificate-id"/>
+                <display value="Extension - Birth Certificate Id (BCT)"/>
+            </reference>
+            <name value="Extension - Birth Certificate Id (BCT)"/>
+            <description value="Birth certificate id"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-fetal-death-report-file-number"/>
+                <display value="Extension - Fetal Death Report File Number (FDRFN)"/>
+            </reference>
+            <name value="Extension - Fetal Death Report File Number (FDRFN)"/>
+            <description value="Fetal death report file number"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-birth-certificate-file-number"/>
+                <display value="Extension - Birth Certificate File Number (BCFN)"/>
+            </reference>
+            <name value="Extension - Birth Certificate File Number (BCFN)"/>
+            <description value="Birth certificate file number"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-fetal-death-report-id"/>
+                <display value="Extension - Fetal Death Report Id (FDR)"/>
+            </reference>
+            <name value="Extension - Fetal Death Report Id (FDR)"/>
+            <description value="Fetal death report id"/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
@@ -1634,7 +1693,7 @@
                 </page>
             </page>
             <page>
-                <nameUrl value="downloads.md"/>
+                <nameUrl value="downloads.html"/>
                 <title value="Downloads"/>
                 <generation value="markdown"/>
             </page>
