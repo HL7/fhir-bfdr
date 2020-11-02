@@ -87,15 +87,151 @@
             <path value="Composition.section"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="pattern"/>
                     <path value="code"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <short value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report."/>
+            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and fetus. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
         </element>
-        <element id="Composition.section:slice2191">
+        <element id="Composition.section:motherPrenatal">
             <path value="Composition.section"/>
-            <sliceName value="slice2191"/>
+            <sliceName value="motherPrenatal"/>
+            <short value="Mother (prenatal) section on the Fetal Death Report"/>
+            <definition value="This section contains items from the Mother (prenatal) on the Fetal Death Report."/>
+        </element>
+        <element id="Composition.section:motherPrenatal.code">
+            <path value="Composition.section.code"/>
+            <short value="Prenatal records"/>
+            <definition value="Prenatal records"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="57073-9"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:motherPrenatal.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the mother"/>
+            <definition value="The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the Mother Prenatal section"/>
+            <definition value="Entries that are contained in the Mother Prenatal section"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:mothersHeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersHeight"/>
+            <short value="Mother's height"/>
+            <definition value="The mother's height"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-height"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:mothersPrepregnancyWeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersPrepregnancyWeight"/>
+            <short value="Mother's prepregnancy weight"/>
+            <definition value="The mother's prepregnancy weight"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:motherReceivedWICFood">
+            <path value="Composition.section.entry"/>
+            <sliceName value="motherReceivedWICFood"/>
+            <short value="Use of the WIC nutritional program by the mother"/>
+            <definition value="Use of the Women, Infant's, and Children (WIC) nutritional program by the mother during the pregnancy."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:cigaretteSmokingBeforeDuringPregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="cigaretteSmokingBeforeDuringPregnancy"/>
+            <short value="Cigarettes smoked by the mother before and during the pregnancy"/>
+            <definition value="The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"/>
+            <max value="4"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherInformation">
+            <path value="Composition.section"/>
+            <sliceName value="motherInformation"/>
+            <short value="Mother administrative section on the Fetal Death Report"/>
+            <definition value="This section contains items from the Mother administrative section on the Fetal Death Report."/>
+        </element>
+        <element id="Composition.section:motherInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Mother's administrative information"/>
+            <definition value="Mother's administrative information"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92014-0"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:motherInformation.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the mother"/>
+            <definition value="The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:motherInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the motherInformation section"/>
+            <definition value="Entries that are contained in the motherInformation section"/>
+        </element>
+        <element id="Composition.section:motherInformation.entry:mothersEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersEducation"/>
+            <short value="Mother's education"/>
+            <definition value="Mother's education"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
