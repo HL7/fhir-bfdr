@@ -87,19 +87,323 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section">
+        <element id="Composition.section:motherPrenatal">
             <path value="Composition.section"/>
+            <sliceName value="motherPrenatal"/>
+            <short value="Mother (prenatal) section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the Mother (prenatal) on theLive Birth Certificate."/>
+        </element>
+        <element id="Composition.section:motherPrenatal.code">
+            <path value="Composition.section.code"/>
+            <short value="Prenatal records"/>
+            <definition value="Prenatal records"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="57073-9"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:motherPrenatal.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the mother"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry">
+            <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
                     <type value="profile"/>
-                    <path value="resolve()"/>
+                    <path value="$this.resolve()"/>
                 </discriminator>
+                <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
+            <short value="Entries that are contained in the Mother Prenatal section"/>
+            <definition value="Entries that are contained in the Mother Prenatal section"/>
         </element>
-        <element id="Composition.section:slice2191">
+        <element id="Composition.section:motherPrenatal.entry:mothersHeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersHeight"/>
+            <short value="Mother's height"/>
+            <definition value="The mother's height"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-height"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:mothersPrepregnancyWeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersPrepregnancyWeight"/>
+            <short value="Mother's prepregnancy weight"/>
+            <definition value="The mother's prepregnancy weight"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:motherReceivedWICFood">
+            <path value="Composition.section.entry"/>
+            <sliceName value="motherReceivedWICFood"/>
+            <short value="Use of the WIC nutritional program by the mother"/>
+            <definition value="Use of the Women, Infant's, and Children (WIC) nutritional program by the mother during the pregnancy."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:cigaretteSmokingBeforeDuringPregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="cigaretteSmokingBeforeDuringPregnancy"/>
+            <short value="Cigarettes smoked by the mother before and during the pregnancy"/>
+            <definition value="The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"/>
+            <max value="4"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
+        <element id="Composition.section:medicalHealthInformation">
             <path value="Composition.section"/>
-            <sliceName value="slice2191"/>
+            <sliceName value="medicalHealthInformation"/>
+            <short value="Medical and Health Informatino section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the Medical and Health Information section on the Live Birth Certificate."/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Clinical information"/>
+            <definition value="Clinical information"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="55752-0"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the mother"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the medical and health information section"/>
+            <definition value="Entries that are contained in the medical and health information section"/>
+        </element>
+        <element id="Composition.section:medicalHealthInformation.entry:pregnancyRiskFactors">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pregnancyRiskFactors"/>
+            <short value="Risk factors in this pregnancy"/>
+            <definition value="Selected medical risk factors of the mother during this pregnancy"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newborn">
+            <path value="Composition.section"/>
+            <sliceName value="newborn"/>
+            <short value="Newborn section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the newborn section on the Live Birth Certificate."/>
+        </element>
+        <element id="Composition.section:newborn.code">
+            <path value="Composition.section.code"/>
+            <short value="Newborn delivery information"/>
+            <definition value="Newborn delivery information"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="57075-4"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:newborn.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the newborn section"/>
+            <definition value="Entries that are contained in the newborn section"/>
+        </element>
+         <element id="Composition.section:newborn.entry:infantBreastfedAtDischarge">
+            <path value="Composition.section.entry"/>
+            <sliceName value="infantBreastfedAtDischarge"/>
+            <short value="Is infant being breastfed at discharge?"/>
+            <definition value="Information on whether the infant is being breastfed at discharge from the hospital"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherInformation">
+            <path value="Composition.section"/>
+            <sliceName value="motherInformation"/>
+            <short value="Mother administrative section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the Mother administrative section on the Live Birth Certificate."/>
+        </element>
+        <element id="Composition.section:motherInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Mother's administrative information"/>
+            <definition value="Mother's administrative information"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92014-0"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:motherInformation.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the mother"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+            </type>
+        </element>
+        <element id="Composition.section:motherInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the motherInformation section"/>
+            <definition value="Entries that are contained in the motherInformation section"/>
+        </element>
+        <element id="Composition.section:motherInformation.entry:marriedDuringPregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="marriedDuringPregnancy"/>
+            <short value="Mother married during pregnancy"/>
+            <definition value="Was mother married at conception, at the time of birth, or at any time between conception and giving birth?"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherInformation.entry:ssnRequestedForChild">
+            <path value="Composition.section.entry"/>
+            <sliceName value="ssnRequestedForChild"/>
+            <short value="Was social security number requested for the child"/>
+            <definition value="Was social security number requested for the child"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherInformation.entry:mothersEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersEducation"/>
+            <short value="Mother's education"/>
+            <definition value="Mother's education"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation">
+            <path value="Composition.section"/>
+            <sliceName value="fatherInformation"/>
+            <short value="Father section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the father section on the Live Birth Certificate."/>
+        </element>
+        <element id="Composition.section:fatherInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Father's administrative information"/>
+            <definition value="Father's administrative information"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92013-2"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:fatherInformation.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the father"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father"/>
+            </type>
+        </element>
+        <element id="Composition.section:fatherInformation.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Entries that are contained in the fatherInformation section"/>
+            <definition value="Entries that are contained in the fatherInformation section"/>
+        </element>
+        <element id="Composition.section:fatherInformation.entry:paternityAcknowledgementSigned">
+            <path value="Composition.section.entry"/>
+            <sliceName value="paternityAcknowledgementSigned"/>
+            <short value="Paternity acknowledgement signed by father"/>
+            <definition value="Whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation.entry:fathersEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="fathersEducation"/>
+            <short value="Father's education"/>
+            <definition value="Father's education"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
