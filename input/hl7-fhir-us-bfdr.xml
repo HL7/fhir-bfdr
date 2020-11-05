@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="679"/>
-        <lastUpdated value="2020-11-01T06:14:54.782+00:00"/>
-        <source value="#GdYGF56AWklGsQZF"/>
+        <versionId value="680"/>
+        <lastUpdated value="2020-11-05T06:02:06.981+00:00"/>
+        <source value="#79H8Zk4H8brQdzXq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -1568,6 +1568,105 @@
             </reference>
             <name value="Extension - Fetal Death Report Id (FDR)"/>
             <description value="Fetal death report id"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-birthweight"/>
+                <display value="Observation - Edit Flag Birthweight"/>
+            </reference>
+            <name value="Observation - Edit Flag Birthweight"/>
+            <description value="This profile indicates whether the original birthweight data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
+                <display value="Observation - Edit Flag Mother's Date of Birth"/>
+            </reference>
+            <name value="Observation - Edit Flag Mother's Date of Birth"/>
+            <description value="This profile indicates whether the original mother's date of birth data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-fathers-education"/>
+                <display value="Observation - Edit Flag Father's Education"/>
+            </reference>
+            <name value="Observation - Edit Flag Father's Education"/>
+            <description value="This profile indicates whether the original father's education data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
+                <display value="Observation - Edit Flag Number of Previous Cesareans"/>
+            </reference>
+            <name value="Observation - Edit Flag Number of Previous Cesareans"/>
+            <description value="This profile indicates whether the original number of previous cesareans data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
+                <display value="Observation - Edit Flag Mother's Prepregnancy Weight"/>
+            </reference>
+            <name value="Observation - Edit Flag Mother's Prepregnancy Weight"/>
+            <description value="This profile indicates whether the original mother's prepregnancy weight data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
+                <display value="Observation - Edit Flag Father's Date of Birth"/>
+            </reference>
+            <name value="Observation - Edit Flag Father's Date of Birth"/>
+            <description value="This profile indicates whether the original father's date of birth data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-mothers-height"/>
+                <display value="Observation - Edit Flag Mother's Height"/>
+            </reference>
+            <name value="Observation - Edit Flag Mother's Height"/>
+            <description value="This profile indicates whether the original mother's height data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-mothers-education"/>
+                <display value="Observation - Edit Flag Mother's Education"/>
+            </reference>
+            <name value="Observation - Edit Flag Mother's Education"/>
+            <description value="This profile indicates whether the original mother's education data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-number-prenatal-care-visits"/>
+                <display value="Observation - Edit Flag Number Prenatal Care Visits"/>
+            </reference>
+            <name value="Observation - Edit Flag Number Prenatal Care Visits"/>
+            <description value="This profile indicates whether the original number of prenatal care visits data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-mothers-delivery-weight"/>
+                <display value="Observation - Edit Flag Mother's Delivery Weight"/>
+            </reference>
+            <name value="Observation - Edit Flag Mother's Delivery Weight"/>
+            <description value="This profile indicates whether the original mother's delivery weight data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-plurality"/>
+                <display value="Observation - Edit Flag Plurality"/>
+            </reference>
+            <name value="Observation - Edit Flag Plurality"/>
+            <description value="This profile indicates whether the original plurality data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

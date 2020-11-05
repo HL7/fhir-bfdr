@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-edit-flag-plurality"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-11-05T06:02:06.490+00:00"/>
+        <source value="#elyuuaibbPZAutgt"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+    <version value="1.0.0"/>
+    <name value="ObservationEditFlagPlurality"/>
+    <title value="Observation - Edit Flag Plurality"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This profile indicates whether the original plurality data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="Plurality edit flag"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                    <code value="PHC1489"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <short value="Plurality Edit Flags (NCHS)"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/.16.840.1.114222.4.11.7577"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

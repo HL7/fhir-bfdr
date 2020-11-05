@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="32"/>
-        <lastUpdated value="2020-11-01T05:45:12.046+00:00"/>
-        <source value="#loaXl5ndqLDgDuQt"/>
+        <versionId value="33"/>
+        <lastUpdated value="2020-11-05T06:16:08.481+00:00"/>
+        <source value="#p0Xbi5gvuksvrP8o"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -735,6 +735,153 @@
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:EditFlags">
+            <path value="Composition.section"/>
+            <sliceName value="EditFlags"/>
+            <short value="Edit Flags Section"/>
+            <definition value="This section contains the edit flags that specify whether the originally provided data passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on edit criteria in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+        </element>
+        <element id="Composition.section:EditFlags.code">
+            <path value="Composition.section.code"/>
+            <short value="Edit flags section"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92012-4"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:EditFlags.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagBirthweight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagBirthweight"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagEstimateOfGestation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagEstimateOfGestation"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagFathersDateOfBirth">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagFathersDateOfBirth"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-fathers-date-of-birth"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagFathersEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagFathersEducation"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-fathers-education"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagMothersDateOfBirth">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagMothersDateOfBirth"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagMothersDeliveryWeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagMothersDeliveryWeight"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-delivery-weight"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagMothersEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagMothersEducation"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagMothersHeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagMothersHeight"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagMothersPrepregnancyWeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagMothersPrepregnancyWeight"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagNumberPrenatalCareVisits">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagNumberPrenatalCareVisits"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-prenatal-care-visits"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagNumberPreviousCesareans">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagNumberPreviousCesareans"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
+            </type>
+        </element>
+        <element id="Composition.section:EditFlags.entry:editFlagPlurality">
+            <path value="Composition.section.entry"/>
+            <sliceName value="editFlagPlurality"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>
