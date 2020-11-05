@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="685"/>
-        <lastUpdated value="2020-11-05T22:25:55.815+00:00"/>
-        <source value="#kUlz77TV59VTXWFc"/>
+        <versionId value="687"/>
+        <lastUpdated value="2020-11-05T22:41:12.991+00:00"/>
+        <source value="#FoWHMEz4okzIB9iX"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -1689,6 +1689,16 @@
             </reference>
             <name value="Observation - Edit Flag Plurality"/>
             <description value="This profile indicates whether the original plurality data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-edit-flag-fathers-date-of-birth"/>
+                <display value="Observation - Edit Flag Father's Date of Birth"/>
+            </reference>
+            <name value="Observation - Edit Flag Father's Date of Birth"/>
+            <description value="This profile indicates whether the original father's date of birth data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
