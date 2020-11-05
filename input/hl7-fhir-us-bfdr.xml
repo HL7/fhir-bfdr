@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="680"/>
-        <lastUpdated value="2020-11-05T06:02:06.981+00:00"/>
-        <source value="#79H8Zk4H8brQdzXq"/>
+        <versionId value="684"/>
+        <lastUpdated value="2020-11-05T21:59:23.707+00:00"/>
+        <source value="#VICPobItBQEIudLU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -84,6 +84,12 @@
         </grouping>
         <grouping id="parent-information-profiles">
             <name value="Parent Information Profiles"/>
+        </grouping>
+        <grouping id="edit-flag">
+            <name value="Edit Flag Profiles"/>
+        </grouping>
+        <grouping id="administrative">
+            <name value="Administrative Profiles"/>
         </grouping>
         <grouping id="new-group2">
             <name value="Live Birth Examples: Bundle &amp; Composition Test Data"/>
@@ -332,7 +338,7 @@
             <description value="Example of condition-fetal-presentation profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -379,7 +385,7 @@
             <description value="Example of Cndition-maternal-morbidity profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -587,7 +593,7 @@
             <name value="Observation - Birth Weight (Fetus Not Named)"/>
             <description value="Example of Observation-birth-weight (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -652,7 +658,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 month prior: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -661,7 +667,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -670,7 +676,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -679,7 +685,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -733,7 +739,7 @@
             <name value="Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"/>
             <description value="Example of Observation-date-of-first-prenatal-care-visit profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -760,7 +766,7 @@
             <description value="Example of Observation-date-of-last-live-birth profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -814,7 +820,7 @@
             <name value="Observation - Gestational Age at Delivery (Fetus Not Named)"/>
             <description value="Example of Observation-gestational-age-at-delivery profile (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -876,7 +882,7 @@
             <name value="Observation - Last Menstrual Period (Carmen Teresa Lee)"/>
             <description value="Example of Observation-last-menstrual-period profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -910,7 +916,7 @@
             <name value="Observation - Mother Height (Carmen Teresa Lee)"/>
             <description value="Example of Observation-mother-height profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -936,7 +942,7 @@
             <name value="Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"/>
             <description value="Example of Observation-mother-prepregnancy-weight profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -963,7 +969,7 @@
             <description value="Example of observation-mother-received-wic-food profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1008,7 +1014,7 @@
             <name value="Observation - Number of Births Now Dead (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-births-now-dead profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1016,7 +1022,7 @@
             <name value="Observation - Number of Births Now Living (Carmen Teresa Lee)"/>
             <description value="Example of observation-number-births-now-living profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1050,7 +1056,7 @@
             <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
             <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1103,7 +1109,7 @@
             <description value="Example of observation-planned-to-deliver-at-home profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1111,7 +1117,7 @@
             <name value="Observation - Plurality (Carmen Teresa Lee)"/>
             <description value="Example of Observation-plurality profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1135,7 +1141,7 @@
             <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
             <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1143,7 +1149,7 @@
             <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1194,7 +1200,7 @@
             <name value="Observations - Number Previous Cesareans (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1261,7 +1267,7 @@
             <description value="Example of Procedure-final-route-method-delivery profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1357,7 +1363,7 @@
             <name value="Observation - Number Live Births This Delivery (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-live-births-this-delivery profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1366,7 +1372,7 @@
             <description value="Example of Observation-method-of-disposition profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1375,7 +1381,7 @@
             <description value="Example of Condition-fetal-death-cause-or-condition profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1384,7 +1390,7 @@
             <description value="Example of Condition-fetal-death-other-significant-cause profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1392,7 +1398,7 @@
             <name value="Observation - Autopsy Performed (Fetus Not Named)"/>
             <description value="Example of Observation-autopsy-performed profile (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1401,7 +1407,7 @@
             <description value="Example of Observation-histological-placental-exam-performed profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1410,7 +1416,7 @@
             <description value="Example of Observation-estimated-fetal-death-time-point profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1419,7 +1425,7 @@
             <description value="Example of Observation-autopsy-histological-exam-results-used profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
-            <groupingId value="new-group8"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1542,6 +1548,7 @@
             <name value="Extension - Birth Certificate Id (BCT)"/>
             <description value="Birth certificate id"/>
             <exampleBoolean value="false"/>
+            <groupingId value="administrative"/>
         </resource>
         <resource>
             <reference>
@@ -1551,6 +1558,7 @@
             <name value="Extension - Fetal Death Report File Number (FDRFN)"/>
             <description value="Fetal death report file number"/>
             <exampleBoolean value="false"/>
+            <groupingId value="administrative"/>
         </resource>
         <resource>
             <reference>
@@ -1560,6 +1568,7 @@
             <name value="Extension - Birth Certificate File Number (BCFN)"/>
             <description value="Birth certificate file number"/>
             <exampleBoolean value="false"/>
+            <groupingId value="administrative"/>
         </resource>
         <resource>
             <reference>
@@ -1569,6 +1578,7 @@
             <name value="Extension - Fetal Death Report Id (FDR)"/>
             <description value="Fetal death report id"/>
             <exampleBoolean value="false"/>
+            <groupingId value="administrative"/>
         </resource>
         <resource>
             <reference>
@@ -1578,6 +1588,7 @@
             <name value="Observation - Edit Flag Birthweight"/>
             <description value="This profile indicates whether the original birthweight data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1587,6 +1598,7 @@
             <name value="Observation - Edit Flag Mother's Date of Birth"/>
             <description value="This profile indicates whether the original mother's date of birth data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1596,6 +1608,7 @@
             <name value="Observation - Edit Flag Father's Education"/>
             <description value="This profile indicates whether the original father's education data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1605,6 +1618,7 @@
             <name value="Observation - Edit Flag Number of Previous Cesareans"/>
             <description value="This profile indicates whether the original number of previous cesareans data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1614,6 +1628,7 @@
             <name value="Observation - Edit Flag Mother's Prepregnancy Weight"/>
             <description value="This profile indicates whether the original mother's prepregnancy weight data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1621,8 +1636,9 @@
                 <display value="Observation - Edit Flag Father's Date of Birth"/>
             </reference>
             <name value="Observation - Edit Flag Father's Date of Birth"/>
-            <description value="This profile indicates whether the original father's date of birth data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <description value="This profile indicates whether the original estimate of gestation data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1632,6 +1648,7 @@
             <name value="Observation - Edit Flag Mother's Height"/>
             <description value="This profile indicates whether the original mother's height data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1641,6 +1658,7 @@
             <name value="Observation - Edit Flag Mother's Education"/>
             <description value="This profile indicates whether the original mother's education data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1650,6 +1668,7 @@
             <name value="Observation - Edit Flag Number Prenatal Care Visits"/>
             <description value="This profile indicates whether the original number of prenatal care visits data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1659,6 +1678,7 @@
             <name value="Observation - Edit Flag Mother's Delivery Weight"/>
             <description value="This profile indicates whether the original mother's delivery weight data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <resource>
             <reference>
@@ -1668,6 +1688,7 @@
             <name value="Observation - Edit Flag Plurality"/>
             <description value="This profile indicates whether the original plurality data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
+            <groupingId value="edit-flag"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
