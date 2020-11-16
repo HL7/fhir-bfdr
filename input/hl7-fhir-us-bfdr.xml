@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="687"/>
-        <lastUpdated value="2020-11-05T22:41:12.991+00:00"/>
-        <source value="#FoWHMEz4okzIB9iX"/>
+        <versionId value="692"/>
+        <lastUpdated value="2020-11-16T01:42:23.002+00:00"/>
+        <source value="#e7Gz6CkHYS36unPR"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.0.0"/>
@@ -26,6 +26,7 @@
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
         </coding>
+        <text value="US"/>
     </jurisdiction>
     <packageId value="hl7.fhir.us.bfdr"/>
     <fhirVersion value="4.0.1"/>
@@ -35,14 +36,19 @@
         <version value="3.1.0"/>
     </dependsOn>
     <dependsOn>
-        <uri value="http://hl7.org/fhir/us/fhir-vr-common-library/ImplementationGuide/hl7.fhir.us.fhir-vr-common-library"/>
+        <uri value="http://hl7.org/fhir/us/fhir-vr-common-ig/ImplementationGuide/hl7.fhir.us.fhir-vr-common-library"/>
         <packageId value="hl7.fhir.us.fhir-vr-common-library"/>
         <version value="current"/>
     </dependsOn>
     <dependsOn>
-        <uri value="http://fhir.org/packages/us.cdc.phinvads"/>
+        <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
         <packageId value="us.cdc.phinvads"/>
         <version value="0.7.0"/>
+    </dependsOn>
+    <dependsOn>
+        <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
+        <packageId value="us.nlm.vsac"/>
+        <version value="0.1.0"/>
     </dependsOn>
     <definition>
         <grouping id="live-birth-compositions-ehr-jvr">
