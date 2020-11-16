@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-congenital-anomaly-of-newborn"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2020-11-01T04:53:52.425+00:00"/>
-        <source value="#01OQ4pBPAhej3pqY"/>
+        <versionId value="16"/>
+        <lastUpdated value="2020-11-16T02:48:20.353+00:00"/>
+        <source value="#CUlsU7jUvk1LK40Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
     <version value="1.0.0"/>
@@ -70,22 +70,6 @@
             </slicing>
             <mustSupport value="true"/>
         </element>
-        <element id="Condition.evidence:sliceDownSyndromeKaryotypeStatus">
-            <path value="Condition.evidence"/>
-            <sliceName value="sliceDownSyndromeKaryotypeStatus"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Condition.evidence:sliceDownSyndromeKaryotypeStatus.code">
-            <path value="Condition.evidence.code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7116"/>
-            </binding>
-        </element>
         <element id="Condition.evidence:sliceSuspectedChromosomalDisorderStatus">
             <path value="Condition.evidence"/>
             <sliceName value="sliceSuspectedChromosomalDisorderStatus"/>
@@ -94,6 +78,8 @@
         </element>
         <element id="Condition.evidence:sliceSuspectedChromosomalDisorderStatus.code">
             <path value="Condition.evidence.code"/>
+            <short value="Karyotype Suspected Chromosomal Disorder (NCHS) "/>
+            <definition value="The value set contains the list of values that indicate whether the newborn/fetus is confirmed or pending if there is a diagnosis of suspected chromosomal disorder (may include Trisomy 21)."/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
