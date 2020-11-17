@@ -10,7 +10,9 @@ This implementation guide supports five  use cases for communicating information
 This implementation guide also supports two uses cases for returning information from the national statistical agency to the jurisdictional Vital Records Office:
 * Coded Race & Ethnicity Reporting
 * Coded Cause of Fetal Death Reporting
-These information flows are illustrated in the Birth and Fetal Death Reporting Process figure .
+These information flows are illustrated in the Birth and Fetal Death Reporting Process figure:
+<table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
+
 Information flows are supported by the FHIR Composition resources indicated in the following table:
 
 <style type="text/css">

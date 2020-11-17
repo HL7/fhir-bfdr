@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="713"/>
-        <lastUpdated value="2020-11-17T00:05:26.216+00:00"/>
-        <source value="#qPmTVgr4yDPFWbRq"/>
+        <versionId value="721"/>
+        <lastUpdated value="2020-11-17T02:41:11.456+00:00"/>
+        <source value="#CjrbTunIfiRGLp5H"/>
     </meta>
     
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
@@ -178,7 +178,7 @@
                 <display value="Composition - Jurisdiction Live Birth Report"/>
             </reference>
             <name value="Composition - Jurisdiction Live Birth Report"/>
-            <description value="This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS.&#xA;&#xA;The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth."/>
+            <description value="This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS. The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-jvr-nchs"/>
         </resource>
@@ -210,7 +210,7 @@
                 <display value="Composition - Provider Fetal Death Report"/>
             </reference>
             <name value="Composition - Provider Fetal Death Report"/>
-            <description value="This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office."/>
+            <description value="This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office.&#xA;&#xA;For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the fetus is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdictional Vital Records Office at the same time (using this document) or separately (using the Provider Supplied Mother's Fetal Death Reporting Document and the Provider Supplied Facility Fetal Death Reporting Document).&#xA;&#xA;The data requirements for provider supplied fetal death information are based on the U.S. Standard Report of Fetal Death, the 2004 US Standard Facility Worksheet for the Report of Fetal Death, and the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.&#xA;&#xA;The 1992 Revision of the Model State Vital Statistics Act and Regulations recommends the following definition of fetal death:&#xA;&gt; &quot;Fetal death&quot; means death prior to the complete expulsion or extraction from its mother of a product of human conception, irrespective of the duration of pregnancy and which is not an induced termination of pregnancy. The death is indicated by the fact that after such expulsion or extraction, the fetus does not breathe or show any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of voluntary muscles. Heartbeats are to be distinguished from transient cardiac contractions; respirations are to be distinguished from fleeting respiratory efforts or gasps."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-compositions-ehr-jvr"/>
         </resource>
@@ -220,7 +220,7 @@
                 <display value="Composition - Provider Live Birth Report"/>
             </reference>
             <name value="Composition - Provider Live Birth Report"/>
-            <description value="This Composition profile defines constraints to address the use case in which information for live birth information to be recorded and communicated to the jurisdicational Vital Records Office."/>
+            <description value="This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdicational Vital Records Office.&#xA;&#xA;This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdicational Vital Records Office. For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdiction vital records office at the same time (using this profile) or separately (using the [Composition-provider-mothers-live-birth-report](StructureDefinition-Composition-provider-mothers-live-birth-report.html) and [Composition-provider-facility-live-birth-report](StructureDefinition-Composition-provider-facility-live-birth-report.html)).&#xA;&#xA;The data requirements for provider supplied live birth information are based on the Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth, the 2016 US Standard Facility Worksheet for the Live Birth Certificate, the 2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births, and the 2016 US Standard Mothers Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-ehr-jvr"/>
         </resource>
@@ -250,7 +250,7 @@
                 <display value="Composition - Provider Mother's Fetal Death Report"/>
             </reference>
             <name value="Composition - Provider Mother's Fetal Death Report"/>
-            <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Patient's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
+            <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Patient's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. The data requirements for fetal death mother's information are based on the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-compositions-ehr-jvr"/>
         </resource>
@@ -260,7 +260,7 @@
                 <display value="Composition - Provider Mother's Live Birth Report"/>
             </reference>
             <name value="Composition - Provider Mother's Live Birth Report"/>
-            <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Mother's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
+            <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Mother's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. The data requirements for live birth mother's information are based on the Mother's Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-ehr-jvr"/>
         </resource>
@@ -1289,24 +1289,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-father-james-brandon-quinn"/>
-                <display value="relatedperson-father-james-brandon-quinn"/>
-            </reference>
-            <name value="RelatedPerson - Father (James Brandon Quinn)"/>
-            <description value="Example of RelatedPerson-father profile (James Brandon Quinn)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="lbe-participant-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/relatedperson-father-tom-yan-lee"/></reference>
-            <name value="RelatedPerson - Father (Tom Yan Lee)"/>
-            <description value="Example of relatedperson-father (Tom Yan Lee)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="fde-participant-test-data"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/></reference>
             <name value="RelatedPerson - Mother (Carmen Teresa Lee)"/>
             <description value="Example of Relatedperson-mother profile (Carmen Teresa Lee)"/>
@@ -1691,6 +1673,22 @@
             <description value="Example of Observation-number-fetal-deaths-this-delivery profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
             <groupingId value="fde-clinical-other-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn"/></reference>
+            <name value="RelatedPerson - Father Natural (James Brandon Quinn)"/>
+            <description value="Example of RelatedPerson-father-natural profile (James Brandon Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="lbe-participant-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee"/></reference>
+            <name value="RelatedPerson - Father (Tom Yan Lee)"/>
+            <description value="Example of RelatedPerson-father-natural profile (Tom Yan Lee)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="fde-participant-test-data"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

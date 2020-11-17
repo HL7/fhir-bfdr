@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-mothers-live-birth-report"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2020-11-05T06:30:06.396+00:00"/>
-        <source value="#nIzfdCtRV75zRivi"/>
+        <versionId value="20"/>
+        <lastUpdated value="2020-11-17T02:33:53.429+00:00"/>
+        <source value="#dXIU7sBK6JltmVTm"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-mothers-live-birth-report"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Mother's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office."/>
+    <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Mother's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. The data requirements for live birth mother's information are based on the Mother's Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -333,7 +333,7 @@
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
         </element>
         <element id="Composition.section:fatherInformation.entry">
