@@ -2,4 +2,4 @@
 
 The Coded Cause of Fetal Death report is represented by the [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html).
 
-[Next Page - Appendices](appendices.html)
+[Next Page - The Specification](the_specification.html)

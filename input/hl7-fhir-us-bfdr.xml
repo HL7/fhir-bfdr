@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="706"/>
-        <lastUpdated value="2020-11-16T06:37:19.823+00:00"/>
-        <source value="#m3m7OObhvoeC5B4d"/>
+        <versionId value="713"/>
+        <lastUpdated value="2020-11-17T00:05:26.216+00:00"/>
+        <source value="#qPmTVgr4yDPFWbRq"/>
     </meta>
     
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
@@ -21,7 +21,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Project Scope: The purpose of this project is to create an HL7 Fast Healthcare Interoperability Resources implementation Guide (FHIR BFDR IG) standard to support the needs of NCHS and its jurisdictions to successfully implement the electronic reporting of birth and fetal death information. The scope of this HL7 FHIR BFDR IG will include the content of medical/health information on live births and fetal deaths for select state and Federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it will include the content that is exchanged between EHRs, jurisdictions, and NCHS. In the case of fetal death, return coded cause of death, and race and ethnicity information back to the state.&#xA;&#xA;Project Need: To continue support of interoperability among public health systems, there is a need to develop a FHIR IG for birth and fetal death reporting. Development of the FHIR IG for birth and fetal death will provide national data standards that will support the implementation of FHIR for NCHS, Jurisdictional partners and EHR vendors."/>
+    <description value="### Overview&#xA;Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional Vital Records Offices and national health statistics agencies. Data associated with the mother of the baby or fetus may be communicated independently from that associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, “mother” always refers to the woman who delivered the infant. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. &#xA;### Scope&#xA;This implementation guide (IG) defines a series of FHIR profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, jurisdictions, and the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS).&#xA;This guide contains a library of 52 new  FHIR profiles and is compliant with FHIR Release 4. At a minimum, ....  &#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein. &#xA;&#xA;### Relationship to Other Standards (based on CDA IG 2019)&#xA;&#xA;### Audience (based on CDA IG 2019, 1.4 Audience)&#xA;This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The implementation guide is informative to health care provider organizations, jurisdictional Vital Records Offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders. Users of this guide must be familiar with the details of HL7 ....... &#xA;We encourage feedback on these profiles, and the overall use of the standard via... &#xA;&#xA;###Background &#xA;&#xA;### Use Cases &#xA;&#xA;### Authors &#xA;&#xA;"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1697,16 +1697,6 @@
             <title value="Home Page"/>
             <generation value="markdown"/>
             <page>
-                <nameUrl value="background.html"/>
-                <title value="Background"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="the_specification.html"/>
-                <title value="The Specification"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
                 <nameUrl value="use_cases.html"/>
                 <title value="Use Cases"/>
                 <generation value="markdown"/>
@@ -1765,6 +1755,11 @@
                     <title value="Coded Cause of Fetal Death"/>
                     <generation value="markdown"/>
                 </page>
+            </page>
+            <page>
+                <nameUrl value="the_specification.html"/>
+                <title value="The Specification"/>
+                <generation value="markdown"/>
             </page>
             <page>
                 <nameUrl value="appendices.html"/>
