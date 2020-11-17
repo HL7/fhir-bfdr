@@ -8,7 +8,7 @@
 * [Patient - Child (Baby G Quinn)](Patient-patient-child-babyg-quinn.html)
 * [Patient - Mother (Jada Ann Quinn)](Patient-patient-mother-jada-ann-quinn.html)
 * [RelatedPerson - Mother (Jada Ann Quinn)](RelatedPerson-relatedperson-mother-jada-ann-quinn.html)
-* [RelatedPerson - Father (James Brandon Quinn)](RelatedPerson-relatedperson-father-james-brandon-quinn.html)
+* [RelatedPerson - Father Natural (James Brandon Quinn)](RelatedPerson-relatedperson-father-natural-james-brandon-quinn.html)
 * [Practitioner - Live Birth Fetal Death (Dr. Avery Jones, MD)](Practitioner-practitioner-live-birth-fetal-death-avery-jones.html)
 
 ## Example Encounters

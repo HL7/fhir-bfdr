@@ -6,7 +6,7 @@
 
  ### Participants
 * [Patient - Mother (Carmen Teresa Lee)](Patient-patient-mother-carmen-teresa-lee.html)
-* [RelatedPerson - Father (James Brandon Quinn)](RelatedPerson-relatedperson-father-james-brandon-quinn.html)
+* [RelatedPerson - Father Natural (James Brandon Quinn)](RelatedPerson-relatedperson-father-natural-james-brandon-quinn.html)
 * [Practitioner - Live Birth Fetal Death (Jessica Leung)](Practitioner-practitioner-live-birth-fetal-death-jessica-leung.html)
 
 ### Example Encounter
