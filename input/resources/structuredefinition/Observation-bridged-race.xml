@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-bridged-race"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-11-01T04:21:57.037+00:00"/>
-        <source value="#U3redoyNGl4XYMbt"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-11-18T01:27:36.304+00:00"/>
+        <source value="#HDBasgaFDnGGwIlm"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race"/>
     <version value="1.0.0"/>
@@ -46,11 +46,14 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.subject">
-            <path value="Observation.subject"/>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
                 <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
         </element>
