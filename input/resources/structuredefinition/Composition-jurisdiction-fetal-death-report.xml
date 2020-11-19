@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="33"/>
-        <lastUpdated value="2020-11-16T02:17:05.191+00:00"/>
-        <source value="#XinyLveDUhzEZpzz"/>
+        <versionId value="34"/>
+        <lastUpdated value="2020-11-19T01:48:44.209+00:00"/>
+        <source value="#XozWb6eHEthetYQ5"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -28,7 +28,6 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -484,7 +483,7 @@
             <definition value="Another significant cause or condition for the death of the fetus."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"/>
             </type>
             <mustSupport value="true"/>
         </element>
