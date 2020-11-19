@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="38"/>
-        <lastUpdated value="2020-11-19T07:10:59.559+00:00"/>
-        <source value="#Yefn6A8dkBqWoQNO"/>
+        <versionId value="39"/>
+        <lastUpdated value="2020-11-19T23:19:08.201+00:00"/>
+        <source value="#4ZcvdfgSS3SZTDuz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -28,7 +28,6 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -65,6 +64,7 @@
         </element>
         <element id="Composition.extension:dateFiledByRegistrar">
             <path value="Composition.extension"/>
+            <sliceName value="dateFiledByRegistrar"/>
             <min value="1"/>
             <max value="1"/>
             <type>
