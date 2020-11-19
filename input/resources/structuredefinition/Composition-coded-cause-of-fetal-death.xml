@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-coded-cause-of-fetal-death"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-11-19T04:45:39.194+00:00"/>
-        <source value="#H8BYTI9r0oyddKyU"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-11-19T07:21:39.038+00:00"/>
+        <source value="#9UqILSUzlU63ZHYF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
     <version value="1.0.0"/>
@@ -28,6 +28,7 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -95,11 +96,15 @@
             <sliceName value="codedCauseOfFetalDeath"/>
             <short value="Coded cause of fetal death"/>
             <definition value="Coded cause of fetal death"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:codedCauseOfFetalDeath.code">
             <path value="Composition.section.code"/>
             <short value="Cause of death classification and related information Document"/>
             <definition value="Cause of death classification and related information Document"/>
+            <min value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
@@ -125,6 +130,7 @@
             <sliceName value="codedInitiatingFetalDeathCauseOrCondition"/>
             <short value="Coded initiating cause or condition of fetal death"/>
             <definition value="Coded initiating cause or condition of fetal death"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
@@ -140,7 +146,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-other-significant-fetal-death-cause-or-condition"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-other-fetal-death-cause-or-condition"/>
             </type>
             <mustSupport value="true"/>
         </element>

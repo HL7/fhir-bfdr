@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-mothers-fetal-death-report"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2020-11-19T04:45:39.185+00:00"/>
-        <source value="#h5Jb9top3vhQ06KM"/>
+        <versionId value="17"/>
+        <lastUpdated value="2020-11-19T07:12:38.385+00:00"/>
+        <source value="#c7bXbHv49yshfQrj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-mothers-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -28,6 +28,7 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -100,6 +101,8 @@
             <sliceName value="motherPrenatal"/>
             <short value="Mother (prenatal) section on the Fetal Death Report"/>
             <definition value="This section contains items from the Mother (prenatal) on the Fetal Death Report."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal.code">
             <path value="Composition.section.code"/>
@@ -187,6 +190,8 @@
             <sliceName value="motherInformation"/>
             <short value="Mother administrative section on the Fetal Death Report"/>
             <definition value="This section contains items from the Mother administrative section on the Fetal Death Report."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherInformation.code">
             <path value="Composition.section.code"/>

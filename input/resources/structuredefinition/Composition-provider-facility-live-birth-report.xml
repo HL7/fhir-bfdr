@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-facility-live-birth-report"/>
     <meta>
-        <versionId value="35"/>
-        <lastUpdated value="2020-11-19T04:44:29.786+00:00"/>
-        <source value="#0QyRtlZJRr6QNhb5"/>
+        <versionId value="36"/>
+        <lastUpdated value="2020-11-19T07:11:43.004+00:00"/>
+        <source value="#LQ59LxaxMPSJ5CPF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
     <version value="1.0.0"/>
@@ -28,6 +28,7 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -109,6 +110,8 @@
             <sliceName value="motherPrenatal"/>
             <short value="Mother (prenatal) section on the Live Birth Certificate"/>
             <definition value="This section contains items from the Mother (prenatal) on theLive Birth Certificate."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal.code">
             <path value="Composition.section.code"/>
@@ -280,6 +283,8 @@
             <sliceName value="medicalHealthInformation"/>
             <short value="Medical and Health Informatino section on the Live Birth Certificate"/>
             <definition value="This section contains items from the Medical and Health Information section on the Live Birth Certificate."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicalHealthInformation.code">
             <path value="Composition.section.code"/>
@@ -422,6 +427,8 @@
             <sliceName value="newborn"/>
             <short value="Newborn section on the Live Birth Certificate"/>
             <definition value="This section contains items from the newborn section on the Live Birth Certificate."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:newborn.code">
             <path value="Composition.section.code"/>

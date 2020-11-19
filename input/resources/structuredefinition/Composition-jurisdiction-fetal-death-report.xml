@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="35"/>
-        <lastUpdated value="2020-11-19T04:42:24.309+00:00"/>
-        <source value="#xPsnbqAc1FbAhpXq"/>
+        <versionId value="36"/>
+        <lastUpdated value="2020-11-19T07:10:17.668+00:00"/>
+        <source value="#FhUzrxQRCGplqNTL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -28,6 +28,7 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -147,6 +148,8 @@
             <sliceName value="motherPrenatal"/>
             <short value="Mother (prenatal) Section on the Fetal Death Report"/>
             <definition value="This section contains items from the Mother (prenatal) on the Fetal Death Report."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal.code">
             <path value="Composition.section.code"/>
@@ -306,6 +309,8 @@
             <sliceName value="medicalHealthInformation"/>
             <short value="Medical and Health Information Section on the Fetal Death Report"/>
             <definition value="This section contains items from the Medical and Health Information section on the Fetal Death Report."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicalHealthInformation.code">
             <path value="Composition.section.code"/>
@@ -415,6 +420,8 @@
             <sliceName value="fetus"/>
             <short value="Fetus Section on the Fetal Death Report"/>
             <definition value="This section contains items from the fetus section on the Fetal Death Report."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:fetus.code">
             <path value="Composition.section.code"/>
@@ -551,6 +558,8 @@
             <sliceName value="motherInformation"/>
             <short value="Mother Administrative Section on the Fetal Death Report"/>
             <definition value="This section contains items from the Mother administrative section on the Fetal Death Report."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherInformation.code">
             <path value="Composition.section.code"/>
@@ -602,6 +611,9 @@
             <sliceName value="EditFlags"/>
             <short value="Edit Flags Section"/>
             <definition value="This section contains the edit flags that specify whether the originally provided data passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on edit criteria in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:EditFlags.code">
             <path value="Composition.section.code"/>

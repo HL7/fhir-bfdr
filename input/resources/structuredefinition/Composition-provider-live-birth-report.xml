@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="39"/>
-        <lastUpdated value="2020-11-19T04:45:39.213+00:00"/>
-        <source value="#aHVqH4DbM2nfn3wi"/>
+        <versionId value="42"/>
+        <lastUpdated value="2020-11-19T07:12:27.250+00:00"/>
+        <source value="#AjgYS2Im0tNChLwZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -28,6 +28,7 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -102,6 +103,9 @@
             <sliceName value="motherPrenatal"/>
             <short value="Mother (prenatal) section on the Live Birth Certificate"/>
             <definition value="This section contains items from the Mother (prenatal) on theLive Birth Certificate."/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal.code">
             <path value="Composition.section.code"/>
@@ -321,6 +325,8 @@
             <sliceName value="medicalHealthInformation"/>
             <short value="Medical and Health Informatino section on the Live Birth Certificate"/>
             <definition value="This section contains items from the Medical and Health Information section on the Live Birth Certificate."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicalHealthInformation.code">
             <path value="Composition.section.code"/>
@@ -463,6 +469,8 @@
             <sliceName value="newbornInformation"/>
             <short value="Newborn section on the Live Birth Certificate"/>
             <definition value="This section contains items from the newborn section on the Live Birth Certificate."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:newbornInformation.code">
             <path value="Composition.section.code"/>
@@ -582,18 +590,31 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:sliceMothersInformation">
+        <element id="Composition.section:motherInformation">
             <path value="Composition.section"/>
-            <sliceName value="sliceMothersInformation"/>
+            <sliceName value="motherInformation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:sliceMothersInformation.focus">
+        <element id="Composition.section:motherInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Mother's administrative information"/>
+            <definition value="Mother's administrative information"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92014-0"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:motherInformation.focus">
             <path value="Composition.section.focus"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
-        <element id="Composition.section:sliceMothersInformation.entry">
+        <element id="Composition.section:motherInformation.entry">
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
@@ -603,22 +624,35 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Composition.section:sliceMothersInformation.entry:education">
+        <element id="Composition.section:motherInformation.entry:education">
             <path value="Composition.section.entry"/>
             <sliceName value="education"/>
         </element>
-        <element id="Composition.section:sliceFathersInformation">
+        <element id="Composition.section:fatherInformation">
             <path value="Composition.section"/>
-            <sliceName value="sliceFathersInformation"/>
+            <sliceName value="fatherInformation"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:sliceFathersInformation.focus">
+        <element id="Composition.section:fatherInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Father's administrative information"/>
+            <definition value="Father's administrative information"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92013-2"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:fatherInformation.focus">
             <path value="Composition.section.focus"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
         </element>
-        <element id="Composition.section:sliceFathersInformation.entry">
+        <element id="Composition.section:fatherInformation.entry">
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
@@ -628,7 +662,7 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Composition.section:sliceFathersInformation.entry:education">
+        <element id="Composition.section:fatherInformation.entry:education">
             <path value="Composition.section.entry"/>
             <sliceName value="education"/>
             <max value="1"/>
