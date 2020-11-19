@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MessageHeader-bfdr"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-19T03:21:47.601+00:00"/>
+        <source value="#ttWt6aGjAx3ftvCD"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/MessageHeader-bfdr"/>
+    <version value="1.0.0"/>
+    <name value="MessageHeaderBFDR"/>
+    <title value="MessageHeader - Birth and Fetal Death"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This MessageHeader profile represents metadata to support BFDR messaging. It requires data elements destination, sender, source, and focus. The focus of an this profile is the Task - BFDR profile."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="MessageHeader"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="MessageHeader">
+            <path value="MessageHeader"/>
+        </element>
+        <element id="MessageHeader.event[x]">
+            <path value="MessageHeader.event[x]"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-messageheader-event-bfdr"/>
+            </binding>
+        </element>
+        <element id="MessageHeader.destination">
+            <path value="MessageHeader.destination"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.sender">
+            <path value="MessageHeader.sender"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.source">
+            <path value="MessageHeader.source"/>
+        </element>
+        <element id="MessageHeader.source.name">
+            <path value="MessageHeader.source.name"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.focus">
+            <path value="MessageHeader.focus"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Task-bfdr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

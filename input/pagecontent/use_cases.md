@@ -1,16 +1,26 @@
 [Previous Page - Note to Ballot Readers](note_to_ballot_readers.html)
 
-### Use Cases 
-This implementation guide supports seven use cases for communicating information from the electronic health record system to the jurisdictional Vital Records Offices and to the national statistical agency, the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS):
-* Provider Supplied Live Birth Reporting 
-* Provider Supplied Fetal Death Reporting
-* Jurisdiction Live Birth Reporting
-* Jurisdiction Fetal Death Reporting
-* Void Certificate Reporting
+This implementation guide supports five use cases for communicating information from the electronic health record system to the jurisdictional Vital Records Offices and to the national statistical agency, the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS):
+
+* Provider Live Birth
+** Provider Facility Live Birth
+** Provider Mother's Live Birth
+* Jurisdiction Live Birth
+* Provider Facility Fetal Death
+** Provider Mother's Fetal Death
+** Provider Fetal Death
+* Jurisdiction Fetal Death
+* Void Document
+** Void Live Birth Certificate
+** Void Fetal Death Report
+
 This implementation guide also supports two uses cases for returning information from the national statistical agency to the jurisdictional Vital Records Office:
-* Coded Race & Ethnicity Reporting
-* Coded Cause of Fetal Death Reporting
+
+* Coded Race and Ethnicity
+* Coded Cause of Fetal Death
+
 These information flows are illustrated in the Birth and Fetal Death Reporting Process figure:
+
 <table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
 
 Information flows are supported by the FHIR Composition resources indicated in the following table:
@@ -114,7 +124,7 @@ Information flows are supported by the FHIR Composition resources indicated in t
 </tbody>
 </table>
 
-# Provider Live Birth
+### Provider Live Birth
 
 This use case represents live birth information that is recorded and communicated to the jurisdicational Vital Records Office.
 
@@ -124,13 +134,13 @@ The data requirements for provider supplied live birth information are based on 
 
 The Provider Live Birth use case is represented by the [Composition - Provider Live Birth Report](StructureDefinition-Composition-provider-live-birth-report.html).
 
-# Provider Facility Live Birth
+#### Provider Facility Live Birth
 
 This use case represents information for labor and delivery and the condition of the newborn collected by healthcare provider staff, as primarily defined using the Facility Worksheet, that is managed independently for communication to the jurisdictional Vital Records Office.
 
 The Provider Facility Live Birth use case is represented by the [Composition - Provider Facility Live Birth Report](StructureDefinition-Composition-provider-facility-live-birth-report.html).
 
-# Provider Mother's Live Birth
+#### Provider Mother's Live Birth
 
 This use case represents information collected from the mother, as primarily defined using the Mother's Worksheet, which is managed independently for communication to the jurisdictional Vital Records Office.
 
@@ -138,53 +148,51 @@ The data requirements for live birth mother's information are based on the Mothe
 
 The Provider Mother's Live Birth use case is represented by the [Composition - Provider Mother's Live Birth Report](StructureDefinition-Composition-provider-mothers-live-birth-report.html).
 
-# Jurisdiction Live Birth
-
-The Jurisdication Live Birth report is represented by the [Composition - Jurisdication Live Birth Report](StructureDefinition-Composition-jurisdiction-live-birth-report.html).
+### Jurisdiction Live Birth
 
 This use case represents information about a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS.
 
 The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth.
 
-# Provider Facility Fetal Death
+The Jurisdication Live Birth use case is represented by the [Composition - Jurisdication Live Birth Report](StructureDefinition-Composition-jurisdiction-live-birth-report.html).
+
+### Provider Fetal Death
+
+The Provider Fetal Death use case is represented by the [Composition - Provider Fetal Death Report](StructureDefinition-Composition-provider-fetal-death-report.html).
+
+#### Provider Facility Fetal Death
 
 The Provider Facilty Fetal Death use case is represented by the [Composition - Provider Facility Fetal Death Report](StructureDefinition-Composition-provider-facility-fetal-death-report.html).
 
-# Provider Mother's Fetal Death
+#### Provider Mother's Fetal Death
 
 This use case represents information collected from the mother, as primarily defined using the Patient's Worksheet, and managed independently for communication to the jurisdictional Vital Records Office.
 
 The data requirements for fetal death mother's information are based on the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.
 
-The Provider Mother's Fetal Death use case is represented by the [Composition - Provider Mother's Fetal Death Report](StructureDefinition-Composition-provider-mothers-fetal-death.html).
+The Provider Mother's Fetal Death use case is represented by the [Composition - Provider Mother's Fetal Death Report](StructureDefinition-Composition-provider-mothers-fetal-death-report.html).
 
-# Provider Fetal Death
-
-The Provider Mother's Fetal Death use case is represented by the [Composition - Provider Mother's Fetal Death Report](StructureDefinition-Composition-provider-mothers-fetal-death.html).
-
-# Jurisdiction Fetal Death
-
-The Jurisdiction Fetal Death report is represented by the [Composition - Jurisdiction Fetal Death Report](StructureDefinition-Composition-jurisdiction-fetal-death-report.html).
+### Jurisdiction Fetal Death
 
 This use case represents information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to NCHS.
 
 The data requirements for jurisdictional reporting of fetal deaths are based on the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.
 
-The Provider Mother's Fetal Death use case is represented by the [Composition - Provider Mother's Fetal Death Report](StructureDefinition-Composition-provider-mothers-fetal-death.html).
+The Jurisdiction Fetal Death use case is represented by the [Composition - Jurisdiction Fetal Death Report](StructureDefinition-Composition-jurisdiction-fetal-death-report.html).
 
-# Void Live Birth Certificate
+### Void Live Birth Certificate
 
 This use case represents the communication of void live birth certificates from appropriate jurisdictional vital statistics agencies to the national statistical agency. In many jurisdictions, birth certificate identifiers are directly linked to the printed certificate. As a result, in some cases it becomes relevant to indicate that a particular certificate number is not to be used, that the certificate is to be "voided".
 
 The Void Live Birth Certificate use case is represented by the [Composition - Void Live Birth Certificate](StructureDefinition-Composition-void-live-birth-certificate.html).
 
-# Void Fetal Death Report
+### Void Fetal Death Report
 
 This use case represents the communication of void fetal death certificates from appropriate jurisdictional vital statistics agencies to the NCHS. In many jurisdictions, fetal death report identifiers are directly linked to the printed certificate. As a result, in some cases it becomes relevant to indicate that a particular certificate number is not to be used, that the certificate is to be "voided".
 
 The Void Fetal Death Report use case is represented by the [Composition - Void Fetal Death Report](StructureDefinition-Composition-void-fetal-death-report.html).
 
-# Coded Race and Ethnicity
+### Coded Race and Ethnicity
 
 This use case represents the communication of coded race and ethnicity information to the appropriate jurisdictional Vital Records Office. It contains data that are a coded form of the race and ethnicity data that has been submitted to the NCHS. Two sets of codes will be used to address two objectives. These objectives are:
 * to generate codes for race or ethnicity data provided as text entries
@@ -196,10 +204,10 @@ Coded race and ethnicity data is communicated for both the mother and father in 
 
 The Coded Race and Ethnicity use case is represented by the [Composition - Coded Race and Ethnicity](StructureDefinition-Composition-coded-race-and-ethnicity.html).
 
-# Coded Cause of Fetal Death
+### Coded Cause of Fetal Death
 
 This use case represents the communication of coded cause of fetal death information to appropriate jurisdictional Vital Records Offices. Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this Composition.
 
 The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html).
 
-[Next Page - Appendices](appendices.html)
+[Next Page - Messaging](messaging.html)
