@@ -24,99 +24,29 @@ These information flows are illustrated in the Birth and Fetal Death Reporting P
 <table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
 
 Information flows are supported by the FHIR Composition resources indicated in the following table:
+| Column 1 | Column 2 | Column 3 | Column 3 |
+| -------- | -------- | -------- | -------- |
+| Text     | Text     |  |  |
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
+
 <thead>
-  <tr>
-    <th>Use Case</th>
-    <th>FHIR Composition</th>
-    <th>Data Source</th>
-    <th>Data Receiver</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Provider Live Birth</td>
-    <td>[Composition - Provider Live Birth Report](StructureDefinition-Composition-provider-live-birth-report.html)</td>
-    <td>EHR</td>
-    <td>Jurisdictional Vital RecordsOffice</td>
-  </tr>
-  <tr>
-      <td>Provider Facility Live Birth</td>
-      <td>[Composition - Provider Facility Live Birth Report](StructureDefinition-Composition-provider-facility-live-birth-report.html)</td>
-      <td>EHR</td>
-      <td>Jurisdictional VitalRecords Office</td>
-  </tr>
-  <tr>
-    <td>Provider Mother's Live Birth</td>
-    <td>Composition - Provider Supplied Mother'sLive Birth Report</td>
-    <td>EHR</td>
-    <td>Jurisdictional Vital Records Office</td>
-  </tr>
-  <tr>
-    <td>Provider Fetal Death</td>
-    <td>Composition - Provider Supplied Fetal Death Report</td>
-    <td>EHR</td>
-    <td>Jurisdictional Vital RecordsOffice</td>
-  </tr>
-  <tr>
-    <td>Provider Facility Fetal Death</td>
-    <td>Composition - Provider SuppliedFacility Fetal Death Report</td>
-    <td>EHR</td>
-    <td>Jurisdictional Vital Records Office</td>
-  </tr>
-  <tr>
-    <td>Provider Mother's Fetal Death</td>
-    <td>Composition - Provider SuppliedMother's Fetal Death Report</td>
-    <td>EHR</td>
-    <td>Jurisdictional Vital Records Office</td>
-  </tr>
-  <tr>
-    <td>Jurisdiction Live Birth</td>
-    <td>Composition - Jurisdiction LiveBirth Report</td>
-    <td>Jurisdictional Vital Records Office</td>
-    <td>National Statistical Agency</td>
-  </tr>
-  <tr>
-    <td>Jurisdiction Fetal Death</td>
-    <td>Composition - Jurisdiction FetalDeath Report</td>
-    <td>Jurisdictional Vital Records Office</td>
-    <td>National Statistical Agency</td>
-  </tr>
-  <tr>
-    <td>Void Live Birth Certificate</td>
-    <td>Void Certificate Report</td>
-    <td>Jurisdictional Vital RecordsOffice</td>
-    <td>National Statistical Agency</td>
-  </tr>
-  <tr>
-    <td>Void Live Birth Certificate</td>
-    <td>Void Certificate Report</td>
-    <td>Jurisdictional Vital Records Office</td>
-    <td>National Statistical Agency</td>
-  </tr>
-  <tr>
-    <td>Coded Race &amp; Ethnicity</td>
-    <td>Coded Race and Ethnicity</td>
-    <td>National Statistical Agency</td>
-    <td>Jurisdictional Vital Records Office</td>
-  </tr>
-  <tr>
-    <td>Coded Cause of Fetal Death</td>
-    <td>Coded Cause of Fetal Death Report</td>
-    <td>National Statistical Agency</td>
-    <td>Jurisdictional Vital Records Office</td>
-  </tr>
-</tbody>
-</table>
+  
+| Use Case                      | FHIR Composition                                                                                                                | Data Source                         | Data Receiver                       |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------- |
+| Provider Live Birth           | [Composition - Provider Live Birth Report](StructureDefinition-Composition-provider-live-birth-report.html)                     | EHR                                 | Jurisdictional Vital RecordsOffice  |
+| Provider Facility Live Birth  | [Composition - Provider Facility Live Birth Report](StructureDefinition-Composition-provider-facility-live-birth-report.html)   | EHR                                 | Jurisdictional Vital Records Office |
+| Provider Mother's Live Birth  | [Composition - Provider Mother's Live Birth Report](StructureDefinition-Composition-provider-mothers-live-birth-report.html)    | EHR                                 | Jurisdictional Vital Records Office |
+| Provider Fetal Death          | [Composition - Provider Fetal Death Report](StructureDefinition-Composition-provider-fetal-death-report.html)                   | EHR                                 | Jurisdictional Vital Records Office |
+| Provider Facility Fetal Death | [Composition - Provider Facility Fetal Death Report](StructureDefinition-Composition-provider-facility-fetal-death-report.html) | EHR                                 | Jurisdictional Vital Records Office |   
+| Provider Mother's Fetal Death | [Composition - Provider Mother's Fetal Death Report](StructureDefinition-Composition-provider-mothers-fetal-death-report.html)  | EHR                                 | Jurisdictional Vital Records Office |
+| Jurisdiction Live Birth       | [Composition - Jurisdication Live Birth Report](StructureDefinition-Composition-jurisdiction-live-birth-report.html)            | Jurisdictional Vital Records Office | National Statistical Agency         | 
+| Jurisdiction Fetal Death      | [Composition - Provider Fetal Death Report](StructureDefinition-Composition-provider-fetal-death-report.html)                   | Jurisdictional Vital Records Office | National Statistical Agency         | 
+| Void Live Birth Certificate   | [Composition - Void Live Birth Certificate](StructureDefinition-Composition-void-live-birth-certificate.html)                   | Jurisdictional Vital RecordsOffice  | National Statistical Agency         |   
+| Void Fetal Death Report       | [Composition - Void Fetal Death Report](StructureDefinition-Composition-void-fetal-death-report.html)                           | Jurisdictional Vital Records Office | National Statistical Agency         |
+| Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity](StructureDefinition-Composition-coded-race-and-ethnicity.html)                         | National Statistical Agency         | Jurisdictional Vital Records Office |
+| Coded Cause of Fetal Death    | [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html)                     | National Statistical Agency         | Jurisdictional Vital Records Office |
+
+
 
 ### Provider Live Birth
 
