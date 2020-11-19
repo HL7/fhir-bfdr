@@ -24,12 +24,6 @@ These information flows are illustrated in the Birth and Fetal Death Reporting P
 <table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
 
 Information flows are supported by the FHIR Composition resources indicated in the following table:
-| Column 1 | Column 2 | Column 3 | Column 3 |
-| -------- | -------- | -------- | -------- |
-| Text     | Text     |  |  |
-
-
-<thead>
   
 | Use Case                      | FHIR Composition                                                                                                                | Data Source                         | Data Receiver                       |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------- |
@@ -45,7 +39,6 @@ Information flows are supported by the FHIR Composition resources indicated in t
 | Void Fetal Death Report       | [Composition - Void Fetal Death Report](StructureDefinition-Composition-void-fetal-death-report.html)                           | Jurisdictional Vital Records Office | National Statistical Agency         |
 | Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity](StructureDefinition-Composition-coded-race-and-ethnicity.html)                         | National Statistical Agency         | Jurisdictional Vital Records Office |
 | Coded Cause of Fetal Death    | [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html)                     | National Statistical Agency         | Jurisdictional Vital Records Office |
-
 
 
 ### Provider Live Birth
