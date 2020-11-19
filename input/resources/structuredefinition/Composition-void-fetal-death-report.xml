@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-void-fetal-death-report"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-02T06:50:53.009+00:00"/>
-        <source value="#jeraTmrCC7IYQ2d7"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-11-18T23:11:29.060+00:00"/>
+        <source value="#8MB0mYtM9dmZc0o2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -62,6 +62,15 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number"/>
             </type>
+        </element>
+        <element id="Composition.category">
+            <path value="Composition.category"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69045-3"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>

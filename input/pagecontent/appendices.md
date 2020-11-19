@@ -1,4 +1,4 @@
-[Previous Page - The Specification](the_specification.html)
+[Previous Page - Use Cases](use_cases.html)
 
 Appendices for the IG
 

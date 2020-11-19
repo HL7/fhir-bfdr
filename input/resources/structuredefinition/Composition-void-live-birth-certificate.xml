@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-void-live-birth-certificate"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-02T06:52:23.402+00:00"/>
-        <source value="#pGj4QtGhdLuufASu"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-11-18T23:03:10.447+00:00"/>
+        <source value="#xMd4MoDtQNNdBdZ3"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-live-birth-certificate"/>
     <version value="1.0.0"/>
@@ -62,6 +62,15 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
             </type>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92020-7"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>

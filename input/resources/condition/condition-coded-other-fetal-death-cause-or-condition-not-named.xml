@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="condition-coded-other-fetal-death-cause-or-condition-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-11-18T23:13:14.911+00:00"/>
+        <source value="#HA4qXWSK6tkPc4ft"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-other-fetal-death-cause-or-condition"/>
+    </meta>
+    <category>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="92023-1"/>
+            <display value="Coded other significant causes or conditions of fetal death"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="R19.1"/>
+            <display value="Abnormal bowel sounds"/>
+        </coding>
+        <text value="Abnormal bowel sounds"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+    </subject>
+</Condition>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="condition-coded-initiating-fetal-death-cause-or-condition"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-11-19T00:20:13.338+00:00"/>
+        <source value="#ooJJi0XVA6GlqbEt"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition"/>
+    </meta>
+    <category>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="92022-3"/>
+            <display value="Coded initiating cause or condition of fetal death"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="O00.0"/>
+            <display value="Abdominal pregnancy"/>
+        </coding>
+        <text value="Abdominal pregnancy"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+    </subject>
+</Condition>

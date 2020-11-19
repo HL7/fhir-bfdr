@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="composition-void-fetal-death-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-11-18T23:13:14.912+00:00"/>
+        <source value="#enuGGvZidnjdwAaw"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-fetal-death-report"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-id">
+        <valueIdentifier>
+            <value value="9876"/>
+        </valueIdentifier>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number">
+        <valueIdentifier>
+            <value value="11111-11111"/>
+        </valueIdentifier>
+    </extension>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="69045-3"/>
+            <display value="U.S. standard report of fetal death - 2003 revision"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/encounter-maternity-carmen-teresa-lee"/>
+        <display value="Encounter - Maternity (Carmen Teresa Lee)"/>
+    </encounter>
+    <date value="2019-01-09"/>
+    <author>
+        <reference value="Practitioner/practitioner-live-birth-fetal-death-jessica-leung"/>
+        <display value="Practitioner - Live Birth Fetal Death (Jessica Leung)"/>
+    </author>
+    <title value="Void fetal death report Document"/>
+</Composition>

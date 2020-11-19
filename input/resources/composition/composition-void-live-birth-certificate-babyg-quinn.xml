@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="composition-void-live-birth-certificate-babyg-quinn"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-11-18T23:13:14.911+00:00"/>
+        <source value="#IOqFQnLk5QpDUhUT"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-live-birth-certificate"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id">
+        <valueIdentifier>
+            <value value="1234"/>
+        </valueIdentifier>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number">
+        <valueIdentifier>
+            <value value="99999-99999"/>
+        </valueIdentifier>
+    </extension>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="68998-4"/>
+            <display value="U.S. standard certificate of live birth - 2003 revision"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="Patient - Child (Baby G Quinn)"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/encounter-birth-babyg-quinn"/>
+        <display value="Encounter - Birth (Baby G Quinn)"/>
+    </encounter>
+    <date value="2019-02-12"/>
+    <author>
+        <reference value="Organization/organization-south-hospital"/>
+        <display value="Organization - US Core Organization (South Hospital)"/>
+    </author>
+    <title value="Voided Live Birth Certificate Document"/>
+</Composition>
