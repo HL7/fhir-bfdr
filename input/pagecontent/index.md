@@ -20,7 +20,7 @@ This BFDR implementation guide standard complements other vital records standard
 ### Audience
 This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The implementation guide is informative to health care provider organizations, jurisdictional Vital Records Offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders.
 
-###Background 
+### Background 
 This FHIR implementation guide builds on previous electronic data standards for transmitting vital records of death, birth, and fetal death. The goal has been to transmit reliable and relevant clinical information to jurisdictional Vital Records Offices and to transfer information from vital records offices to the national statistics agency. 
 Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, and, in 2018, with Release 3.
 
@@ -52,4 +52,4 @@ This is the first FHIR BFDR standard.
 
 
 
-[Next Page - Note to Ballot Readers](note_to_ballot_readers.html)
+[Next Page - Notice to Ballot Commenters](notice_to_ballot_commenters.html)

@@ -1,4 +1,4 @@
-[Previous Page - Note to Ballot Readers](note_to_ballot_readers.html)
+[Previous Page - Notice to Ballot Commenters](notice_to_ballot_commenters.html)
 
 This implementation guide supports five use cases for communicating information from the electronic health record system to the jurisdictional Vital Records Offices and to the national statistical agency, the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS):
 
