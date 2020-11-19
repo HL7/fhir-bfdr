@@ -3,16 +3,16 @@
 This implementation guide supports five use cases for communicating information from the electronic health record system to the jurisdictional Vital Records Offices and to the national statistical agency, the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS):
 
 * Provider Live Birth
-** Provider Facility Live Birth
-** Provider Mother's Live Birth
+  * Provider Facility Live Birth
+  * Provider Mother's Live Birth
 * Jurisdiction Live Birth
-* Provider Facility Fetal Death
-** Provider Mother's Fetal Death
-** Provider Fetal Death
+* Provider Fetal Death
+  * Provider Facility Fetal Death
+  * Provider Mother's Fetal Death
 * Jurisdiction Fetal Death
 * Void Document
-** Void Live Birth Certificate
-** Void Fetal Death Report
+  * Void Live Birth Certificate
+  * Void Fetal Death Report
 
 This implementation guide also supports two uses cases for returning information from the national statistical agency to the jurisdictional Vital Records Office:
 
@@ -36,90 +36,84 @@ Information flows are supported by the FHIR Composition resources indicated in t
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Content&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> FHIR Element&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Data Source&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Data Receiver&nbsp;&nbsp;&nbsp;</th>
-    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Form(s)&nbsp;&nbsp;&nbsp;</th>
+    <th>Use Case</th>
+    <th>FHIR Composition</th>
+    <th>Data Source</th>
+    <th>Data Receiver</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Provider Supplied Live Birth&nbsp;&nbsp;&nbsp;Reporting&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Composition - Provider Supplied&nbsp;&nbsp;&nbsp;Live Birth Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>EHR&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records&nbsp;&nbsp;&nbsp;Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>birth11-03final-ACC.pdf&nbsp;&nbsp;&nbsp;</td>
+    <td>Provider Live Birth</td>
+    <td>[Composition - Provider Live Birth Report](StructureDefinition-Composition-provider-live-birth-report.html)</td>
+    <td>EHR</td>
+    <td>Jurisdictional Vital RecordsOffice</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Live Birth Mother's Information&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Composition - Provider Supplied Mother's&nbsp;&nbsp;&nbsp;Live Birth Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>(EHR) Jurisdictional Vital&nbsp;&nbsp;&nbsp;Records Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+      <td>Provider Facility Live Birth</td>
+      <td>[Composition - Provider Facility Live Birth Report](StructureDefinition-Composition-provider-facility-live-birth-report.html)</td>
+      <td>EHR</td>
+      <td>Jurisdictional VitalRecords Office</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Live Birth Facility’s&nbsp;&nbsp;&nbsp;Information&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Composition - Provider Supplied&nbsp;&nbsp;&nbsp;Facility Live Birth Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>(EHR) Jurisdictional Vital&nbsp;&nbsp;&nbsp;Records Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td>Provider Mother's Live Birth</td>
+    <td>Composition - Provider Supplied Mother'sLive Birth Report</td>
+    <td>EHR</td>
+    <td>Jurisdictional Vital Records Office</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Provider Supplied Fetal Death&nbsp;&nbsp;&nbsp;Reporting&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Composition - Provider Supplied&nbsp;&nbsp;&nbsp;Fetal Death Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>EHR&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records&nbsp;&nbsp;&nbsp;Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>FDEATH11-03finalACC.pdf&nbsp;&nbsp;&nbsp;</td>
+    <td>Provider Fetal Death</td>
+    <td>Composition - Provider Supplied Fetal Death Report</td>
+    <td>EHR</td>
+    <td>Jurisdictional Vital RecordsOffice</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Facility’s Fetal Death Information&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Composition - Provider Supplied&nbsp;&nbsp;&nbsp;Facility Fetal Death Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>(EHR)&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td>Provider Facility Fetal Death</td>
+    <td>Composition - Provider SuppliedFacility Fetal Death Report</td>
+    <td>EHR</td>
+    <td>Jurisdictional Vital Records Office</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Fetal Death Mother's Information&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Composition - Provider Supplied&nbsp;&nbsp;&nbsp;Mother's Fetal Death Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>(EHR)&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records&nbsp;&nbsp;&nbsp;Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td>Provider Mother's Fetal Death</td>
+    <td>Composition - Provider SuppliedMother's Fetal Death Report</td>
+    <td>EHR</td>
+    <td>Jurisdictional Vital Records Office</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdiction Live Birth Reporting&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Composition - Jurisdiction Live&nbsp;&nbsp;&nbsp;Birth Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records&nbsp;&nbsp;&nbsp;Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>National Statistical Agency&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td>Jurisdiction Live Birth</td>
+    <td>Composition - Jurisdiction LiveBirth Report</td>
+    <td>Jurisdictional Vital Records Office</td>
+    <td>National Statistical Agency</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdiction Fetal Death Reporting&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Composition - Jurisdiction Fetal&nbsp;&nbsp;&nbsp;Death Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>National Statistical Agency&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td>Jurisdiction Fetal Death</td>
+    <td>Composition - Jurisdiction FetalDeath Report</td>
+    <td>Jurisdictional Vital Records Office</td>
+    <td>National Statistical Agency</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Void Certificate Reporting&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> Void Certificate Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records&nbsp;&nbsp;&nbsp;Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>National Statistical Agency&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td>Void Live Birth Certificate</td>
+    <td>Void Certificate Report</td>
+    <td>Jurisdictional Vital RecordsOffice</td>
+    <td>National Statistical Agency</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Coded Race &amp; Ethnicity Reporting&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Coded Race and Ethnicity&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Report National Statistical&nbsp;&nbsp;&nbsp;Agency&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records&nbsp;&nbsp;&nbsp;Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td>Void Live Birth Certificate</td>
+    <td>Void Certificate Report</td>
+    <td>Jurisdictional Vital Records Office</td>
+    <td>National Statistical Agency</td>
   </tr>
   <tr>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Coded Cause of Fetal Death&nbsp;&nbsp;&nbsp;Reporting&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Coded Cause of Fetal Death&nbsp;&nbsp;&nbsp;Report&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>National Statistical Agency&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br>Jurisdictional Vital Records&nbsp;&nbsp;&nbsp;Office&nbsp;&nbsp;&nbsp;</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;</td>
+    <td>Coded Race &amp; Ethnicity</td>
+    <td>Coded Race and Ethnicity</td>
+    <td>National Statistical Agency</td>
+    <td>Jurisdictional Vital Records Office</td>
+  </tr>
+  <tr>
+    <td>Coded Cause of Fetal Death</td>
+    <td>Coded Cause of Fetal Death Report</td>
+    <td>National Statistical Agency</td>
+    <td>Jurisdictional Vital Records Office</td>
   </tr>
 </tbody>
 </table>
