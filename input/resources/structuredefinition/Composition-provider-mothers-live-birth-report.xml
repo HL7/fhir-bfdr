@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-mothers-live-birth-report"/>
     <meta>
-        <versionId value="20"/>
-        <lastUpdated value="2020-11-17T02:33:53.429+00:00"/>
-        <source value="#dXIU7sBK6JltmVTm"/>
+        <versionId value="21"/>
+        <lastUpdated value="2020-11-19T04:45:39.211+00:00"/>
+        <source value="#8h3td8L9zELjbbrn"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-mothers-live-birth-report"/>
     <version value="1.0.0"/>
@@ -28,7 +28,6 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -77,7 +76,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
             </type>
         </element>
         <element id="Composition.encounter">
@@ -121,7 +120,7 @@
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Composition.section:motherPrenatal.entry">
@@ -145,7 +144,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-height"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -157,7 +156,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -208,7 +207,7 @@
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Composition.section:medicalHealthInformation.entry">
@@ -231,7 +230,7 @@
             <definition value="Selected medical risk factors of the mother during this pregnancy"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -258,7 +257,7 @@
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
         </element>
         <element id="Composition.section:motherInformation.entry">
@@ -306,7 +305,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -333,7 +332,7 @@
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
         </element>
         <element id="Composition.section:fatherInformation.entry">
@@ -369,7 +368,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>
             </type>
             <mustSupport value="true"/>
         </element>

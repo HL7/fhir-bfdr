@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-married-during-pregnancy"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-11-01T04:02:18.041+00:00"/>
-        <source value="#gPsyQOOybYrvrTu7"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-11-19T04:52:35.762+00:00"/>
+        <source value="#c9PRvzUkinBC4OMu"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
     <version value="1.0.0"/>
@@ -28,6 +28,7 @@
     <type value="Observation"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
+    
     <differential>
         <element id="Observation">
             <path value="Observation"/>
@@ -50,7 +51,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/fhir-vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
             <mustSupport value="true"/>
         </element>
