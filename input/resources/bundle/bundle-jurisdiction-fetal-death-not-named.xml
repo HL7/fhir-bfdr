@@ -13,12 +13,10 @@
     <entry>
         <fullUrl value="Composition/composition-jurisdiction-fetal-death-not-named"/>
         <resource>
-            <Composition>
+            <Composition
+                xmlns="http://hl7.org/fhir">
                 <id value="composition-jurisdiction-fetal-death-not-named"/>
                 <meta>
-                    <versionId value="11"/>
-                    <lastUpdated value="2020-08-21T04:42:34.374+00:00"/>
-                    <source value="#YFKxH5DekzAnAgon"/>
                     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
                 </meta>
                 <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar">
@@ -215,6 +213,48 @@
                     <entry>
                         <reference value="Observation/observation-parent-education-level-carmen-teresa-lee"/>
                         <display value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Edit Flags Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="92012-4"/>
+                            <display value="Edit flags section"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Observation/Observation-edit-flag-birthweight"/>
+                        <display value="Observation - Edit flag birthweight"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/Observation-edit-flag-estimate-of-gestation"/>
+                        <display value="Observation - Edit flag estimate of gestation "/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/Observation-edit-flag-mothers-date-of-birth"/>
+                        <display value="Observation - Edit flag mother's date of birth"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/Observation-edit-flag-mothers-education"/>
+                        <display value="Observation - Edit flag mother's education"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/Observation-edit-flag-mothers-height"/>
+                        <display value="Observation - Edit flag mother's height"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/Observation-edit-flag-mothers-prepregnancy-weight"/>
+                        <display value="Observation - Edit flag mother's prepregnancy weight"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/Observation-edit-flag-number-previous-cesareans"/>
+                        <display value="Observation - Edit flag number previous cesareans"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/Observation-edit-flag-plurality"/>
+                        <display value="Observation - Edit flag plurality "/>
                     </entry>
                 </section>
             </Composition>

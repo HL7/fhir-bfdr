@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="42"/>
-        <lastUpdated value="2020-11-19T07:12:27.250+00:00"/>
-        <source value="#AjgYS2Im0tNChLwZ"/>
+        <versionId value="43"/>
+        <lastUpdated value="2020-11-24T02:22:50.452+00:00"/>
+        <source value="#VXPdDtyJpOggbJPi"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -627,6 +627,10 @@
         <element id="Composition.section:motherInformation.entry:education">
             <path value="Composition.section.entry"/>
             <sliceName value="education"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+            </type>
         </element>
         <element id="Composition.section:fatherInformation">
             <path value="Composition.section"/>
@@ -666,6 +670,10 @@
             <path value="Composition.section.entry"/>
             <sliceName value="education"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+            </type>
             <mustSupport value="true"/>
         </element>
     </differential>
