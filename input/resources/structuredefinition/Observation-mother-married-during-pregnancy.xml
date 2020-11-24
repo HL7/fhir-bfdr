@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-married-during-pregnancy"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-19T04:52:35.762+00:00"/>
-        <source value="#c9PRvzUkinBC4OMu"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-11-24T07:36:07.605+00:00"/>
+        <source value="#0BvHg5f9VmRoBAjx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
     <version value="1.0.0"/>
@@ -61,9 +61,14 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="boolean"/>
+                <code value="CodeableConcept"/>
             </type>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="PHVS_YesNoUnknown_CDC"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>
