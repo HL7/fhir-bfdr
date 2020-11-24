@@ -3,11 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="805"/>
-        <lastUpdated value="2020-11-19T20:37:53.890+00:00"/>
-        <source value="#BSAxVDNziQbqHaMf"/>
+        <versionId value="809"/>
+        <lastUpdated value="2020-11-24T01:21:29.936+00:00"/>
+        <source value="#yi5huS6qRxi3E8ZL"/>
     </meta>
-    
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
     <name value="Vital_Records_Birth_and_Fetal_Death_Reporting"/>
@@ -199,15 +198,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
             <groupingId value="lbe-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/CapabilityStatement-bfdr-server"/>
-                <display value="CapabilityStatement - Birth and Fetal Death Server"/>
-            </reference>
-            <name value="CapabilityStatement - Birth and Fetal Death Server"/>
-            <description value="This section describes the expected capabilities of the BFDR Source (aka server) actor which is responsible for sending clinical documentsto a client actor. This CapabilityStatement imports and extends the [us-core-server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html)."/>
-            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
@@ -1966,6 +1956,15 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-live-birth-certificate"/>
             <groupingId value="lbe-clinical-other-test-date"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/CapabilityStatement-bfdr"/>
+                <display value="CapabilityStatement - Birth and Fetal Death"/>
+            </reference>
+            <name value="CapabilityStatement - Birth and Fetal Death Reporting"/>
+            <description value="This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

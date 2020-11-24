@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement
+    xmlns="http://hl7.org/fhir">
+    <id value="CapabilityStatement-bfdr"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-11-24T01:17:41.734+00:00"/>
+        <source value="#SAt3amkzCveaRHWM"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/CapabilityStatement/CapabilityStatement-bfdr"/>
+    <version value="1.0.0"/>
+    <name value="CapabilityStatementBFDR"/>
+    <title value="CapabilityStatement - Birth and Fetal Death"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-11-01"/>
+    <description value="This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents."/>
+    <kind value="requirements"/>
+    <fhirVersion value="4.0.1"/>
+    <format value="xml"/>
+    <format value="json"/>
+    <messaging>
+        <supportedMessage>
+            <mode value="sender"/>
+            <definition value="http://hl7.org/fhir/us/bfdr/StructureDefinition/MessageHeader-bfdr"/>
+        </supportedMessage>
+    </messaging>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-mothers-live-birth-report"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-fetal-death-report"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-mothers-fetal-death-report"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-live-birth-certificate"/>
+    </document>
+    <document>
+        <mode value="producer"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-fetal-death-report"/>
+    </document>
+</CapabilityStatement>
