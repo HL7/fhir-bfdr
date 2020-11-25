@@ -176,10 +176,6 @@
                         <display value="Example of Condition-fetal-death-other-significant-cause profile (Fetus Not Named)"/>
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-estimated-fetal-death-time-point-not-named"/>
-                        <display value="Example of Observation-estimated-fetal-death-time-point profile (Fetus Not Named)"/>
-                    </entry>
-                    <entry>
                         <reference value="Observation/observation-autopsy-performed-not-named"/>
                         <display value="Example of Observation-autopsy-performed profile (Fetus Not Named)"/>
                     </entry>
@@ -1270,40 +1266,6 @@
                     <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </focus>
                 <valueDateTime value="2018-05-18"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="Observation/observation-estimated-fetal-death-time-point-not-named"/>
-        <resource>
-            <Observation>
-                <id value="observation-estimated-fetal-death-time-point-not-named"/>
-                <meta>
-                    <versionId value="3"/>
-                    <lastUpdated value="2020-08-20T23:21:01.614+00:00"/>
-                    <source value="#9e4w2FXQIGRGa7oJ"/>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="73811-2"/>
-                        <display value="Estimated timing of fetal death [US Standard Report of Fetal Death]"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="434631000124100"/>
-                        <display value="Fetal intrapartum death after first assessment (event)"/>
-                    </coding>
-                    <text value="Died during labor, after first assessment"/>
-                </valueCodeableConcept>
             </Observation>
         </resource>
     </entry>

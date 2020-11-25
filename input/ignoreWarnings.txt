@@ -42,7 +42,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureD
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-prenatal-care-visits').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
@@ -59,3 +58,5 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureD
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-fetal-death-report
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+# Expected behaviour
+Found multiple matching profiles for Patient/patient-decedent-fetus-not-named among choices: http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child, http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus

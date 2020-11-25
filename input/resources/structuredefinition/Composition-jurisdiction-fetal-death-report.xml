@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="37"/>
-        <lastUpdated value="2020-11-24T02:13:44.924+00:00"/>
-        <source value="#42S6ct6T9ShlcF7e"/>
+        <versionId value="38"/>
+        <lastUpdated value="2020-11-25T00:28:48.050+00:00"/>
+        <source value="#R0gVSd8lfkkNwW9P"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -491,17 +491,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:fetus.entry:estimatedTimeFetalDeath">
-            <path value="Composition.section.entry"/>
-            <sliceName value="estimatedTimeFetalDeath"/>
-            <short value="When the fetus died with respect to labor and assessment"/>
-            <definition value="When the fetus died with respect to labor and assessment"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point"/>
             </type>
             <mustSupport value="true"/>
         </element>
