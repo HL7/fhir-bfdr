@@ -904,17 +904,19 @@
     <entry>
         <fullUrl value="Patient/patient-decedent-fetus-not-named"/>
         <resource>
-            <Patient>
+            <Patient
+                xmlns="http://hl7.org/fhir">
                 <id value="patient-decedent-fetus-not-named"/>
                 <meta>
-                    <versionId value="3"/>
-                    <lastUpdated value="2020-08-20T04:45:30.157+00:00"/>
-                    <source value="#ZNtZna7FMzPhWYo5"/>
+                    <versionId value="5"/>
+                    <lastUpdated value="2020-11-19T04:37:18.749+00:00"/>
+                    <source value="#CsAINJMWJ9jtNYLr"/>
                     <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
                 </meta>
                 <text>
                     <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">
                             <b>null </b>
                         </div>
@@ -925,7 +927,7 @@
                                     <td>9932702</td>
                                 </tr>
                                 <tr>
-                                    <td>Date of birth</td>
+                                    <td>Date of delivery</td>
                                     <td>
                                         <span>09 January 2019</span>
                                     </td>
@@ -934,6 +936,13 @@
                         </table>
                     </div>
                 </text>
+                <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-estimated-fetal-death-time-point">
+                    <valueCoding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="434631000124100"/>
+                        <display value="Fetal intrapartum death after first assessment (event)"/>
+                    </valueCoding>
+                </extension>
                 <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
                     <valueCode value="F"/>
                 </extension>
