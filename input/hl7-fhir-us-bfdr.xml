@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="815"/>
-        <lastUpdated value="2020-11-25T01:10:05.092+00:00"/>
-        <source value="#ScpGLmUsMpgTLH4j"/>
+        <versionId value="820"/>
+        <lastUpdated value="2020-12-01T22:13:03.928+00:00"/>
+        <source value="#Wfk21IkeBkiq3gKA"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -25,8 +25,9 @@
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
+            <display value="United States of America"/>
         </coding>
-        <text value="US"/>
+        <text value="United States of America"/>
     </jurisdiction>
     <packageId value="hl7.fhir.us.bfdr"/>
     <fhirVersion value="4.0.1"/>
@@ -170,16 +171,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
             <groupingId value="lbe-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Bundle-message-bfdr"/>
-                <display value="Bundle - Message Birth and Fetal Death"/>
-            </reference>
-            <name value="Bundle - Message Birth and Fetal Death"/>
-            <description value="This Bundle profile represents an Birth and Fetal Death Message Bundle. It contains the BFDR MessageHeader."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="transport-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -851,16 +842,6 @@
             <description value="Example of US Core Location (South Hospital)"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-participant-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/MessageHeader-bfdr"/>
-                <display value="MessageHeader - Birth and Fetal Death"/>
-            </reference>
-            <name value="MessageHeader - Birth and Fetal Death"/>
-            <description value="This MessageHeader profile represents metadata to support BFDR messaging. It requires data elements destination, sender, source, and focus. The focus of an this profile is the Task - BFDR profile."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="transport-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1890,16 +1871,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Task-bfdr"/>
-                <display value="Task - Birth and Fetal Death"/>
-            </reference>
-            <name value="Task - Birth and Fetal Death"/>
-            <description value="This Task profile represents the Birth and Fetal Death reporting activity. The focus is the Bundle - Document BFDR."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="transport-profiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy"/>
                 <display value="Cigarette Smoking Before and During Pregnancy"/>
             </reference>
@@ -1959,11 +1930,6 @@
             <page>
                 <nameUrl value="use_cases.html"/>
                 <title value="Use Cases"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="transport.html"/>
-                <title value="Transport"/>
                 <generation value="markdown"/>
             </page>
             <page>
