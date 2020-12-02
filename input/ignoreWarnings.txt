@@ -59,7 +59,10 @@ This element does not match any known slice defined in the profile http://hl7.or
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 # Expected behaviour - added an extra author for this example
 INFORMATION: Composition/composition-jurisdiction-fetal-death-not-named: Composition.author[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report
+# Issue is because the slices aren't recognized due to the missing ICD-10 code system 
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death
 # Expected behaviour (one profile is parent of the other)
+Found multiple matching profiles for Patient/patient-decedent-fetus-not-named among choices: http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus, http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child
 Found multiple matching profiles for Patient/patient-decedent-fetus-not-named among choices: http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child, http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus
 # Validation against profile information messages
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
