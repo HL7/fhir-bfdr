@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-bridged-race"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-12-01T23:20:11.983+00:00"/>
-        <source value="#eI6NrVFmGwUZIRGq"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-12-02T01:25:37.689+00:00"/>
+        <source value="#C1nHUmBJ59Btxqlj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race"/>
     <version value="1.0.0"/>
@@ -44,6 +44,16 @@
                     <code value="80906-1"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.focus">

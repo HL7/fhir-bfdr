@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-coded-race-and-ethnicity"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2020-12-01T23:36:15.945+00:00"/>
-        <source value="#xsy867pnKbAZhvLp"/>
+        <versionId value="18"/>
+        <lastUpdated value="2020-12-02T01:32:12.258+00:00"/>
+        <source value="#bSKSimg7AYuXK090"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
     <version value="1.0.0"/>
@@ -108,7 +108,7 @@
             <slicing>
                 <discriminator>
                     <type value="pattern"/>
-                    <path value="code"/>
+                    <path value="focus"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -119,7 +119,7 @@
             <short value="Mother coded race and ethnicity section."/>
             <definition value="This section contains the tabulated and post-edited coded race and ethnicity details for the mother."/>
             <min value="1"/>
-            <max value="1"/>
+            <max value="2"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherCodedRaceEthnicity.code">
@@ -139,6 +139,8 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-natural"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
         </element>
         <element id="Composition.section:motherCodedRaceEthnicity.entry">
@@ -172,73 +174,6 @@
             <sliceName value="tabulatedEthnicity"/>
             <short value="Mother's tabulated ethnicity"/>
             <definition value="The mother's tabulated ethnicity"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-tabulated-ethnicity"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:fatherCodedRaceEthnicity">
-            <path value="Composition.section"/>
-            <sliceName value="fatherCodedRaceEthnicity"/>
-            <short value="Father coded race and ethnicity section."/>
-            <definition value="This section contains the tabulated and post-edited coded race and ethnicity details for the father. This data is only present in the case of live birth (not fetal death)."/>
-            <min value="0"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:fatherCodedRaceEthnicity.code">
-            <path value="Composition.section.code"/>
-            <short value="Race and ethnicity information Document"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="86805-9"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
-        <element id="Composition.section:fatherCodedRaceEthnicity.focus">
-            <path value="Composition.section.focus"/>
-            <short value="The focus of this section is the father"/>
-            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
-            </type>
-        </element>
-        <element id="Composition.section:fatherCodedRaceEthnicity.entry">
-            <path value="Composition.section.entry"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="$this.resolve()"/>
-                </discriminator>
-                <ordered value="false"/>
-                <rules value="open"/>
-            </slicing>
-            <short value="Entries that are contained in the Father Coded Race and Ethnicity section"/>
-            <definition value="Entries that are contained in the Father Coded Race and Ethnicity section"/>
-        </element>
-        <element id="Composition.section:fatherCodedRaceEthnicity.entry:bridgedRace">
-            <path value="Composition.section.entry"/>
-            <sliceName value="bridgedRace"/>
-            <short value="Father's bridged race"/>
-            <definition value="The father's bridged race"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:fatherCodedRaceEthnicity.entry:tabulatedEthnicity">
-            <path value="Composition.section.entry"/>
-            <sliceName value="tabulatedEthnicity"/>
-            <short value="Father's tabulated ethnicity"/>
-            <definition value="The father's tabulated ethnicity"/>
             <min value="1"/>
             <max value="1"/>
             <type>

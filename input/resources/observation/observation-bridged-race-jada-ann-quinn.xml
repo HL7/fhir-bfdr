@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-bridged-race-jada-ann-quinn"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-12-01T23:30:55.518+00:00"/>
-        <source value="#ip9mb462sAPmKy2l"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-12-02T01:27:22.375+00:00"/>
+        <source value="#zj4zTFABsbtfIYgW"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race"/>
     </meta>
     <status value="final"/>
@@ -18,9 +18,13 @@
         <text value="Bridged race [CDC]"/>
     </code>
     <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <focus>
         <reference value="Patient/patient-mother-jada-ann-quinn"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
-    </subject>
+    </focus>
     <valueCodeableConcept>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
