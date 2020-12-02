@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-coded-race-and-ethnicity"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-11-19T07:09:19.457+00:00"/>
-        <source value="#6MkKPdilp1VTLvQ3"/>
+        <versionId value="16"/>
+        <lastUpdated value="2020-12-01T23:36:15.945+00:00"/>
+        <source value="#xsy867pnKbAZhvLp"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
     <version value="1.0.0"/>
@@ -120,6 +120,7 @@
             <definition value="This section contains the tabulated and post-edited coded race and ethnicity details for the mother."/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherCodedRaceEthnicity.code">
             <path value="Composition.section.code"/>
@@ -184,8 +185,9 @@
             <sliceName value="fatherCodedRaceEthnicity"/>
             <short value="Father coded race and ethnicity section."/>
             <definition value="This section contains the tabulated and post-edited coded race and ethnicity details for the father. This data is only present in the case of live birth (not fetal death)."/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:fatherCodedRaceEthnicity.code">
             <path value="Composition.section.code"/>

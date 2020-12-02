@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="composition-coded-race-and-ethnicity-not-named"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-12-02T00:29:27.464+00:00"/>
+        <source value="#DU9nFXJFiIrnB6Kk"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-id">
+        <valueIdentifier>
+            <value value="9876"/>
+        </valueIdentifier>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number">
+        <valueIdentifier>
+            <value value="11111-11111"/>
+        </valueIdentifier>
+    </extension>
+    <identifier>
+        <value value="c03eab8c-11e8-4d0c-ad2a-b385395e27db"/>
+    </identifier>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="86805-9"/>
+            <display value="Race and ethnicity information Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+    </subject>
+    <date value="2019-01-09"/>
+    <author>
+        <reference value="Organization/organization-nhcs"/>
+        <display value="NCHS"/>
+    </author>
+    <title value="Coded Race and Ethnicity"/>
+    <section>
+        <title value="Mother's Coded Race and Ethnicity"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="86805-9"/>
+                <display value="Race and ethnicity information Document"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn"/>
+            <display value="Observation - Tabulated Ethnicity (Jada Ann Quinn)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-bridged-race-jada-ann-quinn"/>
+            <display value="Observation - Bridged Race (Jada Ann Quinn)"/>
+        </entry>
+    </section>
+</Composition>

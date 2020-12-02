@@ -21,8 +21,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:72b9cc30-eea8-44a9-99bd-0ed922fdb317",
-    "timestamp" : "2020-09-04T01:22:48.769Z",
+    "identifier" : "urn:uuid:72bdae68-2e9d-47da-a483-34fda63d1fd8",
+    "timestamp" : "2020-12-01T22:55:41.863Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -33,7 +33,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20200301"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20200901"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -787,6 +787,36 @@ e: {
     },
     {
       "system" : "http://snomed.info/sct",
+      "code" : "866149003",
+      "display" : "Annual visit"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "866203004",
+      "display" : "Consultation for asthma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "866204005",
+      "display" : "Consultation for chronic obstructive pulmonary disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "868184008",
+      "display" : "Telemedicine consultation with provider"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "870191006",
+      "display" : "Follow up for depression"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "870194003",
+      "display" : "Body mass index follow-up planning"
+    },
+    {
+      "system" : "http://snomed.info/sct",
       "code" : "3391000175108",
       "display" : "Office visit for pediatric care and assessment"
     },
@@ -884,8 +914,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:86b25c66-f084-4a4f-b58e-1bd5e0ee92ae",
-    "timestamp" : "2020-09-04T01:22:56.285Z",
+    "identifier" : "urn:uuid:f8e216e0-6bb4-47ce-a158-89271bc5263b",
+    "timestamp" : "2020-12-01T22:55:50.832Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -896,7 +926,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20200301"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20200901"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -1144,6 +1174,1398 @@ v: {
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Hospital",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "434631000124100",
+  "display" : "Fetal intrapartum death after first assessment (event)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Fetal intrapartum death after first assessment (event)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "434631000124100",
+  "display" : "Fetal intrapartum death after first assessment (event)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "434681000124104",
+        "display" : "Dead at time of first assessment, no labor ongoing"
+      },
+      {
+        "code" : "434671000124102",
+        "display" : "Dead at time of first assessment, labor ongoing"
+      },
+      {
+        "code" : "434631000124100",
+        "display" : "Died during labor, after first assessment"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "20090501",
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Fetal intrapartum death after first assessment (event)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "38341003"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "73211009",
+        "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
+      },
+      {
+        "code" : "11687002",
+        "display" : "Diabetes / Gestational (Diagnosis in pregnancy)"
+      },
+      {
+        "code" : "38341003",
+        "display" : "Hypertension / Prepregnancy (chronic)"
+      },
+      {
+        "code" : "48194001",
+        "display" : "Hypertension / Gestational (PIH, preeclampsia)"
+      },
+      {
+        "code" : "15938005",
+        "display" : "Hypertension / Eclampsia"
+      },
+      {
+        "code" : "161765003",
+        "display" : "Previous preterm birth"
+      },
+      {
+        "code" : "445151000124101",
+        "display" : "Pregnancy resulted from infertility treatment"
+      },
+      {
+        "code" : "58533008",
+        "display" : "Fertility-enhancing drugs, Artificial insemination or Intrauterine insemination"
+      },
+      {
+        "code" : "63487001",
+        "display" : "Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)"
+      },
+      {
+        "code" : "200144004",
+        "display" : "Mother had a previous cesarean delivery"
+      },
+      {
+        "code" : "260413007",
+        "display" : "None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "High blood pressure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "38341003",
+  "display" : "Hypertensive disorder, systemic arterial (disorder)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "73211009",
+        "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
+      },
+      {
+        "code" : "11687002",
+        "display" : "Diabetes / Gestational (Diagnosis in pregnancy)"
+      },
+      {
+        "code" : "38341003",
+        "display" : "Hypertension / Prepregnancy (chronic)"
+      },
+      {
+        "code" : "48194001",
+        "display" : "Hypertension / Gestational (PIH, preeclampsia)"
+      },
+      {
+        "code" : "15938005",
+        "display" : "Hypertension / Eclampsia"
+      },
+      {
+        "code" : "161765003",
+        "display" : "Previous preterm birth"
+      },
+      {
+        "code" : "445151000124101",
+        "display" : "Pregnancy resulted from infertility treatment"
+      },
+      {
+        "code" : "58533008",
+        "display" : "Fertility-enhancing drugs, Artificial insemination or Intrauterine insemination"
+      },
+      {
+        "code" : "63487001",
+        "display" : "Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)"
+      },
+      {
+        "code" : "200144004",
+        "display" : "Mother had a previous cesarean delivery"
+      },
+      {
+        "code" : "260413007",
+        "display" : "None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "High blood pressure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "38341003"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "High blood pressure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "11687002"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "73211009",
+        "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
+      },
+      {
+        "code" : "11687002",
+        "display" : "Diabetes / Gestational (Diagnosis in pregnancy)"
+      },
+      {
+        "code" : "38341003",
+        "display" : "Hypertension / Prepregnancy (chronic)"
+      },
+      {
+        "code" : "48194001",
+        "display" : "Hypertension / Gestational (PIH, preeclampsia)"
+      },
+      {
+        "code" : "15938005",
+        "display" : "Hypertension / Eclampsia"
+      },
+      {
+        "code" : "161765003",
+        "display" : "Previous preterm birth"
+      },
+      {
+        "code" : "445151000124101",
+        "display" : "Pregnancy resulted from infertility treatment"
+      },
+      {
+        "code" : "58533008",
+        "display" : "Fertility-enhancing drugs, Artificial insemination or Intrauterine insemination"
+      },
+      {
+        "code" : "63487001",
+        "display" : "Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)"
+      },
+      {
+        "code" : "200144004",
+        "display" : "Mother had a previous cesarean delivery"
+      },
+      {
+        "code" : "260413007",
+        "display" : "None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Gestational diabetes mellitus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "11687002",
+  "display" : "Gestational diabetes mellitus (disorder)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "73211009",
+        "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
+      },
+      {
+        "code" : "11687002",
+        "display" : "Diabetes / Gestational (Diagnosis in pregnancy)"
+      },
+      {
+        "code" : "38341003",
+        "display" : "Hypertension / Prepregnancy (chronic)"
+      },
+      {
+        "code" : "48194001",
+        "display" : "Hypertension / Gestational (PIH, preeclampsia)"
+      },
+      {
+        "code" : "15938005",
+        "display" : "Hypertension / Eclampsia"
+      },
+      {
+        "code" : "161765003",
+        "display" : "Previous preterm birth"
+      },
+      {
+        "code" : "445151000124101",
+        "display" : "Pregnancy resulted from infertility treatment"
+      },
+      {
+        "code" : "58533008",
+        "display" : "Fertility-enhancing drugs, Artificial insemination or Intrauterine insemination"
+      },
+      {
+        "code" : "63487001",
+        "display" : "Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)"
+      },
+      {
+        "code" : "200144004",
+        "display" : "Mother had a previous cesarean delivery"
+      },
+      {
+        "code" : "260413007",
+        "display" : "None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Gestational diabetes mellitus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "11687002"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Gestational diabetes mellitus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6096002"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "70028003",
+        "display" : "Cephalic"
+      },
+      {
+        "code" : "6096002",
+        "display" : "Breech"
+      },
+      {
+        "code" : "163518000",
+        "display" : "Unknown fetal presentation"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6096002",
+  "display" : "Breech presentation (finding)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "70028003",
+        "display" : "Cephalic"
+      },
+      {
+        "code" : "6096002",
+        "display" : "Breech"
+      },
+      {
+        "code" : "163518000",
+        "display" : "Unknown fetal presentation"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "20090501",
+      "concept" : [{
+        "code" : "OTH",
+        "display" : "Other"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6096002"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260413007"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "70028003",
+        "display" : "Cephalic"
+      },
+      {
+        "code" : "6096002",
+        "display" : "Breech"
+      },
+      {
+        "code" : "163518000",
+        "display" : "Unknown fetal presentation"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#260413007) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260413007",
+  "display" : "None"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "70028003",
+        "display" : "Cephalic"
+      },
+      {
+        "code" : "6096002",
+        "display" : "Breech"
+      },
+      {
+        "code" : "163518000",
+        "display" : "Unknown fetal presentation"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "20090501",
+      "concept" : [{
+        "code" : "OTH",
+        "display" : "Other"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "None",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260413007"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "None",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260413007"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "116859006",
+        "display" : "Blood transfusion"
+      },
+      {
+        "code" : "398019008",
+        "display" : "Third or fourth degree perineal laceration"
+      },
+      {
+        "code" : "34430009",
+        "display" : "Ruptured uterus"
+      },
+      {
+        "code" : "236987005",
+        "display" : "Unplanned hysterectomy"
+      },
+      {
+        "code" : "309904001",
+        "display" : "Admission to intensive care unit"
+      },
+      {
+        "code" : "442261000124103",
+        "display" : "Emergency operation following delivery"
+      },
+      {
+        "code" : "260413007",
+        "display" : "None of the specified items"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "None",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260413007",
+  "display" : "None"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "116859006",
+        "display" : "Blood transfusion"
+      },
+      {
+        "code" : "398019008",
+        "display" : "Third or fourth degree perineal laceration"
+      },
+      {
+        "code" : "34430009",
+        "display" : "Ruptured uterus"
+      },
+      {
+        "code" : "236987005",
+        "display" : "Unplanned hysterectomy"
+      },
+      {
+        "code" : "309904001",
+        "display" : "Admission to intensive care unit"
+      },
+      {
+        "code" : "442261000124103",
+        "display" : "Emergency operation following delivery"
+      },
+      {
+        "code" : "260413007",
+        "display" : "None of the specified items"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "None",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "48782003"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "48782003",
+        "display" : "Vaginal/Spontaneous"
+      },
+      {
+        "code" : "302383004",
+        "display" : "Vaginal/Forceps"
+      },
+      {
+        "code" : "61586001",
+        "display" : "Vaginal/Vacuum"
+      },
+      {
+        "code" : "11466000",
+        "display" : "Cesarean"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Delivery normal",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "48782003",
+  "display" : "Delivery normal (finding)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "48782003",
+        "display" : "Vaginal/Spontaneous"
+      },
+      {
+        "code" : "302383004",
+        "display" : "Vaginal/Forceps"
+      },
+      {
+        "code" : "61586001",
+        "display" : "Vaginal/Vacuum"
+      },
+      {
+        "code" : "11466000",
+        "display" : "Cesarean"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Delivery normal",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "48782003"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Delivery normal",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6096002"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "116859006",
+        "display" : "Blood transfusion"
+      },
+      {
+        "code" : "398019008",
+        "display" : "Third or fourth degree perineal laceration"
+      },
+      {
+        "code" : "34430009",
+        "display" : "Ruptured uterus"
+      },
+      {
+        "code" : "236987005",
+        "display" : "Unplanned hysterectomy"
+      },
+      {
+        "code" : "309904001",
+        "display" : "Admission to intensive care unit"
+      },
+      {
+        "code" : "442261000124103",
+        "display" : "Emergency operation following delivery"
+      },
+      {
+        "code" : "260413007",
+        "display" : "None of the specified items"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#6096002) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6096002",
+  "display" : "Breech presentation (finding)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "116859006",
+        "display" : "Blood transfusion"
+      },
+      {
+        "code" : "398019008",
+        "display" : "Third or fourth degree perineal laceration"
+      },
+      {
+        "code" : "34430009",
+        "display" : "Ruptured uterus"
+      },
+      {
+        "code" : "236987005",
+        "display" : "Unplanned hysterectomy"
+      },
+      {
+        "code" : "309904001",
+        "display" : "Admission to intensive care unit"
+      },
+      {
+        "code" : "442261000124103",
+        "display" : "Emergency operation following delivery"
+      },
+      {
+        "code" : "260413007",
+        "display" : "None of the specified items"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "719828003"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "719828003",
+        "display" : "Was an autopsy performed? No"
+      },
+      {
+        "code" : "716347009",
+        "display" : "Was an autopsy performed? Yes"
+      },
+      {
+        "code" : "434661000124109",
+        "display" : "Was an autopsy performed? Planned"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "719828003",
+  "display" : "Autopsy not done"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "719828003",
+        "display" : "Was an autopsy performed? No"
+      },
+      {
+        "code" : "716347009",
+        "display" : "Was an autopsy performed? Yes"
+      },
+      {
+        "code" : "434661000124109",
+        "display" : "Was an autopsy performed? Planned"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "719828003"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "398166005"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "398166005",
+        "display" : "Was an histological placental examination performed? Yes"
+      },
+      {
+        "code" : "262008008",
+        "display" : "Was an histological placental examination performed? No"
+      },
+      {
+        "code" : "397943006",
+        "display" : "Was an histological placental examination  performed? Planned"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Performed (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "398166005",
+  "display" : "Performed"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "398166005",
+        "display" : "Was an histological placental examination performed? Yes"
+      },
+      {
+        "code" : "262008008",
+        "display" : "Was an histological placental examination performed? No"
+      },
+      {
+        "code" : "397943006",
+        "display" : "Was an histological placental examination  performed? Planned"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Performed (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "398166005"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Performed (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "44223004"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "44223004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
+      },
+      {
+        "code" : "415105001",
+        "display" : "Complications of Placenta, Cord, or Membranes: Abruptio placenta"
+      },
+      {
+        "code" : "237292005",
+        "display" : "Complications of Placenta, Cord, or Membranes: Placental insufficiency"
+      },
+      {
+        "code" : "270500004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Prolapsed cord"
+      },
+      {
+        "code" : "11612004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Chorioamnionitis"
+      },
+      {
+        "code" : "702709008",
+        "display" : "Fetal Anomaly (Specify)"
+      },
+      {
+        "code" : "277489001",
+        "display" : "Fetal Injury (Specify)"
+      },
+      {
+        "code" : "128270001",
+        "display" : "Fetal Infection (Specify)"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Premature rupture of membranes",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "44223004",
+  "display" : "Premature rupture of membranes (disorder)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.114222.4.5.274",
+      "version" : "20200526",
+      "concept" : [{
+        "code" : "PHC1301",
+        "display" : "Maternal Conditions/Diseases (Specify)"
+      },
+      {
+        "code" : "PHC1298",
+        "display" : "Complications of Placenta, Cord, or Membranes: Other (Specify)"
+      },
+      {
+        "code" : "PHC1299",
+        "display" : "Other Obstetrical or Pregnancy Complications (Specify)"
+      },
+      {
+        "code" : "PHC1300",
+        "display" : "Other Fetal Conditions/Disorders (Specify)"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "44223004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
+      },
+      {
+        "code" : "415105001",
+        "display" : "Complications of Placenta, Cord, or Membranes: Abruptio placenta"
+      },
+      {
+        "code" : "237292005",
+        "display" : "Complications of Placenta, Cord, or Membranes: Placental insufficiency"
+      },
+      {
+        "code" : "270500004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Prolapsed cord"
+      },
+      {
+        "code" : "11612004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Chorioamnionitis"
+      },
+      {
+        "code" : "702709008",
+        "display" : "Fetal Anomaly (Specify)"
+      },
+      {
+        "code" : "277489001",
+        "display" : "Fetal Injury (Specify)"
+      },
+      {
+        "code" : "128270001",
+        "display" : "Fetal Infection (Specify)"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "20090501",
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Premature rupture of membranes",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "44223004"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Premature rupture of membranes",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "237292005"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "44223004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
+      },
+      {
+        "code" : "415105001",
+        "display" : "Complications of Placenta, Cord, or Membranes: Abruptio placenta"
+      },
+      {
+        "code" : "237292005",
+        "display" : "Complications of Placenta, Cord, or Membranes: Placental insufficiency"
+      },
+      {
+        "code" : "270500004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Prolapsed cord"
+      },
+      {
+        "code" : "11612004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Chorioamnionitis"
+      },
+      {
+        "code" : "702709008",
+        "display" : "Fetal Anomaly (Specify)"
+      },
+      {
+        "code" : "277489001",
+        "display" : "Fetal Injury (Specify)"
+      },
+      {
+        "code" : "128270001",
+        "display" : "Fetal Infection (Specify)"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Placental insufficiency",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "237292005",
+  "display" : "Placental insufficiency (disorder)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.114222.4.5.274",
+      "version" : "20200526",
+      "concept" : [{
+        "code" : "PHC1301",
+        "display" : "Maternal Conditions/Diseases (Specify)"
+      },
+      {
+        "code" : "PHC1298",
+        "display" : "Complications of Placenta, Cord, or Membranes: Other (Specify)"
+      },
+      {
+        "code" : "PHC1299",
+        "display" : "Other Obstetrical or Pregnancy Complications (Specify)"
+      },
+      {
+        "code" : "PHC1300",
+        "display" : "Other Fetal Conditions/Disorders (Specify)"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "44223004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
+      },
+      {
+        "code" : "415105001",
+        "display" : "Complications of Placenta, Cord, or Membranes: Abruptio placenta"
+      },
+      {
+        "code" : "237292005",
+        "display" : "Complications of Placenta, Cord, or Membranes: Placental insufficiency"
+      },
+      {
+        "code" : "270500004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Prolapsed cord"
+      },
+      {
+        "code" : "11612004",
+        "display" : "Complications of Placenta, Cord, or Membranes: Chorioamnionitis"
+      },
+      {
+        "code" : "702709008",
+        "display" : "Fetal Anomaly (Specify)"
+      },
+      {
+        "code" : "277489001",
+        "display" : "Fetal Injury (Specify)"
+      },
+      {
+        "code" : "128270001",
+        "display" : "Fetal Infection (Specify)"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "20090501",
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Placental insufficiency",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "237292005"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Placental insufficiency",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "398166005"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "719828003",
+        "display" : "Was an autopsy performed? No"
+      },
+      {
+        "code" : "716347009",
+        "display" : "Was an autopsy performed? Yes"
+      },
+      {
+        "code" : "434661000124109",
+        "display" : "Was an autopsy performed? Planned"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#398166005) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "398166005",
+  "display" : "Performed"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "719828003",
+        "display" : "Was an autopsy performed? No"
+      },
+      {
+        "code" : "716347009",
+        "display" : "Was an autopsy performed? Yes"
+      },
+      {
+        "code" : "434661000124109",
+        "display" : "Was an autopsy performed? Planned"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Performed (qualifier value)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "719828003"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "398166005",
+        "display" : "Was an histological placental examination performed? Yes"
+      },
+      {
+        "code" : "262008008",
+        "display" : "Was an histological placental examination performed? No"
+      },
+      {
+        "code" : "397943006",
+        "display" : "Was an histological placental examination  performed? Planned"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://snomed.info/sct#719828003) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "719828003",
+  "display" : "Autopsy not done"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108/version/20200301",
+      "concept" : [{
+        "code" : "398166005",
+        "display" : "Was an histological placental examination performed? Yes"
+      },
+      {
+        "code" : "262008008",
+        "display" : "Was an histological placental examination performed? No"
+      },
+      {
+        "code" : "397943006",
+        "display" : "Was an histological placental examination  performed? Planned"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "11687002",
+  "display" : "Gestational diabetes mellitus (disorder)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Gestational diabetes mellitus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "38341003",
+  "display" : "Hypertensive disorder, systemic arterial (disorder)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "High blood pressure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "6096002",
+  "display" : "Breech presentation (finding)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Breech presentation",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "48782003",
+  "display" : "Delivery normal (finding)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Delivery normal",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "260413007",
+  "display" : "None"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "None",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "44223004",
+  "display" : "Premature rupture of membranes (disorder)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Premature rupture of membranes",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "237292005",
+  "display" : "Placental insufficiency (disorder)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Placental insufficiency",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "719828003",
+  "display" : "Autopsy not done"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Autopsy not done (situation)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "398166005",
+  "display" : "Performed"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Performed (qualifier value)",
   "severity" : null,
   "error" : ""
 }
@@ -2910,85 +4332,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
-  "code" : "6096002"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Breech presentation",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "6096002"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "70028003",
-        "display" : "Cephalic"
-      },
-      {
-        "code" : "6096002",
-        "display" : "Breech"
-      },
-      {
-        "code" : "163518000",
-        "display" : "Unknown fetal presentation"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Breech presentation",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "6096002",
-  "display" : "Breech presentation (finding)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "70028003",
-        "display" : "Cephalic"
-      },
-      {
-        "code" : "6096002",
-        "display" : "Breech"
-      },
-      {
-        "code" : "163518000",
-        "display" : "Unknown fetal presentation"
-      }]
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "20090501",
-      "concept" : [{
-        "code" : "OTH",
-        "display" : "Other"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Breech presentation",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
   "code" : "34430009"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -4246,99 +5589,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
-  "code" : "6096002"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "116859006",
-        "display" : "Blood transfusion"
-      },
-      {
-        "code" : "398019008",
-        "display" : "Third or fourth degree perineal laceration"
-      },
-      {
-        "code" : "34430009",
-        "display" : "Ruptured uterus"
-      },
-      {
-        "code" : "236987005",
-        "display" : "Unplanned hysterectomy"
-      },
-      {
-        "code" : "309904001",
-        "display" : "Admission to intensive care unit"
-      },
-      {
-        "code" : "442261000124103",
-        "display" : "Emergency operation following delivery"
-      },
-      {
-        "code" : "260413007",
-        "display" : "None of the specified items"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#6096002) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "6096002",
-  "display" : "Breech presentation (finding)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "116859006",
-        "display" : "Blood transfusion"
-      },
-      {
-        "code" : "398019008",
-        "display" : "Third or fourth degree perineal laceration"
-      },
-      {
-        "code" : "34430009",
-        "display" : "Ruptured uterus"
-      },
-      {
-        "code" : "236987005",
-        "display" : "Unplanned hysterectomy"
-      },
-      {
-        "code" : "309904001",
-        "display" : "Admission to intensive care unit"
-      },
-      {
-        "code" : "442261000124103",
-        "display" : "Emergency operation following delivery"
-      },
-      {
-        "code" : "260413007",
-        "display" : "None of the specified items"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Breech presentation",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
   "code" : "434621000124103"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -4832,32 +6082,6 @@ v: {
       "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "442124003",
-        "display" : "Down Syndrome / Karyotype confirmed"
-      },
-      {
-        "code" : "312948004",
-        "display" : "Down Syndrome / Karyotype pending"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Karyotype determination",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "312948004"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "442124003",
         "display" : "Suspected chromosomal disorder / Karyotype confirmed"
       },
       {
@@ -5026,11 +6250,11 @@ v: {
       "version" : "http://snomed.info/sct/731000124108/version/20200301",
       "concept" : [{
         "code" : "442124003",
-        "display" : "Down Syndrome / Karyotype confirmed"
+        "display" : "Suspected chromosomal disorder / Karyotype confirmed"
       },
       {
         "code" : "312948004",
-        "display" : "Down Syndrome / Karyotype pending"
+        "display" : "Suspected chromosomal disorder / Karyotype pending"
       }]
     }]
   }
@@ -5337,17 +6561,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
-  "code" : "6096002",
-  "display" : "Breech presentation (finding)"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Breech presentation",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
   "code" : "11466000",
   "display" : "Cesarean section"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
@@ -5364,1438 +6577,6 @@ v: {
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Cyanotic congenital heart disease",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "38341003"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "73211009",
-        "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
-      },
-      {
-        "code" : "11687002",
-        "display" : "Diabetes / Gestational (Diagnosis in pregnancy)"
-      },
-      {
-        "code" : "38341003",
-        "display" : "Hypertension / Prepregnancy (chronic)"
-      },
-      {
-        "code" : "48194001",
-        "display" : "Hypertension / Gestational (PIH, preeclampsia)"
-      },
-      {
-        "code" : "15938005",
-        "display" : "Hypertension / Eclampsia"
-      },
-      {
-        "code" : "161765003",
-        "display" : "Previous preterm birth"
-      },
-      {
-        "code" : "445151000124101",
-        "display" : "Pregnancy resulted from infertility treatment"
-      },
-      {
-        "code" : "58533008",
-        "display" : "Fertility-enhancing drugs, Artificial insemination or Intrauterine insemination"
-      },
-      {
-        "code" : "63487001",
-        "display" : "Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)"
-      },
-      {
-        "code" : "200144004",
-        "display" : "Mother had a previous cesarean delivery"
-      },
-      {
-        "code" : "260413007",
-        "display" : "None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "High blood pressure",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "38341003",
-  "display" : "Hypertensive disorder, systemic arterial (disorder)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "73211009",
-        "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
-      },
-      {
-        "code" : "11687002",
-        "display" : "Diabetes / Gestational (Diagnosis in pregnancy)"
-      },
-      {
-        "code" : "38341003",
-        "display" : "Hypertension / Prepregnancy (chronic)"
-      },
-      {
-        "code" : "48194001",
-        "display" : "Hypertension / Gestational (PIH, preeclampsia)"
-      },
-      {
-        "code" : "15938005",
-        "display" : "Hypertension / Eclampsia"
-      },
-      {
-        "code" : "161765003",
-        "display" : "Previous preterm birth"
-      },
-      {
-        "code" : "445151000124101",
-        "display" : "Pregnancy resulted from infertility treatment"
-      },
-      {
-        "code" : "58533008",
-        "display" : "Fertility-enhancing drugs, Artificial insemination or Intrauterine insemination"
-      },
-      {
-        "code" : "63487001",
-        "display" : "Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)"
-      },
-      {
-        "code" : "200144004",
-        "display" : "Mother had a previous cesarean delivery"
-      },
-      {
-        "code" : "260413007",
-        "display" : "None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "High blood pressure",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "38341003"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "High blood pressure",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "11687002"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "73211009",
-        "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
-      },
-      {
-        "code" : "11687002",
-        "display" : "Diabetes / Gestational (Diagnosis in pregnancy)"
-      },
-      {
-        "code" : "38341003",
-        "display" : "Hypertension / Prepregnancy (chronic)"
-      },
-      {
-        "code" : "48194001",
-        "display" : "Hypertension / Gestational (PIH, preeclampsia)"
-      },
-      {
-        "code" : "15938005",
-        "display" : "Hypertension / Eclampsia"
-      },
-      {
-        "code" : "161765003",
-        "display" : "Previous preterm birth"
-      },
-      {
-        "code" : "445151000124101",
-        "display" : "Pregnancy resulted from infertility treatment"
-      },
-      {
-        "code" : "58533008",
-        "display" : "Fertility-enhancing drugs, Artificial insemination or Intrauterine insemination"
-      },
-      {
-        "code" : "63487001",
-        "display" : "Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)"
-      },
-      {
-        "code" : "200144004",
-        "display" : "Mother had a previous cesarean delivery"
-      },
-      {
-        "code" : "260413007",
-        "display" : "None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Gestational diabetes mellitus",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "11687002",
-  "display" : "Gestational diabetes mellitus (disorder)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "73211009",
-        "display" : "Diabetes / Prepregnancy (Diagnosis prior to pregnancy)"
-      },
-      {
-        "code" : "11687002",
-        "display" : "Diabetes / Gestational (Diagnosis in pregnancy)"
-      },
-      {
-        "code" : "38341003",
-        "display" : "Hypertension / Prepregnancy (chronic)"
-      },
-      {
-        "code" : "48194001",
-        "display" : "Hypertension / Gestational (PIH, preeclampsia)"
-      },
-      {
-        "code" : "15938005",
-        "display" : "Hypertension / Eclampsia"
-      },
-      {
-        "code" : "161765003",
-        "display" : "Previous preterm birth"
-      },
-      {
-        "code" : "445151000124101",
-        "display" : "Pregnancy resulted from infertility treatment"
-      },
-      {
-        "code" : "58533008",
-        "display" : "Fertility-enhancing drugs, Artificial insemination or Intrauterine insemination"
-      },
-      {
-        "code" : "63487001",
-        "display" : "Assisted reproductive technology (e.g. in vitro fertilization (IVF), gamete intrafallopian transfer (GIFT)"
-      },
-      {
-        "code" : "200144004",
-        "display" : "Mother had a previous cesarean delivery"
-      },
-      {
-        "code" : "260413007",
-        "display" : "None of the specified items in this value set (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy."
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Gestational diabetes mellitus",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "11687002"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Gestational diabetes mellitus",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "260413007"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "70028003",
-        "display" : "Cephalic"
-      },
-      {
-        "code" : "6096002",
-        "display" : "Breech"
-      },
-      {
-        "code" : "163518000",
-        "display" : "Unknown fetal presentation"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#260413007) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "260413007",
-  "display" : "None"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "70028003",
-        "display" : "Cephalic"
-      },
-      {
-        "code" : "6096002",
-        "display" : "Breech"
-      },
-      {
-        "code" : "163518000",
-        "display" : "Unknown fetal presentation"
-      }]
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "20090501",
-      "concept" : [{
-        "code" : "OTH",
-        "display" : "Other"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "None",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "260413007"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "None",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "260413007"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "116859006",
-        "display" : "Blood transfusion"
-      },
-      {
-        "code" : "398019008",
-        "display" : "Third or fourth degree perineal laceration"
-      },
-      {
-        "code" : "34430009",
-        "display" : "Ruptured uterus"
-      },
-      {
-        "code" : "236987005",
-        "display" : "Unplanned hysterectomy"
-      },
-      {
-        "code" : "309904001",
-        "display" : "Admission to intensive care unit"
-      },
-      {
-        "code" : "442261000124103",
-        "display" : "Emergency operation following delivery"
-      },
-      {
-        "code" : "260413007",
-        "display" : "None of the specified items"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "None",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "260413007",
-  "display" : "None"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "116859006",
-        "display" : "Blood transfusion"
-      },
-      {
-        "code" : "398019008",
-        "display" : "Third or fourth degree perineal laceration"
-      },
-      {
-        "code" : "34430009",
-        "display" : "Ruptured uterus"
-      },
-      {
-        "code" : "236987005",
-        "display" : "Unplanned hysterectomy"
-      },
-      {
-        "code" : "309904001",
-        "display" : "Admission to intensive care unit"
-      },
-      {
-        "code" : "442261000124103",
-        "display" : "Emergency operation following delivery"
-      },
-      {
-        "code" : "260413007",
-        "display" : "None of the specified items"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "None",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "48782003"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "48782003",
-        "display" : "Vaginal/Spontaneous"
-      },
-      {
-        "code" : "302383004",
-        "display" : "Vaginal/Forceps"
-      },
-      {
-        "code" : "61586001",
-        "display" : "Vaginal/Vacuum"
-      },
-      {
-        "code" : "11466000",
-        "display" : "Cesarean"
-      },
-      {
-        "code" : "261665006",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Delivery normal",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "48782003",
-  "display" : "Delivery normal (finding)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "48782003",
-        "display" : "Vaginal/Spontaneous"
-      },
-      {
-        "code" : "302383004",
-        "display" : "Vaginal/Forceps"
-      },
-      {
-        "code" : "61586001",
-        "display" : "Vaginal/Vacuum"
-      },
-      {
-        "code" : "11466000",
-        "display" : "Cesarean"
-      },
-      {
-        "code" : "261665006",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Delivery normal",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "48782003"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Delivery normal",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "434631000124100"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "434681000124104",
-        "display" : "Dead at time of first assessment, no labor ongoing"
-      },
-      {
-        "code" : "434671000124102",
-        "display" : "Dead at time of first assessment, labor ongoing"
-      },
-      {
-        "code" : "434631000124100",
-        "display" : "Died during labor, after first assessment"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Fetal intrapartum death after first assessment (event)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "434631000124100",
-  "display" : "Fetal intrapartum death after first assessment (event)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "434681000124104",
-        "display" : "Dead at time of first assessment, no labor ongoing"
-      },
-      {
-        "code" : "434671000124102",
-        "display" : "Dead at time of first assessment, labor ongoing"
-      },
-      {
-        "code" : "434631000124100",
-        "display" : "Died during labor, after first assessment"
-      }]
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "20090501",
-      "concept" : [{
-        "code" : "UNK",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Fetal intrapartum death after first assessment (event)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "434631000124100"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Fetal intrapartum death after first assessment (event)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719828003"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "719828003",
-        "display" : "Was an autopsy performed? No"
-      },
-      {
-        "code" : "716347009",
-        "display" : "Was an autopsy performed? Yes"
-      },
-      {
-        "code" : "434661000124109",
-        "display" : "Was an autopsy performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Autopsy not done (situation)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719828003",
-  "display" : "Autopsy not done"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "719828003",
-        "display" : "Was an autopsy performed? No"
-      },
-      {
-        "code" : "716347009",
-        "display" : "Was an autopsy performed? Yes"
-      },
-      {
-        "code" : "434661000124109",
-        "display" : "Was an autopsy performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Autopsy not done (situation)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719828003"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Autopsy not done (situation)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "398166005"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "398166005",
-        "display" : "Was an histological placental examination performed? Yes"
-      },
-      {
-        "code" : "262008008",
-        "display" : "Was an histological placental examination performed? No"
-      },
-      {
-        "code" : "397943006",
-        "display" : "Was an histological placental examination  performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Performed (qualifier value)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "398166005",
-  "display" : "Performed"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "398166005",
-        "display" : "Was an histological placental examination performed? Yes"
-      },
-      {
-        "code" : "262008008",
-        "display" : "Was an histological placental examination performed? No"
-      },
-      {
-        "code" : "397943006",
-        "display" : "Was an histological placental examination  performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Performed (qualifier value)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "398166005"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Performed (qualifier value)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "44223004"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "44223004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
-      },
-      {
-        "code" : "415105001",
-        "display" : "Complications of Placenta, Cord, or Membranes: Abruptio placenta"
-      },
-      {
-        "code" : "237292005",
-        "display" : "Complications of Placenta, Cord, or Membranes: Placental insufficiency"
-      },
-      {
-        "code" : "270500004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Prolapsed cord"
-      },
-      {
-        "code" : "11612004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Chorioamnionitis"
-      },
-      {
-        "code" : "702709008",
-        "display" : "Fetal Anomaly (Specify)"
-      },
-      {
-        "code" : "277489001",
-        "display" : "Fetal Injury (Specify)"
-      },
-      {
-        "code" : "128270001",
-        "display" : "Fetal Infection (Specify)"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Premature rupture of membranes",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "44223004",
-  "display" : "Premature rupture of membranes (disorder)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "urn:oid:2.16.840.1.114222.4.5.274",
-      "version" : "20200526",
-      "concept" : [{
-        "code" : "PHC1301",
-        "display" : "Maternal Conditions/Diseases (Specify)"
-      },
-      {
-        "code" : "PHC1298",
-        "display" : "Complications of Placenta, Cord, or Membranes: Other (Specify)"
-      },
-      {
-        "code" : "PHC1299",
-        "display" : "Other Obstetrical or Pregnancy Complications (Specify)"
-      },
-      {
-        "code" : "PHC1300",
-        "display" : "Other Fetal Conditions/Disorders (Specify)"
-      }]
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "44223004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
-      },
-      {
-        "code" : "415105001",
-        "display" : "Complications of Placenta, Cord, or Membranes: Abruptio placenta"
-      },
-      {
-        "code" : "237292005",
-        "display" : "Complications of Placenta, Cord, or Membranes: Placental insufficiency"
-      },
-      {
-        "code" : "270500004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Prolapsed cord"
-      },
-      {
-        "code" : "11612004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Chorioamnionitis"
-      },
-      {
-        "code" : "702709008",
-        "display" : "Fetal Anomaly (Specify)"
-      },
-      {
-        "code" : "277489001",
-        "display" : "Fetal Injury (Specify)"
-      },
-      {
-        "code" : "128270001",
-        "display" : "Fetal Infection (Specify)"
-      }]
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "20090501",
-      "concept" : [{
-        "code" : "UNK",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Premature rupture of membranes",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "44223004"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Premature rupture of membranes",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "237292005"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "44223004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
-      },
-      {
-        "code" : "415105001",
-        "display" : "Complications of Placenta, Cord, or Membranes: Abruptio placenta"
-      },
-      {
-        "code" : "237292005",
-        "display" : "Complications of Placenta, Cord, or Membranes: Placental insufficiency"
-      },
-      {
-        "code" : "270500004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Prolapsed cord"
-      },
-      {
-        "code" : "11612004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Chorioamnionitis"
-      },
-      {
-        "code" : "702709008",
-        "display" : "Fetal Anomaly (Specify)"
-      },
-      {
-        "code" : "277489001",
-        "display" : "Fetal Injury (Specify)"
-      },
-      {
-        "code" : "128270001",
-        "display" : "Fetal Infection (Specify)"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Placental insufficiency",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "237292005",
-  "display" : "Placental insufficiency (disorder)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "urn:oid:2.16.840.1.114222.4.5.274",
-      "version" : "20200526",
-      "concept" : [{
-        "code" : "PHC1301",
-        "display" : "Maternal Conditions/Diseases (Specify)"
-      },
-      {
-        "code" : "PHC1298",
-        "display" : "Complications of Placenta, Cord, or Membranes: Other (Specify)"
-      },
-      {
-        "code" : "PHC1299",
-        "display" : "Other Obstetrical or Pregnancy Complications (Specify)"
-      },
-      {
-        "code" : "PHC1300",
-        "display" : "Other Fetal Conditions/Disorders (Specify)"
-      }]
-    },
-    {
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "44223004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Rupture of membranes prior to onset of labor"
-      },
-      {
-        "code" : "415105001",
-        "display" : "Complications of Placenta, Cord, or Membranes: Abruptio placenta"
-      },
-      {
-        "code" : "237292005",
-        "display" : "Complications of Placenta, Cord, or Membranes: Placental insufficiency"
-      },
-      {
-        "code" : "270500004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Prolapsed cord"
-      },
-      {
-        "code" : "11612004",
-        "display" : "Complications of Placenta, Cord, or Membranes: Chorioamnionitis"
-      },
-      {
-        "code" : "702709008",
-        "display" : "Fetal Anomaly (Specify)"
-      },
-      {
-        "code" : "277489001",
-        "display" : "Fetal Injury (Specify)"
-      },
-      {
-        "code" : "128270001",
-        "display" : "Fetal Infection (Specify)"
-      }]
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "20090501",
-      "concept" : [{
-        "code" : "UNK",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Placental insufficiency",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "237292005"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Placental insufficiency",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719828003"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "434681000124104",
-        "display" : "Dead at time of first assessment, no labor ongoing"
-      },
-      {
-        "code" : "434671000124102",
-        "display" : "Dead at time of first assessment, labor ongoing"
-      },
-      {
-        "code" : "434631000124100",
-        "display" : "Died during labor, after first assessment"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#719828003) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719828003",
-  "display" : "Autopsy not done"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "434681000124104",
-        "display" : "Dead at time of first assessment, no labor ongoing"
-      },
-      {
-        "code" : "434671000124102",
-        "display" : "Dead at time of first assessment, labor ongoing"
-      },
-      {
-        "code" : "434631000124100",
-        "display" : "Died during labor, after first assessment"
-      }]
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "20090501",
-      "concept" : [{
-        "code" : "UNK",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Autopsy not done (situation)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "398166005"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "434681000124104",
-        "display" : "Dead at time of first assessment, no labor ongoing"
-      },
-      {
-        "code" : "434671000124102",
-        "display" : "Dead at time of first assessment, labor ongoing"
-      },
-      {
-        "code" : "434631000124100",
-        "display" : "Died during labor, after first assessment"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#398166005) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "398166005",
-  "display" : "Performed"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "434681000124104",
-        "display" : "Dead at time of first assessment, no labor ongoing"
-      },
-      {
-        "code" : "434671000124102",
-        "display" : "Dead at time of first assessment, labor ongoing"
-      },
-      {
-        "code" : "434631000124100",
-        "display" : "Died during labor, after first assessment"
-      }]
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "20090501",
-      "concept" : [{
-        "code" : "UNK",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Performed (qualifier value)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "434631000124100"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "719828003",
-        "display" : "Was an autopsy performed? No"
-      },
-      {
-        "code" : "716347009",
-        "display" : "Was an autopsy performed? Yes"
-      },
-      {
-        "code" : "434661000124109",
-        "display" : "Was an autopsy performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#434631000124100) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "434631000124100",
-  "display" : "Fetal intrapartum death after first assessment (event)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "719828003",
-        "display" : "Was an autopsy performed? No"
-      },
-      {
-        "code" : "716347009",
-        "display" : "Was an autopsy performed? Yes"
-      },
-      {
-        "code" : "434661000124109",
-        "display" : "Was an autopsy performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Fetal intrapartum death after first assessment (event)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "398166005"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "719828003",
-        "display" : "Was an autopsy performed? No"
-      },
-      {
-        "code" : "716347009",
-        "display" : "Was an autopsy performed? Yes"
-      },
-      {
-        "code" : "434661000124109",
-        "display" : "Was an autopsy performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#398166005) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "398166005",
-  "display" : "Performed"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "719828003",
-        "display" : "Was an autopsy performed? No"
-      },
-      {
-        "code" : "716347009",
-        "display" : "Was an autopsy performed? Yes"
-      },
-      {
-        "code" : "434661000124109",
-        "display" : "Was an autopsy performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Performed (qualifier value)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "434631000124100"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "398166005",
-        "display" : "Was an histological placental examination performed? Yes"
-      },
-      {
-        "code" : "262008008",
-        "display" : "Was an histological placental examination performed? No"
-      },
-      {
-        "code" : "397943006",
-        "display" : "Was an histological placental examination  performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#434631000124100) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "434631000124100",
-  "display" : "Fetal intrapartum death after first assessment (event)"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "398166005",
-        "display" : "Was an histological placental examination performed? Yes"
-      },
-      {
-        "code" : "262008008",
-        "display" : "Was an histological placental examination performed? No"
-      },
-      {
-        "code" : "397943006",
-        "display" : "Was an histological placental examination  performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Fetal intrapartum death after first assessment (event)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719828003"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "398166005",
-        "display" : "Was an histological placental examination performed? Yes"
-      },
-      {
-        "code" : "262008008",
-        "display" : "Was an histological placental examination performed? No"
-      },
-      {
-        "code" : "397943006",
-        "display" : "Was an histological placental examination  performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://snomed.info/sct#719828003) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719828003",
-  "display" : "Autopsy not done"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/731000124108/version/20200301",
-      "concept" : [{
-        "code" : "398166005",
-        "display" : "Was an histological placental examination performed? Yes"
-      },
-      {
-        "code" : "262008008",
-        "display" : "Was an histological placental examination performed? No"
-      },
-      {
-        "code" : "397943006",
-        "display" : "Was an histological placental examination  performed? Planned"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Autopsy not done (situation)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "11687002",
-  "display" : "Gestational diabetes mellitus (disorder)"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Gestational diabetes mellitus",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "38341003",
-  "display" : "Hypertensive disorder, systemic arterial (disorder)"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "High blood pressure",
   "severity" : null,
   "error" : ""
 }
@@ -6887,83 +6668,6 @@ v: {
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Patient status determination, deceased and buried (finding)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "719828003",
-  "display" : "Autopsy not done"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Autopsy not done (situation)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "48782003",
-  "display" : "Delivery normal (finding)"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Delivery normal",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "260413007",
-  "display" : "None"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "None",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "44223004",
-  "display" : "Premature rupture of membranes (disorder)"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Premature rupture of membranes",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "237292005",
-  "display" : "Placental insufficiency (disorder)"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Placental insufficiency",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "398166005",
-  "display" : "Performed"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Performed (qualifier value)",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://snomed.info/sct",
-  "code" : "434631000124100",
-  "display" : "Fetal intrapartum death after first assessment (event)"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Fetal intrapartum death after first assessment (event)",
   "severity" : null,
   "error" : ""
 }

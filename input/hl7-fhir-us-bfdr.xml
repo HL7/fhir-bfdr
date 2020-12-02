@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="820"/>
-        <lastUpdated value="2020-12-01T22:13:03.928+00:00"/>
-        <source value="#Wfk21IkeBkiq3gKA"/>
+        <versionId value="831"/>
+        <lastUpdated value="2020-12-02T00:33:14.781+00:00"/>
+        <source value="#qAlexhHWD2tvDGX8"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -37,14 +37,14 @@
         <version value="3.1.1"/>
     </dependsOn>
     <dependsOn>
-        <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
-        <packageId value="us.cdc.phinvads"/>
-        <version value="0.7.0"/>
-    </dependsOn>
-    <dependsOn>
         <uri value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7.fhir.us.vr-common-library"/>
         <packageId value="hl7.fhir.us.vr-common-library"/>
         <version value="current"/>
+    </dependsOn>
+    <dependsOn>
+        <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
+        <packageId value="us.cdc.phinvads"/>
+        <version value="0.7.0"/>
     </dependsOn>
     <dependsOn>
         <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
@@ -926,7 +926,7 @@
                 <display value="Observation - Bridged Race"/>
             </reference>
             <name value="Observation - Bridged Race"/>
-            <description value="This profile represents a single race code assigned to the person. In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race from the 'bridged race' codes. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.&#xA;&#xA;Race bridging refers to making data collected using one set of race categories consistent with data collected using a different set of race categories, to permit estimation and comparison of race-specific statistics at a point in time or over time. More specifically, race bridging is a method used to make multiple-race and single-race data collection systems sufficiently comparable to permit estimation and analysis of race-specific statistics. The National Center for Health Statistics releases bridged-race population estimates of the resident population of the United States for use in calculating vital rates.&#xA;&#xA;With a probabilistic rule, an individual is randomly assigned to one and only one of the possible racial categories according to a set of probabilities. For example, a probabilistic rule might assign an AIAN/White multiple-race individual to either the AIAN category or the White category with probabilities of 0.5 and 0.5. Thus, an AIAN/White individual would have a 50 percent chance of being allocated to AIAN and a 50 percent chance of being allocated to White. The result would be that about 50 percent of the AIAN/White individuals would be assigned to the AIAN category and about 50 percent would be assigned to the White category. [https://www.cdc.gov/nchs/data/series/sr_02/sr02_135.pdf](https://www.cdc.gov/nchs/data/series/sr_02/sr02_135.pdf)"/>
+            <description value="This profile represents a single race code assigned to the person."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -1880,15 +1880,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/ValueSet-messageheader-event-bfdr"/>
-                <display value="ValueSet - MessageHeader Event Birth and Fetal Death"/>
-            </reference>
-            <name value="ValueSet - MessageHeader Event Birth and Fetal Death"/>
-            <description value="This value set contains codes that identify the event that the message represents."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Composition/composition-void-fetal-death-not-named"/>
                 <display value="Void fetal death report Document"/>
             </reference>
@@ -1917,6 +1908,66 @@
             <name value="CapabilityStatement - Birth and Fetal Death Reporting"/>
             <description value="This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn"/></reference>
+            <name value="Tabulated Ethnicity Example (Jada Ann Quinn)"/>
+            <description value="Example of Tabulated Ethnicity profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-tabulated-ethnicity"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-bridged-race-jada-ann-quinn"/></reference>
+            <name value="Bridged Race Example (Jada Ann Quinn)"/>
+            <description value="Example of Bridged Race profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-coded-cause-of-fetal-death-not-named"/>
+                <display value="Coded Cause of Fetal Death"/>
+            </reference>
+            <name value="Composition Coded Cause of Fetal Death Example (Not Named)"/>
+            <description value="Example of Composition Coded Cause of Fetal Death profile (Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-nchs"/>
+                <display value="National Center for Health Statistics (NCHS)"/>
+            </reference>
+            <name value="US Core Organization Example (National Center for Health Statistics (NCHS))"/>
+            <description value="Example of US Core Organization profile (National Center for Health Statistics (NCHS))"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/organization-jurisdictional-vital-records-office"/>
+                <display value="Jurisdictional Vital Records Office"/>
+            </reference>
+            <name value="US Core Organization Example (Jurisdictional Vital Records Office)"/>
+            <description value="Example of US Core Organization profile (Jurisdictional Vital Records Office)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-coded-race-and-ethnicity-not-named"/>
+                <display value="Coded Race and Ethnicity"/>
+            </reference>
+            <name value="Coded Race and Ethnicity Example (Not Named)"/>
+            <description value="Example of Coded Race and Ethnicity profile (Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
+            <groupingId value="other-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

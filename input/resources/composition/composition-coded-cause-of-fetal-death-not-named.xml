@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="composition-coded-cause-of-fetal-death-not-named"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-12-02T00:28:59.334+00:00"/>
+        <source value="#G9K4SCc1KxKX9P84"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-id">
+        <valueIdentifier>
+            <value value="9876"/>
+        </valueIdentifier>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number">
+        <valueIdentifier>
+            <value value="11111-11111"/>
+        </valueIdentifier>
+    </extension>
+    <identifier>
+        <value value="c03eab8c-11e8-4d0c-ad2a-b385395e27db"/>
+    </identifier>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="86804-2"/>
+            <display value="Cause of death classification and related information Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/patient-decedent-fetus-not-named"/>
+        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+    </subject>
+    <date value="2019-01-09"/>
+    <author>
+        <reference value="Organization/organization-nhcs"/>
+        <display value="NCHS"/>
+    </author>
+    <title value="Coded Cause of Fetal Death"/>
+    <section>
+        <title value="Coded Cause of Fetal Death"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="86804-2"/>
+                <display value="Cause of death classification and related information Document"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Condition/condition-coded-initiating-fetal-death-cause-or-condition"/>
+            <display value="Condition - Coded Initiating Fetal Death Cause or Condition (Not Named)"/>
+        </entry>
+        <entry>
+            <reference value="Condition/condition-coded-other-fetal-death-cause-or-condition-not-named"/>
+            <display value="Condition - Coded Other Fetal Death Cause or Condition (Not Named)"/>
+        </entry>
+    </section>
+</Composition>
