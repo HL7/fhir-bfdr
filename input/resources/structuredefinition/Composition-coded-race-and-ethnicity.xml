@@ -103,7 +103,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
         </element>
-        <element id="Composition.section">
+        <!--<element id="Composition.section">
             <path value="Composition.section"/>
             <slicing>
                 <discriminator>
@@ -112,17 +112,16 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-        </element>
-        <element id="Composition.section:motherCodedRaceEthnicity">
+        </element>-->
+        <element id="Composition.section">
             <path value="Composition.section"/>
-            <sliceName value="motherCodedRaceEthnicity"/>
-            <short value="Mother coded race and ethnicity section."/>
-            <definition value="This section contains the tabulated and post-edited coded race and ethnicity details for the mother."/>
+            <short value="Coded race and ethnicity section."/>
+            <definition value="This section contains the tabulated and post-edited coded race and ethnicity details for the mother or father."/>
             <min value="1"/>
             <max value="2"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:motherCodedRaceEthnicity.code">
+        <element id="Composition.section.code">
             <path value="Composition.section.code"/>
             <short value="Race and ethnicity information Document"/>
             <patternCodeableConcept>
@@ -132,10 +131,10 @@
                 </coding>
             </patternCodeableConcept>
         </element>
-        <element id="Composition.section:motherCodedRaceEthnicity.focus">
+        <element id="Composition.section.focus">
             <path value="Composition.section.focus"/>
-            <short value="The focus of this section is the mother"/>
-            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <short value="The focus of this section is the mother or father"/>
+            <definition value="The subject of the composition as a whole is the newborn baby or decedent fetus. The focus of this section in the composition is the mother or father."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
@@ -143,7 +142,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
         </element>
-        <element id="Composition.section:motherCodedRaceEthnicity.entry">
+        <element id="Composition.section.entry">
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
@@ -153,14 +152,14 @@
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
-            <short value="Entries that are contained in the Mother Coded Race and Ethnicity section"/>
-            <definition value="Entries that are contained in the Mother Coded Race and Ethnicity section"/>
+            <short value="Entries that are contained in the Coded Race and Ethnicity section"/>
+            <definition value="Entries that are contained in the Coded Race and Ethnicity section"/>
         </element>
-        <element id="Composition.section:motherCodedRaceEthnicity.entry:bridgedRace">
+        <element id="Composition.section.entry:bridgedRace">
             <path value="Composition.section.entry"/>
             <sliceName value="bridgedRace"/>
-            <short value="Mother's bridged race"/>
-            <definition value="The mother's bridged race"/>
+            <short value="Bridged race"/>
+            <definition value="The mother or father's bridged race"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -169,11 +168,11 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:motherCodedRaceEthnicity.entry:tabulatedEthnicity">
+        <element id="Composition.section.entry:tabulatedEthnicity">
             <path value="Composition.section.entry"/>
             <sliceName value="tabulatedEthnicity"/>
-            <short value="Mother's tabulated ethnicity"/>
-            <definition value="The mother's tabulated ethnicity"/>
+            <short value="Tabulated ethnicity"/>
+            <definition value="The mother or father's tabulated ethnicity"/>
             <min value="1"/>
             <max value="1"/>
             <type>
