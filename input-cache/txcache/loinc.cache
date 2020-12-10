@@ -501,8 +501,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:0590f5aa-9fab-443b-8bed-a8702460037e",
-    "timestamp" : "2020-12-01T22:55:54.535Z",
+    "identifier" : "urn:uuid:2d6bb0de-44fa-4ef2-a2a7-d4806af0475e",
+    "timestamp" : "2020-12-10T04:19:19.146Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -602,8 +602,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:3a3417c7-1eb5-4bbf-a147-d6e5c4dad92b",
-    "timestamp" : "2020-12-01T22:55:54.800Z",
+    "identifier" : "urn:uuid:ec48d0b1-6ef6-41d3-8dc8-6646449169b2",
+    "timestamp" : "2020-12-10T04:19:19.412Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -5638,8 +5638,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:b78a9380-7e7c-409d-bdb7-99188fb6ecad",
-    "timestamp" : "2020-12-01T22:55:55.347Z",
+    "identifier" : "urn:uuid:5750805f-92a4-4c1c-946b-aaa802aafc10",
+    "timestamp" : "2020-12-10T04:19:19.990Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -5691,8 +5691,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:30debb33-2eaa-4c75-b348-9d568d010792",
-    "timestamp" : "2020-12-01T22:55:55.941Z",
+    "identifier" : "urn:uuid:9985a900-6bb1-4f58-a4df-fcd440f68233",
+    "timestamp" : "2020-12-10T04:19:20.584Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -10730,6 +10730,204 @@ v: {
 v: {
   "display" : "Provider supplied mother's live birth report Document",
   "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "80978-0",
+  "display" : "Tabulated ethnicity [CDC]"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Tabulated ethnicity [CDC]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "80906-1",
+  "display" : "Bridged race [CDC]"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Bridged race [CDC]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "86804-2"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Cause of death classification and related information Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "86804-2",
+  "display" : "Cause of death classification and related information Document"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Cause of death classification and related information Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "86804-2",
+  "display" : "Cause of death classification and related information Document"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Cause of death classification and related information Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "86805-9"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Race and ethnicity information Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "86805-9",
+  "display" : "Race and ethnicity information Document"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Race and ethnicity information Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "86805-9",
+  "display" : "Race and ethnicity information Document"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Race and ethnicity information Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "64794-1",
+        "display" : "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+      },
+      {
+        "code" : "87298-6",
+        "display" : "Cigarettes smoked per day by Mother--1st trimester"
+      },
+      {
+        "code" : "87299-4",
+        "display" : "Cigarettes smoked per day by Mother--2nd trimester"
+      },
+      {
+        "code" : "64795-8",
+        "display" : "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:44c6f462-0383-4103-beb5-9a19b390ec63",
+    "timestamp" : "2020-12-10T04:25:21.348Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org|2.68"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "64794-1",
+      "display" : "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "87298-6",
+      "display" : "Cigarettes smoked per day by Mother--1st trimester"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "87299-4",
+      "display" : "Cigarettes smoked per day by Mother--2nd trimester"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "64795-8",
+      "display" : "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
+    }]
+  }
+},
   "error" : ""
 }
 -------------------------------------------------------------------------------------

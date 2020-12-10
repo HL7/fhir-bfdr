@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide
-    xmlns="http://hl7.org/fhir">
+<ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="836"/>
-        <lastUpdated value="2020-12-02T02:27:22.984+00:00"/>
-        <source value="#8yjoTRRd4ju5or8G"/>
+        <versionId value="845"/>
+        <lastUpdated value="2020-12-10T00:33:52.843+00:00"/>
+        <source value="#zGGwM1LhB7IyM236"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -20,7 +19,8 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional Vital Records Offices and national health statistics agencies. Data associated with the mother of the baby or fetus may be communicated independently from that associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, &quot;mother&quot; always refers to the woman who delivered the infant. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. &#xA;&#xA;### Scope&#xA;This implementation guide (IG) defines a series of FHIR profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, jurisdictions, and the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS).&#xA;&#xA;This guide is compliant with FHIR Release 4.&#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein. &#xA;&#xA;### Relationship to Other Standards&#xA;This BFDR implementation guide standard complements other vital records standards to support the expansion of information flow to and from NCHS. It is informed by:&#xA;* [HL7, Version 2.6 Implementation Guide: Vital Records Birth and Fetal Death Reporting, Release 1,STU Release 2.1 - US Realm (April 2020)](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=320)&#xA;* [HL7, CDA® R2 Implementation Guide: Birth and Fetal Death Reporting, Release 1, STU Release 2 - US Realm (June 2019)](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=387)&#xA;* [HL7, Vital Records Mortality and Morbidity Reporting (VRDR) FHIR Implementation Guide 1.0.0,  STU 1 (October 2020)](http://hl7.org/fhir/us/vrdr/)&#xA;* [IHE , Quality, Research and Public Health Technical Framework Supplement - Birth and Fetal Death Reporting-Enhanced (BFDR-E) (September 2018)](https://www.ihe.net/uploadedFiles/Documents/QRPH/IHE_QRPH_Suppl_BFDR-E.pdf)&#xA;* [ONC, United States Core Data for Interoperability (USCDI) (April 2020)](https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi)&#xA;&#xA;### Audience&#xA;This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The implementation guide is informative to health care provider organizations, jurisdictional Vital Records Offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders.&#xA;&#xA;### Background &#xA;This FHIR implementation guide builds on previous electronic data standards for transmitting vital records of death, birth, and fetal death. The goal has been to transmit reliable and relevant clinical information to jurisdictional Vital Records Offices and to transfer information from vital records offices to the national statistics agency. &#xA;Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, and, in 2018, with Release 3.&#xA;&#xA;This is the first FHIR BFDR standard."/>
+    <description
+        value="Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional Vital Records Offices and national health statistics agencies. Data associated with the mother of the baby or fetus may be communicated independently from that associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, &quot;mother&quot; always refers to the woman who delivered the infant. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. &#xA;&#xA;### Scope&#xA;This implementation guide (IG) defines a series of FHIR profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, jurisdictions, and the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS).&#xA;&#xA;This guide is compliant with FHIR Release 4.&#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein. &#xA;&#xA;### Relationship to Other Standards&#xA;This BFDR implementation guide standard complements other vital records standards to support the expansion of information flow to and from NCHS. It is informed by:&#xA;* [HL7, Version 2.6 Implementation Guide: Vital Records Birth and Fetal Death Reporting, Release 1,STU Release 2.1 - US Realm (April 2020)](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=320)&#xA;* [HL7, CDA® R2 Implementation Guide: Birth and Fetal Death Reporting, Release 1, STU Release 2 - US Realm (June 2019)](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=387)&#xA;* [HL7, Vital Records Mortality and Morbidity Reporting (VRDR) FHIR Implementation Guide 1.0.0,  STU 1 (October 2020)](http://hl7.org/fhir/us/vrdr/)&#xA;* [IHE , Quality, Research and Public Health Technical Framework Supplement - Birth and Fetal Death Reporting-Enhanced (BFDR-E) (September 2018)](https://www.ihe.net/uploadedFiles/Documents/QRPH/IHE_QRPH_Suppl_BFDR-E.pdf)&#xA;* [ONC, United States Core Data for Interoperability (USCDI) (April 2020)](https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi)&#xA;&#xA;### Audience&#xA;This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The implementation guide is informative to health care provider organizations, jurisdictional Vital Records Offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders.&#xA;&#xA;### Background &#xA;This FHIR implementation guide builds on previous electronic data standards for transmitting vital records of death, birth, and fetal death. The goal has been to transmit reliable and relevant clinical information to jurisdictional Vital Records Offices and to transfer information from vital records offices to the national statistics agency. &#xA;Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, and, in 2018, with Release 3.&#xA;&#xA;This is the first FHIR BFDR standard."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -154,7 +154,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/bundle-jurisdiction-fetal-death-not-named"/></reference>
+                <reference value="Bundle/bundle-jurisdiction-fetal-death-not-named"/>
+            </reference>
             <name value="Bundle - Jurisdiction Fetal Report (Fetus Not Named)"/>
             <description value="Example of a Document Bundle containing composition-jurisdiction-fetal-death profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -174,7 +175,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/bundle-provider-facility-fetal-death-not-named"/></reference>
+                <reference value="Bundle/bundle-provider-facility-fetal-death-not-named"/>
+            </reference>
             <name value="Bundle - Provider Facility Fetal Death Report (Fetus Not Named)"/>
             <description value="Example of a Document Bundle containing composition-provider-facility-fetal-death profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -183,7 +185,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/bundle-provider-facility-live-birth-babyg-quinn"/></reference>
+                <reference value="Bundle/bundle-provider-facility-live-birth-babyg-quinn"/>
+            </reference>
             <name value="Bundle - Provider Facility Live Birth Report (Baby G Quinn)"/>
             <description value="Example of a Document Bundle containing composition-provider-facility-live-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
@@ -309,7 +312,8 @@
                 <display value="Composition - Provider Fetal Death Report"/>
             </reference>
             <name value="Composition - Provider Fetal Death Report"/>
-            <description value="This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office.&#xA;&#xA;For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the fetus is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdictional Vital Records Office at the same time (using this document) or separately (using the Provider Supplied Mother's Fetal Death Reporting Document and the Provider Supplied Facility Fetal Death Reporting Document).&#xA;&#xA;The data requirements for provider supplied fetal death information are based on the U.S. Standard Report of Fetal Death, the 2004 US Standard Facility Worksheet for the Report of Fetal Death, and the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.&#xA;&#xA;The 1992 Revision of the Model State Vital Statistics Act and Regulations recommends the following definition of fetal death:&#xA;&gt; &quot;Fetal death&quot; means death prior to the complete expulsion or extraction from its mother of a product of human conception, irrespective of the duration of pregnancy and which is not an induced termination of pregnancy. The death is indicated by the fact that after such expulsion or extraction, the fetus does not breathe or show any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of voluntary muscles. Heartbeats are to be distinguished from transient cardiac contractions; respirations are to be distinguished from fleeting respiratory efforts or gasps."/>
+            <description
+                value="This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office.&#xA;&#xA;For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the fetus is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdictional Vital Records Office at the same time (using this document) or separately (using the Provider Supplied Mother's Fetal Death Reporting Document and the Provider Supplied Facility Fetal Death Reporting Document).&#xA;&#xA;The data requirements for provider supplied fetal death information are based on the U.S. Standard Report of Fetal Death, the 2004 US Standard Facility Worksheet for the Report of Fetal Death, and the 2004 US Standard Patient's Worksheet for the Report of Fetal Death. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.&#xA;&#xA;The 1992 Revision of the Model State Vital Statistics Act and Regulations recommends the following definition of fetal death:&#xA;&gt; &quot;Fetal death&quot; means death prior to the complete expulsion or extraction from its mother of a product of human conception, irrespective of the duration of pregnancy and which is not an induced termination of pregnancy. The death is indicated by the fact that after such expulsion or extraction, the fetus does not breathe or show any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of voluntary muscles. Heartbeats are to be distinguished from transient cardiac contractions; respirations are to be distinguished from fleeting respiratory efforts or gasps."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-compositions-ehr-jvr"/>
         </resource>
@@ -319,7 +323,8 @@
                 <display value="Composition - Provider Live Birth Report"/>
             </reference>
             <name value="Composition - Provider Live Birth Report"/>
-            <description value="This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdicational Vital Records Office.&#xA;&#xA;This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdicational Vital Records Office. For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdiction vital records office at the same time (using this profile) or separately (using the [Composition-provider-mothers-live-birth-report](StructureDefinition-Composition-provider-mothers-live-birth-report.html) and [Composition-provider-facility-live-birth-report](StructureDefinition-Composition-provider-facility-live-birth-report.html)).&#xA;&#xA;The data requirements for provider supplied live birth information are based on the Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth, the 2016 US Standard Facility Worksheet for the Live Birth Certificate, the 2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births, and the 2016 US Standard Mothers Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
+            <description
+                value="This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdicational Vital Records Office.&#xA;&#xA;This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdicational Vital Records Office. For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility. The information from these two sources may be communicated to the jurisdiction vital records office at the same time (using this profile) or separately (using the [Composition-provider-mothers-live-birth-report](StructureDefinition-Composition-provider-mothers-live-birth-report.html) and [Composition-provider-facility-live-birth-report](StructureDefinition-Composition-provider-facility-live-birth-report.html)).&#xA;&#xA;The data requirements for provider supplied live birth information are based on the Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth, the 2016 US Standard Facility Worksheet for the Live Birth Certificate, the 2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births, and the 2016 US Standard Mothers Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-ehr-jvr"/>
         </resource>
@@ -375,7 +380,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-abnormal-condition-of-newborn-babyg-quinn"/></reference>
+                <reference value="Condition/condition-abnormal-condition-of-newborn-babyg-quinn"/>
+            </reference>
             <name value="Condition - Abnormal Condition of Newborn (Baby G Quinn)"/>
             <description value="Example of Condition-abnormal-condition-of-newborn (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
@@ -383,7 +389,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-coded-initiating-fetal-death-cause-or-condition"/></reference>
+                <reference value="Condition/condition-coded-initiating-fetal-death-cause-or-condition"/>
+            </reference>
             <name value="Condition - Coded Initiating Cause of Fetal Death"/>
             <description value="Example of Condition-coded-initiating-fetal-death-cause-or-condition profile."/>
             <exampleBoolean value="false"/>
@@ -402,7 +409,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-coded-other-fetal-death-cause-or-condition-not-named"/></reference>
+                <reference value="Condition/condition-coded-other-fetal-death-cause-or-condition-not-named"/>
+            </reference>
             <name value="Condition - Coded Other Cause of Fetal Death"/>
             <description value="Example of Condition-coded-other-fetal-death-cause-or-condition profile"/>
             <exampleBoolean value="false"/>
@@ -431,7 +439,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2"/></reference>
+                <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2"/>
+            </reference>
             <name value="Condition - Congenital Anomaly of Newborn (Baby G Quinn)"/>
             <description value="Example of Condition-congenital-anomaly-of-newborn profile (Baby G Quinn): Anomaly of chromosome pair 21 (disorder) with Karyotype determination pending"/>
             <exampleBoolean value="false"/>
@@ -440,7 +449,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"/></reference>
+                <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"/>
+            </reference>
             <name value="Condition - Congenital Anomaly of Newborn (BabyG Quinn)"/>
             <description value="Example of Condition-congenital-anomaly-of-newborn profile (Babyg Quinn)"/>
             <exampleBoolean value="false"/>
@@ -459,7 +469,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-fetal-death-cause-or-condition-not-named"/></reference>
+                <reference value="Condition/condition-fetal-death-cause-or-condition-not-named"/>
+            </reference>
             <name value="Condition - Fetal Death Cause or Condition (Fetus Not Named)"/>
             <description value="Example of Condition-fetal-death-cause-or-condition profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -478,7 +489,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-fetal-death-other-significant-cause-not-named"/></reference>
+                <reference value="Condition/condition-fetal-death-other-significant-cause-not-named"/>
+            </reference>
             <name value="Condition - Fetal Death Other Cause or Condition (Fetus Not Named)"/>
             <description value="Example of Condition-fetal-death-other-cause profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -487,7 +499,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-fetal-presentation-babyg-quinn"/></reference>
+                <reference value="Condition/condition-fetal-presentation-babyg-quinn"/>
+            </reference>
             <name value="Condition - Fetal Presentation (Baby G Quinn)"/>
             <description value="Example of condition-fetal-presentation (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
@@ -496,7 +509,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-fetal-presentation-not-named"/></reference>
+                <reference value="Condition/condition-fetal-presentation-not-named"/>
+            </reference>
             <name value="Condition - Fetal Presentation (Fetus Not Named)"/>
             <description value="Example of condition-fetal-presentation profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -525,7 +539,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"/></reference>
+                <reference value="Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"/>
+            </reference>
             <name value="Condition - Infection Present During Pregnancy (Jada Ann Quinn)"/>
             <description value="Example of Condition-infection-present-during-pregnancy profile (Jada Ann Quinn"/>
             <exampleBoolean value="true"/>
@@ -543,7 +558,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-maternal-morbidity-carmen-teresa-lee"/></reference>
+                <reference value="Condition/condition-maternal-morbidity-carmen-teresa-lee"/>
+            </reference>
             <name value="Condition - Maternal Morbidity (Carmen Teresa Lee)"/>
             <description value="Example of Cndition-maternal-morbidity profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -552,7 +568,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn"/></reference>
+                <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn"/>
+            </reference>
             <name value="Condition - Maternal Morbidity (Jada Ann Quinn)"/>
             <description value="Example of Condition-maternal-morbidity (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -571,7 +588,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"/></reference>
+                <reference value="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"/>
+            </reference>
             <name value="Coverage - Principal Payer for Delivery (Jada Ann Quinn)"/>
             <description value="Example of coverage-principal-payer-for-delivery profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -580,7 +598,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-birth-weight-babyg-quinn"/></reference>
+                <reference value="Observation/observation-edit-birth-weight-babyg-quinn"/>
+            </reference>
             <name value="Edit Flag - Birth Weight"/>
             <description value="Example of Observation-edit-flag-birthweight profile"/>
             <exampleBoolean value="false"/>
@@ -589,7 +608,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-estimate-of-gestation-example"/></reference>
+                <reference value="Observation/observation-edit-flag-estimate-of-gestation-example"/>
+            </reference>
             <name value="Edit Flag - Estimate of Gestation"/>
             <description value="Example of Observation-edit-flag-estimate-of-gestation profile"/>
             <exampleBoolean value="false"/>
@@ -598,7 +618,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-fathers-date-of-birth-example"/></reference>
+                <reference value="Observation/observation-edit-flag-fathers-date-of-birth-example"/>
+            </reference>
             <name value="Edit Flag - Father's Birthdate"/>
             <description value="Example of Observation-edit-flag-fathers-date-of-birth profile"/>
             <exampleBoolean value="false"/>
@@ -607,7 +628,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-fathers-education-example"/></reference>
+                <reference value="Observation/observation-edit-flag-fathers-education-example"/>
+            </reference>
             <name value="Edit Flag - Father's Education"/>
             <description value="Example of Observation-edit-flag-fathers-education profile"/>
             <exampleBoolean value="false"/>
@@ -616,7 +638,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-mothers-date-of-birth-example"/></reference>
+                <reference value="Observation/observation-edit-flag-mothers-date-of-birth-example"/>
+            </reference>
             <name value="Edit Flag - Mother's Birthdate"/>
             <description value="Example of Observation-edit-flag-mothers-date-of-birth profile"/>
             <exampleBoolean value="false"/>
@@ -625,7 +648,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-mothers-delivery-weight-example"/></reference>
+                <reference value="Observation/observation-edit-flag-mothers-delivery-weight-example"/>
+            </reference>
             <name value="Edit Flag - Mother's Delivery Weight"/>
             <description value="Example of Observation-edit-flag-mothers-delivery-weight profile"/>
             <exampleBoolean value="false"/>
@@ -634,7 +658,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-mothers-education-example"/></reference>
+                <reference value="Observation/observation-edit-flag-mothers-education-example"/>
+            </reference>
             <name value="Edit Flag - Mother's Education"/>
             <description value="Example of Observation-edit-flag-mothers-education profile"/>
             <exampleBoolean value="false"/>
@@ -643,7 +668,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-mothers-height-example"/></reference>
+                <reference value="Observation/observation-edit-flag-mothers-height-example"/>
+            </reference>
             <name value="Edit Flag - Mother's Height"/>
             <description value="Example of Observation-edit-flag-mothers-height profile"/>
             <exampleBoolean value="false"/>
@@ -652,7 +678,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-mothers-prepregnancy-weight-example"/></reference>
+                <reference value="Observation/observation-edit-flag-mothers-prepregnancy-weight-example"/>
+            </reference>
             <name value="Edit Flag - Mother's Prepregnancy Weight"/>
             <description value="Example of Observation-edit-flag-mothers-prepregnancy-weight profile"/>
             <exampleBoolean value="false"/>
@@ -661,7 +688,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-number-prenatal-care-visits-example"/></reference>
+                <reference value="Observation/observation-edit-flag-number-prenatal-care-visits-example"/>
+            </reference>
             <name value="Edit Flag - Number Prenatal Care Visits"/>
             <description value="Example of Observation-edit-flag-number-prenatal-care-visits profile"/>
             <exampleBoolean value="false"/>
@@ -670,7 +698,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-number-previous-cesareans-example"/></reference>
+                <reference value="Observation/observation-edit-flag-number-previous-cesareans-example"/>
+            </reference>
             <name value="Edit Flag - Number Previous Cesarians"/>
             <description value="Example of Observation-edit-flag-number-previous-cesareans profile"/>
             <exampleBoolean value="false"/>
@@ -679,7 +708,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-edit-flag-plurality-example"/></reference>
+                <reference value="Observation/observation-edit-flag-plurality-example"/>
+            </reference>
             <name value="Edit Flag - Plurality"/>
             <description value="Example of Observation-edit-flag-plurality example"/>
             <exampleBoolean value="false"/>
@@ -708,7 +738,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Encounter/encounter-maternity-carmen-teresa-lee"/></reference>
+                <reference value="Encounter/encounter-maternity-carmen-teresa-lee"/>
+            </reference>
             <name value="Encounter - Maternity (Carmen Teresa Lee)"/>
             <description value="Example of Encounter-maternity profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -717,7 +748,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Encounter/encounter-maternity-jada-ann-quinn"/></reference>
+                <reference value="Encounter/encounter-maternity-jada-ann-quinn"/>
+            </reference>
             <name value="Encounter - Maternity (Jada Ann Quinn)"/>
             <description value="Example of Encounter-maternity profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -726,7 +758,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Encounter/encounter-birth-babyg-quinn"/></reference>
+                <reference value="Encounter/encounter-birth-babyg-quinn"/>
+            </reference>
             <name value="Encounter-birth (Baby G Quinn)"/>
             <description value="Example of Encounter-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
@@ -845,7 +878,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Mother Married During Pregnancy (Jada Ann Quinn)"/>
             <description value="Example of Observation-mother-married-during-pregnancy (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -854,7 +888,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-paternity-acknowledgement-signed-james-quinn"/></reference>
+                <reference value="Observation/observation-paternity-acknowledgement-signed-james-quinn"/>
+            </reference>
             <name value="Observation - Paternity Acknowledgement Signed (James Quinn)"/>
             <description value="Example of observation-paternity-acknowledgement-signed profile (James Quinn)"/>
             <exampleBoolean value="false"/>
@@ -863,7 +898,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-apgar-score-babyg-quinn-1-min"/></reference>
+                <reference value="Observation/observation-apgar-score-babyg-quinn-1-min"/>
+            </reference>
             <name value="Observation - APGAR Score (BabyG Quinn: 1 min)"/>
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 1 min)"/>
             <exampleBoolean value="true"/>
@@ -871,7 +907,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-apgar-score-babyg-quinn-5-min"/></reference>
+                <reference value="Observation/observation-apgar-score-babyg-quinn-5-min"/>
+            </reference>
             <name value="Observation - APGAR Score (BabyG Quinn: 5 min)"/>
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 5 min)"/>
             <exampleBoolean value="true"/>
@@ -879,7 +916,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-autopsy-histological-exam-results-used-not-named"/></reference>
+                <reference value="Observation/observation-autopsy-histological-exam-results-used-not-named"/>
+            </reference>
             <name value="Observation - Autopsy or Histological Exam Results Used"/>
             <description value="Example of Observation-autopsy-histological-exam-results-used profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -888,7 +926,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-autopsy-performed-not-named"/></reference>
+                <reference value="Observation/observation-autopsy-performed-not-named"/>
+            </reference>
             <name value="Observation - Autopsy Performed (Fetus Not Named)"/>
             <description value="Example of Observation-autopsy-performed profile (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
@@ -906,7 +945,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-birth-weight-babyg-quinn"/></reference>
+                <reference value="Observation/observation-birth-weight-babyg-quinn"/>
+            </reference>
             <name value="Observation - Birth Weight (Baby G Quinn)"/>
             <description value="Example of observation-birth-weight profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
@@ -914,7 +954,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-birth-weight-not-named"/></reference>
+                <reference value="Observation/observation-birth-weight-not-named"/>
+            </reference>
             <name value="Observation - Birth Weight (Fetus Not Named)"/>
             <description value="Example of Observation-birth-weight (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
@@ -942,7 +983,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-2"/></reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-2"/>
+            </reference>
             <name value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Antibiotics received during labor)"/>
             <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Antibiotics received during labor)"/>
             <exampleBoolean value="false"/>
@@ -951,7 +993,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-1"/></reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-1"/>
+            </reference>
             <name value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Chorioamnionitis)"/>
             <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Chorioamnionitis)"/>
             <exampleBoolean value="false"/>
@@ -960,7 +1003,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/></reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/>
+            </reference>
             <name value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Epidural or spinal anesthesia)"/>
             <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Epidural or spinal anesthesia)"/>
             <exampleBoolean value="false"/>
@@ -969,7 +1013,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/></reference>
+                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/>
+            </reference>
             <name value="Observation - Characteristic of Labor and Delivery (Baby G Quinn: Induction of labor)"/>
             <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Induction of labor)"/>
             <exampleBoolean value="false"/>
@@ -988,7 +1033,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Cigarette Smoking Before During Pregancy (3 months prior: Carmen Teresa Lee)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 month prior: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -997,7 +1043,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Cigarette Smoking Before During Pregancy (first 3 months:Carmen Teresa Lee)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -1006,7 +1053,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Cigarette Smoking Before During Pregancy (last 3 months: Carmen Teresa Lee)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -1015,7 +1063,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Cigarette Smoking Before During Pregancy (second 3 months: Carmen Teresa Lee)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -1024,7 +1073,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Cigarette Smoking Before/During Pregnancy (3 months prior: Jada Ann Quinn)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 months prior: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1033,7 +1083,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Cigarette Smoking Before/During Pregnancy (first 3 months: Jada Ann Quinn)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1042,7 +1093,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Cigarette Smoking Before/During Pregnancy (last 3 months: Jada Ann Quinn)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1051,7 +1103,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Cigarette Smoking Before/During Pregnancy (second 3 months: Jada Ann Quinn)"/>
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1070,7 +1123,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"/>
             <description value="Example of Observation-date-of-first-prenatal-care-visit profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1078,7 +1132,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Date of First Prenatal Care Visit (Jada Ann Quinn)"/>
             <description value="Example of Observation-date-of-first-prenatal-care-visit (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1096,7 +1151,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-date-of-last-live-birth-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-date-of-last-live-birth-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Date of Last Live Birth (Carmen Teresa Lee)"/>
             <description value="Example of Observation-date-of-last-live-birth profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -1105,7 +1161,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-date-of-last-live-birth-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-date-of-last-live-birth-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Date of Last Live Birth (Jada Ann Quinn)"/>
             <description value="Example of observation-date-of-last-live-birth profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1124,7 +1181,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Date of Last Other Pregnancy Outcome (Jada Ann Quinn)"/>
             <description value="Example of Observation-date-of-last-other-pregnancy-outcome (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1144,7 +1202,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
-                <display value="Observation - Edit Flag Estimate of Gestation"/>
+                <display value="ObservationEditFlagEstimateOfGestation"/>
             </reference>
             <name value="Observation - Edit Flag Estimate of Gestation"/>
             <description value="This profile indicates whether the original estimate of gestation data provided passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
@@ -1253,7 +1311,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-gestational-age-at-delivery-babyg-quinn"/></reference>
+                <reference value="Observation/observation-gestational-age-at-delivery-babyg-quinn"/>
+            </reference>
             <name value="Observation - Gestational Age at Delivery (Baby G Quinn)"/>
             <description value="Example of  profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1261,7 +1320,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-gestational-age-at-delivery-not-named"/></reference>
+                <reference value="Observation/observation-gestational-age-at-delivery-not-named"/>
+            </reference>
             <name value="Observation - Gestational Age at Delivery (Fetus Not Named)"/>
             <description value="Example of Observation-gestational-age-at-delivery profile (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
@@ -1279,7 +1339,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-histological-placental-exam-performed-not-named"/></reference>
+                <reference value="Observation/observation-histological-placental-exam-performed-not-named"/>
+            </reference>
             <name value="Observation - Histological Placental Exam Performed (Fetus Not Named)"/>
             <description value="Example of Observation-histological-placental-exam-performed profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -1298,7 +1359,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/></reference>
+                <reference value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/>
+            </reference>
             <name value="Observation - Infant Breastfed at Discharge (Baby G Quinn)"/>
             <description value="Example of Observation-infant-breastfed-at-discharge profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1306,7 +1368,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-infant-living-babyg-quinn"/></reference>
+                <reference value="Observation/observation-infant-living-babyg-quinn"/>
+            </reference>
             <name value="Observation - Infant Living (Baby G Quinn)"/>
             <description value="Example of observation-infant-living profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1324,7 +1387,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-labor-trial-attempted-babyg-quinn"/></reference>
+                <reference value="Observation/observation-labor-trial-attempted-babyg-quinn"/>
+            </reference>
             <name value="Observation - Labor Trial Attempted (Baby G Quinn)"/>
             <description value="Example of Observation-labor-trial-attempted profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1332,7 +1396,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-last-menstrual-period-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-last-menstrual-period-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Last Menstrual Period (Carmen Teresa Lee)"/>
             <description value="Example of Observation-last-menstrual-period profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1340,7 +1405,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-last-menstrual-period-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-last-menstrual-period-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Last Menstrual Period (Jada Ann Quinn)"/>
             <description value="Example of Observation-last-menstrual-period profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1358,7 +1424,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-method-of-disposition-not-named"/></reference>
+                <reference value="Observation/observation-method-of-disposition-not-named"/>
+            </reference>
             <name value="Observation - Method of Disposition (Fetus Not Named)"/>
             <description value="Example of Observation-method-of-disposition profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -1367,7 +1434,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-mother-delivery-weight-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Mother Delivery Weight (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-delivery-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1375,7 +1443,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-height-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-mother-height-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Mother Height (Carmen Teresa Lee)"/>
             <description value="Example of Observation-mother-height profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1383,7 +1452,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-height-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-mother-height-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Mother Height (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-height profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1401,7 +1471,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"/>
             <description value="Example of Observation-mother-prepregnancy-weight profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1409,7 +1480,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Mother Prepregnancy Weight (Jada Ann Quinn)"/>
             <description value="Example of observation-mother-prepregnancy-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1427,7 +1499,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-received-wic-food-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-mother-received-wic-food-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Mother Received WIC Food (Carmen Teresa Lee)"/>
             <description value="Example of observation-mother-received-wic-food profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="false"/>
@@ -1436,7 +1509,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-mother-received-wic-food-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-mother-received-wic-food-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Mother Received WIC Food (Jada Ann Quinn)"/>
             <description value="Example of Observation-mother-received-wic-food profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1465,7 +1539,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-live-births-this-delivery-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-number-live-births-this-delivery-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Number Live Births This Delivery (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-live-births-this-delivery profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1473,7 +1548,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-live-births-this-delivery-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-number-live-births-this-delivery-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Number Live Births This Delivery (Jada Ann Quinn)"/>
             <description value="Example of observation-number-live-births-this-delivery profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1481,7 +1557,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-number-births-now-dead-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Number of Births Now Dead (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-births-now-dead profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1489,7 +1566,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-births-now-living-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-number-births-now-living-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Number of Births Now Living (Carmen Teresa Lee)"/>
             <description value="Example of observation-number-births-now-living profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1497,7 +1575,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Number of Fetal Deaths This Delviery (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-fetal-deaths-this-delivery profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1505,7 +1584,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Number Other Pregnancy Outcomes (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-other-pregnancy-outcomes profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1513,7 +1593,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-number-prenatal-visits-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Number Prenatal Visits (Jada Ann Quinn)"/>
             <description value="Example of Observation-number-prenatal-visits profile (BabyG Quinn/Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1531,7 +1612,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-parent-education-level-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
             <description value="Example of observation-parent-education-level profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1539,7 +1621,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-parent-education-level-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-parent-education-level-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Parent Education Level (Jada Ann Quinn)"/>
             <description value="Example of observation-parent-education-level profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1547,7 +1630,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-parent-education-level-james-quinn"/></reference>
+                <reference value="Observation/observation-parent-education-level-james-quinn"/>
+            </reference>
             <name value="Observation - Parent Education Level (James Quinn)"/>
             <description value="Example of observation-parent-education-level profile (James Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1575,7 +1659,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-planned-to-deliver-at-home-babyg-quinn"/></reference>
+                <reference value="Observation/observation-planned-to-deliver-at-home-babyg-quinn"/>
+            </reference>
             <name value="Observation - Planned to Deliver at Home (Baby G Quinn)"/>
             <description value="Example of Observation - Planned to Deliver at Home profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1584,7 +1669,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-planned-to-deliver-at-home-not-named"/></reference>
+                <reference value="Observation/observation-planned-to-deliver-at-home-not-named"/>
+            </reference>
             <name value="Observation - Planned to Delivery at Home (Fetus Not Named)"/>
             <description value="Example of observation-planned-to-deliver-at-home profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -1593,7 +1679,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-plurality-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-plurality-carmen-teresa-lee"/>
+            </reference>
             <name value="Observation - Plurality (Carmen Teresa Lee)"/>
             <description value="Example of Observation-plurality profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1601,7 +1688,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-plurality-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-plurality-jada-ann-quinn"/>
+            </reference>
             <name value="Observation - Plurality (Jada Ann Quinn)"/>
             <description value="Example of observation-plurality profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1609,7 +1697,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"/></reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"/>
+            </reference>
             <name value="Observation - Preganancy Risk Factor (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <exampleBoolean value="true"/>
@@ -1617,7 +1706,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-2"/></reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-2"/>
+            </reference>
             <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
             <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
             <exampleBoolean value="true"/>
@@ -1625,7 +1715,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1"/></reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1"/>
+            </reference>
             <name value="Observation - Pregnancy Risk Factor (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
             <exampleBoolean value="true"/>
@@ -1633,7 +1724,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-3"/></reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-3"/>
+            </reference>
             <name value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Assisted fertilization)"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Assisted fertilization)"/>
             <exampleBoolean value="true"/>
@@ -1641,7 +1733,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"/></reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"/>
+            </reference>
             <name value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <exampleBoolean value="true"/>
@@ -1649,7 +1742,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-2"/></reference>
+                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-2"/>
+            </reference>
             <name value="Observation - Pregnancy Risk Factor (Jada Ann Quinn: Fertility enhancing drug therapy)"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Fertility enhancing drug therapy)"/>
             <exampleBoolean value="true"/>
@@ -1667,7 +1761,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-ssn-requested-for-child-babyg-quinn"/></reference>
+                <reference value="Observation/observation-ssn-requested-for-child-babyg-quinn"/>
+            </reference>
             <name value="Observation - SSN Requested for Child (BabyG Quinn)"/>
             <description value="Example of observation-ssn-requested-for-child profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1686,7 +1781,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee"/></reference>
+                <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee"/>
+            </reference>
             <name value="Observations - Number Previous Cesareans (Carmen Teresa Lee)"/>
             <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1704,7 +1800,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-child-babyg-quinn"/></reference>
+                <reference value="Patient/patient-child-babyg-quinn"/>
+            </reference>
             <name value="Patient - Child (Baby G Quinn)"/>
             <description value="Example of Patient-child profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1712,7 +1809,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-decedent-fetus-not-named"/></reference>
+                <reference value="Patient/patient-decedent-fetus-not-named"/>
+            </reference>
             <name value="Patient - Decedent Fetus (Fetus Not Named)"/>
             <description value="Example of patient-decedent-fetus (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
@@ -1720,7 +1818,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-carmen-teresa-lee"/></reference>
+                <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+            </reference>
             <name value="Patient - Mother (Carmen Teresa Lee)"/>
             <description value="Example of patient-mother profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1728,7 +1827,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-jada-ann-quinn"/></reference>
+                <reference value="Patient/patient-mother-jada-ann-quinn"/>
+            </reference>
             <name value="Patient - Mother (Eve Everywoman)"/>
             <description value="Example of Patient-mother profile (Eve Everywoman)"/>
             <exampleBoolean value="true"/>
@@ -1736,7 +1836,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/></reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-avery-jones"/>
+            </reference>
             <name value="Practitioner - Live Birth and Fetal Death (Avery Jones, MD)"/>
             <description value="Example of practitioner-live-birth-fetal-death profile (Avery Jones, MD)"/>
             <exampleBoolean value="true"/>
@@ -1744,7 +1845,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito"/></reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-janet-seito"/>
+            </reference>
             <name value="Practitioner - Live Birth Fetal Death (Janet Seito)"/>
             <description value="Example of practitioner-live-birth-fetal-death profile (Janet Seito)"/>
             <exampleBoolean value="true"/>
@@ -1752,7 +1854,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/practitioner-live-birth-fetal-death-jessica-leung"/></reference>
+                <reference value="Practitioner/practitioner-live-birth-fetal-death-jessica-leung"/>
+            </reference>
             <name value="Practitioner - Live Birth Fetal Death (Jessica Leung)"/>
             <description value="Example of Practitioner-live-birth-fetal-death profile (Jessica Leung)"/>
             <exampleBoolean value="true"/>
@@ -1760,7 +1863,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Procedure/procedure-final-route-method-delivery-not-named"/></reference>
+                <reference value="Procedure/procedure-final-route-method-delivery-not-named"/>
+            </reference>
             <name value="Procedure - Final Route / Method of Delivery (Fetus Not Named)"/>
             <description value="Example of Procedure-final-route-method-delivery profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
@@ -1779,7 +1883,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Procedure/procedure-final-route-method-delivery-babyg-quinn"/></reference>
+                <reference value="Procedure/procedure-final-route-method-delivery-babyg-quinn"/>
+            </reference>
             <name value="Procedure - Final Route and Method of Delivery (Baby G Quinn)"/>
             <description value="Example of procedure-final-route-method-delivery (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1798,7 +1903,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Procedure/procedure-obstetric-procedure-jada-ann-quinn"/></reference>
+                <reference value="Procedure/procedure-obstetric-procedure-jada-ann-quinn"/>
+            </reference>
             <name value="Procedure - Obstetric Procedure (Jada Ann Quinn)"/>
             <description value="Example of Procedure-obstetric profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1839,7 +1945,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn"/></reference>
+                <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn"/>
+            </reference>
             <name value="RelatedPerson - Father Natural (James Brandon Quinn)"/>
             <description value="Example of RelatedPerson-father-natural profile (James Brandon Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1847,7 +1954,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee"/></reference>
+                <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee"/>
+            </reference>
             <name value="RelatedPerson - Father Natural (Tom Yan Lee)"/>
             <description value="Example of RelatedPerson-father-natural profile (Tom Yan Lee)"/>
             <exampleBoolean value="true"/>
@@ -1855,7 +1963,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/></reference>
+                <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/>
+            </reference>
             <name value="RelatedPerson - Mother (Carmen Teresa Lee)"/>
             <description value="Example of Relatedperson-mother profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
@@ -1863,7 +1972,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/></reference>
+                <reference value="RelatedPerson/relatedperson-mother-jada-ann-quinn"/>
+            </reference>
             <name value="RelatedPerson - Mother (Jada Ann Quinn)"/>
             <description value="Example of RelatedPerson-mother profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
@@ -1911,7 +2021,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn"/>
+            </reference>
             <name value="Tabulated Ethnicity Example (Jada Ann Quinn)"/>
             <description value="Example of Tabulated Ethnicity profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -1920,7 +2031,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-bridged-race-jada-ann-quinn"/></reference>
+                <reference value="Observation/observation-bridged-race-jada-ann-quinn"/>
+            </reference>
             <name value="Bridged Race Example (Jada Ann Quinn)"/>
             <description value="Example of Bridged Race profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
@@ -2016,7 +2128,7 @@
         </page>
         <parameter>
             <code value="releaselabel"/>
-            <value value="CI build"/>
+            <value value="STU 1 Ballot"/>
         </parameter>
         <parameter>
             <code value="copyrightyear"/>
