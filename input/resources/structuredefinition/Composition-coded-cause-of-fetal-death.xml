@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-coded-cause-of-fetal-death"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-11-19T07:21:39.038+00:00"/>
-        <source value="#9UqILSUzlU63ZHYF"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-04-20T19:47:08.948+00:00"/>
+        <source value="#qAtfJ5E17pQTsiB3"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
     <version value="1.0.0"/>
@@ -28,7 +28,6 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -90,6 +89,11 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Composition.section.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
         </element>
         <element id="Composition.section:codedCauseOfFetalDeath">
             <path value="Composition.section"/>
@@ -143,7 +147,8 @@
             <sliceName value="codedOtherSignificantFetalDeathCauseOrCondition"/>
             <short value="Coded other significant cause or condition of fetal death"/>
             <definition value="Coded other significant cause or condition of fetal death"/>
-            <max value="1"/>
+            <min value="0"/>
+            <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-other-fetal-death-cause-or-condition"/>

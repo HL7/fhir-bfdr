@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="39"/>
-        <lastUpdated value="2020-11-19T23:19:08.201+00:00"/>
-        <source value="#4ZcvdfgSS3SZTDuz"/>
+        <versionId value="43"/>
+        <lastUpdated value="2021-04-19T19:02:13.097+00:00"/>
+        <source value="#GElBS9aqlsnn1CSy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -339,7 +339,7 @@
         <element id="Composition.section:medicalHealthInformation">
             <path value="Composition.section"/>
             <sliceName value="medicalHealthInformation"/>
-            <short value="Medical and Health Informatino section on the Live Birth Certificate"/>
+            <short value="Medical and Health Information section on the Live Birth Certificate"/>
             <definition value="This section contains items from the Medical and Health Information section on the Live Birth Certificate."/>
             <max value="1"/>
             <mustSupport value="true"/>
@@ -425,7 +425,7 @@
         <element id="Composition.section:medicalHealthInformation.entry:characteristicsLaborDelivery">
             <path value="Composition.section.entry"/>
             <sliceName value="characteristicsLaborDelivery"/>
-            <short value="Characteristics fo labor and delivery"/>
+            <short value="Characteristics of labor and delivery"/>
             <definition value="Information about the course of labor and delivery"/>
             <type>
                 <code value="Reference"/>
@@ -776,6 +776,7 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="12"/>
         </element>
         <element id="Composition.section:EditFlags.entry:editFlagBirthweight">
             <path value="Composition.section.entry"/>

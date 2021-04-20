@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="38"/>
-        <lastUpdated value="2020-11-25T00:28:48.050+00:00"/>
-        <source value="#R0gVSd8lfkkNwW9P"/>
+        <versionId value="41"/>
+        <lastUpdated value="2021-04-15T17:26:58.359+00:00"/>
+        <source value="#gQM2aH7Ru60tLaaR"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -28,7 +28,6 @@
     <type value="Composition"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
-    
     <differential>
         <element id="Composition">
             <path value="Composition"/>
@@ -595,16 +594,16 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:EditFlags">
+        <element id="Composition.section:editFlags">
             <path value="Composition.section"/>
-            <sliceName value="EditFlags"/>
+            <sliceName value="editFlags"/>
             <short value="Edit Flags Section"/>
             <definition value="This section contains the edit flags that specify whether the originally provided data passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on edit criteria in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:EditFlags.code">
+        <element id="Composition.section:editFlags.code">
             <path value="Composition.section.code"/>
             <short value="Edit flags section"/>
             <min value="1"/>
@@ -615,7 +614,7 @@
                 </coding>
             </patternCodeableConcept>
         </element>
-        <element id="Composition.section:EditFlags.entry">
+        <element id="Composition.section:editFlags.entry">
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
@@ -624,8 +623,9 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="8"/>
         </element>
-        <element id="Composition.section:EditFlags.entry:editFlagBirthweight">
+        <element id="Composition.section:editFlags.entry:editFlagBirthweight">
             <path value="Composition.section.entry"/>
             <sliceName value="editFlagBirthweight"/>
             <min value="1"/>
@@ -635,7 +635,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
             </type>
         </element>
-        <element id="Composition.section:EditFlags.entry:editFlagEstimateOfGestation">
+        <element id="Composition.section:editFlags.entry:editFlagEstimateOfGestation">
             <path value="Composition.section.entry"/>
             <sliceName value="editFlagEstimateOfGestation"/>
             <min value="1"/>
@@ -645,7 +645,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
             </type>
         </element>
-        <element id="Composition.section:EditFlags.entry:editFlagMothersDateOfBirth">
+        <element id="Composition.section:editFlags.entry:editFlagMothersDateOfBirth">
             <path value="Composition.section.entry"/>
             <sliceName value="editFlagMothersDateOfBirth"/>
             <min value="1"/>
@@ -655,7 +655,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
             </type>
         </element>
-        <element id="Composition.section:EditFlags.entry:editFlagMothersEducation">
+        <element id="Composition.section:editFlags.entry:editFlagMothersEducation">
             <path value="Composition.section.entry"/>
             <sliceName value="editFlagMothersEducation"/>
             <min value="1"/>
@@ -665,7 +665,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education"/>
             </type>
         </element>
-        <element id="Composition.section:EditFlags.entry:editFlagMothersHeight">
+        <element id="Composition.section:editFlags.entry:editFlagMothersHeight">
             <path value="Composition.section.entry"/>
             <sliceName value="editFlagMothersHeight"/>
             <min value="1"/>
@@ -675,7 +675,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
             </type>
         </element>
-        <element id="Composition.section:EditFlags.entry:editFlagMothersPrepregnancyWeight">
+        <element id="Composition.section:editFlags.entry:editFlagMothersPrepregnancyWeight">
             <path value="Composition.section.entry"/>
             <sliceName value="editFlagMothersPrepregnancyWeight"/>
             <min value="1"/>
@@ -685,7 +685,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
             </type>
         </element>
-        <element id="Composition.section:EditFlags.entry:editFlagNumberPreviousCesareans">
+        <element id="Composition.section:editFlags.entry:editFlagNumberPreviousCesareans">
             <path value="Composition.section.entry"/>
             <sliceName value="editFlagNumberPreviousCesareans"/>
             <min value="1"/>
@@ -695,7 +695,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
             </type>
         </element>
-        <element id="Composition.section:EditFlags.entry:editFlagPlurality">
+        <element id="Composition.section:editFlags.entry:editFlagPlurality">
             <path value="Composition.section.entry"/>
             <sliceName value="editFlagPlurality"/>
             <min value="1"/>
