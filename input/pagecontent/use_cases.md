@@ -10,9 +10,6 @@ This implementation guide supports five use cases for communicating information 
   * Provider Facility Fetal Death
   * Provider Mother's Fetal Death
 * Jurisdiction Fetal Death
-* Void Document
-  * Void Live Birth Certificate
-  * Void Fetal Death Report
 
 This implementation guide also supports two uses cases for returning information from the national statistical agency to the jurisdictional Vital Records Office:
 
@@ -35,8 +32,6 @@ Information flows are supported by the FHIR Composition resources indicated in t
 | Provider Mother's Fetal Death | [Composition - Provider Mother's Fetal Death Report](StructureDefinition-Composition-provider-mothers-fetal-death-report.html)  | EHR                                 | Jurisdictional Vital Records Office |
 | Jurisdiction Live Birth       | [Composition - Jurisdiction Live Birth Report](StructureDefinition-Composition-jurisdiction-live-birth-report.html)            | Jurisdictional Vital Records Office | National Statistical Agency         | 
 | Jurisdiction Fetal Death      | [Composition - Jurisdiction Fetal Death Report](StructureDefinition-Composition-jurisdiction-fetal-death-report.html)                   | Jurisdictional Vital Records Office | National Statistical Agency         | 
-| Void Live Birth Certificate   | [Composition - Void Live Birth Certificate](StructureDefinition-Composition-void-live-birth-certificate.html)                   | Jurisdictional Vital RecordsOffice  | National Statistical Agency         |   
-| Void Fetal Death Report       | [Composition - Void Fetal Death Report](StructureDefinition-Composition-void-fetal-death-report.html)                           | Jurisdictional Vital Records Office | National Statistical Agency         |
 | Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity](StructureDefinition-Composition-coded-race-and-ethnicity.html)                         | National Statistical Agency         | Jurisdictional Vital Records Office |
 | Coded Cause of Fetal Death    | [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html)                     | National Statistical Agency         | Jurisdictional Vital Records Office |
 
@@ -96,18 +91,6 @@ This use case represents information of a fetal death and the creation of a juri
 The data requirements for jurisdictional reporting of fetal deaths are based on the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.
 
 The Jurisdiction Fetal Death use case is represented by the [Composition - Jurisdiction Fetal Death Report](StructureDefinition-Composition-jurisdiction-fetal-death-report.html).
-
-### Void Live Birth Certificate
-
-This use case represents the communication of void live birth certificates from appropriate jurisdictional vital statistics agencies to the national statistical agency. In many jurisdictions, birth certificate identifiers are directly linked to the printed certificate. As a result, in some cases it becomes relevant to indicate that a particular certificate number is not to be used, that the certificate is to be "voided".
-
-The Void Live Birth Certificate use case is represented by the [Composition - Void Live Birth Certificate](StructureDefinition-Composition-void-live-birth-certificate.html).
-
-### Void Fetal Death Report
-
-This use case represents the communication of void fetal death certificates from appropriate jurisdictional vital statistics agencies to the NCHS. In many jurisdictions, fetal death report identifiers are directly linked to the printed certificate. As a result, in some cases it becomes relevant to indicate that a particular certificate number is not to be used, that the certificate is to be "voided".
-
-The Void Fetal Death Report use case is represented by the [Composition - Void Fetal Death Report](StructureDefinition-Composition-void-fetal-death-report.html).
 
 ### Coded Race and Ethnicity
 

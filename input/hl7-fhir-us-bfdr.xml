@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="856"/>
-        <lastUpdated value="2020-12-14T22:24:10.478+00:00"/>
-        <source value="#h2b4Ych5uiEE6Q8B"/>
+        <versionId value="858"/>
+        <lastUpdated value="2021-04-20T23:25:36.681+00:00"/>
+        <source value="#UaVNqWNZywMYbe41"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -70,9 +70,6 @@
         </grouping>
         <grouping id="nsa-2-jvr">
             <name value="National Statistical Agency to Jurisdictional Vital Records Office: Composition Profiles"/>
-        </grouping>
-        <grouping id="voided-documents">
-            <name value="Voided Documents: Composition Profiles"/>
         </grouping>
         <grouping id="encounter-profiles">
             <name value="Encounter Profiles"/>
@@ -342,26 +339,6 @@
             <description value="This Composition profile defines constraints to address the use case in which information collected from the mother, as primarily defined using the Mother's Worksheet, is managed independently for communication to the jurisdictional Vital Records Office. The data requirements for live birth mother's information are based on the Mother's Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
             <exampleBoolean value="false"/>
             <groupingId value="live-birth-compositions-ehr-jvr"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Composition-void-fetal-death-report"/>
-                <display value="Composition - Void Fetal Death Report"/>
-            </reference>
-            <name value="Composition - Void Fetal Death Report"/>
-            <description value="This profile communicates void fetal death reports from appropriate jurisdictional vital statistics agencies to the NCHS. In many jurisdictions, fetal death report identifiers (report number) are directly linked to the printed certificate. As a result, in some cases it becomes relevant to indicate that a particular certificate number is not to be used, that the certificate is to be 'voided'."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="voided-documents"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Composition-void-live-birth-certificate"/>
-                <display value="Composition - Void Live Birth Certificate"/>
-            </reference>
-            <name value="Composition - Void Live Birth Certificate"/>
-            <description value="This profile communicates void live birth certificates from appropriate jurisdictional vital statistics agencies to the national statistical agency. In many jurisdictions, birth certificate identifiers (certificate number) are directly linked to the printed certificate. As a result, in some cases it becomes relevant to indicate that a particular certificate number is not to be used, that the certificate is to be 'voided'."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="voided-documents"/>
         </resource>
         <resource>
             <reference>
@@ -1877,28 +1854,6 @@
             <name value="Value Set - Cigarette Smoking Before and During Pregnancy"/>
             <description value="This value set contains codes to determine the number of cigarettes smoked before and during pregnancy."/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-void-fetal-death-not-named"/>
-                <display value="Void fetal death report Document"/>
-            </reference>
-            <name value="Void fetal death report Document"/>
-            <description value="Example of Composition-void-fetal-death-report profile"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-fetal-death-report"/>
-            <groupingId value="fde-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/composition-void-live-birth-certificate-babyg-quinn"/>
-                <display value="Voided Live Birth Certificate Document"/>
-            </reference>
-            <name value="Voided Live Birth Certificate Document"/>
-            <description value="Example of /Composition-void-live-birth-certificate profile"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-live-birth-certificate"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
         </resource>
         <resource>
             <reference>
