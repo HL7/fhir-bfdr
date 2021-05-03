@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-received-wic-food"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-11-19T04:52:55.629+00:00"/>
-        <source value="#rsazNqL3apxKrUvP"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-05-03T01:38:41.288+00:00"/>
+        <source value="#m1LLdl7JyaYVzfAU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
     <version value="1.0.0"/>
@@ -60,9 +60,14 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="boolean"/>
+                <code value="CodeableConcept"/>
             </type>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="PHVS_YesNoUnknown_CDC"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

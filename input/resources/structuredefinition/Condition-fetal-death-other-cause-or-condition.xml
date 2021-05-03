@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-fetal-death-other-cause-or-condition"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-11-19T01:00:23.534+00:00"/>
-        <source value="#PogMjb8x1LERFY0w"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-04-21T18:53:54.399+00:00"/>
+        <source value="#P85tfs9d4Bssrn4F"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Condition profile represents another significant cause or condition for the death of the fetus. The type of cause or condition should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text to fully record the provider's view of the cause."/>
+    <description value="This Condition profile represents another significant cause or condition for the death of the fetus. The type of cause or condition (code.coding) should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text (code.text) to fully record the provider's view of the cause."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -45,11 +45,22 @@
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
-            <short value="The value sets contains the list of values used to report initiating cause or condition or other significant causes or conditions contributing to fetal death."/>
+            <short value="Another significant cause or condition of the fetal death"/>
             <binding>
                 <strength value="required"/>
+                <description value="The list of values used to report initiating cause or condition or other significant causes or conditions contributing to fetal death."/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7422"/>
             </binding>
+        </element>
+        <element id="Condition.code.coding">
+            <path value="Condition.code.coding"/>
+            <short value="The type of cause or condition should be selected from the bound value set."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.code.text">
+            <path value="Condition.code.text"/>
+            <short value="Any further specification should be entered as free text to fully record the provider's view of the cause."/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
