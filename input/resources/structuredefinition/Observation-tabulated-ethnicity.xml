@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-tabulated-ethnicity"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-12-02T02:12:12.211+00:00"/>
-        <source value="#nvPc5Mxav7JOfZd6"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-05-04T00:32:21.163+00:00"/>
+        <source value="#FRzJkjhqrfHgrHEr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-tabulated-ethnicity"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile records a code representing the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form."/>
+    <description value="This profile records a code representing the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -80,6 +80,10 @@
                 <strength value="required"/>
                 <valueSet value="http://terminology.hl7.org/ValueSet/v3-Ethnicity"/>
             </binding>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

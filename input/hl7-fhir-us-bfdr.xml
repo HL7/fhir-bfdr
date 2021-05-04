@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="874"/>
-        <lastUpdated value="2021-05-03T06:18:36.981+00:00"/>
-        <source value="#9ySmAeqYxIJg02h6"/>
+        <versionId value="882"/>
+        <lastUpdated value="2021-05-04T00:16:40.351+00:00"/>
+        <source value="#on4xfNRQBCYn69kr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -632,21 +632,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-birth-certificate-file-number"/>
-                <display value="Extension - Birth Certificate File Number (BCFN)"/>
+                <reference value="StructureDefinition/Extension-live-birth-local-file-number"/>
+                <display value="Extension - Live Birth Local File Number"/>
             </reference>
             <name value="Extension - Birth Certificate File Number example [BCFN]"/>
-            <description value="Birth certificate file number"/>
+            <description value="Live birth local file number - this represents &quot;Local File No.&quot; on the US Standard Certificate of Live Birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-birth-certificate-id"/>
-                <display value="Extension - Birth Certificate Id (BCT)"/>
+                <reference value="StructureDefinition/Extension-live-birth-certificate-number"/>
+                <display value="Extension - Live Birth Certificate Number"/>
             </reference>
             <name value="Extension - Birth Certificate Id example [BCT]"/>
-            <description value="Birth certificate id"/>
+            <description value="Live birth certificate number - this represents &quot;Birth Number&quot; on the US Standard Certificate of Live Birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -672,21 +672,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-fetal-death-report-file-number"/>
-                <display value="Extension - Fetal Death Report File Number (FDRFN)"/>
+                <reference value="StructureDefinition/Extension-fetal-death-local-file-number"/>
+                <display value="Extension - Fetal Death Local File Number"/>
             </reference>
             <name value="Extension - Fetal Death Report File Number example [FDRFN]"/>
-            <description value="Fetal death report file number"/>
+            <description value="Fetal death local file number - this represents &quot;Local File No.&quot; on the US Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-fetal-death-report-id"/>
-                <display value="Extension - Fetal Death Report Id (FDR)"/>
+                <reference value="StructureDefinition/Extension-fetal-death-report-number"/>
+                <display value="Extension - Fetal Death Report Number"/>
             </reference>
             <name value="Extension - Fetal Death Report Id example [FDR]"/>
-            <description value="Fetal death report id"/>
+            <description value="Fetal death report number - this represents &quot;State File Number&quot; on the US Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -810,11 +810,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-bridged-race"/>
-                <display value="Observation - Bridged Race"/>
+                <reference value="StructureDefinition/Observation-race"/>
+                <display value="Observation - Race"/>
             </reference>
             <name value="Observation - Bridged Race"/>
-            <description value="This profile represents a single race code assigned to the person."/>
+            <description value="This profile represents a single race code assigned to the person. If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -1568,7 +1568,7 @@
                 <display value="Observation - Tabulated Ethnicity"/>
             </reference>
             <name value="Observation - Tabulated Ethnicity"/>
-            <description value="This profile records a code representing the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form."/>
+            <description value="This profile records a code representing the ethnic affiliation information for the mother or father. The observation will convey, as coded data, information that is provided in text form.  If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>

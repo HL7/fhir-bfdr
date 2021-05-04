@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-coded-race-and-ethnicity"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2020-12-02T01:57:32.229+00:00"/>
-        <source value="#wIAMxYz7VZRCVTnp"/>
+        <versionId value="31"/>
+        <lastUpdated value="2021-05-04T00:16:55.017+00:00"/>
+        <source value="#AxQX6mk4UZaGZlBA"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
     <version value="1.0.0"/>
     <name value="CompositionCodedRaceAndEthnicity"/>
-    <title value="Composition - Coded Race"/>
+    <title value="Composition - Coded Race and Ethnicity"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
@@ -41,44 +41,26 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
-        <element id="Composition.extension:sliceFetalDeathReportId">
+        <element id="Composition.extension:sliceFetalDeathReportNumber">
             <path value="Composition.extension"/>
-            <sliceName value="sliceFetalDeathReportId"/>
+            <sliceName value="sliceFetalDeathReportNumber"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-id"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"/>
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.extension:sliceFetalDeathReportFileNumber">
+        <element id="Composition.extension:sliceLiveBirthCertificateNumber">
             <path value="Composition.extension"/>
-            <sliceName value="sliceFetalDeathReportFileNumber"/>
+            <sliceName value="sliceLiveBirthCertificateNumber"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.extension:sliceBirthCertificateId">
-            <path value="Composition.extension"/>
-            <sliceName value="sliceBirthCertificateId"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.extension:sliceBirthCertificateFileNumber">
-            <path value="Composition.extension"/>
-            <sliceName value="sliceBirthCertificateFileNumber"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -101,12 +83,19 @@
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
+            <short value="The author is the NCHS."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section">
             <path value="Composition.section"/>
             <short value="Coded race and ethnicity section."/>
             <definition value="This section contains the tabulated and post-edited coded race and ethnicity details for the mother or father."/>
-            <min value="1"/>
+            <min value="2"/>
             <max value="2"/>
             <mustSupport value="true"/>
         </element>
@@ -144,16 +133,16 @@
             <short value="Entries that are contained in the Coded Race and Ethnicity section"/>
             <definition value="Entries that are contained in the Coded Race and Ethnicity section"/>
         </element>
-        <element id="Composition.section.entry:bridgedRace">
+        <element id="Composition.section.entry:race">
             <path value="Composition.section.entry"/>
-            <sliceName value="bridgedRace"/>
+            <sliceName value="race"/>
             <short value="Bridged race"/>
             <definition value="The mother or father's bridged race"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-race"/>
             </type>
             <mustSupport value="true"/>
         </element>

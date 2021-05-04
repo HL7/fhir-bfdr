@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="43"/>
-        <lastUpdated value="2021-04-19T19:02:13.097+00:00"/>
-        <source value="#GElBS9aqlsnn1CSy"/>
+        <versionId value="51"/>
+        <lastUpdated value="2021-05-03T23:57:08.221+00:00"/>
+        <source value="#dTGB8DCAEbPQCl6s"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -42,25 +42,30 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
-        <element id="Composition.extension:sliceBirthCertificateId">
+        <element id="Composition.extension:sliceLiveBirthCertificateNumber">
             <path value="Composition.extension"/>
-            <sliceName value="sliceBirthCertificateId"/>
+            <sliceName value="sliceLiveBirthCertificateNumber"/>
             <short value="Birth certificate id"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number"/>
             </type>
+            <mustSupport value="true"/>
         </element>
-        <element id="Composition.extension:sliceBirthCertificateFileNumber">
+        <element id="Composition.extension:sliceLiveBirthLocalFileNumber">
             <path value="Composition.extension"/>
-            <sliceName value="sliceBirthCertificateFileNumber"/>
+            <sliceName value="sliceLiveBirthLocalFileNumber"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-local-file-number"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.extension:dateFiledByRegistrar">
             <path value="Composition.extension"/>
@@ -71,6 +76,7 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-filed-by-registrar"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
@@ -92,6 +98,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
@@ -101,6 +108,12 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
+            <short value="The author is the jurisdictional Vital Records Office."/>
+            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section">
@@ -114,6 +127,7 @@
             </slicing>
             <short value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate."/>
             <definition value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and Newborn. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
+            <min value="1"/>
         </element>
         <element id="Composition.section:motherPrenatal">
             <path value="Composition.section"/>
@@ -755,6 +769,7 @@
             <definition value="This section contains the edit flags that specify whether the originally provided data passed validation checks. These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on edit criteria in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death."/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:EditFlags.code">
             <path value="Composition.section.code"/>
@@ -777,6 +792,7 @@
                 <rules value="open"/>
             </slicing>
             <min value="12"/>
+            <max value="12"/>
         </element>
         <element id="Composition.section:EditFlags.entry:editFlagBirthweight">
             <path value="Composition.section.entry"/>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-bridged-race"/>
+    <id value="Observation-race"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-12-02T01:25:37.689+00:00"/>
-        <source value="#C1nHUmBJ59Btxqlj"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-05-04T00:32:43.243+00:00"/>
+        <source value="#swS5objLlgmVWl0O"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race"/>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-race"/>
     <version value="1.0.0"/>
-    <name value="ObservationBridgedRace"/>
-    <title value="Observation - Bridged Race"/>
+    <name value="ObservationRace"/>
+    <title value="Observation - Race"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile represents a single race code assigned to the person."/>
+    <description value="This profile represents a single race code assigned to the person. If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -68,7 +68,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="Bridged Race (NCHS)"/>
+            <short value="Race (NCHS)"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -77,8 +77,12 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7377"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7373"/>
             </binding>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

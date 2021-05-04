@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="50"/>
-        <lastUpdated value="2021-04-20T23:53:33.094+00:00"/>
-        <source value="#ERT2aG9XHO7joxjF"/>
+        <versionId value="57"/>
+        <lastUpdated value="2021-05-03T23:58:23.655+00:00"/>
+        <source value="#BEL0CvJ7qckm8ag5"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -41,24 +41,29 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.extension:sliceBirthCertificateId">
             <path value="Composition.extension"/>
             <sliceName value="sliceBirthCertificateId"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-id"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number"/>
             </type>
+            <mustSupport value="true"/>
         </element>
-        <element id="Composition.extension:sliceBirthCertificateFileNumber">
+        <element id="Composition.extension:sliceLiveBirthLocalFileNumber">
             <path value="Composition.extension"/>
-            <sliceName value="sliceBirthCertificateFileNumber"/>
+            <sliceName value="sliceLiveBirthLocalFileNumber"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-birth-certificate-file-number"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-local-file-number"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
@@ -78,12 +83,24 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
+            <short value="The author is the person who verifies/approves the accuracy of the data to be sent to the vital records system."/>
+            <definition value="Name and title of person completing the report. May be, but need not be, the same as the attendant at delivery."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -522,7 +539,7 @@
         <element id="Composition.section:newbornInformation.entry:APGARScore">
             <path value="Composition.section.entry"/>
             <sliceName value="APGARScore"/>
-            <short value="APGAR Score - while the APGAR timing value set contains 3 possible values, 5 and 10 are the only scores used. "/>
+            <short value="APGAR Score - while the APGAR timing value set contains 3 possible values, 5 and 10 are the only scores used."/>
             <definition value="The Apgar Score for the child."/>
             <max value="2"/>
             <type>
@@ -626,6 +643,7 @@
         <element id="Composition.section:motherInformation.entry:education">
             <path value="Composition.section.entry"/>
             <sliceName value="education"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>

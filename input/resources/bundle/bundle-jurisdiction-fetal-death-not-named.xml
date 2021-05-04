@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle
-    xmlns="http://hl7.org/fhir">
+<Bundle xmlns="http://hl7.org/fhir">
     <id value="bundle-jurisdiction-fetal-death-not-named"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2020-12-08T22:58:59.446+00:00"/>
-        <source value="#P7cOfDA7qXJUu7p0"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
     </meta>
     <identifier>
@@ -17,8 +13,11 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Composition/composition-jurisdiction-fetal-death-not-named"/>
         <resource>
-            <Composition>
+            <Composition xmlns="http://hl7.org/fhir">
                 <id value="composition-jurisdiction-fetal-death-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
+                </meta>
                 <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar">
                     <valueDateTime value="2019-02-12"/>
                 </extension>
@@ -261,6 +260,12 @@
         <resource>
             <Observation>
                 <id value="observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:01.313+00:00"/>
+                    <source value="#vHoOHVNCWCLvTXrY"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -287,6 +292,12 @@
         <resource>
             <Observation>
                 <id value="observation-number-births-now-living-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:02.326+00:00"/>
+                    <source value="#w8CV1hMjqZwNR9iv"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -309,6 +320,12 @@
         <resource>
             <Observation>
                 <id value="observation-autopsy-histological-exam-results-used-not-named"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:01.073+00:00"/>
+                    <source value="#ClX7axMWWVbnQBm5"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -330,6 +347,12 @@
         <resource>
             <Observation>
                 <id value="observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:01.294+00:00"/>
+                    <source value="#3onUy021ffMiEjPP"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -356,6 +379,12 @@
         <resource>
             <Observation>
                 <id value="observation-number-births-now-dead-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:02.255+00:00"/>
+                    <source value="#qtFrqE498oNpkiwq"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -378,6 +407,12 @@
         <resource>
             <Observation>
                 <id value="observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:01.268+00:00"/>
+                    <source value="#MLehTe9qPYtL8agx"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -404,6 +439,12 @@
         <resource>
             <Observation>
                 <id value="observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:01.253+00:00"/>
+                    <source value="#qYWIGW1f05h9gXRw"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -430,6 +471,12 @@
         <resource>
             <Observation>
                 <id value="observation-pregnancy-risk-factor-carmen-teresa-lee-2"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2020-08-31T21:24:32.157+00:00"/>
+                    <source value="#dsFQ4GfDY3Tp9pu3"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -459,6 +506,12 @@
         <resource>
             <Observation>
                 <id value="observation-pregnancy-risk-factor-carmen-teresa-lee-1"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2020-08-31T21:24:32.158+00:00"/>
+                    <source value="#UJX7Js6aq4Lf7wnI"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -488,6 +541,12 @@
         <resource>
             <Observation>
                 <id value="observation-number-previous-cesareans-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:02.461+00:00"/>
+                    <source value="#sb6tMP68siy25z9s"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -510,6 +569,12 @@
         <resource>
             <Condition>
                 <id value="condition-fetal-presentation-not-named"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:20:37.831+00:00"/>
+                    <source value="#XBzUiU6u7Yca3xXQ"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation"/>
+                </meta>
                 <category>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
@@ -536,6 +601,12 @@
         <resource>
             <Practitioner>
                 <id value="practitioner-live-birth-fetal-death-jessica-leung"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2020-09-01T04:51:20.377+00:00"/>
+                    <source value="#x9HdxEbji4aiCUcD"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+                </meta>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="223347055"/>
@@ -562,6 +633,12 @@
         <resource>
             <Procedure>
                 <id value="procedure-final-route-method-delivery-not-named"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:22.819+00:00"/>
+                    <source value="#YYAoj96KgNAGEY2j"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
+                </meta>
                 <status value="completed"/>
                 <code>
                     <coding>
@@ -587,6 +664,12 @@
         <resource>
             <Observation>
                 <id value="observation-plurality-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:02.746+00:00"/>
+                    <source value="#3HQmN7i0tRnIBUgE"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -608,6 +691,12 @@
         <resource>
             <Condition>
                 <id value="condition-maternal-morbidity-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:20:37.850+00:00"/>
+                    <source value="#l7tNEqjnTc7ZLZhL"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
+                </meta>
                 <category>
                     <coding>
                         <system value="http://loinc.org"/>
@@ -635,6 +724,12 @@
         <resource>
             <Encounter>
                 <id value="encounter-maternity-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="6"/>
+                    <lastUpdated value="2020-08-20T23:33:29.302+00:00"/>
+                    <source value="#MgoY35EvKlGMojjb"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
+                </meta>
                 <identifier>
                     <system value="http://hospital.smarthealthit.org"/>
                     <value value="8937015"/>
@@ -698,6 +793,12 @@
         <resource>
             <Observation>
                 <id value="observation-parent-education-level-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="4"/>
+                    <lastUpdated value="2020-08-20T23:21:02.673+00:00"/>
+                    <source value="#WCUHOIED0bCMYPDs"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -730,6 +831,12 @@
         <resource>
             <Observation>
                 <id value="observation-mother-height-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:02.141+00:00"/>
+                    <source value="#F5VDmASJwdMsTv1P"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height"/>
+                </meta>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -762,6 +869,12 @@
         <resource>
             <Condition>
                 <id value="condition-fetal-death-cause-or-condition-not-named"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:20:37.899+00:00"/>
+                    <source value="#dqY22NCSw6bHluR6"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition"/>
+                </meta>
                 <category>
                     <coding>
                         <system value="http://loinc.org"/>
@@ -787,8 +900,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Patient/patient-decedent-fetus-not-named"/>
         <resource>
-            <Patient>
+            <Patient
+                xmlns="http://hl7.org/fhir">
                 <id value="patient-decedent-fetus-not-named"/>
+                <meta>
+                    <versionId value="5"/>
+                    <lastUpdated value="2020-11-19T04:37:18.749+00:00"/>
+                    <source value="#CsAINJMWJ9jtNYLr"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+                </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -863,6 +983,12 @@
         <resource>
             <Observation>
                 <id value="observation-planned-to-deliver-at-home-not-named"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:02.707+00:00"/>
+                    <source value="#KB5zY00ErnkNVKrY"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -889,6 +1015,12 @@
         <resource>
             <Condition>
                 <id value="condition-fetal-death-other-significant-cause-not-named"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2020-08-20T23:20:37.866+00:00"/>
+                    <source value="#p64CVZnuAOo9OwcY"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"/>
+                </meta>
                 <category>
                     <coding>
                         <system value="http://loinc.org"/>
@@ -916,6 +1048,12 @@
         <resource>
             <Observation>
                 <id value="observation-autopsy-performed-not-named"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:01.059+00:00"/>
+                    <source value="#84foCeqWI65WR49F"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -943,6 +1081,12 @@
         <resource>
             <Observation>
                 <id value="observation-mother-prepregnancy-weight-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:02.176+00:00"/>
+                    <source value="#zqbCopBtjwsuXxEe"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+                </meta>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -975,6 +1119,12 @@
         <resource>
             <Observation>
                 <id value="observation-birth-weight-not-named"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2020-08-20T23:21:01.066+00:00"/>
+                    <source value="#gwqRXDQuSFzxGU8S"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1000,6 +1150,12 @@
         <resource>
             <Observation>
                 <id value="observation-histological-placental-exam-performed-not-named"/>
+                <meta>
+                    <versionId value="4"/>
+                    <lastUpdated value="2020-08-20T23:21:01.838+00:00"/>
+                    <source value="#DfNHMAWurYM6EU7p"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1027,6 +1183,12 @@
         <resource>
             <Observation>
                 <id value="observation-gestational-age-at-delivery-not-named"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2020-08-20T23:21:01.643+00:00"/>
+                    <source value="#afAsEtVoWAbsqbJU"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1052,6 +1214,12 @@
         <resource>
             <Observation>
                 <id value="observation-mother-received-wic-food-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:02.174+00:00"/>
+                    <source value="#1YGwwxSUNKlpijED"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1074,6 +1242,12 @@
         <resource>
             <Observation>
                 <id value="observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2020-08-20T23:21:01.426+00:00"/>
+                    <source value="#ETE9mE9Yqe6xwurb"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1100,6 +1274,12 @@
         <resource>
             <Observation>
                 <id value="observation-date-of-last-live-birth-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:01.522+00:00"/>
+                    <source value="#AIQ7ET9tgRFQYN1P"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1122,6 +1302,12 @@
         <resource>
             <Observation>
                 <id value="observation-last-menstrual-period-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:01.937+00:00"/>
+                    <source value="#aN3HII4GeAl4YvHY"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1144,12 +1330,16 @@
         <resource>
             <Patient>
                 <id value="patient-child-babyg-quinn"/>
+                <meta>
+                    <versionId value="7"/>
+                    <lastUpdated value="2020-08-20T23:21:22.820+00:00"/>
+                    <source value="#E6UKpJIkr0j0GC8t"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
+                </meta>
                 <text>
                     <status value="generated"/>
-                    <div
-                        xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Baby G 
-                            <b>QUINN </b>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="hapiHeaderText">Baby G <b>QUINN </b>
                         </div>
                         <table class="hapiPropertyTable">
                             <tbody>
@@ -1233,6 +1423,12 @@
         <resource>
             <Organization>
                 <id value="organization-south-hospital"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-08-08T01:59:28.513+00:00"/>
+                    <source value="#QDsHrCjdiJemDOGr"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+                </meta>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="5555512"/>
@@ -1269,6 +1465,12 @@
         <resource>
             <RelatedPerson>
                 <id value="relatedperson-mother-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="2"/>
+                    <lastUpdated value="2020-08-20T23:21:22.964+00:00"/>
+                    <source value="#9SaLipGBpGatEIT6"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother"/>
+                </meta>
                 <active value="true"/>
                 <patient>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
@@ -1298,12 +1500,16 @@
         <resource>
             <Patient>
                 <id value="patient-mother-carmen-teresa-lee"/>
+                <meta>
+                    <versionId value="3"/>
+                    <lastUpdated value="2020-09-01T06:40:21.408+00:00"/>
+                    <source value="#U7j09bj99aDDca75"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
+                </meta>
                 <text>
                     <status value="generated"/>
-                    <div
-                        xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Carmen Teresa 
-                            <b>LEE </b>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="hapiHeaderText">Carmen Teresa <b>LEE </b>
                         </div>
                         <table class="hapiPropertyTable">
                             <tbody>
@@ -1412,6 +1618,12 @@
         <resource>
             <Location>
                 <id value="location-south-hospital"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-08-07T03:08:16.180+00:00"/>
+                    <source value="#b4SJQY6FL0L0RNZ0"/>
+                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+                </meta>
                 <status value="active"/>
                 <name value="South Hospital"/>
                 <type>
@@ -1429,6 +1641,12 @@
         <resource>
             <Practitioner>
                 <id value="practitioner-live-birth-fetal-death-janet-seito"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-08-17T09:54:01.095+00:00"/>
+                    <source value="#SkUf5xP0KEse07vi"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death"/>
+                </meta>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="223347044"/>
@@ -1453,8 +1671,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-plurality-example"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="observation-edit-flag-plurality-example"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-11-18T23:57:59.374+00:00"/>
+                    <source value="#kk83PssAbQ1ZZn8E"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1480,8 +1705,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-birth-weight-babyg-quinn"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="observation-edit-birth-weight-babyg-quinn"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-11-18T23:57:59.404+00:00"/>
+                    <source value="#Vfwux7aw2hbPeNfj"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1507,8 +1739,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-estimate-of-gestation-example"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="observation-edit-flag-estimate-of-gestation-example"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-11-18T23:57:59.405+00:00"/>
+                    <source value="#fpTT123uL8Lm4qN3"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1534,8 +1773,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-date-of-birth-example"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="observation-edit-flag-mothers-date-of-birth-example"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-11-18T23:57:59.405+00:00"/>
+                    <source value="#oXdBMTcNo1LhPenU"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1561,8 +1807,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-education-example"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="observation-edit-flag-mothers-education-example"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-11-18T23:57:59.409+00:00"/>
+                    <source value="#1WW4OGjjPblYwE0F"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1588,8 +1841,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-height-example"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="observation-edit-flag-mothers-height-example"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-11-18T23:57:59.606+00:00"/>
+                    <source value="#2hFotu05osBANPmh"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1615,8 +1875,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-prepregnancy-weight-example"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="observation-edit-flag-mothers-prepregnancy-weight-example"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-11-18T23:57:59.711+00:00"/>
+                    <source value="#Da6PAGK9MuHGZ0ip"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1642,8 +1909,15 @@
     <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-number-previous-cesareans-example"/>
         <resource>
-            <Observation>
+            <Observation
+                xmlns="http://hl7.org/fhir">
                 <id value="observation-edit-flag-number-previous-cesareans-example"/>
+                <meta>
+                    <versionId value="1"/>
+                    <lastUpdated value="2020-11-18T23:57:59.404+00:00"/>
+                    <source value="#MaLcNl8SzSefAXnD"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
+                </meta>
                 <status value="final"/>
                 <code>
                     <coding>

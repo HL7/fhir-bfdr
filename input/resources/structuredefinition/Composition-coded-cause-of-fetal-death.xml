@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-coded-cause-of-fetal-death"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-04-20T19:47:08.948+00:00"/>
-        <source value="#qAtfJ5E17pQTsiB3"/>
+        <versionId value="17"/>
+        <lastUpdated value="2021-05-04T00:12:57.749+00:00"/>
+        <source value="#oHrLhZLjcQUEWu8X"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
     <version value="1.0.0"/>
@@ -41,24 +41,17 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
-        <element id="Composition.extension:sliceFetalDeathReportId">
+        <element id="Composition.extension:sliceFetalDeathReportNumber">
             <path value="Composition.extension"/>
-            <sliceName value="sliceFetalDeathReportId"/>
+            <sliceName value="sliceFetalDeathReportNumber"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-id"/>
-            </type>
-        </element>
-        <element id="Composition.extension:sliceFetalDeathReportFileNumber">
-            <path value="Composition.extension"/>
-            <sliceName value="sliceFetalDeathReportFileNumber"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-file-number"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"/>
             </type>
         </element>
         <element id="Composition.type">
@@ -79,6 +72,13 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
+            <short value="The author is the NCHS."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section">
             <path value="Composition.section"/>
@@ -89,10 +89,6 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section.entry">
-            <path value="Composition.section.entry"/>
             <min value="1"/>
         </element>
         <element id="Composition.section:codedCauseOfFetalDeath">
@@ -128,6 +124,7 @@
             </slicing>
             <short value="Entries that are contained in the coded cause of fetal death section"/>
             <definition value="Entries that are contained in the coded cause of fetal death section"/>
+            <min value="1"/>
         </element>
         <element id="Composition.section:codedCauseOfFetalDeath.entry:codedInitiatingFetalDeathCauseOrCondition">
             <path value="Composition.section.entry"/>
