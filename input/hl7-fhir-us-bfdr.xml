@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="882"/>
-        <lastUpdated value="2021-05-04T00:16:40.351+00:00"/>
-        <source value="#on4xfNRQBCYn69kr"/>
+        <versionId value="884"/>
+        <lastUpdated value="2021-05-04T03:19:00.489+00:00"/>
+        <source value="#5X5uljzwzYiW9OCg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -184,7 +184,7 @@
                 <reference value="StructureDefinition/Composition-coded-race-and-ethnicity"/>
                 <display value="Composition - Coded Race"/>
             </reference>
-            <name value="Composition - Coded Race"/>
+            <name value="Composition - Coded Race and Ethnicity"/>
             <description value="This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office. It contains data that are a coded form of the race and ethnicity data that has been submitted to the NCHS. Two sets of codes will be used to address two objectives. These objectives are:&#xA;* to generate codes for race or ethnicity data provided as text entries&#xA;* to generate a single race code in cases where multiple races have been reported&#xA;&#xA;In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. &#xA;&#xA;Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death."/>
             <exampleBoolean value="false"/>
             <groupingId value="nsa-2-jvr"/>
@@ -813,7 +813,7 @@
                 <reference value="StructureDefinition/Observation-race"/>
                 <display value="Observation - Race"/>
             </reference>
-            <name value="Observation - Bridged Race"/>
+            <name value="Observation - Race"/>
             <description value="This profile represents a single race code assigned to the person. If the value is unknown, set dataAbsentReason to &quot;unknown&quot;."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
@@ -1764,11 +1764,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-bridged-race-jada-ann-quinn"/></reference>
-            <name value="Bridged Race example [Jada Ann Quinn]"/>
-            <description value="Example of Bridged Race profile (Jada Ann Quinn)"/>
+                <reference value="Observation/observation-race-jada-ann-quinn"/></reference>
+            <name value="Race Observation example [Jada Ann Quinn]"/>
+            <description value="Example of Race Observation profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-race"/>
             <groupingId value="other-examples"/>
         </resource>
         <resource>
