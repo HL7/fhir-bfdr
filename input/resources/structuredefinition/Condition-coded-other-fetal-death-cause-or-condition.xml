@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-coded-other-fetal-death-cause-or-condition"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-11-20T03:09:37.040+00:00"/>
-        <source value="#fSvRIrmlE9TE0wG7"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-05-05T23:09:44.875+00:00"/>
+        <source value="#SwJgwKnjU7WcR3Bc"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-other-fetal-death-cause-or-condition"/>
     <version value="1.0.0"/>
@@ -45,10 +45,12 @@
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
-            <short value="The list provides ICD-10 codes and associated cause-of-death titles for the most detailed listing of causes of death. This list is maintained by CDC NCHS."/>
+            <short value="This value set contains the ICD10 codes for causes of fetal death as defined by the ICD-10-Mortality Fetal Manual (2016)."/>
+            <definition value="This value set contains the ICD10 codes for causes of fetal death as defined by the ICD-10-Mortality Fetal Manual (2016). Defined as the following, a cause of fetal death is the morbid condition or disease process, abnormality, injury, or poisoning leading directly to fetal death. The initiating cause of fetal death is the disease or injury, which initiated the chain of morbid events leading directly to death or the circumstances of the accident or violence, which produced fatal injury. A fetal death often results from the combined effect of two or more conditions. These conditions may be completely unrelated, arising independently of each other or they may be causally related to each other; that is, one cause may lead to another which in turn, leads to a third cause, etc."/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3593"/>
+                <description value="Cause of Fetal Death ICD-10"/>
+                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7933"/>
             </binding>
         </element>
     </differential>

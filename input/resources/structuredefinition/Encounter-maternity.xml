@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-maternity"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2021-04-06T19:51:28.161+00:00"/>
-        <source value="#BvVCcv2peYV1RvSI"/>
+        <versionId value="13"/>
+        <lastUpdated value="2021-05-05T22:37:34.329+00:00"/>
+        <source value="#WOsy7Rb59YPrJzue"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
     <version value="1.0.0"/>
@@ -116,11 +116,11 @@
         </element>
         <element id="Encounter.location.physicalType">
             <path value="Encounter.location.physicalType"/>
-            <short value="Place where birth/delivery occurred (type of place)"/>
-            <definition value="Place where birth/delivery occurred (type of place)"/>
+            <short value="The value set contains the list of values used to indicate the type of place where birth or delivery occurred."/>
             <mustSupport value="true"/>
             <binding>
                 <strength value="preferred"/>
+                <description value="Birth or Delivery Occurred (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7124"/>
             </binding>
         </element>

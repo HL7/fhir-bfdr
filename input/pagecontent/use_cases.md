@@ -1,4 +1,4 @@
-[Previous Page - Notice to Ballot Commenters](notice_to_ballot_commenters.html)
+[Previous Page - Home Page](index.html)
 
 This implementation guide supports five use cases for communicating information from the electronic health record system to the jurisdictional Vital Records Offices and to the national statistical agency, the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS):
 
@@ -20,7 +20,7 @@ Information flows are supported by the FHIR Composition resources indicated in t
   
 | Use Case                      | FHIR Composition                                                                                                                | Data Source                         | Data Receiver                       |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------- |
-| Provider Live Birth           | [Composition - Provider Live Birth Report](StructureDefinition-Composition-provider-live-birth-report.html)                     | EHR                                 | Jurisdictional Vital RecordsOffice  |
+| Provider Live Birth           | [Composition - Provider Live Birth Report](StructureDefinition-Composition-provider-live-birth-report.html)                     | EHR                                 | Jurisdictional Vital Records Office |
 | Provider Fetal Death          | [Composition - Provider Fetal Death Report](StructureDefinition-Composition-provider-fetal-death-report.html)                   | EHR                                 | Jurisdictional Vital Records Office |
 | Jurisdiction Live Birth       | [Composition - Jurisdiction Live Birth Report](StructureDefinition-Composition-jurisdiction-live-birth-report.html)            | Jurisdictional Vital Records Office | National Statistical Agency         | 
 | Jurisdiction Fetal Death      | [Composition - Jurisdiction Fetal Death Report](StructureDefinition-Composition-jurisdiction-fetal-death-report.html)                   | Jurisdictional Vital Records Office | National Statistical Agency         | 
@@ -44,7 +44,7 @@ This use case represents information about a live birth and the issuance of a Bi
 
 The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth.
 
-The Jurisdication Live Birth use case is represented by the [Composition - Jurisdication Live Birth Report](StructureDefinition-Composition-jurisdiction-live-birth-report.html).
+The Jurisdiction Live Birth use case is represented by the [Composition - Jurisdiction Live Birth Report](StructureDefinition-Composition-jurisdiction-live-birth-report.html).
 
 ### Provider Fetal Death
 TODO: update
@@ -77,4 +77,4 @@ This use case represents the communication of coded cause of fetal death informa
 
 The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html).
 
-[Next Page - Appendices](appendices.html)
+[Next Page - Terminology](terminology.html)

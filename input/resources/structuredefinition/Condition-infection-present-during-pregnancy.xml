@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-infection-present-during-pregnancy"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-11-19T04:48:01.012+00:00"/>
-        <source value="#TZTmFCKF9xEevTmp"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-05-05T22:33:39.245+00:00"/>
+        <source value="#2LXUvR5USjAtxV3O"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy"/>
     <version value="1.0.0"/>
@@ -46,9 +46,10 @@
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
-            <short value="Infections present and/or treated during this pregnancy for live birth as required by the National US Standards. Note: Genital herpes simplex (SNOMED code 33839006) is only a Michigan state-specific requirement."/>
+            <short value="Infections present and/or treated during this pregnancy for live birth as required by the National US Standards. Note: Genital herpes simplex (SNOMED code 33839006) is only a Michigan state-specific requirement. "/>
             <binding>
                 <strength value="required"/>
+                <description value="Infections During Pregnancy - Live Birth (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.6070"/>
             </binding>
         </element>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="57"/>
-        <lastUpdated value="2021-05-03T23:58:23.655+00:00"/>
-        <source value="#BEL0CvJ7qckm8ag5"/>
+        <versionId value="59"/>
+        <lastUpdated value="2021-05-04T07:49:38.019+00:00"/>
+        <source value="#VLnv81iXoFcFpbaF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdication Vital Records Office. For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility.&#xA;&#xA;The data requirements for provider supplied live birth information are based on the Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth, the 2016 US Standard Facility Worksheet for the Live Birth Certificate, the 2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births, and the 2016 US Standard Mothers Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
+    <description value="This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdiction Vital Records Office. For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility.&#xA;&#xA;The data requirements for provider supplied live birth information are based on the Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth, the 2016 US Standard Facility Worksheet for the Live Birth Certificate, the 2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births, and the 2016 US Standard Mothers Worksheet for Child's Birth Certificate. The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -416,6 +416,8 @@
             <sliceName value="obstetricProcedures"/>
             <short value="Obstetric procedures"/>
             <definition value="Selected medical treatments or invasive/manipulative procedures performed during this pregnancy specifically for management of labor and delivery"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
@@ -454,18 +456,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:medicalHealthInformation.entry:trialLaborAttempted">
-            <path value="Composition.section.entry"/>
-            <sliceName value="trialLaborAttempted"/>
-            <short value="If cesearean, was a trial of labor attempted?"/>
-            <definition value="If cesarean, was a trial of labor attempted? (Labor was allowed, augmented, or induced with plans for a vaginal delivery.)"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-edit-flag-number-prenatal-care-visits"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-11-05T21:55:40.024+00:00"/>
-        <source value="#6a5mV4T0etEE00m9"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-05-05T22:54:16.066+00:00"/>
+        <source value="#kEdn5PTIMBfziRLU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-prenatal-care-visits"/>
     <version value="1.0.0"/>
@@ -47,7 +47,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="Pregnancy Report Edit Flags (NCHS)"/>
+            <short value="To reflect the relevant edit possibilities for pregnancy report of Education, Mother's height, Mother's pre-pregnancy weight and Prenatal care visit number and also to reflect the relevant edit possibilities for pregnancy status of Female decedent."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -56,6 +56,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
+                <description value="Pregnancy Report Edit Flags (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7566"/>
             </binding>
         </element>

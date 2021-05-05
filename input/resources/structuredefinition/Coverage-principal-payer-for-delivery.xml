@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Coverage-principal-payer-for-delivery"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-11-05T06:31:19.189+00:00"/>
-        <source value="#z3FxpDXR8L3xzbiZ"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-05-05T23:07:12.102+00:00"/>
+        <source value="#FBpP6ku1eblKcPs2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery"/>
     <version value="1.0.0"/>
@@ -33,11 +33,12 @@
         </element>
         <element id="Coverage.type">
             <path value="Coverage.type"/>
-            <short value="Birth and Fetal Death Financial Class (NCHS)"/>
+            <short value="The value set contains the list of values used to indicate the principle source of payment for the labor and delivery."/>
             <min value="1"/>
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
+                <description value="Birth and Fetal Death Financial Class (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7163"/>
             </binding>
         </element>

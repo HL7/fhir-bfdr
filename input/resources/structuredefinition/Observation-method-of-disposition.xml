@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-method-of-disposition"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-28T19:34:11.117+00:00"/>
-        <source value="#CiD33F5nkNanT9h5"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-05-05T22:58:21.176+00:00"/>
+        <source value="#TpTA6imczxPZgEoh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition"/>
     <version value="1.0.0"/>
@@ -47,7 +47,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="Fetal Remains Disposition Method (NCHS)"/>
+            <short value="The collection of disposition methods of fetal remains used within birth and fetal death reporting."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -55,6 +55,7 @@
             </type>
             <binding>
                 <strength value="required"/>
+                <description value="Fetal Remains Disposition Method (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7585"/>
             </binding>
         </element>

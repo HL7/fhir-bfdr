@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-fetal-death-report"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2021-05-03T23:57:14.671+00:00"/>
-        <source value="#FBRksL7BAV4ZBrq1"/>
+        <versionId value="29"/>
+        <lastUpdated value="2021-05-04T08:27:39.032+00:00"/>
+        <source value="#AiojSPJ4RIPu7kjh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -360,18 +360,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:medicalHealthInformation.entry:trialLaborAttempted">
-            <path value="Composition.section.entry"/>
-            <sliceName value="trialLaborAttempted"/>
-            <short value="If cesearean, was a trial of labor attempted?"/>
-            <definition value="If cesarean, was a trial of labor attempted? (Labor was allowed, augmented, or induced with plans for a vaginal delivery.)"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/>
             </type>
             <mustSupport value="true"/>
         </element>

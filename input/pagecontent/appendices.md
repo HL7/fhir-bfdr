@@ -1,4 +1,4 @@
-[Previous Page - Use Cases](use_cases.html)
+[Previous Page - Terminology](terminology.html)
 
 Appendices for the IG
 

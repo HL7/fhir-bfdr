@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="51"/>
-        <lastUpdated value="2021-05-03T23:57:08.221+00:00"/>
-        <source value="#dTGB8DCAEbPQCl6s"/>
+        <versionId value="53"/>
+        <lastUpdated value="2021-05-04T07:48:24.893+00:00"/>
+        <source value="#b7FIT6cqRDxPhX6L"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -430,6 +430,8 @@
             <sliceName value="obstetricProcedures"/>
             <short value="Obstetric procedures"/>
             <definition value="Selected medical treatments or invasive/manipulative procedures performed during this pregnancy specifically for management of labor and delivery"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric"/>
@@ -468,18 +470,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:medicalHealthInformation.entry:trialLaborAttempted">
-            <path value="Composition.section.entry"/>
-            <sliceName value="trialLaborAttempted"/>
-            <short value="If cesearean, was a trial of labor attempted?"/>
-            <definition value="If cesarean, was a trial of labor attempted? (Labor was allowed, augmented, or induced with plans for a vaginal delivery.)"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/>
             </type>
             <mustSupport value="true"/>
         </element>

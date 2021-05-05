@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-final-route-method-delivery"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-11-19T04:54:06.730+00:00"/>
-        <source value="#fGaoelqoXEG8InnQ"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-05-05T23:01:06.071+00:00"/>
+        <source value="#RrC5ERXkbIY5a7ys"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
     <version value="1.0"/>
@@ -35,8 +35,10 @@
         </element>
         <element id="Procedure.code">
             <path value="Procedure.code"/>
+            <short value="The value set contains the list of the possible routes by which the infant or fetus may be delivered."/>
             <binding>
                 <strength value="required"/>
+                <description value="Delivery Routes (NCHS)"/>
                 <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7118"/>
             </binding>
         </element>
