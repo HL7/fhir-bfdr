@@ -25,7 +25,7 @@
 * [Plurality Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7577)
 * [Pregnancy Report Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7566)
 * [ProcedureOutcomeCodes(SNOMEDCT)](http://hl7.org/fhir/ValueSet/procedure-outcome)
-* [ValueSetCigaretteSmokingBeforeAndDuringPregnancy](http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy)
+* [CigaretteSmokingBeforeAndDuringPregnancy](ValueSet-cigarette-smoking-before-during-pregnancy)
 * [Yes No Unknown (YNU)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.888)
 
 [Next Page - Appendices](appendices.html)
