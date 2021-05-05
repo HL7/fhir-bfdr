@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="cigarette-smoking-before-during-pregnancy"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-05-05T23:56:22.222+00:00"/>
+        <source value="#n4fhJZKqQ34xtdNQ"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/ValueSet/cigarette-smoking-before-during-pregnancy"/>
+    <name value="CigaretteSmokingBeforeAndDuringPregnancy"/>
+    <title value="Cigarette Smoking Before and During Pregnancy"/>
+    <status value="active"/>
+    <description value="This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."/>
+    <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="64794-1"/>
+                <display value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
+            </concept>
+            <concept>
+                <code value="87298-6"/>
+                <display value="Cigarettes smoked per day by Mother--1st trimester"/>
+            </concept>
+            <concept>
+                <code value="87299-4"/>
+                <display value="Cigarettes smoked per day by Mother--2nd trimester"/>
+            </concept>
+            <concept>
+                <code value="64795-8"/>
+                <display value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="905"/>
-        <lastUpdated value="2021-05-05T23:32:11.294+00:00"/>
-        <source value="#G9xl8w38E63yDzli"/>
+        <versionId value="906"/>
+        <lastUpdated value="2021-05-05T23:56:22.307+00:00"/>
+        <source value="#k90bEMHzDOj1wbIJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -1826,6 +1826,15 @@
             <description value="This Observation profile represents the fetal presentation (orientation within the mother's womb) of a fetus prior to delivery/birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="newborn-fetus-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/cigarette-smoking-before-during-pregnancy"/>
+                <display value="Cigarette Smoking Before and During Pregnancy"/>
+            </reference>
+            <name value="Cigarette Smoking Before and During Pregnancy"/>
+            <description value="This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
