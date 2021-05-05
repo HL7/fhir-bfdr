@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="QuestionnaireResponse-mothers-live-birth-jada-quinn"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-05-03T05:27:04.286+00:00"/>
-        <source value="#DdI3aFh4s2pttIDL"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-05-05T23:51:50.868+00:00"/>
+        <source value="#6wEIZVEEeiyjPBOr"/>
     </meta>
-    <questionnaire value="http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth-jada-quinn"/>
+    <questionnaire value="http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"/>
     <status value="completed"/>
     <subject>
         <reference value="Patient/patient-mother-jada-ann-quinn"/>
@@ -200,7 +200,7 @@
         <linkId value="mother-race"/>
         <text value="What is your race? (Please check one or more races to indicate what you consider yourself to be)."/>
         <item>
-            <linkId value="mother-race"/>
+            <linkId value="mother-race-category"/>
             <text value="Race categories"/>
             <answer>
                 <valueCoding>
@@ -238,21 +238,21 @@
         <text value="Did this pregnancy result from infertility treatment? (If yes, please answer 12a and 12b)"/>
         <answer>
             <valueBoolean value="true"/>
+            <item>
+                <linkId value="drugs-ai-ii"/>
+                <text value="If yes, did this pregnancy result from fertility-enhancing drugs, artificial insemination, or intrauterine insemination?"/>
+                <answer>
+                    <valueBoolean value="false"/>
+                </answer>
+            </item>
+            <item>
+                <linkId value="art-ivf-gift"/>
+                <text value="If yes, did this pregnancy result from assisted reproductive technology (e.g., in-vitro fertilization (IVF), gamete intrafallopian transfer (GIFT))?"/>
+                <answer>
+                    <valueBoolean value="true"/>
+                </answer>
+            </item>
         </answer>
-        <item>
-            <linkId value="drugs-ai-ii"/>
-            <text value="If yes, did this pregnancy result from fertility-enhancing drugs, artificial insemination, or intrauterine insemination?"/>
-            <answer>
-                <valueBoolean value="false"/>
-            </answer>
-        </item>
-        <item>
-            <linkId value="art-ivf-gift"/>
-            <text value="If yes, did this pregnancy result from assisted reproductive technology (e.g., in-vitro fertilization (IVF), gamete intrafallopian transfer (GIFT))?"/>
-            <answer>
-                <valueBoolean value="true"/>
-            </answer>
-        </item>
     </item>
     <item>
         <linkId value="mothers-height"/>
