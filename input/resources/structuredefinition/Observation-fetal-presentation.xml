@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-fetal-presentation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-05-05T23:17:36.190+00:00"/>
-        <source value="#V12aYYQpb22wCfQW"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-05-06T04:32:30.685+00:00"/>
+        <source value="#LP6oM8vKdLquyili"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation"/>
     <version value="1.0.0"/>
@@ -61,8 +61,8 @@
             <path value="Observation.subject"/>
             <type>
                 <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
-                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
             </type>
         </element>
         <element id="Observation.value[x]">
