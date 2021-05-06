@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="QuestionnaireResponse-mothers-live-birth-jada-quinn"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-05-05T23:51:50.868+00:00"/>
-        <source value="#6wEIZVEEeiyjPBOr"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-05-06T03:23:46.327+00:00"/>
+        <source value="#JYT9LDNLOaSPVH9V"/>
     </meta>
     <questionnaire value="http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"/>
     <status value="completed"/>
@@ -211,8 +211,8 @@
             </answer>
         </item>
         <item>
-            <linkId value="mother-race"/>
-            <text value="Race categories"/>
+            <linkId value="mother-detailed-race"/>
+            <text value="Extended race codes"/>
             <answer>
                 <valueCoding>
                     <system value="urn:oid:2.16.840.1.113883.6.238"/>
@@ -275,9 +275,9 @@
             <answer>
                 <valueQuantity>
                     <value value="7"/>
-                    <unit value="in"/>
+                    <unit value="in_i"/>
                     <system value="http://unitsofmeasure.org"/>
-                    <code value="in"/>
+                    <code value="in_i"/>
                 </valueQuantity>
             </answer>
         </item>
@@ -288,9 +288,9 @@
         <answer>
             <valueQuantity>
                 <value value="145"/>
-                <unit value="lbs"/>
+                <unit value="lb_av"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="lbs"/>
+                <code value="lb_av"/>
             </valueQuantity>
         </answer>
     </item>
@@ -475,7 +475,7 @@
         <linkId value="father-race"/>
         <text value="What is the father's race? (Please check one or more races to indicate what he considers himself to be)."/>
         <item>
-            <linkId value="father-race"/>
+            <linkId value="father-race-category"/>
             <text value="Race categories"/>
             <answer>
                 <valueCoding>

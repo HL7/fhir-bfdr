@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-mother-received-wic-food-carmen-teresa-lee"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-20T23:21:02.174+00:00"/>
-        <source value="#1YGwwxSUNKlpijED"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-05-06T01:52:30.198+00:00"/>
+        <source value="#fP1ovAjIRCr1oalF"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
     </meta>
     <status value="final"/>
@@ -21,5 +21,11 @@
         <reference value="Patient/patient-mother-carmen-teresa-lee"/>
         <display value="Patient - Mother (Carmen Teresa Lee)"/>
     </subject>
-    <valueBoolean value="false"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="N"/>
+            <display value="No"/>
+        </coding>
+    </valueCodeableConcept>
 </Observation>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-mother-received-wic-food-jada-ann-quinn"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-20T22:22:18.152+00:00"/>
-        <source value="#UKbhVjI5v0czwyL1"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-05-06T01:52:30.198+00:00"/>
+        <source value="#dEiBaIRrn0dVg3SB"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
     </meta>
     <status value="final"/>
@@ -21,5 +21,11 @@
         <reference value="Patient/patient-mother-jada-ann-quinn"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
     </subject>
-    <valueBoolean value="false"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="Y"/>
+            <display value="Yes"/>
+        </coding>
+    </valueCodeableConcept>
 </Observation>
