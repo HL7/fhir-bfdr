@@ -8,6 +8,30 @@
         <source value="#1PooXrgLx8p02xSG"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational"/>
     </meta>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-race">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2054-5"/>
+                <display value="Black or African American"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Black or African America"/>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-ethnicity">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2135-2"/>
+                <display value="Hispanic or Latino"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Hispanic or Latino"/>
+        </extension>
+    </extension>
     <active value="true"/>
     <patient>
         <reference value="Patient/patient-decedent-fetus-not-named"/>
