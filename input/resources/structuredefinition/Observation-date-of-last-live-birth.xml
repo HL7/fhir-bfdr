@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-date-of-last-live-birth"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-11-05T06:32:15.109+00:00"/>
-        <source value="#dbnW4g4loMVnc8R9"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-05-14T07:41:53.962+00:00"/>
+        <source value="#VmGyzpmKU5ti5YKd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
     <version value="1.0.0"/>
@@ -43,6 +43,26 @@
                     <code value="68499-3"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">

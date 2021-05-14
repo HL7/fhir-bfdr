@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-paternity-acknowledgement-signed"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-11-19T04:53:28.807+00:00"/>
-        <source value="#9uvU0gq9egBpAdVR"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-05-14T07:44:14.154+00:00"/>
+        <source value="#SSIF5sUfVZ7RSdYF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
     <version value="1.0.0"/>
@@ -56,6 +56,8 @@
         </element>
         <element id="Observation.focus">
             <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>

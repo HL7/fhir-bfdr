@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-histological-exam-results-used"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-05-14T01:16:00.687+00:00"/>
-        <source value="#aVoQ3GVWxCPunOj3"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-05-14T07:20:37.266+00:00"/>
+        <source value="#xCtx6nimvWKF31bb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
     <version value="1.0.0"/>
@@ -43,6 +43,15 @@
                     <code value="74498-7"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">

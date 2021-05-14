@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-cigarette-smoking-before-during-pregnancy"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2021-05-05T23:56:45.837+00:00"/>
-        <source value="#IBNsOtB6Hwcv4EwB"/>
+        <versionId value="31"/>
+        <lastUpdated value="2021-05-14T07:42:18.227+00:00"/>
+        <source value="#I1mpfyb7SqoLo4oG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
     <version value="1.0.0"/>
@@ -43,6 +43,26 @@
                 <description value="CigaretteSmokingBeforeAndDuringPregnancy"/>
                 <valueSet value="http://hl7.org/fhir/us/bfdr/ValueSet/cigarette-smoking-before-during-pregnancy"/>
             </binding>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

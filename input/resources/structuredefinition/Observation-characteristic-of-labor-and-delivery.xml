@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-characteristic-of-labor-and-delivery"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2021-05-05T22:38:44.093+00:00"/>
-        <source value="#p2Zif9L95P1hbgLG"/>
+        <versionId value="14"/>
+        <lastUpdated value="2021-05-14T07:42:37.561+00:00"/>
+        <source value="#mW8FIzeI6BiM2msd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
     <version value="1.0.0"/>
@@ -47,10 +47,12 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

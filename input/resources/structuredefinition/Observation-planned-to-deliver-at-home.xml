@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-planned-to-deliver-at-home"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2021-05-14T01:17:11.136+00:00"/>
-        <source value="#Srwj6C5LPHbjmXNg"/>
+        <versionId value="19"/>
+        <lastUpdated value="2021-05-14T07:40:37.720+00:00"/>
+        <source value="#skkZXi9TOYm71JKB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
     <version value="1.0.0"/>
@@ -43,6 +43,16 @@
                     <code value="73765-0"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
