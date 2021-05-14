@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-coded-race-and-ethnicity"/>
     <meta>
-        <versionId value="35"/>
-        <lastUpdated value="2021-05-14T05:05:33.599+00:00"/>
-        <source value="#3QWg9etYoPuVDoNm"/>
+        <versionId value="40"/>
+        <lastUpdated value="2021-05-14T05:42:46.389+00:00"/>
+        <source value="#5UJ4ziCTy52kq6jI"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office. It contains data that are a coded form of the race and ethnicity data that has been submitted to the NCHS. Two sets of codes will be used to address two objectives. These objectives are:&#xA;* to generate codes for race or ethnicity data provided as text entries&#xA;* to generate a single race code in cases where multiple races have been reported&#xA;&#xA;In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. &#xA;&#xA;Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death."/>
+    <description value="This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office. It contains data that are a coded form of the race and ethnicity data that has been submitted to the the national statistics agency. Two sets of codes will be used to address two objectives. These objectives are:&#xA;* to generate codes for race or ethnicity data provided as text entries&#xA;* to generate a single race code in cases where multiple races have been reported&#xA;&#xA;In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. &#xA;&#xA;Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -74,6 +74,7 @@
                     <code value="86805-9"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
@@ -88,6 +89,7 @@
         <element id="Composition.author">
             <path value="Composition.author"/>
             <short value="The author is the NCHS."/>
+            <definition value="The author is the NCHS."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -113,12 +115,14 @@
             <path value="Composition.section.focus"/>
             <short value="The focus of this section is the mother or father"/>
             <definition value="The subject of the composition as a whole is the newborn baby or decedent fetus. The focus of this section in the composition is the mother or father."/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section.entry">
             <path value="Composition.section.entry"/>
@@ -132,6 +136,7 @@
             </slicing>
             <short value="Entries that are contained in the Coded Race and Ethnicity section"/>
             <definition value="Entries that are contained in the Coded Race and Ethnicity section"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section.entry:race">
             <path value="Composition.section.entry"/>

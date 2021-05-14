@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="55"/>
-        <lastUpdated value="2021-05-14T05:02:41.594+00:00"/>
-        <source value="#CwG3UPGn1ne37eb4"/>
+        <versionId value="60"/>
+        <lastUpdated value="2021-05-14T06:15:08.264+00:00"/>
+        <source value="#xcxQI6PJuzvyV85W"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS. The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth."/>
+    <description value="This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to the national statistics agency. The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78,6 +78,12 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.status">
+            <path value="Composition.status"/>
+            <short value="In the case of a live birth sent in error, a status of 'entered-in-error' must be set."/>
+            <definition value="In the case of a live birth sent in error, a status of 'entered-in-error' must be set."/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
             <short value="Jurisdiction live birth report Document"/>
@@ -88,6 +94,7 @@
                     <code value="92011-6"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
@@ -113,6 +120,7 @@
         <element id="Composition.author">
             <path value="Composition.author"/>
             <short value="The author is the jurisdictional Vital Records Office."/>
+            <definition value="The author is the jurisdictional Vital Records Office."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -128,6 +136,7 @@
             <short value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate."/>
             <definition value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and Newborn. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal">
             <path value="Composition.section"/>
@@ -141,21 +150,25 @@
             <path value="Composition.section.code"/>
             <short value="Prenatal records"/>
             <definition value="Prenatal records"/>
+            <min value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="57073-9"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal.focus">
             <path value="Composition.section.focus"/>
             <short value="The focus of this section is the mother"/>
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal.entry">
             <path value="Composition.section.entry"/>
@@ -169,6 +182,8 @@
             </slicing>
             <short value="Entries that are contained in the Mother Prenatal section"/>
             <definition value="Entries that are contained in the Mother Prenatal section"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal.entry:plannedToDeliverAtHome">
             <path value="Composition.section.entry"/>
@@ -362,21 +377,25 @@
             <path value="Composition.section.code"/>
             <short value="Clinical information"/>
             <definition value="Clinical information"/>
+            <min value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="55752-0"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicalHealthInformation.focus">
             <path value="Composition.section.focus"/>
             <short value="The focus of this section is the mother"/>
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicalHealthInformation.entry">
             <path value="Composition.section.entry"/>
@@ -390,6 +409,8 @@
             </slicing>
             <short value="Entries that are contained in the medical and health information section"/>
             <definition value="Entries that are contained in the medical and health information section"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:medicalHealthInformation.entry:pregnancyRiskFactors">
             <path value="Composition.section.entry"/>
@@ -496,12 +517,14 @@
             <path value="Composition.section.code"/>
             <short value="Newborn delivery information"/>
             <definition value="Newborn delivery information"/>
+            <min value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="57075-4"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:newborn.entry">
             <path value="Composition.section.entry"/>
@@ -515,6 +538,8 @@
             </slicing>
             <short value="Entries that are contained in the newborn section"/>
             <definition value="Entries that are contained in the newborn section"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:newborn.entry:birthWeight">
             <path value="Composition.section.entry"/>
@@ -622,21 +647,25 @@
             <path value="Composition.section.code"/>
             <short value="Mother's administrative information"/>
             <definition value="Mother's administrative information"/>
+            <min value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="92014-0"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherInformation.focus">
             <path value="Composition.section.focus"/>
             <short value="The focus of this section is the mother"/>
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherInformation.entry">
             <path value="Composition.section.entry"/>
@@ -650,6 +679,8 @@
             </slicing>
             <short value="Entries that are contained in the motherInformation section"/>
             <definition value="Entries that are contained in the motherInformation section"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherInformation.entry:marriedDuringPregnancy">
             <path value="Composition.section.entry"/>
@@ -699,21 +730,25 @@
             <path value="Composition.section.code"/>
             <short value="Father's administrative information"/>
             <definition value="Father's administrative information"/>
+            <min value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="92013-2"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:fatherInformation.focus">
             <path value="Composition.section.focus"/>
             <short value="The focus of this section is the father"/>
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:fatherInformation.entry">
             <path value="Composition.section.entry"/>
@@ -727,6 +762,8 @@
             </slicing>
             <short value="Entries that are contained in the fatherInformation section"/>
             <definition value="Entries that are contained in the fatherInformation section"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:fatherInformation.entry:paternityAcknowledgementSigned">
             <path value="Composition.section.entry"/>
@@ -771,6 +808,7 @@
                     <code value="92012-4"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:EditFlags.entry">
             <path value="Composition.section.entry"/>
@@ -783,6 +821,7 @@
             </slicing>
             <min value="12"/>
             <max value="12"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:EditFlags.entry:editFlagBirthweight">
             <path value="Composition.section.entry"/>
