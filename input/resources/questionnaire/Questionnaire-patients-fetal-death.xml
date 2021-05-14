@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Questionnaire-patients-fetal-death"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-05-06T20:59:42.030+00:00"/>
-        <source value="#WJ63l1yPOLgNX8bH"/>
+        <versionId value="11"/>
+        <lastUpdated value="2021-05-14T07:07:34.611+00:00"/>
+        <source value="#E8Nt5xsPdZzTQIna"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-patients-fetal-death"/>
     <version value="1.0.0"/>
@@ -34,7 +34,6 @@
         <prefix value="1"/>
         <text value="Would you like to name the child? This is entirely optional."/>
         <type value="group"/>
-        <required value="false"/>
         <repeats value="false"/>
         <item>
             <linkId value="child-first-name"/>
@@ -62,7 +61,6 @@
         <prefix value="2"/>
         <text value="What is your current legal name?"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-first-name"/>
@@ -138,7 +136,6 @@
         <prefix value="5"/>
         <text value="What is your mailing address"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-mail-same"/>
@@ -221,7 +218,6 @@
         <prefix value="6"/>
         <text value="What is your date of birth?"/>
         <type value="date"/>
-        <required value="true"/>
         <repeats value="false"/>
     </item>
     <item>
@@ -229,7 +225,6 @@
         <prefix value="7"/>
         <text value="In what State, U.S. territory, or foreign country were you born? Please specify one of the following:"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-birthplace-state"/>
@@ -257,7 +252,6 @@
         <prefix value="8"/>
         <text value="What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received)."/>
         <type value="choice"/>
-        <required value="true"/>
         <repeats value="false"/>
         <answerValueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582"/>
     </item>
@@ -266,13 +260,11 @@
         <prefix value="9"/>
         <text value="Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-shl"/>
             <text value="Are you Spanish/Hispanic/Latina"/>
             <type value="choice"/>
-            <required value="true"/>
             <repeats value="true"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837"/>
         </item>
@@ -288,7 +280,6 @@
                     <code value="2135-2"/>
                 </answerCoding>
             </enableWhen>
-            <required value="false"/>
             <repeats value="false"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877"/>
         </item>
@@ -298,13 +289,11 @@
         <prefix value="10"/>
         <text value="What is your race? (Please check one or more races to indicate what you consider yourself to be)."/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-race-category"/>
             <text value="Race categories"/>
             <type value="choice"/>
-            <required value="true"/>
             <repeats value="true"/>
             <answerValueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-race-category"/>
         </item>
@@ -312,7 +301,6 @@
             <linkId value="mother-detailed-race"/>
             <text value="Extended race codes"/>
             <type value="choice"/>
-            <required value="false"/>
             <repeats value="true"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.14914"/>
         </item>
@@ -322,7 +310,6 @@
         <prefix value="11"/>
         <text value="What is the current legal name of your baby's father?"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="father-first-name"/>
@@ -350,7 +337,6 @@
         <prefix value="12"/>
         <text value="What is the father's date of birth?"/>
         <type value="date"/>
-        <required value="true"/>
         <repeats value="false"/>
     </item>
     <item>
@@ -358,7 +344,6 @@
         <prefix value="13"/>
         <text value="In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="father-birthplace-state"/>
@@ -381,7 +366,6 @@
         <prefix value="14"/>
         <text value="Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"/>
         <type value="choice"/>
-        <required value="true"/>
         <repeats value="false"/>
         <answerValueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"/>
     </item>
@@ -394,14 +378,12 @@
             <linkId value="mothers-height-feet"/>
             <text value="Feet"/>
             <type value="quantity"/>
-            <required value="true"/>
             <repeats value="false"/>
         </item>
         <item>
             <linkId value="mothers-height-inches"/>
             <text value="Inches"/>
             <type value="quantity"/>
-            <required value="true"/>
             <repeats value="false"/>
         </item>
     </item>
@@ -410,7 +392,6 @@
         <prefix value="16"/>
         <text value="lbs"/>
         <type value="quantity"/>
-        <required value="true"/>
         <repeats value="false"/>
     </item>
     <item>
@@ -426,14 +407,12 @@
                 <linkId value="mothers-smoking-3-months-prior-cig"/>
                 <text value="# of cigarettes*"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
             <item>
                 <linkId value="mothers-smoking-3-months-prior-pck"/>
                 <text value="# of packs"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
         </item>
@@ -445,14 +424,12 @@
                 <linkId value="mothers-smoking-trimester-1-cig"/>
                 <text value="# of cigarettes*"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
             <item>
                 <linkId value="mothers-smoking-trimester-1-pck"/>
                 <text value="# of packs"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
         </item>
@@ -464,14 +441,12 @@
                 <linkId value="mothers-smoking-trimester-2-cig"/>
                 <text value="# of cigarettes*"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
             <item>
                 <linkId value="mothers-smoking-trimester-2-pck"/>
                 <text value="# of packs"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
         </item>
@@ -483,14 +458,12 @@
                 <linkId value="mothers-smoking-trimester-3-cig"/>
                 <text value="# of cigarettes*"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
             <item>
                 <linkId value="mothers-smoking-trimester-3-pck"/>
                 <text value="# of packs"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
         </item>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Questionnaire-mothers-live-birth"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-05-06T20:59:42.032+00:00"/>
-        <source value="#v4Uymtml4IkIVRqc"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-05-14T07:07:34.611+00:00"/>
+        <source value="#7lNfWphdNJfl8E2C"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"/>
     <version value="1.0.0"/>
@@ -34,7 +34,6 @@
         <prefix value="1"/>
         <text value="What is your current legal name?"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-first-name"/>
@@ -62,7 +61,6 @@
         <prefix value="2"/>
         <text value="What will be your baby's legal name (as it should appear on the birth certificate)?"/>
         <type value="group"/>
-        <required value="false"/>
         <repeats value="false"/>
         <item>
             <linkId value="child-first-name"/>
@@ -138,7 +136,6 @@
         <prefix value="5"/>
         <text value="What is your mailing address"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-mail-same"/>
@@ -221,7 +218,6 @@
         <prefix value="6"/>
         <text value="What is your date of birth?"/>
         <type value="date"/>
-        <required value="true"/>
         <repeats value="false"/>
     </item>
     <item>
@@ -229,7 +225,6 @@
         <prefix value="7"/>
         <text value="In what State, U.S. territory, or foreign country were you born? Please specify one of the following:"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-birthplace-state"/>
@@ -258,7 +253,6 @@
         <prefix value="8"/>
         <text value="What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received)."/>
         <type value="choice"/>
-        <required value="true"/>
         <repeats value="false"/>
         <answerValueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582"/>
     </item>
@@ -267,13 +261,11 @@
         <prefix value="9"/>
         <text value="Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-shl"/>
             <text value="Are you Spanish/Hispanic/Latina"/>
             <type value="choice"/>
-            <required value="true"/>
             <repeats value="true"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837"/>
         </item>
@@ -289,7 +281,6 @@
                     <code value="2135-2"/>
                 </answerCoding>
             </enableWhen>
-            <required value="false"/>
             <repeats value="false"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877"/>
         </item>
@@ -299,13 +290,11 @@
         <prefix value="10"/>
         <text value="What is your race? (Please check one or more races to indicate what you consider yourself to be)."/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-race-category"/>
             <text value="Race categories"/>
             <type value="choice"/>
-            <required value="true"/>
             <repeats value="true"/>
             <answerValueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-race-category"/>
         </item>
@@ -313,7 +302,6 @@
             <linkId value="mother-detailed-race"/>
             <text value="Extended race codes"/>
             <type value="choice"/>
-            <required value="false"/>
             <repeats value="true"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.14914"/>
         </item>
@@ -324,7 +312,6 @@
         <prefix value="11"/>
         <text value="Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"/>
         <type value="choice"/>
-        <required value="true"/>
         <repeats value="false"/>
         <answerValueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"/>
     </item>
@@ -338,7 +325,6 @@
             <prefix value="12a"/>
             <text value="If yes, did this pregnancy result from fertility-enhancing drugs, artificial insemination, or intrauterine insemination?"/>
             <type value="boolean"/>
-            <required value="true"/>
             <repeats value="false"/>
         </item>
         <item>
@@ -346,7 +332,6 @@
             <prefix value="12b"/>
             <text value="If yes, did this pregnancy result from assisted reproductive technology (e.g., in-vitro fertilization (IVF), gamete intrafallopian transfer (GIFT))?"/>
             <type value="boolean"/>
-            <required value="true"/>
             <repeats value="false"/>
         </item>
     </item>
@@ -359,14 +344,12 @@
             <linkId value="mothers-height-feet"/>
             <text value="Feet"/>
             <type value="quantity"/>
-            <required value="true"/>
             <repeats value="false"/>
         </item>
         <item>
             <linkId value="mothers-height-inches"/>
             <text value="Inches"/>
             <type value="quantity"/>
-            <required value="true"/>
             <repeats value="false"/>
         </item>
     </item>
@@ -375,7 +358,6 @@
         <prefix value="14"/>
         <text value="lbs"/>
         <type value="quantity"/>
-        <required value="true"/>
         <repeats value="false"/>
     </item>
     <item>
@@ -391,14 +373,12 @@
                 <linkId value="mothers-smoking-3-months-prior-cig"/>
                 <text value="# of cigarettes*"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
             <item>
                 <linkId value="mothers-smoking-3-months-prior-pck"/>
                 <text value="# of packs"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
         </item>
@@ -410,14 +390,12 @@
                 <linkId value="mothers-smoking-trimester-1-cig"/>
                 <text value="# of cigarettes*"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
             <item>
                 <linkId value="mothers-smoking-trimester-1-pck"/>
                 <text value="# of packs"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
         </item>
@@ -429,14 +407,12 @@
                 <linkId value="mothers-smoking-trimester-2-cig"/>
                 <text value="# of cigarettes*"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
             <item>
                 <linkId value="mothers-smoking-trimester-2-pck"/>
                 <text value="# of packs"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
         </item>
@@ -448,14 +424,12 @@
                 <linkId value="mothers-smoking-trimester-3-cig"/>
                 <text value="# of cigarettes*"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
             <item>
                 <linkId value="mothers-smoking-trimester-3-pck"/>
                 <text value="# of packs"/>
                 <type value="integer"/>
-                <required value="true"/>
                 <repeats value="false"/>
             </item>
         </item>
@@ -476,7 +450,6 @@
         <prefix value="17"/>
         <text value="What name did you use prior to your first marriage?"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-prior-first-name"/>
@@ -504,7 +477,6 @@
         <prefix value="18"/>
         <text value="Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth? [If yes, please go to question 19; If no, please see below]"/>
         <type value="boolean"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="paternity-ack"/>
@@ -522,7 +494,6 @@
         <prefix value="19"/>
         <text value="What is the current legal name of your baby's father?"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="father-first-name"/>
@@ -550,7 +521,6 @@
         <prefix value="20"/>
         <text value="What the father's date of birth?"/>
         <type value="date"/>
-        <required value="true"/>
         <repeats value="false"/>
     </item>
     <item>
@@ -558,7 +528,6 @@
         <prefix value="21"/>
         <text value="In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:"/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="father-birthplace-state"/>
@@ -586,7 +555,6 @@
         <prefix value="22"/>
         <text value="What is the highest level of schooling that the father will have completed at the time of delivery? (Check the box that best describes his education. If he is currently enrolled, check the box that indicates the previous grade or highest degree received)."/>
         <type value="choice"/>
-        <required value="true"/>
         <repeats value="false"/>
         <answerValueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582"/>
     </item>
@@ -595,13 +563,11 @@
         <prefix value="23"/>
         <text value="Is the father Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="father-shl"/>
             <text value="Is the father Spanish/Hispanic/Latina"/>
             <type value="choice"/>
-            <required value="true"/>
             <repeats value="true"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837"/>
         </item>
@@ -617,7 +583,6 @@
                     <code value="2135-2"/>
                 </answerCoding>
             </enableWhen>
-            <required value="false"/>
             <repeats value="false"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877"/>
         </item>
@@ -627,13 +592,11 @@
         <prefix value="24"/>
         <text value="What is the father's race? (Please check one or more races to indicate what he considers himself to be)."/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="father-race-category"/>
             <text value="Race categories"/>
             <type value="choice"/>
-            <required value="true"/>
             <repeats value="true"/>
             <answerValueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-race-category"/>
         </item>
@@ -641,7 +604,6 @@
             <linkId value="father-detailed-race"/>
             <text value="Extended race codes"/>
             <type value="choice"/>
-            <required value="false"/>
             <repeats value="true"/>
             <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.14914"/>
         </item>
@@ -651,21 +613,18 @@
         <prefix value="25"/>
         <text value="Furnishing parent(s) Social Security Number(s) (SSNs) is required by Federal Law, 42 USC 405(c) (section 205(c) of the Social Security Act). The number(s) will be made available to the (State Social Services Agency) to assist with child support enforcement activities and to the Internal Revenue Service for the purpose of determining Earned Income Tax Credit compliance."/>
         <type value="group"/>
-        <required value="true"/>
         <repeats value="false"/>
         <item>
             <linkId value="mother-ssn"/>
             <prefix value="25a"/>
             <text value="What is your Social Security Number?"/>
             <type value="string"/>
-            <required value="true"/>
             <repeats value="false"/>
         </item>
         <item>
             <linkId value="father-ssn"/>
             <text value="What is the father’s Social Security Number? If you are not married, and if a paternity acknowledgment has not been completed, leave this item blank."/>
             <type value="string"/>
-            <required value="false"/>
             <repeats value="false"/>
         </item>
     </item>
@@ -674,7 +633,6 @@
         <prefix value="26a"/>
         <text value="Do you want a Social Security Number issued for your baby? [If yes, please sign request below"/>
         <type value="boolean"/>
-        <required value="true"/>
         <repeats value="false"/>
     </item>
     <item>
@@ -682,20 +640,17 @@
         <prefix value="26b"/>
         <text value="I request that the Social Security Administration assign a Social Security number to the child named on this form and authorize the State to provide the Social Security Administration with the information from this form which is needed to assign a number. (Either parent, or the legal guardian, may sign.)"/>
         <type value="group"/>
-        <required value="false"/>
         <repeats value="false"/>
         <item>
             <linkId value="baby-ssn-sig-parent"/>
             <text value="Signature of infant's mother or father"/>
             <type value="attachment"/>
-            <required value="false"/>
             <repeats value="false"/>
         </item>
         <item>
             <linkId value="baby-ssn-sig-date"/>
             <text value="Date"/>
             <type value="date"/>
-            <required value="false"/>
             <repeats value="false"/>
         </item>
     </item>
@@ -709,7 +664,6 @@
         <prefix value="27a"/>
         <text value="If other than the mother, what is the name of the person providing information for this worksheet?"/>
         <type value="group"/>
-        <required value="false"/>
         <repeats value="false"/>
         <item>
             <linkId value="informant-first-name"/>
@@ -737,7 +691,6 @@
         <prefix value="27a"/>
         <text value="What is your relationship to the baby's mother?"/>
         <type value="open-choice"/>
-        <required value="false"/>
         <repeats value="false"/>
         <answerValueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7580"/>
     </item>
