@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-mother-married-during-pregnancy-jada-ann-quinn"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-11-24T08:19:21.984+00:00"/>
-        <source value="#ayEzAdj2eCqaiNRT"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-05-14T07:58:04.143+00:00"/>
+        <source value="#Z7NStIelKNi9ltNE"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
     </meta>
     <status value="final"/>
@@ -18,9 +18,13 @@
         <text value="Was mother married at conception, at the time of birth, or at any time between conception and giving birth?"/>
     </code>
     <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <focus>
         <reference value="Patient/patient-mother-jada-ann-quinn"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
-    </subject>
+    </focus>
     <valueCodeableConcept>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>

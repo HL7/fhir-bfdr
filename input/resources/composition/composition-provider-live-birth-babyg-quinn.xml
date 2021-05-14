@@ -3,18 +3,30 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-provider-live-birth-babyg-quinn"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-05-14T07:50:05.559+00:00"/>
-        <source value="#TBBzWziRVmelvmOw"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-05-14T08:08:56.724+00:00"/>
+        <source value="#d2fgclbuf9nEJy8W"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number">
         <valueIdentifier>
+            <type>
+                <coding>
+                    <system value=" http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="BCT"/>
+                </coding>
+            </type>
             <value value="15075"/>
         </valueIdentifier>
     </extension>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-local-file-number">
         <valueIdentifier>
+            <type>
+                <coding>
+                    <system value=" http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="BCFN"/>
+                </coding>
+            </type>
             <value value="4444-55555"/>
         </valueIdentifier>
     </extension>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-20T22:22:53.134+00:00"/>
-        <source value="#08WLdaahmrXacn4e"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-05-14T07:59:06.011+00:00"/>
+        <source value="#xJ20ARIRh61PPQpB"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome"/>
     </meta>
     <status value="final"/>
@@ -18,8 +18,12 @@
         <text value="Date of last other pregnancy outcome"/>
     </code>
     <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
+    </subject>
+    <focus>
         <reference value="Patient/patient-mother-jada-ann-quinn"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
-    </subject>
+    </focus>
     <valueDateTime value="2015-05"/>
 </Observation>
