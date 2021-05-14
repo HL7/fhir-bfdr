@@ -12,6 +12,7 @@
 * [Education Level Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7388)
 * [Estimate Of Gestation Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7567)
 * [Fetal Death Cause or Condition (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7422)
+* [Fetal Death Time Points (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7112)
 * [Fetal Presentations (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7113)
 * [Fetal Remains Disposition Method (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7585)
 * [Histological Placental Examination (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7138)

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="909"/>
-        <lastUpdated value="2021-05-06T04:22:13.721+00:00"/>
-        <source value="#E0jap92VOTBl98XO"/>
+        <versionId value="914"/>
+        <lastUpdated value="2021-05-14T00:47:49.789+00:00"/>
+        <source value="#e8LUBjWq65XTfC9X"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -1835,6 +1835,25 @@
             <name value="Cigarette Smoking Before and During Pregnancy"/>
             <description value="This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-estimated-fetal-death-time-point"/>
+                <display value="Observation - Fetal Death Time Point"/>
+            </reference>
+            <name value="Observation - Fetal Death Time Point"/>
+            <description value="This Observation profile represents the estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="fetal-death-information-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-fetal-death-time-point-not-named"/></reference>
+            <name value="Observation - Observation Estimated Fetal Death Time Point example [Fetus Not Named]"/>
+            <description value="Example of Observation-estimated-fetal-death-time-point profile (Fetus Not Named)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point"/>
+            <groupingId value="fde-clinical-other-test-data"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

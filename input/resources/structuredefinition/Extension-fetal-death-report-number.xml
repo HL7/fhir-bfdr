@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-fetal-death-report-number"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-05-04T07:27:32.030+00:00"/>
-        <source value="#2uxlAyo1YNoUiyoU"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-05-10T02:05:54.457+00:00"/>
+        <source value="#zJBHYobBeAPnfLHc"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"/>
     <version value="1.0"/>
@@ -54,6 +54,17 @@
             <type>
                 <code value="Identifier"/>
             </type>
+        </element>
+        <element id="Extension.value[x].type">
+            <path value="Extension.value[x].type"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="FDR"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
