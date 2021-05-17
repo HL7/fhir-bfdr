@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-provider-live-birth-babyg-quinn"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-05-14T08:25:21.906+00:00"/>
-        <source value="#72bvqM67ZYfe4nlu"/>
+        <versionId value="11"/>
+        <lastUpdated value="2021-05-17T04:02:41.056+00:00"/>
+        <source value="#DIczXWADS3Gf9H2r"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number">
@@ -275,6 +275,24 @@
         <entry>
             <reference value="Observation/observation-parent-education-level-james-quinn"/>
             <display value="Observation - Parent Education Level (James Brandon Quinn)"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Mother's QuestionnaireResponse Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="74465-6"/>
+                <display value="Questionnaire response Document"/>
+            </coding>
+        </code>
+        <focus>
+            <reference value="Patient/patient-mother-jada-ann-quinn"/>
+            <display value="Patient - Mother (Jada Ann Quinn)"/>
+        </focus>
+        <entry>
+            <reference value="QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn"/>
+            <display value="QuestionnaireResponse - Mother's Worksheet for Live Birth Certificate"/>
         </entry>
     </section>
 </Composition>

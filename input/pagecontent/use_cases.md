@@ -77,4 +77,4 @@ This use case represents the communication of coded cause of fetal death informa
 
 The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html).
 
-[Next Page - Terminology](terminology.html)
+[Next Page - Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html)

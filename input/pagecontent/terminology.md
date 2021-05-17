@@ -1,6 +1,14 @@
-[Previous Page - Use Cases](use_cases.html)
+[Previous Page - Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html)
 
-### Value Sets
+### IG Defined Value Sets
+
+* [CigaretteSmokingBeforeAndDuringPregnancy](ValueSet-cigarette-smoking-before-during-pregnancy)
+
+### HL7 Defined Value Sets
+
+* [ProcedureOutcomeCodes(SNOMEDCT)](http://hl7.org/fhir/ValueSet/procedure-outcome)
+
+### Externally Defined Value Sets
 
 * [Birth Weight Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7576)
 * [Birth and Fetal Death Financial Class (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7163)
@@ -25,8 +33,6 @@
 * [Obstetric Procedures (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7136)
 * [Plurality Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7577)
 * [Pregnancy Report Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7566)
-* [ProcedureOutcomeCodes(SNOMEDCT)](http://hl7.org/fhir/ValueSet/procedure-outcome)
-* [CigaretteSmokingBeforeAndDuringPregnancy](ValueSet-cigarette-smoking-before-during-pregnancy)
 * [Yes No Unknown (YNU)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.888)
 
 [Next Page - Appendices](appendices.html)

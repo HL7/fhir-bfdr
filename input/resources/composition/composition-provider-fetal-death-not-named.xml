@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-provider-fetal-death-not-named"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-05-14T08:25:21.920+00:00"/>
-        <source value="#Tf8GlukrZpLygJYs"/>
+        <versionId value="11"/>
+        <lastUpdated value="2021-05-17T04:02:41.057+00:00"/>
+        <source value="#tMF0OO6wQKlPqBsx"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number">
@@ -221,6 +221,24 @@
         <entry>
             <reference value="Observation/observation-parent-education-level-carmen-teresa-lee"/>
             <display value="Observation - Parent Education Level (Carmen Teresa Lee)"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Mother's QuestionnaireResponse Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="74465-6"/>
+                <display value="Questionnaire response Document"/>
+            </coding>
+        </code>
+        <focus>
+            <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+            <display value="Patient - Mother (Carmen Teresa Lee)"/>
+        </focus>
+        <entry>
+            <reference value="QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee"/>
+            <display value="QuestionnaireResponse - Patient's Worksheet for Fetal Death Report"/>
         </entry>
     </section>
 </Composition>
