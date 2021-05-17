@@ -1,5 +1,3 @@
-[Previous Page - Appendix D - Example Fetal Death Report](appendix_d_-_example_fetal_death_report.html)
-
 ### Full Implementation Guide
 
 The entire implementation guide (including the HTML files, definitions, validation information, etc.) may be downloaded [here](full-ig.zip).

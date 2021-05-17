@@ -57,6 +57,3 @@ For Clinical Safety Information please refer to the [FHIR Implementer’s Safety
 </table>
 
 
-
-
-[Next Page - Use Cases](use_cases.html)

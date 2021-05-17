@@ -1,5 +1,3 @@
-[Previous Page - Use Cases](use_cases.html)
-
 For both Live Birth and Fetal Death, information is collected from the mother as defined by the [Mother's Worksheet for the Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf) and the [Patient's Worksheet for the Fetal Death Report](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf). The information gathered using these worksheets must come from the patient and not from the medical record.
 
 For ease of implementation, optional Questionnaire instances have been defined based on the worksheets. 
@@ -19,5 +17,3 @@ Example QuestionnaireResponse instances have also been created:
 
 * [Example QuestionnaireResponse to the Questionnaire for Mother's Worksheet for the Birth Certificate](QuestionnaireResponse-QuestionnaireResponse-patients-fetal-death-carmen-lee.html)
 * [Example QuestionnaireResponse to the Questionnaire for Patient's Worksheet for the Fetal Death Report](QuestionnaireResponse-QuestionnaireResponse-mothers-live-birth-jada-quinn.html)
-
-[Next Page - Terminology](terminology.html)

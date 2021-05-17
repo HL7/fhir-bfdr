@@ -1,5 +1,3 @@
-[Previous Page - Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html)
-
 ### IG Defined Value Sets
 
 * [CigaretteSmokingBeforeAndDuringPregnancy](ValueSet-cigarette-smoking-before-during-pregnancy)
@@ -34,5 +32,3 @@
 * [Plurality Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7577)
 * [Pregnancy Report Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7566)
 * [Yes No Unknown (YNU)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.888)
-
-[Next Page - Appendices](appendices.html)
