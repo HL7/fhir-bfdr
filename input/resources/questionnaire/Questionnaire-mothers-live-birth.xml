@@ -268,7 +268,7 @@
             <text value="Are you Spanish/Hispanic/Latina"/>
             <type value="choice"/>
             <repeats value="true"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837"/>
+            <answerValueSet value="http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"/>
         </item>
         <item>
             <linkId value="mother-detailed-shl"/>
@@ -278,12 +278,12 @@
                 <question value="mother-shl"/>
                 <operator value="="/>
                 <answerCoding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+                    <system value="urn:oid:2.16.840.1.113883.6.238"/>
                     <code value="2135-2"/>
                 </answerCoding>
             </enableWhen>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877"/>
+            <answerValueSet value="http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"/>
         </item>
     </item>
     <item>
@@ -304,7 +304,7 @@
             <text value="Extended race codes"/>
             <type value="choice"/>
             <repeats value="true"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.14914"/>
+            <answerValueSet value="http://hl7.org/fhir/us/core/ValueSet/detailed-race"/>
         </item>
     </item>
     <item>
@@ -580,7 +580,7 @@
                 <question value="father-shl"/>
                 <operator value="="/>
                 <answerCoding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v2-0005"/>
+                    <system value="urn:oid:2.16.840.1.113883.6.238"/>
                     <code value="2135-2"/>
                 </answerCoding>
             </enableWhen>
