@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-coded-race-and-ethnicity-not-named"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-05-14T08:25:21.906+00:00"/>
-        <source value="#b8KdPCiVm9ELewbF"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-07-09T06:55:51.918+00:00"/>
+        <source value="#ytoL7MZ7aMnpb64i"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number">
@@ -49,13 +49,39 @@
                 <display value="Race and ethnicity information Document"/>
             </coding>
         </code>
+        <focus>
+            <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+            <display value="Patient - Mother (Carmen Teresa Lee)"/>
+        </focus>
         <entry>
-            <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn"/>
-            <display value="Observation - Tabulated Ethnicity (Jada Ann Quinn)"/>
+            <reference value="Observation/observation-tabulated-ethnicity-carmen-teresa-lee"/>
+            <display value="Observation - Tabulated Ethnicity (Carmen Teresa Lee)"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-race-jada-ann-quinn"/>
-            <display value="Observation - Race (Jada Ann Quinn)"/>
+            <reference value="Observation/observation-race-carmen-teresa-lee"/>
+            <display value="Observation - Race (Carmen Teresa Lee)"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Father's Coded Race and Ethnicity"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="86805-9"/>
+                <display value="Race and ethnicity information Document"/>
+            </coding>
+        </code>
+        <focus>
+            <reference value="RelatedPerson/relatedperson-father-natural-tom-yan-lee"/>
+            <display value="RelatedPerson - Father (Tom Yan Lee)"/>
+        </focus>
+        <entry>
+            <reference value="Observation/observation-tabulated-ethnicity-tom-yan-lee"/>
+            <display value="Observation - Tabulated Ethnicity (Tom Yan Lee)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-race-tom-yan-lee"/>
+            <display value="Observation - Race (Tom Yan Lee)"/>
         </entry>
     </section>
 </Composition>
