@@ -1,0 +1,1 @@
+Page to describe relationship between the BFDR IG and IHE IG with some worked examples of how to use the IHE guide to get the data to populate the BFDR IG.

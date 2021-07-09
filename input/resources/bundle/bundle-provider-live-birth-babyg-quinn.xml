@@ -15,9 +15,9 @@
             <Composition>
                 <id value="composition-provider-live-birth-babyg-quinn" />
                 <meta>
-                    <versionId value="11" />
-                    <lastUpdated value="2021-05-17T04:02:41.056+00:00" />
-                    <source value="#DIczXWADS3Gf9H2r" />
+                    <versionId value="14" />
+                    <lastUpdated value="2021-07-08T23:45:13.272+00:00" />
+                    <source value="#5ALwgeoe7A8UDKqS" />
                     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report" />
                 </meta>
                 <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number">
@@ -39,7 +39,7 @@
                                 <code value="BCFN" />
                             </coding>
                         </type>
-                        <value value="4444-55555" />
+                        <value value="444455555" />
                     </valueIdentifier>
                 </extension>
                 <identifier>
@@ -102,7 +102,7 @@
                     </entry>
                     <entry>
                         <reference value="Observation/observation-number-births-now-dead-jada-ann-quinn" />
-                        <display value="Observation - Number Births Now Dead" />
+                        <display value="Observation - Number Births Now Dead (Jada Ann Quinn)" />
                     </entry>
                     <entry>
                         <reference value="Observation/observation-date-of-last-live-birth-jada-ann-quinn" />
@@ -195,10 +195,6 @@
                         <display value="Procedure - Final Route and Method of Delivery (Baby G Quinn)" />
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-labor-trial-attempted-babyg-quinn" />
-                        <display value="Observation - Labor Trial Attempted (Baby G Quinn)" />
-                    </entry>
-                    <entry>
                         <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn" />
                         <display value="Condition - Maternal Morbidity (Jada Ann Quinn)" />
                     </entry>
@@ -267,8 +263,16 @@
                         <display value="Patient - Mother (Jada Ann Quinn)" />
                     </focus>
                     <entry>
+                        <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn" />
+                        <display value="Observation - Mother Married During Pregnancy (Jada Ann Quinn)" />
+                    </entry>
+                    <entry>
                         <reference value="Observation/observation-parent-education-level-jada-ann-quinn" />
                         <display value="Observation - Parent Education Level (Jada Ann Quinn)" />
+                    </entry>
+                    <entry>
+                        <reference value="Observation/observation-ssn-requested-for-child-babyg-quinn" />
+                        <display value="Observation - SSN Requested for Child (Jada Ann Quinn)" />
                     </entry>
                 </section>
                 <section>
@@ -284,6 +288,10 @@
                         <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn" />
                         <display value="RelatedPerson - Father (James Brandon Quinn)" />
                     </focus>
+                    <entry>
+                        <reference value="Observation/observation-paternity-acknowledgement-signed-james-quinn" />
+                        <display value="Observation - Paternity Acknowledgement Signed (James Brandon Quinn)" />
+                    </entry>
                     <entry>
                         <reference value="Observation/observation-parent-education-level-james-quinn" />
                         <display value="Observation - Parent Education Level (James Brandon Quinn)" />
@@ -742,6 +750,38 @@
                     </code>
                 </evidence>
             </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-ssn-requested-for-child-babyg-quinn" />
+        <resource>
+            <Observation>
+                <id value="observation-ssn-requested-for-child-babyg-quinn" />
+                <meta>
+                    <versionId value="2" />
+                    <lastUpdated value="2020-08-20T22:21:10.430+00:00" />
+                    <source value="#BP9diDJOqIJJQFUX" />
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="87295-2" />
+                        <display value="Social Security Number was requested" />
+                    </coding>
+                    <text value="Social security number requested for child" />
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn" />
+                    <display value="BabyG Quinn" />
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn" />
+                    <display value="Patient - Mother (Jada Ann Quinn)" />
+                </focus>
+                <valueBoolean value="true" />
+            </Observation>
         </resource>
     </entry>
     <entry>
@@ -1303,24 +1343,24 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn" />
+        <fullUrl value="http://example.org/fhir/Observation/observation-mother-married-during-pregnancy-jada-ann-quinn" />
         <resource>
             <Observation>
-                <id value="observation-labor-trial-attempted-babyg-quinn" />
+                <id value="observation-mother-married-during-pregnancy-jada-ann-quinn" />
                 <meta>
-                    <versionId value="2" />
-                    <lastUpdated value="2020-08-20T22:22:53.122+00:00" />
-                    <source value="#jkDXXvaAH8RSllhT" />
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted" />
+                    <versionId value="7" />
+                    <lastUpdated value="2021-05-14T07:58:04.143+00:00" />
+                    <source value="#Z7NStIelKNi9ltNE" />
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy" />
                 </meta>
                 <status value="final" />
                 <code>
                     <coding>
                         <system value="http://loinc.org" />
-                        <code value="73760-1" />
-                        <display value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]" />
+                        <code value="87301-8" />
+                        <display value="Mother was married at any time during pregnancy" />
                     </coding>
-                    <text value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]" />
+                    <text value="Was mother married at conception, at the time of birth, or at any time between conception and giving birth?" />
                 </code>
                 <subject>
                     <reference value="Patient/patient-child-babyg-quinn" />
@@ -1330,8 +1370,13 @@
                     <reference value="Patient/patient-mother-jada-ann-quinn" />
                     <display value="Patient - Mother (Jada Ann Quinn)" />
                 </focus>
-                <issued value="2019-02-12T08:55:30-07:00" />
-                <valueBoolean value="true" />
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0532" />
+                        <code value="Y" />
+                        <display value="Yes" />
+                    </coding>
+                </valueCodeableConcept>
             </Observation>
         </resource>
     </entry>
@@ -1436,6 +1481,38 @@
                     <display value="Patient - Mother (Jada Ann Quinn)" />
                 </focus>
                 <issued value="2019-02-11T20:02:00-07:00" />
+                <valueBoolean value="true" />
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-paternity-acknowledgement-signed-james-quinn" />
+        <resource>
+            <Observation>
+                <id value="observation-paternity-acknowledgement-signed-james-quinn" />
+                <meta>
+                    <versionId value="5" />
+                    <lastUpdated value="2020-11-19T06:40:34.924+00:00" />
+                    <source value="#gz1ip4MbYt3EQl9Q" />
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="87302-6" />
+                        <display value="Paternity acknowledgment form signed Father" />
+                    </coding>
+                    <text value="Paternity acknowledgment form signed Father" />
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn" />
+                    <display value="Patient - Child (Baby G Quinn)" />
+                </subject>
+                <focus>
+                    <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn" />
+                    <display value="RelatedPerson - Father (James Brandon Quinn)" />
+                </focus>
                 <valueBoolean value="true" />
             </Observation>
         </resource>
@@ -2377,6 +2454,39 @@
                     <display value="BabyG Quinn" />
                 </subject>
                 <valueInteger value="7" />
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn" />
+        <resource>
+            <Observation>
+                <id value="observation-labor-trial-attempted-babyg-quinn" />
+                <meta>
+                    <versionId value="2" />
+                    <lastUpdated value="2020-08-20T22:22:53.122+00:00" />
+                    <source value="#jkDXXvaAH8RSllhT" />
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="73760-1" />
+                        <display value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]" />
+                    </coding>
+                    <text value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]" />
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn" />
+                    <display value="BabyG Quinn" />
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn" />
+                    <display value="Patient - Mother (Jada Ann Quinn)" />
+                </focus>
+                <issued value="2019-02-12T08:55:30-07:00" />
+                <valueBoolean value="true" />
             </Observation>
         </resource>
     </entry>

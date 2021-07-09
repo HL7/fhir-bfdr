@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="61"/>
-        <lastUpdated value="2021-05-17T04:05:25.417+00:00"/>
-        <source value="#pIyKDBHAb2pn8m1f"/>
+        <versionId value="63"/>
+        <lastUpdated value="2021-07-09T00:09:08.368+00:00"/>
+        <source value="#pJDuEkEukqoZfvGu"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -505,15 +505,15 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn">
+        <element id="Composition.section:newbornInformation">
             <path value="Composition.section"/>
-            <sliceName value="newborn"/>
+            <sliceName value="newbornInformation"/>
             <short value="Newborn section on the Live Birth Certificate"/>
             <definition value="This section contains items from the newborn section on the Live Birth Certificate."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.code">
+        <element id="Composition.section:newbornInformation.code">
             <path value="Composition.section.code"/>
             <short value="Newborn delivery information"/>
             <definition value="Newborn delivery information"/>
@@ -526,7 +526,7 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry">
+        <element id="Composition.section:newbornInformation.entry">
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
@@ -541,7 +541,7 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:birthWeight">
+        <element id="Composition.section:newbornInformation.entry:birthWeight">
             <path value="Composition.section.entry"/>
             <sliceName value="birthWeight"/>
             <short value="Birthweight"/>
@@ -553,7 +553,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:gestationalAgeAtDelivery">
+        <element id="Composition.section:newbornInformation.entry:gestationalAgeAtDelivery">
             <path value="Composition.section.entry"/>
             <sliceName value="gestationalAgeAtDelivery"/>
             <short value="Obstetric estimate of gestation"/>
@@ -565,10 +565,10 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:APGARScore">
+        <element id="Composition.section:newbornInformation.entry:APGARScore">
             <path value="Composition.section.entry"/>
             <sliceName value="APGARScore"/>
-            <short value="APGAR Score"/>
+            <short value="APGAR Score - while the APGAR timing value set contains 3 possible values, 5 and 10 are the only scores used."/>
             <definition value="The Apgar Score for the child."/>
             <max value="2"/>
             <type>
@@ -577,7 +577,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:plurality">
+        <element id="Composition.section:newbornInformation.entry:plurality">
             <path value="Composition.section.entry"/>
             <sliceName value="plurality"/>
             <short value="Plurality - Single, Twin, Triplet, etc."/>
@@ -589,7 +589,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:abnormalConditionsNewborn">
+        <element id="Composition.section:newbornInformation.entry:abnormalConditionsNewborn">
             <path value="Composition.section.entry"/>
             <sliceName value="abnormalConditionsNewborn"/>
             <short value="Abnormal conditions of the newborn"/>
@@ -600,7 +600,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:congenitalAnomaliesNewborn">
+        <element id="Composition.section:newbornInformation.entry:congenitalAnomaliesNewborn">
             <path value="Composition.section.entry"/>
             <sliceName value="congenitalAnomaliesNewborn"/>
             <short value="Congenital anomolies of the newborn"/>
@@ -611,7 +611,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:infantLiving">
+        <element id="Composition.section:newbornInformation.entry:infantLiving">
             <path value="Composition.section.entry"/>
             <sliceName value="infantLiving"/>
             <short value="Is infant living at time of report?"/>
@@ -623,7 +623,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newborn.entry:infantBreastfedAtDischarge">
+        <element id="Composition.section:newbornInformation.entry:infantBreastfedAtDischarge">
             <path value="Composition.section.entry"/>
             <sliceName value="infantBreastfedAtDischarge"/>
             <short value="Is infant being breastfed at discharge?"/>

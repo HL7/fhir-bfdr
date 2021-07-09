@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="73"/>
-        <lastUpdated value="2021-05-17T04:05:26.406+00:00"/>
-        <source value="#cKN3ybQqb2uFM6Ht"/>
+        <versionId value="78"/>
+        <lastUpdated value="2021-07-09T00:09:36.539+00:00"/>
+        <source value="#0NGqB1wEDDOjSxhf"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -44,9 +44,9 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.extension:birthCertificateId">
+        <element id="Composition.extension:liveBirthCertificateNumber">
             <path value="Composition.extension"/>
-            <sliceName value="birthCertificateId"/>
+            <sliceName value="liveBirthCertificateNumber"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -661,9 +661,35 @@
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:motherInformation.entry:education">
+        <element id="Composition.section:motherInformation.entry:marriedDuringPregnancy">
             <path value="Composition.section.entry"/>
-            <sliceName value="education"/>
+            <sliceName value="marriedDuringPregnancy"/>
+            <short value="Mother married during pregnancy"/>
+            <definition value="Was mother married at conception, at the time of birth, or at any time between conception and giving birth?"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherInformation.entry:ssnRequestedForChild">
+            <path value="Composition.section.entry"/>
+            <sliceName value="ssnRequestedForChild"/>
+            <short value="Was social security number requested for the child"/>
+            <definition value="Was social security number requested for the child"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherInformation.entry:mothersEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersEducation"/>
+            <short value="Mother's education"/>
+            <definition value="Mother's education"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
@@ -674,6 +700,8 @@
         <element id="Composition.section:fatherInformation">
             <path value="Composition.section"/>
             <sliceName value="fatherInformation"/>
+            <short value="Father section on the Live Birth Certificate"/>
+            <definition value="This section contains items from the father section on the Live Birth Certificate."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -692,6 +720,8 @@
         </element>
         <element id="Composition.section:fatherInformation.focus">
             <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the father"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
@@ -704,16 +734,33 @@
             <slicing>
                 <discriminator>
                     <type value="profile"/>
-                    <path value="resolve()"/>
+                    <path value="$this.resolve()"/>
                 </discriminator>
+                <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
+            <short value="Entries that are contained in the fatherInformation section"/>
+            <definition value="Entries that are contained in the fatherInformation section"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:fatherInformation.entry:education">
+        <element id="Composition.section:fatherInformation.entry:paternityAcknowledgementSigned">
             <path value="Composition.section.entry"/>
-            <sliceName value="education"/>
+            <sliceName value="paternityAcknowledgementSigned"/>
+            <short value="Paternity acknowledgement signed by father"/>
+            <definition value="Whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation.entry:fathersEducation">
+            <path value="Composition.section.entry"/>
+            <sliceName value="fathersEducation"/>
+            <short value="Father's education"/>
+            <definition value="Father's education"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>

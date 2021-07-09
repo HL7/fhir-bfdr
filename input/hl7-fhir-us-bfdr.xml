@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="934"/>
-        <lastUpdated value="2021-05-17T05:39:59.963+00:00"/>
-        <source value="#1buGUS7ZEOvkXl6b"/>
+        <versionId value="947"/>
+        <lastUpdated value="2021-07-08T19:46:13.225+00:00"/>
+        <source value="#DTz7EMkuUxDMm7Ob"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="0.1.0"/>
@@ -34,7 +34,7 @@
     <dependsOn id="hl7fhiruscore">
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="3.2.0"/>
+        <version value="4.0.0"/>
     </dependsOn>
     <dependsOn id="uscdcphinvads">
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
@@ -210,7 +210,7 @@
                 <reference value="Composition/composition-coded-race-and-ethnicity-not-named"/>
                 <display value="Coded Race and Ethnicity"/>
             </reference>
-            <name value="Coded Race and Ethnicity example [Not Named]"/>
+            <name value="Composition - Coded Race and Ethnicity example [Not Named]"/>
             <description value="Example of Coded Race and Ethnicity profile (Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
@@ -303,7 +303,7 @@
                 <reference value="Composition/composition-coded-cause-of-fetal-death-not-named"/>
                 <display value="Coded Cause of Fetal Death"/>
             </reference>
-            <name value="Composition Coded Cause of Fetal Death example [Not Named]"/>
+            <name value="Composition - Coded Cause of Fetal Death example [Not Named]"/>
             <description value="Example of Composition Coded Cause of Fetal Death profile (Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
@@ -645,20 +645,11 @@
         <resource>
             <reference>
                 <reference value="Encounter/encounter-birth-babyg-quinn"/></reference>
-            <name value="Encounter-birth example [Baby G Quinn]"/>
+            <name value="Encounter - Birth example [Baby G Quinn]"/>
             <description value="Example of Encounter-birth profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
             <groupingId value="lbe-encounter-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Parameters/expansion-parameters"/>
-                <display value="expansion-parameters"/>
-            </reference>
-            <name value="expansion-parameters"/>
-            <description value="References US SNOMED CT version."/>
-            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
@@ -675,7 +666,7 @@
                 <reference value="StructureDefinition/Extension-date-received-by-registrar"/>
                 <display value="Extension - Date received by Registrar"/>
             </reference>
-            <name value="Extension - Date received by Registrar"/>
+            <name value="Extension - Date Received by Registrar"/>
             <description value="Date received by registrar."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
@@ -725,7 +716,7 @@
                 <reference value="Composition/composition-provider-fetal-death-not-named"/>
                 <display value="Jurisdiction fetal death report Document"/>
             </reference>
-            <name value="Jurisdiction fetal death report Document"/>
+            <name value="Composition - Jurisdiction fetal death report Document"/>
             <description value="Example of Composition-provider-fetal-death-report profile (Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
@@ -1754,7 +1745,7 @@
                 <reference value="Composition/composition-provider-live-birth-babyg-quinn"/>
                 <display value="Provider supplied live birth report Document"/>
             </reference>
-            <name value="Provider supplied live birth report Document example [Baby G Quinn]"/>
+            <name value="Composition - Provider Supplied Live Birth Report Document example [Baby G Quinn]"/>
             <description value="Example of Composition-provider-live-birth-report (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
@@ -1799,7 +1790,7 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-race-jada-ann-quinn"/></reference>
-            <name value="Race Observation example [Jada Ann Quinn]"/>
+            <name value="Observation - Race example [Jada Ann Quinn]"/>
             <description value="Example of Race Observation profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
@@ -1839,7 +1830,7 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn"/></reference>
-            <name value="Tabulated Ethnicity example [Jada Ann Quinn]"/>
+            <name value="Observation - Tabulated Ethnicity example [Jada Ann Quinn]"/>
             <description value="Example of Tabulated Ethnicity profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
@@ -1849,7 +1840,7 @@
                 <reference value="Organization/organization-jurisdictional-vital-records-office"/>
                 <display value="Jurisdictional Vital Records Office"/>
             </reference>
-            <name value="US Core Organization example [Jurisdictional Vital Records Office]"/>
+            <name value="Organization - US Core Organization example [Jurisdictional Vital Records Office]"/>
             <description value="Example of US Core Organization profile (Jurisdictional Vital Records Office)"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
@@ -1859,7 +1850,7 @@
                 <reference value="Organization/organization-nchs"/>
                 <display value="National Center for Health Statistics (NCHS)"/>
             </reference>
-            <name value="US Core Organization example [National Center for Health Statistics [NCHS]]"/>
+            <name value="Organization - US Core Organization example [National Center for Health Statistics [NCHS]]"/>
             <description value="Example of US Core Organization profile (National Center for Health Statistics (NCHS))"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
@@ -1873,6 +1864,14 @@
             <description value="This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."/>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/expansion-parameters"/>
+                <display value="expansion-parameters"/>
+            </reference>
+            <name value="expansion-parameters"/>
+            <exampleBoolean value="true"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
@@ -1885,6 +1884,11 @@
             <page>
                 <nameUrl value="patient_worksheet_questionnaires.html"/>
                 <title value="Patient Worksheet Questionnaires"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="ihe_specification_guidance.html"/>
+                <title value="IHE Specification Guidance"/>
                 <generation value="markdown"/>
             </page>
             <page>

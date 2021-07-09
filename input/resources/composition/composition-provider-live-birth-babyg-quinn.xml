@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-provider-live-birth-babyg-quinn"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2021-05-17T04:02:41.056+00:00"/>
-        <source value="#DIczXWADS3Gf9H2r"/>
+        <versionId value="14"/>
+        <lastUpdated value="2021-07-08T23:45:13.272+00:00"/>
+        <source value="#5ALwgeoe7A8UDKqS"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number">
@@ -27,7 +27,7 @@
                     <code value="BCFN"/>
                 </coding>
             </type>
-            <value value="4444-55555"/>
+            <value value="444455555"/>
         </valueIdentifier>
     </extension>
     <identifier>
@@ -90,7 +90,7 @@
         </entry>
         <entry>
             <reference value="Observation/observation-number-births-now-dead-jada-ann-quinn"/>
-            <display value="Observation - Number Births Now Dead"/>
+            <display value="Observation - Number Births Now Dead (Jada Ann Quinn)"/>
         </entry>
         <entry>
             <reference value="Observation/observation-date-of-last-live-birth-jada-ann-quinn"/>
@@ -183,10 +183,6 @@
             <display value="Procedure - Final Route and Method of Delivery (Baby G Quinn)"/>
         </entry>
         <entry>
-            <reference value="Observation/observation-labor-trial-attempted-babyg-quinn"/>
-            <display value="Observation - Labor Trial Attempted (Baby G Quinn)"/>
-        </entry>
-        <entry>
             <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn"/>
             <display value="Condition - Maternal Morbidity (Jada Ann Quinn)"/>
         </entry>
@@ -255,8 +251,16 @@
             <display value="Patient - Mother (Jada Ann Quinn)"/>
         </focus>
         <entry>
+            <reference value="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"/>
+            <display value="Observation - Mother Married During Pregnancy (Jada Ann Quinn)"/>
+        </entry>
+        <entry>
             <reference value="Observation/observation-parent-education-level-jada-ann-quinn"/>
             <display value="Observation - Parent Education Level (Jada Ann Quinn)"/>
+        </entry>
+        <entry>
+            <reference value="Observation/observation-ssn-requested-for-child-babyg-quinn"/>
+            <display value="Observation - SSN Requested for Child (Jada Ann Quinn)"/>
         </entry>
     </section>
     <section>
@@ -272,6 +276,10 @@
             <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn"/>
             <display value="RelatedPerson - Father (James Brandon Quinn)"/>
         </focus>
+        <entry>
+            <reference value="Observation/observation-paternity-acknowledgement-signed-james-quinn"/>
+            <display value="Observation - Paternity Acknowledgement Signed (James Brandon Quinn)"/>
+        </entry>
         <entry>
             <reference value="Observation/observation-parent-education-level-james-quinn"/>
             <display value="Observation - Parent Education Level (James Brandon Quinn)"/>
