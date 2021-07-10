@@ -31,6 +31,7 @@
     <differential>
         <element id="Composition">
             <path value="Composition"/>
+            <short value="Provider Live Birth Report"/>
         </element>
         <element id="Composition.extension">
             <path value="Composition.extension"/>
@@ -47,6 +48,7 @@
         <element id="Composition.extension:liveBirthCertificateNumber">
             <path value="Composition.extension"/>
             <sliceName value="liveBirthCertificateNumber"/>
+            <short value="Birth Number"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -58,6 +60,7 @@
         <element id="Composition.extension:liveBirthLocalFileNumber">
             <path value="Composition.extension"/>
             <sliceName value="liveBirthLocalFileNumber"/>
+            <short value="Local File No."/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -85,6 +88,8 @@
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
+            <short value="The subject of the composition is the newborn baby"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. Different sections in the composition have different focus (e.g.: the mother)."/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
@@ -94,6 +99,8 @@
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
+            <short value="The Encounter for the Composition is the newborn's birth encounter."/>
+            <definition value="The Encounter for the Composition is the newborn's birth encounter. This Encounter links to the mother's encounter by the Encounter.partOf data element."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
@@ -115,11 +122,14 @@
             <path value="Composition.section"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="pattern"/>
                     <path value="code"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <short value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate."/>
+            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherPrenatal">
@@ -127,7 +137,6 @@
             <sliceName value="motherPrenatal"/>
             <short value="Mother (prenatal) section on the Live Birth Certificate"/>
             <definition value="This section contains items from the Mother (prenatal) on theLive Birth Certificate."/>
-            <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>

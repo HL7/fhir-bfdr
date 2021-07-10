@@ -15,9 +15,9 @@
             <Composition>
                 <id value="composition-jurisdiction-live-birth-babyg-quinn" />
                 <meta>
-                    <versionId value="23" />
-                    <lastUpdated value="2021-05-14T08:25:21.918+00:00" />
-                    <source value="#dV1XKSl4B424kVtq" />
+                    <versionId value="24" />
+                    <lastUpdated value="2021-07-08T23:18:15.508+00:00" />
+                    <source value="#rsDuFdTPH9AtsDuI" />
                     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report" />
                 </meta>
                 <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number">
@@ -216,10 +216,6 @@
                     <entry>
                         <reference value="Procedure/procedure-final-route-method-delivery-babyg-quinn" />
                         <display value="Procedure - Final Route and Method of Delivery (Baby G Quinn)" />
-                    </entry>
-                    <entry>
-                        <reference value="Observation/observation-labor-trial-attempted-babyg-quinn" />
-                        <display value="Observation - Labor Trial Attempted (Baby G Quinn)" />
                     </entry>
                     <entry>
                         <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn" />
@@ -1127,9 +1123,9 @@
             <Patient>
                 <id value="patient-child-babyg-quinn" />
                 <meta>
-                    <versionId value="11" />
-                    <lastUpdated value="2021-05-06T20:59:42.231+00:00" />
-                    <source value="#L5yNEawON5l1whaE" />
+                    <versionId value="12" />
+                    <lastUpdated value="2021-07-09T03:23:47.262+00:00" />
+                    <source value="#wb1AphJnESzWQLnC" />
                     <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child" />
                 </meta>
                 <text>
@@ -2171,39 +2167,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn" />
-        <resource>
-            <Observation>
-                <id value="observation-labor-trial-attempted-babyg-quinn" />
-                <meta>
-                    <versionId value="2" />
-                    <lastUpdated value="2020-08-20T22:22:53.122+00:00" />
-                    <source value="#jkDXXvaAH8RSllhT" />
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted" />
-                </meta>
-                <status value="final" />
-                <code>
-                    <coding>
-                        <system value="http://loinc.org" />
-                        <code value="73760-1" />
-                        <display value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]" />
-                    </coding>
-                    <text value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]" />
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn" />
-                    <display value="BabyG Quinn" />
-                </subject>
-                <focus>
-                    <reference value="Patient/patient-mother-jada-ann-quinn" />
-                    <display value="Patient - Mother (Jada Ann Quinn)" />
-                </focus>
-                <issued value="2019-02-12T08:55:30-07:00" />
-                <valueBoolean value="true" />
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-mother-delivery-weight-jada-ann-quinn" />
         <resource>
             <Observation>
@@ -2576,6 +2539,39 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn" />
+        <resource>
+            <Observation>
+                <id value="observation-labor-trial-attempted-babyg-quinn" />
+                <meta>
+                    <versionId value="2" />
+                    <lastUpdated value="2020-08-20T22:22:53.122+00:00" />
+                    <source value="#jkDXXvaAH8RSllhT" />
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted" />
+                </meta>
+                <status value="final" />
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="73760-1" />
+                        <display value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]" />
+                    </coding>
+                    <text value="If cesarean, a trial of labor was attempted [US Standard Certificate of Live Birth]" />
+                </code>
+                <subject>
+                    <reference value="Patient/patient-child-babyg-quinn" />
+                    <display value="BabyG Quinn" />
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-mother-jada-ann-quinn" />
+                    <display value="Patient - Mother (Jada Ann Quinn)" />
+                </focus>
+                <issued value="2019-02-12T08:55:30-07:00" />
+                <valueBoolean value="true" />
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://example.org/fhir/Practitioner/practitioner-vital-records-avery-jones" />
         <resource>
             <Practitioner>
@@ -2696,9 +2692,9 @@
             <RelatedPerson>
                 <id value="relatedperson-father-natural-james-brandon-quinn" />
                 <meta>
-                    <versionId value="5" />
-                    <lastUpdated value="2021-05-06T20:59:42.019+00:00" />
-                    <source value="#lm5MbB9XSIDEkOTZ" />
+                    <versionId value="7" />
+                    <lastUpdated value="2021-07-09T03:15:48.994+00:00" />
+                    <source value="#a4f7849BweYvFUs1" />
                     <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural" />
                 </meta>
                 <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
@@ -2792,9 +2788,9 @@
             <Patient>
                 <id value="patient-mother-jada-ann-quinn" />
                 <meta>
-                    <versionId value="13" />
-                    <lastUpdated value="2021-05-06T20:59:42.019+00:00" />
-                    <source value="#fUPriXBPygfVTHZg" />
+                    <versionId value="14" />
+                    <lastUpdated value="2021-07-09T03:23:47.262+00:00" />
+                    <source value="#5RW1WsnJl4lbLRqv" />
                     <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother" />
                 </meta>
                 <text>
@@ -2947,9 +2943,9 @@
             <RelatedPerson>
                 <id value="relatedperson-mother-jada-ann-quinn" />
                 <meta>
-                    <versionId value="7" />
-                    <lastUpdated value="2021-05-06T20:59:42.020+00:00" />
-                    <source value="#aZFLH5bpRVOjSDuF" />
+                    <versionId value="9" />
+                    <lastUpdated value="2021-07-09T03:15:48.995+00:00" />
+                    <source value="#zytvRkbU6L5IrVjN" />
                     <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-gestational" />
                 </meta>
                 <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">

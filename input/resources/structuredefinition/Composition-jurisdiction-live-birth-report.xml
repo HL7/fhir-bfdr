@@ -31,7 +31,7 @@
     <differential>
         <element id="Composition">
             <path value="Composition"/>
-            <short value="This composition represents the jurisdiction live birth report."/>
+            <short value="Jurisdiction Live Birth Report"/>
         </element>
         <element id="Composition.extension">
             <path value="Composition.extension"/>
@@ -48,7 +48,7 @@
         <element id="Composition.extension:liveBirthCertificateNumber">
             <path value="Composition.extension"/>
             <sliceName value="liveBirthCertificateNumber"/>
-            <short value="Birth certificate id"/>
+            <short value="Birth Number"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -60,6 +60,7 @@
         <element id="Composition.extension:liveBirthLocalFileNumber">
             <path value="Composition.extension"/>
             <sliceName value="liveBirthLocalFileNumber"/>
+            <short value="Local File No."/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -70,6 +71,7 @@
         <element id="Composition.extension:dateFiledByRegistrar">
             <path value="Composition.extension"/>
             <sliceName value="dateFiledByRegistrar"/>
+            <short value="Date filed by registrar"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -121,6 +123,11 @@
             <path value="Composition.author"/>
             <short value="The author is the jurisdictional Vital Records Office."/>
             <definition value="The author is the jurisdictional Vital Records Office."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            </type>
+            <mustSupport value="true"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -134,7 +141,7 @@
                 <rules value="open"/>
             </slicing>
             <short value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate."/>
-            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and Newborn. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
+            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
