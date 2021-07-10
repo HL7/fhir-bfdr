@@ -68,6 +68,18 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.extension:dateFiledByRegistrar">
+            <path value="Composition.extension"/>
+            <sliceName value="dateFiledByRegistrar"/>
+            <short value="Date filed by registrar"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-filed-by-registrar"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.status">
             <path value="Composition.status"/>
             <short value="In the case of a live birth sent in error, a status of 'entered-in-error' must be set."/>
@@ -580,6 +592,17 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newbornInformation.entry:numberLiveBirthsThisDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberLiveBirthsThisDelivery"/>
+            <short value="Number of live births this delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-live-births-this-delivery"/>
             </type>
             <mustSupport value="true"/>
         </element>

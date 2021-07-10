@@ -47,6 +47,7 @@
         <element id="Composition.extension:fetalDeathReportNumber">
             <path value="Composition.extension"/>
             <sliceName value="fetalDeathReportNumber"/>
+            <short value="State File Number"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -58,6 +59,7 @@
         <element id="Composition.extension:fetalDeathLocalFileNumber">
             <path value="Composition.extension"/>
             <sliceName value="fetalDeathLocalFileNumber"/>
+            <short value="Local File No."/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -408,18 +410,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:medicalHealthInformation.entry:trialLaborAttempted">
-            <path value="Composition.section.entry"/>
-            <sliceName value="trialLaborAttempted"/>
-            <short value="If cesearean, was a trial of labor attempted?"/>
-            <definition value="If cesarean, was a trial of labor attempted? (Labor was allowed, augmented, or induced with plans for a vaginal delivery.)"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Composition.section:medicalHealthInformation.entry:maternalMorbidity">
             <path value="Composition.section.entry"/>
             <sliceName value="maternalMorbidity"/>
@@ -668,9 +658,9 @@
             <max value="8"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:editFlags.entry:editFlagBirthweight">
+        <element id="Composition.section:editFlags.entry:editFlagWeightOfFetus">
             <path value="Composition.section.entry"/>
-            <sliceName value="editFlagBirthweight"/>
+            <sliceName value="editFlagWeightOfFetus"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -753,6 +743,28 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newbornInformation.entry:numberLiveBirthsThisDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberLiveBirthsThisDelivery"/>
+            <short value="Number of live births this delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-live-births-this-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newbornInformation.entry:numberFetalDeathsThisDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberFetalDeathsThisDelivery"/>
+            <short value="Number of fetal deaths this delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery"/>
             </type>
             <mustSupport value="true"/>
         </element>

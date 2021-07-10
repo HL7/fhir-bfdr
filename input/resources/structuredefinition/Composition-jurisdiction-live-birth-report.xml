@@ -596,6 +596,18 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:newbornInformation.entry:numberLiveBirthsThisDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberLiveBirthsThisDelivery"/>
+            <short value="Number of live births this delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-live-births-this-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        
         <element id="Composition.section:newbornInformation.entry:abnormalConditionsNewborn">
             <path value="Composition.section.entry"/>
             <sliceName value="abnormalConditionsNewborn"/>

@@ -47,6 +47,7 @@
         <element id="Composition.extension:fetalDeathReportNumber">
             <path value="Composition.extension"/>
             <sliceName value="fetalDeathReportNumber"/>
+            <short value="State File Number"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -55,13 +56,25 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.extension:sliceFetalDeathLocalFileNumber">
+        <element id="Composition.extension:fetalDeathLocalFileNumber">
             <path value="Composition.extension"/>
-            <sliceName value="sliceFetalDeathLocalFileNumber"/>
+            <sliceName value="fetalDeathLocalFileNumber"/>
+            <short value="Local File No."/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.extension:dateReceivedByRegistrar">
+            <path value="Composition.extension"/>
+            <sliceName value="dateReceivedByRegistrar"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -85,6 +98,8 @@
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
+            <short value="The subject of the composition is the decedent fetus"/>
+            <definition value="The subject of the composition as a whole is the decedent fetus. Different sections in the composition have different focus (e.g.: the mother)."/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
@@ -94,6 +109,12 @@
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
+            <short value="The Encounter for the Composition is the mother's maternity encounter."/>
+            <definition value="The Encounter for the Composition is the mother's maternity encounter."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.author">
@@ -168,54 +189,6 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:motherPrenatal.entry:mothersHeight">
-            <path value="Composition.section.entry"/>
-            <sliceName value="mothersHeight"/>
-            <short value="Mother's height"/>
-            <definition value="The mother's height"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:motherPrenatal.entry:mothersPrepregnancyWeight">
-            <path value="Composition.section.entry"/>
-            <sliceName value="mothersPrepregnancyWeight"/>
-            <short value="Mother's prepregnancy weight"/>
-            <definition value="The mother's prepregnancy weight"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:motherPrenatal.entry:motherReceivedWICFood">
-            <path value="Composition.section.entry"/>
-            <sliceName value="motherReceivedWICFood"/>
-            <short value="Use of the WIC nutritional program by the mother"/>
-            <definition value="Use of the Women, Infant's, and Children (WIC) nutritional program by the mother during the pregnancy."/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:motherPrenatal.entry:cigaretteSmokingBeforeDuringPregnancy">
-            <path value="Composition.section.entry"/>
-            <sliceName value="cigaretteSmokingBeforeDuringPregnancy"/>
-            <short value="Cigarettes smoked by the mother before and during the pregnancy"/>
-            <definition value="The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"/>
-            <max value="4"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Composition.section:motherPrenatal.entry:plannedToDeliverAtHome">
             <path value="Composition.section.entry"/>
             <sliceName value="plannedToDeliverAtHome"/>
@@ -285,6 +258,54 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:mothersHeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersHeight"/>
+            <short value="Mother's height"/>
+            <definition value="The mother's height"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:mothersPrepregnancyWeight">
+            <path value="Composition.section.entry"/>
+            <sliceName value="mothersPrepregnancyWeight"/>
+            <short value="Mother's prepregnancy weight"/>
+            <definition value="The mother's prepregnancy weight"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:motherReceivedWICFood">
+            <path value="Composition.section.entry"/>
+            <sliceName value="motherReceivedWICFood"/>
+            <short value="Use of the WIC nutritional program by the mother"/>
+            <definition value="Use of the Women, Infant's, and Children (WIC) nutritional program by the mother during the pregnancy."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:motherPrenatal.entry:cigaretteSmokingBeforeDuringPregnancy">
+            <path value="Composition.section.entry"/>
+            <sliceName value="cigaretteSmokingBeforeDuringPregnancy"/>
+            <short value="Cigarettes smoked by the mother before and during the pregnancy"/>
+            <definition value="The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"/>
+            <max value="4"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -537,6 +558,28 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:newbornInformation.entry:numberLiveBirthsThisDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberLiveBirthsThisDelivery"/>
+            <short value="Number of live births this delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-live-births-this-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:newbornInformation.entry:numberFetalDeathsThisDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberFetalDeathsThisDelivery"/>
+            <short value="Number of fetal deaths this delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:motherInformation">
             <path value="Composition.section"/>
             <sliceName value="motherInformation"/>
@@ -582,6 +625,7 @@
             <short value="Entries that are contained in the motherInformation section"/>
             <definition value="Entries that are contained in the motherInformation section"/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:motherInformation.entry:mothersEducation">
             <path value="Composition.section.entry"/>
