@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="60"/>
-        <lastUpdated value="2021-05-17T04:05:25.406+00:00"/>
-        <source value="#pIaPrSbwJIrhx4As"/>
+        <versionId value="65"/>
+        <lastUpdated value="2021-07-11T23:39:29.465+00:00"/>
+        <source value="#ka97pUcG8HJWT19T"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -127,12 +127,11 @@
             <path value="Composition.author"/>
             <short value="The author is the jurisdictional Vital Records Office."/>
             <definition value="The author is the jurisdictional Vital Records Office."/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             </type>
-            <mustSupport value="true"/>
-            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="63"/>
-        <lastUpdated value="2021-07-09T00:09:08.368+00:00"/>
-        <source value="#pJDuEkEukqoZfvGu"/>
+        <versionId value="72"/>
+        <lastUpdated value="2021-07-11T23:39:49.235+00:00"/>
+        <source value="#DjSPa3H35BDSJuV9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -123,12 +123,11 @@
             <path value="Composition.author"/>
             <short value="The author is the jurisdictional Vital Records Office."/>
             <definition value="The author is the jurisdictional Vital Records Office."/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             </type>
-            <mustSupport value="true"/>
-            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section">
@@ -607,7 +606,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        
         <element id="Composition.section:newbornInformation.entry:abnormalConditionsNewborn">
             <path value="Composition.section.entry"/>
             <sliceName value="abnormalConditionsNewborn"/>
