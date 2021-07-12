@@ -1,1 +1,1 @@
-The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth.
+The data requirements for jurisdictional reporting of live births are based on the [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth_edit_specifications.pdf).

@@ -39,24 +39,12 @@ This Guide is divided into several pages which are listed at the top of each pag
 * Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.
 * Appendices: This pages provides examples of live birth and fetal death reports and worksheets.
 
-### Authors
+### Author
 
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Email/URL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>HL7 International - Public Health</td>
-<td><a href="http://www.hl7.org/Special/committees/pher" target="_new">http://www.hl7.org/Special/committees/pher</a></td>
-</tr>
-</tbody>
-</table>
+[HL7 International - Public Health](http://www.hl7.org/Special/committees/pher)
 
 ### Other Information
+
 This is the first FHIR BFDR standard.
 
 This guide is compliant with FHIR Release 4.

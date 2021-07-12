@@ -10,10 +10,6 @@ This implementation guide also supports two uses cases for returning information
 1. Coded Race and Ethnicity
 2. Coded Cause of Fetal Death
 
-These information flows are illustrated in the Birth and Fetal Death Reporting Process figure:
-
-<table><tr><td><img src="V26_IG_VR_BAFDRPT_R1_STU2.jpg" /></td></tr></table>
-
 Information flows are supported by the FHIR Composition resources indicated in the following table:
   
 | Use Case                      | FHIR Composition                                                                                                                | Data Source                         | Data Receiver                       |
@@ -28,11 +24,17 @@ Information flows are supported by the FHIR Composition resources indicated in t
 
 ### Provider Live Birth
 
-This use case represents live birth information that is recorded and communicated to the jurisdictional Vital Records Office.
+This use case represents live birth information that is recorded and communicated to the jurisdictional Vital Records office.
 
 For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility.
 
-The data requirements for provider supplied live birth information are based on the [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth_edit_specifications.pdf), the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf), the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf), and the [2016 US Standard Mothers Worksheet for Child's Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf). The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.
+The data requirements for provider supplied live birth information are based on the:
+* [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth_edit_specifications.pdf)
+* [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
+* [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
+* [2016 US Standard Mothers Worksheet for Child's Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf).
+
+The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.
 
 The Provider Live Birth use case is represented by the [Composition - Provider Live Birth Report](StructureDefinition-Composition-provider-live-birth-report.html).
 
@@ -40,20 +42,30 @@ The Provider Live Birth use case is represented by the [Composition - Provider L
 
 This use case represents information about a live birth and the issuance of a Birth Certificate to be recorded and communicated to NCHS.
 
-The data requirements for jurisdictional reporting of live births are based on the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth.
+The data requirements for jurisdictional reporting of live births are based on the [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth_edit_specifications.pdf).
 
 The Jurisdiction Live Birth use case is represented by the [Composition - Jurisdiction Live Birth Report](StructureDefinition-Composition-jurisdiction-live-birth-report.html).
 
 ### Provider Fetal Death
-TODO: update
+
+This use case represents fetal death information that is recorded and communicated to the jurisdictional Vital Records office.
+
+For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the fetus is collected from the responsible party at the healthcare facility.
+
+The data requirements for provider supplied fetal death information are based on the:
+* [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
+* [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
+* [2019 US Standard Patient's Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
+
+The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.
 
 The Provider Fetal Death use case is represented by the [Composition - Provider Fetal Death Report](StructureDefinition-Composition-provider-fetal-death-report.html).
 
 ### Jurisdiction Fetal Death
-TODO: update
+
 This use case represents information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to NCHS.
 
-The data requirements for jurisdictional reporting of fetal deaths are based on the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.
+The data requirements for jurisdictional reporting of fetal deaths are based on the [Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/death_edit_specifications.pdf).
 
 The Jurisdiction Fetal Death use case is represented by the [Composition - Jurisdiction Fetal Death Report](StructureDefinition-Composition-jurisdiction-fetal-death-report.html).
 
