@@ -2,12 +2,7 @@
 
 Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional Vital Records Offices and national health statistics agencies. Data associated with the mother of the baby or fetus may be communicated independently from that associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, "mother" always refers to the woman who delivered the infant. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. Also, the national statistics agency referred to in this guide is the [National Center for Health Statistics - CDC](https://www.cdc.gov/nchs/index.htm) (NCHS).
 
-### Scope
-This implementation guide (IG) defines a series of FHIR profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, jurisdictions, and the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS).
-
-This guide is compliant with FHIR Release 4.
-
-All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein. 
+This implementation guide (IG) defines a series of FHIR profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR) reports. It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, jurisdictions, and the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS).
 
 ### Relationship to Other Standards
 This BFDR implementation guide standard complements other vital records standards to support the expansion of information flow to and from the national statistics agency. It is informed by:
@@ -19,8 +14,8 @@ This BFDR implementation guide standard complements other vital records standard
 
 ### Dependencies
 This implementation guide re-uses profiles from the following guides:
-* Vital Records Common Profiles Library (add link - todo)
-* US Core (add link - todo)
+* [Vital Records Common Profiles Library](http://hl7.org/fhir/us/vr-common-library)
+* [US Core Implementation Guide](http://hl7.org/fhir/us/core/)
 
 ### Audience
 This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The implementation guide is informative to health care provider organizations, jurisdictional Vital Records Offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders.
@@ -32,10 +27,14 @@ Electronic vital records work started with the HL7 Vital Records Domain Analysis
 
 This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross Group Projects WG's variance request process, and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.
 
+### Other Information
 This is the first FHIR BFDR standard.
+
+This guide is compliant with FHIR Release 4.
 
 For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).
 
+Disclaimer: All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.
 
 
 

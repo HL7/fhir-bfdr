@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-paternity-acknowledgement-signed-james-quinn"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-11-19T06:40:34.924+00:00"/>
-        <source value="#gz1ip4MbYt3EQl9Q"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-07-12T03:51:14.941+00:00"/>
+        <source value="#cbOXwtkPk1JFxRyy"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
     </meta>
     <status value="final"/>
@@ -25,5 +25,11 @@
         <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn"/>
         <display value="RelatedPerson - Father (James Brandon Quinn)"/>
     </focus>
-    <valueBoolean value="true"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="Y"/>
+            <display value="Yes"/>
+        </coding>
+    </valueCodeableConcept>
 </Observation>

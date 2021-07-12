@@ -32,3 +32,4 @@
 * [Plurality Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7577)
 * [Pregnancy Report Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7566)
 * [Yes No Unknown (YNU)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.888)
+* [Yes No Not Applicable (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-maternal-morbidity"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2021-07-08T06:39:08.100+00:00"/>
-        <source value="#OQLjLpBB0fXeJBTv"/>
+        <versionId value="14"/>
+        <lastUpdated value="2021-07-12T04:10:51.055+00:00"/>
+        <source value="#OPFjER6FzOMFz30R"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
     <version value="1.0.0"/>
@@ -32,6 +32,16 @@
         <element id="Condition">
             <path value="Condition"/>
             <short value="Information on whether the mother suffered from one or more of a list of recognized maternal morbidities during the labor and delivery process"/>
+        </element>
+        <element id="Condition.category">
+            <path value="Condition.category"/>
+            <short value="Maternal morbidity [US Standard Certificate of Live Birth]"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="73781-7"/>
+                </coding>
+            </patternCodeableConcept>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>

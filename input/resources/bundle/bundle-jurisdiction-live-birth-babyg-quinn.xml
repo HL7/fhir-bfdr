@@ -602,7 +602,13 @@
                     <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn" />
                     <display value="RelatedPerson - Father (James Brandon Quinn)" />
                 </focus>
-                <valueBoolean value="true" />
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+                        <code value="Y"/>
+                        <display value="Yes"/>
+                    </coding>
+                </valueCodeableConcept>
             </Observation>
         </resource>
     </entry>
