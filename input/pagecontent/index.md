@@ -15,7 +15,7 @@ This BFDR implementation guide standard complements other vital records standard
 ### Dependencies
 This implementation guide re-uses profiles from the following guides:
 * [Vital Records Common Profiles Library](http://hl7.org/fhir/us/vr-common-library)
-* [US Core Implementation Guide](http://hl7.org/fhir/us/core/)
+* [US Core Implementation Guide](http://hl7.org/fhir/us/core)
 
 ### Audience
 This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The implementation guide is informative to health care provider organizations, jurisdictional Vital Records Offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders.
@@ -26,6 +26,35 @@ This FHIR implementation guide builds on previous electronic data standards for 
 Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, in 2018, with Release 3, and in November 2020 as Release 4.
 
 This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross Group Projects WG's variance request process, and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.
+
+### How to Read This Guide
+
+This Guide is divided into several pages which are listed at the top of each page in the menu bar.
+
+* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.
+* Use Cases: This page details the use cases supported by this guide.
+* Implementer Guidance: This page details the worksheet Questionnaire format and the relationship to the IHE specification.
+* Terminology: This page provides a listing of the value sets used in this guide.
+* Downloads: This page provides links to downloadable artifacts.
+* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.
+* Appendices: This pages provides examples of live birth and fetal death reports and worksheets.
+
+### Authors
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email/URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HL7 International - Public Health</td>
+<td><a href="http://www.hl7.org/Special/committees/pher" target="_new">http://www.hl7.org/Special/committees/pher</a></td>
+</tr>
+</tbody>
+</table>
 
 ### Other Information
 This is the first FHIR BFDR standard.
