@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-birth"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2021-05-17T04:05:26.805+00:00"/>
-        <source value="#x4NPe1ZrswU4rjj2"/>
+        <versionId value="28"/>
+        <lastUpdated value="2021-07-13T01:03:38.283+00:00"/>
+        <source value="#Lj8WGG5DHUXaAQiP"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
     <version value="1.0.0"/>
@@ -51,6 +51,34 @@
                 <rules value="open"/>
             </slicing>
         </element>
+        <element id="Encounter.participant:attendant">
+            <path value="Encounter.participant"/>
+            <sliceName value="attendant"/>
+            <short value="The person responsible for delivering the child."/>
+            <definition value="The attendant at birth is defined as the individual at the delivery who is responsible for the delivery. For example, if an intern or nurse-midwife delivers an infant under the supervision of an obstetrician who is present in the delivery room, the obstetrician is to be reported as the attendant. However, a person who is not physically present at the delivery should not be reported as the attendant. For example, if the obstetrician is not physically present, the intern or nurse-midwife MUST be reported as the attendant."/>
+        </element>
+        <element id="Encounter.participant:attendant.type">
+            <path value="Encounter.participant.type"/>
+            <short value="Birth attendant [Extended Identifier]"/>
+            <definition value="Birth attendant [Extended Identifier]"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="87286-1"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:attendant.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vital-records"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Encounter.participant:certifier">
             <path value="Encounter.participant"/>
             <sliceName value="certifier"/>
@@ -80,34 +108,6 @@
             <mustSupport value="true"/>
         </element>
         <element id="Encounter.participant:certifier.individual">
-            <path value="Encounter.participant.individual"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vital-records"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Encounter.participant:attendant">
-            <path value="Encounter.participant"/>
-            <sliceName value="attendant"/>
-            <short value="The person responsible for delivering the child."/>
-            <definition value="The attendant at birth is defined as the individual at the delivery who is responsible for the delivery. For example, if an intern or nurse-midwife delivers an infant under the supervision of an obstetrician who is present in the delivery room, the obstetrician is to be reported as the attendant. However, a person who is not physically present at the delivery should not be reported as the attendant. For example, if the obstetrician is not physically present, the intern or nurse-midwife MUST be reported as the attendant."/>
-        </element>
-        <element id="Encounter.participant:attendant.type">
-            <path value="Encounter.participant.type"/>
-            <short value="Birth attendant [Extended Identifier]"/>
-            <definition value="Birth attendant [Extended Identifier]"/>
-            <min value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="87286-1"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Encounter.participant:attendant.individual">
             <path value="Encounter.participant.individual"/>
             <min value="1"/>
             <type>

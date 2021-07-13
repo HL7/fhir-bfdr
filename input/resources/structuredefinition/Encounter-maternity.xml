@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-maternity"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2021-05-17T04:05:26.886+00:00"/>
-        <source value="#XnlFaAgrqWlI3Uv4"/>
+        <versionId value="17"/>
+        <lastUpdated value="2021-07-13T01:03:47.284+00:00"/>
+        <source value="#0vUhx9h1ycXPBYXC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
     <version value="1.0.0"/>
@@ -76,6 +76,43 @@
             <mustSupport value="true"/>
         </element>
         <element id="Encounter.participant:attendant.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vital-records"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:certifier">
+            <path value="Encounter.participant"/>
+            <sliceName value="certifier"/>
+            <short value="The individual who certifies to the fact that the birth occurred."/>
+            <definition value="The individual who certifies to the fact that the birth occurred. May be, but need not be, the same as the attendant at birth."/>
+        </element>
+        <element id="Encounter.participant:certifier.type">
+            <path value="Encounter.participant.type"/>
+            <short value="Birth certifier [Extended Identifier]"/>
+            <definition value="Birth certifier [Extended Identifier]"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="87287-9"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:certifier.period">
+            <path value="Encounter.participant.period"/>
+        </element>
+        <element id="Encounter.participant:certifier.period.start">
+            <path value="Encounter.participant.period.start"/>
+            <short value="Date certified"/>
+            <definition value="Date certified."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Encounter.participant:certifier.individual">
             <path value="Encounter.participant.individual"/>
             <min value="1"/>
             <type>

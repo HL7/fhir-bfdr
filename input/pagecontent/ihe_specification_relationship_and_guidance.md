@@ -6,7 +6,7 @@ The BFDR-E content profile supports pre-population of data from electronic healt
 
 BFDR-E defines the mechanism to capture information required for reporting birth and fetal death to vital records. The BFDR-E profile provides mapping and data capture rules to collect information.
 
-From <https://wiki.ihe.net/index.php/Birth_and_Fetal_Death_Reporting_Enhanced_Profile>
+From <https://wiki.ihe.net/index.php/Birth_and_Fetal_Death_Reporting_Enhanced_Profile>.
 
 The sections of BFDR-E that deal with FHIR data and mappings are contained in Volume 2 - Transactions and include:
 * 3.46 BFDRQuery [QRPH-46]
@@ -14,11 +14,11 @@ The sections of BFDR-E that deal with FHIR data and mappings are contained in Vo
 
 ### Relationship between BFDR IG (this specification) and BFDR-E
 
-Both the BFDR FHIR IG and BFDR-E deal with a set of common data elements - those described by the requirements of birth and fetal death reporting in the USA. These data elements can all be identified using the IJE (Inter-Jurisdictional Exhange) data element names.
+Both the BFDR FHIR IG and BFDR-E deal with a set of common data elements - those required for birth and fetal death reporting in the USA. These data elements can be identified using the IJE (Inter-Jurisdictional Exhange) data element names.
 
 The Data Mappings tables in the BFDR-E specification use the IJE data element names.
 
-Where possible, the BFDR FHIR IG profiles also include the relevant IJE data element names.
+Where possible, the BFDR FHIR IG profiles also include the relevant IJE data element names and a mapping table can be found [here](ije_mapping.md).
 
 For each IJE data element, the Data Mappings tables in the BFDR-E specification include a definition, a link to a Derivation Rule and a link to relevant Value Sets. 
 
@@ -26,7 +26,7 @@ The Derivation Rule references the section where the logic and XPath source data
 
 The Value Sets reference the Value Subsets in [Public Health Information Network Vocabulary Access and Distribution System (PHIN-VADS)](https://phinvads.cdc.gov/vads). These value sets contain values to be used in matching the required data from the source.
 
-In some cases, there is a one-to-one value match between the value sets/data extracted and the data required to be sent to NCHS. In other cases, there is a many-to-one value match between the value sets/data extract and the the required to be sent to NCHS. In these many-to-one cases, the values in the data extracted will need to be mapped to (or "rolled-up") one specific value. This specific value is the value contained in the BFDR FHIR IG profile that represents the concept.
+In some cases, there is a one-to-one value match between the value sets/data extracted and the data required to be sent to NCHS. In other cases, there is a many-to-one value match between the value sets/data extract and the data required to be sent to NCHS. In these many-to-one cases, the values in the data extracted will need to be mapped to (or "rolled-up") one specific value. This specific value is the value contained in the BFDR FHIR IG profile that represents the concept.
 
 ### Examples
 
@@ -69,4 +69,4 @@ $ProblemCode = (Condition.code)
 ```
 * Value Set: [Gestational Diabetes (NCHS)(1.3.6.1.4.1.19376.1.7.3.1.1.13.8.137)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.137)
 
-In this case there are four values contained in the above value set and if there are any Conditions related to the patient that matches any one of the codes contained in the above value set, then this data, even if value isn't an exact match to the code used in the Observation - Pregnancy Risk Factor profile, should be mapped into that profile.
+In this case there are multiple values contained in the above value set and if there are any Conditions related to the patient that matches any one of the codes contained in the above value set, then this data, even if value isn't an exact match to the code used in the Observation - Pregnancy Risk Factor profile, should be mapped into that profile.
