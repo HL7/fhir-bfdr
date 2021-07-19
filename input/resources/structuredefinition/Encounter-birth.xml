@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Encounter-birth"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2021-07-13T01:03:38.283+00:00"/>
-        <source value="#Lj8WGG5DHUXaAQiP"/>
+        <versionId value="30"/>
+        <lastUpdated value="2021-07-19T22:31:52.565+00:00"/>
+        <source value="#KZFYZXPVRG6V2WMP"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
     <version value="1.0.0"/>
@@ -50,12 +50,14 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <mustSupport value="true"/>
         </element>
         <element id="Encounter.participant:attendant">
             <path value="Encounter.participant"/>
             <sliceName value="attendant"/>
             <short value="The person responsible for delivering the child."/>
             <definition value="The attendant at birth is defined as the individual at the delivery who is responsible for the delivery. For example, if an intern or nurse-midwife delivers an infant under the supervision of an obstetrician who is present in the delivery room, the obstetrician is to be reported as the attendant. However, a person who is not physically present at the delivery should not be reported as the attendant. For example, if the obstetrician is not physically present, the intern or nurse-midwife MUST be reported as the attendant."/>
+            <mustSupport value="true"/>
         </element>
         <element id="Encounter.participant:attendant.type">
             <path value="Encounter.participant.type"/>
@@ -84,6 +86,7 @@
             <sliceName value="certifier"/>
             <short value="The individual who certifies to the fact that the birth occurred."/>
             <definition value="The individual who certifies to the fact that the birth occurred. May be, but need not be, the same as the attendant at birth."/>
+            <mustSupport value="true"/>
         </element>
         <element id="Encounter.participant:certifier.type">
             <path value="Encounter.participant.type"/>
@@ -118,6 +121,7 @@
         </element>
         <element id="Encounter.hospitalization">
             <path value="Encounter.hospitalization"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Encounter.hospitalization.destination">
             <path value="Encounter.hospitalization.destination"/>
@@ -145,6 +149,11 @@
             <path value="Encounter.location.location"/>
             <short value="Facility name (if not institution, give street and number)"/>
             <definition value="Facility name (if not institution, give street and number)"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Encounter.location.physicalType">
             <path value="Encounter.location.physicalType"/>
