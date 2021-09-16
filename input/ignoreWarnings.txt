@@ -1,4 +1,5 @@
 == Suppressed Messages ==
+# Re ERRORS: "The value provided (XXXXX) is not in the options value set in the questionnaire": See Zulip chat: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Questionnaire.3A.20Value.20not.20in.20value.20set
 # External code system
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
 [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated]
@@ -13,7 +14,7 @@ Code System URI 'urn:oid:2.16.840.1.113883.3.221.5' is unknown so the code canno
 [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated]
 [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7566 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated]
 [Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7388 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7163 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated]
+[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7163 because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.3.221.5' is unknown so the code cannot be validated]
 # Example uses a CPT code that can't be validated
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 # Example uses an identifier not specifically called out by a slice
@@ -21,10 +22,6 @@ This element does not match any known slice defined in the profile http://hl7.or
 # Example specifically uses a value not in this value set
 # APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-# APPROVED by Cross Project Workgroup: Profile does not align with US Core Encounter because US Core Encounter does not currently allow PractitionerRole - this is being added for Jan 2021 ballot to US Core and as soon as this functionality is added we will use US Core Encounter (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
 # Examples have optional slices that are not defined in the profile - not matching is expected behaviour
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr
-# Expected behaviour - added an extra author for this example
-# Issue is because the slices aren't recognized due to the missing ICD-10 code system 
 # Expected behaviour (one profile is parent of the other)
-# Validation against profile information messages
