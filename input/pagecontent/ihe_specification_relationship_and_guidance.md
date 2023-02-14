@@ -18,7 +18,7 @@ Both the BFDR FHIR IG and BFDR-E deal with a set of common data elements - those
 
 The Data Mappings tables in the BFDR-E specification use the IJE data element names.
 
-Where possible, the BFDR FHIR IG profiles also include the relevant IJE data element names and a mapping table can be found [here](ije_mapping.html).
+Where possible, the BFDR FHIR IG profiles also include the relevant IJE data element names and mapping are located [here](ije_mapping.html).
 
 For each IJE data element, the Data Mappings tables in the BFDR-E specification include a definition, a link to a Derivation Rule and a link to relevant Value Sets. 
 

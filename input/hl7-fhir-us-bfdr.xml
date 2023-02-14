@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="979"/>
-        <lastUpdated value="2021-07-13T07:02:35.704+00:00"/>
-        <source value="#AYwQNqdiufxiTWUJ"/>
+        <versionId value="995"/>
+        <lastUpdated value="2023-01-03T23:53:49.785+00:00"/>
+        <source value="#RiB71vpIzeYnISxg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
-    <version value="1.0.0"/>
+    <version value="1.1.0-for-comment"/>
     <name value="Vital_Records_Birth_and_Fetal_Death_Reporting"/>
     <title value="Vital Records Birth and Fetal Death Reporting"/>
-    <status value="draft"/>
+    <status value="active"/>
+    <experimental value="false"/>
     <publisher value="HL7 International - Public Health Work Group"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -32,9 +33,15 @@
     <packageId value="hl7.fhir.us.bfdr"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-location">
+            <valueString value="http://hl7.org/fhir/us/core"/>
+        </extension>
+        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-name">
+            <valueString value="USCoreR4"/>
+        </extension>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="4.0.0"/>
+        <version value="5.0.1"/>
     </dependsOn>
     <dependsOn id="uscdcphinvads">
         <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
@@ -49,7 +56,7 @@
     <dependsOn id="hl7fhirusvrcommonlibrary">
         <uri value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7.fhir.us.vr-common-library"/>
         <packageId value="hl7.fhir.us.vr-common-library"/>
-        <version value="1.0.0"/>
+        <version value="current"/>
     </dependsOn>
     <definition>
         <grouping id="live-birth-compositions-ehr-jvr">
@@ -192,7 +199,7 @@
                 <reference value="CapabilityStatement/CapabilityStatement-bfdr"/>
                 <display value="CapabilityStatement - Birth and Fetal Death"/>
             </reference>
-            <name value="CapabilityStatement - Birth and Fetal Death Reporting"/>
+            <name value="CapabilityStatement - Birth and Fetal Death"/>
             <description value="This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -341,7 +348,7 @@
                 <reference value="StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition"/>
                 <display value="Condition - Coded Initiation Fetal Death Cause or Condition"/>
             </reference>
-            <name value="Condition - Coded Initiation Fetal Death Cause or Condition"/>
+            <name value="Condition - Coded Initiating Fetal Death Cause or Condition"/>
             <description value="This profile represents the coded initiating cause/condition of fetal death."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-information-profiles"/>
@@ -371,7 +378,7 @@
                 <display value="ConditionCongenitalAnomalyOfNewborn"/>
             </reference>
             <name value="Condition - Congenital Anomaly of Newborn"/>
-            <description value="This Condition profile represents information about whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."/>
+            <description value="This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="newborn-fetus-profiles"/>
         </resource>
@@ -1855,14 +1862,14 @@
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
         </resource>
-        <!--<resource>
+        <resource>
             <reference>
                 <reference value="Parameters/expansion-parameters"/>
                 <display value="expansion-parameters"/>
             </reference>
             <name value="expansion-parameters"/>
             <exampleBoolean value="true"/>
-        </resource>-->
+        </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-race-carmen-teresa-lee"/></reference>
@@ -1975,18 +1982,23 @@
                     <generation value="markdown"/>
                 </page>
             </page>
+            <page>
+                <nameUrl value="change_log.html"/>
+                <title value="Change Log"/>
+                <generation value="markdown"/>
+            </page>
         </page>
         <parameter>
-            <code value="releaselabel"/>
-            <value value="STU 1"/>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters.xml"/>
         </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
         </parameter>
         <parameter>
-            <code value="path-expansion-params"/>
-            <value value="resources/parameters/expansion-parameters.xml"/>
+            <code value="releaselabel"/>
+            <value value="CI Build"/>
         </parameter>
     </definition>
 </ImplementationGuide>
