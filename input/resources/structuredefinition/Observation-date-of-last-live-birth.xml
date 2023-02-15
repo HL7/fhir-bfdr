@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-date-of-last-live-birth"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-07-08T07:03:18.466+00:00"/>
-        <source value="#KGERNiUYmCQUeFGZ"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-02-15T01:30:37.957+00:00"/>
+        <source value="#dr13rhAmzydE4znL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
     <version value="1.0.0"/>
@@ -50,8 +50,8 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -61,7 +61,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="995"/>
-        <lastUpdated value="2023-01-03T23:53:49.785+00:00"/>
-        <source value="#RiB71vpIzeYnISxg"/>
+        <versionId value="999"/>
+        <lastUpdated value="2023-02-15T01:36:29.498+00:00"/>
+        <source value="#C9Q1d24tPpNoFjGF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -54,7 +54,7 @@
         <version value="0.4.0"/>
     </dependsOn>
     <dependsOn id="hl7fhirusvrcommonlibrary">
-        <uri value="http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7.fhir.us.vr-common-library"/>
+        <uri value=" https://build.fhir.org/ig/HL7/vr-common-library/ImplementationGuide/hl7.fhir.us.vr-common-library"/>
         <packageId value="hl7.fhir.us.vr-common-library"/>
         <version value="current"/>
     </dependsOn>
@@ -797,7 +797,7 @@
                 <reference value="StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
                 <display value="ObservationAutopsyHistologicalExamResultsUsed"/>
             </reference>
-            <name value="Observation - Autopsy/Histological Exam Results Used"/>
+            <name value="Observation - Autopsy or Histological Exam Results Used"/>
             <description value="This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-information-profiles"/>
@@ -1198,7 +1198,7 @@
                 <reference value="StructureDefinition/Observation-histological-placental-exam-performed"/>
                 <display value="Observation-histological-placental-exam-performed"/>
             </reference>
-            <name value="Observation - Histological Placental Exam"/>
+            <name value="Observation - Histological Placental Exam Performed"/>
             <description value="This profile represents whether or not a histological placental examination was performed."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-information-profiles"/>
@@ -1355,7 +1355,7 @@
                 <reference value="StructureDefinition/Observation-mother-received-wic-food"/>
                 <display value="Observation - Mother Recieved WIC Food"/>
             </reference>
-            <name value="Observation - Mother Received WIC Food"/>
+            <name value="Observation - Mother Recieved WIC Food"/>
             <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
