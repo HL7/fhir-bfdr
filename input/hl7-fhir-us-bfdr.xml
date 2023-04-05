@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1004"/>
-        <lastUpdated value="2023-02-16T14:27:04.938+00:00"/>
-        <source value="#IgTyzk7hC5cpIFnC"/>
+        <versionId value="1013"/>
+        <lastUpdated value="2023-04-05T03:37:56.144+00:00"/>
+        <source value="#J4uvGSnM2tGqx2Cz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -1923,6 +1923,51 @@
             <description value="Example of Tabulated Ethnicity profile (Tom Yan Lee)"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-seizure"/>
+                <display value="Condition - Seizure"/>
+            </reference>
+            <name value="Condition - Seizure"/>
+            <description value="This Condition profile indicates the newborn had an abnormal condition of seizure."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-birth-injury"/>
+                <display value="Condition - Birth Injury"/>
+            </reference>
+            <name value="Condition - Birth Injury"/>
+            <description value="This Condition profile indicates the newborn had an abnormal condition of birth injury."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-perineal-laceration"/>
+                <display value="Condition - Perineal Laceration"/>
+            </reference>
+            <name value="Condition - Perineal Laceration"/>
+            <description value="This Condition profile indicates a maternal morbidity of perineal laceration."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-ruptured-uterus"/>
+                <display value="Condition - Ruptured Uterus"/>
+            </reference>
+            <name value="Condition - Ruptured Uterus"/>
+            <description value="This Condition profile indicates a maternal morbidity of ruptured uterus."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-chorioamnionitis"/>
+                <display value="Condition - Chorioamnionitis"/>
+            </reference>
+            <name value="Condition - Chorioamnionitis"/>
+            <description value="This Condition profile indicates a labor and delivery characteristic of chorioamnionitis."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
