@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1014"/>
-        <lastUpdated value="2023-04-05T20:52:23.919+00:00"/>
-        <source value="#QlYdQPFbz1TO977K"/>
+        <versionId value="1017"/>
+        <lastUpdated value="2023-04-06T23:37:53.832+00:00"/>
+        <source value="#ZvbqfPkLKph8ozjo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -1607,7 +1607,7 @@
             <reference>
                 <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"/></reference>
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Pregnancy-induced hypertension]"/>
-            <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
+            <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-clinical-other-test-date"/>
         </resource>
@@ -1968,6 +1968,15 @@
             <name value="Condition - Chorioamnionitis"/>
             <description value="This Condition profile indicates a labor and delivery characteristic of chorioamnionitis."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-gestational-hypertension-jada-ann-quinn"/></reference>
+            <name value="Condition - Gestational Hypertension example [Jada Ann Quinn: Pregnancy-induced hypertension]"/>
+            <description value="Example of Condition-gestational-hypertension-vr (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
+            <groupingId value="lbe-clinical-other-test-date"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
