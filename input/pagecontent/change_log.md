@@ -33,3 +33,6 @@ TODO: Add links to profiles
           * Procedure - Assisted Fertilization Vital Records
           * Observation - Previous Cesarean Vital Records
           * Observation - None of Specified Pregnancy Risk Factors Vital Records
+
+Updated to US Core latest
+ * Removed US Core Condition base from: Condition-coded-initiating-fetal-death-cause-or-condition, Condition-coded-other-fetal-death-cause-or-condition
