@@ -26,7 +26,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Condition">
@@ -61,6 +61,13 @@
             <path value="Condition.code.text"/>
             <short value="Any further specification should be entered as free text to fully record the provider's view of the cause."/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Condition.subject">
+            <path value="Condition.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>
