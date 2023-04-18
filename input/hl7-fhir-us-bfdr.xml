@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1029"/>
-        <lastUpdated value="2023-04-18T06:10:00.322+00:00"/>
-        <source value="#eOwZzRPO1jaBImaz"/>
+        <versionId value="1031"/>
+        <lastUpdated value="2023-04-18T06:50:20.719+00:00"/>
+        <source value="#QgR2kKd7gT3K8SN6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -448,34 +448,6 @@
             <name value="Condition - Infection Present During Pregnancy example [Jada Ann Quinn]"/>
             <description value="Example of Condition-infection-present-during-pregnancy profile (Jada Ann Quinn"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-maternal-morbidity"/>
-                <display value="Condition - Maternal Morbidity"/>
-            </reference>
-            <name value="Condition - Maternal Morbidity"/>
-            <description value="This Condition profile represents whether the mother suffered from one or more of a list of recognized maternal morbidities during the labor and delivery process."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="medical-and-health-information-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-maternal-morbidity-carmen-teresa-lee"/></reference>
-            <name value="Condition - Maternal Morbidity example [Carmen Teresa Lee]"/>
-            <description value="Example of Cndition-maternal-morbidity profile (Carmen Teresa Lee)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
-            <groupingId value="fde-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-maternal-morbidity-jada-ann-quinn"/></reference>
-            <name value="Condition - Maternal Morbidity example [Jada Ann Quinn]"/>
-            <description value="Example of Condition-maternal-morbidity (Jada Ann Quinn)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
             <groupingId value="lbe-clinical-other-test-date"/>
         </resource>
         <resource>
@@ -1958,7 +1930,7 @@
         <resource>
             <reference>
                 <reference value="Condition/condition-gestational-hypertension-jada-ann-quinn"/></reference>
-            <name value="Condition - Gestational Hypertension example [Jada Ann Quinn: Pregnancy-induced hypertension]"/>
+            <name value="Condition - Gestational Hypertension example [Jada Ann Quinn: Pregnancy-induced hypertension"/>
             <description value="Example of Condition-gestational-hypertension-vr (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
@@ -1970,6 +1942,15 @@
             <name value="USA SNOMED-CT"/>
             <description value="USA SNOMED-CT"/>
             <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-ruptured-uterus-jada-ann-quinn"/></reference>
+            <name value="Condition - Ruptured Uterus - Jada Ann Quinn"/>
+            <description value="Example of Condition-ruptured-uterus (Jada Ann Quinn: Ruptured Uterus)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus"/>
+            <groupingId value="lbe-clinical-other-test-date"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -2049,9 +2030,9 @@
             <code value="releaselabel"/>
             <value value="CI Build"/>
         </parameter>
-      <parameter>
-        <code value="path-expansion-params"/>
-        <value value="resources/parameters/expansion-parameters-bfdr.xml"/>
-      </parameter>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters-bfdr.xml"/>
+        </parameter>
     </definition>
 </ImplementationGuide>
