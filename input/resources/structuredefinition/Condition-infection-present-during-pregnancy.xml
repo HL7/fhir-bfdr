@@ -1,64 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="Condition-infection-present-during-pregnancy"/>
-    <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2023-02-15T00:32:47.746+00:00"/>
-        <source value="#O23ex5UP5LM0xy2y"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy"/>
-    <version value="1.0.0"/>
-    <name value="ConditionInfectionPresentDuringPregnancy"/>
-    <title value="Condition - Infection Present During Pregnancy"/>
-    <status value="active"/>
-    <experimental value="false"/>
-    <publisher value="HL7 Public Health Work Group"/>
-    <description value="This Condition profile represents infections present and/or treated during the pregnancy."/>
-    <jurisdiction>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Condition-infection-present-during-pregnancy" />
+  <meta>
+    <versionId value="21" />
+    <lastUpdated value="2023-02-15T00:32:47.746+00:00" />
+    <source value="#O23ex5UP5LM0xy2y" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy" />
+  <version value="1.0.0" />
+  <name value="ConditionInfectionPresentDuringPregnancy" />
+  <title value="Condition - Infection Present During Pregnancy" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="HL7 Public Health Work Group" />
+  <description value="This Condition profile represents infections present and/or treated during the pregnancy." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition">
+      <path value="Condition" />
+      <short
+        value="Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."
+       />
+    </element>
+    <element id="Condition.category:infectionDuringPregnancy">
+      <path value="Condition.category" />
+      <sliceName value="infectionDuringPregnancy" />
+      <short value="Infections present AndOr treated during this pregnancy for live birth [US Standard Certificate of Live Birth]" />
+      <min value="1" />
+      <max value="1" />
+      <patternCodeableConcept>
         <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
+          <system value="http://loinc.org" />
+          <code value="72519-2" />
         </coding>
-    </jurisdiction>
-    <fhirVersion value="4.0.1"/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Condition">
-            <path value="Condition"/>
-            <short value="Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."/>
-        </element>
-        <element id="Condition.category">
-            <path value="Condition.category"/>
-            <short value="Infections present AndOr treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="72519-2"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
-        <element id="Condition.code">
-            <path value="Condition.code"/>
-            <short value="Infections present and/or treated during this pregnancy for live birth as required by the National US Standards. Note: Genital herpes simplex (SNOMED code 33839006) is only a Michigan state-specific requirement."/>
-            <binding>
-                <strength value="required"/>
-                <description value="Infections During Pregnancy - Live Birth (NCHS)"/>
-                <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.6070"/>
-            </binding>
-        </element>
-        <element id="Condition.subject">
-            <path value="Condition.subject"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
-            </type>
-        </element>
-    </differential>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <short value="Infections present and/or treated during this pregnancy for live birth as required by the National US Standards. Note: Genital herpes simplex (SNOMED code 33839006) is only a Michigan state-specific requirement." />
+      <binding>
+        <strength value="required" />
+        <description value="Infections During Pregnancy - Live Birth (NCHS)" />
+        <valueSet value="http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.6070" />
+      </binding>
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>
