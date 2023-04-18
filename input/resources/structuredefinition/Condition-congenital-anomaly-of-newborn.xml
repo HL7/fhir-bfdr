@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-congenital-anomaly-of-newborn"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2023-02-15T00:30:12.593+00:00"/>
-        <source value="#Mdw34Gkr5t0mUAFz"/>
+        <versionId value="27"/>
+        <lastUpdated value="2023-04-18T06:16:57.525+00:00"/>
+        <source value="#qDSMVFMwwcqB4a3B"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
     <version value="1.0.0"/>
@@ -33,15 +33,19 @@
             <path value="Condition"/>
             <short value="Information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."/>
         </element>
-        <element id="Condition.category">
+        <element id="Condition.category:congenitalAnomolyNewborn">
             <path value="Condition.category"/>
+            <sliceName value="congenitalAnomolyNewborn"/>
             <short value="Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"/>
+            <min value="1"/>
+            <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="73780-9"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
