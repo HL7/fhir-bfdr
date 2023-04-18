@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-abnormal-condition-of-newborn"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2023-02-14T19:48:43.638+00:00"/>
-        <source value="#nXhN9xJp2u125oXg"/>
+        <versionId value="21"/>
+        <lastUpdated value="2023-04-14T01:37:40.117+00:00"/>
+        <source value="#pV8wEmF7LE7ibpB0"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn"/>
     <version value="1.0.0"/>
@@ -33,15 +33,18 @@
             <path value="Condition"/>
             <short value="Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"/>
         </element>
-        <element id="Condition.category">
+        <element id="Condition.category:abnormalConditionNewborn">
             <path value="Condition.category"/>
-            <short value="Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"/>
+            <sliceName value="abnormalConditionNewborn"/>
+            <min value="1"/>
+            <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="73812-0"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
