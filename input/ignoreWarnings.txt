@@ -3,27 +3,10 @@
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 Code System URI 'urn:oid:2.16.840.1.113883.3.221.5' is unknown so the code cannot be validated
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3593 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7582 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7163 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7576 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7567 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7565 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7388 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7566 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7387 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7568 because the value set or code system is not known to the validator]
-[Unable to determine whether the provided codes are in the value set http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7577 because the value set or code system is not known to the validator]
-Code System URI 'urn:oid:2.16.840.1.113883.3.221.5' is unknown so the code cannot be validated
 # Example uses a CPT code that can't be validated
-[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or code system is not known to the validator]
-# Example uses an identifier not specifically called out by a slice
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother
-# Example specifically uses a value not in this value set
-None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/coverage-type (http://hl7.org/fhir/ValueSet/coverage-type), and a code is recommended to come from this value set) (codes = urn:oid:2.16.840.1.113883.3.221.5#5)
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator, Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated]
 # APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
@@ -50,155 +33,11 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureD
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-tabulated-ethnicity').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-# APPROVED by Cross Project Workgroup: Profile does not align with US Core Encounter because US Core Encounter does not currently allow PractitionerRole - this is being added for Jan 2021 ballot to US Core and as soon as this functionality is added we will use US Core Encounter (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity').baseDefinition: US FHIR Usage rules require that all profiles on Encounter derive from the core US profile
 # Examples have optional slices that are not defined in the profile - not matching is expected behaviour
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-fetal-death-report
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+TODO
 # Expected behaviour - added an extra author for this example
 INFORMATION: Composition/composition-jurisdiction-fetal-death-not-named: Composition.author[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report
 # Issue is because the slices aren't recognized due to the missing ICD-10 code system 
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death
-# Expected behaviour (one profile is parent of the other)
-Found multiple matching profiles for Patient/patient-decedent-fetus-not-named among choices: http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus, http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child
-Found multiple matching profiles for Patient/patient-decedent-fetus-not-named among choices: http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child, http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus
-# Validation against profile information messages
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Coverage
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Parameters
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Procedure
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/RelatedPerson
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-fetal-death-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-fetal-death-report - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-facility-live-birth-report - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-mothers-fetal-death-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-mothers-live-birth-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-fetal-death-report
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-void-live-birth-certificate
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-other-fetal-death-cause-or-condition
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-presentation - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-bridged-race
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-fathers-date-of-birth
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-fathers-date-of-birth - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-fathers-education
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-fathers-education - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-delivery-weight
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-delivery-weight - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-prenatal-care-visits
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-prenatal-care-visits - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-tabulated-ethnicity
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-infant-living - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-pregnancy-risk-factor - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-live-birth-fetal-death - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother - listed in meta
