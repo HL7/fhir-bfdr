@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="116"/>
-        <lastUpdated value="2023-04-19T04:04:59.488+00:00"/>
-        <source value="#GEDYheaRhZfCZNFk"/>
+        <versionId value="117"/>
+        <lastUpdated value="2023-04-19T06:16:14.966+00:00"/>
+        <source value="#ZBfTLBxXP2FZbgIc"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <version value="1.0.0"/>
@@ -624,7 +624,14 @@
             <definition value="Disorders or significant morbidity experienced by the newborn infant"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assissted-ventilation-following-delivery"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assissted-ventilation-more-than-six-hours"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-seizure"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-birth-injury"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
             </type>
             <mustSupport value="true"/>
         </element>

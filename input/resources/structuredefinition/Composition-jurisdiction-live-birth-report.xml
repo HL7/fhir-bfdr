@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="102"/>
-        <lastUpdated value="2023-04-19T04:04:26.050+00:00"/>
-        <source value="#tjMR0OKyTjPJhqB1"/>
+        <versionId value="104"/>
+        <lastUpdated value="2023-04-19T06:22:06.112+00:00"/>
+        <source value="#fdRQsxfoWtsarYpc"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <version value="1.0.0"/>
@@ -517,7 +517,8 @@
             <definition value="Serious complications experienced by the mother associated with labor and delivery"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-maternal-morbidity"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -623,7 +624,14 @@
             <definition value="Disorders or significant morbidity experienced by the newborn infant"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-abnormal-condition-of-newborn"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assissted-ventilation-following-delivery"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assissted-ventilation-more-than-six-hours"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-seizure"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-birth-injury"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
             </type>
             <mustSupport value="true"/>
         </element>
