@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1031"/>
-        <lastUpdated value="2023-04-18T06:50:20.719+00:00"/>
-        <source value="#QgR2kKd7gT3K8SN6"/>
+        <versionId value="1047"/>
+        <lastUpdated value="2023-04-19T03:56:58.161+00:00"/>
+        <source value="#7WmfikOfXPVAlr8J"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -77,6 +77,9 @@
         </grouping>
         <grouping id="newborn-fetus-profiles">
             <name value="Newborn/Fetus Profiles"/>
+        </grouping>
+        <grouping id="abnormal-condition-of-the-newborn-profiles">
+            <name value="Abnormal Condition of the Newborn Profiles"/>
         </grouping>
         <grouping id="mother-prenatal-profiles">
             <name value="Mother Prenatal Profiles"/>
@@ -309,24 +312,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
             <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-abnormal-condition-of-newborn"/>
-                <display value="Condition - Abnormal Condition of Newborn"/>
-            </reference>
-            <name value="Condition - Abnormal Condition of Newborn"/>
-            <description value="This Condition profile represents information about one or more disorders or significant morbidities experienced by the newborn."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="newborn-fetus-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-abnormal-condition-of-newborn-babyg-quinn"/></reference>
-            <name value="Condition - Abnormal Condition of Newborn example [Baby G Quinn]"/>
-            <description value="Example of Condition-abnormal-condition-of-newborn (Baby G Quinn)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
         </resource>
         <resource>
             <reference>
@@ -1890,6 +1875,7 @@
             <name value="Condition - Seizure"/>
             <description value="This Condition profile indicates the newborn had an abnormal condition of seizure."/>
             <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1899,6 +1885,7 @@
             <name value="Condition - Birth Injury"/>
             <description value="This Condition profile indicates the newborn had an abnormal condition of birth injury."/>
             <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1950,6 +1937,75 @@
             <description value="Example of Condition-ruptured-uterus (Jada Ann Quinn: Ruptured Uterus)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus"/>
+            <groupingId value="lbe-clinical-other-test-date"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-assissted-ventilation-following-delivery"/>
+                <display value="Procedure - Assissted Ventilation Following Delivery"/>
+            </reference>
+            <name value="Procedure - Assissted Ventilation Following Delivery"/>
+            <description value="This profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-assissted-ventilation-more-than-six-hours"/>
+                <display value="Procedure - Assisted Ventilation More Than Six Hours"/>
+            </reference>
+            <name value="Procedure - Assisted Ventilation More Than Six Hours"/>
+            <description value="This profile represents an abnormal condition of the newborn of assisted ventilation for more than six hours."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-surfactant-replacement-therapy"/>
+                <display value="Procedure - Surfactant Replacement Therapy"/>
+            </reference>
+            <name value="Procedure - Surfactant Replacement Therapy"/>
+            <description value="This profile represents an abnormal condition of the newborn of surfactant replacement therapy."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
+                <display value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
+            </reference>
+            <name value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
+            <description value="This profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
+                <display value="Observation - None Of Specified Abnormal Conditions of Newborn"/>
+            </reference>
+            <name value="Observation - None Of Specified Abnormal Conditions of Newborn"/>
+            <description value="This profile indicates that none of the specified abnormal conditions of the newborn were present."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-nicu-admission"/>
+                <display value="Observation - NICU Admission"/>
+            </reference>
+            <name value="Observation - NICU Admission"/>
+            <description value="This profile indicates that the abnormal conditions of an admission to the NICU was present. NOTE: this may be better modeled as an Encounter."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-abnormal-condition-of-newborn-birth-injury-babyg-quinn"/></reference>
+            <name value="Condition - Birth Injury - Baby Quinn"/>
+            <description value="Example of Condition-birth-injury (Baby G Quinn: Birth Injury)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-birth-injury"/>
             <groupingId value="lbe-clinical-other-test-date"/>
         </resource>
         <page>
@@ -2023,16 +2079,16 @@
             </page>
         </page>
         <parameter>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters-bfdr.xml"/>
+        </parameter>
+        <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
         </parameter>
         <parameter>
             <code value="releaselabel"/>
             <value value="CI Build"/>
-        </parameter>
-        <parameter>
-            <code value="path-expansion-params"/>
-            <value value="resources/parameters/expansion-parameters-bfdr.xml"/>
         </parameter>
     </definition>
 </ImplementationGuide>
