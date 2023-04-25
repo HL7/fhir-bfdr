@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1087"/>
-        <lastUpdated value="2023-04-25T01:57:33.935+00:00"/>
-        <source value="#5cXhKsDMrheYWw0Z"/>
+        <versionId value="1091"/>
+        <lastUpdated value="2023-04-25T02:17:09.654+00:00"/>
+        <source value="#biws83ux4oDXX967"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -120,9 +120,12 @@
             <name value="Live Birth Examples: Encounter Test Data"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
-        <grouping id="lbe-clinical-other-test-date">
+        <grouping id="lbe-clinical-other-test-data">
             <name value="Live Birth Examples: Clinical &amp; Other Test Data"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
+        </grouping>
+        <grouping id="lbe-clinical-other-test-data-char-ld">
+            <name value="Live Birth Examples: Clinical &amp; Other Test Data: Characteristics of Labor and Delivery"/>
         </grouping>
         <grouping id="fde-bundle-composition-test-data">
             <name value="Fetal Death Examples: Bundle &amp; Composition Test Data"/>
@@ -374,7 +377,7 @@
             <description value="Example of Condition-congenital-anomaly-of-newborn profile (Baby G Quinn): Anomaly of chromosome pair 21 (disorder) with Karyotype determination pending"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -383,7 +386,7 @@
             <description value="Example of Condition-congenital-anomaly-of-newborn profile (Babyg Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -439,7 +442,7 @@
             <name value="Condition - Infection Present During Pregnancy example [Jada Ann Quinn]"/>
             <description value="Example of Condition-infection-present-during-pregnancy profile (Jada Ann Quinn"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -458,7 +461,7 @@
             <description value="Example of coverage-principal-payer-for-delivery profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -725,7 +728,7 @@
             <name value="Observation - APGAR Score example [BabyG Quinn: 1 min]"/>
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 1 min)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -733,7 +736,7 @@
             <name value="Observation - APGAR Score example [BabyG Quinn: 5 min]"/>
             <description value="Example of Observation-apgar-score profile (Babyg Quinn: 5 min)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -768,7 +771,7 @@
             <name value="Observation - Birth Weight example [Baby G Quinn]"/>
             <description value="Example of observation-birth-weight profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -831,7 +834,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 months prior: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -840,7 +843,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -849,7 +852,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -858,7 +861,7 @@
             <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -884,7 +887,7 @@
             <name value="Observation - Date of First Prenatal Care Visit example [Jada Ann Quinn]"/>
             <description value="Example of Observation-date-of-first-prenatal-care-visit (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -912,7 +915,7 @@
             <description value="Example of observation-date-of-last-live-birth profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -931,7 +934,7 @@
             <description value="Example of Observation-date-of-last-other-pregnancy-outcome (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1080,7 +1083,7 @@
             <description value="Example of Observation-fetal-presentation (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1097,7 +1100,7 @@
             <name value="Observation - Gestational Age at Delivery example [Baby G Quinn]"/>
             <description value="Example of  profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1142,7 +1145,7 @@
             <name value="Observation - Infant Breastfed at Discharge example [Baby G Quinn]"/>
             <description value="Example of Observation-infant-breastfed-at-discharge profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1150,7 +1153,7 @@
             <name value="Observation - Infant Living example [Baby G Quinn]"/>
             <description value="Example of observation-infant-living profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1168,7 +1171,7 @@
             <name value="Observation - Labor Trial Attempted example [Baby G Quinn]"/>
             <description value="Example of Observation-labor-trial-attempted profile (Baby G Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1184,7 +1187,7 @@
             <name value="Observation - Last Menstrual Period example [Jada Ann Quinn]"/>
             <description value="Example of Observation-last-menstrual-period profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1211,7 +1214,7 @@
             <name value="Observation - Mother Delivery Weight example [Jada Ann Quinn]"/>
             <description value="Example of observation-mother-delivery-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1227,7 +1230,7 @@
             <name value="Observation - Mother Height example [Jada Ann Quinn]"/>
             <description value="Example of observation-mother-height profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1246,7 +1249,7 @@
             <description value="Example of Observation-mother-married-during-pregnancy (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1262,7 +1265,7 @@
             <name value="Observation - Mother Prepregnancy Weight example [Jada Ann Quinn]"/>
             <description value="Example of observation-mother-prepregnancy-weight profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1290,7 +1293,7 @@
             <description value="Example of Observation-mother-received-wic-food profile (Jada Ann Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1300,7 +1303,7 @@
             <name value="Observation - Number Births Now Dead"/>
             <description value="Example of Observation-number-births-now-dead (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1310,7 +1313,7 @@
             <name value="Observation - Number Births Now Living example [Jada Ann Quinn]"/>
             <description value="Example of observation-number-births-now-living-jada-ann-quinn profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1326,7 +1329,7 @@
             <name value="Observation - Number Live Births This Delivery example [Jada Ann Quinn]"/>
             <description value="Example of observation-number-live-births-this-delivery profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1358,7 +1361,7 @@
             <name value="Observation - Number Other Pregnancy Outcomes example [Jada Ann Quinn]"/>
             <description value="Example of Observation-number-other-pregnancy-outcomes profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1366,7 +1369,7 @@
             <name value="Observation - Number Prenatal Visits example [Jada Ann Quinn]"/>
             <description value="Example of Observation-number-prenatal-visits profile (BabyG Quinn/Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1376,7 +1379,7 @@
             <name value="Observation - Number Previous Cesareans example [Jada Ann Quinn]"/>
             <description value="Example of Observation-number-previous-cesareans (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1401,7 +1404,7 @@
             <name value="Observation - Parent Education Level example [Jada Ann Quinn]"/>
             <description value="Example of observation-parent-education-level profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1409,7 +1412,7 @@
             <name value="Observation - Parent Education Level example [James Quinn]"/>
             <description value="Example of observation-parent-education-level profile (James Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1428,7 +1431,7 @@
             <description value="Example of observation-paternity-acknowledgement-signed profile (James Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1447,7 +1450,7 @@
             <description value="Example of Observation - Planned to Deliver at Home profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1472,7 +1475,7 @@
             <name value="Observation - Plurality example [Jada Ann Quinn]"/>
             <description value="Example of observation-plurality profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1496,7 +1499,7 @@
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Assisted fertilization]"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Assisted fertilization)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1504,7 +1507,7 @@
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Deliveries by Cesarean]"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1512,7 +1515,7 @@
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Fertility enhancing drug therapy]"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Fertility enhancing drug therapy)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1520,7 +1523,7 @@
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Pregnancy-induced hypertension]"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1539,7 +1542,7 @@
             <description value="Example of observation-ssn-requested-for-child profile (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1558,7 +1561,7 @@
             <description value="Example of us-core-organization profile (South Hospital)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1642,7 +1645,7 @@
             <description value="Example of procedure-final-route-method-delivery (Baby G Quinn)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1660,7 +1663,7 @@
             <name value="Procedure - Obstetric Procedure example [Jada Ann Quinn]"/>
             <description value="Example of Procedure-obstetric profile (Jada Ann Quinn)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1762,8 +1765,8 @@
                 <reference value="Organization/organization-jurisdictional-vital-records-office"/>
                 <display value="Jurisdictional Vital Records Office"/>
             </reference>
-            <name value="Organization - US Core Organization example [Jurisdictional Vital Records Office]"/>
-            <description value="Example of US Core Organization profile (Jurisdictional Vital Records Office)"/>
+            <name value="US Core Organization - Jurisdictional Vital Records Office"/>
+            <description value="US Core Organization: Jurisdictional Vital Records Office example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             <groupingId value="other-examples"/>
@@ -1773,8 +1776,8 @@
                 <reference value="Organization/organization-nchs"/>
                 <display value="National Center for Health Statistics (NCHS)"/>
             </reference>
-            <name value="Organization - US Core Organization example [National Center for Health Statistics [NCHS]]"/>
-            <description value="Example of US Core Organization profile (National Center for Health Statistics (NCHS))"/>
+            <name value="US Core Organization - National Center for Health Statistics (NCHS)"/>
+            <description value="US Core Organization: National Center for Health Statistics (NCHS) example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             <groupingId value="other-examples"/>
@@ -1782,48 +1785,48 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-race-carmen-teresa-lee"/></reference>
-            <name value="Observation - Race example [Carmen Teresa Lee]"/>
-            <description value="Example of Race profile (Carmen Teresa Lee)"/>
+            <name value="Observation - Race - Carmen Teresa Lee"/>
+            <description value="Observation - Race: Carmen Teresa Lee example"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-race-tom-yan-lee"/></reference>
-            <name value="Observation - Race example [Tom Yan Lee]"/>
-            <description value="Example of Race profile (Tom Yan Lee)"/>
+            <name value="Observation - Race - Tom Yan Lee"/>
+            <description value="Observation - Race: Tom Yan Lee example"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-race-james-quinn"/></reference>
-            <name value="Observation - Race example [James Quinn]"/>
-            <description value="Example of Race profile (James Quinn)"/>
+            <name value="Observation - Race - James Quinn"/>
+            <description value="Observation - Race: James Quinn example"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-tabulated-ethnicity-carmen-teresa-lee"/></reference>
-            <name value="Observation - Tabulated Ethnicity example [Carmen Teresa Lee]"/>
-            <description value="Example of Tabulated Ethnicity profile (Carmen Teresa Lee)"/>
+            <name value="Observation - Tabulated Ethnicity - Carmen Teresa Lee"/>
+            <description value="Observation - Tabulated Ethnicity: Carmen Teresa Lee example"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-tabulated-ethnicity-james-quinn"/></reference>
-            <name value="Observation - Tabulated Ethnicity example [James Quinn]"/>
-            <description value="Example of Tabulated Ethnicity profile (James Quinn)"/>
+            <name value="Observation - Tabulated Ethnicity - James Quinn"/>
+            <description value="Observation - Tabulated Ethnicity: James Quinn example"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-tabulated-ethnicity-tom-yan-lee"/></reference>
-            <name value="Observation - Tabulated Ethnicity example [Tom Yan Lee]"/>
-            <description value="Example of Tabulated Ethnicity profile (Tom Yan Lee)"/>
+            <name value="Observation - Tabulated Ethnicity - Tom Yan Lee"/>
+            <description value="Observation - Tabulated Ethnicity: Tom Yan Lee example"/>
             <exampleBoolean value="true"/>
             <groupingId value="other-examples"/>
         </resource>
@@ -1880,11 +1883,11 @@
         <resource>
             <reference>
                 <reference value="Condition/condition-gestational-hypertension-jada-ann-quinn"/></reference>
-            <name value="Condition - Gestational Hypertension example [Jada Ann Quinn: Pregnancy-induced hypertension"/>
-            <description value="Example of Condition-gestational-hypertension-vr (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
+            <name value="Condition - Gestational Hypertension - Jada Ann Quinn"/>
+            <description value="Condition - Gestational Hypertension: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1897,10 +1900,10 @@
             <reference>
                 <reference value="Condition/condition-ruptured-uterus-jada-ann-quinn"/></reference>
             <name value="Condition - Ruptured Uterus - Jada Ann Quinn"/>
-            <description value="Example of Condition-ruptured-uterus (Jada Ann Quinn: Ruptured Uterus)"/>
+            <description value="Condition - Ruptured Uterus: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1966,10 +1969,10 @@
             <reference>
                 <reference value="Condition/condition-abnormal-condition-of-newborn-birth-injury-babyg-quinn"/></reference>
             <name value="Condition - Birth Injury - Baby Quinn"/>
-            <description value="Example of Condition-birth-injury (Baby G Quinn: Birth Injury)"/>
+            <description value="Condition - Birth Injury: Baby Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-birth-injury"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -2114,56 +2117,81 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-antibiotics-during-labor-jada-ann-quinn"/></reference>
+            <name value="Observation - Antibiotics Administered During Labor - Jada Ann Quinn"/>
+            <description value="Observation - Antibiotics Administered During Labor: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-during-labor"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-none-chars-labor-delivery-jada-ann-quinn"/></reference>
+            <name value="Observation - None Of Specified Characteristics of Labor and Delivery - Jada Ann Quinn"/>
+            <description value="Observation - None Of Specified Characteristics of Labor and Delivery: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-non-vertex-presentation-jada-ann-quinn"/></reference>
+            <name value="Observation - Non-Vertex Presentation - Jada Ann Quinn"/>
+            <description value="Observation - Non-Vertex Presentation: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/observation-non-vertex-presentation-jada-ann-quinn"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn"/></reference>
+            <name value="Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn"/>
+            <description value="Observation - Administration of Steroids for Fetal Lung Maturation: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-meconium-stained-liquor-jada-ann-quinn"/></reference>
+            <name value="Observation - Meconium Stained Liquor - Jada Ann Quinn"/>
+            <description value="Observation - Meconium Stained Liquor: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-meconium-stained-liquor"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-fetal-intolerance-jada-ann-quinn"/></reference>
+            <name value="Observation - Fetal Intolerance - Jada Ann Quinn"/>
+            <description value="Observation - Fetal Intolerance: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-intolerance"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Procedure/procedure-induction-of-labor-jada-ann-quinn"/></reference>
+            <name value="Procedure - Induction of Labor - Jada Ann Quinn"/>
+            <description value="Procedure - Induction of Labor: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-induction-of-labor"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"/></reference>
+            <name value="Procedure - Epidural or Spinal Anesthesia - Jada Ann Quinn"/>
+            <description value="Procedure - Epidural or Spinal Anesthesia: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/condition-chorioamnionitis-jada-ann-quinn"/></reference>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-chorioamnionitis"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
