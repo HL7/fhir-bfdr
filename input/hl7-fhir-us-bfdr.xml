@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1076"/>
-        <lastUpdated value="2023-04-25T00:57:00.863+00:00"/>
-        <source value="#aA2uIU906NUmFc97"/>
+        <versionId value="1087"/>
+        <lastUpdated value="2023-04-25T01:57:33.935+00:00"/>
+        <source value="#5cXhKsDMrheYWw0Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -777,42 +777,6 @@
             <description value="Example of Observation-birth-weight (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
             <groupingId value="fde-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-2"/></reference>
-            <name value="Observation - Characteristic of Labor and Delivery example [Baby G Quinn: Antibiotics received during labor]"/>
-            <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Antibiotics received during labor)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-1"/></reference>
-            <name value="Observation - Characteristic of Labor and Delivery example [Baby G Quinn: Chorioamnionitis]"/>
-            <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Chorioamnionitis)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-4"/></reference>
-            <name value="Observation - Characteristic of Labor and Delivery example [Baby G Quinn: Epidural or spinal anesthesia]"/>
-            <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Epidural or spinal anesthesia)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/></reference>
-            <name value="Observation - Characteristic of Labor and Delivery example [Baby G Quinn: Induction of labor]"/>
-            <description value="Example of Observation-characteristic-of-labor-and-delivery profile (Baby G Quinn: Induction of labor)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-            <groupingId value="lbe-clinical-other-test-date"/>
         </resource>
         <resource>
             <reference>
@@ -2146,6 +2110,60 @@
             <description value="This profile indicates that the maternal morbidity of an admission to the ICU was present. NOTE: this may be better modeled as an Encounter."/>
             <exampleBoolean value="false"/>
             <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-antibiotics-during-labor-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-during-labor"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-none-chars-labor-delivery-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-non-vertex-presentation-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/observation-non-vertex-presentation-jada-ann-quinn"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-meconium-stained-liquor-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-meconium-stained-liquor"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-fetal-intolerance-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-intolerance"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-induction-of-labor-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-induction-of-labor"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-chorioamnionitis-jada-ann-quinn"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-chorioamnionitis"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

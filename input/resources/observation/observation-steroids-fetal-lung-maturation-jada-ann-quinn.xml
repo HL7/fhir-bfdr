@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-characteristic-of-labor-and-delivery-babyg-quinn-3"/>
+    <id value="observation-steroids-fetal-lung-maturation-jada-ann-quinn"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-05T20:26:27.873+00:00"/>
-        <source value="#m0kC2sLTisQD8VpZ"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-04-25T01:46:27.816+00:00"/>
+        <source value="#DHV0igWwMO57J5g0"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation"/>
     </meta>
     <status value="final"/>
     <code>
@@ -18,20 +18,16 @@
         <text value="Characteristics of labor and delivery"/>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
-    </subject>
-    <focus>
         <reference value="Patient/patient-mother-jada-ann-quinn"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
-    </focus>
+    </subject>
     <issued value="2019-02-12T09:34:30-07:00"/>
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="11612004"/>
-            <display value="Chorioamnionitis"/>
+            <code value="434611000124106"/>
+            <display value="Maternal antenatal administration of corticosteroids for fetal lung maturation (situation)"/>
         </coding>
-        <text value="Chorioamnionitis"/>
+        <text value="None"/>
     </valueCodeableConcept>
 </Observation>
