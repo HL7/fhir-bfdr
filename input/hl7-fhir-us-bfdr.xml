@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1091"/>
-        <lastUpdated value="2023-04-25T02:17:09.654+00:00"/>
-        <source value="#biws83ux4oDXX967"/>
+        <versionId value="1099"/>
+        <lastUpdated value="2023-04-25T06:05:48.497+00:00"/>
+        <source value="#0AmXf3kAxL0bqWQk"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
-    <version value="1.1.0-for-comment"/>
+    <version value="1.1.0"/>
     <name value="Vital_Records_Birth_and_Fetal_Death_Reporting"/>
     <title value="Vital Records Birth and Fetal Death Reporting"/>
     <status value="active"/>
@@ -633,7 +633,7 @@
                 <reference value="StructureDefinition/Extension-date-received-by-registrar"/>
                 <display value="Extension - Date received by Registrar"/>
             </reference>
-            <name value="Extension - Date Received by Registrar"/>
+            <name value="Extension - Date received by Registrar"/>
             <description value="Date received by registrar."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
@@ -653,7 +653,7 @@
                 <reference value="StructureDefinition/Extension-fetal-death-report-number"/>
                 <display value="Extension - Fetal Death Report Number"/>
             </reference>
-            <name value="Extension - Fetal Death Report Number [FDR]"/>
+            <name value="Extension - Fetal Death Report Number"/>
             <description value="Fetal death report number - this represents &quot;State File Number&quot; on the US Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
@@ -663,7 +663,7 @@
                 <reference value="StructureDefinition/Extension-live-birth-local-file-number"/>
                 <display value="Extension - Live Birth Local File Number"/>
             </reference>
-            <name value="Extension - Live Birth Certificate Local File Number [BCFN]"/>
+            <name value="Extension - Live Birth Local File Number"/>
             <description value="Live birth local file number - this represents &quot;Local File No.&quot; on the US Standard Certificate of Live Birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
@@ -673,7 +673,7 @@
                 <reference value="StructureDefinition/Extension-live-birth-certificate-number"/>
                 <display value="Extension - Live Birth Certificate Number"/>
             </reference>
-            <name value="Extension - Live Birth Certificate Number [BCT]"/>
+            <name value="Extension - Live Birth Certificate Number"/>
             <description value="Live birth certificate number - this represents &quot;Birth Number&quot; on the US Standard Certificate of Live Birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
@@ -2268,12 +2268,12 @@
             <value value="resources/parameters/expansion-parameters-bfdr.xml"/>
         </parameter>
         <parameter>
-            <code value="copyrightyear"/>
-            <value value="2020+"/>
+            <code value="releaselabel"/>
+            <value value="STU 1.1"/>
         </parameter>
         <parameter>
-            <code value="releaselabel"/>
-            <value value="CI Build"/>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
         </parameter>
     </definition>
 </ImplementationGuide>
