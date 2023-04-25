@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-nicu-admission"/>
+    <id value="Observation-none-of-specified-maternal-morbidities"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-25T00:05:10.474+00:00"/>
-        <source value="#SmrWCWRqxHcRKNLP"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-04-25T00:09:01.753+00:00"/>
+        <source value="#sdYeMp6PlhB51P6o"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission"/>
-    <name value="ObservationNICUAdmission"/>
-    <title value="Observation - NICU Admission"/>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-maternal-morbidities"/>
+    <name value="ObservationNoneOfSpecifiedMaternalMorbidities"/>
+    <title value="Observation - None Of Specified Maternal Morbidities"/>
     <status value="active"/>
     <contact>
         <name value="HL7 International - Public Health"/>
@@ -18,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This profile indicates that the abnormal condition of an admission to the NICU was present. NOTE: this may be better modeled as an Encounter."/>
+    <description value="This profile indicates that none of the specified maternal morbidities were present."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38,11 +38,11 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"/>
+            <short value="Maternal morbidity [US Standard Certificate of Live Birth]"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
-                    <code value="73812-0"/>
+                    <code value="73781-7"/>
                 </coding>
             </patternCodeableConcept>
         </element>
@@ -51,12 +51,12 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             </type>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="Neonatal intensive care unit (environment)"/>
+            <short value="None"/>
             <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
@@ -64,7 +64,7 @@
             <patternCodeableConcept>
                 <coding>
                     <system value="http://snomed.info/sct"/>
-                    <code value="405269005"/>
+                    <code value="260413007"/>
                 </coding>
             </patternCodeableConcept>
         </element>

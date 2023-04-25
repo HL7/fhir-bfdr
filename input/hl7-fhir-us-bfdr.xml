@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1047"/>
-        <lastUpdated value="2023-04-19T03:56:58.161+00:00"/>
-        <source value="#7WmfikOfXPVAlr8J"/>
+        <versionId value="1073"/>
+        <lastUpdated value="2023-04-25T00:32:39.121+00:00"/>
+        <source value="#OqXehcfzvB0EmshY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -86,6 +86,12 @@
         </grouping>
         <grouping id="medical-and-health-information-profiles">
             <name value="Medical and Health Information Profiles"/>
+        </grouping>
+        <grouping id="characteristic-of-labor-and-delivery-profiles">
+            <name value="Characteristic of Labor and Delivery Profiles"/>
+        </grouping>
+        <grouping id="maternal-morbidity-profiles">
+            <name value="Maternal Morbidity Profiles"/>
         </grouping>
         <grouping id="fetal-death-information-profiles">
             <name value="Fetal Death Information Profiles"/>
@@ -1895,6 +1901,7 @@
             <name value="Condition - Perineal Laceration"/>
             <description value="This Condition profile indicates a maternal morbidity of perineal laceration."/>
             <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1904,6 +1911,7 @@
             <name value="Condition - Ruptured Uterus"/>
             <description value="This Condition profile indicates a maternal morbidity of ruptured uterus."/>
             <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1913,6 +1921,7 @@
             <name value="Condition - Chorioamnionitis"/>
             <description value="This Condition profile indicates a labor and delivery characteristic of chorioamnionitis."/>
             <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1995,7 +2004,7 @@
                 <display value="Observation - NICU Admission"/>
             </reference>
             <name value="Observation - NICU Admission"/>
-            <description value="This profile indicates that the abnormal conditions of an admission to the NICU was present. NOTE: this may be better modeled as an Encounter."/>
+            <description value="This profile indicates that the abnormal condition of an admission to the NICU was present. NOTE: this may be better modeled as an Encounter."/>
             <exampleBoolean value="false"/>
             <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
@@ -2007,6 +2016,136 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-birth-injury"/>
             <groupingId value="lbe-clinical-other-test-date"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-unplanned-hysterectomy"/>
+                <display value="Procedure - Unplanned Hysterectomy"/>
+            </reference>
+            <name value="Procedure - Unplanned Hysterectomy"/>
+            <description value="This Procedure profile indicates a maternal morbidity of unplanned hysterectomy."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-emergency-operation-following-delivery"/>
+                <display value="Procedure - Emergency Operation Following Delivery"/>
+            </reference>
+            <name value="Procedure - Emergency Operation Following Delivery"/>
+            <description value="This Procedure profile indicates a maternal morbidity of emergency operation following delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-induction-of-labor"/>
+                <display value="Procedure - Induction of Labor"/>
+            </reference>
+            <name value="Procedure - Induction of Labor"/>
+            <description value="This Procedure profile indicates a characteristic of labor of induction of labor."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-augmentation-of-labor"/>
+                <display value="Procedure - Augmentation of Labor"/>
+            </reference>
+            <name value="Procedure - Augmentation of Labor"/>
+            <description value="This Procedure profile indicates a characteristic of labor of augmentation of labor."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-epidural-or-spinal-anesthesia"/>
+                <display value="Procedure - Epidural or Spinal Anesthesia"/>
+            </reference>
+            <name value="Procedure - Epidural or Spinal Anesthesia"/>
+            <description value="This Procedure profile indicates a characteristic of labor of epidural or spinal anesthesia."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-none-of-specified-maternal-morbidities"/>
+                <display value="Observation - None Of Specified Maternal Morbidities"/>
+            </reference>
+            <name value="Observation - None Of Specified Maternal Morbidities"/>
+            <description value="This profile indicates that none of the specified maternal morbidities were present."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery"/>
+                <display value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
+            </reference>
+            <name value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
+            <description value="This profile indicates that none of the specified characteristics of labor and delivery were present."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-blood-transfusion"/>
+                <display value="Procedure - Blood Transfusion"/>
+            </reference>
+            <name value="Procedure - Blood Transfusion"/>
+            <description value="This Procedure profile indicates a maternal morbidity of a blood transfusion."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-non-vertex-presentation"/>
+                <display value="Observation - Non-Vertex Presentation"/>
+            </reference>
+            <name value="Observation - Non-Vertex Presentation"/>
+            <description value="This Observation profile indicates a characteristic of labor of non-vertex presentation."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-steroids-fetal-lung-maturation"/>
+                <display value="Observation - Administration of Steroids for Fetal Lung Maturation"/>
+            </reference>
+            <name value="Observation - Administration of Steroids for Fetal Lung Maturation"/>
+            <description value="This Observation profile indicates a characteristic of labor of administration of steroids for fetal lung maturation."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-antibiotics-during-labor"/>
+                <display value="Observation - Antibiotics Administered During Labor"/>
+            </reference>
+            <name value="Observation - Antibiotics Administered During Labor"/>
+            <description value="This Observation profile indicates a characteristic of labor of antibiotics administered during labor."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-meconium-stained-liquor"/>
+                <display value="Observation - Meconium Stained Liquor"/>
+            </reference>
+            <name value="Observation - Meconium Stained Liquor"/>
+            <description value="This Observation profile indicates a characteristic of labor of meconium stained liquor."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-fetal-intolerance"/>
+                <display value="Observation - Fetal Intolerance"/>
+            </reference>
+            <name value="Observation - Fetal Intolerance"/>
+            <description value="This Observation profile indicates a characteristic of labor of fetal intolerance."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

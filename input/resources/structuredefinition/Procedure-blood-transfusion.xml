@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Procedure-antibiotic-suspected-neonatal-sepsis"/>
+    <id value="Procedure-blood-transfusion"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-19T06:44:31.501+00:00"/>
-        <source value="#hfPNOUzH6oZoKpGH"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-04-25T00:15:59.916+00:00"/>
+        <source value="#eQ2LMlyOKhbbxKHG"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
-    <name value="ProcedureAntibioticSuspectedNeonatalSepsis"/>
-    <title value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
-    <status value="active"/>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-blood-transfusion"/>
+    <version value="1.0"/>
+    <name value="ProcedureBloodTransfusion"/>
+    <title value="Procedure - Blood Transfusion"/>
+    <status value="draft"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis."/>
+    <description value="This Procedure profile indicates a maternal morbidity of a blood transfusion."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33,20 +34,19 @@
         </element>
         <element id="Procedure.code">
             <path value="Procedure.code"/>
-            <short value="Antibiotic given for suspected neonatal sepsis (situation)"/>
+            <short value="Transfusion of blood product (procedure)"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://snomed.info/sct"/>
-                    <code value="434621000124103"/>
+                    <code value="116859006"/>
                 </coding>
             </patternCodeableConcept>
-            <mustSupport value="true"/>
         </element>
         <element id="Procedure.subject">
             <path value="Procedure.subject"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             </type>
         </element>
     </differential>
