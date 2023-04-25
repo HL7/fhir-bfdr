@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="88"/>
-        <lastUpdated value="2023-04-19T06:22:09.796+00:00"/>
-        <source value="#iXSRS5lLqz87CU1N"/>
+        <versionId value="90"/>
+        <lastUpdated value="2023-04-25T00:55:29.234+00:00"/>
+        <source value="#Iyui2BXG2hOzdwuS"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <version value="1.0.0"/>
@@ -426,8 +426,13 @@
             <definition value="Serious complications experienced by the mother associated with labor and delivery"/>
             <type>
                 <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-blood-transfusion"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-unplanned-hysterectomy"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-emergency-operation-following-delivery"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-maternal-morbidities"/>
             </type>
             <mustSupport value="true"/>
         </element>

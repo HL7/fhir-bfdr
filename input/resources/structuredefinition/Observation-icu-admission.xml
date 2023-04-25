@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Observation-icu-admission"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-04-25T00:44:03.444+00:00"/>
+        <source value="#NmAVkXVzFe3AlSC1"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission"/>
+    <name value="ObservationICUAdmission"/>
+    <title value="Observation - ICU Admission"/>
+    <status value="active"/>
+    <contact>
+        <name value="HL7 International - Public Health"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/pher"/>
+        </telecom>
+    </contact>
+    <description value="This profile indicates that the maternal morbidity of an admission to the ICU was present. NOTE: this may be better modeled as an Encounter."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="Maternal morbidity [US Standard Certificate of Live Birth]"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="73781-7"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+            </type>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <short value="Intensive care unit (environment)"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="309904001"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+    </differential>
+</StructureDefinition>

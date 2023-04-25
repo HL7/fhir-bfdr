@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1073"/>
-        <lastUpdated value="2023-04-25T00:32:39.121+00:00"/>
-        <source value="#OqXehcfzvB0EmshY"/>
+        <versionId value="1076"/>
+        <lastUpdated value="2023-04-25T00:57:00.863+00:00"/>
+        <source value="#aA2uIU906NUmFc97"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0-for-comment"/>
@@ -777,16 +777,6 @@
             <description value="Example of Observation-birth-weight (Fetus Not Named)"/>
             <exampleBoolean value="true"/>
             <groupingId value="fde-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-characteristic-of-labor-and-delivery"/>
-                <display value="Observation-characteristic-of-labor-and-delivery"/>
-            </reference>
-            <name value="Observation - Characteristic of Labor and Delivery"/>
-            <description value="This Observation profile represents any of a set of defined characteristics of labor and delivery."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="medical-and-health-information-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -2146,6 +2136,16 @@
             <description value="This Observation profile indicates a characteristic of labor of fetal intolerance."/>
             <exampleBoolean value="false"/>
             <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-icu-admission"/>
+                <display value="Observation - ICU Admission"/>
+            </reference>
+            <name value="Observation - ICU Admission"/>
+            <description value="This profile indicates that the maternal morbidity of an admission to the ICU was present. NOTE: this may be better modeled as an Encounter."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
