@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-labor-trial-attempted"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2023-04-25T05:52:27.931+00:00"/>
-        <source value="#F5oU3IEY9t7liNUm"/>
+        <versionId value="16"/>
+        <lastUpdated value="2023-06-19T06:23:44.105Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted"/>
     <name value="ObservationLaborTrialAttempted"/>
@@ -47,6 +46,16 @@
         <element id="Observation.subject">
             <path value="Observation.subject"/>
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>

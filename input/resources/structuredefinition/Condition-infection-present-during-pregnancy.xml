@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-infection-present-during-pregnancy"/>
     <meta>
-        <versionId value="24"/>
-        <lastUpdated value="2023-04-25T05:55:27.093+00:00"/>
-        <source value="#7DLPHhVGbZ6zq92m"/>
+        <versionId value="25"/>
+        <lastUpdated value="2023-06-19T08:44:39.089Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy"/>
     <name value="ConditionInfectionPresentDuringPregnancy"/>
@@ -31,6 +30,10 @@
         <element id="Condition">
             <path value="Condition"/>
             <short value="Information on infections present and/or treated during the pregnancy. This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record."/>
+        </element>
+        <element id="Condition.category">
+            <path value="Condition.category"/>
+            <min value="2"/>
         </element>
         <element id="Condition.category:infectionDuringPregnancy">
             <path value="Condition.category"/>

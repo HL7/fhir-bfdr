@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Procedure-final-route-method-delivery"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2023-04-25T05:57:25.959+00:00"/>
-        <source value="#P9Z8wIo2U0ZGr4mz"/>
+        <versionId value="20"/>
+        <lastUpdated value="2023-06-19T07:07:33.795Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"/>
     <name value="ProcedureFinalRouteMethodDelivery"/>
@@ -13,7 +12,7 @@
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile represents the final route and method of delivery."/>
+    <description value="This Procedure profile represents the final route and method of delivery."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34,6 +33,7 @@
         <element id="Procedure.code">
             <path value="Procedure.code"/>
             <short value="The value set contains the list of the possible routes by which the infant or fetus may be delivered."/>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
                 <description value="Delivery Routes (NCHS)"/>
@@ -46,6 +46,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Procedure.reasonReference">
             <path value="Procedure.reasonReference"/>

@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-fetal-intolerance"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-25T05:51:22.043+00:00"/>
-        <source value="#u3U3kIUnERjtQ4SZ"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-06-19T06:00:13.365Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-intolerance"/>
     <name value="ObservationFetalIntolerance"/>
@@ -53,6 +52,15 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+            </type>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
             </type>
         </element>
         <element id="Observation.value[x]">

@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-antibiotics-during-labor"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-25T00:30:25.349+00:00"/>
-        <source value="#eCtK9mX2mgxVBWlB"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-19T05:57:53.782Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-during-labor"/>
     <name value="ObservationAntibioticsAdministeredDuringLabor"/>
@@ -53,6 +52,16 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             </type>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-none-of-specified-characteristics-labor-delivery"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-25T05:53:25.805+00:00"/>
-        <source value="#QBwBRHYxeJwg1SWg"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T06:22:10.086Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery"/>
     <name value="ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery"/>
@@ -19,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This profile indicates that none of the specified characteristics of labor and delivery were present."/>
+    <description value="This Observation profile indicates that none of the specified characteristics of labor and delivery were present."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -53,6 +52,15 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+            </type>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
             </type>
         </element>
         <element id="Observation.value[x]">

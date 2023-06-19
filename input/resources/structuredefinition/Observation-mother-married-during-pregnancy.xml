@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-mother-married-during-pregnancy"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2023-04-25T05:52:30.433+00:00"/>
-        <source value="#XYbwEeFkLBUh7wya"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-06-19T06:25:39.066Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
     <name value="ObservationMotherMarriedDuringPregnancy"/>
@@ -13,7 +12,7 @@
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="HL7 Public Health Work Group"/>
-    <description value="This profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth."/>
+    <description value="This Observation profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -49,7 +48,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -57,10 +56,6 @@
             <path value="Observation.focus"/>
             <min value="1"/>
             <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
-            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">

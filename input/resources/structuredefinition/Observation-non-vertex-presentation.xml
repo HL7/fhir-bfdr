@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-non-vertex-presentation"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-25T05:53:27.836+00:00"/>
-        <source value="#k3hnN51CCR0ZABib"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T05:58:55.231Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-non-vertex-presentation"/>
     <name value="ObservationNonVertexPresentation"/>
@@ -53,6 +52,15 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+            </type>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
             </type>
         </element>
         <element id="Observation.value[x]">

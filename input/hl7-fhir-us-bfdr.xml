@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1100"/>
-        <lastUpdated value="2023-04-26T05:54:32.516+00:00"/>
-        <source value="#cIZ2JC0bZY4en1t6"/>
+        <versionId value="1117"/>
+        <lastUpdated value="2023-06-19T09:27:28.637Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -21,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional Vital Records Offices and national health statistics agencies. Data associated with the mother of the baby or fetus may be communicated independently from that associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, &quot;mother&quot; always refers to the woman who delivered the infant. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. Also, the national statistics agency referred to in this guide is the [National Center for Health Statistics - CDC](https://www.cdc.gov/nchs/index.htm) (NCHS).&#xA;&#xA;This implementation guide (IG) defines a series of FHIR profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR) reports. It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, jurisdictions, and the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS).&#xA;&#xA;### Relationship to Other Standards&#xA;This BFDR implementation guide standard complements other vital records standards to support the expansion of information flow to and from the national statistics agency. It is informed by:&#xA;* [HL7, Version 2.6 Implementation Guide: Vital Records Birth and Fetal Death Reporting, Release 1,STU Release 2.1 - US Realm (April 2020)](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=320)&#xA;* [HL7, CDA® R2 Implementation Guide: Birth and Fetal Death Reporting, Release 1, STU Release 2 - US Realm (June 2019)](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=387)&#xA;* [HL7, Vital Records Mortality and Morbidity Reporting (VRDR) FHIR Implementation Guide 1.0.0,  STU 1 (October 2020)](http://hl7.org/fhir/us/vrdr/)&#xA;* [IHE , Quality, Research and Public Health Technical Framework Supplement - Birth and Fetal Death Reporting-Enhanced (BFDR-E) (September 2018)](https://www.ihe.net/uploadedFiles/Documents/QRPH/IHE_QRPH_Suppl_BFDR-E.pdf)&#xA;* [ONC, United States Core Data for Interoperability (USCDI) (April 2020)](https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi)&#xA;&#xA;### Dependencies&#xA;This implementation guide re-uses profiles from the following guides:&#xA;* [Vital Records Common Profiles Library](http://hl7.org/fhir/us/vr-common-library)&#xA;* [US Core Implementation Guide](http://hl7.org/fhir/us/core)&#xA;&#xA;### Audience&#xA;This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The implementation guide is informative to health care provider organizations, jurisdictional Vital Records Offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders.&#xA;&#xA;### Background &#xA;This FHIR implementation guide builds on previous electronic data standards for transmitting vital records of death, birth, and fetal death. The goal has been to transmit reliable and relevant clinical information to jurisdictional Vital Records Offices and to transfer information from Vital Records Offices to the national statistics agency. &#xA;&#xA;Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, in 2018, with Release 3, and in November 2020 as Release 4.&#xA;&#xA;This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross Group Projects WG's variance request process, and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.&#xA;&#xA;### How to Read This Guide&#xA;&#xA;This Guide is divided into several pages which are listed at the top of each page in the menu bar.&#xA;&#xA;* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.&#xA;* Use Cases: This page details the use cases supported by this guide.&#xA;* Implementer Guidance: This page details the worksheet Questionnaire format and the relationship to the IHE specification.&#xA;* Terminology: This page provides a listing of the value sets used in this guide.&#xA;* Downloads: This page provides links to downloadable artifacts.&#xA;* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.&#xA;* Appendices: This pages provides examples of live birth and fetal death reports and worksheets.&#xA;&#xA;### Author&#xA;&#xA;[HL7 International - Public Health](http://www.hl7.org/Special/committees/pher)&#xA;&#xA;### Other Information&#xA;&#xA;This is the first FHIR BFDR standard.&#xA;&#xA;This guide is compliant with FHIR Release 4.&#xA;&#xA;For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).&#xA;&#xA;Disclaimer: All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein."/>
+    <description value="Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional Vital Records Offices and national health statistics agencies. Data associated with the mother of the baby or fetus may be communicated independently from that associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, &amp;quot;mother&amp;quot; always refers to the woman who delivered the infant. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. Also, the national statistics agency referred to in this guide is the [National Center for Health Statistics - CDC](https://www.cdc.gov/nchs/index.htm) (NCHS).&#xA;&#xA;This implementation guide (IG) defines a series of FHIR profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR) reports. It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the 2003 Revision of the U.S. Standard Certificate of Live Birth and the U.S. Standard Report of Fetal Death. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, jurisdictions, and the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS).&#xA;&#xA;### Relationship to Other Standards&#xA;This BFDR implementation guide standard complements other vital records standards to support the expansion of information flow to and from the national statistics agency. It is informed by:&#xA;* [HL7, Version 2.6 Implementation Guide: Vital Records Birth and Fetal Death Reporting, Release 1,STU Release 2.1 - US Realm (April 2020)](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=320)&#xA;* [HL7, CDA® R2 Implementation Guide: Birth and Fetal Death Reporting, Release 1, STU Release 2 - US Realm (June 2019)](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=387)&#xA;* [HL7, Vital Records Mortality and Morbidity Reporting (VRDR) FHIR Implementation Guide 1.0.0,  STU 1 (October 2020)](http://hl7.org/fhir/us/vrdr/)&#xA;* [IHE , Quality, Research and Public Health Technical Framework Supplement - Birth and Fetal Death Reporting-Enhanced (BFDR-E) (September 2018)](https://www.ihe.net/uploadedFiles/Documents/QRPH/IHE_QRPH_Suppl_BFDR-E.pdf)&#xA;* [ONC, United States Core Data for Interoperability (USCDI) (April 2020)](https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi)&#xA;&#xA;### Dependencies&#xA;This implementation guide re-uses profiles from the following guides:&#xA;* [Vital Records Common Profiles Library](http://hl7.org/fhir/us/vr-common-library)&#xA;* [US Core Implementation Guide](http://hl7.org/fhir/us/core)&#xA;&#xA;### Audience&#xA;This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The implementation guide is informative to health care provider organizations, jurisdictional Vital Records Offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders.&#xA;&#xA;### Background &#xA;This FHIR implementation guide builds on previous electronic data standards for transmitting vital records of death, birth, and fetal death. The goal has been to transmit reliable and relevant clinical information to jurisdictional Vital Records Offices and to transfer information from Vital Records Offices to the national statistics agency. &#xA;&#xA;Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, in 2018, with Release 3, and in November 2020 as Release 4.&#xA;&#xA;This FHIR implementation guide uses the US Core profiles. Where this FHIR implementation guide is unable to use a US Core profile, we have followed the Cross Group Projects WG's variance request process, and have provided the US Realm Steering Committee an approved rationale for deviation in the implementation guide.&#xA;&#xA;### How to Read This Guide&#xA;&#xA;This Guide is divided into several pages which are listed at the top of each page in the menu bar.&#xA;&#xA;* Home: The home page provides the introduction and background for HL7 FHIR® Vital Records Common Profiles Library.&#xA;* Use Cases: This page details the use cases supported by this guide.&#xA;* Implementer Guidance: This page details the worksheet Questionnaire format and the relationship to the IHE specification.&#xA;* Terminology: This page provides a listing of the value sets used in this guide.&#xA;* Downloads: This page provides links to downloadable artifacts.&#xA;* Artifact Index: This page provides a list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide.&#xA;* Appendices: This pages provides examples of live birth and fetal death reports and worksheets.&#xA;&#xA;### Author&#xA;&#xA;[HL7 International - Public Health](http://www.hl7.org/Special/committees/pher)&#xA;&#xA;### Other Information&#xA;&#xA;This is the first FHIR BFDR standard.&#xA;&#xA;This guide is compliant with FHIR Release 4.&#xA;&#xA;For Clinical Safety Information please refer to the [FHIR Implementer’s Safety Checklist](http://hl7.org/fhir/safety.html).&#xA;&#xA;Disclaimer: All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -235,7 +234,7 @@
                 <display value="Composition - Coded Cause of Fetal Death"/>
             </reference>
             <name value="Composition - Coded Cause of Fetal Death"/>
-            <description value="This profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices."/>
+            <description value="This Composition profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices."/>
             <exampleBoolean value="false"/>
             <groupingId value="nsa-2-jvr"/>
         </resource>
@@ -245,7 +244,7 @@
                 <display value="Composition - Coded Race"/>
             </reference>
             <name value="Composition - Coded Race and Ethnicity"/>
-            <description value="This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office."/>
+            <description value="This Composition profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office."/>
             <exampleBoolean value="false"/>
             <groupingId value="nsa-2-jvr"/>
         </resource>
@@ -337,7 +336,7 @@
                 <display value="Condition - Coded Initiation Fetal Death Cause or Condition"/>
             </reference>
             <name value="Condition - Coded Initiating Fetal Death Cause or Condition"/>
-            <description value="This profile represents the coded initiating cause/condition of fetal death."/>
+            <description value="This Condition profile represents the coded initiating cause/condition of fetal death."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-information-profiles"/>
         </resource>
@@ -356,14 +355,14 @@
                 <display value="Condition - Coded Other Fetal Death Cause or Condition"/>
             </reference>
             <name value="Condition - Coded Other Fetal Death Cause or Condition"/>
-            <description value="This profile represents a coded other significant cause/condition of fetal death."/>
+            <description value="This Condition profile represents a coded other significant cause/condition of fetal death."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-information-profiles"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Condition-congenital-anomaly-of-newborn"/>
-                <display value="ConditionCongenitalAnomalyOfNewborn"/>
+                <display value="Condition - Congenital Anomaly of Newborn"/>
             </reference>
             <name value="Condition - Congenital Anomaly of Newborn"/>
             <description value="This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."/>
@@ -394,7 +393,7 @@
                 <display value="Condition - Fetal Death Cause or Condition"/>
             </reference>
             <name value="Condition - Fetal Death Cause or Condition"/>
-            <description value="This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death."/>
+            <description value="This Condition profile represents information provided by the clinician to indicate the cause or causes of the fetal death."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-information-profiles"/>
         </resource>
@@ -429,7 +428,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Condition-infection-present-during-pregnancy"/>
-                <display value="ConditionInfectionPresentDuringPregnancy"/>
+                <display value="Condition - Infection Present During Pregnancy"/>
             </reference>
             <name value="Condition - Infection Present During Pregnancy"/>
             <description value="This Condition profile represents infections present and/or treated during the pregnancy."/>
@@ -624,7 +623,7 @@
                 <display value="Extension - Date Filed by Registrar"/>
             </reference>
             <name value="Extension - Date Filed by Registrar"/>
-            <description value="Date filed by registrar."/>
+            <description value="This Extension profile represents the date filed by registrar."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -633,8 +632,8 @@
                 <reference value="StructureDefinition/Extension-date-received-by-registrar"/>
                 <display value="Extension - Date received by Registrar"/>
             </reference>
-            <name value="Extension - Date received by Registrar"/>
-            <description value="Date received by registrar."/>
+            <name value="Extension - Date Received by Registrar"/>
+            <description value="This Extension profile represents the date received by registrar."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -644,7 +643,7 @@
                 <display value="Extension - Fetal Death Local File Number"/>
             </reference>
             <name value="Extension - Fetal Death Local File Number [FDRFN]"/>
-            <description value="Fetal death local file number - this represents &quot;Local File No.&quot; on the US Standard Report of Fetal Death."/>
+            <description value="This Extension profile represents the fetal death local file number - this is the &quot;Local File No.&quot; on the US Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -654,7 +653,7 @@
                 <display value="Extension - Fetal Death Report Number"/>
             </reference>
             <name value="Extension - Fetal Death Report Number"/>
-            <description value="Fetal death report number - this represents &quot;State File Number&quot; on the US Standard Report of Fetal Death."/>
+            <description value="This Extension profile represents the fetal death report number - this is &quot;State File Number&quot; on the US Standard Report of Fetal Death."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -664,7 +663,7 @@
                 <display value="Extension - Live Birth Local File Number"/>
             </reference>
             <name value="Extension - Live Birth Local File Number"/>
-            <description value="Live birth local file number - this represents &quot;Local File No.&quot; on the US Standard Certificate of Live Birth."/>
+            <description value="This Extension profile represents the live birth local file number - this is the &quot;Local File No.&quot; on the US Standard Certificate of Live Birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -674,7 +673,7 @@
                 <display value="Extension - Live Birth Certificate Number"/>
             </reference>
             <name value="Extension - Live Birth Certificate Number"/>
-            <description value="Live birth certificate number - this represents &quot;Birth Number&quot; on the US Standard Certificate of Live Birth."/>
+            <description value="This Extension profile represents the live birth certificate number - this is the &quot;Birth Number&quot; on the US Standard Certificate of Live Birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
         </resource>
@@ -761,7 +760,7 @@
                 <display value="ObservationAutopsyHistologicalExamResultsUsed"/>
             </reference>
             <name value="Observation - Autopsy or Histological Exam Results Used"/>
-            <description value="This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."/>
+            <description value="This Observation profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-information-profiles"/>
         </resource>
@@ -787,7 +786,7 @@
                 <display value="Observation - Cigarette Smoking Before and During Pregnancy"/>
             </reference>
             <name value="Observation - Cigarette Smoking Before and During Pregnancy"/>
-            <description value="This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester&#xA;&#xA;Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number."/>
+            <description value="This Observation profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:&#xA;* Number of Cigarettes Smoked in 3 months prior to Pregnancy&#xA;* Number of Cigarettes Smoked in 1st 3 months&#xA;* Number of Cigarettes Smoked in 2nd 3 months&#xA;* Number of Cigarettes Smoked in third or last trimester&#xA;&#xA;Where number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
         </resource>
@@ -869,7 +868,7 @@
                 <display value="Observation - Date of First Prenatal Care Visit"/>
             </reference>
             <name value="Observation - Date of First Prenatal Care Visit"/>
-            <description value="This profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy."/>
+            <description value="This Observation profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
         </resource>
@@ -895,7 +894,7 @@
                 <display value="Observation - Date of Last Live Birth"/>
             </reference>
             <name value="Observation - Date of Last Live Birth"/>
-            <description value="This profile represents the date of the mother's last live born infant (do not include this birth)."/>
+            <description value="This Observation profile represents the date of the mother's last live born infant (do not include this birth)."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
         </resource>
@@ -923,7 +922,7 @@
                 <display value="Observation - Date of Last Other Pregnancy Outcome"/>
             </reference>
             <name value="Observation - Date of Last Other Pregnancy Outcome"/>
-            <description value="This profile represents the date of the mother's last other pregnancy outcome (includes pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies) (do not include this birth)."/>
+            <description value="This Observation profile represents the date of the mother's last other pregnancy outcome (includes pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies) (do not include this birth)."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
         </resource>
@@ -942,7 +941,7 @@
                 <display value="Observation - Edit Flag Birthweight"/>
             </reference>
             <name value="Observation - Edit Flag Birthweight"/>
-            <description value="This profile indicates whether the original birthweight data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original birthweight data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -952,7 +951,7 @@
                 <display value="ObservationEditFlagEstimateOfGestation"/>
             </reference>
             <name value="Observation - Edit Flag Estimate of Gestation"/>
-            <description value="This profile indicates whether the original estimate of gestation data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original estimate of gestation data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -962,7 +961,7 @@
                 <display value="Observation - Edit Flag Father's Date of Birth"/>
             </reference>
             <name value="Observation - Edit Flag Father's Date of Birth"/>
-            <description value="This profile indicates whether the original father's date of birth data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original father's date of birth data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -972,7 +971,7 @@
                 <display value="Observation - Edit Flag Father's Education"/>
             </reference>
             <name value="Observation - Edit Flag Father's Education"/>
-            <description value="This profile indicates whether the original father's education data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original father's education data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -982,7 +981,7 @@
                 <display value="Observation - Edit Flag Mother's Date of Birth"/>
             </reference>
             <name value="Observation - Edit Flag Mother's Date of Birth"/>
-            <description value="This profile indicates whether the original mother's date of birth data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original mother's date of birth data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -992,7 +991,7 @@
                 <display value="Observation - Edit Flag Mother's Delivery Weight"/>
             </reference>
             <name value="Observation - Edit Flag Mother's Delivery Weight"/>
-            <description value="This profile indicates whether the original mother's delivery weight data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original mother's delivery weight data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -1002,7 +1001,7 @@
                 <display value="Observation - Edit Flag Mother's Education"/>
             </reference>
             <name value="Observation - Edit Flag Mother's Education"/>
-            <description value="This profile indicates whether the original mother's education data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original mother's education data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -1012,7 +1011,7 @@
                 <display value="Observation - Edit Flag Mother's Height"/>
             </reference>
             <name value="Observation - Edit Flag Mother's Height"/>
-            <description value="This profile indicates whether the original mother's height data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original mother's height data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -1022,7 +1021,7 @@
                 <display value="Observation - Edit Flag Mother's Prepregnancy Weight"/>
             </reference>
             <name value="Observation - Edit Flag Mother's Prepregnancy Weight"/>
-            <description value="This profile indicates whether the original mother's prepregnancy weight data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original mother's prepregnancy weight data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -1032,7 +1031,7 @@
                 <display value="Observation - Edit Flag Number of Previous Cesareans"/>
             </reference>
             <name value="Observation - Edit Flag Number of Previous Cesareans"/>
-            <description value="This profile indicates whether the original number of previous cesareans data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original number of previous cesareans data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -1042,7 +1041,7 @@
                 <display value="Observation - Edit Flag Number Prenatal Care Visits"/>
             </reference>
             <name value="Observation - Edit Flag Number Prenatal Care Visits"/>
-            <description value="This profile indicates whether the original number of prenatal care visits data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original number of prenatal care visits data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -1052,7 +1051,7 @@
                 <display value="Observation - Edit Flag Plurality"/>
             </reference>
             <name value="Observation - Edit Flag Plurality"/>
-            <description value="This profile indicates whether the original plurality data provided passed validation checks."/>
+            <description value="This Observation profile indicates whether the original plurality data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
         </resource>
@@ -1116,7 +1115,7 @@
                 <display value="Observation-histological-placental-exam-performed"/>
             </reference>
             <name value="Observation - Histological Placental Exam Performed"/>
-            <description value="This profile represents whether or not a histological placental examination was performed."/>
+            <description value="This Observation profile represents whether or not a histological placental examination was performed."/>
             <exampleBoolean value="false"/>
             <groupingId value="fetal-death-information-profiles"/>
         </resource>
@@ -1135,7 +1134,7 @@
                 <display value="Observation - Infant Breastfed at Discharge"/>
             </reference>
             <name value="Observation - Infant Breastfed at Discharge"/>
-            <description value="This profile represents whether or not the infant was being breastfed at discharge."/>
+            <description value="This Observation profile represents whether or not the infant was being breastfed at discharge."/>
             <exampleBoolean value="false"/>
             <groupingId value="newborn-fetus-profiles"/>
         </resource>
@@ -1238,7 +1237,7 @@
                 <display value="Observation - Mother Married During Pregnancy"/>
             </reference>
             <name value="Observation - Mother Married During Pregnancy"/>
-            <description value="This profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <description value="This Observation profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="parent-information-profiles"/>
         </resource>
@@ -1273,7 +1272,7 @@
                 <display value="Observation - Mother Recieved WIC Food"/>
             </reference>
             <name value="Observation - Mother Recieved WIC Food"/>
-            <description value="This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
+            <description value="This Observation profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
             <exampleBoolean value="false"/>
             <groupingId value="mother-prenatal-profiles"/>
         </resource>
@@ -1420,7 +1419,7 @@
                 <display value="Observation - Paternity Acknowledgement Signed"/>
             </reference>
             <name value="Observation - Paternity Acknowledgement Signed"/>
-            <description value="This Observation represents whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
+            <description value="This Observation profile represents whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
             <exampleBoolean value="false"/>
             <groupingId value="parent-information-profiles"/>
         </resource>
@@ -1634,7 +1633,7 @@
                 <display value="Procedure - Final Route and Method of Delivery"/>
             </reference>
             <name value="Procedure - Final Route and Method of Delivery"/>
-            <description value="This profile represents the final route and method of delivery."/>
+            <description value="This Procedure profile represents the final route and method of delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="medical-and-health-information-profiles"/>
         </resource>
@@ -1653,7 +1652,7 @@
                 <display value="Procedure - Obstetric"/>
             </reference>
             <name value="Procedure - Obstetric"/>
-            <description value="This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery."/>
+            <description value="This Procedure profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="medical-and-health-information-profiles"/>
         </resource>
@@ -1907,21 +1906,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Procedure-assissted-ventilation-following-delivery"/>
+                <reference value="StructureDefinition/Procedure-assisted-ventilation-following-delivery"/>
                 <display value="Procedure - Assissted Ventilation Following Delivery"/>
             </reference>
             <name value="Procedure - Assissted Ventilation Following Delivery"/>
-            <description value="This profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery."/>
+            <description value="This Procedure profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery."/>
             <exampleBoolean value="false"/>
             <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Procedure-assissted-ventilation-more-than-six-hours"/>
+                <reference value="StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours"/>
                 <display value="Procedure - Assisted Ventilation More Than Six Hours"/>
             </reference>
             <name value="Procedure - Assisted Ventilation More Than Six Hours"/>
-            <description value="This profile represents an abnormal condition of the newborn of assisted ventilation for more than six hours."/>
+            <description value="This Procedure profile represents an abnormal condition of the newborn of assisted ventilation for more than six hours."/>
             <exampleBoolean value="false"/>
             <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
@@ -1931,7 +1930,7 @@
                 <display value="Procedure - Surfactant Replacement Therapy"/>
             </reference>
             <name value="Procedure - Surfactant Replacement Therapy"/>
-            <description value="This profile represents an abnormal condition of the newborn of surfactant replacement therapy."/>
+            <description value="This Procedure profile represents an abnormal condition of the newborn of surfactant replacement therapy."/>
             <exampleBoolean value="false"/>
             <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
@@ -1941,7 +1940,7 @@
                 <display value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
             </reference>
             <name value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
-            <description value="This profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis."/>
+            <description value="This Procedure profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis."/>
             <exampleBoolean value="false"/>
             <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
@@ -1951,7 +1950,7 @@
                 <display value="Observation - None Of Specified Abnormal Conditions of Newborn"/>
             </reference>
             <name value="Observation - None Of Specified Abnormal Conditions of Newborn"/>
-            <description value="This profile indicates that none of the specified abnormal conditions of the newborn were present."/>
+            <description value="This Observation profile indicates that none of the specified abnormal conditions of the newborn were present."/>
             <exampleBoolean value="false"/>
             <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
@@ -1961,7 +1960,7 @@
                 <display value="Observation - NICU Admission"/>
             </reference>
             <name value="Observation - NICU Admission"/>
-            <description value="This profile indicates that the abnormal condition of an admission to the NICU was present. NOTE: this may be better modeled as an Encounter."/>
+            <description value="This Observation profile indicates that the abnormal condition of an admission to the NICU was present."/>
             <exampleBoolean value="false"/>
             <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
         </resource>
@@ -2030,7 +2029,7 @@
                 <display value="Observation - None Of Specified Maternal Morbidities"/>
             </reference>
             <name value="Observation - None Of Specified Maternal Morbidities"/>
-            <description value="This profile indicates that none of the specified maternal morbidities were present."/>
+            <description value="This Observation profile indicates that none of the specified maternal morbidities were present."/>
             <exampleBoolean value="false"/>
             <groupingId value="maternal-morbidity-profiles"/>
         </resource>
@@ -2040,7 +2039,7 @@
                 <display value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
             </reference>
             <name value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
-            <description value="This profile indicates that none of the specified characteristics of labor and delivery were present."/>
+            <description value="This Observation profile indicates that none of the specified characteristics of labor and delivery were present."/>
             <exampleBoolean value="false"/>
             <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
@@ -2110,7 +2109,7 @@
                 <display value="Observation - ICU Admission"/>
             </reference>
             <name value="Observation - ICU Admission"/>
-            <description value="This profile indicates that the maternal morbidity of an admission to the ICU was present. NOTE: this may be better modeled as an Encounter."/>
+            <description value="This Observation profile indicates that the maternal morbidity of an admission to the ICU was present."/>
             <exampleBoolean value="false"/>
             <groupingId value="maternal-morbidity-profiles"/>
         </resource>
@@ -2189,9 +2188,20 @@
         <resource>
             <reference>
                 <reference value="Condition/condition-chorioamnionitis-jada-ann-quinn"/></reference>
+            <name value="Condition - Chorioamnionitis Jada Ann Quinn example"/>
+            <description value="Condition - Condition - Chorioamnionitis Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-chorioamnionitis"/>
             <groupingId value="lbe-clinical-other-test-data-char-ld"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-encounter-maternity-reference"/>
+                <display value="Extension - Encounter Maternity Reference"/>
+            </reference>
+            <name value="Extension - Encounter Maternity Reference"/>
+            <description value="This Extension profile is a reference to the maternity encounter."/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

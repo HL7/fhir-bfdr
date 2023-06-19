@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-fetal-death-report"/>
     <meta>
-        <versionId value="69"/>
-        <lastUpdated value="2023-04-25T05:58:09.576+00:00"/>
-        <source value="#q3kYsclRE3ANIm1f"/>
+        <versionId value="73"/>
+        <lastUpdated value="2023-06-19T09:57:23.359Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
     <name value="CompositionProviderFetalDeathReport"/>
@@ -115,6 +114,13 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Composition.encounter.extension">
+            <path value="Composition.encounter.extension"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"/>
+            </type>
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>
@@ -370,7 +376,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-artificial-insemination-vr"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assissted-fertilization-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
             </type>
@@ -673,7 +679,7 @@
         </element>
         <element id="Composition.section:mothersQuestionnaireResponse.entry">
             <path value="Composition.section.entry"/>
-            <short value="QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"/>
+            <short value="Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"/>
             <min value="1"/>
             <max value="1"/>
             <type>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Extension-fetal-death-local-file-number"/>
+    <id value="Extension-encounter-maternity-reference"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-19T06:20:18.633Z"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-06-19T07:38:17.069Z"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"/>
-    <name value="ExtensionFetalDeathLocalFileNumber"/>
-    <title value="Extension - Fetal Death Local File Number"/>
+    <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"/>
+    <name value="ExtensionEncounterMaternityReference"/>
+    <title value="Extension - Encounter Maternity Reference"/>
     <status value="active"/>
     <publisher value="HL7 Public Health Work Group"/>
     <contact>
@@ -18,7 +18,7 @@
             <value value="http://www.hl7.org/Special/committees/pher"/>
         </telecom>
     </contact>
-    <description value="This Extension profile represents the fetal death local file number - this is the &quot;Local File No.&quot; on the US Standard Report of Fetal Death."/>
+    <description value="This Extension profile is a reference to the maternity encounter."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -32,7 +32,7 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Composition"/>
+        <expression value="Composition.encounter"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -43,26 +43,16 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"/>
+            <fixedUri value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
-                <code value="Identifier"/>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"/>
             </type>
-        </element>
-        <element id="Extension.value[x].type">
-            <path value="Extension.value[x].type"/>
-            <min value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                    <code value="FDRFN"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-meconium-stained-liquor"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-25T05:52:28.601+00:00"/>
-        <source value="#oAlLFFrioDR8fHFh"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-06-19T05:59:40.866Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-meconium-stained-liquor"/>
     <name value="ObservationMeconiumStainedLiquor"/>
@@ -54,6 +53,16 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
             </type>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
+            </type>
+            <mustSupport value="false"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>

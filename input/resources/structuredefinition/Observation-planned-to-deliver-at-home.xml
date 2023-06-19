@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-planned-to-deliver-at-home"/>
     <meta>
-        <versionId value="22"/>
-        <lastUpdated value="2023-04-25T05:53:29.502+00:00"/>
-        <source value="#2CUHoSN2sia0nFCy"/>
+        <versionId value="23"/>
+        <lastUpdated value="2023-06-19T07:03:39.055Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
     <name value="ObservationPlannedToDeliverAtHome"/>
@@ -47,6 +46,16 @@
         <element id="Observation.subject">
             <path value="Observation.subject"/>
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>

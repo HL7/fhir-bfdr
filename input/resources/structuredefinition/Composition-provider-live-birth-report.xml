@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="122"/>
-        <lastUpdated value="2023-04-25T05:58:10.694+00:00"/>
-        <source value="#lJBfz5Hvg95xSLS7"/>
+        <versionId value="127"/>
+        <lastUpdated value="2023-06-19T09:57:39.846Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <name value="CompositionProviderLiveBirthReport"/>
@@ -432,7 +431,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-artificial-insemination-vr"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assissted-fertilization-vr"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors-vr"/>
             </type>
@@ -607,18 +606,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:newbornInformation.entry:plurality">
-            <path value="Composition.section.entry"/>
-            <sliceName value="plurality"/>
-            <short value="Plurality - Single, Twin, Triplet, etc."/>
-            <definition value="Plurality – The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. ('Reabsorbed' fetuses, those which are not 'delivered' (expulsed or extracted from the mother) should not be counted.)"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
         <element id="Composition.section:newbornInformation.entry:numberLiveBirthsThisDelivery">
             <path value="Composition.section.entry"/>
             <sliceName value="numberLiveBirthsThisDelivery"/>
@@ -637,8 +624,8 @@
             <definition value="Disorders or significant morbidity experienced by the newborn infant"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assissted-ventilation-following-delivery"/>
-                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assissted-ventilation-more-than-six-hours"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery"/>
+                <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
@@ -834,7 +821,7 @@
         <element id="Composition.section:patientsQuestionnaireResponse">
             <path value="Composition.section"/>
             <sliceName value="patientsQuestionnaireResponse"/>
-            <short value="Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"/>
+            <short value="Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"/>
             <max value="1"/>
         </element>
         <element id="Composition.section:patientsQuestionnaireResponse.code">
