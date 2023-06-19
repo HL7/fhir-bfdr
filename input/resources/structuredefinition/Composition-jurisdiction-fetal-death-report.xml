@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="93"/>
-        <lastUpdated value="2023-06-19T10:38:19.287Z"/>
+        <versionId value="97"/>
+        <lastUpdated value="2023-06-19T10:59:21.715Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <name value="CompositionJurisdictionFetalDeathReport"/>
@@ -578,6 +578,28 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.section:fetus.entry:numberLiveBirthsThisDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberLiveBirthsThisDelivery"/>
+            <short value="Number of live births this delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fetus.entry:numberFetalDeathsThisDelivery">
+            <path value="Composition.section.entry"/>
+            <sliceName value="numberFetalDeathsThisDelivery"/>
+            <short value="Number of fetal deaths this delivery"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:motherInformation">
             <path value="Composition.section"/>
             <sliceName value="motherInformation"/>
@@ -756,28 +778,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:newbornInformation.entry:numberLiveBirthsThisDelivery">
-            <path value="Composition.section.entry"/>
-            <sliceName value="numberLiveBirthsThisDelivery"/>
-            <short value="Number of live births this delivery"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery-vr"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:newbornInformation.entry:numberFetalDeathsThisDelivery">
-            <path value="Composition.section.entry"/>
-            <sliceName value="numberFetalDeathsThisDelivery"/>
-            <short value="Number of fetal deaths this delivery"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-fetal-deaths-this-delivery-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>
