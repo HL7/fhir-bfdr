@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-document-bfdr"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-19T08:32:13.103Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-19T10:39:09.612Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
     <name value="BundleDocumentBFDR"/>
@@ -43,6 +43,7 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry:BFDRComposition">
