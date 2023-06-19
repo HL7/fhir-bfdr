@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-provider-live-birth-babyg-quinn"/>
     <meta>
-        <versionId value="20"/>
-        <lastUpdated value="2023-04-25T06:01:50.135Z"/>
+        <versionId value="21"/>
+        <lastUpdated value="2023-06-19T19:46:01.460Z"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number">
         <valueIdentifier>
@@ -47,6 +47,7 @@
         <display value="Patient - Child (Baby G Quinn)"/>
     </subject>
     <encounter>
+        <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"/>
         <reference value="Encounter/encounter-birth-babyg-quinn"/>
         <display value="Encounter - Birth (Baby G Quinn)"/>
     </encounter>

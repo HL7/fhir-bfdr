@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="127"/>
-        <lastUpdated value="2023-06-19T09:57:39.846Z"/>
+        <versionId value="130"/>
+        <lastUpdated value="2023-06-19T19:45:48.593Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <name value="CompositionProviderLiveBirthReport"/>
@@ -116,6 +116,13 @@
                 <targetProfile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="Composition.encounter.extension">
+            <path value="Composition.encounter.extension"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"/>
+            </type>
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>
