@@ -49,7 +49,9 @@
     </subject>
     <encounter>
         <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference">
-            <valueReference value="Encounter/encounter-maternity-jada-ann-quinn"/>
+            <valueReference>
+                <reference value="Encounter/encounter-maternity-jada-ann-quinn"/>
+            </valueReference> 
         </extension>
         <reference value="Encounter/encounter-birth-babyg-quinn"/>
         <display value="Encounter - Birth (Baby G Quinn)"/>
