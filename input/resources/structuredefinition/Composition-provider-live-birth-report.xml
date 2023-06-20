@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="131"/>
-        <lastUpdated value="2023-06-19T20:31:36.418Z"/>
+        <versionId value="134"/>
+        <lastUpdated value="2023-06-20T04:48:45.848Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <name value="CompositionProviderLiveBirthReport"/>
@@ -78,6 +78,16 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition.extension:replacementStatus">
+            <path value="Composition.extension"/>
+            <sliceName value="replacementStatus"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-replacement-status-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.status">
             <path value="Composition.status"/>
             <short value="In the case of a live birth sent in error, a status of 'entered-in-error' must be set."/>
@@ -119,6 +129,7 @@
         </element>
         <element id="Composition.encounter.extension">
             <path value="Composition.encounter.extension"/>
+            <short value="The Encounter is the maternity encounter."/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>

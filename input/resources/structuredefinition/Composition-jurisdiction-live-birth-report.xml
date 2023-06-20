@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-live-birth-report"/>
     <meta>
-        <versionId value="114"/>
-        <lastUpdated value="2023-06-19T20:34:17.905Z"/>
+        <versionId value="119"/>
+        <lastUpdated value="2023-06-20T04:48:18.774Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
     <name value="CompositionJurisdictionLiveBirthReport"/>
@@ -75,6 +75,16 @@
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-filed-by-registrar"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.extension:replacementStatus">
+            <path value="Composition.extension"/>
+            <sliceName value="replacementStatus"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-replacement-status-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>

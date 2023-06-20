@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-fetal-death-report"/>
     <meta>
-        <versionId value="73"/>
-        <lastUpdated value="2023-06-19T09:57:23.359Z"/>
+        <versionId value="75"/>
+        <lastUpdated value="2023-06-20T04:48:26.790Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
     <name value="CompositionProviderFetalDeathReport"/>
@@ -73,6 +73,16 @@
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.extension:replacementStatus">
+            <path value="Composition.extension"/>
+            <sliceName value="replacementStatus"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-replacement-status-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>
