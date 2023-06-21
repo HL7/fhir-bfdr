@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-cig-smoking-pregnancy-3-jada-ann-quinn"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-06T00:29:01.102Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-21T10:17:52.644Z"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
     </meta>
     <status value="final"/>
@@ -17,12 +17,12 @@
         <text value="Cigarettes smoked per day by Mother--2nd trimester"/>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
-    </subject>
-    <focus>
         <reference value="Patient/patient-mother-jada-ann-quinn"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
     </focus>
     <valueInteger value="1"/>
 </Observation>

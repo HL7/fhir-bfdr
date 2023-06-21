@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-coded-initiating-fetal-death-cause-or-condition"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-06-21T07:59:38.804Z"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-06-21T10:35:05.505Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition"/>
     <name value="ConditionCodedInitiatingFetalDeathCauseOrCondition"/>
@@ -33,13 +33,20 @@
         </element>
         <element id="Condition.category">
             <path value="Condition.category"/>
-            <short value="Coded initiating cause or condition of fetal death"/>
+            <min value="2"/>
+        </element>
+        <element id="Condition.category:codedInitiatingCauseOrCondition">
+            <path value="Condition.category"/>
+            <sliceName value="codedInitiatingCauseOrCondition"/>
+            <min value="1"/>
+            <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="92022-3"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>

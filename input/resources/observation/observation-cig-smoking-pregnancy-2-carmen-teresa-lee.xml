@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-cig-smoking-pregnancy-2-carmen-teresa-lee"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-06T00:26:27.874Z"/>
+        <versionId value="4"/>
+        <lastUpdated value="2023-06-21T10:17:51.569Z"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
     </meta>
     <status value="final"/>
@@ -17,12 +17,12 @@
         <text value="Cigarettes smoked per day by Mother--1st trimester"/>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
-    </subject>
-    <focus>
         <reference value="Patient/patient-mother-carmen-teresa-lee"/>
         <display value="Patient - Mother (Carmen Teresa Lee)"/>
+    </subject>
+    <focus>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
     </focus>
     <valueInteger value="0"/>
 </Observation>

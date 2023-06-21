@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Condition-fetal-death-other-cause-or-condition"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2023-06-21T08:00:12.659Z"/>
+        <versionId value="20"/>
+        <lastUpdated value="2023-06-21T10:31:30.697Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"/>
     <name value="ConditionFetalDeathOtherCauseOrCondition"/>
@@ -33,13 +33,20 @@
         </element>
         <element id="Condition.category">
             <path value="Condition.category"/>
-            <short value="Other significant causes or conditions of fetal death [US Standard Report of Fetal Death]"/>
+            <min value="2"/>
+        </element>
+        <element id="Condition.category:otherCauseOrCondition">
+            <path value="Condition.category"/>
+            <sliceName value="otherCauseOrCondition"/>
+            <min value="1"/>
+            <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="76061-1"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>
