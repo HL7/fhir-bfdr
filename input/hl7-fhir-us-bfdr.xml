@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1165"/>
-        <lastUpdated value="2023-06-21T07:08:59.280Z"/>
+        <versionId value="1169"/>
+        <lastUpdated value="2023-06-21T07:40:49.339Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -336,7 +336,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition"/>
-                <display value="Condition - Coded Initiation Fetal Death Cause or Condition"/>
+                <display value="Condition - Coded Initiating Fetal Death Cause or Condition"/>
             </reference>
             <name value="Condition - Coded Initiating Fetal Death Cause or Condition"/>
             <description value="This Condition profile represents the coded initiating cause/condition of fetal death."/>
@@ -2188,11 +2188,47 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-none-abnormal-conditions-babyg-quinn"/></reference>
-            <name value=" Observation - None Of Specified Abnormal Conditions of Newborn - BabyG Quinn"/>
-            <description value=" Observation - None Of Specified Abnormal Conditions of Newborn: BabyG Quinn example"/>
+            <name value="Observation - None Of Specified Abnormal Conditions of Newborn - BabyG Quinn"/>
+            <description value="Observation - None Of Specified Abnormal Conditions of Newborn: BabyG Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
             <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-nicu-admission-babyg-quinn"/></reference>
+            <name value="Observation - NICU Admission - BabyG Quinn"/>
+            <description value="Observation - NICU Admission: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-icu-admission-jada-ann-quinn"/></reference>
+            <name value="Observation - ICU Admission - Jada Ann Quinn"/>
+            <description value="Observation - ICU Admission: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission"/>
+            <groupingId value="maternal-morbidity-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-seizure-babyg-quinn"/></reference>
+            <name value="Condition - Seizure - BabyG Quinn"/>
+            <description value="Condition - Seizure: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-seizure"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-perineal-laceration-jada-ann-quinn"/></reference>
+            <name value="Condition - Perineal Laceration - Jada Ann Quinn"/>
+            <description value="Condition - Perineal Laceration: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration"/>
+            <groupingId value="maternal-morbidity-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
