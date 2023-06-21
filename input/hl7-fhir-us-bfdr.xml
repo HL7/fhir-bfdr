@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1151"/>
-        <lastUpdated value="2023-06-21T05:39:55.268Z"/>
+        <versionId value="1154"/>
+        <lastUpdated value="2023-06-21T06:29:40.704Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -125,6 +125,9 @@
         </grouping>
         <grouping id="lbe-clinical-other-test-data-char-ld">
             <name value="Live Birth Examples: Clinical &amp; Other Test Data: Characteristics of Labor and Delivery"/>
+        </grouping>
+        <grouping id="abnormal-condition-of-the-newborn-examples">
+            <name value="Abnormal Condition of the Newborn Examples"/>
         </grouping>
         <grouping id="maternal-morbidity-examples">
             <name value="Maternal Morbidity Examples"/>
@@ -2132,14 +2135,28 @@
         <resource>
             <reference>
                 <reference value="Procedure/procedure-surfactant-replacement-babyg-quinn"/></reference>
+            <name value="Procedure - Surfactant Replacement - BabyG Quinn"/>
+            <description value="Procedure - Surfactant Replacement: BabyG Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Procedure/procedure-blood-transfusion-jada-ann-quinn"/></reference>
+            <name value="Procedure - Blood Transfusion - Jada Ann Quinn"/>
+            <description value="Procedure - Blood Transfusion: Jada Ann Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-blood-transfusion"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-unplanned-hysterectomy-quinn"/></reference>
+            <name value="Procedure Unplanned Hysterectomy - Jada Ann Quinn"/>
+            <description value="Procedure Unplanned Hysterectomy: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-unplanned-hysterectomy"/>
+            <groupingId value="maternal-morbidity-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
