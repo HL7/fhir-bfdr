@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-number-live-births-this-delivery-jada-ann-quinn"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-04-06T00:30:46.635Z"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-21T09:42:04.180Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-live-births-this-delivery-vr"/>
     </meta>
     <status value="final"/>
@@ -19,5 +19,9 @@
         <reference value="Patient/patient-mother-jada-ann-quinn"/>
         <display value="Patient - Mother (Jada Ann Quinn)"/>
     </subject>
+    <focus>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="BabyG Quinn"/>
+    </focus>
     <valueInteger value="2"/>
 </Observation>
