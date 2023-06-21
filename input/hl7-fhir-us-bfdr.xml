@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1154"/>
-        <lastUpdated value="2023-06-21T06:29:40.704Z"/>
+        <versionId value="1162"/>
+        <lastUpdated value="2023-06-21T06:57:10.445Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -86,9 +86,6 @@
         <grouping id="medical-and-health-information-profiles">
             <name value="Medical and Health Information Profiles"/>
         </grouping>
-        <grouping id="characteristic-of-labor-and-delivery-profiles">
-            <name value="Characteristic of Labor and Delivery Profiles"/>
-        </grouping>
         <grouping id="maternal-morbidity-profiles">
             <name value="Maternal Morbidity Profiles"/>
         </grouping>
@@ -127,10 +124,10 @@
             <name value="Live Birth Examples: Clinical &amp; Other Test Data: Characteristics of Labor and Delivery"/>
         </grouping>
         <grouping id="abnormal-condition-of-the-newborn-examples">
-            <name value="Abnormal Condition of the Newborn Examples"/>
+            <name value="Live Birth Examples: Clinical &amp; Other Test Data: Abnormal Condition of the Newborn Examples"/>
         </grouping>
         <grouping id="maternal-morbidity-examples">
-            <name value="Maternal Morbidity Examples"/>
+            <name value="Clinical &amp; Other Test Data: Maternal Morbidity Examples"/>
         </grouping>
         <grouping id="fde-bundle-composition-test-data">
             <name value="Fetal Death Examples: Bundle &amp; Composition Test Data"/>
@@ -1873,7 +1870,6 @@
             <name value="Condition - Chorioamnionitis"/>
             <description value="This Condition profile indicates a labor and delivery characteristic of chorioamnionitis."/>
             <exampleBoolean value="false"/>
-            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1978,7 +1974,6 @@
             <name value="Procedure - Induction of Labor"/>
             <description value="This Procedure profile indicates a characteristic of labor of induction of labor."/>
             <exampleBoolean value="false"/>
-            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1988,7 +1983,6 @@
             <name value="Procedure - Augmentation of Labor"/>
             <description value="This Procedure profile indicates a characteristic of labor of augmentation of labor."/>
             <exampleBoolean value="false"/>
-            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -1998,7 +1992,6 @@
             <name value="Procedure - Epidural or Spinal Anesthesia"/>
             <description value="This Procedure profile indicates a characteristic of labor of epidural or spinal anesthesia."/>
             <exampleBoolean value="false"/>
-            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -2018,7 +2011,6 @@
             <name value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
             <description value="This Observation profile indicates that none of the specified characteristics of labor and delivery were present."/>
             <exampleBoolean value="false"/>
-            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -2038,7 +2030,6 @@
             <name value="Observation - Administration of Steroids for Fetal Lung Maturation"/>
             <description value="This Observation profile indicates a characteristic of labor of administration of steroids for fetal lung maturation."/>
             <exampleBoolean value="false"/>
-            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -2048,7 +2039,6 @@
             <name value="Observation - Antibiotics Administered During Labor"/>
             <description value="This Observation profile indicates a characteristic of labor of antibiotics administered during labor."/>
             <exampleBoolean value="false"/>
-            <groupingId value="characteristic-of-labor-and-delivery-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -2139,6 +2129,7 @@
             <description value="Procedure - Surfactant Replacement: BabyG Quinn example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
         </resource>
         <resource>
             <reference>
@@ -2157,6 +2148,42 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-unplanned-hysterectomy"/>
             <groupingId value="maternal-morbidity-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-augmentation-of-labor-quinn"/></reference>
+            <name value="Procedure - Augmentation of Labor - Jada Ann Quinn"/>
+            <description value="Procedure - Augmentation of Labor: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-augmentation-of-labor"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-ventilation-more-6-hours-babyg-quinn"/></reference>
+            <name value="Procedure - Assisted Ventilation More Than Six Hours - BabyG Quinn"/>
+            <description value="Procedure - Assisted Ventilation More Than Six Hours: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-ventilation-following-babyg-quinn"/></reference>
+            <name value="Procedure - Assissted Ventilation Following Delivery - BabyG Quinn"/>
+            <description value="Procedure - Assissted Ventilation Following Delivery: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-antibiotic-sepsis-babyg-quinn"/></reference>
+            <name value="Procedure - Antibiotic for Suspected Neonatal Sepsis - BabyG Quinn"/>
+            <description value="Procedure - Antibiotic for Suspected Neonatal Sepsis: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
