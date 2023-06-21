@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-none-abnormal-conditions-babyg-quinn"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-06-21T07:05:33.473Z"/>
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="73761-9"/>
+            <display value="Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/patient-child-babyg-quinn"/>
+        <display value="Patient - Child (Baby G Quinn)"/>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="260413007"/>
+            <display value="None"/>
+        </coding>
+        <text value="None of the specified abnormal conditions of the newborn"/>
+    </valueCodeableConcept>
+</Observation>
