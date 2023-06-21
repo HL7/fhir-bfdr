@@ -1,11 +1,11 @@
-This implementation guide supports five use cases for communicating information from the electronic health record system to the jurisdictional Vital Records Offices and to the national statistical agency, the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS):
+This implementation guide (IG) supports five use cases for communicating information from the electronic health record system to the jurisdictional vital records offices and to the national statistical agency, the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS):
 
 1. Provider Live Birth
 2. Jurisdiction Live Birth
 3. Provider Fetal Death
 4. Jurisdiction Fetal Death
 
-This implementation guide also supports two uses cases for returning information from the national statistical agency to the jurisdictional Vital Records Office:
+This implementation guide also supports two uses cases for returning information from the national statistical agency to the jurisdictional vital records office:
 
 1. Coded Race and Ethnicity
 2. Coded Cause of Fetal Death
@@ -29,7 +29,7 @@ This use case represents live birth information that is recorded and communicate
 For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility.
 
 The data requirements for provider supplied live birth information are based on the:
-* [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth_edit_specifications.pdf)
+* [2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
 * [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
 * [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
 * [2016 US Standard Mothers Worksheet for Child's Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf).
@@ -71,7 +71,7 @@ The Jurisdiction Fetal Death use case is represented by the [Composition - Juris
 
 ### Coded Race and Ethnicity
 
-This use case represents the communication of coded race and ethnicity information to the appropriate jurisdictional Vital Records Office. It contains data that are a coded form of the race and ethnicity data that has been submitted to the NCHS. Two sets of codes will be used to address two objectives. These objectives are:
+This use case represents the communication of coded race and ethnicity information to the appropriate jurisdictional vital records office. It contains data that are a coded form of the race and ethnicity data that has been submitted to the NCHS. Two sets of codes will be used to address two objectives. These objectives are:
 * to generate codes for race or ethnicity data provided as text entries
 * to generate a single race code in cases where multiple races have been reported
 
@@ -79,10 +79,10 @@ In addition, when the coding process has led to duplication of data, the duplica
 
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.
 
-The Coded Race and Ethnicity use case is represented by the [Composition - Coded Race and Ethnicity](StructureDefinition-Composition-coded-race-and-ethnicity.html).
+The Coded Race and Ethnicity use case is represented by the [Composition - Coded Race and Ethnicity](StructureDefinition-Composition-coded-race-and-ethnicity.html). ***Note:*** requirements for this workflow are in development and the FHIR Composition profile may change.  
 
 ### Coded Cause of Fetal Death
 
-This use case represents the communication of coded cause of fetal death information to appropriate jurisdictional Vital Records Offices. Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this Composition.
+This use case represents the communication of coded cause of fetal death information to appropriate jurisdictional vital records offices. Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this Composition.
 
-The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html).
+The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html). ***Note:*** requirements for this workflow are in development and the FHIR Composition profile may change.
