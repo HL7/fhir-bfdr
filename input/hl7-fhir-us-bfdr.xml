@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1169"/>
-        <lastUpdated value="2023-06-21T07:40:49.339Z"/>
+        <versionId value="1178"/>
+        <lastUpdated value="2023-06-21T09:35:55.953Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -128,6 +128,9 @@
         </grouping>
         <grouping id="maternal-morbidity-examples">
             <name value="Clinical &amp; Other Test Data: Maternal Morbidity Examples"/>
+        </grouping>
+        <grouping id="pregnancy-risk-factors">
+            <name value="Clinical &amp; Other Test Data: Pregnancy Risk Factors"/>
         </grouping>
         <grouping id="fde-bundle-composition-test-data">
             <name value="Fetal Death Examples: Bundle &amp; Composition Test Data"/>
@@ -1481,35 +1484,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-2"/></reference>
-            <name value="Observation - Pregnancy Risk Factor example [Carmen Teresa Lee: Gestational diabetes mellitus]"/>
-            <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Gestational diabetes mellitus)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="fde-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1"/></reference>
-            <name value="Observation - Pregnancy Risk Factor example [Carmen Teresa Lee: Hypertensive disorder, systemic arterial]"/>
-            <description value="Example of Observation-pregnancy-risk-factor profile (Carmen Teresa Lee: Hypertensive disorder, systemic arterial)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="fde-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-3"/></reference>
-            <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Assisted fertilization]"/>
-            <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Assisted fertilization)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"/></reference>
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Deliveries by Cesarean]"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-data"/>
+            <groupingId value="pregnancy-risk-factors"/>
         </resource>
         <resource>
             <reference>
@@ -1517,7 +1496,7 @@
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Fertility enhancing drug therapy]"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Fertility enhancing drug therapy)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-data"/>
+            <groupingId value="pregnancy-risk-factors"/>
         </resource>
         <resource>
             <reference>
@@ -1525,7 +1504,7 @@
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Pregnancy-induced hypertension]"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
             <exampleBoolean value="true"/>
-            <groupingId value="lbe-clinical-other-test-data"/>
+            <groupingId value="pregnancy-risk-factors"/>
         </resource>
         <resource>
             <reference>
@@ -2229,6 +2208,51 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration"/>
             <groupingId value="maternal-morbidity-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-prepregnancy-hypertension-carmen-teresa-lee"/></reference>
+            <name value="Condition - Prepregnancy Hypertension - Carmen Teresa Lee"/>
+            <description value="Condition - Prepregnancy Hypertension: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-gestational-diabetes-carmen-teresa-lee"/></reference>
+            <name value="Condition - Gestational Diabetes - Carmen Teresa Lee"/>
+            <description value="Condition - Gestational Diabetes: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-gestational-diabetes-jada-ann-quinn"/></reference>
+            <name value="Condition - Gestational Diabetes - Jada Ann Quinn"/>
+            <description value="Condition - Gestational Diabetes: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-assisted-fertilization-jada-ann-quinn"/></reference>
+            <name value="Procedure - Assisted Fertilization - Jada Ann Quinn"/>
+            <description value="Procedure - Assisted Fertilization: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-infertility-treatment-jada-ann-quinn"/></reference>
+            <name value="Procedure - Infertility Treatment - Jada Ann Quinn"/>
+            <description value="Procedure - Infertility Treatment: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
