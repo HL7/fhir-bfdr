@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1178"/>
-        <lastUpdated value="2023-06-21T09:35:55.953Z"/>
+        <versionId value="1179"/>
+        <lastUpdated value="2023-06-21T22:08:36.255Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -259,7 +259,7 @@
                 <reference value="Composition/composition-jurisdiction-fetal-death-not-named"/>
                 <display value="Jurisdiction fetal death report Document"/>
             </reference>
-            <name value="Composition - Jurisdiction Fetal Death example [Fetus Not Named]"/>
+            <name value="Jurisdiction fetal death report Document"/>
             <description value="Example of composition-jurisdiction-fetal-death profile (Fetus Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
@@ -686,9 +686,9 @@
         <resource>
             <reference>
                 <reference value="Composition/composition-provider-fetal-death-not-named"/>
-                <display value="Jurisdiction fetal death report Document"/>
+                <display value="Provider fetal death report Document"/>
             </reference>
-            <name value="Composition - Jurisdiction fetal death report Document"/>
+            <name value="Provider fetal death report Document"/>
             <description value="Example of Composition-provider-fetal-death-report profile (Not Named)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
@@ -1487,22 +1487,6 @@
                 <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"/></reference>
             <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Deliveries by Cesarean]"/>
             <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Deliveries by Cesarean)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="pregnancy-risk-factors"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-2"/></reference>
-            <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Fertility enhancing drug therapy]"/>
-            <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Fertility enhancing drug therapy)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="pregnancy-risk-factors"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"/></reference>
-            <name value="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Pregnancy-induced hypertension]"/>
-            <description value="Example of Observation-pregnancy-risk-factor (Jada Ann Quinn: Pregnancy-induced hypertension)"/>
             <exampleBoolean value="true"/>
             <groupingId value="pregnancy-risk-factors"/>
         </resource>
