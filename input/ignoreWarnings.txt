@@ -1,15 +1,21 @@
 == Suppressed Messages ==
 # The following code systems are external and not supported by terminology server
 Code System URI 'urn:oid:2.16.840.1.114222.4.5.274' is unknown so the code cannot be validated
+The code provided PHC1449 cannot be validated in the options value set (Vital Records Education Level (NCHS)) in the questionnaire because the system urn:oid:2.16.840.1.114222.4.5.274 is unknown
+The code provided PHC1455 cannot be validated in the options value set (Vital Records Education Level (NCHS)) in the questionnaire because the system urn:oid:2.16.840.1.114222.4.5.274 is unknown
+The code provided PHC1497 cannot be validated in the options value set (Informant Relationship to Mother (NCHS)) in the questionnaire because the system urn:oid:2.16.840.1.114222.4.5.274 is unknown
+Code System unknown, so assuming value set expansion is correct (The CodeSystem urn:oid:2.16.840.1.113883.6.238 version 1.2 is unknown. Valid versions: [3.0.1, 3.0.0, 3.0.1, 3.1.1])
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 Code System URI 'urn:oid:2.16.840.1.113883.3.221.5' is unknown so the code cannot be validated
 # Example uses a CPT code that can't be validated
-Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator, Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
+Unable to check whether the code is in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type|5.0.1
 # APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 # Examples have optional slices that are not defined in the profile - not matching is expected behaviour
 TODO
 # Expected behaviour - added an extra author for this example
-INFORMATION: Composition/composition-jurisdiction-fetal-death-not-named: Composition.author[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report
+TODO
 # Issue is because the slices aren't recognized due to the missing ICD-10 code system 
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death
+TODO
+# The 5.0.1 US Core that this IG depends on does not contain us-core-coverage
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile
