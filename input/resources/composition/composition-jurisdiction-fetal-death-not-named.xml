@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="composition-jurisdiction-fetal-death-not-named"/>
     <meta>
-        <versionId value="25"/>
-        <lastUpdated value="2023-06-21T22:13:22.911Z"/>
+        <versionId value="26"/>
+        <lastUpdated value="2023-06-22T01:02:22.265Z"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number">
@@ -31,6 +31,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar">
         <valueDateTime value="2019-02-12"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-replacement-status">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-replacement-status"/>
+                <code value="original"/>
+            </coding>
+        </valueCodeableConcept>
     </extension>
     <identifier>
         <value value="c03eab8c-11e8-4d0c-ad2a-b385395e27da"/>
