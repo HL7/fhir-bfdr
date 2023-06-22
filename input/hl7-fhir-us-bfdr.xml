@@ -2238,6 +2238,33 @@
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
             <groupingId value="pregnancy-risk-factors"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-replacement-status"/>
+                <display value="Extension - Replacement Status"/>
+            </reference>
+            <name value="Extension - Replacement Status"/>
+            <description value="This Extension profile represents the replacement status of a record."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-replacement-status"/>
+                <display value="CodeSystem - Replacement Status"/>
+            </reference>
+            <name value="CodeSystem - Replacement Status"/>
+            <description value="This CodeSystem contains codes that represent the replacement status of a record submission."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-replacement-status"/>
+                <display value="ValueSet - Replacement Status"/>
+            </reference>
+            <name value="ValueSet - Replacement Status"/>
+            <description value="This ValueSet contains codes that represent the replacement status of a record submission."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
