@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-document-bfdr"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-19T10:39:09.612Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-22T02:26:29.171Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
     <name value="BundleDocumentBFDR"/>
@@ -61,7 +61,10 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+                <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
             </type>
             <mustSupport value="true"/>
         </element>
