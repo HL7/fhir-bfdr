@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-provider-fetal-death-not-named"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-06-22T06:31:25.816Z"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-06-23T04:50:08.066Z"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:9eeb1854-dee1-470a-9534-5cb25e18a324"/>
+        <value value="urn:uuid:9eeb1854-dee1-470a-9534-5cb25e18a327"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2019-10-14T08:51:14.637+00:00"/>
+    <timestamp value="2019-10-13T08:51:14.637+00:00"/>
     <entry>
         <fullUrl value="http://example.org/fhir/Composition/composition-provider-fetal-death-not-named"/>
         <resource>
@@ -288,6 +288,13 @@
                         <state value="MI"/>
                         <postalCode value="48103"/>
                     </valueAddress>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr">
+                    <valueCoding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="276507005"/>
+                        <display value="Fetal death (event)"/>
+                    </valueCoding>
                 </extension>
                 <identifier>
                     <use value="usual"/>
@@ -823,13 +830,9 @@
                     <text value="Cigarettes smoked per day by Mother--2nd trimester"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
                 </subject>
-                <focus>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </focus>
                 <valueInteger value="1"/>
             </Observation>
         </resource>
@@ -852,13 +855,9 @@
                     <text value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
                 </subject>
-                <focus>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </focus>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
@@ -881,13 +880,9 @@
                     <text value="Cigarettes smoked per day by Mother--1st trimester"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
                 </subject>
-                <focus>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </focus>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
@@ -910,13 +905,9 @@
                     <text value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
                 </subject>
-                <focus>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </focus>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
@@ -1530,97 +1521,6 @@
                     </code>
                 </qualification>
             </Practitioner>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Patient/patient-child-babyg-quinn"/>
-        <resource>
-            <Patient>
-                <id value="patient-child-babyg-quinn"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
-                </meta>
-                <text>
-                    <status value="generated"/>
-                    <div
-                        xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Baby G 
-                            <b>QUINN </b>
-                        </div>
-                        <table class="hapiPropertyTable">
-                            <tbody>
-                                <tr>
-                                    <td>Identifier</td>
-                                    <td>9932702</td>
-                                </tr>
-                                <tr>
-                                    <td>Date of birth</td>
-                                    <td>
-                                        <span>12 February 2019</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </text>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-                    <extension url="ombCategory">
-                        <valueCoding>
-                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                            <code value="2106-3"/>
-                            <display value="White"/>
-                        </valueCoding>
-                    </extension>
-                    <extension url="text">
-                        <valueString value="White"/>
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-                    <extension url="ombCategory">
-                        <valueCoding>
-                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                            <code value="2186-5"/>
-                            <display value="Not Hispanic or Latino"/>
-                        </valueCoding>
-                    </extension>
-                    <extension url="text">
-                        <valueString value="Not Hispanic or Latino"/>
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-                    <valueCode value="F"/>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
-                    <valueAddress>
-                        <city value="Salt Lake City"/>
-                        <district value="Salt Lake"/>
-                        <state value="UT"/>
-                    </valueAddress>
-                </extension>
-                <identifier>
-                    <use value="usual"/>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="MR"/>
-                            <display value="Medical Record Number"/>
-                        </coding>
-                    </type>
-                    <system value="http://hospital.smarthealthit.org"/>
-                    <value value="9932702"/>
-                </identifier>
-                <name>
-                    <family value="Quinn"/>
-                    <given value="Baby"/>
-                    <given value="G"/>
-                </name>
-                <gender value="female"/>
-                <birthDate value="2019-02-12">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-                        <valueDateTime value="2019-02-12T13:00:00-07:00"/>
-                    </extension>
-                </birthDate>
-            </Patient>
         </resource>
     </entry>
     <entry>

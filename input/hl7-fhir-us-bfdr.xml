@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1189"/>
-        <lastUpdated value="2023-06-23T02:53:48.943Z"/>
+        <versionId value="1195"/>
+        <lastUpdated value="2023-06-23T05:00:17.071Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -228,8 +228,8 @@
                 <reference value="Composition/composition-coded-race-and-ethnicity-not-named"/>
                 <display value="Coded Race and Ethnicity"/>
             </reference>
-            <name value="Composition - Coded Race and Ethnicity - Not Named"/>
-            <description value="Composition - Coded Race and Ethnicity: Not Named example"/>
+            <name value="Composition - Coded Race and Ethnicity - Fetus Not Named"/>
+            <description value="Composition - Coded Race and Ethnicity: Fetus Not Named example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
             <groupingId value="other-examples"/>
@@ -259,8 +259,8 @@
                 <reference value="Composition/composition-jurisdiction-fetal-death-not-named"/>
                 <display value="Jurisdiction fetal death report Document"/>
             </reference>
-            <name value="Composition - Jurisdiction Fetal Death Report - Not Named"/>
-            <description value="Composition Jurisdiction Fetal Death Report: Not Named example"/>
+            <name value="Composition - Jurisdiction Fetal Death Report - Fetus Not Named"/>
+            <description value="Composition Jurisdiction Fetal Death Report: Fetus Not Named example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
             <groupingId value="fde-bundle-composition-test-data"/>
@@ -321,8 +321,8 @@
                 <reference value="Composition/composition-coded-cause-of-fetal-death-not-named"/>
                 <display value="Coded Cause of Fetal Death"/>
             </reference>
-            <name value="Composition - Coded Cause of Fetal Death - Not Named"/>
-            <description value="Composition - Coded Cause of Fetal Death: Not Named example"/>
+            <name value="Composition - Coded Cause of Fetal Death - Fetus Not Named"/>
+            <description value="Composition - Coded Cause of Fetal Death: Fetus Not Named example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
             <groupingId value="other-examples"/>
@@ -1147,16 +1147,16 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-infant-breastfed-at-discharge-babyg-quinn"/></reference>
-            <name value="Observation - Infant Breastfed at Discharge example [Baby G Quinn]"/>
-            <description value="Example of Observation-infant-breastfed-at-discharge profile (Baby G Quinn)"/>
+            <name value="Observation - Infant Breastfed at Discharge - Baby G Quinn"/>
+            <description value="Observation - Infant Breastfed at Discharge: BabyG Quinn"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-infant-living-babyg-quinn"/></reference>
-            <name value="Observation - Infant Living example [Baby G Quinn]"/>
-            <description value="Example of observation-infant-living profile (Baby G Quinn)"/>
+            <name value="Observation - Infant Living - Baby G Quinn"/>
+            <description value="Observation - Infant Living: BabyG Quinn example"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
@@ -1530,9 +1530,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-child-babyg-quinn"/></reference>
-            <name value="Patient - Child example [Baby G Quinn]"/>
-            <description value="Example of Patient-child profile (Baby G Quinn)"/>
+                <reference value="Patient/patient-child-babyg-quinn"/>
+                <display value="Baby G Quinn"/>
+            </reference>
+            <name value="Baby G Quinn"/>
+            <description value="Patient - Child - Vital Records: BabyG Quinn example"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-participant-test-data"/>
         </resource>
@@ -1541,23 +1543,27 @@
                 <reference value="Patient/patient-decedent-fetus-not-named"/>
                 <display value=" UNK"/>
             </reference>
-            <name value=" UNK"/>
-            <description value="Example of patient-decedent-fetus (Fetus Not Named)"/>
+            <name value="Patient - Decedent Fetus - Vital Records - Fetus Not Named"/>
+            <description value="Patient - Decedent Fetus - Vital Records: Fetus Not Named"/>
             <exampleBoolean value="true"/>
             <groupingId value="fde-participant-test-data"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-carmen-teresa-lee"/></reference>
-            <name value="Patient - Mother example [Carmen Teresa Lee]"/>
-            <description value="Example of patient-mother profile (Carmen Teresa Lee)"/>
+                <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+                <display value="Carmen Teresa Lee"/>
+            </reference>
+            <name value="Carmen Teresa Lee"/>
+            <description value="Patient - Mother - Vital Records: Carmen Teresa Lee example"/>
             <exampleBoolean value="true"/>
             <groupingId value="fde-participant-test-data"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-mother-jada-ann-quinn"/></reference>
-            <name value="Patient - Mother - Eve Everywoman"/>
+                <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                <display value="Jada Ann Quinn"/>
+            </reference>
+            <name value="Jada Ann Quinn"/>
             <description value="Example of Patient-mother profile (Eve Everywoman)"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-participant-test-data"/>
@@ -2275,6 +2281,69 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
             <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-plurality-not-named"/></reference>
+            <name value="Observation - Edit Flag Plurality - Fetus Not Named"/>
+            <description value="Observation - Edit Flag Plurality: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-mothers-height-not-named"/></reference>
+            <name value="Observation - Edit Flag Mother's Height- Fetus Not Named"/>
+            <description value="Observation - Edit Flag Mother's Height: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-est-gestation-not-named"/></reference>
+            <name value="Observation - Edit Flag Estimated Gestational Age - Decedent Not Named"/>
+            <description value="Observation - Edit Flag Estimated Gestational Age: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-mothers-education-not-named"/></reference>
+            <name value="Observation - Edit Flag Mother's Education - Fetus Not Named"/>
+            <description value="Observation - Edit Flag Mother's Education: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"/></reference>
+            <name value="Observation - Edit Flag Mother's Prepregnancy Weight - Decedent Not Named"/>
+            <description value="Observation - Edit Flag Mother's Prepregnancy Weight: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-nbr-previous-cesareans-not-named"/></reference>
+            <name value="Observation - Edit Flag Number of Previous Cesareans - Decedent Not Named"/>
+            <description value="Observation - Edit Flag Number of Previous Cesareans: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-delivery-wgt-not-named"/></reference>
+            <name value="Observation - Edit Flag Delivery Weight - Fetus Not Named"/>
+            <description value="Observation - Edit Flag Delivery Weight- Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
+            <groupingId value="edit-flag-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
