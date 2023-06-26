@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-jurisdiction-fetal-death-not-named"/>
     <meta>
-        <versionId value="40"/>
-        <lastUpdated value="2023-06-26T02:28:53.745Z"/>
+        <versionId value="42"/>
+        <lastUpdated value="2023-06-26T06:22:45.406Z"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
     </meta>
     <identifier>
@@ -281,36 +281,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-delivery-wgt-not-named"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-delivery-wgt-not-named"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PCH1478"/>
-                        <display value="Birth weight Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Decedent Fetus Not Named"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1380"/>
-                        <display value="Off"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://example.org/fhir/Patient/patient-decedent-fetus-not-named"/>
         <resource>
             <Patient>
@@ -318,29 +288,6 @@
                 <meta>
                     <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
                 </meta>
-                <text>
-                    <status value="generated"/>
-                    <div
-                        xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">
-                            <b>UNK </b>
-                        </div>
-                        <table class="hapiPropertyTable">
-                            <tbody>
-                                <tr>
-                                    <td>Identifier</td>
-                                    <td>9932702</td>
-                                </tr>
-                                <tr>
-                                    <td>Date of birth</td>
-                                    <td>
-                                        <span>09 January 2019</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </text>
                 <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
                     <valueCode value="F"/>
                 </extension>
@@ -454,64 +401,125 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-birth-weight-not-named"/>
+        <fullUrl value="http://example.org/fhir/Organization/organization-jurisdictional-vital-records-office"/>
         <resource>
-            <Observation>
-                <id value="observation-birth-weight-not-named"/>
-                <status value="final"/>
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-                        <code value="vital-signs"/>
-                        <display value="Vital Signs"/>
-                    </coding>
-                    <text value="Vital Signs"/>
-                </category>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="8339-4"/>
-                        <display value="Birth weight Measured"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
-                </subject>
-                <effectiveDateTime value="2019-02-10"/>
-                <valueQuantity>
-                    <value value="1530"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="g"/>
-                </valueQuantity>
-            </Observation>
+            <Organization>
+                <id value="organization-jurisdictional-vital-records-office"/>
+                <active value="true"/>
+                <name value="Jurisdictional Vital Records Office"/>
+            </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named"/>
+        <fullUrl value="http://example.org/fhir/Patient/patient-mother-carmen-teresa-lee"/>
+        <resource>
+            <Patient>
+                <id value="patient-mother-carmen-teresa-lee"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+                </meta>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2054-5"/>
+                            <display value="Black or African American"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Black or African America"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                            <code value="2135-2"/>
+                            <display value="Hispanic or Latino"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Hispanic or Latino"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+                    <valueCode value="F"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+                    <valueAddress>
+                        <state value="PR"/>
+                    </valueAddress>
+                </extension>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                            <display value="Medical Record Number"/>
+                        </coding>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="9992702"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Lee"/>
+                    <given value="Carmen"/>
+                    <given value="Teresa"/>
+                </name>
+                <name>
+                    <use value="maiden"/>
+                    <family value="Santos"/>
+                    <given value="Carmen"/>
+                    <given value="Teresa"/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="1986-02-15"/>
+                <address>
+                    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr">
+                        <valueCoding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+                            <code value="N"/>
+                            <display value="No"/>
+                        </valueCoding>
+                    </extension>
+                    <use value="home"/>
+                    <line value="3670 Miller Road"/>
+                    <city value="Ann Arbor"/>
+                    <state value="MI"/>
+                    <postalCode value="48103"/>
+                    <country value="US"/>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-planned-to-deliver-at-home-not-named"/>
         <resource>
             <Observation>
-                <id value="observation-gestational-age-at-delivery-not-named"/>
+                <id value="observation-planned-to-deliver-at-home-not-named"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
                 </meta>
                 <status value="final"/>
                 <code>
                     <coding>
                         <system value="http://loinc.org"/>
-                        <code value="11884-4"/>
-                        <display value="Gestational age Estimated"/>
+                        <code value="73765-0"/>
+                        <display value="Mother Planned to deliver at home [US Standard Certificate of Live Birth]"/>
                     </coding>
+                    <text value="Planned to deliver at home?"/>
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
                     <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
-                <valueQuantity>
-                    <value value="20"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="wk"/>
-                </valueQuantity>
+                <focus>
+                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                </focus>
+                <valueBoolean value="false"/>
             </Observation>
         </resource>
     </entry>
@@ -620,45 +628,21 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-plurality-carmen-teresa-lee"/>
+        <fullUrl value="http://example.org/fhir/Observation/observation-date-of-last-live-birth-carmen-teresa-lee"/>
         <resource>
             <Observation>
-                <id value="observation-plurality-carmen-teresa-lee"/>
+                <id value="observation-date-of-last-live-birth-carmen-teresa-lee"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
                 </meta>
                 <status value="final"/>
                 <code>
                     <coding>
                         <system value="http://loinc.org"/>
-                        <code value="57722-1"/>
-                        <display value="Birth plurality of Pregnancy"/>
+                        <code value="68499-3"/>
+                        <display value="Date last live birth"/>
                     </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
-                </subject>
-                <valueInteger value="1"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-planned-to-deliver-at-home-not-named"/>
-        <resource>
-            <Observation>
-                <id value="observation-planned-to-deliver-at-home-not-named"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="73765-0"/>
-                        <display value="Mother Planned to deliver at home [US Standard Certificate of Live Birth]"/>
-                    </coding>
-                    <text value="Planned to deliver at home?"/>
+                    <text value="Date of last live birth"/>
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
@@ -668,42 +652,7 @@
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
                     <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </focus>
-                <valueBoolean value="false"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee"/>
-        <resource>
-            <Observation>
-                <id value="observation-parent-education-level-carmen-teresa-lee"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="57712-2"/>
-                        <display value="Highest level of education Mother"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
-                </subject>
-                <focus>
-                    <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
-                </focus>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1449"/>
-                        <display value="9th through 12th grade; no diploma"/>
-                    </coding>
-                    <text value="9th through 12th grade; no diploma"/>
-                </valueCodeableConcept>
+                <valueDateTime value="2016-01-28"/>
             </Observation>
         </resource>
     </entry>
@@ -817,80 +766,30 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-date-of-last-live-birth-carmen-teresa-lee"/>
+        <fullUrl value="http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/>
         <resource>
             <Observation>
-                <id value="observation-date-of-last-live-birth-carmen-teresa-lee"/>
+                <id value="observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
                 </meta>
                 <status value="final"/>
                 <code>
                     <coding>
                         <system value="http://loinc.org"/>
-                        <code value="68499-3"/>
-                        <display value="Date last live birth"/>
+                        <code value="64794-1"/>
+                        <display value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
                     </coding>
-                    <text value="Date of last live birth"/>
+                    <text value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
-                </subject>
-                <focus>
                     <reference value="Patient/patient-mother-carmen-teresa-lee"/>
                     <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </focus>
-                <valueDateTime value="2016-01-28"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/>
-        <resource>
-            <Observation>
-                <id value="observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="87299-4"/>
-                        <display value="Cigarettes smoked per day by Mother--2nd trimester"/>
-                    </coding>
-                    <text value="Cigarettes smoked per day by Mother--2nd trimester"/>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Decedent Fetus Not Named"/>
-                </subject>
-                <valueInteger value="1"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/>
-        <resource>
-            <Observation>
-                <id value="observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="64795-8"/>
-                        <display value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
-                    </coding>
-                    <text value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Decedent Fetus Not Named"/>
-                </subject>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
@@ -913,28 +812,22 @@
                     <text value="Cigarettes smoked per day by Mother--1st trimester"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Decedent Fetus Not Named"/>
+                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
+                <focus>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+                </focus>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Organization/organization-jurisdictional-vital-records-office"/>
-        <resource>
-            <Organization>
-                <id value="organization-jurisdictional-vital-records-office"/>
-                <active value="true"/>
-                <name value="Jurisdictional Vital Records Office"/>
-            </Organization>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/>
+        <fullUrl value="http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/>
         <resource>
             <Observation>
-                <id value="observation-cig-smoking-pregnancy-1-carmen-teresa-lee"/>
+                <id value="observation-cig-smoking-pregnancy-3-carmen-teresa-lee"/>
                 <meta>
                     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
                 </meta>
@@ -942,15 +835,48 @@
                 <code>
                     <coding>
                         <system value="http://loinc.org"/>
-                        <code value="64794-1"/>
-                        <display value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
+                        <code value="87299-4"/>
+                        <display value="Cigarettes smoked per day by Mother--2nd trimester"/>
                     </coding>
-                    <text value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
+                    <text value="Cigarettes smoked per day by Mother--2nd trimester"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Decedent Fetus Not Named"/>
+                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
+                <focus>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+                </focus>
+                <valueInteger value="1"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/>
+        <resource>
+            <Observation>
+                <id value="observation-cig-smoking-pregnancy-4-carmen-teresa-lee"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="64795-8"/>
+                        <display value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
+                    </coding>
+                    <text value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                </subject>
+                <focus>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+                </focus>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
@@ -981,6 +907,36 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-fetal-presentation-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-fetal-presentation-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73761-9"/>
+                        <display value="Fetal presentation--at birth [US Standard Certificate of Live Birth]"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="6096002"/>
+                        <display value="Breech presentation (finding)"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named"/>
         <resource>
             <Procedure>
@@ -1006,6 +962,68 @@
                     <end value="2019-01-19T18:23:00-07:00"/>
                 </performedPeriod>
             </Procedure>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-birth-weight-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-birth-weight-not-named"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="vital-signs"/>
+                        <display value="Vital Signs"/>
+                    </coding>
+                    <text value="Vital Signs"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8339-4"/>
+                        <display value="Birth weight Measured"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+                </subject>
+                <effectiveDateTime value="2019-02-10"/>
+                <valueQuantity>
+                    <value value="1530"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="g"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-gestational-age-at-delivery-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="11884-4"/>
+                        <display value="Gestational age Estimated"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+                </subject>
+                <valueQuantity>
+                    <value value="20"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="wk"/>
+                </valueQuantity>
+            </Observation>
         </resource>
     </entry>
     <entry>
@@ -1083,6 +1101,36 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-fetal-death-time-point-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-fetal-death-time-point-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="73811-2"/>
+                        <display value="Estimated timing of fetal death [US Standard Report of Fetal Death]"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="434631000124100"/>
+                        <display value="Fetal intrapartum death after first assessment (event)"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-autopsy-performed-not-named"/>
         <resource>
             <Observation>
@@ -1143,36 +1191,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-fetal-presentation-not-named"/>
-        <resource>
-            <Observation>
-                <id value="observation-fetal-presentation-not-named"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="73761-9"/>
-                        <display value="Fetal presentation--at birth [US Standard Certificate of Live Birth]"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="6096002"/>
-                        <display value="Breech presentation (finding)"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-autopsy-histological-exam-results-used-not-named"/>
         <resource>
             <Observation>
@@ -1197,49 +1215,78 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-fetal-death-time-point-not-named"/>
+        <fullUrl value="http://example.org/fhir/Observation/observation-plurality-carmen-teresa-lee"/>
         <resource>
             <Observation>
-                <id value="observation-fetal-death-time-point-not-named"/>
+                <id value="observation-plurality-carmen-teresa-lee"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point"/>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"/>
                 </meta>
                 <status value="final"/>
                 <code>
                     <coding>
                         <system value="http://loinc.org"/>
-                        <code value="73811-2"/>
-                        <display value="Estimated timing of fetal death [US Standard Report of Fetal Death]"/>
+                        <code value="57722-1"/>
+                        <display value="Birth plurality of Pregnancy"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                </subject>
+                <valueInteger value="1"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee"/>
+        <resource>
+            <Observation>
+                <id value="observation-parent-education-level-carmen-teresa-lee"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="57712-2"/>
+                        <display value="Highest level of education Mother"/>
                     </coding>
                 </code>
                 <subject>
                     <reference value="Patient/patient-decedent-fetus-not-named"/>
                     <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
                 </subject>
+                <focus>
+                    <reference value="RelatedPerson/relatedperson-mother-carmen-teresa-lee"/>
+                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                </focus>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="434631000124100"/>
-                        <display value="Fetal intrapartum death after first assessment (event)"/>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1449"/>
+                        <display value="9th through 12th grade; no diploma"/>
                     </coding>
+                    <text value="9th through 12th grade; no diploma"/>
                 </valueCodeableConcept>
             </Observation>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-plurality-not-named"/>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-delivery-wgt-not-named"/>
         <resource>
             <Observation>
-                <id value="observation-edit-flag-plurality-not-named"/>
+                <id value="observation-edit-flag-delivery-wgt-not-named"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
                 </meta>
                 <status value="final"/>
                 <code>
                     <coding>
                         <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1489"/>
-                        <display value="Plurality Edit flag"/>
+                        <code value="PCH1478"/>
+                        <display value="Birth weight Edit flag"/>
                     </coding>
                 </code>
                 <subject>
@@ -1249,38 +1296,8 @@
                 <valueCodeableConcept>
                     <coding>
                         <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1494"/>
-                        <display value="Queried, and Correct"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-height-not-named"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-mothers-height-not-named"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1485"/>
-                        <display value="Mothers height Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-decedent-fetus-not-named"/>
-                    <display value="Decedent Fetus Not Named"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1362"/>
-                        <display value="Edit Passed"/>
+                        <code value="PHC1380"/>
+                        <display value="Off"/>
                     </coding>
                 </valueCodeableConcept>
             </Observation>
@@ -1317,6 +1334,36 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-dob-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-mothers-dob-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1482"/>
+                        <display value="Mothers birthdate Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1362"/>
+                        <display value="Edit Passed"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-education-not-named"/>
         <resource>
             <Observation>
@@ -1330,6 +1377,36 @@
                         <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
                         <code value="PHC1484"/>
                         <display value="Mothers education Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1362"/>
+                        <display value="Edit Passed"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-height-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-mothers-height-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1485"/>
+                        <display value="Mothers height Edit flag"/>
                     </coding>
                 </code>
                 <subject>
@@ -1407,6 +1484,36 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-plurality-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-plurality-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1489"/>
+                        <display value="Plurality Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1494"/>
+                        <display value="Queried, and Correct"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://example.org/fhir/Practitioner/practitioner-vital-records-janet-seito"/>
         <resource>
             <Practitioner>
@@ -1453,124 +1560,6 @@
                     </coding>
                 </type>
             </Location>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Patient/patient-mother-carmen-teresa-lee"/>
-        <resource>
-            <Patient>
-                <id value="patient-mother-carmen-teresa-lee"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
-                </meta>
-                <text>
-                    <status value="generated"/>
-                    <div
-                        xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Carmen Teresa 
-                            
-                            <b>LEE </b>
-                        </div>
-                        <table class="hapiPropertyTable">
-                            <tbody>
-                                <tr>
-                                    <td>Identifier</td>
-                                    <td>9992702</td>
-                                </tr>
-                                <tr>
-                                    <td>Address</td>
-                                    <td>
-                                        <span>3670 Miller Road </span>
-                                        <br/>
-                                        <span>Ann Arbor </span>
-                                        <span>MI </span>
-                                        <span>US </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Date of birth</td>
-                                    <td>
-                                        <span>15 February 1986</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </text>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-                    <extension url="ombCategory">
-                        <valueCoding>
-                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                            <code value="2054-5"/>
-                            <display value="Black or African American"/>
-                        </valueCoding>
-                    </extension>
-                    <extension url="text">
-                        <valueString value="Black or African America"/>
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-                    <extension url="ombCategory">
-                        <valueCoding>
-                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                            <code value="2135-2"/>
-                            <display value="Hispanic or Latino"/>
-                        </valueCoding>
-                    </extension>
-                    <extension url="text">
-                        <valueString value="Hispanic or Latino"/>
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-                    <valueCode value="F"/>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
-                    <valueAddress>
-                        <state value="PR"/>
-                    </valueAddress>
-                </extension>
-                <identifier>
-                    <use value="usual"/>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="MR"/>
-                            <display value="Medical Record Number"/>
-                        </coding>
-                    </type>
-                    <system value="http://hospital.smarthealthit.org"/>
-                    <value value="9992702"/>
-                </identifier>
-                <name>
-                    <use value="official"/>
-                    <family value="Lee"/>
-                    <given value="Carmen"/>
-                    <given value="Teresa"/>
-                </name>
-                <name>
-                    <use value="maiden"/>
-                    <family value="Santos"/>
-                    <given value="Carmen"/>
-                    <given value="Teresa"/>
-                </name>
-                <gender value="female"/>
-                <birthDate value="1986-02-15"/>
-                <address>
-                    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr">
-                        <valueCoding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
-                            <code value="N"/>
-                            <display value="No"/>
-                        </valueCoding>
-                    </extension>
-                    <use value="home"/>
-                    <line value="3670 Miller Road"/>
-                    <city value="Ann Arbor"/>
-                    <state value="MI"/>
-                    <postalCode value="48103"/>
-                    <country value="US"/>
-                </address>
-            </Patient>
         </resource>
     </entry>
     <entry>
