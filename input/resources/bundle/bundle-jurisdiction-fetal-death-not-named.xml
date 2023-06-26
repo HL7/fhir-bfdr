@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-jurisdiction-fetal-death-not-named"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2023-06-22T06:27:36.377Z"/>
+        <versionId value="29"/>
+        <lastUpdated value="2023-06-23T04:59:15.803Z"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
     </meta>
     <identifier>
@@ -245,39 +245,69 @@
                         </coding>
                     </code>
                     <entry>
-                        <reference value="Observation/observation-edit-birth-weight-babyg-quinn"/>
+                        <reference value="Observation/observation-edit-flag-delivery-wgt-not-named"/>
                         <display value="Observation - Edit flag birthweight"/>
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-edit-flag-estimate-of-gestation-example"/>
+                        <reference value="Observation/observation-edit-flag-est-gestation-not-named"/>
                         <display value="Observation - Edit flag estimate of gestation"/>
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-edit-flag-mothers-date-of-birth-example"/>
+                        <reference value="Observation/observation-edit-flag-mothers-dob-not-named"/>
                         <display value="Observation - Edit flag mother's date of birth"/>
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-edit-flag-mothers-education-example"/>
+                        <reference value="Observation/observation-edit-flag-mothers-education-not-named"/>
                         <display value="Observation - Edit flag mother's education"/>
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-edit-flag-mothers-height-example"/>
+                        <reference value="Observation/observation-edit-flag-mothers-height-not-named"/>
                         <display value="Observation - Edit flag mother's height"/>
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-edit-flag-mothers-prepregnancy-weight-example"/>
+                        <reference value="Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"/>
                         <display value="Observation - Edit flag mother's prepregnancy weight"/>
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-edit-flag-number-previous-cesareans-example"/>
+                        <reference value="Observation/observation-edit-flag-nbr-previous-cesareans-not-named"/>
                         <display value="Observation - Edit flag number previous cesareans"/>
                     </entry>
                     <entry>
-                        <reference value="Observation/observation-edit-flag-plurality-example"/>
+                        <reference value="Observation/observation-edit-flag-plurality-not-named"/>
                         <display value="Observation - Edit flag plurality"/>
                     </entry>
                 </section>
             </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-delivery-wgt-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-delivery-wgt-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PCH1478"/>
+                        <display value="Birth weight Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1380"/>
+                        <display value="Off"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
         </resource>
     </entry>
     <entry>
@@ -321,6 +351,13 @@
                         <postalCode value="48103"/>
                     </valueAddress>
                 </extension>
+                <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr">
+                    <valueCoding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="276507005"/>
+                        <display value="Fetal death (event)"/>
+                    </valueCoding>
+                </extension>
                 <identifier>
                     <use value="usual"/>
                     <type>
@@ -348,36 +385,6 @@
                 </birthDate>
                 <deceasedBoolean value="true"/>
             </Patient>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-plurality-example"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-plurality-example"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1489"/>
-                        <display value="Plurality Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1494"/>
-                        <display value="Queried, and Correct"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
         </resource>
     </entry>
     <entry>
@@ -447,66 +454,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-birth-weight-babyg-quinn"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-birth-weight-babyg-quinn"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PCH1478"/>
-                        <display value="Birth weight Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1380"/>
-                        <display value="Off"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-number-previous-cesareans-example"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-number-previous-cesareans-example"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1488"/>
-                        <display value="Previous Cesarians Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1362"/>
-                        <display value="Edit Passed"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-birth-weight-not-named"/>
         <resource>
             <Observation>
@@ -537,36 +484,6 @@
                     <system value="http://unitsofmeasure.org"/>
                     <code value="g"/>
                 </valueQuantity>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-date-of-birth-example"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-mothers-date-of-birth-example"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1482"/>
-                        <display value="Mothers birthdate Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1362"/>
-                        <display value="Edit Passed"/>
-                    </coding>
-                </valueCodeableConcept>
             </Observation>
         </resource>
     </entry>
@@ -628,36 +545,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-education-example"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-mothers-education-example"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1484"/>
-                        <display value="Mothers education Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1362"/>
-                        <display value="Edit Passed"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-last-menstrual-period-carmen-teresa-lee"/>
         <resource>
             <Observation>
@@ -683,36 +570,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-estimate-of-gestation-example"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-estimate-of-gestation-example"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1481"/>
-                        <display value="Gestation age Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1380"/>
-                        <display value="Off"/>
-                    </coding>
-                </valueCodeableConcept>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://example.org/fhir/Observation/observation-number-births-now-living-carmen-teresa-lee"/>
         <resource>
             <Observation>
@@ -734,36 +591,6 @@
                     <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <valueInteger value="1"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-height-example"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-mothers-height-example"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1485"/>
-                        <display value="Mothers height Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1362"/>
-                        <display value="Edit Passed"/>
-                    </coding>
-                </valueCodeableConcept>
             </Observation>
         </resource>
     </entry>
@@ -813,36 +640,6 @@
                     <display value="Patient - Mother (Carmen Teresa Lee)"/>
                 </subject>
                 <valueInteger value="1"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-prepregnancy-weight-example"/>
-        <resource>
-            <Observation>
-                <id value="observation-edit-flag-mothers-prepregnancy-weight-example"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1486"/>
-                        <display value="Mothers Prepregnancy Weight Edit flag"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </subject>
-                <valueCodeableConcept>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
-                        <code value="PHC1362"/>
-                        <display value="Edit Passed"/>
-                    </coding>
-                </valueCodeableConcept>
             </Observation>
         </resource>
     </entry>
@@ -1066,13 +863,9 @@
                     <text value="Cigarettes smoked per day by Mother--2nd trimester"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
                 </subject>
-                <focus>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </focus>
                 <valueInteger value="1"/>
             </Observation>
         </resource>
@@ -1095,13 +888,9 @@
                     <text value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
                 </subject>
-                <focus>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </focus>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
@@ -1124,13 +913,9 @@
                     <text value="Cigarettes smoked per day by Mother--1st trimester"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
                 </subject>
-                <focus>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </focus>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
@@ -1163,13 +948,9 @@
                     <text value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
                 </code>
                 <subject>
-                    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
                 </subject>
-                <focus>
-                    <reference value="Patient/patient-child-babyg-quinn"/>
-                    <display value="BabyG Quinn"/>
-                </focus>
                 <valueInteger value="0"/>
             </Observation>
         </resource>
@@ -1446,6 +1227,186 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-plurality-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-plurality-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1489"/>
+                        <display value="Plurality Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1494"/>
+                        <display value="Queried, and Correct"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-height-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-mothers-height-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1485"/>
+                        <display value="Mothers height Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1362"/>
+                        <display value="Edit Passed"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-est-gestation-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-est-gestation-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1481"/>
+                        <display value="Gestation age Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1380"/>
+                        <display value="Off"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-education-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-mothers-education-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1484"/>
+                        <display value="Mothers education Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1362"/>
+                        <display value="Edit Passed"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-mothers-prepreg-wgt-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1486"/>
+                        <display value="Mothers Prepregnancy Weight Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1362"/>
+                        <display value="Edit Passed"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://example.org/fhir/Observation/observation-edit-flag-nbr-previous-cesareans-not-named"/>
+        <resource>
+            <Observation>
+                <id value="observation-edit-flag-nbr-previous-cesareans-not-named"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
+                </meta>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1488"/>
+                        <display value="Previous Cesarians Edit flag"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/patient-decedent-fetus-not-named"/>
+                    <display value="Decedent Fetus Not Named"/>
+                </subject>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.114222.4.5.274"/>
+                        <code value="PHC1362"/>
+                        <display value="Edit Passed"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://example.org/fhir/Practitioner/practitioner-vital-records-janet-seito"/>
         <resource>
             <Practitioner>
@@ -1472,97 +1433,6 @@
                     </code>
                 </qualification>
             </Practitioner>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Patient/patient-child-babyg-quinn"/>
-        <resource>
-            <Patient>
-                <id value="patient-child-babyg-quinn"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"/>
-                </meta>
-                <text>
-                    <status value="generated"/>
-                    <div
-                        xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Baby G 
-                            <b>QUINN </b>
-                        </div>
-                        <table class="hapiPropertyTable">
-                            <tbody>
-                                <tr>
-                                    <td>Identifier</td>
-                                    <td>9932702</td>
-                                </tr>
-                                <tr>
-                                    <td>Date of birth</td>
-                                    <td>
-                                        <span>12 February 2019</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </text>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-                    <extension url="ombCategory">
-                        <valueCoding>
-                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                            <code value="2106-3"/>
-                            <display value="White"/>
-                        </valueCoding>
-                    </extension>
-                    <extension url="text">
-                        <valueString value="White"/>
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-                    <extension url="ombCategory">
-                        <valueCoding>
-                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                            <code value="2186-5"/>
-                            <display value="Not Hispanic or Latino"/>
-                        </valueCoding>
-                    </extension>
-                    <extension url="text">
-                        <valueString value="Not Hispanic or Latino"/>
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-                    <valueCode value="F"/>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
-                    <valueAddress>
-                        <city value="Salt Lake City"/>
-                        <district value="Salt Lake"/>
-                        <state value="UT"/>
-                    </valueAddress>
-                </extension>
-                <identifier>
-                    <use value="usual"/>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="MR"/>
-                            <display value="Medical Record Number"/>
-                        </coding>
-                    </type>
-                    <system value="http://hospital.smarthealthit.org"/>
-                    <value value="9932702"/>
-                </identifier>
-                <name>
-                    <family value="Quinn"/>
-                    <given value="Baby"/>
-                    <given value="G"/>
-                </name>
-                <gender value="female"/>
-                <birthDate value="2019-02-12">
-                    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
-                        <valueDateTime value="2019-02-12T13:00:00-07:00"/>
-                    </extension>
-                </birthDate>
-            </Patient>
         </resource>
     </entry>
     <entry>
