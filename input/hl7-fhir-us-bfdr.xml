@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1195"/>
-        <lastUpdated value="2023-06-23T05:00:17.071Z"/>
+        <versionId value="1204"/>
+        <lastUpdated value="2023-06-26T02:31:41.400Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -166,44 +166,6 @@
             <description value="This Bundle profile represents a Birth and Fetal Death Document Bundle. It contains any one of the Birth and Fetal Death Compositions."/>
             <exampleBoolean value="false"/>
             <groupingId value="transport-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-jurisdiction-fetal-death-not-named"/></reference>
-            <name value="Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"/>
-            <description value="Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
-            <groupingId value="fde-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-jurisdiction-live-birth-babyg-quinn"/>
-                <display value="bundle-jurisdiction-live-birth-babyg-quinn"/>
-            </reference>
-            <name value="Bundle - Jurisdiction Live Birth Report - Baby G Quinn"/>
-            <description value="Bundle - Jurisdiction Live Birth Report: Baby G Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
-            <groupingId value="lbe-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-provider-fetal-death-not-named"/></reference>
-            <name value="Bundle - Provider Fetal Death Report - Fetus Not Named"/>
-            <description value="Bundle - Provider Fetal Death Report: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
-            <groupingId value="fde-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-provider-live-birth-babyg-quinn"/></reference>
-            <name value="Bundle - Provider Live Birth - Baby G Quinn"/>
-            <description value="Bundle - Provider Live Birth: Baby G Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
-            <groupingId value="lbe-bundle-composition-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -688,8 +650,8 @@
                 <reference value="Composition/composition-provider-fetal-death-not-named"/>
                 <display value="Provider fetal death report Document"/>
             </reference>
-            <name value="Provider fetal death report Document"/>
-            <description value="Example of Composition-provider-fetal-death-report profile (Not Named)"/>
+            <name value="Composition - Provider Fetal Death Report - Fetus Not Named"/>
+            <description value="Composition - Provider Fetal Death Report: Fetus Not Named"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
             <groupingId value="fde-bundle-composition-test-data"/>
@@ -1541,7 +1503,7 @@
         <resource>
             <reference>
                 <reference value="Patient/patient-decedent-fetus-not-named"/>
-                <display value=" UNK"/>
+                <display value="K"/>
             </reference>
             <name value="Patient - Decedent Fetus - Vital Records - Fetus Not Named"/>
             <description value="Patient - Decedent Fetus - Vital Records: Fetus Not Named"/>
@@ -2340,10 +2302,55 @@
             <reference>
                 <reference value="Observation/observation-edit-flag-delivery-wgt-not-named"/></reference>
             <name value="Observation - Edit Flag Delivery Weight - Fetus Not Named"/>
-            <description value="Observation - Edit Flag Delivery Weight- Fetus Not Named example"/>
+            <description value="Observation - Edit Flag Delivery Weight: Fetus Not Named example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
             <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-mothers-dob-not-named"/></reference>
+            <name value="Observation - Edit Flag Mother's Date of Birth - Fetus Not Named"/>
+            <description value="Observation - Edit Flag Mother's Date of Birth: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-jurisdiction-fetal-death-not-named"/></reference>
+            <name value="Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"/>
+            <description value="Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
+            <groupingId value="fde-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-jurisdiction-live-birth-babyg-quinn"/></reference>
+            <name value="Bundle - Jurisdiction Live Birth Report - Baby G Quinn"/>
+            <description value="Bundle - Jurisdiction Live Birth Report: Baby G Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
+            <groupingId value="lbe-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-provider-fetal-death-not-named"/></reference>
+            <name value="Bundle - Provider Fetal Death Report - Fetus Not Named"/>
+            <description value="Bundle - Provider Fetal Death Report: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
+            <groupingId value="fde-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-provider-live-birth-babyg-quinn"/></reference>
+            <name value="Bundle - Provider Live Birth - Baby G Quinn"/>
+            <description value="Bundle - Provider Live Birth: Baby G Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
+            <groupingId value="lbe-bundle-composition-test-data"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
