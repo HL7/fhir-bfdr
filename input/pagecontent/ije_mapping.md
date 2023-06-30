@@ -151,7 +151,6 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 253 | Name of Facility of Birth | HOSP| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
 | 302 | Facility Mother Moved From (if transferred) | HOSPFROM| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 303 | Facility Infant Transferred To (if transferred w/in 24 hours) | HOSPTO| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
-| 170 | <html>Infections Present--Herpes Simplex (HSV)  <b><i>(RECOMMENDED DELETION EFFECTIVE 2004)</i></b></html> | HSV| [Condition-infection-present-during-pregnancy](StructureDefinition-Condition-infection-present-during-pregnancy.html)| BFDR| 
 | 230 | Congenital Anomalies of the Newborn--Hypospadias | HYPO| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 9 | Date of Birth (Infant)--Day | IDOB_DY| [Patient-child-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr)| VRCPL| 
 | 8 | Date of Birth (Infant)--Month | IDOB_MO| [Patient-child-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr)| VRCPL| 
@@ -321,7 +320,6 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 253 | Mother's Residence Street Address | ADDRESS| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 231 | Place of Delivery Street Address | ADDRESS_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 141 | Maternal Morbidity--Admit to Intensive Care | AINT| [Observation-icu-admission](StructureDefinition-Observation-icu-admission.html)| BFDR| 
-| 156 | Congenital Anomalies of the Fetus--Anencephaly(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | ANEN| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 252 | Mother's Residence Unit or Apartment Number | APTNUMB| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 230 | Place of Delivery Unit or Apartment Number | APTNUMB_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 78 | Attendant | ATTEND| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
@@ -333,13 +331,9 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 5 | Auxiliary State file number | AUXNO| [Extension-fetal-death-local-file-number](StructureDefinition-Extension-fetal-death-local-file-number.html)| BFDR| 
 | 19 | Mother's Birthplace--Country | BPLACEC_CNT| [patient-birthPlace](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/patient-birthPlace)| FHIR| 
 | 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER| [patient-birthPlace](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/patient-birthPlace)| FHIR| 
-| 158 | Congenital Anomalies of the Fetus--Cyanotic congenital heart disease(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | CCHD| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
-| 159 | Congenital Anomalies of the Fetus--Congenital diaphragmatic hernia(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | CDH| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
-| 166 | Congenital Anomalies of the Fetus--Suspected Chromosomal disorder(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | CDIT| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 349 | Date Signed by Certifier--Day | CERTIFIED_DY| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 348 | Date Signed by Certifier--Month | CERTIFIED_MO| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 347 | Date Signed by Certifier--Year | CERTIFIED_YR| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
-| 124 | Infections Present--Chlamydia(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | CHAM| [Condition-infection-present-during-pregnancy](StructureDefinition-Condition-infection-present-during-pregnancy.html)| BFDR| 
 | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
 | 106 | <html>Number of Cigarettes Smoked in <b><i>third trimester (RECOMMENDED CHANGE EFFECTIVE 2004)</i></b></html> | CIGLN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
 | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
@@ -347,7 +341,6 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 234 | Place of Delivery City/Town/Place (literal)  | CITY_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 20 | Residence of Mother--City/Town | CITYC| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 256 | Mother's Residence City/Town/Place (literal)  | CITYTXT| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
-| 163 | Congenital Anomalies of the Fetus--Cleft Lip with or without Cleft Palate(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | CL| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 258 | Mother's Residence Country (literal) | CNTRYTXT| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 233 | Place of Delivery County (literal) | CNTY_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 10 | County of Delivery | CNTYO| [patient-birthPlace](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/patient-birthPlace)| FHIR| 
@@ -383,7 +376,6 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 23 | Residence of Mother--Country | COUNTRYC| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 21 | Residence of Mother--County | COUNTYC| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 255 | Mother's Residence County (literal) | COUNTYTXT| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
-| 164 | Congenital Anomalies of the Fetus--Cleft Palate Alone(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | CP| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 275 | Industry of Father | DAD_IN_T| | ODH| 
 | 271 | Occupation of Father | DAD_OC_T| | ODH| 
 | 266 | Father's Social Security Number | DAD_SSN| [RelatedPerson-father-natural-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr)| VRCPL| 
@@ -400,11 +392,8 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 178 | Date of Registration--Day | DOR_DY| [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html)| BFDR| 
 | 177 | Date of Registration--Month | DOR_MO| [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html)| BFDR| 
 | 176 | Date of Registration--Year | DOR_YR| [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html)| BFDR| 
-| 165 | Congenital Anomalies of the Fetus--Down Syndrome(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | DOWT| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 11 | Place Where Delivery Occurred | DPLACE| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE| [patient-birthPlace](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/patient-birthPlace)| FHIR| 
-| 93 | Mother's Weight at Delivery(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | DWGT| [Observation-mother-delivery-weight-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-delivery-weight-vr)| VRCPL| 
-| 94 | Mother's Weight at Delivery--Edit Flag(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | DWGT_BYPASS| [Observation-edit-flag-mothers-delivery-weight](StructureDefinition-Observation-edit-flag-mothers-delivery-weight.html)| BFDR| 
 | 173 | Risk Factors--Hypertension Eclampsia (added after 2004) | EHYPE| [Condition-eclampsia-hypertension-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-eclampsia-hypertension-vr)| VRCPL| 
 | 147 | Estimated time of fetal death | ETIME| [Observation-estimated-fetal-death-time-point](StructureDefinition-Observation-estimated-fetal-death-time-point.html)| BFDR| 
 | 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS| [Observation-edit-flag-fathers-date-of-birth](StructureDefinition-Observation-edit-flag-fathers-date-of-birth.html)| BFDR| 
@@ -479,7 +468,6 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 7 | Sex | FSEX| [Patient-decedent-fetus-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr)| VRCPL| 
 | 144 | Weight of Fetus--Edit Flag | FW_BYPASS| [Observation-edit-flag-birthweight](StructureDefinition-Observation-edit-flag-birthweight.html)| BFDR| 
 | 143 | Weight of Fetus | FWG| [Observation-birth-weight-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr)| VRCPL| 
-| 161 | Congenital Anomalies of the Fetus--Gastroschisis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | GAST| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 111 | Risk Factors--Gestational Diabetes | GDIAB| [Condition-gestational-diabetes-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr)| VRCPL| 
 | 113 | <html>Risk Factors--Hypertension Gestational  <b><i>(SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004)</i></b></html> | GHYPE| [Condition-gestational-hypertension-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr)| VRCPL| 
 | 88 | Mother's Height--Feet | HFT| [Observation-mother-height-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-height-vr)| VRCPL| 
@@ -489,16 +477,13 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 224 | Name of Delivery Facility | HOSP_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 339 | Facility Mother Moved From (if transferred) | HOSPFROM| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 123 | <html>Infections Present--Herpes Simplex (HSV)  (RECOMMENDED DELETION EFFECTIVE 2004) <b><i>(NCHS DELETED THIS ITEM EFFECTIVE 2011)</i></b></html> | HSV| [Condition-infection-present-during-pregnancy](StructureDefinition-Condition-infection-present-during-pregnancy.html)| BFDR| 
-| 167 | Congenital Anomalies of the Fetus--Hypospadias(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | HYPO| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 208 | Coded initiating cause/condition | ICOD| [Condition-coded-initiating-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition.html)| BFDR| 
 | 117 | <html>Risk Factors--Infertility Treatment  <b>(SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575)</b></html> | INFT| [Procedure-infertility-treatment-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr)| VRCPL| 
 | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART| [Procedure-assisted-fertilization-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr)| VRCPL| 
 | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG| [Procedure-artificial-insemination-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-artificial-insemination-vr)| VRCPL| 
-| 162 | Congenital Anomalies of the Fetus--Limb Reduction Defect(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | LIMB| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 24 | Residence of Mother--Inside City/Town Limits | LIMITS| [Extension-within-city-limits-indicator-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr)| VRCPL| 
 | 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS| [Observation-edit-flag-mothers-date-of-birth](StructureDefinition-Observation-edit-flag-mothers-date-of-birth.html)| BFDR| 
 | 171 | Mother's Reported Age | MAGER| [Extension-reported-parent-age-at-delivery-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr)| VRCPL| 
-| 30 | Mother Married?-- At Conception, at Delivery or any Time in Between(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MARN| [Observation-mother-married-during-pregnancy](StructureDefinition-Observation-mother-married-during-pregnancy.html)| BFDR| 
 | 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT| [patient-birthPlace](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/patient-birthPlace)| FHIR| 
 | 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT| [patient-birthPlace](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/patient-birthPlace)| FHIR| 
 | 16 | Date of Birth (Mother)--Day | MDOB_DY| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
@@ -515,7 +500,6 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 329 | Mother's Hispanic Code for Literal | METHNIC5C| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
 | 330 | Mother's Edited Hispanic Origin Code | METHNICE| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
 | 99 | Date of Last Live Birth--Month | MLLB| [Observation-date-of-last-live-birth](StructureDefinition-Observation-date-of-last-live-birth.html)| BFDR| 
-| 157 | Congenital Anomalies of the Fetus--Meningomyelocele/Spina Bifida(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MNSB| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 273 | Industry of Mother | MOM_IN_T| | ODH| 
 | 269 | Occupation of Mother | MOM_OC_T| | ODH| 
 | 265 | Mother's Social Security Number | MOM_SSN| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
@@ -527,7 +511,6 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 240 | Mother's Legal Middle Name | MOMMNAME| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 246 | Mother's Maiden Surname Suffix | MOMMSUFFIX| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 242 | Mother's Legal Surname Suffix | MOMSUFFIX| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
-| 101 | Date of Last Other Pregnancy Outcome--Month(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MOPO| [Observation-date-of-last-other-pregnancy-outcome](StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html)| BFDR| 
 | 336 | Mother's Race - Specify | MRACE_T| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 39 | Mother's Race--White | MRACE1| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 48 | Mother's Race--Other Asian | MRACE10| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
@@ -569,11 +552,8 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 69 | Mother's Race Tabulation Variable 8E | MRACE8E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 47 | Mother's Race--Vietnamese | MRACE9| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 331 | Mother's Bridged Race - NCHS Code | MRACEBG_C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 137 | Maternal Morbidity--Maternal Transfusion(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | MTR| [Procedure-blood-transfusion](StructureDefinition-Procedure-blood-transfusion.html)| BFDR| 
 | 119 | Risk Factors--Number Previous Cesareans | NPCES| [Observation-number-previous-cesareans-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr)| VRCPL| 
 | 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS| [Observation-edit-flag-number-previous-cesareans](StructureDefinition-Observation-edit-flag-number-previous-cesareans.html)| BFDR| 
-| 86 | Total Number of Prenatal Care Visits(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | NPREV| [Observation-number-prenatal-visits-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-prenatal-visits-vr)| VRCPL| 
-| 87 | Total Number of Prenatal Care Visits--Edit Flag(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | NPREV_BYPASS| [Observation-edit-flag-number-prenatal-care-visits](StructureDefinition-Observation-edit-flag-number-prenatal-care-visits.html)| BFDR| 
 | 209 | Coded other significant causes or conditions- first mentioned | OCOD1| [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html)| BFDR| 
 | 210 | Coded other significant causes or conditions- second mentioned | OCOD2| [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html)| BFDR| 
 | 211 | Coded other significant causes or conditions- third mentioned | OCOD3| [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html)| BFDR| 
@@ -581,21 +561,17 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 213 | Coded other significant causes or conditions- fifth mentioned | OCOD5| [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html)| BFDR| 
 | 214 | Coded other significant causes or conditions- sixth mentioned | OCOD6| [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html)| BFDR| 
 | 215 | Coded other significant causes or conditions- seventh mentioned | OCOD7| [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html)| BFDR| 
-| 160 | Congenital Anomalies of the Fetus--Omphalocele(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | OMPH| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 145 | Obstetric Estimation of Gestation | OWGEST| [Observation-gestational-age-at-delivery-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr)| VRCPL| 
 | 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS| [Observation-edit-flag-estimate-of-gestation](StructureDefinition-Observation-edit-flag-estimate-of-gestation.html)| BFDR| 
 | 118 | Risk Factors--Previous Cesarean | PCES| [Observation-previous-cesarean-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr)| VRCPL| 
 | 110 | Risk Factors--Prepregnancy Diabetes  (NOTE: SEE INSERTED NOTES FOR RISK FACTOR LOCATIONS 490-501 AND 573-575 TO REFLECT 2004 CHANGES) | PDIAB| [Condition-prepregnancy-diabetes-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr)| VRCPL| 
 | 112 | Risk Factors--Hypertension Prepregnancy | PHYPE| [Condition-prepregnancy-hypertension-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr)| VRCPL| 
-| 138 | Maternal Morbidity--Perineal Laceration(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | PLAC| [Condition-perineal-laceration](StructureDefinition-Condition-perineal-laceration.html)| BFDR| 
 | 97 | Previous Live Births Now Dead | PLBD| [Observation-number-births-now-dead-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-dead-vr)| VRCPL| 
 | 96 | Previous Live Births Now Living | PLBL| [Observation-number-births-now-living-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-births-now-living-vr)| VRCPL| 
 | 151 | Plurality | PLUR| [Observation-plurality-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr)| VRCPL| 
 | 155 | Plurality--Edit Flag | PLUR_BYPASS| [Observation-edit-flag-plurality](StructureDefinition-Observation-edit-flag-plurality.html)| BFDR| 
-| 98 | Previous Other Pregnancy Outcomes(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | POPO| [Observation-number-other-pregnancy-outcomes-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-other-pregnancy-outcomes-vr)| VRCPL| 
 | 251 | Mother's Residence Post Directional | POSTDIR| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 229 | Place of Delivery Post Directional | POSTDIR_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
-| 114 | Risk Factors--Previous Preterm Births(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | PPB| [Observation-previous-preterm-birth-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-preterm-birth-vr)| VRCPL| 
 | 248 | Mother's Residence Pre Directional | PREDIR| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 226 | Place of Delivery Pre Directional | PREDIR_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 133 | Method of Delivery--Fetal Presentation | PRES| [Observation-fetal-presentation](StructureDefinition-Observation-fetal-presentation.html)| BFDR| 
@@ -622,14 +598,10 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 247 | Mother's Residence Street number | STNUM| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 225 | Place of Delivery Street number | STNUM_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 222 | Fetus Surname Suffix | SUFFIX| [Patient-decedent-fetus-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr)| VRCPL| 
-| 122 | Infections Present--Syphilis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | SYPH| [Condition-infection-present-during-pregnancy](StructureDefinition-Condition-infection-present-during-pregnancy.html)| BFDR| 
 | 6 | Time of Delivery | TD| [Patient-decedent-fetus-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr)| VRCPL| 
 | 135 | Method of Delivery--Trial of Labor Attempted | TLAB| [Observation-labor-trial-attempted](StructureDefinition-Observation-labor-trial-attempted.html)| BFDR| 
-| 79 | Mother Transferred?(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | TRAN| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
-| 140 | Maternal Morbidity--Unplanned Hysterectomy(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | UHYS| [Procedure-unplanned-hysterectomy](StructureDefinition-Procedure-unplanned-hysterectomy.html)| BFDR| 
 | 95 | Did Mother get WIC Food for Herself? | WIC| [Observation-mother-received-wic-food](StructureDefinition-Observation-mother-received-wic-food.html)| BFDR| 
 | 100 | Date of Last Live Birth--Year | YLLB| [Observation-date-of-last-live-birth](StructureDefinition-Observation-date-of-last-live-birth.html)| BFDR| 
-| 102 | Date of Last Other Pregnancy Outcome--Year(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015) | YOPO| [Observation-date-of-last-other-pregnancy-outcome](StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html)| BFDR| 
 | 254 | Mother's Residence Zip code and Zip+4 | ZIPCODE| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 232 | Place of Delivery Zip code and Zip+4 | ZIPCODE_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 {: .grid }
