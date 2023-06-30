@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-fetal-death-report"/>
     <meta>
-        <versionId value="77"/>
-        <lastUpdated value="2023-06-21T23:25:48.123Z"/>
+        <versionId value="79"/>
+        <lastUpdated value="2023-06-30T04:15:01.948Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
     <name value="CompositionProviderFetalDeathReport"/>
@@ -131,6 +131,11 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"/>
             </type>
+        </element>
+        <element id="Composition.date">
+            <path value="Composition.date"/>
+            <short value="Date report completed"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.author">
             <path value="Composition.author"/>

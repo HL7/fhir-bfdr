@@ -20,18 +20,18 @@ The following package file includes an NPM package file used by many of the FHIR
 * [JSON](examples.json.zip)
 * [TTl](examples.ttl.zip)
 
-#### Cross Version Analysis
+### Cross Version Analysis
 
 {% include cross-version-analysis.xhtml %}
 
-#### Dependency Table
+### Dependency Table
 
 {% include dependency-table.xhtml %}
 
-#### Globals Table
+### Global Profiles Table
 
 {% include globals-table.xhtml %}
 
-#### IP Statements
+### IP Statements
 
 {% include ip-statements.xhtml %}

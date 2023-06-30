@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-bfdr"/>
     <meta>
-        <versionId value="1204"/>
-        <lastUpdated value="2023-06-26T02:31:41.400Z"/>
+        <versionId value="1217"/>
+        <lastUpdated value="2023-06-30T06:50:00.178Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7-fhir-us-bfdr"/>
     <version value="1.1.0"/>
@@ -58,110 +58,123 @@
     </dependsOn>
     <definition>
         <grouping id="live-birth-compositions-ehr-jvr">
-            <name value="Live Birth - EHR to Jurisdictional Vital Records Office Resources"/>
+            <name value="Profiles: Live Birth - EHR to Jurisdictional Vital Records Office"/>
             <description value="Resources that define the information needed for the data flow from the EHR (provider) to the Jurisdictional Vital Records Office for live birth."/>
         </grouping>
         <grouping id="fetal-death-compositions-ehr-jvr">
-            <name value="Fetal Death - EHR to Jurisdictional Vital Records Office Resources"/>
+            <name value="Profiles: Fetal Death - EHR to Jurisdictional Vital Records Office"/>
             <description value="Resources that define the information needed for the data flow from the EHR (provider) to the Jurisdictional Vital Records Office for fetal death."/>
         </grouping>
         <grouping id="live-birth-compositions-jvr-nchs">
-            <name value="Live Birth - Jurisdictional Vital Records Office to National Statistical Agency Resources"/>
+            <name value="Profiles: Live Birth - Jurisdictional Vital Records Office to National Statistical Agency"/>
             <description value="Compositions that define the information needed for the data flow from the Jurisdictional Vital Records Office to the National Statistic Agency for live birth."/>
         </grouping>
         <grouping id="fetal-death-compositions-jvr-nchs">
-            <name value="Fetal Death - Jurisdictional Vital Records Office to National Statistical Agency Resources"/>
+            <name value="Profiles: Fetal Death - Jurisdictional Vital Records Office to National Statistical Agency"/>
             <description value="Compositions that define the information needed for the data flow from the Jurisdictional Vital Records Office to the National Statistic Agency for fetal death."/>
         </grouping>
         <grouping id="nsa-2-jvr">
-            <name value="National Statistical Agency to Jurisdictional Vital Records Office Resources"/>
+            <name value="Profiles: National Statistical Agency to Jurisdictional Vital Records Office"/>
         </grouping>
         <grouping id="encounter-profiles">
-            <name value="Encounter Profiles"/>
+            <name value="Profiles: Encounter"/>
         </grouping>
         <grouping id="newborn-fetus-profiles">
-            <name value="Newborn/Fetus Profiles"/>
+            <name value="Profiles: Newborn/Fetus"/>
         </grouping>
         <grouping id="abnormal-condition-of-the-newborn-profiles">
-            <name value="Abnormal Condition of the Newborn Profiles"/>
+            <name value="Profiles: Abnormal Condition of the Newborn"/>
+        </grouping>
+        <grouping id="profiles-characteristics-of-labor-and-delivery">
+            <name value="Profiles: Characteristics of Labor and Delivery"/>
         </grouping>
         <grouping id="mother-prenatal-profiles">
-            <name value="Mother Prenatal Profiles"/>
+            <name value="Profiles: Mother Prenatal"/>
         </grouping>
         <grouping id="medical-and-health-information-profiles">
-            <name value="Medical and Health Information Profiles"/>
+            <name value="Profiles: Medical and Health Information"/>
         </grouping>
         <grouping id="maternal-morbidity-profiles">
-            <name value="Maternal Morbidity Profiles"/>
+            <name value="Profiles: Maternal Morbidity"/>
         </grouping>
         <grouping id="fetal-death-information-profiles">
-            <name value="Fetal Death Information Profiles"/>
+            <name value="Profiles: Fetal Death Information"/>
         </grouping>
         <grouping id="parent-information-profiles">
-            <name value="Parent Information Profiles"/>
+            <name value="Profiles: Parent Information"/>
         </grouping>
         <grouping id="edit-flag">
-            <name value="Edit Flag Profiles"/>
+            <name value="Profiles: Edit Flag"/>
         </grouping>
         <grouping id="administrative">
-            <name value="Administrative Profiles"/>
+            <name value="Profiles: Administrative"/>
         </grouping>
         <grouping id="transport-profiles">
-            <name value="Transport Profiles"/>
+            <name value="Profiles: Transport"/>
         </grouping>
         <grouping id="lbe-bundle-composition-test-data">
-            <name value="Live Birth Examples: Bundle &amp; Composition Test Data"/>
+            <name value="Examples: Live Birth - Bundle &amp; Composition"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
         <grouping id="lbe-participant-test-data">
-            <name value="Live Birth Examples: Participant Test Data"/>
+            <name value="Examples Live Birth - Participant"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
         <grouping id="lbe-encounter-test-data">
-            <name value="Live Birth Examples: Encounter Test Data"/>
+            <name value="Examples Live Birth - Encounter"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
         <grouping id="lbe-clinical-other-test-data">
-            <name value="Live Birth Examples: Clinical &amp; Other Test Data"/>
+            <name value="Examples: Live Birth - Clinical &amp; Other"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Live Birth Certificate (see Appendix A) and the Example Live Birth Certificate (see Appendix B)."/>
         </grouping>
         <grouping id="lbe-clinical-other-test-data-char-ld">
-            <name value="Live Birth Examples: Clinical &amp; Other Test Data: Characteristics of Labor and Delivery"/>
+            <name value="Examples: Live Birth - Clinical &amp; Other: Characteristics of Labor and Delivery"/>
         </grouping>
         <grouping id="abnormal-condition-of-the-newborn-examples">
-            <name value="Live Birth Examples: Clinical &amp; Other Test Data: Abnormal Condition of the Newborn Examples"/>
+            <name value="Examples: Live Birth - Clinical &amp; Other: Abnormal Condition of the Newborn"/>
         </grouping>
         <grouping id="maternal-morbidity-examples">
-            <name value="Clinical &amp; Other Test Data: Maternal Morbidity Examples"/>
+            <name value="Examples: Clinical &amp; Other - Maternal Morbidity"/>
         </grouping>
         <grouping id="pregnancy-risk-factors">
-            <name value="Clinical &amp; Other Test Data: Pregnancy Risk Factors"/>
+            <name value="Examples: Clinical &amp; Other - Pregnancy Risk Factors"/>
         </grouping>
         <grouping id="fde-bundle-composition-test-data">
-            <name value="Fetal Death Examples: Bundle &amp; Composition Test Data"/>
+            <name value="Examples: Fetal Death - Bundle &amp; Composition"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Report (see Appendix D)."/>
         </grouping>
         <grouping id="fde-participant-test-data">
-            <name value="Fetal Death Examples: Participant Test Data"/>
+            <name value="Examples: Fetal Death - Participant"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Report (see Appendix D)."/>
         </grouping>
         <grouping id="fde-encounter-test-data">
-            <name value="Fetal Death Examples: Encounter Test Data"/>
+            <name value="Examples: Fetal Death - Encounter"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Report (see Appendix D)."/>
         </grouping>
         <grouping id="fde-clinical-other-test-data">
-            <name value="Fetal Death Examples: Clinical &amp; Other Test Data"/>
+            <name value="Examples: Fetal Death - Clinical &amp; Other"/>
             <description value="The examples in this section correspond to the information in the Example Facility Worksheet for the Fetal Death Report (see Appendix C) and the Example Fetal Death Report (see Appendix D)."/>
         </grouping>
         <grouping id="edit-flag-examples">
-            <name value="Edit Flag Examples"/>
+            <name value="Examples: Edit Flag"/>
         </grouping>
         <grouping id="transport-examples">
-            <name value="Transport Examples"/>
+            <name value="Examples: Transport"/>
         </grouping>
         <grouping id="other-examples">
-            <name value="Other Examples"/>
+            <name value="Examples: Other"/>
         </grouping>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-child-babyg-quinn"/>
+                <display value="Baby G Quinn"/>
+            </reference>
+            <name value="Baby G Quinn"/>
+            <description value="Patient - Child - Vital Records: BabyG Quinn example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="lbe-participant-test-data"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/Bundle-document-bfdr"/>
@@ -174,6 +187,42 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Bundle/bundle-jurisdiction-fetal-death-not-named"/></reference>
+            <name value="Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"/>
+            <description value="Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
+            <groupingId value="fde-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-jurisdiction-live-birth-babyg-quinn"/></reference>
+            <name value="Bundle - Jurisdiction Live Birth Report - Baby G Quinn"/>
+            <description value="Bundle - Jurisdiction Live Birth Report: Baby G Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
+            <groupingId value="lbe-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-provider-fetal-death-not-named"/></reference>
+            <name value="Bundle - Provider Fetal Death Report - Fetus Not Named"/>
+            <description value="Bundle - Provider Fetal Death Report: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
+            <groupingId value="fde-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-provider-live-birth-babyg-quinn"/></reference>
+            <name value="Bundle - Provider Live Birth - Baby G Quinn"/>
+            <description value="Bundle - Provider Live Birth: Baby G Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
+            <groupingId value="lbe-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CapabilityStatement/CapabilityStatement-bfdr"/>
                 <display value="CapabilityStatement - Birth and Fetal Death"/>
             </reference>
@@ -183,12 +232,62 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+                <display value="Carmen Teresa Lee"/>
+            </reference>
+            <name value="Carmen Teresa Lee"/>
+            <description value="Patient - Mother - Vital Records: Carmen Teresa Lee example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="fde-participant-test-data"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/cigarette-smoking-before-during-pregnancy"/>
                 <display value="Cigarette Smoking Before and During Pregnancy"/>
             </reference>
             <name value="Cigarette Smoking Before and During Pregnancy"/>
             <description value="This value set contains codes to determine the number of cigarettes smoked in specific periods before and during pregnancy."/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/CodeSystem-replacement-status"/>
+                <display value="CodeSystem - Replacement Status"/>
+            </reference>
+            <name value="CodeSystem - Replacement Status"/>
+            <description value="This CodeSystem contains codes that represent the replacement status of a record submission."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-coded-cause-of-fetal-death"/>
+                <display value="Composition - Coded Cause of Fetal Death"/>
+            </reference>
+            <name value="Composition - Coded Cause of Fetal Death"/>
+            <description value="This Composition profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="nsa-2-jvr"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/composition-coded-cause-of-fetal-death-not-named"/>
+                <display value="Coded Cause of Fetal Death"/>
+            </reference>
+            <name value="Composition - Coded Cause of Fetal Death - Fetus Not Named"/>
+            <description value="Composition - Coded Cause of Fetal Death: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Composition-coded-race-and-ethnicity"/>
+                <display value="Composition - Coded Race and Ethnicity"/>
+            </reference>
+            <name value="Composition - Coded Race and Ethnicity"/>
+            <description value="This Composition profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="nsa-2-jvr"/>
         </resource>
         <resource>
             <reference>
@@ -203,23 +302,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Composition-coded-cause-of-fetal-death"/>
-                <display value="Composition - Coded Cause of Fetal Death"/>
+                <reference value="StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
+                <display value="Composition - Jurisdiction Fetal Death Report"/>
             </reference>
-            <name value="Composition - Coded Cause of Fetal Death"/>
-            <description value="This Composition profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices."/>
+            <name value="Composition - Jurisdiction Fetal Death Report"/>
+            <description value="This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency."/>
             <exampleBoolean value="false"/>
-            <groupingId value="nsa-2-jvr"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Composition-coded-race-and-ethnicity"/>
-                <display value="Composition - Coded Race and Ethnicity"/>
-            </reference>
-            <name value="Composition - Coded Race and Ethnicity"/>
-            <description value="This Composition profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="nsa-2-jvr"/>
+            <groupingId value="fetal-death-compositions-jvr-nchs"/>
         </resource>
         <resource>
             <reference>
@@ -231,16 +320,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
             <groupingId value="fde-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
-                <display value="Composition - Jurisdiction Fetal Death Report"/>
-            </reference>
-            <name value="Composition - Jurisdiction Fetal Death Report"/>
-            <description value="This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="fetal-death-compositions-jvr-nchs"/>
         </resource>
         <resource>
             <reference>
@@ -275,6 +354,17 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Composition/composition-provider-fetal-death-not-named"/>
+                <display value="Provider fetal death report Document"/>
+            </reference>
+            <name value="Composition - Provider Fetal Death Report - Fetus Not Named"/>
+            <description value="Composition - Provider Fetal Death Report: Fetus Not Named"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
+            <groupingId value="fde-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Composition-provider-live-birth-report"/>
                 <display value="Composition - Provider Live Birth Report"/>
             </reference>
@@ -285,14 +375,33 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Composition/composition-coded-cause-of-fetal-death-not-named"/>
-                <display value="Coded Cause of Fetal Death"/>
+                <reference value="Composition/composition-provider-live-birth-babyg-quinn"/>
+                <display value="Provider supplied live birth report Document"/>
             </reference>
-            <name value="Composition - Coded Cause of Fetal Death - Fetus Not Named"/>
-            <description value="Composition - Coded Cause of Fetal Death: Fetus Not Named example"/>
+            <name value="Composition - Provider Live Birth Report - BabyG Quinn"/>
+            <description value="Composition - Provider Live Birth Report: BabyG Quinn example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
-            <groupingId value="other-examples"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
+            <groupingId value="lbe-bundle-composition-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-chorioamnionitis"/>
+                <display value="Condition - Chorioamnionitis"/>
+            </reference>
+            <name value="Condition - Chorioamnionitis"/>
+            <description value="This Condition profile indicates a labor and delivery characteristic of chorioamnionitis."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-characteristics-of-labor-and-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-chorioamnionitis-jada-ann-quinn"/></reference>
+            <name value="Condition - Chorioamnionitis - Jada Ann Quinn"/>
+            <description value="Condition - Chorioamnionitis: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-chorioamnionitis"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
@@ -400,6 +509,33 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Condition/condition-gestational-diabetes-carmen-teresa-lee"/></reference>
+            <name value="Condition - Gestational Diabetes - Carmen Teresa Lee"/>
+            <description value="Condition - Gestational Diabetes: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-gestational-diabetes-jada-ann-quinn"/></reference>
+            <name value="Condition - Gestational Diabetes - Jada Ann Quinn"/>
+            <description value="Condition - Gestational Diabetes: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-gestational-hypertension-jada-ann-quinn"/></reference>
+            <name value="Condition - Gestational Hypertension - Jada Ann Quinn"/>
+            <description value="Condition - Gestational Hypertension: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Condition-infection-present-during-pregnancy"/>
                 <display value="Condition - Infection Present During Pregnancy"/>
             </reference>
@@ -415,6 +551,81 @@
             <description value="Condition - Infection Present During Pregnancy: Jada Ann Quinn example"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-clinical-other-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-perineal-laceration"/>
+                <display value="Condition - Perineal Laceration"/>
+            </reference>
+            <name value="Condition - Perineal Laceration"/>
+            <description value="This Condition profile indicates a maternal morbidity of perineal laceration."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-perineal-laceration-jada-ann-quinn"/></reference>
+            <name value="Condition - Perineal Laceration - Jada Ann Quinn"/>
+            <description value="Condition - Perineal Laceration: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration"/>
+            <groupingId value="maternal-morbidity-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-prepregnancy-diabetes-jada-ann-quinn"/></reference>
+            <name value="Condition - Prepregnancy Diabetes - Jada Ann Quinn"/>
+            <description value="Condition - Prepregnancy Diabetes: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-prepregnancy-hypertension-carmen-teresa-lee"/></reference>
+            <name value="Condition - Prepregnancy Hypertension - Carmen Teresa Lee"/>
+            <description value="Condition - Prepregnancy Hypertension: Carmen Teresa Lee example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-ruptured-uterus"/>
+                <display value="Condition - Ruptured Uterus"/>
+            </reference>
+            <name value="Condition - Ruptured Uterus"/>
+            <description value="This Condition profile indicates a maternal morbidity of ruptured uterus."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-ruptured-uterus-jada-ann-quinn"/></reference>
+            <name value="Condition - Ruptured Uterus - Jada Ann Quinn"/>
+            <description value="Condition - Ruptured Uterus: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Condition-seizure"/>
+                <display value="Condition - Seizure"/>
+            </reference>
+            <name value="Condition - Seizure"/>
+            <description value="This Condition profile indicates the newborn had an abnormal condition of seizure."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/condition-seizure-babyg-quinn"/></reference>
+            <name value="Condition - Seizure - BabyG Quinn"/>
+            <description value="Condition - Seizure: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-seizure"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
         </resource>
         <resource>
             <reference>
@@ -555,6 +766,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Encounter/encounter-birth-babyg-quinn"/></reference>
+            <name value="Encounter - Birth example [Baby G Quinn]"/>
+            <description value="Example of Encounter-birth profile (Baby G Quinn)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
+            <groupingId value="lbe-encounter-test-data"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Encounter-maternity"/>
                 <display value="Encounter - Maternity"/>
             </reference>
@@ -583,15 +803,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Encounter/encounter-birth-babyg-quinn"/></reference>
-            <name value="Encounter - Birth example [Baby G Quinn]"/>
-            <description value="Example of Encounter-birth profile (Baby G Quinn)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"/>
-            <groupingId value="lbe-encounter-test-data"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Extension-date-filed-by-registrar"/>
                 <display value="Extension - Date Filed by Registrar"/>
             </reference>
@@ -609,6 +820,16 @@
             <description value="This Extension profile represents the date received by registrar."/>
             <exampleBoolean value="false"/>
             <groupingId value="administrative"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-encounter-maternity-reference"/>
+                <display value="Extension - Encounter Maternity Reference"/>
+            </reference>
+            <name value="Extension - Encounter Maternity Reference"/>
+            <description value="This Extension profile is a reference to the maternity encounter."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="encounter-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -632,16 +853,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-live-birth-local-file-number"/>
-                <display value="Extension - Live Birth Local File Number"/>
-            </reference>
-            <name value="Extension - Live Birth Local File Number"/>
-            <description value="This Extension profile represents the live birth local file number - this is the &quot;Local File No.&quot; on the US Standard Certificate of Live Birth."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="administrative"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Extension-live-birth-certificate-number"/>
                 <display value="Extension - Live Birth Certificate Number"/>
             </reference>
@@ -652,14 +863,33 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Composition/composition-provider-fetal-death-not-named"/>
-                <display value="Provider fetal death report Document"/>
+                <reference value="StructureDefinition/Extension-live-birth-local-file-number"/>
+                <display value="Extension - Live Birth Local File Number"/>
             </reference>
-            <name value="Composition - Provider Fetal Death Report - Fetus Not Named"/>
-            <description value="Composition - Provider Fetal Death Report: Fetus Not Named"/>
+            <name value="Extension - Live Birth Local File Number"/>
+            <description value="This Extension profile represents the live birth local file number - this is the &quot;Local File No.&quot; on the US Standard Certificate of Live Birth."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
-            <groupingId value="fde-bundle-composition-test-data"/>
+            <groupingId value="administrative"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-replacement-status"/>
+                <display value="Extension - Replacement Status"/>
+            </reference>
+            <name value="Extension - Replacement Status"/>
+            <description value="This Extension profile represents the replacement status of a record."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="administrative"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-mother-jada-ann-quinn"/>
+                <display value="Jada Ann Quinn"/>
+            </reference>
+            <name value="Jada Ann Quinn"/>
+            <description value="Example of Patient-mother profile (Eve Everywoman)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="lbe-participant-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -696,17 +926,55 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Observation-steroids-fetal-lung-maturation"/>
+                <display value="Observation - Administration of Steroids for Fetal Lung Maturation"/>
+            </reference>
+            <name value="Observation - Administration of Steroids for Fetal Lung Maturation"/>
+            <description value="This Observation profile indicates a characteristic of labor of administration of steroids for fetal lung maturation."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-characteristics-of-labor-and-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn"/></reference>
+            <name value="Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn"/>
+            <description value="Observation - Administration of Steroids for Fetal Lung Maturation: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-antibiotics-during-labor"/>
+                <display value="Observation - Antibiotics Administered During Labor"/>
+            </reference>
+            <name value="Observation - Antibiotics Administered During Labor"/>
+            <description value="This Observation profile indicates a characteristic of labor of antibiotics administered during labor."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-characteristics-of-labor-and-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-antibiotics-during-labor-jada-ann-quinn"/></reference>
+            <name value="Observation - Antibiotics Administered During Labor - Jada Ann Quinn"/>
+            <description value="Observation - Antibiotics Administered During Labor: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-during-labor"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-apgar-score-babyg-quinn-1-min"/></reference>
-            <name value="Observation - APGAR Score example [BabyG Quinn: 1 min]"/>
-            <description value="Example of Observation-apgar-score profile (Babyg Quinn: 1 min)"/>
+            <name value="Observation - APGAR Score - BabyG Quinn: 1 min"/>
+            <description value="Observation - APGAR Score: BabyG Quinn: 1 min example"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/observation-apgar-score-babyg-quinn-5-min"/></reference>
-            <name value="Observation - APGAR Score example [BabyG Quinn: 5 min]"/>
-            <description value="Example of Observation-apgar-score profile (Babyg Quinn: 5 min)"/>
+            <name value="Observation - APGAR Score - BabyG Quinn: 5 min"/>
+            <description value="Observation - APGAR Score: BabyG Quinn: 5 min example"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
@@ -721,14 +989,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-autopsy-performed-not-named"/></reference>
-            <name value="Observation - Autopsy Performed example [Fetus Not Named]"/>
-            <description value="Example of Observation-autopsy-performed profile (Fetus Not Named)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="fde-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
                 <display value="ObservationAutopsyHistologicalExamResultsUsed"/>
             </reference>
@@ -739,9 +999,17 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-autopsy-performed-not-named"/></reference>
+            <name value="Observation - Autopsy Performed example [Fetus Not Named]"/>
+            <description value="Example of Observation-autopsy-performed profile (Fetus Not Named)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="fde-clinical-other-test-data"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-birth-weight-babyg-quinn"/></reference>
-            <name value="Observation - Birth Weight example [Baby G Quinn]"/>
-            <description value="Example of observation-birth-weight profile (Baby G Quinn)"/>
+            <name value="Observation - Birth Weight - Baby G Quinn"/>
+            <description value="Observation - Birth Weight: Baby G Quinn example"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
@@ -802,8 +1070,8 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"/></reference>
-            <name value="Observation - Cigarette Smoking Before/During Pregnancy example [3 months prior: Jada Ann Quinn]"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (3 months prior: Jada Ann Quinn)"/>
+            <name value="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: 3 months prior"/>
+            <description value="Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: 3 months prior example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
             <groupingId value="lbe-clinical-other-test-data"/>
@@ -811,8 +1079,8 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn"/></reference>
-            <name value="Observation - Cigarette Smoking Before/During Pregnancy example [first 3 months: Jada Ann Quinn]"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (first 3 months: Jada Ann Quinn)"/>
+            <name value="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: first 3 months"/>
+            <description value="Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: first 3 months example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
             <groupingId value="lbe-clinical-other-test-data"/>
@@ -820,8 +1088,8 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"/></reference>
-            <name value="Observation - Cigarette Smoking Before/During Pregnancy example [last 3 months: Jada Ann Quinn]"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (last 3 months: Jada Ann Quinn)"/>
+            <name value="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: last 3 months"/>
+            <description value="Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: last 3 months example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
             <groupingId value="lbe-clinical-other-test-data"/>
@@ -829,8 +1097,8 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn"/></reference>
-            <name value="Observation - Cigarette Smoking Before/During Pregnancy example [second 3 months: Jada Ann Quinn]"/>
-            <description value="Example of Observation-cigarette-smoking-before-during-pregnancy profile (second 3 months: Jada Ann Quinn)"/>
+            <name value="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: second 3 months"/>
+            <description value="Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: second 3 months example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"/>
             <groupingId value="lbe-clinical-other-test-data"/>
@@ -856,8 +1124,8 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/></reference>
-            <name value="Observation - Date of First Prenatal Care Visit example [Jada Ann Quinn]"/>
-            <description value="Example of Observation-date-of-first-prenatal-care-visit (Jada Ann Quinn)"/>
+            <name value="Observation - Date of First Prenatal Care Visit - Jada Ann Quinn"/>
+            <description value="Observation - Date of First Prenatal Care Visit: Jada Ann Quinn example"/>
             <exampleBoolean value="true"/>
             <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
@@ -920,6 +1188,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-edit-flag-delivery-wgt-not-named"/></reference>
+            <name value="Observation - Edit Flag Delivery Weight - Fetus Not Named"/>
+            <description value="Observation - Edit Flag Delivery Weight: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
                 <display value="ObservationEditFlagEstimateOfGestation"/>
             </reference>
@@ -927,6 +1204,15 @@
             <description value="This Observation profile indicates whether the original estimate of gestation data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-est-gestation-not-named"/></reference>
+            <name value="Observation - Edit Flag Estimated Gestational Age - Decedent Not Named"/>
+            <description value="Observation - Edit Flag Estimated Gestational Age: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
+            <groupingId value="edit-flag-examples"/>
         </resource>
         <resource>
             <reference>
@@ -960,6 +1246,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-edit-flag-mothers-dob-not-named"/></reference>
+            <name value="Observation - Edit Flag Mother's Date of Birth - Fetus Not Named"/>
+            <description value="Observation - Edit Flag Mother's Date of Birth: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-edit-flag-mothers-delivery-weight"/>
                 <display value="Observation - Edit Flag Mother's Delivery Weight"/>
             </reference>
@@ -980,6 +1275,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-edit-flag-mothers-education-not-named"/></reference>
+            <name value="Observation - Edit Flag Mother's Education - Fetus Not Named"/>
+            <description value="Observation - Edit Flag Mother's Education: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-edit-flag-mothers-height"/>
                 <display value="Observation - Edit Flag Mother's Height"/>
             </reference>
@@ -987,6 +1291,15 @@
             <description value="This Observation profile indicates whether the original mother's height data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-mothers-height-not-named"/></reference>
+            <name value="Observation - Edit Flag Mother's Height- Fetus Not Named"/>
+            <description value="Observation - Edit Flag Mother's Height: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
+            <groupingId value="edit-flag-examples"/>
         </resource>
         <resource>
             <reference>
@@ -1000,6 +1313,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"/></reference>
+            <name value="Observation - Edit Flag Mother's Prepregnancy Weight - Decedent Not Named"/>
+            <description value="Observation - Edit Flag Mother's Prepregnancy Weight: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
+            <groupingId value="edit-flag-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
                 <display value="Observation - Edit Flag Number of Previous Cesareans"/>
             </reference>
@@ -1007,6 +1329,15 @@
             <description value="This Observation profile indicates whether the original number of previous cesareans data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-nbr-previous-cesareans-not-named"/></reference>
+            <name value="Observation - Edit Flag Number of Previous Cesareans - Decedent Not Named"/>
+            <description value="Observation - Edit Flag Number of Previous Cesareans: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
+            <groupingId value="edit-flag-examples"/>
         </resource>
         <resource>
             <reference>
@@ -1027,6 +1358,15 @@
             <description value="This Observation profile indicates whether the original plurality data provided passed validation checks."/>
             <exampleBoolean value="false"/>
             <groupingId value="edit-flag"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-edit-flag-plurality-not-named"/></reference>
+            <name value="Observation - Edit Flag Plurality - Fetus Not Named"/>
+            <description value="Observation - Edit Flag Plurality: Fetus Not Named example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
+            <groupingId value="edit-flag-examples"/>
         </resource>
         <resource>
             <reference>
@@ -1100,6 +1440,25 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"/>
             <groupingId value="fde-clinical-other-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-icu-admission"/>
+                <display value="Observation - ICU Admission"/>
+            </reference>
+            <name value="Observation - ICU Admission"/>
+            <description value="This Observation profile indicates that the maternal morbidity of an admission to the ICU was present."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-icu-admission-jada-ann-quinn"/></reference>
+            <name value="Observation - ICU Admission - Jada Ann Quinn"/>
+            <description value="Observation - ICU Admission: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission"/>
+            <groupingId value="maternal-morbidity-examples"/>
         </resource>
         <resource>
             <reference>
@@ -1241,16 +1600,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-mother-received-wic-food"/>
-                <display value="Observation - Mother Recieved WIC Food"/>
-            </reference>
-            <name value="Observation - Mother Recieved WIC Food"/>
-            <description value="This Observation profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="mother-prenatal-profiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/observation-mother-received-wic-food-carmen-teresa-lee"/></reference>
             <name value="Observation - Mother Received WIC Food example [Carmen Teresa Lee]"/>
             <description value="Example of observation-mother-received-wic-food profile (Carmen Teresa Lee)"/>
@@ -1266,6 +1615,92 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"/>
             <groupingId value="lbe-clinical-other-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-mother-received-wic-food"/>
+                <display value="Observation - Mother Recieved WIC Food"/>
+            </reference>
+            <name value="Observation - Mother Recieved WIC Food"/>
+            <description value="This Observation profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="mother-prenatal-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-nicu-admission"/>
+                <display value="Observation - NICU Admission"/>
+            </reference>
+            <name value="Observation - NICU Admission"/>
+            <description value="This Observation profile indicates that the abnormal condition of an admission to the NICU was present."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-nicu-admission-babyg-quinn"/></reference>
+            <name value="Observation - NICU Admission - BabyG Quinn"/>
+            <description value="Observation - NICU Admission: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
+                <display value="Observation - None Of Specified Abnormal Conditions of Newborn"/>
+            </reference>
+            <name value="Observation - None Of Specified Abnormal Conditions of Newborn"/>
+            <description value="This Observation profile indicates that none of the specified abnormal conditions of the newborn were present."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-none-abnormal-conditions-babyg-quinn"/></reference>
+            <name value="Observation - None Of Specified Abnormal Conditions of Newborn - BabyG Quinn"/>
+            <description value="Observation - None Of Specified Abnormal Conditions of Newborn: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery"/>
+                <display value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
+            </reference>
+            <name value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
+            <description value="This Observation profile indicates that none of the specified characteristics of labor and delivery were present."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-characteristics-of-labor-and-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-none-chars-labor-delivery-jada-ann-quinn"/></reference>
+            <name value="Observation - None Of Specified Characteristics of Labor and Delivery - Jada Ann Quinn"/>
+            <description value="Observation - None Of Specified Characteristics of Labor and Delivery: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-none-of-specified-maternal-morbidities"/>
+                <display value="Observation - None Of Specified Maternal Morbidities"/>
+            </reference>
+            <name value="Observation - None Of Specified Maternal Morbidities"/>
+            <description value="This Observation profile indicates that none of the specified maternal morbidities were present."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-none-maternal-morbidities-jada-ann-quinn"/></reference>
+            <name value="Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn"/>
+            <description value="Observation - None Of Specified Maternal Morbidities:- Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-maternal-morbidities"/>
+            <groupingId value="maternal-morbidity-examples"/>
         </resource>
         <resource>
             <reference>
@@ -1459,6 +1894,38 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-race-carmen-teresa-lee"/></reference>
+            <name value="Observation - Race - Carmen Teresa Lee"/>
+            <description value="Observation - Race: Carmen Teresa Lee example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-race-james-quinn"/></reference>
+            <name value="Observation - Race - James Quinn"/>
+            <description value="Observation - Race: James Quinn example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-race-tom-yan-lee"/></reference>
+            <name value="Observation - Race - Tom Yan Lee"/>
+            <description value="Observation - Race: Tom Yan Lee example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-race-jada-ann-quinn"/></reference>
+            <name value="Observation - Race example [Jada Ann Quinn]"/>
+            <description value="Example of Race Observation profile (Jada Ann Quinn)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Observation-ssn-requested-for-child"/>
                 <display value="Observation - Social Security Number Requested For Child"/>
             </reference>
@@ -1478,32 +1945,43 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/observation-tabulated-ethnicity-carmen-teresa-lee"/></reference>
+            <name value="Observation - Tabulated Ethnicity - Carmen Teresa Lee"/>
+            <description value="Observation - Tabulated Ethnicity: Carmen Teresa Lee example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn"/></reference>
+            <name value="Observation - Tabulated Ethnicity - Jada Ann Quinn"/>
+            <description value="Observation - Tabulated Ethnicity: Jada Ann Quinn example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tabulated-ethnicity-james-quinn"/></reference>
+            <name value="Observation - Tabulated Ethnicity - James Quinn"/>
+            <description value="Observation - Tabulated Ethnicity: James Quinn example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-tabulated-ethnicity-tom-yan-lee"/></reference>
+            <name value="Observation - Tabulated Ethnicity - Tom Yan Lee"/>
+            <description value="Observation - Tabulated Ethnicity: Tom Yan Lee example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="other-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/observation-number-previous-cesareans-carmen-teresa-lee"/></reference>
             <name value="Observations - Number Previous Cesareans example [Carmen Teresa Lee]"/>
             <description value="Example of Observation-number-previous-cesareans profile (Carmen Teresa Lee)"/>
             <exampleBoolean value="true"/>
             <groupingId value="fde-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/organization-south-hospital"/>
-                <display value="South Hospital"/>
-            </reference>
-            <name value="South Hospital"/>
-            <description value="Example of us-core-organization profile (South Hospital)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-            <groupingId value="lbe-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/patient-child-babyg-quinn"/>
-                <display value="Baby G Quinn"/>
-            </reference>
-            <name value="Baby G Quinn"/>
-            <description value="Patient - Child - Vital Records: BabyG Quinn example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="lbe-participant-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1514,26 +1992,6 @@
             <description value="Patient - Decedent Fetus - Vital Records: Fetus Not Named"/>
             <exampleBoolean value="true"/>
             <groupingId value="fde-participant-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-                <display value="Carmen Teresa Lee"/>
-            </reference>
-            <name value="Carmen Teresa Lee"/>
-            <description value="Patient - Mother - Vital Records: Carmen Teresa Lee example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="fde-participant-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/patient-mother-jada-ann-quinn"/>
-                <display value="Jada Ann Quinn"/>
-            </reference>
-            <name value="Jada Ann Quinn"/>
-            <description value="Example of Patient-mother profile (Eve Everywoman)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="lbe-participant-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1558,6 +2016,129 @@
             <description value="Example of Practitioner-vital-records profile (Jessica Leung)"/>
             <exampleBoolean value="true"/>
             <groupingId value="fde-participant-test-data"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
+                <display value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
+            </reference>
+            <name value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
+            <description value="This Procedure profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-antibiotic-sepsis-babyg-quinn"/></reference>
+            <name value="Procedure - Antibiotic for Suspected Neonatal Sepsis - BabyG Quinn"/>
+            <description value="Procedure - Antibiotic for Suspected Neonatal Sepsis: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-ventilation-following-babyg-quinn"/></reference>
+            <name value="Procedure - Assissted Ventilation Following Delivery - BabyG Quinn"/>
+            <description value="Procedure - Assissted Ventilation Following Delivery: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-assisted-fertilization-jada-ann-quinn"/></reference>
+            <name value="Procedure - Assisted Fertilization - Jada Ann Quinn"/>
+            <description value="Procedure - Assisted Fertilization: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-assisted-ventilation-following-delivery"/>
+                <display value="Procedure - Assissted Ventilation Following Delivery"/>
+            </reference>
+            <name value="Procedure - Assisted Ventilation Following Delivery"/>
+            <description value="This Procedure profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours"/>
+                <display value="Procedure - Assisted Ventilation More Than Six Hours"/>
+            </reference>
+            <name value="Procedure - Assisted Ventilation More Than Six Hours"/>
+            <description value="This Procedure profile represents an abnormal condition of the newborn of assisted ventilation for more than six hours."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-ventilation-more-6-hours-babyg-quinn"/></reference>
+            <name value="Procedure - Assisted Ventilation More Than Six Hours - BabyG Quinn"/>
+            <description value="Procedure - Assisted Ventilation More Than Six Hours: BabyG Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-augmentation-of-labor"/>
+                <display value="Procedure - Augmentation of Labor"/>
+            </reference>
+            <name value="Procedure - Augmentation of Labor"/>
+            <description value="This Procedure profile indicates a characteristic of labor of augmentation of labor."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-characteristics-of-labor-and-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-augmentation-of-labor-quinn"/></reference>
+            <name value="Procedure - Augmentation of Labor - Jada Ann Quinn"/>
+            <description value="Procedure - Augmentation of Labor: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-augmentation-of-labor"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-blood-transfusion"/>
+                <display value="Procedure - Blood Transfusion"/>
+            </reference>
+            <name value="Procedure - Blood Transfusion"/>
+            <description value="This Procedure profile indicates a maternal morbidity of a blood transfusion."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-blood-transfusion-jada-ann-quinn"/></reference>
+            <name value="Procedure - Blood Transfusion - Jada Ann Quinn"/>
+            <description value="Procedure - Blood Transfusion: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-blood-transfusion"/>
+            <groupingId value="maternal-morbidity-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-epidural-or-spinal-anesthesia"/>
+                <display value="Procedure - Epidural or Spinal Anesthesia"/>
+            </reference>
+            <name value="Procedure - Epidural or Spinal Anesthesia"/>
+            <description value="This Procedure profile indicates a characteristic of labor of epidural or spinal anesthesia."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-characteristics-of-labor-and-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"/></reference>
+            <name value="Procedure - Epidural or Spinal Anesthesia - Jada Ann Quinn"/>
+            <description value="Procedure - Epidural or Spinal Anesthesia: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
         </resource>
         <resource>
             <reference>
@@ -1589,6 +2170,34 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Procedure-induction-of-labor"/>
+                <display value="Procedure - Induction of Labor"/>
+            </reference>
+            <name value="Procedure - Induction of Labor"/>
+            <description value="This Procedure profile indicates a characteristic of labor of induction of labor."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="profiles-characteristics-of-labor-and-delivery"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-induction-of-labor-jada-ann-quinn"/></reference>
+            <name value="Procedure - Induction of Labor - Jada Ann Quinn"/>
+            <description value="Procedure - Induction of Labor: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-induction-of-labor"/>
+            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-infertility-treatment-jada-ann-quinn"/></reference>
+            <name value="Procedure - Infertility Treatment - Jada Ann Quinn"/>
+            <description value="Procedure - Infertility Treatment: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
+            <groupingId value="pregnancy-risk-factors"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Procedure-obstetric"/>
                 <display value="Procedure - Obstetric"/>
             </reference>
@@ -1607,14 +2216,41 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Composition/composition-provider-live-birth-babyg-quinn"/>
-                <display value="Provider supplied live birth report Document"/>
-            </reference>
-            <name value="Provider supplied live birth report Document"/>
-            <description value="Composition - Provider Live Birth Report: BabyG Quinn example"/>
+                <reference value="Procedure/procedure-surfactant-replacement-babyg-quinn"/></reference>
+            <name value="Procedure - Surfactant Replacement - BabyG Quinn"/>
+            <description value="Procedure - Surfactant Replacement: BabyG Quinn example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
-            <groupingId value="lbe-bundle-composition-test-data"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy"/>
+            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-surfactant-replacement-therapy"/>
+                <display value="Procedure - Surfactant Replacement Therapy"/>
+            </reference>
+            <name value="Procedure - Surfactant Replacement Therapy"/>
+            <description value="This Procedure profile represents an abnormal condition of the newborn of surfactant replacement therapy."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Procedure-unplanned-hysterectomy"/>
+                <display value="Procedure - Unplanned Hysterectomy"/>
+            </reference>
+            <name value="Procedure - Unplanned Hysterectomy"/>
+            <description value="This Procedure profile indicates a maternal morbidity of unplanned hysterectomy."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="maternal-morbidity-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/procedure-unplanned-hysterectomy-quinn"/></reference>
+            <name value="Procedure Unplanned Hysterectomy - Jada Ann Quinn"/>
+            <description value="Procedure Unplanned Hysterectomy: Jada Ann Quinn example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-unplanned-hysterectomy"/>
+            <groupingId value="maternal-morbidity-examples"/>
         </resource>
         <resource>
             <reference>
@@ -1654,14 +2290,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-race-jada-ann-quinn"/></reference>
-            <name value="Observation - Race example [Jada Ann Quinn]"/>
-            <description value="Example of Race Observation profile (Jada Ann Quinn)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn"/></reference>
             <name value="RelatedPerson - Father Natural example [James Brandon Quinn]"/>
             <description value="Example of RelatedPerson-father-natural profile (James Brandon Quinn)"/>
@@ -1694,11 +2322,14 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-tabulated-ethnicity-jada-ann-quinn"/></reference>
-            <name value="Observation - Tabulated Ethnicity - Jada Ann Quinn"/>
-            <description value="Observation - Tabulated Ethnicity: Jada Ann Quinn example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
+                <reference value="Organization/organization-south-hospital"/>
+                <display value="South Hospital"/>
+            </reference>
+            <name value="South Hospital"/>
+            <description value="Example of us-core-organization profile (South Hospital)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            <groupingId value="lbe-clinical-other-test-data"/>
         </resource>
         <resource>
             <reference>
@@ -1724,512 +2355,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-race-carmen-teresa-lee"/></reference>
-            <name value="Observation - Race - Carmen Teresa Lee"/>
-            <description value="Observation - Race: Carmen Teresa Lee example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-race-tom-yan-lee"/></reference>
-            <name value="Observation - Race - Tom Yan Lee"/>
-            <description value="Observation - Race: Tom Yan Lee example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-race-james-quinn"/></reference>
-            <name value="Observation - Race - James Quinn"/>
-            <description value="Observation - Race: James Quinn example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-tabulated-ethnicity-carmen-teresa-lee"/></reference>
-            <name value="Observation - Tabulated Ethnicity - Carmen Teresa Lee"/>
-            <description value="Observation - Tabulated Ethnicity: Carmen Teresa Lee example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-tabulated-ethnicity-james-quinn"/></reference>
-            <name value="Observation - Tabulated Ethnicity - James Quinn"/>
-            <description value="Observation - Tabulated Ethnicity: James Quinn example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-tabulated-ethnicity-tom-yan-lee"/></reference>
-            <name value="Observation - Tabulated Ethnicity - Tom Yan Lee"/>
-            <description value="Observation - Tabulated Ethnicity: Tom Yan Lee example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="other-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-seizure"/>
-                <display value="Condition - Seizure"/>
-            </reference>
-            <name value="Condition - Seizure"/>
-            <description value="This Condition profile indicates the newborn had an abnormal condition of seizure."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-perineal-laceration"/>
-                <display value="Condition - Perineal Laceration"/>
-            </reference>
-            <name value="Condition - Perineal Laceration"/>
-            <description value="This Condition profile indicates a maternal morbidity of perineal laceration."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="maternal-morbidity-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-ruptured-uterus"/>
-                <display value="Condition - Ruptured Uterus"/>
-            </reference>
-            <name value="Condition - Ruptured Uterus"/>
-            <description value="This Condition profile indicates a maternal morbidity of ruptured uterus."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="maternal-morbidity-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Condition-chorioamnionitis"/>
-                <display value="Condition - Chorioamnionitis"/>
-            </reference>
-            <name value="Condition - Chorioamnionitis"/>
-            <description value="This Condition profile indicates a labor and delivery characteristic of chorioamnionitis."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-gestational-hypertension-jada-ann-quinn"/></reference>
-            <name value="Condition - Gestational Hypertension - Jada Ann Quinn"/>
-            <description value="Condition - Gestational Hypertension: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-hypertension-vr"/>
-            <groupingId value="lbe-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Parameters/expansion-parameters-bfdr"/></reference>
             <name value="USA SNOMED-CT"/>
             <description value="USA SNOMED-CT"/>
             <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-ruptured-uterus-jada-ann-quinn"/></reference>
-            <name value="Condition - Ruptured Uterus - Jada Ann Quinn"/>
-            <description value="Condition - Ruptured Uterus: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus"/>
-            <groupingId value="lbe-clinical-other-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-assisted-ventilation-following-delivery"/>
-                <display value="Procedure - Assisted Ventilation Following Delivery"/>
-            </reference>
-            <name value="Procedure - Assissted Ventilation Following Delivery"/>
-            <description value="This Procedure profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours"/>
-                <display value="Procedure - Assisted Ventilation More Than Six Hours"/>
-            </reference>
-            <name value="Procedure - Assisted Ventilation More Than Six Hours"/>
-            <description value="This Procedure profile represents an abnormal condition of the newborn of assisted ventilation for more than six hours."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-surfactant-replacement-therapy"/>
-                <display value="Procedure - Surfactant Replacement Therapy"/>
-            </reference>
-            <name value="Procedure - Surfactant Replacement Therapy"/>
-            <description value="This Procedure profile represents an abnormal condition of the newborn of surfactant replacement therapy."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
-                <display value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
-            </reference>
-            <name value="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
-            <description value="This Procedure profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
-                <display value="Observation - None Of Specified Abnormal Conditions of Newborn"/>
-            </reference>
-            <name value="Observation - None Of Specified Abnormal Conditions of Newborn"/>
-            <description value="This Observation profile indicates that none of the specified abnormal conditions of the newborn were present."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-nicu-admission"/>
-                <display value="Observation - NICU Admission"/>
-            </reference>
-            <name value="Observation - NICU Admission"/>
-            <description value="This Observation profile indicates that the abnormal condition of an admission to the NICU was present."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abnormal-condition-of-the-newborn-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-unplanned-hysterectomy"/>
-                <display value="Procedure - Unplanned Hysterectomy"/>
-            </reference>
-            <name value="Procedure - Unplanned Hysterectomy"/>
-            <description value="This Procedure profile indicates a maternal morbidity of unplanned hysterectomy."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="maternal-morbidity-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-induction-of-labor"/>
-                <display value="Procedure - Induction of Labor"/>
-            </reference>
-            <name value="Procedure - Induction of Labor"/>
-            <description value="This Procedure profile indicates a characteristic of labor of induction of labor."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-augmentation-of-labor"/>
-                <display value="Procedure - Augmentation of Labor"/>
-            </reference>
-            <name value="Procedure - Augmentation of Labor"/>
-            <description value="This Procedure profile indicates a characteristic of labor of augmentation of labor."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-epidural-or-spinal-anesthesia"/>
-                <display value="Procedure - Epidural or Spinal Anesthesia"/>
-            </reference>
-            <name value="Procedure - Epidural or Spinal Anesthesia"/>
-            <description value="This Procedure profile indicates a characteristic of labor of epidural or spinal anesthesia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-none-of-specified-maternal-morbidities"/>
-                <display value="Observation - None Of Specified Maternal Morbidities"/>
-            </reference>
-            <name value="Observation - None Of Specified Maternal Morbidities"/>
-            <description value="This Observation profile indicates that none of the specified maternal morbidities were present."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="maternal-morbidity-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery"/>
-                <display value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
-            </reference>
-            <name value="Observation - None Of Specified Characteristics of Labor and Delivery"/>
-            <description value="This Observation profile indicates that none of the specified characteristics of labor and delivery were present."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Procedure-blood-transfusion"/>
-                <display value="Procedure - Blood Transfusion"/>
-            </reference>
-            <name value="Procedure - Blood Transfusion"/>
-            <description value="This Procedure profile indicates a maternal morbidity of a blood transfusion."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="maternal-morbidity-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-steroids-fetal-lung-maturation"/>
-                <display value="Observation - Administration of Steroids for Fetal Lung Maturation"/>
-            </reference>
-            <name value="Observation - Administration of Steroids for Fetal Lung Maturation"/>
-            <description value="This Observation profile indicates a characteristic of labor of administration of steroids for fetal lung maturation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-antibiotics-during-labor"/>
-                <display value="Observation - Antibiotics Administered During Labor"/>
-            </reference>
-            <name value="Observation - Antibiotics Administered During Labor"/>
-            <description value="This Observation profile indicates a characteristic of labor of antibiotics administered during labor."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Observation-icu-admission"/>
-                <display value="Observation - ICU Admission"/>
-            </reference>
-            <name value="Observation - ICU Admission"/>
-            <description value="This Observation profile indicates that the maternal morbidity of an admission to the ICU was present."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="maternal-morbidity-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-antibiotics-during-labor-jada-ann-quinn"/></reference>
-            <name value="Observation - Antibiotics Administered During Labor - Jada Ann Quinn"/>
-            <description value="Observation - Antibiotics Administered During Labor: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-during-labor"/>
-            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-none-chars-labor-delivery-jada-ann-quinn"/></reference>
-            <name value="Observation - None Of Specified Characteristics of Labor and Delivery - Jada Ann Quinn"/>
-            <description value="Observation - None Of Specified Characteristics of Labor and Delivery: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery"/>
-            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn"/></reference>
-            <name value="Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn"/>
-            <description value="Observation - Administration of Steroids for Fetal Lung Maturation: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation"/>
-            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-induction-of-labor-jada-ann-quinn"/></reference>
-            <name value="Procedure - Induction of Labor - Jada Ann Quinn"/>
-            <description value="Procedure - Induction of Labor: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-induction-of-labor"/>
-            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"/></reference>
-            <name value="Procedure - Epidural or Spinal Anesthesia - Jada Ann Quinn"/>
-            <description value="Procedure - Epidural or Spinal Anesthesia: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia"/>
-            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-chorioamnionitis-jada-ann-quinn"/></reference>
-            <name value="Condition - Chorioamnionitis - Jada Ann Quinn"/>
-            <description value="Condition - Chorioamnionitis: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-chorioamnionitis"/>
-            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-encounter-maternity-reference"/>
-                <display value="Extension - Encounter Maternity Reference"/>
-            </reference>
-            <name value="Extension - Encounter Maternity Reference"/>
-            <description value="This Extension profile is a reference to the maternity encounter."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-surfactant-replacement-babyg-quinn"/></reference>
-            <name value="Procedure - Surfactant Replacement - BabyG Quinn"/>
-            <description value="Procedure - Surfactant Replacement: BabyG Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy"/>
-            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-blood-transfusion-jada-ann-quinn"/></reference>
-            <name value="Procedure - Blood Transfusion - Jada Ann Quinn"/>
-            <description value="Procedure - Blood Transfusion: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-blood-transfusion"/>
-            <groupingId value="maternal-morbidity-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-unplanned-hysterectomy-quinn"/></reference>
-            <name value="Procedure Unplanned Hysterectomy - Jada Ann Quinn"/>
-            <description value="Procedure Unplanned Hysterectomy: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-unplanned-hysterectomy"/>
-            <groupingId value="maternal-morbidity-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-augmentation-of-labor-quinn"/></reference>
-            <name value="Procedure - Augmentation of Labor - Jada Ann Quinn"/>
-            <description value="Procedure - Augmentation of Labor: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-augmentation-of-labor"/>
-            <groupingId value="lbe-clinical-other-test-data-char-ld"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-ventilation-more-6-hours-babyg-quinn"/></reference>
-            <name value="Procedure - Assisted Ventilation More Than Six Hours - BabyG Quinn"/>
-            <description value="Procedure - Assisted Ventilation More Than Six Hours: BabyG Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours"/>
-            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-ventilation-following-babyg-quinn"/></reference>
-            <name value="Procedure - Assissted Ventilation Following Delivery - BabyG Quinn"/>
-            <description value="Procedure - Assissted Ventilation Following Delivery: BabyG Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery"/>
-            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-antibiotic-sepsis-babyg-quinn"/></reference>
-            <name value="Procedure - Antibiotic for Suspected Neonatal Sepsis - BabyG Quinn"/>
-            <description value="Procedure - Antibiotic for Suspected Neonatal Sepsis: BabyG Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis"/>
-            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-none-maternal-morbidities-jada-ann-quinn"/></reference>
-            <name value="Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn"/>
-            <description value="Observation - None Of Specified Maternal Morbidities:- Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-maternal-morbidities"/>
-            <groupingId value="maternal-morbidity-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-none-abnormal-conditions-babyg-quinn"/></reference>
-            <name value="Observation - None Of Specified Abnormal Conditions of Newborn - BabyG Quinn"/>
-            <description value="Observation - None Of Specified Abnormal Conditions of Newborn: BabyG Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
-            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-nicu-admission-babyg-quinn"/></reference>
-            <name value="Observation - NICU Admission - BabyG Quinn"/>
-            <description value="Observation - NICU Admission: BabyG Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission"/>
-            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-icu-admission-jada-ann-quinn"/></reference>
-            <name value="Observation - ICU Admission - Jada Ann Quinn"/>
-            <description value="Observation - ICU Admission: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission"/>
-            <groupingId value="maternal-morbidity-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-seizure-babyg-quinn"/></reference>
-            <name value="Condition - Seizure - BabyG Quinn"/>
-            <description value="Condition - Seizure: BabyG Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-seizure"/>
-            <groupingId value="abnormal-condition-of-the-newborn-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-perineal-laceration-jada-ann-quinn"/></reference>
-            <name value="Condition - Perineal Laceration - Jada Ann Quinn"/>
-            <description value="Condition - Perineal Laceration: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration"/>
-            <groupingId value="maternal-morbidity-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-prepregnancy-hypertension-carmen-teresa-lee"/></reference>
-            <name value="Condition - Prepregnancy Hypertension - Carmen Teresa Lee"/>
-            <description value="Condition - Prepregnancy Hypertension: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-hypertension-vr"/>
-            <groupingId value="pregnancy-risk-factors"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-gestational-diabetes-carmen-teresa-lee"/></reference>
-            <name value="Condition - Gestational Diabetes - Carmen Teresa Lee"/>
-            <description value="Condition - Gestational Diabetes: Carmen Teresa Lee example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
-            <groupingId value="pregnancy-risk-factors"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-gestational-diabetes-jada-ann-quinn"/></reference>
-            <name value="Condition - Gestational Diabetes - Jada Ann Quinn"/>
-            <description value="Condition - Gestational Diabetes: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr"/>
-            <groupingId value="pregnancy-risk-factors"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-assisted-fertilization-jada-ann-quinn"/></reference>
-            <name value="Procedure - Assisted Fertilization - Jada Ann Quinn"/>
-            <description value="Procedure - Assisted Fertilization: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-assisted-fertilization-vr"/>
-            <groupingId value="pregnancy-risk-factors"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/procedure-infertility-treatment-jada-ann-quinn"/></reference>
-            <name value="Procedure - Infertility Treatment - Jada Ann Quinn"/>
-            <description value="Procedure - Infertility Treatment: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Procedure-infertility-treatment-vr"/>
-            <groupingId value="pregnancy-risk-factors"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Extension-replacement-status"/>
-                <display value="Extension - Replacement Status"/>
-            </reference>
-            <name value="Extension - Replacement Status"/>
-            <description value="This Extension profile represents the replacement status of a record."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/CodeSystem-replacement-status"/>
-                <display value="CodeSystem - Replacement Status"/>
-            </reference>
-            <name value="CodeSystem - Replacement Status"/>
-            <description value="This CodeSystem contains codes that represent the replacement status of a record submission."/>
-            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
@@ -2239,123 +2368,6 @@
             <name value="ValueSet - Replacement Status"/>
             <description value="This ValueSet contains codes that represent the replacement status of a record submission."/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/condition-prepregnancy-diabetes-jada-ann-quinn"/></reference>
-            <name value="Condition - Prepregnancy Diabetes - Jada Ann Quinn"/>
-            <description value="Condition - Prepregnancy Diabetes: Jada Ann Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-prepregnancy-diabetes-vr"/>
-            <groupingId value="pregnancy-risk-factors"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-edit-flag-plurality-not-named"/></reference>
-            <name value="Observation - Edit Flag Plurality - Fetus Not Named"/>
-            <description value="Observation - Edit Flag Plurality: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-plurality"/>
-            <groupingId value="edit-flag-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-edit-flag-mothers-height-not-named"/></reference>
-            <name value="Observation - Edit Flag Mother's Height- Fetus Not Named"/>
-            <description value="Observation - Edit Flag Mother's Height: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-height"/>
-            <groupingId value="edit-flag-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-edit-flag-est-gestation-not-named"/></reference>
-            <name value="Observation - Edit Flag Estimated Gestational Age - Decedent Not Named"/>
-            <description value="Observation - Edit Flag Estimated Gestational Age: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-estimate-of-gestation"/>
-            <groupingId value="edit-flag-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-edit-flag-mothers-education-not-named"/></reference>
-            <name value="Observation - Edit Flag Mother's Education - Fetus Not Named"/>
-            <description value="Observation - Edit Flag Mother's Education: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-education"/>
-            <groupingId value="edit-flag-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"/></reference>
-            <name value="Observation - Edit Flag Mother's Prepregnancy Weight - Decedent Not Named"/>
-            <description value="Observation - Edit Flag Mother's Prepregnancy Weight: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight"/>
-            <groupingId value="edit-flag-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-edit-flag-nbr-previous-cesareans-not-named"/></reference>
-            <name value="Observation - Edit Flag Number of Previous Cesareans - Decedent Not Named"/>
-            <description value="Observation - Edit Flag Number of Previous Cesareans: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-number-previous-cesareans"/>
-            <groupingId value="edit-flag-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-edit-flag-delivery-wgt-not-named"/></reference>
-            <name value="Observation - Edit Flag Delivery Weight - Fetus Not Named"/>
-            <description value="Observation - Edit Flag Delivery Weight: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-birthweight"/>
-            <groupingId value="edit-flag-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-edit-flag-mothers-dob-not-named"/></reference>
-            <name value="Observation - Edit Flag Mother's Date of Birth - Fetus Not Named"/>
-            <description value="Observation - Edit Flag Mother's Date of Birth: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-edit-flag-mothers-date-of-birth"/>
-            <groupingId value="edit-flag-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-jurisdiction-fetal-death-not-named"/></reference>
-            <name value="Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"/>
-            <description value="Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
-            <groupingId value="fde-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-jurisdiction-live-birth-babyg-quinn"/></reference>
-            <name value="Bundle - Jurisdiction Live Birth Report - Baby G Quinn"/>
-            <description value="Bundle - Jurisdiction Live Birth Report: Baby G Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
-            <groupingId value="lbe-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-provider-fetal-death-not-named"/></reference>
-            <name value="Bundle - Provider Fetal Death Report - Fetus Not Named"/>
-            <description value="Bundle - Provider Fetal Death Report: Fetus Not Named example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
-            <groupingId value="fde-bundle-composition-test-data"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/bundle-provider-live-birth-babyg-quinn"/></reference>
-            <name value="Bundle - Provider Live Birth - Baby G Quinn"/>
-            <description value="Bundle - Provider Live Birth: Baby G Quinn example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
-            <groupingId value="lbe-bundle-composition-test-data"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -2379,6 +2391,11 @@
             <page>
                 <nameUrl value="ije_mapping.html"/>
                 <title value="IJE Mapping"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="vital_records_forms_mapping.html"/>
+                <title value="Vital Records Forms Mapping"/>
                 <generation value="markdown"/>
             </page>
             <page>
