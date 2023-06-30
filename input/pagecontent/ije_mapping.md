@@ -89,7 +89,7 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 78 | Father's Education | FEDUC| [Observation-parent-education-level-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr)| VRCPL| 
 | 79 | Father's Education--Edit Flag | FEDUC_BYPASS| [Observation-edit-flag-fathers-education](StructureDefinition-Observation-edit-flag-fathers-education.html)| BFDR| 
 | 300 | Father's Hispanic Origin - Specify | FETHNIC_T| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
-| 80 | Father of Hispanic Origin?--Mexican | FETHNIC1| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 80 | Father of Hispanic Origin?--Mexican | FETHNIC1| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
 | 81 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2| [us-core-ethnicity](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/us-core-ethnicity)| VRCPL| 
 | 82 | Father of Hispanic Origin?--Cuban | FETHNIC3| [us-core-ethnicity](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/us-core-ethnicity)| VRCPL| 
 | 83 | Father of Hispanic Origin?--Other | FETHNIC4| [us-core-ethnicity](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/us-core-ethnicity)| VRCPL| 
@@ -99,45 +99,45 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 3 | Certificate Number | FILENO| [Extension-live-birth-certificate-number](StructureDefinition-Extension-live-birth-certificate-number.html)| BFDR| 
 | 12 | Facility ID (NPI) - if available | FNPI| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
 | 301 | Father's Race - Specify | FRACE_T| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 85 | Father's Race--White | FRACE1| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 94 | Father's Race--Other Asian | FRACE10| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 95 | Father's Race--Native Hawaiian | FRACE11| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 96 | Father's Race--Guamanian or Chamorro | FRACE12| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 97 | Father's Race--Samoan | FRACE13| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 98 | Father's Race--Other Pacific Islander | FRACE14| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 99 | Father's Race--Other | FRACE15| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 100 | Father's Race--First American Indian or Alaska Native Literal | FRACE16| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 85 | Father's Race--White | FRACE1| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 94 | Father's Race--Other Asian | FRACE10| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 95 | Father's Race--Native Hawaiian | FRACE11| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 96 | Father's Race--Guamanian or Chamorro | FRACE12| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 97 | Father's Race--Samoan | FRACE13| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 98 | Father's Race--Other Pacific Islander | FRACE14| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 99 | Father's Race--Other | FRACE15| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 100 | Father's Race--First American Indian or Alaska Native Literal | FRACE16| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 116 | Father's Race Tabulation Variable 16C | FRACE16C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 101 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 101 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 117 | Father's Race Tabulation Variable 17C | FRACE17C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 102 | Father's Race--First Other Asian Literal | FRACE18| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 102 | Father's Race--First Other Asian Literal | FRACE18| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 118 | Father's Race Tabulation Variable 18C | FRACE18C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 103 | Father's Race--Second Other Asian Literal | FRACE19| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 103 | Father's Race--Second Other Asian Literal | FRACE19| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 119 | Father's Race Tabulation Variable 19C | FRACE19C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 108 | Father's Race Tabulation Variable 1E | FRACE1E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 86 | Father's Race--Black or African American | FRACE2| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 104 | Father's Race--First Other Pacific Islander Literal | FRACE20| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 86 | Father's Race--Black or African American | FRACE2| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 104 | Father's Race--First Other Pacific Islander Literal | FRACE20| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 120 | Father's Race Tabulation Variable 20C | FRACE20C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 105 | Father's Race--Second Other Pacific Islander Literal | FRACE21| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 105 | Father's Race--Second Other Pacific Islander Literal | FRACE21| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 121 | Father's Race Tabulation Variable 21C | FRACE21C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 106 | Father's Race--First Other Literal | FRACE22| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 106 | Father's Race--First Other Literal | FRACE22| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 122 | Father's Race Tabulation Variable 22C | FRACE22C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 107 | Father's Race--Second Other Literal | FRACE23| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 107 | Father's Race--Second Other Literal | FRACE23| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 123 | Father's Race Tabulation Variable 23C | FRACE23C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 109 | Father's Race Tabulation Variable 2E | FRACE2E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 87 | Father's Race--American Indian or Alaska Native | FRACE3| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 87 | Father's Race--American Indian or Alaska Native | FRACE3| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 110 | Father's Race Tabulation Variable 3E | FRACE3E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 88 | Father's Race--Asian Indian | FRACE4| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 88 | Father's Race--Asian Indian | FRACE4| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 111 | Father's Race Tabulation Variable 4E | FRACE4E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 89 | Father's Race--Chinese | FRACE5| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 89 | Father's Race--Chinese | FRACE5| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 112 | Father's Race Tabulation Variable 5E | FRACE5E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 90 | Father's Race--Filipino | FRACE6| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 90 | Father's Race--Filipino | FRACE6| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 113 | Father's Race Tabulation Variable 6E | FRACE6E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 91 | Father's Race--Japanese | FRACE7| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 91 | Father's Race--Japanese | FRACE7| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 114 | Father's Race Tabulation Variable 7E | FRACE7E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 92 | Father's Race--Korean | FRACE8| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 92 | Father's Race--Korean | FRACE8| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 115 | Father's Race Tabulation Variable 8E | FRACE8E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 93 | Father's Race--Vietnamese | FRACE9| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 93 | Father's Race--Vietnamese | FRACE9| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 297 | Father's Bridged Race - NCHS Code | FRACEBG_C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 224 | Congenital Anomalies of the Newborn--Gastroschisis | GAST| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 158 | Risk Factors--Gestational Diabetes | GDIAB| [Condition-gestational-diabetes-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Condition-gestational-diabetes-vr)| VRCPL| 
@@ -194,11 +194,11 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 32 | Mother's Education | MEDUC| [Observation-parent-education-level-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr)| VRCPL| 
 | 33 | Mother's Education--Edit Flag | MEDUC_BYPASS| [Observation-edit-flag-mothers-education](StructureDefinition-Observation-edit-flag-mothers-education.html)| BFDR| 
 | 298 | Mother's Hispanic Origin - Specify | METHNIC_T| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
-| 34 | Mother of Hispanic Origin?--Mexican | METHNIC1| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
-| 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
-| 36 | Mother of Hispanic Origin?--Cuban | METHNIC3| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
-| 37 | Mother of Hispanic Origin?--Other | METHNIC4| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
-| 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 34 | Mother of Hispanic Origin?--Mexican | METHNIC1| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 36 | Mother of Hispanic Origin?--Cuban | METHNIC3| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 37 | Mother of Hispanic Origin?--Other | METHNIC4| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
 | 292 | Mother's Hispanic Code for Literal | METHNIC5C| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
 | 293 | Mother's Edited Hispanic Origin Code | METHNICE| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
 | 145 | Date of Last Live Birth--Month | MLLB| [Observation-date-of-last-live-birth](StructureDefinition-Observation-date-of-last-live-birth.html)| BFDR| 
@@ -217,45 +217,45 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 257 | Mother's Surname Suffix  | MOMSUFFX| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
 | 147 | Date of Last Other Pregnancy Outcome--Month | MOPO| [Observation-date-of-last-other-pregnancy-outcome](StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html)| BFDR| 
 | 299 | Mother's Race - Specify | MRACE_T| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 39 | Mother's Race--White | MRACE1| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 48 | Mother's Race--Other Asian | MRACE10| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 49 | Mother's Race--Native Hawaiian | MRACE11| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 50 | Mother's Race--Guamanian or Chamorro | MRACE12| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 51 | Mother's Race--Samoan | MRACE13| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 52 | Mother's Race--Other Pacific Islander | MRACE14| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 53 | Mother's Race--Other | MRACE15| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 39 | Mother's Race--White | MRACE1| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 48 | Mother's Race--Other Asian | MRACE10| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 49 | Mother's Race--Native Hawaiian | MRACE11| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 50 | Mother's Race--Guamanian or Chamorro | MRACE12| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 51 | Mother's Race--Samoan | MRACE13| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 52 | Mother's Race--Other Pacific Islander | MRACE14| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 53 | Mother's Race--Other | MRACE15| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 70 | Mother's Race Tabulation Variable 16C | MRACE16C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 71 | Mother's Race Tabulation Variable 17C | MRACE17C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 56 | Mother's Race--First Other Asian Literal | MRACE18| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 56 | Mother's Race--First Other Asian Literal | MRACE18| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 72 | Mother's Race Tabulation Variable 18C | MRACE18C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 57 | Mother's Race--Second Other Asian Literal | MRACE19| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 57 | Mother's Race--Second Other Asian Literal | MRACE19| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 73 | Mother's Race Tabulation Variable 19C | MRACE19C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 62 | Mother's Race Tabulation Variable 1E | MRACE1E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 40 | Mother's Race--Black or African American | MRACE2| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 40 | Mother's Race--Black or African American | MRACE2| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 74 | Mother's Race Tabulation Variable 20C | MRACE20C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 75 | Mother's Race Tabulation Variable 21C | MRACE21C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 60 | Mother's Race--First Other Literal | MRACE22| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 60 | Mother's Race--First Other Literal | MRACE22| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 76 | Mother's Race Tabulation Variable 22C | MRACE22C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 61 | Mother's Race--Second Other Literal | MRACE23| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 61 | Mother's Race--Second Other Literal | MRACE23| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 77 | Mother's Race Tabulation Variable 23C | MRACE23C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 63 | Mother's Race Tabulation Variable 2E | MRACE2E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 41 | Mother's Race--American Indian or Alaska Native | MRACE3| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 41 | Mother's Race--American Indian or Alaska Native | MRACE3| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 64 | Mother's Race Tabulation Variable 3E | MRACE3E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 42 | Mother's Race--Asian Indian | MRACE4| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 42 | Mother's Race--Asian Indian | MRACE4| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 65 | Mother's Race Tabulation Variable 4E | MRACE4E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 43 | Mother's Race--Chinese | MRACE5| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 43 | Mother's Race--Chinese | MRACE5| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 66 | Mother's Race Tabulation Variable 5E | MRACE5E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 44 | Mother's Race--Filipino | MRACE6| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 44 | Mother's Race--Filipino | MRACE6| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 67 | Mother's Race Tabulation Variable 6E | MRACE6E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 45 | Mother's Race--Japanese | MRACE7| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 45 | Mother's Race--Japanese | MRACE7| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 68 | Mother's Race Tabulation Variable 7E | MRACE7E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 46 | Mother's Race--Korean | MRACE8| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 46 | Mother's Race--Korean | MRACE8| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 69 | Mother's Race Tabulation Variable 8E | MRACE8E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 47 | Mother's Race--Vietnamese | MRACE9| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 47 | Mother's Race--Vietnamese | MRACE9| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 294 | Mother's Bridged Race - NCHS Code | MRACEBG_C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 195 | Maternal Morbidity--Maternal Transfusion | MTR| [Procedure-blood-transfusion](StructureDefinition-Procedure-blood-transfusion.html)| BFDR| 
 | 214 | Abnormal Conditions of the Newborn--Admission to NICU | NICU| [Observation-nicu-admission](StructureDefinition-Observation-nicu-admission.html)| BFDR| 
@@ -313,6 +313,7 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 146 | Date of Last Live Birth--Year | YLLB| [Observation-date-of-last-live-birth](StructureDefinition-Observation-date-of-last-live-birth.html)| BFDR| 
 | 148 | Date of Last Other Pregnancy Outcome--Year | YOPO| [Observation-date-of-last-other-pregnancy-outcome](StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html)| BFDR| 
 | 269 | Mother's Residence Zip Code and Zip+4 | ZIPCODE| [Patient-mother-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr)| VRCPL| 
+{: .grid }
 ### Fetal Death IJE Mapping
 
 | **IJE Field#** |  **Description**   |  **IJE Name**  | **Profile**  | **Location** |
@@ -413,11 +414,11 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 284 | Father's Education--Edit Flag | FEDUC_BYPASS| [Observation-edit-flag-fathers-education](StructureDefinition-Observation-edit-flag-fathers-education.html)| BFDR| 
 | 219 | Fetus First Name | FETFNAME| [Patient-decedent-fetus-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr)| VRCPL| 
 | 337 | Father's Hispanic Origin - Specify | FETHNIC_T| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
-| 285 | Father of Hispanic Origin?--Mexican | FETHNIC1| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
-| 286 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
-| 287 | Father of Hispanic Origin?--Cuban | FETHNIC3| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
-| 288 | Father of Hispanic Origin?--Other | FETHNIC4| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
-| 289 | Father of Hispanic Origin?--Other Literal | FETHNIC5| [us-core-ethnicity](http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 285 | Father of Hispanic Origin?--Mexican | FETHNIC1| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 286 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 287 | Father of Hispanic Origin?--Cuban | FETHNIC3| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 288 | Father of Hispanic Origin?--Other | FETHNIC4| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
+| 289 | Father of Hispanic Origin?--Other Literal | FETHNIC5| [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-ethnicity)| US CORE| 
 | 332 | Father's Hispanic Code for Literal | FETHNIC5C| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
 | 333 | Father's Edited Hispanic Origin Code | FETHNICE| [Observation-tabulated-ethnicity-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-tabulated-ethnicity-vr)| VRCPL| 
 | 221 | Fetus Last Name | FETLNAME| [Patient-decedent-fetus-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr)| VRCPL| 
@@ -425,45 +426,45 @@ Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdicti
 | 3 | Certificate Number | FILENO| [Extension-fetal-death-report-number](StructureDefinition-Extension-fetal-death-report-number.html)| BFDR| 
 | 12 | Facility ID (NPI) - If available | FNPI| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
 | 338 | Father's Race - Specify | FRACE_T| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 290 | Father's Race--White | FRACE1| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 299 | Father's Race--Other Asian | FRACE10| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 300 | Father's Race--Native Hawaiian | FRACE11| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 301 | Father's Race--Guamanian or Chamorro | FRACE12| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 302 | Father's Race--Samoan | FRACE13| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 303 | Father's Race--Other Pacific Islander | FRACE14| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 304 | Father's Race--Other | FRACE15| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 305 | Father's Race--First American Indian or Alaska Native Literal | FRACE16| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 290 | Father's Race--White | FRACE1| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 299 | Father's Race--Other Asian | FRACE10| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 300 | Father's Race--Native Hawaiian | FRACE11| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 301 | Father's Race--Guamanian or Chamorro | FRACE12| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 302 | Father's Race--Samoan | FRACE13| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 303 | Father's Race--Other Pacific Islander | FRACE14| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 304 | Father's Race--Other | FRACE15| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 305 | Father's Race--First American Indian or Alaska Native Literal | FRACE16| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 321 | Father's Race Tabulation Variable 16C | FRACE16C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 306 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 306 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 322 | Father's Race Tabulation Variable 17C | FRACE17C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 307 | Father's Race--First Other Asian Literal | FRACE18| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 307 | Father's Race--First Other Asian Literal | FRACE18| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 323 | Father's Race Tabulation Variable 18C | FRACE18C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 308 | Father's Race--Second Other Asian Literal | FRACE19| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 308 | Father's Race--Second Other Asian Literal | FRACE19| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 324 | Father's Race Tabulation Variable 19C | FRACE19C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 313 | Father's Race Tabulation Variable 1E | FRACE1E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 291 | Father's Race--Black or African American | FRACE2| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
-| 309 | Father's Race--First Other Pacific Islander Literal | FRACE20| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 291 | Father's Race--Black or African American | FRACE2| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
+| 309 | Father's Race--First Other Pacific Islander Literal | FRACE20| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 325 | Father's Race Tabulation Variable 20C | FRACE20C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 310 | Father's Race--Second Other Pacific Islander Literal | FRACE21| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 310 | Father's Race--Second Other Pacific Islander Literal | FRACE21| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 326 | Father's Race Tabulation Variable 21C | FRACE21C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 311 | Father's Race--First Other Literal | FRACE22| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 311 | Father's Race--First Other Literal | FRACE22| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 327 | Father's Race Tabulation Variable 22C | FRACE22C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 312 | Father's Race--Second Other Literal | FRACE23| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 312 | Father's Race--Second Other Literal | FRACE23| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 328 | Father's Race Tabulation Variable 23C | FRACE23C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 314 | Father's Race Tabulation Variable 2E | FRACE2E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 292 | Father's Race--American Indian or Alaska Native | FRACE3| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 292 | Father's Race--American Indian or Alaska Native | FRACE3| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 315 | Father's Race Tabulation Variable 3E | FRACE3E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 293 | Father's Race--Asian Indian | FRACE4| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 293 | Father's Race--Asian Indian | FRACE4| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 316 | Father's Race Tabulation Variable 4E | FRACE4E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 294 | Father's Race--Chinese | FRACE5| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 294 | Father's Race--Chinese | FRACE5| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 317 | Father's Race Tabulation Variable 5E | FRACE5E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 295 | Father's Race--Filipino | FRACE6| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 295 | Father's Race--Filipino | FRACE6| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 318 | Father's Race Tabulation Variable 6E | FRACE6E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 296 | Father's Race--Japanese | FRACE7| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 296 | Father's Race--Japanese | FRACE7| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 319 | Father's Race Tabulation Variable 7E | FRACE7E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 297 | Father's Race--Korean | FRACE8| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 297 | Father's Race--Korean | FRACE8| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 320 | Father's Race Tabulation Variable 8E | FRACE8E| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
-| 298 | Father's Race--Vietnamese | FRACE9| [us-core-race](http://hl7.org/fhir/us/core/StructureDefinition/us-core-race)| US CORE| 
+| 298 | Father's Race--Vietnamese | FRACE9| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition/us-core-race)| US CORE| 
 | 334 | Father's Bridged Race - NCHS Code | FRACEBG_C| [Observation-race-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-race-vr)| VRCPL| 
 | 7 | Sex | FSEX| [Patient-decedent-fetus-vr](http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr)| VRCPL| 
 | 144 | Weight of Fetus--Edit Flag | FW_BYPASS| [Observation-edit-flag-birthweight](StructureDefinition-Observation-edit-flag-birthweight.html)| BFDR| 
