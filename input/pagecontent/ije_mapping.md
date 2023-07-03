@@ -1,6 +1,12 @@
-Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exhange) data element names (codes).The IJE codes are used for exchange of data among jurisdictions and with authorized data partners, such as NVSS. NCHS has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG, however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS. The IJE mappings to BFDR FHIR profiles included here are for information purposes only.
+Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for exchange of data among jurisdictions and with authorized data partners, such as NCHS. NCHS has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG, however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS.
 
-### Natality IJE Mapping
+The following IJE mappings to locations in FHIR specifications are for information purposes only:
+* BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
+* VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
+* US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
+* FHIR: standard extensions
+
+### Natality (Live Birth) IJE Mapping
 
 | **IJE Field#** |  **Description**   |  **IJE Name**  | **Profile**  | **Location** |
 | :---------: | --------------- | ------------ | ---------- |---------- |
