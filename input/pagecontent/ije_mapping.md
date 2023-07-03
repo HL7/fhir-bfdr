@@ -1,6 +1,6 @@
 Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exhange) data element names (codes).The IJE codes are used for exchange of data among jurisdictions and with authorized data partners, such as NVSS. NCHS has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG, however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS. The IJE mappings to BFDR FHIR profiles included here are for information purposes only.
 
-### Live Birth IJE Mapping
+### Natality IJE Mapping
 
 | **IJE Field#** |  **Description**   |  **IJE Name**  | **Profile**  | **Location** |
 | :---------: | --------------- | ------------ | ---------- |---------- |
