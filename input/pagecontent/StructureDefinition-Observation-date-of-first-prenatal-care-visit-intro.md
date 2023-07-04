@@ -6,12 +6,12 @@ This concept is mapped to:
  * Item **6. Date of first prenatal care visit** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 127 | Date of First Prenatal Care Visit--Day | DOFP_DY|
-| Fetal Death| 81 | Date of First Prenatal Care Visit--Day | DOFP_DY|
-| Natality| 126 | Date of First Prenatal Care Visit--Month | DOFP_MO|
-| Fetal Death| 80 | Date of First Prenatal Care Visit--Month | DOFP_MO|
-| Natality| 128 | Date of First Prenatal Care Visit--Year | DOFP_YR|
-| Fetal Death| 82 | Date of First Prenatal Care Visit--Year | DOFP_YR|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 127 | Date of First Prenatal Care Visit--Day | DOFP_DY |
+| Fetal Death | 81 | Date of First Prenatal Care Visit--Day | DOFP_DY |
+| Natality | 126 | Date of First Prenatal Care Visit--Month | DOFP_MO |
+| Fetal Death | 80 | Date of First Prenatal Care Visit--Month | DOFP_MO |
+| Natality | 128 | Date of First Prenatal Care Visit--Year | DOFP_YR |
+| Fetal Death | 82 | Date of First Prenatal Care Visit--Year | DOFP_YR |
 {: .grid }

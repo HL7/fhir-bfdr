@@ -5,7 +5,7 @@ This concept is mapped to:
  * Item **28.2. Maternal Morbidity: Third or fourth degree perineal laceration** in the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 196 | Maternal Morbidity--Perineal Laceration | PLAC|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 196 | Maternal Morbidity--Perineal Laceration | PLAC |
 {: .grid }

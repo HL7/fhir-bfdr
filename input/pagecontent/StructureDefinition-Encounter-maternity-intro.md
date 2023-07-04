@@ -1,3 +1,1 @@
-### Usage
 After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property.
-{: .grid }

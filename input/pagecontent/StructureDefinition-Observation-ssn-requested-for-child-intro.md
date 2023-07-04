@@ -4,7 +4,7 @@ This concept is mapped to:
  * Item **26a. Do you want a Social Security Number issued for your baby?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 321 | Social Security Number Requested for Child? | SSN_REQ|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 321 | Social Security Number Requested for Child? | SSN_REQ |
 {: .grid }

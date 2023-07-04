@@ -7,8 +7,8 @@ This concept is mapped to:
  * Item **17.A. Method of Delivery: Fetal presentation at delivery** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 192 | Method of Delivery--Fetal Presentation | PRES|
-| Fetal Death| 133 | Method of Delivery--Fetal Presentation | PRES|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 192 | Method of Delivery--Fetal Presentation | PRES |
+| Fetal Death | 133 | Method of Delivery--Fetal Presentation | PRES |
 {: .grid }

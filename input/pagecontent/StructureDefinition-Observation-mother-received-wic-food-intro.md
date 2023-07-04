@@ -5,8 +5,8 @@ This concept is mapped to:
  * Item **28. Did Mother Get WIC Food For Herself During This Pregnancy?** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 141 | Did Mother get WIC Food for Herself? | WIC|
-| Fetal Death| 95 | Did Mother get WIC Food for Herself? | WIC|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 141 | Did Mother get WIC Food for Herself? | WIC |
+| Fetal Death | 95 | Did Mother get WIC Food for Herself? | WIC |
 {: .grid }

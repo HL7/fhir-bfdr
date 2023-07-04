@@ -1,4 +1,3 @@
-### Usage
 For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility.
 
 The data requirements for provider supplied live birth information are based on the
@@ -10,4 +9,3 @@ The data requirements for provider supplied live birth information are based on 
 The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.
 
 See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) for information about including a QuestionnaireResponse in this Composition.
-{: .grid }

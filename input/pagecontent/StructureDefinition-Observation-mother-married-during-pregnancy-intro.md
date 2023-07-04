@@ -5,7 +5,7 @@ This concept is mapped to:
  * Item **22. Mother Married?** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
 
 ### IJE Mapping
-| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ | ------------ |
-| Natality| 30 | Mother Married?-- At Conception, at Birth or any Time in Between | MARN|
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
+| ------------ | -------------- | --------------- | ------------ |
+| Natality | 30 | Mother Married?-- At Conception, at Birth or any Time in Between | MARN |
 {: .grid }
