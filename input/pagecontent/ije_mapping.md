@@ -26,7 +26,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 5 | Auxiliary State file number | AUXNO| [Extension-live-birth-local-file-number](StructureDefinition-Extension-live-birth-local-file-number.html)| BFDR| 
 | 212 | Abnormal Conditions of the Newborn--Assisted Ventilation | AVEN1| [Procedure-assisted-ventilation-following-delivery](StructureDefinition-Procedure-assisted-ventilation-following-delivery.html)| BFDR| 
 | 213 | Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours | AVEN6| [Procedure-assisted-ventilation-more-than-six-hours](StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html)| BFDR| 
-| 233 | <html>Is Infant Being Breastfed <b><i>at discharge </i></b>?  <b><i>(RECOMMENDED CHANGE EFFECTIVE 2004)</i></b></html> | BFED| [Observation-infant-breastfed-at-discharge](StructureDefinition-Observation-infant-breastfed-at-discharge.html)| BFDR| 
+| 233 | Is Infant Being Breastfed at discharge? (RECOMMENDED CHANGE EFFECTIVE 2004) | BFED| [Observation-infant-breastfed-at-discharge](StructureDefinition-Observation-infant-breastfed-at-discharge.html)| BFDR| 
 | 251 | County of Birth (Literal) | BIRTH_CO| [patient-birthPlace](http://hl7.org/fhir/StructureDefinition-patient-birthPlace.html)| FHIR| 
 | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
 | 19 | Birthplace of Mother--Country | BPLACEC_CNT| [patient-birthPlace](http://hl7.org/fhir/StructureDefinition-patient-birthPlace.html)| FHIR| 
@@ -48,7 +48,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 171 | Infections Present--Chlamydia | CHAM| [Condition-infection-present-during-pregnancy](StructureDefinition-Condition-infection-present-during-pregnancy.html)| BFDR| 
 | 186 | Characteristics of Labor & Delivery--Chorioamnionitis | CHOR| [Condition-chorioamnionitis](StructureDefinition-Condition-chorioamnionitis.html)| BFDR| 
 | 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
-| 152 | <html>Number of Cigarettes Smoked in  <b><i>third trimester (RECOMMENDED CHANGE EFFECTIVE 2004)</i></b></html> | CIGLN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
+| 152 | Number of Cigarettes Smoked in  third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
 | 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
 | 151 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
 | 20 | Residence of Mother--City | CITYC| [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html)| VRCPL| 
@@ -147,7 +147,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 297 | Father's Bridged Race - NCHS Code | FRACEBG_C| [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html)| VRCPL| 
 | 224 | Congenital Anomalies of the Newborn--Gastroschisis | GAST| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
 | 158 | Risk Factors--Gestational Diabetes | GDIAB| [Condition-gestational-diabetes-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-diabetes-vr.html)| VRCPL| 
-| 160 | <html>Risk Factors--Hypertension Gestational   <i>(SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 924 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004)</i></html> | GHYPE| [Condition-gestational-hypertension-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-hypertension-vr.html)| VRCPL| 
+| 160 | Risk Factors--Hypertension Gestational   (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 924 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004) | GHYPE| [Condition-gestational-hypertension-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-hypertension-vr.html)| VRCPL| 
 | 168 | Infections Present--Gonorrhea | GON| [Condition-infection-present-during-pregnancy](StructureDefinition-Condition-infection-present-during-pregnancy.html)| BFDR| 
 | 172 | Infections Present--Hepatitis B | HEPB| [Condition-infection-present-during-pregnancy](StructureDefinition-Condition-infection-present-during-pregnancy.html)| BFDR| 
 | 173 | Infections Present--Hepatitis C | HEPC| [Condition-infection-present-during-pregnancy](StructureDefinition-Condition-infection-present-during-pregnancy.html)| BFDR| 
@@ -164,7 +164,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 232 | Is Infant Living at Time of Report? | ILIV| [Observation-infant-living-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-infant-living-vr.html)| VRCPL| 
 | 181 | Characteristics of Labor & Delivery--Induction of Labor | INDL| [Procedure-induction-of-labor](StructureDefinition-Procedure-induction-of-labor.html)| BFDR| 
 | 332 | Infant's Medical Record Number | INF_MED_REC_NUM| [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html)| VRCPL| 
-| 164 | <html>Risk Factors--Infertility Treatment  <b><i>(SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926)</i></b></html> | INFT| [Procedure-infertility-treatment-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-infertility-treatment-vr.html)| VRCPL| 
+| 164 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926) | INFT| [Procedure-infertility-treatment-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-infertility-treatment-vr.html)| VRCPL| 
 | 241 | Risk Factors--Infertility: Asst. Rep. Technology  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_ART| [Procedure-assisted-fertilization-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-assisted-fertilization-vr.html)| VRCPL| 
 | 240 | Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_DRG| [Procedure-artificial-insemination-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-artificial-insemination-vr.html)| VRCPL| 
 | 7 | Sex | ISEX| [us-core-birthsex]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html)| US CORE| 
@@ -341,7 +341,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 348 | Date Signed by Certifier--Month | CERTIFIED_MO| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 347 | Date Signed by Certifier--Year | CERTIFIED_YR| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
-| 106 | <html>Number of Cigarettes Smoked in <b><i>third trimester (RECOMMENDED CHANGE EFFECTIVE 2004)</i></b></html> | CIGLN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
+| 106 | Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
 | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
 | 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN| [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html)| BFDR| 
 | 234 | Place of Delivery City/Town/Place (literal)  | CITY_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
@@ -475,16 +475,16 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 144 | Weight of Fetus--Edit Flag | FW_BYPASS| [Observation-edit-flag-birthweight](StructureDefinition-Observation-edit-flag-birthweight.html)| BFDR| 
 | 143 | Weight of Fetus | FWG| [Observation-birth-weight-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-birth-weight-vr.html)| VRCPL| 
 | 111 | Risk Factors--Gestational Diabetes | GDIAB| [Condition-gestational-diabetes-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-diabetes-vr.html)| VRCPL| 
-| 113 | <html>Risk Factors--Hypertension Gestational  <b><i>(SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004)</i></b></html> | GHYPE| [Condition-gestational-hypertension-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-hypertension-vr.html)| VRCPL| 
+| 113 | Risk Factors--Hypertension Gestational  (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004) | GHYPE| [Condition-gestational-hypertension-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-hypertension-vr.html)| VRCPL| 
 | 88 | Mother's Height--Feet | HFT| [Observation-mother-height-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-mother-height-vr.html)| VRCPL| 
 | 90 | Mother's Height--Edit Flag | HGT_BYPASS| [Observation-edit-flag-mothers-height](StructureDefinition-Observation-edit-flag-mothers-height.html)| BFDR| 
 | 89 | Mother's Height--Inches | HIN| [Observation-mother-height-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-mother-height-vr.html)| VRCPL| 
 | 149 | Was a Histological Placental Examination Performed? | HISTOP| [Observation-histological-placental-exam-performed](StructureDefinition-Observation-histological-placental-exam-performed.html)| BFDR| 
 | 224 | Name of Delivery Facility | HOSP_D| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 339 | Facility Mother Moved From (if transferred) | HOSPFROM| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
-| 123 | <html>Infections Present--Herpes Simplex (HSV)  (RECOMMENDED DELETION EFFECTIVE 2004) <b><i>(NCHS DELETED THIS ITEM EFFECTIVE 2011)</i></b></html> | HSV| | not implemented| 
+| 123 | Infections Present--Herpes Simplex (HSV)  (RECOMMENDED DELETION EFFECTIVE 2004) (NCHS DELETED THIS ITEM EFFECTIVE 2011) | HSV| | not implemented| 
 | 208 | Coded initiating cause/condition | ICOD| [Condition-coded-initiating-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition.html)| BFDR| 
-| 117 | <html>Risk Factors--Infertility Treatment  <b>(SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575)</b></html> | INFT| [Procedure-infertility-treatment-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-infertility-treatment-vr.html)| VRCPL| 
+| 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT| [Procedure-infertility-treatment-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-infertility-treatment-vr.html)| VRCPL| 
 | 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART| [Procedure-assisted-fertilization-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-assisted-fertilization-vr.html)| VRCPL| 
 | 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG| [Procedure-artificial-insemination-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-artificial-insemination-vr.html)| VRCPL| 
 | 24 | Residence of Mother--Inside City/Town Limits | LIMITS| [Extension-within-city-limits-indicator-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-within-city-limits-indicator-vr.html)| VRCPL| 
