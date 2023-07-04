@@ -8,7 +8,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Fetal Death| 180 | Initiating cause/condition - Rupture of membranes prior to onset of labor | COD18a1|
 | Fetal Death| 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10|
 | Fetal Death| 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11|
@@ -23,3 +23,4 @@ This concept is mapped to:
 | Fetal Death| 186 | Initiating cause/condition - Unknown | COD18a7|
 | Fetal Death| 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8|
 | Fetal Death| 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9|
+{: .grid }

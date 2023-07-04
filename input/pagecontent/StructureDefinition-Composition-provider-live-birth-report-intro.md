@@ -10,3 +10,4 @@ The data requirements for provider supplied live birth information are based on 
 The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.
 
 See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) for information about including a QuestionnaireResponse in this Composition.
+{: .grid }

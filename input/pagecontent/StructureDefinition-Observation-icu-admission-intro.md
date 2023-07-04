@@ -8,6 +8,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 199 | Maternal Morbidity--Admit to Intensive Care | AINT|
 | Fetal Death| 141 | Maternal Morbidity--Admit to Intensive Care | AINT|
+{: .grid }

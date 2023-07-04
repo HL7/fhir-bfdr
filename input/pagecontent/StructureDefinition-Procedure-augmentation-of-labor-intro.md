@@ -6,5 +6,6 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 182 | Characteristics of Labor & Delivery--Augmentation of Labor | AUGL|
+{: .grid }

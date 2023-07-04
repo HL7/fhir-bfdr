@@ -4,6 +4,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 147 | Date of Last Other Pregnancy Outcome--Month | MOPO|
 | Natality| 148 | Date of Last Other Pregnancy Outcome--Year | YOPO|
+{: .grid }

@@ -7,7 +7,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN|
 | Fetal Death| 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN|
 | Natality| 152 | <html>Number of Cigarettes Smoked in  <b><i>third trimester (RECOMMENDED CHANGE EFFECTIVE 2004)</i></b></html> | CIGLN|
@@ -16,3 +16,4 @@ This concept is mapped to:
 | Fetal Death| 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN|
 | Natality| 151 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN|
 | Fetal Death| 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN|
+{: .grid }

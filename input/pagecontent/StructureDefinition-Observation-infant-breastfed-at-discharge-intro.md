@@ -6,5 +6,6 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 233 | <html>Is Infant Being Breastfed <b><i>at discharge </i></b>?  <b><i>(RECOMMENDED CHANGE EFFECTIVE 2004)</i></b></html> | BFED|
+{: .grid }

@@ -6,7 +6,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 219 | Congenital Anomalies of the Newborn--Anencephaly | ANEN|
 | Natality| 221 | Congenital Anomalies of the Newborn--Cyanotic congenital heart disease | CCHD|
 | Natality| 222 | Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia | CDH|
@@ -19,3 +19,4 @@ This concept is mapped to:
 | Natality| 225 | Congenital Anomalies of the Newborn--Limb Reduction Defect | LIMB|
 | Natality| 220 | Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida | MNSB|
 | Natality| 223 | Congenital Anomalies of the Newborn--Omphalocele | OMPH|
+{: .grid }

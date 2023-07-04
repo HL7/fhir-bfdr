@@ -5,6 +5,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF|
 | Natality| 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS|
+{: .grid }

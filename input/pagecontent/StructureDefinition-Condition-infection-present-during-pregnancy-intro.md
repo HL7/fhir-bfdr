@@ -10,9 +10,10 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 171 | Infections Present--Chlamydia | CHAM|
 | Natality| 168 | Infections Present--Gonorrhea | GON|
 | Natality| 172 | Infections Present--Hepatitis B | HEPB|
 | Natality| 173 | Infections Present--Hepatitis C | HEPC|
 | Natality| 169 | Infections Present--Syphilis | SYPH|
+{: .grid }

@@ -8,7 +8,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Fetal Death| 194 | Other significant causes or conditions - Rupture of membranes prior to onset of labor | COD18b1|
 | Fetal Death| 203 | Other significant causes or conditions - Other obstetrical or pregnancy complications literal | COD18b10|
 | Fetal Death| 204 | Other significant causes or conditions - Fetal anomaly literal | COD18b11|
@@ -23,3 +23,4 @@ This concept is mapped to:
 | Fetal Death| 200 | Other significant causes or conditions - Unknown | COD18b7|
 | Fetal Death| 201 | Other significant causes or conditions - Maternal conditions/diseases literal | COD18b8|
 | Fetal Death| 202 | Other significant causes or conditions - Other complications of placenta, cord, or membranes literal | COD18b9|
+{: .grid }

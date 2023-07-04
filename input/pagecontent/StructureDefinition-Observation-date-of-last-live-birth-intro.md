@@ -6,8 +6,9 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 145 | Date of Last Live Birth--Month | MLLB|
 | Fetal Death| 99 | Date of Last Live Birth--Month | MLLB|
 | Natality| 146 | Date of Last Live Birth--Year | YLLB|
 | Fetal Death| 100 | Date of Last Live Birth--Year | YLLB|
+{: .grid }

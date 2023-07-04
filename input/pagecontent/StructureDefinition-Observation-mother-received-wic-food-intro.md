@@ -6,6 +6,7 @@ This concept is mapped to:
 
 ### IJE Mapping
 | **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
-| :---------: | --------------- | ------------ |
+| :---------: | --------------- | ------------ | ------------ |
 | Natality| 141 | Did Mother get WIC Food for Herself? | WIC|
 | Fetal Death| 95 | Did Mother get WIC Food for Herself? | WIC|
+{: .grid }
