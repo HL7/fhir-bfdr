@@ -7,6 +7,7 @@ This concept is mapped to:
  * Item **18.1. Maternal Morbidity: Ruptured uterus** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
+
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
 | Natality | 197 | Maternal Morbidity--Ruptured Uterus | RUT |

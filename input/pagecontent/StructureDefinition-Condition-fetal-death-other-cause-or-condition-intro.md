@@ -6,6 +6,7 @@ This concept is mapped to:
  * Item **27. Other Significant Causes or Conditions** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
+
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
 | Fetal Death | 194 | Other significant causes or conditions - Rupture of membranes prior to onset of labor | COD18b1 |

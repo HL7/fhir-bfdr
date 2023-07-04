@@ -8,6 +8,7 @@ This concept is mapped to:
  * Item **15. Infections present and/or treated during this pregnancy** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
 
 ### IJE Mapping
+
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
 | Natality | 171 | Infections Present--Chlamydia | CHAM |

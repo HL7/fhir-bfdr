@@ -7,6 +7,7 @@ This concept is mapped to:
  * Item **18.2. Maternal Morbidity: Admission to intensive care unit** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
+
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
 | Natality | 199 | Maternal Morbidity--Admit to Intensive Care | AINT |

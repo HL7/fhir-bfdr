@@ -6,6 +6,7 @@ This concept is mapped to:
  * Item **38.D.1. Method of Delivery: If cesarean, was a trial of labor attempted?** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
 
 ### IJE Mapping
+
 | **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
 | ------------ | -------------- | --------------- | ------------ |
 | Natality | 194 | Method of Delivery--Trial of Labor Attempted | TLAB |
