@@ -154,7 +154,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 134 | Mother's Height--Feet | HFT| [Observation-mother-height-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-mother-height-vr.html)| VRCPL| 
 | 136 | Mother's Height--Edit Flag | HGT_BYPASS| [Observation-edit-flag-mothers-height](StructureDefinition-Observation-edit-flag-mothers-height.html)| BFDR| 
 | 135 | Mother's Height--Inches | HIN| [Observation-mother-height-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-mother-height-vr.html)| VRCPL| 
-| 253 | Name of Facility of Birth | HOSP| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
+| 253 | Name of Facility of Birth | HOSP| [us-core-location]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-location.html)| US CORE| 
 | 302 | Facility Mother Moved From (if transferred) | HOSPFROM| [Encounter-maternity](StructureDefinition-Encounter-maternity.html)| BFDR| 
 | 303 | Facility Infant Transferred To (if transferred w/in 24 hours) | HOSPTO| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
 | 230 | Congenital Anomalies of the Newborn--Hypospadias | HYPO| [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html)| BFDR| 
@@ -167,7 +167,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 164 | <html>Risk Factors--Infertility Treatment  <b><i>(SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926)</i></b></html> | INFT| [Procedure-infertility-treatment-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-infertility-treatment-vr.html)| VRCPL| 
 | 241 | Risk Factors--Infertility: Asst. Rep. Technology  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_ART| [Procedure-assisted-fertilization-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-assisted-fertilization-vr.html)| VRCPL| 
 | 240 | Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004) | INFT_DRG| [Procedure-artificial-insemination-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-artificial-insemination-vr.html)| VRCPL| 
-| 7 | Sex | ISEX| [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html)| VRCPL| 
+| 7 | Sex | ISEX| [us-core-birthsex]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html)| US CORE| 
 | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN| [Encounter-birth](StructureDefinition-Encounter-birth.html)| BFDR| 
 | 247 | Child's First Name | KIDFNAME| [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html)| VRCPL| 
 | 249 | Child's Last Name | KIDLNAME| [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html)| VRCPL| 
@@ -471,7 +471,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 320 | Father's Race Tabulation Variable 8E | FRACE8E| [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html)| VRCPL| 
 | 298 | Father's Race--Vietnamese | FRACE9| [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html)| US CORE| 
 | 334 | Father's Bridged Race - NCHS Code | FRACEBG_C| [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html)| VRCPL| 
-| 7 | Sex | FSEX| [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html)| VRCPL| 
+| 7 | Sex | FSEX| [us-core-birthsex]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html)| US CORE| 
 | 144 | Weight of Fetus--Edit Flag | FW_BYPASS| [Observation-edit-flag-birthweight](StructureDefinition-Observation-edit-flag-birthweight.html)| BFDR| 
 | 143 | Weight of Fetus | FWG| [Observation-birth-weight-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-birth-weight-vr.html)| VRCPL| 
 | 111 | Risk Factors--Gestational Diabetes | GDIAB| [Condition-gestational-diabetes-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-diabetes-vr.html)| VRCPL| 

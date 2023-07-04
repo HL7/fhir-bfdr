@@ -1,3 +1,7 @@
+### Form Mapping
 This concept is mapped to:
-* Item **15a. If no (to "Mother Married?"), has paternity acknowledgement been signed in the hospital** in the *[U.S. Standard Certificate of Live Birth (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)*
-* IJE Natality Data Element: ACKN
+
+### IJE Mapping
+| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
+| :---------: | --------------- | ------------ |
+| Natality| 31 | Mother Married?--Acknowledgement of Paternity Signed | ACKN|

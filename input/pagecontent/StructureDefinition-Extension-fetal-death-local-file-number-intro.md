@@ -1,3 +1,8 @@
+### Form Mapping
 This concept is mapped to:
-* Item **LOCAL FILE NO.** in the *[U.S. Standard Report of Fetal Death (rev. 2003)](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)*
-* IJE Fetal Death Data Element: AUXNO
+ * Item **Local File No.** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
+
+### IJE Mapping
+| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
+| :---------: | --------------- | ------------ |
+| Fetal Death| 5 | Auxiliary State file number | AUXNO|

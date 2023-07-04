@@ -1,1 +1,2 @@
+### Usage
 Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at the national statistics agency, and returned using this profile.

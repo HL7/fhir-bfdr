@@ -1,3 +1,4 @@
+### Usage
 For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the fetus is collected from the responsible party at the healthcare facility.
 
 The data requirements for provider supplied fetal death information are based on the

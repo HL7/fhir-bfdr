@@ -1,3 +1,4 @@
+### Usage
 It contains data that are a coded form of the race and ethnicity data that has been submitted to the the national statistics agency.
 
 Two sets of codes will be used to address two objectives. These objectives are:

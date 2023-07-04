@@ -1,5 +1,7 @@
+### Usage
 These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.
-
-This concept is mapped to:
-* IJE Natality Data Element: NPCES_BYPASS
-* IJE Fetal Death Data Element: NPCES_BYPASS
+### IJE Mapping
+| **IJE Use Case**| **IJE Field#** |  **IJE_DESC_COLUMN**   |  **IJE Name**  |
+| :---------: | --------------- | ------------ |
+| Natality| 167 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS|
+| Fetal Death| 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS|
