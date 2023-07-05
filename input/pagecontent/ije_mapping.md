@@ -4,7 +4,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
 * VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
 * US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
-* FHIR: standard extensions
+* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
 ### Natality (Live Birth) IJE Mapping
 
