@@ -1,11 +1,15 @@
-### Overview
-
-# Note to Commenters
+# <mark>Note to Commenters</mark>
 This CI-Build version of the Birth and Fetal Death (BFDR) FHIR IG is ready for review and comment for an STU 1.1 Update (“dot release”).
 
 *See [IG Update Page](https://confluence.hl7.org/pages/viewpage.action?pageId=175610684) for instructions on how to comment, comment areas of interest, and notes about the IG.*
 
 This "Note to Commenters" will be removed at the close of the Comment Period.
+
+***Thank you.***
+
+
+-----
+
 
 ### Description
 
