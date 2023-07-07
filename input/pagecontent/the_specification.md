@@ -1,14 +1,10 @@
 ### FHIR Documents
 
-BFDR relies on the FHIR Documents paradigm. Implementers need to be aware of and follow all the rules required for FHIR Documents. Please refer to that section of the core FHIR spec.
-
-[http://hl7.org/fhir/documents.html](http://hl7.org/fhir/documents.html)
+BFDR relies on the FHIR Documents paradigm. Implementers need to be aware of and follow all the rules required for [FHIR Documents](http://hl7.org/fhir/documents.html).
 
 ### Profiles and Extensions
 
-To claim conformance to a BFDR Profile, servers SHALL:
-
-* Be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition. 
+To claim conformance to a BFDR Profile, servers SHALL be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition.
 
 ### Document Bundles
 
@@ -22,9 +18,9 @@ This section outlines important definitions, interpretations, and requirements c
 
 #### US Core and BFDR
 
-The BFDR specification relies on the US Core specification where possible. If a US Core profile does not exist for a required BFDR concept, then BFDR specific profiled resources are referenced instead. It is expected that US Core will evolve over time, and as it does the BFDR specification will be updated to include new US Core Profiles. 
+The BFDR specification relies on the US Core specification where possible. If a US Core profile does not exist for a required BFDR concept, then BFDR specific profiled resources are referenced instead.
 
-More information on US Core can be found [here](https://www.hl7.org/fhir/us/core/). 
+See the [US Core IG](http://hl7.org/fhir/us/core/STU5.0.1/) for more information. 
 
 #### Must Support
 
