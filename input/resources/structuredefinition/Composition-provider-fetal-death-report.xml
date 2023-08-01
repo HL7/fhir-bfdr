@@ -674,13 +674,13 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:mothersQuestionnaireResponse">
+        <element id="Composition.section:patientsQuestionnaireResponse">
             <path value="Composition.section"/>
-            <sliceName value="mothersQuestionnaireResponse"/>
-            <short value="Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"/>
+            <sliceName value="patientsQuestionnaireResponse"/>
+            <short value="Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"/>
             <max value="1"/>
         </element>
-        <element id="Composition.section:mothersQuestionnaireResponse.code">
+        <element id="Composition.section:patientsQuestionnaireResponse.code">
             <path value="Composition.section.code"/>
             <short value="Questionnaire response Document"/>
             <min value="1"/>
@@ -691,9 +691,9 @@
                 </coding>
             </patternCodeableConcept>
         </element>
-        <element id="Composition.section:mothersQuestionnaireResponse.entry">
+        <element id="Composition.section:patientsQuestionnaireResponse.entry">
             <path value="Composition.section.entry"/>
-            <short value="Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"/>
+            <short value="QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -701,5 +701,6 @@
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
             </type>
         </element>
+        
     </differential>
 </StructureDefinition>
