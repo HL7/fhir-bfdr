@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-autopsy-histological-exam-results-used"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-06-19T06:20:18.211Z"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-08-29T04:20:59.550Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
     <name value="ObservationAutopsyHistologicalExamResultsUsed"/>
@@ -58,9 +58,13 @@
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="boolean"/>
+                <code value="CodeableConcept"/>
             </type>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-yes-no-not-applicable"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

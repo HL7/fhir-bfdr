@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="patient-decedent-fetus-not-named"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2023-06-23T03:47:32.863Z"/>
+        <versionId value="12"/>
+        <lastUpdated value="2023-08-29T06:04:42.739Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
@@ -50,4 +50,9 @@
         </extension>
     </birthDate>
     <deceasedBoolean value="true"/>
+    <multipleBirthInteger value="3">
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-multipleBirthTotal">
+            <valuePositiveInt value="2"/>
+        </extension>
+    </multipleBirthInteger>
 </Patient>

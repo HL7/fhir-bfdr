@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-jurisdiction-live-birth-babyg-quinn"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-07-07T02:39:34.819Z"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-08-29T06:21:30.334Z"/>
         <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr"/>
     </meta>
     <identifier>
@@ -236,10 +236,6 @@
                     <entry>
                         <reference value="Observation/observation-apgar-score-babyg-quinn-5-min"/>
                         <display value="Observation - Apgar Score (BabyG Quinn: 5 min)"/>
-                    </entry>
-                    <entry>
-                        <reference value="Observation/observation-plurality-jada-ann-quinn"/>
-                        <display value="Observation - Plurality (Jada Ann Quinn)"/>
                     </entry>
                     <entry>
                         <reference value="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"/>
@@ -1672,30 +1668,6 @@
                     <display value="BabyG Quinn"/>
                 </subject>
                 <valueInteger value="7"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://example.org/fhir/Observation/observation-plurality-jada-ann-quinn"/>
-        <resource>
-            <Observation>
-                <id value="observation-plurality-jada-ann-quinn"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-plurality-vr"/>
-                </meta>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="57722-1"/>
-                        <display value="Birth plurality of Pregnancy"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/patient-mother-jada-ann-quinn"/>
-                    <display value="Patient - Mother (Jada Ann Quinn)"/>
-                </subject>
-                <valueInteger value="1"/>
             </Observation>
         </resource>
     </entry>

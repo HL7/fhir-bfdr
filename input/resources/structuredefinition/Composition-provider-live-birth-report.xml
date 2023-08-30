@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="139"/>
-        <lastUpdated value="2023-07-05T02:39:57.220Z"/>
+        <versionId value="140"/>
+        <lastUpdated value="2023-08-29T04:50:14.759Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <name value="CompositionProviderLiveBirthReport"/>
@@ -837,13 +837,13 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Composition.section:mothersQuestionnaireResponse">
+        <element id="Composition.section:patientsQuestionnaireResponse">
             <path value="Composition.section"/>
-            <sliceName value="mothersQuestionnaireResponse"/>
+            <sliceName value="patientsQuestionnaireResponse"/>
             <short value="Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"/>
             <max value="1"/>
         </element>
-        <element id="Composition.section:mothersQuestionnaireResponse.code">
+        <element id="Composition.section:patientsQuestionnaireResponse.code">
             <path value="Composition.section.code"/>
             <short value="Questionnaire response Document"/>
             <min value="1"/>
@@ -854,9 +854,9 @@
                 </coding>
             </patternCodeableConcept>
         </element>
-        <element id="Composition.section:mothersQuestionnaireResponse.entry">
+        <element id="Composition.section:patientsQuestionnaireResponse.entry">
             <path value="Composition.section.entry"/>
-            <short value="Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"/>
+            <short value="QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"/>
             <min value="1"/>
             <max value="1"/>
             <type>

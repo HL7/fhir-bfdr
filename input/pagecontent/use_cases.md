@@ -21,6 +21,22 @@ Information flows are supported by the FHIR Composition resources indicated in t
 | Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity](StructureDefinition-Composition-coded-race-and-ethnicity.html)                         | National Statistical Agency         | Jurisdictional Vital Records Office |
 | Coded Cause of Fetal Death    | [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html)                     | National Statistical Agency         | Jurisdictional Vital Records Office |
 
+### Sources of Data
+
+Locating and retrieving data required for the provider and jurisdiction forms supported by this IG may require search/query operations on a variety of EHR and EMR systems. These systems may use identifying codes for data elements (e.g., Observation.code for ___XXX-good example?___) that differ from the codes used in this IG and the Vital Records Common Profile Library IG. Future work for both this IG and the Vital Records Common Profile Library IG may include guidance on additional codes that may be in use.
+
+Data required for birth and fetal death reporting from health care providers to jurisdictional vital records offices and national health statistics agencies are drawn from multiple sources: 
+
+1. **Mother/Patient Worksheets**: These worksheets should be considered the source of truth for the data they contain, and so should be queried first in any search for data required by the Facility Worksheets (Worksheet for the Live Birth Certificate and Worksheet for the Report of Fetal Death).
+  * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
+  * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
+2. **Prenatal care records**: If the mother’s prenatal care record is not in her hospital chart, please contact her prenatal care provider to obtain the record, or a copy of the prenatal care information. 
+3. **Mother's medical records**
+4. **Newborn's medical records**
+
+Preferred and acceptable sources are given before each section of the Facility Worksheets PDF forms [add links to example PDFs]. These sources are also provided here. Please do not provide information from sources other than those listed. 
+
+For further information on sources of information, please see: Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death (https://www.cdc.gov/nchs/data/dvs/GuidetoCompleteFacilityWks.pdf) 
 
 ### Provider Live Birth
 
@@ -86,3 +102,42 @@ The Coded Race and Ethnicity use case is represented by the [Composition - Coded
 This use case represents the communication of coded cause of fetal death information to appropriate jurisdictional vital records offices. The provider providers the cause of death on a fetal death report as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this Composition.
 
 The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death](StructureDefinition-Composition-coded-cause-of-fetal-death.html). ***Note:*** requirements for this workflow are in development and the FHIR Composition profile may change.
+
+### Mother - Baby Linkage
+
+The FHIR specification gives guidance on representing the relationship between a mothe and her baby in the [Mother and newborn relationships section](https://hl7.org/fhir/R4/patient.html#maternity) of the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource. 
+
+For the purposes of modeling the linkage between a mother and her baby and relating the encounters of a mother and her baby in a maternity encounter for birth and fetal death reporting , we have followed the FHIR guidance. 
+
+See the following examples for further details:
+* Baby's Encounter (partOf Mother's Encounter): [Encounter - Birth - Baby G Quinn](Encounter-encounter-birth-babyg-quinn.html) 
+* Mother's Encounter: [Encounter - Maternity - Jada Ann Quinn](Encounter-encounter-maternity-jada-ann-quinn.html)
+* Baby Patient: [Patient - Child - Vital Records - Baby G Quinn](Patient-patient-child-babyg-quinn.html)
+* Mother Patient: [Patient - Mother - Vital Records - Jada Ann Quinn](Patient-patient-mother-jada-ann-quinn.html)
+* Mother RelatedPerson (related to Baby Patient and linked to Mother Patient): [RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn](RelatedPerson-relatedperson-mother-jada-ann-quinn.html)
+
+Locating and retrieving data required for this IG may require search/query operations on a variety of EHR and EMR systems. These systems may use other structures or mechanisms to associate records of mother and child. 
+
+For example, a link between a mother and her baby can *currently* be found in the Epic FHIR sandbox by locating an Observation with code = LOINC \| 57075-4 \| "Newborn delivery information". This Observation has Observation.subject = the Baby Patient and Observation.focus = the Mother Patient. Note that this is the current state of the Epic sandbox and is subject to change and may be different in production systems. 
+
+### Plurality and Multiple Birth
+
+Plurality is both a characteristic of a pregnancy and a characteristic of a patient.
+
+#### Plurality as a patient characteristic, and set order 
+
+This IG uses profiles based on the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) profile for child and decedent fetus. These profiles  are housed in the [Vital Records Common Profiles Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}): 
+* [Patient - Child - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html): represents the subject patient (newborn/infant/child) for whom clinical data is included in the report.
+* [Patient - Decedent Fetus - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-decedent-fetus-vr.html): represents a delivered fetus for which clinical data is included in the report.
+
+To record that a Patient is a member of a multiple birth (plurality as a characteristic of a patient), and their place in the delivery order (set order), requires the use of the following:
+1. Patient.[multipleBirthInteger]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr-definitions.html#diff_Patient.multipleBirth[x]): requires an integer (not boolean) to indicate the delivery order (delivered first, second, third, etc.)
+2. Extension: [patient-multipleBirthTotal](http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html): indicates the total number of deliveries that occurred
+
+Both data elements are required for meaningful transmission of the information about plurality as a characteristic of the patient. See [example](Patient-patient-decedent-fetus-not-named.html).
+
+#### Plurality as a pregnancy characteristic
+
+Plurality as a pregnancy characteristic can be recorded using [Observation - Plurality - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-plurality-vr.html) of the [Vital Records Common Profiles Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}). It references the [Patient - Mother - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) as the subject. It represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy.
+* ‘Reabsorbed’ fetuses, those which are not ‘delivered’ (expulsed or extracted from the mother) **should not be counted**.
+* All live births and fetal losses resulting from this pregnancy **should be counted**.
