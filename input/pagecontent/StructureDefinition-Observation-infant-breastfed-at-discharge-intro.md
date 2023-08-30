@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 233 | Is Infant Being Breastfed at discharge? (RECOMMENDED CHANGE EFFECTIVE 2004) | BFED |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 233 | Is Infant Being Breastfed at discharge? (RECOMMENDED CHANGE EFFECTIVE 2004) | BFED |  |
 {: .grid }

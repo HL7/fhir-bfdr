@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 217 | Abnormal Conditions of the Newborn--Seizures | SEIZ |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 217 | Abnormal Conditions of the Newborn--Seizures | SEIZ |  |
 {: .grid }

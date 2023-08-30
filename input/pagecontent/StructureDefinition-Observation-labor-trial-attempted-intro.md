@@ -7,8 +7,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 194 | Method of Delivery--Trial of Labor Attempted | TLAB |
-| Fetal Death | 135 | Method of Delivery--Trial of Labor Attempted | TLAB |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 194 | Method of Delivery--Trial of Labor Attempted | TLAB |  |
+| Fetal Death | 135 | Method of Delivery--Trial of Labor Attempted | TLAB |  |
 {: .grid }

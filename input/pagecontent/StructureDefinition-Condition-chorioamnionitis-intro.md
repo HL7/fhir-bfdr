@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 186 | Characteristics of Labor & Delivery--Chorioamnionitis | CHOR |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 186 | Characteristics of Labor & Delivery--Chorioamnionitis | CHOR |  |
 {: .grid }

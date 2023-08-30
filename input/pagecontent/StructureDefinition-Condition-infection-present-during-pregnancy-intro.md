@@ -7,11 +7,11 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 171 | Infections Present--Chlamydia | CHAM |
-| Natality | 168 | Infections Present--Gonorrhea | GON |
-| Natality | 172 | Infections Present--Hepatitis B | HEPB |
-| Natality | 173 | Infections Present--Hepatitis C | HEPC |
-| Natality | 169 | Infections Present--Syphilis | SYPH |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 171 | Infections Present--Chlamydia | CHAM |  |
+| Natality | 168 | Infections Present--Gonorrhea | GON |  |
+| Natality | 172 | Infections Present--Hepatitis B | HEPB |  |
+| Natality | 173 | Infections Present--Hepatitis C | HEPC |  |
+| Natality | 169 | Infections Present--Syphilis | SYPH |  |
 {: .grid }

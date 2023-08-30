@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 182 | Characteristics of Labor & Delivery--Augmentation of Labor | AUGL |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 182 | Characteristics of Labor & Delivery--Augmentation of Labor | AUGL |  |
 {: .grid }

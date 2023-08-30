@@ -5,8 +5,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF |
-| Natality | 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF |  |
+| Natality | 176 | Obstetric Procedures--Successful External Cephalic Version | ECVS |  |
 {: .grid }

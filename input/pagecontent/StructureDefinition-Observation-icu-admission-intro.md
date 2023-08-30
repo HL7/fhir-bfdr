@@ -8,8 +8,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 199 | Maternal Morbidity--Admit to Intensive Care | AINT |
-| Fetal Death | 141 | Maternal Morbidity--Admit to Intensive Care | AINT |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 199 | Maternal Morbidity--Admit to Intensive Care | AINT |  |
+| Fetal Death | 141 | Maternal Morbidity--Admit to Intensive Care | AINT |  |
 {: .grid }

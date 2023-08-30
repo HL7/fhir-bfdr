@@ -8,8 +8,8 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 193 | Method of Delivery--Route and Method of Delivery | ROUT |
-| Fetal Death | 134 | Method of Delivery--Route and Method of Delivery | ROUT |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 193 | Method of Delivery--Route and Method of Delivery | ROUT |  |
+| Fetal Death | 134 | Method of Delivery--Route and Method of Delivery | ROUT |  |
 {: .grid }

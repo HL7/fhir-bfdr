@@ -7,14 +7,14 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN |
-| Natality | 152 | Number of Cigarettes Smoked in  third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN |
-| Natality | 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN |
-| Natality | 151 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN |
-| Fetal Death | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN |
-| Fetal Death | 106 | Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN |
-| Fetal Death | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN |
-| Fetal Death | 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 150 | Number of Cigarettes Smoked in 1st 3 months | CIGFN |  |
+| Natality | 152 | Number of Cigarettes Smoked in  third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN |  |
+| Natality | 149 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN |  |
+| Natality | 151 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN |  |
+| Fetal Death | 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN |  |
+| Fetal Death | 106 | Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN |  |
+| Fetal Death | 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN |  |
+| Fetal Death | 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN |  |
 {: .grid }

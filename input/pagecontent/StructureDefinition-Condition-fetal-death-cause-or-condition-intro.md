@@ -7,20 +7,20 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Fetal Death | 180 | Initiating cause/condition - Rupture of membranes prior to onset of labor | COD18a1 |
-| Fetal Death | 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10 |
-| Fetal Death | 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11 |
-| Fetal Death | 191 | Initiating cause/condition - Fetal injury literal | COD18a12 |
-| Fetal Death | 192 | Initiating cause/condition - Fetal infection literal | COD18a13 |
-| Fetal Death | 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 |
-| Fetal Death | 181 | Initiating cause/condition - Abruptio placenta | COD18a2 |
-| Fetal Death | 182 | Initiating cause/condition - Placental insufficiency | COD18a3 |
-| Fetal Death | 183 | Initiating cause/condition - Prolapsed cord | COD18a4 |
-| Fetal Death | 184 | Initiating cause/condition - Chorioamnionitis | COD18a5 |
-| Fetal Death | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6 |
-| Fetal Death | 186 | Initiating cause/condition - Unknown | COD18a7 |
-| Fetal Death | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8 |
-| Fetal Death | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9 |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Fetal Death | 180 | Initiating cause/condition - Rupture of membranes prior to onset of labor | COD18a1 |  |
+| Fetal Death | 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10 |  |
+| Fetal Death | 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11 |  |
+| Fetal Death | 191 | Initiating cause/condition - Fetal injury literal | COD18a12 |  |
+| Fetal Death | 192 | Initiating cause/condition - Fetal infection literal | COD18a13 |  |
+| Fetal Death | 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 |  |
+| Fetal Death | 181 | Initiating cause/condition - Abruptio placenta | COD18a2 |  |
+| Fetal Death | 182 | Initiating cause/condition - Placental insufficiency | COD18a3 |  |
+| Fetal Death | 183 | Initiating cause/condition - Prolapsed cord | COD18a4 |  |
+| Fetal Death | 184 | Initiating cause/condition - Chorioamnionitis | COD18a5 |  |
+| Fetal Death | 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6 |  |
+| Fetal Death | 186 | Initiating cause/condition - Unknown | COD18a7 |  |
+| Fetal Death | 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8 |  |
+| Fetal Death | 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9 |  |
 {: .grid }

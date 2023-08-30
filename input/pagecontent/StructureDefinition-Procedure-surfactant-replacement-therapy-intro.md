@@ -6,7 +6,7 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 215 | Abnormal Conditions of the Newborn--Surfactant Replacement | SURF |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 215 | Abnormal Conditions of the Newborn--Surfactant Replacement | SURF |  |
 {: .grid }

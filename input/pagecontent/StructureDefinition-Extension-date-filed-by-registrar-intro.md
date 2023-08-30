@@ -4,12 +4,12 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 245 | Date of Registration--Day | DOR_DY |
-| Natality | 244 | Date of Registration--Month | DOR_MO |
-| Natality | 243 | Date of Registration--Year | DOR_YR |
-| Natality | 339 | Date Filed by Registrar--Day | REGISTER_DY |
-| Natality | 338 | Date Filed by Registrar--Month | REGISTER_MO |
-| Natality | 337 | Date Filed by Registrar--Year | REGISTER_YR |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 245 | Date of Registration--Day | DOR_DY |  |
+| Natality | 244 | Date of Registration--Month | DOR_MO |  |
+| Natality | 243 | Date of Registration--Year | DOR_YR |  |
+| Natality | 339 | Date Filed by Registrar--Day | REGISTER_DY |  |
+| Natality | 338 | Date Filed by Registrar--Month | REGISTER_MO |  |
+| Natality | 337 | Date Filed by Registrar--Year | REGISTER_YR |  |
 {: .grid }

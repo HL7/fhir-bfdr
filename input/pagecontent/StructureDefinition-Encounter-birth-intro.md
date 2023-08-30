@@ -16,15 +16,15 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE |
-| Natality | 336 | Date Signed by Certifier--Day | CERTIFIED_DY |
-| Natality | 335 | Date Signed by Certifier--Month | CERTIFIED_MO |
-| Natality | 334 | Date Signed by Certifier--Year | CERTIFIED_YR |
-| Natality | 12 | Father's Surname | FNPI |
-| Natality | 253 | Name of Facility of Birth | HOSP |
-| Natality | 303 | Facility Infant Transferred To (if transferred w/in 24 hours) | HOSPTO |
-| Natality | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN |
-| Natality | 13 | Facility ID (State-Assigned) | SFN |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 11 | Place Where Birth Occurred (type of place or institution) | BPLACE | location.physicalType |
+| Natality | 336 | Date Signed by Certifier--Day | CERTIFIED_DY | participant:certifier.period.start |
+| Natality | 335 | Date Signed by Certifier--Month | CERTIFIED_MO | participant:certifier.period.start |
+| Natality | 334 | Date Signed by Certifier--Year | CERTIFIED_YR | participant:certifier.period.start |
+| Natality | 12 | Father's Surname | FNPI | location.identifier |
+| Natality | 253 | Name of Facility of Birth | HOSP | name |
+| Natality | 303 | Facility Infant Transferred To (if transferred w/in 24 hours) | HOSPTO | hospitalization.destination |
+| Natality | 231 | Was Infant Transferred Within 24 Hours of Delivery? | ITRAN | hospitalization.dischargeDisposition |
+| Natality | 13 | Facility ID (State-Assigned) | SFN | identifier |
 {: .grid }

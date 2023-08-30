@@ -6,10 +6,10 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 145 | Date of Last Live Birth--Month | MLLB |
-| Natality | 146 | Date of Last Live Birth--Year | YLLB |
-| Fetal Death | 99 | Date of Last Live Birth--Month | MLLB |
-| Fetal Death | 100 | Date of Last Live Birth--Year | YLLB |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 145 | Date of Last Live Birth--Month | MLLB |  |
+| Natality | 146 | Date of Last Live Birth--Year | YLLB |  |
+| Fetal Death | 99 | Date of Last Live Birth--Month | MLLB |  |
+| Fetal Death | 100 | Date of Last Live Birth--Year | YLLB |  |
 {: .grid }

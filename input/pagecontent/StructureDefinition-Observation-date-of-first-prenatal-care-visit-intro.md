@@ -7,12 +7,12 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 127 | Date of First Prenatal Care Visit--Day | DOFP_DY |
-| Natality | 126 | Date of First Prenatal Care Visit--Month | DOFP_MO |
-| Natality | 128 | Date of First Prenatal Care Visit--Year | DOFP_YR |
-| Fetal Death | 81 | Date of First Prenatal Care Visit--Day | DOFP_DY |
-| Fetal Death | 80 | Date of First Prenatal Care Visit--Month | DOFP_MO |
-| Fetal Death | 82 | Date of First Prenatal Care Visit--Year | DOFP_YR |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 127 | Date of First Prenatal Care Visit--Day | DOFP_DY |  |
+| Natality | 126 | Date of First Prenatal Care Visit--Month | DOFP_MO |  |
+| Natality | 128 | Date of First Prenatal Care Visit--Year | DOFP_YR |  |
+| Fetal Death | 81 | Date of First Prenatal Care Visit--Day | DOFP_DY |  |
+| Fetal Death | 80 | Date of First Prenatal Care Visit--Month | DOFP_MO |  |
+| Fetal Death | 82 | Date of First Prenatal Care Visit--Year | DOFP_YR |  |
 {: .grid }

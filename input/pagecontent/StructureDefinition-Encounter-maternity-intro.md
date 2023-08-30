@@ -14,28 +14,28 @@ This profile is mapped to:
 
 ### IJE Mapping
 
-| **Use Case** | **IJE Field#** | **Description** | **IJE Name** |
-| ------------ | -------------- | --------------- | ------------ |
-| Natality | 302 | Facility Mother Moved From (if transferred) | HOSPFROM |
-| Natality | 125 | Mother Transferred? | TRAN |
-| Fetal Death | 231 | Place of Delivery Street Address | ADDRESS_D |
-| Fetal Death | 230 | Place of Delivery Unit or Apartment Number | APTNUMB_D |
-| Fetal Death | 349 | Date Signed by Certifier--Day | CERTIFIED_DY |
-| Fetal Death | 348 | Date Signed by Certifier--Month | CERTIFIED_MO |
-| Fetal Death | 347 | Date Signed by Certifier--Year | CERTIFIED_YR |
-| Fetal Death | 234 | Place of Delivery City/Town/Place (literal)  | CITY_D |
-| Fetal Death | 233 | Place of Delivery County (literal) | CNTY_D |
-| Fetal Death | 236 | Place of Delivery Country (literal) | COUNTRY_D |
-| Fetal Death | 11 | Place Where Delivery Occurred | DPLACE |
-| Fetal Death | 12 | Facility ID (NPI) - If available | FNPI |
-| Fetal Death | 224 | Name of Delivery Facility | HOSP_D |
-| Fetal Death | 339 | Facility Mother Moved From (if transferred) | HOSPFROM |
-| Fetal Death | 229 | Place of Delivery Post Directional | POSTDIR_D |
-| Fetal Death | 226 | Place of Delivery Pre Directional | PREDIR_D |
-| Fetal Death | 13 | Facility ID (State-Assigned) | SFN |
-| Fetal Death | 235 | State, U.S. Territory or Canadian Province of Place of Delivery - literal | STATE_D |
-| Fetal Death | 228 | Place of Delivery Street designator | STDESIG_D |
-| Fetal Death | 227 | Place of Delivery Street name | STNAME_D |
-| Fetal Death | 225 | Place of Delivery Street number | STNUM_D |
-| Fetal Death | 232 | Place of Delivery Zip code and Zip+4 | ZIPCODE_D |
+| **Use Case** | **IJE Field#** | **Description** | **IJE Name** | **Field** |
+| ------------ | -------------- | --------------- | ------------ | --------- |
+| Natality | 302 | Facility Mother Moved From (if transferred) | HOSPFROM | hospitalization.origin |
+| Natality | 125 | Mother Transferred? | TRAN | Encounter-maternity.hospitalization.admitSource |
+| Fetal Death | 231 | Place of Delivery Street Address | ADDRESS_D | address |
+| Fetal Death | 230 | Place of Delivery Unit or Apartment Number | APTNUMB_D | location.location.address |
+| Fetal Death | 349 | Date Signed by Certifier--Day | CERTIFIED_DY | participant:certifier.period.start |
+| Fetal Death | 348 | Date Signed by Certifier--Month | CERTIFIED_MO | participant:certifier.period.start |
+| Fetal Death | 347 | Date Signed by Certifier--Year | CERTIFIED_YR | participant:certifier.period.start |
+| Fetal Death | 234 | Place of Delivery City/Town/Place (literal)  | CITY_D | location.location.address |
+| Fetal Death | 233 | Place of Delivery County (literal) | CNTY_D | location.location.address |
+| Fetal Death | 236 | Place of Delivery Country (literal) | COUNTRY_D | location.location.address |
+| Fetal Death | 11 | Place Where Delivery Occurred | DPLACE | location.physicalType |
+| Fetal Death | 12 | Facility ID (NPI) - If available | FNPI | location.identifier |
+| Fetal Death | 224 | Name of Delivery Facility | HOSP_D | name |
+| Fetal Death | 339 | Facility Mother Moved From (if transferred) | HOSPFROM | hospitalization.origin |
+| Fetal Death | 229 | Place of Delivery Post Directional | POSTDIR_D | location.location.address |
+| Fetal Death | 226 | Place of Delivery Pre Directional | PREDIR_D | location.location.address |
+| Fetal Death | 13 | Facility ID (State-Assigned) | SFN | identifer |
+| Fetal Death | 235 | State, U.S. Territory or Canadian Province of Place of Delivery - literal | STATE_D | location.location.address |
+| Fetal Death | 228 | Place of Delivery Street designator | STDESIG_D | location.location.address |
+| Fetal Death | 227 | Place of Delivery Street name | STNAME_D | location.location.address |
+| Fetal Death | 225 | Place of Delivery Street number | STNUM_D | location.location.address |
+| Fetal Death | 232 | Place of Delivery Zip code and Zip+4 | ZIPCODE_D | location.location.address |
 {: .grid }
