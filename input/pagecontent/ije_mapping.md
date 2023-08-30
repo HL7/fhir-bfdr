@@ -298,7 +298,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 193 | Method of Delivery--Route and Method of Delivery | ROUT | [Procedure-final-route-method-delivery](StructureDefinition-Procedure-final-route-method-delivery.html) | BFDR |
 | 197 | Maternal Morbidity--Ruptured Uterus | RUT | [Condition-ruptured-uterus](StructureDefinition-Condition-ruptured-uterus.html) | BFDR |
 | 217 | Abnormal Conditions of the Newborn--Seizures | SEIZ | [Condition-seizure](StructureDefinition-Condition-seizure.html) | BFDR |
-| 13 | Facility ID (State-Assigned) | SFN | [Encounter-birth](StructureDefinition-Encounter-birth.html) | BFDR |
+| 13 | Facility ID (State-Assigned) | SFN | [us-core-location]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-location.html) | US CORE |
 | 208 | Set Order | SORD | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | VRCPL |
 | 321 | Social Security Number Requested for Child? | SSN_REQ | [Observation-ssn-requested-for-child](StructureDefinition-Observation-ssn-requested-for-child.html) | BFDR |
 | 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
