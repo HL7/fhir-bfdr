@@ -4,6 +4,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
 * VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
 * US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
+* ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
 ### Natality (Live Birth) IJE Mapping
@@ -18,10 +19,10 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 216 | Abnormal Conditions of the Newborn--Antibiotics | ANTI | [Procedure-antibiotic-suspected-neonatal-sepsis](StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html) | BFDR |
 | 206 | Apgar Score at 10 Minutes | APGAR10 | [Observation-apgar-score-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-apgar-score-vr.html) | VRCPL |
 | 205 | Apgar Score at 5 Minutes | APGAR5 | [Observation-apgar-score-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-apgar-score-vr.html) | VRCPL |
-| 124 | Attendant Title | ATTEND | [Practitioner-vr](StructureDefinition-Practitioner-vr.html) | BFDR |
-| 326 | Attendant's Name | ATTEND_NAME | [Practitioner-vr](StructureDefinition-Practitioner-vr.html) | BFDR |
-| 327 | Attendant's NPI | ATTEND_NPI | [Practitioner-vr](StructureDefinition-Practitioner-vr.html) | BFDR |
-| 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | [Practitioner-vr](StructureDefinition-Practitioner-vr.html) | BFDR |
+| 124 | Attendant Title | ATTEND | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 326 | Attendant's Name | ATTEND_NAME | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 327 | Attendant's NPI | ATTEND_NPI | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 304 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
 | 182 | Characteristics of Labor & Delivery--Augmentation of Labor | AUGL | [Procedure-augmentation-of-labor](StructureDefinition-Procedure-augmentation-of-labor.html) | BFDR |
 | 5 | Auxiliary State file number | AUXNO | [Extension-live-birth-local-file-number](StructureDefinition-Extension-live-birth-local-file-number.html) | BFDR |
 | 212 | Abnormal Conditions of the Newborn--Assisted Ventilation | AVEN1 | [Procedure-assisted-ventilation-following-delivery](StructureDefinition-Procedure-assisted-ventilation-following-delivery.html) | BFDR |
@@ -38,10 +39,10 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 221 | Congenital Anomalies of the Newborn--Cyanotic congenital heart disease | CCHD | [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html) | BFDR |
 | 222 | Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia | CDH | [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html) | BFDR |
 | 229 | Congenital Anomalies of the Newborn--Suspected Chromosomal disorder | CDIT | [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html) | BFDR |
-| 330 | Certifier Title | CERTIF | [Practitioner-vr](StructureDefinition-Practitioner-vr.html) | BFDR |
-| 328 | Certifier's Name | CERTIF_NAME | [Practitioner-vr](StructureDefinition-Practitioner-vr.html) | BFDR |
-| 329 | Certifier's NPI | CERTIF_NPI | [Practitioner-vr](StructureDefinition-Practitioner-vr.html) | BFDR |
-| 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT | [Practitioner-vr](StructureDefinition-Practitioner-vr.html) | BFDR |
+| 330 | Certifier Title | CERTIF | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 328 | Certifier's Name | CERTIF_NAME | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 329 | Certifier's NPI | CERTIF_NPI | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 331 | Certifier ("Other" specified text) | CERTIF_OTH_TXT | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
 | 336 | Date Signed by Certifier--Day | CERTIFIED_DY | [Encounter-birth](StructureDefinition-Encounter-birth.html) | BFDR |
 | 335 | Date Signed by Certifier--Month | CERTIFIED_MO | [Encounter-birth](StructureDefinition-Encounter-birth.html) | BFDR |
 | 334 | Date Signed by Certifier--Year | CERTIFIED_YR | [Encounter-birth](StructureDefinition-Encounter-birth.html) | BFDR |
@@ -318,3 +319,295 @@ The following IJE mappings to locations in FHIR specifications are for informati
 | 146 | Date of Last Live Birth--Year | YLLB | [Observation-date-of-last-live-birth](StructureDefinition-Observation-date-of-last-live-birth.html) | BFDR |
 | 148 | Date of Last Other Pregnancy Outcome--Year | YOPO | [Observation-date-of-last-other-pregnancy-outcome](StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html) | BFDR |
 | 269 | Mother's Residence Zip Code and Zip+4 | ZIPCODE | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+{: .grid }
+### Fetal Death IJE Mapping
+
+| **IJE Field#** |  **Description**   |  **IJE Name**  | **Profile**  | **Location** |
+| -------------- | ------------------ | -------------- | ------------ | ------------ |
+| 253 | Mother's Residence Street Address | ADDRESS | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 231 | Place of Delivery Street Address | ADDRESS_D | [us-core-location]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-location.html) | US CORE |
+| 141 | Maternal Morbidity--Admit to Intensive Care | AINT | [Observation-icu-admission](StructureDefinition-Observation-icu-admission.html) | BFDR |
+| 252 | Mother's Residence Unit or Apartment Number | APTNUMB | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 230 | Place of Delivery Unit or Apartment Number | APTNUMB_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 78 | Attendant | ATTEND | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 340 | Attendant's Name | ATTEND_NAME | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 341 | Attendant's NPI | ATTEND_NPI | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 342 | Attendant ("Other" specified text) | ATTEND_OTH_TXT | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | VRCPL |
+| 148 | Was an Autopsy Performed? | AUTOP | [Observation-autopsy-performed-indicator-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-autopsy-performed-indicator-vr.html) | VRCPL |
+| 150 | Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death? | AUTOPF | [Observation-autopsy-histological-exam-results-used](StructureDefinition-Observation-autopsy-histological-exam-results-used.html) | BFDR |
+| 5 | Auxiliary State file number | AUXNO | [Extension-fetal-death-local-file-number](StructureDefinition-Extension-fetal-death-local-file-number.html) | BFDR |
+| 19 | Mother's Birthplace--Country | BPLACEC_CNT | [patient-birthPlace](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) | FHIR |
+| 18 | State, U.S. Territory or Canadian Province of Birth (Mother) - code | BPLACEC_ST_TER | [patient-birthPlace](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) | FHIR |
+| 349 | Date Signed by Certifier--Day | CERTIFIED_DY | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 348 | Date Signed by Certifier--Month | CERTIFIED_MO | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 347 | Date Signed by Certifier--Year | CERTIFIED_YR | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 104 | Number of Cigarettes Smoked in 1st 3 months | CIGFN | [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | BFDR |
+| 106 | Number of Cigarettes Smoked in third trimester (RECOMMENDED CHANGE EFFECTIVE 2004) | CIGLN | [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | BFDR |
+| 103 | Number of Cigarettes Smoked in 3 months prior to Pregnancy | CIGPN | [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | BFDR |
+| 105 | Number of Cigarettes Smoked in 2nd 3 months | CIGSN | [Observation-cigarette-smoking-before-during-pregnancy](StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | BFDR |
+| 234 | Place of Delivery City/Town/Place (literal)  | CITY_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 20 | Residence of Mother--City/Town | CITYC | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 256 | Mother's Residence City/Town/Place (literal)  | CITYTXT | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 258 | Mother's Residence Country (literal) | CNTRYTXT | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 233 | Place of Delivery County (literal) | CNTY_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 10 | County of Delivery | CNTYO | [patient-birthPlace](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) | FHIR |
+| 180 | Initiating cause/condition - Rupture of membranes prior to onset of labor | COD18a1 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 189 | Initiating cause/condition - Other obstetrical or pregnancy complications literal | COD18a10 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 190 | Initiating cause/condition - Fetal anomaly literal | COD18a11 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 191 | Initiating cause/condition - Fetal injury literal | COD18a12 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 192 | Initiating cause/condition - Fetal infection literal | COD18a13 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 193 | Initiating cause/condition - Other fetal conditions/disorders literal | COD18a14 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 181 | Initiating cause/condition - Abruptio placenta | COD18a2 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 182 | Initiating cause/condition - Placental insufficiency | COD18a3 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 183 | Initiating cause/condition - Prolapsed cord | COD18a4 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 184 | Initiating cause/condition - Chorioamnionitis | COD18a5 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 185 | Initiating cause/condition - Other complications of placenta, cord, or membranes | COD18a6 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 186 | Initiating cause/condition - Unknown | COD18a7 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 187 | Initiating cause/condition - Maternal conditions/diseases literal | COD18a8 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 188 | Initiating cause/condition - Other complications of placenta, cord, or membranes literal | COD18a9 | [Condition-fetal-death-cause-or-condition](StructureDefinition-Condition-fetal-death-cause-or-condition.html) | BFDR |
+| 194 | Other significant causes or conditions - Rupture of membranes prior to onset of labor | COD18b1 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 203 | Other significant causes or conditions - Other obstetrical or pregnancy complications literal | COD18b10 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 204 | Other significant causes or conditions - Fetal anomaly literal | COD18b11 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 205 | Other significant causes or conditions - Fetal injury literal | COD18b12 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 206 | Other significant causes or conditions - Fetal infection literal | COD18b13 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 207 | Other significant causes or conditions - Other fetal conditions/disorders literal | COD18b14 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 195 | Other significant causes or conditions - Abruptio placenta | COD18b2 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 196 | Other significant causes or conditions  - Placental insufficiency | COD18b3 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 197 | Other significant causes or conditions - Prolapsed cord | COD18b4 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 198 | Other significant causes or conditions - Chorioamnionitis | COD18b5 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 199 | Other significant causes or conditions - Other complications of placenta, cord, or membranes | COD18b6 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 200 | Other significant causes or conditions - Unknown | COD18b7 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 201 | Other significant causes or conditions - Maternal conditions/diseases literal | COD18b8 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 202 | Other significant causes or conditions - Other complications of placenta, cord, or membranes literal | COD18b9 | [Condition-fetal-death-other-cause-or-condition](StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | BFDR |
+| 236 | Place of Delivery Country (literal) | COUNTRY_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 23 | Residence of Mother--Country | COUNTRYC | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 21 | Residence of Mother--County | COUNTYC | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 255 | Mother's Residence County (literal) | COUNTYTXT | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 275 | Industry of Father | DAD_IN_T | [odh-UsualWork]({{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-UsualWork.html) | ODH |
+| 271 | Occupation of Father | DAD_OC_T | [odh-UsualWork]({{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-UsualWork.html) | ODH |
+| 266 | Father's Social Security Number | DAD_SSN | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
+| 261 | Father's Legal First Name | DADFNAME | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
+| 263 | Father's Legal Last Name | DADLNAME | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
+| 262 | Father's Legal Middle Name | DADMNAME | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
+| 264 | Father's Legal Surname Suffix | DADSUFFIX | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
+| 109 | Date Last Normal Menses Began--Day | DLMP_DY | [Observation-last-menstrual-period-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-last-menstrual-period-vr.html) | VRCPL |
+| 108 | Date Last Normal Menses Began--Month | DLMP_MO | [Observation-last-menstrual-period-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-last-menstrual-period-vr.html) | VRCPL |
+| 107 | Date Last Normal Menses Began--Year | DLMP_YR | [Observation-last-menstrual-period-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-last-menstrual-period-vr.html) | VRCPL |
+| 81 | Date of First Prenatal Care Visit--Day | DOFP_DY | [Observation-date-of-first-prenatal-care-visit](StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | BFDR |
+| 80 | Date of First Prenatal Care Visit--Month | DOFP_MO | [Observation-date-of-first-prenatal-care-visit](StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | BFDR |
+| 82 | Date of First Prenatal Care Visit--Year | DOFP_YR | [Observation-date-of-first-prenatal-care-visit](StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | BFDR |
+| 178 | Date of Registration--Day | DOR_DY | [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html) | BFDR |
+| 177 | Date of Registration--Month | DOR_MO | [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html) | BFDR |
+| 176 | Date of Registration--Year | DOR_YR | [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html) | BFDR |
+| 11 | Place Where Delivery Occurred | DPLACE | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 2 | State, U.S. Territory or Canadian Province of Place of Delivery - code | DSTATE | [patient-birthPlace](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) | FHIR |
+| 173 | Risk Factors--Hypertension Eclampsia (added after 2004) | EHYPE | [Condition-eclampsia-hypertension-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-eclampsia-hypertension-vr.html) | VRCPL |
+| 147 | Estimated time of fetal death | ETIME | [Observation-estimated-fetal-death-time-point](StructureDefinition-Observation-estimated-fetal-death-time-point.html) | BFDR |
+| 28 | Date of Birth (Father)--Edit Flag | FAGE_BYPASS | [Observation-edit-flag-fathers-date-of-birth](StructureDefinition-Observation-edit-flag-fathers-date-of-birth.html) | BFDR |
+| 172 | Father's Reported Age | FAGER | [Extension-reported-parent-age-at-delivery-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-reported-parent-age-at-delivery-vr.html) | VRCPL |
+| 277 | State, U.S. Territory or Canadian Province of Birth (Father) - code | FBPLACD_ST_TER_C | [Extension-relatedperson-birthplace-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html) | VRCPL |
+| 278 | Father's Country of Birth (Code) | FBPLACE_CNT_C | [Extension-relatedperson-birthplace-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html) | VRCPL |
+| 282 | Father's Country of Birth (Literal) | FBPLACE_CNTRY_TXT | [Extension-relatedperson-birthplace-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html) | VRCPL |
+| 281 | State, U.S. Territory or Canadian Province of Birth (Father) - literal | FBPLACE_ST_TER_TXT | [Extension-relatedperson-birthplace-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html) | VRCPL |
+| 27 | Date of Birth (Father)--Day | FDOB_DY | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
+| 26 | Date of Birth (Father)--Month | FDOB_MO | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
+| 25 | Date of Birth (Father)--Year | FDOB_YR | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | VRCPL |
+| 9 | Date of Delivery (Fetus)--Day | FDOD_DY | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
+| 8 | Date of Delivery (Fetus)--Month | FDOD_MO | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
+| 1 | Date of Delivery (Fetus)--Year | FDOD_YR | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
+| 153 | Number of Fetal Deaths | FDTH | [Observation-number-fetal-deaths-this-delivery-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-number-fetal-deaths-this-delivery-vr.html) | VRCPL |
+| 283 | Father's Education | FEDUC | [Observation-parent-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-parent-education-level-vr.html) | VRCPL |
+| 284 | Father's Education--Edit Flag | FEDUC_BYPASS | [Observation-edit-flag-fathers-education](StructureDefinition-Observation-edit-flag-fathers-education.html) | BFDR |
+| 219 | Fetus First Name | FETFNAME | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
+| 337 | Father's Hispanic Origin - Specify | FETHNIC_T | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
+| 285 | Father of Hispanic Origin?--Mexican | FETHNIC1 | [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) | US CORE |
+| 286 | Father of Hispanic Origin?--Puerto Rican | FETHNIC2 | [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) | US CORE |
+| 287 | Father of Hispanic Origin?--Cuban | FETHNIC3 | [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) | US CORE |
+| 288 | Father of Hispanic Origin?--Other | FETHNIC4 | [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) | US CORE |
+| 289 | Father of Hispanic Origin?--Other Literal | FETHNIC5 | [us-core-ethnicity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) | US CORE |
+| 332 | Father's Hispanic Code for Literal | FETHNIC5C | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
+| 333 | Father's Edited Hispanic Origin Code | FETHNICE | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
+| 221 | Fetus Last Name | FETLNAME | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
+| 220 | Fetus Middle Name | FETMNAME | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
+| 3 | Certificate Number | FILENO | [Extension-fetal-death-report-number](StructureDefinition-Extension-fetal-death-report-number.html) | BFDR |
+| 12 | Facility ID (NPI) - If available | FNPI | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 338 | Father's Race - Specify | FRACE_T | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 290 | Father's Race--White | FRACE1 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 299 | Father's Race--Other Asian | FRACE10 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 300 | Father's Race--Native Hawaiian | FRACE11 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 301 | Father's Race--Guamanian or Chamorro | FRACE12 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 302 | Father's Race--Samoan | FRACE13 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 303 | Father's Race--Other Pacific Islander | FRACE14 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 304 | Father's Race--Other | FRACE15 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 305 | Father's Race--First American Indian or Alaska Native Literal | FRACE16 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 321 | Father's Race Tabulation Variable 16C | FRACE16C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 306 | Father's Race--Second American Indian or Alaska Native Literal | FRACE17 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 322 | Father's Race Tabulation Variable 17C | FRACE17C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 307 | Father's Race--First Other Asian Literal | FRACE18 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 323 | Father's Race Tabulation Variable 18C | FRACE18C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 308 | Father's Race--Second Other Asian Literal | FRACE19 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 324 | Father's Race Tabulation Variable 19C | FRACE19C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 313 | Father's Race Tabulation Variable 1E | FRACE1E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 291 | Father's Race--Black or African American | FRACE2 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 309 | Father's Race--First Other Pacific Islander Literal | FRACE20 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 325 | Father's Race Tabulation Variable 20C | FRACE20C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 310 | Father's Race--Second Other Pacific Islander Literal | FRACE21 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 326 | Father's Race Tabulation Variable 21C | FRACE21C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 311 | Father's Race--First Other Literal | FRACE22 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 327 | Father's Race Tabulation Variable 22C | FRACE22C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 312 | Father's Race--Second Other Literal | FRACE23 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 328 | Father's Race Tabulation Variable 23C | FRACE23C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 314 | Father's Race Tabulation Variable 2E | FRACE2E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 292 | Father's Race--American Indian or Alaska Native | FRACE3 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 315 | Father's Race Tabulation Variable 3E | FRACE3E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 293 | Father's Race--Asian Indian | FRACE4 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 316 | Father's Race Tabulation Variable 4E | FRACE4E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 294 | Father's Race--Chinese | FRACE5 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 317 | Father's Race Tabulation Variable 5E | FRACE5E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 295 | Father's Race--Filipino | FRACE6 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 318 | Father's Race Tabulation Variable 6E | FRACE6E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 296 | Father's Race--Japanese | FRACE7 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 319 | Father's Race Tabulation Variable 7E | FRACE7E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 297 | Father's Race--Korean | FRACE8 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 320 | Father's Race Tabulation Variable 8E | FRACE8E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 298 | Father's Race--Vietnamese | FRACE9 | [us-core-race]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) | US CORE |
+| 334 | Father's Bridged Race - NCHS Code | FRACEBG_C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 7 | Sex | FSEX | [us-core-birthsex]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html) | US CORE |
+| 144 | Weight of Fetus--Edit Flag | FW_BYPASS | [Observation-edit-flag-birthweight](StructureDefinition-Observation-edit-flag-birthweight.html) | BFDR |
+| 143 | Weight of Fetus | FWG | [Observation-birth-weight-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-birth-weight-vr.html) | VRCPL |
+| 111 | Risk Factors--Gestational Diabetes | GDIAB | [Condition-gestational-diabetes-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-diabetes-vr.html) | VRCPL |
+| 113 | Risk Factors--Hypertension Gestational  (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004) | GHYPE | [Condition-gestational-hypertension-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-gestational-hypertension-vr.html) | VRCPL |
+| 88 | Mother's Height--Feet | HFT | [Observation-mother-height-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-mother-height-vr.html) | VRCPL |
+| 90 | Mother's Height--Edit Flag | HGT_BYPASS | [Observation-edit-flag-mothers-height](StructureDefinition-Observation-edit-flag-mothers-height.html) | BFDR |
+| 89 | Mother's Height--Inches | HIN | [Observation-mother-height-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-mother-height-vr.html) | VRCPL |
+| 149 | Was a Histological Placental Examination Performed? | HISTOP | [Observation-histological-placental-exam-performed](StructureDefinition-Observation-histological-placental-exam-performed.html) | BFDR |
+| 224 | Name of Delivery Facility | HOSP_D | [us-core-location]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-location.html) | US CORE |
+| 339 | Facility Mother Moved From (if transferred) | HOSPFROM | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 208 | Coded initiating cause/condition | ICOD | [Condition-coded-initiating-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition.html) | BFDR |
+| 117 | Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575) | INFT | [Procedure-infertility-treatment-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-infertility-treatment-vr.html) | VRCPL |
+| 175 | Risk Factors--Infertility: Asst. Rep. Technology (added after 2004) | INFT_ART | [Procedure-assisted-fertilization-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-assisted-fertilization-vr.html) | VRCPL |
+| 174 | Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004) | INFT_DRG | [Procedure-artificial-insemination-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Procedure-artificial-insemination-vr.html) | VRCPL |
+| 24 | Residence of Mother--Inside City/Town Limits | LIMITS | [Extension-within-city-limits-indicator-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-within-city-limits-indicator-vr.html) | VRCPL |
+| 17 | Date of Birth (Mother)--Edit Flag | MAGE_BYPASS | [Observation-edit-flag-mothers-date-of-birth](StructureDefinition-Observation-edit-flag-mothers-date-of-birth.html) | BFDR |
+| 171 | Mother's Reported Age | MAGER | [Extension-reported-parent-age-at-delivery-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-reported-parent-age-at-delivery-vr.html) | VRCPL |
+| 280 | Mother's Country of Birth (Literal) | MBPLACE_CNTRY_TXT | [patient-birthPlace](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) | FHIR |
+| 279 | State, U.S. Territory or Canadian Province of Birth (Mother) - literal | MBPLACE_ST_TER_TXT | [patient-birthPlace](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) | FHIR |
+| 16 | Date of Birth (Mother)--Day | MDOB_DY | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 15 | Date of Birth (Mother)--Month | MDOB_MO | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 14 | Date of Birth (Mother)--Year | MDOB_YR | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 32 | Mother's Education | MEDUC | [Observation-parent-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-parent-education-level-vr.html) | VRCPL |
+| 33 | Mother's Education--Edit Flag | MEDUC_BYPASS | [Observation-edit-flag-mothers-education](StructureDefinition-Observation-edit-flag-mothers-education.html) | BFDR |
+| 335 | Mother's Hispanic Origin - Specify | METHNIC_T | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
+| 34 | Mother of Hispanic Origin?--Mexican | METHNIC1 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 35 | Mother of Hispanic Origin?--Puerto Rican | METHNIC2 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 36 | Mother of Hispanic Origin?--Cuban | METHNIC3 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 37 | Mother of Hispanic Origin?--Other | METHNIC4 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 38 | Mother of Hispanic Origin?--Other Literal | METHNIC5 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 329 | Mother's Hispanic Code for Literal | METHNIC5C | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
+| 330 | Mother's Edited Hispanic Origin Code | METHNICE | [Observation-tabulated-ethnicity-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-tabulated-ethnicity-vr.html) | VRCPL |
+| 99 | Date of Last Live Birth--Month | MLLB | [Observation-date-of-last-live-birth](StructureDefinition-Observation-date-of-last-live-birth.html) | BFDR |
+| 273 | Industry of Mother | MOM_IN_T | [odh-UsualWork]({{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-UsualWork.html) | ODH |
+| 269 | Occupation of Mother | MOM_OC_T | [odh-UsualWork]({{site.data.fhir.ver.hl7fhirusodh}}/StructureDefinition-odh-UsualWork.html) | ODH |
+| 265 | Mother's Social Security Number | MOM_SSN | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 243 | Mother's First Maiden Name | MOMFMNME | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 239 | Mother's Legal First Name | MOMFNAME | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 241 | Mother's Legal Last Name | MOMLNAME | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 245 | Mother's Last Maiden Name | MOMMAIDN | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 244 | Mother's Middle Maiden Name | MOMMMID | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 240 | Mother's Legal Middle Name | MOMMNAME | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 246 | Mother's Maiden Surname Suffix | MOMMSUFFIX | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 242 | Mother's Legal Surname Suffix | MOMSUFFIX | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 336 | Mother's Race - Specify | MRACE_T | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 39 | Mother's Race--White | MRACE1 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 48 | Mother's Race--Other Asian | MRACE10 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 49 | Mother's Race--Native Hawaiian | MRACE11 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 50 | Mother's Race--Guamanian or Chamorro | MRACE12 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 51 | Mother's Race--Samoan | MRACE13 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 52 | Mother's Race--Other Pacific Islander | MRACE14 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 53 | Mother's Race--Other | MRACE15 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 54 | Mother's Race--First American Indian or Alaska Native Literal | MRACE16 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 70 | Mother's Race Tabulation Variable 16C | MRACE16C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 55 | Mother's Race--Second American Indian or Alaska Native Literal | MRACE17 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 71 | Mother's Race Tabulation Variable 17C | MRACE17C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 56 | Mother's Race--First Other Asian Literal | MRACE18 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 72 | Mother's Race Tabulation Variable 18C | MRACE18C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 57 | Mother's Race--Second Other Asian Literal | MRACE19 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 73 | Mother's Race Tabulation Variable 19C | MRACE19C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 62 | Mother's Race Tabulation Variable 1E | MRACE1E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 40 | Mother's Race--Black or African American | MRACE2 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 58 | Mother's Race--First Other Pacific Islander Literal | MRACE20 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 74 | Mother's Race Tabulation Variable 20C | MRACE20C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 59 | Mother's Race--Second Other Pacific Islander Literal | MRACE21 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 75 | Mother's Race Tabulation Variable 21C | MRACE21C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 60 | Mother's Race--First Other Literal | MRACE22 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 76 | Mother's Race Tabulation Variable 22C | MRACE22C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 61 | Mother's Race--Second Other Literal | MRACE23 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 77 | Mother's Race Tabulation Variable 23C | MRACE23C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 63 | Mother's Race Tabulation Variable 2E | MRACE2E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 41 | Mother's Race--American Indian or Alaska Native | MRACE3 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 64 | Mother's Race Tabulation Variable 3E | MRACE3E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 42 | Mother's Race--Asian Indian | MRACE4 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 65 | Mother's Race Tabulation Variable 4E | MRACE4E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 43 | Mother's Race--Chinese | MRACE5 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 66 | Mother's Race Tabulation Variable 5E | MRACE5E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 44 | Mother's Race--Filipino | MRACE6 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 67 | Mother's Race Tabulation Variable 6E | MRACE6E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 45 | Mother's Race--Japanese | MRACE7 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 68 | Mother's Race Tabulation Variable 7E | MRACE7E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 46 | Mother's Race--Korean | MRACE8 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 69 | Mother's Race Tabulation Variable 8E | MRACE8E | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 47 | Mother's Race--Vietnamese | MRACE9 | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 331 | Mother's Bridged Race - NCHS Code | MRACEBG_C | [Observation-race-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-race-vr.html) | VRCPL |
+| 119 | Risk Factors--Number Previous Cesareans | NPCES | [Observation-number-previous-cesareans-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-number-previous-cesareans-vr.html) | VRCPL |
+| 120 | Risk Factors--Number Previous Cesareans--Edit Flag | NPCES_BYPASS | [Observation-edit-flag-number-previous-cesareans](StructureDefinition-Observation-edit-flag-number-previous-cesareans.html) | BFDR |
+| 209 | Coded other significant causes or conditions- first mentioned | OCOD1 | [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | BFDR |
+| 210 | Coded other significant causes or conditions- second mentioned | OCOD2 | [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | BFDR |
+| 211 | Coded other significant causes or conditions- third mentioned | OCOD3 | [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | BFDR |
+| 212 | Coded other significant causes or conditions- fourth mentioned | OCOD4 | [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | BFDR |
+| 213 | Coded other significant causes or conditions- fifth mentioned | OCOD5 | [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | BFDR |
+| 214 | Coded other significant causes or conditions- sixth mentioned | OCOD6 | [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | BFDR |
+| 215 | Coded other significant causes or conditions- seventh mentioned | OCOD7 | [Condition-coded-other-fetal-death-cause-or-condition](StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | BFDR |
+| 145 | Obstetric Estimation of Gestation | OWGEST | [Observation-gestational-age-at-delivery-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-gestational-age-at-delivery-vr.html) | VRCPL |
+| 146 | Obstetric Estimation of Gestation--Edit Flag | OWGEST_BYPASS | [Observation-edit-flag-estimate-of-gestation](StructureDefinition-Observation-edit-flag-estimate-of-gestation.html) | BFDR |
+| 118 | Risk Factors--Previous Cesarean | PCES | [Observation-previous-cesarean-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-previous-cesarean-vr.html) | VRCPL |
+| 110 | Risk Factors--Prepregnancy Diabetes  (NOTE: SEE INSERTED NOTES FOR RISK FACTOR LOCATIONS 490-501 AND 573-575 TO REFLECT 2004 CHANGES) | PDIAB | [Condition-prepregnancy-diabetes-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-prepregnancy-diabetes-vr.html) | VRCPL |
+| 112 | Risk Factors--Hypertension Prepregnancy | PHYPE | [Condition-prepregnancy-hypertension-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Condition-prepregnancy-hypertension-vr.html) | VRCPL |
+| 97 | Previous Live Births Now Dead | PLBD | [Observation-number-births-now-dead-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-number-births-now-dead-vr.html) | VRCPL |
+| 96 | Previous Live Births Now Living | PLBL | [Observation-number-births-now-living-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-number-births-now-living-vr.html) | VRCPL |
+| 151 | Plurality | PLUR | [Observation-plurality-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-plurality-vr.html) | VRCPL |
+| 155 | Plurality--Edit Flag | PLUR_BYPASS | [Observation-edit-flag-plurality](StructureDefinition-Observation-edit-flag-plurality.html) | BFDR |
+| 251 | Mother's Residence Post Directional | POSTDIR | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 229 | Place of Delivery Post Directional | POSTDIR_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 248 | Mother's Residence Pre Directional | PREDIR | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 226 | Place of Delivery Pre Directional | PREDIR_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 133 | Method of Delivery--Fetal Presentation | PRES | [Observation-fetal-presentation](StructureDefinition-Observation-fetal-presentation.html) | BFDR |
+| 91 | Mother's Prepregnancy Weight | PWGT | [Observation-mother-prepregnancy-weight-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-mother-prepregnancy-weight-vr.html) | VRCPL |
+| 92 | Mother's Prepregnancy Weight--Edit Flag | PWGT_BYPASS | [Observation-edit-flag-mothers-prepregnancy-weight](StructureDefinition-Observation-edit-flag-mothers-prepregnancy-weight.html) | BFDR |
+| 170 | NCHS USE ONLY: Receipt date -- Day | R_DY | [Parameters-coding-status-values-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Parameters-coding-status-values-vr.html) | VRCPL |
+| 169 | NCHS USE ONLY: Receipt date -- Month | R_MO | [Parameters-coding-status-values-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Parameters-coding-status-values-vr.html) | VRCPL |
+| 168 | NCHS USE ONLY: Receipt date -- Year | R_YR | [Parameters-coding-status-values-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Parameters-coding-status-values-vr.html) | VRCPL |
+| 352 | Date Filed by Registrar--Day | REGISTER_DY | [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html) | BFDR |
+| 351 | Date Filed by Registrar--Month | REGISTER_MO | [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html) | BFDR |
+| 350 | Date Filed by Registrar--Year | REGISTER_YR | [Extension-date-received-by-registrar](StructureDefinition-Extension-date-received-by-registrar.html) | BFDR |
+| 353 | Replacement (amended) Record | REPLACE | [Extension-replacement-status](StructureDefinition-Extension-replacement-status.html) | BFDR |
+| 134 | Method of Delivery--Route and Method of Delivery | ROUT | [Procedure-final-route-method-delivery](StructureDefinition-Procedure-final-route-method-delivery.html) | BFDR |
+| 139 | Maternal Morbidity--Ruptured Uterus | RUT | [Condition-ruptured-uterus](StructureDefinition-Condition-ruptured-uterus.html) | BFDR |
+| 13 | Facility ID (State-Assigned) | SFN | [us-core-location]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-location.html) | US CORE |
+| 152 | Set Order | SORD | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
+| 235 | State, U.S. Territory or Canadian Province of Place of Delivery - literal | STATE_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 22 | State, U.S. Territory or Canadian Province of Residence (Mother) - code | STATEC | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 257 | State, U.S. Territory or Canadian Province of Residence (Mother) - literal | STATETXT | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 250 | Mother's Residence Street designator | STDESIG | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 228 | Place of Delivery Street designator | STDESIG_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 249 | Mother's Residence Street name | STNAME | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 227 | Place of Delivery Street name | STNAME_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 247 | Mother's Residence Street number | STNUM | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 225 | Place of Delivery Street number | STNUM_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+| 222 | Fetus Surname Suffix | SUFFIX | [Patient-decedent-fetus-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-decedent-fetus-vr.html) | VRCPL |
+| 6 | Time of Delivery | TD | [patient-birthTime](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html) | FHIR |
+| 135 | Method of Delivery--Trial of Labor Attempted | TLAB | [Observation-labor-trial-attempted](StructureDefinition-Observation-labor-trial-attempted.html) | BFDR |
+| 95 | Did Mother get WIC Food for Herself? | WIC | [Observation-mother-received-wic-food](StructureDefinition-Observation-mother-received-wic-food.html) | BFDR |
+| 100 | Date of Last Live Birth--Year | YLLB | [Observation-date-of-last-live-birth](StructureDefinition-Observation-date-of-last-live-birth.html) | BFDR |
+| 254 | Mother's Residence Zip code and Zip+4 | ZIPCODE | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | VRCPL |
+| 232 | Place of Delivery Zip code and Zip+4 | ZIPCODE_D | [Encounter-maternity](StructureDefinition-Encounter-maternity.html) | BFDR |
+{: .grid }
