@@ -1,5 +1,5 @@
 ### Form Mapping
-This concept is mapped to:
+This profile is mapped to:
 
 ### IJE Mapping
 

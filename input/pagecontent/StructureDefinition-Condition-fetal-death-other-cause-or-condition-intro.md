@@ -1,7 +1,7 @@
 The type of cause or condition (code.coding) should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text (code.text) to fully record the provider's view of the cause.
 
 ### Form Mapping
-This concept is mapped to:
+This profile is mapped to:
  * Item **18b. Other Significant Causes or Conditions** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
  * Item **27. Other Significant Causes or Conditions** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
