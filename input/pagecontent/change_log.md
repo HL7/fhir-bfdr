@@ -1,6 +1,5 @@
 ### STU 1.1 Update, July 2023
 
-
 | Jira Issue | Description of Change | Changes Made |
 |---|---|---|
 | https://jira.hl7.org/browse/FHIR-40582 | Split Observations with value sets containing a mix of Conditions, Observations, and Procedures into separate profiles for each code: Observations with value sets containing a mix of Conditions, Observations, and Procedures have been used in the IG. This is not how the data is represented in the real world. Split the Observations into separate profiles using the appropriate resource. | Deleted profiles:<br/>Condition - Abnormal Condition of the Newborn<br/>Observation - Characteristic of Labor and Delivery<br/><br/>Added profiles:<br/>Condition - Seizure<br/>Observation - NICU Admission<br/>Observation - None of Specificed Abnormal Conditions of Newborn<br/>Procedure - Antibiotic for Suspected Neonatal Sepsis<br/>Procedure - Assisted Ventilation Following Delivery<br/>Procedure - Assisted Ventilation More Than Six Hours<br/>Procedure - Surfactant Replacement Therapy/><br/>Condition - Chorioamnionitis<br/>Observation - Administration of Steroids for Fetal Lung Maturation<br/>Observation - Antibiotics Administered During Labor<br/>Observation - None Of Specified Characteristics of Labor and Delivery<br/>Procedure - Augmentation of Labor<br/>Procedure - Epidural or Spinal Anesthesia<br/>Procedure - Induction of Labor|
