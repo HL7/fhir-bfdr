@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-fetal-death-report"/>
     <meta>
-        <versionId value="84"/>
-        <lastUpdated value="2023-08-29T06:17:03.793Z"/>
+        <versionId value="93"/>
+        <lastUpdated value="2023-08-31T04:31:42.334Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
     <name value="CompositionProviderFetalDeathReport"/>
@@ -106,7 +106,7 @@
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
-            <short value="The subject of the composition is the decedent fetus"/>
+            <short value="The subject of the composition is the decedent fetus: the &quot;US Standard Patient’s Worksheet for the Report of Fetal Death&quot; should be the source of truth for the name of the decedent fetus."/>
             <definition value="The subject of the composition as a whole is the decedent fetus. Different sections in the composition have different focus (e.g.: the mother)."/>
             <min value="1"/>
             <type>
@@ -158,7 +158,7 @@
                 <rules value="open"/>
             </slicing>
             <short value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report."/>
-            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report. The sections are Mother, Mother Prenatal,  Medical and Health, and fetus. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
+            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report. The sections are Mother, Mother Prenatal,  Medical and Health, and fetus. Various administrative and demographic data in the Death Report are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -185,7 +185,7 @@
         </element>
         <element id="Composition.section:motherPrenatal.focus">
             <path value="Composition.section.focus"/>
-            <short value="The focus of this section is the mother"/>
+            <short value="The focus of this section is the mother: the &quot;US Standard Patient’s Worksheet for the Report of Fetal Death&quot; should be the source of truth for the mother's name, address, dob, birthplace, race, and ethnicity."/>
             <definition value="The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother."/>
             <min value="1"/>
             <type>
@@ -284,7 +284,7 @@
         <element id="Composition.section:motherPrenatal.entry:mothersHeight">
             <path value="Composition.section.entry"/>
             <sliceName value="mothersHeight"/>
-            <short value="Mother's height"/>
+            <short value="Mother's height: the &quot;US Standard Patient’s Worksheet for the Report of Fetal Death&quot; should be the source of truth for this data element."/>
             <definition value="The mother's height"/>
             <max value="1"/>
             <type>
@@ -296,7 +296,7 @@
         <element id="Composition.section:motherPrenatal.entry:mothersPrepregnancyWeight">
             <path value="Composition.section.entry"/>
             <sliceName value="mothersPrepregnancyWeight"/>
-            <short value="Mother's prepregnancy weight"/>
+            <short value="Mother's prepregnancy weight: the &quot;US Standard Patient’s Worksheet for the Report of Fetal Death&quot; should be the source of truth for this data element."/>
             <definition value="The mother's prepregnancy weight"/>
             <max value="1"/>
             <type>
@@ -308,7 +308,7 @@
         <element id="Composition.section:motherPrenatal.entry:motherReceivedWICFood">
             <path value="Composition.section.entry"/>
             <sliceName value="motherReceivedWICFood"/>
-            <short value="Use of the WIC nutritional program by the mother"/>
+            <short value="Use of the WIC nutritional program by the mother: the &quot;US Standard Patient’s Worksheet for the Report of Fetal Death&quot; should be the source of truth for this data element."/>
             <definition value="Use of the Women, Infant's, and Children (WIC) nutritional program by the mother during the pregnancy."/>
             <max value="1"/>
             <type>
@@ -320,7 +320,7 @@
         <element id="Composition.section:motherPrenatal.entry:cigaretteSmokingBeforeDuringPregnancy">
             <path value="Composition.section.entry"/>
             <sliceName value="cigaretteSmokingBeforeDuringPregnancy"/>
-            <short value="Cigarettes smoked by the mother before and during the pregnancy"/>
+            <short value="Cigarettes smoked by the mother before and during the pregnancy: the &quot;US Standard Patient’s Worksheet for the Report of Fetal Death&quot; should be the source of truth for this data element."/>
             <definition value="The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"/>
             <max value="4"/>
             <type>
@@ -653,12 +653,44 @@
         <element id="Composition.section:motherInformation.entry:mothersEducation">
             <path value="Composition.section.entry"/>
             <sliceName value="mothersEducation"/>
-            <short value="Mother's education: the &quot;2016 US Standard Mothers Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
+            <short value="Mother's education: the &quot;US Standard Patient’s Worksheet for the Report of Fetal Death&quot; should be the source of truth for this data element."/>
             <definition value="Mother's education"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation">
+            <path value="Composition.section"/>
+            <sliceName value="fatherInformation"/>
+            <short value="Father section on the Fetal Death Report"/>
+            <definition value="This section contains items from the father section on the Death Report."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Father's administrative information"/>
+            <definition value="Father's administrative information"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92013-2"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the father: the &quot;US Standard Patient’s Worksheet for the Report of Fetal Death&quot; should be the source of truth for the father's name, dob, and birthplace."/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>

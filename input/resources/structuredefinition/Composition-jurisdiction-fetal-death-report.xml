@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-jurisdiction-fetal-death-report"/>
     <meta>
-        <versionId value="101"/>
-        <lastUpdated value="2023-08-29T06:15:48.374Z"/>
+        <versionId value="103"/>
+        <lastUpdated value="2023-08-31T04:32:44.135Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
     <name value="CompositionJurisdictionFetalDeathReport"/>
@@ -152,7 +152,7 @@
                 <rules value="open"/>
             </slicing>
             <short value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report."/>
-            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and fetus. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
+            <definition value="The Composition is broken into sections that, where possible, align with the sections in the Fetal Death Report. The sections are Mother, Father, Mother Prenatal,  Medical and Health, and fetus. Various administrative and demographic data in the Death Report are contained in other locations in the Composition, such as the Patient and Encounter profiles."/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -653,6 +653,38 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation">
+            <path value="Composition.section"/>
+            <sliceName value="fatherInformation"/>
+            <short value="Father section on the Fetal Death Report"/>
+            <definition value="This section contains items from the father section on the Death Report."/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation.code">
+            <path value="Composition.section.code"/>
+            <short value="Father's administrative information"/>
+            <definition value="Father's administrative information"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="92013-2"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:fatherInformation.focus">
+            <path value="Composition.section.focus"/>
+            <short value="The focus of this section is the father"/>
+            <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"/>
             </type>
             <mustSupport value="true"/>
         </element>

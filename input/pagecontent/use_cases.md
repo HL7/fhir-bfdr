@@ -23,20 +23,20 @@ Information flows are supported by the FHIR Composition resources indicated in t
 
 ### Sources of Data
 
-Locating and retrieving data required for the provider and jurisdiction forms supported by this IG may require search/query operations on a variety of EHR and EMR systems. These systems may use identifying codes for data elements (e.g., Observation.code for ___XXX-good example?___) that differ from the codes used in this IG and the Vital Records Common Profile Library IG. Future work for both this IG and the Vital Records Common Profile Library IG may include guidance on additional codes that may be in use.
+Locating and retrieving data required for the provider and jurisdiction forms supported by this IG may require search/query operations on a variety of EHR and EMR systems. These systems may use identifying codes for data elements that differ from the codes used in this IG and the Vital Records Common Profile Library IG. Future work for both this IG and the Vital Records Common Profile Library IG may include guidance on additional codes that may be in use.
 
-Data required for birth and fetal death reporting from health care providers to jurisdictional vital records offices and national health statistics agencies are drawn from multiple sources: 
+Data required for birth and fetal death reporting from health care providers to jurisdictional vital records offices and national health statistics agencies are drawn from multiple sources.
 
-1. **Mother/Patient Worksheets**: These worksheets should be considered the source of truth for the data they contain, and so should be queried first in any search for data required by the Facility Worksheets (Worksheet for the Live Birth Certificate and Worksheet for the Report of Fetal Death).
-  * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
-  * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
-2. **Prenatal care records**: If the mother’s prenatal care record is not in her hospital chart, please contact her prenatal care provider to obtain the record, or a copy of the prenatal care information. 
-3. **Mother's medical records**
-4. **Newborn's medical records**
+ * **Legal and demographic** data is gathered directly from the mother using the [Mother](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf) and [Patient](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf) Worksheets. These worksheets should be considered the source of truth for the data they contain. 
+ * **Medical and health** data is gathered using the [Facility Worksheet for Live Birth](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)) and [Facility Worksheet for Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf) and can come from: 
+  * Prenatal care records: If the mother’s prenatal care record is not in her hospital chart, please contact her prenatal care provider to obtain the record, or a copy of the prenatal care information. 
+  * Mother’s medical records 
+  * Labor and delivery records 
+  * Newborn's medical record 
 
-Preferred and acceptable sources are given before each section of the Facility Worksheets PDF forms [add links to example PDFs]. These sources are also provided here. Please do not provide information from sources other than those listed. 
+Preferred and acceptable sources are given before each section of the Facility Worksheets.
 
-For further information on sources of information, please see: Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death (https://www.cdc.gov/nchs/data/dvs/GuidetoCompleteFacilityWks.pdf) 
+For further information on sources of information, please see: [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/GuidetoCompleteFacilityWks.pdf).
 
 ### Provider Live Birth
 

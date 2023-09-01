@@ -7,6 +7,8 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
+See the [Sources of Data Section](use_cases.html#sources-of-data) for details about locating and retrieving required data.
+
 ### Natality (Live Birth) IJE Mapping
 
 | **IJE Field#** |  **Description**   |  **IJE Name**  | **Profile**  | **Location** |

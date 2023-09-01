@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="Composition-provider-live-birth-report"/>
     <meta>
-        <versionId value="140"/>
-        <lastUpdated value="2023-08-29T04:50:14.759Z"/>
+        <versionId value="145"/>
+        <lastUpdated value="2023-08-31T04:06:23.859Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
     <name value="CompositionProviderLiveBirthReport"/>
@@ -108,7 +108,7 @@
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
-            <short value="The subject of the composition is the newborn baby"/>
+            <short value="The subject of the composition is the newborn baby: the &quot;US Standard Mothers Worksheet for Child’s Birth Certificate&quot; should be the source of truth for the baby's name."/>
             <definition value="The subject of the composition as a whole is the newborn baby. Different sections in the composition have different focus (e.g.: the mother)."/>
             <min value="1"/>
             <type>
@@ -189,7 +189,7 @@
         </element>
         <element id="Composition.section:motherPrenatal.focus">
             <path value="Composition.section.focus"/>
-            <short value="The focus of this section is the mother"/>
+            <short value="The focus of this section is the mother: the &quot;US Standard Mothers Worksheet for Child’s Birth Certificate&quot; should be the source of truth for the mother's name, address, dob, birthplace, race, and ethnicity."/>
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the mother."/>
             <min value="1"/>
             <type>
@@ -348,7 +348,7 @@
         <element id="Composition.section:motherPrenatal.entry:mothersHeight">
             <path value="Composition.section.entry"/>
             <sliceName value="mothersHeight"/>
-            <short value="Mother's height"/>
+            <short value="Mother's height: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
             <definition value="The mother's height"/>
             <max value="1"/>
             <type>
@@ -360,7 +360,7 @@
         <element id="Composition.section:motherPrenatal.entry:mothersPrepregnancyWeight">
             <path value="Composition.section.entry"/>
             <sliceName value="mothersPrepregnancyWeight"/>
-            <short value="Mother's prepregnancy weight"/>
+            <short value="Mother's prepregnancy weight: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
             <definition value="The mother's prepregnancy weight"/>
             <max value="1"/>
             <type>
@@ -372,7 +372,7 @@
         <element id="Composition.section:motherPrenatal.entry:motherReceivedWICFood">
             <path value="Composition.section.entry"/>
             <sliceName value="motherReceivedWICFood"/>
-            <short value="Use of the WIC nutritional program by the mother"/>
+            <short value="Use of the WIC nutritional program by the mother: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
             <definition value="Use of the Women, Infant's, and Children (WIC) nutritional program by the mother during the pregnancy."/>
             <max value="1"/>
             <type>
@@ -384,7 +384,7 @@
         <element id="Composition.section:motherPrenatal.entry:cigaretteSmokingBeforeDuringPregnancy">
             <path value="Composition.section.entry"/>
             <sliceName value="cigaretteSmokingBeforeDuringPregnancy"/>
-            <short value="Cigarettes smoked by the mother before and during the pregnancy"/>
+            <short value="Cigarettes smoked by the mother before and during the pregnancy: the &quot;US Standard Mothers Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
             <definition value="The number of cigarettes or packs of cigarettes the mother smoked 3 months before and at various intervals during the pregnancy"/>
             <max value="4"/>
             <type>
@@ -443,7 +443,7 @@
         <element id="Composition.section:medicalHealthInformation.entry:pregnancyRiskFactors">
             <path value="Composition.section.entry"/>
             <sliceName value="pregnancyRiskFactors"/>
-            <short value="Risk factors in this pregnancy"/>
+            <short value="Risk factors in this pregnancy: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for the infertility treatment, artificial insemination, and assisted fertilization data elements."/>
             <definition value="Selected medical risk factors of the mother during this pregnancy"/>
             <type>
                 <code value="Reference"/>
@@ -733,7 +733,7 @@
         <element id="Composition.section:motherInformation.entry:marriedDuringPregnancy">
             <path value="Composition.section.entry"/>
             <sliceName value="marriedDuringPregnancy"/>
-            <short value="Mother married during pregnancy"/>
+            <short value="Mother married during pregnancy: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
             <definition value="Was mother married at conception, at the time of birth, or at any time between conception and giving birth?"/>
             <max value="1"/>
             <type>
@@ -745,7 +745,7 @@
         <element id="Composition.section:motherInformation.entry:ssnRequestedForChild">
             <path value="Composition.section.entry"/>
             <sliceName value="ssnRequestedForChild"/>
-            <short value="Was social security number requested for the child"/>
+            <short value="Was social security number requested for the child: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
             <definition value="Was social security number requested for the child"/>
             <max value="1"/>
             <type>
@@ -757,7 +757,7 @@
         <element id="Composition.section:motherInformation.entry:mothersEducation">
             <path value="Composition.section.entry"/>
             <sliceName value="mothersEducation"/>
-            <short value="Mother's education: the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf) should be the source of truth for this data element."/>
+            <short value="Mother's education: the US Standard Mother's Worksheet for Child’s Birth Certificate should be the source of truth for this data element."/>
             <definition value="Mother's education"/>
             <max value="1"/>
             <type>
@@ -789,7 +789,7 @@
         </element>
         <element id="Composition.section:fatherInformation.focus">
             <path value="Composition.section.focus"/>
-            <short value="The focus of this section is the father"/>
+            <short value="The focus of this section is the father: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for the father's name, dob, birthplace, ssn, race, and ethncity."/>
             <definition value="The subject of the composition as a whole is the newborn baby. The focus of this section in the composition is the father."/>
             <min value="1"/>
             <type>
@@ -816,7 +816,7 @@
         <element id="Composition.section:fatherInformation.entry:paternityAcknowledgementSigned">
             <path value="Composition.section.entry"/>
             <sliceName value="paternityAcknowledgementSigned"/>
-            <short value="Paternity acknowledgement signed by father"/>
+            <short value="Paternity acknowledgement signed by father: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
             <definition value="Whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth."/>
             <max value="1"/>
             <type>
@@ -828,7 +828,7 @@
         <element id="Composition.section:fatherInformation.entry:fathersEducation">
             <path value="Composition.section.entry"/>
             <sliceName value="fathersEducation"/>
-            <short value="Father's education"/>
+            <short value="Father's education: the &quot;US Standard Mother's Worksheet for Child’s Birth Certificate&quot; should be the source of truth for this data element."/>
             <definition value="Father's education"/>
             <max value="1"/>
             <type>

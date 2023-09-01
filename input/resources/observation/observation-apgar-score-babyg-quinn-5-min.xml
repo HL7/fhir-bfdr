@@ -3,11 +3,19 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-apgar-score-babyg-quinn-5-min"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-06T00:25:56.512Z"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-08-31T05:50:09.682Z"/>
         <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
     </meta>
     <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+        </coding>
+        <text value="Survey"/>
+    </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
@@ -20,5 +28,6 @@
         <reference value="Patient/patient-child-babyg-quinn"/>
         <display value="BabyG Quinn"/>
     </subject>
+    <effectiveDateTime value="2019-12-02"/>
     <valueInteger value="7"/>
 </Observation>
