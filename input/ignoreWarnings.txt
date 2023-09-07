@@ -7,12 +7,11 @@ The code provided PHC1497 cannot be validated in the options value set (Informan
 Code System unknown, so assuming value set expansion is correct (The CodeSystem urn:oid:2.16.840.1.113883.6.238 version 1.2 is unknown. Valid versions: [3.0.1, 3.0.0, 3.0.1, 3.1.1])
 Code System URI 'https://nahdo.org/sopt' is unknown so the code cannot be validated
 The definition for the Code System with URI 'https://nahdo.org/sopt' doesnt provide any codes so the code cannot be validated
-# APPROVED by HL7 Cross Group Projects WG: Profiles do not derive from one of the base US profiles because they do not align with any of the US Core Observations (https://confluence.hl7.org/pages/viewpage.action?pageId=97453270)
+# APPROVED by HL7 Cross Group Projects WG: https://confluence.hl7.org/pages/viewpage.action?pageId=97453270
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile
 # Examples have optional slices that are not defined in the profile - not matching is expected behaviour
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr|1.1.0
-# The 5.0.1 US Core that this IG depends on does not contain us-core-coverage
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-for-delivery').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile
 # Due to issue with multiple Compositions
 Found multiple matching profiles for Patient/patient-decedent-fetus-not-named among choices: http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr, http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr
 # Information messages about draft condition category codes used in US Core
