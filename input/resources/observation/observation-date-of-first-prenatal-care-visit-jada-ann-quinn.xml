@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-date-of-first-prenatal-care-visit-jada-ann-quinn"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-date-of-first-prenatal-care-visit-jada-ann-quinn" />
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-06T00:29:11.244Z"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"/>
+        <versionId value="4" />
+        <lastUpdated value="2023-04-06T00:29:11.244Z" />
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="69044-6"/>
-            <display value="Date first prenatal visit"/>
+            <system value="http://loinc.org" />
+            <code value="69044-6" />
+            <display value="Date first prenatal visit" />
         </coding>
-        <text value="Date of first prenatal care visit"/>
+        <text value="Date of first prenatal care visit" />
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn" />
+        <display value="BabyG Quinn" />
     </subject>
     <focus>
-        <reference value="Patient/patient-mother-jada-ann-quinn"/>
-        <display value="Patient - Mother (Jada Ann Quinn)"/>
+        <reference value="Patient/patient-mother-jada-ann-quinn" />
+        <display value="Patient - Mother (Jada Ann Quinn)" />
     </focus>
-    <effectiveDateTime value="2019-12-02"/>
-    <valueDateTime value="2018-07-20"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
+    <valueDateTime value="2018-07-20" />
 </Observation>

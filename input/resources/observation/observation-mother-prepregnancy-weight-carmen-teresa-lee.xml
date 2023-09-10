@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-mother-prepregnancy-weight-carmen-teresa-lee"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-mother-prepregnancy-weight-carmen-teresa-lee" />
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-04-06T00:30:24.888Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr"/>
+        <versionId value="6" />
+        <lastUpdated value="2023-04-06T00:30:24.888Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-mother-prepregnancy-weight-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="vital-signs"/>
-            <display value="Vital Signs"/>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
         </coding>
-        <text value="Vital Signs"/>
+        <text value="Vital Signs" />
     </category>
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="56077-1"/>
-            <display value="Body weight --pre current pregnancy"/>
+            <system value="http://loinc.org" />
+            <code value="56077-1" />
+            <display value="Body weight --pre current pregnancy" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-        <display value="Patient - Mother (Carmen Teresa Lee)"/>
+        <reference value="Patient/patient-mother-carmen-teresa-lee" />
+        <display value="Patient - Mother (Carmen Teresa Lee)" />
     </subject>
-    <effectiveDateTime value="2019-05-20"/>
+    <effectiveDateTime value="2019-05-20" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueQuantity>
-        <value value="180"/>
-        <system value="http://unitsofmeasure.org"/>
-        <code value="[lb_av]"/>
+        <value value="180" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="[lb_av]" />
     </valueQuantity>
 </Observation>

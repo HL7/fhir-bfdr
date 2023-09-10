@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn" />
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-08-30T03:11:50.717Z"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome"/>
+        <versionId value="5" />
+        <lastUpdated value="2023-08-30T03:11:50.717Z" />
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="68500-8"/>
-            <display value="Date last other pregnancy outcome"/>
+            <system value="http://loinc.org" />
+            <code value="68500-8" />
+            <display value="Date last other pregnancy outcome" />
         </coding>
-        <text value="Date of last other pregnancy outcome"/>
+        <text value="Date of last other pregnancy outcome" />
     </code>
     <subject>
-        <reference value="Patient/patient-mother-jada-ann-quinn"/>
-        <display value="Patient - Mother (Jada Ann Quinn)"/>
+        <reference value="Patient/patient-mother-jada-ann-quinn" />
+        <display value="Patient - Mother (Jada Ann Quinn)" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
-    <valueDateTime value="2015-05"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
+    <valueDateTime value="2015-05" />
 </Observation>

@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-method-of-disposition-not-named"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-method-of-disposition-not-named" />
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-06T00:30:15.636Z"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition"/>
+        <versionId value="3" />
+        <lastUpdated value="2023-04-06T00:30:15.636Z" />
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="88241-5"/>
-            <display value="Fetal remains disposition method"/>
+            <system value="http://loinc.org" />
+            <code value="88241-5" />
+            <display value="Fetal remains disposition method" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-decedent-fetus-not-named"/>
-        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+        <reference value="Patient/patient-decedent-fetus-not-named" />
+        <display value="Patient - Decedent Fetus (Fetus Not Named)" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueCodeableConcept>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="449971000124106"/>
-            <display value="Patient status determination, deceased and buried (finding)"/>
+            <system value="http://snomed.info/sct" />
+            <code value="449971000124106" />
+            <display value="Patient status determination, deceased and buried (finding)" />
         </coding>
-        <text value="Patient status determination, deceased and buried (finding)"/>
+        <text value="Patient status determination, deceased and buried (finding)" />
     </valueCodeableConcept>
 </Observation>

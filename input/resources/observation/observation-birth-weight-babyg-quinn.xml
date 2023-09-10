@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-birth-weight-babyg-quinn"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-birth-weight-babyg-quinn" />
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-04-06T00:25:56.512Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr"/>
+        <versionId value="6" />
+        <lastUpdated value="2023-04-06T00:25:56.512Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-birth-weight-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="vital-signs"/>
-            <display value="Vital Signs"/>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
         </coding>
-        <text value="Vital Signs"/>
+        <text value="Vital Signs" />
     </category>
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="8339-4"/>
-            <display value="Birth weight Measured"/>
+            <system value="http://loinc.org" />
+            <code value="8339-4" />
+            <display value="Birth weight Measured" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn" />
+        <display value="BabyG Quinn" />
     </subject>
-    <effectiveDateTime value="2019-02-10"/>
+    <effectiveDateTime value="2019-02-10" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueQuantity>
-        <value value="2500"/>
-        <system value="http://unitsofmeasure.org"/>
-        <code value="g"/>
+        <value value="2500" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="g" />
     </valueQuantity>
 </Observation>

@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-pregnancy-risk-factor-jada-ann-quinn-4"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-pregnancy-risk-factor-jada-ann-quinn-4" />
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-06-21T09:17:18.986Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr"/>
+        <versionId value="9" />
+        <lastUpdated value="2023-06-21T09:17:18.986Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-previous-cesarean-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="73775-9"/>
-            <display value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+            <system value="http://loinc.org" />
+            <code value="73775-9" />
+            <display value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]" />
         </coding>
-        <text value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"/>
+        <text value="Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]" />
     </code>
     <subject>
-        <reference value="Patient/patient-mother-jada-ann-quinn"/>
-        <display value="Patient - Mother (Jada Ann Quinn)"/>
+        <reference value="Patient/patient-mother-jada-ann-quinn" />
+        <display value="Patient - Mother (Jada Ann Quinn)" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueCodeableConcept>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="200144004"/>
-            <display value="Deliveries by cesarean (finding)"/>
+            <system value="http://snomed.info/sct" />
+            <code value="200144004" />
+            <display value="Deliveries by cesarean (finding)" />
         </coding>
-        <text value="Deliveries by cesarean (finding)"/>
+        <text value="Deliveries by cesarean (finding)" />
     </valueCodeableConcept>
 </Observation>

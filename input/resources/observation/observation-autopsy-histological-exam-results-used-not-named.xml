@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-autopsy-histological-exam-results-used-not-named"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-autopsy-histological-exam-results-used-not-named" />
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-08-31T05:55:36.591Z"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
+        <versionId value="6" />
+        <lastUpdated value="2023-08-31T05:55:36.591Z" />
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="74498-7"/>
-            <display value="Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"/>
+            <system value="http://loinc.org" />
+            <code value="74498-7" />
+            <display value="Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-decedent-fetus-not-named"/>
-        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+        <reference value="Patient/patient-decedent-fetus-not-named" />
+        <display value="Patient - Decedent Fetus (Fetus Not Named)" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueCodeableConcept>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
-            <code value="Y"/>
-            <display value="Yes"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0136" />
+            <code value="Y" />
+            <display value="Yes" />
         </coding>
     </valueCodeableConcept>
 </Observation>

@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-infant-breastfed-at-discharge-babyg-quinn"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-infant-breastfed-at-discharge-babyg-quinn" />
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-04-06T00:30:04.882Z"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge"/>
+        <versionId value="2" />
+        <lastUpdated value="2023-04-06T00:30:04.882Z" />
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="73756-9"/>
-            <display value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"/>
+            <system value="http://loinc.org" />
+            <code value="73756-9" />
+            <display value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]" />
         </coding>
-        <text value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]"/>
+        <text value="Infant is being breastfed at discharge [US Standard Certificate of Live Birth]" />
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn" />
+        <display value="BabyG Quinn" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
-    <valueBoolean value="true"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
+    <valueBoolean value="true" />
 </Observation>

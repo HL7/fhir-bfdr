@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-none-abnormal-conditions-babyg-quinn"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-none-abnormal-conditions-babyg-quinn" />
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-21T09:50:31.689Z"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"/>
+        <versionId value="2" />
+        <lastUpdated value="2023-06-21T09:50:31.689Z" />
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="73812-0"/>
-            <display value="Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"/>
+            <system value="http://loinc.org" />
+            <code value="73812-0" />
+            <display value="Abnormal conditions of the newborn [US Standard Certificate of Live Birth]" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="Patient - Child (Baby G Quinn)"/>
+        <reference value="Patient/patient-child-babyg-quinn" />
+        <display value="Patient - Child (Baby G Quinn)" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueCodeableConcept>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="260413007"/>
-            <display value="None"/>
+            <system value="http://snomed.info/sct" />
+            <code value="260413007" />
+            <display value="None" />
         </coding>
-        <text value="None of the specified abnormal conditions of the newborn"/>
+        <text value="None of the specified abnormal conditions of the newborn" />
     </valueCodeableConcept>
 </Observation>

@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-last-menstrual-period-jada-ann-quinn"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-last-menstrual-period-jada-ann-quinn" />
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-04-06T00:30:04.911Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr"/>
+        <versionId value="5" />
+        <lastUpdated value="2023-04-06T00:30:04.911Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-last-menstrual-period-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="8665-2"/>
-            <display value="Last menstrual period start date"/>
+            <system value="http://loinc.org" />
+            <code value="8665-2" />
+            <display value="Last menstrual period start date" />
         </coding>
-        <text value="Last menstrual period start date"/>
+        <text value="Last menstrual period start date" />
     </code>
     <subject>
-        <reference value="Patient/patient-mother-jada-ann-quinn"/>
-        <display value="Patient - Mother (Jada Ann Quinn)"/>
+        <reference value="Patient/patient-mother-jada-ann-quinn" />
+        <display value="Patient - Mother (Jada Ann Quinn)" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
-    <valueDateTime value="2018-06-05"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
+    <valueDateTime value="2018-06-05" />
 </Observation>

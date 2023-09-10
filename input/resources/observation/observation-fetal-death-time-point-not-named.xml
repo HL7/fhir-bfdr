@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-fetal-death-time-point-not-named"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-fetal-death-time-point-not-named" />
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-04-06T00:29:42.491Z"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point"/>
+        <versionId value="3" />
+        <lastUpdated value="2023-04-06T00:29:42.491Z" />
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-estimated-fetal-death-time-point" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="73811-2"/>
-            <display value="Estimated timing of fetal death [US Standard Report of Fetal Death]"/>
+            <system value="http://loinc.org" />
+            <code value="73811-2" />
+            <display value="Estimated timing of fetal death [US Standard Report of Fetal Death]" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-decedent-fetus-not-named"/>
-        <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+        <reference value="Patient/patient-decedent-fetus-not-named" />
+        <display value="Patient - Decedent Fetus (Fetus Not Named)" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueCodeableConcept>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="434631000124100"/>
-            <display value="Fetal intrapartum death after first assessment (event)"/>
+            <system value="http://snomed.info/sct" />
+            <code value="434631000124100" />
+            <display value="Fetal intrapartum death after first assessment (event)" />
         </coding>
     </valueCodeableConcept>
 </Observation>

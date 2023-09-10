@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-apgar-score-babyg-quinn-5-min"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-apgar-score-babyg-quinn-5-min" />
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-08-31T05:50:09.682Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr"/>
+        <versionId value="5" />
+        <lastUpdated value="2023-08-31T05:50:09.682Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-apgar-score-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="survey"/>
-            <display value="Survey"/>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="survey" />
+            <display value="Survey" />
         </coding>
-        <text value="Survey"/>
+        <text value="Survey" />
     </category>
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="9274-2"/>
-            <display value="5 minute Apgar Score"/>
+            <system value="http://loinc.org" />
+            <code value="9274-2" />
+            <display value="5 minute Apgar Score" />
         </coding>
-        <text value="5 minute Apgar Score"/>
+        <text value="5 minute Apgar Score" />
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn" />
+        <display value="BabyG Quinn" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
-    <valueInteger value="7"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
+    <valueInteger value="7" />
 </Observation>

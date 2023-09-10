@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-number-previous-cesareans-carmen-teresa-lee"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-number-previous-cesareans-carmen-teresa-lee" />
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-04-06T00:30:46.635Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr"/>
+        <versionId value="5" />
+        <lastUpdated value="2023-04-06T00:30:46.635Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-number-previous-cesareans-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="68497-7"/>
-            <display value="Previous cesarean deliveries #"/>
+            <system value="http://loinc.org" />
+            <code value="68497-7" />
+            <display value="Previous cesarean deliveries #" />
         </coding>
-        <text value="Previous cesarean deliveries #"/>
+        <text value="Previous cesarean deliveries #" />
     </code>
     <subject>
-        <reference value="Patient/patient-mother-carmen-teresa-lee"/>
-        <display value="Patient - Mother (Carmen Teresa Lee)"/>
+        <reference value="Patient/patient-mother-carmen-teresa-lee" />
+        <display value="Patient - Mother (Carmen Teresa Lee)" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
-    <valueInteger value="1"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
+    <valueInteger value="1" />
 </Observation>

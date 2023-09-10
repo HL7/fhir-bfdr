@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-gestational-age-at-delivery-babyg-quinn"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-gestational-age-at-delivery-babyg-quinn" />
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-06T00:29:54.673Z"/>
-        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr"/>
+        <versionId value="4" />
+        <lastUpdated value="2023-04-06T00:29:54.673Z" />
+        <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-gestational-age-at-delivery-vr" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="11884-4"/>
-            <display value="Gestational age Estimated"/>
+            <system value="http://loinc.org" />
+            <code value="11884-4" />
+            <display value="Gestational age Estimated" />
         </coding>
     </code>
     <subject>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn" />
+        <display value="BabyG Quinn" />
     </subject>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueQuantity>
-        <value value="36"/>
-        <system value="http://unitsofmeasure.org"/>
-        <code value="wk"/>
+        <value value="36" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="wk" />
     </valueQuantity>
 </Observation>

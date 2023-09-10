@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="observation-antibiotics-during-labor-jada-ann-quinn"/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-antibiotics-during-labor-jada-ann-quinn" />
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-06-21T10:13:02.267Z"/>
-        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-during-labor"/>
+        <versionId value="2" />
+        <lastUpdated value="2023-06-21T10:13:02.267Z" />
+        <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-during-labor" />
     </meta>
-    <status value="final"/>
+    <status value="final" />
     <code>
         <coding>
-            <system value="http://loinc.org"/>
-            <code value="73813-8"/>
-            <display value="Characteristics of labor and delivery [US Standard Certificate of Live Birth]"/>
+            <system value="http://loinc.org" />
+            <code value="73813-8" />
+            <display value="Characteristics of labor and delivery [US Standard Certificate of Live Birth]" />
         </coding>
-        <text value="Characteristics of labor and delivery"/>
+        <text value="Characteristics of labor and delivery" />
     </code>
     <subject>
-        <reference value="Patient/patient-mother-jada-ann-quinn"/>
-        <display value="Patient - Mother (Jada Ann Quinn)"/>
+        <reference value="Patient/patient-mother-jada-ann-quinn" />
+        <display value="Patient - Mother (Jada Ann Quinn)" />
     </subject>
     <focus>
-        <reference value="Patient/patient-child-babyg-quinn"/>
-        <display value="BabyG Quinn"/>
+        <reference value="Patient/patient-child-babyg-quinn" />
+        <display value="BabyG Quinn" />
     </focus>
-    <effectiveDateTime value="2019-12-02"/>
+    <effectiveDateTime value="2019-12-02" />
+    <performer>
+        <reference value="Practitioner/practitioner-vital-records-janet-seito-common" />
+    </performer>
     <valueCodeableConcept>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="434691000124101"/>
-            <display value="Antibacterial administered during labor"/>
+            <system value="http://snomed.info/sct" />
+            <code value="434691000124101" />
+            <display value="Antibacterial administered during labor" />
         </coding>
-        <text value="Antibiotics received during labor"/>
+        <text value="Antibiotics received during labor" />
     </valueCodeableConcept>
 </Observation>
