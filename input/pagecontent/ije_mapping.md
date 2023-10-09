@@ -79,7 +79,7 @@ See the [Sources of Data Section](use_cases.html#sources-of-data) for details ab
 | 245 | Date of Registration--Day | DOR_DY | [Extension-date-filed-by-registrar](StructureDefinition-Extension-date-filed-by-registrar.html) | BFDR |
 | 244 | Date of Registration--Month | DOR_MO | [Extension-date-filed-by-registrar](StructureDefinition-Extension-date-filed-by-registrar.html) | BFDR |
 | 243 | Date of Registration--Year | DOR_YR | [Extension-date-filed-by-registrar](StructureDefinition-Extension-date-filed-by-registrar.html) | BFDR |
-| 228 | Congenital Anomalies of the Newborn--Down Syndrome | DOWT | [Condition-congenital-anomaly-of-newborn]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Condition-congenital-anomaly-of-newborn.html) | VRCPL |
+| 228 | Congenital Anomalies of the Newborn--Down Syndrome | DOWT | [Condition-congenital-anomaly-of-newborn](StructureDefinition-Condition-congenital-anomaly-of-newborn.html) | BFDR |
 | 139 | Mother's Weight at Delivery (in whole pounds) | DWGT | [Observation-mother-delivery-weight-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-mother-delivery-weight-vr.html) | VRCPL |
 | 140 | Mother's Weight at Delivery--Edit Flag | DWGT_BYPASS | [Observation-edit-flag-mothers-delivery-weight](StructureDefinition-Observation-edit-flag-mothers-delivery-weight.html) | BFDR |
 | 177 | Obstetric Procedures--Failed External Cephalic Version | ECVF | [Procedure-obstetric](StructureDefinition-Procedure-obstetric.html) | BFDR |
