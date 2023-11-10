@@ -1,0 +1,48 @@
+Instance: composition-coded-race-and-ethnicity-not-named-new
+InstanceOf: CompositionCodedRaceAndEthnicityNew
+Title: "Composition - Coded Race and Ethnicity - Fetus Not Named"
+Description: "Composition - Coded Race and Ethnicity: Fetus Not Named example"
+Usage: #example
+* meta
+  * versionId = "9"
+  * lastUpdated = "2021-07-09T10:55:51.918Z"
+* extension
+  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
+  * valueIdentifier
+    * type = $v2-0203#FDR
+    * value = "9876"
+* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27db"
+* status = #final
+* type = $loinc#86805-9 "Race and ethnicity information Document"
+* subject
+  * reference = "Patient/patient-decedent-fetus-not-named"
+  * display = "Patient - Decedent Fetus (Fetus Not Named)"
+* date = "2019-01-09"
+* author
+  * reference = "Organization/organization-nchs"
+  * display = "National Center for Health Statistics"
+* title = "Coded Race and Ethnicity"
+* section[0]
+  * title = "Mother's Coded Race and Ethnicity"
+  * code = $loinc#86805-9 "Race and ethnicity information Document"
+  * focus
+    * reference = "Patient/patient-mother-carmen-teresa-lee"
+    * display = "Patient - Mother (Carmen Teresa Lee)"
+  * entry[0]
+    * reference = "Observation/observation-tabulated-ethnicity-carmen-teresa-lee"
+    * display = "Observation - Tabulated Ethnicity (Carmen Teresa Lee)"
+  * entry[+]
+    * reference = "Observation/observation-race-carmen-teresa-lee"
+    * display = "Observation - Race (Carmen Teresa Lee)"
+* section[+]
+  * title = "Father's Coded Race and Ethnicity"
+  * code = $loinc#86805-9 "Race and ethnicity information Document"
+  * focus
+    * reference = "RelatedPerson/relatedperson-father-natural-tom-yan-lee"
+    * display = "RelatedPerson - Father (Tom Yan Lee)"
+  * entry[0]
+    * reference = "Observation/observation-tabulated-ethnicity-tom-yan-lee"
+    * display = "Observation - Tabulated Ethnicity (Tom Yan Lee)"
+  * entry[+]
+    * reference = "Observation/observation-race-tom-yan-lee"
+    * display = "Observation - Race (Tom Yan Lee)"
