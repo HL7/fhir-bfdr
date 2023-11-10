@@ -49,7 +49,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 * Home: Introduction and background for HL7 FHIR® Vital Records Common Profiles Library
 * [The Specification](the_specification.html): A technical overview of implementing the specification
 * [Use Cases](use_cases.html): The use cases supported by this guide
-* Implementer Guidance: The [worksheet Questionnaire format](patient_worksheet_questionnaires.html), [IJE Mapping](ije_mapping.html), and [Vital Records Forms Mapping](vital_records_forms_mapping.html)
+* Implementer Guidance: The [worksheet Questionnaire format](patient_worksheet_questionnaires.html), [IJE Mapping Natality](ije_mapping_natality.html), [IJE Mapping FetalDeath](ije_mapping_fetalDeath.html) and [Vital Records Forms Mapping](vital_records_forms_mapping.html)
 * [Terminology](terminology.html): A listing of the value sets used in this guide
 * [Downloads](downloads.html): Links to downloadable artifacts
 * [Change Log](change_log.html): Details of changes made in each version of this IG
