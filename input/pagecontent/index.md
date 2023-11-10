@@ -1,3 +1,13 @@
+{% include note-to-balloters.md %}
+
+<div class="new-content" markdown="1">
+Where possible, new and updated pre-publishing content are highlighted with green text and background - This highlighting will be removed prior to publication 
+</div><!-- note-to-balloters -->
+
+<div class="stu-note" markdown="1">
+Key updates and detailed changes between this and prior versions are available on the VRCL [Change Log] and [Changes Between Versions] pages.
+</div><!-- note-to-balloters -->
+
 ### Overview
 
 ### Description

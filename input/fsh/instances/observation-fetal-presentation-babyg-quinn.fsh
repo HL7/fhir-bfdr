@@ -1,7 +1,7 @@
 Instance: observation-fetal-presentation-babyg-quinn
 InstanceOf: ObservationFetalPresentation
-Title: "Observation - Date of Last Other Pregnancy Outcome - Jada Ann Quinn"
-Description: "Observation - Date of Last Other Pregnancy Outcome: Jada Ann Quinn example"
+Title: "Observation - Fetal Presentation Baby G Quinn"
+Description: "Observation - Fetal Presentation Baby G Quinn"
 Usage: #example
 * status = #final
 * code = $loinc#73761-9 "Fetal presentation--at birth [US Standard Certificate of Live Birth]"

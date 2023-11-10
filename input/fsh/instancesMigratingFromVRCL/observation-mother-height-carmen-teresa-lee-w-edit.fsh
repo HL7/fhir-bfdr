@@ -8,9 +8,9 @@ Usage: #example
 * status = #final
 // * category = $observation-category#vital-signs "Vital Signs"
 //   * text = "Vital Signs"
-* code = $loinc#3137-7 "Body height Measured"
+//* code = $loinc#3137-7 "Body height Measured"
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * effectiveDateTime = "2019-01-10"
 * performer = Reference(patient-mother-carmen-teresa-lee)
-* valueQuantity = 65 '[in_i]'
+* valueQuantity = 56 'in' "[in_i]"
 * valueQuantity.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#editBypass0 "Edit Passed"
