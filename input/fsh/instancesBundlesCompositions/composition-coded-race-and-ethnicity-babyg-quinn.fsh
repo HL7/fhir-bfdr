@@ -1,27 +1,23 @@
-Instance: composition-coded-race-and-ethnicity-not-named-new
+Instance: composition-coded-race-and-ethnicity-baby-g-quinn 
 InstanceOf: CompositionCodedRaceAndEthnicity
-Title: "Composition - Coded Race and Ethnicity - Fetus Not Named"
-Description: "Composition - Coded Race and Ethnicity: Fetus Not Named example"
+Title: "Composition - Coded Race and Ethnicity - Baby G Quinn"
+Description: "Composition - Coded Race and Ethnicity: Baby G Quinn example"
 Usage: #example
-* extension[Extension-fetal-death-report-number]
-  * valueIdentifier
-    * type = $v2-0203#FDR
-    * value = "9876"
 * identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27dc"
 * status = #final
 * type = $loinc#86805-9 "Race and ethnicity information Document"
-* subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
+* subject = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
 * date = "2019-01-09"
 * author = Reference(Organization/organization-nchs) "National Center for Health Statistics"
 * title = "Coded Race and Ethnicity"
 * section[mother]
   * title = "Mother's Coded Race and Ethnicity"
-  * focus = Reference(patient-mother-carmen-teresa-lee)
+  * focus = Reference(patient-mother-jada-ann-quinn)
   * entry[+] = Reference(observation-input-race-and-ethnicity-mother) "Observation - Input Race and Ethnicity"
   * entry[+] = Reference(observation-coded-race-and-ethnicity-mother ) "Observation - Coded Race and Ethnicity"
 * section[father]
   * title = "Father's Coded Race and Ethnicity"
-  * focus = Reference(related-person-)
+  * focus = Reference(relatedperson-father-natural-james-brandon-quinn)
   * entry[+] = Reference(observation-input-race-and-ethnicity-father) "Observation - Input Race and Ethnicity"
   * entry[+] = Reference(observation-coded-race-and-ethnicity-father ) "Observation - Coded Race and Ethnicity"
   
