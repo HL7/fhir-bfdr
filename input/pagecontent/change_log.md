@@ -1,3 +1,10 @@
+### STU2 Ballot, January 2024
+- Body Height LOINC Code 8302-2 Body Height Measured --> 3137-7 Body Height, based on new publication requirements.  Mother's Body Height based on USCoreBodyHeightProfile.
+- 
+
+
+
+
 ### STU 1.1 Update, July 2023
 
 | Jira Issue | Description of Change | Changes Made |

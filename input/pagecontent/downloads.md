@@ -1,37 +1,25 @@
-### Full Implementation Guide
+### Download
 
-The entire implementation guide (including the HTML files, definitions, validation information, etc.) may be downloaded [here](full-ig.zip).
+You can also download:
 
-### Package File
+* [this entire guide](full-ig.zip)
+* the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
+* the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
 
-The following package file includes an NPM package file used by many of the FHIR tools. It contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of this version of the Implementation Guides. This file should be the first choice whenever generating any implementation artifacts since it contains all of the rules about what makes the profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on [validating FHIR profiles and resources](http://hl7.org/fhir/R4/validation.html):
+The source code for this Implementation Guide can be found on IHE GitHub [https://github.com/HL7/vrdr](https://github.com/HL7/vrdr).
 
-* [Package](package.tgz)
-
-### Format Specific Definition Files
-
-* [XML](definitions.xml.zip)
-* [JSON](definitions.json.zip)
-* [TTL](definitions.ttl.zip)
-
-### Examples: all the examples that are used in this Implementation Guide available for download:
-
-* [XML](examples.xml.zip)
-* [JSON](examples.json.zip)
-* [TTl](examples.ttl.zip)
-
-### Cross Version Analysis
+#### Cross Version Analysis
 
 {% include cross-version-analysis.xhtml %}
 
-### Dependency Table
+#### Dependency Table
 
 {% include dependency-table.xhtml %}
 
-### Global Profiles Table
+#### Globals Table
 
 {% include globals-table.xhtml %}
 
-### IP Statements
+#### IP Statements
 
 {% include ip-statements.xhtml %}
