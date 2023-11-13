@@ -4,7 +4,7 @@ Title: "ValueSet - APGAR Score Timing"
 Description: "This valueset contains codes to represent standard timings for APGAR assessments."
 * ^experimental = false
 * ^status = #active 
-* insert LOINCCopyright
+* insert LOINCSNOMEDCopyright
 * $loinc#9272-6 "1 minute Apgar Score"
 * $loinc#9274-2 "5 minute Apgar Score"
 * $loinc#9271-8 "10 minute Apgar Score"

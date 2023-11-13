@@ -1,4 +1,5 @@
 RuleSet: AuxiliaryStateIdentifier
+* insert ExtensionContextResource(Meta)
 * ^context.type = #element
 * ^context.expression = "Identifier"
 * value[x] 1..1
@@ -27,10 +28,10 @@ Description: "Death certificate number. Six digit number.  Leading zeroes are op
 * value[x] only string
 * valueString ^maxLength = 6
 
-Extension: StateSpecificField
-Id: StateSpecificField
-Title: "State Specific Field"
-Description: "An arbitratry string included by a submitting jurisdiction"
-* value[x] 1..1
-* value[x] only string
-* valueString ^maxLength = 30
+// Extension: StateSpecificField
+// Id: StateSpecificField
+// Title: "State Specific Field"
+// Description: "An arbitratry string included by a submitting jurisdiction"
+// * value[x] 1..1
+// * value[x] only string
+// * valueString ^maxLength = 30
