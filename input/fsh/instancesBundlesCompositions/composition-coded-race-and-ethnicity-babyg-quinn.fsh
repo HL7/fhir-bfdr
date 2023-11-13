@@ -1,9 +1,26 @@
+Instance: bundle-coded-race-and-ethnicity-baby-g-quinn
+InstanceOf: DemographicCodedContentBundleBFDR
+Title: "Bundle - Coded Race and Ethnicity - Baby G Quinn"
+Description: "Bundle - Coded Race and Ethnicity - example Baby G Quinn"
+Usage: #example 
+* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27de"
+* insert addentry(CompositionCodedRaceAndEthnicity, composition-coded-race-and-ethnicity-baby-g-quinn )
+* insert addentry(InputRaceAndEthnicity, observation-input-race-and-ethnicity-mother)
+* insert addentry(InputRaceAndEthnicity, observation-input-race-and-ethnicity-father)
+* insert addentry(CodedRaceAndEthnicity, observation-coded-race-and-ethnicity-mother)
+* insert addentry(CodedRaceAndEthnicity, observation-coded-race-and-ethnicity-father)
+
+
 Instance: composition-coded-race-and-ethnicity-baby-g-quinn 
 InstanceOf: CompositionCodedRaceAndEthnicity
 Title: "Composition - Coded Race and Ethnicity - Baby G Quinn"
 Description: "Composition - Coded Race and Ethnicity: Baby G Quinn example"
 Usage: #example
 * identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27dc"
+* extension[Extension-live-birth-certificate-number]
+  * valueIdentifier
+    * type = $v2-0203#BCT
+    * value = "15075"
 * status = #final
 * type = $loinc#86805-9 "Race and ethnicity information Document"
 * subject = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
