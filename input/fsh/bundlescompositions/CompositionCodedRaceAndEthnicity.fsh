@@ -22,11 +22,11 @@ The Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR, an
   * ^slicing.rules = #open
   * ^short = "The Composition is broken into sections, where each section includes the input and output race and ethnicity for one individual."
   * ^definition = "The Composition is broken into sections where each section includes the input and output race and ethnicity for one individual."
-* insert BFDRCompositionLocalSectionEntrySlicing(mother, 0, #mother, Race and Ethnicity - Mother)
+* insert BFDRCompositionLocalSectionEntrySlicing(mother, 0, $v3-RoleCode#MTH, Race and Ethnicity - Mother)
 * insert BFDRCompositionSectionSlice(mother, motherPatient, 0, 1, Mother, PatientMotherVitalRecordsNew, PatientMotherVitalRecords)
 * insert BFDRCompositionSectionSlice(mother, inputRaceAndEthnicity, 0, 1, Input Race And Ethnicity, InputRaceAndEthnicity, ObservationInputRaceAndEthnicityVitalRecords)
 * insert BFDRCompositionSectionSlice(mother, codedRaceAndEthnicity, 0, 1, Coded Race And Ethnicity, Coded Race And Ethnicity, ObservationCodedRaceAndEthnicityVitalRecords)
-* insert BFDRCompositionLocalSectionEntrySlicing(father, 0, #father, Race and Ethnicity - Father)
-* insert BFDRCompositionSectionSlice(mother, fatherPatient, 0, 1, Father, Father, RelatedPersonParentVitalRecords)
+* insert BFDRCompositionLocalSectionEntrySlicing(father, 0, $v3-RoleCode#NFTH, Race and Ethnicity - Father)
+* insert BFDRCompositionSectionSlice(father, fatherPatient, 0, 1, Father, Father, RelatedPersonParentVitalRecords)
 * insert BFDRCompositionSectionSlice(father, inputRaceAndEthnicity, 0, 1, Input Race And Ethnicity, InputRaceAndEthnicity, ObservationInputRaceAndEthnicityVitalRecords)
 * insert BFDRCompositionSectionSlice(father, codedRaceAndEthnicity, 0, 1, Coded Race And Ethnicity, Coded Race And Ethnicity, ObservationCodedRaceAndEthnicityVitalRecords)

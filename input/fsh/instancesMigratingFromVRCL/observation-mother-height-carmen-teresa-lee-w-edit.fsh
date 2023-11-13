@@ -12,5 +12,5 @@ Usage: #example
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * effectiveDateTime = "2019-01-10"
 * performer = Reference(patient-mother-carmen-teresa-lee)
-* valueQuantity = 56 'in' "[in_i]"
+* valueQuantity = 56 '[in_i]' "in"
 * valueQuantity.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#editBypass0 "Edit Passed"
