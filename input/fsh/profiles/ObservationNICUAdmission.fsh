@@ -9,4 +9,5 @@ Description: "This profile indicates that the abnormal condition of an admission
 * subject only Reference(PatientChildVitalRecords)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] = $sct#830077005 "Admission to neonatal intensive care unit (procedure)"
+* value[x] = $sct#830077005 
+  * ^short = "Admission to neonatal intensive care unit (procedure)"
