@@ -5,6 +5,7 @@ Id: Observation-number-previous-cesareans
 Title: "Observation - Number of Previous Cesareans"
 Description: "The total number of prior cesarean deliveries for the mother. Migrated from VRCL."
 * code = $loinc#68497-7
+  * ^short = "Previous cesarean deliveries #"
 * subject 1..
 * subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..

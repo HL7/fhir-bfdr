@@ -14,4 +14,4 @@ Description: "This profile indicates that none of the specified pregnancy risk f
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] = $sct#260413007
-  * ^short = "None"
+  * ^short = "None (qualifier value)"

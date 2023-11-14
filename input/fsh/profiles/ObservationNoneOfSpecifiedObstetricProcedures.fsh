@@ -9,5 +9,5 @@ Description: "This profile indicates that none of the specified obstetric proced
 * subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] = $sct#260413007 "None (qualifier value)"
-  * ^short = "None"
+* value[x] = $sct#260413007 
+  * ^short = "None (qualifier value)"
