@@ -3,8 +3,8 @@ Parent: Observation
 Id: Observation-no-infections-present-during-pregnancy  
 Title: "Observation - None Of Specified Infections Specified During Pregnancy"
 Description: "This profile indicates that none of the specified infections during pregnancy were present."
-* code = $loinc#73769-2 "Infections present AndOr treated during this pregnancy for fetal death [US Standard Report of Fetal Death]"
-  * ^short = "Infections present AndOr treated during this pregnancy for fetal death [US Standard Report of Fetal Death]"
+* code = $loinc#$loinc#72519-2 
+  * ^short = "Infections present and/or treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"
 * subject 1..
 * subject only Reference(PatientChildVitalRecords)
 * value[x] 1..

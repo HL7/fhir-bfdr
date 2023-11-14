@@ -117,3 +117,11 @@ RuleSet: NCHSObservationCommon
 RuleSet: addentry(type, id)
 * entry[+].resource = {id}
 * entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
+
+RuleSet: CategorySlicingRules
+* category 1.. MS
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category ^slicing.description = "Slicing requires the given value but allows additional categories"
+* category contains requiredCategory 1..1
