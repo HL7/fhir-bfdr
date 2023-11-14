@@ -4,8 +4,8 @@ Title: "Observation - Mother Received WIC Food - Jada Ann Quinn"
 Description: "Observation - Mother Received WIC Food: Jada Ann Quinn example"
 Usage: #example
 * status = #final
-* code = $loinc#87303-4 "Mother WIC food recipient"
-  * text = "Did mother get WIC food for herself during this pregnancy?"
+//* code = $loinc#87303-4 "Mother WIC food recipient"
+//  * text = "Did mother get WIC food for herself during this pregnancy?"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * focus = Reference(patient-child-babyg-quinn) "BabyG Quinn" 
 * effectiveDateTime = "2019-12-02"
