@@ -97,6 +97,9 @@ pages:
     title: FHIR Implementation Guide Harmonization Plan 
   usage.md:
     title: Usage 
+  categories.md:
+    title: Use of Categories 
+
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -131,21 +134,21 @@ menu:
     Downloads: downloads.html
   Artifacts:
     All FHIR Artifacts: artifacts.html
-    BFDR Natality Data Dictionary: ije_mapping_natality.html
-    BFDR Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
+    Natality Data Dictionary: ije_mapping_natality.html
+    Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
     # IJE Mapping to FHIR (xlsx): IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx
   BFDR: 
-    Home: index.html
     UseCases: use_cases.html
+    Categories: categories.html
     Capability Statement: CapabilityStatement-CapabilityStatement-bfdr.html
     Changes: change_log.html
     # Content Transitions: bfdr-content-transitions.html
-    #BFDR Natality Data Dictionary: ije_mapping_natality.html
-    #BFDR Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
+    #Natality Data Dictionary: ije_mapping_natality.html
+    #Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
     Specification: the_specification.html
     Forms Mapping: vital_records_form_mapping.html
     Terminology: terminology.html
-  BFDR Appendices:
+  Appendices:
     A Live Birth Worksheet: appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html
     B Live Birth Certificate: appendix_b_-_example_live_birth_certificate.html
     C Fetal Death Worksheet: appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html
@@ -225,45 +228,44 @@ menu:
 groups:
 
   BFDRCapabilityStatements:
-    name: BFDR Capability Statements
+    name: Capability Statements
     resources: 
       - CapabilityStatement-bfdr
   
   BFDRBundles:
-    name: BFDR Bundles
+    name: Bundles
     resources:
       - BundleDocumentBFDR
       - DemographicCodedContentBundleBFDR
   
   BFDRCompositionsEHRtoVRO:
-    name: BFDR Compositions EHR to VRO
+    name: Compositions EHR to VRO
     resources:
       - CompositionProviderFetalDeathReport
       - CompositionProviderLiveBirthReport
   
   BFDRCompositionsVROtoNCHS:
-    name: BFDR Compositions VRO to NCHS
+    name: Compositions VRO to NCHS
     resources:
       - CompositionJurisdictionFetalDeathReport
       - CompositionJurisdictionLiveBirthReport
   
   BFDRCompositionsNCHStoVRO:
-    name: BFDR Compositions NCHS to VRO
+    name: Compositions NCHS to VRO
     resources:
       - CompositionCodedCauseOfFetalDeath
       - CompositionCodedRaceAndEthnicity
 
   BFDRProfilesEncounter:
-    name: BFDR Profiles Encounter
+    name: Profiles Encounter
     resources:
       - EncounterBirth
       - Encounter_Maternity
       - ExtensionEncounterMaternityReference
 
   BFDRProfilesNewbornFetus:
-    name: BFDR Profiles Newborn/Fetus
+    name: Profiles Newborn/Fetus
     resources:
-      - ConditionCongenitalAnomalyOfNewborn
       - ObservationApgarScore
       - ObservationBirthWeight
       - ObservationFetalPresentation
@@ -271,35 +273,40 @@ groups:
       - ObservationInfantBreastfedAtDischarge
       - ObservationInfantLiving
       - ObservationMotherDeliveryWeight
-      - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
       - ObservationNumberFetalDeathsThisDelivery
       - ObservationNumberLiveBirthsThisDelivery
       
   BFDRProfilesAbnormalConditionoftheNewborn:
-    name: BFDR Profiles Abnormal Condition of the Newborn
+    name: Profiles Abnormal Condition of the Newborn (73812-0)
     resources:
       - ConditionSeizure
       - ObservationNICUAdmission
-      - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
       - ProcedureAntibioticSuspectedNeonatalSepsis
       - ProcedureAssistedVentilationFollowingDelivery
       - ProcedureAssistedVentilationMoreThanSixHours
       - ProcedureSurfactantReplacementTherapy
+      - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+
+  BFDRProfilesCongenitalAnomoliesoftheNewborn:
+    name: Profiles Congenital Anomolies of the Newborn (73780-9) 
+    resources:
+      - ConditionCongenitalAnomalyOfNewborn
+      - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
 
   BFDRProfilesCharacteristicsofLaborandDelivery :
-    name: BFDR Profiles Characteristics of Labor and Delivery 
+    name: Profiles Characteristics of Labor and Delivery (73813-8)
     resources:
       - ConditionChorioamnionitis
       - ObservationAntibioticsAdministeredDuringLabor
-      - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
       - ObservationSteroidsFetalLungMaturation
       - ProcedureAugmentationOfLabor
       - ProcedureEpiduralOrSpinalAnesthesia
       - ProcedureInductionOfLabor
-      
+      - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+
   
   BFDRProfilesMotherPrenatal:
-    name: BFDR Mother Prenatal Profiles
+    name: Mother Prenatal Profiles
     resources:
       - CoveragePrincipalPayerDelivery
       - ObservationCigaretteSmokingBeforeDuringPregnancy
@@ -315,37 +322,45 @@ groups:
       - ObservationNumberOtherPregnancyOutcomes
       - ObservationNumberPrenatalVisits
       - ObservationPlannedToDeliverAtHome
-      
-  
-  BFDRProfilesMedicalandHealthInformation:
-    name: BFDR Medical and Health Information Profiles
+
+  BFDRProfilesInfections:
+    name: Infections During Pregnancy (73769-2)
     resources:
       - ConditionInfectionPresentDuringPregnancy
+      - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy   
+  
+  BFDRProfilesMedicalandHealthInformation:
+    name: Medical and Health Information Profiles
+    resources:
       - ObservationLaborTrialAttempted
-      - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
-      - ObservationNoneOfSpecifiedObstetricProcedures
       - ObservationNumberPreviousCesareans
-      - ObservationUnknownFinalRouteMethodDelivery
-      - ProcedureFinalRouteMethodDelivery
+  BFDRProfilesObstetricProcedures: 
+    name: Obstetric Procedures (73814-6)
+    resources:
       - ProcedureObstetric
-
+      - ObservationNoneOfSpecifiedObstetricProcedures
+  BFDRProfilesFinalRouteMethodDelivery:
+    name: Final Route and Method of Delivery (73762-7)
+    resources:
+      - ProcedureFinalRouteMethodDelivery
+      - ObservationUnknownFinalRouteMethodDelivery
   BFDRProfilesPregnancyRiskFactors:
-    name: BFDR Pregnancy Risk Factors Profiles
+    name: Pregnancy Risk Factors Profiles (73769-2)
     resources:
       - ConditionEclampsiaHypertension
       - ConditionGestationalDiabetes
       - ConditionGestationalHypertension
       - ConditionPrepregnancyDiabetes
       - ConditionPrepregnancyHypertension
-      - ObservationNoneOfSpecifiedPregnancyRiskFactors
       - ObservationPreviousCesarean
       - ObservationPreviousPretermBirth
       - ProcedureArtificialInsemination
       - ProcedureAssistedFertilization
       - ProcedureInfertilityTreatment
+      - ObservationNoneOfSpecifiedPregnancyRiskFactors
       
   BFDRProfilesMaternalMorbidity:
-    name: BFDR Maternal Morbidity Profiles
+    name: Maternal Morbidity Profiles (73781-7)
     resources:
       - ConditionPerinealLaceration
       - ConditionRupturedUterus
@@ -355,7 +370,7 @@ groups:
       - ObservationNoneOfSpecifiedMaternalMorbidities
   
   BFDRProfilesFetalDeathInformation:
-    name: BFDR Fetal Death Information Profiles
+    name: Fetal Death Information Profiles
     resources:
       - ConditionFetalDeathCauseOrCondition
       - ConditionFetalDeathOtherCauseOrCondition
@@ -366,14 +381,14 @@ groups:
       - ObservationHistologicalPlacentalExamPerformed
       
   BFDRProfilesParentInformation:
-    name: BFDR Parent Information Profiles
+    name: Parent Information Profiles
     resources:
       - ObservationMotherMarriedDuringPregnancy
       - ObservationPaternityAcknowledgementSigned
       - ObservationSSNRequestedForChild
 
   BFDRExtensionsAdministrative:
-    name: BFDR Administrative Extensions
+    name: Administrative Extensions
     resources:
       - ExtensionDateFiledByRegistrar
       - ExtensionDatereceivedByRegistrar
@@ -384,7 +399,7 @@ groups:
   
 
   # BFDRExtensions:
-  #   name: BFDR Extensions 
+  #   name: Extensions 
   #   resources:
   #     - ExtensionDateFiledByRegistrar
   #     - ExtensionDatereceivedByRegistrar
@@ -395,7 +410,7 @@ groups:
   #     - ExtensionLiveBirthLocalFileNumber
 
   # BFDRCompositionBundleProfiles:
-  #   name: BFDR  Compositions and Bundles 
+  #   name:  Compositions and Bundles 
   #   resources:
   #     - BundleDocumentBFDR
   #     - CompositionCodedCauseOfFetalDeath
@@ -408,8 +423,8 @@ groups:
 
 
   # BFDRProfilesfromVRCL:
-  #   name: BFDR  Profiles (from VRCL)
-  #   # description: BFDR  Profiles (from VRCL)
+  #   name:  Profiles (from VRCL)
+  #   # description:  Profiles (from VRCL)
   #   resources:
   #     - ConditionPrepregnancyHypertension
   #     - ConditionEclampsiaHypertension
@@ -442,8 +457,8 @@ groups:
   #     - ObservationPreviousCesarean
 
   # UnchangedBFDRProfiles:
-  #   name: Unchanged BFDR Profiles
-  #   # description: Unchanged BFDR Profiles
+  #   name: Unchanged Profiles
+  #   # description: Unchanged Profiles
   #   resources: 
   #     - ConditionChorioamnionitis
   #     - ConditionCodedInitiatingFetalDeathCauseOrCondition
@@ -511,7 +526,7 @@ groups:
   #     - ObservationEditFlagPlurality
 
   BFDRCodeSystems:
-    name: BFDR CodeSystems
+    name: CodeSystems
     resources:
       - AbnormalConditionsNewbornCS
       - BirthAndFetalDeathFinancialClassCS
@@ -520,7 +535,7 @@ groups:
       - InformantRelationshipToMotherCS
 
   BFDRValueSets:
-    name: BFDR ValueSets
+    name: ValueSets
     resources:
       - ApgarTimingVS 
       - BirthAndFetalDeathFinancialClassVS
@@ -547,7 +562,7 @@ groups:
       
     
   BFDRConceptMaps:
-    name: BFDR Concept Maps
+    name: Concept Maps
     resources:
       - BirthAndFetalDeathFinancialClassCM
       - BirthAttendantTitlesCM
@@ -561,13 +576,13 @@ groups:
       - NewbornCongenitalAnomaliesCM
 
   BFDRParameters:
-    name: BFDR Parameters
+    name: Parameters
     resources:
       - expansion-parameters-bfdr
 
 
   BFDRExamples:
-    name: BFDR Examples
+    name: Examples
     resources:
       - bundle-jurisdiction-fetal-death-not-named
       - bundle-jurisdiction-live-birth-babyg-quinn
