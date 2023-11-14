@@ -3,6 +3,8 @@ Parent: USCoreProcedureProfile
 Id: Procedure-surfactant-replacement-therapy
 Title: "Procedure - Surfactant Replacement Therapy"
 Description: "This profile represents an abnormal condition of the newborn of surfactant replacement therapy."
+* category = $loinc#73812-0
+  * ^short = "Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"
 * code = $sct#434701000124101
 * code MS
   * ^short = "Surfactant replacement therapy (procedure)"

@@ -4,8 +4,8 @@ Id: Condition-congenital-anomaly-of-newborn
 Title: "Condition - Congenital Anomaly of Newborn"
 Description: "This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."
 * . ^short = "Information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery."
-* category contains congenitalAnomolyNewborn 1..1 MS
-* category[congenitalAnomolyNewborn] = $loinc#73780-9
+* insert CategorySlicingRules
+* category[requiredCategory] = $loinc#73780-9
   * ^short = "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
 * code from NewbornCongenitalAnomaliesVS (required)
   * ^short = "The value set contain the list of values use to specify malformations of the newborn diagnosed prenatally or after delivery."
