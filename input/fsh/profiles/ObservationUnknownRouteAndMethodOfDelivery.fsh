@@ -9,4 +9,5 @@ Description: "Unknown Final route and method of delivery as defined by the US St
 * subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..1
 * value[x] only CodeableConcept 
-* valueCodeableConcept = $sct#261665006	"Unknown (qualifier value)"
+* valueCodeableConcept = $sct#261665006	
+  * ^short = "Unknown (qualifier value)"
