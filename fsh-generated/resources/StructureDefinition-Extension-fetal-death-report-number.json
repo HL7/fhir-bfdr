@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Extension-fetal-death-report-number",
+  "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number",
+  "name": "ExtensionFetalDeathReportNumber",
+  "title": "Extension - Fetal Death Report Number",
+  "status": "draft",
+  "description": "Fetal death report number - this represents \"State File Number\" on the US Standard Report of Fetal Death.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Composition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Extension - Fetal Death Report Number",
+        "definition": "Fetal death report number - this represents \"State File Number\" on the US Standard Report of Fetal Death."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].type",
+        "path": "Extension.value[x].type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "FDR",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        },
+        "mustSupport": true
+      }
+    ]
+  }
+}

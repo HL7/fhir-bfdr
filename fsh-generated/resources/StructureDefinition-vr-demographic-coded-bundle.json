@@ -1,0 +1,206 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "vr-demographic-coded-bundle",
+  "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/vr-demographic-coded-bundle",
+  "name": "DemographicCodedContentBundleBFDR",
+  "title": "Bundle - Demographic Coded Content Bundle for BFDR",
+  "status": "draft",
+  "description": "Demographic Coded Content Bundle (Bundle): A bundle containing instances of the resources comprising demographic (race and ethnicity) coded content. This bundle is information-content equivalent to the traditional NCHS MRE format.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.identifier",
+        "path": "Bundle.identifier",
+        "min": 1
+      },
+      {
+        "id": "Bundle.identifier.extension:certificateNumber",
+        "path": "Bundle.identifier.extension",
+        "sliceName": "certificateNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/CertificateNumber"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.identifier.extension:auxiliaryStateIdentifier1",
+        "path": "Bundle.identifier.extension",
+        "sliceName": "auxiliaryStateIdentifier1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/AuxiliaryStateIdentifier1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.identifier.extension:auxiliaryStateIdentifier2",
+        "path": "Bundle.identifier.extension",
+        "sliceName": "auxiliaryStateIdentifier2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/AuxiliaryStateIdentifier2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.identifier.value",
+        "path": "Bundle.identifier.value",
+        "short": "Death Record Identifier (YYYYJJNNNNNN)",
+        "definition": "A unique value used by the NCHS to identify a death record. The NCHS uniquely identifies death records by combining three concepts: the year of death (as a four digit number), the jurisdiction of death (as a two character jurisdiction identifier), and the death certificate number assigned by the jurisdiction (a number with up to six digits, left padded with zeros). ",
+        "maxLength": 12
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "collection"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resource"
+            }
+          ],
+          "rules": "open",
+          "description": "Slicing based on the profile"
+        }
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry:Father",
+        "path": "Bundle.entry",
+        "sliceName": "Father",
+        "short": "Father",
+        "definition": "Father",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:Father.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "RelatedPerson",
+            "profile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Mother",
+        "path": "Bundle.entry",
+        "sliceName": "Mother",
+        "short": "Mother",
+        "definition": "Mother",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:Mother.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:CodedRaceAndEthnicity",
+        "path": "Bundle.entry",
+        "sliceName": "CodedRaceAndEthnicity",
+        "short": "CodedRaceAndEthnicity",
+        "definition": "CodedRaceAndEthnicity",
+        "min": 0,
+        "max": "2"
+      },
+      {
+        "id": "Bundle.entry:CodedRaceAndEthnicity.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:InputRaceAndEthnicity",
+        "path": "Bundle.entry",
+        "sliceName": "InputRaceAndEthnicity",
+        "short": "InputRaceAndEthnicity",
+        "definition": "InputRaceAndEthnicity",
+        "min": 0,
+        "max": "2"
+      },
+      {
+        "id": "Bundle.entry:InputRaceAndEthnicity.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

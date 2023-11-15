@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-antibiotics-during-labor-jada-ann-quinn",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-administered-during-labor"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "73813-8",
+        "system": "http://loinc.org",
+        "display": "Characteristics of labor and delivery [US Standard Certificate of Live Birth]"
+      }
+    ],
+    "text": "Characteristics of labor and delivery"
+  },
+  "focus": [
+    {
+      "reference": "Patient/patient-child-babyg-quinn",
+      "display": "BabyG Quinn"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-vital-records-janet-seito"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "434691000124101",
+        "system": "http://snomed.info/sct",
+        "display": "Antibacterial administered during labor"
+      }
+    ],
+    "text": "Antibiotics received during labor"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/patient-mother-jada-ann-quinn",
+    "display": "Patient - Mother (Jada Ann Quinn)"
+  },
+  "effectiveDateTime": "2019-12-02"
+}

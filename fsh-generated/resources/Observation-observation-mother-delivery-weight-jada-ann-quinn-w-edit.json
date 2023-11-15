@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-mother-delivery-weight-jada-ann-quinn-w-edit",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-delivery-weight"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-vital-records-janet-seito"
+    }
+  ],
+  "valueQuantity": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "editBypass0",
+              "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags",
+              "display": "Edit Passed"
+            }
+          ]
+        }
+      }
+    ],
+    "value": 175,
+    "code": "[lb_av]",
+    "system": "http://unitsofmeasure.org"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "69461-2",
+        "system": "http://loinc.org",
+        "display": "Mother's body weight --at delivery"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/patient-mother-jada-ann-quinn",
+    "display": "Patient - Mother (Jada Ann Quinn)"
+  },
+  "effectiveDateTime": "2019-02-12"
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ApgarTimingVS",
+  "id": "ValueSet-apgar-timing",
+  "title": "ValueSet - APGAR Score Timing",
+  "description": "This valueset contains codes to represent standard timings for APGAR assessments.",
+  "url": "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing",
+  "experimental": false,
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.\nThis material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "9272-6",
+            "display": "1 minute Apgar Score"
+          },
+          {
+            "code": "9274-2",
+            "display": "5 minute Apgar Score"
+          },
+          {
+            "code": "9271-8",
+            "display": "10 minute Apgar Score"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "443848000",
+            "display": "Apgar score at 15 minutes (observable entity)"
+          },
+          {
+            "code": "443849008",
+            "display": "Apgar score at 20 minutes (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}

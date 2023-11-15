@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MothersDateOfBirthEditFlagsVS",
+  "id": "ValueSet-mothers-date-of-birth-edit-flags",
+  "title": "ValueSet - Mothers Date of Birth Edit Flags (NCHS)",
+  "description": "This valueset contains codes to represent Mothers Date of Birth Edit Flags. This valueset is based on [PHVS_BirthdateEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3BD473EE-40DD-E811-816D-0017A477041A)",
+  "url": "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-mothers-date-of-birth-edit-flags",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags",
+        "concept": [
+          {
+            "code": "editBypass0",
+            "display": "Edit Passed"
+          },
+          {
+            "code": "dataQueried",
+            "display": "Data queried"
+          }
+        ]
+      }
+    ]
+  }
+}

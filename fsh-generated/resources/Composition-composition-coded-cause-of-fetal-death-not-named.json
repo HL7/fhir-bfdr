@@ -1,0 +1,73 @@
+{
+  "resourceType": "Composition",
+  "id": "composition-coded-cause-of-fetal-death-not-named",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionCodedCauseOfFetalDeath"
+    ]
+  },
+  "extension": [
+    {
+      "valueIdentifier": {
+        "type": {
+          "coding": [
+            {
+              "code": "FDR",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        },
+        "value": "9876"
+      },
+      "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
+    }
+  ],
+  "identifier": {
+    "value": "c03eab8c-11e8-4d0c-ad2a-b385395e27db"
+  },
+  "author": [
+    {
+      "reference": "Organization/organization-nchs",
+      "display": "National Center for Health Statistics"
+    }
+  ],
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "Observation/observation-coded-initiating-fetal-death-cause-or-condition",
+          "display": "Condition - Coded Initiating Fetal Death Cause or Condition (Not Named)"
+        },
+        {
+          "reference": "Observation/observation-coded-other-fetal-death-cause-or-condition-not-named",
+          "display": "Condition - Coded Other Fetal Death Cause or Condition (Not Named)"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "86804-2",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "title": "Coded Cause of Fetal Death"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "86804-2",
+        "system": "http://loinc.org",
+        "display": "Cause of death classification and related information Document"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/patient-decedent-fetus-not-named",
+    "display": "Patient - Decedent Fetus (Fetus Not Named)"
+  },
+  "date": "2019-01-09",
+  "title": "Coded Cause of Fetal Death"
+}

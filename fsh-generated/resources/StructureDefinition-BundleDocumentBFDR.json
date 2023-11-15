@@ -1,0 +1,89 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BundleDocumentBFDR",
+  "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/BundleDocumentBFDR",
+  "name": "BundleDocumentBFDR",
+  "title": "Bundle - Document Birth and Fetal Death",
+  "status": "draft",
+  "description": "This Bundle profile represents a Birth and Fetal Death Document Bundle. It contains any one of the Birth and Fetal Death Compositions.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.identifier",
+        "path": "Bundle.identifier",
+        "short": "BFDR Document Bundle identifier",
+        "min": 1
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "document"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resource"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry:BFDRComposition",
+        "path": "Bundle.entry",
+        "sliceName": "BFDRComposition",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:BFDRComposition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Composition",
+            "profile": [
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionProviderFetalDeathReport",
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionProviderLiveBirthReport",
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionJurisdictionLiveBirthReport",
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionJurisdictionFetalDeathReport"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

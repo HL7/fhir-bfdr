@@ -1,0 +1,123 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "BirthAttendantTitlesCM",
+  "url": "http://hl7.org/fhir/us/bfdr/ConceptMap/BirthAttendantTitlesCM",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "useContext": [
+    {
+      "valueCodeableConcept": {
+        "text": "for IJE to FHIR alignment"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "112247003",
+              "display": "Medical Doctor",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "1",
+          "display": "MD"
+        },
+        {
+          "target": [
+            {
+              "code": "76231001",
+              "display": "Osteopath",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "2",
+          "display": "DO"
+        },
+        {
+          "target": [
+            {
+              "code": "445521000124102",
+              "display": "Advanced Practice Midwife",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "3",
+          "display": "CNM/CM"
+        },
+        {
+          "target": [
+            {
+              "code": "445531000124104",
+              "display": "Lay Midwife",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "4",
+          "display": "Other Midwife"
+        }
+      ],
+      "target": "http://snomed.info/sct",
+      "source": "IJE"
+    },
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "OTH",
+              "display": "other",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "5",
+          "display": "Other (specify)"
+        },
+        {
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "9",
+          "display": "Unknown"
+        }
+      ],
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "source": "IJE"
+    }
+  ],
+  "experimental": false,
+  "name": "BirthAttendantTitles",
+  "title": "BirthAttendantTitles Concept Map",
+  "status": "draft",
+  "description": "A mapping between NCHS IJE and FHIR BirthAttendantTitles Value Sets",
+  "purpose": "To help implementers map from IJE to FHIR Vocabulary",
+  "targetCanonical": "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-attendant-titles"
+}

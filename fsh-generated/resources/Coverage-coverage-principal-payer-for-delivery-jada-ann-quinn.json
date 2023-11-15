@@ -1,0 +1,35 @@
+{
+  "resourceType": "Coverage",
+  "id": "coverage-principal-payer-for-delivery-jada-ann-quinn",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-delivery"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "code": "privateinsurance",
+        "system": "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-vr-birth-and-fetal-death-financial-class",
+        "display": "PRIVATE HEALTH INSURANCE"
+      }
+    ],
+    "text": "Private Health Insurance"
+  },
+  "payor": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "not-asked"
+        }
+      ],
+      "display": "Not asked"
+    }
+  ],
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/patient-mother-jada-ann-quinn",
+    "display": "Patient - Mother (Jada Ann Quinn)"
+  }
+}

@@ -1,0 +1,2247 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-provider-fetal-death-not-named",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/bfdr/StructureDefinition/BundleDocumentBFDR"
+    ]
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:93bdc9cf-0d97-4b6f-9f11-876d8ea115eb"
+  },
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Composition",
+        "id": "composition-provider-fetal-death-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionProviderFetalDeathReport"
+          ]
+        },
+        "extension": [
+          {
+            "valueIdentifier": {
+              "type": {
+                "coding": [
+                  {
+                    "code": "FDR",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                  }
+                ]
+              },
+              "value": "9876"
+            },
+            "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
+          },
+          {
+            "valueIdentifier": {
+              "type": {
+                "coding": [
+                  {
+                    "code": "FDRFN",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                  }
+                ]
+              },
+              "value": "11111-11111"
+            },
+            "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar",
+            "valueDateTime": "2019-02-12"
+          }
+        ],
+        "identifier": {
+          "value": "z03eab8c-11e8-4d0c-ad2a-b385395e27da"
+        },
+        "author": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-jessica-leung",
+            "display": "Practitioner - Vital Records (Jessica Leung)"
+          }
+        ],
+        "section": [
+          {
+            "entry": [
+              {
+                "reference": "Observation/observation-planned-to-deliver-at-home-not-named",
+                "display": "Observation - Planned to Deliver at Home (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee",
+                "display": "Observation - Date of First Prenatal Care Visit (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-last-menstrual-period-carmen-teresa-lee",
+                "display": "Observation - Last Menstrual Period (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-number-births-now-living-carmen-teresa-lee",
+                "display": "Observation - Number Births Now Living (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-number-births-now-dead-carmen-teresa-lee",
+                "display": "Observation - Number Births Now Dead (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-date-of-last-live-birth-carmen-teresa-lee",
+                "display": "Observation - Date of Last Live Birth (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-mother-height-carmen-teresa-lee",
+                "display": "Observation - Mother Height (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee",
+                "display": "Observation - Mother Prepregnancy Weight (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-mother-received-wic-food-carmen-teresa-lee",
+                "display": "Observation - Mother Received WIC Food (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee",
+                "display": "Observation - Cigarette Smoking Before/During Pregnancy (3 months prior: Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee",
+                "display": "Observation - Cigarette Smoking Before/During Pregnancy (first 3 months: Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee",
+                "display": "Observation - Cigarette Smoking Before/During Pregnancy (last 3 months: Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee",
+                "display": "Observation - Cigarette Smoking Before/During Pregnancy (second 3 months: Carmen Teresa Lee)"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "57073-9",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "focus": {
+              "reference": "Patient/patient-mother-carmen-teresa-lee",
+              "display": "Patient - Mother (Carmen Teresa Lee)"
+            }
+          },
+          {
+            "entry": [
+              {
+                "reference": "Observation/observation-number-previous-cesareans-carmen-teresa-lee",
+                "display": "Observation - Number Previous Cesareans (Carmen Teresa Lee)"
+              },
+              {
+                "reference": "Observation/observation-fetal-presentation-not-named",
+                "display": "Observation - Fetal Presentation (Fetus Not Named)"
+              },
+              {
+                "reference": "Procedure/procedure-final-route-method-delivery-not-named",
+                "display": "Procedure - Final Route and Method of Delivery (Fetus Not Named)"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "55752-0",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "focus": {
+              "reference": "Patient/patient-mother-carmen-teresa-lee",
+              "display": "Patient - Mother (Carmen Teresa Lee)"
+            }
+          },
+          {
+            "entry": [
+              {
+                "reference": "Observation/observation-birth-weight-not-named",
+                "display": "Observation - Birth Weight (Fetus Not Named)"
+              },
+              {
+                "reference": "Observation/observation-gestational-age-at-delivery-not-named",
+                "display": "Observation - Gestational Age at Delivery (Fetus Not Named)"
+              },
+              {
+                "reference": "Condition/condition-fetal-death-cause-or-condition-not-named",
+                "display": "Condition - Fetal Death Cause or Condition (Fetus Not Named)"
+              },
+              {
+                "reference": "Condition/condition-fetal-death-other-significant-cause-not-named",
+                "display": "Example of Condition-fetal-death-other-significant-cause profile (Fetus Not Named)"
+              },
+              {
+                "reference": "Observation/observation-fetal-death-time-point-not-named",
+                "display": "Example of Observation-estimated-fetal-death-time-point profile (Fetus Not Named)"
+              },
+              {
+                "reference": "Observation/observation-autopsy-performed-not-named",
+                "display": "Example of Observation-autopsy-performed profile (Fetus Not Named)"
+              },
+              {
+                "reference": "Observation/observation-histological-placental-exam-performed-not-named",
+                "display": "Observation - Histological Placental Exam Performed (Fetus Not Named)"
+              },
+              {
+                "reference": "Observation/observation-autopsy-histological-exam-results-used-not-named",
+                "display": "Observation - Autopsy or Histological Exam Results Used"
+              },
+              {
+                "reference": "Observation/observation-number-deaths-this-delivery-carmen-teresa-lee",
+                "display": "Observation - Number of Fetal Deaths This Delivery (Carmen Teresa Lee)"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "76400-1",
+                  "system": "http://loinc.org"
+                }
+              ]
+            }
+          },
+          {
+            "entry": [
+              {
+                "reference": "Observation/observation-parent-education-level-carmen-teresa-lee",
+                "display": "Observation - Parent Education Level (Carmen Teresa Lee)"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "92014-0",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "focus": {
+              "reference": "Patient/patient-mother-carmen-teresa-lee",
+              "display": "Patient - Mother (Carmen Teresa Lee)"
+            }
+          },
+          {
+            "entry": [
+              {
+                "reference": "QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee",
+                "display": "QuestionnaireResponse - Patient's Worksheet for Fetal Death Report"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "74465-6",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "title": "Patient's QuestionnaireResponse Section",
+            "focus": {
+              "reference": "Patient/patient-mother-carmen-teresa-lee",
+              "display": "Patient - Mother (Carmen Teresa Lee)"
+            }
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "69045-3",
+              "system": "http://loinc.org",
+              "display": "U.S. standard report of fetal death - 2003 revision"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-maternity-carmen-teresa-lee",
+          "display": "Encounter - Maternity (Carmen Teresa Lee)"
+        },
+        "date": "2019-01-09",
+        "title": "Provider fetal death report Document"
+      },
+      "fullUrl": "http://www.example.org/fhir/CompositionProviderFetalDeathReport/composition-provider-fetal-death-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-decedent-fetus-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+            "valueCode": "F"
+          },
+          {
+            "valueAddress": {
+              "city": "Ann Arbor",
+              "state": "MI",
+              "postalCode": "48103"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "display": "Medical Record Number"
+                }
+              ]
+            },
+            "system": "http://hospital.smarthealthit.org",
+            "value": "9932702"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "family": "UNK",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "not-applicable"
+                }
+              ]
+            }
+          }
+        ],
+        "deceasedBoolean": true,
+        "gender": "female",
+        "birthDate": "2019-01-09",
+        "_birthDate": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+              "valueDateTime": "2019-01-09T18:23:00-07:00"
+            }
+          ]
+        },
+        "multipleBirthInteger": 3
+      },
+      "fullUrl": "http://www.example.org/fhir/Patient/patient-decedent-fetus-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-maternity-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hospital.smarthealthit.org",
+            "value": "8937015"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "99234",
+                "system": "http://www.ama-assn.org/go/cpt"
+              }
+            ],
+            "text": "Under Observation or Inpatient Care Services (Including Admission and Discharge Services)"
+          }
+        ],
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "code": "87286-1",
+                    "system": "http://loinc.org",
+                    "display": "Birth attendant [Extended Identifier]"
+                  }
+                ]
+              }
+            ],
+            "individual": {
+              "reference": "Practitioner/practitioner-vital-records-janet-seito",
+              "display": "Practitioner - Vital Records (Janet Seito, MD)"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-01-08T10:00:00-07:00",
+          "end": "2019-01-09T17:00:00-07:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "Location/location-south-hospital",
+              "display": "Location - US Core Location (South Hospital)"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "code": "22232009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Hospital"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "serviceProvider": {
+          "reference": "Organization/organization-south-hospital",
+          "display": "Organization - US Core Organization (South Hospital Organization)"
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Encounter/encounter-maternity-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "practitioner-vital-records-jessica-leung",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "223347055"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Leung"
+            ],
+            "family": "Jessica"
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "OTH",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                  "display": "other"
+                }
+              ],
+              "text": "Birth Clerk"
+            }
+          }
+        ]
+      },
+      "fullUrl": "http://www.example.org/fhir/Practitioner/practitioner-vital-records-jessica-leung"
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-mother-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2054-5",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "Black or African American"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Black or African America"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          },
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2135-2",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "Hispanic or Latino"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Hispanic or Latino"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+            "valueCode": "F"
+          },
+          {
+            "valueAddress": {
+              "state": "PR"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "display": "Medical Record Number"
+                }
+              ]
+            },
+            "system": "http://hospital.smarthealthit.org",
+            "value": "9992702"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Carmen",
+              "Teresa"
+            ],
+            "use": "official",
+            "family": "Lee"
+          },
+          {
+            "given": [
+              "Carmen",
+              "Teresa"
+            ],
+            "use": "maiden",
+            "family": "Santos"
+          }
+        ],
+        "address": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr",
+                "valueCoding": {
+                  "code": "N",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                  "display": "No"
+                }
+              }
+            ],
+            "line": [
+              "3670 Miller Road"
+            ],
+            "use": "home",
+            "city": "Ann Arbor",
+            "state": "MI",
+            "postalCode": "48103",
+            "country": "US"
+          }
+        ],
+        "link": [
+          {
+            "type": "seealso",
+            "other": {
+              "reference": "RelatedPerson/relatedperson-mother-carmen-teresa-lee"
+            }
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1986-02-15"
+      },
+      "fullUrl": "http://www.example.org/fhir/Patient/patient-mother-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-planned-to-deliver-at-home-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-decedent-fetus-not-named",
+            "display": "Patient - Decedent Fetus (Fetus Not Named)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "73765-0",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueBoolean": false
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-planned-to-deliver-at-home-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-date-of-first-prenatal-care-visit-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "69044-6",
+              "system": "http://loinc.org",
+              "display": "Date first prenatal visit"
+            }
+          ],
+          "text": "Date of first prenatal care visit"
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-decedent-fetus-not-named",
+            "display": "Patient - Decedent Fetus (Fetus Not Named)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueDateTime": "2018-05-18"
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-last-menstrual-period-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "8665-2",
+              "system": "http://loinc.org",
+              "display": "Last menstrual period start date"
+            }
+          ],
+          "text": "Last menstrual period start date"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2018-05-02",
+        "valueDateTime": "2018-04-18"
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-last-menstrual-period-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-number-births-now-living-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-living"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "11638-4",
+              "system": "http://loinc.org",
+              "display": "[#] Births.still living"
+            }
+          ],
+          "text": "[#] Births.still living"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueInteger": 1
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-number-births-now-living-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-number-births-now-dead-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-dead"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "68496-9",
+              "system": "http://loinc.org",
+              "display": "Previous live births now dead #"
+            }
+          ],
+          "text": "Previous live births now dead #"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueInteger": 0
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-number-births-now-dead-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-date-of-last-live-birth-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "68499-3",
+              "system": "http://loinc.org",
+              "display": "Date last live birth"
+            }
+          ],
+          "text": "Date of last live birth"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueDateTime": "2016-01-28"
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-date-of-last-live-birth-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-mother-height-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 65,
+          "code": "[in_i]",
+          "unit": "in"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-01-10"
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-mother-height-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-mother-prepregnancy-weight-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "56077-1",
+              "system": "http://loinc.org",
+              "display": "Body weight --pre current pregnancy"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueQuantity": {
+          "value": 180,
+          "code": "[lb_av]",
+          "system": "http://unitsofmeasure.org"
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-mother-received-wic-food-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-decedent-fetus-not-named",
+            "display": "Patient - Decedent Fetus (Fetus Not Named)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "87303-4",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+              "display": "No"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-mother-received-wic-food-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-cig-smoking-pregnancy-1-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "64794-1",
+              "system": "http://loinc.org",
+              "display": "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+            }
+          ],
+          "text": "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-decedent-fetus-not-named",
+            "display": "Patient - Decedent Fetus (Fetus Not Named)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueInteger": 0
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-cig-smoking-pregnancy-2-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "87298-6",
+              "system": "http://loinc.org",
+              "display": "Cigarettes smoked per day by Mother--1st trimester"
+            }
+          ],
+          "text": "Cigarettes smoked per day by Mother--1st trimester"
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-decedent-fetus-not-named",
+            "display": "Patient - Decedent Fetus (Fetus Not Named)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueInteger": 0
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-cig-smoking-pregnancy-3-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "87299-4",
+              "system": "http://loinc.org",
+              "display": "Cigarettes smoked per day by Mother--2nd trimester"
+            }
+          ],
+          "text": "Cigarettes smoked per day by Mother--2nd trimester"
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-decedent-fetus-not-named",
+            "display": "Patient - Decedent Fetus (Fetus Not Named)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueInteger": 1
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-cig-smoking-pregnancy-4-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "64795-8",
+              "system": "http://loinc.org",
+              "display": "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
+            }
+          ],
+          "text": "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-decedent-fetus-not-named",
+            "display": "Patient - Decedent Fetus (Fetus Not Named)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueInteger": 0
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-number-previous-cesareans-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "68497-7",
+              "system": "http://loinc.org",
+              "display": "Previous cesarean deliveries #"
+            }
+          ],
+          "text": "Previous cesarean deliveries #"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueInteger": 1
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-number-previous-cesareans-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-fetal-presentation-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "73761-9",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "6096002",
+              "system": "http://snomed.info/sct",
+              "display": "Breech presentation (finding)"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-fetal-presentation-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "procedure-final-route-method-delivery-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "700000006",
+              "system": "http://snomed.info/sct",
+              "display": "Vaginal delivery of fetus (procedure)"
+            }
+          ],
+          "text": "Spontaneous vaginal delivery"
+        },
+        "performedPeriod": {
+          "start": "2019-01-19T18:00:00-07:00",
+          "end": "2019-01-19T18:23:00-07:00"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-birth-weight-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8339-4",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "effectiveDateTime": "2019-01-10",
+        "valueQuantity": {
+          "value": 1530,
+          "code": "g",
+          "system": "http://unitsofmeasure.org"
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-birth-weight-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-gestational-age-at-delivery-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11884-4",
+              "system": "http://loinc.org",
+              "display": "Gestational age Estimated"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "wk",
+          "value": 20
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "effectiveDateTime": "2019-12-02"
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-fetal-death-cause-or-condition-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "76060-3",
+                "system": "http://loinc.org",
+                "display": "Initiating cause or condition of fetal death [US Standard Report of Fetal Death]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "44223004",
+              "system": "http://snomed.info/sct",
+              "display": "Premature rupture of membranes (disorder)"
+            }
+          ],
+          "text": "Premature rupture of membranes (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Condition/condition-fetal-death-cause-or-condition-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-fetal-death-other-significant-cause-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "76061-1",
+                "system": "http://loinc.org",
+                "display": "Other significant causes or conditions of fetal death [US Standard Report of Fetal Death]"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "237292005",
+              "system": "http://snomed.info/sct",
+              "display": "Placental insufficiency (disorder)"
+            }
+          ],
+          "text": "Placental insufficiency (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Condition/condition-fetal-death-other-significant-cause-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-fetal-death-time-point-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "73811-2",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "434631000124100",
+              "system": "http://snomed.info/sct",
+              "display": "Fetal intrapartum death after first assessment (event)"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-fetal-death-time-point-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-autopsy-performed-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85699-7",
+              "display": "Autopsy was performed"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "Y",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+              "display": "Yes"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-autopsy-performed-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-histological-placental-exam-performed-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "73767-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "398166005",
+              "system": "http://snomed.info/sct",
+              "display": "Performed"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-histological-placental-exam-performed-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-autopsy-histological-exam-results-used-not-named",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "74498-7",
+              "system": "http://loinc.org",
+              "display": "Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "Y",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+              "display": "Yes"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-autopsy-histological-exam-results-used-not-named"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-number-deaths-this-delivery-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-fetal-deaths-this-delivery"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "73772-6",
+              "system": "http://loinc.org",
+              "display": "Number of fetal deaths delivered"
+            }
+          ],
+          "text": "Number of fetal deaths delivered"
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-decedent-fetus-not-named",
+            "display": "Patient - Decedent Fetus (Fetus Not Named)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-vital-records-janet-seito"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        },
+        "effectiveDateTime": "2019-12-02",
+        "valueInteger": 1
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-parent-education-level-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee",
+            "display": "Patient - Mother (Carmen Teresa Lee)"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/patient-mother-carmen-teresa-lee"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "SEC",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+              "display": "Some secondary or high school education"
+            }
+          ],
+          "text": "9th through 12th grade; no diploma"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "57712-2",
+              "system": "http://loinc.org",
+              "display": "Highest level of education Mother"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "effectiveDateTime": "2019-12-02"
+      },
+      "fullUrl": "http://www.example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "QuestionnaireResponse-patients-fetal-death-carmen-lee",
+        "item": [
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueString": "Carmen"
+                  }
+                ],
+                "linkId": "mother-first-name",
+                "text": "First"
+              },
+              {
+                "answer": [
+                  {
+                    "valueString": "Teresa"
+                  }
+                ],
+                "linkId": "mother-middle-name",
+                "text": "Middle"
+              },
+              {
+                "answer": [
+                  {
+                    "valueString": "Lee"
+                  }
+                ],
+                "linkId": "mother-last-name",
+                "text": "Last"
+              }
+            ],
+            "linkId": "mother-current-legal-name",
+            "text": "What is your current legal name?"
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueString": "3670 Miller Road"
+                  }
+                ],
+                "linkId": "mother-nbr-street",
+                "text": "Complete number and street (do not enter rural route numbers)"
+              },
+              {
+                "linkId": "mother-city",
+                "text": "City, Town, or Location"
+              },
+              {
+                "answer": [
+                  {
+                    "valueString": "MI"
+                  }
+                ],
+                "linkId": "mother-state",
+                "text": "State (or U.S. Territory, Canadian Province)"
+              },
+              {
+                "answer": [
+                  {
+                    "valueString": "48103"
+                  }
+                ],
+                "linkId": "mother-zip",
+                "text": "Zip Code"
+              }
+            ],
+            "linkId": "mother-address",
+            "text": "Where do you usually live - that is - where is your household/residence located?"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "N",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                  "display": "No"
+                }
+              }
+            ],
+            "linkId": "inside-city-limits",
+            "text": "Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?"
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueBoolean": true
+                  }
+                ],
+                "linkId": "mother-mail-same",
+                "text": "Same as residence [Go to next question]"
+              }
+            ],
+            "linkId": "mother-mail",
+            "text": "What is your mailing address"
+          },
+          {
+            "answer": [
+              {
+                "valueDate": "1986-02-15"
+              }
+            ],
+            "linkId": "mother-dob",
+            "text": "What is your date of birth?"
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueString": "PR"
+                  }
+                ],
+                "linkId": "mother-birthplace-territory",
+                "text": "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
+              }
+            ],
+            "linkId": "mother-birthplace",
+            "text": "In what State, U.S. territory, or foreign country were you born? Please specify one of the following:"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "SEC",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+                  "display": "Some secondary or high school education"
+                }
+              }
+            ],
+            "linkId": "mother-education",
+            "text": "What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received)."
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "2135-2",
+                      "system": "urn:oid:2.16.840.1.113883.6.238",
+                      "display": "Hispanic or Latino"
+                    }
+                  }
+                ],
+                "linkId": "mother-shl",
+                "text": "Are you Spanish/Hispanic/Latina"
+              }
+            ],
+            "linkId": "mother-ethnicity",
+            "text": "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "2054-5",
+                      "system": "urn:oid:2.16.840.1.113883.6.238",
+                      "display": "Black or African American"
+                    }
+                  }
+                ],
+                "linkId": "mother-race-category",
+                "text": "Race categories"
+              }
+            ],
+            "linkId": "mother-race",
+            "text": "What is your race? (Please check one or more races to indicate what you consider yourself to be)."
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueString": "Tom"
+                  }
+                ],
+                "linkId": "father-first-name",
+                "text": "First"
+              },
+              {
+                "answer": [
+                  {
+                    "valueString": "Yan"
+                  }
+                ],
+                "linkId": "father-middle-name",
+                "text": "Middle"
+              },
+              {
+                "answer": [
+                  {
+                    "valueString": "Lee"
+                  }
+                ],
+                "linkId": "father-last-name",
+                "text": "Last"
+              }
+            ],
+            "linkId": "father-current-legal-name",
+            "text": "What is the current legal name of your baby's father?"
+          },
+          {
+            "answer": [
+              {
+                "valueDate": "1984-02-27"
+              }
+            ],
+            "linkId": "father-dob",
+            "text": "What is the father's date of birth?"
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueString": "NY"
+                  }
+                ],
+                "linkId": "father-birthplace-state",
+                "text": "State"
+              }
+            ],
+            "linkId": "father-birthplace",
+            "text": "In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "N",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+                  "display": "No"
+                }
+              }
+            ],
+            "linkId": "receive-wic",
+            "text": "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueQuantity": {
+                      "value": 65,
+                      "code": "[in_i]",
+                      "system": "http://unitsofmeasure.org",
+                      "unit": "[in_i]"
+                    }
+                  }
+                ],
+                "linkId": "mothers-height-inches",
+                "text": "Inches"
+              }
+            ],
+            "linkId": "mothers-height",
+            "text": "What is your height?"
+          },
+          {
+            "answer": [
+              {
+                "valueQuantity": {
+                  "value": 180,
+                  "code": "[lb_av]",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "[lb_av]"
+                }
+              }
+            ],
+            "linkId": "mothers-prepregnancy-weight",
+            "text": "lbs"
+          },
+          {
+            "item": [
+              {
+                "item": [
+                  {
+                    "answer": [
+                      {
+                        "valueInteger": 0
+                      }
+                    ],
+                    "linkId": "mothers-smoking-3-months-prior-cig",
+                    "text": "# of cigarettes*"
+                  },
+                  {
+                    "answer": [
+                      {
+                        "valueInteger": 0
+                      }
+                    ],
+                    "linkId": "mothers-smoking-3-months-prior-pck",
+                    "text": "# of packs"
+                  }
+                ],
+                "linkId": "mothers-smoking-3-months-prior",
+                "text": "Three months before pregnancy"
+              },
+              {
+                "item": [
+                  {
+                    "answer": [
+                      {
+                        "valueInteger": 0
+                      }
+                    ],
+                    "linkId": "mothers-smoking-trimester-1-cig",
+                    "text": "# of cigarettes*"
+                  },
+                  {
+                    "answer": [
+                      {
+                        "valueInteger": 0
+                      }
+                    ],
+                    "linkId": "mothers-smoking-trimester-1-pck",
+                    "text": "# of packs"
+                  }
+                ],
+                "linkId": "mothers-smoking-trimester-1",
+                "text": "First three months of pregnancy"
+              },
+              {
+                "item": [
+                  {
+                    "answer": [
+                      {
+                        "valueInteger": 0
+                      }
+                    ],
+                    "linkId": "mothers-smoking-trimester-2-cig",
+                    "text": "# of cigarettes*"
+                  },
+                  {
+                    "answer": [
+                      {
+                        "valueInteger": 0
+                      }
+                    ],
+                    "linkId": "mothers-smoking-trimester-2-pck",
+                    "text": "# of packs"
+                  }
+                ],
+                "linkId": "mothers-smoking-trimester-2",
+                "text": "Second three months of pregnancy"
+              },
+              {
+                "item": [
+                  {
+                    "answer": [
+                      {
+                        "valueInteger": 0
+                      }
+                    ],
+                    "linkId": "mothers-smoking-trimester-3-cig",
+                    "text": "# of cigarettes*"
+                  },
+                  {
+                    "answer": [
+                      {
+                        "valueInteger": 0
+                      }
+                    ],
+                    "linkId": "mothers-smoking-trimester-3-pck",
+                    "text": "# of packs"
+                  }
+                ],
+                "linkId": "mothers-smoking-trimester-3",
+                "text": "Third trimester of pregnancy"
+              }
+            ],
+            "linkId": "mothers-smoking",
+            "text": "How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? If you NEVER smoked, enter zero for each time period."
+          }
+        ],
+        "questionnaire": "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-patients-fetal-death",
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "source": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee",
+          "display": "Patient - Mother (Carmen Teresa Lee)"
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee"
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "practitioner-vital-records-janet-seito",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "223347044"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Seito"
+            ],
+            "suffix": [
+              "D.O."
+            ],
+            "family": "Janet"
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "76231001",
+                  "system": "http://snomed.info/sct",
+                  "display": "Osteopath (occupation)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "fullUrl": "http://www.example.org/fhir/Practitioner/practitioner-vital-records-janet-seito"
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "location-south-hospital",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "116441967701"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "HOSP",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "display": "Hospital"
+              }
+            ]
+          }
+        ],
+        "address": {
+          "line": [
+            "2100 North Ave"
+          ],
+          "city": "Salt Lake City",
+          "state": "UT",
+          "postalCode": "84116",
+          "country": "US"
+        },
+        "status": "active",
+        "name": "South Hospital",
+        "managingOrganization": {
+          "reference": "Organization/organization-south-hospital",
+          "display": "Organization - South Hospital"
+        }
+      },
+      "fullUrl": "http://www.example.org/fhir/Location/location-south-hospital"
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "organization-south-hospital",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "5555512"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "HOSP",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "display": "Hospital"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1-555-555-1111"
+          },
+          {
+            "system": "email",
+            "value": "mail@southhospital.com"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2100 North Ave"
+            ],
+            "city": "Salt Lake City",
+            "state": "UT",
+            "postalCode": "84116",
+            "country": "US"
+          }
+        ],
+        "active": true,
+        "name": "South Hospital"
+      },
+      "fullUrl": "http://www.example.org/fhir/Organization/organization-south-hospital"
+    },
+    {
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "relatedperson-mother-carmen-teresa-lee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2054-5",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "Black or African American"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Black or African America"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          },
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2135-2",
+                  "system": "urn:oid:2.16.840.1.113883.6.238",
+                  "display": "Hispanic or Latino"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Hispanic or Latino"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "code": "GESTM",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "display": "gestational mother"
+              }
+            ],
+            "text": "Gestational Mother"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Carmen",
+              "Teresa"
+            ],
+            "use": "official",
+            "family": "Lee"
+          }
+        ],
+        "active": true,
+        "patient": {
+          "reference": "Patient/patient-decedent-fetus-not-named",
+          "display": "Patient - Decedent Fetus (Fetus Not Named)"
+        },
+        "gender": "female",
+        "birthDate": "1986-02-15"
+      },
+      "fullUrl": "http://www.example.org/fhir/RelatedPerson/relatedperson-mother-carmen-teresa-lee"
+    }
+  ],
+  "type": "document",
+  "timestamp": "2019-02-11T02:06:01.283Z"
+}

@@ -1,0 +1,95 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "DeliveryRoutesCM",
+  "url": "http://hl7.org/fhir/us/bfdr/ConceptMap/DeliveryRoutesCM",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "useContext": [
+    {
+      "valueCodeableConcept": {
+        "text": "for IJE to FHIR alignment"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "700000006",
+              "display": "Vaginal delivery of fetus (procedure)",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "1",
+          "display": "Spontaneous"
+        },
+        {
+          "target": [
+            {
+              "code": "302383004",
+              "display": "Forceps delivery (procedure)",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "2",
+          "display": "Forceps"
+        },
+        {
+          "target": [
+            {
+              "code": "61586001",
+              "display": "Delivery by vacuum extraction (procedure)",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "3",
+          "display": "Vacuum"
+        },
+        {
+          "target": [
+            {
+              "code": "11466000",
+              "display": "Cesarean section (procedure)",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "4",
+          "display": "Cesarean"
+        }
+      ],
+      "target": "http://snomed.info/sct",
+      "source": "IJE"
+    }
+  ],
+  "experimental": false,
+  "name": "DeliveryRoutes",
+  "title": "DeliveryRoutes Concept Map",
+  "status": "draft",
+  "description": "A mapping between NCHS IJE and FHIR DeliveryRoutes Value Sets",
+  "purpose": "To help implementers map from IJE to FHIR Vocabulary",
+  "targetCanonical": "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-delivery-routes"
+}

@@ -1,0 +1,84 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "HistologicalPlacentalExaminationCM",
+  "url": "http://hl7.org/fhir/us/bfdr/ConceptMap/HistologicalPlacentalExaminationCM",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "useContext": [
+    {
+      "valueCodeableConcept": {
+        "text": "for IJE to FHIR alignment"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "398166005",
+              "display": "Performed",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "Y",
+          "display": "Yes"
+        },
+        {
+          "target": [
+            {
+              "code": "262008008",
+              "display": "Not Performed",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "N",
+          "display": "No"
+        },
+        {
+          "target": [
+            {
+              "code": "397943006",
+              "display": "Planned",
+              "equivalence": "equivalent"
+            }
+          ],
+          "code": "P",
+          "display": "Planned"
+        }
+      ],
+      "target": "http://snomed.info/sct",
+      "source": "IJE"
+    }
+  ],
+  "experimental": false,
+  "name": "HistologicalPlacentalExamination",
+  "title": "HistologicalPlacentalExamination Concept Map",
+  "status": "draft",
+  "description": "A mapping between NCHS IJE and FHIR HistologicalPlacentalExamination Value Sets",
+  "purpose": "To help implementers map from IJE to FHIR Vocabulary",
+  "targetCanonical": "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-histological-placental-examination"
+}

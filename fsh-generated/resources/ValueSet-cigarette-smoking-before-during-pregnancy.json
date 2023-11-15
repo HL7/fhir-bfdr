@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "CigaretteSmokingBeforeAndDuringPregnancyVS",
+  "id": "cigarette-smoking-before-during-pregnancy",
+  "title": "ValueSet - Cigarette Smoking Before and During Pregnancy",
+  "description": "This valueset contains codes to represent the number of cigarettes smoked in specific periods before and during pregnancy.",
+  "url": "http://hl7.org/fhir/us/bfdr/ValueSet/cigarette-smoking-before-during-pregnancy",
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "64794-1",
+            "display": "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+          },
+          {
+            "code": "87298-6",
+            "display": "Cigarettes smoked per day by Mother--1st trimester"
+          },
+          {
+            "code": "87299-4",
+            "display": "Cigarettes smoked per day by Mother--2nd trimester"
+          },
+          {
+            "code": "64795-8",
+            "display": "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
+          }
+        ]
+      }
+    ]
+  }
+}

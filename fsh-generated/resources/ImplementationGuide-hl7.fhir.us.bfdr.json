@@ -1,0 +1,2971 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.us.bfdr",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pher"
+    }
+  ],
+  "url": "http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7.fhir.us.bfdr",
+  "version": "2.0.0",
+  "name": "BirthAndFetalDeath",
+  "status": "draft",
+  "publisher": "HL7 International / Public Health",
+  "contact": [
+    {
+      "name": "HL7 International / Public Health",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pher"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.us.bfdr",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "hl7fhiruscore",
+      "packageId": "hl7.fhir.us.core",
+      "version": "5.0.1",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"
+    },
+    {
+      "id": "usnlmvsac",
+      "packageId": "us.nlm.vsac",
+      "uri": "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac",
+      "version": "0.9.0"
+    },
+    {
+      "id": "uscdcphinvads",
+      "packageId": "us.cdc.phinvads",
+      "uri": "http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads",
+      "version": "0.12.0"
+    },
+    {
+      "packageId": "hl7.fhir.us.odh",
+      "version": "1.2.0",
+      "uri": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
+      "id": "hl7_fhir_us_odh"
+    },
+    {
+      "id": "hl7fhirusvrcommonlibrary",
+      "packageId": "hl7.fhir.us.vr-common-library",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/us/vr-common-library/ImplementationGuide/hl7.fhir.us.vr-common-library"
+    }
+  ],
+  "definition": {
+    "grouping": [
+      {
+        "id": "BFDRCapabilityStatements",
+        "name": "Capability Statements"
+      },
+      {
+        "id": "BFDRBundles",
+        "name": "Bundles"
+      },
+      {
+        "id": "BFDRCompositionsEHRtoVRO",
+        "name": "Compositions EHR to VRO"
+      },
+      {
+        "id": "BFDRCompositionsVROtoNCHS",
+        "name": "Compositions VRO to NCHS"
+      },
+      {
+        "id": "BFDRCompositionsNCHStoVRO",
+        "name": "Compositions NCHS to VRO"
+      },
+      {
+        "id": "BFDRProfilesEncounter",
+        "name": "Profiles Encounter"
+      },
+      {
+        "id": "BFDRProfilesNewbornFetus",
+        "name": "Profiles Newborn/Fetus"
+      },
+      {
+        "id": "BFDRProfilesAbnormalConditionoftheNewborn",
+        "name": "Profiles Abnormal Condition of the Newborn (73812-0)"
+      },
+      {
+        "id": "BFDRProfilesCongenitalAnomoliesoftheNewborn",
+        "name": "Profiles Congenital Anomolies of the Newborn (73780-9)"
+      },
+      {
+        "id": "BFDRProfilesCharacteristicsofLaborandDelivery",
+        "name": "Profiles Characteristics of Labor and Delivery (73813-8)"
+      },
+      {
+        "id": "BFDRProfilesMotherPrenatal",
+        "name": "Mother Prenatal Profiles"
+      },
+      {
+        "id": "BFDRProfilesInfections",
+        "name": "Infections During Pregnancy (73769-2)"
+      },
+      {
+        "id": "BFDRProfilesMedicalandHealthInformation",
+        "name": "Medical and Health Information Profiles"
+      },
+      {
+        "id": "BFDRProfilesObstetricProcedures",
+        "name": "Obstetric Procedures (73814-6)"
+      },
+      {
+        "id": "BFDRProfilesFinalRouteMethodDelivery",
+        "name": "Final Route and Method of Delivery (73762-7)"
+      },
+      {
+        "id": "BFDRProfilesPregnancyRiskFactors",
+        "name": "Pregnancy Risk Factors Profiles (73769-2)"
+      },
+      {
+        "id": "BFDRProfilesMaternalMorbidity",
+        "name": "Maternal Morbidity Profiles (73781-7)"
+      },
+      {
+        "id": "BFDRProfilesFetalDeathInformation",
+        "name": "Fetal Death Information Profiles"
+      },
+      {
+        "id": "BFDRProfilesParentInformation",
+        "name": "Parent Information Profiles"
+      },
+      {
+        "id": "BFDRExtensionsAdministrative",
+        "name": "Administrative Extensions"
+      },
+      {
+        "id": "BFDRCodeSystems",
+        "name": "CodeSystems"
+      },
+      {
+        "id": "BFDRValueSets",
+        "name": "ValueSets"
+      },
+      {
+        "id": "BFDRConceptMaps",
+        "name": "Concept Maps"
+      },
+      {
+        "id": "BFDRParameters",
+        "name": "Parameters"
+      },
+      {
+        "id": "BFDRExamples",
+        "name": "Examples"
+      }
+    ],
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/AuxiliaryStateIdentifier1"
+        },
+        "name": "Auxiliary State Identifier1",
+        "description": "An identifier associated by the submitting jurisdiction with a specific death certificate number.  Twelve digit number.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AuxiliaryStateIdentifier2"
+        },
+        "name": "Auxiliary State Identifier2",
+        "description": "An identifier associated by the submitting jurisdiction with a specific death certificate number.  Twelve digit number.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/BirthAndFetalDeathFinancialClassCM"
+        },
+        "name": "BirthAndFetalDeathFinancialClass Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR BirthAndFetalDeathFinancialClass Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/BirthAttendantTitlesCM"
+        },
+        "name": "BirthAttendantTitles Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR BirthAttendantTitles Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/BirthDeliveryOccurredCM"
+        },
+        "name": "BirthDeliveryOccurred Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR BirthDeliveryOccurred Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn"
+        },
+        "name": "Bundle - Coded Race and Ethnicity - Baby G Quinn",
+        "description": "Bundle - Coded Race and Ethnicity - example Baby G Quinn",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/vr-demographic-coded-bundle"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/vr-demographic-coded-bundle"
+        },
+        "name": "Bundle - Demographic Coded Content Bundle for BFDR",
+        "description": "Demographic Coded Content Bundle (Bundle): A bundle containing instances of the resources comprising demographic (race and ethnicity) coded content. This bundle is information-content equivalent to the traditional NCHS MRE format.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRBundles"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/BundleDocumentBFDR"
+        },
+        "name": "Bundle - Document Birth and Fetal Death",
+        "description": "This Bundle profile represents a Birth and Fetal Death Document Bundle. It contains any one of the Birth and Fetal Death Compositions.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRBundles"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-jurisdiction-fetal-death-not-named"
+        },
+        "name": "Bundle - Jurisdiction Fetal Death Report - Fetus Not Named",
+        "description": "Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/BundleDocumentBFDR",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-jurisdiction-live-birth-babyg-quinn"
+        },
+        "name": "Bundle - Jurisdiction Live Birth Report - Baby G Quinn",
+        "description": "Bundle - Jurisdiction Live Birth Report: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/BundleDocumentBFDR",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-provider-fetal-death-not-named"
+        },
+        "name": "Bundle - Provider Fetal Death Report - Fetus Not Named",
+        "description": "Bundle - Provider Fetal Death Report: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/BundleDocumentBFDR",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-provider-live-birth-babyg-quinn"
+        },
+        "name": "Bundle - Provider Live Birth - Baby G Quinn",
+        "description": "Bundle - Provider Live Birth: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/BundleDocumentBFDR",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/CapabilityStatement-bfdr"
+        },
+        "name": "CapabilityStatement - Birth and Fetal Death",
+        "description": "This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCapabilityStatements"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CertificateNumber"
+        },
+        "name": "Certificate Number",
+        "description": "Death certificate number. Six digit number.  Leading zeroes are optional.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/CodeSystem-abnormal-conditions-newborn"
+        },
+        "name": "CodeSystem - Abnormal Conditions Newborn",
+        "description": "This code system contains PHC codes for use in abnormal conditions of newborn.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCodeSystems"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/CodeSystem-vr-birth-and-fetal-death-financial-class"
+        },
+        "name": "CodeSystem - Birth and Death Financial Class",
+        "description": "This code system contains codes local codes from PHINVADs Source of Payment Typology (PHDSC) valueset",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCodeSystems"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/CodeSystem-vr-birth-delivery-occurred"
+        },
+        "name": "CodeSystem - Birth Delivery Occurred",
+        "description": "This code system contains local codes from PHINVADs valueset for place where birth or delivery occurred",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCodeSystems"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition"
+        },
+        "name": "CodeSystem - Fetal Death Cause or Condition",
+        "description": "This code system contains local codes from PHINVADs valueset for fetal death cause or condition",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCodeSystems"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/CodeSystem-informant-relationship-to-mother"
+        },
+        "name": "CodeSystem - Informant Relationship to Mother",
+        "description": "This code system contains local codes from PHINVADs Informant Relationship to Mother valueset",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCodeSystems"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CompositionCodedCauseOfFetalDeath"
+        },
+        "name": "Composition - Coded Cause of Fetal Death",
+        "description": "This profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCompositionsNCHStoVRO"
+      },
+      {
+        "reference": {
+          "reference": "Composition/composition-coded-cause-of-fetal-death-not-named"
+        },
+        "name": "Composition - Coded Cause of Fetal Death - Fetus Not Named",
+        "description": "Composition - Coded Cause of Fetal Death: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionCodedCauseOfFetalDeath",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Composition-coded-race-and-ethnicity"
+        },
+        "name": "Composition - Coded Race and Ethnicity",
+        "description": "This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office.\n\nThe Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR, and supports maternal and paternal race/ethnicity",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCompositionsNCHStoVRO"
+      },
+      {
+        "reference": {
+          "reference": "Composition/composition-coded-race-and-ethnicity-baby-g-quinn"
+        },
+        "name": "Composition - Coded Race and Ethnicity - Baby G Quinn",
+        "description": "Composition - Coded Race and Ethnicity: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CompositionJurisdictionFetalDeathReport"
+        },
+        "name": "Composition - Jurisdiction Fetal Death Report",
+        "description": "This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCompositionsVROtoNCHS"
+      },
+      {
+        "reference": {
+          "reference": "Composition/composition-jurisdiction-fetal-death-not-named"
+        },
+        "name": "Composition - Jurisdiction Fetal Death Report - Fetus Not Named",
+        "description": "Composition Jurisdiction Fetal Death Report: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionJurisdictionFetalDeathReport",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CompositionJurisdictionLiveBirthReport"
+        },
+        "name": "Composition - Jurisdiction Live Birth Report",
+        "description": "This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to the national statistics agency.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCompositionsVROtoNCHS"
+      },
+      {
+        "reference": {
+          "reference": "Composition/composition-jurisdiction-live-birth-babyg-quinn"
+        },
+        "name": "Composition - Jurisdiction Live Birth Report - BabyG Quinn",
+        "description": "Composition - Jurisdiction Live Birth Report: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionJurisdictionLiveBirthReport",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CompositionProviderFetalDeathReport"
+        },
+        "name": "Composition - Provider Fetal Death Report",
+        "description": "This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCompositionsEHRtoVRO"
+      },
+      {
+        "reference": {
+          "reference": "Composition/composition-provider-fetal-death-not-named"
+        },
+        "name": "Composition - Provider Fetal Death Report - Fetus Not Named",
+        "description": "Composition - Provider Fetal Death Report: Fetus Not Named",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionProviderFetalDeathReport",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CompositionProviderLiveBirthReport"
+        },
+        "name": "Composition - Provider Live Birth Report",
+        "description": "This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdictional Vital Records Office.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRCompositionsEHRtoVRO"
+      },
+      {
+        "reference": {
+          "reference": "Composition/composition-provider-live-birth-babyg-quinn"
+        },
+        "name": "Composition - Provider Live Birth Report - BabyG Quinn",
+        "description": "Composition - Provider Live Birth Report: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/CompositionProviderLiveBirthReport",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-chorioamnionitis"
+        },
+        "name": "Condition - Chorioamnionitis",
+        "description": "This Condition profile indicates a labor and delivery characteristic of chorioamnionitis.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCharacteristicsofLaborandDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-chorioamnionitis-jada-ann-quinn"
+        },
+        "name": "Condition - Chorioamnionitis - Jada Ann Quinn",
+        "description": "Condition - Chorioamnionitis: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-chorioamnionitis",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-congenital-anomaly-of-newborn"
+        },
+        "name": "Condition - Congenital Anomaly of Newborn",
+        "description": "This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCongenitalAnomoliesoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2"
+        },
+        "name": "Condition - Congenital Anomaly of Newborn - Baby G Quinn",
+        "description": "Condition - Congenital Anomaly of Newborn: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn"
+        },
+        "name": "Condition - Congenital Anomaly of Newborn - BabyG Quinn",
+        "description": "Condition - Congenital Anomaly of Newborn: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-eclampsia-hypertension"
+        },
+        "name": "Condition - Eclampsia Hypertension",
+        "description": "This Condition profile indicates that the mother had a pregnancy risk factor of eclampsia hypertension.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-eclampsia-hypertension-jada-ann-quinn"
+        },
+        "name": "Condition - Eclampsia Hypertension - Jada Ann Quinn",
+        "description": "Condition - Eclampsia Hypertension: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-eclampsia-hypertension",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-fetal-death-cause-or-condition"
+        },
+        "name": "Condition - Fetal Death Cause or Condition",
+        "description": "This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFetalDeathInformation"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-fetal-death-cause-or-condition-not-named"
+        },
+        "name": "Condition - Fetal Death Cause or Condition - Fetus Not Named",
+        "description": "Condition - Fetal Death Cause or Condition: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-fetal-death-other-cause-or-condition"
+        },
+        "name": "Condition - Fetal Death Other Cause or Condition",
+        "description": "This Condition profile represents another significant cause or condition for the death of the fetus.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFetalDeathInformation"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-fetal-death-other-significant-cause-not-named"
+        },
+        "name": "Condition - Fetal Death Other Cause or Condition - Fetus Not Named",
+        "description": "Condition - Fetal Death Other Cause or Condition: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-gestational-diabetes"
+        },
+        "name": "Condition - Gestational Diabetes",
+        "description": "This Condition profile indicates that the mother had a pregnancy risk factor of gestational diabetes.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-gestational-diabetes-carmen-teresa-lee"
+        },
+        "name": "Condition - Gestational Diabetes - Carmen Teresa Lee",
+        "description": "Condition - Gestational Diabetes: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-diabetes",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-gestational-diabetes-jada-ann-quinn"
+        },
+        "name": "Condition - Gestational Diabetes - Jada Ann Quinn",
+        "description": "Condition - Gestational Diabetes: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-diabetes",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-gestational-hypertension"
+        },
+        "name": "Condition - Gestational Hypertension",
+        "description": "This Condition profile indicates that the mother had a pregnancy risk factor of gestational hypertension.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-gestational-hypertension-jada-ann-quinn"
+        },
+        "name": "Condition - Gestational Hypertension - Jada Ann Quinn",
+        "description": "Condition - Gestational Hypertension: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-hypertension",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-infection-present-during-pregnancy"
+        },
+        "name": "Condition - Infection Present During Pregnancy",
+        "description": "This Condition profile represents infections present and/or treated during the pregnancy.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesInfections"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-infection-present-during-pregnancy-jada-ann-quinn"
+        },
+        "name": "Condition - Infection Present During Pregnancy - Jada Ann Quinn",
+        "description": "Condition - Infection Present During Pregnancy: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-perineal-laceration"
+        },
+        "name": "Condition - Perineal Laceration",
+        "description": "This Condition profile indicates a maternal morbidity of perineal laceration.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMaternalMorbidity"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-perineal-laceration-jada-ann-quinn"
+        },
+        "name": "Condition - Perineal Laceration - Jada Ann Quinn",
+        "description": "Condition - Perineal Laceration: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-prepregnancy-diabetes"
+        },
+        "name": "Condition - Prepregnancy Diabetes",
+        "description": "This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy diabetes.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-prepregnancy-diabetes-jada-ann-quinn"
+        },
+        "name": "Condition - Prepregnancy Diabetes - Jada Ann Quinn",
+        "description": "Condition - Prepregnancy Diabetes: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-prepregnancy-diabetes",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-prepregnancy-hypertension"
+        },
+        "name": "Condition - Prepregnancy Hypertension",
+        "description": "This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy hypertension.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-prepregnancy-hypertension-carmen-teresa-lee"
+        },
+        "name": "Condition - Prepregnancy Hypertension - Carmen Teresa Lee",
+        "description": "Condition - Prepregnancy Hypertension: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-prepregnancy-hypertension",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-prepregnancy-hypertension-jada-ann-quinn"
+        },
+        "name": "Condition - Prepregnancy Hypertension - Jada Ann Quinn",
+        "description": "Condition - Prepregnancy Hypertension: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-hypertension",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-ruptured-uterus"
+        },
+        "name": "Condition - Ruptured Uterus",
+        "description": "This Condition profile indicates a maternal morbidity of ruptured uterus.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMaternalMorbidity"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-ruptured-uterus-jada-ann-quinn"
+        },
+        "name": "Condition - Ruptured Uterus - Jada Ann Quinn",
+        "description": "Condition - Ruptured Uterus: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-seizure"
+        },
+        "name": "Condition - Seizure",
+        "description": "This Condition profile indicates the newborn had an abnormal condition of seizure.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesAbnormalConditionoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "Condition/condition-seizure-babyg-quinn"
+        },
+        "name": "Condition - Seizure - BabyG Quinn",
+        "description": "Condition - Seizure: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-seizure",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Coverage-principal-payer-delivery"
+        },
+        "name": "Coverage - Principal Payer for Delivery",
+        "description": "This Coverage profile represents the principal payer for this delivery.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn"
+        },
+        "name": "Coverage - Principal Payer for Delivery - Jada Ann Quinn",
+        "description": "Coverage - Principal Payer for Delivery: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/DeliveryRoutesCM"
+        },
+        "name": "DeliveryRoutes Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR DeliveryRoutes Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Encounter-birth"
+        },
+        "name": "Encounter - Birth",
+        "description": "This Encounter profile represents the child's birth encounter.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesEncounter"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/encounter-birth-babyg-quinn"
+        },
+        "name": "Encounter - Birth - Baby G Quinn",
+        "description": "Encounter - Birth: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Encounter-maternity"
+        },
+        "name": "Encounter - Maternity",
+        "description": "This Encounter profile represents the mother's maternity encounter.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesEncounter"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/encounter-maternity-carmen-teresa-lee"
+        },
+        "name": "Encounter - Maternity - Carmen Teresa Lee",
+        "description": "Encounter - Maternity: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/encounter-maternity-jada-ann-quinn"
+        },
+        "name": "Encounter - Maternity - Jada Ann Quinn",
+        "description": "Encounter - Maternity: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-date-filed-by-registrar"
+        },
+        "name": "Extension - Date Filed by Registrar",
+        "description": "Date filed by registrar.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRExtensionsAdministrative"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-date-received-by-registrar"
+        },
+        "name": "Extension - Date received by Registrar",
+        "description": "Date received by registrar.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRExtensionsAdministrative"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-encounter-maternity-reference"
+        },
+        "name": "Extension - Encounter Maternity Reference",
+        "description": "This Extension profile is a reference to the maternity encounter.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesEncounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-fetal-death-local-file-number"
+        },
+        "name": "Extension - Fetal Death Local File Number",
+        "description": "Fetal death local file number - this represents \"Local File No.\" on the US Standard Report of Fetal Death.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRExtensionsAdministrative"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-fetal-death-report-number"
+        },
+        "name": "Extension - Fetal Death Report Number",
+        "description": "Fetal death report number - this represents \"State File Number\" on the US Standard Report of Fetal Death.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRExtensionsAdministrative"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-live-birth-certificate-number"
+        },
+        "name": "Extension - Live Birth Certificate Number",
+        "description": "Live birth certificate number - this represents \"Birth Number\" on the US Standard Certificate of Live Birth.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRExtensionsAdministrative"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-live-birth-local-file-number"
+        },
+        "name": "Extension - Live Birth Local File Number",
+        "description": "Live birth local file number - this represents \"Local File No.\" on the US Standard Certificate of Live Birth.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRExtensionsAdministrative"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/FetalDeathCauseOrConditionCM"
+        },
+        "name": "FetalDeathCauseOrCondition Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR FetalDeathCauseOrCondition Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/FetalDeathTimePointsCM"
+        },
+        "name": "FetalDeathTimePoints Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR FetalDeathTimePoints Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/FetalPresentationCM"
+        },
+        "name": "FetalPresentation Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR FetalPresentation Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/HistologicalPlacentalExaminationCM"
+        },
+        "name": "HistologicalPlacentalExamination Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR HistologicalPlacentalExamination Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/InfectionsDuringPregnancyLiveBirthCM"
+        },
+        "name": "InfectionsDuringPregnancyLiveBirth Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR InfectionsDuringPregnancyLiveBirth Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/NewbornCongenitalAnomaliesCM"
+        },
+        "name": "NewbornCongenitalAnomalies Concept Map",
+        "description": "A mapping between NCHS IJE and FHIR NewbornCongenitalAnomalies Value Sets",
+        "exampleBoolean": false,
+        "groupingId": "BFDRConceptMaps"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-steroids-fetal-lung-maturation"
+        },
+        "name": "Observation - Administration of Steroids for Fetal Lung Maturation",
+        "description": "This Observation profile indicates a characteristic of labor of administration of steroids for fetal lung maturation.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCharacteristicsofLaborandDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn"
+        },
+        "name": "Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn",
+        "description": "Observation - Administration of Steroids for Fetal Lung Maturation: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-antibiotics-administered-during-labor"
+        },
+        "name": "Observation - Antibiotics Administered During Labor",
+        "description": "This Observation profile indicates a characteristic of labor of antibiotics administered during labor.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCharacteristicsofLaborandDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-antibiotics-during-labor-jada-ann-quinn"
+        },
+        "name": "Observation - Antibiotics Administered During Labor - Jada Ann Quinn",
+        "description": "Observation - Antibiotics Administered During Labor: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-administered-during-labor",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-apgar-score"
+        },
+        "name": "Observation - APGAR Score",
+        "description": "APGAR score post-birth. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-apgar-score-babyg-quinn-1-min"
+        },
+        "name": "Observation - Apgar Score - BabyG Quinn: 1 min",
+        "description": "Observation - Apgar Score: BabyG Quinn: 1 min example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-apgar-score",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-apgar-score-babyg-quinn-5-min"
+        },
+        "name": "Observation - Apgar Score - BabyG Quinn: 5 min",
+        "description": "Observation - Apgar Score: BabyG Quinn: 5 min example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-apgar-score",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-autopsy-histological-exam-results-used"
+        },
+        "name": "Observation - Autopsy or Histological Exam Results Used",
+        "description": "This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFetalDeathInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-autopsy-histological-exam-results-used-not-named"
+        },
+        "name": "Observation - Autopsy or Histological Exam Results Used - Fetus Not Named",
+        "description": "Observation - Autopsy or Histological Exam Results Used: Fetus Note Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-autopsy-performed-not-named"
+        },
+        "name": "Observation - Autopsy Performed - Fetus Not Named",
+        "description": "Observation - Autopsy Performed: Fetus Not Named example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-birth-weight"
+        },
+        "name": "Observation - Birth Weight",
+        "description": "The weight of the infant/fetus at birth/delivery. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-birth-weight-babyg-quinn"
+        },
+        "name": "Observation - Birth Weight - Baby G Quinn",
+        "description": "Observation - Birth Weight: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-birth-weight-babyg-quinn-w-edit"
+        },
+        "name": "Observation - Birth Weight - Baby G Quinn, with Edit Flag",
+        "description": "Observation - Birth Weight: Baby G Quinn example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-birth-weight-not-named"
+        },
+        "name": "Observation - Birth Weight - Fetus Not Named",
+        "description": "Observation - Birth Weight: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-birth-weight-not-named-w-edit"
+        },
+        "name": "Observation - Birth Weight - Fetus Not Named, with Edit Flag",
+        "description": "Observation - Birth Weight: Fetus Not Named example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"
+        },
+        "name": "Observation - Cigarette Smoking Before and During Pregnancy",
+        "description": "This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code:\n* Number of Cigarettes Smoked in 3 months prior to Pregnancy\n* Number of Cigarettes Smoked in 1st 3 months\n* Number of Cigarettes Smoked in 2nd 3 months\n* Number of Cigarettes Smoked in third or last trimester\n\nWhere number of packs per day are provided, calculate number of cigarettes per day (a pack has 20 cigarettes) and record that number.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"
+        },
+        "name": "Observation - Cigarette Smoking Before During Pregnancy - 3 months prior: Carmen Teresa Lee",
+        "description": "Observation - Cigarette Smoking Before During Pregnancy - 3 months prior: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"
+        },
+        "name": "Observation - Cigarette Smoking Before During Pregnancy - first 3 months: Carmen Teresa Lee",
+        "description": "Observation - Cigarette Smoking Before During Pregnancy - first 3 months: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"
+        },
+        "name": "Observation - Cigarette Smoking Before During Pregnancy - last 3 months: Carmen Teresa Lee",
+        "description": "Observation - Cigarette Smoking Before During Pregnancy - last 3 months: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"
+        },
+        "name": "Observation - Cigarette Smoking Before During Pregnancy example - second 3 months: Carmen Teresa Lee",
+        "description": "Observation - Cigarette Smoking Before During Pregnancy example - second 3 months: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn"
+        },
+        "name": "Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: 3 months prior",
+        "description": "Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: 3 months prior example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn"
+        },
+        "name": "Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: first 3 months",
+        "description": "Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: first 3 months example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn"
+        },
+        "name": "Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: last 3 months",
+        "description": "Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: last 3 months example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn"
+        },
+        "name": "Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: second 3 months",
+        "description": "Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: second 3 months example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-coded-initiating-fetal-death-cause-or-condition"
+        },
+        "name": "Observation - Coded Initiating Cause of Fetal Death",
+        "description": "Observation - Coded Initiating Cause of Fetal Death example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition"
+        },
+        "name": "Observation - Coded Initiating Fetal Death Cause or Condition",
+        "description": "This profile represents the coded initiating cause/condition of fetal death.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFetalDeathInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-coded-other-fetal-death-cause-or-condition-not-named"
+        },
+        "name": "Observation - Coded Other Cause of Fetal Death",
+        "description": "Observation - Coded Other Cause of Fetal Death example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition"
+        },
+        "name": "Observation - Coded Other Fetal Death Cause or Condition",
+        "description": "This profile represents a coded other significant cause/condition of fetal death.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFetalDeathInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-coded-race-and-ethnicity-father"
+        },
+        "name": "Observation - CodedRaceAndEthnicity example [Father]",
+        "description": "Example of coded-race-and-ethnicity-vr profile (Father)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-coded-race-and-ethnicity-mother"
+        },
+        "name": "Observation - CodedRaceAndEthnicity example [Mother]",
+        "description": "Example of coded-race-and-ethnicity-vr profile (Mother)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-date-of-first-prenatal-care-visit"
+        },
+        "name": "Observation - Date of First Prenatal Care Visit",
+        "description": "This profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
+        },
+        "name": "Observation - Date of First Prenatal Care Visit - Carmen Teresa Lee",
+        "description": "Observation - Date of First Prenatal Care Visit: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn"
+        },
+        "name": "Observation - Date of First Prenatal Care Visit - Jada Ann Quinn",
+        "description": "Observation - Date of First Prenatal Care Visit: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-date-of-last-live-birth"
+        },
+        "name": "Observation - Date of Last Live Birth",
+        "description": "This profile represents the date of the mother's last live born infant (do not include this birth).",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-date-of-last-live-birth-carmen-teresa-lee"
+        },
+        "name": "Observation - Date of Last Live Birth - Carmen Teresa Lee",
+        "description": "Observation - Date of Last Live Birth: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-date-of-last-live-birth-jada-ann-quinn"
+        },
+        "name": "Observation - Date of Last Live Birth - Jada Ann Quinn",
+        "description": "Observation - Date of Last Live Birth: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-date-of-last-other-pregnancy-outcome"
+        },
+        "name": "Observation - Date of Last Other Pregnancy Outcome",
+        "description": "This profile represents the date of the mother's last other pregnancy outcome (includes pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies) (do not include this birth).",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn"
+        },
+        "name": "Observation - Date of Last Other Pregnancy Outcome - Jada Ann Quinn",
+        "description": "Observation - Date of Last Other Pregnancy Outcome: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-fetal-death-time-point"
+        },
+        "name": "Observation - Fetal Death Time Point",
+        "description": "This Observation profile represents the estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFetalDeathInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-fetal-presentation-not-named"
+        },
+        "name": "Observation - Fetal Presentation - Fetus Not Named",
+        "description": "Observation - Fetal Presentation: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-fetal-presentation"
+        },
+        "name": "Observation - Fetal Presentation at Birth/Delivery",
+        "description": "This Observation profile represents the fetal presentation (orientation within the mother's womb) of a fetus prior to delivery/birth.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-fetal-presentation-babyg-quinn"
+        },
+        "name": "Observation - Fetal Presentation Baby G Quinn",
+        "description": "Observation - Fetal Presentation Baby G Quinn",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-gestational-age-at-delivery"
+        },
+        "name": "Observation - Gestational Age at Delivery",
+        "description": "The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-gestational-age-at-delivery-babyg-quinn"
+        },
+        "name": "Observation - Gestational Age at Delivery - Baby G Quinn",
+        "description": "Observation - Gestational Age at Delivery: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-gestational-age-at-delivery-babyg-quinn-w-edit"
+        },
+        "name": "Observation - Gestational Age at Delivery - Baby G Quinn, with Edit Flag",
+        "description": "Observation - Gestational Age at Delivery: Baby G Quinn example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-gestational-age-at-delivery-not-named"
+        },
+        "name": "Observation - Gestational Age at Delivery - Fetus Not Named",
+        "description": "Observation - Gestational Age at Delivery: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-gestational-age-at-delivery-not-named-w-edit"
+        },
+        "name": "Observation - Gestational Age at Delivery - Fetus Not Named, with Edit Flag",
+        "description": "Observation - Gestational Age at Delivery: Fetus Not Named example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-histological-placental-exam-performed"
+        },
+        "name": "Observation - Histological Placental Exam Performed",
+        "description": "This profile represents whether or not a histological placental examination was performed.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFetalDeathInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-histological-placental-exam-performed-not-named"
+        },
+        "name": "Observation - Histological Placental Exam Performed - Fetus Not Named",
+        "description": "Observation - Histological Placental Exam Performed: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-icu-admission"
+        },
+        "name": "Observation - ICU Admission",
+        "description": "This profile indicates that the maternal morbidity of an admission to the ICU was present. NOTE: this may be better modeled as an Encounter.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMaternalMorbidity"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-icu-admission-jada-ann-quinn"
+        },
+        "name": "Observation - ICU Admission - Jada Ann Quinn",
+        "description": "Observation - ICU Admission: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-infant-breastfed-at-discharge"
+        },
+        "name": "Observation - Infant Breastfed at Discharge",
+        "description": "This profile represents whether or not the infant was being breastfed at discharge.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-infant-breastfed-at-discharge-babyg-quinn"
+        },
+        "name": "Observation - Infant Breastfed at Discharge - Baby G Quinn",
+        "description": "Observation - Infant Breastfed at Discharge: BabyG Quinn",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-infant-living"
+        },
+        "name": "Observation - Infant Living",
+        "description": "An indication of whether the infant is living at the time the report is being submitted. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-infant-living-babyg-quinn"
+        },
+        "name": "Observation - Infant Living - Baby G Quinn",
+        "description": "Observation - Infant Living: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-living",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-input-race-and-ethnicity-father"
+        },
+        "name": "Observation - InputRaceAndEthnicity example [Father]",
+        "description": "Example of input-race-and-ethnicity-vr profile (Father)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-input-race-and-ethnicity-mother"
+        },
+        "name": "Observation - InputRaceAndEthnicity example [Mother]",
+        "description": "Example of input-race-and-ethnicity-vr profile (Mother)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-labor-trial-attempted"
+        },
+        "name": "Observation - Labor Trial Attempted",
+        "description": "This Observation profile represents whether, in the case of a cesarean delivery, a trial of labor was attempted.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMedicalandHealthInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-labor-trial-attempted-babyg-quinn"
+        },
+        "name": "Observation - Labor Trial Attempted - Baby G Quinn",
+        "description": "Observation - Labor Trial Attempted: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-last-menstrual-period"
+        },
+        "name": "Observation - Last Menstrual Period",
+        "description": "This profile represents the date of the last menstrual period of the patient. The first day of last menstrual period should be captured. The effectiveTime captures the observation date. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-last-menstrual-period-carmen-teresa-lee"
+        },
+        "name": "Observation - Last Menstrual Period - Carmen Teresa Lee",
+        "description": "Observation - Last Menstrual Period: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-last-menstrual-period-jada-ann-quinn"
+        },
+        "name": "Observation - Last Menstrual Period - Jada Ann Quinn",
+        "description": "Observation - Last Menstrual Period: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-mother-delivery-weight"
+        },
+        "name": "Observation - Mother Delivery Weight",
+        "description": "The weight of the mother at the time of birth/delivery. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-delivery-weight-jada-ann-quinn"
+        },
+        "name": "Observation - Mother Delivery Weight - Jada Ann Quinn",
+        "description": "Observation - Mother Delivery Weight: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-delivery-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-delivery-weight-jada-ann-quinn-w-edit"
+        },
+        "name": "Observation - Mother Delivery Weight - Jada Ann Quinn, with Edit Flag",
+        "description": "Observation - Mother Delivery Weight: Jada Ann Quinn example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-delivery-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-mother-height"
+        },
+        "name": "Observation - Mother Height",
+        "description": "The height of the mother. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-height-carmen-teresa-lee"
+        },
+        "name": "Observation - Mother Height - Carmen Teresa Lee",
+        "description": "Observation - Mother Height: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-height-carmen-teresa-lee-w-edit"
+        },
+        "name": "Observation - Mother Height - Carmen Teresa Lee, with Edit Flag",
+        "description": "Observation - Mother Height: Carmen Teresa Lee example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-height-jada-ann-quinn"
+        },
+        "name": "Observation - Mother Height - Jada Ann Quinn",
+        "description": "Observation - Mother Height: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-height-jada-ann-quinn-w-edit"
+        },
+        "name": "Observation - Mother Height - Jada Ann Quinn, with Edit Flag",
+        "description": "Observation - Mother Height: Jada Ann Quinn example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-mother-married-during-pregnancy"
+        },
+        "name": "Observation - Mother Married During Pregnancy",
+        "description": "This profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesParentInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-married-during-pregnancy-jada-ann-quinn"
+        },
+        "name": "Observation - Mother Married During Pregnancy - Jada Ann Quinn",
+        "description": "Observation - Mother Married During Pregnancy: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-mother-prepregnancy-weight"
+        },
+        "name": "Observation - Mother Prepregnancy Weight",
+        "description": "The weight of the mother before becoming pregnant. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"
+        },
+        "name": "Observation - Mother Prepregnancy Weight - Carmen Teresa Lee",
+        "description": "Observation - Mother Prepregnancy Weight: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit"
+        },
+        "name": "Observation - Mother Prepregnancy Weight - Carmen Teresa Lee, with Edit Flag",
+        "description": "Observation - Mother Prepregnancy Weight: Carmen Teresa Lee example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-prepregnancy-weight-jada-ann-quinn"
+        },
+        "name": "Observation - Mother Prepregnancy Weight - Jada Ann Quinn",
+        "description": "Observation - Mother Prepregnancy Weight: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit"
+        },
+        "name": "Observation - Mother Prepregnancy Weight - Jada Ann Quinn, with Edit Flag",
+        "description": "Observation - Mother Prepregnancy Weight: Jada Ann Quinn example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-received-wic-food-carmen-teresa-lee"
+        },
+        "name": "Observation - Mother Received WIC Food - Carmen Teresa Lee",
+        "description": "Observation - Mother Received WIC Food: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-mother-received-wic-food-jada-ann-quinn"
+        },
+        "name": "Observation - Mother Received WIC Food - Jada Ann Quinn",
+        "description": "Observation - Mother Received WIC Food: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-mother-received-wic-food"
+        },
+        "name": "Observation - Mother Recieved WIC Food",
+        "description": "This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-nicu-admission"
+        },
+        "name": "Observation - NICU Admission",
+        "description": "This profile indicates that the abnormal condition of an admission to the NICU was present. NOTE: this may be better modeled as an Encounter.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesAbnormalConditionoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-nicu-admission-babyg-quinn"
+        },
+        "name": "Observation - NICU Admission - BabyG Quinn",
+        "description": "Observation - NICU Admission: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn"
+        },
+        "name": "Observation - None Of Specified Abnormal Conditions of Newborn",
+        "description": "This profile indicates that none of the specified abnormal conditions of the newborn were present.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesAbnormalConditionoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-none-abnormal-conditions-babyg-quinn"
+        },
+        "name": "Observation - None Of Specified Abnormal Conditions of Newborn - BabyG Quinn",
+        "description": "Observation - None Of Specified Abnormal Conditions of Newborn: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-none-of-specified-characteristics-of-labor-delivery"
+        },
+        "name": "Observation - None Of Specified Characteristics of Labor and Delivery",
+        "description": "This profile indicates that none of the specified characteristics of labor and delivery were present.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCharacteristicsofLaborandDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-none-chars-labor-delivery-jada-ann-quinn"
+        },
+        "name": "Observation - None Of Specified Characteristics of Labor and Delivery - Jada Ann Quinn",
+        "description": "Observation - None Of Specified Characteristics of Labor and Delivery: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-characteristics-of-labor-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-none-congenital-anomolies-babyg-quinn"
+        },
+        "name": "Observation - None Of Specified Congenital Anomolies of Newborn - BabyG Quinn",
+        "description": "Observation - None Of Specified Congenital Anomolies of Newborn: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-None-congenital-anomolies-of-the-newborn"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-None-congenital-anomolies-of-the-newborn"
+        },
+        "name": "Observation - None Of Specified Congenital Anomolies Of The Newborn",
+        "description": "This profile indicates that none of the specified congenital anomolies of the newborn were present.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCongenitalAnomoliesoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-no-infections-present-during-pregnancy"
+        },
+        "name": "Observation - None Of Specified Infections Specified During Pregnancy",
+        "description": "This profile indicates that none of the specified infections during pregnancy were present.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesInfections"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-none-of-specified-maternal-morbidities"
+        },
+        "name": "Observation - None Of Specified Maternal Morbidities",
+        "description": "This profile indicates that none of the specified maternal morbidities were present.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMaternalMorbidity"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-none-maternal-morbidities-jada-ann-quinn"
+        },
+        "name": "Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn",
+        "description": "Observation - None Of Specified Maternal Morbidities: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-maternal-morbidities",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-none-of-specified-obstetric-procedures"
+        },
+        "name": "Observation - None Of Specified Obstetric Procedures",
+        "description": "This profile indicates that none of the specified obstetric procedures were present.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesObstetricProcedures"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors"
+        },
+        "name": "Observation - None Of Specified Pregnancy Risk Factors",
+        "description": "This profile indicates that none of the specified pregnancy risk factors (including concept codes: 73211009, 11687002, 8762007, 48194001, 15938005, 161765003, 271903000, 63487001, 58533008, 63487001, 200144004) were risks factors noted for this pregnancy.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-none-specified-risk-factors-jada-ann-quinn"
+        },
+        "name": "Observation - None of Specified Risk Factors - Jada Ann Quinn",
+        "description": "Observation - Previous Cesarean: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-births-now-dead-jada-ann-quinn"
+        },
+        "name": "Observation - Number Births Now Dead - Jada Ann Quinn",
+        "description": "Observation - Number Births Now Dead: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-dead",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-births-now-living-jada-ann-quinn"
+        },
+        "name": "Observation - Number Births Now Living - Jada Ann Quinn",
+        "description": "Observation - Number Births Now Living: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-living",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-live-births-this-delivery-carmen-teresa-lee"
+        },
+        "name": "Observation - Number Live Births This Delivery - Carmen Teresa Lee",
+        "description": "Observation - Number Live Births This Delivery: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-live-births-this-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-live-births-this-delivery-jada-ann-quinn"
+        },
+        "name": "Observation - Number Live Births This Delivery - Jada Ann Quinn",
+        "description": "Observation - Number Live Births This Delivery: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-live-births-this-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-number-births-now-dead"
+        },
+        "name": "Observation - Number of Births Now Dead",
+        "description": "The total number of previous live-born infants for the mother now dead. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-births-now-dead-carmen-teresa-lee"
+        },
+        "name": "Observation - Number of Births Now Dead - Carmen Teresa Lee",
+        "description": "Observation - Number of Births Now Dead: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-dead",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-number-births-now-living"
+        },
+        "name": "Observation - Number of Births Now Living",
+        "description": "The total number of previous live-born infants for the mother now living. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-births-now-living-carmen-teresa-lee"
+        },
+        "name": "Observation - Number of Births Now Living - Carmen Teresa Lee",
+        "description": "Observation - Number of Births Now Living: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-living",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-number-fetal-deaths-this-delivery"
+        },
+        "name": "Observation - Number of Fetal Deaths This Delivery",
+        "description": "The number of fetal deaths in this delivery. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-deaths-this-delivery-carmen-teresa-lee"
+        },
+        "name": "Observation - Number of Fetal Deaths This Delivery - Carmen Teresa Lee",
+        "description": "Observation - Number of Fetal Deaths This Delivery: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-fetal-deaths-this-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-number-live-births-this-delivery"
+        },
+        "name": "Observation - Number of Live Births This Delivery",
+        "description": "The number of live births in this delivery. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesNewbornFetus"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-number-other-pregnancy-outcomes"
+        },
+        "name": "Observation - Number of Other Pregnancy Outcomes",
+        "description": "The total number of other pregnancy outcomes for the mother that did not result in a live birth  (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies). Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-number-prenatal-visits"
+        },
+        "name": "Observation - Number of Prenatal Visits",
+        "description": "The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-number-previous-cesareans"
+        },
+        "name": "Observation - Number of Previous Cesareans",
+        "description": "The total number of prior cesarean deliveries for the mother. Migrated from VRCL.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMedicalandHealthInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn"
+        },
+        "name": "Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn",
+        "description": "Observation - Number Other Pregnancy Outcomes: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-other-pregnancy-outcomes",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-prenatal-visits-jada-ann-quinn"
+        },
+        "name": "Observation - Number Prenatal Visits - Jada Ann Quinn",
+        "description": "Observation - Number Prenatal Visits: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-prenatal-visits",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-prenatal-visits-jada-ann-quinn-w-edit"
+        },
+        "name": "Observation - Number Prenatal Visits - Jada Ann Quinn, with Edit Flag",
+        "description": "Observation - Number Prenatal Visits: Jada Ann Quinn example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-prenatal-visits",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-previous-cesareans-jada-ann-quinn"
+        },
+        "name": "Observation - Number Previous Cesareans - Jada Ann Quinn",
+        "description": "Observation - Number Previous Cesareans: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-previous-cesareans-jada-ann-quinn-w-edit"
+        },
+        "name": "Observation - Number Previous Cesareans - Jada Ann Quinn, with Edit Flag",
+        "description": "Observation - Number Previous Cesareans: Jada Ann Quinn example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-fetal-death-time-point-not-named"
+        },
+        "name": "Observation - Observation Estimated Fetal Death Time Point - Fetus Not Named",
+        "description": "Observation - Observation Estimated Fetal Death Time Point: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-parent-education-level-carmen-teresa-lee"
+        },
+        "name": "Observation - Parent Education Level - Carmen Teresa Lee",
+        "description": "Observation - Parent Education Level: Carmen Teresa Lee example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-parent-education-level-carmen-teresa-lee-w-edit"
+        },
+        "name": "Observation - Parent Education Level - Carmen Teresa Lee, with Edit Flag",
+        "description": "Observation - Parent Education Level: Carmen Teresa Lee example, with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-parent-education-level-jada-ann-quinn"
+        },
+        "name": "Observation - Parent Education Level - Jada Ann Quinn",
+        "description": "Observation - Parent Education Level: Jada Ann Quinn example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-parent-education-level-jada-ann-quinn-w-edit"
+        },
+        "name": "Observation - Parent Education Level - Jada Ann Quinn, with Edit Flag",
+        "description": "Observation - Parent Education Level: Jada Ann Quinn example, with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-parent-education-level-james-quinn"
+        },
+        "name": "Observation - Parent Education Level - James Quinn",
+        "description": "Observation - Parent Education Level: James Quinn example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-parent-education-level-james-quinn-w-edit"
+        },
+        "name": "Observation - Parent Education Level - James Quinn, with Edit Flag",
+        "description": "Observation - Parent Education Level: James Quinn example, with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-parent-education-level-tom-yan-lee"
+        },
+        "name": "Observation - Parent Education Level - Tom Yan Lee",
+        "description": "Observation - Parent Education Level: Carmen Teresa Lee example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-parent-education-level-tom-yan-lee-w-edit"
+        },
+        "name": "Observation - Parent Education Level - Tom Yan Lee, with Edit Flag",
+        "description": "Observation - Parent Education Level: Carmen Teresa Lee example, with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-paternity-acknowledgement-signed"
+        },
+        "name": "Observation - Paternity Acknowledgement Signed",
+        "description": "This Observation represents whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesParentInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-paternity-acknowledgement-signed-james-quinn"
+        },
+        "name": "Observation - Paternity Acknowledgement Signed - James Quinn",
+        "description": "Observation - Paternity Acknowledgement Signed: James Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-planned-to-deliver-at-home"
+        },
+        "name": "Observation - Planned to Deliver at Home",
+        "description": "This Observation profile represents whether or not a home birth was planned for the infant.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMotherPrenatal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-planned-to-deliver-at-home-babyg-quinn"
+        },
+        "name": "Observation - Planned to Deliver at Home - Baby G Quinn",
+        "description": "Observation - Planned to Deliver at Home: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-planned-to-deliver-at-home-not-named"
+        },
+        "name": "Observation - Planned to Delivery at Home - Fetus Not Named",
+        "description": "Observation - Planned to Delivery at Home: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-previous-cesarean"
+        },
+        "name": "Observation - Previous Cesarean",
+        "description": "This profile indicates that the mother had a pregnancy risk factor of previous cesarean.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-previous-cesarean-jada-ann-quinn"
+        },
+        "name": "Observation - Previous Cesarean - Jada Ann Quinn",
+        "description": "Observation - Previous Cesarean: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-previous-cesarean",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-previous-preterm-birth"
+        },
+        "name": "Observation - Previous Preterm Birth",
+        "description": "This Observation profile indicates that the mother had a pregnancy risk factor of previous preterm birth.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-previous-preterm-births-jada-ann-quinn"
+        },
+        "name": "Observation - Previous Preterm Births - Jada Ann Quinn",
+        "description": "Observation - Previous Preterm Births: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-previous-preterm-birth",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-ssn-requested-for-child"
+        },
+        "name": "Observation - Social Security Number Requested For Child",
+        "description": "This Observation profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesParentInformation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-ssn-requested-for-child-babyg-quinn"
+        },
+        "name": "Observation - SSN Requested for Child - BabyG Quinn",
+        "description": "Observation - SSN Requested for Child: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-unknown-final-route-and-method-of-delivery"
+        },
+        "name": "Observation - Unknown Final Route and Method of Delivery",
+        "description": "Unknown Final route and method of delivery as defined by the US Standard Certificate of Live Birth (2003) and US Standard Fetal Death Report (2003). If delivery is cesarean, trial of labor is also recorded.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFinalRouteMethodDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-previous-cesareans-carmen-teresa-lee"
+        },
+        "name": "Observations - Number Previous Cesareans - Carmen Teresa Lee",
+        "description": "Observations - Number Previous Cesareans: Carmen Teresa Lee example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit"
+        },
+        "name": "Observations - Number Previous Cesareans - Carmen Teresa Lee, with Edit Flag",
+        "description": "Observations - Number Previous Cesareans: Carmen Teresa Lee example, with Edit Flag",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-child-babyg-quinn"
+        },
+        "name": "Patient - Child example [Baby G Quinn]",
+        "description": "Example of Patient-child-vr profile (Baby G Quinn)",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-child-babyg-quinn-w-edit"
+        },
+        "name": "Patient - Child example [Baby G Quinn], with Edit Flag",
+        "description": "Example of Patient-child-vr profile (Baby G Quinn), with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-decedent-fetus-not-named"
+        },
+        "name": "Patient - Decedent Fetus example [Fetus Not Named]",
+        "description": "Example of Patient-decedent-fetus-vr (Fetus Not Named)",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-decedent-fetus-not-named-w-edit"
+        },
+        "name": "Patient - Decedent Fetus example [Fetus Not Named], with Edit Flag",
+        "description": "Example of Patient-decedent-fetus-vr (Fetus Not Named), with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-mother-birth-date-part-absent"
+        },
+        "name": "Patient - Mother Date Part Absent",
+        "description": "Example of Patient-mother-vr profile (Date Part Absent)",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee"
+        },
+        "name": "Patient - Mother example [Carmen Teresa Lee]",
+        "description": "Example of Patient-mother-vr profile (Carmen Teresa Lee)",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-mother-carmen-teresa-lee-w-edit"
+        },
+        "name": "Patient - Mother example [Carmen Teresa Lee], with Edit Flag",
+        "description": "Example of Patient-mother-vr profile (Carmen Teresa Lee), with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-mother-jada-ann-quinn"
+        },
+        "name": "Patient - Mother Jada Ann Quinn",
+        "description": "Example of Patient-mother-vr profile (Jada Ann Quinn)",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-mother-jada-ann-quinn-w-edit"
+        },
+        "name": "Patient - Mother Jada Ann Quinn, with Edit Flag",
+        "description": "Example of Patient-mother-vr profile (Jada Ann Quinn), with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-vital-records-avery-jones"
+        },
+        "name": "Practitioner - Vital Records - Avery Jones, MD",
+        "description": "Practitioner - Vital Records: Avery Jones, MD example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-vital-records-janet-seito"
+        },
+        "name": "Practitioner - Vital Records - Janet Seito",
+        "description": "Practitioner - Vital Records: Janet Seito example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-vital-records-jessica-leung"
+        },
+        "name": "Practitioner - Vital Records - Jessica Leung",
+        "description": "Practitioner - Vital Records: Jessica Leung example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-antibiotics-suspected-neonatal-sepsis"
+        },
+        "name": "Procedure - Antibiotic for Suspected Neonatal Sepsis",
+        "description": "This profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesAbnormalConditionoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-antibiotic-sepsis-babyg-quinn"
+        },
+        "name": "Procedure - Antibiotic for Suspected Neonatal Sepsis - BabyG Quinn",
+        "description": "Procedure - Antibiotic for Suspected Neonatal Sepsis: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotics-suspected-neonatal-sepsis",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-artificial-insemination"
+        },
+        "name": "Procedure - Artificial Insemination",
+        "description": "This Procedure profile records that a pregnancy risk factor of artificial insemination was provided to the mother.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-assisted-fertilization"
+        },
+        "name": "Procedure - assisted Fertilization",
+        "description": "This Procedure profile records that a pregnancy risk factor of assisted fertilization was provided to the mother.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-assisted-fertilization-jada-ann-quinn"
+        },
+        "name": "Procedure - Assisted Fertilization - Jada Ann Quinn",
+        "description": "Procedure - Assisted Fertilization: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-fertilization",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-assisted-ventilation-following-delivery"
+        },
+        "name": "Procedure - Assisted Ventilation Following Delivery",
+        "description": "This profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesAbnormalConditionoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-ventilation-following-babyg-quinn"
+        },
+        "name": "Procedure - Assisted Ventilation Following Delivery - BabyG Quinn",
+        "description": "Procedure - Assisted Ventilation Following Delivery: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours"
+        },
+        "name": "Procedure - Assisted Ventilation More Than Six Hours",
+        "description": "This profile represents an abnormal condition of the newborn of assisted ventilation for more than six hours.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesAbnormalConditionoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-ventilation-more-6-hours-babyg-quinn"
+        },
+        "name": "Procedure - Assisted Ventilation More Than Six Hours - BabyG Quinn",
+        "description": "Procedure - Assisted Ventilation More Than Six Hours: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-augmentation-of-labor"
+        },
+        "name": "Procedure - Augmentation of Labor",
+        "description": "This Procedure profile indicates a characteristic of labor of augmentation of labor.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCharacteristicsofLaborandDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-augmentation-of-labor-quinn"
+        },
+        "name": "Procedure - Augmentation of Labor - Jada Ann Quinn",
+        "description": "Procedure - Augmentation of Labor: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-augmentation-of-labor",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-blood-transfusion"
+        },
+        "name": "Procedure - Blood Transfusion",
+        "description": "This Procedure profile indicates a maternal morbidity of a blood transfusion.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMaternalMorbidity"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-blood-transfusion-jada-ann-quinn"
+        },
+        "name": "Procedure - Blood Transfusion - Jada Ann Quinn",
+        "description": "Procedure - Blood Transfusion: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-blood-transfusion",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-epidural-or-spinal-anesthesia"
+        },
+        "name": "Procedure - Epidural or Spinal Anesthesia",
+        "description": "This Procedure profile indicates a characteristic of labor of epidural or spinal anesthesia.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCharacteristicsofLaborandDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"
+        },
+        "name": "Procedure - Epidural or Spinal Anesthesia - Jada Ann Quinn",
+        "description": "Procedure - Epidural or Spinal Anesthesia: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-final-route-method-delivery-not-named"
+        },
+        "name": "Procedure - Final Route / Method of Delivery - Fetus Not Named",
+        "description": "Procedure - Final Route / Method of Delivery: Fetus Not Named example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-final-route-method-delivery"
+        },
+        "name": "Procedure - Final Route and Method of Delivery",
+        "description": "This profile represents the final route and method of delivery.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesFinalRouteMethodDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-final-route-method-delivery-babyg-quinn"
+        },
+        "name": "Procedure - Final Route and Method of Delivery - Baby G Quinn",
+        "description": "Procedure - Final Route and Method of Delivery: Baby G Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-induction-of-labor"
+        },
+        "name": "Procedure - Induction of Labor",
+        "description": "This Procedure profile indicates a characteristic of labor of induction of labor.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesCharacteristicsofLaborandDelivery"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-induction-of-labor-jada-ann-quinn"
+        },
+        "name": "Procedure - Induction of Labor - Jada Ann Quinn",
+        "description": "Procedure - Induction of Labor: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-induction-of-labor",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-infertility-treatment"
+        },
+        "name": "Procedure - Infertility Treatment",
+        "description": "This Procedure profile records that a pregnancy risk factor of infertility treatment was provided to the mother.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesPregnancyRiskFactors"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-infertility-treatment-jada-ann-quinn"
+        },
+        "name": "Procedure - Infertility Treatment - Jada Ann Quinn",
+        "description": "Procedure - Infertility Treatment: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-obstetric"
+        },
+        "name": "Procedure - Obstetric",
+        "description": "This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesObstetricProcedures"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-obstetric-procedure-jada-ann-quinn"
+        },
+        "name": "Procedure - Obstetric Procedure - Jada Ann Quinn",
+        "description": "Procedure - Obstetric Procedure: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-surfactant-replacement-babyg-quinn"
+        },
+        "name": "Procedure - Surfactant Replacement - BabyG Quinn",
+        "description": "Procedure - Surfactant Replacement: BabyG Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-surfactant-replacement-therapy"
+        },
+        "name": "Procedure - Surfactant Replacement Therapy",
+        "description": "This profile represents an abnormal condition of the newborn of surfactant replacement therapy.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesAbnormalConditionoftheNewborn"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-unplanned-hysterectomy"
+        },
+        "name": "Procedure - Unplanned Hysterectomy",
+        "description": "This Procedure profile indicates a maternal morbidity of unplanned hysterectomy.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRProfilesMaternalMorbidity"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-unplanned-hysterectomy-quinn"
+        },
+        "name": "Procedure Unplanned Hysterectomy - Jada Ann Quinn",
+        "description": "Procedure Unplanned Hysterectomy: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-unplanned-hysterectomy",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-artificial-insemination-jada-ann-quinn"
+        },
+        "name": "Prodecure - Artificial Insemniation - Jada Ann Quinn",
+        "description": "Prodecure - Artificial Insemniation: Jada Ann Quinn example",
+        "exampleCanonical": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-artificial-insemination",
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/Questionnaire-mothers-live-birth"
+        },
+        "name": "Questionnaire - Mother's Worksheet for Child's Birth Certificate",
+        "description": "This Questionnaire represents the [Mother's Worksheet for Child's Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf).",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/Questionnaire-patients-fetal-death"
+        },
+        "name": "Questionnaire - Patient's Fetal Death Worksheet",
+        "description": "This Questionnaire represents the [Patient's Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf).",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn"
+        },
+        "name": "QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn",
+        "description": "Questionnaire - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee"
+        },
+        "name": "QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee",
+        "description": "QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/relatedperson-father-natural-james-brandon-quinn"
+        },
+        "name": "RelatedPerson - Father Natural - Vital Records - James Brandon Quinn",
+        "description": "RelatedPerson - Father Natural - Vital Records: James Brandon Quinn example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit"
+        },
+        "name": "RelatedPerson - Father Natural - Vital Records - James Brandon Quinn, with Edit Flag",
+        "description": "RelatedPerson - Father Natural - Vital Records: James Brandon Quinn example, with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/relatedperson-father-natural-tom-yan-lee"
+        },
+        "name": "RelatedPerson - Father Natural - Vital Records - Tom Yan Lee",
+        "description": "RelatedPerson - Father Natural - Vital Records - Tom Yan Lee example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/relatedperson-father-natural-tom-yan-lee-w-edit"
+        },
+        "name": "RelatedPerson - Father Natural - Vital Records - Tom Yan Lee, with Edit Flag",
+        "description": "RelatedPerson - Father Natural - Vital Records - Tom Yan Lee example, with Edit Flag",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/relatedperson-mother-carmen-teresa-lee"
+        },
+        "name": "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee",
+        "description": "RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/relatedperson-mother-jada-ann-quinn"
+        },
+        "name": "RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn",
+        "description": "RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Location/location-east-hospital"
+        },
+        "name": "US Core Location - East Hospital",
+        "description": "US Core Location: East Hospital example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Location/location-north-hospital"
+        },
+        "name": "US Core Location - North Hospital",
+        "description": "US Core Location: North Hospital example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Location/location-south-hospital"
+        },
+        "name": "US Core Location - South Hospital",
+        "description": "US Core Location: South Hospital example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-jurisdictional-vital-records-office"
+        },
+        "name": "US Core Organization - Jurisdictional Vital Records Office",
+        "description": "US Core Organization: Jurisdictional Vital Records Office example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-nchs"
+        },
+        "name": "US Core Organization - National Center for Health Statistics [NCHS]",
+        "description": "US Core Organization: National Center for Health Statistics [NCHS] example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-south-hospital"
+        },
+        "name": "US Core Organization - South Hospital",
+        "description": "US Core Organization: South Hospital example",
+        "exampleBoolean": true,
+        "groupingId": "BFDRExamples"
+      },
+      {
+        "reference": {
+          "reference": "Parameters/expansion-parameters-bfdr"
+        },
+        "name": "USA SNOMED-CT",
+        "description": "USA SNOMED-CT",
+        "exampleBoolean": true,
+        "groupingId": "BFDRParameters"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-apgar-timing"
+        },
+        "name": "ValueSet - APGAR Score Timing",
+        "description": "This valueset contains codes to represent standard timings for APGAR assessments.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-birth-and-fetal-death-financial-class"
+        },
+        "name": "ValueSet - Birth and Fetal Death Financial Class",
+        "description": "This valueset contains codes to represent birth and fetal death financial class. This valueset is based on [PHVS_BirthAndFetalDeathFinancialClass_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A).",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-birth-attendant-titles"
+        },
+        "name": "ValueSet - Birth Attendants Titles",
+        "description": "This valueset contains codes to represent the type of birth attendant titles. This valueset is based on [PHVS_BirthAttendantTitles_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-birth-delivery-occurred"
+        },
+        "name": "ValueSet - Birth Delivery Occurred",
+        "description": "This valueset contains codes to represent the type of place where birth or delivery occurred. This valueset is based on [PHVS_BirthDeliveryOccurred_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-birth-weight-edit-flags"
+        },
+        "name": "ValueSet - Birth Weight Edit Flags (NCHS)",
+        "description": "This valueset contains codes to represent Birth Weight Edit Flags. This valueset is based on [PHVS_BirthWeightEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=FA7A83A3-FCFD-E611-A856-0017A477041A)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cigarette-smoking-before-during-pregnancy"
+        },
+        "name": "ValueSet - Cigarette Smoking Before and During Pregnancy",
+        "description": "This valueset contains codes to represent the number of cigarettes smoked in specific periods before and during pregnancy.",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-delivery-routes"
+        },
+        "name": "ValueSet - Delivery Routes",
+        "description": "This valueset contains codes to represent Delivery Routes. This valueset is based on [PHVS_DeliveryRoutes_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=0C9E4D45-3FFD-4E97-AEF3-18CE5B878F46)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-estimate-of-gestation-edit-flags"
+        },
+        "name": "ValueSet - Estimate of Gestation Edit Flags (NCHS)",
+        "description": "This valueset contains codes to represent Estimate of Gestation Edit Flags. This valueset is based on [PHVS_EstimateOfGestationEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7567)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-fathers-date-of-birth-edit-flags"
+        },
+        "name": "ValueSet - Fathers Date of Birth Edit Flags (NCHS)",
+        "description": "This valueset contains codes to represent Fathers Date of Birth Edit Flags. This valueset is based on [PHVS_BirthdateEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3BD473EE-40DD-E811-816D-0017A477041A)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-fetal-death-cause-or-condition"
+        },
+        "name": "ValueSet - Fetal Death Cause or Condition",
+        "description": "This valueset contains codes to represent fetal death cause or condition.  This valueset is based on [PHVS_FetalDeathCauseOrCondition_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=DC1C6A94-C9FF-42CD-B546-E789003ED793).",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-fetal-death-time-points"
+        },
+        "name": "ValueSet - Fetal Death Time Points",
+        "description": "This valueset contains codes to represent fetal death time points. This valueset is based on [PHVS_FetalDeathTimePoints_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=52F8C812-2C70-4038-8F0F-D6E0532D4EBD)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-fetal-presentations"
+        },
+        "name": "ValueSet - Fetal Presentations",
+        "description": "This valueset contains codes to represent fetal presentations. This valueset is based on [PHVS_FetalPresentations_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3C696B7B-BB33-4818-8996-1E3461E3F512)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-histological-placental-examination"
+        },
+        "name": "ValueSet - Histological Placental Examination",
+        "description": "This valueset contains codes to represent histological placental examinations. This valueset is based on [PHVS_HistologicalPlacentalExamination_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=82BF4C7F-D01F-4019-A1E1-9F7CAACB7FC6)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-infections-during-pregnancy-live-birth"
+        },
+        "name": "ValueSet - Infections During Pregnancy Live Birth",
+        "description": "This valueset contains codes to represent Infections During Pregnancy Live Birth. This valueset is based on [PHVS_InfectionsDuringPregnancyLiveBirth_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=AEF5A3D4-960C-4194-8BB6-392C7282D216)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-informant-relationship-to-mother"
+        },
+        "name": "ValueSet - Informant Relationship to Mother",
+        "description": "This valueset contains codes to represent informants relationship to mother. This valueset is based on [PHVS_InformantRelationshiptoMother_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=ADF95682-912A-E711-BE3F-0017A477041A).",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-mothers-date-of-birth-edit-flags"
+        },
+        "name": "ValueSet - Mothers Date of Birth Edit Flags (NCHS)",
+        "description": "This valueset contains codes to represent Mothers Date of Birth Edit Flags. This valueset is based on [PHVS_BirthdateEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3BD473EE-40DD-E811-816D-0017A477041A)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-newborn-congenital-anomalies"
+        },
+        "name": "ValueSet - Newborn Congenital Anomalies",
+        "description": "The valueset contains codes to represent newborn congenital anomalies. This valueset is based on [PHVS_NewbornCongenitalAnomalies_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-number-previous-cesareans-edit-flags"
+        },
+        "name": "ValueSet - Number of Previous Cesareans Edit Flags (NCHS)",
+        "description": "This valueset contains codes to represent Number of Previous Cesareans Edit Flags. This valueset is based on [PHVS_NumberOfPreviousCesareansEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=C5BC6D8B-DDFA-E611-A856-0017A477041A)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-obstetric-procedure-outcome"
+        },
+        "name": "ValueSet - Obstetric Procedure Outcome",
+        "description": "This valueset contains codes that represent the successful or unsuccessful outcome of an obstretric procedure",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-obstetric-procedure"
+        },
+        "name": "ValueSet - Obstetric Procedures",
+        "description": "This valueset contains codes to represent obstetric procedures. This valueset is based on [PHVS_ObstetricProcedures_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=6D41E52D-2415-4EC4-A38A-87B0FEC503FB)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-plurality-edit-flags"
+        },
+        "name": "ValueSet - Plurality Edit Flags (NCHS)",
+        "description": "This valueset contains codes to represent Plurality Edit Flags. This valueset is based on [PHVS_PluralityEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3A484C53-FDFD-E611-A856-0017A477041A)",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ValueSet-pregnancy-report-edit-flags"
+        },
+        "name": "ValueSet - Pregnancy Report Edit Flags (NCHS)",
+        "description": "This valueset contains codes to represent Pregnancy Report Edit Flags. This valueset is based on [PHVS_PregnancyReportEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BD25B456-85EC-45D7-B578-1024EE2920F4). Used for MothersHeight, MothersDeliveryWeight, MothersPrepregnancyWeight, NumberPrenatalCareVisits",
+        "exampleBoolean": false,
+        "groupingId": "BFDRValueSets"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Birth and Fetal Death Reporting Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "content-transitions.html",
+          "title": "Content Transitions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ije_mapping_natality.html",
+          "title": "Data Dictionary Natality",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ije_mapping_fetalDeath.html",
+          "title": "Data Dictionary Fetal Death",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "appendices.html",
+          "title": "Appendices",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html",
+          "title": "Facility Worksheet for Live Birth",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "appendix_b_-_example_live_birth_certificate.html",
+          "title": "Example Live Birth Certificate",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html",
+          "title": "Facility Worksheet for Fetal Death",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "appendix_d_-_example_fetal_death_report.html",
+          "title": "Example Fetal Death Report",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "change_log.html",
+          "title": "Change Log",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "patient_worksheet_questionnaires.html",
+          "title": "Patient Worksheet Questionnaires",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "the_specification.html",
+          "title": "Specification",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use_cases.html",
+          "title": "Use Cases",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "vital_records_form_mapping.html",
+          "title": "Vital Records Form Mapping",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "vr_ig_harmonization.html",
+          "title": "FHIR Implementation Guide Harmonization Plan",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "usage.html",
+          "title": "Usage",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "categories.html",
+          "title": "Use of Categories",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../exp-params.json"
+      },
+      {
+        "code": "path-liquid",
+        "value": "liquid"
+      },
+      {
+        "code": "path-history",
+        "value": "http://hl7.org/fhir/us/bfdr/history.html"
+      }
+    ]
+  }
+}

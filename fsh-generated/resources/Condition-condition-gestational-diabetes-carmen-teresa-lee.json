@@ -1,0 +1,52 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-gestational-diabetes-carmen-teresa-lee",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-diabetes"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ],
+    "text": "Active"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "problem-list-item",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "73775-9",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "11687002",
+        "system": "http://snomed.info/sct",
+        "display": "Gestational diabetes mellitus (disorder)"
+      }
+    ],
+    "text": "Gestational diabetes mellitus (disorder)"
+  },
+  "subject": {
+    "reference": "Patient/patient-mother-carmen-teresa-lee",
+    "display": "Patient - Mother (Carmen Teresa Lee)"
+  },
+  "onsetDateTime": "2018-12-12"
+}

@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Procedure-assisted-ventilation-following-delivery",
+  "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery",
+  "name": "ProcedureAssistedVentilationFollowingDelivery",
+  "title": "Procedure - Assisted Ventilation Following Delivery",
+  "status": "draft",
+  "description": "This profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "short": "Abnormal conditions of the newborn [US Standard Certificate of Live Birth]",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "73812-0",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "short": "Assisted ventilation required immediately following delivery",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "assistedventfollowingdelivery",
+              "system": "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-abnormal-conditions-newborn"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

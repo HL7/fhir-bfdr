@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NumberPreviousCesareansEditFlagsVS",
+  "id": "ValueSet-number-previous-cesareans-edit-flags",
+  "title": "ValueSet - Number of Previous Cesareans Edit Flags (NCHS)",
+  "description": "This valueset contains codes to represent Number of Previous Cesareans Edit Flags. This valueset is based on [PHVS_NumberOfPreviousCesareansEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=C5BC6D8B-DDFA-E611-A856-0017A477041A)",
+  "url": "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-number-previous-cesareans-edit-flags",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags",
+        "concept": [
+          {
+            "code": "editBypass0",
+            "display": "Edit Passed"
+          },
+          {
+            "code": "failedVerified",
+            "display": "Edit Failed, Verified"
+          }
+        ]
+      }
+    ]
+  }
+}

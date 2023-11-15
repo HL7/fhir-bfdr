@@ -1,0 +1,90 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Procedure-obstetric",
+  "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric",
+  "name": "ProcedureObstetric",
+  "title": "Procedure - Obstetric",
+  "status": "draft",
+  "description": "This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "short": "Obstetric procedures performed [US Standard Certificate of Live Birth]",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "73814-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "short": "External cephalic version (procedure)",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "240278000",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.outcome",
+        "path": "Procedure.outcome",
+        "short": "Outcome, if procedure was performed.",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure-outcome",
+          "description": "Subset of ProcedureOutcomeCodes(SNOMEDCT) including successful or unsuccessful"
+        }
+      }
+    ]
+  }
+}

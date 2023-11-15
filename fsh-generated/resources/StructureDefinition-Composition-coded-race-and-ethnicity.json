@@ -1,0 +1,303 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Composition-coded-race-and-ethnicity",
+  "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity",
+  "name": "CompositionCodedRaceAndEthnicity",
+  "title": "Composition - Coded Race and Ethnicity",
+  "status": "draft",
+  "description": "This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office.\n\nThe Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR, and supports maternal and paternal race/ethnicity",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.extension:fetalDeathReportNumber",
+        "path": "Composition.extension",
+        "sliceName": "fetalDeathReportNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.extension:liveBirthCertificateNumber",
+        "path": "Composition.extension",
+        "sliceName": "liveBirthCertificateNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-live-birth-certificate-number"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.type",
+        "path": "Composition.type",
+        "short": "Race and ethnicity information Document",
+        "definition": "Race and ethnicity information Document",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "86805-9",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr",
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-decedent-fetus-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "short": "The author is the NCHS.",
+        "definition": "The author is the NCHS.",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "The Composition is broken into sections, where each section includes the input and output race and ethnicity for one individual.",
+        "definition": "The Composition is broken into sections where each section includes the input and output race and ethnicity for one individual.",
+        "min": 1,
+        "max": "2"
+      },
+      {
+        "id": "Composition.section:mother",
+        "path": "Composition.section",
+        "sliceName": "mother",
+        "short": "mother Section on the Race and Ethnicity - Mother Report",
+        "definition": "mother",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:mother.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "MTH",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:mother.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resolve()"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Entries that are contained in the mother Section",
+        "definition": "Entries that are contained in the mother Section"
+      },
+      {
+        "id": "Composition.section:mother.entry:motherPatient",
+        "path": "Composition.section.entry",
+        "sliceName": "motherPatient",
+        "short": "Mother",
+        "definition": "PatientMotherVitalRecordsNew",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:mother.entry:inputRaceAndEthnicity",
+        "path": "Composition.section.entry",
+        "sliceName": "inputRaceAndEthnicity",
+        "short": "Input Race And Ethnicity",
+        "definition": "InputRaceAndEthnicity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:mother.entry:codedRaceAndEthnicity",
+        "path": "Composition.section.entry",
+        "sliceName": "codedRaceAndEthnicity",
+        "short": "Coded Race And Ethnicity",
+        "definition": "Coded Race And Ethnicity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:father",
+        "path": "Composition.section",
+        "sliceName": "father",
+        "short": "father Section on the Race and Ethnicity - Father Report",
+        "definition": "father",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:father.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "NFTH",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:father.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resolve()"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Entries that are contained in the father Section",
+        "definition": "Entries that are contained in the father Section"
+      },
+      {
+        "id": "Composition.section:father.entry:fatherPatient",
+        "path": "Composition.section.entry",
+        "sliceName": "fatherPatient",
+        "short": "Father",
+        "definition": "Father",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-parent-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:father.entry:inputRaceAndEthnicity",
+        "path": "Composition.section.entry",
+        "sliceName": "inputRaceAndEthnicity",
+        "short": "Input Race And Ethnicity",
+        "definition": "InputRaceAndEthnicity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:father.entry:codedRaceAndEthnicity",
+        "path": "Composition.section.entry",
+        "sliceName": "codedRaceAndEthnicity",
+        "short": "Coded Race And Ethnicity",
+        "definition": "Coded Race And Ethnicity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
