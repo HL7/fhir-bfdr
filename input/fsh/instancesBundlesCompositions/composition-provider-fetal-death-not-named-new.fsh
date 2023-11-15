@@ -13,7 +13,7 @@ Usage: #example
     * value = "11111-11111"
 * extension[Extension-date-received-by-registrar]
   * valueDateTime = "2019-02-12"
-* identifier.value = "z03eab8c-11e8-4d0c-ad2a-b385395e27da"
+* identifier.value = "2019NJ9876"
 * status = #final
 * type = $loinc#69045-3 "U.S. standard report of fetal death - 2003 revision"
 * subject = Reference(patient-decedent-fetus-not-named) "Patient - Decedent Fetus (Fetus Not Named)"
