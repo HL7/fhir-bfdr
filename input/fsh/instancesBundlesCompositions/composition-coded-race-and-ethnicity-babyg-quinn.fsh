@@ -5,11 +5,11 @@ Description: "Bundle - Coded Race and Ethnicity - example Baby G Quinn"
 Usage: #example 
 * identifier.value = "2019NJ15075"
 * identifier.extension[certificateNumber].valueString = "15075"
-* insert addentry(CompositionCodedRaceAndEthnicity, composition-coded-race-and-ethnicity-baby-g-quinn )
-* insert addentry(InputRaceAndEthnicity, observation-input-race-and-ethnicity-mother)
-* insert addentry(InputRaceAndEthnicity, observation-input-race-and-ethnicity-father)
-* insert addentry(CodedRaceAndEthnicity, observation-coded-race-and-ethnicity-mother)
-* insert addentry(CodedRaceAndEthnicity, observation-coded-race-and-ethnicity-father)
+* insert addentry(Composition, composition-coded-race-and-ethnicity-baby-g-quinn )
+* insert addentry(Observation, observation-input-race-and-ethnicity-mother)
+* insert addentry(Observation, observation-input-race-and-ethnicity-father)
+* insert addentry(Observation, observation-coded-race-and-ethnicity-mother)
+* insert addentry(Observation, observation-coded-race-and-ethnicity-father)
 
 
 Instance: composition-coded-race-and-ethnicity-baby-g-quinn 
