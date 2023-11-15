@@ -7,7 +7,7 @@ Description: "This profile represents whether or not the results of a performed 
 * code = $loinc#74498-7
   * ^short = "Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"
 * subject 1.. MS
-* subject only Reference(PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientDecedentFetus)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * value[x] from ValueSetYesNoNotApplicableVitalRecords (required)

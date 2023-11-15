@@ -9,7 +9,7 @@ Description: "This Observation profile represents whether or not a home birth wa
 * subject 1.. MS
 * subject only Reference(PatientMotherVitalRecords)
 * focus 1..1 MS
-* focus only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* focus only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * value[x] 1..1 MS
 * value[x] only boolean
   * ^short = "Planned to deliver at home?"

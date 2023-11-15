@@ -45,7 +45,7 @@ Description: "This profile communicates coded cause of fetal death information t
   * ^short = "Cause of death classification and related information Document"
   * ^definition = "Cause of death classification and related information Document"
 * subject 1.. 
-* subject only Reference(PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientDecedentFetus)
 * author ..1 
   * ^short = "The author is the NCHS."
   * ^definition = "The author is the NCHS."

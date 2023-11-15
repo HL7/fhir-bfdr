@@ -14,4 +14,4 @@ Description: "This Condition profile represents another significant cause or con
     * ^short = "The type of cause or condition should be selected from the bound value set."
   * text MS
     * ^short = "Any further specification should be entered as free text to fully record the provider's view of the cause."
-* subject only Reference(PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientDecedentFetus)

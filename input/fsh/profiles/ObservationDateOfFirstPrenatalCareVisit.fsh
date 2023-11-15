@@ -9,7 +9,7 @@ Description: "This profile represents the date of the first prenatal care visit 
 * subject 1..1 MS 
 * subject only Reference(PatientMotherVitalRecords)
 * focus 1..1 MS
-* focus only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* focus only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * value[x] 1..1 MS
 * value[x] only dateTime
   * ^short = "Date of first prenatal care visit"

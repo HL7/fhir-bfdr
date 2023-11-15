@@ -7,7 +7,7 @@ Description: "This Observation profile represents the estimated time of fetal de
 * code = $loinc#73811-2
   * ^short = "Estimated timing of fetal death"
 * subject 1.. MS
-* subject only Reference(PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientDecedentFetus)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * value[x] from FetalDeathTimePointsVS (required)

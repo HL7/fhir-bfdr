@@ -11,7 +11,7 @@ The Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR, an
 * type 
   * ^short = "Race and ethnicity information Document"
   * ^definition = "Race and ethnicity information Document"
-* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * author ..1 
   * ^short = "The author is the NCHS."
   * ^definition = "The author is the NCHS."

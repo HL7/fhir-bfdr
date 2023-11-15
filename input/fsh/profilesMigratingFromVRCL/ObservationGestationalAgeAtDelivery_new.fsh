@@ -6,7 +6,7 @@ Title: "Observation - Gestational Age at Delivery"
 Description: "The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam. Migrated from VRCL."
 * code = $loinc#11884-4
 * subject 1..
-* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * value[x] 1..
 * value[x] only Quantity
   * system 1.. MS
