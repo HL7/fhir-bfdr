@@ -3,11 +3,10 @@ InstanceOf: BundleDocumentBFDR
 Title: "Bundle - Jurisdiction Live Birth Report - Baby G Quinn"
 Description: "Bundle - Jurisdiction Live Birth Report: Baby G Quinn example"
 Usage: #example
-* identifier
-  * system = "urn:ietf:rfc:3986"
-  * value = "urn:uuid:101bec42-b799-4f3d-9188-b9cb376cc094"
 * type = #document
 * timestamp = "2019-02-13T02:06:15.234Z"
+* identifier.value = "2019NJ15075"
+* identifier.extension[certificateNumber].valueString = "15075"
 * insert addentry(CompositionJurisdictionLiveBirthReport, composition-jurisdiction-live-birth-babyg-quinn)
 // * entry[0]
 //   * fullUrl = "http://example.org/fhir/Composition/composition-jurisdiction-live-birth-babyg-quinn"
