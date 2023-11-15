@@ -13,7 +13,7 @@ Usage: #example
     * value = "444455555"
 * extension[Extension-date-filed-by-registrar]
   * valueDateTime = "2019-02-12"
-* identifier.value = "a03eab8c-11e8-4d0c-ad2a-b385395e27de"
+* identifier.value = "2019NJ15075""
 * status = #final
 * type = $loinc#68998-4 "U.S. standard certificate of live birth - 2003 revision"
 * subject = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"

@@ -11,4 +11,4 @@ Usage: #example
 * performer = Reference(patient-mother-carmen-teresa-lee)
 * valueCodeableConcept = $HL7_EducationLevelCS#SEC "Some secondary or high school education"
   * text = "9th through 12th grade; no diploma"
-* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#editBypass0 "Edit Passed"
