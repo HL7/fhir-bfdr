@@ -139,16 +139,3 @@ RuleSet: birthDateAndTime
   * extension[partialDate] MS 
   // * extension[datePartAbsentReason] MS 
 
-RuleSet: multipleBirths
-* multipleBirth[x] MS
-  * ^short = "If not single birth - born first, second, third, etc."
-  * ^definition = "If not single birth, specify born 1st, 2nd, etc. – For multiple deliveries, the order this infant was delivered in the set. Include all live births and fetal losses."
-// Add Edit Flags, a la VRDR 
-* multipleBirth[x].extension contains
-    BypassEditFlag named bypassEditFlag 0..1
-* multipleBirth[x].extension[bypassEditFlag]
-  * value[x] from ValueSetPluralityEditFlagsVitalRecords (required)
-  * value[x] only CodeableConcept
-  * value[x]
-    * ^short = "To reflect the relevant edit possibilities for plurality."
-    * ^binding.description = "Plurality Edit Flags (NCHS)"
