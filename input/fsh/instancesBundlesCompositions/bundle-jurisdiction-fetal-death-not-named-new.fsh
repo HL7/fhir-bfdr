@@ -7,9 +7,8 @@ InstanceOf: BundleDocumentBFDR
 Title: "Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"
 Description: "Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example
-* identifier
-  * system = "urn:ietf:rfc:3986"
-  * value = "urn:uuid:9eeb1854-dee1-470a-9534-5cb25e18a323"
+* identifier.value = "2019NJ15075"
+* identifier.extension[certificateNumber].valueString = "15075"
 * type = #document
 * timestamp = "2019-10-15T08:51:14.637+00:00"
 * insert addentry(CompositionJurisdictionFetalDeathReport, composition-jurisdiction-fetal-death-not-named)
