@@ -100,5 +100,5 @@ Description: "This Composition profile defines constraints to address the use ca
   * entry 1..1
   * entry only Reference(QuestionnaireResponse)
     * ^short = "QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"
-* insert BFDRCompositionLocalSectionEntrySlicing(emergingIssues, 0, #emergingissues, Provider Live Birth)
+* insert BFDRCompositionLocalSectionEntrySlicing(emergingIssues, 0, CodeSystemLocalObservationsCodesVitalRecords#emergingissues, Provider Live Birth)
 * insert BFDRCompositionSectionSlice(emergingIssues, EmergingIssues,  0, 1, Emerging Issues, Emerging Issues, ObservationEmergingIssuesVitalRecords)
