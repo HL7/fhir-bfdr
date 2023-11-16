@@ -4,7 +4,9 @@ Id: Patient-decedent-fetus
 Title: "Patient - Decedent Fetus"
 Description: "A stillborn for whom clinical data is included in the report."
 * extension[birthPlace] MS
-* extension[parentReportedAgeAtDelivery] ^short = "The mother or father's reported age at the time of delivery of the child"
+* extension[parentReportedAgeAtDelivery] MS 
+  * ^short = "The mother or father's reported age at the time of delivery of the child"
+* extension[fetalDeath] 1..1 MS 
 * extension[birthsex].valueCode from ValueSetBirthSexFetusVitalRecords (required)
 * insert childName 
 * insert birthDateAndTime 

@@ -3,6 +3,8 @@ InstanceOf: PatientDecedentFetus
 Title: "Patient - Decedent Fetus example [Fetus Not Named], with Edit Flag"
 Description: "Example of Patient-decedent-fetus-vr profile (Fetus Not Named) with Edit Flag"
 Usage: #example
+* extension[fetalDeath]
+  * valueCoding = $sct#276507005
 * extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
