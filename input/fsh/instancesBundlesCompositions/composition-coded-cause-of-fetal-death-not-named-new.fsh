@@ -16,5 +16,5 @@ Usage: #example
 * title = "Coded Cause of Fetal Death"
 * section[codedCauseOfFetalDeath]
   * title = "Coded Cause of Fetal Death"
-  * entry[+] = Reference(observation-coded-initiating-fetal-death-cause-or-condition) "Condition - Coded Initiating Fetal Death Cause or Condition (Not Named)"
-  * entry[+] = Reference(observation-coded-other-fetal-death-cause-or-condition-not-named) "Condition - Coded Other Fetal Death Cause or Condition (Not Named)"
+  *  insert addentryComposition(Observation, observation-coded-initiating-fetal-death-cause-or-condition)
+  *  insert addentryComposition(Observation, observation-coded-other-fetal-death-cause-or-condition-not-named)
