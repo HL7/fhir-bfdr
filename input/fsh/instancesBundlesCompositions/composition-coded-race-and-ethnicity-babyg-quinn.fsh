@@ -32,15 +32,15 @@ Usage: #example
   * title = "Mother's Coded Race and Ethnicity"
   //* focus = Reference(patient-mother-jada-ann-quinn)
   * focus.display = "patient-mother-jada-ann-quinn"
-  * entry[+] = Reference(observation-input-race-and-ethnicity-mother) //"Observation - Input Race and Ethnicity"
-  * entry[+] = Reference(observation-coded-race-and-ethnicity-mother ) //"Observation - Coded Race and Ethnicity"
+  * insert addentryComposition(Observation, observation-input-race-and-ethnicity-mother )
+  * insert addentryComposition(Observation, observation-coded-race-and-ethnicity-mother )
 * section[father]
   * title = "Father's Coded Race and Ethnicity"
   //* focus = Reference(relatedperson-father-natural-james-brandon-quinn)
   * focus.display = "relatedperson-father-natural-james-brandon-quinn"
-  * entry[+] = Reference(observation-input-race-and-ethnicity-father) //"Observation - Input Race and Ethnicity"
-  * entry[+] = Reference(observation-coded-race-and-ethnicity-father ) //"Observation - Coded Race and Ethnicity"
-  
+  * insert addentryComposition(Observation, observation-input-race-and-ethnicity-father )
+  * insert addentryComposition(Observation, observation-coded-race-and-ethnicity-father )
+
 
 Instance: observation-coded-race-and-ethnicity-mother
 InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
