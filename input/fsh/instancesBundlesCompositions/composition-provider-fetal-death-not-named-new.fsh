@@ -58,6 +58,8 @@ Usage: #example
   * insert addNamedEntryComposition(autopsyPerformed, Observation, observation-autopsy-performed-not-named)
   * insert addNamedEntryComposition(histologicalExamPerformed, Observation, observation-histological-placental-exam-performed-not-named)
   * insert addNamedEntryComposition(autopsyOrHistologicalExamUsed, Observation, observation-autopsy-histological-exam-results-used-not-named)
+  * insert addNamedEntryComposition(numberFetalDeathsThisDelivery, Observation, observation-number-deaths-this-delivery-carmen-teresa-lee)
+
 * section[motherInformation]
   // * title = "Mother Administrative Section on the Fetal Death Report"
   // * code = $loinc#92014-0 "Mother's administrative information"

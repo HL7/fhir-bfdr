@@ -62,6 +62,7 @@ Usage: #example
   * insert addNamedEntryComposition(infectionsDuringPregnancy, Condition, condition-infection-present-during-pregnancy-jada-ann-quinn) 
   * insert addNamedEntryComposition(obstetricProcedures, Procedure, procedure-obstetric-procedure-jada-ann-quinn) 
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
+  * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-prepregnancy-diabetes-jada-ann-quinn) 
   * insert addNamedEntryComposition(characteristicsLaborDelivery, Condition, condition-chorioamnionitis-jada-ann-quinn) 
   * insert addNamedEntryComposition(characteristicsLaborDelivery, Procedure, procedure-induction-of-labor-jada-ann-quinn) 
   * insert addNamedEntryComposition(fetalPresentation, Observation, observation-fetal-presentation-babyg-quinn) 

@@ -49,4 +49,4 @@ Usage: #example
 * insert addentry(Practitioner, practitioner-vital-records-janet-seito)
 * insert addentry(Location, location-south-hospital)
 * insert addentry(Organization, organization-south-hospital)
-* insert addentry(RelatedPerson, relatedperson-mother-carmen-teresa-lee)
+//* insert addentry(RelatedPerson, relatedperson-mother-carmen-teresa-lee)
