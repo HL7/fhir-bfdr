@@ -13,7 +13,7 @@ Usage: #example
 * insert addentry(CompositionProviderFetalDeathReport, composition-provider-fetal-death-not-named)
 * insert addentry(Patient, patient-decedent-fetus-not-named)
 * insert addentry(Encounter, encounter-maternity-carmen-teresa-lee)
-* insert addentry(Practitioner, practitioner-vital-records-jessica-leung)
+//* insert addentry(Practitioner, practitioner-vital-records-jessica-leung)
 * insert addentry(Patient, patient-mother-carmen-teresa-lee)
 * insert addentry(Observation, observation-planned-to-deliver-at-home-not-named)
 * insert addentry(Observation, observation-date-of-first-prenatal-care-visit-carmen-teresa-lee)
