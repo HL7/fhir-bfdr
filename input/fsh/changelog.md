@@ -1,4 +1,8 @@
 ## Change Log
+
+### 15 November 2023
+- Moved PatientDecedentFetus and related examples from VRCL to BFDR
+
 ### 31 October 2023
 - Removed ObservationRaceVitalRecords and ObservationTabulatedEthnicityVitalRecords in VRCL and related instances in BFDR
 

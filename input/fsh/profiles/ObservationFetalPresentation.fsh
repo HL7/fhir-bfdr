@@ -7,7 +7,7 @@ Description: "This Observation profile represents the fetal presentation (orient
 * code = $loinc#73761-9
   * ^short = "Fetal presentation at birth/delivery"
 * subject 1.. MS
-* subject only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * value[x] from FetalPresentationsVS (required)

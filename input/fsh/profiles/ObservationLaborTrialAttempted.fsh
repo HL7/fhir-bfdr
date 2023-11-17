@@ -9,6 +9,6 @@ Description: "This Observation profile represents whether, in the case of a cesa
 * subject 1.. MS
 * subject only Reference(PatientMotherVitalRecords)
 * focus 1.. MS
-* focus only Reference(PatientChildVitalRecords or PatientDecedentFetusVitalRecords)
+* focus only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * value[x] 1..1
 * value[x] only boolean

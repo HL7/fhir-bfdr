@@ -23,7 +23,7 @@ Description: "This Composition profile contains information of a fetal death and
   * ^short = "Jurisdiction fetal death report Document"
   * ^definition = "Jurisdiction fetal death report Document"
 * subject 1.. 
-* subject only Reference(PatientDecedentFetusVitalRecords)
+* subject only Reference(PatientDecedentFetus)
   * ^short = "The subject of the composition is the decedent fetus"
   * ^definition = "The subject of the composition as a whole is the decedent fetus. Different sections in the composition have different focus (e.g.: the mother)."
 * encounter only Reference(Encounter_Maternity)

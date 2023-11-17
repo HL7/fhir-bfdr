@@ -1,8 +1,10 @@
 Instance: patient-decedent-fetus-not-named-w-edit
-InstanceOf: PatientDecedentFetusVitalRecords
+InstanceOf: PatientDecedentFetus
 Title: "Patient - Decedent Fetus example [Fetus Not Named], with Edit Flag"
-Description: "Example of Patient-decedent-fetus-vr (Fetus Not Named), with Edit Flag"
+Description: "Example of Patient-decedent-fetus-vr profile (Fetus Not Named) with Edit Flag"
 Usage: #example
+* extension[fetalDeath]
+  * valueCoding = $sct#276507005
 * extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
@@ -17,12 +19,9 @@ Usage: #example
   * value = "9932702"
 // NOTE TODO: name.use is a required element and the child is unnamed
 // want to confirm this is the appropriate code
-* name.use = #usual
-// profile indicates that 'When child not named use code "unknown"'
-* name.family = "UNK"
-  * extension[dataAbsentReason].valueCode = #not-applicable
-    // * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-    // * valueCode = #not-applicable
+* name[currentLegalName]
+  * family
+    * extension[dataAbsentReason].valueCode = #not-applicable
 * gender = #female
 * birthDate = "2019-01-09"
   * extension
