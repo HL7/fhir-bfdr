@@ -92,5 +92,5 @@ Description: "This Composition profile contains constraints to address the use c
   * entry 1..1
   * entry only Reference(QuestionnaireResponse)
     * ^short = "QuestionnaireResponse with recorded answers to the Questionnaire - Patient's Worksheet for Fetal Death Report"
-* insert BFDRCompositionLocalSectionEntrySlicing(emergingIssues, 0, #emergingissues, Provider Fetal Death)
+* insert BFDRCompositionLocalSectionEntrySlicing(emergingIssues, 0, CodeSystemLocalObservationsCodesVitalRecords#emergingissues, Provider Fetal Death)
 * insert BFDRCompositionSectionSlice(emergingIssues, EmergingIssues,  0, 1, Emerging Issues, Emerging Issues, ObservationEmergingIssuesVitalRecords)

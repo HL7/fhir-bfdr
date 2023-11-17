@@ -3,12 +3,13 @@ InstanceOf: DemographicCodedContentBundleBFDR
 Title: "Bundle - Coded Race and Ethnicity - Baby G Quinn"
 Description: "Bundle - Coded Race and Ethnicity - example Baby G Quinn"
 Usage: #example 
-* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27de"
-* insert addentry(CompositionCodedRaceAndEthnicity, composition-coded-race-and-ethnicity-baby-g-quinn )
-* insert addentry(InputRaceAndEthnicity, observation-input-race-and-ethnicity-mother)
-* insert addentry(InputRaceAndEthnicity, observation-input-race-and-ethnicity-father)
-* insert addentry(CodedRaceAndEthnicity, observation-coded-race-and-ethnicity-mother)
-* insert addentry(CodedRaceAndEthnicity, observation-coded-race-and-ethnicity-father)
+* identifier.value = "2019NJ15075"
+* identifier.extension[certificateNumber].valueString = "15075"
+* insert addentry(Composition, composition-coded-race-and-ethnicity-baby-g-quinn )
+* insert addentry(Observation, observation-input-race-and-ethnicity-mother)
+* insert addentry(Observation, observation-input-race-and-ethnicity-father)
+* insert addentry(Observation, observation-coded-race-and-ethnicity-mother)
+* insert addentry(Observation, observation-coded-race-and-ethnicity-father)
 
 
 Instance: composition-coded-race-and-ethnicity-baby-g-quinn 
@@ -16,28 +17,30 @@ InstanceOf: CompositionCodedRaceAndEthnicity
 Title: "Composition - Coded Race and Ethnicity - Baby G Quinn"
 Description: "Composition - Coded Race and Ethnicity: Baby G Quinn example"
 Usage: #example
-* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27dc"
+//* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27dc"
 * extension[Extension-live-birth-certificate-number]
   * valueIdentifier
     * type = $v2-0203#BCT
     * value = "15075"
 * status = #final
 * type = $loinc#86805-9 "Race and ethnicity information Document"
-* subject = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
+* subject.display = "Patient - Child (Baby G Quinn)" // = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
 * date = "2019-01-09"
-* author = Reference(Organization/organization-nchs) "National Center for Health Statistics"
+* author.display =  "National Center for Health Statistics"
 * title = "Coded Race and Ethnicity"
 * section[mother]
   * title = "Mother's Coded Race and Ethnicity"
-  * focus = Reference(patient-mother-jada-ann-quinn)
-  * entry[+] = Reference(observation-input-race-and-ethnicity-mother) "Observation - Input Race and Ethnicity"
-  * entry[+] = Reference(observation-coded-race-and-ethnicity-mother ) "Observation - Coded Race and Ethnicity"
+  //* focus = Reference(patient-mother-jada-ann-quinn)
+  * focus.display = "patient-mother-jada-ann-quinn"
+  * insert addentryComposition(Observation, observation-input-race-and-ethnicity-mother )
+  * insert addentryComposition(Observation, observation-coded-race-and-ethnicity-mother )
 * section[father]
   * title = "Father's Coded Race and Ethnicity"
-  * focus = Reference(relatedperson-father-natural-james-brandon-quinn)
-  * entry[+] = Reference(observation-input-race-and-ethnicity-father) "Observation - Input Race and Ethnicity"
-  * entry[+] = Reference(observation-coded-race-and-ethnicity-father ) "Observation - Coded Race and Ethnicity"
-  
+  //* focus = Reference(relatedperson-father-natural-james-brandon-quinn)
+  * focus.display = "relatedperson-father-natural-james-brandon-quinn"
+  * insert addentryComposition(Observation, observation-input-race-and-ethnicity-father )
+  * insert addentryComposition(Observation, observation-coded-race-and-ethnicity-father )
+
 
 Instance: observation-coded-race-and-ethnicity-mother
 InstanceOf: ObservationCodedRaceAndEthnicityVitalRecords
@@ -46,7 +49,7 @@ Title: "Observation - CodedRaceAndEthnicity example [Mother]"
 Description: "Example of coded-race-and-ethnicity-vr profile (Mother)"
 * code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityMother
 * status = #final
-* subject.display = "NCHS generated"
+* subject.display = "NCHS generated - mother"
 * component[FirstEditedCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#101 "White"
 * component[SecondEditedCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#122 "Israeli"
 * component[FirstAmericanIndianCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#A31 "Arikara"
@@ -60,7 +63,7 @@ Title: "Observation - CodedRaceAndEthnicity example [Father]"
 Description: "Example of coded-race-and-ethnicity-vr profile (Father)"
 * code = CodeSystemLocalObservationsCodesVitalRecords#codedraceandethnicityFather
 * status = #final
-* subject.display = "NCHS generated"
+* subject.display = "NCHS generated - father"
 * component[FirstEditedCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#101 "White"
 * component[SecondEditedCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#122 "Israeli"
 * component[FirstAmericanIndianCode].valueCodeableConcept = CodeSystemRaceCodeVitalRecords#A31 "Arikara"
@@ -76,7 +79,7 @@ Description: "Example of input-race-and-ethnicity-vr profile (Mother)"
 //* insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother
 * status = #final
-* subject.display = "NCHS generated"
+* subject.display = "EBRS-generated - mother"
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false
 * component[BlackOrAfricanAmerican].valueBoolean = false
@@ -109,7 +112,7 @@ Description: "Example of input-race-and-ethnicity-vr profile (Father)"
 //* insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather
 * status = #final
-* subject.display = "NCHS generated"
+* subject.display = "EBRS-generated - father"
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false
 * component[BlackOrAfricanAmerican].valueBoolean = false
