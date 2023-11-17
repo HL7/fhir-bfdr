@@ -73,14 +73,3 @@ Usage: #example
 * section[motherInformation]
   * insert addReferenceComposition(focus, Patient, patient-mother-carmen-teresa-lee)
   * insert addNamedEntryComposition(mothersEducation, Observation, observation-parent-education-level-carmen-teresa-lee-w-edit)
-//* section[editFlags]
-  // * title = "Edit Flags Section"
-  // * code = $loinc#92012-4 "Edit flags section"
-  // * entry[editFlagWeightOfFetus] = Reference(observation-edit-flag-delivery-wgt-not-named) "Observation - Edit flag birthweight"
-  //* entry[editFlagEstimateOfGestation] = Reference(observation-edit-flag-est-gestation-not-named) "Observation - Edit flag estimate of gestation"
-  // * entry[editFlagMothersDateOfBirth] = Reference(observation-edit-flag-mothers-dob-not-named) "Observation - Edit flag mother's date of birth"
-  //* entry[editFlagMothersEducation] = Reference(observation-edit-flag-mothers-education-not-named) "Observation - Edit flag mother's education"
-  //* entry[editFlagMothersHeight] = Reference(observation-edit-flag-mothers-height-not-named) "Observation - Edit flag mother's height"
-  //* entry[editFlagMothersPrepregnancyWeight] = Reference(observation-edit-flag-mothers-prepreg-wgt-not-named) "Observation - Edit flag mother's prepregnancy weight"
-  //* entry[editFlagNumberPreviousCesareans] = Reference(observation-edit-flag-nbr-previous-cesareans-not-named) "Observation - Edit flag number previous cesareans"
-  //* entry[editFlagPlurality] = Reference(observation-edit-flag-plurality-not-named) "Observation - Edit flag plurality"

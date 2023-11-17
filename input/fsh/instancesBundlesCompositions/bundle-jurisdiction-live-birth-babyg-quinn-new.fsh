@@ -78,3 +78,5 @@ Usage: #example
 * insert addentry(Organization, organization-south-hospital)
 * insert addentry(Observation, observation-labor-trial-attempted-babyg-quinn)
 //* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
+* insert addentry(Condition, condition-gestational-hypertension-jada-ann-quinn) 
+* insert addentry(Condition, condition-prepregnancy-diabetes-jada-ann-quinn) 

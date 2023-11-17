@@ -63,4 +63,4 @@ Usage: #example
 * insert addentry(Location, location-north-hospital)
 * insert addentry(Organization, organization-south-hospital)
 * insert addentry(Observation, observation-labor-trial-attempted-babyg-quinn)
-* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
+//* insert addentry(RelatedPerson, relatedperson-mother-jada-ann-quinn)
