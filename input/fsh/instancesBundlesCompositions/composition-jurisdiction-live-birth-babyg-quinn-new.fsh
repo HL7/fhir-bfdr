@@ -57,7 +57,6 @@ Usage: #example
     // this example does not exist in the published or unpublished version, but is referenced in the published version
     // * reference : "Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"
     // this is from the unpublished version
-  * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
   * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-jada-ann-quinn-w-edit) 
   * insert addNamedEntryComposition(infectionsDuringPregnancy, Condition, condition-infection-present-during-pregnancy-jada-ann-quinn) 
   * insert addNamedEntryComposition(obstetricProcedures, Procedure, procedure-obstetric-procedure-jada-ann-quinn) 
