@@ -28,6 +28,7 @@ Usage: #example
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
   * insert addNamedEntryComposition(plannedToDeliverAtHome, Observation, observation-planned-to-deliver-at-home-babyg-quinn)
   * insert addNamedEntryComposition(firstPrenatalCareVisit, Observation, observation-date-of-first-prenatal-care-visit-jada-ann-quinn)
+  * insert addNamedEntryComposition(numberPrenatalCareVisits, Observation, observation-number-prenatal-visits-jada-ann-quinn)
   * insert addNamedEntryComposition(dateLastNormalMenses, Observation, observation-last-menstrual-period-jada-ann-quinn)
   * insert addNamedEntryComposition(numberNowLiving, Observation, observation-number-births-now-living-jada-ann-quinn)
   * insert addNamedEntryComposition(numberNowDead, Observation, observation-number-births-now-dead-jada-ann-quinn)
@@ -93,7 +94,7 @@ Usage: #example
   // * code = $loinc#92013-2 "Father's Administrative Information"
   * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-james-brandon-quinn-w-edit)
   * insert addNamedEntryComposition(paternityAcknowledgementSigned, Observation, observation-paternity-acknowledgement-signed-james-quinn-w-edit)
-  * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn-w-edit-w-edit) 
+  * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn-w-edit) 
   //* section[editFlags]
   // * title = "Edit Flags Section"
   // * code = $loinc#92012-4 "Edit flags section"
