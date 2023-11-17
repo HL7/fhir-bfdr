@@ -55,7 +55,7 @@ Usage: #example
   // * code = $loinc#55752-0 "Clinical information"
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
-  * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-jada-ann-quinn-) 
+  * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-jada-ann-quinn) 
   * insert addNamedEntryComposition(infectionsDuringPregnancy, Condition, condition-infection-present-during-pregnancy-jada-ann-quinn) 
   * insert addNamedEntryComposition(obstetricProcedures, Procedure, procedure-obstetric-procedure-jada-ann-quinn) 
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
@@ -67,7 +67,7 @@ Usage: #example
 * section[newbornInformation]
   // * title = "Newborn section on the Live Birth Certificate"
   // * code = $loinc#57075-4 "Newborn delivery information"
-  * insert addNamedEntryComposition(birthWeight, Observation, observation-birth-weight-babyg-quinn-) 
+  * insert addNamedEntryComposition(birthWeight, Observation, observation-birth-weight-babyg-quinn) 
   * insert addNamedEntryComposition(gestationalAgeAtDelivery, Observation, observation-gestational-age-at-delivery-babyg-quinn) 
   * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-1-min) 
   * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-5-min) 
