@@ -54,10 +54,10 @@ Usage: #example
   // * title = "Medical Health Information Section"
   // * code = $loinc#55752-0 "Clinical information"
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
+  * insert addNamedEntryComposition(obstetricProcedures, Procedure, procedure-obstetric-procedure-jada-ann-quinn) 
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
   * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-jada-ann-quinn) 
   * insert addNamedEntryComposition(infectionsDuringPregnancy, Condition, condition-infection-present-during-pregnancy-jada-ann-quinn) 
-  * insert addNamedEntryComposition(obstetricProcedures, Procedure, procedure-obstetric-procedure-jada-ann-quinn) 
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-prepregnancy-diabetes-jada-ann-quinn) 
   * insert addNamedEntryComposition(characteristicsLaborDelivery, Condition, condition-chorioamnionitis-jada-ann-quinn) 
