@@ -54,7 +54,7 @@ Usage: #example
   // * code = $loinc#55752-0 "Clinical information"
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
-  * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-jada-ann-quinn-w-edit) 
+  * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-jada-ann-quinn) 
   * insert addNamedEntryComposition(infectionsDuringPregnancy, Condition, condition-infection-present-during-pregnancy-jada-ann-quinn) 
   * insert addNamedEntryComposition(obstetricProcedures, Procedure, procedure-obstetric-procedure-jada-ann-quinn) 
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
@@ -66,7 +66,7 @@ Usage: #example
 * section[newbornInformation]
   // * title = "Newborn section on the Live Birth Certificate"
   // * code = $loinc#57075-4 "Newborn delivery information"
-  * insert addNamedEntryComposition(birthWeight, Observation, observation-birth-weight-babyg-quinn-w-edit) 
+  * insert addNamedEntryComposition(birthWeight, Observation, observation-birth-weight-babyg-quinn) 
   * insert addNamedEntryComposition(gestationalAgeAtDelivery, Observation, observation-gestational-age-at-delivery-babyg-quinn) 
   * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-1-min) 
   * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-5-min) 
@@ -85,7 +85,7 @@ Usage: #example
 * section[fatherInformation]
   // * title = "Father's Information Section"
   // * code = $loinc#92013-2 "Father's Administrative Information"
-  * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-james-brandon-quinn-w-edit)
+  * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-james-brandon-quinn)
   * insert addNamedEntryComposition(paternityAcknowledgementSigned, Observation, observation-paternity-acknowledgement-signed-james-quinn)
   * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn) 
 * section[patientsQuestionnaireResponse]

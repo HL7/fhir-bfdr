@@ -20,7 +20,7 @@ Usage: #example
 // * subject = Reference() "Patient - Decedent Fetus (Fetus Not Named)"
 * insert addReferenceComposition(encounter,Encounter, encounter-maternity-carmen-teresa-lee)
 //* encounter = Reference(encounter-maternity-carmen-teresa-lee) "Encounter - Maternity (Carmen Teresa Lee)"
-* insert addReferenceComposition(author, Practitioner, practitioner-vital-records-jessica-leun)
+* insert addReferenceComposition(author, Practitioner, practitioner-vital-records-jessica-leung)
 * date = "2019-01-09"
 * title = "Provider fetal death report Document"
 * section[motherPrenatal]
@@ -44,14 +44,14 @@ Usage: #example
   // * title = "Medical and Health Information on the Fetal Death Report"
   // * code = $loinc#55752-0 "Clinical information"
   * insert addReferenceComposition(focus, Patient, patient-mother-carmen-teresa-lee)
-  * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-carmen-teresa-lee-w-edit)
+  * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-carmen-teresa-lee)
   * insert addNamedEntryComposition(fetalPresentation, Observation, observation-fetal-presentation-not-named)
   * insert addNamedEntryComposition(finalRouteMethodDelivery, Procedure, procedure-final-route-method-delivery-not-named)
 * section[fetus]
   // * title = "Fetal delivery information section on the Fetal Death Report"
   // * code = $loinc#76400-1 "Fetal delivery information Document [US Standard Report of Fetal Death]"
-  * insert addNamedEntryComposition(deliveryWeight, Observation, observation-birth-weight-not-named-w-edit)
-  * insert addNamedEntryComposition(gestationalAgeAtDelivery, Observation, observation-gestational-age-at-delivery-not-named-w-edit)
+  * insert addNamedEntryComposition(deliveryWeight, Observation, observation-birth-weight-not-named)
+  * insert addNamedEntryComposition(gestationalAgeAtDelivery, Observation, observation-gestational-age-at-delivery-not-named)
   * insert addNamedEntryComposition(causeOfFetalDeath, Condition, condition-fetal-death-cause-or-condition-not-named)
   * insert addNamedEntryComposition(otherCauseOfDeath, Condition, condition-fetal-death-other-significant-cause-not-named)
   * insert addNamedEntryComposition(estimatedTimeFetalDeath, Observation, observation-fetal-death-time-point-not-named)
