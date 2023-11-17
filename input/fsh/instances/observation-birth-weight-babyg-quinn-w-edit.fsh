@@ -8,7 +8,7 @@ Usage: #example
 * code = $loinc#8339-4 "Birth weight Measured"
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * effectiveDateTime = "2019-12-02"
-* performer = Reference(organization-jurisdictional-vital-records-office)
+* performer = Reference(practitioner-vital-records-janet-seito)
 * valueQuantity = 2500 'g'
 * valueQuantity.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#off "Off"
 
