@@ -85,13 +85,13 @@ Usage: #example
   // * title = "Mother's Information Section"
   // * code = $loinc#92014-0 "Mother's administrative information"
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
-  * insert addNamedEntryComposition(marriedDuringPregnancy, Observation, bservation-mother-married-during-pregnancy-jada-ann-quinn) 
+  * insert addNamedEntryComposition(marriedDuringPregnancy, Observation, observation-mother-married-during-pregnancy-jada-ann-quinn) 
   * insert addNamedEntryComposition(mothersEducation, Observation, observation-parent-education-level-jada-ann-quinn-w-edit)
   * insert addNamedEntryComposition(ssnRequestedForChild, Observation, observation-ssn-requested-for-child-babyg-quinn) 
 * section[fatherInformation]
   // * title = "Father's Information Section"
   // * code = $loinc#92013-2 "Father's Administrative Information"
-  * insert addReferenceComposition(focus,Patient, relatedperson-father-natural-james-brandon-quinn-w-edit)
+  * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-james-brandon-quinn-w-edit)
   * insert addNamedEntryComposition(paternityAcknowledgementSigned, Observation, observation-paternity-acknowledgement-signed-james-quinn)
   * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn-w-edit) 
   //* section[editFlags]

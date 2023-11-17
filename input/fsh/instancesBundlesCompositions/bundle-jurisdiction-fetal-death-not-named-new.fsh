@@ -82,6 +82,7 @@ Usage: #example
 //   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-plurality-not-named"
 //   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-39
 * insert addentry(Practitioner, practitioner-vital-records-janet-seito)
+* insert addentry(Practitioner, practitioner-vital-records-jessica-leung ) // why?
 * insert addentry(Location, location-south-hospital)
 * insert addentry(Organization, organization-south-hospital)
 * insert addentry(RelatedPerson, relatedperson-mother-carmen-teresa-lee)

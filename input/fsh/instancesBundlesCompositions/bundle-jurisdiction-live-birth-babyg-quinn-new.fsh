@@ -72,6 +72,7 @@ Usage: #example
 // * insert addentry(Observation, observation-edit-flag-number-previous-cesareans-example)
 // * insert addentry(Observation, observation-edit-flag-plurality-example)
 * insert addentry(Practitioner, practitioner-vital-records-avery-jones)
+* insert addentry(Practitioner, practitioner-vital-records-janet-seito ) // why?
 * insert addentry(Location, location-east-hospital)
 * insert addentry(Location, location-south-hospital)
 * insert addentry(Location, location-north-hospital)
