@@ -6,5 +6,5 @@ Description: "This valueset contains codes to represent fetal presentations. Thi
 * insert SNOMEDCopyright
 * $sct#70028003 "Vertex presentation (finding)"
 * $sct#6096002 "Breech presentation (finding)"
-* $sct#163518000 "On examination - fetal presentation unsure	Unknown fetal presentation"
+* $sct#163518000 "On examination - fetal presentation unsure	Unknown fetal presentation (finding)"
 * $v3-NullFlavor#OTH "Other"
