@@ -46,41 +46,6 @@ Usage: #example
 //* insert addentry(Observation, observation-plurality-carmen-teresa-lee)
 * insert addentry(Observation, observation-number-deaths-this-delivery-carmen-teresa-lee)
 * insert addentry(Observation, observation-parent-education-level-carmen-teresa-lee-w-edit)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-31
-// * insert addentry(ObservationEditFlagBirthweight, observation-edit-flag-delivery-wgt-not-named)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-delivery-wgt-not-named"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-32
-//* insert addentry(Observation, observation-edit-flag-est-gestation-not-named)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-est-gestation-not-named"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-33
-// * insert addentry(Observation, observation-edit-flag-mothers-dob-not-named)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-dob-not-named"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-34
-//* insert addentry(Observation, observation-edit-flag-mothers-education-not-named)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-education-not-named"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-35
-//* insert addentry(Observation, observation-edit-flag-mothers-height-not-named)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-height-not-named"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-36
-//* insert addentry(Observation, observation-edit-flag-mothers-prepreg-wgt-not-named)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-mothers-prepreg-wgt-not-named"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-37
-//* insert addentry(Observation, observation-edit-flag-nbr-previous-cesareans-not-named)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-nbr-previous-cesareans-not-named"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-38
-//* insert addentry(Observation, observation-edit-flag-plurality-not-named)
-// * entry[+]
-//   * fullUrl = "http://example.org/fhir/Observation/observation-edit-flag-plurality-not-named"
-//   * resource = Inline-Instance-for-bundle-jurisdiction-fetal-death-not-named-39
 * insert addentry(Practitioner, practitioner-vital-records-janet-seito)
 * insert addentry(Practitioner, practitioner-vital-records-jessica-leung ) // why?
 * insert addentry(Location, location-south-hospital)

@@ -9,5 +9,5 @@ Usage: #example
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * focus = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * effectiveDateTime = "2019-12-02"
-* performer = Reference(patient-mother-carmen-teresa-lee)
+// * performer = Reference(patient-mother-jada-ann-quinn)
 * valueCodeableConcept = $v2-0136#Y "Yes"
