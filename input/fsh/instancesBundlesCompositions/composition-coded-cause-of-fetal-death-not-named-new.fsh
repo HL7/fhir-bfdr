@@ -15,6 +15,6 @@ Usage: #example
 * author = Reference(Organization/organization-nchs) "National Center for Health Statistics"
 * title = "Coded Cause of Fetal Death"
 * section[codedCauseOfFetalDeath]
-  * title = "Coded Cause of Fetal Death"
-  *  insert addentryComposition(Observation, observation-coded-initiating-fetal-death-cause-or-condition)
-  *  insert addentryComposition(Observation, observation-coded-other-fetal-death-cause-or-condition-not-named)
+  * title = "Coded Initiating Cause of Fetal Death"
+  *  insert addNamedEntryComposition(codedInitiatingFetalDeathCauseOrCondition, Observation, observation-coded-initiating-fetal-death-cause-or-condition)
+  *  insert addNamedEntryComposition(codedOtherSignificantFetalDeathCauseOrCondition, Observation, observation-coded-other-fetal-death-cause-or-condition-not-named)

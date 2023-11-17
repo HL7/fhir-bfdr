@@ -12,6 +12,7 @@ Usage: #example
 * insert addentry(Encounter, encounter-birth-babyg-quinn)
 * insert addentry(Encounter, encounter-maternity-jada-ann-quinn)
 * insert addentry(Practitioner, practitioner-vital-records-avery-jones)
+* insert addentry(Practitioner, practitioner-vital-records-janet-seito ) // why?
 * insert addentry(Patient, patient-mother-jada-ann-quinn)
 * insert addentry(Observation, observation-planned-to-deliver-at-home-babyg-quinn)
 * insert addentry(Observation, observation-date-of-first-prenatal-care-visit-jada-ann-quinn)
