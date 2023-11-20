@@ -4,8 +4,6 @@ Title: "Observation - Date of First Prenatal Care Visit - Jada Ann Quinn"
 Description: "Observation - Date of First Prenatal Care Visit: Jada Ann Quinn example"
 Usage: #example
 * status = #final
-* code = $loinc#69044-6 "Date first prenatal visit"
-  * text = "Date of first prenatal care visit"
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * focus = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * effectiveDateTime = "2019-12-02"
