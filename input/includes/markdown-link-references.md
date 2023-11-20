@@ -6,13 +6,13 @@
 [USCorePractitioner]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html
 [USCorePractitionerRole]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitionerrole.html
 [QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
-[PartialDatesAndTimes]: usage.html#partial-dates-and-times
+[PartialDatesAndTimes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times
 [Note on Decedent Name]: usage.html#decedent-name
 [Note on Decedent Gender]: usage.html#decedent-gender
-[CityCodes]: usage.html#city-codes
-[CountyCodes]: usage.html#county-codes
-[StateLiterals]: usage.html#state-literals
-[CountryLiterals]: usage.html#country-literals
+[CityCodes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#city-codes
+[CountyCodes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#county-codes
+[StateLiterals]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#state-literals
+[CountryLiterals]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#country-literals
 [Note on missing data]: usage.html#specifying-none-of-the-above-and-missing-data
 [Note on missing abnormal conditions of newborn data]: usage.html#abnormal-conditions-of-newborn
 [Note on missing maternal morbidity data]: usage.html#maternal-morbidities
