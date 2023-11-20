@@ -27,7 +27,8 @@ The bundle contains:
 * type = #document (exactly)
 * insert ProfileBasedEntrySlicing
 * insert BundleSlice(  Composition, 1, 1, Composition, Composition, CompositionCodedRaceAndEthnicity)
-* insert BundleSlice(  Father, 0, 1, Father, Father, RelatedPersonFatherNaturalVitalRecords )
-* insert BundleSlice(  Mother, 0, 1, Mother, Mother, PatientMotherVitalRecords )
-* insert BundleSlice(  CodedRaceAndEthnicity,  2, 2,  CodedRaceAndEthnicity,  CodedRaceAndEthnicity,  ObservationCodedRaceAndEthnicityVitalRecords)
-* insert BundleSlice(  InputRaceAndEthnicity,  2, 2,  InputRaceAndEthnicity,  InputRaceAndEthnicity,  ObservationInputRaceAndEthnicityVitalRecords)
+// The content of the bundle is completely defined by the Composition.  So, no need to restrict it here.
+// * insert BundleSlice(  Father, 0, 1, Father, Father, RelatedPersonFatherNaturalVitalRecords )
+// * insert BundleSlice(  Mother, 0, 1, Mother, Mother, PatientMotherVitalRecords )
+// * insert BundleSlice(  CodedRaceAndEthnicity,  2, 2,  CodedRaceAndEthnicity,  CodedRaceAndEthnicity,  ObservationCodedRaceAndEthnicityVitalRecords)
+// * insert BundleSlice(  InputRaceAndEthnicity,  2, 2,  InputRaceAndEthnicity,  InputRaceAndEthnicity,  ObservationInputRaceAndEthnicityVitalRecords)
