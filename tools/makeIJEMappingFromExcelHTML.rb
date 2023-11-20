@@ -63,7 +63,7 @@ vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
 def printHeader(hHeading, pOutputFile, pIG, tableStyle)
     pOutputFile.puts hHeading
     if hHeading == "### Natality (Live Birth) IJE Mapping" || hHeading == "### Fetal Death IJE Mapping"
-        pOutputFile.puts "*IJE Names in purple text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports"
+        pOutputFile.puts "*IJE Names in <span style='color:darkviolet'>purple</span> text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports"
     elsif hHeading == "### Coded Content"
         pOutputFile.puts ""
         pOutputFile.puts "*Coded content is used for compositions from NCHS to VRO, and is not included in Jurisdiction or Provider reports"

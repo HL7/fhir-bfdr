@@ -34,7 +34,7 @@ All of the none-of-the-above values are represented as observations with a clear
     }
     </style>
 ### Fetal Death IJE Mapping
-*IJE Names in purple text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports
+*IJE Names in <span style='color:darkviolet'>purple</span> text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports
 
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
