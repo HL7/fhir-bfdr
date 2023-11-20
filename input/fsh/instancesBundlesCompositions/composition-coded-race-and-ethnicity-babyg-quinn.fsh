@@ -4,7 +4,9 @@ Title: "Bundle - Coded Race and Ethnicity - Baby G Quinn"
 Description: "Bundle - Coded Race and Ethnicity - example Baby G Quinn"
 Usage: #example 
 * identifier.value = "2019NJ15075"
+* identifier.system = $ije 
 * identifier.extension[certificateNumber].valueString = "15075"
+* date = "2019-01-09"
 * insert addentry(Composition, composition-coded-race-and-ethnicity-baby-g-quinn )
 * insert addentry(Observation, observation-input-race-and-ethnicity-mother)
 * insert addentry(Observation, observation-input-race-and-ethnicity-father)
