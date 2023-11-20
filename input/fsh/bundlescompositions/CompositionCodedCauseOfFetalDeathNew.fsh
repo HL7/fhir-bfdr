@@ -66,7 +66,7 @@ Description: "This profile communicates coded cause of fetal death information t
     * ^short = "Entries that are contained in the coded cause of fetal death section"
     * ^definition = "Entries that are contained in the coded cause of fetal death section"
   * entry contains
-      codedInitiatingFetalDeathCauseOrCondition 1..1 and
+      codedInitiatingFetalDeathCauseOrCondition 0..1 and
       codedOtherSignificantFetalDeathCauseOrCondition 0..7
   * entry[codedInitiatingFetalDeathCauseOrCondition] only Reference(ObservationCodedInitiatingFetalDeathCauseOrCondition)
     * ^short = "Coded initiating cause or condition of fetal death"
