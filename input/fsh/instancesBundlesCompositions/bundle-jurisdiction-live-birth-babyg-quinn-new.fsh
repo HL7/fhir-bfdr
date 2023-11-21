@@ -53,10 +53,12 @@ Usage: #example
 * insert addentry(Observation, observation-infant-breastfed-at-discharge-babyg-quinn)
 * insert addentry(Observation, observation-mother-married-during-pregnancy-jada-ann-quinn)
 * insert addentry(Observation, observation-parent-education-level-jada-ann-quinn-w-edit)
+* insert addentry(Observation, observation-input-race-and-ethnicity-jada-ann-quinn)
 * insert addentry(Observation, observation-ssn-requested-for-child-babyg-quinn)
 * insert addentry(RelatedPerson, relatedperson-father-natural-james-brandon-quinn-w-edit)
 * insert addentry(Observation, observation-paternity-acknowledgement-signed-james-quinn-w-edit)
 * insert addentry(Observation, observation-parent-education-level-james-quinn-w-edit)
+* insert addentry(Observation, observation-input-race-and-ethnicity-james-quinn-w-edit)
 * insert addentry(Practitioner, practitioner-vital-records-avery-jones)
 * insert addentry(Practitioner, practitioner-vital-records-janet-seito ) // why?
 * insert addentry(Location, location-east-hospital)
