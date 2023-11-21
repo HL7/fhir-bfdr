@@ -106,7 +106,7 @@ Description: "Example of input-race-and-ethnicity-vr profile (James Quinn)"
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather
 * status = #final
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
-* focus = Reference(relatedperson-father-natural-james-brandon-quinn-w-edit)
+* focus = Reference(relatedperson-father-natural-james-brandon-quinn)
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false
 * component[BlackOrAfricanAmerican].valueBoolean = false
