@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
 * insert ConceptMapIntro(NewbornCongenitalAnomalies, NewbornCongenitalAnomaliesVS)
-* insert AddGroup("IJE", $sct)
+* insert AddGroup($IJE, $sct)
 // snomed to IJE fields (Y, N ,U) 
 * insert MapConcept( #ANEN,  "Congenital Anomalies of the Newborn--Anencephaly", #89369001, "Anencephaly")
 * insert MapConcept( #MNSB,  "Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida", #67531005, "Meningomyelocele/Spina bifida")
