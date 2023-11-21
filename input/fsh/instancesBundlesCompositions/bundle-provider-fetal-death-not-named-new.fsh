@@ -44,6 +44,7 @@ Usage: #example
 //* insert addentry(Observation, observation-plurality-carmen-teresa-lee)
 * insert addentry(Observation, observation-number-deaths-this-delivery-carmen-teresa-lee)
 * insert addentry(Observation, observation-parent-education-level-carmen-teresa-lee)
+* insert addentry(Observation, observation-input-race-and-ethnicity-carmen-teresa-lee)
 * insert addentry(QuestionnaireResponse, QuestionnaireResponse-patients-fetal-death-carmen-lee)
 * insert addentry(Practitioner, practitioner-vital-records-janet-seito)
 * insert addentry(Location, location-south-hospital)

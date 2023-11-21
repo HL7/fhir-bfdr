@@ -73,3 +73,6 @@ Usage: #example
 * section[motherInformation]
   * insert addReferenceComposition(focus, Patient, patient-mother-carmen-teresa-lee)
   * insert addNamedEntryComposition(mothersEducation, Observation, observation-parent-education-level-carmen-teresa-lee-w-edit)
+  * insert addNamedEntryComposition(mothersRaceEthnicity, Observation, observation-input-race-and-ethnicity-carmen-teresa-lee)
+ 
+  

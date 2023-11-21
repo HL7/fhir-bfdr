@@ -65,6 +65,7 @@ Usage: #example
   // * code = $loinc#92014-0 "Mother's administrative information"
   * insert addReferenceComposition(focus, Patient, patient-mother-carmen-teresa-lee)
   * insert addNamedEntryComposition(mothersEducation, Observation, observation-parent-education-level-carmen-teresa-lee)
+  * insert addNamedEntryComposition(mothersRaceEthnicity, Observation, observation-input-race-and-ethnicity-carmen-teresa-lee)
 * section[patientsQuestionnaireResponse]
   * title = "Patient's QuestionnaireResponse Section"
   // * code = $loinc#74465-6 "Questionnaire response Document"

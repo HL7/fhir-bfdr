@@ -76,6 +76,7 @@ Description: "This Composition profile contains constraints to address the use c
 * insert BFDRCompositionSectionEntrySlicing(motherInformation, 0, 92014-0, Provider Fetal Death)
 * insert FocusRule(motherInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
 * insert BFDRCompositionSectionSlice(motherInformation, mothersEducation, 0, 1, Mother's Education, Mother's Education, ObservationEducationLevelVitalRecords)   
+* insert BFDRCompositionSectionSlice(motherInformation, mothersRaceEthnicity, 0, 1, Mother's Input Race and Ethnicity, Mother's Input Race and Ethnicity, ObservationInputRaceAndEthnicityVitalRecords)  
 * section contains fatherInformation 0..1
 * section[fatherInformation] ^short = "Father Administrative Section on the Fetal Death Report"
   * ^definition = "This section contains items from the Father administrative section on the Fetal Death Report."
