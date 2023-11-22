@@ -49,7 +49,7 @@ This profile is mapped to:
   <td>MEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -67,7 +67,7 @@ This profile is mapped to:
   <td>FEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>
@@ -112,7 +112,7 @@ This profile is mapped to:
   <td>MEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -130,7 +130,7 @@ This profile is mapped to:
   <td>FEDUC_BYPASS</td>
   <td>value.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td>[EditBypass01234VS], <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-valueset-edit-bypass-01234-vr.html'>ValueSetEditBypass01234VitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>

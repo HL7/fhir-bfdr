@@ -6,8 +6,8 @@ require 'open-uri'
 require "pry"
 require "roo"
 
-download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.xlsx?raw=true')
-IO.copy_stream(download2, 'input/mapping/BFDR_Forms_Mapping.xlsx')
+# download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.xlsx?raw=true')
+# IO.copy_stream(download2, 'input/mapping/BFDR_Forms_Mapping.xlsx')
 
 def get_file_type(file)
   File.extname(file).gsub(".", "")

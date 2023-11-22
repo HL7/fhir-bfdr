@@ -1,9 +1,7 @@
 ValueSet: MethodOfDispositionVS
 Id: ValueSet-method-of-disposition
 Title: "Method of Disposition VS"
-Description: "The set of codes used to indicate the method used to dispose of the decedent fetus remains.
-
-Mapping to IJE codes [here](ConceptMap-MethodOfDispositionCM.html)."
+Description: "The set of codes used to indicate the method used to dispose of the decedent fetus remains."
 * insert boilerplate
 * insert SNOMEDCopyright
 * $sct#449971000124106 "Burial"
