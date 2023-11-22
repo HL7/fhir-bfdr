@@ -7,7 +7,7 @@
 [USCorePractitionerRole]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitionerrole.html
 [QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
 [PartialDatesAndTimes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times
-[Note on Decedent Name]: usage.html#decedent-name
+[Note on Child and Decedent Fetus name]: usage.html#child-and-decedent-fetus-name
 [Note on Decedent Gender]: usage.html#decedent-gender
 [CityCodes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#city-codes
 [CountyCodes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#county-codes

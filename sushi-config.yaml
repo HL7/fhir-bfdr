@@ -376,6 +376,7 @@ groups:
       - ObservationCodedOtherFetalDeathCauseOrCondition
       - ObservationFetalDeathTimePoint
       - ObservationHistologicalPlacentalExamPerformed
+      - PatientDecedentFetus
       
   BFDRProfilesParentInformation:
     name: Parent Information Profiles
@@ -581,11 +582,13 @@ groups:
   BFDRExamples:
     name: Examples
     resources:
+      - bundle-coded-race-and-ethnicity-baby-g-quinn
       - bundle-jurisdiction-fetal-death-not-named
       - bundle-jurisdiction-live-birth-babyg-quinn
       - bundle-provider-fetal-death-not-named
       - bundle-provider-live-birth-babyg-quinn
       - composition-coded-cause-of-fetal-death-not-named
+      - composition-coded-race-and-ethnicity-baby-g-quinn
       - composition-jurisdiction-fetal-death-not-named
       - composition-jurisdiction-live-birth-babyg-quinn
       - composition-provider-fetal-death-not-named
@@ -632,6 +635,8 @@ groups:
       - observation-cig-smoking-pregnancy-4-jada-ann-quinn
       - observation-coded-initiating-fetal-death-cause-or-condition
       - observation-coded-other-fetal-death-cause-or-condition-not-named
+      - observation-coded-race-and-ethnicity-father
+      - observation-coded-race-and-ethnicity-mother
       - observation-date-of-first-prenatal-care-visit-carmen-teresa-lee
       - observation-date-of-first-prenatal-care-visit-jada-ann-quinn
       - observation-date-of-last-live-birth-carmen-teresa-lee
@@ -640,6 +645,12 @@ groups:
       - observation-fetal-death-time-point-not-named
       - observation-fetal-presentation-babyg-quinn
       - observation-fetal-presentation-not-named
+      - observation-input-race-and-ethnicity-carmen-teresa-lee
+      - observation-input-race-and-ethnicity-father
+      - observation-input-race-and-ethnicity-jada-ann-quinn
+      - observation-input-race-and-ethnicity-james-quinn
+      - observation-input-race-and-ethnicity-james-quinn-w-edit
+      - observation-input-race-and-ethnicity-mother
       - observation-last-menstrual-period-carmen-teresa-lee
       - observation-last-menstrual-period-jada-ann-quinn
       - observation-mother-delivery-weight-jada-ann-quinn
@@ -648,6 +659,8 @@ groups:
       - observation-mother-height-carmen-teresa-lee-w-edit
       - observation-mother-height-jada-ann-quinn
       - observation-mother-height-jada-ann-quinn-w-edit
+      - observation-none-congenital-anomolies-babyg-quinn
+      - observation-paternity-acknowledgement-signed-james-quinn-w-edit
       - procedure-final-route-method-delivery-babyg-quinn
       - procedure-final-route-method-delivery-not-named
       - observation-gestational-age-at-delivery-babyg-quinn
