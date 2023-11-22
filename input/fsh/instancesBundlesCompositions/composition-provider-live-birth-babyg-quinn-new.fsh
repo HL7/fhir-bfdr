@@ -91,7 +91,7 @@ Usage: #example
   * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-james-brandon-quinn)
   * insert addNamedEntryComposition(paternityAcknowledgementSigned, Observation, observation-paternity-acknowledgement-signed-james-quinn)
   * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn) 
-  * insert addNamedEntryComposition(fathersRaceEthnicity, Observation, observation-input-race-and-ethnicity-james-quinn)
+  * insert addNamedEntryComposition(fathersRaceEthnicity, Observation, observation-input-race-and-ethnicity-james-quinn)  
 * section[patientsQuestionnaireResponse]
   // * title = "Mother's QuestionnaireResponse Section"
   // * code = $loinc#74465-6 "Questionnaire response Document"
