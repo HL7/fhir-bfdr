@@ -1,6 +1,6 @@
 # NOTE: Before running this script, you should download a local copy of the latest spreadsheets from https://github.com/nightingaleproject/vital_records_sandbox_ig
 
-# ruby tools/makeIJEMappingFromExcelHTML.rb input/mapping/BFDR_Profile_Intros.xlsx input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
+# ruby tools/makeIJEMappingFromExcelHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
 
 #require 'open-uri'
 #download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx?raw=true')
@@ -11,6 +11,7 @@
 require "json"
 require "pry"
 require "roo"
+require "csv"
 
 def get_file_type(file)
   File.extname(file).gsub(".", "")
@@ -53,12 +54,14 @@ INTRO_IJE_MAPPING_COL = 6
 #INTRO_PROFILE_LOCATION_COL = 7 #NOT USED
 
 # ARGV[0] input/mapping/BFDR_Profile_Intros.xlsx
-vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
-vProfileIntrosSpreadsheet.default_sheet = "BFDR"
+vProfileIntrosSpreadsheet = ARGV[0]
+#vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
+#vProfileIntrosSpreadsheet.default_sheet = "BFDR"
 
 # ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
-vSpreadsheet = open_spreadsheet(ARGV[1])
-vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
+vSpreadsheet = ARGV[1]
+#vSpreadsheet = open_spreadsheet(ARGV[1])
+#vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
 
 def printHeader(hHeading, pOutputFile, pIG, tableStyle)
     pOutputFile.puts hHeading
@@ -86,11 +89,11 @@ end
 def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSpreadsheet, pSpreadsheet)
     profiles = []
     profileName = ""
-    pIntroSpreadsheet.default_sheet = pRowFilterIG
-    pIntroSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+    #pIntroSpreadsheet.default_sheet = pRowFilterIG
+    CSV.foreach(pIntroSpreadsheet) do |row|
         #next if row[INTRO_PROFILE_LOCATION_COL].value.to_s != pRowFilterIG
-        profileName = row[INTRO_PROFILE_NAME_COL].value.to_s if row[INTRO_PROFILE_NAME_COL] 
-        profileHeading = row[INTRO_HEADING_COL].value.to_s if row[INTRO_HEADING_COL]
+        profileName = row[INTRO_PROFILE_NAME_COL] if row[INTRO_PROFILE_NAME_COL] 
+        profileHeading = row[INTRO_HEADING_COL] if row[INTRO_HEADING_COL]
         profiles.append([profileName, profileHeading])
     end
     pOutputFile.puts"<style>
@@ -115,8 +118,8 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
     notImplementedHeader = false
     profiles.each do |(x, y)| 
         #pOutputFile.puts "<tbody>"
-        pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-            next if row[IJE_USECASE_COL].value.to_s != pRowFilter || row[IJE_PROFILE_COL].value.to_s != x #|| row[IJE_PROFILE_COL].value.to_s == "not implemented"
+        CSV.foreach(pSpreadsheet) do |row|
+            next if row[IJE_USECASE_COL] != pRowFilter || row[IJE_PROFILE_COL] != x #|| row[IJE_PROFILE_COL].value.to_s == "not implemented"
             if codedHeader == false && y.to_s == "Coding"
                 pOutputFile.puts "</tbody>"
                 pOutputFile.puts "</table>"
@@ -129,15 +132,15 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
             end
             
             field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = fhirunique = ""
-            field = row[IJE_FIELD_COL].value.to_s if row[IJE_FIELD_COL]
-            ijename = row[IJE_NAME_COL].value.to_s if row[IJE_NAME_COL]
-            fhirig = row[IJE_FHIR_IG_COL].value.to_s if row[IJE_FHIR_IG_COL]
-            profile = "[" + row[IJE_PROFILE_COL].value.to_s + "]" if row[IJE_PROFILE_COL] 
-            fhirfield = row[IJE_FHIR_FIELD_COL].value.to_s if row[IJE_FHIR_FIELD_COL]
-            fhirtype = row[IJE_FHIR_TYPE_COL].value.to_s if row[IJE_FHIR_TYPE_COL]
-            fhirencoding = row[IJE_FHIR_COMMENTS_COL].value.to_s if row[IJE_FHIR_COMMENTS_COL]   
-            fhirunique = row[IJE_UNIQUENESS_COL].value.to_s if row[IJE_UNIQUENESS_COL] 
-            description = row[IJE_DESC_COL].value.to_s if row[IJE_DESC_COL]
+            field = row[IJE_FIELD_COL] if row[IJE_FIELD_COL]
+            ijename = row[IJE_NAME_COL] if row[IJE_NAME_COL]
+            fhirig = row[IJE_FHIR_IG_COL] if row[IJE_FHIR_IG_COL]
+            profile = "[" + row[IJE_PROFILE_COL] + "]" if row[IJE_PROFILE_COL] 
+            fhirfield = row[IJE_FHIR_FIELD_COL] if row[IJE_FHIR_FIELD_COL]
+            fhirtype = row[IJE_FHIR_TYPE_COL] if row[IJE_FHIR_TYPE_COL]
+            fhirencoding = row[IJE_FHIR_COMMENTS_COL] if row[IJE_FHIR_COMMENTS_COL]   
+            fhirunique = row[IJE_UNIQUENESS_COL] if row[IJE_UNIQUENESS_COL] 
+            description = row[IJE_DESC_COL] if row[IJE_DESC_COL]
             if pRowFilterIG == "BFDR"
                 if fhirunique == "J"
                     pOutputFile.puts "<tr><td style='text-align: center;'>" + field.chomp + "</td><td>" + description.chomp + "</td><td style='text-align: center; color: darkviolet'>" + ijename + "</td><td>" + profile + "</td><td>" + fhirfield + "</td><td style='text-align: center;'>" + fhirtype + "</td><td>" + fhirencoding + "</td></tr>"
