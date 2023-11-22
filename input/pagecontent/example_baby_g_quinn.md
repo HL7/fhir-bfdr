@@ -24,9 +24,9 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Mother's Race and Ethnicity   | [`Mother's Race and Ethnicity`](Observation-observation-input-race-and-ethnicity-james-quinn.html) |           |
 | Father's Education | [`Father's Education`](Observation-observation-parent-education-level-james-quinn.html) |           |
 | Father's Race and Ethnicity   | [`Father's Race and Ethnicity`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) |           |
-| Place of Birth   | [`Birth Encounter`]([Birth Encounter](Encounter-encounter-birth-babyg-quinn.html)) |           |
-| Attendant   | [`Birth Encounter`]([Birth Encounter](Encounter-encounter-birth-babyg-quinn.html)) |           |
-| Mother Transferred   | [`Maternity Encounter`](Encounter-encounter-maternity-jada-ann-quinn.html)) |           |
+| Place of Birth   | [`Birth Encounter`](Encounter-encounter-birth-babyg-quinn.html) |           |
+| Attendant   | [`Birth Encounter`](Encounter-encounter-birth-babyg-quinn.html) |           |
+| Mother Transferred   | [`Maternity Encounter`](Encounter-encounter-maternity-jada-ann-quinn.html) |           |
 | First Prenatal Care   | [`First Prenatal Care`](Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn.html) |           |
 | Number of Prenatal Care Visits   | [`Number of Prenatal Care Visits`](Observation-observation-number-prenatal-visits-jada-ann-quinn.html) |           |
 | Mother's Height     | [`Mother's height`](Observation-observation-mother-height-jada-ann-quinn.html) |  |
