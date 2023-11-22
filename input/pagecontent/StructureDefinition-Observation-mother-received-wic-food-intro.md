@@ -38,7 +38,7 @@ This profile is mapped to:
   <td>WIC</td>
   <td>value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 
 </tbody>
@@ -74,7 +74,7 @@ This profile is mapped to:
   <td>WIC</td>
   <td>value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 
 </tbody>
