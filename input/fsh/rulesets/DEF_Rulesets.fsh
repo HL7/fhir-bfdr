@@ -135,16 +135,4 @@ RuleSet: CategorySlicingRules
 * category ^slicing.description = "Slicing requires the given value but allows additional categories"
 * category contains requiredCategory 1..1
 
-RuleSet: childName
-* name MS
-  * family 1.. MS
-    * extension[dataAbsentReason] ^short = "When \"name not chosen\" use code \"temp-unknown\""
-  * given MS
-    * extension[dataAbsentReason] ^short = "When \"name not chosen\" use code \"temp-unknown\""
-
-RuleSet: birthDateAndTime 
-* birthDate 1..
-  * extension[birthTime] MS 
-  * extension[partialDate] MS 
-  // * extension[datePartAbsentReason] MS 
 
