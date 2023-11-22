@@ -45,7 +45,7 @@ This profile is mapped to:
   <td>TRAN</td>
   <td>hospitalization.admitSource = "hosp-trans"</td>
   <td>codeable</td>
-  <td><a href='http://hl7.org/fhir/ValueSet/encounter-admit-source'>HL7EncounterAdmitSourceVS</a>, <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a>. <br />Need to discuss - clarity needed for values other than 'hosp-trans'</td>
+  <td><a href='http://hl7.org/fhir/ValueSet/encounter-admit-source'>HL7EncounterAdmitSourceVS</a>, <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -90,7 +90,7 @@ This profile is mapped to:
   <td>CNTYO</td>
   <td>location.location.address.district.extension[countyCode]</td>
   <td>integer</td>
-  <td>See <a href='usage.html#county-codes'>CountyCodes</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#county-codes'>CountyCodes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -225,7 +225,7 @@ This profile is mapped to:
   <td>STATE_D</td>
   <td>location.location.address.state (expanded from 2 letter code)</td>
   <td>string</td>
-  <td>See <a href='usage.html#state-literals'>StateLiterals</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#state-literals'>StateLiterals</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -234,7 +234,7 @@ This profile is mapped to:
   <td>COUNTRY_D</td>
   <td>location.location.address.country (expanded from 2 letter code)</td>
   <td>string</td>
-  <td>See <a href='usage.html#country-literals'>CountryLiterals</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#country-literals'>CountryLiterals</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -252,7 +252,7 @@ This profile is mapped to:
   <td>CERTIFIED_YR</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -261,7 +261,7 @@ This profile is mapped to:
   <td>CERTIFIED_MO</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -270,7 +270,7 @@ This profile is mapped to:
   <td>CERTIFIED_DY</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 
 </tbody>

@@ -37,7 +37,7 @@ This profile is mapped to:
   <td>ILIV</td>
   <td>value</td>
   <td>boolean</td>
-  <td>Discussion needed: IJE values are Y, N, U. However, encoding with Boolean does not capture Unknown</td>
+  <td></td>
 </tr>
 
 </tbody>

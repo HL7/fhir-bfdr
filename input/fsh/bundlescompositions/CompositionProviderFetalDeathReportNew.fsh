@@ -1,5 +1,6 @@
 Profile: CompositionProviderFetalDeathReport
 Parent: Composition
+Id: Composition-provider-fetal-death-report
 Title: "Composition - Provider Fetal Death Report"
 Description: "This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office."
 * extension 
@@ -65,6 +66,7 @@ Description: "This Composition profile contains constraints to address the use c
 * insert BFDRCompositionSectionEntrySlicing(fetus, 0, 76400-1, Provider Fetal Death)
 * insert BFDRCompositionSectionSlice(fetus, deliveryWeight, 0, 1, Delivery weight, The weight of the infant/fetus at birth/delivery, ObservationBirthWeight)
 * insert BFDRCompositionSectionSlice(fetus, gestationalAgeAtDelivery, 0, 1, Obstetric estimate of gestation, The obstetric estimate of the infant's gestation in completed weeks based on the birth/delivery attendant's final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound\, but not the neonatal exam, ObservationGestationalAgeAtDelivery)
+* insert BFDRCompositionSectionSlice(fetus, methodOfDisposition, 0, 1, Method of decedent fetus disposition, Method of decedent fetus disposition, ObservationMethodOfDisposition) 
 * insert BFDRCompositionSectionSlice(fetus, causeOfFetalDeath, 0, 1, Initiating cause or condition of fetal death, Initiating cause or condition of fetal death, ConditionFetalDeathCauseOrCondition) 
 * insert BFDRCompositionSectionSlice(fetus, otherCauseOfDeath, 0, *, Another significant cause or condition for the death of the fetus., Another significant cause or condition for the death of the fetus., ConditionFetalDeathOtherCauseOrCondition) 
 * insert BFDRCompositionSectionSlice(fetus, estimatedTimeFetalDeath, 0, 1, The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery., The estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery., ObservationFetalDeathTimePoint) 
