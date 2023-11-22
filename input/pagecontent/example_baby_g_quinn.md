@@ -25,7 +25,7 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Attendant | [`Avery Jones`](Practitioner-practitioner-vital-records-avery-jones.html) see [Birth Encounter](Encounter-encounter-birth-babyg-quinn.html) |
 | Mother's Education | [`Post-Graduate`](Observation-observation-parent-education-level-jada-ann-quinn.html) |
 | Mother's Race and Ethnicity   | [`White/AmericanIndian, Non-Hispanic`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) |
-| Father's Education | [`Post Graduate`](Observation-observation-parent-education-level-james-quinn.html) |  Post-Graduate  |
+| Father's Education | [`Post Graduate`](Observation-observation-parent-education-level-james-quinn.html) |  
 | Father's Race and Ethnicity   | [`White / Non-Hispanic`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) | 
 | Place of Birth   |  Birth at [`South Hospital`](Location-location-south-hospital.html) , Discharge to [`East Hospital`](Location-location-east-hospital.html)        |
 | Certifier   | [`Janet Seito`](Practitioner-practitioner-vital-records-janet-seito.html) |   
