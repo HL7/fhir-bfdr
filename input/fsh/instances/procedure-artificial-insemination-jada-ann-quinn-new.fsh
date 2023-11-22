@@ -1,7 +1,7 @@
 Instance: procedure-artificial-insemination-jada-ann-quinn
 InstanceOf: ProcedureArtificialInsemination
-Title: "Prodecure - Artificial Insemniation - Jada Ann Quinn"
-Description: "Prodecure - Artificial Insemniation: Jada Ann Quinn example"
+Title: "Procedure - Artificial Insemniation - Jada Ann Quinn"
+Description: "Procedure - Artificial Insemniation: Jada Ann Quinn example"
 Usage: #example
 * meta
   * versionId = "1"
