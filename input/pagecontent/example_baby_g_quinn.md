@@ -22,7 +22,7 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | SSN REquested |   [`Yes`](Observation-observation-ssn-requested-for-child-babyg-quinn.html) |
 | Paternity Acknowledged |  [`Yes`](Observation-observation-paternity-acknowledgement-signed-james-quinn.html) |
 | Father    | [`James Brandon Quinn`](Patient-patient-father-james-brandon-quinn.html) |
-| Attendant | [`Avery Jones`](Practitioner-vital-records-avery-jones.html) see [Birth Encounter](Encounter-encounter-birth-babyg-quinn.html) |
+| Attendant | [`Avery Jones`](Practitioner-practitioner-vital-records-avery-jones.html) see [Birth Encounter](Encounter-encounter-birth-babyg-quinn.html) |
 | Mother's Education | [`Post-Graduate`](Observation-observation-parent-education-level-jada-ann-quinn.html) |
 | Mother's Race and Ethnicity   | [`White/AmericanIndian, Non-Hispanic`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) |
 | Father's Education | [`Post Graduate`](Observation-observation-parent-education-level-james-quinn.html) |  Post-Graduate  |
@@ -59,7 +59,7 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Infant Breastfed | [`Yes`](Observation-observation-infant-breastfed-at-discharge-babyg-quinn.html)  | 
 | Infant Transferred | [`Yes`](Encounter-encounter-maternity-jada-ann-quinn.html)  |  
 |  Payer   |      [`PRIVATE HEALTH INSURANCE`](Coverage-overage-principal-payer-for-delivery-jada-ann-quinn.html) | 
-{:grid}
+{: .grid }
 
 
 
