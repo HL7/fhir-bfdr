@@ -36,7 +36,7 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Mother's Weight at Delivery     | [`175 lb`](Observation-observation-mother-delivery-weight-jada-ann-quinn.html) | 
 | Mother WIC Food     | [`Yes`](Observation-observation-mother-received-wic-food-jada-ann-quinn.html) | 
 | Cigarette Smoking     | [`Prepregnancy = 20`](Observation-observation-cig-smoking-pregnancy-1-jada-ann-quinn.html), [`First Trimester = 3`](Observation-observation-cig-smoking-pregnancy-2-jada-ann-quinn.html), [`Second Trimester = 1`](Observation-observation-cig-smoking-pregnancy-3-jada-ann-quinn.html), [`Third Trimester = 0`](Observation-observation-cig-smoking-pregnancy-4-jada-ann-quinn.html) | 
-| Number of Previous Live Births     | [`Living = 1`](Observation-observation-infant-living-jada-ann-quinn.html), [`Dead = 0`](Observation-observation-number-births-now-dead-jada-ann-quinn.html) | 
+| Number of Previous Live Births     | [`Living = 1`](Observation-observation-number-births-now-living-jada-ann-quinn.html), [`Dead = 0`](Observation-observation-number-births-now-dead-jada-ann-quinn.html) | 
 | Other Pregnancy Outcomes     | [`Other Outcomes = 0 `](Observation-observation-number-other-pregnancy-outcomes-jada-ann-quinn.html) | 
 | Last Live Outcome    | [`2014-11-20`](Observation-observation-date-of-last-live-birth-jada-ann-quinn.html) | 
 | Last Other  Outcomes     | [`2015-05`](Observation-observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn.html) | 
@@ -53,12 +53,12 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Apgar Score | [`1min = 5`](Observation-observation-apgar-score-babyg-quinn-1-min.html), [`5min = 7`](Observation-observation-apgar-score-babyg-quinn-5-min.html) | 
 | Maternal Morbidity     | [`Ruptured Uterus`](Condition-condition-ruptured-uterus-jada-ann-quinn.html) | 
 | Plurality / Birth Order | [`Plurality = 1`](Patient-patient-child-babyg-quinn.html) , [`Order = 1`](Patient-patient-child-babyg-quinn.html) |
-| Abnormal Conditions of the Newborn | [`Antibiotics Received`](Procedure-antibiotics-suspected-neonatal-sepsis.html) | 
-| Congenital Anomolies of the Newborn | [`Cyanotic Congenital Heart Disease 1`](Condition-condition-congenital-anomaly-of-newborn-babyg-quinn-1.html), [`Chrom21`](Condition-condition-congenital-anomaly-of-newborn-babyg-quinn-2.html) | 
-| Infant Living | [`Yes`](Patient-patient-child-babyg-quinn.html) |  
+| Abnormal Conditions of the Newborn | [`Antibiotics Received`](Procedure-procedure-antibiotic-sepsis-babyg-quinn.html) | 
+| Congenital Anomolies of the Newborn | [`Cyanotic Congenital Heart Disease 1`](Condition-condition-congenital-anomaly-of-newborn-babyg-quinn.html), [`Chrom21`](Condition-condition-congenital-anomaly-of-newborn-babyg-quinn-2.html) | 
+| Infant Living | [`Yes`](Observation-observation-infant-living-babyg-quinn.html) |  
 | Infant Breastfed | [`Yes`](Observation-observation-infant-breastfed-at-discharge-babyg-quinn.html)  | 
 | Infant Transferred | [`Yes`](Encounter-encounter-maternity-jada-ann-quinn.html)  |  
-|  Payer   |      [`PRIVATE HEALTH INSURANCE`](Coverage-overage-principal-payer-for-delivery-jada-ann-quinn.html) | 
+|  Payer   |      [`PRIVATE HEALTH INSURANCE`](Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn.html) | 
 {: .grid }
 
 
