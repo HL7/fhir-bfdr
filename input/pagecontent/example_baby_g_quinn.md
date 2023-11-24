@@ -21,7 +21,7 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Mother Married | [`Married`](Observation-observation-mother-married-during-pregnancy-jada-ann-quinn.html)|
 | SSN REquested |   [`Yes`](Observation-observation-ssn-requested-for-child-babyg-quinn.html) |
 | Paternity Acknowledged |  [`Yes`](Observation-observation-paternity-acknowledgement-signed-james-quinn.html) |
-| Father    | [`James Brandon Quinn`](Patient-patient-father-james-brandon-quinn.html) |
+| Father    | [`James Brandon Quinn`](RelatedPerson-relatedperson-father-natural-james-brandon-quinn.html) |
 | Attendant | [`Avery Jones`](Practitioner-practitioner-vital-records-avery-jones.html) see [Birth Encounter](Encounter-encounter-birth-babyg-quinn.html) |
 | Mother's Education | [`Post-Graduate`](Observation-observation-parent-education-level-jada-ann-quinn.html) |
 | Mother's Race and Ethnicity   | [`White/AmericanIndian, Non-Hispanic`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) |
