@@ -1,13 +1,18 @@
-# NOTE: Before running this script, you should download a local copy of the latest spreadsheets from https://github.com/nightingaleproject/vital_records_sandbox_ig
-# Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
-# Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.csv?raw=true -Outfile "./input/mapping/BFDR_Profile_Intros.csv"
-# ruby tools/makeIJEMappingFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
+#NOTE: Before running this script, you should download a local copy of the latest spreadsheets from https://github.com/nightingaleproject/vital_records_sandbox_ig
 
-# require 'open-uri'
-# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx?raw=true')
-# IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx')
-# download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.xlsx?raw=true')
-# IO.copy_stream(download2, 'input/mapping/BFDR_Profile_Intros.xlsx')
+#method 1:
+#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
+#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.csv?raw=true -Outfile "./input/mapping/BFDR_Profile_Intros.csv"
+
+#method 2:
+#require 'open-uri'
+#download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx?raw=true')
+#IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
+#download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.xlsx?raw=true')
+#IO.copy_stream(download2, 'input/mapping/BFDR_Profile_Intros.csv')
+
+#run:
+#ruby tools/makeIJEMappingFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
 
 require "json"
 require "pry"
