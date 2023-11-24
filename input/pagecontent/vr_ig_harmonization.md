@@ -28,17 +28,17 @@ To achieve the goals for harmonization listed above involves modification to the
 
 Figure 1 shows the current dependencies among published vital reocrds FHIR IGs.  Figure 2 shows the dependencies after harmonization.  Harmonization will result in significant simplification of the MDI IG, and consolidation of all general Vital Records specific content within the VRCL.
 
-{% include img.html img="HarmonizationPlan-Current.drawio.svg" caption="Figure 1: Current Vital Records FHIR IG Dependencies" %}
+{% include img-med.html img="HarmonizationPlan-Current.drawio.svg" caption="Figure 1: Current Vital Records FHIR IG Dependencies" %}
 
-{% include img.html img="HarmonizationPlan-Harmonized.drawio.svg" caption="Figure 2: Harmonized (Future) Vital Records FHIR IG Dependencies" %}
+{% include img-med.html img="HarmonizationPlan-Harmonized.drawio.svg" caption="Figure 2: Harmonized (Future) Vital Records FHIR IG Dependencies" %}
 
 ### Changing Dependencies - Birth Defects IG
 Although it has not yet been balloted, the design of the VRCL STU1 was driven by consideration of a future Birth Defects FHIR IG. 
 The dependencies of this not-yet-balloted IG would change as a result of the harmonization effort, since much birth-related content has been consolidated within The BFDR STU2 IG.   This change should not impact the ability of the Birth Defects IG to leverage vital records content, but would change the precise dependencies.  FIgure 3 shows the current dependencies of a potential Birth Defects FHIR IG.  Figure 4 shows the dependencies following the proposed harmonization.
 
-{% include img.html img="HarmonizationPlan-Current-BirthDefects.drawio.svg" caption="Figure 3: Current Birth Defects FHIR IG Dependencies" %}
+{% include img-med.html img="HarmonizationPlan-Current-BirthDefects.drawio.svg" caption="Figure 3: Current Birth Defects FHIR IG Dependencies" %}
 
-{% include img.html img="HarmonizationPlan-Harmonized-BirthDefects.drawio.svg" caption="Figure 4: Harmonized (Future) Birth Defects FHIR IG Dependencies" %}
+{% include img-med.html img="HarmonizationPlan-Harmonized-BirthDefects.drawio.svg" caption="Figure 4: Harmonized (Future) Birth Defects FHIR IG Dependencies" %}
 
 ### Approach to Harmonization
 To implement the goals of harmonization described above, we are proposing the following content changes.  The VRCL and BFDR changes are implemented in the January 2024 ballot cycle with STU2 ballots:
