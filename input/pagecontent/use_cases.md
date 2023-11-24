@@ -1,31 +1,33 @@
-This IG supports five use cases for communicating information from the electronic health record (EHR) system to the jurisdictional vital records offices and to the national statistical agency, the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS):
+This IG supports five use cases for communicating information from the electronic health record (EHR) system to the jurisdictional vital records offices (VRO) and to the national statistical agency, 
+the Centers for Disease Control and Prevention/ National Center for Health Statistics (NCHS):
 
-1. Provider Live Birth
-2. Jurisdiction Live Birth
-3. Provider Fetal Death
-4. Jurisdiction Fetal Death
+1. Live Birth  - Provider to Jurisdictional VRO
+2. Live Birth  - Jurisdictional VRO to NCHS
+3. Fetal Death - Provider to Jurisdictional VRO
+4. Fetal Death Jurisdictional VRO to NCHS
 
-This IG also supports two uses cases for returning information from the national statistical agency to the jurisdictional vital records office:
+This IG also supports two uses cases for returning information from the NCHS to the VRO:
 
-1. Coded Race and Ethnicity
-2. Coded Cause of Fetal Death
+1. Coded Race and Ethnicity - NCHS to VRO
+2. Coded Cause of Fetal Death - NCHS to VROVRO
 
-Information flows are supported by the FHIR Composition resources indicated in the following table:
+Information flows are supported by the FHIR Composition resources embedded in a FHIR Bundle (Document) indicated in the following table:
   
-| Use Case                      | FHIR Composition                                                                                                                | Data Source                         | Data Receiver                       |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------- |
-| Provider Live Birth           | [Composition - Provider Live Birth Report][CompositionProviderLiveBirthReport]                     | EHR                                 | Jurisdictional Vital Records Office |
-| Provider Fetal Death          | [Composition - Provider Fetal Death Report][CompositionProviderFetalDeathReport]             | EHR                                 | Jurisdictional Vital Records Office |
-| Jurisdiction Live Birth       | [Composition - Jurisdiction Live Birth Report][CompositionJurisdictionLiveBirthReport]      | Jurisdictional Vital Records Office | National Statistical Agency         | 
-| Jurisdiction Fetal Death      | [Composition - Jurisdiction Fetal Death Report][CompositionJurisdictionFetalDeathReport]                 | Jurisdictional Vital Records Office | National Statistical Agency         | 
-| Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity](StructureDefinition-Composition-coded-race-and-ethnicity.html)                         | National Statistical Agency         | Jurisdictional Vital Records Office |
-| Coded Cause of Fetal Death    | [Composition - Coded Cause of Fetal Death][CompositionCodedCauseOfFetalDeath]                     | National Statistical Agency         | Jurisdictional Vital Records Office |
+| Use Case                      | FHIR Composition                                                                | Data Source  | Data Receiver   |
+| ----------------------------- | ------------------------------------------------------------------------------- | --- | --- |
+| Provider Live Birth           | [Composition - Provider Live Birth Report][CompositionProviderLiveBirthReport]           | EHR | VRO  |
+| Provider Fetal Death          | [Composition - Provider Fetal Death Report][CompositionProviderFetalDeathReport]         | EHR | VRO |
+| Jurisdiction Live Birth       | [Composition - Jurisdiction Live Birth Report][CompositionJurisdictionLiveBirthReport]   | VRO | NCHS | 
+| Jurisdiction Fetal Death      | [Composition - Jurisdiction Fetal Death Report][CompositionJurisdictionFetalDeathReport] | VRO | NCH  | 
+| Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity](CompositionCodedRaceAndEthnicity.html)          | NCHS | VRO |
+| Coded Cause of Fetal Death    | [Composition - Coded Cause of Fetal Death][CompositionCodedCauseOfFetalDeath]            | NCHS | VRO |
+{: .grid }
 
 ### Sources of Data
 
 Locating and retrieving data required for the provider and jurisdiction forms supported by this IG may require search/query operations on a variety of EHR and EMR systems. These systems may use identifying codes for data elements that differ from the codes used in this IG and the Vital Records Common Profile Library IG. Future work for both this IG and the Vital Records Common Profile Library IG may include guidance on additional codes that may be in use.
 
-Data required for birth and fetal death reporting from health care providers to jurisdictional vital records offices and national health statistics agencies are drawn from multiple sources.
+Data required for birth and fetal death reporting from health care providers to VROs and NCHS are drawn from multiple sources.
 
  * **Legal and demographic** data is gathered directly from the mother using the [Mother](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf) and [Patient](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf) Worksheets. These worksheets should be considered the source of truth for the data they contain. 
  * **Medical and health** data is gathered using the [Facility Worksheet for Live Birth](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)) and [Facility Worksheet for Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf) and can come from: 
@@ -38,9 +40,9 @@ Preferred and acceptable sources are given before each section of the Facility W
 
 For further information on sources of information, please see: [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/GuidetoCompleteFacilityWks.pdf).
 
-### Provider Live Birth
+### Live Birth - Provider to VRO
 
-This use case represents live birth information recorded and communicated to the jurisdictional Vital Records office.
+This use case represents live birth information recorded and communicated by the Provider to the VRO.
 
 For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility.
 
@@ -54,7 +56,7 @@ The jurisdiction may have additional data requirements and edit specifications t
 
 The Provider Live Birth use case is represented by the [Composition - Provider Live Birth Report][CompositionProviderLiveBirthReport].
 
-### Jurisdiction Live Birth
+### Live Birth - VRO to NCHS
 
 This use case represents information about a live birth and the issuance of a birth certificate to be recorded and communicated to NCHS.
 
@@ -62,7 +64,7 @@ The data requirements for jurisdictional reporting of live births are based on t
 
 The Jurisdiction Live Birth use case is represented by the [Composition - Jurisdiction Live Birth Report][CompositionJurisdictionLiveBirthReport].
 
-### Provider Fetal Death
+### Fetal Death - Provider to VRO
 
 This use case represents fetal death information that is recorded and communicated to the jurisdictional Vital Records office.
 
@@ -77,7 +79,7 @@ The jurisdiction may have additional data requirements and edit specifications t
 
 The Provider Fetal Death use case is represented by the [Composition - Provider Fetal Death Report][CompositionProviderFetalDeathReport].
 
-### Jurisdiction Fetal Death
+### Fetal Death - VRO to NCHS
 
 This use case represents information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to NCHS.
 
@@ -85,23 +87,19 @@ The data requirements for jurisdictional reporting of fetal deaths are based on 
 
 The Jurisdiction Fetal Death use case is represented by the [Composition - Jurisdiction Fetal Death Report][CompositionJurisdictionFetalDeathReport].
 
-### Coded Race and Ethnicity
+### Coded Race and Ethnicity - NCHS to VRO
 
-This use case represents the communication of coded race and ethnicity information to the appropriate jurisdictional vital records office. It contains a coded form of the race and ethnicity data that has been submitted to the NCHS. Two sets of codes will be used to address two objectives. These objectives are to generate:
-* Codes for race or ethnicity data provided as text entries
-* A single race code in cases where multiple races have been reported
-
-In addition, when the coding process has led to duplication of data, the duplicates will be eliminated.
+This use case represents the communication of coded race and ethnicity information based on a submission to NCHS from NCHS to a VRO.  The formats and mechanisms for submitting race and ethnicity information to NCHS, and receiving coded responses are common to the Mortality, Natality and Fetal Death vital records use cases.  The profiles and valuesets involved are defined in the Vital Records Common Library.
 
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.
 
-The Coded Race and Ethnicity use case is represented by the [Composition - Coded Race and Ethnicity][CompositionCodedRaceAndEthnicity]. ***Note:*** requirements for this workflow are in development and the FHIR Composition profile may change.  
+The Coded Race and Ethnicity use case is represented by the [Composition - Coded Race and Ethnicity][CompositionCodedRaceAndEthnicity]. 
 
-### Coded Cause of Fetal Death
+### Coded Cause of Fetal Death - NCHS to VRO
 
-This use case represents the communication of coded cause of fetal death information to appropriate jurisdictional vital records offices. The provider providers the cause of death on a fetal death report as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this Composition.
+This use case represents the communication of coded cause of fetal death information based on a submission to NCHS from NCHS to a VRO. The provider's  cause of death on a fetal death report as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this Composition.
 
-The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death][CompositionCodedCauseOfFetalDeath]. ***Note:*** requirements for this workflow are in development and the FHIR Composition profile may change.
+The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death][CompositionCodedCauseOfFetalDeath]. 
 
 ### Mother - Baby Linkage
 
