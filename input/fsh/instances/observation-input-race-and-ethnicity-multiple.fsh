@@ -24,11 +24,9 @@ Description: "Example of input-race-and-ethnicity-vr profile (jada-ann-quinn)"
 * component[Samoan].valueBoolean = false
 * component[OtherPacificIslander].valueBoolean = false
 * component[OtherRace].valueBoolean = false
-* component[FirstOtherAsianLiteral].valueString = "Malaysian"
-* component[FirstAmericanIndianOrAlaskanNativeLiteral].valueString = "Arikara"
-* component[HispanicMexican].valueCodeableConcept = $v2-0136#Y "Yes"
-* component[HispanicCuban].valueCodeableConcept = $v2-0136#Y "Yes"
-* component[HispanicPuertoRican].valueCodeableConcept = $v2-0136#Y "Yes"
+* component[HispanicMexican].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicCuban].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicPuertoRican].valueCodeableConcept = $v2-0136#N "No"
 * component[HispanicOther].valueCodeableConcept = $v2-0136#N "No"
 
 
@@ -42,8 +40,7 @@ Description: "Example of input-race-and-ethnicity-vr profile (carmen-teresa-lee)
 * status = #final
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * component[White].valueBoolean = true
-* component[BlackOrAfricanAmerican].valueBoolean = false
-* component[BlackOrAfricanAmerican].valueBoolean = false
+* component[BlackOrAfricanAmerican].valueBoolean = true
 * component[AmericanIndianOrAlaskanNative].valueBoolean = true
 * component[AsianIndian].valueBoolean = false
 * component[Chinese].valueBoolean = false
@@ -51,7 +48,7 @@ Description: "Example of input-race-and-ethnicity-vr profile (carmen-teresa-lee)
 * component[Japanese].valueBoolean = false
 * component[Korean].valueBoolean = false
 * component[Vietnamese].valueBoolean = false
-* component[OtherAsian].valueBoolean = true
+* component[OtherAsian].valueBoolean = false
 * component[NativeHawaiian].valueBoolean = false
 * component[GuamanianOrChamorro].valueBoolean = false
 * component[Samoan].valueBoolean = false
@@ -77,14 +74,14 @@ Description: "Example of input-race-and-ethnicity-vr profile (James Quinn with e
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false
 * component[BlackOrAfricanAmerican].valueBoolean = false
-* component[AmericanIndianOrAlaskanNative].valueBoolean = true
+* component[AmericanIndianOrAlaskanNative].valueBoolean = false
 * component[AsianIndian].valueBoolean = false
 * component[Chinese].valueBoolean = false
 * component[Filipino].valueBoolean = false
 * component[Japanese].valueBoolean = false
 * component[Korean].valueBoolean = false
 * component[Vietnamese].valueBoolean = false
-* component[OtherAsian].valueBoolean = true
+* component[OtherAsian].valueBoolean = false
 * component[NativeHawaiian].valueBoolean = false
 * component[GuamanianOrChamorro].valueBoolean = false
 * component[Samoan].valueBoolean = false
@@ -92,9 +89,9 @@ Description: "Example of input-race-and-ethnicity-vr profile (James Quinn with e
 * component[OtherRace].valueBoolean = false
 * component[FirstOtherAsianLiteral].valueString = "Malaysian"
 * component[FirstAmericanIndianOrAlaskanNativeLiteral].valueString = "Arikara"
-* component[HispanicMexican].valueCodeableConcept = $v2-0136#Y "Yes"
-* component[HispanicCuban].valueCodeableConcept = $v2-0136#Y "Yes"
-* component[HispanicPuertoRican].valueCodeableConcept = $v2-0136#Y "Yes"
+* component[HispanicMexican].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicCuban].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicPuertoRican].valueCodeableConcept = $v2-0136#N "No"
 * component[HispanicOther].valueCodeableConcept = $v2-0136#N "No"
 
 Instance: observation-input-race-and-ethnicity-james-quinn
@@ -110,14 +107,14 @@ Description: "Example of input-race-and-ethnicity-vr profile (James Quinn)"
 * component[White].valueBoolean = true
 * component[BlackOrAfricanAmerican].valueBoolean = false
 * component[BlackOrAfricanAmerican].valueBoolean = false
-* component[AmericanIndianOrAlaskanNative].valueBoolean = true
+* component[AmericanIndianOrAlaskanNative].valueBoolean = false
 * component[AsianIndian].valueBoolean = false
 * component[Chinese].valueBoolean = false
 * component[Filipino].valueBoolean = false
 * component[Japanese].valueBoolean = false
 * component[Korean].valueBoolean = false
 * component[Vietnamese].valueBoolean = false
-* component[OtherAsian].valueBoolean = true
+* component[OtherAsian].valueBoolean = false
 * component[NativeHawaiian].valueBoolean = false
 * component[GuamanianOrChamorro].valueBoolean = false
 * component[Samoan].valueBoolean = false
@@ -125,7 +122,7 @@ Description: "Example of input-race-and-ethnicity-vr profile (James Quinn)"
 * component[OtherRace].valueBoolean = false
 * component[FirstOtherAsianLiteral].valueString = "Malaysian"
 * component[FirstAmericanIndianOrAlaskanNativeLiteral].valueString = "Arikara"
-* component[HispanicMexican].valueCodeableConcept = $v2-0136#Y "Yes"
-* component[HispanicCuban].valueCodeableConcept = $v2-0136#Y "Yes"
-* component[HispanicPuertoRican].valueCodeableConcept = $v2-0136#Y "Yes"
+* component[HispanicMexican].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicCuban].valueCodeableConcept = $v2-0136#N "No"
+* component[HispanicPuertoRican].valueCodeableConcept = $v2-0136#N "No"
 * component[HispanicOther].valueCodeableConcept = $v2-0136#N "No"

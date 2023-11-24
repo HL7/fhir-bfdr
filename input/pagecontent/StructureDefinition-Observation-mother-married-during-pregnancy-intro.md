@@ -37,7 +37,7 @@ This profile is mapped to:
   <td>MARN</td>
   <td>value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
 
 </tbody>

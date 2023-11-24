@@ -74,7 +74,7 @@ This profile is mapped to:
   <td>ITRAN</td>
   <td>hospitalization.dischargeDisposition="other-hcf"</td>
   <td>codeable</td>
-  <td><a href='http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition'>USCoreDischargeDispositionVS</a> <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a>. <br />Need to discuss - clarity needed for values other than 'other-hcf'</td>
+  <td><a href='http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition'>USCoreDischargeDispositionVS</a> <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -101,7 +101,7 @@ This profile is mapped to:
   <td>CERTIFIED_YR</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -110,7 +110,7 @@ This profile is mapped to:
   <td>CERTIFIED_MO</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -119,7 +119,7 @@ This profile is mapped to:
   <td>CERTIFIED_DY</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 
 </tbody>

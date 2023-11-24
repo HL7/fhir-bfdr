@@ -38,7 +38,7 @@ This profile is mapped to:
   <td>TLAB</td>
   <td>value</td>
   <td>boolean</td>
-  <td>Discussion needed: IJE values are Y, N, U, and X (not applicable). However, encoding with Boolean does not capture Unknown or Not Applicable</td>
+  <td></td>
 </tr>
 
 </tbody>
@@ -74,7 +74,7 @@ This profile is mapped to:
   <td>TLAB</td>
   <td>value</td>
   <td>boolean</td>
-  <td>Discussion needed: IJE values are Y, N, U, and X (not applicable). However, encoding with Boolean does not capture Unknown or Not Applicable</td>
+  <td></td>
 </tr>
 
 </tbody>

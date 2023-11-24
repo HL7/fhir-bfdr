@@ -8,6 +8,8 @@ Usage: #example
 * identifier.value = "2019NJ15075"
 * identifier.system = Canonical(CodeSystemIJEVitalRecords)
 * identifier.extension[certificateNumber].valueString = "15075"
+* identifier.extension[auxiliaryStateIdentifier1].valueString = "abc1234"
+* identifier.extension[auxiliaryStateIdentifier2].valueString = "def5678"
 * insert addentry(CompositionJurisdictionLiveBirthReport, composition-jurisdiction-live-birth-babyg-quinn)
 * insert addentry(Patient, patient-child-babyg-quinn)
 * insert addentry(Encounter, encounter-birth-babyg-quinn)

@@ -1,6 +1,6 @@
 Profile: ProcedureAntibioticSuspectedNeonatalSepsis
 Parent: USCoreProcedureProfile
-Id: Procedure-antibiotics-suspected-neonatal-sepsis
+Id: Procedure-antibiotic-suspected-neonatal-sepsis
 Title: "Procedure - Antibiotic for Suspected Neonatal Sepsis"
 Description: "This profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis."
 * category = $loinc#73812-0

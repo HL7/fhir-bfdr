@@ -59,7 +59,7 @@ This profile is mapped to:
   <td>DSTATE</td>
   <td>extension[patient-birthPlace].value[x].state</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a> </td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a> </td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -68,7 +68,7 @@ This profile is mapped to:
   <td>TD</td>
   <td>birthDate.extension[patient-birthTime]</td>
   <td></td>
-  <td>See <a href='usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -77,7 +77,7 @@ This profile is mapped to:
   <td>FSEX</td>
   <td>extension[birthsex].value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-birth-sex-fetus-vr.html'>ValueSetBirthSexFetusVitalRecords</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-birth-sex-fetus-vr.html'>ValueSetBirthSexFetusVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -126,6 +126,15 @@ This profile is mapped to:
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
+  <td>171</td>
+  <td>Mother's Reported Age</td>
+  <td>MAGER</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ]</td>
+  <td>quantity</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
   <td>172</td>
   <td>Father's Reported Age</td>
   <td>FAGER</td>
@@ -140,7 +149,7 @@ This profile is mapped to:
   <td>FETFNAME</td>
   <td>name.given, <br />name.use = official</td>
   <td>string</td>
-  <td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td>
+  <td>See <a href='usage.html#child-and-decedent-fetus-name'>Note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -149,7 +158,7 @@ This profile is mapped to:
   <td>FETMNAME</td>
   <td>name.given, <br />name.use = official</td>
   <td>string</td>
-  <td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td>
+  <td>See <a href='usage.html#child-and-decedent-fetus-name'>Note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -158,7 +167,7 @@ This profile is mapped to:
   <td>FETLNAME</td>
   <td>name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.)</td>
   <td>string </td>
-  <td>See <a href='usage.html#decedent-name'>Note on Decedent Name</a></td>
+  <td>See <a href='usage.html#child-and-decedent-fetus-name'>Note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>

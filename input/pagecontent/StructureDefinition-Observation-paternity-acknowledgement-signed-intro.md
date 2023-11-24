@@ -34,7 +34,7 @@ This profile is mapped to:
   <td>ACKN</td>
   <td>value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-yes-no-not-applicable-vr.html'>ValueSetYesNoNotApplicableVitalRecords</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-not-applicable-vr.html'>ValueSetYesNoNotApplicableVitalRecords</a></td>
 </tr>
 
 </tbody>
