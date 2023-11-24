@@ -33,3 +33,33 @@
 * [Pregnancy Report Edit Flags (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7566)
 * [Yes No Unknown (YNU)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.888)
 * [Yes No Not Applicable (NCHS)](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7486)
+
+Defined in the IG:
+output/ValueSet-ValueSet-apgar-timing.json
+output/ValueSet-ValueSet-birth-and-fetal-death-financial-class.json
+output/ValueSet-ValueSet-birth-attendant-titles.json
+output/ValueSet-ValueSet-birth-delivery-occurred.json
+output/ValueSet-ValueSet-delivery-routes.json
+output/ValueSet-ValueSet-fetal-death-cause-or-condition.json
+output/ValueSet-ValueSet-fetal-death-time-points.json
+output/ValueSet-ValueSet-fetal-presentations.json
+output/ValueSet-ValueSet-histological-placental-examination.json
+output/ValueSet-ValueSet-infections-during-pregnancy-live-birth.json
+output/ValueSet-ValueSet-informant-relationship-to-mother.json
+output/ValueSet-ValueSet-method-of-disposition.json
+output/ValueSet-ValueSet-newborn-congenital-anomalies.json
+output/ValueSet-ValueSet-obstetric-procedure-outcome.json
+output/ValueSet-ValueSet-obstetric-procedure.json
+output/ValueSet-cigarette-smoking-before-during-pregnancy.json
+
+Defined in the IG (edit flags):
+
+output/ValueSet-ValueSet-birth-weight-edit-flags.json
+output/ValueSet-ValueSet-estimate-of-gestation-edit-flags.json
+output/ValueSet-ValueSet-fathers-date-of-birth-edit-flags.json
+output/ValueSet-ValueSet-mothers-date-of-birth-edit-flags.json
+output/ValueSet-ValueSet-number-previous-cesareans-edit-flags.json
+output/ValueSet-ValueSet-plurality-edit-flags.json
+output/ValueSet-ValueSet-pregnancy-report-edit-flags.json
+
+Defined in Vital Records Common Library:

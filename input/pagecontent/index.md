@@ -12,9 +12,9 @@ Key updates and detailed changes between this and prior versions are available o
 
 ### Description
 
-Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional vital records offices and national health statistics agencies. Data associated with the mother of the baby or delivered fetus may be communicated independently from data associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, &quot;mother&quot; always refers to the woman who delivered the infant or fetus. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. Also, the national statistics agency referred to in this guide is the [National Center for Health Statistics - CDC](https://www.cdc.gov/nchs/index.htm) (NCHS).
+Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional vital records offices (VROs) and from VROs to the CDC National Center for Health Statistics ([NCHS](https://www.cdc.gov/nchs/index.htm)). Data associated with the mother of the baby or delivered fetus may be communicated independently from data associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, &quot;mother&quot; always refers to the woman who delivered the infant or fetus. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. 
 
-This implementation guide (IG) defines a series of Health Level Seven (HL7®) Fast Healthcare Interoperability Resources (FHIR®) profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf) and the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf). Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, jurisdictions, and the Centers for Disease Control and Prevention/ National Center for Health Statistics (CDC/NCHS).
+This implementation guide (IG) defines a series of Health Level Seven (HL7®) Fast Healthcare Interoperability Resources (FHIR®) profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf) and the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf). Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, VROs and NCHS..
 
 ### Relationship to Other Standards
 This BFDR IG standard complements other vital records standards to support the expansion of information flows to and from the national statistics agency. The BFDR STU 1 drew on foundational work of early standards listed in the Background section, below. This current version of the BFDR IG is informed by :
@@ -50,15 +50,12 @@ This Guide is divided into several pages which are listed at the top of each pag
 * [The Specification](the_specification.html): A technical overview of implementing the specification
 * [Use Cases](use_cases.html): The use cases supported by this guide
 * Implementer Guidance: The [worksheet Questionnaire format](patient_worksheet_questionnaires.html), [IJE Mapping Natality](ije_mapping_natality.html), [IJE Mapping FetalDeath](ije_mapping_fetalDeath.html) and [Vital Records Forms Mapping](vital_records_form_mapping.html)
-* [Terminology](terminology.html): A listing of the value sets used in this guide
 * [Downloads](downloads.html): Links to downloadable artifacts
 * [Change Log](change_log.html): Details of changes made in each version of this IG
 * [Artifact Index](artifacts.html): A list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide
 * Appendices: Examples of live birth and fetal death reports and worksheets
 
 ### Other Information
-
-This is an update (STU 1.1) of the first FHIR BFDR standard.
 
 This guide is compliant with FHIR Release 4.
 
