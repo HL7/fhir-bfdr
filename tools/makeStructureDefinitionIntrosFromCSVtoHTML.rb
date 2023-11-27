@@ -6,13 +6,13 @@
 #Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
 
 #method 2:
-#require 'open-uri'
-#download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true')
-#IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
-#download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.csv?raw=true')
-#IO.copy_stream(download2, 'input/mapping/BFDR_Profile_Intros.csv')
-#download3 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.csv?raw=true')
-#IO.copy_stream(download3, 'input/mapping/BFDR_Forms_Mapping.csv')
+# require 'open-uri'
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true')
+# IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
+# download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.csv?raw=true')
+# IO.copy_stream(download2, 'input/mapping/BFDR_Profile_Intros.csv')
+# download3 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.csv?raw=true')
+# IO.copy_stream(download3, 'input/mapping/BFDR_Forms_Mapping.csv')
 
 #run:
 #ruby tools/makeStructureDefinitionIntrosFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv input/mapping/BFDR_Forms_Mapping.csv
@@ -35,7 +35,7 @@ def open_spreadsheet(file)
   end
 end
 
-# IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx columns
+# IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv columns
 IJE_USECASE_COL = 1
 IJE_FIELD_COL = 2
 IJE_BEGIN_COL = 3
@@ -75,17 +75,17 @@ FORMS_FIELD_COL = 7
 FORMS_CONTEXT_COL = 8
 
 
-# ARGV[0] input/mapping/BFDR_Profile_Intros.xlsx
+# ARGV[0] input/mapping/BFDR_Profile_Intros.csv
 vProfileIntrosSpreadsheet = ARGV[0]
 #vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
 #vProfileIntrosSpreadsheet.default_sheet = "BFDR"
 
-# ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
+# ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
 vSpreadsheet = ARGV[1]
 #vSpreadsheet = open_spreadsheet(ARGV[1])
 #vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
 
-# ARGV[2] input/mapping/BFDR_Forms_Mapping.xlsx
+# ARGV[2] input/mapping/BFDR_Forms_Mapping.csv
 vFormsMappingSpreadsheet = ARGV[2]
 #vFormsMappingSpreadsheet = open_spreadsheet(ARGV[2])
 #vFormsMappingSpreadsheet.default_sheet = "BFDR Form Items"
@@ -121,7 +121,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
   #pProfileIntrosSpreadsheet.default_sheet = pIG
   # stream the BFDR_Profile_Intros.xlsx spreadsheet - this also contains any usage text for the start of the intro.md file (one file for each profile)
   # some of the profiles don't have any usage or ije mappings (currently the Bundle for example, skip those rows)
-  CSV.foreach(pProfileIntrosSpreadsheet) do |row|
+  CSV.foreach(pProfileIntrosSpreadsheet, headers: true) do |row|
     # if there is no usage, no forms mapping, and no ije mapping, skip this row, we don't need to create an into file for this profile
     # There's some weirdness with the Roo gem and empty and nil fields - hence double to_s and check for empty hack
     next if (row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty? && row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty? && row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?) #row[INTRO_PROFILE_LOCATION_COL].to_s != pIG ||
