@@ -5,7 +5,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
-<details>
+<details open>
 
 <summary>
 

@@ -7,7 +7,7 @@ EmergingIssues profile supports placeholder fields required for 2022 submissions
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
-<details>
+<details open>
 
 <summary>
 
