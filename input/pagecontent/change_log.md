@@ -1,4 +1,12 @@
 ### STU2 Ballot, January 2024
+#### Major Changes
+- Reorganization and harmonization of vital records FHIR IG content across BFDR, VRCL and VRDR to reduce redundancy, ease implementation, and reduce maintenance effort.   See [Vital Records IG Harmonization](vr_ig_harmonization.html), and [BFDR content changes](content-transitions.html).
+- Incorporate the vital records approach to capturing race and ethnicity, and reporting coded race and ethnicity to support BDRS to NCHS use cases. See [ObservationCodedRaceAndEthnicityVitalRecords], [ObservationInputRaceAndEthnicityVitalRecords], and [CompositionCodedRaceAndEthnicity].
+- Incorporation of edit flags as extensions within profiles, rather than as standalone observations.  This follows the path taken by VRDR STU2 that is in production use.  See [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherHeight], [ObservationMotherPrepregnancyWeight], [ObservationNumberPrenatalVisits], [ObservationNumberPreviousCesareans], [PatientDecedentFetus], [ObservationEducationLevelVitalRecords], [PatientVitalRecords], [PatientMotherVitalRecords], [RelatedPersonMotherVitalRecords], [RelatedPersonFatherVitalRecords], [RelatedPersonParentVitalRecords].
+- Consistent support for groups of responses that have a 'none-of-the-above' response using Observations and categories.  See [categories](categories.html).
+- Improved documentation of mapping of IJE fields to BFDR and VRCL profiles and fields.  See [Natality Data Dictionary] and [Fetal Death Data Dictionary].
+
+#### Minor Changes
 - Body Height LOINC Code 8302-2 Body Height Measured --> 3137-7 Body Height, based on new publication requirements.  Mother's Body Height based on USCoreBodyHeightProfile.
 - 
 
