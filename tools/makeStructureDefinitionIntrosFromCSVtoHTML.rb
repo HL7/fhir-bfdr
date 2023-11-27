@@ -1,19 +1,26 @@
 # NOTE: Before running this script, you should download a local copy of the latest spreadsheets from https://github.com/nightingaleproject/vital_records_sandbox_ig
 
-# ruby tools/makeStructureDefinitionIntrosHTML.rb input/mapping/BFDR_Profile_Intros.xlsx input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx input/mapping/BFDR_Forms_Mapping.xlsx
+#method 1:
+#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
+#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.csv?raw=true -Outfile "./input/mapping/BFDR_Profile_Intros.csv"
+#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
 
-require 'open-uri'
-download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx?raw=true')
-IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx')
-download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.xlsx?raw=true')
-IO.copy_stream(download2, 'input/mapping/BFDR_Profile_Intros.xlsx')
-download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.xlsx?raw=true')
-IO.copy_stream(download2, 'input/mapping/BFDR_Forms_Mapping.xlsx')
+#method 2:
+# require 'open-uri'
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true')
+# IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
+# download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.csv?raw=true')
+# IO.copy_stream(download2, 'input/mapping/BFDR_Profile_Intros.csv')
+# download3 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.csv?raw=true')
+# IO.copy_stream(download3, 'input/mapping/BFDR_Forms_Mapping.csv')
 
+#run:
+#ruby tools/makeStructureDefinitionIntrosFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv input/mapping/BFDR_Forms_Mapping.csv
 
 require "json"
 require "pry"
 require "roo"
+require "csv"
 
 def get_file_type(file)
   File.extname(file).gsub(".", "")
@@ -28,7 +35,7 @@ def open_spreadsheet(file)
   end
 end
 
-# IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx columns
+# IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv columns
 IJE_USECASE_COL = 1
 IJE_FIELD_COL = 2
 IJE_BEGIN_COL = 3
@@ -68,17 +75,20 @@ FORMS_FIELD_COL = 7
 FORMS_CONTEXT_COL = 8
 
 
-# ARGV[0] input/mapping/BFDR_Profile_Intros.xlsx
-vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
-vProfileIntrosSpreadsheet.default_sheet = "BFDR"
+# ARGV[0] input/mapping/BFDR_Profile_Intros.csv
+vProfileIntrosSpreadsheet = ARGV[0]
+#vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
+#vProfileIntrosSpreadsheet.default_sheet = "BFDR"
 
-# ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
-vSpreadsheet = open_spreadsheet(ARGV[1])
-vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
+# ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
+vSpreadsheet = ARGV[1]
+#vSpreadsheet = open_spreadsheet(ARGV[1])
+#vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
 
-# ARGV[2] input/mapping/BFDR_Forms_Mapping.xlsx
-vFormsMappingSpreadsheet = open_spreadsheet(ARGV[2])
-vFormsMappingSpreadsheet.default_sheet = "BFDR Form Items"
+# ARGV[2] input/mapping/BFDR_Forms_Mapping.csv
+vFormsMappingSpreadsheet = ARGV[2]
+#vFormsMappingSpreadsheet = open_spreadsheet(ARGV[2])
+#vFormsMappingSpreadsheet.default_sheet = "BFDR Form Items"
 
 #create hash for mapping of links 
 def gen_aliases
@@ -108,10 +118,10 @@ def exchangeURLs(comment, aliases)
 end
 
 def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pFormsMappingSpreadsheet, alias_links)
-  pProfileIntrosSpreadsheet.default_sheet = pIG
+  #pProfileIntrosSpreadsheet.default_sheet = pIG
   # stream the BFDR_Profile_Intros.xlsx spreadsheet - this also contains any usage text for the start of the intro.md file (one file for each profile)
   # some of the profiles don't have any usage or ije mappings (currently the Bundle for example, skip those rows)
-  pProfileIntrosSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+  CSV.foreach(pProfileIntrosSpreadsheet, headers: true) do |row|
     # if there is no usage, no forms mapping, and no ije mapping, skip this row, we don't need to create an into file for this profile
     # There's some weirdness with the Roo gem and empty and nil fields - hence double to_s and check for empty hack
     next if (row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty? && row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty? && row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?) #row[INTRO_PROFILE_LOCATION_COL].to_s != pIG ||
@@ -134,7 +144,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts "### Form Mapping"
       vIntroOutputFile.puts "This profile is mapped to:"
 
-      pFormsMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+      CSV.foreach(pFormsMappingSpreadsheet) do |row|
         next if row[FORMS_MAPPING_PROFILE_COL].to_s != vProfileNameHyphen
         vIntroOutputFile.puts " * Item **" + row[FORMS_ELEMENT_COL].to_s + "** in the [" + row[FORMS_FORM_COL].to_s + "](" + row[FORMS_URL_COL].to_s + ")"
       end
@@ -151,15 +161,16 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts " .context-menu {cursor: context-menu; color: #438bca;}"
       vIntroOutputFile.puts " .context-menu:hover {opacity: 0.5;}"
       vIntroOutputFile.puts "</style>"
-    
+      firstTable = true
       # if filtering race or ethnicity further break down tables by mother/father
       if vProfileName == "ObservationCodedRaceAndEthnicityVitalRecords" || vProfileName == "ObservationInputRaceAndEthnicityVitalRecords"
-        # process any natality mother rows first
-        first = true
-        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+        # process any natality mother rows firstEntry
+        firstEntry = true
+        CSV.foreach(pIJEMappingSpreadsheet) do |row|
           next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M"
-          if first
-            vIntroOutputFile.puts "<details>"
+          if firstEntry
+            firstTable = false
+            vIntroOutputFile.puts "<details open>"
             vIntroOutputFile.puts ""
             vIntroOutputFile.puts "<summary>"
             vIntroOutputFile.puts ""
@@ -179,7 +190,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             vIntroOutputFile.puts "  </tr>"
             vIntroOutputFile.puts "</thead>"
             vIntroOutputFile.puts "<tbody>"
-            first = false
+            firstEntry = false
           end
           vIntroOutputFile.puts "<tr>"
           vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
@@ -192,7 +203,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "</tr>"
           # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        unless first
+        unless firstEntry
           vIntroOutputFile.puts ""
           vIntroOutputFile.puts "</tbody>"
           vIntroOutputFile.puts "</table>"
@@ -202,12 +213,17 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts ""
         end
 
-        # process any natality father rows first
-        first = true
-        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+        # process any natality father rows firstEntry
+        firstEntry = true
+        CSV.foreach(pIJEMappingSpreadsheet) do |row|
           next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F"
-          if first
-            vIntroOutputFile.puts "<details>"
+          if firstEntry
+            if firstTable
+              vIntroOutputFile.puts "<details open>"
+              firstTable = false
+            else
+              vIntroOutputFile.puts "<details>"
+            end
             vIntroOutputFile.puts ""
             vIntroOutputFile.puts "<summary>"
             vIntroOutputFile.puts ""
@@ -227,7 +243,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             vIntroOutputFile.puts "  </tr>"
             vIntroOutputFile.puts "</thead>"
             vIntroOutputFile.puts "<tbody>"
-            first = false
+            firstEntry = false
           end
           vIntroOutputFile.puts "<tr>"
           vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
@@ -240,7 +256,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "</tr>"
           # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        unless first
+        unless firstEntry
           vIntroOutputFile.puts ""
           vIntroOutputFile.puts "</tbody>"
           vIntroOutputFile.puts "</table>"
@@ -251,11 +267,16 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         end
 
         # now process any fetal death Mother rows
-        first = true
-        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+        firstEntry = true
+        CSV.foreach(pIJEMappingSpreadsheet) do |row|
           next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M"
-          if first
-            vIntroOutputFile.puts "<details>"
+          if firstEntry
+            if firstTable
+              vIntroOutputFile.puts "<details open>"
+              firstTable = false
+            else
+              vIntroOutputFile.puts "<details>"
+            end
             vIntroOutputFile.puts ""
             vIntroOutputFile.puts "<summary>"
             vIntroOutputFile.puts ""
@@ -275,7 +296,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             vIntroOutputFile.puts "  </tr>"
             vIntroOutputFile.puts "</thead>"
             vIntroOutputFile.puts "<tbody>"
-            first = false
+            firstEntry = false
           end
           vIntroOutputFile.puts "<tr>"
           vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
@@ -288,7 +309,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "</tr>"
           # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        unless first
+        unless firstEntry
           vIntroOutputFile.puts ""
           vIntroOutputFile.puts "</tbody>"
           vIntroOutputFile.puts "</table>"
@@ -299,11 +320,16 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         end
 
         # now process any fetal death Father rows
-        first = true
-        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+        firstEntry = true
+        CSV.foreach(pIJEMappingSpreadsheet) do |row|
           next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F"
-          if first
-            vIntroOutputFile.puts "<details>"
+          if firstEntry
+            if firstTable
+              vIntroOutputFile.puts "<details open>"
+              firstTable = false
+            else
+              vIntroOutputFile.puts "<details>"
+            end
             vIntroOutputFile.puts ""
             vIntroOutputFile.puts "<summary>"
             vIntroOutputFile.puts ""
@@ -323,7 +349,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             vIntroOutputFile.puts "  </tr>"
             vIntroOutputFile.puts "</thead>"
             vIntroOutputFile.puts "<tbody>"
-            first = false
+            firstEntry = false
           end
           vIntroOutputFile.puts "<tr>"
           vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
@@ -336,7 +362,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "</tr>"
           # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        unless first
+        unless firstEntry
           vIntroOutputFile.puts ""
           vIntroOutputFile.puts "</tbody>"
           vIntroOutputFile.puts "</table>"
@@ -346,12 +372,17 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts ""
         end
       else
-        # process any natality rows first
-        first = true
-        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+        # process any natality rows firstEntry
+        firstEntry = true
+        CSV.foreach(pIJEMappingSpreadsheet) do |row|
           next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName
-          if first
-            vIntroOutputFile.puts "<details>"
+          if firstEntry
+            if firstTable
+              vIntroOutputFile.puts "<details open>"
+              firstTable = false
+            else
+              vIntroOutputFile.puts "<details>"
+            end
             vIntroOutputFile.puts ""
             vIntroOutputFile.puts "<summary>"
             vIntroOutputFile.puts ""
@@ -371,7 +402,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             vIntroOutputFile.puts "  </tr>"
             vIntroOutputFile.puts "</thead>"
             vIntroOutputFile.puts "<tbody>"
-            first = false
+            firstEntry = false
           end
           vIntroOutputFile.puts "<tr>"
           vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
@@ -384,7 +415,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "</tr>"
           # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        unless first
+        unless firstEntry
           vIntroOutputFile.puts ""
           vIntroOutputFile.puts "</tbody>"
           vIntroOutputFile.puts "</table>"
@@ -395,11 +426,16 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         end
 
         # now process any fetal death rows
-        first = true
-        pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+        firstEntry = true
+        CSV.foreach(pIJEMappingSpreadsheet) do |row|
           next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName
-          if first
-            vIntroOutputFile.puts "<details>"
+          if firstEntry
+            if firstTable
+              vIntroOutputFile.puts "<details open>"
+              firstTable = false
+            else
+              vIntroOutputFile.puts "<details>"
+            end
             vIntroOutputFile.puts ""
             vIntroOutputFile.puts "<summary>"
             vIntroOutputFile.puts ""
@@ -419,7 +455,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
             vIntroOutputFile.puts "  </tr>"
             vIntroOutputFile.puts "</thead>"
             vIntroOutputFile.puts "<tbody>"
-            first = false
+            firstEntry = false
           end
           vIntroOutputFile.puts "<tr>"
           vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
@@ -432,7 +468,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "</tr>"
           # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
-        unless first
+        unless firstEntry
           vIntroOutputFile.puts ""
           vIntroOutputFile.puts "</tbody>"
           vIntroOutputFile.puts "</table>"
@@ -444,11 +480,16 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       end
 
       # now process any death record/mortality rows
-      first = true
-      pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+      firstEntry = true
+      CSV.foreach(pIJEMappingSpreadsheet) do |row|
         next if (row[IJE_USECASE_COL].to_s != "Mortality") || row[IJE_PROFILE_COL].to_s != vProfileName
-        if first
-          vIntroOutputFile.puts "<details>"
+        if firstEntry
+          if firstTable
+            vIntroOutputFile.puts "<details open>"
+            firstTable = false
+          else
+            vIntroOutputFile.puts "<details>"
+          end
           vIntroOutputFile.puts ""
           vIntroOutputFile.puts "<summary>"
           vIntroOutputFile.puts ""
@@ -468,7 +509,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "  </tr>"
           vIntroOutputFile.puts "</thead>"
           vIntroOutputFile.puts "<tbody>"
-          first = false
+          firstEntry = false
         end
         vIntroOutputFile.puts "<tr>"
         vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
@@ -481,7 +522,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         vIntroOutputFile.puts "</tr>"
         # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
       end
-      unless first
+      unless firstEntry
         vIntroOutputFile.puts ""
         vIntroOutputFile.puts "</tbody>"
         vIntroOutputFile.puts "</table>"
@@ -492,11 +533,16 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       end
 
       # now process any mortality roster rows
-      first = true
-      pIJEMappingSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
+      firstEntry = true
+      CSV.foreach(pIJEMappingSpreadsheet) do |row|
         next if (row[IJE_USECASE_COL].to_s != "Mortality Roster") || row[IJE_PROFILE_COL].to_s != vProfileName
-        if first
-          vIntroOutputFile.puts "<details>"
+        if firstEntry
+          if firstTable
+            vIntroOutputFile.puts "<details open>"
+            firstTable = false
+          else
+            vIntroOutputFile.puts "<details>"
+          end
           vIntroOutputFile.puts ""
           vIntroOutputFile.puts "<summary>"
           vIntroOutputFile.puts ""
@@ -516,7 +562,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "  </tr>"
           vIntroOutputFile.puts "</thead>"
           vIntroOutputFile.puts "<tbody>"
-          first = false
+          firstEntry = false
         end
         vIntroOutputFile.puts "<tr>"
         vIntroOutputFile.puts "  <td style='text-align: center'>" + row[IJE_USECASE_COL].to_s + "</td>"
@@ -529,7 +575,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         vIntroOutputFile.puts "</tr>"
         # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
       end     
-      unless first
+      unless firstEntry
         vIntroOutputFile.puts ""
         vIntroOutputFile.puts "</tbody>"
         vIntroOutputFile.puts "</table>"
@@ -537,7 +583,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         vIntroOutputFile.puts "</details>"
         vIntroOutputFile.puts "<p></p>"
         vIntroOutputFile.puts ""
-        first = true
+        firstEntry = true
       end
     end
   end
@@ -545,4 +591,3 @@ end
 
 
 createSDIntros("BFDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet, alias_links)
-
