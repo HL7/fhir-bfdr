@@ -1,6 +1,5 @@
 ### Form Mapping
 This profile is mapped to:
- * Item **18e. Estimated Time of Fetal Death** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
 
 ### IJE Mapping
 
@@ -12,7 +11,7 @@ This profile is mapped to:
 
 <summary>
 
-<strong class='context-menu'> Fetal Death </strong>
+<strong class='context-menu' > Natality </strong>
 
 </summary>
 <table class='grid'>
@@ -29,13 +28,13 @@ This profile is mapped to:
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>Fetal Death</td>
-  <td>147</td>
-  <td>Estimated time of fetal death</td>
-  <td>ETIME</td>
-  <td>value</td>
-  <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-fetal-death-time-points.html'>FetalDeathTimePointsVS</a></td>
+  <td style='text-align: center'>Natality</td>
+  <td>185</td>
+  <td>Characteristics of Labor & Delivery--Antibiotics</td>
+  <td>ANTB</td>
+  <td></td>
+  <td>na</td>
+  <td>See <a href='usage.html#characteristics-of-labor-and-delivery'>Note on missing characteristics of labor and delivery data</a></td>
 </tr>
 
 </tbody>
