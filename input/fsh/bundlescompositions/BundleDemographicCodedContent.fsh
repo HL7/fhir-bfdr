@@ -9,17 +9,8 @@ Profile: DemographicCodedContentBundleBFDR
 Parent: Bundle
 Id: vr-demographic-coded-bundle
 Title: "Bundle - Demographic Coded Content Bundle for BFDR"
-Description: "Demographic Coded Content Bundle (Bundle): A bundle containing instances of the resources comprising demographic (race and ethnicity) coded content. This bundle is information-content equivalent to the traditional NCHS MRE/NRE format.
-
-The bundle contains:
-* [Coded Race and Ethnicity Composition][CompositionCodedRaceAndEthnicity] (required)
-* [Related Person Father Natural Vital Records][RelatedPersonFatherNaturalVitalRecords] (optional)
-* [Patient Mother Vital Records][PatientMotherVitalRecords] ( optional)
-* [Father's Input Race and Ethnicity][InputRaceAndEthnicity] (required) (code = inputraceandethnicityFather)
-* [Mother's Input Race and Ethnicity][InputRaceAndEthnicity] (required) (code = inputraceandethnicityMother)
-* [Father's Coded Race and Ethnicity][CodedRaceAndEthnicity] (required) (code = codedraceandethnicityFather)
-* [Mother's Coded Race and Ethnicity][CodedRaceAndEthnicity] (required) (code = codedraceandethnicityMother)
-"
+Description: "Demographic Coded Content Bundle (Bundle): A bundle containing instances of the resources comprising demographic (race and ethnicity) coded content. 
+This bundle is information-content equivalent to the traditional NCHS MRE/NRE format."
 //* insert RequireMetaProfile(CodedContentDocument)
 * insert BundleIdentifiers
 * type 1..1

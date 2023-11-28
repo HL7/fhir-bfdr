@@ -1,17 +1,41 @@
 ﻿Order,Heading,Profile Name,Profile ID,Profile Usage,Form Mappng,IJE Mapping,Profile Location
 1,Input,ExtensionPartialDateAbsentReasonVitalRecords,Extension-partial-date-absent-reason-vr,,,,VRCPL
-2,Input,ExtensionPartialDateTimeVitalRecords,Extension-partial-date-time-vr,,,,VRCPL
+2,Input,ExtensionPartialDateTimeVitalRecords,Extension-partial-date-time-vr,"The purpose of the extension is to a FHIR date field is to address vital records reporting requirements to be able to express portions of the date that are known when some parts are not known.  
+
+All four components (year, month, day, time) can be reported/absent independently, resulting in combinations that are not supported by a FHIR date (YYYY, YYYY-MM, YYYY-MM-DD).  
+
+The additional combinations supported by the extension include:
+
+YYYY-XX-DD (year & day with no month)
+XXXX-MM-DD (month & day with no year)
+XXXX-XX-DD (day only)
+XXXX-XX-XX (no recorded date)
+
+This extension SHALL NOT be used to represent any partial date that can be represented using a FHIR date.",,,VRCPL
 3,Input,ExtensionRelatedpersonBirthplaceVitalRecords,Extension-relatedperson-birthplace-vr,,x,x,VRCPL
 4,Input,ExtensionRelatedpersonDeceasedVitalRecords,Extension-relatedperson-deceased-vr,,,,VRCPL
 5,Input,ExtensionWithinCityLimitsIndicatorVitalRecords,Extension-within-city-limits-indicator-vr,,x,x,VRCPL
 6,Input,ExtensionBypassEditFlagVitalRecords,Extension-bypass-edit-flag-vr,,,,VRCPL
 7,Input,ExtensionCityCodeVitalRecords,Extension-city-code-vr,,,,VRCPL
 8,Input,ExtensionDistrictCodeVitalRecords,Extension-district-code-vr,,,,VRCPL
-9,Input,ExtensionPartialDateVitalRecords,Extension-partial-date-vr,,,,VRCPL
+9,Input,ExtensionPartialDateVitalRecords,Extension-partial-date-vr,"The purpose of the extension is to address vital records reporting  requirements to express portions of the date that are known when some parts are not known.  All four components (year, month, day, time) can be reported/absent independently, resulting in combinations that are not supported by a FHIR dateTime (YYYY, YYYY-MM, YYYY-MM-DD, or a full dateTime).  The additional combinations supported by the extension include:
+
+YYYY-XX-DD (year & day with no month)
+XXXX-MM-DD (month & day with no year)
+XXXX-XX-DD (day only)
+XXXX-XX-XX (no recorded date)
+…and all options of the above options with  present/missing <time>
+ 
+
+Each component must be explicitly present or absent.",,,VRCPL
 10,Input,ExtensionPostDirectionalVitalRecords,Extension-post-directional-vr,,,,VRCPL
 11,Input,ExtensionPreDirectionalVitalRecords,Extension-pre-directional-vr,,,,VRCPL
 12,Input,ExtensionStreetDesignatorVitalRecords,Extension-street-designator-vr,,,,VRCPL
-16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.,,x,VRCPL
+16,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,"This profile is only for use in a Vital Records submission to NCHS.  The code indicates both the type of subject (decedent, father or mother) as well as the content of the Observation.  This is intended to make query of the desired observation from a submission bundle easier.
+
+Submission of race and ethnicity data and return of coded race and ethnicity is done with a uniform approach across all vital records use cases.
+The formats for Fetal Race and Ethnicity (FRE), Mortality Race and Ethnicity(MRE), and Natality Race and Ethnicity (NRE) are described
+in [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cdc.gov/nchs/data/dvs/multiple_race_documentation_5-10-04.pdf).",,x,VRCPL
 17,Input,ObservationAutopsyPerformedIndicatorVitalRecords,Observation-autopsy-performed-indicator-vr,,x,x,VRCPL
 18,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,,x,x,VRCPL
 19,Input,PatientChildVitalRecords,Patient-child-vr,"This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
@@ -31,15 +55,12 @@
 27,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
                 For documentation on their use see referenceTBD.
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).",,x,VRCPL
-28,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"It contains data that are a coded form of the race and ethnicity data that has been submitted to the the national statistics agency.
+28,Coding,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"This profile is only for use by NCHS to return a coded version of an individual's race and ethnicity to a s ubmitting Jurisdiction.  
+The code indicates both the type of subject (decedent, father or mother) as well as the content of the Observation.  This is intended to make query of the desired observation from a submission bundle easier.
 
-Two sets of codes will be used to address two objectives. These objectives are:
-* to generate codes for race or ethnicity data provided as text entries
-* to generate a single race code in cases where multiple races have been reported
-
-In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. 
-
-Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.",,x,VRCPL
+Submission of race and ethnicity data and return of coded race and ethnicity is done with a uniform approach across all vital records use cases.
+The formats for Fetal Race and Ethnicity (FRE), Mortality Race and Ethnicity(MRE), and Natality Race and Ethnicity (NRE) are described
+in [NCHS Procedures for Multiple-Race and Hispanic Origin Coding](https://www.cdc.gov/nchs/data/dvs/multiple_race_documentation_5-10-04.pdf).",,x,VRCPL
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
