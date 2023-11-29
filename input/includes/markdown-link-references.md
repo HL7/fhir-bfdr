@@ -146,7 +146,7 @@
 [relatedperson-parent-vr-stepmother]: https://build.fhir.org/ig/HL7/vr-common-library/RelatedPerson-relatedperson-parent-vr-stepmother.html
 [us-core-patient-vr-a-freeman]: https://build.fhir.org/ig/HL7/vr-common-library/Patient-us-core-patient-vr-a-freeman.html
 [us-core-patient-vr-unknown-name]: https://build.fhir.org/ig/HL7/vr-common-library/Patient-us-core-patient-vr-unknown-name.html
-<!---old content from BFDR STU1.1-->
+<!---old content from BFDR STU1.1
 [BundleDocumentBFDR]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Bundle-document-bfdr.html
 [CapabilityStatement-bfdr]: https://hl7.org/fhir/us/bfdr/STU1.1/CapabilityStatement-CapabilityStatement-bfdr.html
 [CigaretteSmokingBeforeAndDuringPregnancy]: https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-cigarette-smoking-before-during-pregnancy.html
@@ -230,7 +230,8 @@
 [expansion-parameters-bfdr]: https://hl7.org/fhir/us/bfdr/STU1.1/Parameters-expansion-parameters-bfdr.html
 [ValueSetReplacementStatus]: https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-replacement-status.html
 [ValueSetYesNoNotApplicable]: https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-yes-no-not-applicable.html
-<!---old content from VRCL STU1.1-->
+-->
+<!---old content from VRCL STU1.1
 [CodeSystemDeathPregnancyStatusVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-death-pregnancy-status-vr.html
 [CodeSystemDeathReportingCodesVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-death-reporting-codes-vr.html
 [CodeSystemIntentionalRejectVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/CodeSystem-CodeSystem-intentional-reject-vr.html
@@ -303,3 +304,4 @@
 [RelatedPersonFatherNaturalVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-father-natural-vr.html
 [RelatedPersonMotherGestationalVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-mother-gestational-vr.html
 [RelatedPersonParentVitalRecords]: http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-RelatedPerson-parent-vr.html
+-->
