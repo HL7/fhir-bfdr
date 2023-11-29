@@ -18,25 +18,25 @@
 | :----------: | ----------- | :---------------: |
 | [ConditionChorioamnionitis] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-chorioamnionitis.html) |-|
 | [ConditionCongenitalAnomalyOfNewborn] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-congenital-anomaly-of-newborn.html) | - |
-| [ConditionEclampsiaHypertension] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-eclampsia-hypertension-vr.html)  | - |
+| [ConditionEclampsiaHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-eclampsia-hypertension-vr.html)  | - |
 | [ConditionFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-fetal-death-cause-or-condition.html) | - |
 | [ConditionFetalDeathOtherCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | - |
-| [ConditionGestationalDiabetes] | [VRCL](http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Patient-child-vr.html) | -  |
-| [ConditionGestationalHypertension] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-diabetes-vr.html) | - |
+| [ConditionGestationalDiabetes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-diabetes-vr.html) | -  |
+| [ConditionGestationalHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-hypertension-vr.html) | - |
 | [ConditionInfectionPresentDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-infection-present-during-pregnancy.html) | -|
 | [ConditionPerinealLaceration] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-perineal-laceration.html) | -|
-| [ConditionPrepregnancyDiabetes] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-diabetes-vr.html) | - |
-| [ConditionPrepregnancyHypertension] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-hypertension-vr.html) | - |
+| [ConditionPrepregnancyDiabetes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-diabetes-vr.html) | - |
+| [ConditionPrepregnancyHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-hypertension-vr.html) | - |
 | [ConditionRupturedUterus] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-ruptured-uterus.html) | -  |
 | [ConditionSeizure] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-seizure.html) | - |
 | [CoveragePrincipalPayerDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Coverage-principal-payer-for-delivery.html) | - |
 | [Encounter_Maternity] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-maternity.html) | - |
 | [EncounterBirth] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-birth.html) | - |
 | [ObservationAntibioticsAdministeredDuringLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-antibiotics-during-labor.html) | - |
-| [ObservationApgarScore] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-apgar-score-vr.html) | - |
+| [ObservationApgarScore] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-apgar-score-vr.html) | - |
 | [ObservationAutopsyHistologicalExamResultsUsed] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-autopsy-histological-exam-results-used.html) | - |
-| [ObservationBirthWeight] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-birth-weight-vr.html) | Now includes birthWeight bypassEditFlag |
-| [ObservationCigaretteSmokingBeforeDuringPregnancy] | [BFDR](http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy) | Focus generalized to Patient |
+| [ObservationBirthWeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-birth-weight-vr.html) | Now includes birthWeight bypassEditFlag |
+| [ObservationCigaretteSmokingBeforeDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy) | Focus generalized to Patient |
 | [ObservationCodedInitiatingFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition.html) | Changed from Condition to Observation |
 | [ObservationCodedOtherFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | Changed from Condition to Observation |
 | [ObservationDateOfFirstPrenatalCareVisit] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | - |
@@ -44,18 +44,18 @@
 | [ObservationDateOfLastOtherPregnancyOutcome] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html) | - |
 | [ObservationFetalDeathTimePoint] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-estimated-fetal-death-time-point.html) | - |
 | [ObservationFetalPresentation] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-fetal-presentation.html) | - |
-| [ObservationGestationalAgeAtDelivery] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-gestational-age-at-delivery-vr.html) | Now includes estimateOfGestation bypassEditFlag |
+| [ObservationGestationalAgeAtDelivery] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-gestational-age-at-delivery-vr.html) | Now includes estimateOfGestation bypassEditFlag |
 | [ObservationHistologicalPlacentalExamPerformed] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-histological-placental-exam-performed.html) | - |
 | [ObservationICUAdmission] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-icu-admission.html) | - |
 | [ObservationInfantBreastfedAtDischarge] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-infant-breastfed-at-discharge.html) | - |
-| [ObservationInfantLiving] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-infant-living-vr.html) | - |
+| [ObservationInfantLiving] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-infant-living-vr.html) | - |
 | [ObservationLaborTrialAttempted] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-labor-trial-attempted.html) | - |
-| [ObservationLastMenstrualPeriod] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-last-menstrual-period-vr.html) | - |
+| [ObservationLastMenstrualPeriod] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-last-menstrual-period-vr.html) | - |
 | [ObservationMethodOfDisposition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-method-of-disposition.html) | - |
-| [ObservationMotherDeliveryWeight] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-delivery-weight-vr.html) | Now includes pregnancyReport bypassEditFlag |
-| [ObservationMotherHeight] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-height-vr.html) | Now includes pregnancyReport bypassEditFlag |
+| [ObservationMotherDeliveryWeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-delivery-weight-vr.html) | Now includes pregnancyReport bypassEditFlag |
+| [ObservationMotherHeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-height-vr.html) | Now includes pregnancyReport bypassEditFlag |
 | [ObservationMotherMarriedDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-mother-married-during-pregnancy.html) | - |
-| [ObservationMotherPrepregnancyWeight] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-prepregnancy-weight-vr.html) | Now includes pregnancyReport bypassEditFlag |
+| [ObservationMotherPrepregnancyWeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-prepregnancy-weight-vr.html) | Now includes pregnancyReport bypassEditFlag |
 | [ObservationMotherReceivedWICFood] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-mother-received-wic-food.html) | - |
 | [ObservationNICUAdmission] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-nicu-admission.html) | - |
 | [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html) | See [categories](categories.html) |
@@ -64,24 +64,24 @@
 | [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] | New | New Addition, See [categories](categories.html) |
 | [ObservationNoneOfSpecifiedMaternalMorbidities] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-none-of-specified-maternal-morbidities.html) | See [categories](categories.html) |
 | [ObservationNoneOfSpecifiedObstetricProcedures] | New | New Addition, See [categories](categories.html) |
-| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors-vr.html) | See [categories](categories.html) |
-| [ObservationNumberBirthsNowDead] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-births-now-dead-vr.html) | - |
-| [ObservationNumberBirthsNowLiving] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-births-now-living-vr.html) | - |
-| [ObservationNumberFetalDeathsThisDelivery] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-fetal-deaths-this-delivery-vr.html) | - |
-| [ObservationNumberLiveBirthsThisDelivery] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-live-births-this-delivery-vr.html) | - |
-| [ObservationNumberOtherPregnancyOutcomes] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-other-pregnancy-outcomes-vr.html) | - |
-| [ObservationNumberPrenatalVisits] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-prenatal-visits-vr.html) | Now includes pregnancyReport bypassEditFlag |
-| [ObservationNumberPreviousCesareans] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-previous-cesareans-vr.html) | Now includes numberPreviousCeseareans bypassEditFlag |
+| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors-vr.html) | See [categories](categories.html) |
+| [ObservationNumberBirthsNowDead] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-births-now-dead-vr.html) | - |
+| [ObservationNumberBirthsNowLiving] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-births-now-living-vr.html) | - |
+| [ObservationNumberFetalDeathsThisDelivery] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-fetal-deaths-this-delivery-vr.html) | - |
+| [ObservationNumberLiveBirthsThisDelivery] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-live-births-this-delivery-vr.html) | - |
+| [ObservationNumberOtherPregnancyOutcomes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-other-pregnancy-outcomes-vr.html) | - |
+| [ObservationNumberPrenatalVisits] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-prenatal-visits-vr.html) | Now includes pregnancyReport bypassEditFlag |
+| [ObservationNumberPreviousCesareans] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-previous-cesareans-vr.html) | Now includes numberPreviousCeseareans bypassEditFlag |
 | [ObservationPaternityAcknowledgementSigned] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-paternity-acknowledgement-signed.html) | - |
 | [ObservationPlannedToDeliverAtHome] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-planned-to-deliver-at-home.html) | - |
-| [ObservationPreviousCesarean] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-previous-cesarean-vr.html) | - |
-| [ObservationPreviousPretermBirth] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-previous-preterm-birth-vr.html) | - |
+| [ObservationPreviousCesarean] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-previous-cesarean-vr.html) | - |
+| [ObservationPreviousPretermBirth] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-previous-preterm-birth-vr.html) | - |
 | [ObservationSSNRequestedForChild] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-ssn-requested-for-child.html) | - |
 | [ObservationSteroidsFetalLungMaturation] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-steroids-fetal-lung-maturation.html) | - |
 | [ObservationUnknownFinalRouteMethodDelivery] | New | New Addition, See [categories](categories.html) |
-| [PatientDecedentFetus] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Patient-decedent-fetus-vr.html) | Moved from VRCL to BFDR. Now includes multipleBirth bypassEditFlag and [multipleBirthTotal](https://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html) extension which replaces [ObservationPluralityVitalRecords](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition/Observation-plurality-vr) |
+| [PatientDecedentFetus] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Patient-decedent-fetus-vr.html) | Moved from VRCL to BFDR. Now includes multipleBirth bypassEditFlag and [multipleBirthTotal](https://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html) extension which replaces [ObservationPluralityVitalRecords](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition/Observation-plurality-vr) |
 | [ProcedureAntibioticSuspectedNeonatalSepsis] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html) | - |
-| [ProcedureArtificialInsemination] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-artificial-insemination-vr.html) | - |
+| [ProcedureArtificialInsemination] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-artificial-insemination-vr.html) | - |
 | [ProcedureAssistedVentilationFollowingDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-assisted-ventilation-following-delivery.html) | - |
 | [ProcedureAssistedVentilationMoreThanSixHours] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html) | - |
 | [ProcedureAugmentationOfLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-augmentation-of-labor.html) | - |
@@ -89,7 +89,7 @@
 | [ProcedureEpiduralOrSpinalAnesthesia] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html) | - |
 | [ProcedureFinalRouteMethodDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-final-route-method-delivery.html) | - |
 | [ProcedureInductionOfLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-induction-of-labor.html) | - |
-| [ProcedureInfertilityTreatment] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-infertility-treatment-vr.html) | - |
+| [ProcedureInfertilityTreatment] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-infertility-treatment-vr.html) | - |
 | [ProcedureObstetric] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-obstetric.html) | - |
 | [ProcedureSurfactantReplacementTherapy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-surfactant-replacement-therapy.html) | - |
 | [ProcedureUnplannedHysterectomy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-unplanned-hysterectomy.html) | - |
@@ -115,7 +115,7 @@
 
 | Name         | Previous IG  | Comments/Updates  |
 | :----------: | -----------  | :---------------: |
-| [ApgarTimingVS] | [VRCL](http://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-apgar-timing-vr.html) | - |
+| [ApgarTimingVS] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-apgar-timing-vr.html) | - |
 | [BirthAndFetalDeathFinancialClassVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A) | - |
 | [BirthAttendantTitlesVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2) | - |
 | [BirthDeliveryOccurredVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51) | - |
