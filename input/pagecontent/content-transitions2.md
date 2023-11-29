@@ -177,7 +177,7 @@
 
 | Name         |  Current Version/Location      | Comments/Updates  |
 | :----------: | -----------     | :---------------: |
-| [ExtensionReplacementStatus](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-replacement-status.html) | - | Deprecated |
+| [ExtensionReplacementStatus](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-replacement-status.html) | Deleted | Deprecated |
 {: .grid }
 
 
@@ -185,7 +185,7 @@
 
 | Name         |  Current Version/Location      | Comments/Updates  |
 | :----------: |  -----------     | :---------------: |
-| [ValueSetReplacementStatus](https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-replacement-status.html) | - | Deprecated |
+| [ValueSetReplacementStatus](https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-replacement-status.html) | Deleted | Deprecated |
 | [ValueSetYesNoNotApplicable](https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-yes-no-not-applicable.html) | [VRCL](https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-not-applicable-vr.html)    | Moved to VRCL |
 {: .grid }
 
@@ -194,7 +194,7 @@
 
 | Name         |  Current Version/Location      | Comments/Updates  |
 | :----------: |  -----------     | :---------------: |
-| [CodeSystemReplacement](https://hl7.org/fhir/us/bfdr/STU1.1/CodeSystem-CodeSystem-replacement-status.html)|  -  | Deprecated |
+| [CodeSystemReplacement](https://hl7.org/fhir/us/bfdr/STU1.1/CodeSystem-CodeSystem-replacement-status.html)|  Deleted  | Deprecated |
 {: .grid }
 
 
