@@ -65,11 +65,11 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 42,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.,,x,VRCPL
 43,Input,LocationDeathVitalRecords,Location-death-vr,,,,VRCPL
 44,Input,LocationInjuryVitalRecords,Location-injury-vr,,,,VRCPL
-45,Input,ObservationAntibioticsAdministeredDuringLabor,Observation-antibiotics-during-labor,,x,x,BFDR
+45,Input,ObservationAntibioticsAdministeredDuringLabor,Observation-antibiotics-administered-during-labor,,x,x,BFDR
 46,Input,ObservationApgarScore,Observation-apgar-score,Birth certificates only require 5 and 10 minute timings. Other use cases may require/accept other timings.,x,x,BFDR
 47,Input,ObservationAutopsyHistologicalExamResultsUsed,Observation-autopsy-histological-exam-results-used,,x,x,BFDR
 48,Input,ObservationAutopsyPerformedIndicatorVitalRecords,Observation-autopsy-performed-indicator-vr,,x,x,VRCPL
-49,Input,ObservationBirthWeight,Observation-birth-weight,,x,x,BFDR
+49,Input,ObservationBirthWeight,Observation-birth-weight,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
 50,Input,ObservationCauseOfDeathPartVitalRecords,Observation-cause-of-death-part1-vr,,,,VRCPL
 51,Input,ObservationCigaretteSmokingBeforeDuringPregnancy,Observation-cigarette-smoking-before-during-pregnancy,,x,x,BFDR
 52,Input,ObservationContributingCauseOfDeathPartVitalRecords,Observation-contributing-cause-of-death-part2-vr,,,,VRCPL
@@ -92,7 +92,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 69,Input,ObservationEditFlagPlurality,Observation-edit-flag-plurality,These validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,,,BFDR
 70,Input,ObservationFetalDeathTimePoint,Observation-fetal-death-time-point,,x,x,BFDR
 71,Input,ObservationFetalPresentation,Observation-fetal-presentation,,x,x,BFDR
-72,Input,ObservationGestationalAgeAtDelivery,Observation-gestational-age-at-delivery,,x,x,BFDR
+72,Input,ObservationGestationalAgeAtDelivery,Observation-gestational-age-at-delivery,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
 73,Input,ObservationHistologicalPlacentalExamPerformed,Observation-histological-placental-exam-performed,,x,x,BFDR
 74,Input,ObservationICUAdmission,Observation-icu-admission,,x,x,BFDR
 75,Input,ObservationInfantBreastfedAtDischarge,Observation-infant-breastfed-at-discharge,,x,x,BFDR
@@ -101,25 +101,27 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 78,Input,ObservationLaborTrialAttempted,Observation-labor-trial-attempted,,x,x,BFDR
 79,Input,ObservationLastMenstrualPeriod,Observation-last-menstrual-period,,x,x,BFDR
 80,Input,ObservationMannerOfDeathVitalRecords,Observation-manner-of-death-vr,,,,VRCPL
-81,Input,ObservationMethodOfDisposition,Observation-method-of-disposition,,x,x,BFDR
-82,Input,ObservationMotherDeliveryWeight,Observation-mother-delivery-weight,,x,x,BFDR
-83,Input,ObservationMotherHeight,Observation-mother-height,,x,x,BFDR
+81,Input,ObservationMethodOfDisposition,Observation-method-of-disposition,"This information is not required for submission of a fetal death report, but may be used by some jurisdictions.",x,x,BFDR
+82,Input,ObservationMotherDeliveryWeight,Observation-mother-delivery-weight,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
+83,Input,ObservationMotherHeight,Observation-mother-height,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
 84,Input,ObservationMotherMarriedDuringPregnancy,Observation-mother-married-during-pregnancy,,x,x,BFDR
-85,Input,ObservationMotherPrepregnancyWeight,Observation-mother-prepregnancy-weight,,x,x,BFDR
+85,Input,ObservationMotherPrepregnancyWeight,Observation-mother-prepregnancy-weight,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
 86,Input,ObservationMotherReceivedWICFood,Observation-mother-received-wic-food,,x,x,BFDR
 87,Input,ObservationNICUAdmission,Observation-nicu-admission,,x,x,BFDR
-88,Input,ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn,Observation-none-of-specified-abnormal-conditions-of-newborn,,x,x,BFDR
-89,Input,ObservationNoneOfSpecifiedCharacteristicsLaborAndDelivery,Observation-none-of-specified-characteristics-labor-delivery,,x,x,BFDR
-90,Input,ObservationNoneOfSpecifiedMaternalMorbidities,Observation-none-of-specified-maternal-morbidities,,x,x,BFDR
-91,Input,ObservationNoneOfSpecifiedPregnancyRiskFactors,Observation-none-of-specified-pregnancy-risk-factors,,x,x,BFDR
+88,Input,ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn,Observation-none-of-specified-abnormal-conditions-of-newborn,Presence of this observation indicates that none of the abnormal conditions of newborn specifyable in this IG are reported.,x,x,BFDR
+89,Input,ObservationNoneOfSpecifiedCharacteristicsLaborAndDelivery,Observation-none-of-specified-characteristics-labor-delivery,Presence of this observation indicates that none of the characteristics of labor and delivery specifyable in this IG are reported.,x,x,BFDR
+90,Input,ObservationNoneOfSpecifiedMaternalMorbidities,Observation-none-of-specified-maternal-morbidities,Presence of this observation indicates that none of the maternal morbidities specifyable in this IG are reported.,x,x,BFDR
+91,Input,ObservationNoneOfSpecifiedPregnancyRiskFactors,Observation-none-of-specified-pregnancy-risk-factors,Presence of this observation indicates that none of the pregnancy risk factors specifyable in this IG are reported.,x,x,BFDR
+,,ObservationNoneOfSpecifiedObstetricProcedures,Observation-none-of-specified-obstetric-procedures,Presence of this observation indicates that none of the obstetric procedures specifyable in this IG are reported.,x,x,BFDR
+,,ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy,Observation-no-infections-present-during-pregnancy,Presence of this observation indicates that none of the infections specifyable in this IG are reported.,x,x,BFDR
 92,Input,ObservationNumberBirthsNowDead,Observation-number-births-now-dead,,x,x,BFDR
 93,Input,ObservationNumberBirthsNowLiving,Observation-number-births-now-living,,x,x,BFDR
 94,Input,ObservationNumberFetalDeathsThisDelivery,Observation-number-fetal-deaths-this-delivery,,x,x,BFDR
 95,Input,ObservationNumberLiveBirthsThisDelivery,Observation-number-live-births-this-delivery,,x,x,BFDR
 96,Input,ObservationNumberOtherPregnancyOutcomes,Observation-number-other-pregnancy-outcomes,,x,x,BFDR
-97,Input,ObservationNumberPrenatalVisits,Observation-number-prenatal-visits,,x,x,BFDR
-98,Input,ObservationNumberPreviousCesareans,Observation-number-previous-cesareans,,x,x,BFDR
-99,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,,x,x,VRCPL
+97,Input,ObservationNumberPrenatalVisits,Observation-number-prenatal-visits,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
+98,Input,ObservationNumberPreviousCesareans,Observation-number-previous-cesareans,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
+99,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,VRCPL
 100,Input,ObservationPaternityAcknowledgementSigned,Observation-paternity-acknowledgement-signed,,x,x,BFDR
 101,Input,ObservationPlannedToDeliverAtHome,Observation-planned-to-deliver-at-home,,x,x,BFDR
 102,Input,ObservationPluralityVitalRecords,Observation-plurality-vr,"('Reabsorbed' fetuses, those which are not 'delivered' [expulsed or extracted from the mother] should not be counted.) Include all live births and fetal losses resulting from this pregnancy. 
@@ -140,7 +142,7 @@ This profile represents plurality as a characteristic of the pregnancy. For plur
  * the base FHIR [data-absent-reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) extension to both name.given and name.family (a name may not yet have been chosen for the baby and US Core Patient requires that Patient.name.given or Patient.name.family or both SHALL be present)
     * use not-applicable if the name hasn't been chosen",x,x,VRCPL
 112,Input,PatientDecedentFetus,Patient-decedent-fetus,,x,x,VRCPL
-113,Input,PatientMotherVitalRecords,Patient-mother-vr,,x,x,VRCPL
+113,Input,PatientMotherVitalRecords,Patient-mother-vr,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,VRCPL
 114,Input,PractitionerVitalRecords,Practitioner-vr,,x,x,VRCPL
 115,Input,ProcedureAntibioticSuspectedNeonatalSepsis,Procedure-antibiotic-suspected-neonatal-sepsis,,x,x,BFDR
 116,Input,ProcedureArtificialInsemination,Procedure-artificial-insemination,,x,x,BFDR
@@ -157,7 +159,7 @@ This profile represents plurality as a characteristic of the pregnancy. For plur
 127,Input,ProcedureObstetric,Procedure-obstetric,,x,x,BFDR
 128,Input,ProcedureSurfactantReplacementTherapy,Procedure-surfactant-replacement-therapy,,x,x,BFDR
 129,Input,ProcedureUnplannedHysterectomy,Procedure-unplanned-hysterectomy,,x,x,BFDR
-130,Input,RelatedpersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,,x,x,VRCPL
+130,Input,RelatedpersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,VRCPL
 131,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,,VRCPL
 133,Input,RelatedPersonMotherVitalRecords,RelatedPerson-mother-vr,,,,VRCPL
 134,Input,RelatedPersonParentVitalRecords,RelatedPerson-parent-vr,This profile is based on the [US Core RelatedPerson]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-relatedperson.html) profile.,,,VRCPL

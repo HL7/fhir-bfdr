@@ -1,3 +1,5 @@
+Presence of this observation indicates that none of the maternal morbidities specifyable in this IG are reported.
+
 ### Form Mapping
 This profile is mapped to:
  * Item **47.7. Maternal Morbidity: None of the above** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
