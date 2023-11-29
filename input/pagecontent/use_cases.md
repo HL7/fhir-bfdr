@@ -19,7 +19,7 @@ Information flows are supported by the FHIR Composition resources embedded in a 
 | Provider Fetal Death          | [Composition - Provider Fetal Death Report][CompositionProviderFetalDeathReport]         | EHR | VRO |
 | Jurisdiction Live Birth       | [Composition - Jurisdiction Live Birth Report][CompositionJurisdictionLiveBirthReport]   | VRO | NCHS | 
 | Jurisdiction Fetal Death      | [Composition - Jurisdiction Fetal Death Report][CompositionJurisdictionFetalDeathReport] | VRO | NCH  | 
-| Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity](CompositionCodedRaceAndEthnicity.html)          | NCHS | VRO |
+| Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity][CompositionCodedRaceAndEthnicity]               | NCHS | VRO |
 | Coded Cause of Fetal Death    | [Composition - Coded Cause of Fetal Death][CompositionCodedCauseOfFetalDeath]            | NCHS | VRO |
 {: .grid }
 
@@ -126,7 +126,7 @@ Plurality is both a characteristic of a pregnancy and a characteristic of a pati
 
 This IG uses profiles based on the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) profile for child and decedent fetus. These profiles  are housed in the [Vital Records Common Profiles Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}): 
 * [Patient - Child - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html): represents the subject patient (newborn/infant/child) for whom clinical data is included in the report.
-* [Patient - Decedent Fetus - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-decedent-fetus-vr.html): represents a delivered fetus for which clinical data is included in the report.
+* [Patient - Decedent Fetus][PatientDecedentFetus]: represents a delivered fetus for which clinical data is included in the report.
 
 To record that a Patient is a member of a multiple birth (plurality as a characteristic of a patient), and their place in the delivery order (set order), requires the use of the following:
 1. Patient.[multipleBirthInteger]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr-definitions.html#diff_Patient.multipleBirth[x]): requires an integer (not boolean) to indicate the delivery order (delivered first, second, third, etc.)
@@ -139,3 +139,5 @@ Both data elements are required for meaningful transmission of the information a
 Plurality as a pregnancy characteristic can be recorded using [Observation - Plurality - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-plurality-vr.html) of the [Vital Records Common Profiles Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}). It references the [Patient - Mother - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) as the subject. It represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy.
 * ‘Reabsorbed’ fetuses, those which are not ‘delivered’ (expulsed or extracted from the mother) **should not be counted**.
 * All live births and fetal losses resulting from this pregnancy **should be counted**.
+
+{% include markdown-link-references.md %}

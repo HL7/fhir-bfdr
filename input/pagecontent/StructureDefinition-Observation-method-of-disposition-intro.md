@@ -1,3 +1,5 @@
+This information is not required for submission of a fetal death report, but may be used by some jurisdictions.
+
 ### Form Mapping
 This profile is mapped to:
  * Item **13. Method of Disposition:** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
