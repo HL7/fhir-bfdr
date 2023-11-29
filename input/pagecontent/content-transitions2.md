@@ -148,7 +148,7 @@
 | [BirthAndFetalDeathFinancialClassCS] | New  | New Addition |
 | [BirthDeliveryOccurredCS] | New |  New Addition  |
 | [FetalDeathCauseOrConditionCS] | New |  New Addition  |
-| [InformantRelationshipToMotherCS] | - |  New Addition  |
+| [InformantRelationshipToMotherCS] | New |  New Addition  |
 {: .grid }
 
 
