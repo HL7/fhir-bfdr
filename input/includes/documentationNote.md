@@ -2,6 +2,6 @@
 
 ####  January 2024 Ballot of STU2
 
-TBD
+Note TBD
   
 </div><!-- documentation-note -->

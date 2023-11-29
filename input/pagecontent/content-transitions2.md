@@ -23,8 +23,8 @@
 | [ConditionEclampsiaHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-eclampsia-hypertension-vr.html)  | Added requiredCategory slice, see [categories] |
 | [ConditionFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-fetal-death-cause-or-condition.html) | - |
 | [ConditionFetalDeathOtherCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | - |
-| [ConditionGestationalDiabetes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-diabetes-vr.html) | -  |
-| [ConditionGestationalHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-hypertension-vr.html) | - |
+| [ConditionGestationalDiabetes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-diabetes-vr.html) | Added requiredCategory slice, see [categories]  |
+| [ConditionGestationalHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-hypertension-vr.html) | Added requiredCategory slice, see [categories] |
 | [ConditionInfectionPresentDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-infection-present-during-pregnancy.html) | -|
 | [ConditionPerinealLaceration] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-perineal-laceration.html) | Added requiredCategory slice, see [categories] |
 | [ConditionPrepregnancyDiabetes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-diabetes-vr.html) | Added requiredCategory slice, see [categories] |
@@ -40,7 +40,7 @@
 | [ObservationBirthWeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-birth-weight-vr.html) | Now includes birthWeight bypassEditFlag |
 | [ObservationCigaretteSmokingBeforeDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy) | Focus generalized to Patient |
 | [ObservationCodedInitiatingFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition.html) | Changed from Condition to Observation |
-| [ObservationCodedOtherFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | Changed from Condition to Observation. Added component: position to represent order of fetal death cause or condition codes |
+| [ObservationCodedOtherFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | Changed from Condition to Observation. Added component:position to represent order of fetal death cause or condition codes |
 | [ObservationDateOfFirstPrenatalCareVisit] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | - |
 | [ObservationDateOfLastLiveBirth] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-date-of-last-live-birth.html) | - |
 | [ObservationDateOfLastOtherPregnancyOutcome] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html) | - |
@@ -62,10 +62,10 @@
 | [ObservationNICUAdmission] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-nicu-admission.html) | - |
 | [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html) | See [categories](categories.html) |
 | [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery.html) | See [categories](categories.html) |
-| [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] | New | New Addition, See [categories](categories.html) |
-| [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] | New | New Addition, See [categories](categories.html) |
+| [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] | New | New Addition, see [categories](categories.html) |
+| [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] | New | New Addition, see [categories](categories.html) |
 | [ObservationNoneOfSpecifiedMaternalMorbidities] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-none-of-specified-maternal-morbidities.html) | See [categories](categories.html) |
-| [ObservationNoneOfSpecifiedObstetricProcedures] | New | New Addition, See [categories](categories.html) |
+| [ObservationNoneOfSpecifiedObstetricProcedures] | New | New Addition, see [categories](categories.html) |
 | [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors-vr.html) | See [categories](categories.html) |
 | [ObservationNumberBirthsNowDead] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-births-now-dead-vr.html) | - |
 | [ObservationNumberBirthsNowLiving] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-number-births-now-living-vr.html) | - |
@@ -80,7 +80,7 @@
 | [ObservationPreviousPretermBirth] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-previous-preterm-birth-vr.html) | - |
 | [ObservationSSNRequestedForChild] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-ssn-requested-for-child.html) | - |
 | [ObservationSteroidsFetalLungMaturation] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-steroids-fetal-lung-maturation.html) | - |
-| [ObservationUnknownFinalRouteMethodDelivery] | New | New Addition, See [categories](categories.html) |
+| [ObservationUnknownFinalRouteMethodDelivery] | New | New Addition, see [categories](categories.html) |
 | [PatientDecedentFetus] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Patient-decedent-fetus-vr.html) | Moved from VRCL to BFDR. Now includes multipleBirth bypassEditFlag and [multipleBirthTotal](https://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html) extension which replaces [ObservationPluralityVitalRecords](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition/Observation-plurality-vr) |
 | [ProcedureAntibioticSuspectedNeonatalSepsis] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html) | - |
 | [ProcedureArtificialInsemination] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-artificial-insemination-vr.html) | - |
@@ -157,7 +157,7 @@
 
 ### Removed Profiles
 
-| Name         | Current IG      | Comments/Updates  |
+| Name         | Current Version/Location     | Comments/Updates  |
 | :----------: | -----------     | :---------------: |
 | [ObservationEditFlagBirthweight] | Deleted |  bypassEditFlag extension added to [ObservationBirthWeight] | 
 | [ObservationEditFlagEstimateOfGestation] | Deleted |  bypassEditFlag extension added to [ObservationGestationalAgeAtDelivery] | 
@@ -175,7 +175,7 @@
 
 ### Removed Extensions
 
-| Name         |  Current IG      | Comments/Updates  |
+| Name         |  Current Version/Location      | Comments/Updates  |
 | :----------: | -----------     | :---------------: |
 | [ExtensionReplacementStatus](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-replacement-status.html) | - | Deprecated |
 {: .grid }
@@ -183,7 +183,7 @@
 
 ### Removed Valuesets
 
-| Name         |  Current IG      | Comments/Updates  |
+| Name         |  Current Version/Location      | Comments/Updates  |
 | :----------: |  -----------     | :---------------: |
 | [ValueSetReplacementStatus](https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-replacement-status.html) | - | Deprecated |
 | [ValueSetYesNoNotApplicable](https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-yes-no-not-applicable.html) | [VRCL](https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-not-applicable-vr.html)    | Moved to VRCL |
@@ -192,7 +192,7 @@
 
 ### Removed Codesystems
 
-| Name         |  Current IG      | Comments/Updates  |
+| Name         |  Current Version/Location      | Comments/Updates  |
 | :----------: |  -----------     | :---------------: |
 | [CodeSystemReplacement](https://hl7.org/fhir/us/bfdr/STU1.1/CodeSystem-CodeSystem-replacement-status.html)|  -  | Deprecated |
 {: .grid }
