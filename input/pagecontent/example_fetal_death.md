@@ -18,7 +18,7 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | --------- | ---------------- | 
 | Child     | [`Fetus Not Named`](Patient-patient-decedent-fetus-not-named.html) | 
 | Mother    | [`Carmen Teresa Lee`](Patient-patient-mother-carmen-teresa-lee.html) | 
-| Father    | `Tom Yan Lee`. Only included in [`questionnaire`](QuestionnaireResponse-questionnaireResponse-patients-fetal-death-carmen-lee.html) |
+| Father    | `Tom Yan Lee`. Only included in [`questionnaire`](QuestionnaireResponse-QuestionnaireResponse-patients-fetal-death-carmen-lee.html) |
 | Attendant | [`Janet Seito`](Practitioner-practitioner-vital-records-janet-seito.html) |
 | Planned to deliver at home | [`No`](Observation-observation-planned-to-deliver-at-home-not-named.html) |
 | Maternity Encounter | [`Maternity Encounter`](Encounter-encounter-maternity-carmen-teresa-lee.html)|
