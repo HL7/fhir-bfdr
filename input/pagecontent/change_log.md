@@ -33,3 +33,5 @@
 | [FHIR-41601](https://jira.hl7.org/browse/FHIR-41601)| Add guidance on Plurality & Multiple Births | Added guidance as suggested on Use Cases page |
 | [FHIR-41602](https://jira.hl7.org/browse/FHIR-41602)| Add guidance on sources and coding of data for forms | Added guidance as suggested on Use Cases page |
 {: .grid }
+
+{% include markdown-link-references.md %}
