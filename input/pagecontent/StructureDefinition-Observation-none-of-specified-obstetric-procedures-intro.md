@@ -1,4 +1,4 @@
-Presence of this observation indicates that none of the obstetric procedures specifyable in this IG are reported.
+Presence of this observation indicates that none of the obstetric procedures specifyable in this IG are reported
 
 ### Form Mapping
 This profile is mapped to:
