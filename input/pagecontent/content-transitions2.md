@@ -1,6 +1,8 @@
+{% include documentationNote.md %}
+
 ### Current Bundles and Compositions
 
-| Name | Previous IG |  Comments/Updates |
+| Name | Previous Version/Location |  Comments/Updates |
 | :----------: | ----------- | :---------------: |
 | [DemographicCodedContentBundleBFDR] | New | New Addition |
 | [BundleDocumentBFDR] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Bundle-document-bfdr.html) |-|
@@ -14,21 +16,21 @@
 
 ### Current Profiles
 
-| Name | Previous IG |  Comments/Updates |
+| Name | Previous Version/Location |  Comments/Updates |
 | :----------: | ----------- | :---------------: |
-| [ConditionChorioamnionitis] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-chorioamnionitis.html) |-|
+| [ConditionChorioamnionitis] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-chorioamnionitis.html) | Added requiredCategory slice, see [categories] |
 | [ConditionCongenitalAnomalyOfNewborn] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-congenital-anomaly-of-newborn.html) | - |
-| [ConditionEclampsiaHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-eclampsia-hypertension-vr.html)  | - |
+| [ConditionEclampsiaHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-eclampsia-hypertension-vr.html)  | Added requiredCategory slice, see [categories] |
 | [ConditionFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-fetal-death-cause-or-condition.html) | - |
 | [ConditionFetalDeathOtherCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | - |
 | [ConditionGestationalDiabetes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-diabetes-vr.html) | -  |
 | [ConditionGestationalHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-gestational-hypertension-vr.html) | - |
 | [ConditionInfectionPresentDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-infection-present-during-pregnancy.html) | -|
-| [ConditionPerinealLaceration] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-perineal-laceration.html) | -|
-| [ConditionPrepregnancyDiabetes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-diabetes-vr.html) | - |
-| [ConditionPrepregnancyHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-hypertension-vr.html) | - |
-| [ConditionRupturedUterus] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-ruptured-uterus.html) | -  |
-| [ConditionSeizure] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-seizure.html) | - |
+| [ConditionPerinealLaceration] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-perineal-laceration.html) | Added requiredCategory slice, see [categories] |
+| [ConditionPrepregnancyDiabetes] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-diabetes-vr.html) | Added requiredCategory slice, see [categories] |
+| [ConditionPrepregnancyHypertension] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Condition-prepregnancy-hypertension-vr.html) | Added requiredCategory slice, see [categories] |
+| [ConditionRupturedUterus] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-ruptured-uterus.html) | Added requiredCategory slice, see [categories] |
+| [ConditionSeizure] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-seizure.html) | Added requiredCategory slice, see [categories] |
 | [CoveragePrincipalPayerDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Coverage-principal-payer-for-delivery.html) | - |
 | [Encounter_Maternity] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-maternity.html) | - |
 | [EncounterBirth] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-birth.html) | - |
@@ -38,7 +40,7 @@
 | [ObservationBirthWeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-birth-weight-vr.html) | Now includes birthWeight bypassEditFlag |
 | [ObservationCigaretteSmokingBeforeDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy) | Focus generalized to Patient |
 | [ObservationCodedInitiatingFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition.html) | Changed from Condition to Observation |
-| [ObservationCodedOtherFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | Changed from Condition to Observation |
+| [ObservationCodedOtherFetalDeathCauseOrCondition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition.html) | Changed from Condition to Observation. Added component: position to represent order of fetal death cause or condition codes |
 | [ObservationDateOfFirstPrenatalCareVisit] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | - |
 | [ObservationDateOfLastLiveBirth] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-date-of-last-live-birth.html) | - |
 | [ObservationDateOfLastOtherPregnancyOutcome] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html) | - |
@@ -53,7 +55,7 @@
 | [ObservationLastMenstrualPeriod] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-last-menstrual-period-vr.html) | - |
 | [ObservationMethodOfDisposition] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-method-of-disposition.html) | - |
 | [ObservationMotherDeliveryWeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-delivery-weight-vr.html) | Now includes pregnancyReport bypassEditFlag |
-| [ObservationMotherHeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-height-vr.html) | Now includes pregnancyReport bypassEditFlag |
+| [ObservationMotherHeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-height-vr.html) | Now includes pregnancyReport bypassEditFlag. Base profile changed to use [USCoreBodyHeight](https://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-body-height.html) |
 | [ObservationMotherMarriedDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-mother-married-during-pregnancy.html) | - |
 | [ObservationMotherPrepregnancyWeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-prepregnancy-weight-vr.html) | Now includes pregnancyReport bypassEditFlag |
 | [ObservationMotherReceivedWICFood] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-mother-received-wic-food.html) | - |
@@ -97,7 +99,7 @@
 
 ### Current Extensions
 
-| Name         | Previous IG  |  Comments/Updates  |
+| Name         | Previous Version/Location  |  Comments/Updates  |
 | :----------: | -----------  |  :---------------: |
 | [AuxiliaryStateIdentifier1]| New | New Addition |
 | [AuxiliaryStateIdentifier2]| New | New Addition |
@@ -113,7 +115,7 @@
 
 ### Current Valuesets
 
-| Name         | Previous IG  | Comments/Updates  |
+| Name         | Previous Version/Location  | Comments/Updates  |
 | :----------: | -----------  | :---------------: |
 | [ApgarTimingVS] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/ValueSet-ValueSet-apgar-timing-vr.html) | - |
 | [BirthAndFetalDeathFinancialClassVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A) | - |
@@ -142,7 +144,7 @@
 
 ### Current Codesystems
 
-| Name         | Previous IG  | Comments/Updates  |
+| Name         | Previous Version/Location  | Comments/Updates  |
 | :----------: | -----------  | :---------------: |
 | [AbnormalConditionsNewbornCS] | New | New Addition | 
 | [BirthAndFetalDeathFinancialClassCS] | New  | New Addition |
