@@ -1,7 +1,7 @@
 ValueSet: MethodOfDispositionVS
 Id: ValueSet-method-of-disposition
 Title: "Method of Disposition VS"
-Description: "The set of codes used to indicate the method used to dispose of the decedent fetus remains."
+Description: "This valueset contains codes to represent Fetal Remains Method of Disposition. This valueset is based on [PHVS_FetalRemainsDispositionMethod_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7585)"
 * insert boilerplate
 * insert SNOMEDCopyright
 * $sct#449971000124106 "Burial"

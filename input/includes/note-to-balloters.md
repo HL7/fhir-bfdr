@@ -10,6 +10,6 @@ This STU2 ballot addresses the following:
   - Movement of content (i.e., profiles, valuesets, examples) that is used exclusively in the birth and fetal death use cases from VRCL to the Birth and Fetal Death Reporting IG.  As a result, the total content of this IG has dramatically increased in size.
   - Inclusion of valuesets formerly hosted in PHINVADs.  This follows the pattern established by the VRDR IG.
 
-  For a description of the changes to BFDR from STU1.1, see the [Change table](tbd.html).
+  For a description of the changes to BFDR from STU1.1, see the [Change table](content-transitions2.html).
   
 </div><!-- note-to-balloters -->
