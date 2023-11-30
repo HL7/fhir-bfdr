@@ -2,6 +2,7 @@ Profile: CompositionJurisdictionLiveBirthReport
 Parent: Composition
 Title: "Composition - Jurisdiction Live Birth Report"
 Description: "This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to the national statistics agency."
+Id: Composition-jurisdiction-live-birth-report 
 * . ^short = "Jurisdiction Live Birth Report"
 * extension 1.. 
   * ^slicing.discriminator.type = #value
