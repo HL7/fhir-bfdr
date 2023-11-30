@@ -39,7 +39,7 @@ This profile is mapped to:
   <td>APGAR5</td>
   <td>value, <br />code = 9274-2 (5 minute Apgar Score)</td>
   <td>integer</td>
-  <td><a href='ValueSet-ValueSet-apgar-timing.html'>ApgarTimingVS</a></td>
+  <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -48,7 +48,7 @@ This profile is mapped to:
   <td>APGAR10</td>
   <td>value, <br />code = 9271-8 (10 minute Apgar Score)</td>
   <td>integer</td>
-  <td><a href='ValueSet-ValueSet-apgar-timing.html'>ApgarTimingVS</a></td>
+  <td></td>
 </tr>
 
 </tbody>
