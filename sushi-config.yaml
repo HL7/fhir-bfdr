@@ -383,6 +383,7 @@ groups:
       - ObservationCodedOtherFetalDeathCauseOrCondition
       - ObservationFetalDeathTimePoint
       - ObservationHistologicalPlacentalExamPerformed
+      - ObservationMethodOfDisposition
       - PatientDecedentFetus
       
   BFDRProfilesParentInformation:
@@ -395,6 +396,9 @@ groups:
   BFDRExtensionsAdministrative:
     name: Administrative Extensions
     resources:
+      - AuxiliaryStateIdentifier1
+      - AuxiliaryStateIdentifier2
+      - CertificateNumber
       - ExtensionDateFiledByRegistrar
       - ExtensionDatereceivedByRegistrar
       - ExtensionFetalDeathLocalFileNumber
@@ -430,6 +434,7 @@ groups:
       - HistologicalPlacentalExaminationVS
       - InfectionsDuringPregnancyLiveBirthVS
       - InformantRelationshipToMotherVS
+      - MethodOfDispositionVS
       - MothersDateOfBirthEditFlagsVS
       - NewbornCongenitalAnomaliesVS
       - NumberPreviousCesareansEditFlagsVS
@@ -487,7 +492,9 @@ groups:
       - observation-gestational-age-at-delivery-not-named
       - observation-gestational-age-at-delivery-not-named-w-edit
       - observation-histological-placental-exam-performed-not-named
+      - observation-input-race-and-ethnicity-carmen-teresa-lee
       - observation-last-menstrual-period-carmen-teresa-lee
+      - observation-method-of-disposition-not-named
       - observation-mother-height-carmen-teresa-lee
       - observation-mother-height-carmen-teresa-lee-w-edit
       - observation-mother-prepregnancy-weight-carmen-teresa-lee
@@ -551,6 +558,7 @@ groups:
       - observation-date-of-last-live-birth-jada-ann-quinn
       - observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn
       - observation-fetal-presentation-babyg-quinn
+      - observation-input-race-and-ethnicity-jada-ann-quinn
       - observation-input-race-and-ethnicity-james-quinn
       - observation-input-race-and-ethnicity-james-quinn-w-edit
       - observation-last-menstrual-period-jada-ann-quinn
@@ -558,6 +566,8 @@ groups:
       - observation-mother-delivery-weight-jada-ann-quinn-w-edit
       - observation-mother-height-jada-ann-quinn
       - observation-mother-height-jada-ann-quinn-w-edit
+      - observation-no-infections-present-jada-ann-quinn
+      - observation-none-obstetric-procedures-jada-ann-quinn
       - observation-paternity-acknowledgement-signed-james-quinn
       - observation-paternity-acknowledgement-signed-james-quinn-w-edit
       - procedure-final-route-method-delivery-babyg-quinn
@@ -599,6 +609,7 @@ groups:
       - observation-previous-preterm-births-jada-ann-quinn
       - observation-ssn-requested-for-child-babyg-quinn
       - observation-steroids-fetal-lung-maturation-jada-ann-quinn
+      - observation-unknown-route-method-delivery-jada-ann-quinn
       - patient-child-babyg-quinn
       - patient-child-babyg-quinn-w-edit
       - patient-mother-birth-date-part-absent
