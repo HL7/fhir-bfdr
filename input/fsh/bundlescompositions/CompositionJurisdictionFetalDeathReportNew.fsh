@@ -2,6 +2,7 @@ Profile: CompositionJurisdictionFetalDeathReport
 Parent: Composition
 Title: "Composition - Jurisdiction Fetal Death Report"
 Description: "This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency."
+Id: Composition-jurisdiction-fetal-death-report 
 * extension 1.. 
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"
