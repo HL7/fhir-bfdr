@@ -1,7 +1,7 @@
 Instance: observation-parent-education-level-tom-yan-lee
 InstanceOf: ObservationEducationLevelVitalRecords
 Title: "Observation - Parent Education Level - Tom Yan Lee"
-Description: "Observation - Parent Education Level: Carmen Teresa Lee example"
+Description: "Observation - Parent Education Level: Tom Yan Lee example"
 Usage: #example
 * status = #final
 * code = $loinc#87300-0 "Highest level of education Father"
