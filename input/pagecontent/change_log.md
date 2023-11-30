@@ -8,7 +8,7 @@
 
 #### Minor Changes
 - Body Height LOINC Code 8302-2 Body Height Measured --> 3137-7 Body Height, based on new publication requirements.  Mother's Body Height based on USCoreBodyHeightProfile.
-- ID's for [ObservationFetalDeathTimePoint] and [CoveragePrincipalPayerDelivery] were changed to match profile name
+- Profile ID's were changed for [ObservationFetalDeathTimePoint], [CoveragePrincipalPayerDelivery], and [ObservationAntibioticsAdministeredDuringLabor] to be made consistent with their profile names. [EncounterMaternity] profile name was changed from Encounter_Maternity to EncounterMaternity to be consistent with naming convention of EncounterBirth.
 
 
 

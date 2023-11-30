@@ -1,5 +1,5 @@
 Instance: encounter-maternity-carmen-teresa-lee
-InstanceOf: Encounter_Maternity
+InstanceOf: EncounterMaternity
 Title: "Encounter - Maternity - Carmen Teresa Lee"
 Description: "Encounter - Maternity: Carmen Teresa Lee example"
 Usage: #example

@@ -4,7 +4,7 @@
 | ------------- | ----- | ------- | ------------------ | ------------ | ----------------- | 
 |Patient-Child |   subject  |    adding edit flag extension to patient VR   |   [PatientChildVitalRecords] |     [PatientChildVitalRecordsNew]     |   staying in VRCL with updates   |
 |Encounter-Birth |   encounter  |    -    | [EncounterBirth] |     -         |   -      |
-|Encounter-Maternity (ext) |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
+|Encounter-Maternity (ext) |   encounter  |    -    | [EncounterMaternity] |     -         |   -      |
 |Practitioner |   author  |  generalized profile that adds a further constraint to capture the title of the practitioner  | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] | - |
 |Patient-Mother |   focus  |    adding edit flag extension to patient VR    | [PatientMotherVitalRecords] |     [PatientMotherVitalRecordsNew]        |   staying in VRCL with updates   |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
@@ -90,7 +90,7 @@
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment         |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----------------- | 
 |Patient-Decedent Fetus |   subject  |    adding edit flag extension to patient VR     | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusVitalRecordsNew]   |   staying in VRCL with updates   |
-|Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
+|Encounter-Maternity |   encounter  |    -    | [EncounterMaternity] |     -         |   -      |
 |Practitioner |   author  |    generalized profile that adds a further constraint to capture the title of the practitioner    | [PractitionerVitalRecords] | [PractitionerVitalRecordsNew] |  -  |
 |Patient-Mother |   focus  |    adding edit flag extension to related person profile    | [PatientMotherVitalRecords] |   [RelatedPersonMotherVitalRecordsNew]    |   staying in VRCL with updates    |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
@@ -241,7 +241,7 @@
 | Name of Profile | Group | change  |  Current Profile   | New Profile  | Comment         |
 | ------------- | ----- | ------- | ------------------ | ------------ | ----------------- | 
 |Patient-Decedent Fetus |   subject  |    adding edit flag extension to patient VR     | [PatientDecedentFetusVitalRecords] |  [PatientDecedentFetusVitalRecordsNew]   |   staying in VRCL with updates   |
-|Encounter-Maternity |   encounter  |    -    | [Encounter_Maternity] |     -         |   -      |
+|Encounter-Maternity |   encounter  |    -    | [EncounterMaternity] |     -         |   -      |
 |US Core Organization Profile |   Author  |    -    | [USCoreOrganization] |     -         |   -      |
 |Patient-Mother |   focus  |    adding edit flag extension to patient VR     | [PatientMotherVitalRecords] |     [PatientMotherVitalRecordsNew]        |   staying in VRCL with updates   |
 |Planned to Deliver at Home |   motherPrenatal  |    -    | [ObservationPlannedToDeliverAtHome] |     -         |   -      |
