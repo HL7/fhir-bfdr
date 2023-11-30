@@ -1,6 +1,6 @@
 Profile: ObservationAntibioticsAdministeredDuringLabor
 Parent: Observation
-Id: Observation-antibiotics-during-labor
+Id: Observation-antibiotics-administered-during-labor
 Title: "Observation - Antibiotics Administered During Labor"
 Description: "This Observation profile indicates a characteristic of labor of antibiotics administered during labor."
 * code = $loinc#73813-8

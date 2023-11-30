@@ -32,7 +32,7 @@
 | [ConditionRupturedUterus] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-ruptured-uterus.html) | Added requiredCategory slice, see [categories] |
 | [ConditionSeizure] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-seizure.html) | Added requiredCategory slice, see [categories] |
 | [CoveragePrincipalPayerDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Coverage-principal-payer-for-delivery.html) | - |
-| [Encounter_Maternity] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-maternity.html) | - |
+| [EncounterMaternity] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-maternity.html) | - |
 | [EncounterBirth] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-birth.html) | - |
 | [ObservationAntibioticsAdministeredDuringLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-antibiotics-during-labor.html) | - |
 | [ObservationApgarScore] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-apgar-score-vr.html) | - |
