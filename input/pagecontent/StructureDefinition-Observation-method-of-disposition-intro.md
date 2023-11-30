@@ -38,7 +38,7 @@ This profile is mapped to:
   <td>*NO IJE MAPPING*</td>
   <td>value</td>
   <td>codeable</td>
-  <td></td>
+  <td><a href='ValueSet-ValueSet-method-of-disposition.html'>MethodOfDispositionVS</a></td>
 </tr>
 
 </tbody>
