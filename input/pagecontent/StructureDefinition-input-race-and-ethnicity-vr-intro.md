@@ -957,7 +957,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>295</td>
   <td>Father's Race--Filipino</td>
   <td>FRACE6</td>
-  <td>component[ Filipino].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>component[ Filipino].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>boolean</td>
   <td></td>
 </tr>
