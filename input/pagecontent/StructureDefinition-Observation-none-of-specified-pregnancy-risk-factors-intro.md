@@ -1,4 +1,14 @@
-Presence of this observation indicates that none of the pregnancy risk factors specifyable in this IG are reported.
+ Presence of this observation indicates that none of the pregnancy risk factors specifyable in this IG are reported including:
+* [ConditionEclampsiaHypertension]
+* [ConditionGestationalDiabetes]
+* [ConditionGestationalHypertension]
+* [ConditionPrepregnancyDiabetes]
+* [ConditionPrepregnancyHypertension]
+* [ObservationPreviousCesarean]
+* [ObservationPreviousPretermBirth]
+* [ProcedureArtificialInsemination]
+* [ProcedureAssistedFertilization]
+* [ProcedureInfertilityTreatment]
 
 ### Form Mapping
 This profile is mapped to:
