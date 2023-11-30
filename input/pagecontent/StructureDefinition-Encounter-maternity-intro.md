@@ -1,17 +1,5 @@
 After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property.
 
-### Form Mapping
-This profile is mapped to:
- * Item **28. Mother Transferred for Maternal Medical or Fetal Indications for Delivery?** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **23. Was the mother transferred to this facility for maternal medical or fetal indications for delivery?** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **7. Place Where Delivery Occurred** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **8. Facility Name / address** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **9. Facility Id** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **1. Facility name** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **1. Facility address** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **2. Facility I.D. (National Provider Identifier)** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **5. Place of delivery** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
-
 ### IJE Mapping
 
 <style>
@@ -279,3 +267,71 @@ This profile is mapped to:
 </details>
 <p></p>
 
+
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>28</td>
+  <td>Mother Transferred for Maternal Medical or Fetal Indications for Delivery?</td>
+  <td>hospitalization.admitSource (Y if present, N if not present)</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>23</td>
+  <td>Was the mother transferred to this facility for maternal medical or fetal indications for delivery?</td>
+  <td>hospitalization.admitSource (Y if present, N if not present)</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>Place Where Delivery Occurred</td>
+  <td>location.physicalType</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>Facility Name / address</td>
+  <td>identifier</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Facility Id</td>
+  <td>identifier</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Facility name</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Facility address</td>
+  <td>address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>Facility I.D. (National Provider Identifier)</td>
+  <td>identifier</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>Place of delivery</td>
+  <td>location.physicalType</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+</tbody>
+</table>

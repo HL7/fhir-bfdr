@@ -6,32 +6,6 @@ This profile adds further constraints to the [US Core Patient]({{site.data.fhir.
  * the base FHIR [data-absent-reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason) extension to both name.given and name.family (a name may not yet have been chosen for the baby and US Core Patient requires that Patient.name.given or Patient.name.family or both SHALL be present)
     * use not-applicable if the name hasn't been chosen
 
-### Form Mapping
-This profile is mapped to:
- * Item **1. Child’s Name** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **2. Child's Time of Birth** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **3. Child's Sex** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **4. Child's Date Of Birth** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **6. City, Town, Or Location Of Birth** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **7. County Of Birth** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **48. Newborn Medical Record Number** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **52. Plurality** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **53. If Not Single Birth - Born First, Second, Third, etc. (Specify)** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **3. City, Town or Location of birth** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **4. County of birth** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **17. Date of birth** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **18. Time of birth** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **22. Infant’s medical record number** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **31. Sex:** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **33. Plurality** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **34. If not single birth, order delivered in the pregnancy** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **Child’s name/medical record #** in the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * Item **17. Date of birth** in the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * Item **18. Time of birth** in the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * Item **34. Order delivered in the pregnancy** in the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * Item **31. Sex** in the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * Item **2. What will be your baby’s legal name?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
-
 ### IJE Mapping
 
 <style>
@@ -236,3 +210,155 @@ This profile is mapped to:
 </details>
 <p></p>
 
+
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Child’s Name</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>Child's Time of Birth</td>
+  <td>extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Child's Sex</td>
+  <td>extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Child's Date Of Birth</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>City, Town, Or Location Of Birth</td>
+  <td>extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>County Of Birth</td>
+  <td>extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>48</td>
+  <td>Newborn Medical Record Number</td>
+  <td>identifier:MRN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>52</td>
+  <td>Plurality</td>
+  <td>multipleBirth[x].extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>53</td>
+  <td>If Not Single Birth - Born First, Second, Third, etc. (Specify)</td>
+  <td>multipleBirthInteger</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>City, Town or Location of birth</td>
+  <td>extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>County of birth</td>
+  <td>extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>Date of birth</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>Time of birth</td>
+  <td>birthDate.extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>Infant’s medical record number</td>
+  <td>identifier:MRN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>31</td>
+  <td>Sex:</td>
+  <td>extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>33</td>
+  <td>Plurality</td>
+  <td>multipleBirthInteger.extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>34</td>
+  <td>If not single birth, order delivered in the pregnancy</td>
+  <td>multipleBirthInteger</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Child’s name/medical record #</td>
+  <td>identifier</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>Date of birth</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>Time of birth</td>
+  <td>birthDate.extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>34</td>
+  <td>Order delivered in the pregnancy</td>
+  <td>multipleBirthInteger</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>31</td>
+  <td>Sex</td>
+  <td>extension</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>What will be your baby’s legal name?</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+</tbody>
+</table>

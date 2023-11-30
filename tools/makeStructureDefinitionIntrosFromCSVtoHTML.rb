@@ -51,7 +51,7 @@ IJE_FHIR_TYPE_COL = 12
 IJE_FHIR_COMMENTS_COL = 13
 #IJE_MAPPING_PROFILE_COL = 19 #NOT USED
 
-# BFDR_Profile_Intros.xlsx columns
+# BFDR_Profile_Intros.csv columns
 INTRO_ORDER_COL = 0
 INTRO_HEADING_COL = 1 
 INTRO_PROFILE_NAME_COL = 2
@@ -61,7 +61,7 @@ INTRO_FORM_MAPPING_COL = 5
 INTRO_IJE_MAPPING_COL = 6
 #INTRO_PROFILE_LOCATION_COL = 7 #NOT USED
 
-# BFDR_Forms_mapping.xlsx columns
+# BFDR_Forms_mapping.csv columns
 FORMS_ORDER_COL = 0
 FORMS_FORM_COL = 1
 FORMS_URL_COL = 2
@@ -80,7 +80,7 @@ vProfileIntrosSpreadsheet = ARGV[0]
 #vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
 #vProfileIntrosSpreadsheet.default_sheet = "BFDR"
 
-# ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
+# ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
 vSpreadsheet = ARGV[1]
 #vSpreadsheet = open_spreadsheet(ARGV[1])
 #vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
@@ -138,19 +138,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts row[INTRO_PROFILE_USAGE_COL]
     end
 
-    # if there are form mappings put them into the intro file for the profile
-    if !row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty?
-      vIntroOutputFile.puts "" if !row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty?
-      vIntroOutputFile.puts "### Form Mapping"
-      vIntroOutputFile.puts "This profile is mapped to:"
-
-      CSV.foreach(pFormsMappingSpreadsheet) do |row|
-        next if row[FORMS_MAPPING_PROFILE_COL].to_s != vProfileNameHyphen
-        vIntroOutputFile.puts " * Item **" + row[FORMS_ELEMENT_COL].to_s + "** in the [" + row[FORMS_FORM_COL].to_s + "](" + row[FORMS_URL_COL].to_s + ")"
-      end
-    end
-
-    
 
     # if there are IJE mappings put them into the intro file for the profile
     if !row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?
@@ -307,7 +294,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
           vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
           vIntroOutputFile.puts "</tr>"
-          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
         unless firstEntry
           vIntroOutputFile.puts ""
@@ -360,7 +346,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
           vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
           vIntroOutputFile.puts "</tr>"
-          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
         unless firstEntry
           vIntroOutputFile.puts ""
@@ -413,7 +398,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
           vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
           vIntroOutputFile.puts "</tr>"
-          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
         unless firstEntry
           vIntroOutputFile.puts ""
@@ -466,7 +450,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
           vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
           vIntroOutputFile.puts "</tr>"
-          # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
         end
         unless firstEntry
           vIntroOutputFile.puts ""
@@ -520,7 +503,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
         vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
         vIntroOutputFile.puts "</tr>"
-        # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
       end
       unless firstEntry
         vIntroOutputFile.puts ""
@@ -573,7 +555,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         vIntroOutputFile.puts "  <td>" + row[IJE_FHIR_TYPE_COL].to_s + "</td>"
         vIntroOutputFile.puts "  <td>" + exchangeURLs(row[IJE_FHIR_COMMENTS_COL].to_s, alias_links) + "</td>"
         vIntroOutputFile.puts "</tr>"
-        # vIntroOutputFile.puts "| " + row[IJE_USECASE_COL].to_s + " | " + row[IJE_FIELD_COL].to_s + " | " + row[IJE_DESC_COL].to_s + " | " + row[IJE_NAME_COL].to_s + " | " + row[IJE_FHIR_FIELD_COL].to_s + " |" + row[IJE_FHIR_TYPE_COL].to_s + " |" + row[IJE_FHIR_ENCODING_COL].to_s + " |" 
       end     
       unless firstEntry
         vIntroOutputFile.puts ""
@@ -586,8 +567,56 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         firstEntry = true
       end
     end
+
+    # if there are form mappings put them into the intro file for the profile
+    if !row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty?
+      vIntroOutputFile.puts "" if !row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty?
+      vIntroOutputFile.puts "### Form Mapping"
+      vIntroOutputFile.puts "<table class='grid'>"
+      vIntroOutputFile.puts "<thead>"
+      vIntroOutputFile.puts "  <tr>"
+      vIntroOutputFile.puts "    <th style='text-align: center'><strong>Item #</strong></th>"
+      vIntroOutputFile.puts "    <th><strong>Form Field</strong></th>"
+      vIntroOutputFile.puts "    <th><strong>FHIR Profile Field</strong></th>"
+      vIntroOutputFile.puts "    <th><strong>Reference</strong></th>"
+      vIntroOutputFile.puts "  </tr>"
+      vIntroOutputFile.puts "</thead>"
+      vIntroOutputFile.puts "<tbody>"
+
+      CSV.foreach(pFormsMappingSpreadsheet) do |row|
+        next if row[FORMS_MAPPING_PROFILE_COL].to_s != vProfileNameHyphen
+        formsElement = row[FORMS_ELEMENT_COL].to_s
+        if formsElement.include? "."
+          formsElements = formsElement.strip.split(" ", 2)
+          itemNum = formsElements[0]
+          itemName = formsElements[1]
+        else
+          itemNum = "-"
+          itemName = formsElement
+        end
+        formName = row[FORMS_FORM_COL].to_s.partition('Standard').last
+        if row[FORMS_FIELD_COL].to_s.strip.empty?
+          if row[FORMS_CONTEXT_COL].to_s.empty?
+            fhirField = "-"
+          else
+            fhirField = row[FORMS_CONTEXT_COL].to_s.partition('.').last 
+          end     
+        else
+          fhirField = row[FORMS_FIELD_COL].to_s
+        end
+        vIntroOutputFile.puts "<tr>"
+        vIntroOutputFile.puts "  <td style='text-align: center'>" + itemNum.chomp(".") + "</td>"
+        vIntroOutputFile.puts "  <td>" + itemName + "</td>"
+        vIntroOutputFile.puts "  <td>" + fhirField + "</td>"
+        vIntroOutputFile.puts "  <td>" + "<a href='#{row[FORMS_URL_COL].to_s}'>#{formName}</a>" + "</td>"
+        vIntroOutputFile.puts "</tr>"
+      end
+      vIntroOutputFile.puts "</tbody>"
+      vIntroOutputFile.puts "</table>"
+    end
   end
 end
 
 
 createSDIntros("BFDR", vProfileIntrosSpreadsheet, vSpreadsheet, vFormsMappingSpreadsheet, alias_links)
+

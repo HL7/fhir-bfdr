@@ -1,9 +1,3 @@
-### Form Mapping
-This profile is mapped to:
- * Item **34. Did Mother Get WIC Food For Herself During This Pregnancy?** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **11. Did you receive WIC food for yourself because you were pregnant with this child?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **28. Did Mother Get WIC Food For Herself During This Pregnancy?** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **14. Did you receive WIC (Women, Infants & Children) food for yourself during this pregnancy?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
 
 ### IJE Mapping
 
@@ -83,3 +77,40 @@ This profile is mapped to:
 </details>
 <p></p>
 
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>34</td>
+  <td>Did Mother Get WIC Food For Herself During This Pregnancy?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11</td>
+  <td>Did you receive WIC food for yourself because you were pregnant with this child?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28</td>
+  <td>Did Mother Get WIC Food For Herself During This Pregnancy?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Did you receive WIC (Women, Infants & Children) food for yourself during this pregnancy?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+</tbody>
+</table>
