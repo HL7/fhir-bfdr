@@ -319,6 +319,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 478,Natality,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr
 831,Fetal Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,"4 digit year; < year of delivery, 9999",,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr
 1355,Birth Infant Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,,,,,,,,,,,
+,Fetal Death,NA,NA,NA,Method of Disposition,*NO IJE MAPPING*,,,BFDR,ObservationMethodOfDisposition,value,codeable,,,,,,,
 ,Mortality,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Decedent Gender],,,,,,
 ,Mortality Roster,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Decedent Gender],,,,,,
 22,Mortality,15,191,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB""",string,-,,y,,,,Decedent
@@ -2374,11 +2375,11 @@ For Canadian Provinces:
 1545,Birth Infant Death,204,872,1,Obstetric Estimation of Gestation--Edit Flag,OWGEST_BYPASS,"0 = Off
 1 = Queried data correct, out of range",,,,,,,,,,,,
 216,Mortality,204,3565,5,Disposition City - Code,DISPCITYCODE,NCHS Instruction Manual: Part 8,i,VRDR,DispositionLocation,address.city.extension[ cityCode].value,integer,see [CityCodes],,,,,,DispositionLocation
-669,Natality,205,873,2,Apgar Score at 5 Minutes,APGAR5,"00-10, 99",,BFDR,ObservationApgarScore,"value, <br />code = 9274-2 (5 minute Apgar Score)",integer,[ApgarTimingVS],B,,,,,Observation-apgar-score-vr
+669,Natality,205,873,2,Apgar Score at 5 Minutes,APGAR5,"00-10, 99",,BFDR,ObservationApgarScore,"value, <br />code = 9274-2 (5 minute Apgar Score)",integer,,B,,,,,Observation-apgar-score-vr
 1546,Birth Infant Death,205,873,2,Apgar Score at 5 Minutes,APGAR5,"00-10, 99",,,,,,,,,,,,
 1022,Fetal Death,205,1981,240,Other significant causes or conditions - Fetal injury literal,COD18b12,Literal text or Blank,,BFDR,ConditionFetalDeathOtherCauseOrCondition,"code=277489001 (Fetal trauma (disorder)), <br />code.text",string,specific description of fetal trauma should be provided in the code.text field,B,,,,,Condition-fetal-death-other-cause-or-condition
 217,Mortality,205,3570,28,Disposition City - Literal,DISPCITY,,i,VRDR,DispositionLocation,address.city,string,-,,,,,,DispositionLocation
-670,Natality,206,875,2,Apgar Score at 10 Minutes,APGAR10,"00-10, 88, 99",,BFDR,ObservationApgarScore,"value, <br />code = 9271-8 (10 minute Apgar Score)",integer,[ApgarTimingVS],B,,,,,Observation-apgar-score-vr
+670,Natality,206,875,2,Apgar Score at 10 Minutes,APGAR10,"00-10, 88, 99",,BFDR,ObservationApgarScore,"value, <br />code = 9271-8 (10 minute Apgar Score)",integer,,B,,,,,Observation-apgar-score-vr
 1547,Birth Infant Death,206,875,2,Apgar Score at 10 Minutes,APGAR10,"00-10, 88, 99",,,,"value, code = 9274-2",integer,,,,,,,
 1023,Fetal Death,206,2221,240,Other significant causes or conditions - Fetal infection literal,COD18b13,Literal text or Blank,,BFDR,ConditionFetalDeathOtherCauseOrCondition,"code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text",string,specific description of fetal infection should be provided in the code.text field,B,,,,,Condition-fetal-death-other-cause-or-condition
 218,Mortality,206,3598,100,Funeral Facility Name,FUNFACNAME,Funeral Facility Name (Funeral Home Name),i,VRDR,FuneralHome,name,string,-,,,,,,FuneralHome
