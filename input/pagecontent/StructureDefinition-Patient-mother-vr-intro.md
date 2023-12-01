@@ -1,63 +1,5 @@
 The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.
 
-### Form Mapping
-This profile is mapped to:
- * Item **8a. Mother’s Current Legal Name** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **8b. Mother’s Date Of Birth** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **8c. Mother’s Name Prior To First Marriage** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **8d. Mother’s Birthplace** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **9a. Residence of Mother - State** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **9b. Mother’s County** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **9c. Mother’s City, Town, or Location** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **9d. Mother’s Street And Number** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **9e. Mother’s Apt. No.** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **9f. Mother’s Zip Code** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **9g. Mother’s Residence Inside City Limits?** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **14. Mother’s Mailing Address** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **18. Mother’s Social Security Number** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **21. Mother of Hispanic Origin?** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **22. Mother’s Race** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **40. Mother’s Medical Record Number** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **Mother’s medical record #** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **Mother’s name** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * Item **Mother’s medical record #** in the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * Item **Mother’s name** in the [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * Item **1. What is your current legal name?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **3. Where do you usually live--that is--where is your household/residence located?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **4. Is this household inside city limits?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **5. What is your mailing address?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **6. What is your date of birth?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **7. In what State, U.S. territory, or foreign country were you born?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **9. Are you Spanish/Hispanic/Latina?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **10. What is your race?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **17. What name did you use prior to your first marriage?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **25a. What is your Social Security Number?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **10a. Mother’s Current Legal Name** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **10b. Mother's Date of Birth** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **10c. Mother’s Name Prior to First Marriage** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **10d. Mother's Birthplace** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **11a. Residence of Mother-State** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **11b. Residence of Mother-County** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **11c. Residence of Mother-City, Town, Or Location** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **11d. Residence of Mother-Street And Number** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **11e. Residence of Mother-Apt. No.** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **11f. Residence of Mother-Zip Code** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **11g. Residence of Mother-Inside City Limits?** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **20. Mother of Hispanic Origin?** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **21. Mother’s Race** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **Patient’s medical record #** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **Patient’s name** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **Patient’s Medical Record #** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **Patient’s Name** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **2. What is your current legal name?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **3. Where do you usually live (household/residence location)?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **4. Is this household inside city limits?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **5. What is your mailing address?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **6. What is your date of birth?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **7. In what State, U.S. territory, or foreign country were you born?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **9. Are you Spanish/Hispanic/Latina?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- * Item **10. What is your race?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
-
 ### IJE Mapping
 
 <style>
@@ -856,3 +798,347 @@ This profile is mapped to:
 </details>
 <p></p>
 
+
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>8a</td>
+  <td>Mother’s Current Legal Name</td>
+  <td>name:currentLegalName</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>8b</td>
+  <td>Mother’s Date Of Birth</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>8c</td>
+  <td>Mother’s Name Prior To First Marriage</td>
+  <td>name:namePriorToFirstMarriage</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>8d</td>
+  <td>Mother’s Birthplace</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9a</td>
+  <td>Residence of Mother - State</td>
+  <td>address.state</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9b</td>
+  <td>Mother’s County</td>
+  <td>address.district</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9c</td>
+  <td>Mother’s City, Town, or Location</td>
+  <td>address.city</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9d</td>
+  <td>Mother’s Street And Number</td>
+  <td>address.line</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9e</td>
+  <td>Mother’s Apt. No.</td>
+  <td>address.line</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9f</td>
+  <td>Mother’s Zip Code</td>
+  <td>address.postalCode</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9g</td>
+  <td>Mother’s Residence Inside City Limits?</td>
+  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Mother’s Mailing Address</td>
+  <td>address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>Mother’s Social Security Number</td>
+  <td>identifier:SSN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>Mother of Hispanic Origin?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>Mother’s Race</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>40</td>
+  <td>Mother’s Medical Record Number</td>
+  <td>identifier:MRN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Mother’s medical record #</td>
+  <td>identifier:MRN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Mother’s name</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Mother’s medical record #</td>
+  <td>identifier:MRN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Mother’s name</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>What is your current legal name?</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Where do you usually live--that is--where is your household/residence located?</td>
+  <td>address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Is this household inside city limits?</td>
+  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>What is your mailing address?</td>
+  <td>address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>What is your date of birth?</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>In what State, U.S. territory, or foreign country were you born?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Are you Spanish/Hispanic/Latina?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>What is your race?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>What name did you use prior to your first marriage?</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>25a</td>
+  <td>What is your Social Security Number?</td>
+  <td>identifier:SSN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>10a</td>
+  <td>Mother’s Current Legal Name</td>
+  <td>name:currentLegalName</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>10b</td>
+  <td>Mother's Date of Birth</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>10c</td>
+  <td>Mother’s Name Prior to First Marriage</td>
+  <td>name:namePriorToFirstMarriage</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>10d</td>
+  <td>Mother's Birthplace</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11a</td>
+  <td>Residence of Mother-State</td>
+  <td>address.state</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11b</td>
+  <td>Residence of Mother-County</td>
+  <td>address.district</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11c</td>
+  <td>Residence of Mother-City, Town, Or Location</td>
+  <td>address.city</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11d</td>
+  <td>Residence of Mother-Street And Number</td>
+  <td>address.line</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11e</td>
+  <td>Residence of Mother-Apt. No.</td>
+  <td>address.line</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11f</td>
+  <td>Residence of Mother-Zip Code</td>
+  <td>address.postalCode</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11g</td>
+  <td>Residence of Mother-Inside City Limits?</td>
+  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>20</td>
+  <td>Mother of Hispanic Origin?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>Mother’s Race</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s medical record #</td>
+  <td>identifier:MRN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s name</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s Medical Record #</td>
+  <td>identifier:MRN</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s Name</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>What is your current legal name?</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Where do you usually live (household/residence location)?</td>
+  <td>address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Is this household inside city limits?</td>
+  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>What is your mailing address?</td>
+  <td>address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>What is your date of birth?</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>In what State, U.S. territory, or foreign country were you born?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Are you Spanish/Hispanic/Latina?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>What is your race?</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+</tbody>
+</table>

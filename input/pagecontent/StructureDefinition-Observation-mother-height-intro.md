@@ -1,12 +1,5 @@
 The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.
 
-### Form Mapping
-This profile is mapped to:
- * Item **31. Mother’s Height** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **13. What is your height?** in the [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- * Item **25. Mother’s Height** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **15. What is your height?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
-
 ### IJE Mapping
 
 <style>
@@ -121,3 +114,41 @@ This profile is mapped to:
 </details>
 <p></p>
 
+
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>31</td>
+  <td>Mother’s Height</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>What is your height?</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>25</td>
+  <td>Mother’s Height</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>What is your height?</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+</tbody>
+</table>

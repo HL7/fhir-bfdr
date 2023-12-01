@@ -1,10 +1,5 @@
 This includes infections present at the start of pregnancy or confirmed diagnosis during pregnancy with or without documentation of treatment. Documentation of treatment during this pregnancy is adequate if a definitive diagnosis is not present in the available record.
 
-### Form Mapping
-This profile is mapped to:
- * Item **42. Infections present and/or treated during this pregnancy** in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * Item **15. Infections present and/or treated during this pregnancy** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
-
 ### IJE Mapping
 
 <style>
@@ -92,3 +87,29 @@ This profile is mapped to:
 </details>
 <p></p>
 
+
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>42</td>
+  <td>Infections present and/or treated during this pregnancy</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>Infections present and/or treated during this pregnancy</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+</tbody>
+</table>

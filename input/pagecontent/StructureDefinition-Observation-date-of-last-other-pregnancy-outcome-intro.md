@@ -1,6 +1,3 @@
-### Form Mapping
-This profile is mapped to:
- * Item **13. Date of last other pregnancy outcome** in the [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
 
 ### IJE Mapping
 
@@ -53,3 +50,22 @@ This profile is mapped to:
 </details>
 <p></p>
 
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>Date of last other pregnancy outcome</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+</tbody>
+</table>

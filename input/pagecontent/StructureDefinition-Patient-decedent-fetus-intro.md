@@ -1,21 +1,3 @@
-### Form Mapping
-This profile is mapped to:
- * Item **1. Name of Fetus** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **2. Time of Delivery** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **3. Sex** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **4. Date of Delivery** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **5a. City, Town, or Location of Delivery** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **5b. Zip Code of Delivery** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **6. County of Delivery** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **34. If Not Single Birth-Born First, Second, Third, etc.** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **3. City, Town or Location of delivery** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **4. County of delivery** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **12. Date of delivery** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **13. Time of delivery** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **21. Sex** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **22. Plurality** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **23. If not single delivery, order delivered in the pregnancy** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * Item **1. Would you like to name the child?** in the [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
 
 ### IJE Mapping
 
@@ -185,3 +167,112 @@ This profile is mapped to:
 </details>
 <p></p>
 
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Name of Fetus</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>Time of Delivery</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Sex</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Date of Delivery</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5a</td>
+  <td>City, Town, or Location of Delivery</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5b</td>
+  <td>Zip Code of Delivery</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>County of Delivery</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>34</td>
+  <td>If Not Single Birth-Born First, Second, Third, etc.</td>
+  <td>multipleBirthInteger</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>City, Town or Location of delivery</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>County of delivery</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>Date of delivery</td>
+  <td>birthDate</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>Time of delivery</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>Sex</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>Plurality</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>23</td>
+  <td>If not single delivery, order delivered in the pregnancy</td>
+  <td>multipleBirthInteger</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Would you like to name the child?</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'> Patient’s Worksheet for the Report of Fetal Death</a></td>
+</tr>
+</tbody>
+</table>
