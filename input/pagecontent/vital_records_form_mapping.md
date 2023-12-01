@@ -32,7 +32,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 | 2 | Child's Time of Birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html) |
 | 3 | Child's Sex | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html) |
 | 4 | Child's Date Of Birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | birthDate |
-| 5 | Facility Name / Address | [Encounter-birth]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-birth.html) | location.location |
+| 5 | Facility Name / Address | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | location.location |
 | 6 | City, Town, Or Location Of Birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
 | 7 | County Of Birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
 | 8a | Mother’s Current Legal Name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name:currentLegalName |
@@ -56,7 +56,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 | 14 | Mother’s Mailing Address | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address |
 | 15 | Mother Married? | [Observation-mother-married-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-married-during-pregnancy.html) | value |
 | 16 | Social Security Number Requested for Child? | [Observation-ssn-requested-for-child]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-ssn-requested-for-child.html) | value |
-| 17 | Facility Id. | [Encounter-birth]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-birth.html) | identifier |
+| 17 | Facility Id. | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | identifier |
 | 18 | Mother’s Social Security Number | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:SSN |
 | 19 | Father’s Social Security Number | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | identifier:SSN |
 | 20 | Mother’s Education | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html) | code |
@@ -181,8 +181,8 @@ Information on updates to the live birth and fetal death forms can be found at N
 | --------   | -----------      | -----------      | ------------    |
 | - | Mother’s medical record # | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:MRN |
 | - | Mother’s name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| 1 | Facility name / address | [Encounter-birth]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-birth.html) | name/address |
-| 2 | Facility I.D. | [Encounter-birth]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-birth.html) | identifier |
+| 1 | Facility name / address | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Encounter-birth.html) | name/address |
+| 2 | Facility I.D. | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Encounter-birth.html) | identifier |
 | 3 | City, Town or Location of birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
 | 4 | County of birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
 | 5 | Place where birth occurred | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | location.physicalType |
@@ -338,8 +338,8 @@ Information on updates to the live birth and fetal death forms can be found at N
 | 6 | County of Delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
 | 7 | Place Where Delivery Occurred | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | location.physicalType |
 | 7.a | Home Birth: Planned to deliver at home? | [Observation-planned-to-deliver-at-home]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-planned-to-deliver-at-home.html) | value |
-| 8 | Facility Name / address | [Encounter-maternity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-maternity.html) | identifier |
-| 9 | Facility Id | [Encounter-maternity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-maternity.html) | identifier |
+| 8 | Facility Name / address | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | identifier |
+| 9 | Facility Id | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | identifier |
 | 10a | Mother’s Current Legal Name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name:currentLegalName |
 | 10b | Mother's Date of Birth | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | birthDate |
 | 10c | Mother’s Name Prior to First Marriage | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name:namePriorToFirstMarriage |
@@ -409,9 +409,9 @@ Information on updates to the live birth and fetal death forms can be found at N
 | --------   | -----------      | -----------      | ------------    |
 | - | Patient’s medical record # | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:MRN |
 | - | Patient’s name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| 1 | Facility name | [Encounter-maternity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-maternity.html) | name |
-| 1 | Facility address | [Encounter-maternity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-maternity.html) | address |
-| 2 | Facility I.D. (National Provider Identifier) | [Encounter-maternity]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-Encounter-maternity.html) | identifier |
+| 1 | Facility name | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | name |
+| 1 | Facility address | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | address |
+| 2 | Facility I.D. (National Provider Identifier) | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | identifier |
 | 3 | City, Town or Location of delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
 | 4 | County of delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
 | 5 | Place of delivery | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | location.physicalType |

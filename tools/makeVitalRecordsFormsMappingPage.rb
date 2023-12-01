@@ -88,8 +88,7 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
     pOutputFile.puts "| --------   | -----------      | -----------      | ------------    |"
     
     CSV.foreach(pSpreadsheet) do |row|
-    # pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
-    
+
       next if row[FORMS_FORM_COL].to_s != pRowFilter || row[FORMS_PROFILE_COL].to_s == "not implemented"
     
       vElement = vProfile =vField = vContext = vIG = vExtension = vMappingIG = ""
@@ -104,31 +103,31 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
         vItemName = formsElement
       end
 
-      # vForm = "[" + row[FORMS_FORM_COL].to_s + "]" if row[FORMS_FORM_COL]
-      # vFormURL = "(" + row[FORMS_URL_COL].to_s + ")" if row[FORMS_URL_COL]
-      # vFormWithUrl = vForm + vFormURL
-
       vIg = row[FORMS_IG_COL].to_s if row[FORMS_IG_COL]
-      vProfile = row[FORMS_MAPPING_PROFILE_COL].to_s if row[FORMS_MAPPING_PROFILE_COL]
       vMappingIg = row[FORMS_MAPPING_IG_COL].to_s if row[FORMS_MAPPING_IG_COL]
+      vProfile = row[FORMS_MAPPING_PROFILE_COL].to_s if row[FORMS_MAPPING_PROFILE_COL]
       
       # There's some weirdness with the Roo gem and empty and nil fields - hence double to_s and check for empty hack
-      vField = !row[FORMS_FIELD_COL].to_s.to_s.empty? ? row[FORMS_FIELD_COL].to_s : row[FORMS_CONTEXT_COL].to_s.to_s.partition('.').last
-      vContext = row[FORMS_CONTEXT_COL].to_s + "." if !row[FORMS_CONTEXT_COL].to_s.to_s.empty?
+      vContext = row[FORMS_CONTEXT_COL].to_s if !row[FORMS_CONTEXT_COL].to_s.to_s.empty?
+      vField = row[FORMS_FIELD_COL].to_s.empty? ? row[FORMS_CONTEXT_COL].to_s.to_s.partition('.').last : row[FORMS_FIELD_COL].to_s
 
-      # vProfileFieldContext = vContext + "**" + vProfile + "**" + vField
+
       hasContext = !row[FORMS_CONTEXT_COL].nil?
-      # if there is a "context" but no "field" filled in for the spreadsheet,
-      # then we link the "profile" and the "mapping profile" separately with the field and profile respectively
+      # if there is a "context" filled in for the sheet,
+      # make sure that the proper IG is used (mapping IG)
       if hasContext && row[FORMS_FIELD_COL].nil?
         vFieldProfile = row[FORMS_PROFILE_COL].to_s if row[FORMS_PROFILE_COL]
         if vFieldProfile.nil?
-          puts "- Profile column is empty for extension - "
+          puts "- Profile column is empty - "
         end
+        # 
         vField = "[" + vField + "]" + "("+ igMap[vIg] + "StructureDefinition-" + vFieldProfile + ".html)"
         if vMappingIg.nil?
-          puts "- Mapping IG column is empty for extension - "
+          puts "- Mapping IG column is empty for profile - "
+          puts vContext
         end
+        vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
+      elsif hasContext
         vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
       else
         vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vIg] + "StructureDefinition-" + vProfile + ".html)"
@@ -138,43 +137,6 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
         vProfileWithURL = "[" + vProfile + "]" + "(Questionnaire-" + vProfile + ".html)" 
       end
 
-      # case vIg
-      #   when "BFDR"
-      #       if vProfile.include?("Questionnaire") 
-      #         vProfileWithURL = "[" + vProfile + "]" + "(Questionnaire-" + vProfile + ".html)"  
-      #       else
-      #         vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusbfdr}}" + "StructureDefinition-" + vProfile + ".html)"
-      #         if vField == "extension"
-      #           vField = "[" + vField + "]" + "({{site.data.fhir.ver.hl7fhirusbfdr}}" + "StructureDefinition-" + vProfile + ".html)"
-      #         end
-      #       end
-      #   when "VRCPL"
-      #       # *TODO* this may needneeds to be updated prior to publication - for some reason the jekyll variable doesn't work the same for current build IG
-      #       #vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "/StructureDefinition/" + vProfile + ")"
-      #       vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "StructureDefinition-" + vProfile + ".html)"
-      #       if vField.end_with?("extension")
-      #         vField = "[" + vField + "]" + "({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}" + "StructureDefinition-" + vProfile + ".html)"
-      #       end
-      #   when "US CORE"
-      #       vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhiruscore}}" + "/StructureDefinition-" + vProfile + ".html)"
-      #       if vField.end_with?("extension")
-      #         vField = "[" + vField + "]" + "({{site.data.fhir.ver.hl7fhiruscore}}" + "StructureDefinition-" + vProfile + ".html)"
-      #       end
-      #   when "FHIR"
-      #       vProfileWithURL = "[" + vProfile + "]" + "(http://hl7.org/fhir/extensions/StructureDefinition-" + vProfile + ".html)"
-      #       if vField.end_with?("extension")
-      #         vField = "[" + vField + "]" + "(http://hl7.org/fhir/extensions/StructureDefinition-" + "StructureDefinition-" + vProfile + ".html)"
-      #       end
-      #   when "ODH"
-      #       vProfileWithURL = "[" + vProfile + "]" + "({{site.data.fhir.ver.hl7fhirusodh}}" + "/StructureDefinition-" + vProfile + ".html)"
-      #       if vField.end_with?("extension")
-      #         vField = "[" + vField + "]" + "({{site.data.fhir.ver.hl7fhirusodh}}" + "StructureDefinition-" + vProfile + ".html)"
-      #       end
-      #   else
-      #       vProfileWithURL = ""
-      # end
-      
-      # pOutputFile.puts "| " + vFormWithUrl + " | " + vElement + " | " + vProfileWithURL + " | " + vIg + " |"
       pOutputFile.puts "| " + vItemNum + " | " + vItemName + " | " + vProfileWithURL + " | " + vField + " |"
 
     end
@@ -191,7 +153,6 @@ def createMappingTableQaire(pRowFilter, pOutputFile, pSpreadsheet)
   pOutputFile.puts "| --------   | -----------    | -----------         | ------------   |"
   
   CSV.foreach(pSpreadsheet) do |row|
-  # pSpreadsheet.each_row_streaming(offset:1, pad_cells: true) do |row|
   
     next if row[FORMS_FORM_COL].to_s != pRowFilter || row[FORMS_PROFILE_COL].to_s == "not implemented"
   
@@ -222,7 +183,6 @@ def createMappingTableQaire(pRowFilter, pOutputFile, pSpreadsheet)
     vQuestionnaireWithField = vQuestionnaire + vField
     vQuestionnaireWithURL = "[" + vQuestionnaireWithField + "]" + "(Questionnaire-" + vQuestionnaire + ".html)"  
         
-    # pOutputFile.puts "| " + vFormWithUrl + " | " + vElement + " | " + vQuestionnaireWithURL + " | " + vIG + " |"
     pOutputFile.puts "| " + vItemNum + " | " + vItemName + " | " + vQuestionnaireWithURL + " | " + vField[1..-1] + " |"
 
   end
