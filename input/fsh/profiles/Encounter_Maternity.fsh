@@ -1,4 +1,4 @@
-Profile: Encounter_Maternity
+Profile: EncounterMaternity
 Parent: USCoreEncounterProfile
 Id: Encounter-maternity
 Title: "Encounter - Maternity"

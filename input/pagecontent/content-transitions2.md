@@ -32,7 +32,7 @@
 | [ConditionRupturedUterus] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-ruptured-uterus.html) | Added requiredCategory slice, see [categories] |
 | [ConditionSeizure] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Condition-seizure.html) | Added requiredCategory slice, see [categories] |
 | [CoveragePrincipalPayerDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Coverage-principal-payer-for-delivery.html) | - |
-| [Encounter_Maternity] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-maternity.html) | - |
+| [EncounterMaternity] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-maternity.html) | - |
 | [EncounterBirth] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Encounter-birth.html) | - |
 | [ObservationAntibioticsAdministeredDuringLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-antibiotics-during-labor.html) | - |
 | [ObservationApgarScore] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-apgar-score-vr.html) | - |
@@ -59,7 +59,7 @@
 | [ObservationMotherMarriedDuringPregnancy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-mother-married-during-pregnancy.html) | - |
 | [ObservationMotherPrepregnancyWeight] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Observation-mother-prepregnancy-weight-vr.html) | Now includes pregnancyReport bypassEditFlag |
 | [ObservationMotherReceivedWICFood] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-mother-received-wic-food.html) | - |
-| [ObservationNICUAdmission] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-nicu-admission.html) | - |
+| [ObservationNICUAdmission] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-nicu-admission.html) | snomed code change from 405269005 Neonatal intensive care unit to 830077005 Admission to neonatal intensive care unit |
 | [ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html) | See [categories](categories.html) |
 | [ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery.html) | See [categories](categories.html) |
 | [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] | New | New Addition, see [categories](categories.html) |
@@ -81,20 +81,20 @@
 | [ObservationSSNRequestedForChild] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-ssn-requested-for-child.html) | - |
 | [ObservationSteroidsFetalLungMaturation] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-steroids-fetal-lung-maturation.html) | - |
 | [ObservationUnknownFinalRouteMethodDelivery] | New | New Addition, see [categories](categories.html) |
-| [PatientDecedentFetus] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Patient-decedent-fetus-vr.html) | Moved from VRCL to BFDR. Now includes multipleBirth bypassEditFlag and [multipleBirthTotal](https://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html) extension which replaces [ObservationPluralityVitalRecords](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition/Observation-plurality-vr) |
-| [ProcedureAntibioticSuspectedNeonatalSepsis] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html) | - |
-| [ProcedureArtificialInsemination] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-artificial-insemination-vr.html) | - |
-| [ProcedureAssistedVentilationFollowingDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-assisted-ventilation-following-delivery.html) | - |
-| [ProcedureAssistedVentilationMoreThanSixHours] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html) | - |
-| [ProcedureAugmentationOfLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-augmentation-of-labor.html) | - |
-| [ProcedureBloodTransfusion] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-blood-transfusion.html) | - |
-| [ProcedureEpiduralOrSpinalAnesthesia] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html) | - |
-| [ProcedureFinalRouteMethodDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-final-route-method-delivery.html) | - |
-| [ProcedureInductionOfLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-induction-of-labor.html) | - |
-| [ProcedureInfertilityTreatment] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-infertility-treatment-vr.html) | - |
-| [ProcedureObstetric] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-obstetric.html) | - |
-| [ProcedureSurfactantReplacementTherapy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-surfactant-replacement-therapy.html) | - |
-| [ProcedureUnplannedHysterectomy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-unplanned-hysterectomy.html) | - |
+| [PatientDecedentFetus] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Patient-decedent-fetus-vr.html) | Now includes multipleBirth bypassEditFlag and [multipleBirthTotal](https://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html) extension which replaces [ObservationPluralityVitalRecords](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition/Observation-plurality-vr) |
+| [ProcedureAntibioticSuspectedNeonatalSepsis] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureArtificialInsemination] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-artificial-insemination-vr.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureAssistedVentilationFollowingDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-assisted-ventilation-following-delivery.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureAssistedVentilationMoreThanSixHours] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureAugmentationOfLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-augmentation-of-labor.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureBloodTransfusion] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-blood-transfusion.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureEpiduralOrSpinalAnesthesia] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureFinalRouteMethodDelivery] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-final-route-method-delivery.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureInductionOfLabor] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-induction-of-labor.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureInfertilityTreatment] | [VRCL](https://hl7.org/fhir/us/vr-common-library/STU1.1/StructureDefinition-Procedure-infertility-treatment-vr.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureObstetric] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-obstetric.html) | Added LOINC category value, see [categories](categories.html). Outcome constrained to new valueset that contains subset of ProcedureOutcomeCodes(SNOMEDCT) |
+| [ProcedureSurfactantReplacementTherapy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-surfactant-replacement-therapy.html) | Added LOINC category value, see [categories](categories.html) |
+| [ProcedureUnplannedHysterectomy] | [BFDR](https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Procedure-unplanned-hysterectomy.html) | Added LOINC category value, see [categories](categories.html) |
 {: .grid }
 
 ### Current Extensions
@@ -137,7 +137,7 @@
 | [NewbornCongenitalAnomaliesVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51)  | - |
 | [NumberPreviousCesareansEditFlagsVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=C5BC6D8B-DDFA-E611-A856-0017A477041A) | -  |
 | [ObstetricProcedureVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=6D41E52D-2415-4EC4-A38A-87B0FEC503FB)  | - |
-| [ValueSetObstetricProcedureOutcome] | New | New Addition, indicates whether procedure was 'Successful' or 'Unsuccessful' |
+| [ValueSetObstetricProcedureOutcome] | New | New Addition, contains subset of ProcedureOutcomeCodes(SNOMEDCT), indicating whether procedure was 'Successful' or 'Unsuccessful' |
 | [PluralityEditFlagsVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3A484C53-FDFD-E611-A856-0017A477041A) | - |
 | [PregnancyReportEditFlagsVS] | [PHINVADS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BD25B456-85EC-45D7-B578-1024EE2920F4) | Used in bypassEditFlag extension for [ObservationMotherHeight], [ObservationMotherDeliveryWeight], [ObservationMotherPrepregnancyWeight], [ObservationNumberPrenatalVisits] |
 {: .grid }

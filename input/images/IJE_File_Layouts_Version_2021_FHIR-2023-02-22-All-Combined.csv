@@ -3016,8 +3016,13 @@ N = No, box for race not checked",,VRCPL,ObservationInputRaceAndEthnicityVitalRe
 1117,Fetal Death,300,4325,1,Father's Race--Native Hawaiian,FRACE11,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ NativeHawaiian].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",boolean,,B,,,,,RelatedPerson-father-natural-vr
 765,Natality,301,2234,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,not implemented,not implemented,,,,-,,,,,Observation-race-vr
 1642,Birth Infant Death,301,2234,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,,not implemented,,,,,,,,,
+<<<<<<< HEAD
 1118,Fetal Death,301,4326,1,Father's Race--Guamanian or Chamorro,FRACE12,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ GuamanianOrChamorro].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",boolean,,B,,,,,RelatedPerson-father-natural-vr
 1119,Fetal Death,302,4327,1,Father's Race--Samoan,FRACE13,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ Samoan].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",boolean,,B,,,,,RelatedPerson-father-natural-vr
+=======
+1118,Fetal Death,301,4326,1,Father's Race--Guamanian or Chamorro,FRACE12,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ GuamanianOrChamorro].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]",boolean,,B,,,,,RelatedPerson-father-natural-vr
+1119,Fetal Death,302,4327,1,Father's Race--Samoan,FRACE13,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ Samoan].valueBoolean, <br />subject=Reference[ RelatedPersonFatherNaturalVitalRecords ]",boolean,,B,,,,,RelatedPerson-father-natural-vr
+>>>>>>> 5bdb514d61ac116b9dd8bc7607a411cac4103a36
 766,Natality,302,2284,50,Facility Mother Moved From (if transferred),HOSPFROM,Literal facility name; blank if not transferred,,BFDR,EncounterMaternity,hospitalization.origin.name,string,,B,,,,,Encounter-maternity
 1643,Birth Infant Death,302,2284,50,Facility Mother Moved From (if transferred),HOSPFROM,Literal facility name; blank if not transferred,,,,,,,,,,,,
 1120,Fetal Death,303,4328,1,Father's Race--Other Pacific Islander,FRACE14,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ OtherPacificIslander].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",boolean,,B,,,,,RelatedPerson-father-natural-vr

@@ -27,7 +27,7 @@ Description: "This Composition profile contains constraints to address the use c
 * subject only Reference(PatientDecedentFetus)
   * ^short = "The subject of the composition is the decedent fetus"
   * ^definition = "The subject of the composition as a whole is the decedent fetus. Different sections in the composition have different focus (e.g.: the mother)."
-* encounter only Reference(Encounter_Maternity)
+* encounter only Reference(EncounterMaternity)
 * encounter 
   * ^short = "The Encounter for the Composition is the mother's maternity encounter."
   * ^definition = "The Encounter for the Composition is the mother's maternity encounter."

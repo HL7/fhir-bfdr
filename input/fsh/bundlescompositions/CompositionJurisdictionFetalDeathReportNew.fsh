@@ -2,6 +2,7 @@ Profile: CompositionJurisdictionFetalDeathReport
 Parent: Composition
 Title: "Composition - Jurisdiction Fetal Death Report"
 Description: "This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency."
+Id: Composition-jurisdiction-fetal-death-report 
 * extension 1.. 
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"
@@ -26,7 +27,7 @@ Description: "This Composition profile contains information of a fetal death and
 * subject only Reference(PatientDecedentFetus)
   * ^short = "The subject of the composition is the decedent fetus"
   * ^definition = "The subject of the composition as a whole is the decedent fetus. Different sections in the composition have different focus (e.g.: the mother)."
-* encounter only Reference(Encounter_Maternity)
+* encounter only Reference(EncounterMaternity)
 * encounter 
   * ^short = "The Encounter for the Composition is the mother's maternity encounter."
   * ^definition = "The Encounter for the Composition is the mother's maternity encounter."
