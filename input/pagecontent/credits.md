@@ -17,7 +17,7 @@
 
 #### Development Team
 * [Lantana Consulting Group](https://www.lantanagroup.com/), Lantana Consulting Group provides services and software for standards-based health information exchange.
-* [MITRE], a not-for-profit organization working in the public interest across federal, state and local governments, as well as industry and academia.
+* [MITRE](https://www.mitre.org), a not-for-profit organization working in the public interest across federal, state and local governments, as well as industry and academia.
 
 ### Acknowledgements
 * The development of the BFDR implementation guide by the [development team](credits.html#development-team) was performed under contract to The Centers for Disease Control (CDC), National Center for Health Statistics (NCHS), Division of Vital Records (DVS) under the direction of the [project facilitators](credits.html#project-facilitators).
