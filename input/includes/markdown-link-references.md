@@ -22,7 +22,9 @@
 [Note on missing infections present data]: usage.html#infection-present-during-pregnancy
 [Note on missing method of delivery data]: usage.html#method-of-delivery
 [Note on missing obstetric procedures data]: usage.html#obstetric-procedures
+[use cases]: use_cases.html
 [Categories]: categories.html 
+[categories]: categories.html 
 [Handling of edit flags]: usage.html#handling-of-edit-flags
 [Birth and Fetal Death Vital Reporting]: bfdr_index.html
 [Vital Records Common Library]: vrcl_index.html
