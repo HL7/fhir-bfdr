@@ -1,7 +1,7 @@
 ﻿Order,Heading,Profile Name,Profile ID,Profile Usage,Form Mappng,IJE Mapping,Profile Location
 1,Input,BundleDocumentBFDR,Bundle-document-bfdr,,,,BFDR
-2,Input,CompositionJurisdictionFetalDeathReport,Composition-jurisdiction-fetal-death-report,The data requirements for jurisdictional reporting of fetal deaths are based on the [Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/death_edit_specifications.pdf).,,,BFDR
-3,Input,CompositionJurisdictionLiveBirthReport,Composition-jurisdiction-live-birth-report,The data requirements for jurisdictional reporting of live births are based on the [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth_edit_specifications.pdf).,,,BFDR
+2,Input,CompositionJurisdictionFetalDeathReport,Composition-jurisdiction-fetal-death-report,The data requirements for jurisdictional reporting of fetal deaths are based on the [Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/death_edit_specifications.pdf).,x,x,BFDR
+3,Input,CompositionJurisdictionLiveBirthReport,Composition-jurisdiction-live-birth-report,The data requirements for jurisdictional reporting of live births are based on the [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth_edit_specifications.pdf).,x,x,BFDR
 4,Input,CompositionProviderFetalDeathReport,Composition-provider-fetal-death-report,"For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the fetus is collected from the responsible party at the healthcare facility.
 
 The data requirements for provider supplied fetal death information are based on the
@@ -14,7 +14,7 @@ The jurisdiction may have additional data requirements and edit specifications t
 The 1992 Revision of the Model State Vital Statistics Act and Regulations recommends the following definition of fetal death:
 > ""Fetal death"" means death prior to the complete expulsion or extraction from its mother of a product of human conception, irrespective of the duration of pregnancy and which is not an induced termination of pregnancy. The death is indicated by the fact that after such expulsion or extraction, the fetus does not breathe or show any other evidence of life, such as beating of the heart, pulsation of the umbilical cord, or definite movement of voluntary muscles. Heartbeats are to be distinguished from transient cardiac contractions; respirations are to be distinguished from fleeting respiratory efforts or gasps.
 
-See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) for information about including a QuestionnaireResponse in this Composition.",,,BFDR
+See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) for information about including a QuestionnaireResponse in this Composition.",x,x,BFDR
 5,Input,CompositionProviderLiveBirthReport,Composition-provider-live-birth-report,"For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility.
 
 The data requirements for provider supplied live birth information are based on the
@@ -25,7 +25,7 @@ The data requirements for provider supplied live birth information are based on 
 
 The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.
 
-See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) for information about including a QuestionnaireResponse in this Composition.",,,BFDR
+See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) for information about including a QuestionnaireResponse in this Composition.",x,x,BFDR
 6,Input,ConditionChorioamnionitis,Condition-chorioamnionitis,,x,x,BFDR
 7,Input,ConditionCongenitalAnomalyOfNewborn,Condition-congenital-anomaly-of-newborn,,x,x,BFDR
 8,Input,ConditionEclampsiaHypertension,Condition-eclampsia-hypertension,,x,x,BFDR
@@ -43,25 +43,25 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 20,Input,EncounterMaternity,Encounter-maternity,"After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property.",x,x,BFDR
 21,Input,EncounterBirth,Encounter-birth,This Encounter can reference the mother's maternity encounter using the partOf data element.,x,x,BFDR
 22,Input,ExtensionDateDayVitalRecords,Extension-date-day-vr,,,,VRCPL
-23,Input,ExtensionDateFiledByRegistrar,Extension-date-filed-by-registrar,,x,x,BFDR
+23,Input,ExtensionDateFiledByRegistrar,Extension-date-filed-by-registrar,,,,BFDR
 24,Input,ExtensionDateMonthVitalRecords,Extension-date-month-vr,,,,VRCPL
 25,Input,ExtensionDatePartAbsentReasonVitalRecords,Extension-date-part-absent-reason-vr,,,,VRCPL
-26,Input,ExtensionDateReceivedByRegistrar,Extension-date-received-by-registrar,,x,x,BFDR
+26,Input,ExtensionDateReceivedByRegistrar,Extension-date-received-by-registrar,,,,BFDR
 27,Input,ExtensionDateTimeVitalRecords,Extension-date-time-vr,,,,VRCPL
 28,Input,ExtensionDateYearVitalRecords,Extension-date-year-vr,,,,VRCPL
 29,Input,ExtensionEncounterMaternityReference,Extension-encounter-maternity-reference,,,,BFDR
-30,Input,ExtensionFetalDeathLocalFileNumber,Extension-fetal-death-local-file-number,,x,x,BFDR
-31,Input,ExtensionFetalDeathReportNumber,Extension-fetal-death-report-number,,x,x,BFDR
-32,Input,ExtensionLiveBirthCertificateNumber,Extension-live-birth-certificate-number,,x,x,BFDR
-33,Input,ExtensionLiveBirthLocalFileNumber,Extension-live-birth-local-file-number,,x,x,BFDR
+30,Input,ExtensionFetalDeathLocalFileNumber,Extension-fetal-death-local-file-number,,,,BFDR
+31,Input,ExtensionFetalDeathReportNumber,Extension-fetal-death-report-number,,,,BFDR
+32,Input,ExtensionLiveBirthCertificateNumber,Extension-live-birth-certificate-number,,,,BFDR
+33,Input,ExtensionLiveBirthLocalFileNumber,Extension-live-birth-local-file-number,,,,BFDR
 34,Input,ExtensionPartialDateTimeVitalRecords,Extension-partial-date-time-vr,,,,VRCPL
 35,Input,ExtensionPartialDateVitalRecords,Extension-partial-date-vr,,,,VRCPL
 36,Input,ExtensionPatientFetalDeathVitalRecords,Extension-patient-fetal-death-vr,,,,VRCPL
-37,Input,ExtensionRelatedpersonBirthplaceVitalRecords,Extension-relatedperson-birthplace-vr,,x,x,VRCPL
+37,Input,ExtensionRelatedpersonBirthplaceVitalRecords,Extension-relatedperson-birthplace-vr,,,,VRCPL
 38,Input,ExtensionRelatedpersonDeceasedVitalRecords,Extension-relatedperson-deceased-vr,,,,VRCPL
 39,Input,ExtensionReplacementStatus,Extension-replacement-status,,,,BFDR
 40,Input,ExtensionReportedParentAgeAtDeliveryVitalRecords,Extension-reported-parent-age-at-delivery-vr,,,,VRCPL
-41,Input,ExtensionWithinCityLimitsIndicatorVitalRecords,Extension-within-city-limits-indicator-vr,,x,x,VRCPL
+41,Input,ExtensionWithinCityLimitsIndicatorVitalRecords,Extension-within-city-limits-indicator-vr,,,,VRCPL
 42,Input,ObservationInputRaceAndEthnicityVitalRecords,input-race-and-ethnicity-vr,In cases where multiple races are recorded for a person an algorithm (NCHS defined) is used to select a single race. The goal is to provide race statistics that are comparable with those used historically to facilitate time series analysis. The goal is to maintain consistency between data collected after the definitional change (allowing collection of multiple races and ethnicities) and that collected prior to that time. This intent is to maintain the integrity of time series (data collected from a range of time periods) reporting.,,x,VRCPL
 43,Input,LocationDeathVitalRecords,Location-death-vr,,,,VRCPL
 44,Input,LocationInjuryVitalRecords,Location-injury-vr,,,,VRCPL
@@ -109,7 +109,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 86,Input,ObservationMotherReceivedWICFood,Observation-mother-received-wic-food,,x,x,BFDR
 87,Input,ObservationNICUAdmission,Observation-nicu-admission,,x,x,BFDR
 88,Input,ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn,Observation-none-of-specified-abnormal-conditions-of-newborn,Presence of this observation indicates that none of the abnormal conditions of newborn specifyable in this IG are reported.,x,x,BFDR
-89,Input,ObservationNoneOfSpecifiedCharacteristicsLaborAndDelivery,Observation-none-of-specified-characteristics-labor-delivery," Presence of this observation indicates that none of the characteristics of labor and delivery specifyable in this IG are reported.",x,x,BFDR
+89,Input,ObservationNoneOfSpecifiedCharacteristicsLaborAndDelivery,Observation-none-of-specified-characteristics-labor-delivery, Presence of this observation indicates that none of the characteristics of labor and delivery specifyable in this IG are reported.,x,x,BFDR
 90,Input,ObservationNoneOfSpecifiedMaternalMorbidities,Observation-none-of-specified-maternal-morbidities,Presence of this observation indicates that none of the maternal morbidities specifyable in this IG are reported,x,x,BFDR
 91,Input,ObservationNoneOfSpecifiedPregnancyRiskFactors,Observation-none-of-specified-pregnancy-risk-factors," Presence of this observation indicates that none of the pregnancy risk factors specifyable in this IG are reported including:
 * [ConditionEclampsiaHypertension]

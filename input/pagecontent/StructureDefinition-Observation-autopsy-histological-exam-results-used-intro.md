@@ -1,7 +1,3 @@
-### Form Mapping
-This profile is mapped to:
- * Item **18h. Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death?** in the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * Item **30. Were autopsy or histological placental examination results used in determining the cause of fetal death?** in the [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
 
 ### IJE Mapping
 
@@ -45,3 +41,28 @@ This profile is mapped to:
 </details>
 <p></p>
 
+### Form Mapping
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Item #</strong></th>
+    <th><strong>Form Field</strong></th>
+    <th><strong>FHIR Profile Field</strong></th>
+    <th><strong>Reference</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>18h</td>
+  <td>Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death?</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>30</td>
+  <td>Were autopsy or histological placental examination results used in determining the cause of fetal death?</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+</tbody>
+</table>
