@@ -1,4 +1,3 @@
-This information is not required for submission of a fetal death report, but may be used by some jurisdictions.
 
 ### IJE Mapping
 
@@ -28,12 +27,12 @@ This information is not required for submission of a fetal death report, but may
 <tbody>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
-  <td>NA</td>
-  <td>Method of Disposition</td>
-  <td>*NO IJE MAPPING*</td>
+  <td>153</td>
+  <td>Number of Fetal Deaths</td>
+  <td>FDTH</td>
   <td>value</td>
-  <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-method-of-disposition.html'>MethodOfDispositionVS</a></td>
+  <td>integer</td>
+  <td></td>
 </tr>
 
 </tbody>
@@ -41,7 +40,6 @@ This information is not required for submission of a fetal death report, but may
 
 </details>
 <p></p>
-
 
 ### Form Mapping
 <table class='grid'>
@@ -55,15 +53,9 @@ This information is not required for submission of a fetal death report, but may
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>13</td>
-  <td>Method of Disposition:</td>
+  <td style='text-align: center'>24</td>
+  <td>If not single delivery, specify number of fetal losses in this delivery</td>
   <td>value</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>25</td>
-  <td>Method of Disposition</td>
-  <td>-</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 </tbody>

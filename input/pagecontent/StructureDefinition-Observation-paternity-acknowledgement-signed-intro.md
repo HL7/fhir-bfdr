@@ -1,4 +1,3 @@
-This information is not required for submission of a fetal death report, but may be used by some jurisdictions.
 
 ### IJE Mapping
 
@@ -10,7 +9,7 @@ This information is not required for submission of a fetal death report, but may
 
 <summary>
 
-<strong class='context-menu'> Fetal Death </strong>
+<strong class='context-menu' > Natality </strong>
 
 </summary>
 <table class='grid'>
@@ -27,13 +26,13 @@ This information is not required for submission of a fetal death report, but may
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>Fetal Death</td>
-  <td>NA</td>
-  <td>Method of Disposition</td>
-  <td>*NO IJE MAPPING*</td>
+  <td style='text-align: center'>Natality</td>
+  <td>31</td>
+  <td>Mother Married?--Acknowledgement of Paternity Signed</td>
+  <td>ACKN</td>
   <td>value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-method-of-disposition.html'>MethodOfDispositionVS</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-not-applicable-vr.html'>ValueSetYesNoNotApplicableVitalRecords</a></td>
 </tr>
 
 </tbody>
@@ -41,7 +40,6 @@ This information is not required for submission of a fetal death report, but may
 
 </details>
 <p></p>
-
 
 ### Form Mapping
 <table class='grid'>
@@ -54,17 +52,5 @@ This information is not required for submission of a fetal death report, but may
   </tr>
 </thead>
 <tbody>
-<tr>
-  <td style='text-align: center'>13</td>
-  <td>Method of Disposition:</td>
-  <td>value</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>25</td>
-  <td>Method of Disposition</td>
-  <td>-</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
-</tr>
 </tbody>
 </table>

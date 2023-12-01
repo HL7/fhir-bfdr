@@ -1,4 +1,3 @@
-Birth certificates only require 5 and 10 minute timings. Other use cases may require/accept other timings.
 
 ### IJE Mapping
 
@@ -28,19 +27,10 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 <tbody>
 <tr>
   <td style='text-align: center'>Natality</td>
-  <td>205</td>
-  <td>Apgar Score at 5 Minutes</td>
-  <td>APGAR5</td>
-  <td>value, <br />code = 9274-2 (5 minute Apgar Score)</td>
-  <td>integer</td>
-  <td></td>
-</tr>
-<tr>
-  <td style='text-align: center'>Natality</td>
-  <td>206</td>
-  <td>Apgar Score at 10 Minutes</td>
-  <td>APGAR10</td>
-  <td>value, <br />code = 9271-8 (10 minute Apgar Score)</td>
+  <td>144</td>
+  <td>Previous Other Pregnancy Outcomes</td>
+  <td>POPO</td>
+  <td>value</td>
   <td>integer</td>
   <td></td>
 </tr>
@@ -50,7 +40,6 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 
 </details>
 <p></p>
-
 
 ### Form Mapping
 <table class='grid'>
@@ -64,20 +53,20 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>51</td>
-  <td>Apgar Score:</td>
+  <td style='text-align: center'>36</td>
+  <td>Number of Other Pregnancy Outcomes</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>32</td>
-  <td>Apgar score</td>
+  <td style='text-align: center'>12</td>
+  <td>Number of other pregnancy outcomes</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>32</td>
-  <td>Apgar score</td>
+  <td style='text-align: center'>12</td>
+  <td>Number of other pregnancy outcomes</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
 </tr>

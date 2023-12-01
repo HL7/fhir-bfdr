@@ -1,4 +1,3 @@
-Birth certificates only require 5 and 10 minute timings. Other use cases may require/accept other timings.
 
 ### IJE Mapping
 
@@ -28,20 +27,11 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 <tbody>
 <tr>
   <td style='text-align: center'>Natality</td>
-  <td>205</td>
-  <td>Apgar Score at 5 Minutes</td>
-  <td>APGAR5</td>
-  <td>value, <br />code = 9274-2 (5 minute Apgar Score)</td>
-  <td>integer</td>
-  <td></td>
-</tr>
-<tr>
-  <td style='text-align: center'>Natality</td>
-  <td>206</td>
-  <td>Apgar Score at 10 Minutes</td>
-  <td>APGAR10</td>
-  <td>value, <br />code = 9271-8 (10 minute Apgar Score)</td>
-  <td>integer</td>
+  <td>194</td>
+  <td>Method of Delivery--Trial of Labor Attempted</td>
+  <td>TLAB</td>
+  <td>value</td>
+  <td>boolean</td>
   <td></td>
 </tr>
 
@@ -51,6 +41,41 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 </details>
 <p></p>
 
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>135</td>
+  <td>Method of Delivery--Trial of Labor Attempted</td>
+  <td>TLAB</td>
+  <td>value</td>
+  <td>boolean</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
 
 ### Form Mapping
 <table class='grid'>
@@ -64,22 +89,28 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>51</td>
-  <td>Apgar Score:</td>
+  <td style='text-align: center'>46.D.1</td>
+  <td>If cesarean, was a trial of labor attempted?</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>32</td>
-  <td>Apgar score</td>
+  <td style='text-align: center'>27.D.1</td>
+  <td>Method of delivery: If cesarean, was a trial of labor attempted?</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>32</td>
-  <td>Apgar score</td>
+  <td style='text-align: center'>27.D.1</td>
+  <td>If cesarean, was a trial of labor attempted?</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>38.D.1</td>
+  <td>Method of Delivery: If cesarean, was a trial of labor attempted?</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 </tbody>
 </table>

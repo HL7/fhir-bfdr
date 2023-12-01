@@ -1,4 +1,4 @@
-Birth certificates only require 5 and 10 minute timings. Other use cases may require/accept other timings.
+The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.
 
 ### IJE Mapping
 
@@ -28,21 +28,21 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 <tbody>
 <tr>
   <td style='text-align: center'>Natality</td>
-  <td>205</td>
-  <td>Apgar Score at 5 Minutes</td>
-  <td>APGAR5</td>
-  <td>value, <br />code = 9274-2 (5 minute Apgar Score)</td>
-  <td>integer</td>
+  <td>139</td>
+  <td>Mother's Weight at Delivery (in whole pounds)</td>
+  <td>DWGT</td>
+  <td>value</td>
+  <td>quantity</td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
-  <td>206</td>
-  <td>Apgar Score at 10 Minutes</td>
-  <td>APGAR10</td>
-  <td>value, <br />code = 9271-8 (10 minute Apgar Score)</td>
-  <td>integer</td>
-  <td></td>
+  <td>140</td>
+  <td>Mother's Weight at Delivery--Edit Flag</td>
+  <td>DWGT_BYPASS</td>
+  <td>value.extension[bypassEditFlag].value</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-pregnancy-report-edit-flags.html'>PregnancyReportEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 
 </tbody>
@@ -64,22 +64,16 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>51</td>
-  <td>Apgar Score:</td>
+  <td style='text-align: center'>33</td>
+  <td>Mother’s Weight At Delivery</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>32</td>
-  <td>Apgar score</td>
+  <td style='text-align: center'>25</td>
+  <td>Mother’s weight at delivery</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>32</td>
-  <td>Apgar score</td>
-  <td>value</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
 </tr>
 </tbody>
 </table>
