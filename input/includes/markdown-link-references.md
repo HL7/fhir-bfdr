@@ -25,6 +25,8 @@
 [use cases]: use_cases.html
 [Categories]: categories.html 
 [categories]: categories.html 
+[Change Log]: change_log.html
+[Changes Between Versions]: content-transitions2.html
 [Handling of edit flags]: usage.html#handling-of-edit-flags
 [Birth and Fetal Death Vital Reporting]: bfdr_index.html
 [Vital Records Common Library]: vrcl_index.html
@@ -148,3 +150,16 @@
 [relatedperson-parent-vr-stepmother]: https://build.fhir.org/ig/HL7/vr-common-library/RelatedPerson-relatedperson-parent-vr-stepmother.html
 [us-core-patient-vr-a-freeman]: https://build.fhir.org/ig/HL7/vr-common-library/Patient-us-core-patient-vr-a-freeman.html
 [us-core-patient-vr-unknown-name]: https://build.fhir.org/ig/HL7/vr-common-library/Patient-us-core-patient-vr-unknown-name.html
+
+[ObservationEditFlagBirthweight]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-birthweight.html
+[ObservationEditFlagEstimateOfGestation]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-estimate-of-gestation.html
+[ObservationEditFlagFathersDateOfBirth]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-fathers-date-of-birth.html
+[ObservationEditFlagFathersEducation]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-fathers-education.html
+[ObservationEditFlagMothersDateOfBirth]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-mothers-date-of-birth.html
+[ObservationEditFlagMothersDeliveryWeight]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-mothers-delivery-weight.html
+[ObservationEditFlagMothersEducation]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-mothers-education.html
+[ObservationEditFlagMothersHeight]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-mothers-height.html
+[ObservationEditFlagMothersPrepregnancyWeight]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-mothers-prepregnancy-weight.html
+[ObservationEditFlagNumberPrenatalCareVisits]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-number-prenatal-care-visits.html
+[ObservationEditFlagNumberPreviousCesareans]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-number-previous-cesareans.html
+[ObservationEditFlagPlurality]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-plurality.html
