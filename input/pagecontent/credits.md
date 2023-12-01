@@ -12,8 +12,9 @@
 
 #### STU2 Specification Developers
 * [Saul A. Kravitz](https://www.linkedin.com/in/skravitz/), MITRE
-* [Patricia Tran](https://www.linkedin.com/in/patricia-tran-56896874/), MITRE
 * [Robert Passas](https://www.linkedin.com/in/robert-passas-b2b795124/), MITRE
+* [Patricia Tran](https://www.linkedin.com/in/patricia-tran-56896874/), MITRE
+
 
 #### Development Team
 * [Lantana Consulting Group](https://www.lantanagroup.com/), Lantana Consulting Group provides services and software for standards-based health information exchange.
