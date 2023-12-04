@@ -179,7 +179,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 vOutputFile.puts ""
 vOutputFile.puts "#### Specifying None of the Above and Missing Data"
-vOutputFile.puts "All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]" 
+vOutputFile.puts "All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [note on missing data]." 
 vOutputFile.puts ""
 vOutputFile.puts "| **Observation** |  **Complements**   |"
 vOutputFile.puts "| --------------- | ------------------ |"
@@ -211,7 +211,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 
 vOutputFile1.puts ""
 vOutputFile1.puts "#### Specifying None of the Above and Missing Data"
-vOutputFile1.puts "All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]" 
+vOutputFile1.puts "All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [note on missing data]." 
 vOutputFile1.puts ""
 vOutputFile1.puts "| **Observation** |  **Complements**   |"
 vOutputFile1.puts "| --------------- | ------------------ |"

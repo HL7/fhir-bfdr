@@ -8,7 +8,7 @@ The following IJE mappings to locations in FHIR specifications are for informati
 * FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
 
 #### Specifying None of the Above and Missing Data
-All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a>
+All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>note on missing data</a>
 
 | **Observation** |  **Complements**   |
 | --------------- | ------------------ |

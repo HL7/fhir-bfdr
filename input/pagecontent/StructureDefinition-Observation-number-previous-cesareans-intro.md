@@ -78,7 +78,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
   <td>NPCES</td>
   <td>value</td>
   <td>integer</td>
-  <td>See <a href='usage.html#pregnancy-risk-factors'>Note on missing pregnancy risk factors data</a></td>
+  <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>

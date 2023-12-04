@@ -33,7 +33,7 @@ This includes infections present at the start of pregnancy or confirmed diagnosi
   <td>GON</td>
   <td>code=15628003 (Gonorrhea (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>note on missing infections present data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -42,7 +42,7 @@ This includes infections present at the start of pregnancy or confirmed diagnosi
   <td>SYPH</td>
   <td>code=76272004 (Syphilis (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>note on missing infections present data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -51,7 +51,7 @@ This includes infections present at the start of pregnancy or confirmed diagnosi
   <td>CHAM</td>
   <td>code=105629000 (Chlamydial infection (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>note on missing infections present data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -60,7 +60,7 @@ This includes infections present at the start of pregnancy or confirmed diagnosi
   <td>HEPB</td>
   <td>code=66071002 (Viral hepatitis type B (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>note on missing infections present data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -69,7 +69,7 @@ This includes infections present at the start of pregnancy or confirmed diagnosi
   <td>HEPC</td>
   <td>code=50711007 (Viral hepatitis type C (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#infection-present-during-pregnancy'>Note on missing infections present data</a></td>
+  <td>See <a href='usage.html#infection-present-during-pregnancy'>note on missing infections present data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>

@@ -1528,7 +1528,7 @@ year of delivery, 8888, 9999",,not implemented,not implemented,,,,-,,,,,not impl
 1292,ITOP,110,907,1,Other complications at time of followup at this facility,OTHER_F1,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented
 927,Fetal Death,110,490,1,Risk Factors--Prepregnancy Diabetes  (NOTE: SEE INSERTED NOTES FOR RISK FACTOR LOCATIONS 490-501 AND 573-575 TO REFLECT 2004 CHANGES),PDIAB,"Y = Yes
 N = No
-U = Unknown",,BFDR,ConditionPrepregnancyDiabetes,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+U = Unknown",,BFDR,ConditionPrepregnancyDiabetes,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-prepregnancy-diabetes-vr
@@ -1536,7 +1536,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 575,Natality,111,712,3,Father's Race Tabulation Variable 4E,FRACE4E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr
 1452,Birth Infant Death,111,712,3,Father's Race Tabulation Variable 4E,FRACE4E,NCHS Appendix E,,,,,,,,,,,,
 121,Mortality,111,978,1,Did Tobacco Use Contribute to Death?,TOBAC,,,VRDR,TobaccoUseContributedToDeath,value,codeable,[ContributoryTobaccoUseVS],,y,,,,TobaccoUseContributedToDeath
-928,Fetal Death,111,491,1,Risk Factors--Gestational Diabetes,GDIAB,"Y, N, U",,BFDR,ConditionGestationalDiabetes,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+928,Fetal Death,111,491,1,Risk Factors--Gestational Diabetes,GDIAB,"Y, N, U",,BFDR,ConditionGestationalDiabetes,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-gestational-diabetes-vr
@@ -1546,7 +1546,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 576,Natality,112,715,3,Father's Race Tabulation Variable 5E,FRACE5E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr
 1453,Birth Infant Death,112,715,3,Father's Race Tabulation Variable 5E,FRACE5E,NCHS Appendix E,,,,,,,,,,,,
 122,Mortality,112,979,1,Pregnancy,PREG,,,VRDR,DecedentPregnancyStatus,value,codeable,[DeathPregnancyStatusVS],,y,,,,DecedentPregnancyStatus
-929,Fetal Death,112,492,1,Risk Factors--Hypertension Prepregnancy,PHYPE,"Y, N, U",,BFDR,ConditionPrepregnancyHypertension,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+929,Fetal Death,112,492,1,Risk Factors--Hypertension Prepregnancy,PHYPE,"Y, N, U",,BFDR,ConditionPrepregnancyHypertension,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-prepregnancy-hypertension-vr
@@ -1557,7 +1557,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 577,Natality,113,718,3,Father's Race Tabulation Variable 6E,FRACE6E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr
 1454,Birth Infant Death,113,718,3,Father's Race Tabulation Variable 6E,FRACE6E,NCHS Appendix E,,,,,,,,,,,,
 123,Mortality,113,980,1,If Female--Edit Flag: From EDR only,PREG_BYPASS,,,VRDR,DecedentPregnancyStatus,value.extension[ BypassEditFlag ].value,codeable,[EditBypass012VS],,y,,,,DecedentPregnancyStatus
-930,Fetal Death,113,493,1,Risk Factors--Hypertension Gestational  (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004),GHYPE,"Y, N, U",,BFDR,ConditionGestationalHypertension,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+930,Fetal Death,113,493,1,Risk Factors--Hypertension Gestational  (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004),GHYPE,"Y, N, U",,BFDR,ConditionGestationalHypertension,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-gestational-hypertension-vr
@@ -1588,7 +1588,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 581,Natality,117,730,3,Father's Race Tabulation Variable 17C,FRACE17C,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr
 1458,Birth Infant Death,117,730,3,Father's Race Tabulation Variable 17C,FRACE17C,NCHS Appendix E,,,,,,,,,,,,
 127,Mortality,117,989,4,Time of injury,TOI_HR,,,VRDR,InjuryIncident,effective,dateTime,See [PartialDatesAndTimes],,y,,,,InjuryIncident
-934,Fetal Death,117,497,1,Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575),INFT,"Y, N, U",,BFDR,ProcedureInfertilityTreatment,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+934,Fetal Death,117,497,1,Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 574-575),INFT,"Y, N, U",,BFDR,ProcedureInfertilityTreatment,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Procedure-infertility-treatment-vr
@@ -1599,7 +1599,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 1459,Birth Infant Death,118,733,3,Father's Race Tabulation Variable 18C,FRACE18C,NCHS Appendix E,,,,,,,,,,,,
 128,Mortality,118,993,1,Injury at work,WORKINJ,Y = Yes N = No.  U = Unknown X = Not Applicable,,VRDR,InjuryIncident,component[InjuryAtWork].value,codeable,[ValueSetYesNoUnknownNotApplicableVitalRecords],,y,,,,InjuryIncident
 389,Surveillance,118,2075,250,Describe How Injury Occurred,HOWINJ,Literal description; Blank for natural death,,VRDR,InjuryIncident,value.text,string,-,,y,,,,InjuryIncident
-935,Fetal Death,118,498,1,Risk Factors--Previous Cesarean,PCES,"Y, N, U",,BFDR,ObservationPreviousCesarean,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+935,Fetal Death,118,498,1,Risk Factors--Previous Cesarean,PCES,"Y, N, U",,BFDR,ObservationPreviousCesarean,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Observation-previous-cesarean-vr
@@ -1610,7 +1610,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 583,Natality,119,736,3,Father's Race Tabulation Variable 19C,FRACE19C,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr
 1460,Birth Infant Death,119,736,3,Father's Race Tabulation Variable 19C,FRACE19C,NCHS Appendix E,,,,,,,,,,,,
 129,Mortality,119,994,30,Title of Certifier,CERTL,,,VRDR,DeathCertification,"performer.function (note that if value is ""OTH"" then performed.function.text should contain 'Full Text for Other Individual Legally Allowed to Certify')",codeable,[CertifierTypesVS],,y,,,,DeathCertification
-936,Fetal Death,119,499,2,Risk Factors--Number Previous Cesareans,NPCES,"00-30, 99",,BFDR,ObservationNumberPreviousCesareans,value,integer,See [Note on missing pregnancy risk factors data],B,,,,,Observation-number-previous-cesareans-vr
+936,Fetal Death,119,499,2,Risk Factors--Number Previous Cesareans,NPCES,"00-30, 99",,BFDR,ObservationNumberPreviousCesareans,value,integer,See [note on missing pregnancy risk factors data],B,,,,,Observation-number-previous-cesareans-vr
 390,Surveillance,119,2325,30,"If Transportation Accident, Specify",TRANSPRT,"DR=Driver/Operator
 PA=Passenger
 PE=Pedestrian
@@ -1696,7 +1696,7 @@ For Canadian Provinces:
 1307,ITOP,125,1069,1,Secondary management needed,SECOND_MAN,"Y, N, or U (if N or U, leave all other MAN secondary managements blank)",,not implemented,not implemented,,,,,,,,,not implemented
 589,Natality,125,752,1,Mother Transferred?,TRAN,"Y = Yes
 N = No
-U = Unknown",,BFDR,EncounterMaternity,"hospitalization.admitSource = ""hosp-trans""",codeable,"[HL7EncounterAdmitSourceVS], <br />See [Note on missing data]",B,,,,,Encounter-maternity
+U = Unknown",,BFDR,EncounterMaternity,"hospitalization.admitSource = ""hosp-trans""",codeable,"[HL7EncounterAdmitSourceVS], <br />See [note on missing data]",B,,,,,Encounter-maternity
 1466,Birth Infant Death,125,752,1,Mother Transferred?,TRAN,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,
@@ -1819,7 +1819,7 @@ IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,F
 1480,Birth Infant Death,139,780,3,Mother's Weight at Delivery (in whole pounds),DWGT,"050-450, 999",,,,,,,,,,,,
 410,Surveillance,139,2996,20,"Cause of Death Part I Interval, Line d",INTERVAL1D,Duration reported on Line d,,VRDR,CauseOfDeathPart1,"component[interval].value, component[lineNumber] = 4",string(20),-,,y,,,,CauseOfDeathPart1
 151,Mortality,139,1317,28,Place of death. County of Death,COUNTYTEXT_D,Valid county literal,I,VRDR,DeathLocation,address.district,string,-,,,,,,DeathLocation
-956,Fetal Death,139,520,1,Maternal Morbidity--Ruptured Uterus,RUT,"Y, N, U",,BFDR,ConditionRupturedUterus,,na,See [Note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
+956,Fetal Death,139,520,1,Maternal Morbidity--Ruptured Uterus,RUT,"Y, N, U",,BFDR,ConditionRupturedUterus,,na,See [note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
 STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Condition-ruptured-uterus
@@ -1837,7 +1837,7 @@ STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,not implemented
 412,Surveillance,141,3256,240,Cause of Death Part II (coded),*NO IJE MAPPING*,Coded Cause(s) of Death Associated Part II,,VRDR,CauseOfDeathPart2,value.coding,codeable,[ICD10CausesOfDeathVS],,y,,,,CauseOfDeathPart2
-958,Fetal Death,141,522,1,Maternal Morbidity--Admit to Intensive Care,AINT,"Y, N, U",,BFDR,ObservationICUAdmission,,na,See [Note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
+958,Fetal Death,141,522,1,Maternal Morbidity--Admit to Intensive Care,AINT,"Y, N, U",,BFDR,ObservationICUAdmission,,na,See [note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
 STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Observation-icu-admission
@@ -1988,7 +1988,7 @@ types of relationships.",i,VRDR,Decedent,maritalStatus.text ,string,-,,,,,,Deced
 1339,ITOP,157,1279,1,Method of Payment,PAYMENT,1=Private Insurance; 2=Public Assistance; 3=Self Pay; 8=Other; 9=Unknown,,not implemented,not implemented,,,,,,,,,not implemented
 621,Natality,157,820,1,Risk Factors--Prepregnancy Diabetes,PDIAB,"Y = Yes
 N = No
-U = Unknown",,BFDR,ConditionPrepregnancyDiabetes,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+U = Unknown",,BFDR,ConditionPrepregnancyDiabetes,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-prepregnancy-diabetes-vr
@@ -1998,7 +1998,7 @@ U = Unknown",,,,,,,,,,,,
 169,Mortality,157,1681,50,Long string address for decedent's place of residence same as above but allows states to choose the way they capture information.,ADDRESS_R,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Decedent's Residence address that's used in their system versus reprogramming.",,VRDR,Decedent,address.line[0],string,-,,y,,,,Decedent
 1340,ITOP,158,1280,200,Blank for future expansion,BLANK,For future expansion or to account for problems missed,,not implemented,not implemented,,,,,,,,,not implemented
 975,Fetal Death,158,551,1,Congenital Anomalies of the Fetus--Cyanotic congenital heart disease(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),CCHD,"Y, N, U",,not implemented,not implemented,,,,-,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,not implemented
-622,Natality,158,821,1,Risk Factors--Gestational Diabetes,GDIAB,"Y, N, U",,BFDR,ConditionGestationalDiabetes,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+622,Natality,158,821,1,Risk Factors--Gestational Diabetes,GDIAB,"Y, N, U",,BFDR,ConditionGestationalDiabetes,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-gestational-diabetes-vr
@@ -2007,14 +2007,14 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 Receiving state will recode",,not implemented,not implemented,,,-,,,,,,not implemented
 1341,ITOP,159,1480,21,Blank for Jurisdictional Use Only,BLANK2,For Jurisdictions to share additional internal data with their data partners ,,not implemented,not implemented,,,,,,,,,not implemented
 976,Fetal Death,159,552,1,Congenital Anomalies of the Fetus--Congenital diaphragmatic hernia(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),CDH,"Y, N, U",,not implemented,not implemented,,,,-,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,not implemented
-623,Natality,159,822,1,Risk Factors--Prepregnancy Hypertension ,PHYPE,"Y, N, U",,BFDR,ConditionPrepregnancyHypertension,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+623,Natality,159,822,1,Risk Factors--Prepregnancy Hypertension ,PHYPE,"Y, N, U",,BFDR,ConditionPrepregnancyHypertension,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-prepregnancy-hypertension-vr
 1500,Birth Infant Death,159,822,1,Risk Factors--Prepregnancy Hypertension ,PHYPE,"Y, N, U",,,,,,,,,,,,
 171,Mortality,159,1733,3,Old NCHS residence city/county combo code,RESCON,"See codes used before new 2003 codes -
 Receiving state will recode",,not implemented,not implemented,,,-,,,,,,not implemented
-624,Natality,160,823,1,Risk Factors--Hypertension Gestational   (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 924 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004),GHYPE,"Y, N, U",,BFDR,ConditionGestationalHypertension,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+624,Natality,160,823,1,Risk Factors--Hypertension Gestational   (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 924 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004),GHYPE,"Y, N, U",,BFDR,ConditionGestationalHypertension,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-gestational-hypertension-vr
@@ -2025,7 +2025,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 996-999 = Unknown",,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetHispanicOriginVitalRecords],,,,,,CodedRaceAndEthnicity
 978,Fetal Death,161,554,1,Congenital Anomalies of the Fetus--Gastroschisis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),GAST,"Y, N, U",,not implemented,not implemented,,,,-,,,,,not implemented
 173,Mortality,161,1739,2,Bridged Race,NCHSBRIDGE,,,not implemented,not implemented,,,-,,,,,,not implemented
-625,Natality,161,824,1,Risk Factors--Previous Preterm Births,PPB,"Y, N, U",,BFDR,ObservationPreviousPretermBirth,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+625,Natality,161,824,1,Risk Factors--Previous Preterm Births,PPB,"Y, N, U",,BFDR,ObservationPreviousPretermBirth,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Observation-previous-preterm-birth-vr
@@ -2039,7 +2039,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 627,Natality,163,826,1,Risk Factors--Vaginal Bleeding  (RECOMMENDED DELETION EFFECTIVE2004),VB,"Y, N, U (BLANK IF DELETED)",,not implemented,not implemented,,,,-,,,,,not implemented
 1504,Birth Infant Death,163,826,1,Risk Factors--Vaginal Bleeding  (NCHS DELETED THIS ITEM EFFECTIVE 2011),VB,"Y, N, U (BLANK IF DELETED)",,,,,,,,,,,,
 981,Fetal Death,164,557,1,Congenital Anomalies of the Fetus--Cleft Palate Alone(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),CP,"Y, N, U",,not implemented,not implemented,,,,-,,,,,not implemented
-628,Natality,164,827,1,Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926),INFT,"Y, N, U",,BFDR,ProcedureInfertilityTreatment,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+628,Natality,164,827,1,Risk Factors--Infertility Treatment  (SEE ADDITIONAL SUBCATEGORIES IN LOCATIONS 925-926),INFT,"Y, N, U",,BFDR,ProcedureInfertilityTreatment,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Procedure-infertility-treatment-vr
@@ -2049,7 +2049,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 P = Pending
 N = No
 U = Unknown",,not implemented,not implemented,,,,-,,,,,not implemented
-629,Natality,165,828,1,Risk Factors--Previous Cesarean,PCES,"Y, N, U",,BFDR,ObservationPreviousCesarean,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+629,Natality,165,828,1,Risk Factors--Previous Cesarean,PCES,"Y, N, U",,BFDR,ObservationPreviousCesarean,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Observation-previous-cesarean-vr
@@ -2072,7 +2072,7 @@ U = Unknown",,not implemented,not implemented,,,,-,,,,,not implemented
 179,Mortality,167,1858,50,Father's First Name,DDADF,"Free form literal; if unknown, leave blank",i,VRDR,DecedentFather,"name.given , name.use = official",string,-,,,,,,DecedentFather
 632,Natality,168,832,1,Infections Present--Gonorrhea,GON,"Y = Yes
 N = No
-U = Unknown",,BFDR,ConditionInfectionPresentDuringPregnancy,code=15628003 (Gonorrhea (disorder)),na,See [Note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy
+U = Unknown",,BFDR,ConditionInfectionPresentDuringPregnancy,code=15628003 (Gonorrhea (disorder)),na,See [note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy
 1509,Birth Infant Death,168,832,1,Infections Present--Gonorrhea,GON,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,
@@ -2088,7 +2088,7 @@ Code structure description differs here
 Code sent back to state VRO
 For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
 Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
-633,Natality,169,833,1,Infections Present--Syphilis,SYPH,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=76272004 (Syphilis (disorder)),na,See [Note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy
+633,Natality,169,833,1,Infections Present--Syphilis,SYPH,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=76272004 (Syphilis (disorder)),na,See [note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy
 1510,Birth Infant Death,169,833,1,Infections Present--Syphilis,SYPH,"Y, N, U",,,,,,,,,,,,
 634,Natality,170,834,1,Infections Present--Herpes Simplex (HSV)  (RECOMMENDED DELETION EFFECTIVE 2004),HSV,"Y, N, U (BLANK IF DELETED)",,not implemented,not implemented,,,,-,,,,,not implemented
 1511,Birth Infant Death,170,834,1,Infections Present--Herpes Simplex (HSV)  (NCHS DELETED THIS ITEM EFFECTIVE 2011),HSV,"Y, N, U (BLANK IF DELETED)",,,,,,,,,,,,
@@ -2098,19 +2098,19 @@ Code structure description differs here
 Code sent back to state VRO
 Note: Marked as NCHS USE ONLY, but VRDR does address this. For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
 Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
-635,Natality,171,835,1,Infections Present--Chlamydia,CHAM,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=105629000 (Chlamydial infection (disorder)),na,See [Note on missing infections present data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-infection-present-during-pregnancy
+635,Natality,171,835,1,Infections Present--Chlamydia,CHAM,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=105629000 (Chlamydial infection (disorder)),na,See [note on missing infections present data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-infection-present-during-pregnancy
 1512,Birth Infant Death,171,835,1,Infections Present--Chlamydia,CHAM,"Y, N, U",,,,,,,,,,,,
 988,Fetal Death,171,569,2,Mother's Reported Age,MAGER,"00-98, 99",,BFDR,PatientDecedentFetus,"extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ]",quantity,,B,,,Needs work,FHIR-41388,Extension-reported-parent-age-at-delivery-vr
 183,Mortality,171,2058,50,Mother's Maiden Surname,DMOMMDN,"Free form literal; if unknown, leave blank",i,VRDR,DecedentMother,"name.family , name.type=maiden",string ,-,,,,,,DecedentMother
 989,Fetal Death,172,571,2,Father's Reported Age,FAGER,"00-98, 99",,BFDR,PatientDecedentFetus,"extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ]",quantity,,B,,,Needs work,FHIR-41388,Extension-reported-parent-age-at-delivery-vr
-636,Natality,172,836,1,Infections Present--Hepatitis B,HEPB,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=66071002 (Viral hepatitis type B (disorder)),na,See [Note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy
+636,Natality,172,836,1,Infections Present--Hepatitis B,HEPB,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=66071002 (Viral hepatitis type B (disorder)),na,See [note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy
 1513,Birth Infant Death,172,836,1,Infections Present--Hepatitis B,HEPB,"Y, N, U",,,,,,,,,,,,
 184,Mortality,172,2108,1,Was case Referred to Medical Examiner/Coroner?,REFERRED,Y=Yes; N=No; U=Unknown,i,VRDR,ExaminerContacted,value,codeable,[ValueSetYesNoUnknownVitalRecords],,,,,,ExaminerContacted
-990,Fetal Death,173,573,1,Risk Factors--Hypertension Eclampsia (added after 2004),EHYPE,"Y, N, U  (BLANK IF NOT ADDED)",,BFDR,ConditionEclampsiaHypertension,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+990,Fetal Death,173,573,1,Risk Factors--Hypertension Eclampsia (added after 2004),EHYPE,"Y, N, U  (BLANK IF NOT ADDED)",,BFDR,ConditionEclampsiaHypertension,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-eclampsia-hypertension-vr
-637,Natality,173,837,1,Infections Present--Hepatitis C,HEPC,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=50711007 (Viral hepatitis type C (disorder)),na,See [Note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy
+637,Natality,173,837,1,Infections Present--Hepatitis C,HEPC,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=50711007 (Viral hepatitis type C (disorder)),na,See [note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy
 1514,Birth Infant Death,173,837,1,Infections Present--Hepatitis C,HEPC,"Y, N, U",,,,,,,,,,,,
 185,Mortality,173,2109,50,Place of Injury- literal,POILITRL,Literal description; Blank for natural death,,VRDR,InjuryIncident,component[ placeOfInjury ].value.text,string,-,,y,,,,InjuryIncident
 638,Natality,174,838,1,Obstetric Procedures--Cervical Cerclage(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),CERV,"Y = Yes
@@ -2122,12 +2122,12 @@ U = Unknown",,,,,,,,,,,,
 991,Fetal Death,174,574,1,Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004),INFT_DRG,"Y = Yes (BLANK IF NOT ADDED)
 N = No
 X = Not Applicable
-U = Unknown",,BFDR,ProcedureArtificialInsemination,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+U = Unknown",,BFDR,ProcedureArtificialInsemination,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Remove Observation-pregnancy-risk-factor,FHIR-40680,Procedure-artificial-insemination-vr
 186,Mortality,174,2159,250,Describe How Injury Occurred,HOWINJ,Literal description; Blank for natural death,,VRDR,InjuryIncident,value.text,string,-,,y,,,,InjuryIncident
-992,Fetal Death,175,575,1,Risk Factors--Infertility: Asst. Rep. Technology (added after 2004),INFT_ART,"Y, N, X, U  (BLANK IF NOT ADDED)",,BFDR,ProcedureAssistedFertilization,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+992,Fetal Death,175,575,1,Risk Factors--Infertility: Asst. Rep. Technology (added after 2004),INFT_ART,"Y, N, X, U  (BLANK IF NOT ADDED)",,BFDR,ProcedureAssistedFertilization,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Procedure-assisted-fertilization-vr
@@ -2187,14 +2187,14 @@ For Canadian Provinces:
 998,Fetal Death,181,588,1,Initiating cause/condition - Abruptio placenta,COD18a2,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=415105001 (Placental abruption (disorder)),na,,B,,,,,Condition-fetal-death-cause-or-condition
 645,Natality,181,845,1,Characteristics of Labor & Delivery--Induction of Labor,INDL,"Y = Yes
 N = No
-U = Unknown",,BFDR,ProcedureInductionOfLabor,,na,See [Note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
+U = Unknown",,BFDR,ProcedureInductionOfLabor,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680,Procedure-induction-of-labor
 1522,Birth Infant Death,181,845,1,Characteristics of Labor & Delivery--Induction of Labor,INDL,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,
 193,Mortality,181,2505,17,Place of injury. Longitude,LONG_I,"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 3 bytes, a decimal divider, and 6 decimal places (blank if natural death).",i,VRDR,InjuryLocation,position.longitude,float,-,,,,,,InjuryLocation
-646,Natality,182,846,1,Characteristics of Labor & Delivery--Augmentation of Labor,AUGL,"Y, N, U",,BFDR,ProcedureAugmentationOfLabor,,na,See [Note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
+646,Natality,182,846,1,Characteristics of Labor & Delivery--Augmentation of Labor,AUGL,"Y, N, U",,BFDR,ProcedureAugmentationOfLabor,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680,Procedure-augmentation-of-labor
 1523,Birth Infant Death,182,846,1,Characteristics of Labor & Delivery--Augmentation of Labor,AUGL,"Y, N, U",,,,,,,,,,,,
@@ -2208,17 +2208,17 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 195,Mortality,183,2539,2,Old NCHS education code if collected - receiving state will recode as they prefer,OLDEDUC,,,not implemented,not implemented,,,-,,,,,,not implemented
 1001,Fetal Death,184,591,1,Initiating cause/condition - Chorioamnionitis,COD18a5,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=11612004 (Chorioamnionitis (disorder)),na,,B,,,,,Condition-fetal-death-cause-or-condition
 196,Mortality,184,2541,1,Replacement Record ,REPLACE (*deprecated*),"0=original record; 1=updated record; 2=updated, do not send to NCHS.  For FHIR-base submissions to NCHS, this flag in the DeathCertificate has been deprecated.   See the Vital Records Messaging IG.",,VRDR,DeathCertificate,extension[ replaceStatus ].value,codeable,[ReplaceStatusVS],,,,,,DeathCertificate
-648,Natality,184,848,1,Characteristics of Labor & Delivery--Steroids,STER,"Y, N, U",,BFDR,ObservationSteroidsFetalLungMaturation,,na,See [Note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
+648,Natality,184,848,1,Characteristics of Labor & Delivery--Steroids,STER,"Y, N, U",,BFDR,ObservationSteroidsFetalLungMaturation,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680,Observation-steroids-fetal-lung-maturation
 1525,Birth Infant Death,184,848,1,Characteristics of Labor & Delivery--Steroids,STER,"Y, N, U",,,,,,,,,,,,
-649,Natality,185,849,1,Characteristics of Labor & Delivery--Antibiotics,ANTB,"Y, N, U",,BFDR,ObservationAntibioticsAdministeredDuringLabor,,na,See [Note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
+649,Natality,185,849,1,Characteristics of Labor & Delivery--Antibiotics,ANTB,"Y, N, U",,BFDR,ObservationAntibioticsAdministeredDuringLabor,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680,Observation-antibiotics-administered-during-labor
 1526,Birth Infant Death,185,849,1,Characteristics of Labor & Delivery--Antibiotics,ANTB,"Y, N, U",,,,,,,,,,,,
 1002,Fetal Death,185,592,1,"Initiating cause/condition - Other complications of placenta, cord, or membranes",COD18a6,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=FetalDeathCauseOrConditionCS#membranes,na,,B,,,,,Condition-fetal-death-cause-or-condition
 197,Mortality,185,2542,120,Cause of Death Part I Line a,COD1A,Literal information reported on Line a,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 1",string(120),-,,y,,,,CauseOfDeathPart1
-650,Natality,186,850,1,Characteristics of Labor & Delivery--Chorioamnionitis,CHOR,"Y, N, U",,BFDR,ConditionChorioamnionitis,,na,See [Note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
+650,Natality,186,850,1,Characteristics of Labor & Delivery--Chorioamnionitis,CHOR,"Y, N, U",,BFDR,ConditionChorioamnionitis,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680,Condition-chorioamnionitis
 1527,Birth Infant Death,186,850,1,Characteristics of Labor & Delivery--Chorioamnionitis,CHOR,"Y, N, U",,,,,,,,,,,,
@@ -2239,7 +2239,7 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN
 1529,Birth Infant Death,188,852,1,Characteristics of Labor & Delivery--Fetal Intolerance,FINT,"Y, N, U",,,,,,,,,,,,
 200,Mortality,188,2802,20,"Cause of Death Part I Interval, Line b",INTERVAL1B,Duration reported on Line b,,VRDR,CauseOfDeathPart1,"component[interval].value, component[lineNumber] = 2",string(20),-,,y,,,,CauseOfDeathPart1
 1006,Fetal Death,189,714,60,Initiating cause/condition - Other obstetrical or pregnancy complications literal,COD18a10,Literal text or Blank,,BFDR,ConditionFetalDeathCauseOrCondition,"code=FetalDeathCauseOrConditionCS#obstetricalcomplications, code.text",string,code.text should contain description,B,,,,,Condition-fetal-death-cause-or-condition
-653,Natality,189,853,1,Characteristics of Labor & Delivery--Anesthesia,ESAN,"Y, N, U",,BFDR,ProcedureEpiduralOrSpinalAnesthesia,,na,See [Note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
+653,Natality,189,853,1,Characteristics of Labor & Delivery--Anesthesia,ESAN,"Y, N, U",,BFDR,ProcedureEpiduralOrSpinalAnesthesia,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680,Procedure-epidural-or-spinal-anesthesia
 1530,Birth Infant Death,189,853,1,Characteristics of Labor & Delivery--Anesthesia,ESAN,"Y, N, U",,,,,,,,,,,,
@@ -2288,7 +2288,7 @@ X = Not Applicable",,,,,,,,,,,,
 1012,Fetal Death,195,1015,1,Other significant causes or conditions - Abruptio placenta,COD18b2,"Y, N",,BFDR,ConditionFetalDeathOtherCauseOrCondition,code=415105001 (Placental abruption (disorder)),na,,B,,,,,Condition-fetal-death-other-cause-or-condition
 659,Natality,195,859,1,Maternal Morbidity--Maternal Transfusion,MTR,"Y = Yes
 N = No
-U = Unknown",,BFDR,ProcedureBloodTransfusion,,na,See [Note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
+U = Unknown",,BFDR,ProcedureBloodTransfusion,,na,See [note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
 STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Procedure-blood-transfusion
@@ -2297,7 +2297,7 @@ N = No
 U = Unknown",,,,,,,,,,,,
 207,Mortality,195,3392,5,Decedent's Birth Place City - Code,DBPLACECITYCODE,NCHS Instruction Manual: Part 8,i,VRDR,Decedent,extension[patient-birthPlace].value[x].city.extension[ cityCode],integer,see [CityCodes],,,,,,Decedent
 1013,Fetal Death,196,1016,1,Other significant causes or conditions  - Placental insufficiency,COD18b3,"Y, N",,BFDR,ConditionFetalDeathOtherCauseOrCondition,code=237292005 (Placental insufficiency (disorder)),na,,B,,,,,Condition-fetal-death-other-cause-or-condition
-660,Natality,196,860,1,Maternal Morbidity--Perineal Laceration,PLAC,"Y, N, U",,BFDR,ConditionPerinealLaceration,,na,See [Note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
+660,Natality,196,860,1,Maternal Morbidity--Perineal Laceration,PLAC,"Y, N, U",,BFDR,ConditionPerinealLaceration,,na,See [note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
 STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Condition-perineal-laceration
@@ -2305,19 +2305,19 @@ IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,F
 208,Mortality,196,3397,28,Decedent's Birth Place City - Literal,DBPLACECITY,,i,VRDR,Decedent,extension[patient-birthPlace].value[x].city,string,-,,,,,,Decedent
 1014,Fetal Death,197,1017,1,Other significant causes or conditions - Prolapsed cord,COD18b4,"Y, N",,BFDR,ConditionFetalDeathOtherCauseOrCondition,code=270500004 (Prolapsed cord (disorder)),na,,B,,,,,Condition-fetal-death-other-cause-or-condition
 209,Mortality,197,3425,50,Spouse's Middle Name,SPOUSEMIDNAME,,i,VRDR,DecedentSpouse,"name.given , name.use = official",string,-,,,,,,DecedentSpouse
-661,Natality,197,861,1,Maternal Morbidity--Ruptured Uterus,RUT,"Y, N, U",,BFDR,ConditionRupturedUterus,,na,See [Note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
+661,Natality,197,861,1,Maternal Morbidity--Ruptured Uterus,RUT,"Y, N, U",,BFDR,ConditionRupturedUterus,,na,See [note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
 STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Condition-ruptured-uterus
 1538,Birth Infant Death,197,861,1,Maternal Morbidity--Ruptured Uterus,RUT,"Y, N, U",,,,,,,,,,,,
 1015,Fetal Death,198,1018,1,Other significant causes or conditions - Chorioamnionitis,COD18b5,"Y, N",,BFDR,ConditionFetalDeathOtherCauseOrCondition,code=11612004 (Chorioamnionitis (disorder)),na,,B,,,,,Condition-fetal-death-other-cause-or-condition
 210,Mortality,198,3475,10,Spouse's Suffix,SPOUSESUFFIX,,i,VRDR,DecedentSpouse,"name.suffix , name.use = official",string,-,,,,,,DecedentSpouse
-662,Natality,198,862,1,Maternal Morbidity--Unplanned Hysterectomy,UHYS,"Y, N, U",,BFDR,ProcedureUnplannedHysterectomy,,na,See [Note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
+662,Natality,198,862,1,Maternal Morbidity--Unplanned Hysterectomy,UHYS,"Y, N, U",,BFDR,ProcedureUnplannedHysterectomy,,na,See [note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
 STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Procedure-unplanned-hysterectomy
 1539,Birth Infant Death,198,862,1,Maternal Morbidity--Unplanned Hysterectomy,UHYS,"Y, N, U",,,,,,,,,,,,
-663,Natality,199,863,1,Maternal Morbidity--Admit to Intensive Care,AINT,"Y, N, U",,BFDR,ObservationICUAdmission,,na,See [Note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
+663,Natality,199,863,1,Maternal Morbidity--Admit to Intensive Care,AINT,"Y, N, U",,BFDR,ObservationICUAdmission,,na,See [note on missing maternal morbidity data],B,,"Update maternal morbidity (old Condition-maternal-morbidity)
 STU 1 listed:
 IJE Natality Data Elements: MTR, PLAC, RUT, UHYS, AINT
 IJE Fetal Death Data Elements: RUT, AINT",Replace Condition-maternal-morbidity,FHIR-40680,Observation-icu-admission
@@ -2409,7 +2409,7 @@ For Canadian Provinces:
 223,Mortality,211,3756,10,Funeral Facility - Post Directional,FUNPOSTDIR,,i,VRDR,FuneralHome,address.extension[postdir],string,-,,,,,,FuneralHome
 676,Natality,212,890,1,Abnormal Conditions of the Newborn--Assisted Ventilation,AVEN1,"Y = Yes
 N = No
-U = Unknown",,BFDR,ProcedureAssistedVentilationFollowingDelivery,,na,See [Note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
+U = Unknown",,BFDR,ProcedureAssistedVentilationFollowingDelivery,,na,See [note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
 STU 1 listed:
 IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace Condition-abnormal-condition-of-newborn,FHIR-40680,Procedure-assisted-ventilation-following-delivery
 1553,Birth Infant Death,212,890,1,Abnormal Conditions of the Newborn--Assisted Ventilation,AVEN1,"Y = Yes
@@ -2417,13 +2417,13 @@ N = No
 U = Unknown",,,,,,,,,,,,
 1029,Fetal Death,212,2721,5,Coded other significant causes or conditions- fourth mentioned,OCOD4,"ICD-10 code, blank",,BFDR,ObservationCodedOtherFetalDeathCauseOrCondition,"position.value=4,  <br />value",codeable,[https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933],N,,,,,Condition-coded-other-fetal-death-cause-or-condition
 224,Mortality,212,3766,7,Funeral Facility - Unit or apt number,FUNUNITNUM,,i,VRDR,FuneralHome,address.extension[unitnum],string,-,,,,,,FuneralHome
-677,Natality,213,891,1,Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours,AVEN6,"Y, N, U",,BFDR,ProcedureAssistedVentilationMoreThanSixHours,,na,See [Note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
+677,Natality,213,891,1,Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours,AVEN6,"Y, N, U",,BFDR,ProcedureAssistedVentilationMoreThanSixHours,,na,See [note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
 STU 1 listed:
 IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace Condition-abnormal-condition-of-newborn,FHIR-40680,Procedure-assisted-ventilation-more-than-six-hours
 1554,Birth Infant Death,213,891,1,Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours,AVEN6,"Y, N, U",,,,,,,,,,,,
 1030,Fetal Death,213,2726,5,Coded other significant causes or conditions- fifth mentioned,OCOD5,"ICD-10 code, blank",,BFDR,ObservationCodedOtherFetalDeathCauseOrCondition,"position.value=5,  <br />value",codeable,[https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933],N,,,,,Condition-coded-other-fetal-death-cause-or-condition
 225,Mortality,213,3773,50,Long string address for Funeral Facility same as above but allows states to choose the way they capture information.,FUNFACADDRESS,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Funeral Facility address that's used in their system versus reprogramming.",i,VRDR,FuneralHome,address.line,string,address.line ,,,,,,FuneralHome
-678,Natality,214,892,1,Abnormal Conditions of the Newborn--Admission to NICU,NICU,"Y, N, U",,BFDR,ObservationNICUAdmission,,na,See [Note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
+678,Natality,214,892,1,Abnormal Conditions of the Newborn--Admission to NICU,NICU,"Y, N, U",,BFDR,ObservationNICUAdmission,,na,See [note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
 STU 1 listed:
 IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace Condition-abnormal-condition-of-newborn,FHIR-40680,Observation-nicu-admission
 1555,Birth Infant Death,214,892,1,Abnormal Conditions of the Newborn--Admission to NICU,NICU,"Y, N, U",,,,,,,,,,,,
@@ -2452,11 +2452,11 @@ For Canadian Provinces:
    QC  QUEBEC  
    SK  SASKATCHEWAN
    YT  YUKON",i,VRDR,FuneralHome,address.state,string,[ValueSetStatesTerritoriesAndProvincesVitalRecords],,,,,,FuneralHome
-679,Natality,215,893,1,Abnormal Conditions of the Newborn--Surfactant Replacement,SURF,"Y, N, U",,BFDR,ProcedureSurfactantReplacementTherapy,,na,See [Note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
+679,Natality,215,893,1,Abnormal Conditions of the Newborn--Surfactant Replacement,SURF,"Y, N, U",,BFDR,ProcedureSurfactantReplacementTherapy,,na,See [note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
 STU 1 listed:
 IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace Condition-abnormal-condition-of-newborn,FHIR-40680,Procedure-surfactant-replacement-therapy
 1556,Birth Infant Death,215,893,1,Abnormal Conditions of the Newborn--Surfactant Replacement,SURF,"Y, N, U",,,,,,,,,,,,
-680,Natality,216,894,1,Abnormal Conditions of the Newborn--Antibiotics,ANTI,"Y, N, U",,BFDR,ProcedureAntibioticSuspectedNeonatalSepsis,,na,See [Note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
+680,Natality,216,894,1,Abnormal Conditions of the Newborn--Antibiotics,ANTI,"Y, N, U",,BFDR,ProcedureAntibioticSuspectedNeonatalSepsis,,na,See [note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
 STU 1 listed:
 IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace Condition-abnormal-condition-of-newborn,FHIR-40680,Procedure-antibiotic-suspected-neonatal-sepsis
 1557,Birth Infant Death,216,894,1,Abnormal Conditions of the Newborn--Antibiotics,ANTI,"Y, N, U",,,,,,,,,,,,
@@ -2464,7 +2464,7 @@ IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace 
 228,Mortality,216,3853,28,"State, U.S. Territory or Canadian Province of Funeral Facility - literal",FUNSTATE,"Valid state, U.S. territory or Canadian province literal, otherwise blank",i,VRDR,FuneralHome,address.state (expanded from 2 letter code),string,See [StateLiterals],,,,,,FuneralHome
 1034,Fetal Death,217,2742,1,Infections Present--HIV,HIV,"Y, N, U",,not implemented,not implemented,,,,-,,,,,not implemented
 229,Mortality,217,3881,9,Funeral Facility - ZIP,FUNZIP,"Valid 5+4 digit zip code; 3 space 3 for Canada; unknown portion left blank; do not include the ""-""",i,VRDR,FuneralHome,address.postalCode,string,-,,,,,,FuneralHome
-681,Natality,217,895,1,Abnormal Conditions of the Newborn--Seizures,SEIZ,"Y, N, U",,BFDR,ConditionSeizure,,na,See [Note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
+681,Natality,217,895,1,Abnormal Conditions of the Newborn--Seizures,SEIZ,"Y, N, U",,BFDR,ConditionSeizure,,na,See [note on missing abnormal conditions of newborn data],B,,"Update abnormal conditions of  newborn (old Condition-abnormal-condition-of-newborn)
 STU 1 listed:
 IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH",Replace Condition-abnormal-condition-of-newborn,FHIR-40680,Condition-seizure
 1558,Birth Infant Death,217,895,1,Abnormal Conditions of the Newborn--Seizures,SEIZ,"Y, N, U",,,,,,,,,,,,
@@ -2477,48 +2477,48 @@ IJE Natality Data Elements: AVEN1, AVEN6, NICU, SURF, ANTI, SEIZ, MCPH
 230,Mortality,218,3890,8,Person Pronouncing Date Signed,PPDATESIGNED,mmddyyyy format,i,VRDR,DeathDate,component[datetimePronouncedDead ].valueDateTime,dateTime,See [PartialDatesAndTimes],,,,,,DeathDate
 683,Natality,219,897,1,Congenital Anomalies of the Newborn--Anencephaly,ANEN,"Y = Yes
 N = No
-U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=89369001 (Anencephalus (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=89369001 (Anencephalus (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1560,Birth Infant Death,219,897,1,Congenital Anomalies of the Newborn--Anencephaly,ANEN,"Y = Yes
 N = No
 U = Unknown",,,,code = 434621000124103,,,,,,,,
 1036,Fetal Death,219,2744,50,Fetus First Name,FETFNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.given, <br />name.use = official",string,See [Note on Child and Decedent Fetus name],B,,,,,Patient-decedent-fetus
 231,Mortality,219,3898,4,Person Pronouncing Time Pronounced,PPTIME,Military time,i,VRDR,DeathDate,"component[datetimePronouncedDead].valueDateTime if a date is also specified, or component[datetimePronouncedDead].valueTime if no date is specified",dateTime or time,See [PartialDatesAndTimes],,,,,,DeathDate
 1037,Fetal Death,220,2794,50,Fetus Middle Name,FETMNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.given, <br />name.use = official",string,See [Note on Child and Decedent Fetus name],B,,,,,Patient-decedent-fetus
-684,Natality,220,898,1,Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida,MNSB,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=67531005 (Spina bifida (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+684,Natality,220,898,1,Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida,MNSB,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=67531005 (Spina bifida (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1561,Birth Infant Death,220,898,1,Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida,MNSB,"Y, N, U",,,,,,,,,,,,
 232,Mortality,220,3902,50,Certifier's First Name,CERTFIRST, ,i,VRDR,Certifier,"name.given , name.use = official",string,-,,,,,,Certifier
-685,Natality,221,899,1,Congenital Anomalies of the Newborn--Cyanotic congenital heart disease,CCHD,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=12770006 (Cyanotic congenital heart disease (disorder)),na,See [Note on missing congenital anomaly data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-congenital-anomaly-of-newborn
+685,Natality,221,899,1,Congenital Anomalies of the Newborn--Cyanotic congenital heart disease,CCHD,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=12770006 (Cyanotic congenital heart disease (disorder)),na,See [note on missing congenital anomaly data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-congenital-anomaly-of-newborn
 1562,Birth Infant Death,221,899,1,Congenital Anomalies of the Newborn--Cyanotic congenital heart disease,CCHD,"Y, N, U",,,,code=409709004,codeable,,,,,,,
 1038,Fetal Death,221,2844,50,Fetus Last Name,FETLNAME,Free form literal,,BFDR,PatientDecedentFetus,"name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.)",string ,See [Note on Child and Decedent Fetus name],B,,,,,Patient-decedent-fetus
 233,Mortality,221,3952,50,Certifier's Middle Name,CERTMIDDLE, ,i,VRDR,Certifier,"name.given , name.use = official",string,-,,,,,,Certifier
-686,Natality,222,900,1,Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia,CDH,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=17190001 (Congenital diaphragmatic hernia (disorder)),na,See [Note on missing congenital anomaly data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-congenital-anomaly-of-newborn
+686,Natality,222,900,1,Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia,CDH,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=17190001 (Congenital diaphragmatic hernia (disorder)),na,See [note on missing congenital anomaly data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-congenital-anomaly-of-newborn
 1563,Birth Infant Death,222,900,1,Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia,CDH,"Y, N, U",,,,,,,,,,,,
 234,Mortality,222,4002,50,Certifier's Last Name,CERTLAST, ,i,VRDR,Certifier,"name.family , name.use = official",string,-,,,,,,Certifier
 1039,Fetal Death,222,2894,10,Fetus Surname Suffix,SUFFIX,Valid suffix,,BFDR,PatientDecedentFetus,"name.suffix, <br />name.use = official",string,,B,,,,,Patient-decedent-fetus
 1040,Fetal Death,223,2904,1,Fetus Legal Name--Alias,ALIAS,"0 = Original Record, 1 = Alias Record",,not implemented,not implemented,,,,-,,,,,not implemented
-687,Natality,223,901,1,Congenital Anomalies of the Newborn--Omphalocele,OMPH,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=18735004 (Congenital omphalocele (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+687,Natality,223,901,1,Congenital Anomalies of the Newborn--Omphalocele,OMPH,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=18735004 (Congenital omphalocele (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1564,Birth Infant Death,223,901,1,Congenital Anomalies of the Newborn--Omphalocele,OMPH,"Y, N, U",,,,,,,,,,,,
 235,Mortality,223,4052,10,Certifier's Suffix Name,CERTSUFFIX, ,i,VRDR,Certifier,"name.suffix , name.use = official",string,-,,,,,,Certifier
-688,Natality,224,902,1,Congenital Anomalies of the Newborn--Gastroschisis,GAST,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=72951007 (Gastroschisis (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+688,Natality,224,902,1,Congenital Anomalies of the Newborn--Gastroschisis,GAST,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=72951007 (Gastroschisis (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1565,Birth Infant Death,224,902,1,Congenital Anomalies of the Newborn--Gastroschisis,GAST,"Y, N, U",,,,,,,,,,,,
 1041,Fetal Death,224,2905,50,Name of Delivery Facility,HOSP_D,Delivery facility name literal,,BFDR,EncounterMaternity,location.location.name,string,,B,,,,,Encounter-maternity
 236,Mortality,224,4062,10,Certifier - Street number,CERTSTNUM,,i,VRDR,Certifier,address.extension[stnum],string,-,,,,,,Certifier
-689,Natality,225,903,1,Congenital Anomalies of the Newborn--Limb Reduction Defect,LIMB,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=67341007 (Longitudinal deficiency of limb (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+689,Natality,225,903,1,Congenital Anomalies of the Newborn--Limb Reduction Defect,LIMB,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=67341007 (Longitudinal deficiency of limb (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1566,Birth Infant Death,225,903,1,Congenital Anomalies of the Newborn--Limb Reduction Defect,LIMB,"Y, N, U",,,,,,,,,,,,
 237,Mortality,225,4072,10,Certifier - Pre Directional,CERTPREDIR,,i,VRDR,Certifier,address.extension[predir],string,-,,,,,,Certifier
 1042,Fetal Death,225,2955,10,Place of Delivery Street number,STNUM_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[stnum],string,,B,,,,,Encounter-maternity
-690,Natality,226,904,1,Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate,CL,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=80281008 (Cleft lip (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+690,Natality,226,904,1,Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate,CL,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=80281008 (Cleft lip (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1567,Birth Infant Death,226,904,1,Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate,CL,"Y, N, U",,,,,,,,,,,,
 1043,Fetal Death,226,2965,10,Place of Delivery Pre Directional,PREDIR_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[predir],string,,B,,,,,Encounter-maternity
 238,Mortality,226,4082,28,Certifier - Street name,CERTSTRNAME,,i,VRDR,Certifier,address.extension[stname],string,-,,,,,,Certifier
-691,Natality,227,905,1,Congenital Anomalies of the Newborn--Cleft Palate Alone,CP,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=87979003 (Cleft palate (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+691,Natality,227,905,1,Congenital Anomalies of the Newborn--Cleft Palate Alone,CP,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=87979003 (Cleft palate (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1568,Birth Infant Death,227,905,1,Congenital Anomalies of the Newborn--Cleft Palate Alone,CP,"Y, N, U",,,,,,,,,,,,
 239,Mortality,227,4110,10,Certifier - Street designator,CERTSTRDESIG,,i,VRDR,Certifier,address.extension[stdesig],string,-,,,,,,Certifier
 1044,Fetal Death,227,2975,50,Place of Delivery Street name,STNAME_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[stname],string,,B,,,,,Encounter-maternity
 692,Natality,228,906,1,Congenital Anomalies of the Newborn--Down Syndrome,DOWT,"C = Confirmed
 P = Pending
 N = No
-U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=70156005 (Anomaly of chromosome pair 21 (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=70156005 (Anomaly of chromosome pair 21 (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1569,Birth Infant Death,228,906,1,Congenital Anomalies of the Newborn--Down Syndrome,DOWT,"C = Confirmed
 P = Pending
 N = No
@@ -2528,7 +2528,7 @@ U = Unknown",,,,,,,,,,,,
 693,Natality,229,907,1,Congenital Anomalies of the Newborn--Suspected Chromosomal disorder,CDIT,"C = Confirmed
 P = Pending
 N = No
-U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=409709004 (Chromosomal disorder (disorder)),na,See [Note on missing congenital anomaly data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-congenital-anomaly-of-newborn
+U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=409709004 (Chromosomal disorder (disorder)),na,See [note on missing congenital anomaly data],B,,"Data flows are inconsistent on ""(NCHS DELETED ..)"", but BFDR STU 1 has a mapping",,,Condition-congenital-anomaly-of-newborn
 1570,Birth Infant Death,229,907,1,Congenital Anomalies of the Newborn--Suspected Chromosomal disorder,CDIT,"C = Confirmed
 P = Pending
 N = No
@@ -2538,7 +2538,7 @@ U = Unknown",,,,,,,,,,,,
 1047,Fetal Death,230,3045,7,Place of Delivery Unit or Apartment Number,APTNUMB_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[unitnum],string,,B,,,,,Encounter-maternity
 694,Natality,230,908,1,Congenital Anomalies of the Newborn--Hypospadias,HYPO,"Y = Yes
 N = No
-U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=416010008 (Hypospadias (disorder)),na,See [Note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
+U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=416010008 (Hypospadias (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1571,Birth Infant Death,230,908,1,Congenital Anomalies of the Newborn--Hypospadias,HYPO,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,
@@ -2546,7 +2546,7 @@ U = Unknown",,,,,,,,,,,,
 1048,Fetal Death,231,3052,50,Place of Delivery Street Address,ADDRESS_D,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Place of Delivery address that's used in their system versus reprogramming.",,BFDR,EncounterMaternity,location.location.address.line,string,,B,,,,,Encounter-maternity
 695,Natality,231,909,1,Was Infant Transferred Within 24 Hours of Delivery?,ITRAN,"Y = Yes
 N = No
-U = Unknown",,BFDR,EncounterBirth,"hospitalization.dischargeDisposition=""other-hcf""",codeable,[USCoreDischargeDispositionVS] <br />See [Note on missing data],B,,,,,Encounter-birth
+U = Unknown",,BFDR,EncounterBirth,"hospitalization.dischargeDisposition=""other-hcf""",codeable,[USCoreDischargeDispositionVS] <br />See [note on missing data],B,,,,,Encounter-birth
 1572,Birth Infant Death,231,909,1,Was Infant Transferred Within 24 Hours of Delivery?,ITRAN,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,
@@ -2617,7 +2617,7 @@ Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
 1579,Birth Infant Death,238,922,2,Father's Reported Age,FAGER,"00-98, 99",,,,,,,,,,,,
 1055,Fetal Death,238,3240,17,Place of Delivery Latitude,LAT_D,"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 2 bytes, a decimal divider, and 6 decimal places",,not implemented,not implemented,,,,-,,STEVE may want LAT and LONG,,,not implemented
 250,Mortality,238,4298,28,"State, U.S. Territory or Canadian Province of Birth - literal",STATEBTH,"Valid state, U.S. territory or Canadian province literal, otherwise blank",i,VRDR,Decedent,extension[patient-birthPlace].value[x].state or extension[patient-birthPlace].value[x].state.extension[ nationalReportingJurisdictionId] if present    (expanded from 2 letter code),string,See [StateLiterals],,,,,,Decedent
-703,Natality,239,924,1,Risk Factors--Hypertension Eclampsia   (RECOMMENDED ADDITION EFFECTIVE 2004),EHYPE,"Y, N, U  (BLANK IF NOT ADDED)",,BFDR,ConditionEclampsiaHypertension,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+703,Natality,239,924,1,Risk Factors--Hypertension Eclampsia   (RECOMMENDED ADDITION EFFECTIVE 2004),EHYPE,"Y, N, U  (BLANK IF NOT ADDED)",,BFDR,ConditionEclampsiaHypertension,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-eclampsia-hypertension-vr
@@ -2628,7 +2628,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 N = No
 X = Not Applicable
 U = Unknown
-(BLANK IF NOT ADDED)",,BFDR,ProcedureArtificialInsemination,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+(BLANK IF NOT ADDED)",,BFDR,ProcedureArtificialInsemination,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Remove Observation-pregnancy-risk-factor,FHIR-40680,Procedure-artificial-insemination-vr
@@ -2639,7 +2639,7 @@ U = Unknown
 (BLANK IF NOT ADDED)",,,,,,,,,,,,
 1057,Fetal Death,240,3307,50,Mother's Legal Middle Name,MOMMNAME,Free form literal,,VRCPL,PatientMotherVitalRecords,"name.given, <br />name.use = official ",string,,B,,,,,Patient-mother-vr
 252,Mortality,240,4328,28,Country of Death - Literal,DTHCOUNTRY,Valid text for country of death,i,VRDR,DeathLocation,address.country  (expanded from 2 letter code),string ,See [CountryLiterals].   Not used. For US Death certificates should be 'United States'.,,,,,,DeathLocation
-705,Natality,241,926,1,Risk Factors--Infertility: Asst. Rep. Technology  (RECOMMENDED ADDITION EFFECTIVE 2004),INFT_ART,"Y, N, X, U  (BLANK IF NOT ADDED)",,BFDR,ProcedureAssistedFertilization,,na,See [Note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
+705,Natality,241,926,1,Risk Factors--Infertility: Asst. Rep. Technology  (RECOMMENDED ADDITION EFFECTIVE 2004),INFT_ART,"Y, N, X, U  (BLANK IF NOT ADDED)",,BFDR,ProcedureAssistedFertilization,,na,See [note on missing pregnancy risk factors data],B,,"Update risk factors (old Observation-pregnancy-risk-factor)
 STU 1 listed:
 IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Procedure-assisted-fertilization-vr
