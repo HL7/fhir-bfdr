@@ -26,7 +26,7 @@
 [Categories]: categories.html 
 [categories]: categories.html 
 [Change Log]: change_log.html
-[Changes Between Versions]: content-transitions2.html
+[Changes Between Versions]: content-transitions.html
 [Handling of edit flags]: usage.html#handling-of-edit-flags
 [Birth and Fetal Death Vital Reporting]: bfdr_index.html
 [Vital Records Common Library]: vrcl_index.html
