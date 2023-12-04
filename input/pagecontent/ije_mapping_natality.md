@@ -1,7 +1,7 @@
 The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for birth to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format for this information.
 
 #### Specifying None of the Above and Missing Data
-All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a>
+All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>note on missing data</a>
 
 | **Observation** |  **Complements**   |
 | --------------- | ------------------ |

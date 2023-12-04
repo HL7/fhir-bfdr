@@ -1,11 +1,4 @@
- Presence of this observation indicates that none of the characteristics of labor and delivery specifyable in this IG are reported.
-
-### IJE Mapping
-
-<style>
- .context-menu {cursor: context-menu; color: #438bca;}
- .context-menu:hover {opacity: 0.5;}
-</style>
+Presence of this observation indicates that none of the characteristics of labor and delivery specifyable in this IG are reported. If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#characteristics-of-labor-and-delivery'>note on missing characteristics of labor and delivery data</a>)
 
 ### Form Mapping
 <table class='grid'>

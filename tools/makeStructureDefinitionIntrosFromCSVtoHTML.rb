@@ -133,7 +133,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
 
     # if there is usage text put it into the intro file for the profile
     if !row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty?
-      vIntroOutputFile.puts row[INTRO_PROFILE_USAGE_COL]
+      vIntroOutputFile.puts exchangeURLs(row[INTRO_PROFILE_USAGE_COL].to_s, alias_links)
     end
 
 

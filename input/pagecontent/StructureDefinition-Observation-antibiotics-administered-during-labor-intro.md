@@ -32,7 +32,7 @@
   <td>ANTB</td>
   <td></td>
   <td>na</td>
-  <td>See <a href='usage.html#characteristics-of-labor-and-delivery'>Note on missing characteristics of labor and delivery data</a></td>
+  <td>See <a href='usage.html#characteristics-of-labor-and-delivery'>note on missing characteristics of labor and delivery data</a></td>
 </tr>
 
 </tbody>
