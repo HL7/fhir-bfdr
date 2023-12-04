@@ -33,7 +33,7 @@ After the child is born, an Encounter record will be created for the child (Enco
   <td>TRAN</td>
   <td>hospitalization.admitSource = "hosp-trans"</td>
   <td>codeable</td>
-  <td><a href='http://hl7.org/fhir/ValueSet/encounter-admit-source'>HL7EncounterAdmitSourceVS</a>, <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a></td>
+  <td><a href='http://hl7.org/fhir/ValueSet/encounter-admit-source'>HL7EncounterAdmitSourceVS</a>, <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>note on missing data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>

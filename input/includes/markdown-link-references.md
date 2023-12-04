@@ -13,15 +13,15 @@
 [CountyCodes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#county-codes
 [StateLiterals]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#state-literals
 [CountryLiterals]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#country-literals
-[Note on missing data]: usage.html#specifying-none-of-the-above-and-missing-data
-[Note on missing abnormal conditions of newborn data]: usage.html#abnormal-conditions-of-newborn
-[Note on missing maternal morbidity data]: usage.html#maternal-morbidities
-[Note on missing characteristics of labor and delivery data]: usage.html#characteristics-of-labor-and-delivery
-[Note on missing pregnancy risk factors data]: usage.html#pregnancy-risk-factors
-[Note on missing congenital anomaly data]: usage.html#congenital-anomalies-of-newborn
-[Note on missing infections present data]: usage.html#infection-present-during-pregnancy
-[Note on missing method of delivery data]: usage.html#method-of-delivery
-[Note on missing obstetric procedures data]: usage.html#obstetric-procedures
+[note on missing data]: usage.html#specifying-none-of-the-above-and-missing-data
+[note on missing abnormal conditions of newborn data]: usage.html#abnormal-conditions-of-newborn
+[note on missing maternal morbidity data]: usage.html#maternal-morbidities
+[note on missing characteristics of labor and delivery data]: usage.html#characteristics-of-labor-and-delivery
+[note on missing pregnancy risk factors data]: usage.html#pregnancy-risk-factors
+[note on missing congenital anomaly data]: usage.html#congenital-anomalies-of-newborn
+[note on missing infections present data]: usage.html#infection-present-during-pregnancy
+[note on missing method of delivery data]: usage.html#method-of-delivery
+[note on missing obstetric procedures data]: usage.html#obstetric-procedures
 [use cases]: use_cases.html
 [Categories]: categories.html 
 [categories]: categories.html 
@@ -150,7 +150,6 @@
 [relatedperson-parent-vr-stepmother]: https://build.fhir.org/ig/HL7/vr-common-library/RelatedPerson-relatedperson-parent-vr-stepmother.html
 [us-core-patient-vr-a-freeman]: https://build.fhir.org/ig/HL7/vr-common-library/Patient-us-core-patient-vr-a-freeman.html
 [us-core-patient-vr-unknown-name]: https://build.fhir.org/ig/HL7/vr-common-library/Patient-us-core-patient-vr-unknown-name.html
-
 [ObservationEditFlagBirthweight]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-birthweight.html
 [ObservationEditFlagEstimateOfGestation]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-estimate-of-gestation.html
 [ObservationEditFlagFathersDateOfBirth]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-fathers-date-of-birth.html

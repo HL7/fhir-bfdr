@@ -32,7 +32,7 @@
   <td>ANEN</td>
   <td>code=89369001 (Anencephalus (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -41,7 +41,7 @@
   <td>MNSB</td>
   <td>code=67531005 (Spina bifida (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -50,7 +50,7 @@
   <td>CCHD</td>
   <td>code=12770006 (Cyanotic congenital heart disease (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -59,7 +59,7 @@
   <td>CDH</td>
   <td>code=17190001 (Congenital diaphragmatic hernia (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -68,7 +68,7 @@
   <td>OMPH</td>
   <td>code=18735004 (Congenital omphalocele (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -77,7 +77,7 @@
   <td>GAST</td>
   <td>code=72951007 (Gastroschisis (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -86,7 +86,7 @@
   <td>LIMB</td>
   <td>code=67341007 (Longitudinal deficiency of limb (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -95,7 +95,7 @@
   <td>CL</td>
   <td>code=80281008 (Cleft lip (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -104,7 +104,7 @@
   <td>CP</td>
   <td>code=87979003 (Cleft palate (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -113,7 +113,7 @@
   <td>DOWT</td>
   <td>code=70156005 (Anomaly of chromosome pair 21 (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -122,7 +122,7 @@
   <td>CDIT</td>
   <td>code=409709004 (Chromosomal disorder (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -131,7 +131,7 @@
   <td>HYPO</td>
   <td>code=416010008 (Hypospadias (disorder))</td>
   <td>na</td>
-  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>Note on missing congenital anomaly data</a></td>
+  <td>See <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a></td>
 </tr>
 
 </tbody>

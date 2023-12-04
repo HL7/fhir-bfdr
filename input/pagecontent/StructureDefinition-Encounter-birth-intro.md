@@ -60,7 +60,7 @@ This Encounter can reference the mother's maternity encounter using the partOf d
   <td>ITRAN</td>
   <td>hospitalization.dischargeDisposition="other-hcf"</td>
   <td>codeable</td>
-  <td><a href='http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition'>USCoreDischargeDispositionVS</a> <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>Note on missing data</a></td>
+  <td><a href='http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition'>USCoreDischargeDispositionVS</a> <br />See <a href='usage.html#specifying-none-of-the-above-and-missing-data'>note on missing data</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
