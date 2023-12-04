@@ -150,7 +150,6 @@
 [relatedperson-parent-vr-stepmother]: https://build.fhir.org/ig/HL7/vr-common-library/RelatedPerson-relatedperson-parent-vr-stepmother.html
 [us-core-patient-vr-a-freeman]: https://build.fhir.org/ig/HL7/vr-common-library/Patient-us-core-patient-vr-a-freeman.html
 [us-core-patient-vr-unknown-name]: https://build.fhir.org/ig/HL7/vr-common-library/Patient-us-core-patient-vr-unknown-name.html
-
 [ObservationEditFlagBirthweight]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-birthweight.html
 [ObservationEditFlagEstimateOfGestation]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-estimate-of-gestation.html
 [ObservationEditFlagFathersDateOfBirth]: https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Observation-edit-flag-fathers-date-of-birth.html
