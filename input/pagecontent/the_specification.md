@@ -21,7 +21,7 @@ Each recipient of the documents defined in this guide can define their own defin
 This IG is intended to support all of the data elements in current use for the [use cases](use_cases.html) that are within scope.   Data dictionaries for all usescases are provided.
 
 ### Interpretation of Missing Data
-Much of the content of the FHIR Documents defined in this IG is optional. If optional content is not included, the associated data elements as defined for the particular use case are to be considered unknown.  The presence of a significant number of Observations defined in this IG is used to represent a box checked on a form, but there is no way to explicitly represent lack of check in the box. For some collections of fields, the IG provides a way to affirmatively represent a "none-of-the-above" for the collection (see [Categories]).
+Much of the content of the FHIR Documents defined in this IG is optional. If optional content is not included, the associated data elements as defined for the particular use case are to be considered unknown.  The presence of a significant number of Observations defined in this IG is used to represent a box checked on a form, but there is no way to explicitly represent lack of check in the box. For some collections of fields, the IG provides a way to affirmatively represent a "none-of-the-above" for the collection (see [categories]).
 
 #### Must Support
 
