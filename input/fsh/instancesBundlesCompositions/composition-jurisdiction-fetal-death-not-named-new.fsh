@@ -73,6 +73,8 @@ Usage: #example
 * section[motherInformation]
   * insert addReferenceComposition(focus, Patient, patient-mother-carmen-teresa-lee)
   * insert addNamedEntryComposition(mothersEducation, Observation, observation-parent-education-level-carmen-teresa-lee-w-edit)
+  * insert addNamedEntryComposition(mothersUsualWork, Observation, observation-usual-work-carmen-teresa-lee)
   * insert addNamedEntryComposition(mothersRaceEthnicity, Observation, observation-input-race-and-ethnicity-carmen-teresa-lee)
- 
-  
+* section[fatherInformation]
+  * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-tom-yan-lee)
+  * insert addNamedEntryComposition(fathersUsualWork, Observation, observation-usual-work-tom-yan-lee)
