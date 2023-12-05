@@ -1,24 +1,21 @@
+This page provides the mapping from standard forms and worksheets used to exchange birth and fetal death information to the FHIR resources as defined in this IG.
+
 This IG supports communicating information from an EHR system to the jurisdictional vital records offices and to NCHS for standard reporting forms:
 
-**Live Birth**
- * [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
+**Live Birth Forms and Worksheets**
+ * [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf) ([see table](vital_records_form_mapping.html#2003-revision-of-the-us-standard-certificate-of-live-birth-mapping))
+ * [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf) ([see table](vital_records_form_mapping.html#2016-us-standard-attachment-to-the-facility-worksheet-for-the-live-birth-certificate-for-multiple-births-mapping))
+ * [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf) ([see table](vital_records_form_mapping.html#2016-us-standard-facility-worksheet-for-the-live-birth-certificate-mapping))
+ * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf) ([see table](vital_records_form_mapping.html#2016-us-standard-mothers-worksheet-for-childs-birth-certificate-mapping))
  
-**Fetal Death**
- * [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- 
-The following tables map the form elements to the appropriate profile or extension along with the containing specification:
-* BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
-* VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
-* US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
-* ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
-* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
+**Fetal Death Forms and Worksheets**
+ * [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf) ([see table](vital_records_form_mapping.html#2003-revision-of-the-us-standard-report-of-fetal-death-mapping))
+ * [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf) ([see table](vital_records_form_mapping.html#2019-us-standard-facility-worksheet-for-the-report-of-fetal-death-mapping))
+ * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf) ([see table](vital_records_form_mapping.html#2019-us-standard-patients-worksheet-for-the-report-of-fetal-death-mapping))
 
-The last two tables on this page map the Patient's Worksheets to the Questionnaires.
+**Questionnaires**
+ * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate Questionnaire Mapping](#2016-us-standard-mothers-worksheet-for-childs-birth-certificate-questionnaire-mapping) 
+ * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death Questionnaire Mapping](#2019-us-standard-patients-worksheet-for-the-report-of-fetal-death-questionnaire-mapping)
 
 Information on updates to the live birth and fetal death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm) and [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/nvss/facility-worksheets-guide.htm)
 
@@ -289,40 +286,6 @@ Information on updates to the live birth and fetal death forms can be found at N
 | 27a | If other than the mother, what is the name of the person providing information for this worksheet? | [Questionnaire-mothers-live-birth](Questionnaire-Questionnaire-mothers-live-birth.html) |  |
 | 27b | What is your relationship to the baby’s mother? | [Questionnaire-mothers-live-birth](Questionnaire-Questionnaire-mothers-live-birth.html) |  |
 {: .grid }
-### 2016 US Standard Mothers Worksheet for Child’s Birth Certificate Questionnaire Mapping
-
-| **Item #** | **Form Element** | **Questionnaire** | **FHIR Field** |
-| --------   | -----------    | -----------         | ------------   |
-| 1. | What is your current legal name? | [Questionnaire-mothers-live-birth.item.linkId=mother-current-legal-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-current-legal-name |
-| 2. | What will be your baby’s legal name? | [Questionnaire-mothers-live-birth.item.linkId=child-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=child-name |
-| 3. | Where do you usually live--that is--where is your household/residence located? | [Questionnaire-mothers-live-birth.item.linkId=mother-address](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-address |
-| 4. | Is this household inside city limits? | [Questionnaire-mothers-live-birth.item.linkId=inside-city-limits](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=inside-city-limits |
-| 5. | What is your mailing address? | [Questionnaire-mothers-live-birth.item.linkId=mother-mail](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-mail |
-| 6. | What is your date of birth? | [Questionnaire-mothers-live-birth.item.linkId=mother-dob](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-dob |
-| 7. | In what State, U.S. territory, or foreign country were you born? | [Questionnaire-mothers-live-birth.item.linkId=mother-birthplace](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-birthplace |
-| 8. | What is the highest level of schooling that you will have completed at the time of delivery? | [Questionnaire-mothers-live-birth.item.linkId=mother-education](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-education |
-| 9. | Are you Spanish/Hispanic/Latina? | [Questionnaire-mothers-live-birth.item.linkId=mother-ethnicity](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-ethnicity |
-| 10. | What is your race? | [Questionnaire-mothers-live-birth.item.linkId=mother-race](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-race |
-| 11. | Did you receive WIC food for yourself because you were pregnant with this child? | [Questionnaire-mothers-live-birth.item.linkId=receive-wic](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=receive-wic |
-| 12. | Did this pregnancy result from infertility treatment? | [Questionnaire-mothers-live-birth.item.linkId=infertility-treatment](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=infertility-treatment |
-| 13. | What is your height? | [Questionnaire-mothers-live-birth.item.linkId=mothers-height](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-height |
-| 14. | What was your prepregnancy weight, that is, your weight immediately before you became pregnant with this child? | [Questionnaire-mothers-live-birth.item.linkId=mothers-prepregnancy-weight](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-prepregnancy-weight |
-| 15. | How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? | [Questionnaire-mothers-live-birth.item.linkId=mothers-smoking](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-smoking |
-| 17. | What name did you use prior to your first marriage? | [Questionnaire-mothers-live-birth.item.linkId=mother-prior-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-prior-name |
-| 18. | Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth? | [Questionnaire-mothers-live-birth.item.linkId=married-conception](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=married-conception |
-| 19. | What is the current legal name of your baby’s father? | [Questionnaire-mothers-live-birth.item.linkId=father-current-legal-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-current-legal-name |
-| 20. | What is the father’s date of birth? | [Questionnaire-mothers-live-birth.item.linkId=father-dob](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-dob |
-| 21. | In what State, U.S. territory, or foreign country was the father born? | [Questionnaire-mothers-live-birth.item.linkId=father-birthplace](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-birthplace |
-| 22. | What is the highest level of schooling that the father will have completed at the time of delivery? | [Questionnaire-mothers-live-birth.item.linkId=father-education](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-education |
-| 23. | Is the father Spanish/Hispanic/Latino? | [Questionnaire-mothers-live-birth.item.linkId=father-ethnicity](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-ethnicity |
-| 24. | What is the father’s race? | [Questionnaire-mothers-live-birth.item.linkId=father-race](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-race |
-| 25a. | What is your Social Security Number? | [Questionnaire-mothers-live-birth.item.linkId=mother-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-ssn |
-| 25b. | What is the father’s Social Security Number? | [Questionnaire-mothers-live-birth.item.linkId=father-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-ssn |
-| 26a. | Do you want a Social Security Number issued for your baby? | [Questionnaire-mothers-live-birth.item.linkId=baby-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=baby-ssn |
-| 26b. | I request that the Social Security Administration assign a Social Security number to the child named on this form and authorize the State to provide the Social Security Administration with the information from this form which is needed to assign a number. | [Questionnaire-mothers-live-birth.item.linkId=baby-ssn-sig](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=baby-ssn-sig |
-| 27a. | If other than the mother, what is the name of the person providing information for this worksheet? | [Questionnaire-mothers-live-birth.item.linkId=informant-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=informant-name |
-| 27b. | What is your relationship to the baby’s mother? | [Questionnaire-mothers-live-birth.item.linkId=informant-relationship](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=informant-relationship |
-{: .grid }
 ### [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf) Mapping
 
 | **Item #** | **Form Element** | **FHIR Profile** | **FHIR Field**  |
@@ -481,6 +444,40 @@ Information on updates to the live birth and fetal death forms can be found at N
 | 15 | What is your height? | [Observation-mother-height]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-height.html) | value |
 | 16 | What was your prepregnancy weight? | [Observation-mother-prepregnancy-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-prepregnancy-weight.html) | value |
 | 17 | How many cigarettes OR packs of cigarettes did you smoke on an average day during each time period? | [Observation-cigarette-smoking-before-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | value |
+{: .grid }
+### 2016 US Standard Mothers Worksheet for Child’s Birth Certificate Questionnaire Mapping
+
+| **Item #** | **Form Element** | **Questionnaire** | **FHIR Field** |
+| --------   | -----------    | -----------         | ------------   |
+| 1. | What is your current legal name? | [Questionnaire-mothers-live-birth.item.linkId=mother-current-legal-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-current-legal-name |
+| 2. | What will be your baby’s legal name? | [Questionnaire-mothers-live-birth.item.linkId=child-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=child-name |
+| 3. | Where do you usually live--that is--where is your household/residence located? | [Questionnaire-mothers-live-birth.item.linkId=mother-address](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-address |
+| 4. | Is this household inside city limits? | [Questionnaire-mothers-live-birth.item.linkId=inside-city-limits](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=inside-city-limits |
+| 5. | What is your mailing address? | [Questionnaire-mothers-live-birth.item.linkId=mother-mail](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-mail |
+| 6. | What is your date of birth? | [Questionnaire-mothers-live-birth.item.linkId=mother-dob](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-dob |
+| 7. | In what State, U.S. territory, or foreign country were you born? | [Questionnaire-mothers-live-birth.item.linkId=mother-birthplace](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-birthplace |
+| 8. | What is the highest level of schooling that you will have completed at the time of delivery? | [Questionnaire-mothers-live-birth.item.linkId=mother-education](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-education |
+| 9. | Are you Spanish/Hispanic/Latina? | [Questionnaire-mothers-live-birth.item.linkId=mother-ethnicity](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-ethnicity |
+| 10. | What is your race? | [Questionnaire-mothers-live-birth.item.linkId=mother-race](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-race |
+| 11. | Did you receive WIC food for yourself because you were pregnant with this child? | [Questionnaire-mothers-live-birth.item.linkId=receive-wic](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=receive-wic |
+| 12. | Did this pregnancy result from infertility treatment? | [Questionnaire-mothers-live-birth.item.linkId=infertility-treatment](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=infertility-treatment |
+| 13. | What is your height? | [Questionnaire-mothers-live-birth.item.linkId=mothers-height](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-height |
+| 14. | What was your prepregnancy weight, that is, your weight immediately before you became pregnant with this child? | [Questionnaire-mothers-live-birth.item.linkId=mothers-prepregnancy-weight](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-prepregnancy-weight |
+| 15. | How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? | [Questionnaire-mothers-live-birth.item.linkId=mothers-smoking](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-smoking |
+| 17. | What name did you use prior to your first marriage? | [Questionnaire-mothers-live-birth.item.linkId=mother-prior-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-prior-name |
+| 18. | Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth? | [Questionnaire-mothers-live-birth.item.linkId=married-conception](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=married-conception |
+| 19. | What is the current legal name of your baby’s father? | [Questionnaire-mothers-live-birth.item.linkId=father-current-legal-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-current-legal-name |
+| 20. | What is the father’s date of birth? | [Questionnaire-mothers-live-birth.item.linkId=father-dob](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-dob |
+| 21. | In what State, U.S. territory, or foreign country was the father born? | [Questionnaire-mothers-live-birth.item.linkId=father-birthplace](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-birthplace |
+| 22. | What is the highest level of schooling that the father will have completed at the time of delivery? | [Questionnaire-mothers-live-birth.item.linkId=father-education](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-education |
+| 23. | Is the father Spanish/Hispanic/Latino? | [Questionnaire-mothers-live-birth.item.linkId=father-ethnicity](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-ethnicity |
+| 24. | What is the father’s race? | [Questionnaire-mothers-live-birth.item.linkId=father-race](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-race |
+| 25a. | What is your Social Security Number? | [Questionnaire-mothers-live-birth.item.linkId=mother-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-ssn |
+| 25b. | What is the father’s Social Security Number? | [Questionnaire-mothers-live-birth.item.linkId=father-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-ssn |
+| 26a. | Do you want a Social Security Number issued for your baby? | [Questionnaire-mothers-live-birth.item.linkId=baby-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=baby-ssn |
+| 26b. | I request that the Social Security Administration assign a Social Security number to the child named on this form and authorize the State to provide the Social Security Administration with the information from this form which is needed to assign a number. | [Questionnaire-mothers-live-birth.item.linkId=baby-ssn-sig](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=baby-ssn-sig |
+| 27a. | If other than the mother, what is the name of the person providing information for this worksheet? | [Questionnaire-mothers-live-birth.item.linkId=informant-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=informant-name |
+| 27b. | What is your relationship to the baby’s mother? | [Questionnaire-mothers-live-birth.item.linkId=informant-relationship](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=informant-relationship |
 {: .grid }
 ### 2019 US Standard Patient’s Worksheet for the Report of Fetal Death Questionnaire Mapping
 

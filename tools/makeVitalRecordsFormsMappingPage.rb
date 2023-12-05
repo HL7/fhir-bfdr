@@ -46,27 +46,24 @@ vOutputFilename = "generated/BFDR/vital_records_form_mapping.md"
 puts vOutputFilename
 vOutputFile = File.open(vOutputFilename, "w")
 
-vOutputFile.puts "This IG supports communicating information from an EHR system to the jurisdictional vital records offices and to NCHS for standard reporting forms:
+vOutputFile.puts "This page provides the mapping from standard forms and worksheets used to exchange birth and fetal death information to the FHIR resources as defined in this IG.
 
-**Live Birth**
- * [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf)
- * [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf)
- * [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf)
- * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf)
- 
-**Fetal Death**
- * [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf)
- * [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf)
- * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf)
- 
-The following tables map the form elements to the appropriate profile or extension along with the containing specification:
-* BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
-* VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
-* US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
-* ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
-* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)
+This IG supports communicating information from an EHR system to the jurisdictional vital records offices and to NCHS for standard reporting forms:
 
-The last two tables on this page map the Patient's Worksheets to the Questionnaires.
+**Live Birth Forms and Worksheets**
+ * [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf) ([see table](vital_records_form_mapping.html#2003-revision-of-the-us-standard-certificate-of-live-birth-mapping))
+ * [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf) ([see table](vital_records_form_mapping.html#2016-us-standard-attachment-to-the-facility-worksheet-for-the-live-birth-certificate-for-multiple-births-mapping))
+ * [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf) ([see table](vital_records_form_mapping.html#2016-us-standard-facility-worksheet-for-the-live-birth-certificate-mapping))
+ * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf) ([see table](vital_records_form_mapping.html#2016-us-standard-mothers-worksheet-for-childs-birth-certificate-mapping))
+ 
+**Fetal Death Forms and Worksheets**
+ * [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf) ([see table](vital_records_form_mapping.html#2003-revision-of-the-us-standard-report-of-fetal-death-mapping))
+ * [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf) ([see table](vital_records_form_mapping.html#2019-us-standard-facility-worksheet-for-the-report-of-fetal-death-mapping))
+ * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf) ([see table](vital_records_form_mapping.html#2019-us-standard-patients-worksheet-for-the-report-of-fetal-death-mapping))
+
+**Questionnaires**
+ * [2016 US Standard Mothers Worksheet for Child’s Birth Certificate Questionnaire Mapping](#2016-us-standard-mothers-worksheet-for-childs-birth-certificate-questionnaire-mapping) 
+ * [2019 US Standard Patient’s Worksheet for the Report of Fetal Death Questionnaire Mapping](#2019-us-standard-patients-worksheet-for-the-report-of-fetal-death-questionnaire-mapping)
 
 Information on updates to the live birth and fetal death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm) and [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/nvss/facility-worksheets-guide.htm)"
 
@@ -194,10 +191,9 @@ createMappingTable( "2016 US Standard Attachment to the Facility Worksheet for t
 createMappingTable( "2016 US Standard Facility Worksheet for the Live Birth Certificate", "https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf",vOutputFile, vSpreadsheet)
 createMappingTable( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", "https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf", vOutputFile, vSpreadsheet)
 
-createMappingTableQaire( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
-
 createMappingTable( "2003 Revision of the U.S. Standard Report of Fetal Death", "https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf", vOutputFile, vSpreadsheet)
 createMappingTable( "2019 US Standard Facility Worksheet for the Report of Fetal Death", "https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf", vOutputFile, vSpreadsheet)
 createMappingTable( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", "https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf", vOutputFile, vSpreadsheet)
 
+createMappingTableQaire( "2016 US Standard Mothers Worksheet for Child’s Birth Certificate", vOutputFile, vSpreadsheet)
 createMappingTableQaire( "2019 US Standard Patient’s Worksheet for the Report of Fetal Death", vOutputFile, vSpreadsheet)
