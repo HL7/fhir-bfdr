@@ -2,14 +2,11 @@
 
 #method 1:
 #Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
-#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.csv?raw=true -Outfile "./input/mapping/BFDR_Profile_Intros.csv"
 
 #method 2:
 #require 'open-uri'
 #download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx?raw=true')
 #IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
-#download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Profile_Intros.xlsx?raw=true')
-#IO.copy_stream(download2, 'input/mapping/BFDR_Profile_Intros.csv')
 
 #run:
 #ruby tools/makeIJEMappingFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
@@ -168,18 +165,11 @@ end
 vOutputFilename = "/generated/dataDictionaries/ije_mapping_natality.md"
 puts vOutputFilename
 vOutputFile = File.open(Dir.pwd + vOutputFilename, "w")
-vOutputFile.puts "Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for data exchange among jurisdictions and with authorized data partners, such as National Vital Statistics System (NVSS). The National Center for Health Statistics (NCHS) has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG; however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS.
-
-The following IJE mappings to locations in FHIR specifications are for information purposes only:
-* BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
-* VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
-* US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
-* ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
-* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)"
+vOutputFile.puts "The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for birth to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format for this information."
 
 vOutputFile.puts ""
 vOutputFile.puts "#### Specifying None of the Above and Missing Data"
-vOutputFile.puts "All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]" 
+vOutputFile.puts "All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [note on missing data]." 
 vOutputFile.puts ""
 vOutputFile.puts "| **Observation** |  **Complements**   |"
 vOutputFile.puts "| --------------- | ------------------ |"
@@ -200,18 +190,11 @@ createMappingTable("BFDR", "Natality", "### Natality (Live Birth) IJE Mapping", 
 vOutputFilename1 = "/generated/dataDictionaries/ije_mapping_fetalDeath.md"
 puts vOutputFilename1
 vOutputFile1 = File.open(Dir.pwd + vOutputFilename1, "w")
-vOutputFile1.puts "Many of the BFDR data elements can be identified using the IJE (Inter-Jurisdictional Exchange) data element names (codes). The IJE codes are used for data exchange among jurisdictions and with authorized data partners, such as National Vital Statistics System (NVSS). The National Center for Health Statistics (NCHS) has implemented IJE codes for exchange of mortality data with jurisdictions via the VRDR IG; however, the use of IJE codes has not yet been implemented for birth and fetal death reporting to NCHS.
-
-The following IJE mappings to locations in FHIR specifications are for information purposes only:
-* BFDR: Vital Records Birth and Fetal Death Reporting (this IG)
-* VRCPL: [Vital Records Common Profile Library]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})
-* US CORE: [US Core Implementation Guide, 5.0.1]({{site.data.fhir.ver.hl7fhiruscore}})
-* ODH: [Occupational Data for Health]({{site.data.fhir.ver.hl7fhirusodh}})
-* FHIR: [extensions](http://hl7.org/fhir/extensions/extension-registry.html)"
+vOutputFile1.puts "The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for fetal death to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format for this information."
 
 vOutputFile1.puts ""
 vOutputFile1.puts "#### Specifying None of the Above and Missing Data"
-vOutputFile1.puts "All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [Note on missing data]" 
+vOutputFile1.puts "All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If the none-of-the-above observation is present in the bundle, then its complement should not be used. See [note on missing data]." 
 vOutputFile1.puts ""
 vOutputFile1.puts "| **Observation** |  **Complements**   |"
 vOutputFile1.puts "| --------------- | ------------------ |"
