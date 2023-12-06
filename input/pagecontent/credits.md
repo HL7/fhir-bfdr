@@ -2,11 +2,6 @@
 #### Project Facilitators
 The Center for Disease Control (CDC), National Center for Health Statistics (NCHS), Division of Vital Records (DVS) facilitated the project in collaboration with the [NVSS Modernization Community of Practice (CoP)](https://www.cdc.gov/nchs/nvss/modernization/cop.htm), and the DVS Statistical Analysis and Surveillance Branch (SASB).
 Contributors from CDC/NCHS/DVS included:
-<!-- * [Jenny Couse](https://www.linkedin.com/in/jenny-couse-22637a36/), Health Scientist (Informatics), CDC/National Center for Health Statistics
-* [Alaina Gregory](https://www.linkedin.com/in/alaina-elliott-aa9923/), IT Specialist, CDC/National Center for Health Statistics
-* Veronique Benie, Computer Scientist, CDC/National Center for Health Statistics
-* [Kate Brett](https://www.linkedin.com/in/kate-brett-40403030/), Director of Research Science, CDC/National Center for Health Statistics
-* [Prachi Mehta](https://www.linkedin.com/in/prachim1/), Health Scientist (Informatics), CDC/National Center for Health Statistics -->
 * [Paul Sutton](https://www.cdc.gov/nchs/about/organization.htm), Acting Director of DVS
 * Kate Brett, DVS Office of the Director
 * [Cynthia Bush](https://www.linkedin.com/in/cynthia-cindy-bush-584bb0158/), Health Scientist (Informatics), DVS Office of the Director 

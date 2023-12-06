@@ -32,3 +32,5 @@ For querying and reading BFDR Profiles, Must Support on any profile data element
 * When querying Document Sources, Document Consumers SHALL interpret missing data elements within resource instances as data not present in theDocument Sources’s system.
 * In situations where information on a particular data element is missing and the Document Source knows the precise reason for the absence of data, Document Sources SHALL send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or using the dataAbsentReason extension.
 * Document Consumers SHALL be able to process resource instances containing data elements asserting missing information.
+
+{% include markdown-link-references.md %}
