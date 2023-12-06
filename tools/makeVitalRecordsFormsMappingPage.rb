@@ -149,13 +149,13 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
           puts "- Mapping IG column is empty for profile - "
           puts vContext
         end
-        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + " #{vProfile}" + ".html '>#{vProfileName}</a>"  
+        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html '>#{vProfileName}</a>"  
         # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
       elsif hasContext
-        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + " #{vProfile}" + ".html '>#{vProfileName}</a>"  
+        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html '>#{vProfileName}</a>"  
         # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
       else
-        vProfileWithURL = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + " #{vProfile}" + ".html '>#{vProfileName}</a>"  
+        vProfileWithURL = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html '>#{vProfileName}</a>"  
         # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vIg] + "StructureDefinition-" + vProfile + ".html)"
       end
 
