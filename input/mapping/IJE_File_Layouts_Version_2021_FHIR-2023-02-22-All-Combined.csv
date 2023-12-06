@@ -2077,13 +2077,13 @@ U = Unknown",,BFDR,ConditionInfectionPresentDuringPregnancy,code=15628003 (Gonor
 N = No
 U = Unknown",,,,,,,,,,,,
 180,Mortality,168,1908,50,Father's Middle Name,DDADMID,"Free form literal; if unknown, leave blank",i,VRDR,DecedentFather,"name.given , name.use = official",string,-,,,,,,DecedentFather
-985,Fetal Death,168,561,4,NCHS USE ONLY: Receipt date -- Year,R_YR,>=year of delivery,,VRCPL,ParametersCodingStatusValuesVitalRecords,parameter[receiptDate].value,date,,B,,"Code used on 3 tabs: N, FD, & BID
+985,Fetal Death,168,561,4,NCHS USE ONLY: Receipt date -- Year,R_YR,>=year of delivery,,not implemented,not implemented,,,,B,,"Code used on 3 tabs: N, FD, & BID
 Code structure description differs here
 Code sent back to state VRO
 For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
 Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
 181,Mortality,169,1958,50,Mother's First Name,DMOMF,"Free form literal; if unknown, leave blank",i,VRDR,DecedentMother,"name.given , name.use = official",string,-,,,,,,DecedentMother
-986,Fetal Death,169,565,2,NCHS USE ONLY: Receipt date -- Month,R_MO,12-Jan,,VRCPL,ParametersCodingStatusValuesVitalRecords,parameter[receiptDate].value,date,,B,,"Code used on 3 tabs: N, FD, & BID
+986,Fetal Death,169,565,2,NCHS USE ONLY: Receipt date -- Month,R_MO,12-Jan,,not implemented,not implemented,,,,B,,"Code used on 3 tabs: N, FD, & BID
 Code structure description differs here
 Code sent back to state VRO
 For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
@@ -2093,7 +2093,7 @@ Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
 634,Natality,170,834,1,Infections Present--Herpes Simplex (HSV)  (RECOMMENDED DELETION EFFECTIVE 2004),HSV,"Y, N, U (BLANK IF DELETED)",,not implemented,not implemented,,,,-,,,,,not implemented
 1511,Birth Infant Death,170,834,1,Infections Present--Herpes Simplex (HSV)  (NCHS DELETED THIS ITEM EFFECTIVE 2011),HSV,"Y, N, U (BLANK IF DELETED)",,,,,,,,,,,,
 182,Mortality,170,2008,50,Mother's Middle Name,DMOMMID,"Free form literal; if unknown, leave blank",i,VRDR,DecedentMother,"name.given , name.use = official",string,-,,,,,,DecedentMother
-987,Fetal Death,170,567,2,NCHS USE ONLY: Receipt date -- Day,R_DY,01-31 (based on month),,VRCPL,ParametersCodingStatusValuesVitalRecords,parameter[receiptDate].value,date,,B,,"Code used on 3 tabs: N, FD, & BID
+987,Fetal Death,170,567,2,NCHS USE ONLY: Receipt date -- Day,R_DY,01-31 (based on month),,not implemented,not implemented,,,,B,,"Code used on 3 tabs: N, FD, & BID
 Code structure description differs here
 Code sent back to state VRO
 Note: Marked as NCHS USE ONLY, but VRDR does address this. For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
@@ -2589,13 +2589,13 @@ U = Unknown",,,,,,,,,,,,
 1050,Fetal Death,233,3111,28,Place of Delivery County (literal),CNTY_D,Valid county literal or blank if unknown,,BFDR,EncounterMaternity,location.location.address.district,string,,B,,,,,Encounter-maternity
 245,Mortality,233,4217,28,"State, U.S. Territory or Canadian Province of Certifier - literal",CERTSTATE,Valid text for U.S. State or Territory or Canadian Province,i,VRDR,Certifier,address.state (expanded from 2 letter code),string,See [StateLiterals],,,,,,Certifier
 1051,Fetal Death,234,3139,28,Place of Delivery City/Town/Place (literal) ,CITY_D,Valid city/town/place literal or blank if unknown,,BFDR,EncounterMaternity,location.location.address.city,string,,B,,,,,Encounter-maternity
-698,Natality,234,912,4,NCHS USE ONLY: Receipt date -- Year,R_YR,leave blank,,VRCPL,ParametersCodingStatusValuesVitalRecords,parameter[receiptDate].value,date,,B,,"Code used on 3 tabs: N, FD, & BID
+698,Natality,234,912,4,NCHS USE ONLY: Receipt date -- Year,R_YR,leave blank,,not implemented,not implemented,,,,B,,"Code used on 3 tabs: N, FD, & BID
 Code sent back to state VRO
 For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
 Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
 1575,Birth Infant Death,234,912,4,NCHS USE ONLY: Receipt date -- Year,R_YR,leave blank,,,,,,,,,,,,
 246,Mortality,234,4245,9,Certifier - Zip,CERTZIP,"Valid 5+4 digit zip code; 3 space 3 for Canada; unknown portion left blank; do not include the ""-""",i,VRDR,Certifier,address.postalCode,string,-,,,,,,Certifier
-699,Natality,235,916,2,NCHS USE ONLY: Receipt date -- Month,R_MO,leave blank,,VRCPL,ParametersCodingStatusValuesVitalRecords,parameter[receiptDate].value,date,,B,,"Code used on 3 tabs: N, FD, & BID
+699,Natality,235,916,2,NCHS USE ONLY: Receipt date -- Month,R_MO,leave blank,,not implemented,not implemented,,,,B,,"Code used on 3 tabs: N, FD, & BID
 Code sent back to state VRO
 For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
 Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
@@ -2603,7 +2603,7 @@ Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
 247,Mortality,235,4254,8,Certifier Date Signed,CERTDATE,Date signed by Certifier in mmddyyyy format,i,VRDR,DeathCertification,performed,dateTime,-,,,,,,DeathCertification
 1052,Fetal Death,235,3167,28,"State, U.S. Territory or Canadian Province of Place of Delivery - literal",STATE_D,"valid state, U.S. territory or Canadian province literal, otherwise blank",,BFDR,EncounterMaternity,location.location.address.state (expanded from 2 letter code),string,See [StateLiterals],B,,,,,Encounter-maternity
 1053,Fetal Death,236,3195,28,Place of Delivery Country (literal),COUNTRY_D,Valid country literal or blank if unknown,,BFDR,EncounterMaternity,location.location.address.country (expanded from 2 letter code),string,See [CountryLiterals],B,,,,,Encounter-maternity
-700,Natality,236,918,2,NCHS USE ONLY: Receipt date -- Day,R_DY,leave blank,,VRCPL,ParametersCodingStatusValuesVitalRecords,parameter[receiptDate].value,date,,B,,"Code used on 3 tabs: N, FD, & BID
+700,Natality,236,918,2,NCHS USE ONLY: Receipt date -- Day,R_DY,leave blank,,not implemented,not implemented,,,,B,,"Code used on 3 tabs: N, FD, & BID
 Code sent back to state VRO
 For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
 Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
