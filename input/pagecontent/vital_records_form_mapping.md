@@ -1,3 +1,19 @@
+<style>
+    table.style1 { 
+        border-collapse: collapse; 
+        width: 100%; 
+        table-layout: fixed;
+    }  
+    table.style1 tbody tr {
+    border-bottom: 1px solid #dddddd;
+    } 
+    table.style1 tbody tr:nth-of-type(even) { 
+        background-color: #f3f3f3; 
+    } 
+    table.style1 tbody tr:last-of-type {
+    border-bottom: 2px solid #98c1d9;
+    }
+    </style>
 This page provides the mapping from standard forms and worksheets used to exchange birth and fetal death information to the FHIR resources as defined in this IG.
 
 This IG supports communicating information from an EHR system to the jurisdictional vital records offices and to NCHS for standard reporting forms:
@@ -19,487 +35,3151 @@ This IG supports communicating information from an EHR system to the jurisdictio
 
 Information on updates to the live birth and fetal death forms can be found at NVSS [Revisions of the U.S. Standard Certificates and Reports](https://www.cdc.gov/nchs/nvss/revisions-of-the-us-standard-certificates-and-reports.htm) and [Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death](https://www.cdc.gov/nchs/nvss/facility-worksheets-guide.htm)
 
-### [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf) Mapping
+### <a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'>2003 Revision of the U.S. Standard Certificate of Live Birth Mapping</a>
 
-| **Item #** | **Form Element** | **FHIR Profile** | **FHIR Field**  |
-| --------   | -----------      | -----------      | ------------    |
-| - | Local File No. | [Composition-provider-live-birth-report]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-live-birth-report.html) | [extension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-live-birth-local-file-number.html) |
-| - | Birth Number | [Composition-provider-live-birth-report]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-live-birth-report.html) | [extension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-live-birth-certificate-number.html) |
-| 1 | Child’s Name | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | name |
-| 2 | Child's Time of Birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html) |
-| 3 | Child's Sex | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html) |
-| 4 | Child's Date Of Birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | birthDate |
-| 5 | Facility Name / Address | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | location.location |
-| 6 | City, Town, Or Location Of Birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 7 | County Of Birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 8a | Mother’s Current Legal Name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name:currentLegalName |
-| 8b | Mother’s Date Of Birth | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | birthDate |
-| 8c | Mother’s Name Prior To First Marriage | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name:namePriorToFirstMarriage |
-| 8d | Mother’s Birthplace | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 9a | Residence of Mother - State | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.state |
-| 9b | Mother’s County | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.district |
-| 9c | Mother’s City, Town, or Location | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.city |
-| 9d | Mother’s Street And Number | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.line |
-| 9e | Mother’s Apt. No. | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.line |
-| 9f | Mother’s Zip Code | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.postalCode |
-| 9g | Mother’s Residence Inside City Limits? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.extension:withinCityLimitsIndicator |
-| 10a | Father’s Current Legal Name | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | name:currentLegalName |
-| 10b | Father’s Date Of Birth | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | birthDate |
-| 10c | Father’s Birthplace | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | [extension]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html) |
-| 11 | Certifier’s Name | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | name |
-| 11 | Certifier’s Title | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | qualification |
-| 12 | Date Certified | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | participant:certifier.period.start |
-| 13 | Date Filed By Registrar | [Composition-provider-live-birth-report]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-live-birth-report.html) | [extension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-date-filed-by-registrar.html) |
-| 14 | Mother’s Mailing Address | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address |
-| 15 | Mother Married? | [Observation-mother-married-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-married-during-pregnancy.html) | value |
-| 16 | Social Security Number Requested for Child? | [Observation-ssn-requested-for-child]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-ssn-requested-for-child.html) | value |
-| 17 | Facility Id. | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | identifier |
-| 18 | Mother’s Social Security Number | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:SSN |
-| 19 | Father’s Social Security Number | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | identifier:SSN |
-| 20 | Mother’s Education | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html) | code |
-| 21 | Mother of Hispanic Origin? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) |
-| 22 | Mother’s Race | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) |
-| 23 | Father’s Education | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html) | code |
-| 24 | Father of Hispanic Origin? | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) |
-| 25 | Father’s Race | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) |
-| 26 | Place Where Birth Occurred | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | location.physicalType |
-| 26.a | Home Birth: Planned to deliver at home? | [Observation-planned-to-deliver-at-home]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-planned-to-deliver-at-home.html) | value |
-| 27 | Attendant’s Name | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | name |
-| 27 | Attendant’s Title | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | qualification |
-| 27 | Attendant’s NPI | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | identifier |
-| 28 | Mother Transferred for Maternal Medical or Fetal Indications for Delivery? | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | hospitalization.admitSource (Y if present, N if not present) |
-| 29a | Date Of First Prenatal Care Visit | [Observation-date-of-first-prenatal-care-visit]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | value |
-| 30 | Total Number Of Prenatal Visits For This Pregnancy | [Observation-number-prenatal-visits]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-prenatal-visits.html) | value |
-| 31 | Mother’s Height | [Observation-mother-height]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-height.html) | value |
-| 32 | Mother’s Prepregnancy Weight | [Observation-mother-prepregnancy-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-prepregnancy-weight.html) | value |
-| 33 | Mother’s Weight At Delivery | [Observation-mother-delivery-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-delivery-weight.html) | value |
-| 34 | Did Mother Get WIC Food For Herself During This Pregnancy? | [Observation-mother-received-wic-food]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-received-wic-food.html) | value |
-| 35 | Number of Previous Live Births | [Observation-number-births-now-dead]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-dead.html) | value |
-| 36 | Number of Other Pregnancy Outcomes | [Observation-number-other-pregnancy-outcomes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-other-pregnancy-outcomes.html) | value |
-| 37 | Cigarette Smoking Before And During Pregnancy | [Observation-cigarette-smoking-before-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | value |
-| 38 | Principal Source of Payment for This Delivery | [Coverage-principal-payer-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Coverage-principal-payer-delivery.html) | type |
-| 39 | Date Last Normal Menses Began | [Observation-last-menstrual-period]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-last-menstrual-period.html) | value |
-| 40 | Mother’s Medical Record Number | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:MRN |
-| 41.1 | Risk factors in this pregnancy: Diabetes - Prepregnancy | [Condition-prepregnancy-diabetes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-prepregnancy-diabetes.html) |  |
-| 41.2 | Risk factors in this pregnancy: Diabetes - Gestational | [Condition-gestational-diabetes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-gestational-diabetes.html) |  |
-| 41.3 | Risk factors in this pregnancy: Hypertension - Prepregnancy | [Condition-prepregnancy-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-prepregnancy-hypertension.html) |  |
-| 41.4 | Risk factors in this pregnancy: Hypertension - Gestational | [Condition-gestational-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-gestational-hypertension.html) |  |
-| 41.5 | Risk factors in this pregnancy: Eclampsia | [Condition-eclampsia-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-eclampsia-hypertension.html) |  |
-| 41.6 | Risk factors in this pregnancy: Previous preterm births | [Observation-previous-preterm-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-previous-preterm-birth.html) |  |
-| 41.8 | Risk factors in this pregnancy: Pregnancy resulted from infertility treatment | [Procedure-infertility-treatment]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-infertility-treatment.html) |  |
-| 41.9 | Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination | [Procedure-artificial-insemination]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-artificial-insemination.html) |  |
-| 41.10 | Risk factors in this pregnancy: Assisted reproductive technology | [Procedure-assisted-fertilization]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-fertilization.html) |  |
-| 41.11 | Risk factors in this pregnancy: previous cesarean delivery | [Observation-previous-cesarean]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-previous-cesarean.html) |  |
-| 41.12 | Risk factors in this pregnancy: None of the above | [Observation-none-of-specified-pregnancy-risk-factors]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html) |  |
-| 42 | Infections present and/or treated during this pregnancy | [Condition-infection-present-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-infection-present-during-pregnancy.html) |  |
-| 43 | Obstetric Procedures | [Procedure-obstetric]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-obstetric.html) |  |
-| 45.1 | Characteristics of Labor and Delivery: Induction of labor | [Procedure-induction-of-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-induction-of-labor.html) |  |
-| 45.2 | Characteristics of Labor and Delivery: Augmentation of labor | [Procedure-augmentation-of-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-augmentation-of-labor.html) |  |
-| 45.4 | Characteristics of Labor and Delivery: Steroids for fetal lung maturation | [Observation-steroids-fetal-lung-maturation]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-steroids-fetal-lung-maturation.html) |  |
-| 45.5 | Characteristics of Labor and Delivery: Antibiotics received by the mother during labor | [Observation-antibiotics-administered-during-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-antibiotics-administered-during-labor.html) |  |
-| 45.6 | Characteristics of Labor and Delivery: Clinical chorioamnionitis | [Condition-chorioamnionitis]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-chorioamnionitis.html) |  |
-| 45.9 | Characteristics of Labor and Delivery: Epidural or spinal anesthesia during labor | [Procedure-epidural-or-spinal-anesthesia]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html) |  |
-| 45.10 | Characteristics of Labor and Delivery: None of the above | [Observation-none-of-specified-characteristics-labor-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery.html) |  |
-| 46.C | Fetal presentation at birth | [Observation-fetal-presentation]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-fetal-presentation.html) | value |
-| 46.D | Final route and method of delivery | [Procedure-final-route-method-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-final-route-method-delivery.html) | code |
-| 46.D.1 | If cesarean, was a trial of labor attempted? | [Observation-labor-trial-attempted]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-labor-trial-attempted.html) | value |
-| 47.1 | Maternal Morbidity: Maternal transfusion | [Procedure-blood-transfusion]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-blood-transfusion.html) |  |
-| 47.2 | Maternal Morbidity: Third or fourth degree perineal laceration | [Condition-perineal-laceration]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-perineal-laceration.html) |  |
-| 47.3 | Maternal Morbidity: Ruptured uterus | [Condition-ruptured-uterus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-ruptured-uterus.html) |  |
-| 47.4 | Maternal Morbidity: Unplanned hysterectomy | [Procedure-unplanned-hysterectomy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-unplanned-hysterectomy.html) |  |
-| 47.5 | Maternal Morbidity: Admission to intensive care unit | [Observation-icu-admission]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-icu-admission.html) |  |
-| 47.7 | Maternal Morbidity: None of the above | [Observation-none-of-specified-maternal-morbidities]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-maternal-morbidities.html) |  |
-| 48 | Newborn Medical Record Number | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | identifier:MRN |
-| 49 | Birthweight | [Observation-birth-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-birth-weight.html) | value |
-| 50 | Obstetric Estimate of Gestation | [Observation-gestational-age-at-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-gestational-age-at-delivery.html) | value |
-| 51 | Apgar Score: | [Observation-apgar-score]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-apgar-score.html) | value |
-| 52 | Plurality | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [multipleBirth[x].extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html) |
-| 53 | If Not Single Birth - Born First, Second, Third, etc. (Specify) | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | multipleBirthInteger |
-| 54.1 | Abnormal Conditions of the Newborn: Assisted ventilation required immediately following delivery | [Procedure-assisted-ventilation-following-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-ventilation-following-delivery.html) |  |
-| 54.2 | Abnormal Conditions of the Newborn: Assisted ventilation required for more than six hours | [Procedure-assisted-ventilation-more-than-six-hours]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html) |  |
-| 54.3 | Abnormal Conditions of the Newborn: NICU admission | [Observation-nicu-admission]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-nicu-admission.html) |  |
-| 54.4 | Abnormal Conditions of the Newborn: Newborn given surfactant replacement therapy | [Procedure-surfactant-replacement-therapy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-surfactant-replacement-therapy.html) |  |
-| 54.5 | Abnormal Conditions of the Newborn: Antibiotics received by the newborn for suspected neonatal sepsis | [Procedure-antibiotic-suspected-neonatal-sepsis]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html) |  |
-| - | 54.6 Abnormal Conditions of the Newborn: Seizure or serious neurologic dysfunction | [Condition-seizure]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-seizure.html) |  |
-| - | 54.8 Abnormal Conditions of the Newborn: None of the above | [Observation-none-of-specified-abnormal-conditions-of-newborn]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html) |  |
-| 55 | Congenital Anomalies of the Newborn | [Condition-congenital-anomaly-of-newborn]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-congenital-anomaly-of-newborn.html) |  |
-| 56 | Was Infant Transferred Within 24 Hours Of Delivery? | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | hospitalization.dischargeDisposition |
-| 57 | Is Infant Living At Time of Report? | [Observation-infant-living]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-infant-living.html) | value |
-| 58 | Is The Infant Being Breastfed At Discharge? | [Observation-infant-breastfed-at-discharge]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-infant-breastfed-at-discharge.html) | value |
-{: .grid }
-### [2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births](https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf) Mapping
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>FHIR Profile</b></td>
+    <td style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></td>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Local File No.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-live-birth-report.html '>CompositionProviderLiveBirthReport
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-live-birth-local-file-number.html '>extension:liveBirthLocalFileNumber</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Birth Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-live-birth-report.html '>CompositionProviderLiveBirthReport
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-live-birth-certificate-number.html '>extension:liveBirthCertificateNumber</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Child’s Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>Child's Time of Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>extension:birthTime</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Child's Sex</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Child's Date Of Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>Facility Name / Address</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>location.location</td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>City, Town, Or Location Of Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>County Of Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>8a</td>
+  <td>Mother’s Current Legal Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name:currentLegalName</td>
+</tr>
+<tr>
+  <td style='text-align: center'>8b</td>
+  <td>Mother’s Date Of Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>8c</td>
+  <td>Mother’s Name Prior To First Marriage</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name:namePriorToFirstMarriage</td>
+</tr>
+<tr>
+  <td style='text-align: center'>8d</td>
+  <td>Mother’s Birthplace</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9a</td>
+  <td>Residence of Mother - State</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.state</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9b</td>
+  <td>Mother’s County</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.district</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9c</td>
+  <td>Mother’s City, Town, or Location</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.city</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9d</td>
+  <td>Mother’s Street And Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.line</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9e</td>
+  <td>Mother’s Apt. No.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.line</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9f</td>
+  <td>Mother’s Zip Code</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.postalCode</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9g</td>
+  <td>Mother’s Residence Inside City Limits?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.extension:withinCityLimitsIndicator</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10a</td>
+  <td>Father’s Current Legal Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>name:currentLegalName</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10b</td>
+  <td>Father’s Date Of Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10c</td>
+  <td>Father’s Birthplace</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html '>extension</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11</td>
+  <td>Certifier’s Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11</td>
+  <td>Certifier’s Title</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>qualification</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>Date Certified</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>participant:certifier.period.start</td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>Date Filed By Registrar</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-live-birth-report.html '>CompositionProviderLiveBirthReport
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-date-filed-by-registrar.html '>extension:dateFiledbyRegistrar</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Mother’s Mailing Address</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>Mother Married?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-married-during-pregnancy.html '>ObservationMotherMarriedDuringPregnancy
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>16</td>
+  <td>Social Security Number Requested for Child?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-ssn-requested-for-child.html '>ObservationSSNRequestedForChild
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>Facility Id.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>Mother’s Social Security Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>identifier:SSN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>19</td>
+  <td>Father’s Social Security Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>identifier:SSN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>20</td>
+  <td>Mother’s Education</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-education-level-vr.html '>ObservationEducationLevelVitalRecords
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>Mother of Hispanic Origin?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>Mother’s Race</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>23</td>
+  <td>Father’s Education</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-education-level-vr.html '>ObservationEducationLevelVitalRecords
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>24</td>
+  <td>Father of Hispanic Origin?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>25</td>
+  <td>Father’s Race</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26</td>
+  <td>Place Where Birth Occurred</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>location.physicalType</td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.a</td>
+  <td>Home Birth: Planned to deliver at home?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-planned-to-deliver-at-home.html '>ObservationPlannedToDeliverAtHome
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27</td>
+  <td>Attendant’s Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27</td>
+  <td>Attendant’s Title</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>qualification</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27</td>
+  <td>Attendant’s NPI</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>28</td>
+  <td>Mother Transferred for Maternal Medical or Fetal Indications for Delivery?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>hospitalization.admitSource (Y if present, N if not present)</td>
+</tr>
+<tr>
+  <td style='text-align: center'>29a</td>
+  <td>Date Of First Prenatal Care Visit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-date-of-first-prenatal-care-visit.html '>ObservationDateOfFirstPrenatalCareVisit
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>30</td>
+  <td>Total Number Of Prenatal Visits For This Pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-prenatal-visits.html '>ObservationNumberPrenatalVisits
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>31</td>
+  <td>Mother’s Height</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-height.html '>ObservationMotherHeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>32</td>
+  <td>Mother’s Prepregnancy Weight</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-prepregnancy-weight.html '>ObservationMotherPrepregnancyWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>33</td>
+  <td>Mother’s Weight At Delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-delivery-weight.html '>ObservationMotherDeliveryWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>34</td>
+  <td>Did Mother Get WIC Food For Herself During This Pregnancy?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-received-wic-food.html '>ObservationMotherReceivedWICFood
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>35</td>
+  <td>Number of Previous Live Births</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-dead.html '>ObservationNumberBirthsNowDead
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>36</td>
+  <td>Number of Other Pregnancy Outcomes</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-other-pregnancy-outcomes.html '>ObservationNumberOtherPregnancyOutcomes
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>37</td>
+  <td>Cigarette Smoking Before And During Pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-cigarette-smoking-before-during-pregnancy.html '>ObservationCigaretteSmokingBeforeDuringPregnancy
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>38</td>
+  <td>Principal Source of Payment for This Delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Coverage-principal-payer-delivery.html '>CoveragePrincipalPayerDelivery
+</a></td>
+  <td>type</td>
+</tr>
+<tr>
+  <td style='text-align: center'>39</td>
+  <td>Date Last Normal Menses Began</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-last-menstrual-period.html '>ObservationLastMenstrualPeriod
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>40</td>
+  <td>Mother’s Medical Record Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>identifier:MRN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.1</td>
+  <td>Risk factors in this pregnancy: Diabetes - Prepregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-prepregnancy-diabetes.html '>ConditionPrepregnancyDiabetes
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.2</td>
+  <td>Risk factors in this pregnancy: Diabetes - Gestational</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-gestational-diabetes.html '>ConditionGestationalDiabetes
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.3</td>
+  <td>Risk factors in this pregnancy: Hypertension - Prepregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-prepregnancy-hypertension.html '>ConditionPrepregnancyHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.4</td>
+  <td>Risk factors in this pregnancy: Hypertension - Gestational</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-gestational-hypertension.html '>ConditionGestationalHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.5</td>
+  <td>Risk factors in this pregnancy: Eclampsia</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-eclampsia-hypertension.html '>ConditionEclampsiaHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.6</td>
+  <td>Risk factors in this pregnancy: Previous preterm births</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-previous-preterm-birth.html '>ObservationPreviousPretermBirth
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.8</td>
+  <td>Risk factors in this pregnancy: Pregnancy resulted from infertility treatment</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-infertility-treatment.html '>ProcedureInfertilityTreatment
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.9</td>
+  <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-artificial-insemination.html '>ProcedureArtificialInsemination
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.10</td>
+  <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-fertilization.html '>ProcedureAssistedFertilization
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.11</td>
+  <td>Risk factors in this pregnancy: previous cesarean delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-previous-cesarean.html '>ObservationPreviousCesarean
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>41.12</td>
+  <td>Risk factors in this pregnancy: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-pregnancy-risk-factors.html '>ObservationNoneOfSpecifiedPregnancyRiskFactors
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>42</td>
+  <td>Infections present and/or treated during this pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-infection-present-during-pregnancy.html '>ConditionInfectionPresentDuringPregnancy
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>43</td>
+  <td>Obstetric Procedures</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-obstetric.html '>ProcedureObstetric
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>45.1</td>
+  <td>Characteristics of Labor and Delivery: Induction of labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-induction-of-labor.html '>ProcedureInductionOfLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>45.2</td>
+  <td>Characteristics of Labor and Delivery: Augmentation of labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-augmentation-of-labor.html '>ProcedureAugmentationOfLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>45.4</td>
+  <td>Characteristics of Labor and Delivery: Steroids for fetal lung maturation</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-steroids-fetal-lung-maturation.html '>ObservationSteroidsFetalLungMaturation
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>45.5</td>
+  <td>Characteristics of Labor and Delivery: Antibiotics received by the mother during labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-antibiotics-administered-during-labor.html '>ObservationAntibioticsAdministeredDuringLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>45.6</td>
+  <td>Characteristics of Labor and Delivery: Clinical chorioamnionitis</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-chorioamnionitis.html '>ConditionChorioamnionitis
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>45.9</td>
+  <td>Characteristics of Labor and Delivery: Epidural or spinal anesthesia during labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-epidural-or-spinal-anesthesia.html '>ProcedureEpiduralOrSpinalAnesthesia
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>45.10</td>
+  <td>Characteristics of Labor and Delivery: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-characteristics-labor-delivery.html '>ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>46.C</td>
+  <td>Fetal presentation at birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-fetal-presentation.html '>ObservationFetalPresentation
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>46.D</td>
+  <td>Final route and method of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-final-route-method-delivery.html '>ProcedureFinalRouteMethodDelivery
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>46.D.1</td>
+  <td>If cesarean, was a trial of labor attempted?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-labor-trial-attempted.html '>ObservationLaborTrialAttempted
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>47.1</td>
+  <td>Maternal Morbidity: Maternal transfusion</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-blood-transfusion.html '>ProcedureBloodTransfusion
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>47.2</td>
+  <td>Maternal Morbidity: Third or fourth degree perineal laceration</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-perineal-laceration.html '>ConditionPerinealLaceration
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>47.3</td>
+  <td>Maternal Morbidity: Ruptured uterus</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-ruptured-uterus.html '>ConditionRupturedUterus
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>47.4</td>
+  <td>Maternal Morbidity: Unplanned hysterectomy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-unplanned-hysterectomy.html '>ProcedureUnplannedHysterectomy
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>47.5</td>
+  <td>Maternal Morbidity: Admission to intensive care unit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-icu-admission.html '>ObservationICUAdmission
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>47.7</td>
+  <td>Maternal Morbidity: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-maternal-morbidities.html '>ObservationNoneOfSpecifiedMaternalMorbidities
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>48</td>
+  <td>Newborn Medical Record Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>identifier:MRN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>49</td>
+  <td>Birthweight</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-birth-weight.html '>ObservationBirthWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>50</td>
+  <td>Obstetric Estimate of Gestation</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-gestational-age-at-delivery.html '>ObservationGestationalAgeAtDelivery
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>51</td>
+  <td>Apgar Score:</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-apgar-score.html '>ObservationApgarScore
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>52</td>
+  <td>Plurality</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html '>multipleBirth[x].extension:multipleBirthTotal</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>53</td>
+  <td>If Not Single Birth - Born First, Second, Third, etc. (Specify)</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>multipleBirthInteger</td>
+</tr>
+<tr>
+  <td style='text-align: center'>54.1</td>
+  <td>Abnormal Conditions of the Newborn: Assisted ventilation required immediately following delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-ventilation-following-delivery.html '>ProcedureAssistedVentilationFollowingDelivery
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>54.2</td>
+  <td>Abnormal Conditions of the Newborn: Assisted ventilation required for more than six hours</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-ventilation-more-than-six-hours.html '>ProcedureAssistedVentilationMoreThanSixHours
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>54.3</td>
+  <td>Abnormal Conditions of the Newborn: NICU admission</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-nicu-admission.html '>ObservationNICUAdmission
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>54.4</td>
+  <td>Abnormal Conditions of the Newborn: Newborn given surfactant replacement therapy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-surfactant-replacement-therapy.html '>ProcedureSurfactantReplacementTherapy
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>54.5</td>
+  <td>Abnormal Conditions of the Newborn: Antibiotics received by the newborn for suspected neonatal sepsis</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-antibiotic-suspected-neonatal-sepsis.html '>ProcedureAntibioticSuspectedNeonatalSepsis
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>54.6</td>
+  <td>Abnormal Conditions of the Newborn: Seizure or serious neurologic dysfunction</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-seizure.html '>ConditionSeizure
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>54.8</td>
+  <td>Abnormal Conditions of the Newborn: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-abnormal-conditions-of-newborn.html '>ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>55</td>
+  <td>Congenital Anomalies of the Newborn</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-congenital-anomaly-of-newborn.html '>ConditionCongenitalAnomalyOfNewborn
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>56</td>
+  <td>Was Infant Transferred Within 24 Hours Of Delivery?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>hospitalization.dischargeDisposition</td>
+</tr>
+<tr>
+  <td style='text-align: center'>57</td>
+  <td>Is Infant Living At Time of Report?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-infant-living.html '>ObservationInfantLiving
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>58</td>
+  <td>Is The Infant Being Breastfed At Discharge?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-infant-breastfed-at-discharge.html '>ObservationInfantBreastfedAtDischarge
+</a></td>
+  <td>value</td>
+</tr>
+</tbody>
+</table>
+### <a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'>2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births Mapping</a>
 
-| **Item #** | **Form Element** | **FHIR Profile** | **FHIR Field**  |
-| --------   | -----------      | -----------      | ------------    |
-| - | Mother’s medical record # | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:MRN |
-| - | Mother’s name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| - | Child’s name/medical record # | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | identifier |
-| 9 | Number of previous live births now living | [Observation-number-births-now-living]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-living.html) | value |
-| 10 | Number of previous live births now dead | [Observation-number-births-now-dead]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-dead.html) | value |
-| 12 | Number of other pregnancy outcomes | [Observation-number-other-pregnancy-outcomes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-other-pregnancy-outcomes.html) | value |
-| 17 | Date of birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | birthDate |
-| 18 | Time of birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [birthDate.extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html) |
-| 34 | Order delivered in the pregnancy | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | multipleBirthInteger |
-| 26.1 | Characteristics of Labor and Delivery: Induction of labor | [Procedure-induction-of-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-induction-of-labor.html) |  |
-| 26.2 | Characteristics of Labor and Delivery: Augmentation of labor | [Procedure-augmentation-of-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-augmentation-of-labor.html) |  |
-| 26.3. | Characteristics of Labor and Delivery: Steroids for fetal lung maturation | [Observation-steroids-fetal-lung-maturation]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-steroids-fetal-lung-maturation.html) |  |
-| 26.4 | Characteristics of Labor and Delivery: Antibiotics received by the mother during labor | [Observation-antibiotics-administered-during-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-antibiotics-administered-during-labor.html) |  |
-| 26.5 | Characteristics of Labor and Delivery: Clinical chorioamnionitis | [Condition-chorioamnionitis]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-chorioamnionitis.html) |  |
-| 26.6 | Characteristics of Labor and Delivery: Epidural or spinal anesthesia during labor | [Procedure-epidural-or-spinal-anesthesia]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html) |  |
-| 26.7 | Characteristics of Labor and Delivery: None of the above | [Observation-none-of-specified-characteristics-labor-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery.html) |  |
-| 27.C | Method of delivery: Fetal presentation at birth | [Observation-fetal-presentation]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-fetal-presentation.html) | value |
-| 27.D | Method of delivery: Final route and method of delivery | [Procedure-final-route-method-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-final-route-method-delivery.html) | code |
-| 27.D.1 | If cesarean, was a trial of labor attempted? | [Observation-labor-trial-attempted]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-labor-trial-attempted.html) | value |
-| 28.1 | Maternal Morbidity: Maternal transfusion | [Procedure-blood-transfusion]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-blood-transfusion.html) |  |
-| 28.2 | Maternal Morbidity: Third or fourth degree perineal laceration | [Condition-perineal-laceration]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-perineal-laceration.html) |  |
-| 28.3 | Maternal Morbidity: Ruptured uterus | [Condition-ruptured-uterus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-ruptured-uterus.html) |  |
-| 28.4 | Maternal Morbidity: Unplanned hysterectomy | [Procedure-unplanned-hysterectomy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-unplanned-hysterectomy.html) |  |
-| 28.5 | Maternal Morbidity: Admission to intensive care unit | [Observation-icu-admission]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-icu-admission.html) |  |
-| 28.6 | Maternal Morbidity: None of the above | [Observation-none-of-specified-maternal-morbidities]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-maternal-morbidities.html) |  |
-| 29 | Birthweight | [Observation-birth-weight]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-birth-weight.html) |  |
-| 30 | Obstetric estimate of gestation at delivery | [Observation-gestational-age-at-delivery]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-gestational-age-at-delivery.html) | value |
-| 31 | Sex | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html) |
-| 32 | Apgar score | [Observation-apgar-score]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-apgar-score.html) | value |
-| 36.1 | Abnormal Conditions of the Newborn: Assisted ventilation required immediately following delivery | [Procedure-assisted-ventilation-following-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-ventilation-following-delivery.html) |  |
-| 36.2 | Abnormal Conditions of the Newborn: Assisted ventilation required for more than six hours | [Procedure-assisted-ventilation-more-than-six-hours]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html) |  |
-| 36.3 | Abnormal Conditions of the Newborn: NICU admission | [Observation-nicu-admission]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-nicu-admission.html) |  |
-| 36.4 | Abnormal Conditions of the Newborn: Newborn given surfactant replacement therapy | [Procedure-surfactant-replacement-therapy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-surfactant-replacement-therapy.html) |  |
-| 36.5 | Abnormal Conditions of the Newborn: Antibiotics received by the newborn for suspected neonatal sepsis | [Procedure-antibiotic-suspected-neonatal-sepsis]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html) |  |
-| - | 36.6 Abnormal Conditions of the Newborn: Seizure or serious neurologic dysfunction | [Condition-seizure]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-seizure.html) |  |
-| - | 36.7 Abnormal Conditions of the Newborn: None of the above | [Observation-none-of-specified-abnormal-conditions-of-newborn]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html) |  |
-| 37 | Congenital anomalies of the newborn | [Condition-congenital-anomaly-of-newborn]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-congenital-anomaly-of-newborn.html) |  |
-| 38 | Was infant transferred within 24 hours of delivery? | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | hospitalization.dischargeDisposition |
-| 39 | Is infant living at time of report? | [Observation-infant-living]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-infant-living.html) | value |
-| 40 | Is infant being breastfed at discharge? | [Observation-infant-breastfed-at-discharge]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-infant-breastfed-at-discharge.html) | value |
-{: .grid }
-### [2016 US Standard Facility Worksheet for the Live Birth Certificate](https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf) Mapping
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>FHIR Profile</b></td>
+    <td style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></td>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Mother’s medical record #</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>identifier:MRN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Mother’s name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Child’s name/medical record #</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Number of previous live births now living</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-living.html '>ObservationNumberBirthsNowLiving
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>Number of previous live births now dead</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-dead.html '>ObservationNumberBirthsNowDead
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>Number of other pregnancy outcomes</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-other-pregnancy-outcomes.html '>ObservationNumberOtherPregnancyOutcomes
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>Date of birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>Time of birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>birthDate.extension:birthTime</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>34</td>
+  <td>Order delivered in the pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>multipleBirthInteger</td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.1</td>
+  <td>Characteristics of Labor and Delivery: Induction of labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-induction-of-labor.html '>ProcedureInductionOfLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.2</td>
+  <td>Characteristics of Labor and Delivery: Augmentation of labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-augmentation-of-labor.html '>ProcedureAugmentationOfLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.3</td>
+  <td>Characteristics of Labor and Delivery: Steroids for fetal lung maturation</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-steroids-fetal-lung-maturation.html '>ObservationSteroidsFetalLungMaturation
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.4</td>
+  <td>Characteristics of Labor and Delivery: Antibiotics received by the mother during labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-antibiotics-administered-during-labor.html '>ObservationAntibioticsAdministeredDuringLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.5</td>
+  <td>Characteristics of Labor and Delivery: Clinical chorioamnionitis</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-chorioamnionitis.html '>ConditionChorioamnionitis
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.6</td>
+  <td>Characteristics of Labor and Delivery: Epidural or spinal anesthesia during labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-epidural-or-spinal-anesthesia.html '>ProcedureEpiduralOrSpinalAnesthesia
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.7</td>
+  <td>Characteristics of Labor and Delivery: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-characteristics-labor-delivery.html '>ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>27.C</td>
+  <td>Method of delivery: Fetal presentation at birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-fetal-presentation.html '>ObservationFetalPresentation
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27.D</td>
+  <td>Method of delivery: Final route and method of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-final-route-method-delivery.html '>ProcedureFinalRouteMethodDelivery
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27.D.1</td>
+  <td>If cesarean, was a trial of labor attempted?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-labor-trial-attempted.html '>ObservationLaborTrialAttempted
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.1</td>
+  <td>Maternal Morbidity: Maternal transfusion</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-blood-transfusion.html '>ProcedureBloodTransfusion
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.2</td>
+  <td>Maternal Morbidity: Third or fourth degree perineal laceration</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-perineal-laceration.html '>ConditionPerinealLaceration
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.3</td>
+  <td>Maternal Morbidity: Ruptured uterus</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-ruptured-uterus.html '>ConditionRupturedUterus
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.4</td>
+  <td>Maternal Morbidity: Unplanned hysterectomy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-unplanned-hysterectomy.html '>ProcedureUnplannedHysterectomy
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.5</td>
+  <td>Maternal Morbidity: Admission to intensive care unit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-icu-admission.html '>ObservationICUAdmission
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.6</td>
+  <td>Maternal Morbidity: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-maternal-morbidities.html '>ObservationNoneOfSpecifiedMaternalMorbidities
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>29</td>
+  <td>Birthweight</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-birth-weight.html '>ObservationBirthWeight
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>30</td>
+  <td>Obstetric estimate of gestation at delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-gestational-age-at-delivery.html '>ObservationGestationalAgeAtDelivery
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>31</td>
+  <td>Sex</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>32</td>
+  <td>Apgar score</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-apgar-score.html '>ObservationApgarScore
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.1</td>
+  <td>Abnormal Conditions of the Newborn: Assisted ventilation required immediately following delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-ventilation-following-delivery.html '>ProcedureAssistedVentilationFollowingDelivery
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.2</td>
+  <td>Abnormal Conditions of the Newborn: Assisted ventilation required for more than six hours</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-ventilation-more-than-six-hours.html '>ProcedureAssistedVentilationMoreThanSixHours
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.3</td>
+  <td>Abnormal Conditions of the Newborn: NICU admission</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-nicu-admission.html '>ObservationNICUAdmission
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.4</td>
+  <td>Abnormal Conditions of the Newborn: Newborn given surfactant replacement therapy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-surfactant-replacement-therapy.html '>ProcedureSurfactantReplacementTherapy
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.5</td>
+  <td>Abnormal Conditions of the Newborn: Antibiotics received by the newborn for suspected neonatal sepsis</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-antibiotic-suspected-neonatal-sepsis.html '>ProcedureAntibioticSuspectedNeonatalSepsis
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.6</td>
+  <td>Abnormal Conditions of the Newborn: Seizure or serious neurologic dysfunction</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-seizure.html '>ConditionSeizure
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.7</td>
+  <td>Abnormal Conditions of the Newborn: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-abnormal-conditions-of-newborn.html '>ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>37</td>
+  <td>Congenital anomalies of the newborn</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-congenital-anomaly-of-newborn.html '>ConditionCongenitalAnomalyOfNewborn
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>38</td>
+  <td>Was infant transferred within 24 hours of delivery?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>hospitalization.dischargeDisposition</td>
+</tr>
+<tr>
+  <td style='text-align: center'>39</td>
+  <td>Is infant living at time of report?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-infant-living.html '>ObservationInfantLiving
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>40</td>
+  <td>Is infant being breastfed at discharge?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-infant-breastfed-at-discharge.html '>ObservationInfantBreastfedAtDischarge
+</a></td>
+  <td>value</td>
+</tr>
+</tbody>
+</table>
+### <a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'>2016 US Standard Facility Worksheet for the Live Birth Certificate Mapping</a>
 
-| **Item #** | **Form Element** | **FHIR Profile** | **FHIR Field**  |
-| --------   | -----------      | -----------      | ------------    |
-| - | Mother’s medical record # | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:MRN |
-| - | Mother’s name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| 1 | Facility name / address | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Encounter-birth.html) | name/address |
-| 2 | Facility I.D. | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Encounter-birth.html) | identifier |
-| 3 | City, Town or Location of birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 4 | County of birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 5 | Place where birth occurred | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | location.physicalType |
-| 5.a | Home Birth: Planned to deliver at home? | [Observation-planned-to-deliver-at-home]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-planned-to-deliver-at-home.html) | value |
-| 6 | Date of first prenatal care visit | [Observation-date-of-first-prenatal-care-visit]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | value |
-| 7 | Total number of prenatal care visits for this pregnancy | [Observation-number-prenatal-visits]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-prenatal-visits.html) | value |
-| 8 | Date last normal menses began | [Observation-last-menstrual-period]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-last-menstrual-period.html) | value |
-| 9 | Number of previous live births now living | [Observation-number-births-now-living]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-living.html) | value |
-| 10 | Number of previous live births now dead | [Observation-number-births-now-dead]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-dead.html) | value |
-| 11 | Date of last live birth | [Observation-date-of-last-live-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-date-of-last-live-birth.html) | value |
-| 12 | Number of other pregnancy outcomes | [Observation-number-other-pregnancy-outcomes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-other-pregnancy-outcomes.html) | value |
-| 13 | Date of last other pregnancy outcome | [Observation-date-of-last-other-pregnancy-outcome]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html) | value |
-| 14.1 | Risk factors in this pregnancy: Diabetes - Prepregnancy | [Condition-prepregnancy-diabetes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-prepregnancy-diabetes.html) |  |
-| 14.2 | Risk factors in this pregnancy: Diabetes - Gestational | [Condition-gestational-diabetes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-gestational-diabetes.html) |  |
-| 14.3 | Risk factors in this pregnancy: Hypertension - Prepregnancy | [Condition-prepregnancy-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-prepregnancy-hypertension.html) |  |
-| 14.4 | Risk factors in this pregnancy: Hypertension - Gestational | [Condition-gestational-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-gestational-hypertension.html) |  |
-| 14.5 | Risk factors in this pregnancy: Eclampsia | [Condition-eclampsia-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-eclampsia-hypertension.html) |  |
-| 14.6 | Risk factors in this pregnancy: Previous preterm births | [Observation-previous-preterm-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-previous-preterm-birth.html) |  |
-| 14.7 | Risk factors in this pregnancy: Pregnancy resulted from infertility treatment | [Procedure-infertility-treatment]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-infertility-treatment.html) |  |
-| 14.8 | Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination | [Procedure-artificial-insemination]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-artificial-insemination.html) |  |
-| 14.9 | Risk factors in this pregnancy: Assisted reproductive technology | [Procedure-assisted-fertilization]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-fertilization.html) |  |
-| 14.10 | Risk factors in this pregnancy: previous cesarean delivery | [Observation-previous-cesarean]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-previous-cesarean.html) |  |
-| 14.11 | Risk factors in this pregnancy: None of the above | [Observation-none-of-specified-pregnancy-risk-factors]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html) |  |
-| 15 | Infections present and/or treated during this pregnancy | [Condition-infection-present-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-infection-present-during-pregnancy.html) |  |
-| 16 | Obstetric procedures | [Procedure-obstetric]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-obstetric.html) |  |
-| 17 | Date of birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | birthDate |
-| 18 | Time of birth | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [birthDate.extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html) |
-| 19 | Certifier’s name | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | name |
-| 19 | Certifier’s title | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | qualification |
-| 20 | Date certified | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | participant:certifier.period.start |
-| 21 | Principal source of payment for this delivery | [Coverage-principal-payer-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Coverage-principal-payer-delivery.html) | type |
-| 22 | Infant’s medical record number | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | identifier:MRN |
-| 23 | Was the mother transferred to this facility for maternal medical or fetal indications for delivery? | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | hospitalization.admitSource (Y if present, N if not present) |
-| 24 | Attendant’s name | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | name |
-| 24 | Attendant’s title | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | qualification |
-| 24 | Attendant’s N.P.I. | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | identifier |
-| 25 | Mother’s weight at delivery | [Observation-mother-delivery-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-delivery-weight.html) | value |
-| 26.1 | Characteristics of Labor and Delivery: Induction of labor | [Procedure-induction-of-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-induction-of-labor.html) |  |
-| 26.2 | Characteristics of Labor and Delivery: Augmentation of labor | [Procedure-augmentation-of-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-augmentation-of-labor.html) |  |
-| 26.3 | Characteristics of Labor and Delivery: Steroids for fetal lung maturation | [Observation-steroids-fetal-lung-maturation]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-steroids-fetal-lung-maturation.html) |  |
-| 26.4 | Characteristics of Labor and Delivery: Antibiotics received by the mother during labor | [Observation-antibiotics-administered-during-labor]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-antibiotics-administered-during-labor.html) |  |
-| 26.5 | Characteristics of Labor and Delivery: Clinical chorioamnionitis | [Condition-chorioamnionitis]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-chorioamnionitis.html) |  |
-| 26.6 | Characteristics of Labor and Delivery: Epidural or spinal anesthesia during labor | [Procedure-epidural-or-spinal-anesthesia]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html) |  |
-| 26.7 | Characteristics of Labor and Delivery: None of the above | [Observation-none-of-specified-characteristics-labor-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery.html) |  |
-| 27.C | Method of delivery: Fetal presentation at birth | [Observation-fetal-presentation]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-fetal-presentation.html) | value |
-| 27.D | Method of delivery: Final route and method of delivery | [Procedure-final-route-method-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-final-route-method-delivery.html) | code |
-| 27.D.1 | Method of delivery: If cesarean, was a trial of labor attempted? | [Observation-labor-trial-attempted]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-labor-trial-attempted.html) | value |
-| 28.1 | Maternal Morbidity: Maternal transfusion | [Procedure-blood-transfusion]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-blood-transfusion.html) |  |
-| 28.2 | Maternal Morbidity: Third or fourth degree perineal laceration | [Condition-perineal-laceration]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-perineal-laceration.html) |  |
-| 28.3 | Maternal Morbidity: Ruptured uterus | [Condition-ruptured-uterus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-ruptured-uterus.html) |  |
-| 28.4 | Maternal Morbidity: Unplanned hysterectomy | [Procedure-unplanned-hysterectomy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-unplanned-hysterectomy.html) |  |
-| 28.5 | Maternal Morbidity: Admission to intensive care unit | [Observation-icu-admission]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-icu-admission.html) |  |
-| 28.6 | Maternal Morbidity: None of the above | [Observation-none-of-specified-maternal-morbidities]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-maternal-morbidities.html) |  |
-| 29 | Birthweight | [Observation-birth-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-birth-weight.html) | value |
-| 30 | Obstetric estimate of gestation at delivery | [Observation-gestational-age-at-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-gestational-age-at-delivery.html) | value |
-| 31 | Sex: | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html) |
-| 32 | Apgar score | [Observation-apgar-score]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-apgar-score.html) | value |
-| 33 | Plurality | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | [multipleBirthInteger.extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html) |
-| 34 | If not single birth, order delivered in the pregnancy | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | multipleBirthInteger |
-| 35 | If not single birth, specify number of infants in this delivery born alive: | [Observation-number-live-births-this-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-live-births-this-delivery.html) | value |
-| 36.1 | Abnormal Conditions of the Newborn: Assisted ventilation required immediately following delivery | [Procedure-assisted-ventilation-following-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-ventilation-following-delivery.html) |  |
-| 36.2 | Abnormal Conditions of the Newborn: Assisted ventilation required for more than six hours | [Procedure-assisted-ventilation-more-than-six-hours]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html) |  |
-| 36.3 | Abnormal Conditions of the Newborn: NICU admission | [Observation-nicu-admission]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-nicu-admission.html) |  |
-| 36.4 | Abnormal Conditions of the Newborn: Newborn given surfactant replacement therapy | [Procedure-surfactant-replacement-therapy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-surfactant-replacement-therapy.html) |  |
-| 36.5 | Abnormal Conditions of the Newborn: Antibiotics received by the newborn for suspected neonatal sepsis | [Procedure-antibiotic-suspected-neonatal-sepsis]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html) |  |
-| - | 36.6 Abnormal Conditions of the Newborn: Seizure or serious neurologic dysfunction | [Condition-seizure]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-seizure.html) |  |
-| - | 54.7 Abnormal Conditions of the Newborn: None of the above | [Observation-none-of-specified-abnormal-conditions-of-newborn]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html) |  |
-| 37 | Congenital anomalies of the newborn | [Condition-congenital-anomaly-of-newborn]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-congenital-anomaly-of-newborn.html) |  |
-| 38 | Was infant transferred within 24 hours of delivery? | [Encounter-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-birth.html) | hospitalization.dischargeDisposition |
-| 39 | Is infant living at time of report? | [Observation-infant-living]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-infant-living.html) | value |
-| 40 | Is infant being breastfed at discharge? | [Observation-infant-breastfed-at-discharge]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-infant-breastfed-at-discharge.html) | value |
-{: .grid }
-### [2016 US Standard Mothers Worksheet for Child’s Birth Certificate](https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf) Mapping
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>FHIR Profile</b></td>
+    <td style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></td>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Mother’s medical record #</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>identifier:MRN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Mother’s name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Facility name / address</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>name/address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>Facility I.D.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>City, Town or Location of birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>County of birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>Place where birth occurred</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>location.physicalType</td>
+</tr>
+<tr>
+  <td style='text-align: center'>5.a</td>
+  <td>Home Birth: Planned to deliver at home?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-planned-to-deliver-at-home.html '>ObservationPlannedToDeliverAtHome
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>Date of first prenatal care visit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-date-of-first-prenatal-care-visit.html '>ObservationDateOfFirstPrenatalCareVisit
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>Total number of prenatal care visits for this pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-prenatal-visits.html '>ObservationNumberPrenatalVisits
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>Date last normal menses began</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-last-menstrual-period.html '>ObservationLastMenstrualPeriod
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Number of previous live births now living</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-living.html '>ObservationNumberBirthsNowLiving
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>Number of previous live births now dead</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-dead.html '>ObservationNumberBirthsNowDead
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11</td>
+  <td>Date of last live birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-date-of-last-live-birth.html '>ObservationDateOfLastLiveBirth
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>Number of other pregnancy outcomes</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-other-pregnancy-outcomes.html '>ObservationNumberOtherPregnancyOutcomes
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>Date of last other pregnancy outcome</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-date-of-last-other-pregnancy-outcome.html '>ObservationDateOfLastOtherPregnancyOutcome
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.1</td>
+  <td>Risk factors in this pregnancy: Diabetes - Prepregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-prepregnancy-diabetes.html '>ConditionPrepregnancyDiabetes
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.2</td>
+  <td>Risk factors in this pregnancy: Diabetes - Gestational</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-gestational-diabetes.html '>ConditionGestationalDiabetes
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.3</td>
+  <td>Risk factors in this pregnancy: Hypertension - Prepregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-prepregnancy-hypertension.html '>ConditionPrepregnancyHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.4</td>
+  <td>Risk factors in this pregnancy: Hypertension - Gestational</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-gestational-hypertension.html '>ConditionGestationalHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.5</td>
+  <td>Risk factors in this pregnancy: Eclampsia</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-eclampsia-hypertension.html '>ConditionEclampsiaHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.6</td>
+  <td>Risk factors in this pregnancy: Previous preterm births</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-previous-preterm-birth.html '>ObservationPreviousPretermBirth
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.7</td>
+  <td>Risk factors in this pregnancy: Pregnancy resulted from infertility treatment</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-infertility-treatment.html '>ProcedureInfertilityTreatment
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.8</td>
+  <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-artificial-insemination.html '>ProcedureArtificialInsemination
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.9</td>
+  <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-fertilization.html '>ProcedureAssistedFertilization
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.10</td>
+  <td>Risk factors in this pregnancy: previous cesarean delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-previous-cesarean.html '>ObservationPreviousCesarean
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14.11</td>
+  <td>Risk factors in this pregnancy: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-pregnancy-risk-factors.html '>ObservationNoneOfSpecifiedPregnancyRiskFactors
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>Infections present and/or treated during this pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-infection-present-during-pregnancy.html '>ConditionInfectionPresentDuringPregnancy
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>16</td>
+  <td>Obstetric procedures</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-obstetric.html '>ProcedureObstetric
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>Date of birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>Time of birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>birthDate.extension:birthTime</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>19</td>
+  <td>Certifier’s name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>19</td>
+  <td>Certifier’s title</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>qualification</td>
+</tr>
+<tr>
+  <td style='text-align: center'>20</td>
+  <td>Date certified</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>participant:certifier.period.start</td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>Principal source of payment for this delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Coverage-principal-payer-delivery.html '>CoveragePrincipalPayerDelivery
+</a></td>
+  <td>type</td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>Infant’s medical record number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>identifier:MRN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>23</td>
+  <td>Was the mother transferred to this facility for maternal medical or fetal indications for delivery?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>hospitalization.admitSource (Y if present, N if not present)</td>
+</tr>
+<tr>
+  <td style='text-align: center'>24</td>
+  <td>Attendant’s name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>24</td>
+  <td>Attendant’s title</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>qualification</td>
+</tr>
+<tr>
+  <td style='text-align: center'>24</td>
+  <td>Attendant’s N.P.I.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>25</td>
+  <td>Mother’s weight at delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-delivery-weight.html '>ObservationMotherDeliveryWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.1</td>
+  <td>Characteristics of Labor and Delivery: Induction of labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-induction-of-labor.html '>ProcedureInductionOfLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.2</td>
+  <td>Characteristics of Labor and Delivery: Augmentation of labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-augmentation-of-labor.html '>ProcedureAugmentationOfLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.3</td>
+  <td>Characteristics of Labor and Delivery: Steroids for fetal lung maturation</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-steroids-fetal-lung-maturation.html '>ObservationSteroidsFetalLungMaturation
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.4</td>
+  <td>Characteristics of Labor and Delivery: Antibiotics received by the mother during labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-antibiotics-administered-during-labor.html '>ObservationAntibioticsAdministeredDuringLabor
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.5</td>
+  <td>Characteristics of Labor and Delivery: Clinical chorioamnionitis</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-chorioamnionitis.html '>ConditionChorioamnionitis
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.6</td>
+  <td>Characteristics of Labor and Delivery: Epidural or spinal anesthesia during labor</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-epidural-or-spinal-anesthesia.html '>ProcedureEpiduralOrSpinalAnesthesia
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26.7</td>
+  <td>Characteristics of Labor and Delivery: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-characteristics-labor-delivery.html '>ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>27.C</td>
+  <td>Method of delivery: Fetal presentation at birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-fetal-presentation.html '>ObservationFetalPresentation
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27.D</td>
+  <td>Method of delivery: Final route and method of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-final-route-method-delivery.html '>ProcedureFinalRouteMethodDelivery
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27.D.1</td>
+  <td>Method of delivery: If cesarean, was a trial of labor attempted?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-labor-trial-attempted.html '>ObservationLaborTrialAttempted
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.1</td>
+  <td>Maternal Morbidity: Maternal transfusion</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-blood-transfusion.html '>ProcedureBloodTransfusion
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.2</td>
+  <td>Maternal Morbidity: Third or fourth degree perineal laceration</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-perineal-laceration.html '>ConditionPerinealLaceration
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.3</td>
+  <td>Maternal Morbidity: Ruptured uterus</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-ruptured-uterus.html '>ConditionRupturedUterus
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.4</td>
+  <td>Maternal Morbidity: Unplanned hysterectomy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-unplanned-hysterectomy.html '>ProcedureUnplannedHysterectomy
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.5</td>
+  <td>Maternal Morbidity: Admission to intensive care unit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-icu-admission.html '>ObservationICUAdmission
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.6</td>
+  <td>Maternal Morbidity: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-maternal-morbidities.html '>ObservationNoneOfSpecifiedMaternalMorbidities
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>29</td>
+  <td>Birthweight</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-birth-weight.html '>ObservationBirthWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>30</td>
+  <td>Obstetric estimate of gestation at delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-gestational-age-at-delivery.html '>ObservationGestationalAgeAtDelivery
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>31</td>
+  <td>Sex:</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>32</td>
+  <td>Apgar score</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-apgar-score.html '>ObservationApgarScore
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>33</td>
+  <td>Plurality</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html '>multipleBirthInteger.extension:multipleBirthTotal</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>34</td>
+  <td>If not single birth, order delivered in the pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>multipleBirthInteger</td>
+</tr>
+<tr>
+  <td style='text-align: center'>35</td>
+  <td>If not single birth, specify number of infants in this delivery born alive:</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-live-births-this-delivery.html '>ObservationNumberLiveBirthsThisDelivery
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.1</td>
+  <td>Abnormal Conditions of the Newborn: Assisted ventilation required immediately following delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-ventilation-following-delivery.html '>ProcedureAssistedVentilationFollowingDelivery
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.2</td>
+  <td>Abnormal Conditions of the Newborn: Assisted ventilation required for more than six hours</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-ventilation-more-than-six-hours.html '>ProcedureAssistedVentilationMoreThanSixHours
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.3</td>
+  <td>Abnormal Conditions of the Newborn: NICU admission</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-nicu-admission.html '>ObservationNICUAdmission
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.4</td>
+  <td>Abnormal Conditions of the Newborn: Newborn given surfactant replacement therapy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-surfactant-replacement-therapy.html '>ProcedureSurfactantReplacementTherapy
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.5</td>
+  <td>Abnormal Conditions of the Newborn: Antibiotics received by the newborn for suspected neonatal sepsis</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-antibiotic-suspected-neonatal-sepsis.html '>ProcedureAntibioticSuspectedNeonatalSepsis
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.6</td>
+  <td>Abnormal Conditions of the Newborn: Seizure or serious neurologic dysfunction</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-seizure.html '>ConditionSeizure
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>54.7</td>
+  <td>Abnormal Conditions of the Newborn: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-abnormal-conditions-of-newborn.html '>ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>37</td>
+  <td>Congenital anomalies of the newborn</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-congenital-anomaly-of-newborn.html '>ConditionCongenitalAnomalyOfNewborn
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>38</td>
+  <td>Was infant transferred within 24 hours of delivery?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-birth.html '>EncounterBirth
+</a></td>
+  <td>hospitalization.dischargeDisposition</td>
+</tr>
+<tr>
+  <td style='text-align: center'>39</td>
+  <td>Is infant living at time of report?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-infant-living.html '>ObservationInfantLiving
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>40</td>
+  <td>Is infant being breastfed at discharge?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-infant-breastfed-at-discharge.html '>ObservationInfantBreastfedAtDischarge
+</a></td>
+  <td>value</td>
+</tr>
+</tbody>
+</table>
+### <a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'>2016 US Standard Mothers Worksheet for Child’s Birth Certificate Mapping</a>
 
-| **Item #** | **Form Element** | **FHIR Profile** | **FHIR Field**  |
-| --------   | -----------      | -----------      | ------------    |
-| 1 | What is your current legal name? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| 2 | What will be your baby’s legal name? | [Patient-child-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html) | name |
-| 3 | Where do you usually live--that is--where is your household/residence located? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address |
-| 4 | Is this household inside city limits? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.extension:withinCityLimitsIndicator |
-| 5 | What is your mailing address? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address |
-| 6 | What is your date of birth? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | birthDate |
-| 7 | In what State, U.S. territory, or foreign country were you born? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 8 | What is the highest level of schooling that you will have completed at the time of delivery? | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html) | code |
-| 9 | Are you Spanish/Hispanic/Latina? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) |
-| 10 | What is your race? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) |
-| 11 | Did you receive WIC food for yourself because you were pregnant with this child? | [Observation-mother-received-wic-food]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-received-wic-food.html) | value |
-| 12 | Did this pregnancy result from infertility treatment? | [Questionnaire-mothers-live-birth](Questionnaire-Questionnaire-mothers-live-birth.html) |  |
-| 13 | What is your height? | [Observation-mother-height]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-height.html) | value |
-| 14 | What was your prepregnancy weight, that is, your weight immediately before you became pregnant with this child? | [Observation-mother-prepregnancy-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-prepregnancy-weight.html) | value |
-| 15 | How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? | [Observation-cigarette-smoking-before-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | value |
-| 17 | What name did you use prior to your first marriage? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| 18 | Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth? | [Observation-mother-married-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-married-during-pregnancy.html) | value |
-| 19 | What is the current legal name of your baby’s father? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | name |
-| 20 | What is the father’s date of birth? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | birthDate |
-| 21 | In what State, U.S. territory, or foreign country was the father born? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | [extension]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html) |
-| 22 | What is the highest level of schooling that the father will have completed at the time of delivery? | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html) | code |
-| 23 | Is the father Spanish/Hispanic/Latino? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) |
-| 24 | What is the father’s race? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) |
-| 25a | What is your Social Security Number? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:SSN |
-| 25b | What is the father’s Social Security Number? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | identifier:SSN |
-| 26a | Do you want a Social Security Number issued for your baby? | [Observation-ssn-requested-for-child]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-ssn-requested-for-child.html) | value |
-| 26b | I request that the Social Security Administration assign a Social Security number to the child named on this form and authorize the State to provide the Social Security Administration with the information from this form which is needed to assign a number. | [Questionnaire-mothers-live-birth](Questionnaire-Questionnaire-mothers-live-birth.html) |  |
-| 27a | If other than the mother, what is the name of the person providing information for this worksheet? | [Questionnaire-mothers-live-birth](Questionnaire-Questionnaire-mothers-live-birth.html) |  |
-| 27b | What is your relationship to the baby’s mother? | [Questionnaire-mothers-live-birth](Questionnaire-Questionnaire-mothers-live-birth.html) |  |
-{: .grid }
-### [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf) Mapping
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>FHIR Profile</b></td>
+    <td style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></td>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>What is your current legal name?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>What will be your baby’s legal name?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Where do you usually live--that is--where is your household/residence located?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Is this household inside city limits?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.extension:withinCityLimitsIndicator</td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>What is your mailing address?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>What is your date of birth?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>In what State, U.S. territory, or foreign country were you born?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>What is the highest level of schooling that you will have completed at the time of delivery?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-education-level-vr.html '>ObservationEducationLevelVitalRecords
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Are you Spanish/Hispanic/Latina?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>What is your race?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11</td>
+  <td>Did you receive WIC food for yourself because you were pregnant with this child?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-received-wic-food.html '>ObservationMotherReceivedWICFood
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>Did this pregnancy result from infertility treatment?</td>
+  <td><a href='Questionnaire-mothers-live-birth  .html'></a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>What is your height?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-height.html '>ObservationMotherHeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>What was your prepregnancy weight, that is, your weight immediately before you became pregnant with this child?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-prepregnancy-weight.html '>ObservationMotherPrepregnancyWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-cigarette-smoking-before-during-pregnancy.html '>ObservationCigaretteSmokingBeforeDuringPregnancy
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>What name did you use prior to your first marriage?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-married-during-pregnancy.html '>ObservationMotherMarriedDuringPregnancy
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>19</td>
+  <td>What is the current legal name of your baby’s father?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>20</td>
+  <td>What is the father’s date of birth?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>In what State, U.S. territory, or foreign country was the father born?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>What is the highest level of schooling that the father will have completed at the time of delivery?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-education-level-vr.html '>ObservationEducationLevelVitalRecords
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>23</td>
+  <td>Is the father Spanish/Hispanic/Latino?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnictiy</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>24</td>
+  <td>What is the father’s race?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:ethnicity</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>25a</td>
+  <td>What is your Social Security Number?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>identifier:SSN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>25b</td>
+  <td>What is the father’s Social Security Number?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>identifier:SSN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>26a</td>
+  <td>Do you want a Social Security Number issued for your baby?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-ssn-requested-for-child.html '>ObservationSSNRequestedForChild
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>26b</td>
+  <td>I request that the Social Security Administration assign a Social Security number to the child named on this form and authorize the State to provide the Social Security Administration with the information from this form which is needed to assign a number.</td>
+  <td><a href='Questionnaire-mothers-live-birth  .html'></a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>27a</td>
+  <td>If other than the mother, what is the name of the person providing information for this worksheet?</td>
+  <td><a href='Questionnaire-mothers-live-birth  .html'></a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>27b</td>
+  <td>What is your relationship to the baby’s mother?</td>
+  <td><a href='Questionnaire-mothers-live-birth  .html'></a></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+### <a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'>2003 Revision of the U.S. Standard Report of Fetal Death Mapping</a>
 
-| **Item #** | **Form Element** | **FHIR Profile** | **FHIR Field**  |
-| --------   | -----------      | -----------      | ------------    |
-| - | Local File No. | [Composition-provider-fetal-death-report]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-fetal-death-report.html) | [extension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-fetal-death-local-file-number.html) |
-| - | State File Number | [Composition-provider-fetal-death-report]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-fetal-death-report.html) | [extension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-fetal-death-report-number.html) |
-| 1 | Name of Fetus | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | name |
-| 2 | Time of Delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [birthDate.extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html) |
-| 3 | Sex | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html) |
-| 4 | Date of Delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | birthDate |
-| 5a | City, Town, or Location of Delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 5b | Zip Code of Delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 6 | County of Delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 7 | Place Where Delivery Occurred | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | location.physicalType |
-| 7.a | Home Birth: Planned to deliver at home? | [Observation-planned-to-deliver-at-home]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-planned-to-deliver-at-home.html) | value |
-| 8 | Facility Name / address | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | identifier |
-| 9 | Facility Id | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | identifier |
-| 10a | Mother’s Current Legal Name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name:currentLegalName |
-| 10b | Mother's Date of Birth | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | birthDate |
-| 10c | Mother’s Name Prior to First Marriage | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name:namePriorToFirstMarriage |
-| 10d | Mother's Birthplace | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 11a | Residence of Mother-State | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.state |
-| 11b | Residence of Mother-County | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.district |
-| 11c | Residence of Mother-City, Town, Or Location | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.city |
-| 11d | Residence of Mother-Street And Number | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.line |
-| 11e | Residence of Mother-Apt. No. | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.line |
-| 11f | Residence of Mother-Zip Code | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.postalCode |
-| 11g | Residence of Mother-Inside City Limits? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.extension:withinCityLimitsIndicator |
-| 12a | Father’s Current Legal Name | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | name:currentLegalName |
-| 12b | Father's Date of Birth | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | birthDate |
-| 12c | Father's Birthplace | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | [extension]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html) |
-| 13 | Method of Disposition: | [Observation-method-of-disposition]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-method-of-disposition.html) | value |
-| 14 | Attendant’s Name | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | name |
-| 14 | Attendant’s Title | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | qualification |
-| 14 | Attendant’s NPI | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | identifier |
-| 15 | Name Of Person Completing Report | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | name |
-| 15 | Title Of Person Completing Report | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | qualification |
-| 16 | Date Report Completed | [Composition-provider-fetal-death-report]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-fetal-death-report.html) | date |
-| 17 | Date Received By Registrar | [Composition-provider-fetal-death-report]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-fetal-death-report.html) | [extension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-date-received-by-registrar.html) |
-| 18a | Initiating Cause/Condition | [Condition-fetal-death-cause-or-condition]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-fetal-death-cause-or-condition.html) | code |
-| 18b | Other Significant Causes or Conditions | [Condition-fetal-death-other-cause-or-condition]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | code |
-| 18c | Weight of Fetus | [Observation-birth-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-birth-weight.html) | value |
-| 18d | Obstetric Estimate of Gestation at Delivery | [Observation-gestational-age-at-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-gestational-age-at-delivery.html) | value |
-| 18e | Estimated Time of Fetal Death | [Observation-fetal-death-time-point]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-fetal-death-time-point.html) | value |
-| 18f | Was an Autopsy Performed? | [Observation-autopsy-performed-indicator-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-autopsy-performed-indicator-vr.html) | value |
-| 18g | Was a Histological Placental Examination Performed? | [Observation-histological-placental-exam-performed]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-histological-placental-exam-performed.html) | value |
-| 18h | Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death? | [Observation-autopsy-histological-exam-results-used]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-autopsy-histological-exam-results-used.html) | value |
-| 19 | Mother’s Education | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html) | code |
-| 20 | Mother of Hispanic Origin? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) |
-| 21 | Mother’s Race | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) |
-| 22 | Mother Married? | [Observation-mother-married-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-married-during-pregnancy.html) | value |
-| 23a | Date of First Prenatal Care Visit | [Observation-date-of-first-prenatal-care-visit]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | value |
-| 24 | Total Number of Prenatal Visits For This Pregnancy | [Observation-number-prenatal-visits]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-prenatal-visits.html) | value |
-| 25 | Mother’s Height | [Observation-mother-height]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-height.html) | value |
-| 26 | Mother’s Prepregnancy Weight | [Observation-mother-prepregnancy-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-prepregnancy-weight.html) | value |
-| 28 | Did Mother Get WIC Food For Herself During This Pregnancy? | [Observation-mother-received-wic-food]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-received-wic-food.html) | value |
-| 29a | Number of Previous Live Births: Now Living Number | [Observation-number-births-now-living]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-living.html) | value |
-| 29b | Number of Previous Live Births: Now Dead Number | [Observation-number-births-now-dead]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-dead.html) | value |
-| 29c | Date of Last Live Birth | [Observation-date-of-last-live-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-date-of-last-live-birth.html) | value |
-| 31 | Cigarette Smoking Before and During Pregnancy | [Observation-cigarette-smoking-before-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | value |
-| 32 | Date Last Normal Menses Began | [Observation-last-menstrual-period]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-last-menstrual-period.html) | value |
-| 33 | Plurality | [Observation-plurality-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-plurality-vr.html) |  |
-| 34 | If Not Single Birth-Born First, Second, Third, etc. | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | multipleBirthInteger |
-| 36.1 | Risk factors in this pregnancy: Diabetes - Prepregnancy | [Condition-prepregnancy-diabetes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-prepregnancy-diabetes.html) |  |
-| 36.2 | Risk factors in this pregnancy: Diabetes - Gestational | [Condition-gestational-diabetes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-gestational-diabetes.html) |  |
-| 36.3 | Risk factors in this pregnancy: Hypertension - Prepregnancy | [Condition-prepregnancy-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-prepregnancy-hypertension.html) |  |
-| 36.4 | Risk factors in this pregnancy: Hypertension - Gestational | [Condition-gestational-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-gestational-hypertension.html) |  |
-| 36.5 | Risk factors in this pregnancy: Eclampsia | [Condition-eclampsia-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-eclampsia-hypertension.html) |  |
-| 36.8 | Risk factors in this pregnancy: Pregnancy resulted from infertility treatment | [Procedure-infertility-treatment]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-infertility-treatment.html) |  |
-| 36.9 | Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination | [Procedure-artificial-insemination]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-artificial-insemination.html) |  |
-| 36.10 | Risk factors in this pregnancy: Assisted reproductive technology | [Procedure-assisted-fertilization]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-fertilization.html) |  |
-| 36.11 | Risk factors in this pregnancy: Previous cesarean delivery | [Observation-previous-cesarean]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-previous-cesarean.html) |  |
-| 36.12 | Risk factors in this pregnancy: None of the above | [Observation-none-of-specified-pregnancy-risk-factors]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html) |  |
-| 38.C | Method of Delivery: Fetal presentation at delivery | [Observation-fetal-presentation]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-fetal-presentation.html) | value |
-| 38.D | Method of Delivery: Final route and method of delivery | [Procedure-final-route-method-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-final-route-method-delivery.html) | code |
-| 38.D.1 | Method of Delivery: If cesarean, was a trial of labor attempted? | [Observation-labor-trial-attempted]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-labor-trial-attempted.html) | value |
-| 39.3 | Maternal Morbidity: Ruptured uterus | [Condition-ruptured-uterus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-ruptured-uterus.html) |  |
-| 39.5 | Maternal Morbidity: Admission to intensive care unit | [Observation-icu-admission]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-icu-admission.html) |  |
-| 39.7 | Maternal Morbidity: None of the above | [Observation-none-of-specified-maternal-morbidities]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-maternal-morbidities.html) |  |
-{: .grid }
-### [2019 US Standard Facility Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf) Mapping
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>FHIR Profile</b></td>
+    <td style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></td>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Local File No.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-fetal-death-report.html '>CompositionProviderFetalDeathReport
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-fetal-death-local-file-number.html '>extension:fetalDeathLocalFileNumber</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>State File Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-fetal-death-report.html '>CompositionProviderFetalDeathReport
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-fetal-death-report-number.html '>extension:fetalDeathReportNumber</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Name of Fetus</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>Time of Delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>birthDate.extension:birthTime</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Sex</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Date of Delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>5a</td>
+  <td>City, Town, or Location of Delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5b</td>
+  <td>Zip Code of Delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>County of Delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>Place Where Delivery Occurred</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>location.physicalType</td>
+</tr>
+<tr>
+  <td style='text-align: center'>7.a</td>
+  <td>Home Birth: Planned to deliver at home?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-planned-to-deliver-at-home.html '>ObservationPlannedToDeliverAtHome
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>Facility Name / address</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Facility Id</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10a</td>
+  <td>Mother’s Current Legal Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name:currentLegalName</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10b</td>
+  <td>Mother's Date of Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10c</td>
+  <td>Mother’s Name Prior to First Marriage</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name:namePriorToFirstMarriage</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10d</td>
+  <td>Mother's Birthplace</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11a</td>
+  <td>Residence of Mother-State</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.state</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11b</td>
+  <td>Residence of Mother-County</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.district</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11c</td>
+  <td>Residence of Mother-City, Town, Or Location</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.city</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11d</td>
+  <td>Residence of Mother-Street And Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.line</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11e</td>
+  <td>Residence of Mother-Apt. No.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.line</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11f</td>
+  <td>Residence of Mother-Zip Code</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.postalCode</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11g</td>
+  <td>Residence of Mother-Inside City Limits?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.extension:withinCityLimitsIndicator</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12a</td>
+  <td>Father’s Current Legal Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>name:currentLegalName</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12b</td>
+  <td>Father's Date of Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12c</td>
+  <td>Father's Birthplace</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>Method of Disposition:</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-method-of-disposition.html '>ObservationMethodOfDisposition
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Attendant’s Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Attendant’s Title</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>qualification</td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Attendant’s NPI</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>Name Of Person Completing Report</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>Title Of Person Completing Report</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>qualification</td>
+</tr>
+<tr>
+  <td style='text-align: center'>16</td>
+  <td>Date Report Completed</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-fetal-death-report.html '>CompositionProviderFetalDeathReport
+</a></td>
+  <td>date</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>Date Received By Registrar</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-fetal-death-report.html '>CompositionProviderFetalDeathReport
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-date-received-by-registrar.html '>extension:dateReceivedByRegistrar</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>18a</td>
+  <td>Initiating Cause/Condition</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-fetal-death-cause-or-condition.html '>ConditionFetalDeathCauseOrCondition
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18b</td>
+  <td>Other Significant Causes or Conditions</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-fetal-death-other-cause-or-condition.html '>ConditionFetalDeathOtherCauseOrCondition
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18c</td>
+  <td>Weight of Fetus</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-birth-weight.html '>ObservationBirthWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18d</td>
+  <td>Obstetric Estimate of Gestation at Delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-gestational-age-at-delivery.html '>ObservationGestationalAgeAtDelivery
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18e</td>
+  <td>Estimated Time of Fetal Death</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-fetal-death-time-point.html '>ObservationFetalDeathTimePoint
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18f</td>
+  <td>Was an Autopsy Performed?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-autopsy-performed-indicator-vr.html '>ObservationAutopsyPerformedIndicatorVitalRecords
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18g</td>
+  <td>Was a Histological Placental Examination Performed?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-histological-placental-exam-performed.html '>ObservationHistologicalPlacentalExamPerformed
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18h</td>
+  <td>Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-autopsy-histological-exam-results-used.html '>ObservationAutopsyHistologicalExamResultsUsed
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>19</td>
+  <td>Mother’s Education</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-education-level-vr.html '>ObservationEducationLevelVitalRecords
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>20</td>
+  <td>Mother of Hispanic Origin?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>Mother’s Race</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>Mother Married?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-married-during-pregnancy.html '>ObservationMotherMarriedDuringPregnancy
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>23a</td>
+  <td>Date of First Prenatal Care Visit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-date-of-first-prenatal-care-visit.html '>ObservationDateOfFirstPrenatalCareVisit
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>24</td>
+  <td>Total Number of Prenatal Visits For This Pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-prenatal-visits.html '>ObservationNumberPrenatalVisits
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>25</td>
+  <td>Mother’s Height</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-height.html '>ObservationMotherHeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>26</td>
+  <td>Mother’s Prepregnancy Weight</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-prepregnancy-weight.html '>ObservationMotherPrepregnancyWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>28</td>
+  <td>Did Mother Get WIC Food For Herself During This Pregnancy?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-received-wic-food.html '>ObservationMotherReceivedWICFood
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>29a</td>
+  <td>Number of Previous Live Births: Now Living Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-living.html '>ObservationNumberBirthsNowLiving
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>29b</td>
+  <td>Number of Previous Live Births: Now Dead Number</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-dead.html '>ObservationNumberBirthsNowDead
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>29c</td>
+  <td>Date of Last Live Birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-date-of-last-live-birth.html '>ObservationDateOfLastLiveBirth
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>31</td>
+  <td>Cigarette Smoking Before and During Pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-cigarette-smoking-before-during-pregnancy.html '>ObservationCigaretteSmokingBeforeDuringPregnancy
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>32</td>
+  <td>Date Last Normal Menses Began</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-last-menstrual-period.html '>ObservationLastMenstrualPeriod
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>33</td>
+  <td>Plurality</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-plurality-vr.html '></a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>34</td>
+  <td>If Not Single Birth-Born First, Second, Third, etc.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td>multipleBirthInteger</td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.1</td>
+  <td>Risk factors in this pregnancy: Diabetes - Prepregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-prepregnancy-diabetes.html '>ConditionPrepregnancyDiabetes
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.2</td>
+  <td>Risk factors in this pregnancy: Diabetes - Gestational</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-gestational-diabetes.html '>ConditionGestationalDiabetes
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.3</td>
+  <td>Risk factors in this pregnancy: Hypertension - Prepregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-prepregnancy-hypertension.html '>ConditionPrepregnancyHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.4</td>
+  <td>Risk factors in this pregnancy: Hypertension - Gestational</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-gestational-hypertension.html '>ConditionGestationalHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.5</td>
+  <td>Risk factors in this pregnancy: Eclampsia</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-eclampsia-hypertension.html '>ConditionEclampsiaHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.8</td>
+  <td>Risk factors in this pregnancy: Pregnancy resulted from infertility treatment</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-infertility-treatment.html '>ProcedureInfertilityTreatment
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.9</td>
+  <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-artificial-insemination.html '>ProcedureArtificialInsemination
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.10</td>
+  <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-fertilization.html '>ProcedureAssistedFertilization
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.11</td>
+  <td>Risk factors in this pregnancy: Previous cesarean delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-previous-cesarean.html '>ObservationPreviousCesarean
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>36.12</td>
+  <td>Risk factors in this pregnancy: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-pregnancy-risk-factors.html '>ObservationNoneOfSpecifiedPregnancyRiskFactors
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>38.C</td>
+  <td>Method of Delivery: Fetal presentation at delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-fetal-presentation.html '>ObservationFetalPresentation
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>38.D</td>
+  <td>Method of Delivery: Final route and method of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-final-route-method-delivery.html '>ProcedureFinalRouteMethodDelivery
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>38.D.1</td>
+  <td>Method of Delivery: If cesarean, was a trial of labor attempted?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-labor-trial-attempted.html '>ObservationLaborTrialAttempted
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>39.3</td>
+  <td>Maternal Morbidity: Ruptured uterus</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-ruptured-uterus.html '>ConditionRupturedUterus
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>39.5</td>
+  <td>Maternal Morbidity: Admission to intensive care unit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-icu-admission.html '>ObservationICUAdmission
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>39.7</td>
+  <td>Maternal Morbidity: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-maternal-morbidities.html '>ObservationNoneOfSpecifiedMaternalMorbidities
+</a></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+### <a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'>2019 US Standard Facility Worksheet for the Report of Fetal Death Mapping</a>
 
-| **Item #** | **Form Element** | **FHIR Profile** | **FHIR Field**  |
-| --------   | -----------      | -----------      | ------------    |
-| - | Patient’s medical record # | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:MRN |
-| - | Patient’s name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| 1 | Facility name | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | name |
-| 1 | Facility address | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | address |
-| 2 | Facility I.D. (National Provider Identifier) | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | identifier |
-| 3 | City, Town or Location of delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 4 | County of delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 5 | Place of delivery | [Encounter-maternity]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Encounter-maternity.html) | location.physicalType |
-| 5.a | Planned to deliver at home | [Observation-planned-to-deliver-at-home]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-planned-to-deliver-at-home.html) | value |
-| 6 | Date of first prenatal care visit | [Observation-date-of-first-prenatal-care-visit]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-date-of-first-prenatal-care-visit.html) | value |
-| 7 | Date last normal menses began: | [Observation-last-menstrual-period]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-last-menstrual-period.html) | value |
-| 8 | Number of previous live births now living | [Observation-number-births-now-living]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-living.html) | value |
-| 9 | Number of previous live births now dead | [Observation-number-births-now-dead]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-births-now-dead.html) | value |
-| 10 | Date of last live birth | [Observation-date-of-last-live-birth]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-date-of-last-live-birth.html) | value |
-| 11.1 | Risk factors in this pregnancy: Diabetes - Prepregnancy | [Condition-prepregnancy-diabetes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-prepregnancy-diabetes.html) |  |
-| 11.2 | Risk factors in this pregnancy: Diabetes - Gestational | [Condition-gestational-diabetes]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-gestational-diabetes.html) |  |
-| 11.3 | Risk factors in this pregnancy: Hypertension - Prepregnancy | [Condition-prepregnancy-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-prepregnancy-hypertension.html) |  |
-| 11.4 | Risk factors in this pregnancy: Hypertension - Gestational | [Condition-gestational-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-gestational-hypertension.html) |  |
-| 11.5 | Risk factors in this pregnancy: Eclampsia | [Condition-eclampsia-hypertension]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-eclampsia-hypertension.html) |  |
-| 11.6 | Risk factors in this pregnancy: Pregnancy resulted from infertility treatment | [Procedure-infertility-treatment]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-infertility-treatment.html) |  |
-| 11.7 | Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination | [Procedure-artificial-insemination]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-artificial-insemination.html) |  |
-| 11.8 | Risk factors in this pregnancy: Assisted reproductive technology | [Procedure-assisted-fertilization]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-fertilization.html) |  |
-| 11.9 | Risk factors in this pregnancy: previous cesarean delivery | [Observation-previous-cesarean]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-previous-cesarean.html) |  |
-| 11.10 | Risk factors in this pregnancy: None of the above | [Observation-none-of-specified-pregnancy-risk-factors]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html) |  |
-| 12 | Date of delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | birthDate |
-| 13 | Time of delivery | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html) |
-| 14 | Name of person completing report | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | name |
-| 14 | Title of person completing report | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | qualification |
-| 15 | Date report completed | [Composition-provider-fetal-death-report]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-fetal-death-report.html) | date |
-| 16 | Attendant’s name | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | name |
-| 16 | Attendant’s title | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | qualification |
-| 16 | Attendant’s N.P.I. | [Practitioner-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html) | identifier |
-| 17.A | Method of Delivery: Fetal presentation at delivery | [Observation-fetal-presentation]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-fetal-presentation.html) | value |
-| 17.B | Method of Delivery: Final route and method of delivery | [Procedure-final-route-method-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-final-route-method-delivery.html) | code |
-| 18.1 | Maternal Morbidity: Ruptured uterus | [Condition-ruptured-uterus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-ruptured-uterus.html) |  |
-| 18.2 | Maternal Morbidity: Admission to intensive care unit | [Observation-icu-admission]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-icu-admission.html) |  |
-| 18.3 | Maternal Morbidity: None of the above | [Observation-none-of-specified-maternal-morbidities]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-maternal-morbidities.html) |  |
-| 19 | Weight of fetus | [Observation-birth-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-birth-weight.html) | value |
-| 20 | Obstetric estimate of gestation at delivery | [Observation-gestational-age-at-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-gestational-age-at-delivery.html) | value |
-| 21 | Sex | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html) |
-| 22 | Plurality | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | [multipleBirth[x].extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html) |
-| 23 | If not single delivery, order delivered in the pregnancy | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | multipleBirthInteger |
-| 24 | If not single delivery, specify number of fetal losses in this delivery | [Observation-number-fetal-deaths-this-delivery]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-fetal-deaths-this-delivery.html) | value |
-| 25 | Method of Disposition | [Observation-method-of-disposition]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-method-of-disposition.html) |  |
-| 26 | Initiating Cause/Condition | [Condition-fetal-death-cause-or-condition]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-fetal-death-cause-or-condition.html) | code |
-| 27 | Other Significant Causes or Conditions | [Condition-fetal-death-other-cause-or-condition]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-fetal-death-other-cause-or-condition.html) | code |
-| 28 | Was an autopsy performed? | [Observation-autopsy-performed-indicator-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-autopsy-performed-indicator-vr.html) |  |
-| 29 | Was a histological placental examination performed? | [Observation-histological-placental-exam-performed]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-histological-placental-exam-performed.html) | value |
-| 30 | Were autopsy or histological placental examination results used in determining the cause of fetal death? | [Observation-autopsy-histological-exam-results-used]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-autopsy-histological-exam-results-used.html) | value |
-| 31 | Estimated time of fetal death | [Observation-fetal-death-time-point]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-fetal-death-time-point.html) | value |
-{: .grid }
-### [2019 US Standard Patient’s Worksheet for the Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf) Mapping
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>FHIR Profile</b></td>
+    <td style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></td>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s medical record #</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>identifier:MRN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Facility name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Facility address</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>Facility I.D. (National Provider Identifier)</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>City, Town or Location of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>County of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>Place of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Encounter-maternity.html '>EncounterMaternity
+</a></td>
+  <td>location.physicalType</td>
+</tr>
+<tr>
+  <td style='text-align: center'>5.a</td>
+  <td>Planned to deliver at home</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-planned-to-deliver-at-home.html '>ObservationPlannedToDeliverAtHome
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>Date of first prenatal care visit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-date-of-first-prenatal-care-visit.html '>ObservationDateOfFirstPrenatalCareVisit
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>Date last normal menses began:</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-last-menstrual-period.html '>ObservationLastMenstrualPeriod
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>Number of previous live births now living</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-living.html '>ObservationNumberBirthsNowLiving
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Number of previous live births now dead</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-births-now-dead.html '>ObservationNumberBirthsNowDead
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>Date of last live birth</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-date-of-last-live-birth.html '>ObservationDateOfLastLiveBirth
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.1</td>
+  <td>Risk factors in this pregnancy: Diabetes - Prepregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-prepregnancy-diabetes.html '>ConditionPrepregnancyDiabetes
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.2</td>
+  <td>Risk factors in this pregnancy: Diabetes - Gestational</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-gestational-diabetes.html '>ConditionGestationalDiabetes
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.3</td>
+  <td>Risk factors in this pregnancy: Hypertension - Prepregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-prepregnancy-hypertension.html '>ConditionPrepregnancyHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.4</td>
+  <td>Risk factors in this pregnancy: Hypertension - Gestational</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-gestational-hypertension.html '>ConditionGestationalHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.5</td>
+  <td>Risk factors in this pregnancy: Eclampsia</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-eclampsia-hypertension.html '>ConditionEclampsiaHypertension
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.6</td>
+  <td>Risk factors in this pregnancy: Pregnancy resulted from infertility treatment</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-infertility-treatment.html '>ProcedureInfertilityTreatment
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.7</td>
+  <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-artificial-insemination.html '>ProcedureArtificialInsemination
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.8</td>
+  <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-assisted-fertilization.html '>ProcedureAssistedFertilization
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.9</td>
+  <td>Risk factors in this pregnancy: previous cesarean delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-previous-cesarean.html '>ObservationPreviousCesarean
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.10</td>
+  <td>Risk factors in this pregnancy: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-pregnancy-risk-factors.html '>ObservationNoneOfSpecifiedPregnancyRiskFactors
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>Date of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>Time of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>extension:birthTime</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Name of person completing report</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Title of person completing report</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>qualification</td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>Date report completed</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-fetal-death-report.html '>CompositionProviderFetalDeathReport
+</a></td>
+  <td>date</td>
+</tr>
+<tr>
+  <td style='text-align: center'>16</td>
+  <td>Attendant’s name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>16</td>
+  <td>Attendant’s title</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>qualification</td>
+</tr>
+<tr>
+  <td style='text-align: center'>16</td>
+  <td>Attendant’s N.P.I.</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Practitioner-vr.html '>PractitionerVitalRecords
+</a></td>
+  <td>identifier</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17.A</td>
+  <td>Method of Delivery: Fetal presentation at delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-fetal-presentation.html '>ObservationFetalPresentation
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17.B</td>
+  <td>Method of Delivery: Final route and method of delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Procedure-final-route-method-delivery.html '>ProcedureFinalRouteMethodDelivery
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18.1</td>
+  <td>Maternal Morbidity: Ruptured uterus</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-ruptured-uterus.html '>ConditionRupturedUterus
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>18.2</td>
+  <td>Maternal Morbidity: Admission to intensive care unit</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-icu-admission.html '>ObservationICUAdmission
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>18.3</td>
+  <td>Maternal Morbidity: None of the above</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-none-of-specified-maternal-morbidities.html '>ObservationNoneOfSpecifiedMaternalMorbidities
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>19</td>
+  <td>Weight of fetus</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-birth-weight.html '>ObservationBirthWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>20</td>
+  <td>Obstetric estimate of gestation at delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-gestational-age-at-delivery.html '>ObservationGestationalAgeAtDelivery
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>Sex</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>Plurality</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html '>multipleBirth[x].extension:multipleBirthTotal</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>23</td>
+  <td>If not single delivery, order delivered in the pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td>multipleBirthInteger</td>
+</tr>
+<tr>
+  <td style='text-align: center'>24</td>
+  <td>If not single delivery, specify number of fetal losses in this delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-number-fetal-deaths-this-delivery.html '>ObservationNumberFetalDeathsThisDelivery
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>25</td>
+  <td>Method of Disposition</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-method-of-disposition.html '>ObservationMethodOfDisposition
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>26</td>
+  <td>Initiating Cause/Condition</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-fetal-death-cause-or-condition.html '>ConditionFetalDeathCauseOrCondition
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27</td>
+  <td>Other Significant Causes or Conditions</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Condition-fetal-death-other-cause-or-condition.html '>ConditionFetalDeathOtherCauseOrCondition
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>28</td>
+  <td>Was an autopsy performed?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-autopsy-performed-indicator-vr.html '>ObservationAutopsyPerformedIndicatorVitalRecords
+</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>29</td>
+  <td>Was a histological placental examination performed?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-histological-placental-exam-performed.html '>ObservationHistologicalPlacentalExamPerformed
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>30</td>
+  <td>Were autopsy or histological placental examination results used in determining the cause of fetal death?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-autopsy-histological-exam-results-used.html '>ObservationAutopsyHistologicalExamResultsUsed
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>31</td>
+  <td>Estimated time of fetal death</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-fetal-death-time-point.html '>ObservationFetalDeathTimePoint
+</a></td>
+  <td>value</td>
+</tr>
+</tbody>
+</table>
+### <a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf'>2019 US Standard Patient’s Worksheet for the Report of Fetal Death Mapping</a>
 
-| **Item #** | **Form Element** | **FHIR Profile** | **FHIR Field**  |
-| --------   | -----------      | -----------      | ------------    |
-| - | Patient’s Medical Record # | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | identifier:MRN |
-| - | Patient’s Name | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| 1 | Would you like to name the child? | [Patient-decedent-fetus]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Patient-decedent-fetus.html) | name |
-| 2 | What is your current legal name? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | name |
-| 3 | Where do you usually live (household/residence location)? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address |
-| 4 | Is this household inside city limits? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address.extension:withinCityLimitsIndicator |
-| 5 | What is your mailing address? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | address |
-| 6 | What is your date of birth? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | birthDate |
-| 7 | In what State, U.S. territory, or foreign country were you born? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension](http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html) |
-| 8 | What is the highest level of schooling that you have completed at the time of delivery? | [Observation-education-level-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html) | code |
-| 9 | Are you Spanish/Hispanic/Latina? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html) |
-| 10 | What is your race? | [Patient-mother-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html) | [extension]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html) |
-| 11 | What is the current legal name of your baby’s father? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | name:currentLegalName |
-| 12 | What is the father’s date of birth? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | birthDate |
-| 13 | In what State, U.S. territory, or foreign country was the father born? | [RelatedPerson-father-natural-vr]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html) | [extension]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html) |
-| 14 | Did you receive WIC (Women, Infants & Children) food for yourself during this pregnancy? | [Observation-mother-received-wic-food]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-received-wic-food.html) | value |
-| 15 | What is your height? | [Observation-mother-height]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-height.html) | value |
-| 16 | What was your prepregnancy weight? | [Observation-mother-prepregnancy-weight]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-prepregnancy-weight.html) | value |
-| 17 | How many cigarettes OR packs of cigarettes did you smoke on an average day during each time period? | [Observation-cigarette-smoking-before-during-pregnancy]({{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html) | value |
-{: .grid }
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <td style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></td>
+    <td style='background-color:#98c1d9; width: 25%;'><b>FHIR Profile</b></td>
+    <td style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></td>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s Medical Record #</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>identifier:MRN</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s Name</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Would you like to name the child?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>What is your current legal name?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Where do you usually live (household/residence location)?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Is this household inside city limits?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address.extension:withinCityLimitsIndicator</td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>What is your mailing address?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>What is your date of birth?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>In what State, U.S. territory, or foreign country were you born?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>What is the highest level of schooling that you have completed at the time of delivery?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Observation-education-level-vr.html '>ObservationEducationLevelVitalRecords
+</a></td>
+  <td>code</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Are you Spanish/Hispanic/Latina?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>What is your race?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11</td>
+  <td>What is the current legal name of your baby’s father?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>name:currentLegalName</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>What is the father’s date of birth?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td>birthDate</td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>In what State, U.S. territory, or foreign country was the father born?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
+</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html '>extension:birthPlace</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Did you receive WIC (Women, Infants & Children) food for yourself during this pregnancy?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-received-wic-food.html '>ObservationMotherReceivedWICFood
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>What is your height?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-height.html '>ObservationMotherHeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>16</td>
+  <td>What was your prepregnancy weight?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-mother-prepregnancy-weight.html '>ObservationMotherPrepregnancyWeight
+</a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>How many cigarettes OR packs of cigarettes did you smoke on an average day during each time period?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Observation-cigarette-smoking-before-during-pregnancy.html '>ObservationCigaretteSmokingBeforeDuringPregnancy
+</a></td>
+  <td>value</td>
+</tr>
+</tbody>
+</table>
 ### 2016 US Standard Mothers Worksheet for Child’s Birth Certificate Questionnaire Mapping
 
-| **Item #** | **Form Element** | **Questionnaire** | **FHIR Field** |
-| --------   | -----------    | -----------         | ------------   |
-| 1. | What is your current legal name? | [Questionnaire-mothers-live-birth.item.linkId=mother-current-legal-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-current-legal-name |
-| 2. | What will be your baby’s legal name? | [Questionnaire-mothers-live-birth.item.linkId=child-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=child-name |
-| 3. | Where do you usually live--that is--where is your household/residence located? | [Questionnaire-mothers-live-birth.item.linkId=mother-address](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-address |
-| 4. | Is this household inside city limits? | [Questionnaire-mothers-live-birth.item.linkId=inside-city-limits](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=inside-city-limits |
-| 5. | What is your mailing address? | [Questionnaire-mothers-live-birth.item.linkId=mother-mail](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-mail |
-| 6. | What is your date of birth? | [Questionnaire-mothers-live-birth.item.linkId=mother-dob](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-dob |
-| 7. | In what State, U.S. territory, or foreign country were you born? | [Questionnaire-mothers-live-birth.item.linkId=mother-birthplace](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-birthplace |
-| 8. | What is the highest level of schooling that you will have completed at the time of delivery? | [Questionnaire-mothers-live-birth.item.linkId=mother-education](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-education |
-| 9. | Are you Spanish/Hispanic/Latina? | [Questionnaire-mothers-live-birth.item.linkId=mother-ethnicity](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-ethnicity |
-| 10. | What is your race? | [Questionnaire-mothers-live-birth.item.linkId=mother-race](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-race |
-| 11. | Did you receive WIC food for yourself because you were pregnant with this child? | [Questionnaire-mothers-live-birth.item.linkId=receive-wic](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=receive-wic |
-| 12. | Did this pregnancy result from infertility treatment? | [Questionnaire-mothers-live-birth.item.linkId=infertility-treatment](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=infertility-treatment |
-| 13. | What is your height? | [Questionnaire-mothers-live-birth.item.linkId=mothers-height](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-height |
-| 14. | What was your prepregnancy weight, that is, your weight immediately before you became pregnant with this child? | [Questionnaire-mothers-live-birth.item.linkId=mothers-prepregnancy-weight](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-prepregnancy-weight |
-| 15. | How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? | [Questionnaire-mothers-live-birth.item.linkId=mothers-smoking](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mothers-smoking |
-| 17. | What name did you use prior to your first marriage? | [Questionnaire-mothers-live-birth.item.linkId=mother-prior-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-prior-name |
-| 18. | Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth? | [Questionnaire-mothers-live-birth.item.linkId=married-conception](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=married-conception |
-| 19. | What is the current legal name of your baby’s father? | [Questionnaire-mothers-live-birth.item.linkId=father-current-legal-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-current-legal-name |
-| 20. | What is the father’s date of birth? | [Questionnaire-mothers-live-birth.item.linkId=father-dob](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-dob |
-| 21. | In what State, U.S. territory, or foreign country was the father born? | [Questionnaire-mothers-live-birth.item.linkId=father-birthplace](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-birthplace |
-| 22. | What is the highest level of schooling that the father will have completed at the time of delivery? | [Questionnaire-mothers-live-birth.item.linkId=father-education](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-education |
-| 23. | Is the father Spanish/Hispanic/Latino? | [Questionnaire-mothers-live-birth.item.linkId=father-ethnicity](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-ethnicity |
-| 24. | What is the father’s race? | [Questionnaire-mothers-live-birth.item.linkId=father-race](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-race |
-| 25a. | What is your Social Security Number? | [Questionnaire-mothers-live-birth.item.linkId=mother-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=mother-ssn |
-| 25b. | What is the father’s Social Security Number? | [Questionnaire-mothers-live-birth.item.linkId=father-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=father-ssn |
-| 26a. | Do you want a Social Security Number issued for your baby? | [Questionnaire-mothers-live-birth.item.linkId=baby-ssn](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=baby-ssn |
-| 26b. | I request that the Social Security Administration assign a Social Security number to the child named on this form and authorize the State to provide the Social Security Administration with the information from this form which is needed to assign a number. | [Questionnaire-mothers-live-birth.item.linkId=baby-ssn-sig](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=baby-ssn-sig |
-| 27a. | If other than the mother, what is the name of the person providing information for this worksheet? | [Questionnaire-mothers-live-birth.item.linkId=informant-name](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=informant-name |
-| 27b. | What is your relationship to the baby’s mother? | [Questionnaire-mothers-live-birth.item.linkId=informant-relationship](Questionnaire-Questionnaire-mothers-live-birth.html) | item.linkId=informant-relationship |
-{: .grid }
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <th style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></th>
+    <th style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></th>
+    <th style='background-color:#98c1d9; width: 25%;'><b>Questionnaire</b></th>
+    <th style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>What is your current legal name?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-current-legal-name</a></td>
+  <td>item.linkId=mother-current-legal-name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>What will be your baby’s legal name?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=child-name</a></td>
+  <td>item.linkId=child-name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Where do you usually live--that is--where is your household/residence located?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-address</a></td>
+  <td>item.linkId=mother-address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Is this household inside city limits?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=inside-city-limits</a></td>
+  <td>item.linkId=inside-city-limits</td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>What is your mailing address?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-mail</a></td>
+  <td>item.linkId=mother-mail</td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>What is your date of birth?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-dob</a></td>
+  <td>item.linkId=mother-dob</td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>In what State, U.S. territory, or foreign country were you born?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-birthplace</a></td>
+  <td>item.linkId=mother-birthplace</td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>What is the highest level of schooling that you will have completed at the time of delivery?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-education</a></td>
+  <td>item.linkId=mother-education</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Are you Spanish/Hispanic/Latina?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-ethnicity</a></td>
+  <td>item.linkId=mother-ethnicity</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>What is your race?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-race</a></td>
+  <td>item.linkId=mother-race</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11</td>
+  <td>Did you receive WIC food for yourself because you were pregnant with this child?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=receive-wic</a></td>
+  <td>item.linkId=receive-wic</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>Did this pregnancy result from infertility treatment?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=infertility-treatment</a></td>
+  <td>item.linkId=infertility-treatment</td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>What is your height?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mothers-height</a></td>
+  <td>item.linkId=mothers-height</td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>What was your prepregnancy weight, that is, your weight immediately before you became pregnant with this child?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mothers-prepregnancy-weight</a></td>
+  <td>item.linkId=mothers-prepregnancy-weight</td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mothers-smoking</a></td>
+  <td>item.linkId=mothers-smoking</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>What name did you use prior to your first marriage?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-prior-name</a></td>
+  <td>item.linkId=mother-prior-name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=married-conception</a></td>
+  <td>item.linkId=married-conception</td>
+</tr>
+<tr>
+  <td style='text-align: center'>19</td>
+  <td>What is the current legal name of your baby’s father?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=father-current-legal-name</a></td>
+  <td>item.linkId=father-current-legal-name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>20</td>
+  <td>What is the father’s date of birth?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=father-dob</a></td>
+  <td>item.linkId=father-dob</td>
+</tr>
+<tr>
+  <td style='text-align: center'>21</td>
+  <td>In what State, U.S. territory, or foreign country was the father born?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=father-birthplace</a></td>
+  <td>item.linkId=father-birthplace</td>
+</tr>
+<tr>
+  <td style='text-align: center'>22</td>
+  <td>What is the highest level of schooling that the father will have completed at the time of delivery?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=father-education</a></td>
+  <td>item.linkId=father-education</td>
+</tr>
+<tr>
+  <td style='text-align: center'>23</td>
+  <td>Is the father Spanish/Hispanic/Latino?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=father-ethnicity</a></td>
+  <td>item.linkId=father-ethnicity</td>
+</tr>
+<tr>
+  <td style='text-align: center'>24</td>
+  <td>What is the father’s race?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=father-race</a></td>
+  <td>item.linkId=father-race</td>
+</tr>
+<tr>
+  <td style='text-align: center'>25a</td>
+  <td>What is your Social Security Number?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=mother-ssn</a></td>
+  <td>item.linkId=mother-ssn</td>
+</tr>
+<tr>
+  <td style='text-align: center'>25b</td>
+  <td>What is the father’s Social Security Number?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=father-ssn</a></td>
+  <td>item.linkId=father-ssn</td>
+</tr>
+<tr>
+  <td style='text-align: center'>26a</td>
+  <td>Do you want a Social Security Number issued for your baby?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=baby-ssn</a></td>
+  <td>item.linkId=baby-ssn</td>
+</tr>
+<tr>
+  <td style='text-align: center'>26b</td>
+  <td>I request that the Social Security Administration assign a Social Security number to the child named on this form and authorize the State to provide the Social Security Administration with the information from this form which is needed to assign a number.</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=baby-ssn-sig</a></td>
+  <td>item.linkId=baby-ssn-sig</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27a</td>
+  <td>If other than the mother, what is the name of the person providing information for this worksheet?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=informant-name</a></td>
+  <td>item.linkId=informant-name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>27b</td>
+  <td>What is your relationship to the baby’s mother?</td>
+  <td><a href='Questionnaire-mothers-live-birth .html'>Questionnaire-mothers-live-birth.item.linkId=informant-relationship</a></td>
+  <td>item.linkId=informant-relationship</td>
+</tr>
+
+</tbody>
+</table>
 ### 2019 US Standard Patient’s Worksheet for the Report of Fetal Death Questionnaire Mapping
 
-| **Item #** | **Form Element** | **Questionnaire** | **FHIR Field** |
-| --------   | -----------    | -----------         | ------------   |
-| - | Patient’s Medical Record # | [Questionnaire-patients-fetal-death.source](Questionnaire-Questionnaire-patients-fetal-death.html) | source |
-| - | Patient’s Name | [Questionnaire-patients-fetal-death.source](Questionnaire-Questionnaire-patients-fetal-death.html) | source |
-| 1. | Would you like to name the child? | [Questionnaire-patients-fetal-death.item.linkId=child-name](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=child-name |
-| 2. | What is your current legal name? | [Questionnaire-patients-fetal-death.item.linkId=mother-current-legal-name](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mother-current-legal-name |
-| 3. | Where do you usually live (household/residence location)? | [Questionnaire-patients-fetal-death.item.linkId=mother-address](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mother-address |
-| 4. | Is this household inside city limits? | [Questionnaire-patients-fetal-death.item.linkId=inside-city-limits](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=inside-city-limits |
-| 5. | What is your mailing address? | [Questionnaire-patients-fetal-death.item.linkId=mother-mail](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mother-mail |
-| 6. | What is your date of birth? | [Questionnaire-patients-fetal-death.item.linkId=mother-dob](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mother-dob |
-| 7. | In what State, U.S. territory, or foreign country were you born? | [Questionnaire-patients-fetal-death.item.linkId=mother-birthplace](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mother-birthplace |
-| 8. | What is the highest level of schooling that you have completed at the time of delivery? | [Questionnaire-patients-fetal-death.item.linkId=mother-education](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mother-education |
-| 9. | Are you Spanish/Hispanic/Latina? | [Questionnaire-patients-fetal-death.item.linkId=mother-ethnicity](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mother-ethnicity |
-| 10. | What is your race? | [Questionnaire-patients-fetal-death.item.linkId=mother-race](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mother-race |
-| 11. | What is the current legal name of your baby’s father? | [Questionnaire-patients-fetal-death.item.linkId=father-current-legal-name](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=father-current-legal-name |
-| 12. | What is the father’s date of birth? | [Questionnaire-patients-fetal-death.item.linkId=father-dob](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=father-dob |
-| 13. | In what State, U.S. territory, or foreign country was the father born? | [Questionnaire-patients-fetal-death.item.linkId=father-birthplace](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=father-birthplace |
-| 14. | Did you receive WIC (Women, Infants & Children) food for yourself during this pregnancy? | [Questionnaire-patients-fetal-death.item.linkId=receive-wic](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=receive-wic |
-| 15. | What is your height? | [Questionnaire-patients-fetal-death.item.linkId=mothers-height](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mothers-height |
-| 16. | What was your prepregnancy weight? | [Questionnaire-patients-fetal-death.item.linkId=mothers-prepregnancy-weight](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mothers-prepregnancy-weight |
-| 17. | How many cigarettes OR packs of cigarettes did you smoke on an average day during each time period? | [Questionnaire-patients-fetal-death.item.linkId=mothers-smoking](Questionnaire-Questionnaire-patients-fetal-death.html) | item.linkId=mothers-smoking |
-{: .grid }
+<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<thead>
+  <tr>
+    <th style='background-color:#98c1d9; text-align: center; width: 5%;'><b>Item #</b></th>
+    <th style='background-color:#98c1d9; width: 25%;'><b>Form Element</b></th>
+    <th style='background-color:#98c1d9; width: 25%;'><b>Questionnaire</b></th>
+    <th style='background-color:#98c1d9; width: 20%;'><b>FHIR Field</b></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s Medical Record #</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.source</a></td>
+  <td>source</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Patient’s Name</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.source</a></td>
+  <td>source</td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Would you like to name the child?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=child-name</a></td>
+  <td>item.linkId=child-name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>What is your current legal name?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mother-current-legal-name</a></td>
+  <td>item.linkId=mother-current-legal-name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>3</td>
+  <td>Where do you usually live (household/residence location)?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mother-address</a></td>
+  <td>item.linkId=mother-address</td>
+</tr>
+<tr>
+  <td style='text-align: center'>4</td>
+  <td>Is this household inside city limits?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=inside-city-limits</a></td>
+  <td>item.linkId=inside-city-limits</td>
+</tr>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>What is your mailing address?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mother-mail</a></td>
+  <td>item.linkId=mother-mail</td>
+</tr>
+<tr>
+  <td style='text-align: center'>6</td>
+  <td>What is your date of birth?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mother-dob</a></td>
+  <td>item.linkId=mother-dob</td>
+</tr>
+<tr>
+  <td style='text-align: center'>7</td>
+  <td>In what State, U.S. territory, or foreign country were you born?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mother-birthplace</a></td>
+  <td>item.linkId=mother-birthplace</td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>What is the highest level of schooling that you have completed at the time of delivery?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mother-education</a></td>
+  <td>item.linkId=mother-education</td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Are you Spanish/Hispanic/Latina?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mother-ethnicity</a></td>
+  <td>item.linkId=mother-ethnicity</td>
+</tr>
+<tr>
+  <td style='text-align: center'>10</td>
+  <td>What is your race?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mother-race</a></td>
+  <td>item.linkId=mother-race</td>
+</tr>
+<tr>
+  <td style='text-align: center'>11</td>
+  <td>What is the current legal name of your baby’s father?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=father-current-legal-name</a></td>
+  <td>item.linkId=father-current-legal-name</td>
+</tr>
+<tr>
+  <td style='text-align: center'>12</td>
+  <td>What is the father’s date of birth?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=father-dob</a></td>
+  <td>item.linkId=father-dob</td>
+</tr>
+<tr>
+  <td style='text-align: center'>13</td>
+  <td>In what State, U.S. territory, or foreign country was the father born?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=father-birthplace</a></td>
+  <td>item.linkId=father-birthplace</td>
+</tr>
+<tr>
+  <td style='text-align: center'>14</td>
+  <td>Did you receive WIC (Women, Infants & Children) food for yourself during this pregnancy?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=receive-wic</a></td>
+  <td>item.linkId=receive-wic</td>
+</tr>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>What is your height?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mothers-height</a></td>
+  <td>item.linkId=mothers-height</td>
+</tr>
+<tr>
+  <td style='text-align: center'>16</td>
+  <td>What was your prepregnancy weight?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mothers-prepregnancy-weight</a></td>
+  <td>item.linkId=mothers-prepregnancy-weight</td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>How many cigarettes OR packs of cigarettes did you smoke on an average day during each time period?</td>
+  <td><a href='Questionnaire-patients-fetal-death .html'>Questionnaire-patients-fetal-death.item.linkId=mothers-smoking</a></td>
+  <td>item.linkId=mothers-smoking</td>
+</tr>
+
+</tbody>
+</table>
