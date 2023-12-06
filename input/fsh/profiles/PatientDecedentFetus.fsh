@@ -33,5 +33,4 @@ RuleSet: decedentFetusName
 RuleSet: birthDateAndTime 
 * birthDate 1..
   * extension[birthTime] MS 
-  * extension[partialDate] MS 
-  // * extension[datePartAbsentReason] MS 
+  * extension[partialDateTime] MS 
