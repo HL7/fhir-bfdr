@@ -143,24 +143,24 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
         if vFieldProfile.nil?
           puts "- Profile column is empty - "
         end
-        vField = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vFieldProfile}" + ".html '>#{vField}</a>"  
+        vField = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vFieldProfile}" + ".html'>#{vField}</a>"  
         # vField = "[" + vField + "]" + "("+ igMap[vIg] + "StructureDefinition-" + vFieldProfile + ".html)"
         if vMappingIg.nil?
           puts "- Mapping IG column is empty for profile - "
           puts vContext
         end
-        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html '>#{vProfileName}</a>"  
+        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html'>#{vProfileName}</a>"  
         # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
       elsif hasContext
-        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html '>#{vProfileName}</a>"  
+        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html'>#{vProfileName}</a>"  
         # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
       else
-        vProfileWithURL = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html '>#{vProfileName}</a>"  
+        vProfileWithURL = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html'>#{vProfileName}</a>"  
         # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vIg] + "StructureDefinition-" + vProfile + ".html)"
       end
 
       if vProfile.include?("Questionnaire") 
-        vProfileWithURL = "<a href='#{vProfile} "+" .html'>#{vProfileName}</a>"  
+        vProfileWithURL = "<a href='Questionnaire-#{vProfile}"+".html'>#{vProfileName}</a>"  
         # vProfileWithURL = "[" + vProfile + "]" + "(Questionnaire-" + vProfile + ".html)" 
       end
       pOutputFile.puts "<tr>"
@@ -217,7 +217,7 @@ def createMappingTableQaire(pRowFilter, pOutputFile, pSpreadsheet)
     vField = "." + row[FORMS_QAIRE_FIELD_COL].to_s if !row[FORMS_QAIRE_FIELD_COL].to_s.to_s.empty?
     
     vQuestionnaireWithField = vQuestionnaire + vField
-    vQuestionnaireWithURL =  "<a href='#{vQuestionnaire} "+".html'>#{vQuestionnaireWithField}</a>"  
+    vQuestionnaireWithURL =  "<a href=Questionnaire-#{vQuestionnaire}"+".html'>#{vQuestionnaireWithField}</a>"  
     # vQuestionnaireWithURL = "[" + vQuestionnaireWithField + "]" + "(Questionnaire-" + vQuestionnaire + ".html)"  
         
     pOutputFile.puts "<tr>"
