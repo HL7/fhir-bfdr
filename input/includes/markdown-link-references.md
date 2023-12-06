@@ -50,6 +50,7 @@
 [ObservationEducationLevelVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Observation-education-level-vr.html
 [ObservationEmergingIssuesVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Observation-emerging-issues-vr.html
 [ObservationInputRaceAndEthnicityVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-input-race-and-ethnicity-vr.html
+[ObservationUsualWorkVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Observation-usual-work-vr.html
 [PatientChildVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-child-vr.html
 [PatientMotherVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-mother-vr.html
 [PatientVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Patient-vr.html

@@ -24,7 +24,11 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Maternity Encounter | [`Maternity Encounter`](Encounter-encounter-maternity-carmen-teresa-lee.html)|
 | Author | [`Jessica Leung`](Practitioner-practitioner-vital-records-jessica-leung.html) | 
 | Mother's Education | [`Secondary`](Observation-observation-parent-education-level-carmen-teresa-lee.html) |    
-| Mother's Race and Ethnicity   | [`White / Non-Hispanic`](Observation-observation-input-race-and-ethnicity-carmen-teresa-lee.html) |  
+| Mother's Race and Ethnicity   | [`White / Non-Hispanic`](Observation-observation-input-race-and-ethnicity-carmen-teresa-lee.html) | 
+| Mother's Usual Work-Occupation | [`Secretary`](Observation-observation-usual-work-carmen-teresa-lee.html) |
+| Mother's Usual Work-Industry | [`State Agency`](Observation-observation-usual-work-carmen-teresa-lee.html) |
+| Father's Usual Work-Occupation | [`Teaching Assistant`](Observation-observation-usual-work-tom-yan-lee.html) |
+| Father's Usual Work-Industry | [`Elementary and Secondary Schools`](Observation-observation-usual-work-tom-yan-lee.html) |
 | Mother Transferred   | [`Maternity Encounter`](Encounter-encounter-maternity-carmen-teresa-lee.html) |  
 | Intiating Cause of Fetal Death |  [`Premature Rupture of Membrances`](Condition-condition-fetal-death-cause-or-condition-not-named.html)  | 
 | Other Causes of Fetal Death    | [`Placental insufficiency`](Condition-condition-fetal-death-other-significant-cause-not-named.html)   |
