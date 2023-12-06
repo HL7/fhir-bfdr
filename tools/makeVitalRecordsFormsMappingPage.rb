@@ -217,7 +217,7 @@ def createMappingTableQaire(pRowFilter, pOutputFile, pSpreadsheet)
     vField = "." + row[FORMS_QAIRE_FIELD_COL].to_s if !row[FORMS_QAIRE_FIELD_COL].to_s.to_s.empty?
     
     vQuestionnaireWithField = vQuestionnaire + vField
-    vQuestionnaireWithURL =  "<a href=Questionnaire-#{vQuestionnaire}"+".html'>#{vQuestionnaireWithField}</a>"  
+    vQuestionnaireWithURL =  "<a href='Questionnaire-#{vQuestionnaire}"+".html'>#{vQuestionnaireWithField}</a>"  
     # vQuestionnaireWithURL = "[" + vQuestionnaireWithField + "]" + "(Questionnaire-" + vQuestionnaire + ".html)"  
         
     pOutputFile.puts "<tr>"

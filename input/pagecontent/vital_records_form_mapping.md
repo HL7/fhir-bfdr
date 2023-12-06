@@ -2880,175 +2880,175 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>1</td>
   <td>What is your current legal name?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-current-legal-name</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-current-legal-name</a></td>
   <td>item.linkId=mother-current-legal-name</td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
   <td>What will be your baby’s legal name?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=child-name</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=child-name</a></td>
   <td>item.linkId=child-name</td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Where do you usually live--that is--where is your household/residence located?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-address</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-address</a></td>
   <td>item.linkId=mother-address</td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=inside-city-limits</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=inside-city-limits</a></td>
   <td>item.linkId=inside-city-limits</td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
   <td>What is your mailing address?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-mail</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-mail</a></td>
   <td>item.linkId=mother-mail</td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
   <td>What is your date of birth?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-dob</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-dob</a></td>
   <td>item.linkId=mother-dob</td>
 </tr>
 <tr>
   <td style='text-align: center'>7</td>
   <td>In what State, U.S. territory, or foreign country were you born?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-birthplace</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-birthplace</a></td>
   <td>item.linkId=mother-birthplace</td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
   <td>What is the highest level of schooling that you will have completed at the time of delivery?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-education</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-education</a></td>
   <td>item.linkId=mother-education</td>
 </tr>
 <tr>
   <td style='text-align: center'>9</td>
   <td>Are you Spanish/Hispanic/Latina?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-ethnicity</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-ethnicity</a></td>
   <td>item.linkId=mother-ethnicity</td>
 </tr>
 <tr>
   <td style='text-align: center'>10</td>
   <td>What is your race?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-race</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-race</a></td>
   <td>item.linkId=mother-race</td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
   <td>Did you receive WIC food for yourself because you were pregnant with this child?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=receive-wic</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=receive-wic</a></td>
   <td>item.linkId=receive-wic</td>
 </tr>
 <tr>
   <td style='text-align: center'>12</td>
   <td>Did this pregnancy result from infertility treatment?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=infertility-treatment</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=infertility-treatment</a></td>
   <td>item.linkId=infertility-treatment</td>
 </tr>
 <tr>
   <td style='text-align: center'>13</td>
   <td>What is your height?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mothers-height</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mothers-height</a></td>
   <td>item.linkId=mothers-height</td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
   <td>What was your prepregnancy weight, that is, your weight immediately before you became pregnant with this child?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mothers-prepregnancy-weight</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mothers-prepregnancy-weight</a></td>
   <td>item.linkId=mothers-prepregnancy-weight</td>
 </tr>
 <tr>
   <td style='text-align: center'>15</td>
   <td>How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mothers-smoking</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mothers-smoking</a></td>
   <td>item.linkId=mothers-smoking</td>
 </tr>
 <tr>
   <td style='text-align: center'>17</td>
   <td>What name did you use prior to your first marriage?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-prior-name</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-prior-name</a></td>
   <td>item.linkId=mother-prior-name</td>
 </tr>
 <tr>
   <td style='text-align: center'>18</td>
   <td>Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=married-conception</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=married-conception</a></td>
   <td>item.linkId=married-conception</td>
 </tr>
 <tr>
   <td style='text-align: center'>19</td>
   <td>What is the current legal name of your baby’s father?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-current-legal-name</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-current-legal-name</a></td>
   <td>item.linkId=father-current-legal-name</td>
 </tr>
 <tr>
   <td style='text-align: center'>20</td>
   <td>What is the father’s date of birth?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-dob</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-dob</a></td>
   <td>item.linkId=father-dob</td>
 </tr>
 <tr>
   <td style='text-align: center'>21</td>
   <td>In what State, U.S. territory, or foreign country was the father born?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-birthplace</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-birthplace</a></td>
   <td>item.linkId=father-birthplace</td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
   <td>What is the highest level of schooling that the father will have completed at the time of delivery?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-education</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-education</a></td>
   <td>item.linkId=father-education</td>
 </tr>
 <tr>
   <td style='text-align: center'>23</td>
   <td>Is the father Spanish/Hispanic/Latino?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-ethnicity</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-ethnicity</a></td>
   <td>item.linkId=father-ethnicity</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>What is the father’s race?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-race</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-race</a></td>
   <td>item.linkId=father-race</td>
 </tr>
 <tr>
   <td style='text-align: center'>25a</td>
   <td>What is your Social Security Number?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-ssn</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=mother-ssn</a></td>
   <td>item.linkId=mother-ssn</td>
 </tr>
 <tr>
   <td style='text-align: center'>25b</td>
   <td>What is the father’s Social Security Number?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-ssn</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=father-ssn</a></td>
   <td>item.linkId=father-ssn</td>
 </tr>
 <tr>
   <td style='text-align: center'>26a</td>
   <td>Do you want a Social Security Number issued for your baby?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=baby-ssn</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=baby-ssn</a></td>
   <td>item.linkId=baby-ssn</td>
 </tr>
 <tr>
   <td style='text-align: center'>26b</td>
   <td>I request that the Social Security Administration assign a Social Security number to the child named on this form and authorize the State to provide the Social Security Administration with the information from this form which is needed to assign a number.</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=baby-ssn-sig</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=baby-ssn-sig</a></td>
   <td>item.linkId=baby-ssn-sig</td>
 </tr>
 <tr>
   <td style='text-align: center'>27a</td>
   <td>If other than the mother, what is the name of the person providing information for this worksheet?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=informant-name</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=informant-name</a></td>
   <td>item.linkId=informant-name</td>
 </tr>
 <tr>
   <td style='text-align: center'>27b</td>
   <td>What is your relationship to the baby’s mother?</td>
-  <td><a href=Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=informant-relationship</a></td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=informant-relationship</a></td>
   <td>item.linkId=informant-relationship</td>
 </tr>
 
@@ -3069,115 +3069,115 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s Medical Record #</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.source</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.source</a></td>
   <td>source</td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s Name</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.source</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.source</a></td>
   <td>source</td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
   <td>Would you like to name the child?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=child-name</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=child-name</a></td>
   <td>item.linkId=child-name</td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
   <td>What is your current legal name?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-current-legal-name</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-current-legal-name</a></td>
   <td>item.linkId=mother-current-legal-name</td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Where do you usually live (household/residence location)?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-address</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-address</a></td>
   <td>item.linkId=mother-address</td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=inside-city-limits</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=inside-city-limits</a></td>
   <td>item.linkId=inside-city-limits</td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
   <td>What is your mailing address?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-mail</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-mail</a></td>
   <td>item.linkId=mother-mail</td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
   <td>What is your date of birth?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-dob</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-dob</a></td>
   <td>item.linkId=mother-dob</td>
 </tr>
 <tr>
   <td style='text-align: center'>7</td>
   <td>In what State, U.S. territory, or foreign country were you born?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-birthplace</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-birthplace</a></td>
   <td>item.linkId=mother-birthplace</td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
   <td>What is the highest level of schooling that you have completed at the time of delivery?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-education</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-education</a></td>
   <td>item.linkId=mother-education</td>
 </tr>
 <tr>
   <td style='text-align: center'>9</td>
   <td>Are you Spanish/Hispanic/Latina?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-ethnicity</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-ethnicity</a></td>
   <td>item.linkId=mother-ethnicity</td>
 </tr>
 <tr>
   <td style='text-align: center'>10</td>
   <td>What is your race?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-race</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mother-race</a></td>
   <td>item.linkId=mother-race</td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
   <td>What is the current legal name of your baby’s father?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=father-current-legal-name</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=father-current-legal-name</a></td>
   <td>item.linkId=father-current-legal-name</td>
 </tr>
 <tr>
   <td style='text-align: center'>12</td>
   <td>What is the father’s date of birth?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=father-dob</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=father-dob</a></td>
   <td>item.linkId=father-dob</td>
 </tr>
 <tr>
   <td style='text-align: center'>13</td>
   <td>In what State, U.S. territory, or foreign country was the father born?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=father-birthplace</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=father-birthplace</a></td>
   <td>item.linkId=father-birthplace</td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
   <td>Did you receive WIC (Women, Infants & Children) food for yourself during this pregnancy?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=receive-wic</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=receive-wic</a></td>
   <td>item.linkId=receive-wic</td>
 </tr>
 <tr>
   <td style='text-align: center'>15</td>
   <td>What is your height?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mothers-height</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mothers-height</a></td>
   <td>item.linkId=mothers-height</td>
 </tr>
 <tr>
   <td style='text-align: center'>16</td>
   <td>What was your prepregnancy weight?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mothers-prepregnancy-weight</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mothers-prepregnancy-weight</a></td>
   <td>item.linkId=mothers-prepregnancy-weight</td>
 </tr>
 <tr>
   <td style='text-align: center'>17</td>
   <td>How many cigarettes OR packs of cigarettes did you smoke on an average day during each time period?</td>
-  <td><a href=Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mothers-smoking</a></td>
+  <td><a href='Questionnaire-Questionnaire-patients-fetal-death.html'>Questionnaire-patients-fetal-death.item.linkId=mothers-smoking</a></td>
   <td>item.linkId=mothers-smoking</td>
 </tr>
 
