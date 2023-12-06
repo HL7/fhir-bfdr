@@ -1,6 +1,6 @@
 ### Child and Decedent Fetus Name
 Natality: When the child's name is not chosen, a dataAbsentReason should be provided with code "temp-unknown."
-<br/>Fetal Death: When the decedent fetus is not named, a dataAbsentReason should be provided with code "temp-unknown."
+<br/>Fetal Death: When the decedent fetus is not named, a dataAbsentReason should be provided with code "unknown."
 
 ### Specifying None of the Above and Missing Data
 All of the none-of-the-above values are represented as observations with a clear code, and a value of 'None'. If any of the following are present in the bundle, then the interpretation is that the corresponding individual components are all 'N'  
