@@ -30,3 +30,13 @@ Usage: #example
 * deceasedBoolean = true
 * multipleBirthInteger = 3
 * multipleBirthInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#queriedCorrect "Queried, and Correct"
+* extension[parentReportedAgeAtDelivery][+]
+  * extension[reportedAge]
+    * valueQuantity = 34 'a'
+  * extension[motherOrFather]
+    * valueCodeableConcept = $v3-RoleCode#MTH "mother"
+* extension[parentReportedAgeAtDelivery][+]
+  * extension[reportedAge]
+    * valueQuantity = 35 'a'
+  * extension[motherOrFather]
+    * valueCodeableConcept = $v3-RoleCode#FTH "father"
