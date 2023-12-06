@@ -65,7 +65,7 @@
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>26.3.</td>
+  <td style='text-align: center'>26.3</td>
   <td>Characteristics of Labor and Delivery: Steroids for fetal lung maturation</td>
   <td>-</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>

@@ -2,8 +2,7 @@ Profile: CompositionCodedRaceAndEthnicity
 Parent: Composition
 Id: Composition-coded-race-and-ethnicity
 Title: "Composition - Coded Race and Ethnicity"
-Description: "This profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office.\n
-The Coding of Race and Ethnicity follows the MRE pattern implemented in VRDR, and supports maternal and paternal race/ethnicity"
+Description: "This Composition profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office, along with the submitted input race and ethnicity information."
 * extension contains
     ExtensionFetalDeathReportNumber named fetalDeathReportNumber 0..1 and
     ExtensionLiveBirthCertificateNumber named liveBirthCertificateNumber 0..1
