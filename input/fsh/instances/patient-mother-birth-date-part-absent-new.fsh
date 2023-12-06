@@ -36,12 +36,6 @@ Usage: #example
   * given[+] = "Teresa"
 * gender = #female
 * birthDate = "1986"
-  * extension[partialDate]
-    * extension[year].valueUnsignedInt = 1986 
-    * extension[month].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown
-    * extension[day].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown
-  // * extension[datePartAbsentReason].extension[year].valueUnsignedInt = 1986
-  // * extension[datePartAbsentReason].extension[month].valueUnsignedInt.extension[dataabsent].valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#asked-unknown
 * address
   //* extension[withinCityLimitsIndicator].valueCoding = $v2-0532#N "No"
   * extension[withinCityLimitsIndicator].valueCoding = $v2-0136#N "No"
