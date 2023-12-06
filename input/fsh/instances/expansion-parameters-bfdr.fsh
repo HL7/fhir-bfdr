@@ -1,4 +1,4 @@
-Instance: expansion-parameters-bfdr
+Instance: expansion-parameters
 InstanceOf: Parameters
 Title: "USA SNOMED-CT"
 Description: "USA SNOMED-CT"

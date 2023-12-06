@@ -6,6 +6,6 @@ Usage: #example
 * status = #final
 * extension[roleVitalRecords].valueCodeableConcept = $v3-RoleCode#FTH "father"
 * subject = Reference(patient-child-babyg-quinn)
-* focus = Reference(relatedperson-father-natural-james-brandon-quinn)
+* focus.display = "James Brandon Quinn - Father"
 * valueCodeableConcept.text = "Lawyer"
 * component[odh-UsualIndustry].valueCodeableConcept.text = "Legal Services"
