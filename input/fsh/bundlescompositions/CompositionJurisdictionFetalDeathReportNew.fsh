@@ -78,9 +78,10 @@ Id: Composition-jurisdiction-fetal-death-report
 * insert BFDRCompositionSectionEntrySlicing(motherInformation, 0, 92014-0, Jurisdiction Fetal Death)
 * insert FocusRule(motherInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
 * insert BFDRCompositionSectionSlice(motherInformation, mothersEducation, 0, 1, Mother's Education, Mother's Education, ObservationEducationLevelVitalRecords)  
+* insert BFDRCompositionSectionSlice(motherInformation, mothersUsualWork, 0, 1, Mother's Usual Work, Mother's Usual Work, ObservationUsualWorkVitalRecords) 
 * insert BFDRCompositionSectionSlice(motherInformation, mothersRaceEthnicity, 0, 1, Mother's Input Race and Ethnicity, Mother's Input Race and Ethnicity, ObservationInputRaceAndEthnicityVitalRecords)  
-
-* section contains fatherInformation 0..1
+* insert BFDRCompositionSectionEntrySlicing(fatherInformation, 0, 92013-2, Jurisdiction Fetal Death)
+//* section contains fatherInformation 0..1
 * section[fatherInformation] ^short = "Father Administrative Section on the Fetal Death Report"
   * ^definition = "This section contains items from the Father administrative section on the Fetal Death Report."
   * code 1.. 
@@ -88,6 +89,7 @@ Id: Composition-jurisdiction-fetal-death-report
     * ^short = "Father's administrative information"
     * ^definition = "Father's administrative information"
 * insert FocusRule(fatherInformation, The focus of this section is the father, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father., RelatedPersonFatherNaturalVitalRecords)
+* insert BFDRCompositionSectionSlice(fatherInformation, fathersUsualWork, 0, 1, Father's Usual Work, Father's Usual Work, ObservationUsualWorkVitalRecords) 
 * insert BFDRCompositionLocalSectionEntrySlicing(emergingIssues, 0, CodeSystemLocalObservationsCodesVitalRecords#emergingissues, Jurisdiction Fetal Death)
 * insert BFDRCompositionSectionSlice(emergingIssues, EmergingIssues,  0, 1, Emerging Issues, Emerging Issues, ObservationEmergingIssuesVitalRecords)
 //* insert BFDRCompositionSectionEntrySlicing(editFlags, 1, 92012-4, Jurisdiction Fetal Death)

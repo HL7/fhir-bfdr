@@ -52,14 +52,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Local File No.</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-live-birth-report.html '>CompositionProviderLiveBirthReport
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Extension-live-birth-local-file-number.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-live-birth-local-file-number.html '>extension:liveBirthLocalFileNumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Birth Number</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-live-birth-report.html '>CompositionProviderLiveBirthReport
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Extension-live-birth-certificate-number.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-live-birth-certificate-number.html '>extension:liveBirthCertificateNumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
@@ -73,14 +73,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Child's Time of Birth</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthTime.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Child's Sex</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-birthsex.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
@@ -101,14 +101,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>City, Town, Or Location Of Birth</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>7</td>
   <td>County Of Birth</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>8a</td>
@@ -136,7 +136,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Mother’s Birthplace</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>9a</td>
@@ -206,7 +206,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Father’s Birthplace</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Extension-relatedperson-birthplace-vr.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html '>extension</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
@@ -234,7 +234,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Date Filed By Registrar</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-live-birth-report.html '>CompositionProviderLiveBirthReport
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Extension-date-filed-by-registrar.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-date-filed-by-registrar.html '>extension:dateFiledbyRegistrar</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
@@ -290,14 +290,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Mother of Hispanic Origin?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-ethnicity.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
   <td>Mother’s Race</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-race.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>23</td>
@@ -311,14 +311,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Father of Hispanic Origin?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-ethnicity.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>25</td>
   <td>Father’s Race</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-race.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>26</td>
@@ -682,7 +682,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Plurality</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-multipleBirthTotal.html '>multipleBirth[x].extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html '>multipleBirth[x].extension:multipleBirthTotal</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>53</td>
@@ -836,7 +836,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Time of birth</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthTime.html '>birthDate.extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>birthDate.extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>34</td>
@@ -976,7 +976,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Sex</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-birthsex.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>32</td>
@@ -1109,14 +1109,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>City, Town or Location of birth</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>County of birth</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
@@ -1291,7 +1291,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Time of birth</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthTime.html '>birthDate.extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>birthDate.extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>19</td>
@@ -1494,7 +1494,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Sex:</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-birthsex.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>32</td>
@@ -1508,7 +1508,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Plurality</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-child-vr.html '>PatientChildVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-multipleBirthTotal.html '>multipleBirthInteger.extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html '>multipleBirthInteger.extension:multipleBirthTotal</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>34</td>
@@ -1662,7 +1662,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>In what State, U.S. territory, or foreign country were you born?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
@@ -1676,14 +1676,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Are you Spanish/Hispanic/Latina?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-ethnicity.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>10</td>
   <td>What is your race?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-race.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
@@ -1752,7 +1752,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>In what State, U.S. territory, or foreign country was the father born?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Extension-relatedperson-birthplace-vr.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
@@ -1766,14 +1766,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Is the father Spanish/Hispanic/Latino?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-ethnicity.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnictiy</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>What is the father’s race?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-race.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>25a</td>
@@ -1833,14 +1833,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Local File No.</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-fetal-death-report.html '>CompositionProviderFetalDeathReport
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Extension-fetal-death-local-file-number.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-fetal-death-local-file-number.html '>extension:fetalDeathLocalFileNumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>State File Number</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-fetal-death-report.html '>CompositionProviderFetalDeathReport
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Extension-fetal-death-report-number.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-fetal-death-report-number.html '>extension:fetalDeathReportNumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
@@ -1854,14 +1854,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Time of Delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthTime.html '>birthDate.extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>birthDate.extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Sex</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-birthsex.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
@@ -1875,21 +1875,21 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>City, Town, or Location of Delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5b</td>
   <td>Zip Code of Delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
   <td>County of Delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>7</td>
@@ -1945,7 +1945,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Mother's Birthplace</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>11a</td>
@@ -2015,7 +2015,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Father's Birthplace</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Extension-relatedperson-birthplace-vr.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>13</td>
@@ -2071,7 +2071,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Date Received By Registrar</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Composition-provider-fetal-death-report.html '>CompositionProviderFetalDeathReport
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Extension-date-received-by-registrar.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Extension-date-received-by-registrar.html '>extension:dateReceivedByRegistrar</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>18a</td>
@@ -2141,14 +2141,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Mother of Hispanic Origin?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-ethnicity.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>21</td>
   <td>Mother’s Race</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-race.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
@@ -2406,14 +2406,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>City, Town or Location of delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>County of delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
@@ -2546,7 +2546,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Time of delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthTime.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html '>extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
@@ -2644,14 +2644,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Sex</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-birthsex.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html '>extension:birthsex</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
   <td>Plurality</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition- Patient-decedent-fetus.html '>PatientDecedentFetusVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-multipleBirthTotal.html '>multipleBirth[x].extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html '>multipleBirth[x].extension:multipleBirthTotal</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>23</td>
@@ -2791,7 +2791,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>In what State, U.S. territory, or foreign country were you born?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition- patient-birthPlace.html '>extension</a></td>
+  <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
@@ -2805,14 +2805,14 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Are you Spanish/Hispanic/Latina?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-ethnicity.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html '>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>10</td>
   <td>What is your race?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Patient-mother-vr.html '>PatientMotherVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition- us-core-race.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html '>extension:race</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
@@ -2833,7 +2833,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>In what State, U.S. territory, or foreign country was the father born?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- RelatedPerson-father-natural-vr.html '>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition- Extension-relatedperson-birthplace-vr.html '>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html '>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>

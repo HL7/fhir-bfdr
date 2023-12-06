@@ -143,7 +143,7 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
         if vFieldProfile.nil?
           puts "- Profile column is empty - "
         end
-        vField = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + " #{vFieldProfile}" + ".html '>#{vField}</a>"  
+        vField = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vFieldProfile}" + ".html '>#{vField}</a>"  
         # vField = "[" + vField + "]" + "("+ igMap[vIg] + "StructureDefinition-" + vFieldProfile + ".html)"
         if vMappingIg.nil?
           puts "- Mapping IG column is empty for profile - "

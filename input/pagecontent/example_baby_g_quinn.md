@@ -24,8 +24,12 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Father    | [`James Brandon Quinn`](RelatedPerson-relatedperson-father-natural-james-brandon-quinn.html) |
 | Attendant | [`Avery Jones`](Practitioner-practitioner-vital-records-avery-jones.html) see [Birth Encounter](Encounter-encounter-birth-babyg-quinn.html) |
 | Mother's Education | [`Post-Graduate`](Observation-observation-parent-education-level-jada-ann-quinn.html) |
+| Mother's Usual Work-Occupation | [`Carpenter`](Observation-observation-usual-work-jada-ann-quinn.html) |
+| Mother's Usual Work-Industry | [`Construction`](Observation-observation-usual-work-jada-ann-quinn.html) |
 | Mother's Race and Ethnicity   | [`White/AmericanIndian, Non-Hispanic`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) |
-| Father's Education | [`Post Graduate`](Observation-observation-parent-education-level-james-quinn.html) |  
+| Father's Education | [`Post Graduate`](Observation-observation-parent-education-level-james-quinn.html) | 
+| Father's Usual Work-Occupation | [`Lawyer`](Observation-observation-usual-work-james-brandon-quinn.html) |
+| Father's Usual Work-Industry | [`Legal Services`](Observation-observation-usual-work-james-brandon-quinn.html) | 
 | Father's Race and Ethnicity   | [`White / Non-Hispanic`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) | 
 | Place of Birth   |  Birth at [`South Hospital`](Location-location-south-hospital.html) , Discharge to [`East Hospital`](Location-location-east-hospital.html)        |
 | Certifier   | [`Janet Seito`](Practitioner-practitioner-vital-records-janet-seito.html) |   
