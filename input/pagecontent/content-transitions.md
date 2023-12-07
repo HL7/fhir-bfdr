@@ -37,7 +37,8 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='StructureDefinition-vr-demographic-coded-bundle.html'>DemographicCodedContentBundleBFDR</a></td><td> New </td><td> New Addition </td></tr>
+<tr><td> <a href='StructureDefinition-Bundle-demographic-coded-content.html'>DemographicCodedContentBundleBFDR</a></td><td> New </td><td> New Addition </td></tr>
+<tr><td> <a href='StructureDefinition-Bundle-coded-cause-of-fetal-death.html'>DemographicCodedCauseOfFetalDeathBundleBFDR</a></td><td> New </td><td> New Addition </td></tr>
 <tr><td> <a href='StructureDefinition-Bundle-document-bfdr.html'>BundleDocumentBFDR</a></td><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Bundle-document-bfdr.html'>BFDR</a></td><td> - </td></tr>
 <tr><td> <a href='StructureDefinition-Composition-coded-cause-of-fetal-death.html'>CompositionCodedCauseOfFetalDeath</a></td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Composition-coded-cause-of-fetal-death.html'>BFDR</a></td><td>-</td></tr>
 <tr><td> <a href='StructureDefinition-Composition-coded-race-and-ethnicity.html'>CompositionCodedRaceAndEthnicity</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Composition-coded-race-and-ethnicity.html'>BFDR</a></td><td>-</td></tr>
