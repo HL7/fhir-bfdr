@@ -1,3 +1,4 @@
+Profile conformance requires that gender be provided, see [note on patient gender](http://build.fhir.org/ig/HL7/vr-common-library/usage.html#gender).
 
 ### IJE Mapping
 
@@ -166,6 +167,7 @@
 
 </details>
 <p></p>
+
 
 ### Form Mapping
 <table class='grid'>
