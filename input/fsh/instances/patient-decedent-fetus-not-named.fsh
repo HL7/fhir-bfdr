@@ -31,3 +31,13 @@ Usage: #example
     * valueDateTime = "2019-01-09T18:23:00-07:00"
 * deceasedBoolean = true
 * multipleBirthInteger = 3
+* extension[parentReportedAgeAtDelivery][+]
+  * extension[reportedAge]
+    * valueQuantity = 34 'a'
+  * extension[motherOrFather]
+    * valueCodeableConcept = $v3-RoleCode#MTH "mother"
+* extension[parentReportedAgeAtDelivery][+]
+  * extension[reportedAge]
+    * valueQuantity = 35 'a'
+  * extension[motherOrFather]
+    * valueCodeableConcept = $v3-RoleCode#FTH "father"
