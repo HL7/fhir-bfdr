@@ -1,4 +1,4 @@
-Profile conformance requires that gender be provided, see [note on patient gender](http://build.fhir.org/ig/HL7/vr-common-library/usage.html#gender).
+Profile conformance requires that gender be provided, see [note on patient gender](https://build.fhir.org/ig/HL7/vr-common-library/usage.html#gender).
 
 ### IJE Mapping
 
