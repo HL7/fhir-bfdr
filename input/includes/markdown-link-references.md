@@ -9,6 +9,7 @@
 [PartialDatesAndTimes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times
 [note on Child and Decedent Fetus name]: usage.html#child-and-decedent-fetus-name
 [note on birth date and time]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time
+[note on patient gender]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#gender
 [CityCodes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#city-codes
 [CountyCodes]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#county-codes
 [StateLiterals]: https://build.fhir.org/ig/HL7/vr-common-library/usage.html#state-literals
