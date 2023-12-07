@@ -16,7 +16,11 @@ WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[22].resource
 # This is a publisher induced issue.   The extension in question is introduced by the publisher, not sushi.   See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher 
 The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
 
-# Issues caused by Bundles with open slicing.
+# This is by intent.  Encounter.participant is open sliced by value on type.  It can have 0..* attendants (LOINC 87286-1) and 0..* certifiers (LOINC 87287-9).  It is intended that all members of each slice will have the same type.
+INFORMATION: StructureDefinition/Encounter-birth: StructureDefinition.snapshot.element[49].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/Encounter-birth: StructureDefinition.snapshot.element[56].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+# These are document bundles with open slicing.  The entries in the bundle are not intended to match defined slices.  The conformance to the content is imposed by the Composition that is the only defined element in each bundle.
 INFORMATION: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-coded-cause-of-fetal-death|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-coded-cause-of-fetal-death|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-demographic-coded-content|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -221,9 +225,121 @@ INFORMATION: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[58]: Th
 INFORMATION: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[59]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-bfdr|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[0].resource.entry[1].resource/*Patient/patient-child-babyg-quinn*/.name[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# This is not relevant for our application
-Best Practice Recommendation: In general, all observations should have a performer
-Best Practice Recommendation: In general, all observations should have an effective[x] ()
+# These best practices do not apply to this application 
+WARNING: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[1].resource/*Observation/observation-coded-initiating-fetal-death-cause-or-condition*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[1].resource/*Observation/observation-coded-initiating-fetal-death-cause-or-condition*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[2].resource/*Observation/observation-coded-other-fetal-death-cause-or-condition-not-named*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[2].resource/*Observation/observation-coded-other-fetal-death-cause-or-condition-not-named*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-cause-of-fetal-death-not-named: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-input-race-and-ethnicity-mother*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-input-race-and-ethnicity-mother*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[2].resource/*Observation/observation-input-race-and-ethnicity-father*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[2].resource/*Observation/observation-input-race-and-ethnicity-father*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[3].resource/*Observation/observation-coded-race-and-ethnicity-mother*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[3].resource/*Observation/observation-coded-race-and-ethnicity-mother*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[4].resource/*Observation/observation-coded-race-and-ethnicity-father*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[4].resource/*Observation/observation-coded-race-and-ethnicity-father*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[31].resource/*Observation/observation-usual-work-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[31].resource/*Observation/observation-usual-work-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[32].resource/*Observation/observation-usual-work-tom-yan-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[32].resource/*Observation/observation-usual-work-tom-yan-lee*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[33].resource/*Observation/observation-input-race-and-ethnicity-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[33].resource/*Observation/observation-input-race-and-ethnicity-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[31].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[31].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[32].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[32].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[33].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[33].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[41].resource/*Observation/observation-mother-married-during-pregnancy-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[43].resource/*Observation/observation-usual-work-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[43].resource/*Observation/observation-usual-work-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[44].resource/*Observation/observation-input-race-and-ethnicity-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[44].resource/*Observation/observation-input-race-and-ethnicity-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[49].resource/*Observation/observation-usual-work-james-brandon-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[49].resource/*Observation/observation-usual-work-james-brandon-quinn*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[50].resource/*Observation/observation-input-race-and-ethnicity-james-quinn-w-edit*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[50].resource/*Observation/observation-input-race-and-ethnicity-james-quinn-w-edit*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[41].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[43].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[43].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[44].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[44].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[49].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[49].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[50].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[50].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[30].resource/*Observation/observation-usual-work-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[30].resource/*Observation/observation-usual-work-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[31].resource/*Observation/observation-usual-work-tom-yan-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[31].resource/*Observation/observation-usual-work-tom-yan-lee*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[32].resource/*Observation/observation-input-race-and-ethnicity-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[32].resource/*Observation/observation-input-race-and-ethnicity-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[30].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[30].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[31].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[31].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[32].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[32].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[44].resource/*Observation/observation-mother-married-during-pregnancy-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[46].resource/*Observation/observation-usual-work-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[46].resource/*Observation/observation-usual-work-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[47].resource/*Observation/observation-input-race-and-ethnicity-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[47].resource/*Observation/observation-input-race-and-ethnicity-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[52].resource/*Observation/observation-usual-work-james-brandon-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[52].resource/*Observation/observation-usual-work-james-brandon-quinn*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[53].resource/*Observation/observation-input-race-and-ethnicity-james-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[53].resource/*Observation/observation-input-race-and-ethnicity-james-quinn*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[44].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[46].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[46].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[47].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[47].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[52].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[52].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[53].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[53].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-coded-initiating-fetal-death-cause-or-condition: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-coded-initiating-fetal-death-cause-or-condition: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-coded-other-fetal-death-cause-or-condition-not-named: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-coded-other-fetal-death-cause-or-condition-not-named: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-coded-race-and-ethnicity-father: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-coded-race-and-ethnicity-father: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-coded-race-and-ethnicity-mother: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-coded-race-and-ethnicity-mother: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-input-race-and-ethnicity-carmen-teresa-lee: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-input-race-and-ethnicity-carmen-teresa-lee: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-input-race-and-ethnicity-father: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-input-race-and-ethnicity-father: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-input-race-and-ethnicity-jada-ann-quinn: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-input-race-and-ethnicity-jada-ann-quinn: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-input-race-and-ethnicity-james-quinn: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-input-race-and-ethnicity-james-quinn: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-input-race-and-ethnicity-james-quinn-w-edit: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-input-race-and-ethnicity-james-quinn-w-edit: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-input-race-and-ethnicity-mother: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-input-race-and-ethnicity-mother: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-mother-married-during-pregnancy-jada-ann-quinn: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-usual-work-carmen-teresa-lee: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-usual-work-carmen-teresa-lee: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-usual-work-jada-ann-quinn: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-usual-work-jada-ann-quinn: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-usual-work-james-brandon-quinn: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-usual-work-james-brandon-quinn: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Observation/observation-usual-work-tom-yan-lee: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-usual-work-tom-yan-lee: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
 
 # We have inspected these and consider these Composition.section entry messages spurious.
 INFORMATION: Composition/composition-coded-cause-of-fetal-death-not-named: Composition.section[0].entry[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
