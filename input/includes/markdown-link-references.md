@@ -45,6 +45,30 @@
 [USCoreDischargeDispositionVS]: http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition
 [USCoreBirthSexVS]: http://hl7.org/fhir/us/core/ValueSet/birthsex
 {% include fsh-link-references.md %} 
+<!--- Extensions -->
+[patient-birthPlace]: http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html
+[liveBirthCertificateNumber]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-live-birth-certificate-number.html
+[fetalDeathReportNumber]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-fetal-death-report-number.html
+[liveBirthLocalFileNumber]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-live-birth-local-file-number.html
+[fetalDeathLocalFileNumber]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-fetal-death-local-file-number.html
+[patient-birthTime]: http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html
+[birthsex]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-birthsex.html
+[cityCode]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-CityCode.html
+[countyCode]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-DistrictCode.html
+[bypassEditFlag]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-BypassEditFlag.html
+[patient-multipleBirthTotal]: http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html
+[parentReportedAgeAtDelivery]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Extension-reported-parent-age-at-delivery-vr.html
+[dateReceivedByRegistrar]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-date-received-by-registrar.html
+[stnum]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-StreetNumber.html
+[predir]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-PreDirectional.html
+[stname]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-StreetName.html
+[stdesig]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-StreetDesignator.html
+[postdir]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-PostDirectional.html
+[unitnum]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-UnitOrAptNumber.html
+[dateFiledByRegistrar]: http://build.fhir.org/ig/HL7/fhir-bfdr/StructureDefinition-Extension-date-filed-by-registrar.html
+[roleVitalRecords]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Extension-role-vr.html
+[withinCityLimitsIndicator]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Extension-within-city-limits-indicator-vr.html
+[motherOrFather]: http://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Extension-role-vr.html
 <!---from VRCL-->
 [ObservationAutopsyPerformedIndicatorVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-Observation-autopsy-performed-indicator-vr.html
 [ObservationCodedRaceAndEthnicityVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-coded-race-and-ethnicity-vr.html
