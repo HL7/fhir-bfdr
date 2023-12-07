@@ -242,7 +242,7 @@ N = Not Yet Determined",,,,,,,,,,,,
 473,Natality,9,33,2,Date of Birth (Infant)--Day,IDOB_DY,01-31 (based on month),,VRCPL,PatientChildVitalRecords,birthDate,date,See [note on birth date and time],B,,,,,Patient-child-vr
 1350,Birth Infant Death,9,33,2,Date of Birth (Infant)--Day,IDOB_DY,01-31 (based on month),,,,,,,,,,,,
 17,Mortality,10,128,10,Decedent's Legal Name--Suffix,SUFF,,,VRDR,Decedent,"name.suffix , name.use = official",string,-,,y,,,,Decedent
-474,Natality,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,VRCPL,PatientChildVitalRecords,extension[patient-birthplace].value[x].district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-child-vr
+474,Natality,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,VRCPL,PatientChildVitalRecords,extension[patient-birthPlace].value[x].district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-child-vr
 827,Fetal Death,10,35,3,County of Delivery,CNTYO,NCHS Instruction Manual: Part 8,,BFDR,EncounterMaternity,location.location.address.district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-decedent-fetus
 1351,Birth Infant Death,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,,,,,,,,,,,
 439,Mortality Roster,10,199,4,Date of Death--Year,DOD_YR,"4 digit year; <=current year, 9999",,VRDR,DeathDate,value,dateTime,Required for processing,,,,,,DeathDate
@@ -459,9 +459,9 @@ For Canadian Provinces:
 1201,ITOP,19,125,3,Patient's Residence - County Code,COUNTYC,NCHS Instruction Manual: Part 8,,not implemented,not implemented,,,,,,,,,not implemented
 448,Mortality Roster,19,368,50,Mother's Given Name,MOMGNAME,"Free form literal, left justified; if unknown, leave blank",,VRDR,DecedentMother,"name.given , name.use = official",string,-,,DMOMF,,,,DecedentMother
 27,Mortality,20,209,2,Date of Birth--Month,DOB_MO,"01-12, 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,y,,,,Decedent
-292,Surveillance,20,213,5,Decedent's Residence--City,CITYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.city.extension[ cityCode ],string,see [CityCodes],,y,,,,Decedent
-484,Natality,20,68,5,Residence of Mother--City,CITYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.city.extension[ cityCode ],integer,See [CityCodes],B,,,,,Patient-mother-vr
-837,Fetal Death,20,68,5,Residence of Mother--City/Town,CITYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.city.extension[ cityCode ],integer,See [CityCodes],B,,,,,Patient-mother-vr
+292,Surveillance,20,213,5,Decedent's Residence--City,CITYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.city.extension[cityCode],string,see [CityCodes],,y,,,,Decedent
+484,Natality,20,68,5,Residence of Mother--City,CITYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.city.extension[cityCode],integer,See [CityCodes],B,,,,,Patient-mother-vr
+837,Fetal Death,20,68,5,Residence of Mother--City/Town,CITYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.city.extension[cityCode],integer,See [CityCodes],B,,,,,Patient-mother-vr
 1361,Birth Infant Death,20,68,5,Residence of Mother--City,CITYC,NCHS Instruction Manual: Part 8,,,,,,,,,,,,
 449,Mortality Roster,20,418,50,Mother's Middle Name,MOMMIDNAME,"Free form literal, left justified; if unknown, leave blank",,VRDR,DecedentMother,"name.given , name.use = official",string,-,,DMOMMID,,,,DecedentMother
 1202,ITOP,20,128,2,"State, U.S. Territory or Canadian Province of Residence (Patient) - code",STATEC,"NCHS Instruction Manual: Part 8
@@ -487,7 +487,7 @@ For Canadian Provinces:
    SK  SASKATCHEWAN
    YT  YUKON",,not implemented,not implemented,,,,,,,,,not implemented
 28,Mortality,21,211,2,Date of Birth--Day,DOB_DY,"01-31 (based on month), 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,y,,,,Decedent
-293,Surveillance,21,218,3,Decedent's Residence--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.district.extension[ countyCode ],string,see [CountyCodes],,y,,,,Decedent
+293,Surveillance,21,218,3,Decedent's Residence--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.district.extension[countyCode],string,see [CountyCodes],,y,,,,Decedent
 485,Natality,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-mother-vr
 838,Fetal Death,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-mother-vr
 1362,Birth Infant Death,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,,,,,,,,,,,
@@ -614,14 +614,14 @@ For Canadian Provinces:
 1364,Birth Infant Death,23,78,2,Residence of Mother--Country,COUNTRYC,NCHS Instruction Manual: Part 8,,,,,,,,,,,,
 1205,ITOP,23,163,28,Patient's Residence county literal,COUNTYTXT,Valid county literal or blank if unknown,,not implemented,not implemented,,,,,,,,,not implemented
 452,Mortality Roster,23,528,10,Father's Suffix,DADSUFF,,,VRDR,DecedentFather,"name.suffix , name.use = official",string,-,,FATHERSUFFIX,,,,DecedentFather
-31,Mortality,24,217,5,Decedent's Residence--City,CITYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.city.extension[ cityCode ],integer,see [CityCodes],,y,,,,Decedent
+31,Mortality,24,217,5,Decedent's Residence--City,CITYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.city.extension[cityCode],integer,see [CityCodes],,y,,,,Decedent
 296,Surveillance,24,225,1,Decedent's Residence--Inside City Limits,LIMITS,Y = Yes N = No.  U = Unknown ,,VRDR,Decedent,address.city.extension[ withinCityLimits] ,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,Decedent
 488,Natality,24,80,1,Residence of Mother--Inside City Limits,LIMITS,"Y = Yes
 N = No
-U = Unknown",,VRCPL,PatientMotherVitalRecords,address.extension[ withinCityLimitsIndicator ].value,codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Extension-within-city-limits-indicator-vr
+U = Unknown",,VRCPL,PatientMotherVitalRecords,address.extension[withinCityLimitsIndicator].value,codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Extension-within-city-limits-indicator-vr
 841,Fetal Death,24,80,1,Residence of Mother--Inside City/Town Limits,LIMITS,"Y = Yes
 N = No
-U = Unknown",,VRCPL,PatientMotherVitalRecords,address.extension[ withinCityLimitsIndicator ].value,codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Extension-within-city-limits-indicator-vr
+U = Unknown",,VRCPL,PatientMotherVitalRecords,address.extension[withinCityLimitsIndicator].value,codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Extension-within-city-limits-indicator-vr
 1365,Birth Infant Death,24,80,1,Residence of Mother--Inside City Limits,LIMITS,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,
