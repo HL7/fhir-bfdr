@@ -7,10 +7,10 @@ RuleSet: ProfileBasedEntrySlicing
 
 Profile: DemographicCodedContentBundleBFDR
 Parent: Bundle
-Id: vr-demographic-coded-bundle
+Id: Bundle-demographic-coded-content 
 Title: "Bundle - Demographic Coded Content Bundle for BFDR"
-Description: "Demographic Coded Content Bundle (Bundle): A bundle containing instances of the resources comprising demographic (race and ethnicity) coded content. 
-This bundle is information-content equivalent to the traditional NCHS MRE/NRE format."
+Description: "This bundle profile contains instances of the resources comprising demographic (race and ethnicity) coded content. 
+This bundle is information-content equivalent to the traditional NCHS [MRE](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf)/NRE format."
 //* insert RequireMetaProfile(CodedContentDocument)
 * insert BundleIdentifiers
 * type 1..1

@@ -206,7 +206,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Father’s Birthplace</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>

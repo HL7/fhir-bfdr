@@ -10,7 +10,7 @@
   }
 </style>
 
-This example provides a narrative description of the fetal report for [`Fetus Not Named`](Patient-patient-decedent-fetus-not-named.html), following the [fetal death repor](appendix_d_-_example_fetal_death_report.html).
+This example provides a narrative description of the fetal report for [`Fetus Not Named`](Patient-patient-decedent-fetus-not-named.html), following the [fetal death report](appendix_d_-_example_fetal_death_report.html).
 This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-bundle-provider-fetal-death-not-named.html), and in a [`Jurisdiction bundle to NCHS`](Bundle-bundle-jurisdiction-fetal-death-not-named.html).  The main difference between the two bundles is the inclusion of edit flags.
 
 
