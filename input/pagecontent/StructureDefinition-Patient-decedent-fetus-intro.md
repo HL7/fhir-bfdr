@@ -31,8 +31,8 @@
   <td>Date of Delivery (Fetus)--Year</td>
   <td>FDOD_YR</td>
   <td>birthDate</td>
-  <td></td>
-  <td></td>
+  <td>date</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -49,8 +49,8 @@
   <td>Time of Delivery</td>
   <td>TD</td>
   <td>birthDate.extension[patient-birthTime]</td>
-  <td></td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>dateTime</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -67,8 +67,8 @@
   <td>Date of Delivery (Fetus)--Month</td>
   <td>FDOD_MO</td>
   <td>birthDate</td>
-  <td></td>
-  <td></td>
+  <td>date</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -76,8 +76,8 @@
   <td>Date of Delivery (Fetus)--Day</td>
   <td>FDOD_DY</td>
   <td>birthDate</td>
-  <td></td>
-  <td></td>
+  <td>date</td>
+  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -111,7 +111,7 @@
   <td>171</td>
   <td>Mother's Reported Age</td>
   <td>MAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ PatientMotherVitalRecords ]</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='MTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -120,7 +120,7 @@
   <td>172</td>
   <td>Father's Reported Age</td>
   <td>FAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value=<br />Reference[ RelatedPersonFatherNaturalVitalRecords ]</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='FTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -131,7 +131,7 @@
   <td>FETFNAME</td>
   <td>name.given, <br />name.use = official</td>
   <td>string</td>
-  <td>See <a href='usage.html#child-and-decedent-fetus-name'>Note on Child and Decedent Fetus name</a></td>
+  <td>See <a href='usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -140,7 +140,7 @@
   <td>FETMNAME</td>
   <td>name.given, <br />name.use = official</td>
   <td>string</td>
-  <td>See <a href='usage.html#child-and-decedent-fetus-name'>Note on Child and Decedent Fetus name</a></td>
+  <td>See <a href='usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -149,7 +149,7 @@
   <td>FETLNAME</td>
   <td>name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.)</td>
   <td>string </td>
-  <td>See <a href='usage.html#child-and-decedent-fetus-name'>Note on Child and Decedent Fetus name</a></td>
+  <td>See <a href='usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
