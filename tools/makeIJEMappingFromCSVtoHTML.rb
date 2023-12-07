@@ -4,9 +4,9 @@
 #Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
 
 #method 2:
-#require 'open-uri'
-#download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx?raw=true')
-#IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
+# require 'open-uri'
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true')
+# IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
 
 #run:
 #ruby tools/makeIJEMappingFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
@@ -15,6 +15,7 @@ require "json"
 require "pry"
 require "roo"
 require "csv"
+require 'set'
 
 def get_file_type(file)
   File.extname(file).gsub(".", "")
@@ -145,6 +146,17 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
             fhirunique = row[IJE_UNIQUENESS_COL] if row[IJE_UNIQUENESS_COL] 
             description = row[IJE_DESC_COL] if row[IJE_DESC_COL]
             if pRowFilterIG == "BFDR"
+                unless fhirfield.nil?
+                    if fhirfield.include?("extension[")
+                        specifiers = fhirfield.scan(/extension\[.*?\]/).to_set
+                        specifiers.each { |spec| 
+                            just_spec = spec[/\[.*?\]/]
+                            unless just_spec == "x" || just_spec == "[reportedAge]"
+                                fhirfield = fhirfield.gsub("#{just_spec}", "[#{just_spec}]")
+                            end 
+                        }
+                    end
+                end
                 if fhirunique == "J"
                     pOutputFile.puts "<tr><td style='text-align: center;'>" + field.chomp + "</td><td>" + description.chomp + "</td><td style='text-align: center; color: darkviolet'>" + ijename + "</td><td>" + profile + "</td><td>" + fhirfield + "</td><td style='text-align: center;'>" + fhirtype + "</td><td>" + fhirencoding + "</td></tr>"
                 else
