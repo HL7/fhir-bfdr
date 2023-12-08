@@ -26,10 +26,10 @@ Usage: #example
   * system = "http://hospital.smarthealthit.org"
   * value = "9932702"
 // NOTE TODO: this was marked usual, but could be marked official?
-* name.use = #usual
-* name.family = "Quinn"
-* name.given[0] = "Baby"
-* name.given[+] = "G"
+* name[currentLegalName]
+  * family = "Quinn"
+  * given[0] = "Baby"
+  * given[+] = "G"
 * gender = #female
 * birthDate = "2019-02-12"
   * extension

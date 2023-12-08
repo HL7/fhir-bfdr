@@ -5,7 +5,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureD
 
 # Information messages about draft condition category codes used in US Core
 Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
-# These are category = encounter-diagnosis (not problem-list)
+# These are bad FHIRPath expressions in R4.  Referred to IGCreation for resolution See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Warnings.20on.20Conditions.20Based.20on.20Bad.20FHIRR4.20FHIRPAth
 WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[23].resource: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[24].resource: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[23].resource: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
@@ -501,7 +501,4 @@ INFORMATION: Composition/composition-provider-live-birth-babyg-quinn: Compositio
 INFORMATION: Composition/composition-provider-live-birth-babyg-quinn: Composition.section[4].entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 
-# Not sure how to address this one 
-INFORMATION: Patient/patient-child-babyg-quinn: Patient.name[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Patient/patient-child-babyg-quinn-w-edit: Patient.name[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
