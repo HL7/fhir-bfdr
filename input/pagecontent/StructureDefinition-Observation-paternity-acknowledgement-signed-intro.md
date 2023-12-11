@@ -52,5 +52,17 @@
   </tr>
 </thead>
 <tbody>
+<tr>
+  <td style='text-align: center'>15</td>
+  <td>If not married, has paternity acknowledgement been signed in the hospital?</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>If not married, has a paternity acknowledgment been completed?</td>
+  <td>value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf'> Mothers Worksheet for Child’s Birth Certificate</a></td>
+</tr>
 </tbody>
 </table>
