@@ -85,7 +85,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
   <td>20</td>
   <td>Residence of Mother--City</td>
   <td>CITYC</td>
-  <td>address.city.extension[ cityCode ]</td>
+  <td>address.city.extension[cityCode]</td>
   <td>integer</td>
   <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#city-codes'>CityCodes</a></td>
 </tr>
@@ -121,7 +121,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
   <td>24</td>
   <td>Residence of Mother--Inside City Limits</td>
   <td>LIMITS</td>
-  <td>address.extension[ withinCityLimitsIndicator ].value</td>
+  <td>address.extension[withinCityLimitsIndicator].value</td>
   <td>codeable</td>
   <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
@@ -544,7 +544,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
   <td>20</td>
   <td>Residence of Mother--City/Town</td>
   <td>CITYC</td>
-  <td>address.city.extension[ cityCode ]</td>
+  <td>address.city.extension[cityCode]</td>
   <td>integer</td>
   <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#city-codes'>CityCodes</a></td>
 </tr>
@@ -580,7 +580,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
   <td>24</td>
   <td>Residence of Mother--Inside City/Town Limits</td>
   <td>LIMITS</td>
-  <td>address.extension[ withinCityLimitsIndicator ].value</td>
+  <td>address.extension[withinCityLimitsIndicator].value</td>
   <td>codeable</td>
   <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-unknown-vr.html'>ValueSetYesNoUnknownVitalRecords</a></td>
 </tr>
