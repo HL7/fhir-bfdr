@@ -2354,7 +2354,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>36.11</td>
   <td>Risk factors in this pregnancy: Previous cesarean delivery</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>Observation-number-previous-cesareans</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
   <td></td>
 </tr>
 <tr>
