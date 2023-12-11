@@ -558,7 +558,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>43.4</td>
   <td>Obstetric Procedures</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-obstetric-procedures.html'>Observation-none-of-specified-obstetric-procedures</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-obstetric-procedures.html'>ObservationNoneOfSpecifiedObstetricProcedures</a></td>
   <td></td>
 </tr>
 <tr>
