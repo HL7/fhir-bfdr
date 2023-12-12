@@ -56,7 +56,7 @@ INTRO_PROFILE_ID_COL = 3
 INTRO_PROFILE_USAGE_COL = 4
 INTRO_FORM_MAPPING_COL = 5
 INTRO_IJE_MAPPING_COL = 6
-#INTRO_PROFILE_LOCATION_COL = 7 #NOT USED
+INTRO_PROFILE_LOCATION_COL = 7 #NOT USED
 
 # BFDR_Forms_mapping.csv columns
 FORMS_ORDER_COL = 0
@@ -121,7 +121,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
   CSV.foreach(pProfileIntrosSpreadsheet, headers: true) do |row|
     # if there is no usage, no forms mapping, and no ije mapping, skip this row, we don't need to create an into file for this profile
     # There's some weirdness with the Roo gem and empty and nil fields - hence double to_s and check for empty hack
-    next if (row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty? && row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty? && row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?) #row[INTRO_PROFILE_LOCATION_COL].to_s != pIG ||
+    next if (row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty? && row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty? && row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty? && row[INTRO_PROFILE_LOCATION_COL].to_s != pIG )
 
     
     vProfileName = vProfileIntro = vGeneratedFileName = ""
@@ -151,7 +151,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # process any natality mother rows firstEntry
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M"
+          next if (row[IJE_USECASE_COL].to_s != "Natality" || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M")
           if firstEntry
             firstTable = false
             vIntroOutputFile.puts "<details open>"
@@ -200,7 +200,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # process any natality father rows firstEntry
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F"
+          next if (row[IJE_USECASE_COL].to_s != "Natality" || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F")
           if firstEntry
             if firstTable
               vIntroOutputFile.puts "<details open>"
@@ -253,7 +253,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # now process any fetal death Mother rows
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M"
+          next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M")
           if firstEntry
             if firstTable
               vIntroOutputFile.puts "<details open>"
@@ -305,7 +305,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # now process any fetal death Father rows
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F"
+          next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F")
           if firstEntry
             if firstTable
               vIntroOutputFile.puts "<details open>"
@@ -357,7 +357,12 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # process any natality rows firstEntry
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          next if (row[IJE_USECASE_COL].to_s != "Natality") || row[IJE_PROFILE_COL].to_s != vProfileName
+          if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
+            || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
+            next if (row[IJE_USECASE_COL].to_s != "Natality")
+          else
+            next if (row[IJE_USECASE_COL].to_s != "Natality" || row[IJE_PROFILE_COL].to_s != vProfileName)
+          end
           if firstEntry
             if firstTable
               vIntroOutputFile.puts "<details open>"
@@ -409,7 +414,13 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # now process any fetal death rows
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          next if (row[IJE_USECASE_COL].to_s != "Fetal Death") || row[IJE_PROFILE_COL].to_s != vProfileName
+          if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
+            || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
+            next if (row[IJE_USECASE_COL].to_s != "Fetal Death")
+          else
+            next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName)
+          end
+          # next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName)
           if firstEntry
             if firstTable
               vIntroOutputFile.puts "<details open>"
@@ -462,7 +473,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       # now process any death record/mortality rows
       firstEntry = true
       CSV.foreach(pIJEMappingSpreadsheet) do |row|
-        next if (row[IJE_USECASE_COL].to_s != "Mortality") || row[IJE_PROFILE_COL].to_s != vProfileName
+        next if (row[IJE_USECASE_COL].to_s != "Mortality" || row[IJE_PROFILE_COL].to_s != vProfileName)
         if firstEntry
           if firstTable
             vIntroOutputFile.puts "<details open>"
@@ -514,7 +525,12 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       # now process any mortality roster rows
       firstEntry = true
       CSV.foreach(pIJEMappingSpreadsheet) do |row|
-        next if (row[IJE_USECASE_COL].to_s != "Mortality Roster") || row[IJE_PROFILE_COL].to_s != vProfileName
+        if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
+          || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
+          next if (row[IJE_USECASE_COL].to_s != "Mortality Roster")
+        else
+          next if (row[IJE_USECASE_COL].to_s != "Mortality Roster" || row[IJE_PROFILE_COL].to_s != vProfileName)
+        end
         if firstEntry
           if firstTable
             vIntroOutputFile.puts "<details open>"

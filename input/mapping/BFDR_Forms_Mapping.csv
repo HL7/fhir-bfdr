@@ -59,6 +59,7 @@ Can we use :currentLegalName on relatedPerson?",,"RelatedPersonFatherNaturalVita
 1-028,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,15. Mother Married?,BFDR,Observation-mother-married-during-pregnancy,Observation-mother-married-during-pregnancy,value,,,,"See NA tab, row 9
 Keep this mapping? Yes, there used to be two different married elements (one ever married (deleted) and this one)",,"ObservationMotherMarriedDuringPregnancy
 "
+1-028,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,"15. If not married, has paternity acknowledgement been signed in the hospital?",BFDR,Observation-paternity-acknowledgement-signed,Observation-paternity-acknowledgement-signed,value,,,,,,ObservationPaternityAcknowledgementSigned
 1-029,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,16. Social Security Number Requested for Child?,BFDR,Observation-ssn-requested-for-child,Observation-ssn-requested-for-child,value,,,,,,"ObservationSSNRequestedForChild
 "
 1-030,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,17. Facility Id.,US CORE,Encounter-birth,us-core-location,identifier,Encounter-birth,,,,BFDR,"EncounterBirth
@@ -135,14 +136,17 @@ Keep this mapping? Yes, there used to be two different married elements (one eve
 "
 1-065,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,41.10. Risk factors in this pregnancy: Assisted reproductive technology,BFDR,Procedure-assisted-fertilization,Procedure-assisted-fertilization-vr,,,,,,,"ProcedureAssistedFertilization
 "
-1-066,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,41.11. Risk factors in this pregnancy: previous cesarean delivery,BFDR,Observation-previous-cesarean,Observation-previous-cesarean-vr,,,,,,,"ObservationPreviousCesarean
+1-066,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,41.11. Risk factors in this pregnancy: previous cesarean delivery,BFDR,Observation-previous-cesarean,Observation-previous-cesarean,,,,,,,"ObservationPreviousCesarean
 "
+1-066,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,41.11. Risk factors in this pregnancy: previous cesarean delivery,BFDR,Observation-number-previous-cesareans,Observation-number-previous-cesareans,,,,,,,ObservationNumberPreviousCesareans
 1-067,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,41.12. Risk factors in this pregnancy: None of the above,BFDR,Observation-none-of-specified-pregnancy-risk-factors,Observation-none-of-specified-pregnancy-risk-factors-vr,,,,,,,"ObservationNoneOfSpecifiedPregnancyRiskFactors
 "
 1-068,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,42. Infections present and/or treated during this pregnancy,BFDR,Condition-infection-present-during-pregnancy,Condition-infection-present-during-pregnancy,,,,,,,"ConditionInfectionPresentDuringPregnancy
 "
+1-068,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,42.6. Infections present and/or treated during this pregnancy,BFDR,Observation-no-infections-present-during-pregnancy,Observation-no-infections-present-during-pregnancy,,,,,,,ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
 1-069,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,43. Obstetric Procedures,BFDR,Procedure-obstetric,Procedure-obstetric,,,,,"Note: value set:  Obstetric Procedures (NCHS) (required) correctly reflects deletions noted in NA tab, rows 14 & 15",,"ProcedureObstetric
 "
+1-069,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,43.4. Obstetric Procedures,BFDR,Observation-none-of-specified-obstetric-procedures,Observation-none-of-specified-obstetric-procedures,,,,,"Note: value set:  Obstetric Procedures (NCHS) (required) correctly reflects deletions noted in NA tab, rows 14 & 15",,ObservationNoneOfSpecifiedObstetricProcedures
 1-070,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,44. Onset of Labor,not implemented,not implemented,not implemented,,,,,"See NA tab, rows 11, 12, 13",,
 1-071,2003 Revision of the U.S. Standard Certificate of Live Birth,https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf,45.1. Characteristics of Labor and Delivery: Induction of labor,BFDR,Procedure-induction-of-labor,Procedure-induction-of-labor,,,,,,,"ProcedureInductionOfLabor
 "
@@ -273,12 +277,15 @@ o¬†¬† Karyotype pending
 "
 2-029,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,14.10. Risk factors in this pregnancy: previous cesarean delivery,BFDR,Observation-previous-cesarean,Observation-previous-cesarean-vr,,,,,,,"ObservationPreviousCesarean
 "
+2-029,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,14.10. Risk factors in this pregnancy: previous cesarean delivery,BFDR,Observation-number-previous-cesareans,Observation-number-previous-cesareans,,,,,,,ObservationNumberPreviousCesareans
 2-031,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,14.11. Risk factors in this pregnancy: None of the above,BFDR,Observation-none-of-specified-pregnancy-risk-factors,Observation-none-of-specified-pregnancy-risk-factors-vr,,,,,,,"ObservationNoneOfSpecifiedPregnancyRiskFactors
 "
-2-032,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,15. Infections present and/or treated during this pregnancy,BFDR,Condition-infection-present-during-pregnancy,Condition-infection-present-during-pregnancy,,,,,Value set also includes Genital herpes simplex (disorder). Is that OK?,,"ConditionInfectionPresentDuringPregnancy
+2-032,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,15. Infections present and/or treated during this pregnancy,BFDR,Condition-infection-present-during-pregnancy,Condition-infection-present-during-pregnancy,,,,,Value set also includes Genital herpes simplex (disorder),,"ConditionInfectionPresentDuringPregnancy
 "
+2-032,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,15.6. Infections present and/or treated during this pregnancy,BFDR,Observation-no-infections-present-during-pregnancy,Observation-no-infections-present-during-pregnancy,,,,,,,ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy
 2-039,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,16. Obstetric procedures,BFDR,Procedure-obstetric,Procedure-obstetric,,,,,,,"ProcedureObstetric
 "
+2-039,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,16.4. Obstetric procedures,BFDR,Observation-none-of-specified-obstetric-procedures,Observation-none-of-specified-obstetric-procedures,,,,,,,ObservationNoneOfSpecifiedObstetricProcedures
 2-044,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,17. Date of birth,VRCPL,Patient-child-vr,Patient-child-vr,birthDate,,,,,,"PatientChildVitalRecords
 "
 2-045,2016 US Standard Facility Worksheet for the Live Birth Certificate,https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf,18. Time of birth,FHIR,Patient-child-vr,patient-birthTime,,Patient-child-vr.birthDate.extension:birthTime,,,,VRCPL,"PatientChildVitalRecords
@@ -492,6 +499,7 @@ o¬†¬† Karyotype pending
 "
 4-018,2016 US Standard Mothers Worksheet for Child’s Birth Certificate,https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf,"18. Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth?",BFDR,Observation-mother-married-during-pregnancy,Observation-mother-married-during-pregnancy,value,,Questionnaire-mothers-live-birth,item.linkId=married-conception,,,"ObservationMotherMarriedDuringPregnancy
 "
+4-018,2016 US Standard Mothers Worksheet for Child’s Birth Certificate,https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf,"18. If not married, has a paternity acknowledgment been completed?",BFDR,Observation-paternity-acknowledgement-signed,Observation-paternity-acknowledgement-signed,value,,Questionnaire-mothers-live-birth,item.linkId=married-conception.linkId=paternity-ack,,,ObservationPaternityAcknowledgementSigned
 4-019,2016 US Standard Mothers Worksheet for Child’s Birth Certificate,https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf,19. What is the current legal name of your baby’s father?,VRCPL,RelatedPerson-father-natural-vr,RelatedPerson-father-natural-vr,name,,Questionnaire-mothers-live-birth,item.linkId=father-current-legal-name,,,"RelatedPersonFatherNaturalVitalRecords
 "
 4-020,2016 US Standard Mothers Worksheet for Child’s Birth Certificate,https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf,20. What is the father’s date of birth?,VRCPL,RelatedPerson-father-natural-vr,RelatedPerson-father-natural-vr,birthDate,,Questionnaire-mothers-live-birth,item.linkId=father-dob,,,"RelatedPersonFatherNaturalVitalRecords
@@ -657,6 +665,7 @@ Can we use :currentLegalName on relatedPerson?",,"RelatedPersonFatherNaturalVita
 "
 5-119,2003 Revision of the U.S. Standard Report of Fetal Death,https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf,36.11. Risk factors in this pregnancy: Previous cesarean delivery,BFDR,Observation-previous-cesarean,Observation-previous-cesarean-vr,,,,,,,"ObservationPreviousCesarean
 "
+5-119,2003 Revision of the U.S. Standard Report of Fetal Death,https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf,36.11. Risk factors in this pregnancy: Previous cesarean delivery,BFDR,Observation-number-previous-cesareans,Observation-number-previous-cesareans,,,,,,,ObservationNumberPreviousCesareans
 5-120,2003 Revision of the U.S. Standard Report of Fetal Death,https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf,36.12. Risk factors in this pregnancy: None of the above,BFDR,Observation-none-of-specified-pregnancy-risk-factors,Observation-none-of-specified-pregnancy-risk-factors-vr,,,,,,,"ObservationNoneOfSpecifiedPregnancyRiskFactors
 "
 5-121,2003 Revision of the U.S. Standard Report of Fetal Death,https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf,37. Infections Present and/or Treated During This Pregnancy,not implemented,not implemented,not implemented,,,,,"See NA tab, rows 34, 35, 36, 37, 38, 39, 40, 41, 42
@@ -728,6 +737,7 @@ Also removed for LB.",,
 "
 6-025,2019 US Standard Facility Worksheet for the Report of Fetal Death,https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf,11.9. Risk factors in this pregnancy: previous cesarean delivery,BFDR,Observation-previous-cesarean,Observation-previous-cesarean-vr,,,,,,,"ObservationPreviousCesarean
 "
+6-025,2019 US Standard Facility Worksheet for the Report of Fetal Death,https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf,11.9. Risk factors in this pregnancy: previous cesarean delivery,BFDR,Observation-number-previous-cesareans,Observation-number-previous-cesareans,,,,,,,ObservationNumberPreviousCesareans
 6-026,2019 US Standard Facility Worksheet for the Report of Fetal Death,https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf,11.10. Risk factors in this pregnancy: None of the above,BFDR,Observation-none-of-specified-pregnancy-risk-factors,Observation-none-of-specified-pregnancy-risk-factors-vr,,,,,,,"ObservationNoneOfSpecifiedPregnancyRiskFactors
 "
 6-027,2019 US Standard Facility Worksheet for the Report of Fetal Death,https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf,12. Date of delivery,BFDR,Patient-decedent-fetus,Patient-decedent-fetus,birthDate,,,,,,"PatientDecedentFetusVitalRecords

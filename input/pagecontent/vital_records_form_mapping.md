@@ -251,6 +251,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>value</td>
 </tr>
 <tr>
+  <td style='text-align: center'>15</td>
+  <td>If not married, has paternity acknowledgement been signed in the hospital?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-paternity-acknowledgement-signed.html'>ObservationPaternityAcknowledgementSigned</a></td>
+  <td>value</td>
+</tr>
+<tr>
   <td style='text-align: center'>16</td>
   <td>Social Security Number Requested for Child?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-ssn-requested-for-child.html'>ObservationSSNRequestedForChild
@@ -517,6 +523,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td></td>
 </tr>
 <tr>
+  <td style='text-align: center'>41.11</td>
+  <td>Risk factors in this pregnancy: previous cesarean delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
+  <td></td>
+</tr>
+<tr>
   <td style='text-align: center'>41.12</td>
   <td>Risk factors in this pregnancy: None of the above</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html'>ObservationNoneOfSpecifiedPregnancyRiskFactors
@@ -531,10 +543,22 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td></td>
 </tr>
 <tr>
+  <td style='text-align: center'>42.6</td>
+  <td>Infections present and/or treated during this pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-no-infections-present-during-pregnancy.html'>ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy</a></td>
+  <td></td>
+</tr>
+<tr>
   <td style='text-align: center'>43</td>
   <td>Obstetric Procedures</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-obstetric.html'>ProcedureObstetric
 </a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>43.4</td>
+  <td>Obstetric Procedures</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-obstetric-procedures.html'>ObservationNoneOfSpecifiedObstetricProcedures</a></td>
   <td></td>
 </tr>
 <tr>
@@ -1259,6 +1283,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td></td>
 </tr>
 <tr>
+  <td style='text-align: center'>14.10</td>
+  <td>Risk factors in this pregnancy: previous cesarean delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
+  <td></td>
+</tr>
+<tr>
   <td style='text-align: center'>14.11</td>
   <td>Risk factors in this pregnancy: None of the above</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html'>ObservationNoneOfSpecifiedPregnancyRiskFactors
@@ -1273,10 +1303,22 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td></td>
 </tr>
 <tr>
+  <td style='text-align: center'>15.6</td>
+  <td>Infections present and/or treated during this pregnancy</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-no-infections-present-during-pregnancy.html'>ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy</a></td>
+  <td></td>
+</tr>
+<tr>
   <td style='text-align: center'>16</td>
   <td>Obstetric procedures</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-obstetric.html'>ProcedureObstetric
 </a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>16.4</td>
+  <td>Obstetric procedures</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-obstetric-procedures.html'>ObservationNoneOfSpecifiedObstetricProcedures</a></td>
   <td></td>
 </tr>
 <tr>
@@ -1731,6 +1773,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-mother-married-during-pregnancy.html'>ObservationMotherMarriedDuringPregnancy
 </a></td>
+  <td>value</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>If not married, has a paternity acknowledgment been completed?</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-paternity-acknowledgement-signed.html'>ObservationPaternityAcknowledgementSigned</a></td>
   <td>value</td>
 </tr>
 <tr>
@@ -2304,6 +2352,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td></td>
 </tr>
 <tr>
+  <td style='text-align: center'>36.11</td>
+  <td>Risk factors in this pregnancy: Previous cesarean delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
+  <td></td>
+</tr>
+<tr>
   <td style='text-align: center'>36.12</td>
   <td>Risk factors in this pregnancy: None of the above</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html'>ObservationNoneOfSpecifiedPregnancyRiskFactors
@@ -2525,6 +2579,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Risk factors in this pregnancy: previous cesarean delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-previous-cesarean.html'>ObservationPreviousCesarean
 </a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>11.9</td>
+  <td>Risk factors in this pregnancy: previous cesarean delivery</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
   <td></td>
 </tr>
 <tr>
@@ -2978,6 +3038,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth?</td>
   <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=married-conception</a></td>
   <td>item.linkId=married-conception</td>
+</tr>
+<tr>
+  <td style='text-align: center'>18</td>
+  <td>If not married, has a paternity acknowledgment been completed?</td>
+  <td><a href='Questionnaire-Questionnaire-mothers-live-birth.html'>Questionnaire-mothers-live-birth.item.linkId=married-conception.linkId=paternity-ack</a></td>
+  <td>item.linkId=married-conception.linkId=paternity-ack</td>
 </tr>
 <tr>
   <td style='text-align: center'>19</td>
