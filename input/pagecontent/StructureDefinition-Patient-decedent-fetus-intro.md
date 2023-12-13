@@ -42,7 +42,7 @@ Profile conformance requires that gender be provided, see <a href='https://build
   <td>DSTATE</td>
   <td>extension[patient-birthPlace].value[x].state</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a> </td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> </td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
