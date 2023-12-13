@@ -456,7 +456,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
   <td>MARITAL_DESCRIP</td>
   <td>maritalStatus.text</td>
   <td>string</td>
-  <td>codeable.text should show up in differential with description from col F</td>
+  <td></td>
 </tr>
 
 </tbody>
