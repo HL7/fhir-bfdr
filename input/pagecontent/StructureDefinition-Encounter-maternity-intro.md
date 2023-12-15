@@ -78,7 +78,7 @@ After the child is born, an Encounter record will be created for the child (Enco
   <td>CNTYO</td>
   <td>location.location.address.district.extension[countyCode]</td>
   <td>integer</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#county-codes'>CountyCodes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#county-codes'>CountyCodes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -213,7 +213,7 @@ After the child is born, an Encounter record will be created for the child (Enco
   <td>STATE_D</td>
   <td>location.location.address.state (expanded from 2 letter code)</td>
   <td>string</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#state-literals'>StateLiterals</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#state-literals'>StateLiterals</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -222,7 +222,7 @@ After the child is born, an Encounter record will be created for the child (Enco
   <td>COUNTRY_D</td>
   <td>location.location.address.country (expanded from 2 letter code)</td>
   <td>string</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#country-literals'>CountryLiterals</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#country-literals'>CountryLiterals</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -240,7 +240,7 @@ After the child is born, an Encounter record will be created for the child (Enco
   <td>CERTIFIED_YR</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -249,7 +249,7 @@ After the child is born, an Encounter record will be created for the child (Enco
   <td>CERTIFIED_MO</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -258,7 +258,7 @@ After the child is born, an Encounter record will be created for the child (Enco
   <td>CERTIFIED_DY</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 
 </tbody>

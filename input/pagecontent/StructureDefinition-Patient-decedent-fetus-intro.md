@@ -1,4 +1,4 @@
-Profile conformance requires that gender be provided, see <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#gender'>note on patient gender</a>(https://build.fhir.org/ig/HL7/vr-common-library/usage.html#gender).
+Profile conformance requires that gender be provided, see <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender'>note on patient gender</a>(https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender).
 
 ### IJE Mapping
 
@@ -33,7 +33,7 @@ Profile conformance requires that gender be provided, see <a href='https://build
   <td>FDOD_YR</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time'>note on birth date and time</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -42,7 +42,7 @@ Profile conformance requires that gender be provided, see <a href='https://build
   <td>DSTATE</td>
   <td>extension[patient-birthPlace].value[x].state</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> </td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> </td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -51,7 +51,7 @@ Profile conformance requires that gender be provided, see <a href='https://build
   <td>TD</td>
   <td>birthDate.extension[patient-birthTime]</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time'>note on birth date and time</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -60,7 +60,7 @@ Profile conformance requires that gender be provided, see <a href='https://build
   <td>FSEX</td>
   <td>extension[birthsex].value</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-birth-sex-fetus-vr.html'>ValueSetBirthSexFetusVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-birth-sex-fetus-vr.html'>ValueSetBirthSexFetusVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -69,7 +69,7 @@ Profile conformance requires that gender be provided, see <a href='https://build
   <td>FDOD_MO</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time'>note on birth date and time</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -78,7 +78,7 @@ Profile conformance requires that gender be provided, see <a href='https://build
   <td>FDOD_DY</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#birth-date-and-time'>note on birth date and time</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>

@@ -87,7 +87,7 @@ This Encounter can reference the mother's maternity encounter using the partOf d
   <td>CERTIFIED_YR</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -96,7 +96,7 @@ This Encounter can reference the mother's maternity encounter using the partOf d
   <td>CERTIFIED_MO</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -105,7 +105,7 @@ This Encounter can reference the mother's maternity encounter using the partOf d
   <td>CERTIFIED_DY</td>
   <td>participant:certifier.period.start</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 
 </tbody>

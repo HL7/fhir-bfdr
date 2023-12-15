@@ -20,7 +20,7 @@ This BFDR IG standard complements other vital records standards to support the e
 ### Dependencies
 This implementation guide re-uses and further constrains profiles from the following guides:
 * [US Core Implementation Guide, STU5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/)
-* [Vital Records Common Profiles Library](http://hl7.org/fhir/us/vr-common-library)
+* [Vital Records Common Library](http://hl7.org/fhir/us/vr-common-library)
 * [Occupational Data for Health (ODH)](http://hl7.org/fhir/us/odh/)
 
 ### Audience
