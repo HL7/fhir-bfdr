@@ -28,9 +28,9 @@ To achieve the goals for harmonization listed above involves modification to the
 
 Figure 1 shows the current dependencies among published vital reocrds FHIR IGs.  Figure 2 shows the dependencies after harmonization.  Harmonization will result in significant simplification of the MDI IG, and consolidation of all general Vital Records specific content within the VRCL.
 
-{% include img.html img="HarmonizationPlan-Current.drawio.svg" caption="Figure 1: Current Vital Records FHIR IG Dependencies" %}
+{% include img.html img="HarmonizationPlan-Current.svg" caption="Figure 1: Current Vital Records FHIR IG Dependencies" %}
 
-{% include img.html img="HarmonizationPlan-Harmonized.drawio.svg" caption="Figure 2: Harmonized (Future) Vital Records FHIR IG Dependencies" %}
+{% include img.html img="HarmonizationPlan-Harmonized.svg" caption="Figure 2: Harmonized (Future) Vital Records FHIR IG Dependencies" %}
 
 ### Changing Dependencies - Birth Defects IG
 Although it has not yet been balloted, the design of the VRCL STU1 was driven by consideration of a future Birth Defects FHIR IG. 
