@@ -40,7 +40,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE1E</td>
   <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -49,7 +49,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE2E</td>
   <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -58,7 +58,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE3E</td>
   <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -67,7 +67,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE4E</td>
   <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -76,7 +76,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE5E</td>
   <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -85,7 +85,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE6E</td>
   <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -94,7 +94,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE7E</td>
   <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -103,7 +103,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE8E</td>
   <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -112,7 +112,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE16C</td>
   <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -121,7 +121,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE17C</td>
   <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -130,7 +130,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE18C</td>
   <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -139,7 +139,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE19C</td>
   <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -148,7 +148,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE20C</td>
   <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -157,7 +157,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE21C</td>
   <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -166,7 +166,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE22C</td>
   <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -175,7 +175,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE23C</td>
   <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -184,7 +184,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>METHNIC5C</td>
   <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -193,7 +193,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>METHNICE</td>
   <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 
 </tbody>
@@ -229,7 +229,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE1E</td>
   <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -238,7 +238,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE2E</td>
   <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -247,7 +247,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE3E</td>
   <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -256,7 +256,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE4E</td>
   <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -265,7 +265,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE5E</td>
   <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -274,7 +274,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE6E</td>
   <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -283,7 +283,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE7E</td>
   <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -292,7 +292,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE8E</td>
   <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -301,7 +301,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE16C</td>
   <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -310,7 +310,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE17C</td>
   <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -319,7 +319,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE18C</td>
   <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -328,7 +328,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE19C</td>
   <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -337,7 +337,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE20C</td>
   <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -346,7 +346,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE21C</td>
   <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -355,7 +355,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE22C</td>
   <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -364,7 +364,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE23C</td>
   <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -373,7 +373,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FETHNIC5C</td>
   <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -382,7 +382,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FETHNICE</td>
   <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 
 </tbody>
@@ -418,7 +418,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE1E</td>
   <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -427,7 +427,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE2E</td>
   <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -436,7 +436,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE3E</td>
   <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -445,7 +445,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE4E</td>
   <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -454,7 +454,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE5E</td>
   <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -463,7 +463,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE6E</td>
   <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -472,7 +472,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE7E</td>
   <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -481,7 +481,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE8E</td>
   <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -490,7 +490,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE16C</td>
   <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -499,7 +499,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE17C</td>
   <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -508,7 +508,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE18C</td>
   <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -517,7 +517,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE19C</td>
   <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -526,7 +526,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE20C</td>
   <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -535,7 +535,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE21C</td>
   <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -544,7 +544,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE22C</td>
   <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -553,7 +553,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>MRACE23C</td>
   <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -562,7 +562,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>METHNIC5C</td>
   <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -571,7 +571,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>METHNICE</td>
   <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 
 </tbody>
@@ -607,7 +607,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE1E</td>
   <td>component[FirstEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -616,7 +616,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE2E</td>
   <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -625,7 +625,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE3E</td>
   <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -634,7 +634,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE4E</td>
   <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -643,7 +643,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE5E</td>
   <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -652,7 +652,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE6E</td>
   <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -661,7 +661,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE7E</td>
   <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -670,7 +670,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE8E</td>
   <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -679,7 +679,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE16C</td>
   <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -688,7 +688,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE17C</td>
   <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -697,7 +697,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE18C</td>
   <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -706,7 +706,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE19C</td>
   <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -715,7 +715,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE20C</td>
   <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -724,7 +724,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE21C</td>
   <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -733,7 +733,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE22C</td>
   <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -742,7 +742,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FRACE23C</td>
   <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -751,7 +751,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FETHNIC5C</td>
   <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -760,7 +760,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>FETHNICE</td>
   <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 
 </tbody>
@@ -805,7 +805,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE2E</td>
   <td>component[SecondEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -814,7 +814,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE3E</td>
   <td>component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -823,7 +823,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE4E</td>
   <td>component[FourthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -832,7 +832,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE5E</td>
   <td>component[FifthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -841,7 +841,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE6E</td>
   <td>component[SixthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -850,7 +850,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE7E</td>
   <td>component[SeventhEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -859,7 +859,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE8E</td>
   <td>component[EighthEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -868,7 +868,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE16C</td>
   <td>component[FirstAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -877,7 +877,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE17C</td>
   <td>component[SecondAmericanIndianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -886,7 +886,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE18C</td>
   <td>component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -895,7 +895,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE19C</td>
   <td>component[SecondOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -904,7 +904,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE20C</td>
   <td>component[FirstOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -913,7 +913,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE21C</td>
   <td>component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -922,7 +922,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE22C</td>
   <td>component[FirstOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -931,7 +931,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>RACE23C</td>
   <td>component[SecondOtherRaceCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html'>ValueSetRaceCodeVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -940,7 +940,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>DETHNICE </td>
   <td>component[HispanicCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -949,7 +949,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>DETHNIC5C</td>
   <td>component[HispanicCodeForLiteral].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-origin-vr.html'>ValueSetHispanicOriginVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -958,7 +958,7 @@ Coded race and ethnicity data is communicated for both the mother and father in 
   <td>*NO IJE MAPPING*</td>
   <td>component[ValueSetRaceRecode40VitalRecords].value</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-recode-40-vr.html'>ValueSetRaceRecode40VitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-recode-40-vr.html'>ValueSetRaceRecode40VitalRecords</a></td>
 </tr>
 
 </tbody>

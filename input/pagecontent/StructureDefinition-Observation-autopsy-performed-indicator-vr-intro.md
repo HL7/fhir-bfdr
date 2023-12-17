@@ -32,7 +32,7 @@
   <td>AUTOP</td>
   <td>value</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-yes-no-unknown-not-applicable-vr.html'>ValueSetYesNoUnknownNotApplicableVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-yes-no-unknown-not-applicable-vr.html'>ValueSetYesNoUnknownNotApplicableVitalRecords</a></td>
 </tr>
 
 </tbody>

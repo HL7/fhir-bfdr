@@ -32,7 +32,7 @@
   <td>DLMP_YR</td>
   <td>value</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -41,7 +41,7 @@
   <td>DLMP_MO</td>
   <td>value</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -50,7 +50,7 @@
   <td>DLMP_DY</td>
   <td>value</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 
 </tbody>
@@ -86,7 +86,7 @@
   <td>DLMP_YR</td>
   <td>value</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -95,7 +95,7 @@
   <td>DLMP_MO</td>
   <td>value</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -104,7 +104,7 @@
   <td>DLMP_DY</td>
   <td>value</td>
   <td>dateTime</td>
-  <td>See <a href='https://build.fhir.org/ig/HL7/vr-common-library/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#partial-dates-and-times'>PartialDatesAndTimes</a></td>
 </tr>
 
 </tbody>

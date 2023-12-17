@@ -32,7 +32,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>METHNIC1</td>
   <td>component[ HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -41,7 +41,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>METHNIC2</td>
   <td>component[ HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -50,7 +50,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>METHNIC3</td>
   <td>component[ HispanicCuban ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -59,7 +59,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>METHNIC4</td>
   <td>component[ HispanicOther ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -311,7 +311,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>FETHNIC1</td>
   <td>component[ HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -320,7 +320,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>FETHNIC2</td>
   <td>component[ HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -329,7 +329,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>FETHNIC3</td>
   <td>component[ HispanicCuban ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -338,7 +338,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>FETHNIC4</td>
   <td>component[ HispanicOther ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -590,7 +590,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>METHNIC1</td>
   <td>component[ HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -599,7 +599,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>METHNIC2</td>
   <td>component[ HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -608,7 +608,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>METHNIC3</td>
   <td>component[ HispanicCuban ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -617,7 +617,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>METHNIC4</td>
   <td>component[ HispanicOther ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -869,7 +869,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>FETHNIC1</td>
   <td>component[ HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -878,7 +878,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>FETHNIC2</td>
   <td>component[ HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -887,7 +887,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>FETHNIC3</td>
   <td>component[ HispanicCuban ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -896,7 +896,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>FETHNIC4</td>
   <td>component[ HispanicOther ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -1148,7 +1148,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>DETHNIC1</td>
   <td>component[ HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -1157,7 +1157,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>DETHNIC2</td>
   <td>component[ HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -1166,7 +1166,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>DETHNIC3</td>
   <td>component[ HispanicCuban ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -1175,7 +1175,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>DETHNIC4</td>
   <td>component[ HispanicOther ].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-hispanic-no-unknown-vr.html'>ValueSetHispanicNoUnknownVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Mortality</td>
@@ -1400,7 +1400,7 @@ In cases where multiple races are recorded for a person an algorithm (NCHS defin
   <td>RACE_MVR</td>
   <td>component[ MissingValueReason].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-race-missing-value-reason-vr.html'>ValueSetRaceMissingValueReasonVitalRecords</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-missing-value-reason-vr.html'>ValueSetRaceMissingValueReasonVitalRecords</a></td>
 </tr>
 
 </tbody>
