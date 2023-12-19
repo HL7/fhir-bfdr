@@ -2,6 +2,7 @@
 
 ### Minor
 - fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
+- "current" content transition links lead to STU2 rather than the current build
 
 ### STU2 Ballot, January 2024
 #### Major Changes
