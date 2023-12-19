@@ -64,28 +64,28 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>1</td>
   <td>Child’s Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
   <td>Child's Time of Birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html'>extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Child's Sex</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html'>extension:birthsex</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>Child's Date Of Birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
@@ -99,126 +99,126 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>6</td>
   <td>City, Town, Or Location Of Birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>7</td>
   <td>County Of Birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>8a</td>
   <td>Mother’s Current Legal Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>8b</td>
   <td>Mother’s Date Of Birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>8c</td>
   <td>Mother’s Name Prior To First Marriage</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name:namePriorToFirstMarriage</td>
 </tr>
 <tr>
   <td style='text-align: center'>8d</td>
   <td>Mother’s Birthplace</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>9a</td>
   <td>Residence of Mother - State</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.state</td>
 </tr>
 <tr>
   <td style='text-align: center'>9b</td>
   <td>Mother’s County</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.district</td>
 </tr>
 <tr>
   <td style='text-align: center'>9c</td>
   <td>Mother’s City, Town, or Location</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.city</td>
 </tr>
 <tr>
   <td style='text-align: center'>9d</td>
   <td>Mother’s Street And Number</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.line</td>
 </tr>
 <tr>
   <td style='text-align: center'>9e</td>
   <td>Mother’s Apt. No.</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.line</td>
 </tr>
 <tr>
   <td style='text-align: center'>9f</td>
   <td>Mother’s Zip Code</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.postalCode</td>
 </tr>
 <tr>
   <td style='text-align: center'>9g</td>
   <td>Mother’s Residence Inside City Limits?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.extension:withinCityLimitsIndicator</td>
 </tr>
 <tr>
   <td style='text-align: center'>10a</td>
   <td>Father’s Current Legal Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>10b</td>
   <td>Father’s Date Of Birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>10c</td>
   <td>Father’s Birthplace</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
   <td>Certifier’s Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
   <td>Certifier’s Title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>qualification</td>
 </tr>
@@ -239,7 +239,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>14</td>
   <td>Mother’s Mailing Address</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address</td>
 </tr>
@@ -273,56 +273,56 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>18</td>
   <td>Mother’s Social Security Number</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>identifier:SSN</td>
 </tr>
 <tr>
   <td style='text-align: center'>19</td>
   <td>Father’s Social Security Number</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>identifier:SSN</td>
 </tr>
 <tr>
   <td style='text-align: center'>20</td>
   <td>Mother’s Education</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
 </a></td>
   <td>code</td>
 </tr>
 <tr>
   <td style='text-align: center'>21</td>
   <td>Mother of Hispanic Origin?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
   <td>Mother’s Race</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>23</td>
   <td>Father’s Education</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
 </a></td>
   <td>code</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>Father of Hispanic Origin?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>25</td>
   <td>Father’s Race</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
 </tr>
@@ -343,21 +343,21 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>27</td>
   <td>Attendant’s Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>27</td>
   <td>Attendant’s Title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>qualification</td>
 </tr>
 <tr>
   <td style='text-align: center'>27</td>
   <td>Attendant’s NPI</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>identifier</td>
 </tr>
@@ -448,7 +448,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>40</td>
   <td>Mother’s Medical Record Number</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>identifier:MRN</td>
 </tr>
@@ -676,7 +676,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>48</td>
   <td>Newborn Medical Record Number</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>identifier:MRN</td>
 </tr>
@@ -704,14 +704,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>52</td>
   <td>Plurality</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html'>multipleBirth[x].extension:multipleBirthTotal</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>53</td>
   <td>If Not Single Birth - Born First, Second, Third, etc. (Specify)</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>multipleBirthInteger</td>
 </tr>
@@ -809,21 +809,21 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>-</td>
   <td>Mother’s medical record #</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>identifier:MRN</td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Mother’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Child’s name/medical record #</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>identifier</td>
 </tr>
@@ -851,21 +851,21 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>17</td>
   <td>Date of birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>18</td>
   <td>Time of birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html'>birthDate.extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>34</td>
   <td>Order delivered in the pregnancy</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>multipleBirthInteger</td>
 </tr>
@@ -998,7 +998,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>31</td>
   <td>Sex</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html'>extension:birthsex</a></td>
 </tr>
@@ -1103,14 +1103,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>-</td>
   <td>Mother’s medical record #</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>identifier:MRN</td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Mother’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name</td>
 </tr>
@@ -1131,14 +1131,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>3</td>
   <td>City, Town or Location of birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>County of birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
@@ -1324,28 +1324,28 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>17</td>
   <td>Date of birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>18</td>
   <td>Time of birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html'>birthDate.extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>19</td>
   <td>Certifier’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>19</td>
   <td>Certifier’s title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>qualification</td>
 </tr>
@@ -1366,7 +1366,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>22</td>
   <td>Infant’s medical record number</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>identifier:MRN</td>
 </tr>
@@ -1380,21 +1380,21 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>24</td>
   <td>Attendant’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>Attendant’s title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>qualification</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>Attendant’s N.P.I.</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>identifier</td>
 </tr>
@@ -1534,7 +1534,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>31</td>
   <td>Sex:</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html'>extension:birthsex</a></td>
 </tr>
@@ -1548,14 +1548,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>33</td>
   <td>Plurality</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html'>multipleBirthInteger.extension:multipleBirthTotal</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>34</td>
   <td>If not single birth, order delivered in the pregnancy</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>multipleBirthInteger</td>
 </tr>
@@ -1660,70 +1660,70 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>1</td>
   <td>What is your current legal name?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
   <td>What will be your baby’s legal name?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Where do you usually live--that is--where is your household/residence located?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address</td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.extension:withinCityLimitsIndicator</td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
   <td>What is your mailing address?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address</td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
   <td>What is your date of birth?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>7</td>
   <td>In what State, U.S. territory, or foreign country were you born?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
   <td>What is the highest level of schooling that you will have completed at the time of delivery?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
 </a></td>
   <td>code</td>
 </tr>
 <tr>
   <td style='text-align: center'>9</td>
   <td>Are you Spanish/Hispanic/Latina?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>10</td>
   <td>What is your race?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
 </tr>
@@ -1764,7 +1764,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>17</td>
   <td>What name did you use prior to your first marriage?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name</td>
 </tr>
@@ -1784,56 +1784,56 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>19</td>
   <td>What is the current legal name of your baby’s father?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>20</td>
   <td>What is the father’s date of birth?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>21</td>
   <td>In what State, U.S. territory, or foreign country was the father born?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
   <td>What is the highest level of schooling that the father will have completed at the time of delivery?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
 </a></td>
   <td>code</td>
 </tr>
 <tr>
   <td style='text-align: center'>23</td>
   <td>Is the father Spanish/Hispanic/Latino?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnictiy</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>What is the father’s race?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>25a</td>
   <td>What is your Social Security Number?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>identifier:SSN</td>
 </tr>
 <tr>
   <td style='text-align: center'>25b</td>
   <td>What is the father’s Social Security Number?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>identifier:SSN</td>
 </tr>
@@ -1970,100 +1970,100 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>10a</td>
   <td>Mother’s Current Legal Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>10b</td>
   <td>Mother's Date of Birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>10c</td>
   <td>Mother’s Name Prior to First Marriage</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name:namePriorToFirstMarriage</td>
 </tr>
 <tr>
   <td style='text-align: center'>10d</td>
   <td>Mother's Birthplace</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>11a</td>
   <td>Residence of Mother-State</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.state</td>
 </tr>
 <tr>
   <td style='text-align: center'>11b</td>
   <td>Residence of Mother-County</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.district</td>
 </tr>
 <tr>
   <td style='text-align: center'>11c</td>
   <td>Residence of Mother-City, Town, Or Location</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.city</td>
 </tr>
 <tr>
   <td style='text-align: center'>11d</td>
   <td>Residence of Mother-Street And Number</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.line</td>
 </tr>
 <tr>
   <td style='text-align: center'>11e</td>
   <td>Residence of Mother-Apt. No.</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.line</td>
 </tr>
 <tr>
   <td style='text-align: center'>11f</td>
   <td>Residence of Mother-Zip Code</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.postalCode</td>
 </tr>
 <tr>
   <td style='text-align: center'>11g</td>
   <td>Residence of Mother-Inside City Limits?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.extension:withinCityLimitsIndicator</td>
 </tr>
 <tr>
   <td style='text-align: center'>12a</td>
   <td>Father’s Current Legal Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>12b</td>
   <td>Father's Date of Birth</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>12c</td>
   <td>Father's Birthplace</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>13</td>
@@ -2075,35 +2075,35 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>14</td>
   <td>Attendant’s Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
   <td>Attendant’s Title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>qualification</td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
   <td>Attendant’s NPI</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>identifier</td>
 </tr>
 <tr>
   <td style='text-align: center'>15</td>
   <td>Name Of Person Completing Report</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>15</td>
   <td>Title Of Person Completing Report</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>qualification</td>
 </tr>
@@ -2159,7 +2159,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>18f</td>
   <td>Was an Autopsy Performed?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords
 </a></td>
   <td>value</td>
 </tr>
@@ -2180,21 +2180,21 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>19</td>
   <td>Mother’s Education</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
 </a></td>
   <td>code</td>
 </tr>
 <tr>
   <td style='text-align: center'>20</td>
   <td>Mother of Hispanic Origin?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>21</td>
   <td>Mother’s Race</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
 </tr>
@@ -2278,10 +2278,11 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>33</td>
   <td>Plurality</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html'>multipleBirthInteger.extension:multipleBirthTotal</a></td>
 </tr>
+<tr>
   <td style='text-align: center'>34</td>
   <td>If Not Single Birth-Born First, Second, Third, etc.</td>
   <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords
@@ -2423,14 +2424,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s medical record #</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>identifier:MRN</td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name</td>
 </tr>
@@ -2611,14 +2612,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>14</td>
   <td>Name of person completing report</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
   <td>Title of person completing report</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>qualification</td>
 </tr>
@@ -2632,21 +2633,21 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>16</td>
   <td>Attendant’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>16</td>
   <td>Attendant’s title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>qualification</td>
 </tr>
 <tr>
   <td style='text-align: center'>16</td>
   <td>Attendant’s N.P.I.</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords
 </a></td>
   <td>identifier</td>
 </tr>
@@ -2751,7 +2752,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>28</td>
   <td>Was an autopsy performed?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords
 </a></td>
   <td></td>
 </tr>
@@ -2793,14 +2794,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s Medical Record #</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>identifier:MRN</td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Patient’s Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name</td>
 </tr>
@@ -2814,86 +2815,86 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>2</td>
   <td>What is your current legal name?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Where do you usually live (household/residence location)?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address</td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address.extension:withinCityLimitsIndicator</td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
   <td>What is your mailing address?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>address</td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
   <td>What is your date of birth?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>7</td>
   <td>In what State, U.S. territory, or foreign country were you born?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
   <td>What is the highest level of schooling that you have completed at the time of delivery?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords
 </a></td>
   <td>code</td>
 </tr>
 <tr>
   <td style='text-align: center'>9</td>
   <td>Are you Spanish/Hispanic/Latina?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>10</td>
   <td>What is your race?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
   <td>What is the current legal name of your baby’s father?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>12</td>
   <td>What is the father’s date of birth?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>13</td>
   <td>In what State, U.S. territory, or foreign country was the father born?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords
 </a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-relatedperson-birthplace-vr.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>

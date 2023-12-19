@@ -90,8 +90,10 @@ vOutputFile.puts ""
 def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
 
     igMap = Hash.new
-    igMap["BFDR"] = "{{site.data.fhir.ver.hl7fhirusbfdr}}"
-    igMap["VRCPL"] = "{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}"
+    # can change this to reference older BFDR version
+    #igMap["BFDR"] = "{{site.data.fhir.ver.hl7fhirusbfdr}}"
+    igMap["BFDR"] = ""
+    igMap["VRCPL"] = "{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/"
     igMap["US CORE"] = "{{site.data.fhir.ver.hl7fhiruscore}}/"
     igMap["FHIR"] = "http://hl7.org/fhir/extensions/"
     igMap["ODH"] = "{{site.data.fhir.ver.hl7fhirusodh}}"
