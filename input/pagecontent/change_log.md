@@ -1,3 +1,8 @@
+### Post-Ballot Changes
+
+### Minor
+- fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
+
 ### STU2 Ballot, January 2024
 #### Major Changes
 - Reorganization and harmonization of vital records FHIR IG content across BFDR, VRCL and VRDR to reduce redundancy, ease implementation, and reduce maintenance effort.   See [Vital Records IG Harmonization](vr_ig_harmonization.html), and [BFDR content changes](content-transitions.html).

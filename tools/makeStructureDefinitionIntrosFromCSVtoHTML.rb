@@ -121,8 +121,8 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
   CSV.foreach(pProfileIntrosSpreadsheet, headers: true) do |row|
     # if there is no usage, no forms mapping, and no ije mapping, skip this row, we don't need to create an into file for this profile
     # There's some weirdness with the Roo gem and empty and nil fields - hence double to_s and check for empty hack
-    next if (row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty? && row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty? && row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty? && row[INTRO_PROFILE_LOCATION_COL].to_s != pIG )
-
+    next if (row[INTRO_PROFILE_USAGE_COL].to_s.to_s.empty? && row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty? && row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?)
+    next if (row[INTRO_PROFILE_LOCATION_COL].to_s != pIG )
     
     vProfileName = vProfileIntro = vGeneratedFileName = ""
     vProfileName = row[INTRO_PROFILE_NAME_COL].to_s
