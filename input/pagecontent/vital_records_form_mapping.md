@@ -2282,6 +2282,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 </a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html'>multipleBirthInteger.extension:multipleBirthTotal</a></td>
 </tr>
+<tr>
   <td style='text-align: center'>34</td>
   <td>If Not Single Birth-Born First, Second, Third, etc.</td>
   <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords
