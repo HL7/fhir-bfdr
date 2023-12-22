@@ -136,7 +136,7 @@ Both data elements are required for meaningful transmission of the information a
 
 #### Plurality as a pregnancy characteristic
 
-Plurality as a pregnancy characteristic can be recorded using `Observation - Birth Plurality of Pregnancy`. It references the [Patient - Mother - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) as the subject and represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy.
+Plurality as a pregnancy characteristic can be recorded using [Observation - Birth Plurality of Pregnancy][ObservationBirthPluralityOfPregnancy]. It references the [Patient - Mother - Vital Records]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html) as the subject and represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy.
 * ‘Reabsorbed’ fetuses, those which are not ‘delivered’ (expulsed or extracted from the mother) **should not be counted**.
 * All live births and fetal losses resulting from this pregnancy **should be counted**.
 
