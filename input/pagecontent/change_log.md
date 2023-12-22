@@ -2,6 +2,7 @@
 
 ### Minor
 - fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
+* [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of all quantity values -- [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherDeliveryHeight], [ObservationMotherPrepregnancyWeight].
 
 ### STU2 Ballot, January 2024
 #### Major Changes
