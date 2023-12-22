@@ -3,6 +3,7 @@
 ### Minor
 - fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
 - reinstate missing [Observation - Birth Plurality of Pregnancy][ObservationBirthPluralityOfPregnancy] [FHIR-43383](https://jira.hl7.org/FHIR-43383)
+- add missing PartialDate extensions to FHIR-43392	FHIR-43395 for MLLB, YLLB, XLMP, DOFP
 
 ### STU2 Ballot, January 2024
 #### Major Changes

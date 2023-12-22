@@ -13,3 +13,5 @@ Description: "This profile represents the date of the mother's last other pregna
 * value[x] 1..1 MS
 * value[x] only dateTime
   * ^short = "Date of last other pregnancy outcome"
+  * extension contains ExtensionPartialDateVitalRecords named partialDate 0..1 MS 
+  * extension[partialDate] ^short = "Provides values of a partial date"
