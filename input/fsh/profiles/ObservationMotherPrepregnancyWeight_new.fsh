@@ -10,6 +10,9 @@ Description: "The weight of the mother before becoming pregnant. Migrated from V
 * subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..
 * value[x] only Quantity
+* valueQuantity.code = $UCUM#[lb_av] (exactly)
+* valueQuantity.value 1..1 
+* valueQuantity ^short = "Weight in lb"
 // Add Edit Flags, a la VRDR 
 * value[x].extension contains
     BypassEditFlag named bypassEditFlag 0..1
