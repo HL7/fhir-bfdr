@@ -14,7 +14,7 @@ Description: "This profile represents the date of the last menstrual period of t
   * ^short = "Observation date (date on which the observation was reported to the provider)."
   * ^definition = "The date on which the observation was made/reported to the provider for recording in the EHR."
 * value[x] 1.. MS
-* value[x] only date
+* value[x] only dateTime
   * ^short = "Start of last menstrual period"
   * ^definition = "Start date of last menstrual period."
   * extension contains ExtensionPartialDateVitalRecords named partialDate 0..1 MS 
