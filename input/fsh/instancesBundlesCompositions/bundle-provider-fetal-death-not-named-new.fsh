@@ -10,7 +10,7 @@ Usage: #example
 * timestamp = "2019-02-11T02:06:01.283Z"
 * identifier.system = Canonical(CodeSystemIJEVitalRecords)
 * identifier.value = "2019NJ15075"
-* insert addentry(CompositionProviderFetalDeathReport, composition-provider-fetal-death-not-named)
+* insert addentry(Composition, composition-provider-fetal-death-not-named)
 * insert addentry(Patient, patient-decedent-fetus-not-named)
 * insert addentry(Encounter, encounter-maternity-carmen-teresa-lee)
 //* insert addentry(Practitioner, practitioner-vital-records-jessica-leung)
