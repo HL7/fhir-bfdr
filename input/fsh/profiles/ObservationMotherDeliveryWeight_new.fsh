@@ -9,6 +9,9 @@ Description: "The weight of the mother at the time of birth/delivery. Migrated f
 * subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..
 * value[x] only Quantity
+* valueQuantity ^short = "Mother's weight in lb"
+  * code = $UCUM#[lb_av] (exactly)
+  * value 1..1 
 * category
   * text = "Vital Signs"
 * code = $loinc#69461-2 "Mother's body weight --at delivery"
