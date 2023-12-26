@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "2019NJ15075"
 * type = #document
 * timestamp = "2019-02-11T02:05:44.434Z"
-* insert addentry(CompositionProviderLiveBirthReport, composition-provider-live-birth-babyg-quinn)
+* insert addentry(Composition, composition-provider-live-birth-babyg-quinn)
 * insert addentry(Patient, patient-child-babyg-quinn)
 * insert addentry(Encounter, encounter-birth-babyg-quinn)
 * insert addentry(Encounter, encounter-maternity-jada-ann-quinn)
