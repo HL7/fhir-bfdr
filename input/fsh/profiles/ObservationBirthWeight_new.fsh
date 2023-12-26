@@ -10,9 +10,9 @@ Description: "The weight of the infant/fetus at birth/delivery. Migrated from VR
 * subject only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * value[x] 1..
 * value[x] only Quantity
-* valueQuantity.code = $UCUM#g (exactly)
 * valueQuantity ^short = "Birth weight in grams"
-* valueQuantity.value 1..1 
+  * code = $UCUM#g (exactly)
+  * value 1..1
 // Add Edit Flags, a la VRDR 
 * value[x].extension contains
     BypassEditFlag named bypassEditFlag 0..1

@@ -10,9 +10,9 @@ Description: "The height of the mother. Migrated from VRCL."
 * subject only Reference(PatientMotherVitalRecords)
 * value[x] 1.. 
 * value[x] only Quantity
-* valueQuantity.code = $UCUM#[in_i] (exactly)
-* valueQuantity.value 1..1 
 * valueQuantity ^short = "Height of Mother in inches"
+  * code = $UCUM#[in_i] (exactly)
+  * value 1..1 
 // Add Edit Flags, a la VRDR 
 * value[x].extension contains
     BypassEditFlag named bypassEditFlag 0..1
