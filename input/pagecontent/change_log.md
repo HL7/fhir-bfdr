@@ -2,7 +2,8 @@
 
 ### Minor
 - fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
-* [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of all quantity values -- [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherDeliveryHeight], [ObservationMotherPrepregnancyWeight].
+- [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of all quantity values -- [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherDeliveryHeight], [ObservationMotherPrepregnancyWeight].
+- reinstate missing [Observation - Birth Plurality of Pregnancy][ObservationBirthPluralityOfPregnancy] [FHIR-43383](https://jira.hl7.org/FHIR-43383)
 
 ### STU2 Ballot, January 2024
 #### Major Changes
@@ -10,7 +11,7 @@
 - Incorporate the vital records approach to capturing race and ethnicity, and reporting coded race and ethnicity to support BDRS to NCHS use cases. See [ObservationCodedRaceAndEthnicityVitalRecords], [ObservationInputRaceAndEthnicityVitalRecords], and [CompositionCodedRaceAndEthnicity].
 - Incorporate the vital records approach to capturing usual work for mother and father, including adding an extension called [roleVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html) to distinguish between mother and father. See [ObservationUsualWorkVitalRecords].
 - Incorporation of edit flags as extensions within profiles, rather than as standalone observations.  This follows the path taken by VRDR STU2 that is in production use.  See [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherHeight], [ObservationMotherPrepregnancyWeight], [ObservationNumberPrenatalVisits], [ObservationNumberPreviousCesareans], [PatientDecedentFetus], [ObservationEducationLevelVitalRecords], [PatientVitalRecords], [PatientMotherVitalRecords], [RelatedPersonMotherVitalRecords], [RelatedPersonFatherVitalRecords], [RelatedPersonParentVitalRecords].
-- Consistent support for groups of responses that have a 'none-of-the-above' response using Observations and categories.  See [categories](categories.html).
+- Consistent support for groups of responses that have a 'none-of-the-above' response using Observations and categories.  See [categories](categories.html). This includes resolution of [FHIR-43001](https://jira.hl7.org/FHIR-43001).
 - Improved documentation of mapping of IJE fields to BFDR and VRCL profiles and fields.  See [Natality Data Dictionary](ije_mapping_natality.html) and [Fetal Death Data Dictionary](ije_mapping_fetalDeath.html).
 
 #### Minor Changes
