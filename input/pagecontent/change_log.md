@@ -3,7 +3,9 @@
 ### Minor
 - fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
 - [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of all quantity values -- [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherDeliveryHeight], [ObservationMotherPrepregnancyWeight].
-- reinstate missing [Observation - Birth Plurality of Pregnancy][ObservationBirthPluralityOfPregnancy] [FHIR-43383](https://jira.hl7.org/FHIR-43383)
+- reinstate missing [Observation - Birth Plurality of Pregnancy][ObservationBirthPluralityOfPregnancy] [FHIR-43383](https://jira.hl7.org/browse/FHIR-43383)
+- added narrative content to clarify indicating 'Y', 'N', and 'U' for TRAN and ITRAN in the data dictionary usage page [FHIR-43414](https://jira.hl7.org/browse/FHIR-43414)
+- added missing IJE mappings for [RelatedPersonFatherNatural](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-father-natural-vr.html) profile
 
 ### STU2 Ballot, January 2024
 #### Major Changes

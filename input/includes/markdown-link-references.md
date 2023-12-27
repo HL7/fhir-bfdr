@@ -10,6 +10,7 @@
 [note on Child and Decedent Fetus name]: usage.html#child-and-decedent-fetus-name
 [note on birth date and time]: https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time
 [note on patient gender]: https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender
+[note on patient transfers]: usage.html#mother-or-infant-transferred
 [CityCodes]: https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#city-codes
 [CountyCodes]: https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#county-codes
 [StateLiterals]: https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#state-literals
