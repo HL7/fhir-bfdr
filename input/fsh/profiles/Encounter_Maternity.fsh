@@ -50,6 +50,10 @@ Description: "This Encounter profile represents the mother's maternity encounter
   * location MS
     * ^short = "Facility name (if not institution, give street and number)"
     * ^definition = "Facility name (if not institution, give street and number)"
+    // * name ^short = "Name of delivery facility"
+    * id ^short = "Facility ID"
+    * identifier ^short = "Facility ID (state-assigned)"
+    // * address.line ^short = "Place of delivery street address"
   * physicalType MS
   * physicalType from BirthDeliveryOccurredVS (preferred)
     * ^short = "The value set contains the list of values used to indicate the type of place where birth or delivery occurred."
