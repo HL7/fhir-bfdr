@@ -119,13 +119,13 @@ RuleSet: addentry(type, id)
 * entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
 
 RuleSet: addentryComposition(type, id)
-* entry[+].reference = "http://www.example.org/fhir/{type}/{id}"
+* entry[+].reference = "{type}/{id}"
 
 RuleSet: addNamedEntryComposition(name, type, id)
-* entry[{name}][+].reference = "http://www.example.org/fhir/{type}/{id}"
+* entry[{name}][+].reference = "{type}/{id}"
 
 RuleSet: addReferenceComposition (field, type, id)
-* {field}.reference = "http://www.example.org/fhir/{type}/{id}"
+* {field}.reference = "{type}/{id}"
 
 RuleSet: CategorySlicingRules
 * category 1.. MS

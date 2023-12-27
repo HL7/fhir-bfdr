@@ -12,7 +12,7 @@ Usage: #example
 * identifier.extension[certificateNumber].valueString = "15075"
 * type = #document
 * timestamp = "2019-10-15T08:51:14.637+00:00"
-* insert addentry(CompositionJurisdictionFetalDeathReport, composition-jurisdiction-fetal-death-not-named)
+* insert addentry(Composition, composition-jurisdiction-fetal-death-not-named)
 * insert addentry(Patient, patient-decedent-fetus-not-named)
 * insert addentry(Encounter, encounter-maternity-carmen-teresa-lee)
 * insert addentry(Organization, organization-jurisdictional-vital-records-office)
