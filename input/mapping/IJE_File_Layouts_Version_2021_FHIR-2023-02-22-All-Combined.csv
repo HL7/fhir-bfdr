@@ -1707,7 +1707,7 @@ For Canadian Provinces:
 1307,ITOP,125,1069,1,Secondary management needed,SECOND_MAN,"Y, N, or U (if N or U, leave all other MAN secondary managements blank)",,not implemented,not implemented,,,,,,,,,not implemented
 589,Natality,125,752,1,Mother Transferred?,TRAN,"Y = Yes
 N = No
-U = Unknown",,BFDR,EncounterMaternity,"hospitalization.admitSource = ""hosp-trans""",codeable,"[HL7EncounterAdmitSourceVS], <br />See [note on missing data]",B,,,,,Encounter-maternity
+U = Unknown",,BFDR,EncounterMaternity,"hospitalization.admitSource = ""hosp-trans""",codeable,"[HL7EncounterAdmitSourceVS], <br />See [note on patient transfers]",B,,,,,Encounter-maternity
 1466,Birth Infant Death,125,752,1,Mother Transferred?,TRAN,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,
@@ -2557,7 +2557,7 @@ U = Unknown",,,,,,,,,,,,
 1048,Fetal Death,231,3052,50,Place of Delivery Street Address,ADDRESS_D,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Place of Delivery address that's used in their system versus reprogramming.",,BFDR,EncounterMaternity,location.location.address.line,string,,B,,,,,Encounter-maternity
 695,Natality,231,909,1,Was Infant Transferred Within 24 Hours of Delivery?,ITRAN,"Y = Yes
 N = No
-U = Unknown",,BFDR,EncounterBirth,"hospitalization.dischargeDisposition=""other-hcf""",codeable,[USCoreDischargeDispositionVS] <br />See [note on missing data],B,,,,,Encounter-birth
+U = Unknown",,BFDR,EncounterBirth,"hospitalization.dischargeDisposition=""other-hcf""",codeable,"[USCoreDischargeDispositionVS], <br />See [note on patient transfers]",B,,,,,Encounter-birth
 1572,Birth Infant Death,231,909,1,Was Infant Transferred Within 24 Hours of Delivery?,ITRAN,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,

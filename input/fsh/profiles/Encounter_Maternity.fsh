@@ -41,7 +41,7 @@ Description: "This Encounter profile represents the mother's maternity encounter
     * ^short = "If mother transferred, facility transferred from"
     * ^definition = "If mother transferred, facility transferred from"
   * admitSource MS
-    * ^short = "If mother transferred for delivery set code = \"hosp-trans\" (Transferred from other hospital)"
+    * ^short = "If mother transferred for delivery set code = \"hosp-trans\" (Transferred from other hospital) from codesystem http://terminology.hl7.org/CodeSystem/admit-source."
     * ^definition = "If mother transferred for maternal medical or fetal indications for delivery set code = \"hosp-trans\" (Transferred from other hospital): The Patient has been transferred from another hospital for this encounter."
 * location MS
   * ^short = "Information about the location of delivery"
