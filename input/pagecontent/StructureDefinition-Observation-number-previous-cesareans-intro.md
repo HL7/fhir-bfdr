@@ -98,6 +98,13 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -134,3 +141,6 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>

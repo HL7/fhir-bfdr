@@ -116,6 +116,13 @@ This Encounter can reference the mother's maternity encounter using the partOf d
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -194,3 +201,6 @@ This Encounter can reference the mother's maternity encounter using the partOf d
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>

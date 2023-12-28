@@ -13,6 +13,13 @@
 If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#infection-present-during-pregnancy'>note on missing infections present data</a>)
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -49,3 +56,6 @@ If the none-of-the-above observation is present in the bundle, then its compleme
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>
