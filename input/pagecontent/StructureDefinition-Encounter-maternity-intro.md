@@ -344,3 +344,4 @@ After the child is born, an Encounter record will be created for the child (Enco
 </table>
 
 </details>
+<p></p>

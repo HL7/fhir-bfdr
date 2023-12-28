@@ -631,6 +631,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts "</table>"
       vIntroOutputFile.puts ""
       vIntroOutputFile.puts "</details>"
+      vIntroOutputFile.puts "<p></p>"
     end
   end
 end

@@ -40,3 +40,4 @@ Presence of this observation indicates that none of the characteristics of labor
 </table>
 
 </details>
+<p></p>
