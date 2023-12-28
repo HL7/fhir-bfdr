@@ -37,7 +37,7 @@ Description: "This Encounter profile represents the child's birth encounter."
     * ^short = "If infant transferred, facility transferred to"
     * ^definition = "If infant transferred, facility transferred to"
   * dischargeDisposition MS
-    * ^short = "If infant transferred within 24 hours of delivery, set code = \"other-hcf\" (Other healthcare facility)"
+    * ^short = "If infant transferred within 24 hours of delivery, set code = \"other-hcf\" (Other healthcare facility) from codesystem https://terminology.hl7.org/5.4.0/CodeSystem-discharge-disposition.html"
     * ^definition = "If infant transferred within 24 hours of delivery, set code = \"other-hcf\" (Other healthcare facility): the patient was transferred to another healthcare facility."
 * location MS
   * ^short = "Information about the location of birth"
