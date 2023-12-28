@@ -112,7 +112,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>171</td>
   <td>Mother's Reported Age</td>
   <td>MAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather]='MTH'</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='MTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>
@@ -121,7 +121,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>172</td>
   <td>Father's Reported Age</td>
   <td>FAGER</td>
-  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather]='FTH'</td>
+  <td>extension[parentReportedAgeAtDelivery].extension[reportedAge].value, <br />extension[parentReportedAgeAtDelivery].extension[motherOrFather].value='FTH'</td>
   <td>quantity</td>
   <td></td>
 </tr>

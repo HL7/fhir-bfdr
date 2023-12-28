@@ -8,7 +8,7 @@ Description: "A stillborn for whom clinical data is included in the report."
 * extension[parentReportedAgeAtDelivery] MS 
   * ^short = "The mother or father's reported age at the time of delivery of the child"
   * extension[reportedAge].value[x] ^short = "Parent's reported age"
-  * extension[motherOrFather] ^short = "Mother/Father code"
+  * extension[motherOrFather].valueCodeableConcept ^short = "Indicates mother/Father code"
 * extension[fetalDeath] 1..1 MS 
 * extension[birthsex].valueCode from ValueSetBirthSexFetusVitalRecords (required)
 * insert decedentFetusName 
