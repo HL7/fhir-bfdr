@@ -53,6 +53,13 @@ Presence of this observation indicates that none of the obstetric procedures spe
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -77,3 +84,5 @@ Presence of this observation indicates that none of the obstetric procedures spe
 </tr>
 </tbody>
 </table>
+
+</details>

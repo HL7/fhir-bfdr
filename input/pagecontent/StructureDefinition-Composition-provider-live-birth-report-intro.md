@@ -90,6 +90,13 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -120,3 +127,5 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 </tr>
 </tbody>
 </table>
+
+</details>

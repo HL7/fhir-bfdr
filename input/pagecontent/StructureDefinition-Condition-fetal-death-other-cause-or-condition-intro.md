@@ -161,6 +161,13 @@ The type of cause or condition (code.coding) should be selected from the value s
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -185,3 +192,5 @@ The type of cause or condition (code.coding) should be selected from the value s
 </tr>
 </tbody>
 </table>
+
+</details>

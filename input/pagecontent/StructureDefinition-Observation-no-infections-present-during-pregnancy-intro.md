@@ -89,6 +89,13 @@ Presence of this observation indicates that none of the infections specifyable i
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -113,3 +120,5 @@ Presence of this observation indicates that none of the infections specifyable i
 </tr>
 </tbody>
 </table>
+
+</details>

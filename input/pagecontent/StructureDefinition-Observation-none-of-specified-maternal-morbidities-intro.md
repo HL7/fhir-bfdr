@@ -1,6 +1,13 @@
 Presence of this observation indicates that none of the maternal morbidities specifyable in this IG are reported. If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a>)
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -43,3 +50,5 @@ Presence of this observation indicates that none of the maternal morbidities spe
 </tr>
 </tbody>
 </table>
+
+</details>

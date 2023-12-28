@@ -44,6 +44,13 @@ This information is not required for submission of a fetal death report, but may
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -68,3 +75,5 @@ This information is not required for submission of a fetal death report, but may
 </tr>
 </tbody>
 </table>
+
+</details>

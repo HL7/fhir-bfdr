@@ -6,6 +6,13 @@
  .context-menu:hover {opacity: 0.5;}
 </style>
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -42,3 +49,5 @@
 </tr>
 </tbody>
 </table>
+
+</details>

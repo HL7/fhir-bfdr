@@ -269,6 +269,13 @@ After the child is born, an Encounter record will be created for the child (Enco
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -335,3 +342,5 @@ After the child is born, an Encounter record will be created for the child (Enco
 </tr>
 </tbody>
 </table>
+
+</details>

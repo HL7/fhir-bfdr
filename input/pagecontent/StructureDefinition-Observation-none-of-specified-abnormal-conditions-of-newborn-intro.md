@@ -1,6 +1,13 @@
 Presence of this observation indicates that none of the abnormal conditions of newborn specifyable in this IG are reported.If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a>)
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -31,3 +38,5 @@ Presence of this observation indicates that none of the abnormal conditions of n
 </tr>
 </tbody>
 </table>
+
+</details>
