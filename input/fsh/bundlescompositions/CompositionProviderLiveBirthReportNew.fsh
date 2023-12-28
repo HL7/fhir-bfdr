@@ -13,9 +13,12 @@ Id: Composition-provider-live-birth-report
     ExtensionLiveBirthLocalFileNumber named liveBirthLocalFileNumber 0..1  and
     ExtensionDateFiledByRegistrar named dateFiledByRegistrar 1..1 
     // ReplaceStatus named replacementStatus 0..1
-* extension[liveBirthCertificateNumber] ^short = "Birth Number"
-* extension[liveBirthLocalFileNumber] ^short = "Local File No."
-* extension[dateFiledByRegistrar] ^short = "Date filed by registrar"
+* extension[liveBirthCertificateNumber] 
+  * value[x] ^short = "Birth no."
+* extension[liveBirthLocalFileNumber] 
+  * value[x] ^short = "Local file no."
+* extension[dateFiledByRegistrar] 
+  * value[x] ^short = "Date filed by registrar"
 // Status is deprecated (now flag in message header)
 // * extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status
