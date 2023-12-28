@@ -89,6 +89,13 @@ This includes infections present at the start of pregnancy or confirmed diagnosi
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -113,3 +120,6 @@ This includes infections present at the start of pregnancy or confirmed diagnosi
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>

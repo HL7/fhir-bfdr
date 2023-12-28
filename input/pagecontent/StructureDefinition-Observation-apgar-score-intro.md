@@ -53,6 +53,13 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -83,3 +90,6 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>

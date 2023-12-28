@@ -96,6 +96,13 @@
 <p></p>
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -126,3 +133,6 @@
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>
