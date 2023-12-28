@@ -13,7 +13,11 @@ Id: Composition-jurisdiction-fetal-death-report
     ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1
     // ReplaceStatus named replacementStatus 0..1
 * extension[fetalDeathReportNumber] ^short = "State File Number"
+  * value[x] ^short = "Certificate no."
 * extension[fetalDeathLocalFileNumber] ^short = "Local File No."
+  * value[x] ^short = "Local file no."
+* extension[dateReceivedByRegistrar] 
+  * value[x] ^short = "Date received by registrar"
 // Status is deprecated (now flag in message header)
 // * extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 
