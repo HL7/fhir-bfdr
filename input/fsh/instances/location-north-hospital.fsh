@@ -1,7 +1,7 @@
 Instance: location-north-hospital
 InstanceOf: LocationBFDR
-Title: "US Core Location - North Hospital"
-Description: "US Core Location: North Hospital example"
+Title: "Location BFDR - North Hospital"
+Description: "Location BFDR: North Hospital example"
 Usage: #example
 * status = #active
 * name = "North Hospital"

@@ -1,7 +1,7 @@
 Instance: location-south-hospital
 InstanceOf: LocationBFDR
-Title: "US Core Location - South Hospital"
-Description: "US Core Location: South Hospital example"
+Title: "Location BFDR - South Hospital"
+Description: "Location BFDR: South Hospital example"
 Usage: #example
 * identifier
   * system = "http://hl7.org/fhir/sid/us-npi"
