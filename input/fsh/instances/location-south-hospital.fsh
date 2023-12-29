@@ -1,5 +1,5 @@
 Instance: location-south-hospital
-InstanceOf: USCoreLocation
+InstanceOf: LocationBFDR
 Title: "US Core Location - South Hospital"
 Description: "US Core Location: South Hospital example"
 Usage: #example
@@ -8,7 +8,8 @@ Usage: #example
   * value = "116441967701"
 * status = #active
 * name = "South Hospital"
-* type = $v3-RoleCode#HOSP "Hospital"
+* type[0] = $v3-RoleCode#HOSP "Hospital"
+* type[+] = LocationTypeCS#birth "Birth Location"
 * address
   * line = "2100 North Ave"
   * city = "Salt Lake City"

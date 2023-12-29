@@ -32,7 +32,7 @@ Description: "This Encounter profile represents the child's birth encounter."
   * individual 1.. MS
   * individual only Reference(PractitionerVitalRecords)
 * hospitalization MS
-  * destination only Reference(USCoreLocation)
+  * destination only Reference(LocationBFDR)
   * destination MS
     * ^short = "If infant transferred, facility transferred to"
     * ^definition = "If infant transferred, facility transferred to"
@@ -42,7 +42,7 @@ Description: "This Encounter profile represents the child's birth encounter."
 * location MS
   * ^short = "Information about the location of birth"
   * ^definition = "Information about the location of birth"
-  * location only Reference(USCoreLocation)
+  * location only Reference(LocationBFDR)
   * location MS
     * ^short = "Facility name (if not institution, give street and number)"
     * ^definition = "Facility name (if not institution, give street and number)"
