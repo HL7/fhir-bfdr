@@ -3,7 +3,7 @@ InstanceOf: LocationBFDR
 Title: "Location BFDR - South Hospital"
 Description: "Location BFDR: South Hospital example"
 Usage: #example
-* identifier[0]
+* identifier
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "116441967701"
 * identifier.extension[JFI].valueString = "UT1234567"
