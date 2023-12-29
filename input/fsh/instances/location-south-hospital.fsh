@@ -6,9 +6,7 @@ Usage: #example
 * identifier[0]
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "116441967701"
-* identifier[1]
-  * system = "http://hl7.org/fhir/sid/us-sfi"
-  * value = "UT1234567"
+* identifier.extension[JFI].valueString = "UT1234567"
 * status = #active
 * name = "South Hospital"
 * type[0] = $v3-RoleCode#HOSP "Hospital"
