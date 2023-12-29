@@ -16,7 +16,7 @@ Description: "Location used for source/destination of transfers and location of 
 * identifier.system only uri
 * identifier.value 1..1 
 * identifier.value only string
-* identifier contains NPI 0..1 and SFN 0..1 
+* identifier contains NPI 0..1
 * identifier[NPI] ^patternIdentifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI] ^short = "Facility NPI Number"
 * identifier.extension contains AuxiliaryStateIdentifier1 named JFI 0..1
