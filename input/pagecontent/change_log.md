@@ -1,4 +1,6 @@
 ### Post-Ballot Changes
+### Major
+- [FHIR-43458](https://jira.hl7.org/browseFHIR-43458) - Improve support for birth, transfer-from, and transfer-to locations.   Added new [BFDR Location Profile][LocationBFDR], and updated [EncounterMaternity] and [EncounterBirth] to reference the new profile.   Data dictionary has been updated to correctly document mapping of SFN and FNPI fields, and all other facility-related fields.
 
 ### Minor
 - fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
