@@ -5,7 +5,7 @@ RuleSet: ProfileBasedEntrySlicing
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the profile"
 
-Profile: DemographicCodedContentBundleBFDR
+Profile: BundleDocumentDemographicCodedContent
 Parent: Bundle
 Id: Bundle-demographic-coded-content 
 Title: "Bundle - Demographic Coded Content Bundle for BFDR"
@@ -13,6 +13,8 @@ Description: "This bundle profile contains instances of the resources comprising
 This bundle is information-content equivalent to the traditional NCHS [MRE](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf)/NRE format."
 //* insert RequireMetaProfile(CodedContentDocument)
 * insert BundleIdentifiers
+* insert BundleIdentifiersParam(fileNumber, Birth Certificate or Fetal Death Report Number, localFileNumber1, Local File Number 1, localFileNumber2, Local File Number 2)
+
 * type 1..1
 * type only code
 * type = #document (exactly)

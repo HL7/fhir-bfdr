@@ -3,9 +3,6 @@ Parent: Composition
 Id: Composition-coded-race-and-ethnicity
 Title: "Composition - Coded Race and Ethnicity"
 Description: "This Composition profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office, along with the submitted input race and ethnicity information."
-* extension contains
-    ExtensionFetalDeathReportNumber named fetalDeathReportNumber 0..1 and
-    ExtensionLiveBirthCertificateNumber named liveBirthCertificateNumber 0..1
 * type = $loinc#86805-9
 * type 
   * ^short = "Race and ethnicity information Document"

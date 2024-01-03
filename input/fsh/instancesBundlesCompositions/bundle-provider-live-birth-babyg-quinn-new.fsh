@@ -1,11 +1,13 @@
 Instance: bundle-provider-live-birth-babyg-quinn
-InstanceOf: BundleDocumentBFDR
+InstanceOf: BundleDocumentBirthReport
 Title: "Bundle - Provider Live Birth - Baby G Quinn"
 Description: "Bundle - Provider Live Birth: Baby G Quinn example"
 Usage: #example
 * identifier.system = Canonical(CodeSystemIJEVitalRecords)
-* identifier.value = "2019NJ15075"
-* type = #document
+* identifier
+  * value = "2019NJ15075"
+  * extension[birthCertificateNumber].valueString = "15075"
+  * extension[localFileNumber1].valueString = "444455555"
 * timestamp = "2019-02-11T02:05:44.434Z"
 * insert addentry(Composition, composition-provider-live-birth-babyg-quinn)
 * insert addentry(Patient, patient-child-babyg-quinn)

@@ -1,15 +1,12 @@
 Instance: bundle-provider-fetal-death-not-named
-InstanceOf: BundleDocumentBFDR
+InstanceOf: BundleDocumentFetalDeathReport
 Title: "Bundle - Provider Fetal Death Report - Fetus Not Named"
 Description: "Bundle - Provider Fetal Death Report: Fetus Not Named example"
 Usage: #example
 * identifier
-  * system = "urn:ietf:rfc:3986"
-  * value = "urn:uuid:93bdc9cf-0d97-4b6f-9f11-876d8ea115eb"
-* type = #document
-* timestamp = "2019-02-11T02:06:01.283Z"
-* identifier.system = Canonical(CodeSystemIJEVitalRecords)
-* identifier.value = "2019NJ15075"
+  * value = "2019NJ009876"
+  * extension[fetalDeathReportNumber].valueString = "9876"
+  * extension[localFileNumber1].valueString = "11111-11111"
 * insert addentry(Composition, composition-provider-fetal-death-not-named)
 * insert addentry(Patient, patient-decedent-fetus-not-named)
 * insert addentry(Encounter, encounter-maternity-carmen-teresa-lee)

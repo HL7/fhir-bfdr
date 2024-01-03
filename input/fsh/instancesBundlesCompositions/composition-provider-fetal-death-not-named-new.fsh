@@ -3,17 +3,6 @@ InstanceOf: CompositionProviderFetalDeathReport
 Title: "Composition - Provider Fetal Death Report - Fetus Not Named"
 Description: "Composition - Provider Fetal Death Report: Fetus Not Named"
 Usage: #example
-* extension[Extension-fetal-death-report-number]
-  * valueIdentifier
-    * type = $v2-0203#FDR
-    * value = "9876"
-* extension[Extension-fetal-death-local-file-number]
-  * valueIdentifier
-    * type = $v2-0203#FDRFN
-    * value = "11111-11111"
-* extension[Extension-date-received-by-registrar]
-  * valueDateTime = "2019-02-12"
-* identifier.value = "2019NJ9876"
 * status = #final
 * type = $loinc#69045-3 "U.S. standard report of fetal death - 2003 revision"
 * insert addReferenceComposition(subject,Patient, patient-decedent-fetus-not-named)

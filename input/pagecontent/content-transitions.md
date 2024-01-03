@@ -155,13 +155,6 @@
 <tr><td> <a href='StructureDefinition-AuxiliaryStateIdentifier1.html'>AuxiliaryStateIdentifier1</a></td><td> New </td><td> New Addition </td></tr>
 <tr><td> <a href='StructureDefinition-AuxiliaryStateIdentifier2.html'>AuxiliaryStateIdentifier2</a></td><td> New </td><td> New Addition </td></tr>
 <tr><td> <a href='StructureDefinition-CertificateNumber.html'>CertificateNumber</a></td><td> New </td><td> New Addition </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-date-filed-by-registrar.html'>ExtensionDateFiledByRegistrar</a></td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-date-filed-by-registrar.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-date-received-by-registrar.html'>ExtensionDateReceivedByRegistrar</a></td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-date-received-by-registrar.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-encounter-maternity-reference.html'>ExtensionEncounterMaternityReference</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-encounter-maternity-reference.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-fetal-death-local-file-number.html'>ExtensionFetalDeathLocalFileNumber</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-fetal-death-local-file-number.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-fetal-death-report-number.html'>ExtensionFetalDeathReportNumber</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-fetal-death-report-number.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-live-birth-certificate-number.html'>ExtensionLiveBirthCertificateNumber</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-live-birth-certificate-number.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-live-birth-local-file-number.html'>ExtensionLiveBirthLocalFileNumber</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-live-birth-local-file-number.html'>BFDR</a></td><td> - </td></tr>
 </tbody>
 </table>
 
@@ -258,6 +251,14 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Current Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
+
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-date-filed-by-registrar.html'>ExtensionDateFiledByRegistrar</a></td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-date-received-by-registrar.html'>ExtensionDateReceivedByRegistrar</a></td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-encounter-maternity-reference.html'>ExtensionEncounterMaternityReference</a> </td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-fetal-death-local-file-number.html'>ExtensionFetalDeathLocalFileNumber</a> </td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-fetal-death-report-number.html'>ExtensionFetalDeathReportNumber</a> </td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-live-birth-certificate-number.html'>ExtensionLiveBirthCertificateNumber</a> </td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-live-birth-local-file-number.html'>ExtensionLiveBirthLocalFileNumber</a> </td><td> Deleted </td><td> Deprecated </td></tr>
 <tr><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-replacement-status.html'>ExtensionReplacementStatus</a></td><td> Deleted </td><td> Deprecated </td></tr>
 </tbody>
 </table>
