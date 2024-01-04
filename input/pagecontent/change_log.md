@@ -6,6 +6,8 @@
 - reinstate missing [Observation - Birth Plurality of Pregnancy][ObservationBirthPluralityOfPregnancy] [FHIR-43383](https://jira.hl7.org/browse/FHIR-43383)
 - added narrative content to clarify indicating 'Y', 'N', and 'U' for TRAN and ITRAN in the data dictionary usage page [FHIR-43414](https://jira.hl7.org/browse/FHIR-43414)
 - added missing IJE mappings for [RelatedPersonFatherNatural](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-father-natural-vr.html) profile
+- Concept maps added - [BirthWeightEditFlagsCM], [EstimateOfGestationEditFlagsCM], [NumberPreviousCesareansEditFlagsCM], [ParentsDateOfBirthEditFlagsCM], [PluralityEditFlagsCM], [PregnancyReportEditFlagsCM]
+- Valuesets for Fathers Date of Birth Edit Flags and Mothers Date of Birth Edit Flags were consolidated into a single valueset called [ParentsDateOfBirthEditFlagsVS]
 
 ### STU2 Ballot, January 2024
 #### Major Changes
