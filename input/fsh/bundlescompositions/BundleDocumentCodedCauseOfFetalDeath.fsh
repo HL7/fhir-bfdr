@@ -1,7 +1,7 @@
 Profile: BundleDocumentCodedCauseOfFetalDeath
 Parent: Bundle
-Id: Bundle-coded-cause-of-fetal-death
-Title: "Bundle - Coded Cause of Fetal Death Bundle for BFDR"
+Id: Bundle-document-coded-cause-of-fetal-death
+Title: "Bundle - Document Coded Cause of Fetal Death"
 Description: "This bundle profile contains instances of the resources comprising  cause of fetal death coded content."
 //* insert RequireMetaProfile(CodedContentDocument)
 //* insert BundleIdentifiers

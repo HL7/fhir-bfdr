@@ -1,7 +1,7 @@
 Profile: BundleDocumentBirthReport
 Parent: Bundle
-Title: "Bundle - Document Fetal Death Report"
-Description: "This Bundle profile represents a Fetal Death Document Bundle. It contains any one of the Fetal Death Compositions."
+Title: "Bundle - Document Birth Report"
+Description: "This Bundle profile represents a Birth Document Bundle. It contains any one of the Birth Report Compositions."
 Id: Bundle-document-birth-report
 * insert BundleIdentifiersParam(birthCertificateNumber, Birth Certificate Number, localFileNumber1, Local File Number 1, localFileNumber2, Local File Number 2)
 * type = #document (exactly)

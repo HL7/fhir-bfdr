@@ -7,12 +7,11 @@ RuleSet: ProfileBasedEntrySlicing
 
 Profile: BundleDocumentDemographicCodedContent
 Parent: Bundle
-Id: Bundle-demographic-coded-content 
-Title: "Bundle - Demographic Coded Content Bundle for BFDR"
+Id: Bundle-document-demographic-coded-content 
+Title: "Bundle - Document Demographic Coded Content"
 Description: "This bundle profile contains instances of the resources comprising demographic (race and ethnicity) coded content. 
 This bundle is information-content equivalent to the traditional NCHS [MRE](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf)/NRE format."
 //* insert RequireMetaProfile(CodedContentDocument)
-* insert BundleIdentifiers
 * insert BundleIdentifiersParam(fileNumber, Birth Certificate or Fetal Death Report Number, localFileNumber1, Local File Number 1, localFileNumber2, Local File Number 2)
 
 * type 1..1
