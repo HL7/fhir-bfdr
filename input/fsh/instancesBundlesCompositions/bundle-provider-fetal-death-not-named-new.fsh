@@ -3,6 +3,7 @@ InstanceOf: BundleDocumentFetalDeathReport
 Title: "Bundle - Provider Fetal Death Report - Fetus Not Named"
 Description: "Bundle - Provider Fetal Death Report: Fetus Not Named example"
 Usage: #example
+* timestamp = "2019-02-11T02:05:44.434Z"
 * identifier
   * value = "2019NJ009876"
   * extension[fetalDeathReportNumber].valueString = "9876"
