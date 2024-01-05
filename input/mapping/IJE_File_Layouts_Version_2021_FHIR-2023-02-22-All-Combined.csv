@@ -297,8 +297,8 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 19,Mortality,12,139,50,Father's Surname,FLNAME,,,VRDR,DecedentFather,name.family,string,-,,y,,,,DecedentFather
 1194,ITOP,12,48,3,County of Termination,CNTY_T,NCHS Instruction Manual: Part 8,,not implemented,not implemented,,,,,,,,,not implemented
 441,Mortality Roster,12,205,2,Date of Birth--Day,DOB_DY,"01-31 (based on month), 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent
-476,Natality,12,39,12,Facility ID (NPI) - if available,FNPI,,,BFDR,LocationBFDR,id,string,,B,,,,,Location-bfdr
-829,Fetal Death,12,39,12,Facility ID (NPI) - If available,FNPI,,,BFDR,LocationBFDR,id,string,,B,,,,,Location-bfdr
+476,Natality,12,39,12,Facility ID (NPI) - if available,FNPI,,,BFDR,LocationBFDR,identifier[NPI],string,,B,,,,,Location-bfdr
+829,Fetal Death,12,39,12,Facility ID (NPI) - If available,FNPI,,,BFDR,LocationBFDR,identifier[NPI],string,,B,,,,,Location-bfdr
 1353,Birth Infant Death,12,39,12,Facility ID (NPI) - if available,FNPI,,,,,,,,,,,,,
 285,Surveillance,13,197,3,Decedent's Age--Units,AGE ,"001 - 135, 999
 Codes: If AGETYPE = 1 then 001-135, 999
@@ -311,8 +311,8 @@ Codes: If AGETYPE = 1 then 001-135, 999
 F = Female
 U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,y,,,,Decedent
 442,Mortality Roster,13,207,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent
-477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,identifier,Identifier,,B,,,,,Location-bfdr
-830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,identifier,Identifier,,B,,,,,Location-bfdr
+477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,identifier.extension[JFI],Identifier,,B,,,,,Location-bfdr
+830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,identifier.extension[JFI],Identifier,,B,,,,,Location-bfdr
 1354,Birth Infant Death,13,51,4,Facility ID (State-Assigned),SFN,,,,,,,,,,,,,
 1195,ITOP,13,51,1,Place Type Where Termination Occurred,TPLACE,"1 = Hospital
 2 = Clinic
