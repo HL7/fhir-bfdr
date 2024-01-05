@@ -34,7 +34,7 @@ Figure 1 shows the current dependencies among published vital reocrds FHIR IGs. 
 
 ### Changing Dependencies - Birth Defects IG
 Although it has not yet been balloted, the design of the VRCL STU1 was driven by consideration of a future Birth Defects FHIR IG. 
-The dependencies of this not-yet-balloted IG would change as a result of the harmonization effort, since much birth-related content has been consolidated within The BFDR STU2 IG.   This change should not impact the ability of the Birth Defects IG to leverage vital records content, but would change the precise dependencies.  FIgure 3 shows the current dependencies of a potential Birth Defects FHIR IG.  Figure 4 shows the dependencies following the proposed harmonization.
+The dependencies of this not-yet-balloted IG would change as a result of the harmonization effort, since much birth-related content has been consolidated within The BFDR STU2 IG.   This change should not impact the ability of the Birth Defects IG to leverage vital records content, but would change the precise dependencies.  Figure 3 shows the current dependencies of a potential Birth Defects FHIR IG.  Figure 4 shows the dependencies following the proposed harmonization.
 
 {% include img.html img="HarmonizationPlan-Current-BirthDefects.drawio.svg" caption="Figure 3: Current Birth Defects FHIR IG Dependencies" %}
 
