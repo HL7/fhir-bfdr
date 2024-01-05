@@ -367,8 +367,8 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>hospitalization.admitSource (Y if present, N if not present)</td>
 </tr>
 <tr>
-  <td style='text-align: center'>-</td>
-  <td>28.1 Name of facility mother transferred from:</td>
+  <td style='text-align: center'>28.1</td>
+  <td>Name of facility mother transferred from:</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR
 </a></td>
   <td>name</td>
@@ -1397,8 +1397,8 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>hospitalization.admitSource (Y if present, N if not present)</td>
 </tr>
 <tr>
-  <td style='text-align: center'>-</td>
-  <td>23.1 Name of facility mother transferred from:</td>
+  <td style='text-align: center'>23.1</td>
+  <td>Name of facility mother transferred from:</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR
 </a></td>
   <td>name</td>
