@@ -4,21 +4,6 @@ Title: "Composition - Jurisdiction Live Birth Report"
 Description: "This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to the national statistics agency."
 Id: Composition-jurisdiction-live-birth-report 
 * . ^short = "Jurisdiction Live Birth Report"
-* extension 1.. 
-  * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "url"
-  * ^slicing.rules = #open
-* extension contains
-    ExtensionLiveBirthCertificateNumber named liveBirthCertificateNumber 1..1  and
-    ExtensionLiveBirthLocalFileNumber named liveBirthLocalFileNumber 0..1  and
-    ExtensionDateFiledByRegistrar named dateFiledByRegistrar 1..1
-    // ReplaceStatus named replacementStatus 0..1
-* extension[liveBirthCertificateNumber] ^short = "Birth Number"
-  * value[x] ^short = "Certificate no."
-* extension[liveBirthLocalFileNumber] ^short = "Local File No."
-  * value[x] ^short = "Local file no."
-* extension[dateFiledByRegistrar] ^short = "Date filed by registrar"
-  * value[x] ^short = "Date filed by registrar"
 // Status is deprecated (now flag in message header)
 // * extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 
