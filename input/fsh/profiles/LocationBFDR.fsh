@@ -39,4 +39,3 @@ Description: "Location used for source/destination of transfers and location of 
   * extension[stnum] ^short = "Street Number"
   * extension[stdesig] ^short = "Street Designator"
   * extension[unitnumber] ^short = "Unit Number"
-
