@@ -1,15 +1,13 @@
 Instance: bundle-jurisdiction-live-birth-babyg-quinn
-InstanceOf: BundleDocumentBFDR
+InstanceOf: BundleDocumentBirthReport
 Title: "Bundle - Jurisdiction Live Birth Report - Baby G Quinn"
 Description: "Bundle - Jurisdiction Live Birth Report: Baby G Quinn example"
 Usage: #example
-* type = #document
 * timestamp = "2019-02-13T02:06:15.234Z"
-* identifier.value = "2019NJ15075"
-* identifier.system = Canonical(CodeSystemIJEVitalRecords)
-* identifier.extension[certificateNumber].valueString = "15075"
-* identifier.extension[auxiliaryStateIdentifier1].valueString = "abc1234"
-* identifier.extension[auxiliaryStateIdentifier2].valueString = "def5678"
+* identifier
+  * value = "2019NJ15075"
+  * extension[birthCertificateNumber].valueString = "15075"
+  * extension[localFileNumber1].valueString = "444455555"
 * insert addentry(Composition, composition-jurisdiction-live-birth-babyg-quinn)
 * insert addentry(Patient, patient-child-babyg-quinn)
 * insert addentry(Encounter, encounter-birth-babyg-quinn)

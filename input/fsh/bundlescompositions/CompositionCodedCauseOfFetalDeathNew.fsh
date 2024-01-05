@@ -7,7 +7,6 @@ Id: Composition-coded-cause-of-fetal-death
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "url"
   * ^slicing.rules = #open
-* extension contains ExtensionFetalDeathReportNumber named fetalDeathReportNumber 1..1
 * type = $loinc#86804-2
   * ^short = "Cause of death classification and related information Document"
   * ^definition = "Cause of death classification and related information Document"
