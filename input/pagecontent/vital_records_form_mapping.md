@@ -784,8 +784,8 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>hospitalization.dischargeDisposition</td>
 </tr>
 <tr>
-  <td style='text-align: center'>-</td>
-  <td>56.1 name of facility infant transferred to:</td>
+  <td style='text-align: center'>56.1</td>
+  <td>name of facility infant transferred to:</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR
 </a></td>
   <td>name</td>
@@ -1085,8 +1085,8 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>hospitalization.dischargeDisposition</td>
 </tr>
 <tr>
-  <td style='text-align: center'>-</td>
-  <td>38.1 name of facility infant transferred to:</td>
+  <td style='text-align: center'>38.1</td>
+  <td>name of facility infant transferred to:</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR
 </a></td>
   <td>name</td>
