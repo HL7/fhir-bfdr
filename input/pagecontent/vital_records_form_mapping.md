@@ -92,9 +92,8 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>5</td>
   <td>Facility Name / Address</td>
-  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth
-</a></td>
-  <td>location.location</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
+  <td>name/address</td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
@@ -266,9 +265,8 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>17</td>
   <td>Facility Id.</td>
-  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth
-</a></td>
-  <td>identifier</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
+  <td>identifier[NPI]</td>
 </tr>
 <tr>
   <td style='text-align: center'>18</td>
@@ -367,6 +365,13 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity
 </a></td>
   <td>hospitalization.admitSource (Y if present, N if not present)</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>28.1 Name of facility mother transferred from:</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR
+</a></td>
+  <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>29a</td>
@@ -779,6 +784,13 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>hospitalization.dischargeDisposition</td>
 </tr>
 <tr>
+  <td style='text-align: center'>-</td>
+  <td>56.1 name of facility infant transferred to:</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR
+</a></td>
+  <td>name</td>
+</tr>
+<tr>
   <td style='text-align: center'>57</td>
   <td>Is Infant Living At Time of Report?</td>
   <td><a href='StructureDefinition-Observation-infant-living.html'>ObservationInfantLiving
@@ -1071,6 +1083,13 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth
 </a></td>
   <td>hospitalization.dischargeDisposition</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>38.1 name of facility infant transferred to:</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR
+</a></td>
+  <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>39</td>
@@ -1376,6 +1395,13 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity
 </a></td>
   <td>hospitalization.admitSource (Y if present, N if not present)</td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>23.1 Name of facility mother transferred from:</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR
+</a></td>
+  <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
@@ -1956,16 +1982,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>8</td>
   <td>Facility Name / address</td>
-  <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity
-</a></td>
-  <td>identifier</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
+  <td>name/address</td>
 </tr>
 <tr>
   <td style='text-align: center'>9</td>
   <td>Facility Id</td>
-  <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity
-</a></td>
-  <td>identifier</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
+  <td>identifier[NPI]</td>
 </tr>
 <tr>
   <td style='text-align: center'>10a</td>
@@ -2438,23 +2462,20 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>1</td>
   <td>Facility name</td>
-  <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity
-</a></td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
   <td>Facility address</td>
-  <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity
-</a></td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
   <td>address</td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
   <td>Facility I.D. (National Provider Identifier)</td>
-  <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity
-</a></td>
-  <td>identifier</td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
+  <td>identifier[NPI]</td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
