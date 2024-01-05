@@ -30,7 +30,7 @@
   <td>12</td>
   <td>Facility ID (NPI) - if available</td>
   <td>FNPI</td>
-  <td>identifier[NPI]</td>
+  <td>identifier:NPI</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -102,7 +102,7 @@
   <td>12</td>
   <td>Facility ID (NPI) - If available</td>
   <td>FNPI</td>
-  <td>identifier[NPI]</td>
+  <td>identifier:NPI</td>
   <td>string</td>
   <td></td>
 </tr>
