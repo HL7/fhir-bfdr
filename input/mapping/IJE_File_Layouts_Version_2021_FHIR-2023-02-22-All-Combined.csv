@@ -251,8 +251,8 @@ N = Not Yet Determined",,,,,,,,,,,,
 473,Natality,9,33,2,Date of Birth (Infant)--Day,IDOB_DY,01-31 (based on month),,VRCPL,PatientChildVitalRecords,birthDate,date,See [note on birth date and time],B,,,,,Patient-child-vr
 1350,Birth Infant Death,9,33,2,Date of Birth (Infant)--Day,IDOB_DY,01-31 (based on month),,,,,,,,,,,,
 17,Mortality,10,128,10,Decedent's Legal Name--Suffix,SUFF,,,VRDR,Decedent,"name.suffix , name.use = official",string,-,,y,,,,Decedent
-474,Natality,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,VRCPL,PatientChildVitalRecords,extension[patient-birthPlace].value[x].district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-child-vr
-827,Fetal Death,10,35,3,County of Delivery,CNTYO,NCHS Instruction Manual: Part 8,,BFDR,PatientDecedentFetus,extension[birthPlace].value[x].district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-decedent-fetus
+474,Natality,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,VRCPL,PatientChildVitalRecords,extension[patient-birthPlace].value[x].district.extension[districtCode],integer,See [CountyCodes],B,,,,,Patient-child-vr
+827,Fetal Death,10,35,3,County of Delivery,CNTYO,NCHS Instruction Manual: Part 8,,BFDR,PatientDecedentFetus,extension[birthPlace].value[x].district.extension[districtCode],integer,See [CountyCodes],B,,,,,Patient-decedent-fetus
 1351,Birth Infant Death,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,,,,,,,,,,,
 439,Mortality Roster,10,199,4,Date of Death--Year,DOD_YR,"4 digit year; <=current year, 9999",,VRDR,DeathDate,value,dateTime,Required for processing,,,,,,DeathDate
 1192,ITOP,10,36,2,Date ITOP Report Completed - Day,DOC_DY,01-31 (based on month),,not implemented,not implemented,,,,,,,,,not implemented
@@ -496,9 +496,9 @@ For Canadian Provinces:
    SK  SASKATCHEWAN
    YT  YUKON",,not implemented,not implemented,,,,,,,,,not implemented
 28,Mortality,21,211,2,Date of Birth--Day,DOB_DY,"01-31 (based on month), 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,y,,,,Decedent
-293,Surveillance,21,218,3,Decedent's Residence--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.district.extension[countyCode],string,see [CountyCodes],,y,,,,Decedent
-485,Natality,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-mother-vr
-838,Fetal Death,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-mother-vr
+293,Surveillance,21,218,3,Decedent's Residence--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.district.extension[districtCode],string,see [CountyCodes],,y,,,,Decedent
+485,Natality,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.district.extension[districtCode],integer,See [CountyCodes],B,,,,,Patient-mother-vr
+838,Fetal Death,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,VRCPL,PatientMotherVitalRecords,address.district.extension[districtCode],integer,See [CountyCodes],B,,,,,Patient-mother-vr
 1362,Birth Infant Death,21,73,3,Residence of Mother--County,COUNTYC,NCHS Instruction Manual: Part 8,,,,,,,,,,,,
 450,Mortality Roster,21,468,50,Mother's Maiden Surname,MOMMAIDNAME,"Free form literal, left justified; if unknown, leave blank",,VRDR,DecedentMother,"name.family , name.type=maiden",string ,-,,DMOMMDN,,,,DecedentMother
 1203,ITOP,21,130,5,Patient's Residence - Zip Code,ZIP,5 digits,,not implemented,not implemented,,,,,,,,,not implemented
@@ -686,7 +686,7 @@ For Canadian Provinces:
 1208,ITOP,26,247,2,Old NCHS residence state code,RESSTATE,See codes used before new 200x codes -- receiving state will recode,,not implemented,not implemented,,,,,,,,,not implemented
 34,Mortality,27,227,2,Decedent's Residence--Country,COUNTRYC,NCHS Instruction Manual: Part 8,,VRDR,Decedent,address.country,string,[ValueSetResidenceCountryVitalRecords],,y,,,,Decedent
 299,Surveillance,27,228,3,County of Death Occurrence,COD,"NCHS Instruction Manual: Part 8
-Variable description (""Contents"") edited; same as NCHS ""Facility Name--County""",,VRDR,DeathLocation,address.district.extension[countyCode],integer,see [CountyCodes],,y,,,,DeathLocation
+Variable description (""Contents"") edited; same as NCHS ""Facility Name--County""",,VRDR,DeathLocation,address.district.extension[districtCode],integer,see [CountyCodes],,y,,,,DeathLocation
 491,Natality,27,87,2,Date of Birth (Father)--Day,FDOB_DY,"01-31 (based on month), 99",,VRCPL,RelatedPersonFatherNaturalVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,RelatedPerson-father-natural-vr
 844,Fetal Death,27,87,2,Date of Birth (Father)--Day,FDOB_DY,"01-31 (based on month), 99",,VRCPL,RelatedPersonFatherNaturalVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,RelatedPerson-father-natural-vr
 1368,Birth Infant Death,27,87,2,Date of Birth (Father)--Day,FDOB_DY,"01-31 (based on month), 99",,,,,,,,,,,,
@@ -1635,7 +1635,7 @@ Enter full text if it does not fit above (blank for natural death)",,VRDR,Injury
 937,Fetal Death,120,501,1,Risk Factors--Number Previous Cesareans--Edit Flag,NPCES_BYPASS,"0 = Edit Passed
 1 = Edit Failed, Verified",,BFDR,ObservationNumberPreviousCesareans,value.extension[bypassEditFlag].value,codeable,"[NumberPreviousCesareansEditFlagsVS], <br />See [Handling of edit flags] ",J,,,,,Observation-edit-flag-number-previous-cesareans
 392,Surveillance,121,2383,3,County of Injury code,COUNTYCODE_I,"NCHS Instruction Manual: Part 8; 999=unknown; 
-Blank for natural death.",i,VRDR,InjuryLocation,address.district.extension[ countyCode].value,integer,see [CountyCodes],,,,,,InjuryLocation
+Blank for natural death.",i,VRDR,InjuryLocation,address.district.extension[districtCode].value,integer,see [CountyCodes],,,,,,InjuryLocation
 585,Natality,121,742,3,Father's Race Tabulation Variable 21C,FRACE21C,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[SecondOtherPacificIslanderCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr
 1462,Birth Infant Death,121,742,3,Father's Race Tabulation Variable 21C,FRACE21C,NCHS Appendix E,,,,,,,,,,,,
 938,Fetal Death,121,502,1,Infections Present--Gonorrhea(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),GON,"Y = Yes
