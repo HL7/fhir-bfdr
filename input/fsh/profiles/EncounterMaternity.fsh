@@ -5,7 +5,7 @@ Title: "Encounter - Maternity"
 Description: "This Encounter profile represents the mother's maternity encounter."
 * extension contains   // Extension makes it possible to query this encounter from bundle with simple FHIRPath query
     ExtensionRoleVitalRecords named role 1..1
-* extension[role].valueCodeableConcept = $v3-RoleCode#MTH (exactly)
+* extension[role].valueCodeableConcept = $v3-RoleCode#MTH 
 * extension[role] ^short = "Differentiates Birth and Maternity Encounters."
 * identifier MS
 * status MS
