@@ -3,17 +3,6 @@ InstanceOf: CompositionProviderLiveBirthReport
 Title: "Composition - Provider Live Birth Report - BabyG Quinn"
 Description: "Composition - Provider Live Birth Report: BabyG Quinn example"
 Usage: #example
-* extension[Extension-live-birth-certificate-number]
-  * valueIdentifier
-    * type = $v2-0203#BCT
-    * value = "15075"
-* extension[Extension-live-birth-local-file-number]
-  * valueIdentifier
-    * type = $v2-0203#BCFN
-    * value = "444455555"
-* extension[Extension-date-filed-by-registrar]
-  * valueDateTime = "2019-02-12"
-* identifier.value = "2019NJ15075"
 * status = #final
 * type = $loinc#68998-4 "U.S. standard certificate of live birth - 2003 revision"
 * insert addReferenceComposition(subject,Patient, patient-child-babyg-quinn)

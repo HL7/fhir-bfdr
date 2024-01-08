@@ -247,9 +247,10 @@ groups:
   BFDRBundles:
     name: Bundles
     resources:
-      - BundleDocumentBFDR
-      - DemographicCodedContentBundleBFDR
-      - CodedCauseOfFetalDeathBundleBFDR
+      - BundleDocumentBirthReport
+      - BundleDocumentFetalDeathReport
+      - BundleDocumentDemographicCodedContent
+      - BundleDocumentCodedCauseOfFetalDeath
   
   BFDRCompositionsEHRtoVRO:
     name: Compositions EHR to VRO
@@ -275,12 +276,12 @@ groups:
       - EncounterBirth
       - EncounterMaternity
       - LocationBFDR
+      - ExtensionEncounterMaternityReference
 
   BFDRProfilesNewbornFetus:
     name: Profiles Newborn/Fetus
     resources:
       - ObservationApgarScore
-      - ObservationBirthPluralityOfPregnancy
       - ObservationBirthWeight
       - ObservationFetalPresentation
       - ObservationGestationalAgeAtDelivery
@@ -289,6 +290,7 @@ groups:
       - ObservationMotherDeliveryWeight
       - ObservationNumberFetalDeathsThisDelivery
       - ObservationNumberLiveBirthsThisDelivery
+      
       
   BFDRProfilesAbnormalConditionoftheNewborn:
     name: Profiles Abnormal Condition of the Newborn (73812-0)
@@ -405,23 +407,8 @@ groups:
 
   BFDRProfilesPregnancyInformation:
     name: Other information about pregnancy (not used by birth and fetal death use cases)
-      - ObservationBirthPluralityOfPregnancy
-
-  BFDRExtensionsAdministrative:
-    name: Extensions
     resources:
-      - AuxiliaryStateIdentifier1
-      - AuxiliaryStateIdentifier2
-      - CertificateNumber
-      - ExtensionDateFiledByRegistrar
-      - ExtensionDatereceivedByRegistrar
-      - ExtensionEncounterMaternityReference
-      - ExtensionFetalDeathLocalFileNumber
-      - ExtensionFetalDeathReportNumber
-      - ExtensionLiveBirthCertificateNumber
-      - ExtensionLiveBirthLocalFileNumber
-
-  
+      - ObservationBirthPluralityOfPregnancy
 
   BFDRCodeSystems:
     name: CodeSystems

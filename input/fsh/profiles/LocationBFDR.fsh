@@ -31,6 +31,8 @@ Description: "Location used for source/destination of transfers and location of 
   * city 
     * ^short = "City"
     * extension[cityCode] ^short = "City Code"
+  * postalCode ^short = "Postal Code"
+  * country ^short = "Country"
   * extension[predir] ^short = "Predirectional"
   * extension[postdir] ^short = "Postdirectional"
   * extension[stname] ^short = "Street Name"
