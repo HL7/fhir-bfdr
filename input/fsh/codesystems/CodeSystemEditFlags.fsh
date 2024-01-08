@@ -1,4 +1,4 @@
-CodeSystem: CodeSystemEditFlags
+CodeSystem: EditFlagsCS
 Id: CodeSystem-edit-flags
 Title: "CodeSystem - Birth Edit Flags"
 Description: "This code system contains codes to represent edit flags specific to BFDR. Additional edit flag codes are located in [CodeSystemEditFlagsVitalRecords]"
