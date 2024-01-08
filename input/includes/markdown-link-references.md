@@ -72,7 +72,7 @@
 [withinCityLimitsIndicator]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-within-city-limits-indicator-vr.html
 [motherOrFather]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html
 [JFI]: https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-AuxiliaryStateIdentifier1.html
-[birthPlace]: http://hl7.org/fhir/R4/extension-patient-birthplace.html
+[birthPlace]: http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 <!---from VRCL-->
 [ObservationAutopsyPerformedIndicatorVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Observation-autopsy-performed-indicator-vr.html
 [ObservationCodedRaceAndEthnicityVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-coded-race-and-ethnicity-vr.html
