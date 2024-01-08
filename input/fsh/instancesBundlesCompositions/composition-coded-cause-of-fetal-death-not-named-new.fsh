@@ -3,11 +3,6 @@ InstanceOf: CompositionCodedCauseOfFetalDeath
 Title: "Composition - Coded Cause of Fetal Death - Fetus Not Named"
 Description: "Composition - Coded Cause of Fetal Death: Fetus Not Named example"
 Usage: #example
-* extension[Extension-fetal-death-report-number]
-  * valueIdentifier
-    * type = $v2-0203#FDR
-    * value = "9876"
-* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27db"
 * status = #final
 * type = $loinc#86804-2 "Cause of death classification and related information Document"
 * subject.display  = "Patient - Decedent Fetus (Fetus Not Named)"

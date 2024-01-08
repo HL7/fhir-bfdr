@@ -37,9 +37,10 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='StructureDefinition-Bundle-demographic-coded-content.html'>DemographicCodedContentBundleBFDR</a></td><td> New </td><td> New Addition </td></tr>
-<tr><td> <a href='StructureDefinition-Bundle-coded-cause-of-fetal-death.html'>DemographicCodedCauseOfFetalDeathBundleBFDR</a></td><td> New </td><td> New Addition </td></tr>
-<tr><td> <a href='StructureDefinition-Bundle-document-bfdr.html'>BundleDocumentBFDR</a></td><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Bundle-document-bfdr.html'>BFDR</a></td><td> - </td></tr>
+<tr><td> <a href='StructureDefinition-Bundle-document-birth-report.html'>BundleDocumentBirthReport</a></td><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Bundle-document-bfdr.html'>BFDR</a></td><td> Separated Birth and Fetal Death into separate bundles </td></tr>
+<tr><td> <a href='StructureDefinition-Bundle-document-coded-cause-of-fetal-death.html'>BundleDocumentDemographicCodedCauseOfFetalDeath</a></td><td> New </td><td> New Addition </td></tr>
+<tr><td> <a href='StructureDefinition-Bundle-document-demographic-coded-content.html'>BundleDocumentDemographicCodedContent</a></td><td> New </td><td> New Addition </td></tr>
+<tr><td> <a href='StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport</a></td><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Bundle-document-bfdr.html'>BFDR</a></td><td> Separated Birth and Fetal Death into separate bundles </td></tr>
 <tr><td> <a href='StructureDefinition-Composition-coded-cause-of-fetal-death.html'>CompositionCodedCauseOfFetalDeath</a></td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Composition-coded-cause-of-fetal-death.html'>BFDR</a></td><td>-</td></tr>
 <tr><td> <a href='StructureDefinition-Composition-coded-race-and-ethnicity.html'>CompositionCodedRaceAndEthnicity</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Composition-coded-race-and-ethnicity.html'>BFDR</a></td><td>-</td></tr>
 <tr><td> <a href='StructureDefinition-Composition-jurisdiction-fetal-death-report.html'>CompositionJurisdictionFetalDeathReport</a></td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Composition-jurisdiction-fetal-death-report.html'>BFDR</a></td><td> emergingIssues section added </td></tr>
@@ -141,32 +142,6 @@
 </tbody>
 </table>
 
-
-
-### STU2 Extensions
-
-<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
-<tbody>
-<tr>
-<td style='background-color:#98c1d9; text-align: center; width: 37%;'><b>Name</b></td>
-<td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
-<td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
-</tr>
-<tr><td> <a href='StructureDefinition-AuxiliaryStateIdentifier1.html'>AuxiliaryStateIdentifier1</a></td><td> New </td><td> New Addition </td></tr>
-<tr><td> <a href='StructureDefinition-AuxiliaryStateIdentifier2.html'>AuxiliaryStateIdentifier2</a></td><td> New </td><td> New Addition </td></tr>
-<tr><td> <a href='StructureDefinition-CertificateNumber.html'>CertificateNumber</a></td><td> New </td><td> New Addition </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-date-filed-by-registrar.html'>ExtensionDateFiledByRegistrar</a></td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-date-filed-by-registrar.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-date-received-by-registrar.html'>ExtensionDateReceivedByRegistrar</a></td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-date-received-by-registrar.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-encounter-maternity-reference.html'>ExtensionEncounterMaternityReference</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-encounter-maternity-reference.html'>BFDR</a></td><td> -  </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-fetal-death-local-file-number.html'>ExtensionFetalDeathLocalFileNumber</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-fetal-death-local-file-number.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-fetal-death-report-number.html'>ExtensionFetalDeathReportNumber</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-fetal-death-report-number.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-live-birth-certificate-number.html'>ExtensionLiveBirthCertificateNumber</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-live-birth-certificate-number.html'>BFDR</a></td><td> - </td></tr>
-<tr><td> <a href='StructureDefinition-Extension-live-birth-local-file-number.html'>ExtensionLiveBirthLocalFileNumber</a> </td><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-live-birth-local-file-number.html'>BFDR</a></td><td> - </td></tr>
-</tbody>
-</table>
-
-
-
 ### STU2 Valuesets
 
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
@@ -258,6 +233,14 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Current Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
+
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-date-filed-by-registrar.html'>ExtensionDateFiledByRegistrar</a></td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-date-received-by-registrar.html'>ExtensionDateReceivedByRegistrar</a></td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-encounter-maternity-reference.html'>ExtensionEncounterMaternityReference</a> </td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-fetal-death-local-file-number.html'>ExtensionFetalDeathLocalFileNumber</a> </td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-fetal-death-report-number.html'>ExtensionFetalDeathReportNumber</a> </td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-live-birth-certificate-number.html'>ExtensionLiveBirthCertificateNumber</a> </td><td> Deleted </td><td> Deprecated </td></tr>
+<tr><td> <a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-live-birth-local-file-number.html'>ExtensionLiveBirthLocalFileNumber</a> </td><td> Deleted </td><td> Deprecated </td></tr>
 <tr><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/StructureDefinition-Extension-replacement-status.html'>ExtensionReplacementStatus</a></td><td> Deleted </td><td> Deprecated </td></tr>
 </tbody>
 </table>

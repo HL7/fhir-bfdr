@@ -70,6 +70,8 @@
 [roleVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html
 [withinCityLimitsIndicator]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-within-city-limits-indicator-vr.html
 [motherOrFather]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html
+[JFI]: https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-AuxiliaryStateIdentifier1.html
+[birthPlace]: http://hl7.org/fhir/R4/extension-patient-birthplace.html
 <!---from VRCL-->
 [ObservationAutopsyPerformedIndicatorVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Observation-autopsy-performed-indicator-vr.html
 [ObservationCodedRaceAndEthnicityVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-coded-race-and-ethnicity-vr.html
@@ -189,3 +191,4 @@
 [ObservationEditFlagNumberPrenatalCareVisits]: StructureDefinition-Observation-edit-flag-number-prenatal-care-visits.html
 [ObservationEditFlagNumberPreviousCesareans]: StructureDefinition-Observation-edit-flag-number-previous-cesareans.html
 [ObservationEditFlagPlurality]: StructureDefinition-Observation-edit-flag-plurality.html
+[Extension-relatedperson-birthplace-vr]: http://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-relatedperson-birthplace-vr.html

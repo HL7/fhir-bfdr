@@ -3,11 +3,6 @@ InstanceOf: CompositionCodedRaceAndEthnicity
 Title: "Composition - Coded Race and Ethnicity - Baby G Quinn"
 Description: "Composition - Coded Race and Ethnicity: Baby G Quinn example"
 Usage: #example
-//* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27dc"
-* extension[Extension-live-birth-certificate-number]
-  * valueIdentifier
-    * type = $v2-0203#BCT
-    * value = "15075"
 * status = #final
 * type = $loinc#86805-9 "Race and ethnicity information Document"
 * subject.display = "Patient - Child (Baby G Quinn)" // = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"

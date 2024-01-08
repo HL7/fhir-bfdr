@@ -82,6 +82,15 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
+  <td>10</td>
+  <td>County of Delivery</td>
+  <td>CNTYO</td>
+  <td>extension[birthPlace].value[x].district.extension[countyCode]</td>
+  <td>integer</td>
+  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#county-codes'>CountyCodes</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
   <td>151</td>
   <td>Plurality</td>
   <td>PLUR</td>
@@ -170,6 +179,13 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
 
 
 ### Form Mapping
+<details>
+
+<summary>
+
+<strong class='context-menu' >Form Mapping</strong>
+
+</summary>
 <table class='grid'>
 <thead>
   <tr>
@@ -278,3 +294,6 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
 </tr>
 </tbody>
 </table>
+
+</details>
+<p></p>

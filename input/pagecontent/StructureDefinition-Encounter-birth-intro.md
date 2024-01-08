@@ -37,48 +37,12 @@ This Encounter can reference the mother's maternity encounter using the partOf d
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
-  <td>12</td>
-  <td>Facility ID (NPI) - if available</td>
-  <td>FNPI</td>
-  <td>location.location.id</td>
-  <td>string</td>
-  <td></td>
-</tr>
-<tr>
-  <td style='text-align: center'>Natality</td>
-  <td>13</td>
-  <td>Facility ID (State-Assigned)</td>
-  <td>SFN</td>
-  <td>location.location.identifier</td>
-  <td>Identifier</td>
-  <td></td>
-</tr>
-<tr>
-  <td style='text-align: center'>Natality</td>
   <td>231</td>
   <td>Was Infant Transferred Within 24 Hours of Delivery?</td>
   <td>ITRAN</td>
   <td>hospitalization.dischargeDisposition="other-hcf"</td>
   <td>codeable</td>
   <td><a href='http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition'>USCoreDischargeDispositionVS</a>, <br />See <a href='usage.html#mother-or-infant-transferred'>note on patient transfers</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>Natality</td>
-  <td>253</td>
-  <td>Name of Facility of Birth</td>
-  <td>HOSP</td>
-  <td>location.location.name</td>
-  <td>string</td>
-  <td></td>
-</tr>
-<tr>
-  <td style='text-align: center'>Natality</td>
-  <td>303</td>
-  <td>Facility Infant Transferred To (if transferred w/in 24 hours)</td>
-  <td>HOSPTO</td>
-  <td>hospitalization.destination.name</td>
-  <td>string</td>
-  <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -134,21 +98,9 @@ This Encounter can reference the mother's maternity encounter using the partOf d
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>5</td>
-  <td>Facility Name / Address</td>
-  <td>location.location</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
   <td style='text-align: center'>12</td>
   <td>Date Certified</td>
   <td>participant:certifier.period.start</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>17</td>
-  <td>Facility Id.</td>
-  <td>identifier</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>

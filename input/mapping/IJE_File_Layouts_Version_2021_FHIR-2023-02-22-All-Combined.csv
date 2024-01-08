@@ -252,7 +252,7 @@ N = Not Yet Determined",,,,,,,,,,,,
 1350,Birth Infant Death,9,33,2,Date of Birth (Infant)--Day,IDOB_DY,01-31 (based on month),,,,,,,,,,,,
 17,Mortality,10,128,10,Decedent's Legal Name--Suffix,SUFF,,,VRDR,Decedent,"name.suffix , name.use = official",string,-,,y,,,,Decedent
 474,Natality,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,VRCPL,PatientChildVitalRecords,extension[patient-birthPlace].value[x].district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-child-vr
-827,Fetal Death,10,35,3,County of Delivery,CNTYO,NCHS Instruction Manual: Part 8,,BFDR,EncounterMaternity,location.location.address.district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-decedent-fetus
+827,Fetal Death,10,35,3,County of Delivery,CNTYO,NCHS Instruction Manual: Part 8,,BFDR,PatientDecedentFetus,extension[birthPlace].value[x].district.extension[countyCode],integer,See [CountyCodes],B,,,,,Patient-decedent-fetus
 1351,Birth Infant Death,10,35,3,County of Birth,CNTYO,NCHS Instruction Manual: Part 8,,,,,,,,,,,,
 439,Mortality Roster,10,199,4,Date of Death--Year,DOD_YR,"4 digit year; <=current year, 9999",,VRDR,DeathDate,value,dateTime,Required for processing,,,,,,DeathDate
 1192,ITOP,10,36,2,Date ITOP Report Completed - Day,DOC_DY,01-31 (based on month),,not implemented,not implemented,,,,,,,,,not implemented
@@ -297,8 +297,8 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 19,Mortality,12,139,50,Father's Surname,FLNAME,,,VRDR,DecedentFather,name.family,string,-,,y,,,,DecedentFather
 1194,ITOP,12,48,3,County of Termination,CNTY_T,NCHS Instruction Manual: Part 8,,not implemented,not implemented,,,,,,,,,not implemented
 441,Mortality Roster,12,205,2,Date of Birth--Day,DOB_DY,"01-31 (based on month), 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent
-476,Natality,12,39,12,Facility ID (NPI) - if available,FNPI,,,BFDR,EncounterBirth,location.location.id,string,,B,,,,,Encounter-birth
-829,Fetal Death,12,39,12,Facility ID (NPI) - If available,FNPI,,,BFDR,EncounterMaternity,location.location.id,string,,B,,,,,Encounter-maternity
+476,Natality,12,39,12,Facility ID (NPI) - if available,FNPI,,,BFDR,LocationBFDR,identifier[NPI],string,,B,,,,,Location-bfdr
+829,Fetal Death,12,39,12,Facility ID (NPI) - If available,FNPI,,,BFDR,LocationBFDR,identifier[NPI],string,,B,,,,,Location-bfdr
 1353,Birth Infant Death,12,39,12,Facility ID (NPI) - if available,FNPI,,,,,,,,,,,,,
 285,Surveillance,13,197,3,Decedent's Age--Units,AGE ,"001 - 135, 999
 Codes: If AGETYPE = 1 then 001-135, 999
@@ -311,8 +311,8 @@ Codes: If AGETYPE = 1 then 001-135, 999
 F = Female
 U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,y,,,,Decedent
 442,Mortality Roster,13,207,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent
-477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,EncounterBirth,location.location.identifier,Identifier,,B,,,,,Encounter-birth
-830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,EncounterMaternity,location.location.identifier,Identifier,,B,,,,,Encounter-maternity
+477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,identifier.extension[JFI],Identifier,,B,,,,,Location-bfdr
+830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,identifier.extension[JFI],Identifier,,B,,,,,Location-bfdr
 1354,Birth Infant Death,13,51,4,Facility ID (State-Assigned),SFN,,,,,,,,,,,,,
 1195,ITOP,13,51,1,Place Type Where Termination Occurred,TPLACE,"1 = Hospital
 2 = Clinic
@@ -2512,20 +2512,20 @@ U = Unknown",,,,code = 434621000124103,,,,,,,,
 235,Mortality,223,4052,10,Certifier's Suffix Name,CERTSUFFIX, ,i,VRDR,Certifier,"name.suffix , name.use = official",string,-,,,,,,Certifier
 688,Natality,224,902,1,Congenital Anomalies of the Newborn--Gastroschisis,GAST,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=72951007 (Gastroschisis (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1565,Birth Infant Death,224,902,1,Congenital Anomalies of the Newborn--Gastroschisis,GAST,"Y, N, U",,,,,,,,,,,,
-1041,Fetal Death,224,2905,50,Name of Delivery Facility,HOSP_D,Delivery facility name literal,,BFDR,EncounterMaternity,location.location.name,string,,B,,,,,Encounter-maternity
+1041,Fetal Death,224,2905,50,Name of Delivery Facility,HOSP_D,Delivery facility name literal,,BFDR,LocationBFDR,name,string,,B,,,,,Location-bfdr
 236,Mortality,224,4062,10,Certifier - Street number,CERTSTNUM,,i,VRDR,Certifier,address.extension[stnum],string,-,,,,,,Certifier
 689,Natality,225,903,1,Congenital Anomalies of the Newborn--Limb Reduction Defect,LIMB,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=67341007 (Longitudinal deficiency of limb (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1566,Birth Infant Death,225,903,1,Congenital Anomalies of the Newborn--Limb Reduction Defect,LIMB,"Y, N, U",,,,,,,,,,,,
 237,Mortality,225,4072,10,Certifier - Pre Directional,CERTPREDIR,,i,VRDR,Certifier,address.extension[predir],string,-,,,,,,Certifier
-1042,Fetal Death,225,2955,10,Place of Delivery Street number,STNUM_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[stnum],string,,B,,,,,Encounter-maternity
+1042,Fetal Death,225,2955,10,Place of Delivery Street number,STNUM_D,parsed delivery address,,BFDR,LocationBFDR,address.extension[stnum],string,,B,,,,,Location-bfdr
 690,Natality,226,904,1,Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate,CL,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=80281008 (Cleft lip (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1567,Birth Infant Death,226,904,1,Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate,CL,"Y, N, U",,,,,,,,,,,,
-1043,Fetal Death,226,2965,10,Place of Delivery Pre Directional,PREDIR_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[predir],string,,B,,,,,Encounter-maternity
+1043,Fetal Death,226,2965,10,Place of Delivery Pre Directional,PREDIR_D,parsed delivery address,,BFDR,LocationBFDR,address.extension[predir],string,,B,,,,,Location-bfdr
 238,Mortality,226,4082,28,Certifier - Street name,CERTSTRNAME,,i,VRDR,Certifier,address.extension[stname],string,-,,,,,,Certifier
 691,Natality,227,905,1,Congenital Anomalies of the Newborn--Cleft Palate Alone,CP,"Y, N, U",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=87979003 (Cleft palate (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
 1568,Birth Infant Death,227,905,1,Congenital Anomalies of the Newborn--Cleft Palate Alone,CP,"Y, N, U",,,,,,,,,,,,
 239,Mortality,227,4110,10,Certifier - Street designator,CERTSTRDESIG,,i,VRDR,Certifier,address.extension[stdesig],string,-,,,,,,Certifier
-1044,Fetal Death,227,2975,50,Place of Delivery Street name,STNAME_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[stname],string,,B,,,,,Encounter-maternity
+1044,Fetal Death,227,2975,50,Place of Delivery Street name,STNAME_D,parsed delivery address,,BFDR,LocationBFDR,address.extension[stname],string,,B,,,,,Location-bfdr
 692,Natality,228,906,1,Congenital Anomalies of the Newborn--Down Syndrome,DOWT,"C = Confirmed
 P = Pending
 N = No
@@ -2535,7 +2535,7 @@ P = Pending
 N = No
 U = Unknown",,,,,,,,,,,,
 240,Mortality,228,4120,10,Certifier - Post Directional,CERTPOSTDIR,,i,VRDR,Certifier,address.extension[postdir],string,-,,,,,,Certifier
-1045,Fetal Death,228,3025,10,Place of Delivery Street designator,STDESIG_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[stdesig],string,,B,,,,,Encounter-maternity
+1045,Fetal Death,228,3025,10,Place of Delivery Street designator,STDESIG_D,parsed delivery address,,BFDR,LocationBFDR,address.extension[stdesig],string,,B,,,,,Location-bfdr
 693,Natality,229,907,1,Congenital Anomalies of the Newborn--Suspected Chromosomal disorder,CDIT,"C = Confirmed
 P = Pending
 N = No
@@ -2544,9 +2544,9 @@ U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=409709004 (Chromosom
 P = Pending
 N = No
 U = Unknown",,,,,,,,,,,,
-1046,Fetal Death,229,3035,10,Place of Delivery Post Directional,POSTDIR_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[postdir],string,,B,,,,,Encounter-maternity
+1046,Fetal Death,229,3035,10,Place of Delivery Post Directional,POSTDIR_D,parsed delivery address,,BFDR,LocationBFDR,address.extension[postdir],string,,B,,,,,Location-bfdr
 241,Mortality,229,4130,7,Certifier - Unit or apt number,CERTUNITNUM,,i,VRDR,Certifier,address.extension[unitnum],string,-,,,,,,Certifier
-1047,Fetal Death,230,3045,7,Place of Delivery Unit or Apartment Number,APTNUMB_D,parsed delivery address,,BFDR,EncounterMaternity,location.location.address.extension[unitnum],string,,B,,,,,Encounter-maternity
+1047,Fetal Death,230,3045,7,Place of Delivery Unit or Apartment Number,APTNUMB_D,parsed delivery address,,BFDR,LocationBFDR,address.extension[unitnum],string,,B,,,,,Location-bfdr
 694,Natality,230,908,1,Congenital Anomalies of the Newborn--Hypospadias,HYPO,"Y = Yes
 N = No
 U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=416010008 (Hypospadias (disorder)),na,See [note on missing congenital anomaly data],B,,,,,Condition-congenital-anomaly-of-newborn
@@ -2554,7 +2554,7 @@ U = Unknown",,BFDR,ConditionCongenitalAnomalyOfNewborn,code=416010008 (Hypospadi
 N = No
 U = Unknown",,,,,,,,,,,,
 242,Mortality,230,4137,50,Long string address for Certifier same as above but allows states to choose the way they capture information.,CERTADDRESS,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, and Post Directional. Jurisdiction should use version of Certifier address that's used in their system versus reprogramming.",i,VRDR,Certifier,address.line ,string,-,,,,,,Certifier
-1048,Fetal Death,231,3052,50,Place of Delivery Street Address,ADDRESS_D,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Place of Delivery address that's used in their system versus reprogramming.",,BFDR,EncounterMaternity,location.location.address.line,string,,B,,,,,Encounter-maternity
+1048,Fetal Death,231,3052,50,Place of Delivery Street Address,ADDRESS_D,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Place of Delivery address that's used in their system versus reprogramming.",,BFDR,LocationBFDR,address.line,string,,B,,,,,Location-bfdr
 695,Natality,231,909,1,Was Infant Transferred Within 24 Hours of Delivery?,ITRAN,"Y = Yes
 N = No
 U = Unknown",,BFDR,EncounterBirth,"hospitalization.dischargeDisposition=""other-hcf""",codeable,"[USCoreDischargeDispositionVS], <br />See [note on patient transfers]",B,,,,,Encounter-birth
@@ -2590,16 +2590,16 @@ For Canadian Provinces:
    QC  QUEBEC  
    SK  SASKATCHEWAN
    YT  YUKON",i,VRDR,Certifier,address.state,string,[ValueSetStatesTerritoriesAndProvincesVitalRecords],,,,,,Certifier
-1049,Fetal Death,232,3102,9,Place of Delivery Zip code and Zip+4,ZIPCODE_D,"Valid 5+4 digit zipcode; 3 space 3 for Canada; unknown portion left blank; do not include the ""-""",,BFDR,EncounterMaternity,location.location.address.postalCode,string,,B,,,,,Encounter-maternity
+1049,Fetal Death,232,3102,9,Place of Delivery Zip code and Zip+4,ZIPCODE_D,"Valid 5+4 digit zipcode; 3 space 3 for Canada; unknown portion left blank; do not include the ""-""",,BFDR,LocationBFDR,address.postalCode,string,,B,,,,,Location-bfdr
 697,Natality,233,911,1,Is Infant Being Breastfed at discharge? (RECOMMENDED CHANGE EFFECTIVE 2004),BFED,"Y = Yes
 N = No
 U = Unknown",,BFDR,ObservationInfantBreastfedAtDischarge,value,boolean,,B,,,,,Observation-infant-breastfed-at-discharge
 1574,Birth Infant Death,233,911,1,"Is Infant Being Breastfed?  (RECOMMENDED CHANGE TO ""AT DISCHARGE"" EFFECTIVE 2004)",BFED,"Y = Yes
 N = No
 U = Unknown",,,,,,,,,,,,
-1050,Fetal Death,233,3111,28,Place of Delivery County (literal),CNTY_D,Valid county literal or blank if unknown,,BFDR,EncounterMaternity,location.location.address.district,string,,B,,,,,Encounter-maternity
+1050,Fetal Death,233,3111,28,Place of Delivery County (literal),CNTY_D,Valid county literal or blank if unknown,,BFDR,LocationBFDR,address.district,string,,B,,,,,Location-bfdr
 245,Mortality,233,4217,28,"State, U.S. Territory or Canadian Province of Certifier - literal",CERTSTATE,Valid text for U.S. State or Territory or Canadian Province,i,VRDR,Certifier,address.state (expanded from 2 letter code),string,See [StateLiterals],,,,,,Certifier
-1051,Fetal Death,234,3139,28,Place of Delivery City/Town/Place (literal) ,CITY_D,Valid city/town/place literal or blank if unknown,,BFDR,EncounterMaternity,location.location.address.city,string,,B,,,,,Encounter-maternity
+1051,Fetal Death,234,3139,28,Place of Delivery City/Town/Place (literal) ,CITY_D,Valid city/town/place literal or blank if unknown,,BFDR,LocationBFDR,address.city,string,,B,,,,,Location-bfdr
 698,Natality,234,912,4,NCHS USE ONLY: Receipt date -- Year,R_YR,leave blank,,not implemented,not implemented,,,,B,,"Code used on 3 tabs: N, FD, & BID
 Code sent back to state VRO
 For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
@@ -2612,8 +2612,8 @@ For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].val
 Decision: Mimic VRDR",Needs work,FHIR-41386,Parameters-coding-status-values-vr
 1576,Birth Infant Death,235,916,2,NCHS USE ONLY: Receipt date -- Month,R_MO,leave blank,,,,,,,,,,,,
 247,Mortality,235,4254,8,Certifier Date Signed,CERTDATE,Date signed by Certifier in mmddyyyy format,i,VRDR,DeathCertification,performed,dateTime,-,,,,,,DeathCertification
-1052,Fetal Death,235,3167,28,"State, U.S. Territory or Canadian Province of Place of Delivery - literal",STATE_D,"valid state, U.S. territory or Canadian province literal, otherwise blank",,BFDR,EncounterMaternity,location.location.address.state (expanded from 2 letter code),string,See [StateLiterals],B,,,,,Encounter-maternity
-1053,Fetal Death,236,3195,28,Place of Delivery Country (literal),COUNTRY_D,Valid country literal or blank if unknown,,BFDR,EncounterMaternity,location.location.address.country (expanded from 2 letter code),string,See [CountryLiterals],B,,,,,Encounter-maternity
+1052,Fetal Death,235,3167,28,"State, U.S. Territory or Canadian Province of Place of Delivery - literal",STATE_D,"valid state, U.S. territory or Canadian province literal, otherwise blank",,BFDR,LocationBFDR,address.state (expanded from 2 letter code),string,See [StateLiterals],B,,,,,Location-bfdr
+1053,Fetal Death,236,3195,28,Place of Delivery Country (literal),COUNTRY_D,Valid country literal or blank if unknown,,BFDR,LocationBFDR,address.country (expanded from 2 letter code),string,See [CountryLiterals],B,,,,,Location-bfdr
 700,Natality,236,918,2,NCHS USE ONLY: Receipt date -- Day,R_DY,leave blank,,not implemented,not implemented,,,,B,,"Code used on 3 tabs: N, FD, & BID
 Code sent back to state VRO
 For R_YR, R_MO, R_DY, VRDR uses CodingStatusValues  parameter[receiptDate].value   date    See [PartialDatesAndTimes]
@@ -2703,7 +2703,7 @@ types of relationships.",i,VRDR,Decedent,maritalStatus.text ,string,-,,,,,,Deced
 1593,Birth Infant Death,252,1183,50,City/town/place of birth (Literal),BRTHCITY,Valid city/town/place literal,,,,,,,,,,,,
 264,Mortality,252,4434,1,Blank for One-Byte Field 5,PLACE1_5,alphanumeric,,VRCPL,ObservationEmergingIssuesVitalRecords,component[EmergingIssue1_5].value,string(1),,,y,,,,EmergingIssues
 1070,Fetal Death,253,3674,50,Mother's Residence Street Address,ADDRESS,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Mother's Residence address that's used in their system versus reprogramming.",,VRCPL,PatientMotherVitalRecords,address.line,string,,B,,,,,Patient-mother-vr
-717,Natality,253,1233,50,Name of Facility of Birth,HOSP,Facility name literal,,BFDR,EncounterBirth,location.location.name,string,,B,,,,,Encounter-birth
+717,Natality,253,1233,50,Name of Facility of Birth,HOSP,Facility name literal,,BFDR,LocationBFDR,name,string,,B,,,,,Location-bfdr
 1594,Birth Infant Death,253,1233,50,Name of Facility of Birth,HOSP,Facility name literal,,,,,,,,,,,,
 265,Mortality,253,4435,1,Blank for One-Byte Field 6,PLACE1_6,alphanumeric,,VRCPL,ObservationEmergingIssuesVitalRecords,component[EmergingIssue1_6].value,string(1),,,y,,,,EmergingIssues
 718,Natality,254,1283,50,Mother's First Name,MOMFNAME,Free form literal ,,VRCPL,PatientMotherVitalRecords,"name.given, <br />name.use = official",string,,B,,,,,Patient-mother-vr
@@ -3029,10 +3029,10 @@ N = No, box for race not checked",,VRCPL,ObservationInputRaceAndEthnicityVitalRe
 1642,Birth Infant Death,301,2234,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,,not implemented,,,,,,,,,
 1118,Fetal Death,301,4326,1,Father's Race--Guamanian or Chamorro,FRACE12,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ GuamanianOrChamorro].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",boolean,,B,,,,,RelatedPerson-father-natural-vr
 1119,Fetal Death,302,4327,1,Father's Race--Samoan,FRACE13,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ Samoan].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",boolean,,B,,,,,RelatedPerson-father-natural-vr
-766,Natality,302,2284,50,Facility Mother Moved From (if transferred),HOSPFROM,Literal facility name; blank if not transferred,,BFDR,EncounterMaternity,hospitalization.origin.name,string,,B,,,,,Encounter-maternity
+766,Natality,302,2284,50,Facility Mother Moved From (if transferred),HOSPFROM,Literal facility name; blank if not transferred,,BFDR,LocationBFDR,name,string,,B,,,,,Location-bfdr
 1643,Birth Infant Death,302,2284,50,Facility Mother Moved From (if transferred),HOSPFROM,Literal facility name; blank if not transferred,,,,,,,,,,,,
 1120,Fetal Death,303,4328,1,Father's Race--Other Pacific Islander,FRACE14,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[ OtherPacificIslander].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",boolean,,B,,,,,RelatedPerson-father-natural-vr
-767,Natality,303,2334,50,Facility Infant Transferred To (if transferred w/in 24 hours),HOSPTO,Literal facility name; blank if not transferred,,BFDR,EncounterBirth,hospitalization.destination.name,string,,B,,,,,Encounter-birth
+767,Natality,303,2334,50,Facility Infant Transferred To (if transferred w/in 24 hours),HOSPTO,Literal facility name; blank if not transferred,,BFDR,LocationBFDR,name,string,,B,,,,,Location-bfdr
 1644,Birth Infant Death,303,2334,50,Facility Infant Transferred To (if transferred w/in 24 hours),HOSPTO,Literal facility name; blank if not transferred,,,,,,,,,,,,
 768,Natality,304,2384,20,"Attendant (""Other"" specified text)",ATTEND_OTH_TXT,"Alpha character string when ""Other"" text is specified",,VRCPL,PractitionerVitalRecords,qualification.code.text,string,,B,,,,,Practitioner-vr
 1645,Birth Infant Death,304,2384,20,"Attendant (""Other"" specified text)",ATTEND_OTH_TXT,"Alpha character string when ""Other"" text is specified",,,,,,,,,,,,
@@ -3197,7 +3197,7 @@ or blank",,,,,,,,,,,,
 1155,Fetal Death,338,4714,50,Father's Race - Specify,FRACE_T,"Text, comma delimit multiple entries",,not implemented,not implemented,,,,-,,,,,Observation-race-vr
 802,Natality,338,2964,2,Date Filed by Registrar--Month,REGISTER_MO,12-Jan,,not implemented,not implemented,,,,-,,,,,Extension-date-filed-by-registrar
 1679,Birth Infant Death,338,2964,2,Date Filed by Registrar--Month,REGISTER_MO,12-Jan,,,,,,,,,,,,
-1156,Fetal Death,339,4764,50,Facility Mother Moved From (if transferred),HOSPFROM,Literal facility name; blank if not transferred,,BFDR,EncounterMaternity,hospitalization.origin.name,string,,B,,,,,Encounter-maternity
+1156,Fetal Death,339,4764,50,Facility Mother Moved From (if transferred),HOSPFROM,Literal facility name; blank if not transferred,,BFDR,LocationBFDR,name,string,,B,,,,,Location-bfdr
 803,Natality,339,2966,2,Date Filed by Registrar--Day,REGISTER_DY,01-31 (based on month),,not implemented,not implemented,,,,-,,,,,Extension-date-filed-by-registrar
 1680,Birth Infant Death,339,2966,2,Date Filed by Registrar--Day,REGISTER_DY,01-31 (based on month),,,,,,,,,,,,
 1157,Fetal Death,340,4814,50,Attendant's Name,ATTEND_NAME,Free form literal,,VRCPL,PractitionerVitalRecords,name.text,string,,B,,,,,Practitioner-vr

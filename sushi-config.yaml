@@ -10,7 +10,7 @@ name: Birth And Fetal Death
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 2.0.0-ballot
+version: 2.0.0-CIbuild
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 
@@ -247,9 +247,10 @@ groups:
   BFDRBundles:
     name: Bundles
     resources:
-      - BundleDocumentBFDR
-      - DemographicCodedContentBundleBFDR
-      - CodedCauseOfFetalDeathBundleBFDR
+      - BundleDocumentBirthReport
+      - BundleDocumentFetalDeathReport
+      - BundleDocumentDemographicCodedContent
+      - BundleDocumentCodedCauseOfFetalDeath
   
   BFDRCompositionsEHRtoVRO:
     name: Compositions EHR to VRO
@@ -270,10 +271,11 @@ groups:
       - CompositionCodedRaceAndEthnicity
 
   BFDRProfilesEncounter:
-    name: Profiles Encounter
+    name: Profiles Encounter and Location 
     resources:
       - EncounterBirth
       - EncounterMaternity
+      - LocationBFDR
       - ExtensionEncounterMaternityReference
 
   BFDRProfilesNewbornFetus:
@@ -288,6 +290,7 @@ groups:
       - ObservationMotherDeliveryWeight
       - ObservationNumberFetalDeathsThisDelivery
       - ObservationNumberLiveBirthsThisDelivery
+      
       
   BFDRProfilesAbnormalConditionoftheNewborn:
     name: Profiles Abnormal Condition of the Newborn (73812-0)
@@ -404,21 +407,8 @@ groups:
 
   BFDRProfilesPregnancyInformation:
     name: Other information about pregnancy (not used by birth and fetal death use cases)
-      - ObservationBirthPluralityOfPregnancy
-
-  BFDRExtensionsAdministrative:
-    name: Administrative Extensions
     resources:
-      - AuxiliaryStateIdentifier1
-      - AuxiliaryStateIdentifier2
-      - CertificateNumber
-      - ExtensionDateFiledByRegistrar
-      - ExtensionDatereceivedByRegistrar
-      - ExtensionFetalDeathLocalFileNumber
-      - ExtensionFetalDeathReportNumber
-      - ExtensionLiveBirthCertificateNumber
-      - ExtensionLiveBirthLocalFileNumber
-  
+      - ObservationBirthPluralityOfPregnancy
 
   BFDRCodeSystems:
     name: CodeSystems
@@ -428,6 +418,7 @@ groups:
       - BirthDeliveryOccurredCS
       - FetalDeathCauseOrConditionCS
       - InformantRelationshipToMotherCS
+      - LocationTypeCS
 
   BFDRValueSets:
     name: ValueSets
@@ -447,6 +438,7 @@ groups:
       - HistologicalPlacentalExaminationVS
       - InfectionsDuringPregnancyLiveBirthVS
       - InformantRelationshipToMotherVS
+      - LocationTypeVS
       - MethodOfDispositionVS
       - MothersDateOfBirthEditFlagsVS
       - NewbornCongenitalAnomaliesVS
@@ -464,6 +456,7 @@ groups:
       - BirthAttendantTitlesCM
       - BirthDeliveryOccurredCM 
       - DeliveryRoutesCM 
+      - EstimateOfGestationEditFlagsCM
       - FetalDeathCauseOrConditionCM
       - FetalDeathTimePointsCM
       - FetalPresentationCM

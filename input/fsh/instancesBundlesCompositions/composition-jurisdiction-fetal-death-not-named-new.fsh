@@ -3,23 +3,7 @@ InstanceOf: CompositionJurisdictionFetalDeathReport
 Title: "Composition - Jurisdiction Fetal Death Report - Fetus Not Named"
 Description: "Composition Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example
-* extension[Extension-fetal-death-report-number]
-  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-report-number"
-  * valueIdentifier
-    * type = $v2-0203#FDR
-    * value = "9876"
-* extension[Extension-fetal-death-local-file-number]
-  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-fetal-death-local-file-number"
-  * valueIdentifier
-    * type = $v2-0203#FDRFN
-    * value = "11111-11111"
-* extension[Extension-date-received-by-registrar]
-  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-date-received-by-registrar"
-  * valueDateTime = "2019-02-12"
-// * extension[replacementStatus]
-  //* url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-replacement-status"
-  // * valueCodeableConcept = ReplaceStatusCS#original
-* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27da"
+
 * status = #final
 * type = $loinc#92010-8 "Jurisdiction fetal death report Document"
 * insert addReferenceComposition(subject,Patient, patient-decedent-fetus-not-named)
