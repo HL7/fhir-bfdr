@@ -128,11 +128,19 @@ RuleSet: addReferenceComposition (field, type, id)
 * {field}.reference = "{type}/{id}"
 
 RuleSet: CategorySlicingRules
-* category 1.. MS
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
-* category ^slicing.description = "Slicing requires the given value but allows additional categories"
-* category contains requiredCategory 1..1
+* insert FieldSlicingRules(category, Category)
+
+RuleSet: TypeSlicingRules
+* insert FieldSlicingRules(type, Type)
+
+
+RuleSet: FieldSlicingRules(field,Field)
+* {field} 1.. 
+* {field} ^slicing.discriminator.type = #pattern
+* {field} ^slicing.discriminator.path = "$this"
+* {field} ^slicing.rules = #open
+* {field} ^slicing.description = "Slicing requires the given value but allows additional values"
+* {field} contains required{Field} 1..1
+
 
 
