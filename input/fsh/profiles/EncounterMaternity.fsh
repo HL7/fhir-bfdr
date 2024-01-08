@@ -40,7 +40,7 @@ Description: "This Encounter profile represents the mother's maternity encounter
   * individual only Reference(PractitionerVitalRecords)
 * period MS
 * hospitalization MS
-  * origin only Reference(USCoreLocation)
+  * origin only Reference(LocationBFDR)
   * origin MS
     * ^short = "If mother transferred, facility transferred from"
     * ^definition = "If mother transferred, facility transferred from"
@@ -50,7 +50,7 @@ Description: "This Encounter profile represents the mother's maternity encounter
 * location MS
   * ^short = "Information about the location of delivery"
   * ^definition = "Information about the location of devivery"
-  * location only Reference(USCoreLocation)
+  * location only Reference(LocationBFDR)
   * location MS
     * ^short = "Facility name (if not institution, give street and number)"
     * ^definition = "Facility name (if not institution, give street and number)"

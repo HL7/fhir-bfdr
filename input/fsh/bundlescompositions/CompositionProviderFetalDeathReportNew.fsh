@@ -3,21 +3,6 @@ Parent: Composition
 Id: Composition-provider-fetal-death-report
 Title: "Composition - Provider Fetal Death Report"
 Description: "This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office."
-* extension 
-  * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "url"
-  * ^slicing.rules = #open
-* extension contains
-    ExtensionFetalDeathReportNumber named fetalDeathReportNumber 0..1  and
-    ExtensionFetalDeathLocalFileNumber named fetalDeathLocalFileNumber 0..1  and
-    ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1
-    // ReplaceStatus named replacementStatus 0..1
-* extension[fetalDeathReportNumber] ^short = "State File Number"
-  * value[x] ^short = "Certificate no."
-* extension[fetalDeathLocalFileNumber] ^short = "Local File No."
-  * value[x] ^short = "Local file no."
-* extension[dateReceivedByRegistrar] 
-  * value[x] ^short = "Date received by registrar"
 // Status is deprecated (now flag in message header)
 // * extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 

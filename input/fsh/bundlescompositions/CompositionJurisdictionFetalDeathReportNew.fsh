@@ -3,21 +3,6 @@ Parent: Composition
 Title: "Composition - Jurisdiction Fetal Death Report"
 Description: "This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency."
 Id: Composition-jurisdiction-fetal-death-report 
-* extension 1.. 
-  * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "url"
-  * ^slicing.rules = #open
-* extension contains
-    ExtensionFetalDeathReportNumber named fetalDeathReportNumber 1..1  and
-    ExtensionFetalDeathLocalFileNumber named fetalDeathLocalFileNumber 0..1  and
-    ExtensionDatereceivedByRegistrar named dateReceivedByRegistrar 1..1
-    // ReplaceStatus named replacementStatus 0..1
-* extension[fetalDeathReportNumber] ^short = "State File Number"
-  * value[x] ^short = "Certificate no."
-* extension[fetalDeathLocalFileNumber] ^short = "Local File No."
-  * value[x] ^short = "Local file no."
-* extension[dateReceivedByRegistrar] 
-  * value[x] ^short = "Date received by registrar"
 // Status is deprecated (now flag in message header)
 // * extension[replacementStatus] ^short = "Replace Status (deprecated)"
 * status 

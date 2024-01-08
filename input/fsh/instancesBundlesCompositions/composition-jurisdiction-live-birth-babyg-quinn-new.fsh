@@ -3,16 +3,6 @@ InstanceOf: CompositionJurisdictionLiveBirthReport
 Title: "Composition - Jurisdiction Live Birth Report - BabyG Quinn"
 Description: "Composition - Jurisdiction Live Birth Report: BabyG Quinn example"
 Usage: #example
-* extension[Extension-live-birth-certificate-number]
-  * valueIdentifier
-    * type = $v2-0203#BCT
-    * value = "15075"
-* extension[Extension-live-birth-local-file-number]
-  * valueIdentifier
-    * type = $v2-0203#BCFN
-    * value = "4444-55555"
-* extension[Extension-date-filed-by-registrar]
-  * valueDateTime = "2019-02-12"
 * identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27df"
 * status = #final
 * type = $loinc#92011-6 "Jurisdiction live birth report Document"
@@ -99,6 +89,7 @@ Usage: #example
   * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn-w-edit) 
   * insert addNamedEntryComposition(fathersUsualWork, Observation, observation-usual-work-james-brandon-quinn)
   * insert addNamedEntryComposition(fathersRaceEthnicity, Observation, observation-input-race-and-ethnicity-james-quinn-w-edit)
+
   //* section[editFlags]
   // * title = "Edit Flags Section"
   // * code = $loinc#92012-4 "Edit flags section"

@@ -3,14 +3,14 @@
 // * entry[=].fullUrl = "http://www.example.org/fhir/{type}/{id}"
 
 Instance: bundle-jurisdiction-fetal-death-not-named
-InstanceOf: BundleDocumentBFDR
+InstanceOf: BundleDocumentFetalDeathReport 
 Title: "Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"
 Description: "Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example"
 Usage: #example
-* identifier.value = "2019NJ15075"
-* identifier.system = Canonical(CodeSystemIJEVitalRecords)
-* identifier.extension[certificateNumber].valueString = "15075"
-* type = #document
+* identifier
+  * value = "2019NJ009876"
+  * extension[fetalDeathReportNumber].valueString = "9876"
+  * extension[localFileNumber1].valueString = "11111-11111"
 * timestamp = "2019-10-15T08:51:14.637+00:00"
 * insert addentry(Composition, composition-jurisdiction-fetal-death-not-named)
 * insert addentry(Patient, patient-decedent-fetus-not-named)
