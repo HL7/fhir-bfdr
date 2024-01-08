@@ -26,4 +26,4 @@ Usage: #example
   * given[+] = "Brandon"
 * gender = #male
 * birthDate = "1972-11-24"
-* birthDate.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#dataQueried "Data queried"
+* birthDate.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#1dataQueried "Data queried"
