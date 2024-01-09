@@ -5,6 +5,7 @@ Title: "Patient - Decedent Fetus"
 Description: "A stillborn for whom clinical data is included in the report."
 * extension[birthPlace] MS
   * value[x].state ^short = "State"
+  * value[x].district.extension[districtCode] ^short = "County"
 * extension[parentReportedAgeAtDelivery] MS 
   * ^short = "The mother or father's reported age at the time of delivery of the child"
   * extension[reportedAge].value[x] ^short = "Parent's reported age"

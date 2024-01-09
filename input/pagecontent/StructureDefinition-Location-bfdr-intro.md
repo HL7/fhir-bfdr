@@ -30,7 +30,7 @@
   <td>12</td>
   <td>Facility ID (NPI) - if available</td>
   <td>FNPI</td>
-  <td>identifier[NPI]</td>
+  <td>identifier:NPI</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -48,7 +48,7 @@
   <td>253</td>
   <td>Name of Facility of Birth</td>
   <td>HOSP</td>
-  <td>name</td>
+  <td>name, type:BFDR = "birth"</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -57,7 +57,7 @@
   <td>302</td>
   <td>Facility Mother Moved From (if transferred)</td>
   <td>HOSPFROM</td>
-  <td>name</td>
+  <td>name, type:BFDR = "transfer-from"</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -66,7 +66,7 @@
   <td>303</td>
   <td>Facility Infant Transferred To (if transferred w/in 24 hours)</td>
   <td>HOSPTO</td>
-  <td>name</td>
+  <td>name, type:BFDR = "transfer-to"</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -102,7 +102,7 @@
   <td>12</td>
   <td>Facility ID (NPI) - If available</td>
   <td>FNPI</td>
-  <td>identifier[NPI]</td>
+  <td>identifier:NPI</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -237,7 +237,7 @@
   <td>339</td>
   <td>Facility Mother Moved From (if transferred)</td>
   <td>HOSPFROM</td>
-  <td>name</td>
+  <td>name, type:BFDR = "transfer-from"</td>
   <td>string</td>
   <td></td>
 </tr>

@@ -40,7 +40,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>2</td>
   <td>State, U.S. Territory or Canadian Province of Place of Delivery - code</td>
   <td>DSTATE</td>
-  <td>extension[patient-birthPlace].value[x].state</td>
+  <td>extension[birthPlace].value[x].state</td>
   <td>codeable</td>
   <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> </td>
 </tr>
@@ -85,7 +85,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>10</td>
   <td>County of Delivery</td>
   <td>CNTYO</td>
-  <td>extension[birthPlace].value[x].district.extension[countyCode]</td>
+  <td>extension[birthPlace].value[x].district.extension[districtCode]</td>
   <td>integer</td>
   <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#county-codes'>CountyCodes</a></td>
 </tr>
