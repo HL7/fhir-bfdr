@@ -11,4 +11,4 @@ Usage: #example
 * performer = Reference(practitioner-vital-records-janet-seito)
 * valueCodeableConcept = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
   * text = "Doctoral or post graduate education"
-* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#editBypass0 "Edit Passed"
+* valueCodeableConcept.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"

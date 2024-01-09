@@ -48,7 +48,7 @@ Usage: #example
   * value = "jadaann.quinn@example.com"
 * gender = #female
 * birthDate = "1985-01-15"
-* birthDate.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#editBypass0 "Edit Passed"
+* birthDate.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"
 * address[0]
   * extension[withinCityLimitsIndicator].valueCoding = $v2-0136#Y "Yes"
   // * extension[withinCityLimitsIndicator].valueCoding = $v2-0532#Y "Yes"

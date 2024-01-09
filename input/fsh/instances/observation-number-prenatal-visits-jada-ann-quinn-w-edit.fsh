@@ -17,4 +17,4 @@ Usage: #example
 * effectiveDateTime = "2019-12-02"
 * performer = Reference(practitioner-vital-records-janet-seito)
 * valueInteger = 8
-* valueInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#editBypass0 "Edit Passed"
+* valueInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#0 "Edit Passed"

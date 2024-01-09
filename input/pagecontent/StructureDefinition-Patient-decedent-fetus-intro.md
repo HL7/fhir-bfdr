@@ -114,7 +114,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>PLUR_BYPASS</td>
   <td>multipleBirth.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-plurality-edit-flags.html'>PluralityEditFlagsVS</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-plurality-edit-flags-vr.html'>ValueSetPluralityEditFlagsVitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>

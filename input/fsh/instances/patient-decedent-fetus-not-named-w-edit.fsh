@@ -29,7 +29,7 @@ Usage: #example
     * valueDateTime = "2019-01-09T18:23:00-07:00"
 * deceasedBoolean = true
 * multipleBirthInteger = 3
-* multipleBirthInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#queriedCorrect "Queried, and Correct"
+* multipleBirthInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#1queriedCorrect "Queried, and Correct"
 * extension[parentReportedAgeAtDelivery][+]
   * extension[reportedAge]
     * valueQuantity = 34 'a'
