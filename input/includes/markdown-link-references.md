@@ -130,7 +130,7 @@
 [ValueSetJurisdictionVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-jurisdiction-vr.html
 [ValueSetInputRaceAndEthnicityPersonVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-input-race-and-ethnicity-person-vr.html
 [ValueSetMotherRelationshipVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-mother-relationship-vr.html
-[ValueSetMothersDateOfBirthEditFlagsVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-mothers-date-of-birth-edit-flags-vr.html
+[ValueSetDateOfBirthEditFlagsVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-date-of-birth-edit-flags-vr.html
 [ValueSetPluralityEditFlagsVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-plurality-edit-flags-vr.html
 [ValueSetRaceCodeVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-code-vr.html
 [ValueSetRaceMissingValueReasonVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-race-missing-value-reason-vr.html
@@ -149,7 +149,7 @@
 [ConceptMapEducationLevelVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ConceptMap-ConceptMapEducationLevelVitalRecords.html
 [ConceptMapHispanicNoUnknownVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ConceptMap-ConceptMapHispanicNoUnknownVitalRecords.html
 [ConceptMapHispanicOriginVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ConceptMap-ConceptMapHispanicOriginVitalRecords.html
-[ConceptMapMothersDateOfBirthEditFlagsVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ConceptMap-ConceptMapMothersDateOfBirthEditFlagsVitalRecords.html
+[ConceptMapDateOfBirthEditFlagsVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ConceptMap-ConceptMapDateOfBirthEditFlagsVitalRecords.html
 [ConceptMapPluralityEditFlagsVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ConceptMap-ConceptMapPluralityEditFlagsVitalRecords.html
 [ConceptMapRaceCodeVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ConceptMap-ConceptMapRaceCodeVitalRecords.html
 [ConceptMapRaceMissingValueReasonVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ConceptMap-ConceptMapRaceMissingValueReasonVitalRecords.html
