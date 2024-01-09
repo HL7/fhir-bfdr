@@ -2,7 +2,7 @@ Instance: BirthWeightEditFlagsCM
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(BirthWeightEditFlags, EstimateOfGestationEditFlagsVS)
+* insert ConceptMapIntro(BirthWeightEditFlags, BirthWeightEditFlagsVS)
 * insert AddGroup($IJE, [[Canonical(CodeSystemEditFlagsVitalRecords)]])
 * insert MapConcept( #0,  "Off", #0off, "Off")
 * insert AddGroup($IJE, [[Canonical(EditFlagsCS)]])

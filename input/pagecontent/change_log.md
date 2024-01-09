@@ -11,7 +11,7 @@
 - added missing IJE mappings for [RelatedPersonFatherNatural](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-father-natural-vr.html) profile
 - added [roleVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html) to [EncounterMaternity] and [EncounterBirth] to make them easily queryable from the bundles with a simple FHIRPath expression without traversing Composition references.
 - Concept maps added - [BirthWeightEditFlagsCM], [EstimateOfGestationEditFlagsCM], [NumberPreviousCesareansEditFlagsCM], [PregnancyReportEditFlagsCM]
-- Edit Flag Valueset cleanup: Edit flag codes were renamed to use consistent naming convention, which includes the IJE value in the name. Where possible, valuesets use the edit flag codes located in [VRCL](CodeSystemEditFlagsVitalRecords). For edit flag codes specific to BFDR, [EditFlagsCS] codesystem was added. Valueset and concept maps for FathersDateOfBirthEditFlags, MothersDateOfBirthEditFlags, and PluralityEditFlags were relocated to VRCL, since they are of general utility in the Patient and RelatedPersons profiles. 
+- Edit Flag Valueset cleanup: Edit flag codes were renamed to use consistent naming convention, which includes the IJE value in the name. Where possible, valuesets use the edit flag codes located in [VRCL](http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags). For edit flag codes specific to BFDR, [EditFlagsCS] codesystem was added. Valueset and concept maps for FathersDateOfBirthEditFlags, MothersDateOfBirthEditFlags, and PluralityEditFlags were relocated to VRCL, since they are of general utility in the Patient and RelatedPersons profiles. 
 
 ### STU2 Ballot, January 2024
 #### Major Changes
