@@ -29,6 +29,14 @@ If [ObservationNoneOfSpecifiedObstetricProcedures] is present in bundle, then th
 ### Handling of Edit Flags
 TBD
 
+### Approach to Missing Data on Record Submissions
+The data content defined by this IG closely follows the content of the birth and fetal death worksheets, and the guidelines in the edit specifications for [birth](https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf) and [fetal death](https://www.cdc.gov/nchs/data/dvs/fetal-death-edit-specifications.pdf).
+
+One set of data groupings receives special treatment -- see  [categories].  For these cases lack of data will be interpreted as an unchecked box or unknown. There is a mechanism for indicating expicitly that none of the data elements in a category group are present.
+
+For other data elements, absence of the data in the FHIR submission is equivalent to transmitting a blank in IJE, signifying only absence of submitted data. NCHS business rules will clarify for each field when this is acceptable, and when it constitutes an error.
+
+
 {% include markdown-link-references.md %}
 
 

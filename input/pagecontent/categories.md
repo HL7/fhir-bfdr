@@ -7,7 +7,7 @@ The BFDR uses categories to simplifiy query of conformant data.  Each of the fol
 * [Final Route and Method of Delivery](artifacts.html#15) (73762-7)
 * [Obstetric Procedures](artifacts.html#14) (73814-6)
 * [Infections During Pregnancy](artifacts.html#12) (73769-2)
-* [Maternal Morbities](artifacts.html#17) (73781-7)
+* [Maternal Morbidities](artifacts.html#17) (73781-7)
 
 The interpretation of data sent for a given category is as follows:
 * If no instances of data from the category are provided, all data in this category is considered unknown.
