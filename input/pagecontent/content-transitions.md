@@ -188,6 +188,7 @@
 <tr><td> <a href='CodeSystem-CodeSystem-abnormal-conditions-newborn.html'>AbnormalConditionsNewbornCS</a> </td><td> New </td><td> New Addition </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class.html'>BirthAndFetalDeathFinancialClassCS</a> </td><td> New  </td><td> New Addition </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-vr-birth-delivery-occurred.html'>BirthDeliveryOccurredCS</a> </td><td> New </td><td>  New Addition  </td></tr>
+<tr><td> <a href='CodeSystem-CodeSystem-edit-flags.html'>EditFlagsCS</a> </td><td> New </td><td>  New Addition  </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition.html'>FetalDeathCauseOrConditionCS</a> </td><td> New </td><td>  New Addition  </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-informant-relationship-to-mother.html'>InformantRelationshipToMotherCS</a> </td><td> New </td><td>  New Addition  </td></tr>
 </tbody>
