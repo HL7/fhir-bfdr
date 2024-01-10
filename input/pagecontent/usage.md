@@ -1,3 +1,6 @@
+### Local Time
+All event times should be recorded as the local time and local time zone where they took place.
+
 ### Child and Decedent Fetus Name
 Natality: When the child's name is not chosen, a dataAbsentReason should be provided with code "temp-unknown."
 <br/>Fetal Death: When the decedent fetus is not named, a dataAbsentReason should be provided with code "unknown."
