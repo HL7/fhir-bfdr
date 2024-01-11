@@ -41,7 +41,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
   <td>243</td>
   <td>Date of Registration--Year</td>
   <td>DOR_YR</td>
-  <td>extension[dateFiledByRegistrar].value</td>
+  <td>date</td>
   <td>dateTime</td>
   <td>Used for Jurisdiction Report also</td>
 </tr>
@@ -50,7 +50,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
   <td>244</td>
   <td>Date of Registration--Month</td>
   <td>DOR_MO</td>
-  <td>extension[dateFiledByRegistrar].value</td>
+  <td>date</td>
   <td>dateTime</td>
   <td>Used for Jurisdiction Report also</td>
 </tr>
@@ -59,7 +59,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
   <td>245</td>
   <td>Date of Registration--Day</td>
   <td>DOR_DY</td>
-  <td>extension[dateFiledByRegistrar].value</td>
+  <td>date</td>
   <td>dateTime</td>
   <td>Used for Jurisdiction Report also</td>
 </tr>
@@ -92,7 +92,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 <tr>
   <td style='text-align: center'>13</td>
   <td>Date Filed By Registrar</td>
-  <td>-</td>
+  <td>date</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 </tbody>

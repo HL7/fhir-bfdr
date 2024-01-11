@@ -43,7 +43,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
   <td>176</td>
   <td>Date of Registration--Year</td>
   <td>DOR_YR</td>
-  <td>extension[dateReceivedByRegistrar].value</td>
+  <td>date</td>
   <td>dateTime</td>
   <td>Used for Jurisdiction Report also</td>
 </tr>
@@ -52,7 +52,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
   <td>177</td>
   <td>Date of Registration--Month</td>
   <td>DOR_MO</td>
-  <td>extension[dateReceivedByRegistrar].value</td>
+  <td>date</td>
   <td>dateTime</td>
   <td>Used for Jurisdiction Report also</td>
 </tr>
@@ -61,7 +61,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
   <td>178</td>
   <td>Date of Registration--Day</td>
   <td>DOR_DY</td>
-  <td>extension[dateReceivedByRegistrar].value</td>
+  <td>date</td>
   <td>dateTime</td>
   <td>Used for Jurisdiction Report also</td>
 </tr>
@@ -100,7 +100,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 <tr>
   <td style='text-align: center'>17</td>
   <td>Date Received By Registrar</td>
-  <td>-</td>
+  <td>date</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>

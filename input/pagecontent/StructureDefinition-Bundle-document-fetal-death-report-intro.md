@@ -77,7 +77,7 @@
 <tr>
   <td style='text-align: center'>-</td>
   <td>State File Number</td>
-  <td>identifier.extension[birthCertificateNumber].value</td>
+  <td>identifier.extension[fetalDeathReportNumber].value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 </tbody>

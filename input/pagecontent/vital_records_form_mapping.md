@@ -232,7 +232,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Date Filed By Registrar</td>
   <td><a href='StructureDefinition-Composition-provider-live-birth-report.html'>CompositionProviderLiveBirthReport
 </a></td>
-  <td><a href='StructureDefinition-Extension-date-filed-by-registrar.html'>extension:dateFiledbyRegistrar</a></td>
+  <td>date</td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
@@ -1885,7 +1885,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>-</td>
   <td>State File Number</td>
   <td><a href='StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport</a></td>
-  <td>identifier.extension[birthCertificateNumber].value</td>
+  <td>identifier.extension[fetalDeathReportNumber].value</td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
@@ -2116,7 +2116,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Date Received By Registrar</td>
   <td><a href='StructureDefinition-Composition-provider-fetal-death-report.html'>CompositionProviderFetalDeathReport
 </a></td>
-  <td><a href='StructureDefinition-Extension-date-received-by-registrar.html'>extension:dateReceivedByRegistrar</a></td>
+  <td>date</td>
 </tr>
 <tr>
   <td style='text-align: center'>18a</td>

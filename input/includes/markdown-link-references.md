@@ -191,4 +191,4 @@
 [ObservationEditFlagNumberPrenatalCareVisits]: StructureDefinition-Observation-edit-flag-number-prenatal-care-visits.html
 [ObservationEditFlagNumberPreviousCesareans]: StructureDefinition-Observation-edit-flag-number-previous-cesareans.html
 [ObservationEditFlagPlurality]: StructureDefinition-Observation-edit-flag-plurality.html
-[Extension-relatedperson-birthplace-vr]: http://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-relatedperson-birthplace-vr.html
+[Extension-relatedperson-birthplace-vr]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-relatedperson-birthplace-vr.html
