@@ -49,10 +49,9 @@
 {% include fsh-link-references.md %} 
 <!--- Extensions -->
 [patient-birthPlace]: http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html
-[liveBirthCertificateNumber]: StructureDefinition-Extension-live-birth-certificate-number.html
-[fetalDeathReportNumber]: StructureDefinition-Extension-fetal-death-report-number.html
-[liveBirthLocalFileNumber]: StructureDefinition-Extension-live-birth-local-file-number.html
-[fetalDeathLocalFileNumber]: StructureDefinition-Extension-fetal-death-local-file-number.html
+[birthCertificateNumber]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-CertificateNumber.html 
+[fetalDeathReportNumber]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-CertificateNumber.html
+[localFileNumber1]: https://build.fhir.org/ig/HL7/vr-common-library/StructureDefinition-AuxiliaryStateIdentifier1.html
 [patient-birthTime]: http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html
 [birthsex]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-birthsex.html
 [cityCode]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-CityCode.html

@@ -169,9 +169,9 @@ For Canadian Provinces:
 8,Mortality,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,VRDR,DemographicCodedContentBundle,identifier.extension[ certificateNumber].value,string(6),-,,y,,,,DemographicCodedContentBundle,
 432,Mortality Roster,3,23,50,Decedent's Legal Name--Given ,GNAME,Free form alpha literal; left justified,,VRDR,Decedent,"name.given , name.use = official",string,See [Note on Decedent Name],,,,,,Decedent,
 275,Surveillance,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,VRDR,SurveillanceBundle,identifier.extension[ certificateNumber].value,string(6),-,,y,,,,SurveillanceBundle,
-467,Natality,3,7,6,Certificate Number,FILENO,left 0 filled; 000001-999999,,BFDR,CompositionProviderLiveBirthReport,extension[liveBirthCertificateNumber].value,identifier,Used for Jurisdiction Report and Coded Race and Ethnicity Compositions also,B,,,,,Extension-live-birth-certificate-number,
+467,Natality,3,7,6,Certificate Number,FILENO,left 0 filled; 000001-999999,,BFDR,BundleDocumentBirthReport,identifier.extension[birthCertificateNumber].value,string(6),,B,,,,,CertificateNumber,
 1185,ITOP,3,7,6,Certificate Number ,FILENO,left 0 filled; 000001-999999,,not implemented,not implemented,,,,,,,,,not implemented,
-820,Fetal Death,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,BFDR,CompositionProviderFetalDeathReport,extension[fetalDeathReportNumber].value,identifier,"Used for Jurisdiction Report, Coded Cause of Fetal Death, and Coded Race and Ethnicity Compositions also",B,,,,,Extension-fetal-death-report-number,
+820,Fetal Death,3,7,6,Certificate Number,FILENO,Left 0 filled; 000001-999999,,BFDR,BundleDocumentFetalDeathReport,identifier.extension[fetalDeathReportNumber].value,string(6),,B,,,,,CertificateNumber,
 1344,Birth Infant Death,3,7,6,Certificate Number,FILENO,left 0 filled; 000001-999999,,,,,,,,,,,,,
 9,Mortality,4,13,1,Void flag,VOID,"0 =Default; Valid Record
 1 = VOID record",,not implemented,not implemented,,,-,,y,,,,not implemented,
@@ -188,9 +188,9 @@ For Canadian Provinces:
 10,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DeathCertificateDocument,identifier.extension[ auxiliaryStateIdentifier1 ].value,string(12),-,,y,,,,DeathCertificateDocument,
 11,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[ auxiliaryStateIdentifier1 ].value,string(12),-,,y,,,,CauseOfDeathCodedContentBundle,
 12,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DemographicCodedContentBundle,identifier.extension[ auxiliaryStateIdentifier1 ].value,string(12),-,,y,,,,DemographicCodedContentBundle,
-469,Natality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,CompositionProviderLiveBirthReport,extension[liveBirthLocalFileNumber].value,identifier,Used for Jurisdiction Report also,B,,,,,Extension-live-birth-local-file-number,
+469,Natality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,BundleDocumentBirthReport,identifier.extension[localFileNumber1].value,string(12),,B,,,,,AuxiliaryStateIdentifier1,
 1187,ITOP,5,14,12,Auxiliary State File Number,AUXNO,000000000001-999999999999; blank,,not implemented,not implemented,,,,,,,,,not implemented,
-822,Fetal Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,CompositionProviderFetalDeathReport,extension[fetalDeathLocalFileNumber].value,identifier,Used for Jurisdiction Report also,B,,,,,Extension-fetal-death-local-file-number,
+822,Fetal Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,BundleDocumentFetalDeathReport,identifier.extension[localFileNumber1].value,string(12),,B,,,,,AuxiliaryStateIdentifier1,
 1346,Birth Infant Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,,,,,,,,,,,,
 434,Mortality Roster,5,123,50,Decedent's Legal Name--Last,LNAME,Free form alpha literal; left justified,,VRDR,Decedent,"name.family , name.use = official",string,See [Note on Decedent Name],,,,,,Decedent,
 277,Surveillance,5,25,50,Decedent's Legal Name--Given ,GNAME,,,VRDR,Decedent,"name.given , name.use = official",string,-,,y,,,,Decedent,
@@ -297,8 +297,8 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 19,Mortality,12,139,50,Father's Surname,FLNAME,,,VRDR,DecedentFather,name.family,string,-,,y,,,,DecedentFather,
 1194,ITOP,12,48,3,County of Termination,CNTY_T,NCHS Instruction Manual: Part 8,,not implemented,not implemented,,,,,,,,,not implemented,
 441,Mortality Roster,12,205,2,Date of Birth--Day,DOB_DY,"01-31 (based on month), 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent,
-476,Natality,12,39,12,Facility ID (NPI) - if available,FNPI,,,BFDR,LocationBFDR,identifier:NPI,string,,B,,,,,Location-bfdr,
-829,Fetal Death,12,39,12,Facility ID (NPI) - If available,FNPI,,,BFDR,LocationBFDR,identifier:NPI,string,,B,,,,,Location-bfdr,
+476,Natality,12,39,12,Facility ID (NPI) - if available,FNPI,,,BFDR,LocationBFDR,"identifier:NPI, type:BFDR = ""birth""",string,,B,,,,,Location-bfdr,
+829,Fetal Death,12,39,12,Facility ID (NPI) - If available,FNPI,,,BFDR,LocationBFDR,"identifier:NPI, type:BFDR = ""birth""",string,,B,,,,,Location-bfdr,
 1353,Birth Infant Death,12,39,12,Facility ID (NPI) - if available,FNPI,,,,,,,,,,,,,,
 285,Surveillance,13,197,3,Decedent's Age--Units,AGE ,"001 - 135, 999
 Codes: If AGETYPE = 1 then 001-135, 999
@@ -311,8 +311,8 @@ Codes: If AGETYPE = 1 then 001-135, 999
 F = Female
 U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,y,,,,Decedent,
 442,Mortality Roster,13,207,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent,
-477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,identifier.extension[JFI],Identifier,,B,,,,,Location-bfdr,
-830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,identifier.extension[JFI],Identifier,,B,,,,,Location-bfdr,
+477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",Identifier,,B,,,,,Location-bfdr,
+830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",Identifier,,B,,,,,Location-bfdr,
 1354,Birth Infant Death,13,51,4,Facility ID (State-Assigned),SFN,,,,,,,,,,,,,,
 1195,ITOP,13,51,1,Place Type Where Termination Occurred,TPLACE,"1 = Hospital
 2 = Clinic
