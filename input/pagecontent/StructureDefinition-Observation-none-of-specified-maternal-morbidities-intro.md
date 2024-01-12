@@ -31,7 +31,7 @@ Presence of this observation indicates that none of the maternal morbidities spe
   <td>195</td>
   <td>Maternal Morbidity--Maternal Transfusion</td>
   <td>MTR</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
@@ -40,7 +40,7 @@ Presence of this observation indicates that none of the maternal morbidities spe
   <td>196</td>
   <td>Maternal Morbidity--Perineal Laceration</td>
   <td>PLAC</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
@@ -49,7 +49,7 @@ Presence of this observation indicates that none of the maternal morbidities spe
   <td>197</td>
   <td>Maternal Morbidity--Ruptured Uterus</td>
   <td>RUT</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
@@ -58,7 +58,7 @@ Presence of this observation indicates that none of the maternal morbidities spe
   <td>198</td>
   <td>Maternal Morbidity--Unplanned Hysterectomy</td>
   <td>UHYS</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
@@ -67,7 +67,7 @@ Presence of this observation indicates that none of the maternal morbidities spe
   <td>199</td>
   <td>Maternal Morbidity--Admit to Intensive Care</td>
   <td>AINT</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
@@ -103,7 +103,7 @@ Presence of this observation indicates that none of the maternal morbidities spe
   <td>139</td>
   <td>Maternal Morbidity--Ruptured Uterus</td>
   <td>RUT</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
@@ -112,7 +112,7 @@ Presence of this observation indicates that none of the maternal morbidities spe
   <td>141</td>
   <td>Maternal Morbidity--Admit to Intensive Care</td>
   <td>AINT</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>

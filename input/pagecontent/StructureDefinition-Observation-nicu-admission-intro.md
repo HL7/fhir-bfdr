@@ -30,7 +30,7 @@
   <td>214</td>
   <td>Abnormal Conditions of the Newborn--Admission to NICU</td>
   <td>NICU</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
 </tr>

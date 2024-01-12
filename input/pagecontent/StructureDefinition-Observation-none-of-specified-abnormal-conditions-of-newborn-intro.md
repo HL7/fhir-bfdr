@@ -31,7 +31,7 @@ Presence of this observation indicates that none of the abnormal conditions of n
   <td>212</td>
   <td>Abnormal Conditions of the Newborn--Assisted Ventilation</td>
   <td>AVEN1</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
 </tr>
@@ -40,7 +40,7 @@ Presence of this observation indicates that none of the abnormal conditions of n
   <td>214</td>
   <td>Abnormal Conditions of the Newborn--Admission to NICU</td>
   <td>NICU</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
 </tr>
@@ -49,7 +49,7 @@ Presence of this observation indicates that none of the abnormal conditions of n
   <td>215</td>
   <td>Abnormal Conditions of the Newborn--Surfactant Replacement</td>
   <td>SURF</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
 </tr>
@@ -58,7 +58,7 @@ Presence of this observation indicates that none of the abnormal conditions of n
   <td>216</td>
   <td>Abnormal Conditions of the Newborn--Antibiotics</td>
   <td>ANTI</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
 </tr>
@@ -67,7 +67,7 @@ Presence of this observation indicates that none of the abnormal conditions of n
   <td>217</td>
   <td>Abnormal Conditions of the Newborn--Seizures</td>
   <td>SEIZ</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
 </tr>
