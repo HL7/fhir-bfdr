@@ -70,6 +70,7 @@ FORMS_MAPPING_PROFILE_COL = 5
 FORMS_PROFILE_COL = 6
 FORMS_FIELD_COL = 7
 FORMS_CONTEXT_COL = 8
+FORMS_COMPUTABLE_COL = 13
 
 
 # ARGV[0] input/mapping/BFDR_Profile_Intros.csv
@@ -86,6 +87,32 @@ vSpreadsheet = ARGV[1]
 vFormsMappingSpreadsheet = ARGV[2]
 #vFormsMappingSpreadsheet = open_spreadsheet(ARGV[2])
 #vFormsMappingSpreadsheet.default_sheet = "BFDR Form Items"
+
+# none specified profiles will have be mapped to IJE fields of their positive counterparts
+NONE_SPECIFIED_DEATH = {
+  "ObservationNoneOfSpecifiedMaternalMorbidities" => ["ProcedureBloodTransfusion", "ConditionPerinealLaceration", "ConditionRupturedUterus", \
+    "ProcedureUnplannedHysterectomy", "ObservationICUAdmission"],
+  "ObservationNoneOfSpecifiedPregnancyRiskFactors" => ["ConditionPrepregnancyDiabetes", "ConditionGestationalDiabetes", "ConditionPrepregnancyHypertension", \
+    "ConditionGestationalHypertension", "ConditionEclampsiaHypertension", "ObservationPreviousPretermBirth", "ProcedureInfertilityTreatment", \
+    "ProcedureArtificialInsemination", "ProcedureAssistedFertilization", "ObservationPreviousCesarean"],
+  "ObservationUnknownFinalRouteMethodDelivery" => ["ProcedureFinalRouteMethodDelivery"]
+}
+
+NONE_SPECIFIED_BIRTH = {
+  "ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn" => ["ProcedureAssistedVentilationFollowingDelivery", "ProcedureAssistedVentilationFollowingDelivery", \
+    "ObservationNICUAdmission", "ProcedureSurfactantReplacementTherapy", "ProcedureAntibioticSuspectedNeonatalSepsis", "ConditionSeizure"],
+  "ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery" => ["ProcedureInductionOfLabor", "ProcedureAugmentationOfLabor", \
+    "ObservationSteroidsFetalLungMaturation", "ObservationAntibioticsAdministeredDuringLabor", "ConditionChorioamnionitis", "ProcedureEpiduralOrSpinalAnesthesia"],
+  "ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn" => ["ConditionCongenitalAnomalyOfNewborn"],
+  "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy" => ["ConditionInfectionPresentDuringPregnancy"],
+  "ObservationNoneOfSpecifiedMaternalMorbidities" => ["ProcedureBloodTransfusion", "ConditionPerinealLaceration", "ConditionRupturedUterus", \
+    "ProcedureUnplannedHysterectomy", "ObservationICUAdmission"],
+  "ObservationNoneOfSpecifiedObstetricProcedures" => ["ProcedureObstetric"],
+  "ObservationNoneOfSpecifiedPregnancyRiskFactors" => ["ConditionPrepregnancyDiabetes", "ConditionGestationalDiabetes", "ConditionPrepregnancyHypertension", \
+    "ConditionGestationalHypertension", "ConditionEclampsiaHypertension", "ObservationPreviousPretermBirth", "ProcedureInfertilityTreatment", \
+    "ProcedureArtificialInsemination", "ProcedureAssistedFertilization", "ObservationPreviousCesarean"],
+  "ObservationUnknownFinalRouteMethodDelivery" => ["ProcedureFinalRouteMethodDelivery"]
+}
 
 #create hash for mapping of links 
 def gen_aliases
@@ -135,7 +162,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts exchangeURLs(row[INTRO_PROFILE_USAGE_COL].to_s, alias_links)
     end
 
-
+    firstTable = true
     # if there are IJE mappings put them into the intro file for the profile
     if !row[INTRO_IJE_MAPPING_COL].to_s.to_s.empty?
       vIntroOutputFile.puts "" if !row[INTRO_FORM_MAPPING_COL].to_s.to_s.empty?
@@ -145,7 +172,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts " .context-menu {cursor: context-menu; color: #438bca;}"
       vIntroOutputFile.puts " .context-menu:hover {opacity: 0.5;}"
       vIntroOutputFile.puts "</style>"
-      firstTable = true
       # if filtering race or ethnicity further break down tables by mother/father
       if vProfileName == "ObservationCodedRaceAndEthnicityVitalRecords" || vProfileName == "ObservationInputRaceAndEthnicityVitalRecords"
         # process any natality mother rows firstEntry
@@ -357,9 +383,14 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # process any natality rows firstEntry
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
-            || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
-            next if (row[IJE_USECASE_COL].to_s != "Natality")
+          if NONE_SPECIFIED_BIRTH.key?(vProfileName)
+            if NONE_SPECIFIED_BIRTH[vProfileName].include?(row[IJE_PROFILE_COL].to_s) 
+          # if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
+          #   || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
+              next if (row[IJE_USECASE_COL].to_s != "Natality")
+            else 
+              next if (row[IJE_USECASE_COL].to_s != "Natality" || row[IJE_PROFILE_COL].to_s != vProfileName)
+            end
           else
             next if (row[IJE_USECASE_COL].to_s != "Natality" || row[IJE_PROFILE_COL].to_s != vProfileName)
           end
@@ -414,9 +445,14 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         # now process any fetal death rows
         firstEntry = true
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
-          if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
-            || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
-            next if (row[IJE_USECASE_COL].to_s != "Fetal Death")
+          if NONE_SPECIFIED_DEATH.key?(vProfileName)
+            if NONE_SPECIFIED_DEATH[vProfileName].include?(row[IJE_PROFILE_COL].to_s) 
+          # if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
+          #   || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
+              next if (row[IJE_USECASE_COL].to_s != "Fetal Death")
+            else 
+              next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName)
+            end
           else
             next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName)
           end
@@ -473,7 +509,15 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       # now process any death record/mortality rows
       firstEntry = true
       CSV.foreach(pIJEMappingSpreadsheet) do |row|
-        next if (row[IJE_USECASE_COL].to_s != "Mortality" || row[IJE_PROFILE_COL].to_s != vProfileName)
+        if NONE_SPECIFIED_DEATH.key?(vProfileName)
+          if NONE_SPECIFIED_DEATH[vProfileName].include?(row[IJE_PROFILE_COL].to_s) 
+            next if (row[IJE_USECASE_COL].to_s != "Mortality")
+          else 
+            next if (row[IJE_USECASE_COL].to_s != "Mortality" || row[IJE_PROFILE_COL].to_s != vProfileName)
+          end
+        else 
+          next if (row[IJE_USECASE_COL].to_s != "Mortality" || row[IJE_PROFILE_COL].to_s != vProfileName)
+        end
         if firstEntry
           if firstTable
             vIntroOutputFile.puts "<details open>"
@@ -525,9 +569,14 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       # now process any mortality roster rows
       firstEntry = true
       CSV.foreach(pIJEMappingSpreadsheet) do |row|
-        if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
-          || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
-          next if (row[IJE_USECASE_COL].to_s != "Mortality Roster")
+        if NONE_SPECIFIED_DEATH.key?(vProfileName)
+          if NONE_SPECIFIED_DEATH[vProfileName].include?(row[IJE_PROFILE_COL].to_s) 
+        # if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
+        #   || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
+            next if (row[IJE_USECASE_COL].to_s != "Mortality Roster")
+          else 
+            next if (row[IJE_USECASE_COL].to_s != "Mortality Roster" || row[IJE_PROFILE_COL].to_s != vProfileName)
+          end
         else
           next if (row[IJE_USECASE_COL].to_s != "Mortality Roster" || row[IJE_PROFILE_COL].to_s != vProfileName)
         end
@@ -591,6 +640,12 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts ""
       vIntroOutputFile.puts "<strong class='context-menu' >Form Mapping</strong>"
       vIntroOutputFile.puts ""
+      if firstTable
+        vIntroOutputFile.puts "<style>"
+        vIntroOutputFile.puts " .context-menu {cursor: context-menu; color: #438bca;}"
+        vIntroOutputFile.puts " .context-menu:hover {opacity: 0.5;}"
+        vIntroOutputFile.puts "</style>"
+      end
       vIntroOutputFile.puts "</summary>"
       vIntroOutputFile.puts "<table class='grid'>"
       vIntroOutputFile.puts "<thead>"
@@ -604,7 +659,14 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       vIntroOutputFile.puts "<tbody>"
 
       CSV.foreach(pFormsMappingSpreadsheet) do |row|
-        next if row[FORMS_MAPPING_PROFILE_COL].to_s != vProfileNameHyphen
+        if NONE_SPECIFIED_DEATH.key?(vProfileName) || NONE_SPECIFIED_BIRTH.key?(vProfileName)
+          unless (NONE_SPECIFIED_DEATH[vProfileName]&.include?(row[FORMS_COMPUTABLE_COL].to_s) || NONE_SPECIFIED_BIRTH[vProfileName]&.include?(row[FORMS_COMPUTABLE_COL].to_s)) && row[FORMS_COMPUTABLE_COL].to_s == "ProcedureFinalRouteMethodDelivery"
+            next if row[FORMS_MAPPING_PROFILE_COL].to_s != vProfileNameHyphen
+          end   
+        else
+          next if row[FORMS_MAPPING_PROFILE_COL].to_s != vProfileNameHyphen
+        end
+
         formsElement = row[FORMS_ELEMENT_COL].to_s
         if formsElement.include? "."
           formsElements = formsElement.strip.split(" ", 2)
