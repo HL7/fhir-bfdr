@@ -1,5 +1,84 @@
 Presence of this observation indicates that none of the abnormal conditions of newborn specifyable in this IG are reported.If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a>)
 
+### IJE Mapping
+
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details open>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>212</td>
+  <td>Abnormal Conditions of the Newborn--Assisted Ventilation</td>
+  <td>AVEN1</td>
+  <td></td>
+  <td>na</td>
+  <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>214</td>
+  <td>Abnormal Conditions of the Newborn--Admission to NICU</td>
+  <td>NICU</td>
+  <td></td>
+  <td>na</td>
+  <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>215</td>
+  <td>Abnormal Conditions of the Newborn--Surfactant Replacement</td>
+  <td>SURF</td>
+  <td></td>
+  <td>na</td>
+  <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>216</td>
+  <td>Abnormal Conditions of the Newborn--Antibiotics</td>
+  <td>ANTI</td>
+  <td></td>
+  <td>na</td>
+  <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>217</td>
+  <td>Abnormal Conditions of the Newborn--Seizures</td>
+  <td>SEIZ</td>
+  <td></td>
+  <td>na</td>
+  <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+
 ### Form Mapping
 <details>
 
