@@ -38,7 +38,6 @@ Id: Composition-provider-live-birth-report
   * ^definition = "The Composition is broken into sections that, where possible, align with the sections in the Live Birth Certificate. Various administrative and demographic data in the Birth Certificate are contained in other locations in the Composition, such as the Patient and Encounter profiles."
 * insert BFDRCompositionSectionEntrySlicing(motherPrenatal, 0, 57073-9, Provider Live Birth)
 * insert FocusRule(motherPrenatal, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
-* insert BFDRCompositionSectionSlice(motherPrenatal, plannedToDeliverAtHome, 0, 1, Planned to deliver at home, Planned to deliver at home, ObservationPlannedToDeliverAtHome)
 * insert BFDRCompositionSectionSlice(motherPrenatal, firstPrenatalCareVisit, 0, 1, First prenatal care visit, Date that mother had her first prenatal care visit, ObservationDateOfFirstPrenatalCareVisit)
 * insert BFDRCompositionSectionSlice(motherPrenatal, numberPrenatalCareVisits, 0, 1, Number of prenatal care visits, Those visits which are listed in the mother's prenatal care and/or facility records., ObservationNumberPrenatalVisits)
 * insert BFDRCompositionSectionSlice(motherPrenatal, dateLastNormalMenses, 0, 1, Date last normal menses began, Date that the mother's last normal menses began. This item is used to compute the gestational age of the infant., ObservationLastMenstrualPeriod)

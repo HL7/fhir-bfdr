@@ -17,7 +17,6 @@ Usage: #example
   // * title = "Mother (prenatal) Section on the Fetal Death Report"
   // * code = $loinc#57073-9 "Prenatal records"
   * insert addReferenceComposition(focus, Patient, patient-mother-carmen-teresa-lee)
-  * insert addNamedEntryComposition(plannedToDeliverAtHome, Observation, observation-planned-to-deliver-at-home-not-named)
   * insert addNamedEntryComposition(firstPrenatalCareVisit, Observation, observation-date-of-first-prenatal-care-visit-carmen-teresa-lee)
   * insert addNamedEntryComposition(dateLastNormalMenses, Observation, observation-last-menstrual-period-carmen-teresa-lee)
   * insert addNamedEntryComposition(numberNowLiving, Observation, observation-number-births-now-living-carmen-teresa-lee)
