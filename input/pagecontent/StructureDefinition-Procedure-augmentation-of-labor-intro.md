@@ -30,7 +30,7 @@
   <td>182</td>
   <td>Characteristics of Labor & Delivery--Augmentation of Labor</td>
   <td>AUGL</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#characteristics-of-labor-and-delivery'>note on missing characteristics of labor and delivery data</a></td>
 </tr>

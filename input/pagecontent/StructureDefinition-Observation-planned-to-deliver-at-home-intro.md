@@ -12,6 +12,10 @@
 
 <strong class='context-menu' >Form Mapping</strong>
 
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
 </summary>
 <table class='grid'>
 <thead>

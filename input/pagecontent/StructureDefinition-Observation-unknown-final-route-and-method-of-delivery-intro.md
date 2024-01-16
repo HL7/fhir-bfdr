@@ -27,12 +27,12 @@
 <tbody>
 <tr>
   <td style='text-align: center'>Natality</td>
-  <td>160</td>
-  <td>Risk Factors--Hypertension Gestational   (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 924 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004)</td>
-  <td>GHYPE</td>
-  <td>-</td>
-  <td>na</td>
-  <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
+  <td>193</td>
+  <td>Method of Delivery--Route and Method of Delivery</td>
+  <td>ROUT</td>
+  <td>code</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-delivery-routes.html'>DeliveryRoutesVS</a></td>
 </tr>
 
 </tbody>
@@ -63,12 +63,12 @@
 <tbody>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
-  <td>113</td>
-  <td>Risk Factors--Hypertension Gestational  (SEE ADDITIONAL HYPERTENSION CATEGORY IN LOCATION 573 TO REFLECT RECOMMENDED CHANGES EFFECTIVE 2004)</td>
-  <td>GHYPE</td>
-  <td>-</td>
-  <td>na</td>
-  <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
+  <td>134</td>
+  <td>Method of Delivery--Route and Method of Delivery</td>
+  <td>ROUT</td>
+  <td>code</td>
+  <td>codeable</td>
+  <td><a href='ValueSet-ValueSet-delivery-routes.html'>DeliveryRoutesVS</a></td>
 </tr>
 
 </tbody>
@@ -96,27 +96,33 @@
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>41.4</td>
-  <td>Risk factors in this pregnancy: Hypertension - Gestational</td>
-  <td>-</td>
+  <td style='text-align: center'>46.D</td>
+  <td>Final route and method of delivery</td>
+  <td>code</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>14.4</td>
-  <td>Risk factors in this pregnancy: Hypertension - Gestational</td>
-  <td>-</td>
+  <td style='text-align: center'>27.D</td>
+  <td>Method of delivery: Final route and method of delivery</td>
+  <td>code</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>36.4</td>
-  <td>Risk factors in this pregnancy: Hypertension - Gestational</td>
-  <td>-</td>
+  <td style='text-align: center'>27.D</td>
+  <td>Method of delivery: Final route and method of delivery</td>
+  <td>code</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>38.D</td>
+  <td>Method of Delivery: Final route and method of delivery</td>
+  <td>code</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>11.4</td>
-  <td>Risk factors in this pregnancy: Hypertension - Gestational</td>
-  <td>-</td>
+  <td style='text-align: center'>17.B</td>
+  <td>Method of Delivery: Final route and method of delivery</td>
+  <td>code</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 </tbody>

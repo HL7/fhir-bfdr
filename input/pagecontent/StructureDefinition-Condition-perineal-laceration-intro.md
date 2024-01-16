@@ -30,7 +30,7 @@
   <td>196</td>
   <td>Maternal Morbidity--Perineal Laceration</td>
   <td>PLAC</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>

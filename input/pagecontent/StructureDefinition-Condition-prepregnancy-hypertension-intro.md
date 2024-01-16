@@ -30,7 +30,7 @@
   <td>159</td>
   <td>Risk Factors--Prepregnancy Hypertension </td>
   <td>PHYPE</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>
@@ -66,7 +66,7 @@
   <td>112</td>
   <td>Risk Factors--Hypertension Prepregnancy</td>
   <td>PHYPE</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>

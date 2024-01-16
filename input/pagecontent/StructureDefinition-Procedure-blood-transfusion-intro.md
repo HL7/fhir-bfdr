@@ -30,7 +30,7 @@
   <td>195</td>
   <td>Maternal Morbidity--Maternal Transfusion</td>
   <td>MTR</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>

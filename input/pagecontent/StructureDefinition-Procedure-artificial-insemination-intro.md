@@ -30,7 +30,7 @@
   <td>240</td>
   <td>Risk Factors--Infertility: Fertility Enhancing Drugs  (RECOMMENDED ADDITION EFFECTIVE 2004)</td>
   <td>INFT_DRG</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>
@@ -66,7 +66,7 @@
   <td>174</td>
   <td>Risk Factors--Infertility: Fertility Enhancing Drugs (added after 2004)</td>
   <td>INFT_DRG</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>

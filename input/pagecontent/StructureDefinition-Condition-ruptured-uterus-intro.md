@@ -30,7 +30,7 @@
   <td>197</td>
   <td>Maternal Morbidity--Ruptured Uterus</td>
   <td>RUT</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
@@ -66,7 +66,7 @@
   <td>139</td>
   <td>Maternal Morbidity--Ruptured Uterus</td>
   <td>RUT</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>

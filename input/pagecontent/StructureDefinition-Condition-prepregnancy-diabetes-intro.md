@@ -30,7 +30,7 @@
   <td>157</td>
   <td>Risk Factors--Prepregnancy Diabetes</td>
   <td>PDIAB</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>
@@ -66,7 +66,7 @@
   <td>110</td>
   <td>Risk Factors--Prepregnancy Diabetes  (NOTE: SEE INSERTED NOTES FOR RISK FACTOR LOCATIONS 490-501 AND 573-575 TO REFLECT 2004 CHANGES)</td>
   <td>PDIAB</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>

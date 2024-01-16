@@ -30,7 +30,7 @@
   <td>216</td>
   <td>Abnormal Conditions of the Newborn--Antibiotics</td>
   <td>ANTI</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
 </tr>

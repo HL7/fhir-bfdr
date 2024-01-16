@@ -30,7 +30,7 @@
   <td>199</td>
   <td>Maternal Morbidity--Admit to Intensive Care</td>
   <td>AINT</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
@@ -66,7 +66,7 @@
   <td>141</td>
   <td>Maternal Morbidity--Admit to Intensive Care</td>
   <td>AINT</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
 </tr>
