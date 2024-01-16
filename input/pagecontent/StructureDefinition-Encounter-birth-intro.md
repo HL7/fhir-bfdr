@@ -110,7 +110,7 @@ This Encounter can reference the mother's maternity encounter using the partOf d
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>26.a</td>
+  <td style='text-align: center'>26.3</td>
   <td>Home Birth: Planned to deliver at home?</td>
   <td>location.physicalType</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
@@ -140,7 +140,7 @@ This Encounter can reference the mother's maternity encounter using the partOf d
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>5.a</td>
+  <td style='text-align: center'>5.3</td>
   <td>Home Birth: Planned to deliver at home?</td>
   <td>location.physicalType</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
@@ -162,18 +162,6 @@ This Encounter can reference the mother's maternity encounter using the partOf d
   <td>Was infant transferred within 24 hours of delivery?</td>
   <td>hospitalization.dischargeDisposition</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>7.a</td>
-  <td>Home Birth: Planned to deliver at home?</td>
-  <td>location.physicalType</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>5.a</td>
-  <td>Planned to deliver at home</td>
-  <td>location.physicalType</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 </tbody>
 </table>
