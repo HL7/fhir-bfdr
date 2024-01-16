@@ -44,7 +44,7 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 17,Input,ConditionRupturedUterus,Condition-ruptured-uterus,,x,x,BFDR
 18,Input,ConditionSeizure,Condition-seizure,,x,x,BFDR
 19,Input,CoveragePrincipalPayerDelivery,Coverage-principal-payer-delivery,,x,x,BFDR
-20,Input,EncounterMaternity,Encounter-maternity,"After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property.",x,x,BFDR
+20,Input,EncounterMaternity,Encounter-maternity,"After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property. See [EncounterBirth] for ""planned to deliver at home"" form mapping in this profile.",x,x,BFDR
 21,Input,EncounterBirth,Encounter-birth,This Encounter can reference the mother's maternity encounter using the partOf data element.,x,x,BFDR
 22,Input,ExtensionDateDayVitalRecords,Extension-date-day-vr,,,,VRCPL
 23,Input,ExtensionDateFiledByRegistrar,Extension-date-filed-by-registrar,,,,BFDR
@@ -141,7 +141,7 @@ If the none-of-the-above observation is present in the bundle, then its compleme
 102,Input,ObservationNumberPreviousCesareans,Observation-number-previous-cesareans,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
 103,Input,ObservationEducationLevelVitalRecords,Observation-education-level-vr,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,VRCPL
 104,Input,ObservationPaternityAcknowledgementSigned,Observation-paternity-acknowledgement-signed,,x,x,BFDR
-105,Input,ObservationPlannedToDeliverAtHome,Observation-planned-to-deliver-at-home,,x,x,BFDR
+105,Input,ObservationPlannedToDeliverAtHome,Observation-planned-to-deliver-at-home,This profile is not specifically referenced in report compositions and reporting of home delivery plan should rely on [EncounterMaternity] and [EncounterBirth] (using [BirthDeliveryOccurredVS]).,,,BFDR
 106,Input,ObservationPluralityVitalRecords,Observation-plurality-vr,"('Reabsorbed' fetuses, those which are not 'delivered' [expulsed or extracted from the mother] should not be counted.) Include all live births and fetal losses resulting from this pregnancy. 
 
 This profile represents plurality as a characteristic of the pregnancy. For plurality as a characteristic of the patient, see the [patient-multipleBirthTotal extension](http://hl7.org/fhir/StructureDefinition-patient-multipleBirthTotal.html).",,,VRCPL

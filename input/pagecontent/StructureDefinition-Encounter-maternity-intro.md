@@ -1,4 +1,4 @@
-After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property.
+After the child is born, an Encounter record will be created for the child (Encounter-Birth) and will reference this encounter using the partOf property. See <a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a> for "planned to deliver at home" form mapping in this profile.
 
 ### IJE Mapping
 
