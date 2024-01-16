@@ -43,6 +43,24 @@
   <td>string(12)</td>
   <td></td>
 </tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>NA</td>
+  <td>Auxiliary State file number (2)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>identifier.extension[localFileNumber2].value</td>
+  <td>string(12)</td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>NA</td>
+  <td>Record Identifier</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>identifier.value</td>
+  <td>string(12)</td>
+  <td>YYYYJJNNNNNN,  YYYY = year, JJ = jurisdiction,  and NNNNNN = certificate number</td>
+</tr>
 
 </tbody>
 </table>

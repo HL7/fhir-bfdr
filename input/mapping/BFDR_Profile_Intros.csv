@@ -184,10 +184,12 @@ Profile conformance requires that gender be provided, see [note on patient gende
 135,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
                 For documentation on their use see referenceTBD.
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).",,x,VRCPL
-136,Coding-Fetal Death,CompositionCodedCauseOfFetalDeath,Composition-coded-cause-of-fetal-death,"Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at the national statistics agency, and returned using this profile.",,,BFDR
-137,Coding-Fetal Death,ObservationCodedInitiatingFetalDeathCauseOrCondition,Observation-coded-initiating-fetal-death-cause-or-condition,,,x,BFDR
-138,Coding-Fetal Death,ObservationCodedOtherFetalDeathCauseOrCondition,Observation-coded-other-fetal-death-cause-or-condition,,,x,BFDR
-139,Coding-Demographic,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"The Coding of Race and Ethnicity follows the [MRE](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf) pattern implemented in VRDR, and supports maternal and paternal race/ethnicity.
+136,Coding-Fetal Death,BundleDocumentCodedCauseOfFetalDeath,Bundle-document-coded-cause-of-fetal-death,,,,BFDR
+137,Coding-Fetal Death,CompositionCodedCauseOfFetalDeath,Composition-coded-cause-of-fetal-death,"Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at the national statistics agency, and returned using this profile.",,,BFDR
+138,Coding-Fetal Death,ObservationCodedInitiatingFetalDeathCauseOrCondition,Observation-coded-initiating-fetal-death-cause-or-condition,,,x,BFDR
+139,Coding-Fetal Death,ObservationCodedOtherFetalDeathCauseOrCondition,Observation-coded-other-fetal-death-cause-or-condition,,,x,BFDR
+140,Coding-Demographic,BundleDocumentDemographicCodedContent,Bundle-document-demographic-coded-content,,,,BFDR
+141,Coding-Demographic,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"The Coding of Race and Ethnicity follows the [MRE](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf) pattern implemented in VRDR, and supports maternal and paternal race/ethnicity.
 
 Two sets of codes will be used to address two objectives. These objectives are:
 * to generate codes for race or ethnicity data provided as text entries
@@ -196,4 +198,4 @@ Two sets of codes will be used to address two objectives. These objectives are:
 In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. 
 
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.",,x,VRCPL
-140,Not Implemented,not implemented,,,,,BFDR
+142,Not Implemented,not implemented,,,,,BFDR
