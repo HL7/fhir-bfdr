@@ -30,7 +30,7 @@
   <td>12</td>
   <td>Facility ID (NPI) - if available</td>
   <td>FNPI</td>
-  <td>identifier:NPI</td>
+  <td>identifier:NPI, type:BFDR = "birth"</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -39,7 +39,7 @@
   <td>13</td>
   <td>Facility ID (State-Assigned)</td>
   <td>SFN</td>
-  <td>identifier.extension[JFI]</td>
+  <td>identifier.extension[JFI], type:BFDR = "birth"</td>
   <td>Identifier</td>
   <td></td>
 </tr>
@@ -102,7 +102,7 @@
   <td>12</td>
   <td>Facility ID (NPI) - If available</td>
   <td>FNPI</td>
-  <td>identifier:NPI</td>
+  <td>identifier:NPI, type:BFDR = "birth"</td>
   <td>string</td>
   <td></td>
 </tr>
@@ -111,7 +111,7 @@
   <td>13</td>
   <td>Facility ID (State-Assigned)</td>
   <td>SFN</td>
-  <td>identifier.extension[JFI]</td>
+  <td>identifier.extension[JFI], type:BFDR = "birth"</td>
   <td>Identifier</td>
   <td></td>
 </tr>
