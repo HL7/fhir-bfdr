@@ -30,7 +30,7 @@
   <td>212</td>
   <td>Abnormal Conditions of the Newborn--Assisted Ventilation</td>
   <td>AVEN1</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
 </tr>

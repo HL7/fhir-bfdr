@@ -777,6 +777,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td></td>
 </tr>
 <tr>
+  <td style='text-align: center'>55.13</td>
+  <td>Congenital Anomalies of the Newborn: None of the above</td>
+  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
+  <td></td>
+</tr>
+<tr>
   <td style='text-align: center'>56</td>
   <td>Was Infant Transferred Within 24 Hours Of Delivery?</td>
   <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth
@@ -1075,6 +1081,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Congenital anomalies of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn
 </a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>37.13</td>
+  <td>Congenital anomalies of the newborn: None of the above</td>
+  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
   <td></td>
 </tr>
 <tr>
@@ -1646,6 +1658,12 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Congenital anomalies of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn
 </a></td>
+  <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>37.13</td>
+  <td>Congenital anomalies of the newborn: None of the above</td>
+  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
   <td></td>
 </tr>
 <tr>

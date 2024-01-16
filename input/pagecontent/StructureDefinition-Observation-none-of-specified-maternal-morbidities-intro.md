@@ -1,5 +1,129 @@
 Presence of this observation indicates that none of the maternal morbidities specifyable in this IG are reported. If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a>)
 
+### IJE Mapping
+
+<style>
+ .context-menu {cursor: context-menu; color: #438bca;}
+ .context-menu:hover {opacity: 0.5;}
+</style>
+<details open>
+
+<summary>
+
+<strong class='context-menu' > Natality </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>195</td>
+  <td>Maternal Morbidity--Maternal Transfusion</td>
+  <td>MTR</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>196</td>
+  <td>Maternal Morbidity--Perineal Laceration</td>
+  <td>PLAC</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>197</td>
+  <td>Maternal Morbidity--Ruptured Uterus</td>
+  <td>RUT</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>198</td>
+  <td>Maternal Morbidity--Unplanned Hysterectomy</td>
+  <td>UHYS</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>199</td>
+  <td>Maternal Morbidity--Admit to Intensive Care</td>
+  <td>AINT</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+<details>
+
+<summary>
+
+<strong class='context-menu'> Fetal Death </strong>
+
+</summary>
+<table class='grid'>
+<thead>
+  <tr>
+    <th style='text-align: center'><strong>Use Case</strong></th>
+    <th><strong>#</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>IJE Name</strong></th>
+    <th><strong>Field</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Value Set/Comments</strong></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>139</td>
+  <td>Maternal Morbidity--Ruptured Uterus</td>
+  <td>RUT</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td>141</td>
+  <td>Maternal Morbidity--Admit to Intensive Care</td>
+  <td>AINT</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a></td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+<p></p>
+
+
 ### Form Mapping
 <details>
 

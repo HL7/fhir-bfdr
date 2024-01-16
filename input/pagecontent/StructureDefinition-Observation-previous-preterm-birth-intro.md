@@ -30,7 +30,7 @@
   <td>161</td>
   <td>Risk Factors--Previous Preterm Births</td>
   <td>PPB</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>

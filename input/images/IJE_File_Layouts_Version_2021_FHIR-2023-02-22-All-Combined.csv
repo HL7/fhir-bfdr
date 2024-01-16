@@ -362,9 +362,9 @@ Codes: If AGETYPE = 1 then 001-135, 999
 289,Surveillance,17,207,2,Date of Birth--Day,DOB_DY,"01-31 (based on month), 99",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,y,,,,Decedent,
 446,Mortality Roster,17,268,50,Father's Middle Name,DADMIDNAME,"Free form literal, left justified; if unknown, leave blank",,VRDR,DecedentFather,"name.given , name.use = official",string,-,,DDADMID,,,,DecedentFather,
 481,Natality,17,63,1,Date of Birth (Mother)--Edit Flag,MAGE_BYPASS,"0 = Edit Passed
-1 = Data Queried",,VRCPL,PatientMotherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-mothers-date-of-birth,
+1 = Data Queried",,VRCPL,PatientMotherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-mothers-date-of-birth,
 834,Fetal Death,17,63,1,Date of Birth (Mother)--Edit Flag,MAGE_BYPASS,"0 = Edit Passed
-1 = Data Queried ",,VRCPL,PatientMotherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-mothers-date-of-birth,
+1 = Data Queried ",,VRCPL,PatientMotherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-mothers-date-of-birth,
 1358,Birth Infant Death,17,63,1,Date of Birth (Mother)--Edit Flag,MAGE_BYPASS,"0 = Edit Passed
 1 = Data Queried",,,,,,,,,,,,,
 25,Mortality,18,204,1,Decedent's Age--Edit Flag,AGE_BYPASS,"0 = Edit Passed
@@ -695,9 +695,9 @@ Variable description (""Contents"") edited; same as NCHS ""Facility Name--County
 35,Mortality,28,229,1,Decedent's Residence--Inside City Limits,LIMITS,Y = Yes N = No.  U = Unknown ,,VRDR,Decedent,address.city.extension[ withinCityLimits] ,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,Decedent,
 300,Surveillance,28,231,2,Date of Death--Month,DOD_MO,"01-12, 99",,VRDR,DeathDate,value,dateTime,See [PartialDatesAndTimes],,y,,,,DeathDate,
 492,Natality,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
-1 = Data Queried",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-date-of-birth,
+1 = Data Queried",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-date-of-birth,
 845,Fetal Death,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
-1 = Data Queried ",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[MothersDateOfBirthEditFlagsVS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-date-of-birth,
+1 = Data Queried ",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-date-of-birth,
 1369,Birth Infant Death,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
 1 = Data Queried",,,,,,,,,,,,,
 457,Mortality Roster,28,628,2,"State, U.S. Territory or Canadian Province of Decedent's Residence - code",STATEC,"NCHS Instruction Manual: Part 8
@@ -1984,7 +1984,7 @@ or (year of child's birth - 2), 9999",,,,,,,,,,,,,
 167,Mortality,155,1625,28,Decedent's Residence - State name,STATETEXT_R ,Valid text for U.S. State or Territory or Canadian Province,,VRDR,Decedent,address.state (expanded from 2 letter code),string,See [StateLiterals],,y,,,,Decedent,
 972,Fetal Death,155,548,1,Plurality--Edit Flag,PLUR_BYPASS,"0 = Off
 1 = Queried, and Correct
-2 = Plurality/Set Order Queried, Inconsistent",,BFDR,PatientDecedentFetus,multipleBirth.extension[bypassEditFlag].value,codeable,"[PluralityEditFlagsVS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-plurality,
+2 = Plurality/Set Order Queried, Inconsistent",,BFDR,PatientDecedentFetus,multipleBirth.extension[bypassEditFlag].value,codeable,"[ValueSetPluralityEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-plurality,
 973,Fetal Death,156,549,1,Congenital Anomalies of the Fetus--Anencephaly(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),ANEN,"Y = Yes
 N = No
 U = Unknown",,not implemented,not implemented,,,,-,,,,,not implemented,
@@ -2413,7 +2413,7 @@ For Canadian Provinces:
 1028,Fetal Death,211,2716,5,Coded other significant causes or conditions- third mentioned,OCOD3,"ICD-10 code, blank",,BFDR,ObservationCodedOtherFetalDeathCauseOrCondition,"position.value=3,  <br />value",codeable,[https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933],N,,,,,Condition-coded-other-fetal-death-cause-or-condition,
 675,Natality,211,889,1,Plurality--Edit Flag,PLUR_BYPASS,"0 = OFF
 1 = Queried, and Correct
-2 = Plurality/Set Order Queried, Inconsistent",,VRCPL,PatientChildVitalRecords,multipleBirth.extension[bypassEditFlag].value,codeable,"[PluralityEditFlagsVS], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-plurality,
+2 = Plurality/Set Order Queried, Inconsistent",,VRCPL,PatientChildVitalRecords,multipleBirth.extension[bypassEditFlag].value,codeable,"[ValueSetPluralityEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-plurality,
 1552,Birth Infant Death,211,889,1,Plurality--Edit Flag,PLUR_BYPASS,"0 = OFF
 1 = Queried, and Correct
 2 = Plurality/Set Order Queried, Inconsistent",,,,,,,,,,,,,

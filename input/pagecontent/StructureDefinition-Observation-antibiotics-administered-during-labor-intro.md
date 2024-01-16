@@ -30,7 +30,7 @@
   <td>185</td>
   <td>Characteristics of Labor & Delivery--Antibiotics</td>
   <td>ANTB</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#characteristics-of-labor-and-delivery'>note on missing characteristics of labor and delivery data</a></td>
 </tr>

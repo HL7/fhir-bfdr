@@ -30,7 +30,7 @@
   <td>239</td>
   <td>Risk Factors--Hypertension Eclampsia   (RECOMMENDED ADDITION EFFECTIVE 2004)</td>
   <td>EHYPE</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>
@@ -66,7 +66,7 @@
   <td>173</td>
   <td>Risk Factors--Hypertension Eclampsia (added after 2004)</td>
   <td>EHYPE</td>
-  <td></td>
+  <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#pregnancy-risk-factors'>note on missing pregnancy risk factors data</a></td>
 </tr>
