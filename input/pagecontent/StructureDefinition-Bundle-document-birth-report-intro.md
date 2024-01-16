@@ -86,6 +86,18 @@
   </tr>
 </thead>
 <tbody>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Local File No</td>
+  <td>identifier.extension[localFileNumber1].value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>Birth Number</td>
+  <td>identifier.extension[birthCertificateNumber].value</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
 </tbody>
 </table>
 

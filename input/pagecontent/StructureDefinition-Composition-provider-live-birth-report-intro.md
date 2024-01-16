@@ -90,18 +90,6 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>Local</td>
-  <td>File No.</td>
-  <td>-</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>-</td>
-  <td>Birth Number</td>
-  <td>-</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
-</tr>
-<tr>
   <td style='text-align: center'>13</td>
   <td>Date Filed By Registrar</td>
   <td>date</td>
