@@ -92,6 +92,18 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 </thead>
 <tbody>
 <tr>
+  <td style='text-align: center'>Local</td>
+  <td>File No.</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>-</td>
+  <td>State File Number</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
   <td style='text-align: center'>16</td>
   <td>Date Report Completed</td>
   <td>date</td>

@@ -266,6 +266,72 @@
   </tr>
 </thead>
 <tbody>
+<tr>
+  <td style='text-align: center'>5</td>
+  <td>Facility Name / Address</td>
+  <td>name/address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>17</td>
+  <td>Facility Id.</td>
+  <td>identifier[NPI]</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>28.1</td>
+  <td>Name of facility mother transferred from:</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>56.1</td>
+  <td>name of facility infant transferred to:</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>23.1</td>
+  <td>Name of facility mother transferred from:</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>38.1</td>
+  <td>name of facility infant transferred to:</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>8</td>
+  <td>Facility Name / address</td>
+  <td>name/address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>9</td>
+  <td>Facility Id</td>
+  <td>identifier[NPI]</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Facility name</td>
+  <td>name</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>1</td>
+  <td>Facility address</td>
+  <td>address</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>2</td>
+  <td>Facility I.D. (National Provider Identifier)</td>
+  <td>identifier[NPI]</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
 </tbody>
 </table>
 
