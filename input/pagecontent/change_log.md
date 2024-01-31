@@ -4,12 +4,14 @@
  - [FHIR-43473](https://jira.hl7.org/browse/FHIR-43473) - To improve consistency with VRDR the key reporting identifiers (birth cert no, fetal death report number, local file numbers, and overall record identifier) were moved from the Composition.identifier to the Bundle.identifier and were updated to use standardized extensions. The definitions of these extensions will also be moved to the Vital Records Common Library.
 
 ### Minor
-- fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
-- [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - constrain units of all quantity values -- [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherDeliveryHeight], [ObservationMotherPrepregnancyWeight].
+- Removed composition references to [ObservationPlannedToDeliverAtHome] profile. Reporting of home delivery plan relies on [EncounterMaternity] and [EncounterBirth] (using [BirthDeliveryOccurredVS])
+- [FHIR-43506](https://jira.hl7.org/browse/FHIR-43506) - Added forms mappings for [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn]
+- Fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
+- [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - Constrained units of all quantity values -- [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherDeliveryHeight], [ObservationMotherPrepregnancyWeight].
 - reinstate missing [Observation - Birth Plurality of Pregnancy][ObservationBirthPluralityOfPregnancy] [FHIR-43383](https://jira.hl7.org/browse/FHIR-43383)
-- added narrative content to clarify indicating 'Y', 'N', and 'U' for TRAN and ITRAN in the data dictionary usage page [FHIR-43414](https://jira.hl7.org/browse/FHIR-43414)
-- added missing IJE mappings for [RelatedPersonFatherNatural](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-father-natural-vr.html) profile
-- added [roleVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html) to [EncounterMaternity] and [EncounterBirth] to make them easily queryable from the bundles with a simple FHIRPath expression without traversing Composition references.
+- Added narrative content to clarify indicating 'Y', 'N', and 'U' for TRAN and ITRAN in the data dictionary usage page [FHIR-43414](https://jira.hl7.org/browse/FHIR-43414)
+- Added missing IJE mappings for [RelatedPersonFatherNatural](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-father-natural-vr.html) profile
+- Added [roleVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html) to [EncounterMaternity] and [EncounterBirth] to make them easily queryable from the bundles with a simple FHIRPath expression without traversing Composition references.
 - Concept maps added - [BirthWeightEditFlagsCM], [EstimateOfGestationEditFlagsCM], [NumberPreviousCesareansEditFlagsCM], [PregnancyReportEditFlagsCM]
 - Edit Flag Valueset cleanup: Edit flag codes were renamed to use consistent naming convention, which includes the IJE value in the name. Where possible, valuesets use the edit flag codes located in [VRCL](http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags). For edit flag codes specific to BFDR, [EditFlagsCS] codesystem was added. Valueset and concept maps for FathersDateOfBirthEditFlags, MothersDateOfBirthEditFlags, and PluralityEditFlags were relocated to VRCL, since they are of general utility in the Patient and RelatedPersons profiles. 
 

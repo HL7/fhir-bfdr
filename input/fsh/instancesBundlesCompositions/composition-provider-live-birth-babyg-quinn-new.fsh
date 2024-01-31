@@ -21,7 +21,6 @@ Usage: #example
   // * title = "Mother (prenatal) Section on the Live Birth Certificate"
   // * code = $loinc#57073-9 "Prenatal records"
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
-  * insert addNamedEntryComposition(plannedToDeliverAtHome, Observation, observation-planned-to-deliver-at-home-babyg-quinn)
   * insert addNamedEntryComposition(firstPrenatalCareVisit, Observation, observation-date-of-first-prenatal-care-visit-jada-ann-quinn)
   * insert addNamedEntryComposition(numberPrenatalCareVisits, Observation, observation-number-prenatal-visits-jada-ann-quinn)
   * insert addNamedEntryComposition(dateLastNormalMenses, Observation, observation-last-menstrual-period-jada-ann-quinn)

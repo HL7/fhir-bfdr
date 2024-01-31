@@ -143,8 +143,20 @@ After the child is born, an Encounter record will be created for the child (Enco
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
+  <td style='text-align: center'>7.3</td>
+  <td>Home Birth: Planned to deliver at home?</td>
+  <td>location.physicalType</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
   <td style='text-align: center'>5</td>
   <td>Place of delivery</td>
+  <td>location.physicalType</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>5.3</td>
+  <td>Planned to deliver at home</td>
   <td>location.physicalType</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>

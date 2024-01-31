@@ -17,7 +17,6 @@ Usage: #example
 * insert addentry(Encounter, encounter-maternity-carmen-teresa-lee)
 * insert addentry(Organization, organization-jurisdictional-vital-records-office)
 * insert addentry(Patient, patient-mother-carmen-teresa-lee)
-* insert addentry(Observation, observation-planned-to-deliver-at-home-not-named)
 * insert addentry(Observation, observation-date-of-first-prenatal-care-visit-carmen-teresa-lee)
 * insert addentry(Observation, observation-last-menstrual-period-carmen-teresa-lee)
 * insert addentry(Observation, observation-number-births-now-living-carmen-teresa-lee)

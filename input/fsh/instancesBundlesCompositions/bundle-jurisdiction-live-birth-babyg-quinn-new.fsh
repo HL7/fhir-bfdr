@@ -14,7 +14,6 @@ Usage: #example
 * insert addentry(Encounter, encounter-maternity-jada-ann-quinn)
 * insert addentry(Organization, organization-jurisdictional-vital-records-office)
 * insert addentry(Patient, patient-mother-jada-ann-quinn)
-* insert addentry(Observation, observation-planned-to-deliver-at-home-babyg-quinn)
 * insert addentry(Observation, observation-date-of-first-prenatal-care-visit-jada-ann-quinn)
 * insert addentry(Observation, observation-number-prenatal-visits-jada-ann-quinn)
 * insert addentry(Observation, observation-last-menstrual-period-jada-ann-quinn)

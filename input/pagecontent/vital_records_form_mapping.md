@@ -295,10 +295,10 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>location.physicalType</td>
 </tr>
 <tr>
-  <td style='text-align: center'>26.a</td>
+  <td style='text-align: center'>26.3</td>
   <td>Home Birth: Planned to deliver at home?</td>
-  <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
-  <td>value</td>
+  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
+  <td>location.physicalType</td>
 </tr>
 <tr>
   <td style='text-align: center'>27</td>
@@ -1031,10 +1031,10 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>location.physicalType</td>
 </tr>
 <tr>
-  <td style='text-align: center'>5.a</td>
+  <td style='text-align: center'>5.3</td>
   <td>Home Birth: Planned to deliver at home?</td>
-  <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
-  <td>value</td>
+  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
+  <td>location.physicalType</td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
@@ -1738,10 +1738,10 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>location.physicalType</td>
 </tr>
 <tr>
-  <td style='text-align: center'>7.a</td>
+  <td style='text-align: center'>7.3</td>
   <td>Home Birth: Planned to deliver at home?</td>
-  <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
-  <td>value</td>
+  <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity</a></td>
+  <td>location.physicalType</td>
 </tr>
 <tr>
   <td style='text-align: center'>8</td>
@@ -2197,10 +2197,10 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>location.physicalType</td>
 </tr>
 <tr>
-  <td style='text-align: center'>5.a</td>
+  <td style='text-align: center'>5.3</td>
   <td>Planned to deliver at home</td>
-  <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
-  <td>value</td>
+  <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity</a></td>
+  <td>location.physicalType</td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
