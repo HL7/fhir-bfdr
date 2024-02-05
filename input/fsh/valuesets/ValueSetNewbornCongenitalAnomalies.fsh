@@ -16,4 +16,3 @@ Description: "The valueset contains codes to represent newborn congenital anomal
 * SNOMED_CT#70156005	"Anomaly of chromosome pair 21"
 * SNOMED_CT#409709004	"Chromosomal disorder"
 * SNOMED_CT#416010008	"Hypospadias"
-* SNOMED_CT#260413007	"None"
