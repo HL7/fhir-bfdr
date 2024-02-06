@@ -51,13 +51,13 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>-</td>
   <td>Local File No</td>
   <td><a href='StructureDefinition-Bundle-document-birth-report.html'>BundleDocumentBirthReport</a></td>
-  <td><a href='StructureDefinition-AuxiliaryStateIdentifier1.html'>identifier.extension:localFileNumber1</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-AuxiliaryStateIdentifier1.html'>identifier.extension:localFileNumber1</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Birth Number</td>
   <td><a href='StructureDefinition-Bundle-document-birth-report.html'>BundleDocumentBirthReport</a></td>
-  <td><a href='StructureDefinition-CertificateNumber.html'>identifier.extension:birthCertificateNumber</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-CertificateNumber.html'>identifier.extension:birthCertificateNumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
@@ -1681,13 +1681,13 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Local File No</td>
   <td><a href='StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport
 </a></td>
-  <td><a href='StructureDefinition-CertificateNumber.html'>identifier.extension:localFileNumber1</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-CertificateNumber.html'>identifier.extension:localFileNumber1</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>State File Number</td>
   <td><a href='StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport</a></td>
-  <td><a href='StructureDefinition-AuxiliaryStateIdentifier1.html'>identifer.extension:fetalDeathReportNumber</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-AuxiliaryStateIdentifier1.html'>identifer.extension:fetalDeathReportNumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
