@@ -6,4 +6,4 @@ Usage: #example
 * status = #active
 * name = "North Hospital"
 * type[0] = $v3-RoleCode#HOSP "Hospital"
-* type[+] = LocationTypeCS#transfer-from "Transfer-from Location"
+* type[+] = LocalComponentCodesCS#loc_transfer-from "Transfer-from Location"
