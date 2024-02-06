@@ -32,7 +32,7 @@ FORMS_IG_COL = 4
 FORMS_MAPPING_PROFILE_COL = 5
 FORMS_PROFILE_COL = 6
 FORMS_FIELD_COL = 7
-FORMS_CONTEXT_COL = 8
+FORMS_EXTENSION_COL = 8
 FORMS_QAIRE_COL = 9
 FORMS_QAIRE_FIELD_COL = 10
 FORMS_MAPPING_IG_COL = 12
@@ -115,7 +115,7 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
 
       next if row[FORMS_FORM_COL].to_s != pRowFilter || row[FORMS_PROFILE_COL].to_s == "not implemented"
     
-      vElement = vProfile =vField = vContext = vIG = vExtension = vMappingIG = ""
+      vElement = vProfile =vField = vExtension = vIG = vExtension = vMappingIG = ""
 
       formsElement = row[FORMS_ELEMENT_COL].to_s
       if formsElement.include? ". "
@@ -131,34 +131,18 @@ def createMappingTable(pRowFilter, pRowFilterLink, pOutputFile, pSpreadsheet)
       vMappingIg = row[FORMS_MAPPING_IG_COL].to_s if row[FORMS_MAPPING_IG_COL]
       vProfile = row[FORMS_MAPPING_PROFILE_COL].to_s if row[FORMS_MAPPING_PROFILE_COL]
       vProfileName = row[FORMS_COMP_NAME_COL].to_s if row[FORMS_COMP_NAME_COL]
-      
-      # There's some weirdness with the Roo gem and empty and nil fields - hence double to_s and check for empty hack
-      vContext = row[FORMS_CONTEXT_COL].to_s if !row[FORMS_CONTEXT_COL].to_s.to_s.empty?
-      vField = row[FORMS_FIELD_COL].to_s.empty? ? row[FORMS_CONTEXT_COL].to_s.to_s.partition('.').last : row[FORMS_FIELD_COL].to_s
+      vProfileWithURL = ""
+      vExtension = row[FORMS_EXTENSION_COL].to_s.to_s.partition('.').last if !row[FORMS_EXTENSION_COL].to_s.to_s.empty?
+      vField = row[FORMS_FIELD_COL].to_s.empty? ? row[FORMS_EXTENSION_COL].to_s.to_s.partition('.').last : row[FORMS_FIELD_COL].to_s
+      vFieldProfile = row[FORMS_PROFILE_COL].to_s if row[FORMS_PROFILE_COL]
 
+      hasExtension = !row[FORMS_EXTENSION_COL].nil?
 
-      hasContext = !row[FORMS_CONTEXT_COL].nil?
-      # if there is a "context" filled in for the sheet,
-      # make sure that the proper IG is used (mapping IG)
-      if hasContext && row[FORMS_FIELD_COL].nil?
-        vFieldProfile = row[FORMS_PROFILE_COL].to_s if row[FORMS_PROFILE_COL]
-        if vFieldProfile.nil?
-          puts "- Profile column is empty - "
-        end
-        vField = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vFieldProfile}" + ".html'>#{vField}</a>"  
-        # vField = "[" + vField + "]" + "("+ igMap[vIg] + "StructureDefinition-" + vFieldProfile + ".html)"
-        if vMappingIg.nil?
-          puts "- Mapping IG column is empty for profile - "
-          puts vContext
-        end
+      if hasExtension
         vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html'>#{vProfileName}</a>"  
-        # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
-      elsif hasContext
-        vProfileWithURL = "<a href='#{igMap[vMappingIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html'>#{vProfileName}</a>"  
-        # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vMappingIg] + "StructureDefinition-" + vProfile + ".html)"
+        vField = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vFieldProfile}" + ".html'>#{vExtension}</a>"  
       else
         vProfileWithURL = "<a href='#{igMap[vIg]}" + "StructureDefinition-" + "#{vProfile}" + ".html'>#{vProfileName}</a>"  
-        # vProfileWithURL = "[" + vProfile + "]" + "("+ igMap[vIg] + "StructureDefinition-" + vProfile + ".html)"
       end
 
       if vProfile.include?("Questionnaire") 
