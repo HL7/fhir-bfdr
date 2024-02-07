@@ -185,12 +185,8 @@
 <td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
-<tr><td> <a href='CodeSystem-CodeSystem-abnormal-conditions-newborn.html'>AbnormalConditionsNewbornCS</a> </td><td> New </td><td> New Addition </td></tr>
-<tr><td> <a href='CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class.html'>BirthAndFetalDeathFinancialClassCS</a> </td><td> New  </td><td> New Addition </td></tr>
-<tr><td> <a href='CodeSystem-CodeSystem-vr-birth-delivery-occurred.html'>BirthDeliveryOccurredCS</a> </td><td> New </td><td>  New Addition  </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-edit-flags.html'>EditFlagsCS</a> </td><td> New </td><td>  New Addition  </td></tr>
-<tr><td> <a href='CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition.html'>FetalDeathCauseOrConditionCS</a> </td><td> New </td><td>  New Addition  </td></tr>
-<tr><td> <a href='CodeSystem-CodeSystem-informant-relationship-to-mother.html'>InformantRelationshipToMotherCS</a> </td><td> New </td><td>  New Addition  </td></tr>
+<tr><td> <a href='CodeSystem-CodeSystem-local-component-codes.html'>LocalComponentCodesCS</a> </td><td> New </td><td>  New Addition  </td></tr>
 </tbody>
 </table>
 

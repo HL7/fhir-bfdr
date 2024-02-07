@@ -1,6 +1,6 @@
 CodeSystem: LocalComponentCodesCS
 Id: CodeSystem-local-component-codes
-Title: "CodeSystem - Local Component Codes"
+Title: "Local Component Codes"
 Description: "Local Component Codes for observation components that lack an appropriate LOINC or SCT code"
 * ^caseSensitive = true
 * ^content = #complete
