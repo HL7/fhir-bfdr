@@ -1,7 +1,7 @@
 CodeSystem: LocalBFDRCodesCS
-Id: CodeSystem-local-codes
-Title: "Local Codes"
-Description: "Local Codes for concepts that lack an appropriate LOINC or SCT code"
+Id: CodeSystem-local-bfdr-codes
+Title: "Local BFDR Codes"
+Description: "Local Codes for concepts in BFDR that lack an appropriate LOINC or SCT code"
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false
