@@ -118,8 +118,7 @@
 [CodeSystemLocalObservationsCodesVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/CodeSystem-CodeSystem-local-observation-codes-vr.html
 [ValueSetBirthAttendantTitlesVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-birth-attendant-titles-vr.html
 [ValueSetBirthplaceCountryVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-birthplace-country-vr.html
-[ValueSetBirthSexChildVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-birth-sex-child-vr.html
-[ValueSetBirthSexFetusVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-birth-sex-fetus-vr.html
+[ValueSetSexAssignedAtBirthVitalRecords]: https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-sex-assigned-at-birth-vr.html
 [ValueSetEditBypass01234VitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-valueset-edit-bypass-01234-vr.html
 [ValueSetEducationLevelVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-education-level-vr.html
 [ValueSetEducationLevelPersonVitalRecords]: https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-education-level-person-vr.html
