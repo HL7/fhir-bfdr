@@ -4,7 +4,7 @@ Usage: #definition
 // COnsider using codes from https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/ValueSet-InsuranceProductTypeVS.html
 * experimental = false
 * insert ConceptMapIntro(BirthAndFetalDeathFinancialClass, BirthAndFetalDeathFinancialClassVS)
-* insert AddGroup($IJE, [[Canonical(LocalComponentCodesCS)]])
+* insert AddGroup($IJE, [[Canonical(LocalBFDRCodesCS)]])
 * insert MapConcept( #1,  "Medicaid", #finclass_medicaid, "MEDICAID")
 * insert MapConcept( #2,  "Private Insurance", #finclass_privateinsurance, "PRIVATE HEALTH INSURANCE")
 * insert MapConcept( #3,  "Self-pay", #finclass_selfpay, "Self-pay" )

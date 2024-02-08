@@ -13,7 +13,7 @@ Usage: #definition
 * insert MapConcept( #COD18a11,  "Initiating cause/condition - Fetal anomaly literal", #702709008, "Congenital anomaly of fetus (Specify\)")
 * insert MapConcept( #COD18a12,  "Initiating cause/condition - Fetal injury literal", #277489001, "Fetal trauma (Specify\)")
 * insert MapConcept( #COD18a13,  "Initiating cause/condition - Fetal infection literal", #128270001, "Infectious disorder of the fetus (Specify\)")
-* insert AddGroup($IJE, [[Canonical(LocalComponentCodesCS)]])
+* insert AddGroup($IJE, [[Canonical(LocalBFDRCodesCS)]])
 * insert MapConcept( #COD18a8,  "Initiating cause/condition - Maternal conditions/diseases literal", #FCOD_maternalconditions, "Maternal Conditions/Diseases (Specify\)")
 // #COD18a6 and #COD18a8 go together.  One is a boolean that says that there is an other condition.  One is the literal for that condition.
 * insert MapConcept( #COD18a9,  "Initiating cause/condition - Other complications of placenta\, cord\, or membranes literal", #FCOD_membranes, "Complications of Placenta\, Cord\, or Membranes: Other (Specify\)")

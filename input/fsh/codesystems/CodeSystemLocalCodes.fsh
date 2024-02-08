@@ -1,7 +1,7 @@
-CodeSystem: LocalComponentCodesCS
-Id: CodeSystem-local-component-codes
-Title: "Local Component Codes"
-Description: "Local Component Codes for observation components that lack an appropriate LOINC or SCT code"
+CodeSystem: LocalBFDRCodesCS
+Id: CodeSystem-local-codes
+Title: "Local Codes"
+Description: "Local Codes for concepts that lack an appropriate LOINC or SCT code"
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false

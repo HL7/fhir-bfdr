@@ -10,7 +10,7 @@ Usage: #example
 * status = #active
 * name = "South Hospital"
 * type[0] = $v3-RoleCode#HOSP "Hospital"
-* type[+] = LocalComponentCodesCS#loc_birth "Birth Location"
+* type[+] = LocalBFDRCodesCS#loc_birth "Birth Location"
 * address
   * line = "2100 North Ave"
   * city = "Salt Lake City"

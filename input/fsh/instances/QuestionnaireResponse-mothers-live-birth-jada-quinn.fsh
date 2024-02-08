@@ -291,4 +291,4 @@ Usage: #example
 * item[+]
   * linkId = "informant-relationship"
   * text = "What is your relationship to the baby's mother?"
-  * answer.valueCoding = LocalComponentCodesCS#rel_otherrelative "Other relative"
+  * answer.valueCoding = LocalBFDRCodesCS#rel_otherrelative "Other relative"

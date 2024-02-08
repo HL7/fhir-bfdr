@@ -4,7 +4,7 @@ Title: "Coverage - Principal Payer for Delivery - Jada Ann Quinn"
 Description: "Coverage - Principal Payer for Delivery: Jada Ann Quinn example"
 Usage: #example
 * status = #active
-* type = LocalComponentCodesCS#finclass_privateinsurance "PRIVATE HEALTH INSURANCE"
+* type = LocalBFDRCodesCS#finclass_privateinsurance "PRIVATE HEALTH INSURANCE"
   * text = "Private Health Insurance"
 * beneficiary = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * payor
