@@ -9,6 +9,7 @@ title: Birth And Fetal Death (BFDR) - STU2-ballot
 name: Birth And Fetal Death 
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 status: draft # draft | active | retired | unknown
 version: 2.0.0-CIbuild
 fhirVersion: 4.0.1
@@ -147,7 +148,7 @@ menu:
     Specification: the_specification.html
     Categories: categories.html
     Usage Notes: usage.html
-    Worksheet Questionaires: patient_worksheet_questionnaires.html
+    Worksheet Questionnaires: patient_worksheet_questionnaires.html
     Natality Data Dictionary: ije_mapping_natality.html
     Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
     Forms Mapping: vital_records_form_mapping.html
@@ -270,8 +271,8 @@ groups:
       - CompositionCodedCauseOfFetalDeath
       - CompositionCodedRaceAndEthnicity
 
-  BFDRQuestionaires:
-    name: Questionaires 
+  BFDRQuestionnaires:
+    name: Questionnaires 
     resources:
       - Questionnaire-mothers-live-birth
       - Questionnaire-patients-fetal-death
