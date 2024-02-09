@@ -13,5 +13,4 @@ Usage: #definition
 * insert MapConcept( #HEPC,  "Infections Present--Hepatitis C", #50711007, "Hepatitis C" )
 // no "None" mapping - these mappings are between IJE fields that are Y, N, U and SNOMED codes
 // * insert MapConcept( ---,  ---, #260413007, "None" )
-* insert AddGroup($IJE, $v3-NullFlavor)
-* insert MapConcept( #9,  "Unknown", #OTH, "other")
+

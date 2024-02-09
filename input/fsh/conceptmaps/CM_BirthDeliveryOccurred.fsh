@@ -9,7 +9,7 @@ Usage: #definition
 * insert MapConcept( #3,  "Home (Intended\)", #408839006, "Planned home birth" )
 * insert MapConcept( #4,  "Home (Not Intended\)", #408838003, "Unplanned home birth")
 * insert MapConcept( #6,  "Clinic/Doctor's Office", #67190003, "Free-standing clinic" )
-* insert AddGroup($IJE, [[Canonical(BirthDeliveryOccurredCS)]])
+* insert AddGroup($IJE, [[Canonical(LocalBFDRCodesCS)]])
 * insert MapConcept( #5,  "Home (Unknown if Intended\)", #unknownplannedhomebirth, "Unknown if Planned Home Birth")
 * insert AddGroup($IJE, $v3-NullFlavor)
 * insert MapConcept( #7,  "Other", #OTH, "Other")
