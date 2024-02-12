@@ -204,37 +204,25 @@ Usage: #example
 * item[+]
   * linkId = "mother-ethnicity"
   * prefix = "9"
-  * text = "Are you Spanish/Hispanic/Latina?"
-  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)
-  * initial.valueCoding = $v3-NullFlavor#UNK
-  * type = #choice
+  * text = "Are you Spanish/Hispanic/Latina? (if so, please answer 9a-9d)"
+  * type = #boolean
   * repeats = false
   * item[+]
-    * linkId = "mother-ethnicity-yes-mexican"
+    * linkId = "mother-ethnicity-mexican"
     * text = "Are you Mexican, Mexican-American?"
-    * enableWhen
-      * question = "mother-ethnicity"
-      * operator = #!=
-      * answerBoolean = false
-    * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)
-    * initial.valueCoding = $v3-NullFlavor#UNK
-    * type = #choice
+    * type = #boolean
     * repeats = false
     * prefix = "9a"
   * item[+]
     * linkId = "mother-ethnicity-puerto-rican"
     * text = "Are you Puerto Rican?"
-    * type = #choice
-    * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)
-    * initial.valueCoding = $v3-NullFlavor#UNK
+    * type = #boolean
     * repeats = false
     * prefix = "9b"
   * item[+]
     * linkId = "mother-ethnicity-cuban"
     * text = "Are you Cuban?"
-    * type = #choice
-    * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)
-    * initial.valueCoding = $v3-NullFlavor#UNK
+    * type = #boolean
     * repeats = false
     * prefix = "9c"
   * item[+]
@@ -249,18 +237,135 @@ Usage: #example
   * text = "What is your race? (Please check one or more races to indicate what you consider yourself to be)."
   * type = #group
   * repeats = false
-  * item[0]
-    * linkId = "mother-race-category"
-    * text = "Race categories"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/omb-race-category"
   * item[+]
-    * linkId = "mother-detailed-race"
-    * text = "Extended race codes"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/detailed-race"
+    * linkId = "mother-race-white"
+    * text = "White"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10a"
+  * item[+]
+    * linkId = "mother-race-black-or-aa"
+    * text = "Black or African American"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10b"
+  * item[+]
+    * linkId = "mother-race-aian"
+    * text = "American Indian or Alaskan Native"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10c"
+    * item[+]
+    * linkId = "mother-race-aian-tribe"
+    * text = "(name of enrolled or principal tribe)"
+    * type = #string
+    * repeats = false
+    * enableWhen
+      * question = "mother-race-aian"
+      * operator = #=
+      * answerBoolean = true
+  * item[+]
+    * linkId = "mother-race-asian-indian"
+    * text = "Asian Indian"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10d"
+  * item[+]
+    * linkId = "mother-race-chinese"
+    * text = "Chinese"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10e"
+  * item[+]
+    * linkId = "mother-race-filipino"
+    * text = "Filipino"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10f"
+  * item[+]
+    * linkId = "mother-race-japanese"
+    * text = "Chinese"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10g"
+  * item[+]
+    * linkId = "mother-race-korean"
+    * text = "Korean"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10h"
+  * item[+]
+    * linkId = "mother-race-vietnamese"
+    * text = "Vietnamese"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10i"
+  * item[+]
+    * linkId = "mother-race-other-asian"
+    * text = "Other Asian"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10j"
+    * item[+]
+      * linkId = "mother-race-other-asian-literal"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * prefix = "10j1"
+      * enableWhen
+        * question = "mother-race-other-asian"
+        * operator = #=
+        * answerBoolean = true
+  * item[+]
+    * linkId = "mother-race-native-hawaiian"
+    * text = "Native Hawaiian"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10k"
+  * item[+]
+    * linkId = "mother-race-guamanian-or-chamorro"
+    * text = "Guamanian or Chamorro"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10l"
+  * item[+]
+    * linkId = "mother-race-samoan"
+    * text = "Samoan"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10m"
+  * item[+]
+    * linkId = "mother-race-other-pacific-islander"
+    * text = "Other Pacific Islander"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10n"
+    * item[+]
+      * linkId = "mother-race-other-pacific-islander-specify"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * prefix = "10n1"
+      * enableWhen
+        * question = "mother-race-other-pacific-islander "
+        * operator = #=
+        * answerBoolean = true
+  * item[+]
+    * linkId = "mother-race-other"
+    * text = "Other (specify)"
+    * type = #boolean
+    * repeats = false
+    * prefix = "10o"
+    * item[+]
+      * linkId = "mother-race-other-specify"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * prefix = "10o1"
+      * enableWhen
+        * question = "mother-race-other"
+        * operator = #=
+        * answerBoolean = true
 * item[+]
   * linkId = "receive-wic"
   * definition = #Observation.code  // Canonical(ObservationMotherReceivedWICFood)#Observation.code // "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"
@@ -304,7 +409,7 @@ Usage: #example
 * item[+]
   * linkId = "mothers-prepregnancy-weight"
   * prefix = "14"
-  * text = "lbs"
+  * text = "What is your weight in lbs?"
   * type = #quantity
   * repeats = false
 * item[+]
