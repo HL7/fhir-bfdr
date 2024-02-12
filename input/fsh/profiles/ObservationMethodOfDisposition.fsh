@@ -1,7 +1,7 @@
 Profile: ObservationFetalRemainsDispositionMethod
 Parent: Observation
 Id: Observation-fetal-remains-disposition-method
-Title: "Observation - Method of Disposition"
+Title: "Observation - Fetal Remains Disposition Method"
 Description: "This Observation profile represents the method of disposition of the deceased fetus."
 * code 1..1 MS
 * code = $loinc#88241-5

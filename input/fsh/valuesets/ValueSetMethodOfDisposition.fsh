@@ -1,7 +1,8 @@
 ValueSet: FetalRemainsDispositionMethodVS
 Id: ValueSet-fetal-remains-disposition-method
-Title: "Method of Disposition VS"
-Description: "This valueset contains codes to represent Fetal Remains Method of Disposition. This valueset is based on [PHVS_FetalRemainsDispositionMethod_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7585)"
+Title: "Fetal Remains Disposition Method VS"
+Description: "This valueset contains codes to represent Fetal Remains Method of Disposition. This valueset is based on [PHVS_FetalRemainsDispositionMethod_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7585).
+It differs from the [MethodOfDispositionVS] valueset in that includes 'Hospital Disposition', but not 'Entombment'. "
 * insert boilerplate
 * insert SNOMEDCopyright
 * $sct#449971000124106 "Burial"
