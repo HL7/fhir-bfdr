@@ -1,6 +1,6 @@
-Profile: ObservationMethodOfDisposition
+Profile: ObservationFetalRemainsDispositionMethod
 Parent: Observation
-Id: Observation-method-of-disposition
+Id: Observation-fetal-remains-disposition-method
 Title: "Observation - Method of Disposition"
 Description: "This Observation profile represents the method of disposition of the deceased fetus."
 * code 1..1 MS
@@ -10,6 +10,6 @@ Description: "This Observation profile represents the method of disposition of t
 * subject only Reference(PatientDecedentFetus)
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* value[x] from MethodOfDispositionVS (required)
+* value[x] from FetalRemainsDispositionMethodVS (required)
   * ^short = "The collection of disposition methods of fetal remains used within birth and fetal death reporting."
   * ^binding.description = "Fetal Remains Disposition Method (NCHS)"
