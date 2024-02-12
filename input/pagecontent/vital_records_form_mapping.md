@@ -165,7 +165,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>9g</td>
   <td>Mother’s Residence Inside City Limits?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>10a</td>
@@ -1504,7 +1504,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
@@ -1819,7 +1819,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>11g</td>
   <td>Residence of Mother-Inside City Limits?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>12a</td>
@@ -2502,7 +2502,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
