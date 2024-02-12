@@ -122,18 +122,6 @@ This Encounter can reference the mother's maternity encounter using the partOf d
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>1</td>
-  <td>Facility name / address</td>
-  <td>name/address</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
-</tr>
-<tr>
-  <td style='text-align: center'>2</td>
-  <td>Facility I.D.</td>
-  <td>identifier</td>
-  <td><a href='https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf'> Facility Worksheet for the Live Birth Certificate</a></td>
-</tr>
-<tr>
   <td style='text-align: center'>5</td>
   <td>Place where birth occurred</td>
   <td>location.physicalType</td>
