@@ -14,6 +14,10 @@
 - Added [roleVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html) to [EncounterMaternity] and [EncounterBirth] to make them easily queryable from the bundles with a simple FHIRPath expression without traversing Composition references.
 - Concept maps added - [BirthWeightEditFlagsCM], [EstimateOfGestationEditFlagsCM], [NumberPreviousCesareansEditFlagsCM], [PregnancyReportEditFlagsCM]
 - Edit Flag Valueset cleanup: Edit flag codes were renamed to use consistent naming convention, which includes the IJE value in the name. Where possible, valuesets use the edit flag codes located in [VRCL](http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags). For edit flag codes specific to BFDR, [EditFlagsCS] codesystem was added. Valueset and concept maps for FathersDateOfBirthEditFlags, MothersDateOfBirthEditFlags, and PluralityEditFlags were relocated to VRCL, since they are of general utility in the Patient and RelatedPersons profiles. 
+- Removed 'None' value from valueset [NewbornCongenitalAnomaliesVS] since [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] is used for indicating 'none' and included 'Other' value in valueset for general utility with documentation in [Usage page](usage.html) that it's not allowed for NCHS submission 
+- [PatientDecedentFetus] made to reference [ValueSetSexAssignedAtBirthVitalRecords](https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-sex-assigned-at-birth-vr.html)
+- Consolidated miscellaneous local codesystems into a single codesystem called [LocalBFDRCodesCS]
+
 
 ### STU2 Ballot, January 2024
 #### Major Changes
