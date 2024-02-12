@@ -183,15 +183,21 @@ Usage: #example
   * item[0]
     * linkId = "mother-birthplace-state"
     * text = "State"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  // Should be just states
   * item[+]
     * linkId = "mother-birthplace-territory"
     * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) // SHould be just states 
   * item[+]
     * linkId = "mother-birthplace-country"
     * text = "or Foreign country"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetBirthplaceCountryVitalRecords)
 * item[+]
   * linkId = "mother-education"
   * definition = #Observation.value // Canonical(ObservationEducationLevelVitalRecordsNew)#Observation.value //#"http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-parent-education-level-vr#Observation.value"
@@ -347,7 +353,7 @@ Usage: #example
       * repeats = false
       * prefix = "10n1"
       * enableWhen
-        * question = "mother-race-other-pacific-islander "
+        * question = "mother-race-other-pacific-islander"
         * operator = #=
         * answerBoolean = true
   * item[+]
@@ -575,43 +581,169 @@ Usage: #example
 * item[+]
   * linkId = "father-ethnicity"
   * prefix = "23"
-  * text = "Is the father Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
-  * type = #group
+  * text = "Is the father Spanish/Hispanic/Latina? (if so, please answer 23a-23d)"
+  * type = #boolean
   * repeats = false
-  * item[0]
-    * linkId = "father-shl"
-    * text = "Is the father Spanish/Hispanic/Latina"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837"
   * item[+]
-    * linkId = "father-detailed-shl"
-    * text = "If Spanish/Hispanic/Latina, check the appropriate box."
-    * type = #choice
-    * enableWhen
-      * question = "father-shl"
-      * operator = #=
-      * answerCoding = urn:oid:2.16.840.1.113883.6.238#2135-2
+    * linkId = "father-ethnicity-mexican"
+    * text = "Is the father Mexican, Mexican-American?"
+    * type = #boolean
     * repeats = false
-    * answerValueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877"
+    * prefix = "23a"
+  * item[+]
+    * linkId = "father-ethnicity-puerto-rican"
+    * text = "Is the father you Puerto Rican?"
+    * type = #boolean
+    * repeats = false
+    * prefix = "23b"
+  * item[+]
+    * linkId = "father-ethnicity-cuban"
+    * text = "Is the father you Cuban?"
+    * type = #boolean
+    * repeats = false
+    * prefix = "23c"
+  * item[+]
+    * linkId = "father-ethnicity-other"
+    * text = "Is the father of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian) (specify)."
+    * type = #string
+    * repeats = false
+    * prefix = "23d"
 * item[+]
   * linkId = "father-race"
   * prefix = "24"
-  * text = "What is the father's race? (Please check one or more races to indicate what he considers himself to be)."
+  * text = "What is the father's race? (Please check one or more races to indicate what what he considers himself to be)."
   * type = #group
   * repeats = false
-  * item[0]
-    * linkId = "father-race-category"
-    * text = "Race categories"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/omb-race-category"
   * item[+]
-    * linkId = "father-detailed-race"
-    * text = "Extended race codes"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.14914"
+    * linkId = "father-race-white"
+    * text = "White"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24a"
+  * item[+]
+    * linkId = "father-race-black-or-aa"
+    * text = "Black or African American"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24b"
+  * item[+]
+    * linkId = "father-race-aian"
+    * text = "American Indian or Alaskan Native"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24c"
+    * item[+]
+    * linkId = "father-race-aian-tribe"
+    * text = "(name of enrolled or principal tribe)"
+    * type = #string
+    * repeats = false
+    * enableWhen
+      * question = "father-race-aian"
+      * operator = #=
+      * answerBoolean = true
+  * item[+]
+    * linkId = "father-race-asian-indian"
+    * text = "Asian Indian"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24d"
+  * item[+]
+    * linkId = "father-race-chinese"
+    * text = "Chinese"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24e"
+  * item[+]
+    * linkId = "father-race-filipino"
+    * text = "Filipino"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24f"
+  * item[+]
+    * linkId = "father-race-japanese"
+    * text = "Chinese"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24g"
+  * item[+]
+    * linkId = "father-race-korean"
+    * text = "Korean"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24h"
+  * item[+]
+    * linkId = "father-race-vietnamese"
+    * text = "Vietnamese"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24i"
+  * item[+]
+    * linkId = "father-race-other-asian"
+    * text = "Other Asian"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24j"
+    * item[+]
+      * linkId = "father-race-other-asian-literal"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * prefix = "24j1"
+      * enableWhen
+        * question = "father-race-other-asian"
+        * operator = #=
+        * answerBoolean = true
+  * item[+]
+    * linkId = "father-race-native-hawaiian"
+    * text = "Native Hawaiian"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24k"
+  * item[+]
+    * linkId = "father-race-guamanian-or-chamorro"
+    * text = "Guamanian or Chamorro"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24l"
+  * item[+]
+    * linkId = "father-race-samoan"
+    * text = "Samoan"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24m"
+  * item[+]
+    * linkId = "father-race-other-pacific-islander"
+    * text = "Other Pacific Islander"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24n"
+    * item[+]
+      * linkId = "father-race-other-pacific-islander-specify"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * prefix = "24n1"
+      * enableWhen
+        * question = "father-race-other-pacific-islander"
+        * operator = #=
+        * answerBoolean = true
+  * item[+]
+    * linkId = "father-race-other"
+    * text = "Other (specify)"
+    * type = #boolean
+    * repeats = false
+    * prefix = "24o"
+    * item[+]
+      * linkId = "father-race-other-specify"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * prefix = "24o1"
+      * enableWhen
+        * question = "father-race-other"
+        * operator = #=
+        * answerBoolean = true
+
 * item[+]
   * linkId = "parents-ssn"
   * prefix = "25"
