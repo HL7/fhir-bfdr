@@ -262,15 +262,15 @@ Usage: #example
     * repeats = false
     * prefix = "10c"
     * item[+]
-    * linkId = "mother-race-aian-tribe"
-    * text = "(name of enrolled or principal tribe)"
-    * type = #string
-    * repeats = false
-    * enableWhen
-      * question = "mother-race-aian"
-      * operator = #=
-      * answerBoolean = true
-  * item[+]
+      * linkId = "mother-race-aian-tribe"
+      * text = "(name of enrolled or principal tribe)"
+      * type = #string
+      * repeats = false
+      * enableWhen
+        * question = "mother-race-aian"
+        * operator = #=
+        * answerBoolean = true
+    * item[+]
     * linkId = "mother-race-asian-indian"
     * text = "Asian Indian"
     * type = #boolean
@@ -633,14 +633,14 @@ Usage: #example
     * repeats = false
     * prefix = "24c"
     * item[+]
-    * linkId = "father-race-aian-tribe"
-    * text = "(name of enrolled or principal tribe)"
-    * type = #string
-    * repeats = false
-    * enableWhen
-      * question = "father-race-aian"
-      * operator = #=
-      * answerBoolean = true
+      * linkId = "father-race-aian-tribe"
+      * text = "(name of enrolled or principal tribe)"
+      * type = #string
+      * repeats = false
+      * enableWhen
+        * question = "father-race-aian"
+        * operator = #=
+        * answerBoolean = true
   * item[+]
     * linkId = "father-race-asian-indian"
     * text = "Asian Indian"
