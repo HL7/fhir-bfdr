@@ -81,7 +81,8 @@ Usage: #example
   * item[+]
     * linkId = "mother-state"
     * text = "State (or U.S. Territory, Canadian Province)"
-    * type = #string
+    * type = #choice
+    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
   * item[+]
     * linkId = "mother-zip"
     * text = "Zip Code"
@@ -89,7 +90,8 @@ Usage: #example
   * item[+]
     * linkId = "mother-country"
     * text = "If not in the United States, country"
-    * type = #string
+    * type = #choice
+    * answerValueSet =   Canonical(ValueSetResidenceCountryVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
 * item[+]
   * linkId = "inside-city-limits"
   * prefix = "4"
@@ -141,7 +143,9 @@ Usage: #example
   * item[+]
     * linkId = "mother-mail-state"
     * text = "State (or U.S. Territory, Canadian Province)"
-    * type = #string
+    * type = #choice
+    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+
     * enableWhen
       * question = "mother-mail-same"
       * operator = #=
@@ -157,7 +161,9 @@ Usage: #example
   * item[+]
     * linkId = "mother-mail-country"
     * text = "If not in the United States, country"
-    * type = #string
+    * type = #choice
+    * answerValueSet =   Canonical(ValueSetResidenceCountryVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+
     * enableWhen
       * question = "mother-mail-same"
       * operator = #=
@@ -198,25 +204,45 @@ Usage: #example
 * item[+]
   * linkId = "mother-ethnicity"
   * prefix = "9"
-  * text = "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
-  * type = #group
+  * text = "Are you Spanish/Hispanic/Latina?"
+  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)
+  * initial.valueCoding = $v3-NullFlavor#UNK
+  * type = #choice
   * repeats = false
-  * item[0]
-    * linkId = "mother-shl"
-    * text = "Are you Spanish/Hispanic/Latina"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"
   * item[+]
-    * linkId = "mother-detailed-shl"
-    * text = "If Spanish/Hispanic/Latina, check the appropriate box."
-    * type = #choice
+    * linkId = "mother-ethnicity-yes-mexican"
+    * text = "Are you Mexican, Mexican-American?"
     * enableWhen
-      * question = "mother-shl"
-      * operator = #=
-      * answerCoding = urn:oid:2.16.840.1.113883.6.238#2135-2
+      * question = "mother-ethnicity"
+      * operator = #!=
+      * answerBoolean = false
+    * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)
+    * initial.valueCoding = $v3-NullFlavor#UNK
+    * type = #choice
     * repeats = false
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"
+    * prefix = "9a"
+  * item[+]
+    * linkId = "mother-ethnicity-puerto-rican"
+    * text = "Are you Puerto Rican?"
+    * type = #choice
+    * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)
+    * initial.valueCoding = $v3-NullFlavor#UNK
+    * repeats = false
+    * prefix = "9b"
+  * item[+]
+    * linkId = "mother-ethnicity-cuban"
+    * text = "Are you Cuban?"
+    * type = #choice
+    * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)
+    * initial.valueCoding = $v3-NullFlavor#UNK
+    * repeats = false
+    * prefix = "9c"
+  * item[+]
+    * linkId = "mother-ethnicity-other"
+    * text = "Are you of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian) (specify)."
+    * type = #string
+    * repeats = false
+    * prefix = "9d"
 * item[+]
   * linkId = "mother-race"
   * prefix = "10"
