@@ -26,6 +26,9 @@ If [ObservationUnknownFinalRouteMethodDelivery] is present in bundle, then the i
 ##### Obstetric Procedures 
 If [ObservationNoneOfSpecifiedObstetricProcedures] is present in bundle, then the interpretation is that external cephalic procedure was not performed, and [ProcedureObstetric] should not be used.
 
+### 'Other' in InfectionsDuringPregnancyLiveBirth and NewbornCongenitalAnomalies 
+Since other infections and congenital anomalies could be of interest/value for use cases outside of natality, the value 'Other' is included in these valuesets (see [InfectionsDuringPregnancyLiveBirthVS] and [NewbornCongenitalAnomaliesVS]). However, use of #OTH is not allowed for submissions to NCHS.
+
 ### Handling of Edit Flags
 TBD
 

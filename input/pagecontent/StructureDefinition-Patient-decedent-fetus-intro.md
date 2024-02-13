@@ -60,7 +60,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>FSEX</td>
   <td>extension[birthsex].value</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-birth-sex-fetus-vr.html'>ValueSetBirthSexFetusVitalRecords</a></td>
+  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-sex-assigned-at-birth-vr.html'>ValueSetSexAssignedAtBirthVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
