@@ -104,11 +104,9 @@ Usage: #example
   * answer.valueCoding = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
 * item[+]
   * linkId = "mother-ethnicity"
-  * text = "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
   * answer.valueBoolean = false
 * item[+]
   * linkId = "mother-race"
-  * text = "What is your race? (Please check one or more races to indicate what you consider yourself to be)."
   * item[0]
     * linkId = "mother-race-white"
     * text = "White"
@@ -147,7 +145,6 @@ Usage: #example
     * answer.valueQuantity = 7 '[in_i]' "[in_i]"
 * item[+]
   * linkId = "mothers-prepregnancy-weight"
-  * text = "lbs"
   * answer.valueQuantity = 145 '[lb_av]' "[lb_av]"
 * item[+]
   * linkId = "mothers-smoking"
@@ -246,16 +243,14 @@ Usage: #example
   * text = "What is the highest level of schooling that the father will have completed at the time of delivery? (Check the box that best describes his education. If he is currently enrolled, check the box that indicates the previous grade or highest degree received)."
   * answer.valueCoding = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
 * item[+]
+  * linkId = "father-ethnicity"
+  * answer.valueBoolean = false
+* item[+]
   * linkId = "father-race"
-  * text = "What is father's race? (Please check one or more races to indicate what he considers himself to be)."
   * item[0]
     * linkId = "father-race-white"
     * text = "White"
     * answer.valueBoolean = true
-* item[+]
-  * linkId = "father-ethnicity"
-  * text = "Is the father Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
-  * answer.valueBoolean = false
 * item[+]
   * linkId = "parents-ssn"
   * text = "Furnishing parent(s) Social Security Number(s) (SSNs) is required by Federal Law, 42 USC 405(c) (section 205(c) of the Social Security Act). The number(s) will be made available to the (State Social Services Agency) to assist with child support enforcement activities and to the Internal Revenue Service for the purpose of determining Earned Income Tax Credit compliance."

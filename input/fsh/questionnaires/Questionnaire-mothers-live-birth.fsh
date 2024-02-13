@@ -270,7 +270,7 @@ Usage: #example
         * question = "mother-race-aian"
         * operator = #=
         * answerBoolean = true
-    * item[+]
+  * item[+]
     * linkId = "mother-race-asian-indian"
     * text = "Asian Indian"
     * type = #boolean
@@ -552,24 +552,24 @@ Usage: #example
   * text = "What the father's date of birth?"
   * type = #date
   * repeats = false
-* item[+]
-  * linkId = "father-birthplace"
-  * prefix = "21"
-  * text = "In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:"
-  * type = #group
+* item[0]
+  * linkId = "father-birthplace-state"
+  * text = "State"
+  * type = #choice
   * repeats = false
-  * item[0]
-    * linkId = "father-birthplace-state"
-    * text = "State"
-    * type = #string
+  * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  // Should be just states
   * item[+]
-    * linkId = "father-birthplace-territory"
-    * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
-    * type = #string
+  * linkId = "father-birthplace-territory"
+  * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
+  * type = #choice
+  * repeats = false
+  * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) // SHould be just states 
   * item[+]
     * linkId = "father-birthplace-country"
     * text = "or Foreign country"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetBirthplaceCountryVitalRecords)
 * item[+]
   * linkId = "father-education"
   * code = $loinc#87300-0 "Highest level of education Father"
