@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-infertility-treatment-jada-ann-quinn> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "procedure-infertility-treatment-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-infertility-treatment-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-infertility-treatment-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-infertility-treatment.html\">Procedure - Infertility Treatment</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Fertility enhancing drug therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#445151000124101)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mother-jada-ann-quinn.html\">Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn)</a> &quot; QUINN&quot;</p><p><b>performed</b>: 2019-02-07 08:30:00-0700 --&gt; 2019-02-07 08:45:00-0700</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:445151000124101 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "445151000124101" ] ;
+       fhir:display [ fhir:v "Fertility enhancing drug therapy (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-02-07T08:30:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-02-07T08:45:00-07:00"^^xsd:dateTime ]
+  ] . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

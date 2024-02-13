@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="procedure-ventilation-following-babyg-quinn"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="procedure-ventilation-following-babyg-quinn"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Procedure &quot;procedure-ventilation-following-babyg-quinn&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Procedure-assisted-ventilation-following-delivery.html">Procedure - Assisted Ventilation Following Delivery</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Assisted ventilation required immediately following delivery <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystem-local-bfdr-codes.html">Local BFDR Codes</a>#assistedventfollowingdelivery)</span></p><p><b>subject</b>: <a href="Patient-patient-child-babyg-quinn.html">Patient/patient-child-babyg-quinn: BabyG Quinn</a> &quot; QUINN&quot;</p><p><b>performed</b>: 2019-02-07 08:30:00-0700 --&gt; 2019-02-07 08:45:00-0700</p></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+      <code value="assistedventfollowingdelivery"/>
+      <display value="Assisted ventilation required immediately following delivery"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-child-babyg-quinn"/>
+    <display value="BabyG Quinn"/>
+  </subject>
+  <performedPeriod>
+    <start value="2019-02-07T08:30:00-07:00"/>
+    <end value="2019-02-07T08:45:00-07:00"/>
+  </performedPeriod>
+</Procedure>
