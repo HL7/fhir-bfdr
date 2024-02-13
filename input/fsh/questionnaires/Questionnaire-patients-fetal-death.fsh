@@ -87,7 +87,7 @@ Usage: #example
     * linkId = "mother-state"
     * text = "State (or U.S. Territory, Canadian Province)"
     * type = #choice
-    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+    * answerValueSet =   Canonical(ValueSetUSStatesVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
   * item[+]
     * linkId = "mother-zip"
     * text = "Zip Code"
@@ -392,13 +392,13 @@ Usage: #example
     * text = "State"
     * type = #choice
     * repeats = false
-    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  // Should be just states
+    * answerValueSet = Canonical(ValueSetUSStatesVitalRecords)  
   * item[+]
     * linkId = "father-birthplace-territory"
     * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
     * type = #choice
     * repeats = false
-    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) // SHould be just states 
+    * answerValueSet = Canonical(ValueSetUSTerritoriesVitalRecords) 
   * item[+]
     * linkId = "father-birthplace-country"
     * text = "or Foreign country"

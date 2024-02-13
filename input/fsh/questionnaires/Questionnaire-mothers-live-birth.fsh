@@ -185,13 +185,13 @@ Usage: #example
     * text = "State"
     * type = #choice
     * repeats = false
-    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  // Should be just states
+    * answerValueSet = Canonical(ValueSetUSStatesVitalRecords)  // Should be just states
   * item[+]
     * linkId = "mother-birthplace-territory"
     * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
     * type = #choice
     * repeats = false
-    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) // SHould be just states 
+    * answerValueSet = Canonical(ValueSetUSTerritoriesVitalRecords) // SHould be just states 
   * item[+]
     * linkId = "mother-birthplace-country"
     * text = "or Foreign country"
@@ -539,13 +539,13 @@ Usage: #example
     * text = "State"
     * type = #choice
     * repeats = false
-    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  // Should be just states
+    * answerValueSet = Canonical(ValueSetUSStatesVitalRecords)  // Should be just states
   * item[+]
     * linkId = "father-birthplace-territory"
     * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
     * type = #choice
     * repeats = false
-    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) // SHould be just states 
+    * answerValueSet = Canonical(ValueSetUSTerritoriesVitalRecords) // SHould be just states 
   * item[+]
     * linkId = "father-birthplace-country"
     * text = "or Foreign country"
