@@ -1,6 +1,6 @@
 ValueSet: NewbornCongenitalAnomaliesVS
 Id: ValueSet-newborn-congenital-anomalies
-Title: "ValueSet - Newborn Congenital Anomalies"
+Title: "Newborn Congenital Anomalies"
 Description: "The valueset contains codes to represent newborn congenital anomalies. This valueset is based on [PHVS_NewbornCongenitalAnomalies_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51). Includes 'Other' value for general utility, although #OTH is not allowed for birth submissions to NCHS."
 * ^experimental = false
 * insert SNOMEDCopyright

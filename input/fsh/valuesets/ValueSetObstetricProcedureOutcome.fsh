@@ -1,6 +1,6 @@
 ValueSet: ValueSetObstetricProcedureOutcome
 Id: ValueSet-obstetric-procedure-outcome
-Title: "ValueSet - Obstetric Procedure Outcome"
+Title: "Obstetric Procedure Outcome"
 Description: "This valueset contains codes that represent the successful or unsuccessful outcome of an obstretric procedure"
 * ^status = #active
 * ^experimental = false
