@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Use Cases - Birth And Fetal Death (BFDR) - STU2-ballot v2.0.0-Ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-Ballot - ballot
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="use_cases.html">UseCases</a>
+      </li>
+      <li>
+        <a href="vr_ig_harmonization.html">Vital Records IG Harmonization</a>
+      </li>
+      <li>
+        <a href="credits.html">Credits</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementer Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="the_specification.html">Specification</a>
+      </li>
+      <li>
+        <a href="categories.html">Categories</a>
+      </li>
+      <li>
+        <a href="usage.html">Usage Notes</a>
+      </li>
+      <li>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+      </li>
+      <li>
+        <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
+      </li>
+      <li>
+        <a href="ije_mapping_fetalDeath.html">Fetal Death Data Dictionary</a>
+      </li>
+      <li>
+        <a href="vital_records_form_mapping.html">Forms Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="example_baby_g_quinn.html">Example Live Birth</a>
+      </li>
+      <li>
+        <a href="example_fetal_death.html">Example Fetal Death</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Changes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="change_log.html">Change Log</a>
+      </li>
+      <li>
+        <a href="content-transitions.html">STU1.1 to STU2 Changes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Appendices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html">A Live Birth Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_b_-_example_live_birth_certificate.html">B Live Birth Certificate</a>
+      </li>
+      <li>
+        <a href="appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html">C Fetal Death Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_d_-_example_fetal_death_report.html">D Fetal Death Report</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Use Cases</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Birth And Fetal Death (BFDR) - STU2-ballot - Local Development build (v2.0.0-Ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/bfdr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Use Cases</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#sources-of-data" id="markdown-toc-sources-of-data">Sources of Data</a></li>
+  <li><a href="#live-birth---provider-to-vro" id="markdown-toc-live-birth---provider-to-vro">Live Birth - Provider to VRO</a></li>
+  <li><a href="#live-birth---vro-to-nchs" id="markdown-toc-live-birth---vro-to-nchs">Live Birth - VRO to NCHS</a></li>
+  <li><a href="#fetal-death---provider-to-vro" id="markdown-toc-fetal-death---provider-to-vro">Fetal Death - Provider to VRO</a></li>
+  <li><a href="#fetal-death---vro-to-nchs" id="markdown-toc-fetal-death---vro-to-nchs">Fetal Death - VRO to NCHS</a></li>
+  <li><a href="#coded-race-and-ethnicity---nchs-to-vro" id="markdown-toc-coded-race-and-ethnicity---nchs-to-vro">Coded Race and Ethnicity - NCHS to VRO</a></li>
+  <li><a href="#coded-cause-of-fetal-death---nchs-to-vro" id="markdown-toc-coded-cause-of-fetal-death---nchs-to-vro">Coded Cause of Fetal Death - NCHS to VRO</a></li>
+  <li><a href="#mother---baby-linkage" id="markdown-toc-mother---baby-linkage">Mother - Baby Linkage</a></li>
+  <li><a href="#plurality-and-multiple-birth" id="markdown-toc-plurality-and-multiple-birth">Plurality and Multiple Birth</a></li>
+</ul>
+
+</div>
+<p>This IG supports five use cases for communicating information from the electronic health record (EHR) system to the jurisdictional vital records offices (VRO) and to the national statistical agency, 
+the Centers for Disease Control and Prevention/ National Center for Health Statistics (NCHS):</p>
+
+<ol>
+  <li>Live Birth  - Provider to Jurisdictional VRO</li>
+  <li>Live Birth  - Jurisdictional VRO to NCHS</li>
+  <li>Fetal Death - Provider to Jurisdictional VRO</li>
+  <li>Fetal Death Jurisdictional VRO to NCHS</li>
+</ol>
+
+<p>This IG also supports two uses cases for returning information from the NCHS to the VRO:</p>
+
+<ol>
+  <li>Coded Race and Ethnicity - NCHS to VRO</li>
+  <li>Coded Cause of Fetal Death - NCHS to VROVRO</li>
+</ol>
+
+<p>Information flows are supported by the FHIR Composition resources embedded in a FHIR Bundle (Document) indicated in the following table:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Use Case</th>
+      <th>FHIR Composition</th>
+      <th>Data Source</th>
+      <th>Data Receiver</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Provider Live Birth</td>
+      <td><a href="StructureDefinition-Composition-provider-live-birth-report.html">Composition - Provider Live Birth Report</a></td>
+      <td>EHR</td>
+      <td>VRO</td>
+    </tr>
+    <tr>
+      <td>Provider Fetal Death</td>
+      <td><a href="StructureDefinition-Composition-provider-fetal-death-report.html">Composition - Provider Fetal Death Report</a></td>
+      <td>EHR</td>
+      <td>VRO</td>
+    </tr>
+    <tr>
+      <td>Jurisdiction Live Birth</td>
+      <td><a href="StructureDefinition-Composition-jurisdiction-live-birth-report.html">Composition - Jurisdiction Live Birth Report</a></td>
+      <td>VRO</td>
+      <td>NCHS</td>
+    </tr>
+    <tr>
+      <td>Jurisdiction Fetal Death</td>
+      <td><a href="StructureDefinition-Composition-jurisdiction-fetal-death-report.html">Composition - Jurisdiction Fetal Death Report</a></td>
+      <td>VRO</td>
+      <td>NCH</td>
+    </tr>
+    <tr>
+      <td>Coded Race and Ethnicity</td>
+      <td><a href="StructureDefinition-Composition-coded-race-and-ethnicity.html">Composition - Coded Race and Ethnicity</a></td>
+      <td>NCHS</td>
+      <td>VRO</td>
+    </tr>
+    <tr>
+      <td>Coded Cause of Fetal Death</td>
+      <td><a href="StructureDefinition-Composition-coded-cause-of-fetal-death.html">Composition - Coded Cause of Fetal Death</a></td>
+      <td>NCHS</td>
+      <td>VRO</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sources-of-data">Sources of Data</h3>
+
+<p>Locating and retrieving data required for the provider and jurisdiction forms supported by this IG may require search/query operations on a variety of EHR and EMR systems. These systems may use identifying codes for data elements that differ from the codes used in this IG and the Vital Records Common Profile Library IG. Future work for both this IG and the Vital Records Common Profile Library IG may include guidance on additional codes that may be in use.</p>
+
+<p>Data required for birth and fetal death reporting from health care providers to VROs and NCHS are drawn from multiple sources.</p>
+
+<ul>
+  <li><strong>Legal and demographic</strong> data is gathered directly from the mother using the <a href="https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf">Mother</a> and <a href="https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf">Patient</a> Worksheets. These worksheets should be considered the source of truth for the data they contain.</li>
+  <li><strong>Medical and health</strong> data is gathered using the <a href="https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf">Facility Worksheet for Live Birth</a>) and <a href="https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf">Facility Worksheet for Fetal Death</a> and can come from:</li>
+  <li>Prenatal care records: If the mother’s prenatal care record is not in her hospital chart, please contact her prenatal care provider to obtain the record, or a copy of the prenatal care information.</li>
+  <li>Mother’s medical records</li>
+  <li>Labor and delivery records</li>
+  <li>Newborn’s medical record</li>
+</ul>
+
+<p>Preferred and acceptable sources are given before each section of the Facility Worksheets.</p>
+
+<p>For further information on sources of information, please see: <a href="https://www.cdc.gov/nchs/data/dvs/GuidetoCompleteFacilityWks.pdf">Guide to Completing the Facility Worksheets for the Certificate of Live Birth and Report of Fetal Death</a>.</p>
+
+<h3 id="live-birth---provider-to-vro">Live Birth - Provider to VRO</h3>
+
+<p>This use case represents live birth information recorded and communicated by the Provider to the VRO.</p>
+
+<p>For the most part, labor and delivery takes place at a healthcare provider site. When a baby is delivered at home, or on the way to the hospital, the mother and baby are typically taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the condition of the newborn is collected from the responsible party at the healthcare facility.</p>
+
+<p>The data requirements for provider supplied live birth information are based on the:</p>
+<ul>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf">2003 Revision of the U.S. Standard Certificate of Birth</a></li>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/facility-worksheet-2016-508.pdf">2016 US Standard Facility Worksheet for the Live Birth Certificate</a></li>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf">2016 US Standard Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></li>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf">2016 US Standard Mothers Worksheet for Child’s Birth Certificate</a>.</li>
+</ul>
+
+<p>The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.</p>
+
+<p>The Provider Live Birth use case is represented by the <a href="StructureDefinition-Composition-provider-live-birth-report.html">Composition - Provider Live Birth Report</a>.</p>
+
+<h3 id="live-birth---vro-to-nchs">Live Birth - VRO to NCHS</h3>
+
+<p>This use case represents information about a live birth and the issuance of a birth certificate to be recorded and communicated to NCHS.</p>
+
+<p>The data requirements for jurisdictional reporting of live births are based on the <a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth</a>.</p>
+
+<p>The Jurisdiction Live Birth use case is represented by the <a href="StructureDefinition-Composition-jurisdiction-live-birth-report.html">Composition - Jurisdiction Live Birth Report</a>.</p>
+
+<h3 id="fetal-death---provider-to-vro">Fetal Death - Provider to VRO</h3>
+
+<p>This use case represents fetal death information that is recorded and communicated to the jurisdictional Vital Records office.</p>
+
+<p>For the most part, labor and delivery takes place at a healthcare provider site. When the delivery takes place at home, or on the way to the hospital, the mother and delivered fetus will be taken to the hospital for evaluation and possible treatment. Personal and pregnancy information is collected from the mother or an informant, while information regarding labor and delivery and the delivered fetus is collected from the responsible party at the healthcare facility.</p>
+
+<p>The data requirements for provider supplied fetal death information are based on the:</p>
+<ul>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf">2003 Revision of the U.S. Standard Report of Fetal Death</a></li>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf">2019 US Standard Facility Worksheet for the Report of Fetal Death</a></li>
+  <li><a href="https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf">2019 US Standard Patient’s Worksheet for the Report of Fetal Death</a></li>
+</ul>
+
+<p>The jurisdiction may have additional data requirements and edit specifications that will be addressed at the jurisdictional level.</p>
+
+<p>The Provider Fetal Death use case is represented by the <a href="StructureDefinition-Composition-provider-fetal-death-report.html">Composition - Provider Fetal Death Report</a>.</p>
+
+<h3 id="fetal-death---vro-to-nchs">Fetal Death - VRO to NCHS</h3>
+
+<p>This use case represents information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to NCHS.</p>
+
+<p>The data requirements for jurisdictional reporting of fetal deaths are based on the <a href="https://www.cdc.gov/nchs/data/dvs/death_edit_specifications.pdf">Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death</a>.</p>
+
+<p>The Jurisdiction Fetal Death use case is represented by the <a href="StructureDefinition-Composition-jurisdiction-fetal-death-report.html">Composition - Jurisdiction Fetal Death Report</a>.</p>
+
+<h3 id="coded-race-and-ethnicity---nchs-to-vro">Coded Race and Ethnicity - NCHS to VRO</h3>
+
+<p>This use case represents the communication of coded race and ethnicity information based on a submission to NCHS from NCHS to a VRO.  The formats and mechanisms for submitting race and ethnicity information to NCHS, and receiving coded responses are common to the Mortality, Natality and Fetal Death vital records use cases.  The profiles and valuesets involved are defined in the Vital Records Common Library.</p>
+
+<p>Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.</p>
+
+<p>The Coded Race and Ethnicity use case is represented by the <a href="StructureDefinition-Composition-coded-race-and-ethnicity.html">Composition - Coded Race and Ethnicity</a>.</p>
+
+<h3 id="coded-cause-of-fetal-death---nchs-to-vro">Coded Cause of Fetal Death - NCHS to VRO</h3>
+
+<p>This use case represents the communication of coded cause of fetal death information based on a submission to NCHS from NCHS to a VRO. The provider’s  cause of death on a fetal death report as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at NCHS, and returned using this Composition.</p>
+
+<p>The Coded Cause of Fetal Death use case is represented by the <a href="StructureDefinition-Composition-coded-cause-of-fetal-death.html">Composition - Coded Cause of Fetal Death</a>.</p>
+
+<h3 id="mother---baby-linkage">Mother - Baby Linkage</h3>
+
+<p>The FHIR specification gives guidance on representing the relationship between a mothe and her baby in the <a href="https://hl7.org/fhir/R4/patient.html#maternity">Mother and newborn relationships section</a> of the FHIR <a href="https://hl7.org/fhir/R4/patient.html">Patient</a> resource.</p>
+
+<p>For the purposes of modeling the linkage between a mother and her baby and relating the encounters of a mother and her baby in a maternity encounter for birth and fetal death reporting , we have followed the FHIR guidance.</p>
+
+<p>See the following examples for further details:</p>
+<ul>
+  <li>Baby’s Encounter (partOf Mother’s Encounter): <a href="Encounter-encounter-birth-babyg-quinn.html">Encounter - Birth - Baby G Quinn</a></li>
+  <li>Mother’s Encounter: <a href="Encounter-encounter-maternity-jada-ann-quinn.html">Encounter - Maternity - Jada Ann Quinn</a></li>
+  <li>Baby Patient: <a href="Patient-patient-child-babyg-quinn.html">Patient - Child - Vital Records - Baby G Quinn</a></li>
+  <li>Mother Patient: <a href="Patient-patient-mother-jada-ann-quinn.html">Patient - Mother - Vital Records - Jada Ann Quinn</a></li>
+  <li>Mother RelatedPerson (related to Baby Patient and linked to Mother Patient): <a href="RelatedPerson-relatedperson-mother-jada-ann-quinn.html">RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn</a></li>
+</ul>
+
+<p>Locating and retrieving data required for this IG may require search/query operations on a variety of EHR and EMR systems. These systems may use other structures or mechanisms to associate records of mother and child.</p>
+
+<p>For example, a link between a mother and her baby can <em>currently</em> be found in the Epic FHIR sandbox by locating an Observation with code = LOINC | 57075-4 | “Newborn delivery information”. This Observation has Observation.subject = the Baby Patient and Observation.focus = the Mother Patient. Note that this is the current state of the Epic sandbox and is subject to change and may be different in production systems.</p>
+
+<h3 id="plurality-and-multiple-birth">Plurality and Multiple Birth</h3>
+
+<p>Plurality is both a characteristic of a pregnancy and a characteristic of a patient.</p>
+
+<h4 id="plurality-as-a-patient-characteristic-and-set-order">Plurality as a patient characteristic, and set order</h4>
+
+<p>This IG uses profiles based on the <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html">US Core Patient</a> profile for child and decedent fetus. These profiles  are housed in the <a href="https://build.fhir.org/ig/HL7/vr-common-library/">Vital Records Common Profiles Library</a>:</p>
+<ul>
+  <li><a href="https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-child-vr.html">Patient - Child - Vital Records</a>: represents the subject patient (newborn/infant/child) for whom clinical data is included in the report.</li>
+  <li><a href="StructureDefinition-Patient-decedent-fetus.html">Patient - Decedent Fetus</a>: represents a delivered fetus for which clinical data is included in the report.</li>
+</ul>
+
+<p>To record that a Patient is a member of a multiple birth (plurality as a characteristic of a patient), and their place in the delivery order (set order), requires the use of the following:</p>
+<ol>
+  <li>Patient.<a href="https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-child-vr-definitions.html#diff_Patient.multipleBirth[x]">multipleBirthInteger</a>: requires an integer (not boolean) to indicate the delivery order (delivered first, second, third, etc.)</li>
+  <li>Extension: <a href="http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html">patient-multipleBirthTotal</a>: indicates the total number of deliveries that occurred</li>
+</ol>
+
+<p>Both data elements are required for meaningful transmission of the information about plurality as a characteristic of the patient. See <a href="Patient-patient-decedent-fetus-not-named.html">example</a>.</p>
+
+<h4 id="plurality-as-a-pregnancy-characteristic">Plurality as a pregnancy characteristic</h4>
+
+<p>Plurality as a pregnancy characteristic can be recorded using <a href="StructureDefinition-Observation-birth-plurality-of-pregnancy.html">Observation - Birth Plurality of Pregnancy</a>. It references the <a href="https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-mother-vr.html">Patient - Mother - Vital Records</a> as the subject and represents the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy.</p>
+<ul>
+  <li>‘Reabsorbed’ fetuses, those which are not ‘delivered’ (expulsed or extracted from the mother) <strong>should not be counted</strong>.</li>
+  <li>All live births and fetal losses resulting from this pregnancy <strong>should be counted</strong>.</li>
+</ul>
+
+<!--- Extensions -->
+<!---from VRCL-->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/bfdr/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
