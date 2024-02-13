@@ -152,7 +152,6 @@
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
 <tr><td> <a href='ValueSet-ValueSet-apgar-timing.html'>ApgarTimingVS</a> </td><td><a href='https://hl7.org/fhir/us/vr-common-library/STU1.1//ValueSet-ValueSet-apgar-timing-vr.html'>VRCL</a></td><td> - </td></tr>
-<tr><td> <a href='ValueSet-ValueSet-birth-and-fetal-death-financial-class.html'>BirthAndFetalDeathFinancialClassVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-birth-delivery-occurred.html'>BirthDeliveryOccurredVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-birth-weight-edit-flags.html'>BirthWeightEditFlagsVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=FA7A83A3-FCFD-E611-A856-0017A477041A'>PHINVADS</a></td><td> - </td></tr>
@@ -186,7 +185,6 @@
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
 <tr><td> <a href='CodeSystem-CodeSystem-abnormal-conditions-newborn.html'>AbnormalConditionsNewbornCS</a> </td><td> New </td><td> New Addition </td></tr>
-<tr><td> <a href='CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class.html'>BirthAndFetalDeathFinancialClassCS</a> </td><td> New  </td><td> New Addition </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-vr-birth-delivery-occurred.html'>BirthDeliveryOccurredCS</a> </td><td> New </td><td>  New Addition  </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-edit-flags.html'>EditFlagsCS</a> </td><td> New </td><td>  New Addition  </td></tr>
 <tr><td> <a href='CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition.html'>FetalDeathCauseOrConditionCS</a> </td><td> New </td><td>  New Addition  </td></tr>
