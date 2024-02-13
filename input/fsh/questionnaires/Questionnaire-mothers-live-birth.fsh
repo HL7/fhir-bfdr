@@ -218,25 +218,21 @@ Usage: #example
     * text = "Are you Mexican, Mexican-American?"
     * type = #boolean
     * repeats = false
-    * prefix = "9a"
   * item[+]
     * linkId = "mother-ethnicity-puerto-rican"
     * text = "Are you Puerto Rican?"
     * type = #boolean
     * repeats = false
-    * prefix = "9b"
   * item[+]
     * linkId = "mother-ethnicity-cuban"
     * text = "Are you Cuban?"
     * type = #boolean
     * repeats = false
-    * prefix = "9c"
   * item[+]
     * linkId = "mother-ethnicity-other"
     * text = "Are you of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian) (specify)."
     * type = #string
     * repeats = false
-    * prefix = "9d"
 * item[+]
   * linkId = "mother-race"
   * prefix = "10"
@@ -248,19 +244,16 @@ Usage: #example
     * text = "White"
     * type = #boolean
     * repeats = false
-    * prefix = "10a"
   * item[+]
     * linkId = "mother-race-black-or-aa"
     * text = "Black or African American"
     * type = #boolean
     * repeats = false
-    * prefix = "10b"
   * item[+]
     * linkId = "mother-race-aian"
     * text = "American Indian or Alaskan Native"
     * type = #boolean
     * repeats = false
-    * prefix = "10c"
     * item[+]
       * linkId = "mother-race-aian-tribe"
       * text = "(name of enrolled or principal tribe)"
@@ -275,49 +268,41 @@ Usage: #example
     * text = "Asian Indian"
     * type = #boolean
     * repeats = false
-    * prefix = "10d"
   * item[+]
     * linkId = "mother-race-chinese"
     * text = "Chinese"
     * type = #boolean
     * repeats = false
-    * prefix = "10e"
   * item[+]
     * linkId = "mother-race-filipino"
     * text = "Filipino"
     * type = #boolean
     * repeats = false
-    * prefix = "10f"
   * item[+]
     * linkId = "mother-race-japanese"
     * text = "Chinese"
     * type = #boolean
     * repeats = false
-    * prefix = "10g"
   * item[+]
     * linkId = "mother-race-korean"
     * text = "Korean"
     * type = #boolean
     * repeats = false
-    * prefix = "10h"
   * item[+]
     * linkId = "mother-race-vietnamese"
     * text = "Vietnamese"
     * type = #boolean
     * repeats = false
-    * prefix = "10i"
   * item[+]
     * linkId = "mother-race-other-asian"
     * text = "Other Asian"
     * type = #boolean
     * repeats = false
-    * prefix = "10j"
     * item[+]
       * linkId = "mother-race-other-asian-literal"
       * text = "(specify)"
       * type = #string
       * repeats = false
-      * prefix = "10j1"
       * enableWhen
         * question = "mother-race-other-asian"
         * operator = #=
@@ -327,31 +312,26 @@ Usage: #example
     * text = "Native Hawaiian"
     * type = #boolean
     * repeats = false
-    * prefix = "10k"
   * item[+]
     * linkId = "mother-race-guamanian-or-chamorro"
     * text = "Guamanian or Chamorro"
     * type = #boolean
     * repeats = false
-    * prefix = "10l"
   * item[+]
     * linkId = "mother-race-samoan"
     * text = "Samoan"
     * type = #boolean
     * repeats = false
-    * prefix = "10m"
   * item[+]
     * linkId = "mother-race-other-pacific-islander"
     * text = "Other Pacific Islander"
     * type = #boolean
     * repeats = false
-    * prefix = "10n"
     * item[+]
       * linkId = "mother-race-other-pacific-islander-specify"
       * text = "(specify)"
       * type = #string
       * repeats = false
-      * prefix = "10n1"
       * enableWhen
         * question = "mother-race-other-pacific-islander"
         * operator = #=
@@ -361,13 +341,11 @@ Usage: #example
     * text = "Other (specify)"
     * type = #boolean
     * repeats = false
-    * prefix = "10o"
     * item[+]
       * linkId = "mother-race-other-specify"
       * text = "(specify)"
       * type = #string
       * repeats = false
-      * prefix = "10o1"
       * enableWhen
         * question = "mother-race-other"
         * operator = #=
@@ -387,13 +365,11 @@ Usage: #example
   * type = #boolean
   * item[0]
     * linkId = "drugs-ai-ii"
-    * prefix = "12a"
     * text = "If yes, did this pregnancy result from fertility-enhancing drugs, artificial insemination, or intrauterine insemination?"
     * type = #boolean
     * repeats = false
   * item[+]
     * linkId = "art-ivf-gift"
-    * prefix = "12b"
     * text = "If yes, did this pregnancy result from assisted reproductive technology (e.g., in-vitro fertilization (IVF), gamete intrafallopian transfer (GIFT))?"
     * type = #boolean
     * repeats = false
@@ -415,7 +391,7 @@ Usage: #example
 * item[+]
   * linkId = "mothers-prepregnancy-weight"
   * prefix = "14"
-  * text = "What is your weight in lbs?"
+  * text = "What was your prepregnancy weight in lbs, that is, your weight immediately before you became pregnant?"
   * type = #quantity
   * repeats = false
 * item[+]
@@ -557,6 +533,7 @@ Usage: #example
   * text = "In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:"
   * type = #group
   * repeats = false
+  * prefix = "21"
   * item[0]
     * linkId = "father-birthplace-state"
     * text = "State"
@@ -594,25 +571,21 @@ Usage: #example
     * text = "Is the father Mexican, Mexican-American?"
     * type = #boolean
     * repeats = false
-    * prefix = "23a"
   * item[+]
     * linkId = "father-ethnicity-puerto-rican"
     * text = "Is the father you Puerto Rican?"
     * type = #boolean
     * repeats = false
-    * prefix = "23b"
   * item[+]
     * linkId = "father-ethnicity-cuban"
     * text = "Is the father you Cuban?"
     * type = #boolean
     * repeats = false
-    * prefix = "23c"
   * item[+]
     * linkId = "father-ethnicity-other"
     * text = "Is the father of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian) (specify)."
     * type = #string
     * repeats = false
-    * prefix = "23d"
 * item[+]
   * linkId = "father-race"
   * prefix = "24"
@@ -624,19 +597,16 @@ Usage: #example
     * text = "White"
     * type = #boolean
     * repeats = false
-    * prefix = "24a"
   * item[+]
     * linkId = "father-race-black-or-aa"
     * text = "Black or African American"
     * type = #boolean
     * repeats = false
-    * prefix = "24b"
   * item[+]
     * linkId = "father-race-aian"
     * text = "American Indian or Alaskan Native"
     * type = #boolean
     * repeats = false
-    * prefix = "24c"
     * item[+]
       * linkId = "father-race-aian-tribe"
       * text = "(name of enrolled or principal tribe)"
@@ -651,49 +621,41 @@ Usage: #example
     * text = "Asian Indian"
     * type = #boolean
     * repeats = false
-    * prefix = "24d"
   * item[+]
     * linkId = "father-race-chinese"
     * text = "Chinese"
     * type = #boolean
     * repeats = false
-    * prefix = "24e"
   * item[+]
     * linkId = "father-race-filipino"
     * text = "Filipino"
     * type = #boolean
     * repeats = false
-    * prefix = "24f"
   * item[+]
     * linkId = "father-race-japanese"
     * text = "Chinese"
     * type = #boolean
     * repeats = false
-    * prefix = "24g"
   * item[+]
     * linkId = "father-race-korean"
     * text = "Korean"
     * type = #boolean
     * repeats = false
-    * prefix = "24h"
   * item[+]
     * linkId = "father-race-vietnamese"
     * text = "Vietnamese"
     * type = #boolean
     * repeats = false
-    * prefix = "24i"
   * item[+]
     * linkId = "father-race-other-asian"
     * text = "Other Asian"
     * type = #boolean
     * repeats = false
-    * prefix = "24j"
     * item[+]
       * linkId = "father-race-other-asian-literal"
       * text = "(specify)"
       * type = #string
       * repeats = false
-      * prefix = "24j1"
       * enableWhen
         * question = "father-race-other-asian"
         * operator = #=
@@ -703,31 +665,26 @@ Usage: #example
     * text = "Native Hawaiian"
     * type = #boolean
     * repeats = false
-    * prefix = "24k"
   * item[+]
     * linkId = "father-race-guamanian-or-chamorro"
     * text = "Guamanian or Chamorro"
     * type = #boolean
     * repeats = false
-    * prefix = "24l"
   * item[+]
     * linkId = "father-race-samoan"
     * text = "Samoan"
     * type = #boolean
     * repeats = false
-    * prefix = "24m"
   * item[+]
     * linkId = "father-race-other-pacific-islander"
     * text = "Other Pacific Islander"
     * type = #boolean
     * repeats = false
-    * prefix = "24n"
     * item[+]
       * linkId = "father-race-other-pacific-islander-specify"
       * text = "(specify)"
       * type = #string
       * repeats = false
-      * prefix = "24n1"
       * enableWhen
         * question = "father-race-other-pacific-islander"
         * operator = #=
@@ -737,13 +694,11 @@ Usage: #example
     * text = "Other (specify)"
     * type = #boolean
     * repeats = false
-    * prefix = "24o"
     * item[+]
       * linkId = "father-race-other-specify"
       * text = "(specify)"
       * type = #string
       * repeats = false
-      * prefix = "24o1"
       * enableWhen
         * question = "father-race-other"
         * operator = #=
@@ -757,7 +712,6 @@ Usage: #example
   * repeats = false
   * item[0]
     * linkId = "mother-ssn"
-    * prefix = "25a"
     * text = "What is your Social Security Number?"
     * type = #string
     * repeats = false
