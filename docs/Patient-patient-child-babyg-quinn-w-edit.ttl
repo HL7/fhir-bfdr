@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn-w-edit> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-child-babyg-quinn-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Baby G Quinn (OFFICIAL)</b> female, DoB: 2019-02-12 ( Medical Record Number: 9932702 (use: USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">1</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2186-5\">CDC Race and Ethnicity</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This Extension profile represents the reported age of the parent (either the gestational mother or the natural father - as defined by NCHS) at the delivery time of the newborn or fetus. \nA required code indicates whether the mother or father's age is provided. It can optionally contain a reference to the reporter (**US Core Patient Profile** or **US Core RelatedPerson Profile**).\">Reported Parent Age At Delivery Vital Records:</td><td colspan=\"3\"><ul><li>reportedAge: 34 a</li><li>http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">mother</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This Extension profile represents the reported age of the parent (either the gestational mother or the natural father - as defined by NCHS) at the delivery time of the newborn or fetus. \nA required code indicates whether the mother or father's age is provided. It can optionally contain a reference to the reporter (**US Core Patient Profile** or **US Core RelatedPerson Profile**).\">Reported Parent Age At Delivery Vital Records:</td><td colspan=\"3\"><ul><li>reportedAge: 35 a</li><li>http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}\">father</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/R4/extension-patient-birthplace.html\">Birth Place:</a></td><td colspan=\"3\"><ul><li>Salt Lake City UT </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9).\"><a href=\"http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension:</a></td><td colspan=\"3\"><ul><li>F</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2106-3\">CDC Race and Ethnicity</a> 2106-3: White</li><li>text: White</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "White" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2186-5" ] ;
+         fhir:display [ fhir:v "Not Hispanic or Latino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Not Hispanic or Latino" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "F" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Address ;
+       fhir:city [ fhir:v "Salt Lake City" ] ;
+       fhir:district [ fhir:v "Salt Lake" ] ;
+       fhir:state [ fhir:v "UT" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "reportedAge"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "34"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MTH" ] ;
+           fhir:display [ fhir:v "mother" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "reportedAge"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "35"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "FTH" ] ;
+           fhir:display [ fhir:v "father" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9932702" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Quinn" ] ;
+     fhir:given ( [ fhir:v "Baby" ] [ fhir:v "G" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [
+     fhir:v "2019-02-12"^^xsd:date ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthTime"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2019-02-12T13:00:00-07:00"^^xsd:dateTime ]
+     ] )
+  ] ; # 
+  fhir:multipleBirth [
+     fhir:v "1"^^xsd:integer ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1queriedCorrect" ] ;
+           fhir:display [ fhir:v "Queried, and Correct" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

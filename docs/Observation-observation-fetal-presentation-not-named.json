@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-fetal-presentation-not-named",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-fetal-presentation-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-fetal-presentation-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-fetal-presentation.html\">Observation - Fetal Presentation at Birth/Delivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Fetal presentation--at birth [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73761-9)</span></p><p><b>subject</b>: <a href=\"Patient-patient-decedent-fetus-not-named.html\">Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named)</a> &quot;&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-vital-records-janet-seito.html\">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: Breech presentation (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#6096002)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "73761-9"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-decedent-fetus-not-named",
+    "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+  },
+  "effectiveDateTime" : "2019-12-02",
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "6096002",
+      "display" : "Breech presentation (finding)"
+    }]
+  }
+}

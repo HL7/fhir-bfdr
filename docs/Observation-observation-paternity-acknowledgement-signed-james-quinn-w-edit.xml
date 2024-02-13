@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-paternity-acknowledgement-signed-james-quinn-w-edit"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-paternity-acknowledgement-signed-james-quinn-w-edit"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-paternity-acknowledgement-signed-james-quinn-w-edit&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-paternity-acknowledgement-signed.html">Observation - Paternity Acknowledgement Signed</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Paternity acknowledgment form signed Father <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#87302-6)</span></p><p><b>subject</b>: <a href="Patient-patient-child-babyg-quinn.html">Patient/patient-child-babyg-quinn: Patient - Child (Baby G Quinn)</a> &quot; QUINN&quot;</p><p><b>focus</b>: <a href="RelatedPerson-relatedperson-father-natural-james-brandon-quinn-w-edit.html">RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit: RelatedPerson - Father (James Brandon Quinn)</a> &quot; QUINN&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href="Patient-patient-mother-jada-ann-quinn.html">Patient/patient-mother-jada-ann-quinn</a> &quot; QUINN&quot;</p><p><b>value</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="87302-6"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-child-babyg-quinn"/>
+    <display value="Patient - Child (Baby G Quinn)"/>
+  </subject>
+  <focus>
+    <reference value="RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit"/>
+    <display value="RelatedPerson - Father (James Brandon Quinn)"/>
+  </focus>
+  <effectiveDateTime value="2019-12-02"/>
+  <performer>
+    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+      <code value="Y"/>
+      <display value="Yes"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

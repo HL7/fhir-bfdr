@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-death-time-point-not-named> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-fetal-death-time-point-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-fetal-death-time-point-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-fetal-death-time-point-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-fetal-death-time-point.html\">Observation - Fetal Death Time Point</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Estimated timing of fetal death [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73811-2)</span></p><p><b>subject</b>: <a href=\"Patient-patient-decedent-fetus-not-named.html\">Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named)</a> &quot;&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-vital-records-janet-seito.html\">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: Fetal intrapartum death after first assessment (event) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#434631000124100)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73811-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73811-2" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:434631000124100 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "434631000124100" ] ;
+       fhir:display [ fhir:v "Fetal intrapartum death after first assessment (event)" ]
+     ] )
+  ] . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

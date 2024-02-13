@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-mother-height-carmen-teresa-lee-w-edit"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-mother-height-carmen-teresa-lee-w-edit"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-mother-height-carmen-teresa-lee-w-edit&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-mother-height.html">Observation - Mother Height</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href="Patient-patient-mother-carmen-teresa-lee.html">Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee)</a> &quot; LEE&quot;</p><p><b>effective</b>: 2019-01-10</p><p><b>performer</b>: <a href="Patient-patient-mother-carmen-teresa-lee.html">Patient/patient-mother-carmen-teresa-lee</a> &quot; LEE&quot;</p><p><b>value</b>: 56 in<span style="background: LightGoldenRodYellow"> (Details: UCUM code [in_i] = '[in_i]')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8302-2"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+    <display value="Patient - Mother (Carmen Teresa Lee)"/>
+  </subject>
+  <effectiveDateTime value="2019-01-10"/>
+  <performer>
+    <reference value="Patient/patient-mother-carmen-teresa-lee"/>
+  </performer>
+  <valueQuantity>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+          <code value="0"/>
+          <display value="Edit Passed"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <value value="56"/>
+    <unit value="in"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="[in_i]"/>
+  </valueQuantity>
+</Observation>

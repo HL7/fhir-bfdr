@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-apgar-score-babyg-quinn-1-min> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-apgar-score-babyg-quinn-1-min"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-apgar-score"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-apgar-score>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-apgar-score-babyg-quinn-1-min\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-apgar-score-babyg-quinn-1-min&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-apgar-score.html\">Observation - APGAR Score</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: 1 minute Apgar Score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9272-6)</span></p><p><b>subject</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn: BabyG Quinn</a> &quot; QUINN&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-vital-records-janet-seito.html\">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: 5</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:9272-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "9272-6" ] ;
+       fhir:display [ fhir:v "1 minute Apgar Score" ]
+     ] ) ;
+     fhir:text [ fhir:v "1 minute Apgar Score" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-child-babyg-quinn" ] ;
+     fhir:display [ fhir:v "BabyG Quinn" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "5"^^xsd:integer] . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Location/location-south-hospital> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "location-south-hospital"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Location-bfdr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Location-bfdr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"location-south-hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;location-south-hospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Location-bfdr.html\">Birth and Fetal Death Location</a></p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>116441967701</p><p><b>status</b>: active</p><p><b>name</b>: South Hospital</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span>, Birth Location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a>#loc_birth)</span></p><p><b>address</b>: 2100 North Ave Salt Lake City UT 84116 US </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>40.8</td><td>111.9</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-organization-south-hospital.html\">Organization/organization-south-hospital: Organization - South Hospital</a> &quot;South Hospital&quot;</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "UT1234567" ]
+     ] ) ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "116441967701" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "South Hospital"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HOSP" ] ;
+       fhir:display [ fhir:v "Hospital" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "loc_birth" ] ;
+       fhir:display [ fhir:v "Birth Location" ]
+     ] )
+  ] ) ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "2100 North Ave" ] ) ;
+     fhir:city [ fhir:v "Salt Lake City" ] ;
+     fhir:district [ fhir:v "Made Up" ] ;
+     fhir:state [ fhir:v "UT" ] ;
+     fhir:postalCode [ fhir:v "84116" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v "40.8"^^xsd:decimal ] ;
+     fhir:latitude [ fhir:v "111.9"^^xsd:decimal ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Organization/organization-south-hospital> ;
+     fhir:reference [ fhir:v "Organization/organization-south-hospital" ] ;
+     fhir:display [ fhir:v "Organization - South Hospital" ]
+  ] . # 
+
+<http://hl7.org/fhir/us/bfdr/Organization/organization-south-hospital> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

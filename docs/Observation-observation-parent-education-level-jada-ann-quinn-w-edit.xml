@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-parent-education-level-jada-ann-quinn-w-edit"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-parent-education-level-jada-ann-quinn-w-edit"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-parent-education-level-jada-ann-quinn-w-edit&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Observation-education-level-vr.html">Observation - Education Level Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Highest level of education Mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#57712-2)</span></p><p><b>subject</b>: <a href="Patient-patient-child-babyg-quinn.html">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>focus</b>: <a href="Patient-patient-mother-jada-ann-quinn.html">Patient/patient-mother-jada-ann-quinn</a> &quot; QUINN&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href="Patient-patient-mother-jada-ann-quinn.html">Patient/patient-mother-jada-ann-quinn</a> &quot; QUINN&quot;</p><p><b>value</b>: Doctoral or post graduate education <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-EducationLevel.html">Education Level</a>#POSTG)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="57712-2"/>
+      <display value="Highest level of education Mother"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-child-babyg-quinn"/>
+  </subject>
+  <focus>
+    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+  </focus>
+  <effectiveDateTime value="2019-12-02"/>
+  <performer>
+    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+  </performer>
+  <valueCodeableConcept>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+          <code value="0"/>
+          <display value="Edit Passed"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-EducationLevel"/>
+      <code value="POSTG"/>
+      <display value="Doctoral or post graduate education"/>
+    </coding>
+    <text value="Doctoral or post graduate education"/>
+  </valueCodeableConcept>
+</Observation>

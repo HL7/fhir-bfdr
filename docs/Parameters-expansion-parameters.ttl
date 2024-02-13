@@ -1,0 +1,20 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Parameters/expansion-parameters> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "expansion-parameters"] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "profile-url" ] ;
+     fhir:value [ fhir:v "dc8fd4bc-091a-424a-8a3b-6198ef146891" ]
+  ] [
+     fhir:name [ fhir:v "system-version" ] ;
+     fhir:value [ fhir:v "http://snomed.info/sct|http://snomed.info/sct/731000124108" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

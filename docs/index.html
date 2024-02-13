@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Birth and Fetal Death Reporting Home - Birth And Fetal Death (BFDR) - STU2-ballot v2.0.0-Ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-Ballot - ballot
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="use_cases.html">UseCases</a>
+      </li>
+      <li>
+        <a href="vr_ig_harmonization.html">Vital Records IG Harmonization</a>
+      </li>
+      <li>
+        <a href="credits.html">Credits</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementer Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="the_specification.html">Specification</a>
+      </li>
+      <li>
+        <a href="categories.html">Categories</a>
+      </li>
+      <li>
+        <a href="usage.html">Usage Notes</a>
+      </li>
+      <li>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+      </li>
+      <li>
+        <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
+      </li>
+      <li>
+        <a href="ije_mapping_fetalDeath.html">Fetal Death Data Dictionary</a>
+      </li>
+      <li>
+        <a href="vital_records_form_mapping.html">Forms Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="example_baby_g_quinn.html">Example Live Birth</a>
+      </li>
+      <li>
+        <a href="example_fetal_death.html">Example Fetal Death</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Changes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="change_log.html">Change Log</a>
+      </li>
+      <li>
+        <a href="content-transitions.html">STU1.1 to STU2 Changes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Appendices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html">A Live Birth Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_b_-_example_live_birth_certificate.html">B Live Birth Certificate</a>
+      </li>
+      <li>
+        <a href="appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html">C Fetal Death Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_d_-_example_fetal_death_report.html">D Fetal Death Report</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Birth and Fetal Death Reporting Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Birth And Fetal Death (BFDR) - STU2-ballot - Local Development build (v2.0.0-Ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/bfdr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Birth and Fetal Death Reporting Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7.fhir.us.bfdr<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7.fhir.us.bfdr"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.0.0-Ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7.fhir.us.bfdr|2.0.0-Ballot"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-02-13
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">BirthAndFetalDeath</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#description" id="markdown-toc-description">Description</a></li>
+  <li><a href="#relationship-to-other-standards" id="markdown-toc-relationship-to-other-standards">Relationship to Other Standards</a></li>
+  <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
+  <li><a href="#audience" id="markdown-toc-audience">Audience</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#how-to-read-this-guide" id="markdown-toc-how-to-read-this-guide">How to Read This Guide</a></li>
+  <li><a href="#other-information" id="markdown-toc-other-information">Other Information</a></li>
+  <li><a href="#authors" id="markdown-toc-authors">Authors</a></li>
+</ul>
+
+</div>
+<div class="note-to-balloters">
+
+  <h4 id="january-2024-ballot-of-stu2">January 2024 Ballot of STU2</h4>
+
+  <p>This STU2 ballot addresses the following:</p>
+
+  <ul>
+    <li>Reorganization of vital-records related content and harmonization to reduce redunancy and near redundancy. See <a href="vr_ig_harmonization.html">Vital Records IG Harmonization</a>.</li>
+    <li>This reorganization and harmonization includes
+      <ul>
+        <li>Addition of profiles supporting NCHS-standard submission of race and ethnicity inputs, and return of coded race and ethnicity. These profiles are referenced in BFDR, but defined in VRCL.</li>
+        <li>Movement of content (i.e., profiles, valuesets, examples) that is used exclusively in the birth and fetal death use cases from VRCL to the Birth and Fetal Death Reporting IG.  As a result, the total content of this IG has dramatically increased in size.</li>
+        <li>Inclusion of valuesets formerly hosted in PHINVADs.  This follows the pattern established by the VRDR IG.</li>
+      </ul>
+
+      <p>For a description of the changes to BFDR from STU1.1, see the <a href="content-transitions.html">Change table</a>.</p>
+    </li>
+  </ul>
+
+</div>
+<!-- note-to-balloters -->
+
+<div class="stu-note">
+  <p>Key updates and detailed changes between this and prior versions are available on the VRCL <a href="change_log.html">Change Log</a> and <a href="content-transitions.html">Changes Between Versions</a> pages.</p>
+</div>
+<!-- note-to-balloters -->
+
+<h3 id="overview">Overview</h3>
+
+<h3 id="description">Description</h3>
+
+<p>Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional vital records offices (VROs) and from VROs to the CDC National Center for Health Statistics (<a href="https://www.cdc.gov/nchs/index.htm">NCHS</a>). Data associated with the mother of the baby or delivered fetus may be communicated independently from data associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, "mother" always refers to the woman who delivered the infant or fetus. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant.</p>
+
+<p>This implementation guide (IG) defines a series of Health Level Seven (HL7®) Fast Healthcare Interoperability Resources (FHIR®) profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the <a href="https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf">2003 Revision of the U.S. Standard Certificate of Live Birth</a> and the <a href="https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf">2003 Revision of the U.S. Standard Report of Fetal Death</a>. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, VROs and NCHS.</p>
+
+<h3 id="relationship-to-other-standards">Relationship to Other Standards</h3>
+<p>This BFDR IG standard complements other vital records standards to support the expansion of information flows to and from the national statistics agency. The BFDR STU 1 drew on foundational work of early standards listed in the Background section, below. This current version of the BFDR IG is informed by :</p>
+<ul>
+  <li><a href="http://hl7.org/fhir/us/vrdr/">HL7, Vital Records Death Reporting (VRDR) FHIR Implementation Guide</a></li>
+  <li><a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">Office of the National Coordinator for Health Information Technology (ONC), United States Core Data for Interoperability (USCDI)</a></li>
+</ul>
+
+<h3 id="dependencies">Dependencies</h3>
+<p>This implementation guide re-uses and further constrains profiles from the following guides:</p>
+<ul>
+  <li><a href="http://hl7.org/fhir/us/core/STU5.0.1/">US Core Implementation Guide, STU5.0.1</a></li>
+  <li><a href="http://hl7.org/fhir/us/vr-common-library">Vital Records Common Library</a></li>
+  <li><a href="http://hl7.org/fhir/us/odh/">Occupational Data for Health (ODH)</a></li>
+</ul>
+
+<h3 id="audience">Audience</h3>
+<p>This guide is for analysts and developers who require guidance on the use of the HL7 FHIR for providing birth and fetal death reporting information. The IG is informative to health care provider organizations, jurisdictional vital records offices, CDC/NCHS, health information exchange organizations, and other vital records fetal death reporting stakeholders.</p>
+
+<h3 id="background">Background</h3>
+<p>This FHIR IG builds on previous electronic data standards for transmitting vital records of death, birth, and fetal death.</p>
+<ul>
+  <li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=320">HL7, Version 2.6 Implementation Guide: Vital Records Birth and Fetal Death Reporting</a></li>
+  <li><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=387">HL7, CDA® R2 Implementation Guide: Birth and Fetal Death Reporting</a></li>
+  <li><a href="https://www.ihe.net/uploadedFiles/Documents/QRPH/IHE_QRPH_Suppl_BFDR-E.pdf">IHE , Quality, Research and Public Health Technical Framework Supplement - Birth and Fetal Death Reporting-Enhanced (BFDR-E)</a></li>
+</ul>
+
+<p>This IG provides standardized data strutures for transmission of reliable and relevant clinical information to jurisdictional vital records offices and transfer of information from vital records offices to the national statistics agency.</p>
+
+<p>Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, in 2018, with Release 3, and in November 2020 as Release 4. <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=466">VR DAM, Release 5</a> was published in May 2022. Implementers who review or reference the VR DAM should note that the active vital records FHIR IGs (such as BFDR and VRDR) may no longer aligned with the VR DAM.</p>
+
+<p>This FHIR IG uses the US Core profiles. Where this FHIR IG is unable to use a US Core profile, we have followed the Cross Group Projects Work Group’s variance request process, and have provided the US Realm Steering Committee an approved rationale for deviation in the IG.</p>
+
+<h3 id="how-to-read-this-guide">How to Read This Guide</h3>
+
+<p>This Guide is divided into several pages which are listed at the top of each page in the menu bar.</p>
+
+<ul>
+  <li>Home: Introduction and background for HL7 FHIR® Vital Records Common Profiles Library</li>
+  <li><a href="the_specification.html">The Specification</a>: A technical overview of implementing the specification</li>
+  <li><a href="use_cases.html">Use Cases</a>: The use cases supported by this guide</li>
+  <li>Implementer Guidance: The <a href="patient_worksheet_questionnaires.html">worksheet Questionnaire format</a>, <a href="ije_mapping_natality.html">IJE Mapping Natality</a>, <a href="ije_mapping_fetalDeath.html">IJE Mapping FetalDeath</a> and <a href="vital_records_form_mapping.html">Vital Records Forms Mapping</a></li>
+  <li><a href="downloads.html">Downloads</a>: Links to downloadable artifacts</li>
+  <li><a href="change_log.html">Change Log</a>: Details of changes made in each version of this IG</li>
+  <li><a href="artifacts.html">Artifact Index</a>: A list of the FHIR artifacts (profiles, examples, and value sets) defined as part of this guide</li>
+  <li>Appendices: Examples of live birth and fetal death reports and worksheets</li>
+</ul>
+
+<h3 id="other-information">Other Information</h3>
+
+<p>This guide is compliant with FHIR Release 4.</p>
+
+<p>For Clinical Safety Information please refer to the <a href="http://hl7.org/fhir/safety.html">FHIR Implementer’s Safety Checklist</a>.</p>
+
+<p>Disclaimer: All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.</p>
+
+<h3 id="authors">Authors</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email/URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HL7 International - Public Health</td>
+<td><a href="http://www.hl7.org/Special/committees/pher" target="_new">http://www.hl7.org/Special/committees/pher</a></td>
+</tr>
+</tbody>
+</table>
+
+<!--- Extensions -->
+<!---from VRCL-->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/bfdr/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
