@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ValueSet-obstetric-procedure"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/240278000\">240278000</a></td><td>External cephalic version (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/260413007\">260413007</a></td><td>None (qualifier value)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Ballot"] ; # 
+  fhir:name [ fhir:v "ObstetricProcedureVS"] ; # 
+  fhir:title [ fhir:v "ValueSet - Obstetric Procedures"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-13T11:56:10-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This valueset contains codes to represent obstetric procedures. This valueset is based on [PHVS_ObstetricProcedures_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=6D41E52D-2415-4EC4-A38A-87B0FEC503FB)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "240278000" ] ;
+         fhir:display [ fhir:v "External cephalic version (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "260413007" ] ;
+         fhir:display [ fhir:v "None (qualifier value)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

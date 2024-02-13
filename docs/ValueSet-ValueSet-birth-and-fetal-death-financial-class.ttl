@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ValueSet-birth-and-fetal-death-financial-class"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_indianhealth\">finclass_indianhealth</a></td><td>Indian Health Service or Tribe</td><td>Indian Health Service or Tribe</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_medicaid\">finclass_medicaid</a></td><td>MEDICAID</td><td>MEDICAID</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_nosource\">finclass_nosource</a></td><td>No Typology Code available for payment source</td><td>No Typology Code available for payment source</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_othergov\">finclass_othergov</a></td><td>Other Government (Federal, State, Local not specified)</td><td>Other Government (Federal, State, Local not specified)</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_privateinsurance\">finclass_privateinsurance</a></td><td>PRIVATE HEALTH INSURANCE</td><td>PRIVATE HEALTH INSURANCE</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_selfpay\">finclass_selfpay</a></td><td>Self-pay</td><td>Self-pay</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_tricare\">finclass_tricare</a></td><td>TRICARE (CHAMPUS)</td><td>TRICARE (CHAMPUS)</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_unknown\">finclass_unknown</a></td><td>Unavailable / Unknown</td><td>Unavailable / Unknown</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Ballot"] ; # 
+  fhir:name [ fhir:v "BirthAndFetalDeathFinancialClassVS"] ; # 
+  fhir:title [ fhir:v "ValueSet - Birth and Fetal Death Financial Class"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-13T11:56:10-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This valueset contains codes to represent birth and fetal death financial class. This valueset is based on [PHVS_BirthAndFetalDeathFinancialClass_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "include appropriate copyright ruleset"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "finclass_indianhealth" ] ;
+         fhir:display [ fhir:v "Indian Health Service or Tribe" ]
+       ] [
+         fhir:code [ fhir:v "finclass_medicaid" ] ;
+         fhir:display [ fhir:v "MEDICAID" ]
+       ] [
+         fhir:code [ fhir:v "finclass_nosource" ] ;
+         fhir:display [ fhir:v "No Typology Code available for payment source" ]
+       ] [
+         fhir:code [ fhir:v "finclass_othergov" ] ;
+         fhir:display [ fhir:v "Other Government (Federal, State, Local not specified)" ]
+       ] [
+         fhir:code [ fhir:v "finclass_privateinsurance" ] ;
+         fhir:display [ fhir:v "PRIVATE HEALTH INSURANCE" ]
+       ] [
+         fhir:code [ fhir:v "finclass_selfpay" ] ;
+         fhir:display [ fhir:v "Self-pay" ]
+       ] [
+         fhir:code [ fhir:v "finclass_tricare" ] ;
+         fhir:display [ fhir:v "TRICARE (CHAMPUS)" ]
+       ] [
+         fhir:code [ fhir:v "finclass_unknown" ] ;
+         fhir:display [ fhir:v "Unavailable / Unknown" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

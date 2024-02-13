@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-estimate-of-gestation-edit-flags"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html"><code>http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html#CodeSystem-vr-edit-flags-0off">0off</a></td><td>Off</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-CodeSystem-edit-flags.html"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-CodeSystem-edit-flags.html#CodeSystem-edit-flags-1correctOutOfRange">1correctOutOfRange</a></td><td>Queried data correct, out of range</td><td>Queried data correct, out of range</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-estimate-of-gestation-edit-flags"/>
+  <version value="2.0.0-Ballot"/>
+  <name value="EstimateOfGestationEditFlagsVS"/>
+  <title value="ValueSet - Estimate of Gestation Edit Flags (NCHS)"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-02-13T11:56:10-05:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes to represent Estimate of Gestation Edit Flags. This valueset is based on [PHVS_EstimateOfGestationEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7567)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+      <concept>
+        <code value="0off"/>
+        <display value="Off"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags"/>
+      <concept>
+        <code value="1correctOutOfRange"/>
+        <display value="Queried data correct, out of range"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

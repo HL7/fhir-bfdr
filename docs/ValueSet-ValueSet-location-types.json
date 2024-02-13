@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ValueSet-location-types",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_birth\">loc_birth</a></td><td>Birth Location</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_transfer-from\">loc_transfer-from</a></td><td>Transfer-from Location</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_transfer-to\">loc_transfer-to</a></td><td>Transfer-to Location</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pher"
+  }],
+  "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-location-types",
+  "version" : "2.0.0-Ballot",
+  "name" : "LocationTypeVS",
+  "title" : "ValueSet - Location Types",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-02-13T11:56:10-05:00",
+  "publisher" : "HL7 International / Public Health",
+  "contact" : [{
+    "name" : "HL7 International / Public Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/pher"
+    }]
+  }],
+  "description" : "Valueset for location types used to differentate transfer and birth locations",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+      "concept" : [{
+        "code" : "loc_birth",
+        "display" : "Birth Location"
+      },
+      {
+        "code" : "loc_transfer-from",
+        "display" : "Transfer-from Location"
+      },
+      {
+        "code" : "loc_transfer-to",
+        "display" : "Transfer-to Location"
+      }]
+    }]
+  }
+}

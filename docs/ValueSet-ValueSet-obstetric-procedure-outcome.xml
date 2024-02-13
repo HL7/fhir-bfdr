@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-obstetric-procedure-outcome"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/385669000">385669000</a></td><td>Successful (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/385671000">385671000</a></td><td>Unsuccessful (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure-outcome"/>
+  <version value="2.0.0-Ballot"/>
+  <name value="ValueSetObstetricProcedureOutcome"/>
+  <title value="ValueSet - Obstetric Procedure Outcome"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-02-13T11:56:10-05:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes that represent the successful or unsuccessful outcome of an obstretric procedure"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="385669000"/>
+        <display value="Successful (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="385671000"/>
+        <display value="Unsuccessful (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

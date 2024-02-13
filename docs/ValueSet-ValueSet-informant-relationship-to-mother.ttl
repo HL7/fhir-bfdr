@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-informant-relationship-to-mother> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ValueSet-informant-relationship-to-mother"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_fatherofbaby\">rel_fatherofbaby</a></td><td>Father of baby</td><td>Father of baby</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_hospitalemployee\">rel_hospitalemployee</a></td><td>Hospital employee</td><td>Hospital employee</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_other\">rel_other</a></td><td>Other (with write in text)</td><td>Other (with write in text)</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_otherrelative\">rel_otherrelative</a></td><td>Other relative</td><td>Other relative</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-informant-relationship-to-mother"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Ballot"] ; # 
+  fhir:name [ fhir:v "InformantRelationshipToMotherVS"] ; # 
+  fhir:title [ fhir:v "ValueSet - Informant Relationship to Mother"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-13T11:56:10-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This valueset contains codes to represent informants relationship to mother. This valueset is based on [PHVS_InformantRelationshiptoMother_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=ADF95682-912A-E711-BE3F-0017A477041A)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "include appropriate copyright ruleset"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "rel_fatherofbaby" ] ;
+         fhir:display [ fhir:v "Father of baby" ]
+       ] [
+         fhir:code [ fhir:v "rel_hospitalemployee" ] ;
+         fhir:display [ fhir:v "Hospital employee" ]
+       ] [
+         fhir:code [ fhir:v "rel_other" ] ;
+         fhir:display [ fhir:v "Other (with write in text)" ]
+       ] [
+         fhir:code [ fhir:v "rel_otherrelative" ] ;
+         fhir:display [ fhir:v "Other relative" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
