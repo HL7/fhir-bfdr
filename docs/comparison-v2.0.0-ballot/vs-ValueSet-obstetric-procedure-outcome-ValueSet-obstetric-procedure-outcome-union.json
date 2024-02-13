@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-308",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-308",
+  "name" : "UnionValueSetObstetricProcedureOutcomeAndValueSetObstetricProcedureOutcome",
+  "title" : "Union of ValueSet - Obstetric Procedure Outcome And ValueSet - Obstetric Procedure Outcome",
+  "status" : "active",
+  "date" : "2024-02-13T11:57:33-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "385669000",
+        "display" : "Successful (qualifier value)"
+      },
+      {
+        "code" : "385671000",
+        "display" : "Unsuccessful (qualifier value)"
+      }]
+    }]
+  }
+}

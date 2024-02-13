@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="PregnancyReportEditFlagsCM"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from (not specified) to <a href="ValueSet-ValueSet-pregnancy-report-edit-flags.html">ValueSet - Pregnancy Report Edit Flags (NCHS)</a></p><p>DRAFT. Published on 2024-02-13 11:56:10-0500 by HL7 International / Public Health (HL7 International / Public Health: <a href="http://www.hl7.org/Special/committees/pher">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR PregnancyReportEditFlags Value Sets</p>
+</div><br/><p><b>Group 1</b>Mapping from <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html">Placeholder Code System for IJE in Vital Records</a> to <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html">Birth and Death Edit Flags Vital Records</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>0 (Edit Passed)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>0 (Edit Passed)</td></tr><tr><td>1 (Edit Failed, Number Verified)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>1 (Edit Failed, Data Queried, and Verified)</td></tr><tr><td>2 (Edit Failed, Number not Verified)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>2 (Edit Failed, Data Queried, but not Verified)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ConceptMap/PregnancyReportEditFlagsCM"/>
+  <version value="2.0.0-Ballot"/>
+  <name value="PregnancyReportEditFlags"/>
+  <title value="PregnancyReportEditFlags Concept Map"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-02-13T11:56:10-05:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="A mapping between NCHS IJE and FHIR PregnancyReportEditFlags Value Sets"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="focus"/>
+    </code>
+    <valueCodeableConcept>
+      <text value="for IJE to FHIR alignment"/>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="To help implementers map from IJE to FHIR Vocabulary"/>
+  <targetCanonical value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-pregnancy-report-edit-flags"/>
+  <group>
+    <source value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"/>
+    <target value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+    <element>
+      <code value="0"/>
+      <display value="Edit Passed"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="0"/>
+        <display value="Edit Passed"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="1"/>
+      <display value="Edit Failed, Number Verified"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1"/>
+        <display value="Edit Failed, Data Queried, and Verified"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="2"/>
+      <display value="Edit Failed, Number not Verified"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="2"/>
+        <display value="Edit Failed, Data Queried, but not Verified"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

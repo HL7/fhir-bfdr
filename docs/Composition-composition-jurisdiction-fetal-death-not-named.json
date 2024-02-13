@@ -1,0 +1,166 @@
+{
+  "resourceType" : "Composition",
+  "id" : "composition-jurisdiction-fetal-death-not-named",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-jurisdiction-fetal-death-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-jurisdiction-fetal-death-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-jurisdiction-fetal-death-report.html\">Composition - Jurisdiction Fetal Death Report</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Jurisdiction fetal death report Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#92010-8)</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-maternity-carmen-teresa-lee.html\">Encounter/encounter-maternity-carmen-teresa-lee</a></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <a href=\"Organization-organization-jurisdictional-vital-records-office.html\">Organization/organization-jurisdictional-vital-records-office</a> &quot;Jurisdictional Vital Records Office&quot;</p><p><b>title</b>: Jurisdiction fetal death report Document</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "92010-8",
+      "display" : "Jurisdiction fetal death report Document"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-decedent-fetus-not-named"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-maternity-carmen-teresa-lee"
+  },
+  "date" : "2019-01-09",
+  "author" : [{
+    "reference" : "Organization/organization-jurisdictional-vital-records-office"
+  }],
+  "title" : "Jurisdiction fetal death report Document",
+  "section" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "57073-9"
+      }]
+    },
+    "focus" : {
+      "reference" : "Patient/patient-mother-carmen-teresa-lee"
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-last-menstrual-period-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-number-births-now-living-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-number-births-now-dead-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-date-of-last-live-birth-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-mother-height-carmen-teresa-lee-w-edit"
+    },
+    {
+      "reference" : "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit"
+    },
+    {
+      "reference" : "Observation/observation-mother-received-wic-food-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "55752-0"
+      }]
+    },
+    "focus" : {
+      "reference" : "Patient/patient-mother-carmen-teresa-lee"
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit"
+    },
+    {
+      "reference" : "Observation/observation-fetal-presentation-not-named"
+    },
+    {
+      "reference" : "Procedure/procedure-final-route-method-delivery-not-named"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "76400-1"
+      }]
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-birth-weight-not-named-w-edit"
+    },
+    {
+      "reference" : "Observation/observation-gestational-age-at-delivery-not-named-w-edit"
+    },
+    {
+      "reference" : "Condition/condition-fetal-death-cause-or-condition-not-named"
+    },
+    {
+      "reference" : "Condition/condition-fetal-death-other-significant-cause-not-named"
+    },
+    {
+      "reference" : "Observation/observation-fetal-death-time-point-not-named"
+    },
+    {
+      "reference" : "Observation/observation-autopsy-performed-not-named"
+    },
+    {
+      "reference" : "Observation/observation-histological-placental-exam-performed-not-named"
+    },
+    {
+      "reference" : "Observation/observation-autopsy-histological-exam-results-used-not-named"
+    },
+    {
+      "reference" : "Observation/observation-number-deaths-this-delivery-carmen-teresa-lee"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "92014-0"
+      }]
+    },
+    "focus" : {
+      "reference" : "Patient/patient-mother-carmen-teresa-lee"
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-parent-education-level-carmen-teresa-lee-w-edit"
+    },
+    {
+      "reference" : "Observation/observation-usual-work-carmen-teresa-lee"
+    },
+    {
+      "reference" : "Observation/observation-input-race-and-ethnicity-carmen-teresa-lee"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "92013-2"
+      }]
+    },
+    "focus" : {
+      "reference" : "RelatedPerson/relatedperson-father-natural-tom-yan-lee"
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-usual-work-tom-yan-lee"
+    }]
+  }]
+}

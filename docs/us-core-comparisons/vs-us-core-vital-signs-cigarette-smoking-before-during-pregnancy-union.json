@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "15222225-6da1-45ff-b8c4-8970f3074fbd-425",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/15222225-6da1-45ff-b8c4-8970f3074fbd-425",
+  "name" : "UnionUsCoreVitalSignsAndCigaretteSmokingBeforeAndDuringPregnancyVS",
+  "title" : "Union of US Core Vital Signs ValueSet And ValueSet - Cigarette Smoking Before and During Pregnancy",
+  "status" : "active",
+  "date" : "2024-02-13T11:56:57-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "59576-9"
+      },
+      {
+        "code" : "8289-1"
+      },
+      {
+        "code" : "77606-2"
+      },
+      {
+        "code" : "59408-5"
+      },
+      {
+        "code" : "3150-0"
+      },
+      {
+        "code" : "3151-8"
+      },
+      {
+        "code" : "64794-1",
+        "display" : "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+      },
+      {
+        "code" : "87298-6",
+        "display" : "Cigarettes smoked per day by Mother--1st trimester"
+      },
+      {
+        "code" : "87299-4",
+        "display" : "Cigarettes smoked per day by Mother--2nd trimester"
+      },
+      {
+        "code" : "64795-8",
+        "display" : "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
+      }]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/observation-vitalsignresult"]
+    }]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "15222225-6da1-45ff-b8c4-8970f3074fbd-53",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/15222225-6da1-45ff-b8c4-8970f3074fbd-53",
+  "name" : "UnionUSCoreLaboratoryTestCodesAndLOINCCodes",
+  "title" : "Union of US Core Laboratory Test Codes And LOINC Codes",
+  "status" : "active",
+  "date" : "2024-02-13T11:56:57-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      }]
+    }]
+  }
+}

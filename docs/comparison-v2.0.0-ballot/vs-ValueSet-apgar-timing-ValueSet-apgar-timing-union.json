@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-260",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-260",
+  "name" : "UnionApgarTimingVSAndApgarTimingVS",
+  "title" : "Union of ValueSet - APGAR Score Timing And ValueSet - APGAR Score Timing",
+  "status" : "active",
+  "date" : "2024-02-13T11:57:33-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "9272-6",
+        "display" : "1 minute Apgar Score"
+      },
+      {
+        "code" : "9274-2",
+        "display" : "5 minute Apgar Score"
+      },
+      {
+        "code" : "9271-8",
+        "display" : "10 minute Apgar Score"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "443848000",
+        "display" : "Apgar score at 15 minutes (observable entity)"
+      },
+      {
+        "code" : "443849008",
+        "display" : "Apgar score at 20 minutes (observable entity)"
+      }]
+    }]
+  }
+}

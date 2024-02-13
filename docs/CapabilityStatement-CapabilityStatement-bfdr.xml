@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="CapabilityStatement-bfdr"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+    <!-- TODO 
+    Jurisdiction 
+    Prohibited extension - http://hl7.org/fhir/StructureDefinition/capabilitystatement-prohibited
+    expectation symbol legend -->
+  <h2 id="title">CapabilityStatement - Birth and Fetal Death</h2>
+  <ul>
+    <li><b>Title:</b>CapabilityStatement - Birth and Fetal Death</li>
+    <li><b>Implementation Guide Version:</b> 2.0.0-Ballot</li>
+    <li><b>FHIR Version:</b> 4.0.1</li>
+    <li><b>Intended Use:</b> requirements</li>
+    <li><b>Supported Formats: </b> 
+
+    
+      
+      
+      xml;
+    
+      
+      
+      json;
+    
+
+    </li>
+    
+    <li><b>Published:</b> 2020-11-01</li>
+  
+    <li><b>Published by:</b> HL7 International / Public Health</li>
+    <li><b>Status:</b> active</li>
+    
+  </ul>
+  <br/>
+
+
+
+  
+    <strong>Description:</strong> <div><div><p>This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents.</p>
+</div></div>
+  
+  <br/>
+  
+  
+
+
+  
+
+  <br/>
+    <!-- TODO - Make this a summary of capabilities, including system wide and each paradigm -->
+  <p>
+    <b>Jump to:</b>
+  </p>
+  <ul>
+    
+    
+    
+  </ul>
+
+
+
+    <!-- REST Capabilities -->
+  
+
+
+
+
+
+
+
+
+
+    <!-- Messaging Capabilities -->
+  
+
+    <!-- Document Capabilities -->
+  
+    <br/>
+    <br/>
+    <a name="documents"> </a>
+    <h2>Documents</h2>
+    <div class="table-wrapper">
+      <table class="grid">
+        <thead>
+          <tr>
+            <th>Mode</th>
+            <th>Profile</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td>producer</td>
+              <td>
+                
+                  <a href="StructureDefinition-Composition-jurisdiction-live-birth-report.html">Composition - Jurisdiction Live Birth Report</a>
+                
+              </td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>producer</td>
+              <td>
+                
+                  <a href="StructureDefinition-Composition-jurisdiction-fetal-death-report.html">Composition - Jurisdiction Fetal Death Report</a>
+                
+              </td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>producer</td>
+              <td>
+                
+                  <a href="StructureDefinition-Composition-provider-live-birth-report.html">Composition - Provider Live Birth Report</a>
+                
+              </td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>producer</td>
+              <td>
+                
+                  <a href="StructureDefinition-Composition-provider-fetal-death-report.html">Composition - Provider Fetal Death Report</a>
+                
+              </td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>consumer</td>
+              <td>
+                
+                  <a href="StructureDefinition-Composition-coded-cause-of-fetal-death.html">Composition - Coded Cause of Fetal Death</a>
+                
+              </td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td>consumer</td>
+              <td>
+                
+                  <a href="StructureDefinition-Composition-coded-race-and-ethnicity.html">Composition - Coded Race and Ethnicity</a>
+                
+              </td>
+              <td></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  
+
+</div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/CapabilityStatement/CapabilityStatement-bfdr"/>
+  <version value="2.0.0-Ballot"/>
+  <name value="CapabilityStatementBFDR"/>
+  <title value="CapabilityStatement - Birth and Fetal Death"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-11-01"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="xml"/>
+  <format value="json"/>
+  <document>
+    <mode value="producer"/>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
+  </document>
+  <document>
+    <mode value="producer"/>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
+  </document>
+  <document>
+    <mode value="producer"/>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
+  </document>
+  <document>
+    <mode value="producer"/>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
+  </document>
+  <document>
+    <mode value="consumer"/>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
+  </document>
+  <document>
+    <mode value="consumer"/>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
+  </document>
+</CapabilityStatement>

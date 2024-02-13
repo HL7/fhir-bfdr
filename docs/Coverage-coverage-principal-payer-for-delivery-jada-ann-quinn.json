@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Coverage",
+  "id" : "coverage-principal-payer-for-delivery-jada-ann-quinn",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-delivery"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"coverage-principal-payer-for-delivery-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;coverage-principal-payer-for-delivery-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Coverage-principal-payer-delivery.html\">Coverage - Principal Payer for Delivery</a></p></div><p><b>status</b>: active</p><p><b>type</b>: Private Health Insurance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a>#finclass_privateinsurance &quot;PRIVATE HEALTH INSURANCE&quot;)</span></p><p><b>beneficiary</b>: <a href=\"Patient-patient-mother-jada-ann-quinn.html\">Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn)</a> &quot; QUINN&quot;</p><p><b>payor</b>: <span>: Not asked</span></p></div>"
+  },
+  "status" : "active",
+  "type" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+      "code" : "finclass_privateinsurance",
+      "display" : "PRIVATE HEALTH INSURANCE"
+    }],
+    "text" : "Private Health Insurance"
+  },
+  "beneficiary" : {
+    "reference" : "Patient/patient-mother-jada-ann-quinn",
+    "display" : "Patient - Mother (Jada Ann Quinn)"
+  },
+  "payor" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode" : "not-asked"
+    }],
+    "display" : "Not asked"
+  }]
+}

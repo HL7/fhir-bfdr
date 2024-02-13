@@ -1,0 +1,2333 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Bundle/bundle-jurisdiction-fetal-death-not-named> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-jurisdiction-fetal-death-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-fetal-death-report"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-fetal-death-report>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "9876" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "11111-11111" ]
+     ] ) ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2019NJ009876" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2019-10-15T08:51:14.637+00:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Composition/composition-jurisdiction-fetal-death-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Composition/composition-jurisdiction-fetal-death-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Patient/patient-decedent-fetus-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Patient/patient-decedent-fetus-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Encounter/encounter-maternity-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Encounter/encounter-maternity-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-jurisdictional-vital-records-office"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Organization/organization-jurisdictional-vital-records-office> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Patient/patient-mother-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Patient/patient-mother-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-last-menstrual-period-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-last-menstrual-period-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-number-births-now-living-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-number-births-now-living-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-number-births-now-dead-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-number-births-now-dead-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-date-of-last-live-birth-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-date-of-last-live-birth-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-mother-height-carmen-teresa-lee-w-edit"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-mother-height-carmen-teresa-lee-w-edit> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-mother-received-wic-food-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-mother-received-wic-food-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-fetal-presentation-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-fetal-presentation-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-birth-weight-not-named-w-edit"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-birth-weight-not-named-w-edit> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named-w-edit"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named-w-edit> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Condition/condition-fetal-death-cause-or-condition-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Condition/condition-fetal-death-cause-or-condition-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Condition/condition-fetal-death-other-significant-cause-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Condition/condition-fetal-death-other-significant-cause-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-fetal-death-time-point-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-fetal-death-time-point-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-autopsy-performed-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-autopsy-performed-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-histological-placental-exam-performed-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-histological-placental-exam-performed-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-autopsy-histological-exam-results-used-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-autopsy-histological-exam-results-used-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee-w-edit"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee-w-edit> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-usual-work-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-usual-work-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-usual-work-tom-yan-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-usual-work-tom-yan-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Practitioner/practitioner-vital-records-janet-seito"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Practitioner/practitioner-vital-records-janet-seito> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Location/location-south-hospital"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Location/location-south-hospital> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Organization/organization-south-hospital"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Organization/organization-south-hospital> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/RelatedPerson/relatedperson-mother-carmen-teresa-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/RelatedPerson/relatedperson-mother-carmen-teresa-lee> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/RelatedPerson/relatedperson-father-natural-tom-yan-lee"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/RelatedPerson/relatedperson-father-natural-tom-yan-lee> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Composition/composition-jurisdiction-fetal-death-not-named> a fhir:Composition ;
+  fhir:id [ fhir:v "composition-jurisdiction-fetal-death-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-jurisdiction-fetal-death-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-jurisdiction-fetal-death-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-jurisdiction-fetal-death-report.html\">Composition - Jurisdiction Fetal Death Report</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Jurisdiction fetal death report Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#92010-8)</span></p><p><b>encounter</b>: <a href=\"#Encounter_encounter-maternity-carmen-teresa-lee\">See above (Encounter/encounter-maternity-carmen-teresa-lee)</a></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <a href=\"#Organization_organization-jurisdictional-vital-records-office\">See above (Organization/organization-jurisdictional-vital-records-office)</a></p><p><b>title</b>: Jurisdiction fetal death report Document</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:92010-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "92010-8" ] ;
+       fhir:display [ fhir:v "Jurisdiction fetal death report Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Encounter/encounter-maternity-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Encounter/encounter-maternity-carmen-teresa-lee" ]
+  ] ; # 
+  fhir:date [ fhir:v "2019-01-09"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Organization/organization-jurisdictional-vital-records-office> ;
+     fhir:reference [ fhir:v "Organization/organization-jurisdictional-vital-records-office" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Jurisdiction fetal death report Document"] ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57073-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57073-9" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-last-menstrual-period-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-last-menstrual-period-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-living-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-number-births-now-living-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-dead-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-number-births-now-dead-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-last-live-birth-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-date-of-last-live-birth-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-height-carmen-teresa-lee-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-height-carmen-teresa-lee-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-received-wic-food-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-received-wic-food-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:55752-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "55752-0" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-fetal-presentation-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-final-route-method-delivery-not-named> ;
+       fhir:reference [ fhir:v "Procedure/procedure-final-route-method-delivery-not-named" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:76400-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76400-1" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-birth-weight-not-named-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-birth-weight-not-named-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-gestational-age-at-delivery-not-named-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-gestational-age-at-delivery-not-named-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-fetal-death-cause-or-condition-not-named> ;
+       fhir:reference [ fhir:v "Condition/condition-fetal-death-cause-or-condition-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-fetal-death-other-significant-cause-not-named> ;
+       fhir:reference [ fhir:v "Condition/condition-fetal-death-other-significant-cause-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-death-time-point-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-fetal-death-time-point-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-autopsy-performed-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-autopsy-performed-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-histological-placental-exam-performed-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-histological-placental-exam-performed-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-autopsy-histological-exam-results-used-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-autopsy-histological-exam-results-used-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-number-deaths-this-delivery-carmen-teresa-lee" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:92014-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "92014-0" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-parent-education-level-carmen-teresa-lee-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-parent-education-level-carmen-teresa-lee-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-usual-work-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-usual-work-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-input-race-and-ethnicity-carmen-teresa-lee" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:92013-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "92013-2" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-father-natural-tom-yan-lee> ;
+       fhir:reference [ fhir:v "RelatedPerson/relatedperson-father-natural-tom-yan-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-usual-work-tom-yan-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-usual-work-tom-yan-lee" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Encounter/encounter-maternity-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Organization/organization-jurisdictional-vital-records-office> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-last-menstrual-period-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-living-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-dead-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-last-live-birth-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-height-carmen-teresa-lee-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-received-wic-food-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-final-route-method-delivery-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-birth-weight-not-named-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-gestational-age-at-delivery-not-named-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-fetal-death-cause-or-condition-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-fetal-death-other-significant-cause-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-death-time-point-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-autopsy-performed-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-histological-placental-exam-performed-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-autopsy-histological-exam-results-used-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-parent-education-level-carmen-teresa-lee-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-usual-work-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-father-natural-tom-yan-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-usual-work-tom-yan-lee> a fhir:us .
+
+<http://www.example.org/fhir/Patient/patient-decedent-fetus-not-named> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-decedent-fetus-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-decedent-fetus-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-decedent-fetus-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-decedent-fetus.html\">Patient - Decedent Fetus</a></p></div><p><b>Patient Fetal Death Vital Records</b>: Fetal death (Details: SNOMED CT code 276507005 = 'Fetal death', stated as 'null')</p><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Ann Arbor MI 48103 </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number: 9932702 (use: USUAL)</p><p><b>name</b>: null (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-01-09</p><p><b>deceased</b>: true</p><p><b>multipleBirth</b>: 3</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:276507005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "276507005" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "F" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Address ;
+       fhir:city [ fhir:v "Ann Arbor" ] ;
+       fhir:state [ fhir:v "MI" ] ;
+       fhir:postalCode [ fhir:v "48103" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "reportedAge"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "34"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MTH" ] ;
+           fhir:display [ fhir:v "mother" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "reportedAge"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "35"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "FTH" ] ;
+           fhir:display [ fhir:v "father" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9932702" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "not-applicable" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [
+     fhir:v "2019-01-09"^^xsd:date ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthTime"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2019-01-09T18:23:00-07:00"^^xsd:dateTime ]
+     ] )
+  ] ; # 
+  fhir:deceased [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:multipleBirth [ fhir:v "3"^^xsd:integer] . # 
+
+<http://www.example.org/fhir/Encounter/encounter-maternity-carmen-teresa-lee> a fhir:Encounter ;
+  fhir:id [ fhir:v "encounter-maternity-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-maternity-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-maternity-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-maternity.html\">Encounter - Maternity</a></p></div><p><b>Role Vital Records</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>identifier</b>: id: 8937015</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Under Observation or Inpatient Care Services (Including Admission and Discharge Services) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99234)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>Birth attendant [Extended Identifier] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87286-1)</span></td><td><a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito: Practitioner - Vital Records (Janet Seito, MD))</a></td></tr></table><p><b>period</b>: 2019-01-08 10:00:00-0700 --&gt; 2019-01-09 17:00:00-0700</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_location-south-hospital\">See above (Location/location-south-hospital: Location - US Core Location (South Hospital))</a></td><td>Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#22232009)</span></td></tr></table><p><b>serviceProvider</b>: <a href=\"#Organization_organization-south-hospital\">See above (Organization/organization-south-hospital: Organization - US Core Organization (South Hospital Organization))</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MTH" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "8937015" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "IMP" ] ;
+     fhir:display [ fhir:v "inpatient encounter" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "99234" ]
+     ] ) ;
+     fhir:text [ fhir:v "Under Observation or Inpatient Care Services (Including Admission and Discharge Services)" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         a loinc:87286-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "87286-1" ] ;
+         fhir:display [ fhir:v "Birth attendant [Extended Identifier]" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ] ;
+       fhir:display [ fhir:v "Practitioner - Vital Records (Janet Seito, MD)" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2019-01-08T10:00:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-01-09T17:00:00-07:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Location/location-south-hospital> ;
+       fhir:reference [ fhir:v "Location/location-south-hospital" ] ;
+       fhir:display [ fhir:v "Location - US Core Location (South Hospital)" ]
+     ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         a sct:22232009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "22232009" ] ;
+         fhir:display [ fhir:v "Hospital" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Organization/organization-south-hospital> ;
+     fhir:reference [ fhir:v "Organization/organization-south-hospital" ] ;
+     fhir:display [ fhir:v "Organization - US Core Organization (South Hospital Organization)" ]
+  ] . # 
+
+<http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Location/location-south-hospital> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Organization/organization-south-hospital> a fhir:us .
+
+<http://www.example.org/fhir/Organization/organization-jurisdictional-vital-records-office> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-jurisdictional-vital-records-office"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"organization-jurisdictional-vital-records-office\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;organization-jurisdictional-vital-records-office&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: Jurisdictional Vital Records Office</p></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name [ fhir:v "Jurisdictional Vital Records Office"] . # 
+
+<http://www.example.org/fhir/Patient/patient-mother-carmen-teresa-lee> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-mother-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-mother-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-mother-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-mother-vr.html\">Patient - Mother Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Black or African American (Details: urn:oid:2.16.840.1.113883.6.238 code 2054-5 = 'Black or African American', stated as 'Black or African American')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Black or African America</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: PR </p><p><b>identifier</b>: Medical Record Number: 9992702 (use: USUAL)</p><p><b>name</b>: Carmen Teresa Lee (OFFICIAL), Carmen Teresa Santos (MAIDEN)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-02-15</p><p><b>address</b>: 3670 Miller Road Ann Arbor MI 48103 US (HOME)</p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#RelatedPerson_relatedperson-mother-carmen-teresa-lee\">See above (RelatedPerson/relatedperson-mother-carmen-teresa-lee)</a></td><td>seealso</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2054-5" ] ;
+         fhir:display [ fhir:v "Black or African American" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Black or African America" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2135-2" ] ;
+         fhir:display [ fhir:v "Hispanic or Latino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Hispanic or Latino" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "F" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Address ;
+       fhir:state [ fhir:v "PR" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9992702" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Lee" ] ;
+     fhir:given ( [ fhir:v "Carmen" ] [ fhir:v "Teresa" ] )
+  ] [
+     fhir:use [ fhir:v "maiden" ] ;
+     fhir:family [ fhir:v "Santos" ] ;
+     fhir:given ( [ fhir:v "Carmen" ] [ fhir:v "Teresa" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1986-02-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "3670 Miller Road" ] ) ;
+     fhir:city [ fhir:v "Ann Arbor" ] ;
+     fhir:state [ fhir:v "MI" ] ;
+     fhir:postalCode [ fhir:v "48103" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) ; # 
+  fhir:link ( [
+     fhir:other [
+       fhir:link <http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-mother-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "RelatedPerson/relatedperson-mother-carmen-teresa-lee" ]
+     ] ;
+     fhir:type [ fhir:v "seealso" ]
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-mother-carmen-teresa-lee> a fhir:us .
+
+<http://www.example.org/fhir/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-date-of-first-prenatal-care-visit-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-date-of-first-prenatal-care-visit-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-date-of-first-prenatal-care-visit.html\">Observation - Date of First Prenatal Care Visit</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Date first prenatal visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69044-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 2018-05-18</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69044-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69044-6" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "2018-05-18"^^xsd:date] . # 
+
+<http://www.example.org/fhir/Observation/observation-last-menstrual-period-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-last-menstrual-period-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-last-menstrual-period-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-last-menstrual-period-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-last-menstrual-period.html\">Observation - Last Menstrual Period</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Last menstrual period start date <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8665-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2018-05-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 2018-04-18</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8665-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8665-2" ] ;
+       fhir:display [ fhir:v "Last menstrual period start date" ]
+     ] ) ;
+     fhir:text [ fhir:v "Last menstrual period start date" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2018-05-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "2018-04-18"^^xsd:date] . # 
+
+<http://www.example.org/fhir/Observation/observation-number-births-now-living-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-number-births-now-living-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-living"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-living>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-number-births-now-living-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-number-births-now-living-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-number-births-now-living.html\">Observation - Number of Births Now Living</a></p></div><p><b>status</b>: final</p><p><b>code</b>: [#] Births.still living <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11638-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 1</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11638-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11638-4" ] ;
+       fhir:display [ fhir:v "[#] Births.still living" ]
+     ] ) ;
+     fhir:text [ fhir:v "[#] Births.still living" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "1"^^xsd:integer] . # 
+
+<http://www.example.org/fhir/Observation/observation-number-births-now-dead-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-number-births-now-dead-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-dead"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-dead>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-number-births-now-dead-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-number-births-now-dead-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-number-births-now-dead.html\">Observation - Number of Births Now Dead</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Previous live births now dead # <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#68496-9)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 0</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:68496-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "68496-9" ] ;
+       fhir:display [ fhir:v "Previous live births now dead #" ]
+     ] ) ;
+     fhir:text [ fhir:v "Previous live births now dead #" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "0"^^xsd:integer] . # 
+
+<http://www.example.org/fhir/Observation/observation-date-of-last-live-birth-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-date-of-last-live-birth-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-date-of-last-live-birth-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-date-of-last-live-birth-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-date-of-last-live-birth.html\">Observation - Date of Last Live Birth</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Date of last live birth <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#68499-3 &quot;Date last live birth&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 2016-01-28</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:68499-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "68499-3" ] ;
+       fhir:display [ fhir:v "Date last live birth" ]
+     ] ) ;
+     fhir:text [ fhir:v "Date of last live birth" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "2016-01-28"^^xsd:date] . # 
+
+<http://www.example.org/fhir/Observation/observation-mother-height-carmen-teresa-lee-w-edit> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-mother-height-carmen-teresa-lee-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-mother-height-carmen-teresa-lee-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-mother-height-carmen-teresa-lee-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-mother-height.html\">Observation - Mother Height</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-01-10</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 56 in<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [in_i] = '[in_i]')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8302-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8302-2" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-01-10"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:value [ fhir:v "56"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "in" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "[in_i]" ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-mother-prepregnancy-weight.html\">Observation - Mother Prepregnancy Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight --pre current pregnancy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#56077-1)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 180 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:56077-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "56077-1" ] ;
+       fhir:display [ fhir:v "Body weight --pre current pregnancy" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:value [ fhir:v "180"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "[lb_av]" ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-mother-received-wic-food-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-mother-received-wic-food-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-mother-received-wic-food-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-mother-received-wic-food-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-mother-received-wic-food.html\">Observation - Mother Recieved WIC Food</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mother WIC food recipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87303-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:87303-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "87303-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N" ] ;
+       fhir:display [ fhir:v "No" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-cig-smoking-pregnancy-1-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-cig-smoking-pregnancy-1-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-cig-smoking-pregnancy-1-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html\">Observation - Cigarette Smoking Before and During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64794-1)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 0</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:64794-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "64794-1" ] ;
+       fhir:display [ fhir:v "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]" ]
+     ] ) ;
+     fhir:text [ fhir:v "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "0"^^xsd:integer] . # 
+
+<http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-cig-smoking-pregnancy-2-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-cig-smoking-pregnancy-2-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-cig-smoking-pregnancy-2-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html\">Observation - Cigarette Smoking Before and During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cigarettes smoked per day by Mother--1st trimester <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87298-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 0</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:87298-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "87298-6" ] ;
+       fhir:display [ fhir:v "Cigarettes smoked per day by Mother--1st trimester" ]
+     ] ) ;
+     fhir:text [ fhir:v "Cigarettes smoked per day by Mother--1st trimester" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "0"^^xsd:integer] . # 
+
+<http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-cig-smoking-pregnancy-3-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-cig-smoking-pregnancy-3-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-cig-smoking-pregnancy-3-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html\">Observation - Cigarette Smoking Before and During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cigarettes smoked per day by Mother--2nd trimester <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87299-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 1</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:87299-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "87299-4" ] ;
+       fhir:display [ fhir:v "Cigarettes smoked per day by Mother--2nd trimester" ]
+     ] ) ;
+     fhir:text [ fhir:v "Cigarettes smoked per day by Mother--2nd trimester" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "1"^^xsd:integer] . # 
+
+<http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-cig-smoking-pregnancy-4-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-cig-smoking-pregnancy-4-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-cig-smoking-pregnancy-4-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html\">Observation - Cigarette Smoking Before and During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64795-8)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 0</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:64795-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "64795-8" ] ;
+       fhir:display [ fhir:v "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]" ]
+     ] ) ;
+     fhir:text [ fhir:v "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "0"^^xsd:integer] . # 
+
+<http://www.example.org/fhir/Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-number-previous-cesareans-carmen-teresa-lee-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-number-previous-cesareans-carmen-teresa-lee-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-number-previous-cesareans-carmen-teresa-lee-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-number-previous-cesareans.html\">Observation - Number of Previous Cesareans</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Previous cesarean deliveries # <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#68497-7)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 1</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:68497-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "68497-7" ] ;
+       fhir:display [ fhir:v "Previous cesarean deliveries #" ]
+     ] ) ;
+     fhir:text [ fhir:v "Previous cesarean deliveries #" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     fhir:v "1"^^xsd:integer ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-fetal-presentation-not-named> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-fetal-presentation-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-fetal-presentation-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-fetal-presentation-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-fetal-presentation.html\">Observation - Fetal Presentation at Birth/Delivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Fetal presentation--at birth [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73761-9)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Breech presentation (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#6096002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73761-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73761-9" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:6096002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "6096002" ] ;
+       fhir:display [ fhir:v "Breech presentation (finding)" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named> a fhir:Procedure ;
+  fhir:id [ fhir:v "procedure-final-route-method-delivery-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-final-route-method-delivery-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-final-route-method-delivery-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-final-route-method-delivery.html\">Procedure - Final Route and Method of Delivery</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Spontaneous vaginal delivery <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#700000006 &quot;Vaginal delivery of fetus (procedure)&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>performed</b>: 2019-01-19 18:00:00-0700 --&gt; 2019-01-19 18:23:00-0700</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:700000006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "700000006" ] ;
+       fhir:display [ fhir:v "Vaginal delivery of fetus (procedure)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Spontaneous vaginal delivery" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-01-19T18:00:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-01-19T18:23:00-07:00"^^xsd:dateTime ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-birth-weight-not-named-w-edit> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-birth-weight-not-named-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-birth-weight-not-named-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-birth-weight-not-named-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-birth-weight.html\">Observation - Birth Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Birth weight Measured <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8339-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-02-10</p><p><b>performer</b>: <a href=\"#Organization_organization-jurisdictional-vital-records-office\">See above (Organization/organization-jurisdictional-vital-records-office)</a></p><p><b>value</b>: 1530 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8339-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8339-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-02-10"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Organization/organization-jurisdictional-vital-records-office> ;
+     fhir:reference [ fhir:v "Organization/organization-jurisdictional-vital-records-office" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0off" ] ;
+           fhir:display [ fhir:v "Off" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:value [ fhir:v "1530"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "g" ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named-w-edit> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-gestational-age-at-delivery-not-named-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-gestational-age-at-delivery-not-named-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-gestational-age-at-delivery-not-named-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-gestational-age-at-delivery.html\">Observation - Gestational Age at Delivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Gestational age Estimated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11884-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 20 wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code wk = 'wk')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11884-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11884-4" ] ;
+       fhir:display [ fhir:v "Gestational age Estimated" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0off" ] ;
+           fhir:display [ fhir:v "Off" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "wk" ]
+  ] . # 
+
+<http://www.example.org/fhir/Condition/condition-fetal-death-cause-or-condition-not-named> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-fetal-death-cause-or-condition-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-fetal-death-cause-or-condition-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-fetal-death-cause-or-condition-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-fetal-death-cause-or-condition.html\">Condition - Fetal Death Cause or Condition</a></p></div><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span>, Initiating cause or condition of fetal death [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#76060-3)</span></p><p><b>code</b>: Premature rupture of membranes (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#44223004)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p></div>"
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a loinc:76060-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76060-3" ] ;
+       fhir:display [ fhir:v "Initiating cause or condition of fetal death [US Standard Report of Fetal Death]" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:44223004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "44223004" ] ;
+       fhir:display [ fhir:v "Premature rupture of membranes (disorder)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Premature rupture of membranes (disorder)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] . # 
+
+<http://www.example.org/fhir/Condition/condition-fetal-death-other-significant-cause-not-named> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-fetal-death-other-significant-cause-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-fetal-death-other-significant-cause-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-fetal-death-other-significant-cause-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-fetal-death-other-cause-or-condition.html\">Condition - Fetal Death Other Cause or Condition</a></p></div><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span>, Other significant causes or conditions of fetal death [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#76061-1)</span></p><p><b>code</b>: Placental insufficiency (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#237292005)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p></div>"
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a loinc:76061-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76061-1" ] ;
+       fhir:display [ fhir:v "Other significant causes or conditions of fetal death [US Standard Report of Fetal Death]" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:237292005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "237292005" ] ;
+       fhir:display [ fhir:v "Placental insufficiency (disorder)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Placental insufficiency (disorder)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-fetal-death-time-point-not-named> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-fetal-death-time-point-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-fetal-death-time-point-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-fetal-death-time-point-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-fetal-death-time-point.html\">Observation - Fetal Death Time Point</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Estimated timing of fetal death [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73811-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Fetal intrapartum death after first assessment (event) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#434631000124100)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73811-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73811-2" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:434631000124100 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "434631000124100" ] ;
+       fhir:display [ fhir:v "Fetal intrapartum death after first assessment (event)" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-autopsy-performed-not-named> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-autopsy-performed-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-autopsy-performed-indicator-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-autopsy-performed-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-autopsy-performed-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Observation-autopsy-performed-indicator-vr.html\">Observation - Autopsy Performed Indicator Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Autopsy was performed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85699-7)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85699-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85699-7" ] ;
+       fhir:display [ fhir:v "Autopsy was performed" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Y" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-histological-placental-exam-performed-not-named> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-histological-placental-exam-performed-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-histological-placental-exam-performed-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-histological-placental-exam-performed-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-histological-placental-exam-performed.html\">Observation - Histological Placental Exam Performed</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Histological placental examination was performed [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73767-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Performed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398166005)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73767-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73767-6" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:398166005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "398166005" ] ;
+       fhir:display [ fhir:v "Performed" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-autopsy-histological-exam-results-used-not-named> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-autopsy-histological-exam-results-used-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-autopsy-histological-exam-results-used-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-autopsy-histological-exam-results-used-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-autopsy-histological-exam-results-used.html\">Observation - Autopsy or Histological Exam Results Used</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Autopsy or histological placental examination results were used [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#74498-7)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:74498-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "74498-7" ] ;
+       fhir:display [ fhir:v "Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Y" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-number-deaths-this-delivery-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-fetal-deaths-this-delivery"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-fetal-deaths-this-delivery>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-number-deaths-this-delivery-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-number-deaths-this-delivery-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-number-fetal-deaths-this-delivery.html\">Observation - Number of Fetal Deaths This Delivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Number of fetal deaths delivered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73772-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 1</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73772-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73772-6" ] ;
+       fhir:display [ fhir:v "Number of fetal deaths delivered" ]
+     ] ) ;
+     fhir:text [ fhir:v "Number of fetal deaths delivered" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "1"^^xsd:integer] . # 
+
+<http://www.example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee-w-edit> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-parent-education-level-carmen-teresa-lee-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-parent-education-level-carmen-teresa-lee-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-parent-education-level-carmen-teresa-lee-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Observation-education-level-vr.html\">Observation - Education Level Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Highest level of education Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#57712-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 9th through 12th grade; no diploma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-EducationLevel.html\">Education Level</a>#SEC &quot;Some secondary or high school education&quot;)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:57712-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "57712-2" ] ;
+       fhir:display [ fhir:v "Highest level of education Mother" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EducationLevel"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SEC" ] ;
+       fhir:display [ fhir:v "Some secondary or high school education" ]
+     ] ) ;
+     fhir:text [ fhir:v "9th through 12th grade; no diploma" ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-usual-work-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-usual-work-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-usual-work-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-usual-work-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-usual-work-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-usual-work-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Observation-usual-work-vr.html\">Observation - Usual Work</a></p></div><p><b>Role Vital Records</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Usual occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21843-8)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named)</a></p><p><b>focus</b>: <a href=\"#RelatedPerson_relatedperson-mother-carmen-teresa-lee\">See above (RelatedPerson/relatedperson-mother-carmen-teresa-lee)</a></p><p><b>value</b>: Secretary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>History of Usual industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21844-6)</span></td><td>State Agency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MTH" ] ;
+         fhir:display [ fhir:v "mother" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:21843-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21843-8" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "RelatedPerson/relatedperson-mother-carmen-teresa-lee" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Secretary" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21844-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21844-6" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "State Agency" ]
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/observation-usual-work-tom-yan-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-usual-work-tom-yan-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-usual-work-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-usual-work-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-usual-work-tom-yan-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-usual-work-tom-yan-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Observation-usual-work-vr.html\">Observation - Usual Work</a></p></div><p><b>Role Vital Records</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Usual occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21843-8)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named)</a></p><p><b>focus</b>: <a href=\"#RelatedPerson_relatedperson-father-natural-tom-yan-lee\">See above (RelatedPerson/relatedperson-father-natural-tom-yan-lee)</a></p><p><b>value</b>: Teaching Assistant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>History of Usual industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21844-6)</span></td><td>Elementary and Secondary Schools <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FTH" ] ;
+         fhir:display [ fhir:v "father" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:21843-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21843-8" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-father-natural-tom-yan-lee> ;
+     fhir:reference [ fhir:v "RelatedPerson/relatedperson-father-natural-tom-yan-lee" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Teaching Assistant" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21844-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21844-6" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "Elementary and Secondary Schools" ]
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-carmen-teresa-lee> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-input-race-and-ethnicity-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-input-race-and-ethnicity-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-input-race-and-ethnicity-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-input-race-and-ethnicity-vr.html\">Observation - Input Race and Ethnicity Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mother Input Race and Ethnicity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-local-observation-codes-vr.html\">Local Observation Codes Vital Records</a>#inputraceandethnicityMother)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><blockquote><p><b>component</b></p><p><b>code</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#White)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Black Or African American <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#BlackOrAfricanAmerican)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: American Indian Or Alaska Native <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#AmericanIndianOrAlaskanNative)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Asian Indian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#AsianIndian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Chinese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Chinese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Filipino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Filipino)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Japanese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Japanese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Korean <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Korean)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Vietnamese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Vietnamese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Asian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherAsian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Native Hawaiian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#NativeHawaiian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Guamanian Or Chamorro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#GuamanianOrChamorro)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Samoan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Samoan)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Pacific Islander <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherPacificIslander)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Race <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherRace)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First Other Asian Literal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstOtherAsianLiteral)</span></p><p><b>value</b>: Malaysian</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First American Indian Or Alaska Native Literal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstAmericanIndianOrAlaskanNativeLiteral)</span></p><p><b>value</b>: Arikara</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Mexican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicMexican)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Cuban <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicCuban)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Puerto Rican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicPuertoRican)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicOther)</span></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inputraceandethnicityMother" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "White" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BlackOrAfricanAmerican" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AmericanIndianOrAlaskanNative" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AsianIndian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Chinese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Filipino" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Japanese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Korean" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Vietnamese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherAsian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NativeHawaiian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GuamanianOrChamorro" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Samoan" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherPacificIslander" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherRace" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstOtherAsianLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Malaysian" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstAmericanIndianOrAlaskanNativeLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Arikara" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicMexican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCuban" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicPuertoRican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicOther" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Practitioner/practitioner-vital-records-janet-seito> a fhir:Practitioner ;
+  fhir:id [ fhir:v "practitioner-vital-records-janet-seito"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "223347044" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Janet" ] ;
+     fhir:given ( [ fhir:v "Seito" ] ) ;
+     fhir:suffix ( [ fhir:v "D.O." ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:76231001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76231001" ] ;
+         fhir:display [ fhir:v "Osteopath (occupation)" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Location/location-south-hospital> a fhir:Location ;
+  fhir:id [ fhir:v "location-south-hospital"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Location-bfdr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Location-bfdr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"location-south-hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;location-south-hospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Location-bfdr.html\">Birth and Fetal Death Location</a></p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>116441967701</p><p><b>status</b>: active</p><p><b>name</b>: South Hospital</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span>, Birth Location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a>#loc_birth)</span></p><p><b>address</b>: 2100 North Ave Salt Lake City UT 84116 US </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>40.8</td><td>111.9</td></tr></table><p><b>managingOrganization</b>: <a href=\"#Organization_organization-south-hospital\">See above (Organization/organization-south-hospital: Organization - South Hospital)</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "UT1234567" ]
+     ] ) ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "116441967701" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "South Hospital"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HOSP" ] ;
+       fhir:display [ fhir:v "Hospital" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "loc_birth" ] ;
+       fhir:display [ fhir:v "Birth Location" ]
+     ] )
+  ] ) ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "2100 North Ave" ] ) ;
+     fhir:city [ fhir:v "Salt Lake City" ] ;
+     fhir:district [ fhir:v "Made Up" ] ;
+     fhir:state [ fhir:v "UT" ] ;
+     fhir:postalCode [ fhir:v "84116" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v "40.8"^^xsd:decimal ] ;
+     fhir:latitude [ fhir:v "111.9"^^xsd:decimal ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Organization/organization-south-hospital> ;
+     fhir:reference [ fhir:v "Organization/organization-south-hospital" ] ;
+     fhir:display [ fhir:v "Organization - South Hospital" ]
+  ] . # 
+
+<http://www.example.org/fhir/Organization/organization-south-hospital> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-south-hospital"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"organization-south-hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;organization-south-hospital&quot; </p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>5555512</p><p><b>active</b>: true</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>name</b>: South Hospital</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-1111\">+1-555-555-1111</a>, <a href=\"mailto:mail@southhospital.com\">mail@southhospital.com</a></p><p><b>address</b>: 2100 North Ave Salt Lake City UT 84116 US </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "5555512" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HOSP" ] ;
+       fhir:display [ fhir:v "Hospital" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "South Hospital"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+1-555-555-1111" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mail@southhospital.com" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "2100 North Ave" ] ) ;
+     fhir:city [ fhir:v "Salt Lake City" ] ;
+     fhir:state [ fhir:v "UT" ] ;
+     fhir:postalCode [ fhir:v "84116" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) . # 
+
+<http://www.example.org/fhir/RelatedPerson/relatedperson-mother-carmen-teresa-lee> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "relatedperson-mother-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Black or African American (Details: urn:oid:2.16.840.1.113883.6.238 code 2054-5 = 'Black or African American', stated as 'Black or African American')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Black or African America</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Carmen Teresa Lee (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-02-15</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2054-5" ] ;
+         fhir:display [ fhir:v "Black or African American" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Black or African America" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2135-2" ] ;
+         fhir:display [ fhir:v "Hispanic or Latino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Hispanic or Latino" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GESTM" ] ;
+       fhir:display [ fhir:v "gestational mother" ]
+     ] ) ;
+     fhir:text [ fhir:v "Gestational Mother" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Lee" ] ;
+     fhir:given ( [ fhir:v "Carmen" ] [ fhir:v "Teresa" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1986-02-15"^^xsd:date] . # 
+
+<http://www.example.org/fhir/RelatedPerson/relatedperson-father-natural-tom-yan-lee> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "relatedperson-father-natural-tom-yan-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-tom-yan-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-tom-yan-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: Tom Yan Lee (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1984-02-27</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "White" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2186-5" ] ;
+         fhir:display [ fhir:v "Not Hispanic or Latino" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Not Hispanic or Latino" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Address ;
+       fhir:state [ fhir:v "NY" ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NFTH" ] ;
+       fhir:display [ fhir:v "natural father" ]
+     ] ) ;
+     fhir:text [ fhir:v "Natural Father" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Lee" ] ;
+     fhir:given ( [ fhir:v "Tom" ] [ fhir:v "Yan" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1984-02-27"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

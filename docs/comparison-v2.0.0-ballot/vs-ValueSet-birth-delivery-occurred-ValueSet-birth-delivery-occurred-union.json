@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-269",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-269",
+  "name" : "UnionBirthDeliveryOccurredVSAndBirthDeliveryOccurredVS",
+  "title" : "Union of ValueSet - Birth Delivery Occurred And ValueSet - Birth Delivery Occurred",
+  "status" : "draft",
+  "date" : "2024-02-13T11:57:33-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "22232009",
+        "display" : "Hospital"
+      },
+      {
+        "code" : "91154008",
+        "display" : "Free-standing birthing center"
+      },
+      {
+        "code" : "408839006",
+        "display" : "Planned home birth"
+      },
+      {
+        "code" : "408838003",
+        "display" : "Unplanned home birth"
+      },
+      {
+        "code" : "67190003",
+        "display" : "Free-standing clinic"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-vr-birth-delivery-occurred",
+      "concept" : [{
+        "code" : "unknownplannedhomebirth",
+        "display" : "Unknown if Planned Home Birth"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "OTH",
+        "display" : "Other"
+      },
+      {
+        "code" : "UNK",
+        "display" : "Unknown"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+      "concept" : [{
+        "code" : "unknownplannedhomebirth",
+        "display" : "Unknown if Planned Home Birth"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CodeSystem-edit-flags",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1correctOutOfRange<a name=\"CodeSystem-edit-flags-1correctOutOfRange\"> </a></td><td>Queried data correct, out of range</td><td>Queried data correct, out of range</td></tr><tr><td style=\"white-space:nowrap\">1failedVerified<a name=\"CodeSystem-edit-flags-1failedVerified\"> </a></td><td>Edit Failed, Verified</td><td>Edit Failed, Verified</td></tr><tr><td style=\"white-space:nowrap\">2failedBirthWeightGestationEdit<a name=\"CodeSystem-edit-flags-2failedBirthWeightGestationEdit\"> </a></td><td>Queried, failed birthweight/gestation edit</td><td>Queried, failed birthweight/gestation edit</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pher"
+  }],
+  "url" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
+  "version" : "2.0.0-Ballot",
+  "name" : "EditFlagsCS",
+  "title" : "CodeSystem - Birth Edit Flags",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-02-13T11:56:10-05:00",
+  "publisher" : "HL7 International / Public Health",
+  "contact" : [{
+    "name" : "HL7 International / Public Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/pher"
+    }]
+  }],
+  "description" : "This code system contains codes to represent edit flags specific to BFDR. Additional edit flag codes are located in [CodeSystemEditFlagsVitalRecords]",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "1correctOutOfRange",
+    "display" : "Queried data correct, out of range",
+    "definition" : "Queried data correct, out of range"
+  },
+  {
+    "code" : "1failedVerified",
+    "display" : "Edit Failed, Verified",
+    "definition" : "Edit Failed, Verified"
+  },
+  {
+    "code" : "2failedBirthWeightGestationEdit",
+    "display" : "Queried, failed birthweight/gestation edit",
+    "definition" : "Queried, failed birthweight/gestation edit"
+  }]
+}

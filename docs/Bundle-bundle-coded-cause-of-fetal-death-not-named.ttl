@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Bundle/bundle-coded-cause-of-fetal-death-not-named> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-coded-cause-of-fetal-death-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-cause-of-fetal-death"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-cause-of-fetal-death>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "9876" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "11111-11111" ]
+     ] ) ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2019NJ009876" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2019-10-15T08:51:14.637+00:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Composition/composition-coded-cause-of-fetal-death-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Composition/composition-coded-cause-of-fetal-death-not-named> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-coded-initiating-fetal-death-cause-or-condition"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-coded-initiating-fetal-death-cause-or-condition> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-coded-other-fetal-death-cause-or-condition-not-named"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-coded-other-fetal-death-cause-or-condition-not-named> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Composition/composition-coded-cause-of-fetal-death-not-named> a fhir:Composition ;
+  fhir:id [ fhir:v "composition-coded-cause-of-fetal-death-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-coded-cause-of-fetal-death-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-coded-cause-of-fetal-death-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-coded-cause-of-fetal-death.html\">Composition - Coded Cause of Fetal Death</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Cause of death classification and related information Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86804-2)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Cause of Fetal Death</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:86804-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86804-2" ] ;
+       fhir:display [ fhir:v "Cause of death classification and related information Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:date [ fhir:v "2019-01-09"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:display [ fhir:v "National Center for Health Statistics" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Coded Cause of Fetal Death"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Coded Initiating Cause of Fetal Death" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:86804-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "86804-2" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-coded-initiating-fetal-death-cause-or-condition> ;
+       fhir:reference [ fhir:v "Observation/observation-coded-initiating-fetal-death-cause-or-condition" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-coded-other-fetal-death-cause-or-condition-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-coded-other-fetal-death-cause-or-condition-not-named" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-coded-initiating-fetal-death-cause-or-condition> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-coded-other-fetal-death-cause-or-condition-not-named> a fhir:us .
+
+<http://www.example.org/fhir/Observation/observation-coded-initiating-fetal-death-cause-or-condition> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-coded-initiating-fetal-death-cause-or-condition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-coded-initiating-fetal-death-cause-or-condition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-coded-initiating-fetal-death-cause-or-condition&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-coded-initiating-fetal-death-cause-or-condition.html\">Observation - Coded Initiating Fetal Death Cause or Condition</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Coded initiating cause or condition of fetal death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#92022-3)</span></p><p><b>subject</b>: <span>: Patient - Decedent Fetus (Fetus Not Named)</span></p><p><b>value</b>: Fetus and newborn affected by premature rupture of membranes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html\">ICD-10</a>#P01.1)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:92022-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "92022-3" ] ;
+       fhir:display [ fhir:v "Coded initiating cause or condition of fetal death" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "P01.1" ] ;
+       fhir:display [ fhir:v "Fetus and newborn affected by premature rupture of membranes" ]
+     ] )
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-coded-other-fetal-death-cause-or-condition-not-named> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-coded-other-fetal-death-cause-or-condition-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-coded-other-fetal-death-cause-or-condition-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-coded-other-fetal-death-cause-or-condition-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-coded-other-fetal-death-cause-or-condition.html\">Observation - Coded Other Fetal Death Cause or Condition</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Coded other significant causes or conditions of fetal death <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#92023-1)</span></p><p><b>subject</b>: <span>: Patient - Decedent Fetus (Fetus Not Named)</span></p><p><b>value</b>: Fetus and newborn affected by other forms of placental separation and haemorrhage <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html\">ICD-10</a>#P02.1)</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Position (attribute) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#246268007)</span></td><td>1</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:92023-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "92023-1" ] ;
+       fhir:display [ fhir:v "Coded other significant causes or conditions of fetal death" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "P02.1" ] ;
+       fhir:display [ fhir:v "Fetus and newborn affected by other forms of placental separation and haemorrhage" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:246268007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "246268007" ] ;
+         fhir:display [ fhir:v "Position (attribute)" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

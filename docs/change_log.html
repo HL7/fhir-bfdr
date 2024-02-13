@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Change Log - Birth And Fetal Death (BFDR) - STU2-ballot v2.0.0-Ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-Ballot - ballot
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="use_cases.html">UseCases</a>
+      </li>
+      <li>
+        <a href="vr_ig_harmonization.html">Vital Records IG Harmonization</a>
+      </li>
+      <li>
+        <a href="credits.html">Credits</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementer Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="the_specification.html">Specification</a>
+      </li>
+      <li>
+        <a href="categories.html">Categories</a>
+      </li>
+      <li>
+        <a href="usage.html">Usage Notes</a>
+      </li>
+      <li>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+      </li>
+      <li>
+        <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
+      </li>
+      <li>
+        <a href="ije_mapping_fetalDeath.html">Fetal Death Data Dictionary</a>
+      </li>
+      <li>
+        <a href="vital_records_form_mapping.html">Forms Mapping</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="example_baby_g_quinn.html">Example Live Birth</a>
+      </li>
+      <li>
+        <a href="example_fetal_death.html">Example Fetal Death</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Changes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="change_log.html">Change Log</a>
+      </li>
+      <li>
+        <a href="content-transitions.html">STU1.1 to STU2 Changes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Appendices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html">A Live Birth Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_b_-_example_live_birth_certificate.html">B Live Birth Certificate</a>
+      </li>
+      <li>
+        <a href="appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html">C Fetal Death Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_d_-_example_fetal_death_report.html">D Fetal Death Report</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Change Log</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Birth And Fetal Death (BFDR) - STU2-ballot - Local Development build (v2.0.0-Ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/bfdr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Change Log</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#post-ballot-changes" id="markdown-toc-post-ballot-changes">Post-Ballot Changes</a></li>
+  <li><a href="#major" id="markdown-toc-major">Major</a></li>
+  <li><a href="#minor" id="markdown-toc-minor">Minor</a></li>
+  <li><a href="#stu2-ballot-january-2024" id="markdown-toc-stu2-ballot-january-2024">STU2 Ballot, January 2024</a></li>
+  <li><a href="#stu-11-update-july-2023" id="markdown-toc-stu-11-update-july-2023">STU 1.1 Update, July 2023</a></li>
+</ul>
+
+</div>
+<h3 id="post-ballot-changes">Post-Ballot Changes</h3>
+<h3 id="major">Major</h3>
+<ul>
+  <li><a href="https://jira.hl7.org/browse/FHIR-43458">FHIR-43458</a> - Improve support for birth, transfer-from, and transfer-to locations.   Added new <a href="StructureDefinition-Location-bfdr.html">BFDR Location Profile</a>, and updated <a href="StructureDefinition-Encounter-maternity.html">EncounterMaternity</a> and <a href="StructureDefinition-Encounter-birth.html">EncounterBirth</a> to reference the new profile.   Data dictionary has been updated to correctly document mapping of SFN and FNPI fields, and all other facility-related fields.</li>
+  <li><a href="https://jira.hl7.org/browse/FHIR-43473">FHIR-43473</a> - To improve consistency with VRDR the key reporting identifiers (birth cert no, fetal death report number, local file numbers, and overall record identifier) were moved from the Composition.identifier to the Bundle.identifier and were updated to use standardized extensions. The definitions of these extensions will also be moved to the Vital Records Common Library.</li>
+</ul>
+
+<h3 id="minor">Minor</h3>
+<ul>
+  <li>Removed composition references to <a href="StructureDefinition-Observation-planned-to-deliver-at-home.html">ObservationPlannedToDeliverAtHome</a> profile. Reporting of home delivery plan relies on <a href="StructureDefinition-Encounter-maternity.html">EncounterMaternity</a> and <a href="StructureDefinition-Encounter-birth.html">EncounterBirth</a> (using <a href="ValueSet-ValueSet-birth-delivery-occurred.html">BirthDeliveryOccurredVS</a>)</li>
+  <li><a href="https://jira.hl7.org/browse/FHIR-43506">FHIR-43506</a> - Added forms mappings for <a href="StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html">ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></li>
+  <li>Fixing broken links in IJE mapping tables (<a href="https://github.com/HL7/fhir-bfdr/pull/55">PR</a>)</li>
+  <li><a href="https://jira.hl7.org/browse/FHIR-43403">FHIR-43403</a> - Constrained units of all quantity values – <a href="StructureDefinition-Observation-birth-weight.html">ObservationBirthWeight</a>, <a href="StructureDefinition-Observation-gestational-age-at-delivery.html">ObservationGestationalAgeAtDelivery</a>, <a href="StructureDefinition-Observation-mother-delivery-weight.html">ObservationMotherDeliveryWeight</a>, [ObservationMotherDeliveryHeight], <a href="StructureDefinition-Observation-mother-prepregnancy-weight.html">ObservationMotherPrepregnancyWeight</a>.</li>
+  <li>reinstate missing <a href="StructureDefinition-Observation-birth-plurality-of-pregnancy.html">Observation - Birth Plurality of Pregnancy</a> <a href="https://jira.hl7.org/browse/FHIR-43383">FHIR-43383</a></li>
+  <li>Added narrative content to clarify indicating ‘Y’, ‘N’, and ‘U’ for TRAN and ITRAN in the data dictionary usage page <a href="https://jira.hl7.org/browse/FHIR-43414">FHIR-43414</a></li>
+  <li>Added missing IJE mappings for <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-father-natural-vr.html">RelatedPersonFatherNatural</a> profile</li>
+  <li>Added <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html">roleVitalRecords</a> to <a href="StructureDefinition-Encounter-maternity.html">EncounterMaternity</a> and <a href="StructureDefinition-Encounter-birth.html">EncounterBirth</a> to make them easily queryable from the bundles with a simple FHIRPath expression without traversing Composition references.</li>
+  <li>Concept maps added - <a href="ConceptMap-BirthWeightEditFlagsCM.html">BirthWeightEditFlagsCM</a>, <a href="ConceptMap-EstimateOfGestationEditFlagsCM.html">EstimateOfGestationEditFlagsCM</a>, <a href="ConceptMap-NumberPreviousCesareansEditFlagsCM.html">NumberPreviousCesareansEditFlagsCM</a>, <a href="ConceptMap-PregnancyReportEditFlagsCM.html">PregnancyReportEditFlagsCM</a></li>
+  <li>Edit Flag Valueset cleanup: Edit flag codes were renamed to use consistent naming convention, which includes the IJE value in the name. Where possible, valuesets use the edit flag codes located in <a href="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags">VRCL</a>. For edit flag codes specific to BFDR, <a href="CodeSystem-CodeSystem-edit-flags.html">EditFlagsCS</a> codesystem was added. Valueset and concept maps for FathersDateOfBirthEditFlags, MothersDateOfBirthEditFlags, and PluralityEditFlags were relocated to VRCL, since they are of general utility in the Patient and RelatedPersons profiles.</li>
+  <li>Removed ‘None’ value from valueset <a href="ValueSet-ValueSet-newborn-congenital-anomalies.html">NewbornCongenitalAnomaliesVS</a> since <a href="StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html">ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a> is used for indicating ‘none’ and included ‘Other’ value in valueset for general utility with documentation in <a href="usage.html">Usage page</a> that it’s not allowed for NCHS submission</li>
+  <li><a href="StructureDefinition-Patient-decedent-fetus.html">PatientDecedentFetus</a> made to reference <a href="https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-sex-assigned-at-birth-vr.html">ValueSetSexAssignedAtBirthVitalRecords</a></li>
+  <li>Consolidated miscellaneous local codesystems into a single codesystem called <a href="CodeSystem-CodeSystem-local-bfdr-codes.html">LocalBFDRCodesCS</a></li>
+</ul>
+
+<h3 id="stu2-ballot-january-2024">STU2 Ballot, January 2024</h3>
+<h4 id="major-changes">Major Changes</h4>
+<ul>
+  <li>Reorganization and harmonization of vital records FHIR IG content across BFDR, VRCL and VRDR to reduce redundancy, ease implementation, and reduce maintenance effort.   See <a href="vr_ig_harmonization.html">Vital Records IG Harmonization</a>, and <a href="content-transitions.html">BFDR content changes</a>.</li>
+  <li>Incorporate the vital records approach to capturing race and ethnicity, and reporting coded race and ethnicity to support BDRS to NCHS use cases. See <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-coded-race-and-ethnicity-vr.html">ObservationCodedRaceAndEthnicityVitalRecords</a>, <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-input-race-and-ethnicity-vr.html">ObservationInputRaceAndEthnicityVitalRecords</a>, and <a href="StructureDefinition-Composition-coded-race-and-ethnicity.html">CompositionCodedRaceAndEthnicity</a>.</li>
+  <li>Incorporate the vital records approach to capturing usual work for mother and father, including adding an extension called <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-role-vr.html">roleVitalRecords</a> to distinguish between mother and father. See <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Observation-usual-work-vr.html">ObservationUsualWorkVitalRecords</a>.</li>
+  <li>Incorporation of edit flags as extensions within profiles, rather than as standalone observations.  This follows the path taken by VRDR STU2 that is in production use.  See <a href="StructureDefinition-Observation-birth-weight.html">ObservationBirthWeight</a>, <a href="StructureDefinition-Observation-gestational-age-at-delivery.html">ObservationGestationalAgeAtDelivery</a>, <a href="StructureDefinition-Observation-mother-delivery-weight.html">ObservationMotherDeliveryWeight</a>, <a href="StructureDefinition-Observation-mother-height.html">ObservationMotherHeight</a>, <a href="StructureDefinition-Observation-mother-prepregnancy-weight.html">ObservationMotherPrepregnancyWeight</a>, <a href="StructureDefinition-Observation-number-prenatal-visits.html">ObservationNumberPrenatalVisits</a>, <a href="StructureDefinition-Observation-number-previous-cesareans.html">ObservationNumberPreviousCesareans</a>, <a href="StructureDefinition-Patient-decedent-fetus.html">PatientDecedentFetus</a>, <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Observation-education-level-vr.html">ObservationEducationLevelVitalRecords</a>, <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Patient-vr.html">PatientVitalRecords</a>, <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Patient-mother-vr.html">PatientMotherVitalRecords</a>, <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-mother-vr.html">RelatedPersonMotherVitalRecords</a>, <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-father-vr.html">RelatedPersonFatherVitalRecords</a>, <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-parent-vr.html">RelatedPersonParentVitalRecords</a>.</li>
+  <li>Consistent support for groups of responses that have a ‘none-of-the-above’ response using Observations and categories.  See <a href="categories.html">categories</a>. This includes resolution of <a href="https://jira.hl7.org/FHIR-43001">FHIR-43001</a>.</li>
+  <li>Improved documentation of mapping of IJE fields to BFDR and VRCL profiles and fields.  See <a href="ije_mapping_natality.html">Natality Data Dictionary</a> and <a href="ije_mapping_fetalDeath.html">Fetal Death Data Dictionary</a>.</li>
+</ul>
+
+<h4 id="minor-changes">Minor Changes</h4>
+<ul>
+  <li>Body Height LOINC Code 8302-2 Body Height Measured –&gt; 3137-7 Body Height, based on new publication requirements.  Mother’s Body Height based on USCoreBodyHeightProfile.</li>
+  <li>Profile ID’s were changed for <a href="StructureDefinition-Observation-fetal-death-time-point.html">ObservationFetalDeathTimePoint</a>, <a href="StructureDefinition-Coverage-principal-payer-delivery.html">CoveragePrincipalPayerDelivery</a>, and <a href="StructureDefinition-Observation-antibiotics-administered-during-labor.html">ObservationAntibioticsAdministeredDuringLabor</a> to be made consistent with their profile names. <a href="StructureDefinition-Encounter-maternity.html">EncounterMaternity</a> profile name was changed from Encounter_Maternity to EncounterMaternity to be consistent with naming convention of EncounterBirth.</li>
+</ul>
+
+<h3 id="stu-11-update-july-2023">STU 1.1 Update, July 2023</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Jira Issue</th>
+      <th>Description of Change</th>
+      <th>Changes Made</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-40613">FHIR-40613</a></td>
+      <td>On profiles:<br />    Composition - Provider Live Birth Report<br />    Composition - Provider Fetal Death Report<br />Make all slices on Composition.identifier optional (0..1) (as opposed to 1..1)</td>
+      <td>Update Composition.identifier slices to 0..1 on:<br />Composition - Provider Live Birth Report<br />Composition - Provider Fetal Death Report</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-40680">FHIR-40680</a></td>
+      <td>Observations with value sets containing a mix of Conditions, Observations, and Procedures have been used in the IG. This is not how the data is represented in the real world. Split the Observations into separate profiles using the appropriate resource.<br />Replaced profiles:<br /><br />Condition - Abnormal Condition of Newborn<br />Condition - Maternal Morbidity<br />Observation - Characteristic of Labor and Delivery</td>
+      <td>Added the following profiles:<br /><br />Procedure - Assissted Ventilation Following Delivery<br />Procedure - Assisted Ventilation More Than Six Hours<br />Observation - NICU Admission<br />Procedure - Surfactant Replacement Therapy<br />Procedure - Antibiotic for Suspected Neonatal Sepsis<br />Condition - Seizure<br />Observation - None Of Specified Abnormal Conditions of Newborn<br />Procedure - Blood Transfusion<br />Condition - Perineal Laceration<br />Condition - Ruptured Uterus<br />Procedure - Unplanned Hysterectomy<br />Observation - ICU Admission<br />Observation - None Of Specified Maternal Morbidities<br />Procedure - Induction of Labor<br />Procedure - Augmentation of Labor<br />Observation - Administration of Steroids for Fetal Lung Maturation<br />Observation - Antibiotics Administered During Labor<br />Condition - Chorioamnionitis<br />Procedure - Epidural or Spinal Anesthesia<br />Observation - None Of Specified Characteristics of Labor and Delivery</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-40847">FHIR-40847</a></td>
+      <td>Update to latest published version of US Core (5.0.1)</td>
+      <td>Small updates based on US Core profiles changes<br />Update to Condition profiles due to split in US Core Condition into US Core Condition Encounter Diagnosis and US Core Problems and Health Concerns Profile<br /> - after consultation on Zulip, all cause of death condition profiles are based on US Core Condition Encounter Diagnosis, and all other Condition profiles are based on US Core Problems and Health Concerns Profile</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-40929">FHIR-40929</a></td>
+      <td>Revisit profile focus/subject mappings (mother and child/fetus) and update where needed<br />During the Connectathon implementers noticed that there were a few profiles where the focus and subject were the wrong way round. Need to list all the profiles and ensure that they are all correct and update where needed.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41323">FHIR-41323</a></td>
+      <td>Add and update a “Change Log” narrative page to the BFDR</td>
+      <td>This file/referencing page</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41325">FHIR-41325</a></td>
+      <td>Update Narrative pages for project info, correct external links, etc. Additionally, remove the IHE page and include relevant information on remaining narrative pages.</td>
+      <td>Narrative pages</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41385">FHIR-41385</a></td>
+      <td>Add Extension to Live Birth Compositions to reference maternity Encounter<br /><br />Composition.encounter is limited to a maximum of 1 encounter, however a Live Birth spans two encounters - the Birth Encounter and the Maternity Encounter. The two Live Birth Compositions have the Birth Encounter as the one encounter referenced. Pilot implementers have requested that we add an extension to these Compositions to reference the Maternity Encounter to allow them to more easily get to the data in that Encounter.<br /><br />Add to Composition - Provider Live Birth Report and Composition - Jurisdiction Live Birth Report an extension (must support and 0..1) that references the Maternity Encounter.</td>
+      <td>Added: Extension-encounter-maternity-reference<br />Updated both Live Birth Compositions to optionally contain extension (on Composition.encounter)</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41386">FHIR-41386</a></td>
+      <td>Add receipt date Parameters profile similar to VRDR “Coding Status Values”<br />Adding a Parameters profile similar to <a href="https://hl7.org/fhir/us/vrdr/STU2.2/StructureDefinition-vrdr-coding-status-values.html">StructureDefinition-vrdr-coding-status-values</a><br />will allow BFDR implementers to use status flags that result from the NCHS coding process, e.g., Receipt date – Day, Month, Year (IJE codes R_DY, R_MO, R_YR)</td>
+      <td>Added profile to VRCPL: Parameters-coding-status-values-vr</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41387">FHIR-41387</a></td>
+      <td>Add Extension similar to VRDR “Extension: Replacement Status of a Death Record”, for replacement status of a birth / fetal death record<br /><br />Adding an Extension will allow implementers to designate a Replacement (amended) record (IJE code: REPLACE) in IJE exchanges.<br /><br />In VRDR, the Extension is on the Death Certificate composition.<br /><br />Similarly, in BFDR, the extension will be available for the 4 Compositions (Provider/Jurisdiction Live Birth Report &amp; Provider/Jurisdiction Fetal Death Report)</td>
+      <td>Added profile: Extension-replacement-status</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41564">FHIR-41564</a></td>
+      <td>FHIR-IJE Mismatch: This profile is used for the value known as AUTOPF.<br /><br />According to IJE Spreadsheet, the AUTOPF is a Y/N/NA value.<br />The profile provides only a boolean value.<br />Suggest that it be a codeable concept bound to a Y/N/NA valueset.</td>
+      <td>Updated as suggested</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41580">FHIR-41580</a></td>
+      <td>Obsolete value in PHVS_FetalPresentations_NCHS value set:  SNOMEDCT code 163518000  – On examination – fetal presentation unsure</td>
+      <td>Replace code with nullFlavor UNK in PhinVads value set: <a href="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7113">2.16.840.1.114222.4.11.7113</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41596">FHIR-41596</a></td>
+      <td>Composition data sources for items on the mother’s/patient’s worksheet: The provider live birth composition  HL7.FHIR.US.BFDR\Composition - Provider Live Birth Report - FHIR v4.0.1 and the provider fetal death report composition HL7.FHIR.US.BFDR\Composition - Provider Fetal Death Report - FHIR v4.0.1 include elements that have information that is directly asked from the mother and typically not found in the same format within an EMR unless this information is collected from the mother using the questions and wording of the jurisdiction’s mothers’ worksheet for the birth certificate via a patient portal or tablet that is uploaded to the EMR.  The data source for this information should be the mother (live birth) or patient (fetal death). To help make this more explicit for implementers we are requesting that descriptions within the entries be updated to include such information on where the information may be found.</td>
+      <td>Add data source to Composition, Profiles, add guidance on mapping tables page, add guidance on use cases page.</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41600">FHIR-41600</a></td>
+      <td>Add guidance on:Mother/Baby linkage: Consider adding guidance (perhaps on <a href="use_cases.html">Use Cases</a>) on how FHIR models mother/baby linkage using RelatedPerson and noting that EHR systems may not use this method of linking the two participants.</td>
+      <td>Added guidance as suggested and also added guidance on alternate way of linking mother and baby found in some EHRs.</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41601">FHIR-41601</a></td>
+      <td>Add guidance on Plurality &amp; Multiple Births</td>
+      <td>Added guidance as suggested on Use Cases page</td>
+    </tr>
+    <tr>
+      <td><a href="https://jira.hl7.org/browse/FHIR-41602">FHIR-41602</a></td>
+      <td>Add guidance on sources and coding of data for forms</td>
+      <td>Added guidance as suggested on Use Cases page</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--- Extensions -->
+<!---from VRCL-->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/bfdr/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

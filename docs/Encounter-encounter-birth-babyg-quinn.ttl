@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Encounter/encounter-birth-babyg-quinn> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "encounter-birth-babyg-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-birth-babyg-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-birth-babyg-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-birth.html\">Encounter - Birth</a></p></div><p><b>Role Vital Records</b>: child <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#CHILD)</span></p><p><b>identifier</b>: id: 9937012</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Under Observation or Inpatient Care Services (Including Admission and Discharge Services) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99234)</span></p><p><b>subject</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn: BabyG Quinn</a> &quot; QUINN&quot;</p><blockquote><p><b>participant</b></p><p><b>type</b>: Birth certifier [Extended Identifier] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87287-9)</span></p><p><b>period</b>: 2019-02-12 13:30:00-0700 --&gt; (ongoing)</p><p><b>individual</b>: <a href=\"Practitioner-practitioner-vital-records-avery-jones.html\">Practitioner/practitioner-vital-records-avery-jones: Practitioner - Vital Records (Avery Jones, MD)</a> &quot; JONES&quot;</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: Birth attendant [Extended Identifier] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87286-1)</span></p><p><b>individual</b>: <a href=\"Practitioner-practitioner-vital-records-avery-jones.html\">Practitioner/practitioner-vital-records-avery-jones: Practitioner - Vital Records (Avery Jones, MD)</a> &quot; JONES&quot;</p></blockquote><p><b>period</b>: 2019-02-12 13:00:00-0700 --&gt; 2019-02-15 10:00:00-0700</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Destination</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-location-east-hospital.html\">Location/location-east-hospital: East Hospital Location</a> &quot;East Hospital&quot;</td><td>The patient was transferred to another healthcare facility. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-discharge-disposition.html\">Discharge disposition</a>#other-hcf &quot;Other healthcare facility&quot;)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-location-south-hospital.html\">Location/location-south-hospital: Location - US Core Location (South Hospital)</a> &quot;South Hospital&quot;</td><td>Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#22232009)</span></td></tr></table><p><b>partOf</b>: <a href=\"Encounter-encounter-maternity-jada-ann-quinn.html\">Encounter/encounter-maternity-jada-ann-quinn: Maternity Encounter - Jada Ann Quinn</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CHILD" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9937012" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "IMP" ] ;
+     fhir:display [ fhir:v "inpatient encounter" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "99234" ]
+     ] ) ;
+     fhir:text [ fhir:v "Under Observation or Inpatient Care Services (Including Admission and Discharge Services)" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-child-babyg-quinn" ] ;
+     fhir:display [ fhir:v "BabyG Quinn" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         a loinc:87287-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "87287-9" ] ;
+         fhir:display [ fhir:v "Birth certifier [Extended Identifier]" ]
+       ] )
+     ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2019-02-12T13:30:00-07:00"^^xsd:dateTime ]
+     ] ;
+     fhir:individual [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-avery-jones> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-avery-jones" ] ;
+       fhir:display [ fhir:v "Practitioner - Vital Records (Avery Jones, MD)" ]
+     ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         a loinc:87286-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "87286-1" ] ;
+         fhir:display [ fhir:v "Birth attendant [Extended Identifier]" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-avery-jones> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-avery-jones" ] ;
+       fhir:display [ fhir:v "Practitioner - Vital Records (Avery Jones, MD)" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2019-02-12T13:00:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-02-15T10:00:00-07:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:hospitalization [
+     fhir:destination [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Location/location-east-hospital> ;
+       fhir:reference [ fhir:v "Location/location-east-hospital" ] ;
+       fhir:display [ fhir:v "East Hospital Location" ]
+     ] ;
+     fhir:dischargeDisposition [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/discharge-disposition"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "other-hcf" ] ;
+         fhir:display [ fhir:v "Other healthcare facility" ]
+       ] ) ;
+       fhir:text [ fhir:v "The patient was transferred to another healthcare facility." ]
+     ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Location/location-south-hospital> ;
+       fhir:reference [ fhir:v "Location/location-south-hospital" ] ;
+       fhir:display [ fhir:v "Location - US Core Location (South Hospital)" ]
+     ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         a sct:22232009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "22232009" ] ;
+         fhir:display [ fhir:v "Hospital" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:partOf [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Encounter/encounter-maternity-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Encounter/encounter-maternity-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Maternity Encounter - Jada Ann Quinn" ]
+  ] . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-avery-jones> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Location/location-east-hospital> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Location/location-south-hospital> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Encounter/encounter-maternity-jada-ann-quinn> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

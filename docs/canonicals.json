@@ -1,0 +1,926 @@
+[
+  {
+    "id" : "CapabilityStatement-bfdr",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/us/bfdr/CapabilityStatement/CapabilityStatement-bfdr",
+    "version" : "2.0.0-Ballot",
+    "name" : "CapabilityStatementBFDR"
+  },
+  {
+    "id" : "CodeSystem-edit-flags",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
+    "version" : "2.0.0-Ballot",
+    "name" : "EditFlagsCS"
+  },
+  {
+    "id" : "CodeSystem-local-bfdr-codes",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+    "version" : "2.0.0-Ballot",
+    "name" : "LocalBFDRCodesCS"
+  },
+  {
+    "id" : "BirthAndFetalDeathFinancialClassCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/BirthAndFetalDeathFinancialClassCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthAndFetalDeathFinancialClass"
+  },
+  {
+    "id" : "BirthAttendantTitlesCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/BirthAttendantTitlesCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthAttendantTitles"
+  },
+  {
+    "id" : "BirthDeliveryOccurredCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/BirthDeliveryOccurredCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthDeliveryOccurred"
+  },
+  {
+    "id" : "BirthWeightEditFlagsCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/BirthWeightEditFlagsCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthWeightEditFlags"
+  },
+  {
+    "id" : "DeliveryRoutesCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/DeliveryRoutesCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "DeliveryRoutes"
+  },
+  {
+    "id" : "EstimateOfGestationEditFlagsCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/EstimateOfGestationEditFlagsCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "EstimateOfGestationEditFlags"
+  },
+  {
+    "id" : "FetalDeathCauseOrConditionCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/FetalDeathCauseOrConditionCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "FetalDeathCauseOrCondition"
+  },
+  {
+    "id" : "FetalDeathTimePointsCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/FetalDeathTimePointsCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "FetalDeathTimePoints"
+  },
+  {
+    "id" : "FetalPresentationCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/FetalPresentationCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "FetalPresentation"
+  },
+  {
+    "id" : "HistologicalPlacentalExaminationCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/HistologicalPlacentalExaminationCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "HistologicalPlacentalExamination"
+  },
+  {
+    "id" : "InfectionsDuringPregnancyLiveBirthCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/InfectionsDuringPregnancyLiveBirthCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "InfectionsDuringPregnancyLiveBirth"
+  },
+  {
+    "id" : "NewbornCongenitalAnomaliesCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/NewbornCongenitalAnomaliesCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "NewbornCongenitalAnomalies"
+  },
+  {
+    "id" : "NumberPreviousCesareansEditFlagsCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/NumberPreviousCesareansEditFlagsCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "NumberPreviousCesareansEditFlags"
+  },
+  {
+    "id" : "PregnancyReportEditFlagsCM",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/PregnancyReportEditFlagsCM",
+    "version" : "2.0.0-Ballot",
+    "name" : "PregnancyReportEditFlags"
+  },
+  {
+    "id" : "hl7.fhir.us.bfdr",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/us/bfdr/ImplementationGuide/hl7.fhir.us.bfdr",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthAndFetalDeath"
+  },
+  {
+    "id" : "Questionnaire-mothers-live-birth",
+    "type" : "Questionnaire",
+    "url" : "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth",
+    "version" : "2.0.0-Ballot",
+    "name" : "QuestionnaireMothersWorksheetChildsBirthCertificate"
+  },
+  {
+    "id" : "Questionnaire-patients-fetal-death",
+    "type" : "Questionnaire",
+    "url" : "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-patients-fetal-death",
+    "version" : "2.0.0-Ballot",
+    "name" : "QuestionnairePatientsFetalDeathWorksheet"
+  },
+  {
+    "id" : "Bundle-document-birth-report",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-birth-report",
+    "version" : "2.0.0-Ballot",
+    "name" : "BundleDocumentBirthReport"
+  },
+  {
+    "id" : "Bundle-document-coded-cause-of-fetal-death",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-cause-of-fetal-death",
+    "version" : "2.0.0-Ballot",
+    "name" : "BundleDocumentCodedCauseOfFetalDeath"
+  },
+  {
+    "id" : "Bundle-document-demographic-coded-content",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-demographic-coded-content",
+    "version" : "2.0.0-Ballot",
+    "name" : "BundleDocumentDemographicCodedContent"
+  },
+  {
+    "id" : "Bundle-document-fetal-death-report",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-fetal-death-report",
+    "version" : "2.0.0-Ballot",
+    "name" : "BundleDocumentFetalDeathReport"
+  },
+  {
+    "id" : "Composition-coded-cause-of-fetal-death",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death",
+    "version" : "2.0.0-Ballot",
+    "name" : "CompositionCodedCauseOfFetalDeath"
+  },
+  {
+    "id" : "Composition-coded-race-and-ethnicity",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity",
+    "version" : "2.0.0-Ballot",
+    "name" : "CompositionCodedRaceAndEthnicity"
+  },
+  {
+    "id" : "Composition-jurisdiction-fetal-death-report",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report",
+    "version" : "2.0.0-Ballot",
+    "name" : "CompositionJurisdictionFetalDeathReport"
+  },
+  {
+    "id" : "Composition-jurisdiction-live-birth-report",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report",
+    "version" : "2.0.0-Ballot",
+    "name" : "CompositionJurisdictionLiveBirthReport"
+  },
+  {
+    "id" : "Composition-provider-fetal-death-report",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report",
+    "version" : "2.0.0-Ballot",
+    "name" : "CompositionProviderFetalDeathReport"
+  },
+  {
+    "id" : "Composition-provider-live-birth-report",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report",
+    "version" : "2.0.0-Ballot",
+    "name" : "CompositionProviderLiveBirthReport"
+  },
+  {
+    "id" : "Condition-chorioamnionitis",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-chorioamnionitis",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionChorioamnionitis"
+  },
+  {
+    "id" : "Condition-congenital-anomaly-of-newborn",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionCongenitalAnomalyOfNewborn"
+  },
+  {
+    "id" : "Condition-eclampsia-hypertension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-eclampsia-hypertension",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionEclampsiaHypertension"
+  },
+  {
+    "id" : "Condition-fetal-death-cause-or-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-cause-or-condition",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionFetalDeathCauseOrCondition"
+  },
+  {
+    "id" : "Condition-fetal-death-other-cause-or-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionFetalDeathOtherCauseOrCondition"
+  },
+  {
+    "id" : "Condition-gestational-diabetes",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-diabetes",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionGestationalDiabetes"
+  },
+  {
+    "id" : "Condition-gestational-hypertension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-hypertension",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionGestationalHypertension"
+  },
+  {
+    "id" : "Condition-infection-present-during-pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionInfectionPresentDuringPregnancy"
+  },
+  {
+    "id" : "Condition-perineal-laceration",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionPerinealLaceration"
+  },
+  {
+    "id" : "Condition-prepregnancy-diabetes",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-prepregnancy-diabetes",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionPrepregnancyDiabetes"
+  },
+  {
+    "id" : "Condition-prepregnancy-hypertension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-prepregnancy-hypertension",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionPrepregnancyHypertension"
+  },
+  {
+    "id" : "Condition-ruptured-uterus",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionRupturedUterus"
+  },
+  {
+    "id" : "Condition-seizure",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-seizure",
+    "version" : "2.0.0-Ballot",
+    "name" : "ConditionSeizure"
+  },
+  {
+    "id" : "Coverage-principal-payer-delivery",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-delivery",
+    "version" : "2.0.0-Ballot",
+    "name" : "CoveragePrincipalPayerDelivery"
+  },
+  {
+    "id" : "Encounter-birth",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth",
+    "version" : "2.0.0-Ballot",
+    "name" : "EncounterBirth"
+  },
+  {
+    "id" : "Encounter-maternity",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity",
+    "version" : "2.0.0-Ballot",
+    "name" : "EncounterMaternity"
+  },
+  {
+    "id" : "Extension-encounter-maternity-reference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference",
+    "version" : "2.0.0-Ballot",
+    "name" : "ExtensionEncounterMaternityReference"
+  },
+  {
+    "id" : "Location-bfdr",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Location-bfdr",
+    "version" : "2.0.0-Ballot",
+    "name" : "LocationBFDR"
+  },
+  {
+    "id" : "Observation-None-congenital-anomolies-of-the-newborn",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-None-congenital-anomolies-of-the-newborn",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn"
+  },
+  {
+    "id" : "Observation-antibiotics-administered-during-labor",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-administered-during-labor",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationAntibioticsAdministeredDuringLabor"
+  },
+  {
+    "id" : "Observation-apgar-score",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-apgar-score",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationApgarScore"
+  },
+  {
+    "id" : "Observation-autopsy-histological-exam-results-used",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationAutopsyHistologicalExamResultsUsed"
+  },
+  {
+    "id" : "Observation-birth-plurality-of-pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-plurality-of-pregnancy",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationBirthPluralityOfPregnancy"
+  },
+  {
+    "id" : "Observation-birth-weight",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationBirthWeight"
+  },
+  {
+    "id" : "Observation-cigarette-smoking-before-during-pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationCigaretteSmokingBeforeDuringPregnancy"
+  },
+  {
+    "id" : "Observation-coded-initiating-fetal-death-cause-or-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationCodedInitiatingFetalDeathCauseOrCondition"
+  },
+  {
+    "id" : "Observation-coded-other-fetal-death-cause-or-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationCodedOtherFetalDeathCauseOrCondition"
+  },
+  {
+    "id" : "Observation-date-of-first-prenatal-care-visit",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationDateOfFirstPrenatalCareVisit"
+  },
+  {
+    "id" : "Observation-date-of-last-live-birth",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationDateOfLastLiveBirth"
+  },
+  {
+    "id" : "Observation-date-of-last-other-pregnancy-outcome",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationDateOfLastOtherPregnancyOutcome"
+  },
+  {
+    "id" : "Observation-fetal-death-time-point",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationFetalDeathTimePoint"
+  },
+  {
+    "id" : "Observation-fetal-presentation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationFetalPresentation"
+  },
+  {
+    "id" : "Observation-gestational-age-at-delivery",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationGestationalAgeAtDelivery"
+  },
+  {
+    "id" : "Observation-histological-placental-exam-performed",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationHistologicalPlacentalExamPerformed"
+  },
+  {
+    "id" : "Observation-icu-admission",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationICUAdmission"
+  },
+  {
+    "id" : "Observation-infant-breastfed-at-discharge",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationInfantBreastfedAtDischarge"
+  },
+  {
+    "id" : "Observation-infant-living",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-living",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationInfantLiving"
+  },
+  {
+    "id" : "Observation-labor-trial-attempted",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationLaborTrialAttempted"
+  },
+  {
+    "id" : "Observation-last-menstrual-period",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationLastMenstrualPeriod"
+  },
+  {
+    "id" : "Observation-method-of-disposition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationMethodOfDisposition"
+  },
+  {
+    "id" : "Observation-mother-delivery-weight",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-delivery-weight",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationMotherDeliveryWeight"
+  },
+  {
+    "id" : "Observation-mother-height",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationMotherHeight"
+  },
+  {
+    "id" : "Observation-mother-married-during-pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationMotherMarriedDuringPregnancy"
+  },
+  {
+    "id" : "Observation-mother-prepregnancy-weight",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationMotherPrepregnancyWeight"
+  },
+  {
+    "id" : "Observation-mother-received-wic-food",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationMotherReceivedWICFood"
+  },
+  {
+    "id" : "Observation-nicu-admission",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNICUAdmission"
+  },
+  {
+    "id" : "Observation-no-infections-present-during-pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-no-infections-present-during-pregnancy",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy"
+  },
+  {
+    "id" : "Observation-none-of-specified-abnormal-conditions-of-newborn",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn"
+  },
+  {
+    "id" : "Observation-none-of-specified-characteristics-labor-delivery",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery"
+  },
+  {
+    "id" : "Observation-none-of-specified-maternal-morbidities",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-maternal-morbidities",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNoneOfSpecifiedMaternalMorbidities"
+  },
+  {
+    "id" : "Observation-none-of-specified-obstetric-procedures",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-obstetric-procedures",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNoneOfSpecifiedObstetricProcedures"
+  },
+  {
+    "id" : "Observation-none-of-specified-pregnancy-risk-factors",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNoneOfSpecifiedPregnancyRiskFactors"
+  },
+  {
+    "id" : "Observation-number-births-now-dead",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-dead",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNumberBirthsNowDead"
+  },
+  {
+    "id" : "Observation-number-births-now-living",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-living",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNumberBirthsNowLiving"
+  },
+  {
+    "id" : "Observation-number-fetal-deaths-this-delivery",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-fetal-deaths-this-delivery",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNumberFetalDeathsThisDelivery"
+  },
+  {
+    "id" : "Observation-number-live-births-this-delivery",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-live-births-this-delivery",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNumberLiveBirthsThisDelivery"
+  },
+  {
+    "id" : "Observation-number-other-pregnancy-outcomes",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-other-pregnancy-outcomes",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNumberOtherPregnancyOutcomes"
+  },
+  {
+    "id" : "Observation-number-prenatal-visits",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-prenatal-visits",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNumberPrenatalVisits"
+  },
+  {
+    "id" : "Observation-number-previous-cesareans",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationNumberPreviousCesareans"
+  },
+  {
+    "id" : "Observation-paternity-acknowledgement-signed",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationPaternityAcknowledgementSigned"
+  },
+  {
+    "id" : "Observation-planned-to-deliver-at-home",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationPlannedToDeliverAtHome"
+  },
+  {
+    "id" : "Observation-previous-cesarean",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-previous-cesarean",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationPreviousCesarean"
+  },
+  {
+    "id" : "Observation-previous-preterm-birth",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-previous-preterm-birth",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationPreviousPretermBirth"
+  },
+  {
+    "id" : "Observation-ssn-requested-for-child",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationSSNRequestedForChild"
+  },
+  {
+    "id" : "Observation-steroids-fetal-lung-maturation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationSteroidsFetalLungMaturation"
+  },
+  {
+    "id" : "Observation-unknown-final-route-and-method-of-delivery",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-unknown-final-route-and-method-of-delivery",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationUnknownFinalRouteMethodDelivery"
+  },
+  {
+    "id" : "Patient-decedent-fetus",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus",
+    "version" : "2.0.0-Ballot",
+    "name" : "PatientDecedentFetus"
+  },
+  {
+    "id" : "Procedure-antibiotic-suspected-neonatal-sepsis",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureAntibioticSuspectedNeonatalSepsis"
+  },
+  {
+    "id" : "Procedure-artificial-insemination",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-artificial-insemination",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureArtificialInsemination"
+  },
+  {
+    "id" : "Procedure-assisted-fertilization",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-fertilization",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureAssistedFertilization"
+  },
+  {
+    "id" : "Procedure-assisted-ventilation-following-delivery",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureAssistedVentilationFollowingDelivery"
+  },
+  {
+    "id" : "Procedure-assisted-ventilation-more-than-six-hours",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureAssistedVentilationMoreThanSixHours"
+  },
+  {
+    "id" : "Procedure-augmentation-of-labor",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-augmentation-of-labor",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureAugmentationOfLabor"
+  },
+  {
+    "id" : "Procedure-blood-transfusion",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-blood-transfusion",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureBloodTransfusion"
+  },
+  {
+    "id" : "Procedure-epidural-or-spinal-anesthesia",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureEpiduralOrSpinalAnesthesia"
+  },
+  {
+    "id" : "Procedure-final-route-method-delivery",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureFinalRouteMethodDelivery"
+  },
+  {
+    "id" : "Procedure-induction-of-labor",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-induction-of-labor",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureInductionOfLabor"
+  },
+  {
+    "id" : "Procedure-infertility-treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureInfertilityTreatment"
+  },
+  {
+    "id" : "Procedure-obstetric",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureObstetric"
+  },
+  {
+    "id" : "Procedure-surfactant-replacement-therapy",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureSurfactantReplacementTherapy"
+  },
+  {
+    "id" : "Procedure-unplanned-hysterectomy",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-unplanned-hysterectomy",
+    "version" : "2.0.0-Ballot",
+    "name" : "ProcedureUnplannedHysterectomy"
+  },
+  {
+    "id" : "ValueSet-apgar-timing",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing",
+    "version" : "2.0.0-Ballot",
+    "name" : "ApgarTimingVS"
+  },
+  {
+    "id" : "ValueSet-birth-and-fetal-death-financial-class",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthAndFetalDeathFinancialClassVS"
+  },
+  {
+    "id" : "ValueSet-birth-attendant-titles",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-attendant-titles",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthAttendantTitlesVS"
+  },
+  {
+    "id" : "ValueSet-birth-delivery-occurred",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-delivery-occurred",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthDeliveryOccurredVS"
+  },
+  {
+    "id" : "ValueSet-birth-weight-edit-flags",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-weight-edit-flags",
+    "version" : "2.0.0-Ballot",
+    "name" : "BirthWeightEditFlagsVS"
+  },
+  {
+    "id" : "ValueSet-delivery-routes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-delivery-routes",
+    "version" : "2.0.0-Ballot",
+    "name" : "DeliveryRoutesVS"
+  },
+  {
+    "id" : "ValueSet-estimate-of-gestation-edit-flags",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-estimate-of-gestation-edit-flags",
+    "version" : "2.0.0-Ballot",
+    "name" : "EstimateOfGestationEditFlagsVS"
+  },
+  {
+    "id" : "ValueSet-fetal-death-cause-or-condition",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-cause-or-condition",
+    "version" : "2.0.0-Ballot",
+    "name" : "FetalDeathCauseOrConditionVS"
+  },
+  {
+    "id" : "ValueSet-fetal-death-time-points",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-time-points",
+    "version" : "2.0.0-Ballot",
+    "name" : "FetalDeathTimePointsVS"
+  },
+  {
+    "id" : "ValueSet-fetal-presentations",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations",
+    "version" : "2.0.0-Ballot",
+    "name" : "FetalPresentationsVS"
+  },
+  {
+    "id" : "ValueSet-histological-placental-examination",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-histological-placental-examination",
+    "version" : "2.0.0-Ballot",
+    "name" : "HistologicalPlacentalExaminationVS"
+  },
+  {
+    "id" : "ValueSet-infections-during-pregnancy-live-birth",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-infections-during-pregnancy-live-birth",
+    "version" : "2.0.0-Ballot",
+    "name" : "InfectionsDuringPregnancyLiveBirthVS"
+  },
+  {
+    "id" : "ValueSet-informant-relationship-to-mother",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-informant-relationship-to-mother",
+    "version" : "2.0.0-Ballot",
+    "name" : "InformantRelationshipToMotherVS"
+  },
+  {
+    "id" : "ValueSet-location-types",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-location-types",
+    "version" : "2.0.0-Ballot",
+    "name" : "LocationTypeVS"
+  },
+  {
+    "id" : "ValueSet-method-of-disposition",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-method-of-disposition",
+    "version" : "2.0.0-Ballot",
+    "name" : "MethodOfDispositionVS"
+  },
+  {
+    "id" : "ValueSet-newborn-congenital-anomalies",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies",
+    "version" : "2.0.0-Ballot",
+    "name" : "NewbornCongenitalAnomaliesVS"
+  },
+  {
+    "id" : "ValueSet-number-previous-cesareans-edit-flags",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-number-previous-cesareans-edit-flags",
+    "version" : "2.0.0-Ballot",
+    "name" : "NumberPreviousCesareansEditFlagsVS"
+  },
+  {
+    "id" : "ValueSet-obstetric-procedure",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObstetricProcedureVS"
+  },
+  {
+    "id" : "ValueSet-obstetric-procedure-outcome",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure-outcome",
+    "version" : "2.0.0-Ballot",
+    "name" : "ValueSetObstetricProcedureOutcome"
+  },
+  {
+    "id" : "ValueSet-pregnancy-report-edit-flags",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-pregnancy-report-edit-flags",
+    "version" : "2.0.0-Ballot",
+    "name" : "PregnancyReportEditFlagsVS"
+  },
+  {
+    "id" : "cigarette-smoking-before-during-pregnancy",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/cigarette-smoking-before-during-pregnancy",
+    "version" : "2.0.0-Ballot",
+    "name" : "CigaretteSmokingBeforeAndDuringPregnancyVS"
+  }
+]

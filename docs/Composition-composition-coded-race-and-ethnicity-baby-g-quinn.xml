@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="composition-coded-race-and-ethnicity-baby-g-quinn"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="composition-coded-race-and-ethnicity-baby-g-quinn"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;composition-coded-race-and-ethnicity-baby-g-quinn&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-coded-race-and-ethnicity.html">Composition - Coded Race and Ethnicity</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Race and ethnicity information Document <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#86805-9)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Race and Ethnicity</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="86805-9"/>
+      <display value="Race and ethnicity information Document"/>
+    </coding>
+  </type>
+  <subject>
+    <display value="Patient - Child (Baby G Quinn)"/>
+  </subject>
+  <date value="2019-01-09"/>
+  <author>
+    <display value="National Center for Health Statistics"/>
+  </author>
+  <title value="Coded Race and Ethnicity"/>
+  <section>
+    <title value="Mother's Coded Race and Ethnicity"/>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+        <code value="MTH"/>
+      </coding>
+    </code>
+    <focus>
+      <display value="patient-mother-jada-ann-quinn"/>
+    </focus>
+    <entry>
+      <reference value="Observation/observation-input-race-and-ethnicity-mother"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-coded-race-and-ethnicity-mother"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Father's Coded Race and Ethnicity"/>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+        <code value="NFTH"/>
+      </coding>
+    </code>
+    <focus>
+      <display value="relatedperson-father-natural-james-brandon-quinn"/>
+    </focus>
+    <entry>
+      <reference value="Observation/observation-input-race-and-ethnicity-father"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-coded-race-and-ethnicity-father"/>
+    </entry>
+  </section>
+</Composition>

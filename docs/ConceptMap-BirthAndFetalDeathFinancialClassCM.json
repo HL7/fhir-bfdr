@@ -1,0 +1,154 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "BirthAndFetalDeathFinancialClassCM",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to <a href=\"ValueSet-ValueSet-birth-and-fetal-death-financial-class.html\">ValueSet - Birth and Fetal Death Financial Class</a></p><p>DRAFT. Published on 2024-02-13 11:56:10-0500 by HL7 International / Public Health (HL7 International / Public Health: <a href=\"http://www.hl7.org/Special/committees/pher\">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR BirthAndFetalDeathFinancialClass Value Sets</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html\">Placeholder Code System for IJE in Vital Records</a> to <a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>1 (Medicaid)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\"/></td><td>finclass_medicaid (MEDICAID)</td></tr><tr><td>2 (Private Insurance)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\"/></td><td>finclass_privateinsurance (PRIVATE HEALTH INSURANCE)</td></tr><tr><td>3 (Self-pay)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\"/></td><td>finclass_selfpay (Self-pay)</td></tr><tr><td>4 (Indian Health Service)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\"/></td><td>finclass_indianhealth (Indian Health Service or Tribe)</td></tr><tr><td>5 (CHAMPUS/TRICARE)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\"/></td><td>finclass_tricare (TRICARE (CHAMPUS))</td></tr><tr><td>6 (Other Government (Fed, State, Local))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\"/></td><td>finclass_othergov (Other Government (Federal, State, Local not specified))</td></tr><tr><td>8 (Other)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\"/></td><td>finclass_nosource (No Typology Code available for payment source)</td></tr><tr><td>9 (Unknown)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\"/></td><td>finclass_unknown (Unavailable / Unknown)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pher"
+  }],
+  "url" : "http://hl7.org/fhir/us/bfdr/ConceptMap/BirthAndFetalDeathFinancialClassCM",
+  "version" : "2.0.0-Ballot",
+  "name" : "BirthAndFetalDeathFinancialClass",
+  "title" : "BirthAndFetalDeathFinancialClass Concept Map",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-02-13T11:56:10-05:00",
+  "publisher" : "HL7 International / Public Health",
+  "contact" : [{
+    "name" : "HL7 International / Public Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/pher"
+    }]
+  }],
+  "description" : "A mapping between NCHS IJE and FHIR BirthAndFetalDeathFinancialClass Value Sets",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueCodeableConcept" : {
+      "text" : "for IJE to FHIR alignment"
+    }
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "purpose" : "To help implementers map from IJE to FHIR Vocabulary",
+  "targetCanonical" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr",
+    "target" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+    "element" : [{
+      "code" : "1",
+      "display" : "Medicaid",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "finclass_medicaid",
+        "display" : "MEDICAID",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "display" : "Private Insurance",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "finclass_privateinsurance",
+        "display" : "PRIVATE HEALTH INSURANCE",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "display" : "Self-pay",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "finclass_selfpay",
+        "display" : "Self-pay",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "display" : "Indian Health Service",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "finclass_indianhealth",
+        "display" : "Indian Health Service or Tribe",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "5",
+      "display" : "CHAMPUS/TRICARE",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "finclass_tricare",
+        "display" : "TRICARE (CHAMPUS)",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "display" : "Other Government (Fed, State, Local)",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "finclass_othergov",
+        "display" : "Other Government (Federal, State, Local not specified)",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "8",
+      "display" : "Other",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "finclass_nosource",
+        "display" : "No Typology Code available for payment source",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "9",
+      "display" : "Unknown",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "finclass_unknown",
+        "display" : "Unavailable / Unknown",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}
