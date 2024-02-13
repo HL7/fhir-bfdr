@@ -403,6 +403,11 @@ Usage: #example
   * text = "What is the father's date of birth?"
   * type = #date
   * repeats = false
+* item[+]
+  * linkId = "father-birthplace"
+  * text = "In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:"
+  * type = #group
+  * repeats = false
   * item[0]
     * linkId = "father-birthplace-state"
     * text = "State"
