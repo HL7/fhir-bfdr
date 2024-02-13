@@ -18,7 +18,7 @@
 - [PatientDecedentFetus] made to reference [ValueSetSexAssignedAtBirthVitalRecords](https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-sex-assigned-at-birth-vr.html)
 - Consolidated miscellaneous local codesystems into a single codesystem called [LocalBFDRCodesCS]
 - Drop prefixes in titles so words like codesystem, valueset, extension, and conceptmap don't appear twice
-
+- renamed [ObservationMethodOfDisposition] to [ObservationFetalRemainsDispositionMethod] to help clearly distinguish it from [DecedentDispositionMethod]
 
 ### STU2 Ballot, January 2024
 #### Major Changes

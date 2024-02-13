@@ -46,6 +46,9 @@
 [HL7EncounterAdmitSourceVS]: http://hl7.org/fhir/ValueSet/encounter-admit-source
 [USCoreDischargeDispositionVS]: http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition
 [USCoreBirthSexVS]: http://hl7.org/fhir/us/core/ValueSet/birthsex
+[DecedentDispositionMethod]: https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-decedent-disposition-method.html
+[ObservationMethodOfDisposition]:https://hl7.org/fhir/us/bfdr/StructureDefinition-Observation-method-of-disposition.html
+[MethodOfDispositionVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-method-of-disposition-vs.html
 {% include fsh-link-references.md %} 
 <!--- Extensions -->
 [patient-birthPlace]: http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html
