@@ -77,11 +77,12 @@ Alias: USCoreRelatedPerson = http://hl7.org/fhir/us/core/StructureDefinition/us-
 Alias: USCorePractitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
 
 
-// PHINVADS ValueSets - only occupation and industry remain
+// PHINVADS ValueSets - only occupation and industry and Financial Class remain
 Alias: $PHVS_Industry_CDC_Census2018 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8066
 Alias: $PHVS_Occupation_CDC_Census2018 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8065
 Alias: $PHVS_Industry_CDC_Census2012 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8027
 Alias: $PHVS_Occupation_CDC_Census2012 = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8026
-
+Alias:  $PHVS_BirthAndFetalDeathFinancialClass_NCHS = http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7163
+Alias:  $PHCS_BirthAndFetalDeathFinancialClass_NCHS = urn:oid:2.16.840.1.113883.3.221.5
 // Local Codes from IJE
 Alias: $IJE = http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr
