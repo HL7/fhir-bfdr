@@ -215,51 +215,51 @@ Usage: #example
   * text = "Are you Spanish/Hispanic/Latina? (if so, please answer 9a-9d)"
   * type = #boolean
   * repeats = false
+* item[+]
+  * enableWhen
+    * question = "mother-ethnicity"
+    * operator = #=
+    * answerBoolean = true   
+  * linkId = "mother-ethnicity-mexican"
+  * text = "Are you Mexican, Mexican-American?"
+  * type = #boolean
+  * repeats = false
+* item[+]
+  * enableWhen
+    * question = "mother-ethnicity"
+    * operator = #=
+    * answerBoolean = true   
+  * linkId = "mother-ethnicity-puerto-rican"
+  * text = "Are you Puerto Rican?"
+  * type = #boolean
+  * repeats = false
+* item[+]
+  * enableWhen
+    * question = "mother-ethnicity"
+    * operator = #=
+    * answerBoolean = true   
+  * linkId = "mother-ethnicity-cuban"
+  * text = "Are you Cuban?"
+  * type = #boolean
+  * repeats = false
+* item[+]
+  * enableWhen
+    * question = "mother-ethnicity"
+    * operator = #=
+    * answerBoolean = true    
+  * linkId = "mother-ethnicity-other"
+  * text = "Are you of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian)."
+  * type = #boolean
+  * repeats = false
   * item[+]
     * enableWhen
-      * question = "mother-ethnicity"
-      * operator = #=
-      * answerBoolean = true   
-    * linkId = "mother-ethnicity-mexican"
-    * text = "Are you Mexican, Mexican-American?"
-    * type = #boolean
-    * repeats = false
-  * item[+]
-    * enableWhen
-      * question = "mother-ethnicity"
-      * operator = #=
-      * answerBoolean = true   
-    * linkId = "mother-ethnicity-puerto-rican"
-    * text = "Are you Puerto Rican?"
-    * type = #boolean
-    * repeats = false
-  * item[+]
-    * enableWhen
-      * question = "mother-ethnicity"
-      * operator = #=
-      * answerBoolean = true   
-    * linkId = "mother-ethnicity-cuban"
-    * text = "Are you Cuban?"
-    * type = #boolean
-    * repeats = false
-  * item[+]
-    * enableWhen
-      * question = "mother-ethnicity"
+      * question = "mother-ethnicity-other"
       * operator = #=
       * answerBoolean = true    
-    * linkId = "mother-ethnicity-other"
-    * text = "Are you of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian)."
-    * type = #boolean
+    * linkId = "mother-ethnicity-other-literal"
+    * text = "(specify)"
+    * type = #string
     * repeats = false
-    * item[+]
-      * enableWhen
-        * question = "mother-ethnicity-other"
-        * operator = #=
-        * answerBoolean = true    
-      * linkId = "mother-ethnicity-other-literal"
-      * text = "(specify)"
-      * type = #string
-      * repeats = false
 * item[+]
   * linkId = "mother-race"
   * prefix = "10"
