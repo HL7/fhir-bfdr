@@ -230,10 +230,10 @@ For Canadian Provinces:
 1189,ITOP,7,28,2,Date of Termination - Day,DOT_DY,"01-31 (based on month), 99",,not implemented,not implemented,,,,,,,,,not implemented,
 824,Fetal Death,7,30,1,Sex,FSEX,"M = Male
 F = Female
-U = Unknown",,BFDR,PatientDecedentFetus,extension[birthsex].value,codeable,[ValueSetBirthSexFetusVitalRecords],B,,,,,Patient-decedent-fetus,
+U = Unknown",,BFDR,PatientDecedentFetus,extension[birthsex].value,codeable,[ValueSetSexAssignedAtBirthVitalRecords],B,,,,,Patient-decedent-fetus,
 471,Natality,7,30,1,Sex,ISEX,"M = Male
 F = Female
-N = Not Yet Determined",,VRCPL,PatientChildVitalRecords,extension[birthsex].value,codeable,[ValueSetBirthSexChildVitalRecords],B,,,,,Patient-child-vr,
+N = Not Yet Determined",,VRCPL,PatientChildVitalRecords,extension[birthsex].value,codeable,[ValueSetSexAssignedAtBirthVitalRecords],B,,,,,Patient-child-vr,
 1348,Birth Infant Death,7,30,1,Sex,ISEX,"M = Male
 F = Female
 N = Not Yet Determined",,,,,,,,,,,,,
@@ -330,7 +330,7 @@ U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[Administrative
 478,Natality,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr,
 831,Fetal Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,"4 digit year; < year of delivery, 9999",,VRCPL,PatientMotherVitalRecords,birthDate,date,See [PartialDatesAndTimes],B,,,,,Patient-mother-vr,
 1355,Birth Infant Death,14,55,4,Date of Birth (Mother)--Year,MDOB_YR,4 digit year (< year of birth of child);  9999 = unknown,,,,,,,,,,,,,
-,Fetal Death,NA,NA,NA,Method of Disposition,*NO IJE MAPPING*,,,BFDR,ObservationMethodOfDisposition,value,codeable,[MethodOfDispositionVS],,,,,,,
+,Fetal Death,NA,NA,NA,Method of Disposition,*NO IJE MAPPING*,,,BFDR,ObservationFetalRemainsDispositionMethod,value,codeable,[FetalRemainsDispositionMethodVS],,,,,,,
 ,Mortality,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Decedent Gender],,,,,,,
 ,Mortality Roster,NA,NA,NA,Gender,*NO IJE MAPPING*,,,VRDR,Decedent,gender,codeable,[AdministrativeGenderVS] - See [Note on Decedent Gender],,,,,,,
 22,Mortality,15,191,9,Social Security Number,SSN,9 digit SSN; blank if unknown or not sharable,,VRDR,Decedent,"identifier.value where system = 'http://hl7.org/fhir/sid/us-ssn and type.coding.code=""SB""",string,-,,y,,,,Decedent,
@@ -828,7 +828,7 @@ D = Donation
 E = Entombment
 R = Removal from state
 O = Other
-U = Unknown",,VRDR,DecedentDispositionMethod,value,codeable,[MethodOfDispositionVS],,y,,,,DecedentDispositionMethod,
+U = Unknown",,VRDR,DecedentDispositionMethod,value,codeable,[FetalRemainsDispositionMethodVS],,y,,,,DecedentDispositionMethod,
 305,Surveillance,33,241,1,Decedent of Hispanic Origin?--Cuban,DETHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
 U = Unknown",,VRDR,InputRaceAndEthnicity,component[ HispanicCuban ].valueCoding,codeable,[ValueSetHispanicNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
@@ -1537,7 +1537,7 @@ year of delivery, 8888, 9999",,not implemented,not implemented,,,,-,,,,,not impl
 381,Surveillance,110,1675,50,Long string address for decedent's place of residence same as above but allows states to choose the way they capture information.,ADDRESS_R,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Decedent's Residence address that's used in their system versus reprogramming.",,VRDR,Decedent,address.line[0],string,-,,y,,,,Decedent,
 574,Natality,110,709,3,Father's Race Tabulation Variable 3E,FRACE3E,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[ThirdEditedCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr,
 1451,Birth Infant Death,110,709,3,Father's Race Tabulation Variable 3E,FRACE3E,NCHS Appendix E,,,,,,,,,,,,,
-120,Mortality,110,977,1,Were Autopsy Findings Available to Complete the Cause of Death?,AUTOPF,Y = Yes N = No.  U = Unknown X = Not Applicable,,VRDR,AutopsyPerformedIndicator,component[ autopsyResultsAvailable ].value,codeable,[ValueSetYesNoUnknownNotApplicableVitalRecords],,y,,,,AutopsyPerformedIndicator,
+120,Mortality,110,977,1,Were Autopsy Findings Available to Complete the Cause of Death?,AUTOPF,Y = Yes N = No.  U = Unknown X = Not Applicable,,VRDR,AutopsyPerformedIndicator,component[autopsyResultsAvailable].value,codeable,[ValueSetYesNoUnknownNotApplicableVitalRecords],,y,,,,AutopsyPerformedIndicator,
 1292,ITOP,110,907,1,Other complications at time of followup at this facility,OTHER_F1,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 927,Fetal Death,110,490,1,Risk Factors--Prepregnancy Diabetes  (NOTE: SEE INSERTED NOTES FOR RISK FACTOR LOCATIONS 490-501 AND 573-575 TO REFLECT 2004 CHANGES),PDIAB,"Y = Yes
 N = No
@@ -1607,7 +1607,7 @@ IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, 
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Procedure-infertility-treatment-vr,
 1299,ITOP,117,963,1,"Cervical laceration  
 (at time of followup at other facility)",LACER_F2,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
-388,Surveillance,117,2025,50,Place of Injury- literal,POILITRL,Literal description; Blank for natural death,,VRDR,InjuryIncident,component[ placeOfInjury ].value.text,string,-,,y,,,,InjuryIncident,
+388,Surveillance,117,2025,50,Place of Injury- literal,POILITRL,Literal description; Blank for natural death,,VRDR,InjuryIncident,component[placeOfInjury].value.text,string,-,,y,,,,InjuryIncident,
 582,Natality,118,733,3,Father's Race Tabulation Variable 18C,FRACE18C,NCHS Appendix E,,VRCPL,ObservationCodedRaceAndEthnicityVitalRecords,"component[FirstOtherAsianCode].value, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetRaceCodeVitalRecords],N,,,,,Observation-race-vr,
 1459,Birth Infant Death,118,733,3,Father's Race Tabulation Variable 18C,FRACE18C,NCHS Appendix E,,,,,,,,,,,,,
 128,Mortality,118,993,1,Injury at work,WORKINJ,Y = Yes N = No.  U = Unknown X = Not Applicable,,VRDR,InjuryIncident,component[InjuryAtWork].value,codeable,[ValueSetYesNoUnknownNotApplicableVitalRecords],,y,,,,InjuryIncident,
@@ -1627,7 +1627,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 390,Surveillance,119,2325,30,"If Transportation Accident, Specify",TRANSPRT,"DR=Driver/Operator
 PA=Passenger
 PE=Pedestrian
-Enter full text if it does not fit above (blank for natural death)",,VRDR,InjuryIncident,component[ transportationRole ].value.  (if value.code = OTH) the role should be specified in value.text),codeable,[TransportationIncidentRoleVS],,y,,,,InjuryIncident,
+Enter full text if it does not fit above (blank for natural death)",,VRDR,InjuryIncident,component[transportationRole].value.  (if value.code = OTH) the role should be specified in value.text),codeable,[TransportationIncidentRoleVS],,y,,,,InjuryIncident,
 391,Surveillance,120,2355,28,County of Injury - literal,COUNTYTEXT_I,Valid county literal; blank for natural death,i,VRDR,InjuryLocation,address.district,string,-,,,,,,InjuryLocation,
 1302,ITOP,120,966,1,"Failure of first method 
 (at time of followup at other facility)",FAIL_F2,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
@@ -2125,7 +2125,7 @@ IJE Natality Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, 
 IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYPE, INFT_DRG, INFT_ART",Replace Observation-pregnancy-risk-factor,FHIR-40848,Condition-eclampsia-hypertension-vr,
 637,Natality,173,837,1,Infections Present--Hepatitis C,HEPC,"Y, N, U",,BFDR,ConditionInfectionPresentDuringPregnancy,code=50711007 (Viral hepatitis type C (disorder)),na,See [note on missing infections present data],B,,,,,Condition-infection-present-during-pregnancy,
 1514,Birth Infant Death,173,837,1,Infections Present--Hepatitis C,HEPC,"Y, N, U",,,,,,,,,,,,,
-185,Mortality,173,2109,50,Place of Injury- literal,POILITRL,Literal description; Blank for natural death,,VRDR,InjuryIncident,component[ placeOfInjury ].value.text,string,-,,y,,,,InjuryIncident,
+185,Mortality,173,2109,50,Place of Injury- literal,POILITRL,Literal description; Blank for natural death,,VRDR,InjuryIncident,component[placeOfInjury].value.text,string,-,,y,,,,InjuryIncident,
 638,Natality,174,838,1,Obstetric Procedures--Cervical Cerclage(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),CERV,"Y = Yes
 N = No
 U = Unknown",,not implemented,not implemented,,,,-,,,,,not implemented,
@@ -2147,7 +2147,7 @@ IJE Fetal Death Data Elements: PDIAB, GDIAB, PHYPE, GHYPE, PPB, INFT, PCES, EHYP
 187,Mortality,175,2409,30,"If Transportation Accident, Specify",TRANSPRT,"DR=Driver/Operator
 PA=Passenger
 PE=Pedestrian
-Enter full text if it does not fit above (blank for natural death)",,VRDR,InjuryIncident,component[ transportationRole ].value.  (if value.code = OTH) the role should be specified in value.text),codeable,[TransportationIncidentRoleVS],,y,,,,InjuryIncident,
+Enter full text if it does not fit above (blank for natural death)",,VRDR,InjuryIncident,component[transportationRole].value.  (if value.code = OTH) the role should be specified in value.text),codeable,[TransportationIncidentRoleVS],,y,,,,InjuryIncident,
 639,Natality,175,839,1,Obstetric Procedures--Tocolysis(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),TOC,"Y, N, U",,not implemented,not implemented,,,,-,,,,,not implemented,
 1516,Birth Infant Death,175,839,1,Obstetric Procedures--Tocolysis,TOC,"Y, N, U",,,,,,,,,,,,,
 993,Fetal Death,176,576,4,Date of Registration--Year,DOR_YR,"4 digit year; >=year of delivery, Blank (Date of Registration must be a valid date or entirely blank; no portions of the date may be unknown)",,BFDR,CompositionProviderFetalDeathReport,date,dateTime,Used for Jurisdiction Report also,B,,,,,Composition-provider-fetal-death-report,

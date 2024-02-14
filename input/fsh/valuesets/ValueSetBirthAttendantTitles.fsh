@@ -1,6 +1,6 @@
 ValueSet: BirthAttendantTitlesVS
 Id: ValueSet-birth-attendant-titles
-Title: "ValueSet - Birth Attendants Titles"
+Title: "Birth Attendants Titles"
 Description: "This valueset contains codes to represent the type of birth attendant titles. This valueset is based on [PHVS_BirthAttendantTitles_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2)"
 * ^experimental = false
 * insert SNOMEDCopyright

@@ -51,13 +51,13 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>-</td>
   <td>Local File No</td>
   <td><a href='StructureDefinition-Bundle-document-birth-report.html'>BundleDocumentBirthReport</a></td>
-  <td>identifier.extension[localFileNumber1].value</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-AuxiliaryStateIdentifier1.html'>identifier.extension:localFileNumber1</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>Birth Number</td>
   <td><a href='StructureDefinition-Bundle-document-birth-report.html'>BundleDocumentBirthReport</a></td>
-  <td>identifier.extension[birthCertificateNumber].value</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-CertificateNumber.html'>identifier.extension:birthCertificateNumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
@@ -165,7 +165,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>9g</td>
   <td>Mother’s Residence Inside City Limits?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>10a</td>
@@ -238,7 +238,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>17</td>
   <td>Facility Id.</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
-  <td>identifier[NPI]</td>
+  <td>identifier:NPI</td>
 </tr>
 <tr>
   <td style='text-align: center'>18</td>
@@ -1003,13 +1003,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>1</td>
   <td>Facility name / address</td>
-  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
   <td>name/address</td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
   <td>Facility I.D.</td>
-  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
+  <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
   <td>identifier</td>
 </tr>
 <tr>
@@ -1504,7 +1504,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>
@@ -1681,54 +1681,54 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td>Local File No</td>
   <td><a href='StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport
 </a></td>
-  <td>identifier.extension[localFileNumber1].value</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-CertificateNumber.html'>identifier.extension:localFileNumber1</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
   <td>State File Number</td>
   <td><a href='StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport</a></td>
-  <td>identifier.extension[birthCertificateNumber].value</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-AuxiliaryStateIdentifier1.html'>identifer.extension:fetalDeathReportNumber</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
   <td>Name of Fetus</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
   <td>Time of Delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html'>birthDate.extension:birthTime</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Sex</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html'>extension:birthsex</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>Date of Delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>5a</td>
   <td>City, Town, or Location of Delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5b</td>
   <td>Zip Code of Delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
   <td>County of Delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
@@ -1753,7 +1753,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>9</td>
   <td>Facility Id</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
-  <td>identifier[NPI]</td>
+  <td>identifier:NPI</td>
 </tr>
 <tr>
   <td style='text-align: center'>10a</td>
@@ -1819,7 +1819,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>11g</td>
   <td>Residence of Mother-Inside City Limits?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>12a</td>
@@ -1842,7 +1842,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>13</td>
   <td>Method of Disposition:</td>
-  <td><a href='StructureDefinition-Observation-method-of-disposition.html'>ObservationMethodOfDisposition</a></td>
+  <td><a href='StructureDefinition-Observation-fetal-remains-disposition-method.html'>ObservationFetalRemainsDispositionMethod</a></td>
   <td>value</td>
 </tr>
 <tr>
@@ -2029,7 +2029,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>34</td>
   <td>If Not Single Birth-Born First, Second, Third, etc.</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td>multipleBirthInteger</td>
 </tr>
 <tr>
@@ -2176,18 +2176,18 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>2</td>
   <td>Facility I.D. (National Provider Identifier)</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
-  <td>identifier[NPI]</td>
+  <td>identifier:NPI</td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>City, Town or Location of delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>County of delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html'>extension:birthPlace</a></td>
 </tr>
 <tr>
@@ -2301,13 +2301,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>12</td>
   <td>Date of delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td>birthDate</td>
 </tr>
 <tr>
   <td style='text-align: center'>13</td>
   <td>Time of delivery</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html'>extension:birthTime</a></td>
 </tr>
 <tr>
@@ -2391,19 +2391,19 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>21</td>
   <td>Sex</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-birthsex.html'>extension:birthsex</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
   <td>Plurality</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html'>multipleBirth[x].extension:multipleBirthTotal</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>23</td>
   <td>If not single delivery, order delivered in the pregnancy</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td>multipleBirthInteger</td>
 </tr>
 <tr>
@@ -2415,7 +2415,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>25</td>
   <td>Method of Disposition</td>
-  <td><a href='StructureDefinition-Observation-method-of-disposition.html'>ObservationMethodOfDisposition</a></td>
+  <td><a href='StructureDefinition-Observation-fetal-remains-disposition-method.html'>ObservationFetalRemainsDispositionMethod</a></td>
   <td></td>
 </tr>
 <tr>
@@ -2483,7 +2483,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>1</td>
   <td>Would you like to name the child?</td>
-  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetusVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td>name</td>
 </tr>
 <tr>
@@ -2502,7 +2502,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>4</td>
   <td>Is this household inside city limits?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>address.extension:withinCityLimitsIndicator</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html'>extension:withinCityLimitsIndicator</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5</td>

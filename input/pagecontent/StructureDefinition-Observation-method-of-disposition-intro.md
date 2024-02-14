@@ -33,7 +33,7 @@ This information is not required for submission of a fetal death report, but may
   <td>*NO IJE MAPPING*</td>
   <td>value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-method-of-disposition.html'>MethodOfDispositionVS</a></td>
+  <td><a href='ValueSet-ValueSet-fetal-remains-disposition-method.html'>FetalRemainsDispositionMethodVS</a></td>
 </tr>
 
 </tbody>

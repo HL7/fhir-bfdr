@@ -104,22 +104,17 @@ Usage: #example
   * answer.valueCoding = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
 * item[+]
   * linkId = "mother-ethnicity"
-  * text = "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
-  * item
-    * linkId = "mother-shl"
-    * text = "Are you Spanish/Hispanic/Latina"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
+  * answer.valueBoolean = false
 * item[+]
   * linkId = "mother-race"
-  * text = "What is your race? (Please check one or more races to indicate what you consider yourself to be)."
   * item[0]
-    * linkId = "mother-race-category"
-    * text = "Race categories"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+    * linkId = "mother-race-white"
+    * text = "White"
+    * answer.valueBoolean = true
   * item[+]
-    * linkId = "mother-detailed-race"
-    * text = "Extended race codes"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#1004-1 "American Indian"
+    * linkId = "mother-race-aian"
+    * text = "American Indian or Alaskan Native"
+    * answer.valueBoolean = true
 * item[+]
   * linkId = "receive-wic"
   * text = "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?"
@@ -150,7 +145,6 @@ Usage: #example
     * answer.valueQuantity = 7 '[in_i]' "[in_i]"
 * item[+]
   * linkId = "mothers-prepregnancy-weight"
-  * text = "lbs"
   * answer.valueQuantity = 145 '[lb_av]' "[lb_av]"
 * item[+]
   * linkId = "mothers-smoking"
@@ -250,18 +244,13 @@ Usage: #example
   * answer.valueCoding = $HL7_EducationLevelCS#POSTG "Doctoral or post graduate education"
 * item[+]
   * linkId = "father-ethnicity"
-  * text = "Is the father Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
-  * item
-    * linkId = "father-shl"
-    * text = "Is the father Spanish/Hispanic/Latina"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
+  * answer.valueBoolean = false
 * item[+]
   * linkId = "father-race"
-  * text = "What is the father's race? (Please check one or more races to indicate what he considers himself to be)."
-  * item
-    * linkId = "father-race-category"
-    * text = "Race categories"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+  * item[0]
+    * linkId = "father-race-white"
+    * text = "White"
+    * answer.valueBoolean = true
 * item[+]
   * linkId = "parents-ssn"
   * text = "Furnishing parent(s) Social Security Number(s) (SSNs) is required by Federal Law, 42 USC 405(c) (section 205(c) of the Social Security Act). The number(s) will be made available to the (State Social Services Agency) to assist with child support enforcement activities and to the Internal Revenue Service for the purpose of determining Earned Income Tax Credit compliance."
@@ -291,4 +280,4 @@ Usage: #example
 * item[+]
   * linkId = "informant-relationship"
   * text = "What is your relationship to the baby's mother?"
-  * answer.valueCoding = InformantRelationshipToMotherCS#otherrelative "Other relative"
+  * answer.valueCoding = LocalBFDRCodesCS#rel_otherrelative "Other relative"
