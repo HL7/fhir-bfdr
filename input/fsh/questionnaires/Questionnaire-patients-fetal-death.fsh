@@ -87,7 +87,7 @@ Usage: #example
     * linkId = "mother-state"
     * text = "State (or U.S. Territory, Canadian Province)"
     * type = #choice
-    * answerValueSet =   Canonical(ValueSetUSStatesVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) 
   * item[+]
     * linkId = "mother-zip"
     * text = "Zip Code"
@@ -96,13 +96,13 @@ Usage: #example
     * linkId = "mother-country"
     * text = "If not in the United States, country"
     * type = #choice
-    * answerValueSet =   Canonical(ValueSetResidenceCountryVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+    * answerValueSet =   Canonical(ValueSetResidenceCountryVitalRecords)  
 * item[+]
   * linkId = "inside-city-limits"
   * prefix = "4"
   * text = "Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?"
   * type = #choice
-  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)  //"http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords) 
 * item[+]
   * linkId = "mother-mail"
   * prefix = "5"
@@ -188,13 +188,13 @@ Usage: #example
     * text = "State"
     * type = #choice
     * repeats = false
-    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  // Should be just states
+    * answerValueSet = Canonical(ValueSetUSStatesVitalRecords)  // Should be just states
   * item[+]
     * linkId = "mother-birthplace-territory"
     * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
     * repeats = false
     * type = #choice
-    * answerValueSet = Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) // SHould be just states 
+    * answerValueSet = Canonical(ValueSetUSTerritoriesVitalRecords) // SHould be just states 
   * item[+]
     * linkId = "mother-birthplace-country"
     * text = "or Foreign country"
@@ -216,25 +216,50 @@ Usage: #example
   * type = #boolean
   * repeats = false
   * item[+]
+    * enableWhen
+      * question = "mother-ethnicity"
+      * operator = #=
+      * answerBoolean = true   
     * linkId = "mother-ethnicity-mexican"
     * text = "Are you Mexican, Mexican-American?"
     * type = #boolean
     * repeats = false
   * item[+]
+    * enableWhen
+      * question = "mother-ethnicity"
+      * operator = #=
+      * answerBoolean = true   
     * linkId = "mother-ethnicity-puerto-rican"
     * text = "Are you Puerto Rican?"
     * type = #boolean
     * repeats = false
   * item[+]
+    * enableWhen
+      * question = "mother-ethnicity"
+      * operator = #=
+      * answerBoolean = true   
     * linkId = "mother-ethnicity-cuban"
     * text = "Are you Cuban?"
     * type = #boolean
     * repeats = false
   * item[+]
+    * enableWhen
+      * question = "mother-ethnicity"
+      * operator = #=
+      * answerBoolean = true    
     * linkId = "mother-ethnicity-other"
-    * text = "Are you of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian) (specify)."
-    * type = #string
+    * text = "Are you of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian)."
+    * type = #boolean
     * repeats = false
+    * item[+]
+      * enableWhen
+        * question = "mother-ethnicity-other"
+        * operator = #=
+        * answerBoolean = true    
+      * linkId = "mother-ethnicity-other-literal"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
 * item[+]
   * linkId = "mother-race"
   * prefix = "10"
@@ -282,7 +307,7 @@ Usage: #example
     * repeats = false
   * item[+]
     * linkId = "mother-race-japanese"
-    * text = "Chinese"
+    * text = "Japanese"
     * type = #boolean
     * repeats = false
   * item[+]
