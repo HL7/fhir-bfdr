@@ -1,8 +1,8 @@
-Instance: BirthDeliveryOccurredCM
+Instance: BirthDeliveryOccurredPlaceTypeCM
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(BirthDeliveryOccurred, BirthDeliveryOccurredVS)
+* insert ConceptMapIntro(BirthDeliveryOccurredPlaceType, BirthDeliveryOccurredPlaceTypeVS)
 * insert AddGroup($IJE, $sct)
 * insert MapConcept( #1,  "Hospital", #22232009, "Hospital")
 * insert MapConcept( #2,  "Freestanding Birth Center", #91154008, "Free-standing birthing center")
