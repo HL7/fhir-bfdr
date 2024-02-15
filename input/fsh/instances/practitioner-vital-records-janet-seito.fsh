@@ -16,3 +16,8 @@ Usage: #example
 //   * given = "Avery"
 //   * suffix = "M.D."
 * qualification.code = $sct#76231001 "Osteopath (occupation)"
+* extension[roleVitalRecords][0]
+  * valueCodeableConcept = $loinc#87286-1
+//* extension[role].extension[certifierRole]
+* extension[roleVitalRecords][+]
+  * valueCodeableConcept = $loinc#87287-9

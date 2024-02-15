@@ -13,7 +13,7 @@ Usage: #example
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
 * participant
   * type = $loinc#87286-1 "Birth attendant [Extended Identifier]"
-  * individual = Reference(practitioner-vital-records-janet-seito) "Practitioner - Vital Records (Janet Seito, MD)"
+  * individual = Reference(practitioner-vital-records-janet-seito) "Practitioner - Attendant (Janet Seito, DO)"
 * period
   * start = "2019-01-08T10:00:00-07:00"
   * end = "2019-01-09T17:00:00-07:00"
