@@ -2,7 +2,7 @@ Instance: BirthAndFetalDeathFinancialClassCM
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(BirthAndFetalDeathFinancialClass, $PHVS_BirthAndFetalDeathFinancialClass_NCHS)
+* insert ConceptMapIntro(BirthAndFetalDeathFinancialClass, BirthAndFetalDeathFinancialClassVS)
 * insert AddGroup($IJE, $PHCS_BirthAndFetalDeathFinancialClass_NCHS)  // This is the "Source of Payment Typology"or "Payer Type" Codesystem
 * insert MapConcept( #1,  "Medicaid", #2, "MEDICAID")
 * insert MapConcept( #2,  "Private Insurance", #5, "PRIVATE HEALTH INSURANCE")
