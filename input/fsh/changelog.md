@@ -7,7 +7,7 @@
 - Removed ObservationRaceVitalRecords and ObservationTabulatedEthnicityVitalRecords in VRCL and related instances in BFDR
 
 ### 25 October 2023
-- ObservationMethodOfDisposition and related instance were removed to the superseded folder, per discussion: There is no disposition info in the mapping spreadsheet, the data dictionary, or the 1.1 BFDR that I can see.  This might need to move back to VRDR. MDI doesn’t cover entombment – it is upstream from disposition.   If it is already in VRDR, perhaps it could simply be commented out in VRCL and BFDR for now with a note added to change log.
+- ObservationFetalRemainsDispositionMethod and related instance were removed to the superseded folder, per discussion: There is no disposition info in the mapping spreadsheet, the data dictionary, or the 1.1 BFDR that I can see.  This might need to move back to VRDR. MDI doesn’t cover entombment – it is upstream from disposition.   If it is already in VRDR, perhaps it could simply be commented out in VRCL and BFDR for now with a note added to change log.
 - EmergingIssues section added to birth and fetal death compositions
 
 ### 17 October 2023

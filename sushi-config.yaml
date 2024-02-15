@@ -9,6 +9,7 @@ title: Birth And Fetal Death (BFDR) - STU2-ballot
 name: Birth And Fetal Death 
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 status: draft # draft | active | retired | unknown
 version: 2.0.0-CIbuild
 fhirVersion: 4.0.1
@@ -32,7 +33,6 @@ dependencies:
     id: odh
 
 copyrightYear: 2023+
-releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0  # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -147,7 +147,7 @@ menu:
     Specification: the_specification.html
     Categories: categories.html
     Usage Notes: usage.html
-    Worksheet Questionaires: patient_worksheet_questionnaires.html
+    Worksheet Questionnaires: patient_worksheet_questionnaires.html
     Natality Data Dictionary: ije_mapping_natality.html
     Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
     Forms Mapping: vital_records_form_mapping.html
@@ -270,6 +270,12 @@ groups:
       - CompositionCodedCauseOfFetalDeath
       - CompositionCodedRaceAndEthnicity
 
+  BFDRQuestionnaires:
+    name: Questionnaires 
+    resources:
+      - Questionnaire-mothers-live-birth
+      - Questionnaire-patients-fetal-death
+  
   BFDRProfilesEncounter:
     name: Profiles Encounter and Location 
     resources:
@@ -393,8 +399,8 @@ groups:
       - ObservationCodedInitiatingFetalDeathCauseOrCondition
       - ObservationCodedOtherFetalDeathCauseOrCondition
       - ObservationFetalDeathTimePoint
+      - ObservationFetalRemainsDispositionMethod
       - ObservationHistologicalPlacentalExamPerformed
-      - ObservationMethodOfDisposition
       - PatientDecedentFetus
       
   BFDRProfilesParentInformation:
@@ -437,11 +443,11 @@ groups:
       - FetalDeathCauseOrConditionVS
       - FetalDeathTimePointsVS
       - FetalPresentationsVS
+      - FetalRemainsDispositionMethodVS
       - HistologicalPlacentalExaminationVS
       - InfectionsDuringPregnancyLiveBirthVS
       - InformantRelationshipToMotherVS
       - LocationTypeVS
-      - MethodOfDispositionVS
       #- MothersDateOfBirthEditFlagsVS
       - NewbornCongenitalAnomaliesVS
       - NumberPreviousCesareansEditFlagsVS
@@ -528,7 +534,6 @@ groups:
       - patient-decedent-fetus-not-named-w-edit
       - patient-mother-carmen-teresa-lee
       - patient-mother-carmen-teresa-lee-w-edit
-      - Questionnaire-patients-fetal-death
       - QuestionnaireResponse-patients-fetal-death-carmen-lee
       - relatedperson-father-natural-tom-yan-lee
       - relatedperson-father-natural-tom-yan-lee-w-edit
@@ -645,7 +650,6 @@ groups:
       - procedure-unplanned-hysterectomy-quinn
       - procedure-ventilation-following-babyg-quinn
       - procedure-ventilation-more-6-hours-babyg-quinn
-      - Questionnaire-mothers-live-birth
       - QuestionnaireResponse-mothers-live-birth-jada-quinn
       - relatedperson-father-natural-james-brandon-quinn
       - relatedperson-father-natural-james-brandon-quinn-w-edit

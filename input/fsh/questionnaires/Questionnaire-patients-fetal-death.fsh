@@ -86,7 +86,8 @@ Usage: #example
   * item[+]
     * linkId = "mother-state"
     * text = "State (or U.S. Territory, Canadian Province)"
-    * type = #string
+    * type = #choice
+    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) 
   * item[+]
     * linkId = "mother-zip"
     * text = "Zip Code"
@@ -94,13 +95,14 @@ Usage: #example
   * item[+]
     * linkId = "mother-country"
     * text = "If not in the United States, country"
-    * type = #string
+    * type = #choice
+    * answerValueSet =   Canonical(ValueSetResidenceCountryVitalRecords)  
 * item[+]
   * linkId = "inside-city-limits"
   * prefix = "4"
   * text = "Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?"
   * type = #choice
-  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords)  //"http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+  * answerValueSet = Canonical(ValueSetYesNoUnknownVitalRecords) 
 * item[+]
   * linkId = "mother-mail"
   * prefix = "5"
@@ -146,7 +148,8 @@ Usage: #example
   * item[+]
     * linkId = "mother-mail-state"
     * text = "State (or U.S. Territory, Canadian Province)"
-    * type = #string
+    * type = #choice
+    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords) 
     * enableWhen
       * question = "mother-mail-same"
       * operator = #=
@@ -162,7 +165,8 @@ Usage: #example
   * item[+]
     * linkId = "mother-mail-country"
     * text = "If not in the United States, country"
-    * type = #string
+    * type = #choice
+    * answerValueSet =   Canonical(ValueSetResidenceCountryVitalRecords)
     * enableWhen
       * question = "mother-mail-same"
       * operator = #=
@@ -182,15 +186,21 @@ Usage: #example
   * item[0]
     * linkId = "mother-birthplace-state"
     * text = "State"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetUSStatesVitalRecords)  // Should be just states
   * item[+]
     * linkId = "mother-birthplace-territory"
     * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
-    * type = #string
+    * repeats = false
+    * type = #choice
+    * answerValueSet = Canonical(ValueSetUSTerritoriesVitalRecords) // SHould be just states 
   * item[+]
     * linkId = "mother-birthplace-country"
     * text = "or Foreign country"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetBirthplaceCountryVitalRecords)
 * item[+]
   * linkId = "mother-education"
   * code = $loinc#57712-2 "Highest level of education Mother"
@@ -202,43 +212,172 @@ Usage: #example
 * item[+]
   * linkId = "mother-ethnicity"
   * prefix = "9"
-  * text = "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
-  * type = #group
+  * text = "Are you Spanish/Hispanic/Latina? (if so, please answer 9a-9d)"
+  * type = #boolean
   * repeats = false
-  * item[0]
-    * linkId = "mother-shl"
-    * text = "Are you Spanish/Hispanic/Latina"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category"
+* item[+]
+  * enableWhen
+    * question = "mother-ethnicity"
+    * operator = #=
+    * answerBoolean = true   
+  * linkId = "mother-ethnicity-mexican"
+  * text = "Are you Mexican, Mexican-American?"
+  * type = #boolean
+  * repeats = false
+* item[+]
+  * enableWhen
+    * question = "mother-ethnicity"
+    * operator = #=
+    * answerBoolean = true   
+  * linkId = "mother-ethnicity-puerto-rican"
+  * text = "Are you Puerto Rican?"
+  * type = #boolean
+  * repeats = false
+* item[+]
+  * enableWhen
+    * question = "mother-ethnicity"
+    * operator = #=
+    * answerBoolean = true   
+  * linkId = "mother-ethnicity-cuban"
+  * text = "Are you Cuban?"
+  * type = #boolean
+  * repeats = false
+* item[+]
+  * enableWhen
+    * question = "mother-ethnicity"
+    * operator = #=
+    * answerBoolean = true    
+  * linkId = "mother-ethnicity-other"
+  * text = "Are you of other Spanish/Hispanic/Latina (e.g., Spaniard, Salvadoran, Dominican, Columbian)."
+  * type = #boolean
+  * repeats = false
   * item[+]
-    * linkId = "mother-detailed-shl"
-    * text = "If Spanish/Hispanic/Latina, check the appropriate box."
-    * type = #choice
     * enableWhen
-      * question = "mother-shl"
+      * question = "mother-ethnicity-other"
       * operator = #=
-      * answerCoding = urn:oid:2.16.840.1.113883.6.238#2135-2
+      * answerBoolean = true    
+    * linkId = "mother-ethnicity-other-literal"
+    * text = "(specify)"
+    * type = #string
     * repeats = false
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity"
 * item[+]
   * linkId = "mother-race"
   * prefix = "10"
   * text = "What is your race? (Please check one or more races to indicate what you consider yourself to be)."
   * type = #group
   * repeats = false
-  * item[0]
-    * linkId = "mother-race-category"
-    * text = "Race categories"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/omb-race-category"
   * item[+]
-    * linkId = "mother-detailed-race"
-    * text = "Extended race codes"
-    * type = #choice
-    * repeats = true
-    * answerValueSet = "http://hl7.org/fhir/us/core/ValueSet/detailed-race"
+    * linkId = "mother-race-white"
+    * text = "White"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-black-or-aa"
+    * text = "Black or African American"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-aian"
+    * text = "American Indian or Alaskan Native"
+    * type = #boolean
+    * repeats = false
+    * item[+]
+      * linkId = "mother-race-aian-tribe"
+      * text = "(name of enrolled or principal tribe)"
+      * type = #string
+      * repeats = false
+      * enableWhen
+        * question = "mother-race-aian"
+        * operator = #=
+        * answerBoolean = true
+  * item[+]
+    * linkId = "mother-race-asian-indian"
+    * text = "Asian Indian"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-chinese"
+    * text = "Chinese"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-filipino"
+    * text = "Filipino"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-japanese"
+    * text = "Japanese"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-korean"
+    * text = "Korean"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-vietnamese"
+    * text = "Vietnamese"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-other-asian"
+    * text = "Other Asian"
+    * type = #boolean
+    * repeats = false
+    * item[+]
+      * linkId = "mother-race-other-asian-literal"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * enableWhen
+        * question = "mother-race-other-asian"
+        * operator = #=
+        * answerBoolean = true
+  * item[+]
+    * linkId = "mother-race-native-hawaiian"
+    * text = "Native Hawaiian"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-guamanian-or-chamorro"
+    * text = "Guamanian or Chamorro"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-samoan"
+    * text = "Samoan"
+    * type = #boolean
+    * repeats = false
+  * item[+]
+    * linkId = "mother-race-other-pacific-islander"
+    * text = "Other Pacific Islander"
+    * type = #boolean
+    * repeats = false
+    * item[+]
+      * linkId = "mother-race-other-pacific-islander-specify"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * enableWhen
+        * question = "mother-race-other-pacific-islander"
+        * operator = #=
+        * answerBoolean = true
+  * item[+]
+    * linkId = "mother-race-other"
+    * text = "Other (specify)"
+    * type = #boolean
+    * repeats = false
+    * item[+]
+      * linkId = "mother-race-other-specify"
+      * text = "(specify)"
+      * type = #string
+      * repeats = false
+      * enableWhen
+        * question = "mother-race-other"
+        * operator = #=
+        * answerBoolean = true
+
 * item[+]
   * linkId = "father-current-legal-name"
   * prefix = "11"
@@ -269,22 +408,28 @@ Usage: #example
   * repeats = false
 * item[+]
   * linkId = "father-birthplace"
-  * prefix = "13"
   * text = "In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:"
   * type = #group
   * repeats = false
+  * prefix = "13"
   * item[0]
     * linkId = "father-birthplace-state"
     * text = "State"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetUSStatesVitalRecords)  
   * item[+]
     * linkId = "father-birthplace-territory"
     * text = "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetUSTerritoriesVitalRecords) 
   * item[+]
     * linkId = "father-birthplace-country"
     * text = "or Foreign country"
-    * type = #string
+    * type = #choice
+    * repeats = false
+    * answerValueSet = Canonical(ValueSetBirthplaceCountryVitalRecords)
 * item[+]
   * linkId = "receive-wic"
   * prefix = "14"

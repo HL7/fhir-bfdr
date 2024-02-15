@@ -1,5 +1,5 @@
 Instance: observation-method-of-disposition-not-named
-InstanceOf: ObservationMethodOfDisposition
+InstanceOf: ObservationFetalRemainsDispositionMethod
 Title: "Observation - Method of Disposition - Fetus Not Named"
 Description: "Observation - Method of Disposition: Fetus Not Named example"
 Usage: #example
