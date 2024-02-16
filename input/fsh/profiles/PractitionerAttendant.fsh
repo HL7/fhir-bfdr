@@ -18,18 +18,24 @@ Description: "The attendant at birth is defined as the individual at the deliver
 * insert SlicedRoleExtension
 * extension[role] contains
     attendantRole 1..1 
+* extension[role]  ^short = "Differentiates Attendant and Certifier practitioners"
 * extension[role][attendantRole] ^short = "Attendant"
-  * valueCodeableConcept = $loinc#87286-1
+  * valueCode = #attendant
     * ^short = "Attendant"
 
 
 RuleSet: SlicedRoleExtension
 * extension contains    // Extension makes it possible to query this encounter from bundle with simple FHIRPath query
-    ExtensionRoleVitalRecords named role 1..*
-* extension[role] 
-  * ^short = "Differentiates Attendant and Certifier practitioners"
-  * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "$this.valueCodeableConcept"
-  * ^slicing.ordered = false
-  * ^slicing.rules = #open
-  * ^slicing.description = "Slicing based on Coded value in RoleVitalRecords extension"
+  PractitionerRole named role 1..*
+  * extension
+  // Additionally slice the extension by its valueCode
+  * ^slicing.discriminator[1].type = #value
+  * ^slicing.discriminator[=].path = "$this.valueCode"
+
+Extension: PractitionerRole
+Id: practitioner-role
+Title: "Practitioner Role Vital Records"
+Description: "Used to indicate whether an instance relates to the attendant or certifier."
+* insert ExtensionContextResource(Practitioner)
+* value[x] 1..1
+* value[x] only code

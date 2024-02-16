@@ -8,5 +8,5 @@ Description: "Certifier (USCorePractitioner) used in BFDR"
 * extension[role] contains
     certifierRole 1..1
 * extension[role][certifierRole] ^short = "Certifier"
-  * valueCodeableConcept = $loinc#87287-9
+  * valueCode = #certifier
     * ^short = "Certifier"
