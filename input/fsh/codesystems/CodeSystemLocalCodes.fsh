@@ -12,14 +12,6 @@ Description: "Local Codes for concepts in BFDR that lack an appropriate LOINC or
 * #FCOD_membranes "Complications of Placenta, Cord, or Membranes: Other (Specify)" "Complications of Placenta, Cord, or Membranes: Other (Specify)" // PHC1298
 * #FCOD_obstetricalcomplications "Other Obstetrical or Pregnancy Complications (Specify)" "Other Obstetrical or Pregnancy Complications (Specify)" // PHC1299
 * #FCOD_fetalconditions "Other Fetal Conditions/Disorder (Specify)" "Other Fetal Conditions/Disorder (Specify)" // PHC1300
-* #finclass_indianhealth "Indian Health Service or Tribe" "Indian Health Service or Tribe" //33
-* #finclass_medicaid "MEDICAID" "MEDICAID" //2
-* #finclass_nosource "No Typology Code available for payment source" "No Typology Code available for payment source" //99
-* #finclass_othergov "Other Government (Federal, State, Local not specified)" "Other Government (Federal, State, Local not specified)" //38
-* #finclass_privateinsurance "PRIVATE HEALTH INSURANCE" "PRIVATE HEALTH INSURANCE" //5
-* #finclass_selfpay "Self-pay" "Self-pay" //81
-* #finclass_tricare "TRICARE (CHAMPUS)" "TRICARE (CHAMPUS)" //311
-* #finclass_unknown "Unavailable / Unknown" "Unavailable / Unknown" //9999
 * #rel_fatherofbaby "Father of baby" "Father of baby" //1496
 * #rel_hospitalemployee "Hospital employee" "Hospital employee" //1498
 * #rel_other "Other (with write in text)" "Other (with write in text)" //1499
