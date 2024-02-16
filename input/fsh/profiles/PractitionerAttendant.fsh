@@ -27,9 +27,9 @@ Description: "The attendant at birth is defined as the individual at the deliver
 RuleSet: SlicedRoleExtension
 * extension contains    // Extension makes it possible to query this encounter from bundle with simple FHIRPath query
   PractitionerRole named role 1..*
-  * extension
+* extension
   // Additionally slice the extension by its valueCode
-  * ^slicing.discriminator[1].type = #value
+  * ^slicing.discriminator[+].type = #value
   * ^slicing.discriminator[=].path = "$this.valueCode"
 
 Extension: PractitionerRole
