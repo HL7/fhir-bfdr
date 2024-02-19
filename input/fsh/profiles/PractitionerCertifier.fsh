@@ -11,12 +11,12 @@ Description: "Certifier (USCorePractitioner) used in BFDR"
 //   * ^short = "Certifier"
 //   * valueCode = #certifier
 //     * ^short = "Certifier"
-* extension contains PractitionerRoleCertifier  named role 1..1
+* extension contains PractitionerRoleBirthCertifier  named role 1..1
 
-Extension: PractitionerRoleCertifier
-Id: practitioner-role-certifier
+Extension: PractitionerRoleBirthCertifier
+Id: practitioner-role-birth-certifier
 Title: "Practitioner Role - Certifier"
-Description: "Used to indicate that an instance relates to the certifier."
+Description: "Used to indicate that an instance relates to the birth certifier."
 * insert ExtensionContextResource(Practitioner)
 * value[x] 1..1
 * value[x] only code

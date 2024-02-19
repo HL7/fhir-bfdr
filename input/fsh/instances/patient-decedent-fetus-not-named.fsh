@@ -3,6 +3,7 @@ InstanceOf: PatientDecedentFetus
 Title: "Patient - Decedent Fetus example [Fetus Not Named]"
 Description: "Example of Patient-decedent-fetus profile (Fetus Not Named)"
 Usage: #example
+
 * extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
@@ -27,11 +28,6 @@ Usage: #example
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
     * valueDateTime = "2019-01-09T18:23:00-07:00"
-* deceasedBoolean = true
-* deceasedBoolean
-  * extension
-    * url = Canonical(ExtensionPatientFetalDeathVitalRecords)
-    * valueBoolean = true
 * multipleBirthInteger = 3
 * extension[parentReportedAgeAtDelivery][+]
   * extension[reportedAge]

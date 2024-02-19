@@ -25,11 +25,6 @@ Usage: #example
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
     * valueDateTime = "2019-01-09T18:23:00-07:00"
-* deceasedBoolean = true
-* deceasedBoolean
-  * extension
-    * url = Canonical(ExtensionPatientFetalDeathVitalRecords)
-    * valueBoolean = true
 * multipleBirthInteger = 3
 * multipleBirthInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#1queriedCorrect "Queried, and Correct"
 * extension[parentReportedAgeAtDelivery][+]

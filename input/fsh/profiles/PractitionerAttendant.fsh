@@ -15,7 +15,7 @@ Description: "The attendant at birth is defined as the individual at the deliver
 * qualification[birthAttendantQualification].code ^short = "List of titles"
 * qualification[birthAttendantQualification].code ^binding.description = "Live Birth/Fetal Death Practitioner title"
 * qualification[birthAttendantQualification].code.text ^short = "Attendant 'other'"
-* extension contains PractitionerRoleAttendant named role 1..1
+* extension contains PractitionerRoleBirthAttendant named role 1..1
 // * insert SlicedRoleExtension
 // * extension[role] contains
 //     attendantRole 1..1 
@@ -35,10 +35,10 @@ Description: "The attendant at birth is defined as the individual at the deliver
 //   * ^slicing.discriminator[=].path = "value"
 
 
-Extension: PractitionerRoleAttendant
-Id: practitioner-role-attendant
-Title: "Practitioner Role - Attendant"
-Description: "Used to indicate that an instance relates to the attendant."
+Extension: PractitionerRoleBirthAttendant
+Id: practitioner-role-birth-attendant
+Title: "Practitioner Role - Birth Attendant"
+Description: "Used to indicate that an instance relates to the birth attendant."
 * insert ExtensionContextResource(Practitioner)
 * value[x] 1..1
 * value[x] only code
