@@ -20,5 +20,7 @@ Id: ValueSet-fetal-presentations-max
 Title: "Fetal Presentations - Max"
 Description: "This valueset contains codes to represent fetal presentations. It expands on the [FetalPresentationsVS] by including intensionally all codes for abnormal presentations, 
 as suggested by [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554)."
+* ^experimental = false
+* insert SNOMEDCopyright
 * include codes from valueset FetalPresentationsVS
 * include codes from system $sct where concept is-a #15028002 "Abnormal fetal presentation (finding)"
