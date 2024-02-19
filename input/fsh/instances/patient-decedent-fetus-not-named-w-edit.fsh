@@ -3,8 +3,6 @@ InstanceOf: PatientDecedentFetus
 Title: "Patient - Decedent Fetus example [Fetus Not Named], with Edit Flag"
 Description: "Example of Patient-decedent-fetus-vr profile (Fetus Not Named) with Edit Flag"
 Usage: #example
-* extension[fetalDeath]
-  * valueCoding = $sct#276507005
 * extension[birthsex]
   * valueCode = #F
 * extension[birthPlace]
@@ -27,7 +25,6 @@ Usage: #example
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
     * valueDateTime = "2019-01-09T18:23:00-07:00"
-* deceasedBoolean = true
 * multipleBirthInteger = 3
 * multipleBirthInteger.extension[bypassEditFlag].valueCodeableConcept = CodeSystemEditFlagsVitalRecords#1queriedCorrect "Queried, and Correct"
 * extension[parentReportedAgeAtDelivery][+]

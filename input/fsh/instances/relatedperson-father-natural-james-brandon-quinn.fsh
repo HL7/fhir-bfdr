@@ -3,12 +3,6 @@ InstanceOf: RelatedPersonFatherNaturalVitalRecords
 Title: "RelatedPerson - Father Natural - Vital Records - James Brandon Quinn"
 Description: "RelatedPerson - Father Natural - Vital Records: James Brandon Quinn example"
 Usage: #example
-* extension[race]
-  * extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
-  * extension[text].valueString = "White"
-* extension[ethnicity]
-  * extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2186-5 "Not Hispanic or Latino"
-  * extension[text].valueString = "Not Hispanic or Latino"
 * extension[birthPlace].valueAddress.state = "NY"
   // * url = "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"
 * identifier
