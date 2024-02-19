@@ -89,7 +89,7 @@ The Jurisdiction Fetal Death use case is represented by the [Composition - Juris
 
 ### Coded Race and Ethnicity - NCHS to VRO
 
-This use case represents the communication of coded race and ethnicity information based on a submission to NCHS from NCHS to a VRO.  The formats and mechanisms for submitting race and ethnicity information to NCHS, and receiving coded responses are common to the Mortality, Natality and Fetal Death vital records use cases.  The profiles and valuesets involved are defined in the Vital Records Common Library.
+This use case represents the communication of coded race and ethnicity information based on a submission to NCHS from a VRO.  The formats and mechanisms for submitting race and ethnicity information to NCHS, and receiving coded responses are common to the Mortality, Natality and Fetal Death vital records use cases.  The profiles and valuesets involved are defined in the Vital Records Common Library.
 
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.
 
