@@ -11,9 +11,9 @@ Usage: #example
   * given = "Avery"
   * suffix = "D.O."
 * qualification.code = $sct#76231001 "Osteopath (occupation)"
-// * extension[role].extension[attendantRole]
-* extension[roleVitalRecords][0]
-  * valueCodeableConcept = $loinc#87286-1
-//* extension[role].extension[certifierRole]
-* extension[roleVitalRecords][+]
-  * valueCodeableConcept = $loinc#87287-9
+* extension[0]
+  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-practitioner-role-attendant" 
+  * valueCode = #attendant
+* extension[+]
+  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-practitioner-role-certifier" 
+  * valueCode = #certifier
