@@ -14,10 +14,10 @@ Usage: #example
 * participant[0]
   * type = $loinc#87287-9 "Birth certifier [Extended Identifier]"
   * period.start = "2019-02-12T13:30:00-07:00"
-  * individual = Reference(practitioner-vital-records-avery-jones) "Practitioner - Certifier (Avery Jones, MD)"
+  * individual = Reference(practitioner-vital-records-avery-jones) "Practitioner - Vital Records (Avery Jones, MD)"
 * participant[+]
   * type = $loinc#87286-1 "Birth attendant [Extended Identifier]"
-  * individual = Reference(practitioner-vital-records-avery-jones) "Practitioner - Attendant (Avery Jones, MD)"
+  * individual = Reference(practitioner-vital-records-avery-jones) "Practitioner - Vital Records (Avery Jones, MD)"
 * period
   * start = "2019-02-12T13:00:00-07:00"
   * end = "2019-02-15T10:00:00-07:00"

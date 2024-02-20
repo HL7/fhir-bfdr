@@ -6,8 +6,18 @@ Description: "Certifier (USCorePractitioner) used in BFDR"
 * name.text ^short = "Certifier's name"
 * identifier ^short = "Note: required by USCore"
 * identifier[NPI] ^short = "Certifier's NPI Number"
-* qualification.code ^short = "List of titles"
-* qualification.code.text ^short = "Certifier 'other'"
+* qualification 0..1
+* qualification 
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "code"
+  * ^slicing.rules = #open
+  * ^slicing.description = "Slicing based on the profile conformance of the sliced element"
+* qualification contains birthAttendantQualification 0..1
+* qualification[birthAttendantQualification].code from ValueSetBirthAttendantTitlesVitalRecords (required)
+* qualification[birthAttendantQualification].code ^short = "List of titles"
+* qualification[birthAttendantQualification].code ^binding.description = "Live Birth/Fetal Death Practitioner title"
+* qualification[birthAttendantQualification].code.text ^short = "Certifier 'other'"
+* extension contains PractitionerRoleBirthCertifier  named role 1..1
 // * insert SlicedRoleExtension
 // * extension[role] contains
 //     certifierRole 1..1
@@ -15,7 +25,6 @@ Description: "Certifier (USCorePractitioner) used in BFDR"
 //   * ^short = "Certifier"
 //   * valueCode = #certifier
 //     * ^short = "Certifier"
-* extension contains PractitionerRoleBirthCertifier  named role 1..1
 
 Extension: PractitionerRoleBirthCertifier
 Id: practitioner-role-birth-certifier
