@@ -1,14 +1,14 @@
-# NOTE: Before running this script, you should download a local copy of the latest spreadsheets from https://github.com/nightingaleproject/vital_records_sandbox_ig
+# NOTE: Before running this script, you should download a local copy of the latest spreadsheets from https://github.com/HL7/vr-common-library
 
 #method 1:
-#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
-#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
+#Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
+#Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/mapping/BFDR_Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
 
 #method 2:
 # require 'open-uri'
-# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true')
+# download1 = URI.open('https://github.com/HL7/vr-common-library/blob/master/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true')
 # IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
-# download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.csv?raw=true')
+# download2 = URI.open('https://github.com/HL7/vr-common-library/blob/master/input/mapping/BFDR_Forms_Mapping.csv?raw=true')
 # IO.copy_stream(download2, 'input/mapping/BFDR_Forms_Mapping.csv')
 
 #run:
