@@ -3,7 +3,9 @@ Parent: PractitionerVitalRecords
 Id: Practitioner-birth-attendant
 Title: "Practitioner - Birth Attendant"
 Description: "The attendant at birth is defined as the individual at the delivery who is responsible for the delivery."
+* name.text ^short = "Attendant's name"
 * identifier ^short = "Note: required by USCore"
+* identifier[NPI] ^short = "Attendant's NPI Number"
 * qualification 0..1
 * qualification 
   * ^slicing.discriminator.type = #value

@@ -3,7 +3,11 @@ Parent: PractitionerVitalRecords
 Id: Practitioner-birth-certifier
 Title: "Practitioner - Birth Certifier"
 Description: "Certifier (USCorePractitioner) used in BFDR"
+* name.text ^short = "Certifier's name"
 * identifier ^short = "Note: required by USCore"
+* identifier[NPI] ^short = "Certifier's NPI Number"
+* qualification.code ^short = "List of titles"
+* qualification.code.text ^short = "Certifier 'other'"
 // * insert SlicedRoleExtension
 // * extension[role] contains
 //     certifierRole 1..1
