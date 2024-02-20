@@ -1,4 +1,4 @@
-Profile: BirthAttendant
+Profile: PractitionerBirthAttendant
 Parent: PractitionerVitalRecords
 Id: Practitioner-birth-attendant
 Title: "Practitioner - Birth Attendant"

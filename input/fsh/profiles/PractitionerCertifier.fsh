@@ -1,4 +1,4 @@
-Profile: BirthCertifier
+Profile: PractitionerBirthCertifier
 Parent: PractitionerVitalRecords
 Id: Practitioner-birth-certifier
 Title: "Practitioner - Birth Certifier"
