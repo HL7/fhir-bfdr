@@ -4,17 +4,18 @@ Parent: USCoreVitalSignsProfile
 Id: Observation-mother-delivery-weight
 Title: "Observation - Mother Delivery Weight"
 Description: "The weight of the mother at the time of birth/delivery. Migrated from VRCL."
-* code = $loinc#69461-2
 * subject 1..
 * subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..
 * value[x] only Quantity
 * valueQuantity ^short = "Mother's weight in lb"
   * code = $UCUM#[lb_av] (exactly)
+    * ^short = "pound"
   * value 1..1 
 * category
   * text = "Vital Signs"
 * code = $loinc#69461-2 "Mother's body weight --at delivery"
+  * ^short = "Mother's body weight --at delivery"
 // Add Edit Flags, a la VRDR 
 * value[x].extension contains
     BypassEditFlag named bypassEditFlag 0..1
