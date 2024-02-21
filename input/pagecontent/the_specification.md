@@ -28,7 +28,7 @@ Much of the content of the FHIR Documents defined in this IG is optional. If opt
 For querying and reading BFDR Profiles, Must Support on any profile data element SHALL be interpreted as follows:
 
 * Document Sources SHALL be capable of populating all data elements as part of the query results.
-* Document Consumers SHALL be capable of processing resource instances containing the data elements without generating an error or causing the application to fail. In other words Document Consumers SHOULD be capable of displaying the data elements for human use or storing it for other purposes.
+* Document Consumers SHALL be capable of processing resource instances containing the data elements without generating an error or causing the application to fail. In other words Document Consumers SHOULD be capable of displaying the data elements for human use or storing it for one more purposes.
 * When querying Document Sources, Document Consumers SHALL interpret missing data elements within resource instances as data not present in theDocument Sources’s system.
 * In situations where information on a particular data element is missing and the Document Source knows the precise reason for the absence of data, Document Sources SHALL send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or using the dataAbsentReason extension.
 * Document Consumers SHALL be able to process resource instances containing data elements asserting missing information.
