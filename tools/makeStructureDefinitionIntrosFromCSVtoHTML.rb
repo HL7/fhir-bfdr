@@ -2,7 +2,7 @@
 
 #method 1:
 #Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
-#Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/mapping/BFDR_Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
+#Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/mapping/Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
 
 #method 2:
 # require 'open-uri'
