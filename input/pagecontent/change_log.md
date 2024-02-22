@@ -5,6 +5,7 @@
 
 ### Minor
 - Added [PractitionerBirthAttendant] and [PractitionerBirthCertifier] profiles with corresponding extensions that distinguish these two types of Practitioner
+- [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554) Corrected [FetalPresentationsVS] and [FetalPresentationsCM] added a max binding that includes all abnormal presentations.
 - [FHIR-44555](https://jira.hl7.org/browse/FHIR-44555) Extended [ObservationGestationalAgeAtDelivery] for partial weeks and added two examples of its usage.
 - Removed composition references to [ObservationPlannedToDeliverAtHome] profile. Reporting of home delivery plan relies on [EncounterMaternity] and [EncounterBirth] (using [BirthDeliveryOccurredVS])
 - [FHIR-43506](https://jira.hl7.org/browse/FHIR-43506) - Added forms mappings for [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn]

@@ -15,7 +15,7 @@ To claim conformance to a BFDR Profile, servers SHALL be able to populate all pr
 This section outlines important definitions, interpretations, and requirements common to all BFDR actors used in this guide. The conformance verbs - SHALL, SHOULD, MAY - used in this guide are defined in FHIR Conformance Rules.
 
 ### Completeness of Documents
-Each recipient of the documents defined in this guide can define their own definition of completeness of the content of a document.  For a successful transmission of a document, it SHALL be both conformant to this guide, and meet the business rules of the recipient of the document.
+Each recipient of the documents defined in this guide can define their own definition of completeness of the content of a document.  For a successful transmission of a document, it SHALL be both conformant to this guide and meet the business rules of the recipient of the document.
 
 ### Data Elements Supported
 This IG is intended to support all of the data elements in current use for the [use cases] that are within scope.   Data dictionaries for all usescases are provided.
@@ -28,7 +28,7 @@ Much of the content of the FHIR Documents defined in this IG is optional. If opt
 For querying and reading BFDR Profiles, Must Support on any profile data element SHALL be interpreted as follows:
 
 * Document Sources SHALL be capable of populating all data elements as part of the query results.
-* Document Consumers SHALL be capable of processing resource instances containing the data elements without generating an error or causing the application to fail. In other words Document Consumers SHOULD be capable of displaying the data elements for human use or storing it for other purposes.
+* Document Consumers SHALL be capable of processing resource instances containing the data elements without generating an error or causing the application to fail. In other words Document Consumers SHOULD be capable of displaying the data elements for human use or storing it for one more purposes.
 * When querying Document Sources, Document Consumers SHALL interpret missing data elements within resource instances as data not present in theDocument Sources’s system.
 * In situations where information on a particular data element is missing and the Document Source knows the precise reason for the absence of data, Document Sources SHALL send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or using the dataAbsentReason extension.
 * Document Consumers SHALL be able to process resource instances containing data elements asserting missing information.

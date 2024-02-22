@@ -253,6 +253,7 @@
 </tr>
 <tr><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-replacement-status.html'>ValueSetReplacementStatus</a></td><td> Deleted </td><td> Deprecated </td></tr>
 <tr><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-yes-no-not-applicable.html'>ValueSetYesNoNotApplicable</a></td><td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-yes-no-not-applicable-vr.html'>VRCL</a></td><td> Moved to VRCL </td></tr>
+<tr><td><a href='https://hl7.org/fhir/us/bfdr/STU1.1/ValueSet-ValueSet-obstetric-procedure.html'>ObstetricProcedureVS</a></td><td> Deleted </td><td> Deprecated </td></tr>
 </tbody>
 </table>
 
