@@ -22,6 +22,7 @@
 - Consolidated miscellaneous local codesystems into a single codesystem called [LocalBFDRCodesCS]
 - Drop prefixes in titles so words like codesystem, valueset, extension, and conceptmap don't appear twice
 - renamed [ObservationMethodOfDisposition] to [ObservationFetalRemainsDispositionMethod] to help clearly distinguish it from [DecedentDispositionMethod]
+- minor narrative corrections ([FHIR-43953](https://jira.hl7.org/browse/FHIR-43953),[FHIR-43951](https://jira.hl7.org/browse/FHIR-43951),[FHIR-43950](https://jira.hl7.org/browse/FHIR-43950))
 
 ### STU2 Ballot, January 2024
 #### Major Changes
