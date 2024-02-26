@@ -16,3 +16,10 @@ Usage: #example
 //   * given = "Avery"
 //   * suffix = "M.D."
 * qualification.code = $sct#76231001 "Osteopath (occupation)"
+* extension[0]
+  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant" 
+  * valueCode = #attendant
+* extension[+]
+  * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier" 
+  * valueCode = #certifier
+

@@ -6,8 +6,10 @@ require 'open-uri'
 require "pry"
 require "roo"
 require "csv"
+# method 1: #Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/mapping/Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
 
-# download2 = URI.open('https://github.com/nightingaleproject/vital_records_sandbox_ig/blob/main/input/mapping/BFDR_Forms_Mapping.csv?raw=true')
+# method 2:
+# download2 = URI.open('https://github.com/HL7/vr-common-library/blob/master/input/mapping/BFDR_Forms_Mapping.csv?raw=true')
 # IO.copy_stream(download2, 'input/mapping/BFDR_Forms_Mapping.csv')
 
 def get_file_type(file)

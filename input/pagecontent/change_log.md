@@ -5,6 +5,7 @@
 
 ### Minor
 - [FHIR-44679](https://jira.hl7.org/browse/FHIR-44679) Clarified precedence of QuestionnaireResponse data in patient_worksheet_questionnaries(patient_worksheet-questionnaires.html)
+- Added [PractitionerBirthAttendant] and [PractitionerBirthCertifier] profiles with corresponding extensions that distinguish these two types of Practitioner
 - [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554) Corrected [FetalPresentationsVS] and [FetalPresentationsCM] added a max binding that includes all abnormal presentations.
 - [FHIR-44555](https://jira.hl7.org/browse/FHIR-44555) Extended [ObservationGestationalAgeAtDelivery] for partial weeks and added two examples of its usage.
 - Removed composition references to [ObservationPlannedToDeliverAtHome] profile. Reporting of home delivery plan relies on [EncounterMaternity] and [EncounterBirth] (using [BirthDeliveryOccurredVS])
@@ -22,6 +23,7 @@
 - Consolidated miscellaneous local codesystems into a single codesystem called [LocalBFDRCodesCS]
 - Drop prefixes in titles so words like codesystem, valueset, extension, and conceptmap don't appear twice
 - renamed [ObservationMethodOfDisposition] to [ObservationFetalRemainsDispositionMethod] to help clearly distinguish it from [DecedentDispositionMethod]
+- minor narrative corrections ([FHIR-43953](https://jira.hl7.org/browse/FHIR-43953),[FHIR-43951](https://jira.hl7.org/browse/FHIR-43951),[FHIR-43950](https://jira.hl7.org/browse/FHIR-43950))
 
 ### STU2 Ballot, January 2024
 #### Major Changes

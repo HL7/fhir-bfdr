@@ -36,7 +36,6 @@ Contributors from CDC/NCHS/DVS included:
 The VRCL project team would like to express a special thanks to the following testing partners in their contributions:
 
 * Jurisdictional Vital Records Community:
-
 * Vendor community
 
 

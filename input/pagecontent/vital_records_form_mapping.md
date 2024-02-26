@@ -188,13 +188,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>11</td>
   <td>Certifier’s Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-certifier.html'>PractitionerBirthCertifier</a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
   <td>Certifier’s Title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-certifier.html'>PractitionerBirthCertifier</a></td>
   <td>qualification</td>
 </tr>
 <tr>
@@ -303,19 +303,19 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>27</td>
   <td>Attendant’s Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>Practitioner-birth-attendant</a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>27</td>
   <td>Attendant’s Title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>qualification</td>
 </tr>
 <tr>
   <td style='text-align: center'>27</td>
   <td>Attendant’s NPI</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>identifier</td>
 </tr>
 <tr>
@@ -1195,13 +1195,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>19</td>
   <td>Certifier’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-certifier.html'>PractitionerBirthCertifier</a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>19</td>
   <td>Certifier’s title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-certifier.html'>PractitionerBirthCertifier</a></td>
   <td>qualification</td>
 </tr>
 <tr>
@@ -1237,19 +1237,19 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>24</td>
   <td>Attendant’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>Attendant’s title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>qualification</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>Attendant’s N.P.I.</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>identifier</td>
 </tr>
 <tr>
@@ -1848,19 +1848,19 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>14</td>
   <td>Attendant’s Name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
   <td>Attendant’s Title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>qualification</td>
 </tr>
 <tr>
   <td style='text-align: center'>14</td>
   <td>Attendant’s NPI</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>identifier</td>
 </tr>
 <tr>
@@ -2331,19 +2331,19 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>16</td>
   <td>Attendant’s name</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>16</td>
   <td>Attendant’s title</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>qualification</td>
 </tr>
 <tr>
   <td style='text-align: center'>16</td>
   <td>Attendant’s N.P.I.</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Practitioner-vr.html'>PractitionerVitalRecords</a></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>identifier</td>
 </tr>
 <tr>

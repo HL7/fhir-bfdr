@@ -164,32 +164,34 @@ Profile conformance requires that gender be provided, see [note on patient gende
 115,Input,PatientDecedentFetus,Patient-decedent-fetus,"Profile conformance requires that gender be provided, see [note on patient gender](https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender).",x,x,BFDR
 116,Input,PatientMotherVitalRecords,Patient-mother-vr,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,VRCPL
 117,Input,PractitionerVitalRecords,Practitioner-vr,,x,x,VRCPL
-118,Input,ProcedureAntibioticSuspectedNeonatalSepsis,Procedure-antibiotic-suspected-neonatal-sepsis,,x,x,BFDR
-119,Input,ProcedureArtificialInsemination,Procedure-artificial-insemination,,x,x,BFDR
-120,Input,ProcedureAssistedFertilization,Procedure-assisted-fertilization,,x,x,BFDR
-121,Input,ProcedureAssistedVentilationFollowingDelivery,Procedure-assisted-ventilation-following-delivery,,x,x,BFDR
-122,Input,ProcedureAssistedVentilationMoreThanSixHours,Procedure-assisted-ventilation-more-than-six-hours,,x,x,BFDR
-123,Input,ProcedureAugmentationOfLabor,Procedure-augmentation-of-labor,,x,x,BFDR
-124,Input,ProcedureBloodTransfusion,Procedure-blood-transfusion,,x,x,BFDR
-125,Input,ProcedureDeathCertificationVitalRecords,Procedure-death-certification-vr,,,,VRCPL
-126,Input,ProcedureEpiduralOrSpinalAnesthesia,Procedure-epidural-or-spinal-anesthesia,,x,x,BFDR
-127,Input,ProcedureFinalRouteMethodDelivery,Procedure-final-route-method-delivery,,x,x,BFDR
-128,Input,ProcedureInductionOfLabor,Procedure-induction-of-labor,,x,x,BFDR
-129,Input,ProcedureInfertilityTreatment,Procedure-infertility-treatment,,x,x,BFDR
-130,Input,ProcedureObstetric,Procedure-obstetric,,x,x,BFDR
-131,Input,ProcedureSurfactantReplacementTherapy,Procedure-surfactant-replacement-therapy,,x,x,BFDR
-132,Input,ProcedureUnplannedHysterectomy,Procedure-unplanned-hysterectomy,,x,x,BFDR
-133,Input,RelatedPersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,VRCPL
-134,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,,VRCPL
-135,Input,RelatedPersonMotherVitalRecords,RelatedPerson-mother-vr,,,,VRCPL
-136,Input,RelatedPersonParentVitalRecords,RelatedPerson-parent-vr,This profile is based on the [US Core RelatedPerson]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-relatedperson.html) profile.,,,VRCPL
-137,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
+118,Input,PractitionerBirthAttendant,Practitioner-birth-attendant,,x,x,BFDR
+119,Input,PractitionerBirthCertifier,Practitioner-birth-certifier,,x,x,BFDR
+120,Input,ProcedureAntibioticSuspectedNeonatalSepsis,Procedure-antibiotic-suspected-neonatal-sepsis,,x,x,BFDR
+121,Input,ProcedureArtificialInsemination,Procedure-artificial-insemination,,x,x,BFDR
+122,Input,ProcedureAssistedFertilization,Procedure-assisted-fertilization,,x,x,BFDR
+123,Input,ProcedureAssistedVentilationFollowingDelivery,Procedure-assisted-ventilation-following-delivery,,x,x,BFDR
+124,Input,ProcedureAssistedVentilationMoreThanSixHours,Procedure-assisted-ventilation-more-than-six-hours,,x,x,BFDR
+125,Input,ProcedureAugmentationOfLabor,Procedure-augmentation-of-labor,,x,x,BFDR
+126,Input,ProcedureBloodTransfusion,Procedure-blood-transfusion,,x,x,BFDR
+127,Input,ProcedureDeathCertificationVitalRecords,Procedure-death-certification-vr,,,,VRCPL
+128,Input,ProcedureEpiduralOrSpinalAnesthesia,Procedure-epidural-or-spinal-anesthesia,,x,x,BFDR
+129,Input,ProcedureFinalRouteMethodDelivery,Procedure-final-route-method-delivery,,x,x,BFDR
+130,Input,ProcedureInductionOfLabor,Procedure-induction-of-labor,,x,x,BFDR
+131,Input,ProcedureInfertilityTreatment,Procedure-infertility-treatment,,x,x,BFDR
+132,Input,ProcedureObstetric,Procedure-obstetric,,x,x,BFDR
+133,Input,ProcedureSurfactantReplacementTherapy,Procedure-surfactant-replacement-therapy,,x,x,BFDR
+134,Input,ProcedureUnplannedHysterectomy,Procedure-unplanned-hysterectomy,,x,x,BFDR
+135,Input,RelatedPersonFatherNaturalVitalRecords,RelatedPerson-father-natural-vr,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,VRCPL
+136,Input,RelatedPersonFatherVitalRecords,RelatedPerson-father-vr,,,,VRCPL
+137,Input,RelatedPersonMotherVitalRecords,RelatedPerson-mother-vr,,,,VRCPL
+138,Input,RelatedPersonParentVitalRecords,RelatedPerson-parent-vr,This profile is based on the [US Core RelatedPerson]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-relatedperson.html) profile.,,,VRCPL
+139,Input,ObservationEmergingIssuesVitalRecords,Observation-emerging-issues-vr,"EmergingIssues profile supports placeholder fields required for 2022 submissions to NCHS.
                 For documentation on their use see referenceTBD.
                 There are 6 1-char fields (PLACE1_1-6), 3 8-char fields (PLACE8_1-3), and one 20-char field (PLACE20-1).",,x,VRCPL
-138,Coding-Fetal Death,CompositionCodedCauseOfFetalDeath,Composition-coded-cause-of-fetal-death,"Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at the national statistics agency, and returned using this profile.",,,BFDR
-139,Coding-Fetal Death,ObservationCodedInitiatingFetalDeathCauseOrCondition,Observation-coded-initiating-fetal-death-cause-or-condition,,,x,BFDR
-140,Coding-Fetal Death,ObservationCodedOtherFetalDeathCauseOrCondition,Observation-coded-other-fetal-death-cause-or-condition,,,x,BFDR
-141,Coding-Demographic,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"The Coding of Race and Ethnicity follows the [MRE](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf) pattern implemented in VRDR, and supports maternal and paternal race/ethnicity.
+140,Coding-Fetal Death,CompositionCodedCauseOfFetalDeath,Composition-coded-cause-of-fetal-death,"Cause of death on a fetal death report comes from the provider as choices from a defined list of possible causes along with free text entries that further specify those choices. The information is transformed into one or more ICD 10 codes at the national statistics agency, and returned using this profile.",,,BFDR
+141,Coding-Fetal Death,ObservationCodedInitiatingFetalDeathCauseOrCondition,Observation-coded-initiating-fetal-death-cause-or-condition,,,x,BFDR
+142,Coding-Fetal Death,ObservationCodedOtherFetalDeathCauseOrCondition,Observation-coded-other-fetal-death-cause-or-condition,,,x,BFDR
+143,Coding-Demographic,ObservationCodedRaceAndEthnicityVitalRecords,coded-race-and-ethnicity-vr,"The Coding of Race and Ethnicity follows the [MRE](https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf) pattern implemented in VRDR, and supports maternal and paternal race/ethnicity.
 
 Two sets of codes will be used to address two objectives. These objectives are:
 * to generate codes for race or ethnicity data provided as text entries
@@ -198,4 +200,4 @@ Two sets of codes will be used to address two objectives. These objectives are:
 In addition, when the coding process has led to duplication of data, the duplicates will be eliminated. 
 
 Coded race and ethnicity data is communicated for both the mother and father in the case of live birth and only for the mother in the case of fetal death.",,x,VRCPL
-142,Not Implemented,not implemented,,,,,BFDR
+144,Not Implemented,not implemented,,,,,BFDR
