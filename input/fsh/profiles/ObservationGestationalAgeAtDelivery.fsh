@@ -7,6 +7,7 @@ Description: "The obstetric estimate of the infant’s gestation in completed we
 determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam.  For submission to NCHS, values in days will be divided by 7 without remainder, and values
 in weeks will be rounded down to an integer."
 * code = $loinc#11884-4
+  * ^short = "Gestational age Estimated"
 * subject 1..
 * subject only Reference(PatientChildVitalRecords or PatientDecedentFetus)
 * value[x] 1..
