@@ -19,19 +19,25 @@ Usage: #definition
 * document[0]
   * mode = #producer
   * profile = Canonical(CompositionJurisdictionLiveBirthReport)
+  * documentation = "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS"
 * document[+]
   * mode = #producer
   * profile = Canonical(CompositionJurisdictionFetalDeathReport)
+  * documentation = "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS"
 * document[+]
   * mode = #producer
   * profile = Canonical(CompositionProviderLiveBirthReport)
+  * documentation = "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS"
 * document[+]
   * mode = #producer
   * profile = Canonical(CompositionProviderFetalDeathReport)
+  * documentation = "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS"
   // These are produced by NCHS and consumed by the source of the reports
 * document[+]
   * mode = #consumer
   * profile = Canonical(CompositionCodedCauseOfFetalDeath)
+  * documentation = "Produced by NCHS and consumed by the source of the reports"
 * document[+]
   * mode = #consumer
   * profile = Canonical(CompositionCodedRaceAndEthnicity)
+  * documentation = "Produced by NCHS and consumed by the source of the reports"
