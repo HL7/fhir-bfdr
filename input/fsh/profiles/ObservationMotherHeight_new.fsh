@@ -12,6 +12,7 @@ Description: "The height of the mother. Migrated from VRCL."
 * value[x] only Quantity
 * valueQuantity ^short = "Height of Mother in inches"
   * code = $UCUM#[in_i] (exactly)
+    * ^short = "inch"
   * value 1..1 
 // Add Edit Flags, a la VRDR 
 * value[x].extension contains

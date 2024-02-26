@@ -1,9 +1,3 @@
-{% include note-to-balloters.md %}
-
-<div class="stu-note" markdown="1">
-Key updates and detailed changes between this and prior versions are available on the VRCL [Change Log] and [Changes Between Versions] pages.
-</div><!-- note-to-balloters -->
-
 ### Overview
 
 ### Description
@@ -11,6 +5,10 @@ Key updates and detailed changes between this and prior versions are available o
 Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional vital records offices (VROs) and from VROs to the CDC National Center for Health Statistics ([NCHS](https://www.cdc.gov/nchs/index.htm)). Data associated with the mother of the baby or delivered fetus may be communicated independently from data associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, &quot;mother&quot; always refers to the woman who delivered the infant or fetus. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant. 
 
 This implementation guide (IG) defines a series of Health Level Seven (HL7®) Fast Healthcare Interoperability Resources (FHIR®) profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the [2003 Revision of the U.S. Standard Certificate of Live Birth](https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf) and the [2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf). Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, VROs and NCHS.
+
+The STU2 version of the Birth and Fetal Death Reporting (BFDR) IG was focused on enabling submission of records from Electronic Birth Registration Systems hosted by Vital Records Organizations (VROs) to the Center for Disease Control (CDC) National Center for Health Statistics (NCHS) National Vital Statistics System (NVSS).  This involved the addition of profiles supporting NCHS-standard submission of race and ethnicity inputs, and return of coded race and ethnicity. These profiles are referenced in BFDR, but defined in the Vital Records Common Library ([VRCL]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}})) IG.  Content (i.e., profiles, valuesets, examples) that is used exclusively in the birth and fetal death use cases was moved from VRCL to the BFDR.  As a result, the total content of this IG has dramatically increased in size. Valuesets formerly hosted in PHINVADs have been included within the IG, and are referenced in valueset descriptions.  This follows the pattern established by the VRDR IG.
+
+For a description of the changes to BFDR from STU1.1, see the [Change table](content-transitions.html).
 
 ### Relationship to Other Standards
 This BFDR IG standard complements other vital records standards to support the expansion of information flows to and from the national statistics agency. The BFDR STU 1 drew on foundational work of early standards listed in the Background section, below. This current version of the BFDR IG is informed by :

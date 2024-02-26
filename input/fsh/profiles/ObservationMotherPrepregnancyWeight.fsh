@@ -12,6 +12,7 @@ Description: "The weight of the mother before becoming pregnant. Migrated from V
 * value[x] only Quantity
 * valueQuantity ^short = "Weight in lb"
   * code = $UCUM#[lb_av] (exactly)
+    * ^short = "pound"
   * value 1..1 
 // Add Edit Flags, a la VRDR 
 * value[x].extension contains

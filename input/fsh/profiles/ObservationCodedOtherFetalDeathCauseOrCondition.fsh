@@ -4,6 +4,7 @@ Id: Observation-coded-other-fetal-death-cause-or-condition
 Title: "Observation - Coded Other Fetal Death Cause or Condition"
 Description: "This profile represents a coded other significant cause/condition of fetal death."
 * code = $loinc#92023-1 "Coded other significant causes or conditions of fetal death"
+  * ^short = "Coded other significant causes or conditions of fetal death"
 * code 1..1 MS 
 * subject only Reference(PatientDecedentFetus)
 * value[x] 1..1 MS
@@ -20,6 +21,7 @@ Description: "This profile represents a coded other significant cause/condition 
 * component[position].valueInteger ^maxValueInteger = 7
 * component[position].valueInteger ^minValueInteger = 1
 * component[position].code = $sct#246268007 "Position (attribute)"
+  * ^short = "Position (attribute)"
 * component[position] ^short = "Position"
 * component[position].code 1..1
 * component[position].value[x] 1..1
