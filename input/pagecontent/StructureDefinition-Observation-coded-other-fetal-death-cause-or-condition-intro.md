@@ -31,7 +31,7 @@
   <td>OCOD1</td>
   <td>position.value=1,  <br />value</td>
   <td>codeable</td>
-  <td>[PHIN VADS - Cause of Fetal Death](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933)</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933'>PHIN VADS - Cause of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -40,7 +40,7 @@
   <td>OCOD2</td>
   <td>position.value=2,  <br />value</td>
   <td>codeable</td>
-  <td>[PHIN VADS - Cause of Fetal Death](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933)</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933'>PHIN VADS - Cause of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -49,7 +49,7 @@
   <td>OCOD3</td>
   <td>position.value=3,  <br />value</td>
   <td>codeable</td>
-  <td>[PHIN VADS - Cause of Fetal Death](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933)</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933'>PHIN VADS - Cause of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -58,7 +58,7 @@
   <td>OCOD4</td>
   <td>position.value=4,  <br />value</td>
   <td>codeable</td>
-  <td>[PHIN VADS - Cause of Fetal Death](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933)</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933'>PHIN VADS - Cause of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -67,7 +67,7 @@
   <td>OCOD5</td>
   <td>position.value=5,  <br />value</td>
   <td>codeable</td>
-  <td>[PHIN VADS - Cause of Fetal Death](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933)</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933'>PHIN VADS - Cause of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -76,7 +76,7 @@
   <td>OCOD6</td>
   <td>position.value=6,  <br />value</td>
   <td>codeable</td>
-  <td>[PHIN VADS - Cause of Fetal Death](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933)</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933'>PHIN VADS - Cause of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -85,7 +85,7 @@
   <td>OCOD7</td>
   <td>position.value=7,  <br />value</td>
   <td>codeable</td>
-  <td>[PHIN VADS - Cause of Fetal Death](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933)</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933'>PHIN VADS - Cause of Fetal Death</a></td>
 </tr>
 
 </tbody>
