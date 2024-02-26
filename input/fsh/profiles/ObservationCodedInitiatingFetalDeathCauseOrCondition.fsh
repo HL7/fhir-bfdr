@@ -5,6 +5,7 @@ Title: "Observation - Coded Initiating Fetal Death Cause or Condition"
 Description: "This profile represents the coded initiating cause/condition of fetal death."
 * . ^short = "This profile represents the coded initiating cause/condition of fetal death."
 * code = $loinc#92022-3 "Coded initiating cause or condition of fetal death"
+  * ^short = "Coded initiating cause or condition of fetal death"
 * code 1..1 MS 
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
