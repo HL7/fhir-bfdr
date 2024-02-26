@@ -2416,7 +2416,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>25</td>
   <td>Method of Disposition</td>
   <td><a href='StructureDefinition-Observation-fetal-remains-disposition-method.html'>ObservationFetalRemainsDispositionMethod</a></td>
-  <td></td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>26</td>
