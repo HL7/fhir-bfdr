@@ -1,22 +1,17 @@
-Instance: composition-provider-live-birth-babyg-quinn
-InstanceOf: CompositionProviderLiveBirthReport
-Title: "Composition - Provider Live Birth Report - BabyG Quinn"
-Description: "Composition - Provider Live Birth Report: BabyG Quinn example"
+Instance: composition-jurisdiction-live-birth-babyg-quinn
+InstanceOf: CompositionJurisdictionLiveBirthReport
+Title: "Composition - Jurisdiction Live Birth Report - BabyG Quinn"
+Description: "Composition - Jurisdiction Live Birth Report: BabyG Quinn example"
 Usage: #example
+* identifier.value = "c03eab8c-11e8-4d0c-ad2a-b385395e27df"
 * status = #final
-* type = $loinc#68998-4 "U.S. standard certificate of live birth - 2003 revision"
+* type = $loinc#92011-6 "Jurisdiction live birth report Document"
 * insert addReferenceComposition(subject,Patient, patient-child-babyg-quinn)
 * insert addReferenceComposition(encounter,Encounter, encounter-birth-babyg-quinn)
 * insert addReferenceComposition(encounter.extension[Extension-encounter-maternity-reference].valueReference,Encounter, encounter-maternity-jada-ann-quinn)
-// * encounter
-//   * extension
-//     * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"
-//     * valueReference.reference = "Encounter/encounter-maternity-jada-ann-quinn"
-//   * reference = "Encounter/encounter-birth-babyg-quinn"
-//   * display = "Encounter - Birth (Baby G Quinn)"
 * date = "2019-02-12"
-* insert addReferenceComposition(author, Practitioner, practitioner-vital-records-avery-jones) 
-* title = "Provider supplied live birth report Document"
+* insert addReferenceComposition(author, Organization, organization-jurisdictional-vital-records-office) 
+* title = "Jurisdiction live birth report Document"
 * section[motherPrenatal]
   // * title = "Mother (prenatal) Section on the Live Birth Certificate"
   // * code = $loinc#57073-9 "Prenatal records"
@@ -30,37 +25,52 @@ Usage: #example
   * insert addNamedEntryComposition(numberOtherOutcomes, Observation, observation-number-other-pregnancy-outcomes-jada-ann-quinn)
   * insert addNamedEntryComposition(dateLastOtherOutcome, Observation, observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn)  
   * insert addNamedEntryComposition(principalSourceOfPayment, Coverage, coverage-principal-payer-for-delivery-jada-ann-quinn) 
-  * insert addNamedEntryComposition(mothersWeightAtDelivery, Observation, observation-mother-delivery-weight-jada-ann-quinn)   
-  * insert addNamedEntryComposition(mothersHeight, Observation, observation-mother-height-jada-ann-quinn)
-  * insert addNamedEntryComposition(mothersPrepregnancyWeight, Observation, observation-mother-prepregnancy-weight-jada-ann-quinn)
+  * insert addNamedEntryComposition(mothersWeightAtDelivery, Observation, observation-mother-delivery-weight-jada-ann-quinn-w-edit)   
+  * insert addNamedEntryComposition(mothersHeight, Observation, observation-mother-height-jada-ann-quinn-w-edit)
+  * insert addNamedEntryComposition(mothersPrepregnancyWeight, Observation, observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit)
   * insert addNamedEntryComposition(motherReceivedWICFood, Observation, observation-mother-received-wic-food-jada-ann-quinn)
   * insert addNamedEntryComposition(cigaretteSmokingBeforeDuringPregnancy, Observation, observation-cig-smoking-pregnancy-1-jada-ann-quinn)
   * insert addNamedEntryComposition(cigaretteSmokingBeforeDuringPregnancy, Observation, observation-cig-smoking-pregnancy-2-jada-ann-quinn)
   * insert addNamedEntryComposition(cigaretteSmokingBeforeDuringPregnancy, Observation, observation-cig-smoking-pregnancy-3-jada-ann-quinn)
   * insert addNamedEntryComposition(cigaretteSmokingBeforeDuringPregnancy, Observation, observation-cig-smoking-pregnancy-4-jada-ann-quinn)
+
 * section[medicalHealthInformation]
   // * title = "Medical Health Information Section"
   // * code = $loinc#55752-0 "Clinical information"
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
+  // removing because there is no pregnancy risk factor example for baby quinn 
+  // based on this profile http://hl7.org/fhir/us/vr-common-library/StructureDefinition-Observation-pregnancy-risk-factor.html
+  //* entry[pregnancyRiskFactors]
+    // this example was previously unreferenced
+    //* reference = "Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4"
+    // this example does not exist in the published or unpublished version, but is referenced in the published version
+    // * reference : "Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1"
+    // this is from the unpublished version
   * insert addNamedEntryComposition(obstetricProcedures, Procedure, procedure-obstetric-procedure-jada-ann-quinn) 
-  * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
-  * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-jada-ann-quinn) 
+  * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-jada-ann-quinn-w-edit) 
   * insert addNamedEntryComposition(infectionsDuringPregnancy, Condition, condition-infection-present-during-pregnancy-jada-ann-quinn) 
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-hypertension-jada-ann-quinn) 
   * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-prepregnancy-diabetes-jada-ann-quinn) 
+  * insert addNamedEntryComposition(pregnancyRiskFactors, Procedure, procedure-infertility-treatment-jada-ann-quinn) 
+  * insert addNamedEntryComposition(pregnancyRiskFactors, Procedure, procedure-artificial-insemination-jada-ann-quinn) 
   * insert addNamedEntryComposition(characteristicsLaborDelivery, Condition, condition-chorioamnionitis-jada-ann-quinn) 
   * insert addNamedEntryComposition(characteristicsLaborDelivery, Procedure, procedure-induction-of-labor-jada-ann-quinn) 
+  * insert addNamedEntryComposition(characteristicsLaborDelivery, Observation, observation-antibiotics-during-labor-jada-ann-quinn) 
+  * insert addNamedEntryComposition(characteristicsLaborDelivery, Procedure,  procedure-epidural-or-spinal-anesthesia-jada-ann-quinn) 
   * insert addNamedEntryComposition(fetalPresentation, Observation, observation-fetal-presentation-babyg-quinn) 
   * insert addNamedEntryComposition(finalRouteMethodDelivery, Procedure, procedure-final-route-method-delivery-babyg-quinn) 
   * insert addNamedEntryComposition(maternalMorbidity, Condition, condition-ruptured-uterus-jada-ann-quinn) 
 * section[newbornInformation]
   // * title = "Newborn section on the Live Birth Certificate"
   // * code = $loinc#57075-4 "Newborn delivery information"
-  * insert addNamedEntryComposition(birthWeight, Observation, observation-birth-weight-babyg-quinn) 
-  * insert addNamedEntryComposition(gestationalAgeAtDelivery, Observation, observation-gestational-age-at-delivery-babyg-quinn) 
+  * insert addNamedEntryComposition(birthWeight, Observation, observation-birth-weight-babyg-quinn-w-edit) 
+  * insert addNamedEntryComposition(gestationalAgeAtDelivery, Observation, observation-gestational-age-at-delivery-babyg-quinn-w-edit) 
   * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-1-min) 
   * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-5-min) 
   * insert addNamedEntryComposition(numberLiveBirthsThisDelivery, Observation, observation-number-live-births-this-delivery-jada-ann-quinn) 
+    // * entry[+]
+  //   * reference = "Observation/observation-plurality-jada-ann-quinn"
+  //   * display = "Observation - Plurality (Jada Ann Quinn)"
   * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn) 
   * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn-2) 
   * insert addNamedEntryComposition(infantLiving, Observation, observation-infant-living-babyg-quinn) 
@@ -70,20 +80,31 @@ Usage: #example
   // * code = $loinc#92014-0 "Mother's administrative information"
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
   * insert addNamedEntryComposition(marriedDuringPregnancy, Observation, observation-mother-married-during-pregnancy-jada-ann-quinn) 
-  * insert addNamedEntryComposition(mothersEducation, Observation, observation-parent-education-level-jada-ann-quinn)
+  * insert addNamedEntryComposition(mothersEducation, Observation, observation-parent-education-level-jada-ann-quinn-w-edit)
   * insert addNamedEntryComposition(mothersUsualWork, Observation, observation-usual-work-jada-ann-quinn)
   * insert addNamedEntryComposition(mothersRaceEthnicity, Observation, observation-input-race-and-ethnicity-jada-ann-quinn)
   * insert addNamedEntryComposition(ssnRequestedForChild, Observation, observation-ssn-requested-for-child-babyg-quinn) 
 * section[fatherInformation]
   // * title = "Father's Information Section"
   // * code = $loinc#92013-2 "Father's Administrative Information"
-  * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-james-brandon-quinn)
-  * insert addNamedEntryComposition(paternityAcknowledgementSigned, Observation, observation-paternity-acknowledgement-signed-james-quinn)
-  * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn) 
+  * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-james-brandon-quinn-w-edit)
+  * insert addNamedEntryComposition(paternityAcknowledgementSigned, Observation, observation-paternity-acknowledgement-signed-james-quinn-w-edit)
+  * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn-w-edit) 
   * insert addNamedEntryComposition(fathersUsualWork, Observation, observation-usual-work-james-brandon-quinn)
-  * insert addNamedEntryComposition(fathersRaceEthnicity, Observation, observation-input-race-and-ethnicity-james-quinn)  
-* section[patientsQuestionnaireResponse]
-  // * title = "Mother's QuestionnaireResponse Section"
-  // * code = $loinc#74465-6 "Questionnaire response Document"
-  * insert addReferenceComposition(focus, Patient, patient-mother-jada-ann-quinn)
-  * insert addentryComposition(QuestionnaireResponse, QuestionnaireResponse-mothers-live-birth-jada-quinn)
+  * insert addNamedEntryComposition(fathersRaceEthnicity, Observation, observation-input-race-and-ethnicity-james-quinn-w-edit)
+
+  //* section[editFlags]
+  // * title = "Edit Flags Section"
+  // * code = $loinc#92012-4 "Edit flags section"
+  // * entry[editFlagBirthweight] = Reference(observation-edit-birth-weight-babyg-quinn) "Observation - Edit flag birthweight"
+  //* entry[editFlagEstimateOfGestation] = Reference(observation-edit-flag-estimate-of-gestation-example) "Observation - Edit flag estimate of gestation"
+  //* entry[editFlagFathersDateOfBirth] = Reference(observation-edit-flag-fathers-date-of-birth-example) "Observation - Edit flag father's date of birth"
+  //* entry[editFlagFathersEducation] = Reference(observation-edit-flag-fathers-education-example) "Observation - Edit flag father's education"
+  // * entry[editFlagMothersDateOfBirth] = Reference(observation-edit-flag-mothers-date-of-birth-example) "Observation - Edit flag mother's date of birth"
+  //* entry[editFlagMothersDeliveryWeight] = Reference(observation-edit-flag-mothers-delivery-weight-example) "Observation - Edit flag mother's delivery weight"
+  //* entry[editFlagMothersEducation] = Reference(observation-edit-flag-mothers-education-example) "Observation - Edit flag mother's education"
+  //* entry[editFlagMothersHeight] = Reference(observation-edit-flag-mothers-height-example) "Observation - Edit flag mother's height"
+  //* entry[editFlagMothersPrepregnancyWeight] = Reference(observation-edit-flag-mothers-prepregnancy-weight-example) "Observation - Edit flag mother's prepregnancy weight"
+  //* entry[editFlagNumberPrenatalCareVisits] = Reference(observation-edit-flag-number-prenatal-care-visits-example) "Observation - Edit flag number prenatal care visits"
+  //* entry[editFlagNumberPreviousCesareans] = Reference(observation-edit-flag-number-previous-cesareans-example) "Observation - Edit flag number previous cesareans"
+  //* entry[editFlagPlurality] = Reference(observation-edit-flag-plurality-example) "Observation - Edit flag plurality"

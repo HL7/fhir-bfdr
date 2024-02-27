@@ -32,7 +32,6 @@ dependencies:
     id: odh
 
 copyrightYear: 2023+
-releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0  # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -147,7 +146,7 @@ menu:
     Specification: the_specification.html
     Categories: categories.html
     Usage Notes: usage.html
-    Worksheet Questionaires: patient_worksheet_questionnaires.html
+    Worksheet Questionnaires: patient_worksheet_questionnaires.html
     Natality Data Dictionary: ije_mapping_natality.html
     Fetal Death Data Dictionary: ije_mapping_fetalDeath.html
     Forms Mapping: vital_records_form_mapping.html
@@ -270,6 +269,12 @@ groups:
       - CompositionCodedCauseOfFetalDeath
       - CompositionCodedRaceAndEthnicity
 
+  BFDRQuestionnaires:
+    name: Questionnaires 
+    resources:
+      - Questionnaire-mothers-live-birth
+      - Questionnaire-patients-fetal-death
+  
   BFDRProfilesEncounter:
     name: Profiles Encounter and Location 
     resources:
@@ -277,6 +282,14 @@ groups:
       - EncounterMaternity
       - LocationBFDR
       - ExtensionEncounterMaternityReference
+  
+  BFDRProfilesPractitioner:
+    name: Practitioner Profiles and Extensions
+    resources:
+      - PractitionerBirthAttendant
+      - PractitionerBirthCertifier
+      - PractitionerRoleBirthAttendant
+      - PractitionerRoleBirthCertifier
 
   BFDRProfilesNewbornFetus:
     name: Profiles Newborn/Fetus
@@ -320,7 +333,6 @@ groups:
       - ProcedureInductionOfLabor
       - ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery
 
-  
   BFDRProfilesMotherPrenatal:
     name: Mother Prenatal Profiles
     resources:
@@ -393,8 +405,8 @@ groups:
       - ObservationCodedInitiatingFetalDeathCauseOrCondition
       - ObservationCodedOtherFetalDeathCauseOrCondition
       - ObservationFetalDeathTimePoint
+      - ObservationFetalRemainsDispositionMethod
       - ObservationHistologicalPlacentalExamPerformed
-      - ObservationMethodOfDisposition
       - PatientDecedentFetus
       
   BFDRProfilesParentInformation:
@@ -437,15 +449,16 @@ groups:
       - FetalDeathCauseOrConditionVS
       - FetalDeathTimePointsVS
       - FetalPresentationsVS
+      - FetalRemainsDispositionMethodVS
       - HistologicalPlacentalExaminationVS
       - InfectionsDuringPregnancyLiveBirthVS
       - InformantRelationshipToMotherVS
       - LocationTypeVS
-      - MethodOfDispositionVS
+      - FetalPresentationsMaxVS 
       #- MothersDateOfBirthEditFlagsVS
       - NewbornCongenitalAnomaliesVS
       - NumberPreviousCesareansEditFlagsVS
-      - ObstetricProcedureVS
+      #- ObstetricProcedureVS
       #- PluralityEditFlagsVS
       - PregnancyReportEditFlagsVS
       - ValueSetObstetricProcedureOutcome
@@ -528,7 +541,6 @@ groups:
       - patient-decedent-fetus-not-named-w-edit
       - patient-mother-carmen-teresa-lee
       - patient-mother-carmen-teresa-lee-w-edit
-      - Questionnaire-patients-fetal-death
       - QuestionnaireResponse-patients-fetal-death-carmen-lee
       - relatedperson-father-natural-tom-yan-lee
       - relatedperson-father-natural-tom-yan-lee-w-edit
@@ -645,7 +657,6 @@ groups:
       - procedure-unplanned-hysterectomy-quinn
       - procedure-ventilation-following-babyg-quinn
       - procedure-ventilation-more-6-hours-babyg-quinn
-      - Questionnaire-mothers-live-birth
       - QuestionnaireResponse-mothers-live-birth-jada-quinn
       - relatedperson-father-natural-james-brandon-quinn
       - relatedperson-father-natural-james-brandon-quinn-w-edit
@@ -657,6 +668,8 @@ groups:
       - location-east-hospital
       - location-north-hospital
       - location-south-hospital
+      - observation-gestational-age-at-delivery-babyg-quinn-prem-d
+      - observation-gestational-age-at-delivery-babyg-quinn-prem-w
       - observation-plurality-carmen-teresa-lee
       - observation-coded-race-and-ethnicity-father  
       - observation-coded-race-and-ethnicity-mother

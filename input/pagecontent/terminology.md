@@ -46,7 +46,7 @@ output/ValueSet-ValueSet-fetal-presentations.json
 output/ValueSet-ValueSet-histological-placental-examination.json
 output/ValueSet-ValueSet-infections-during-pregnancy-live-birth.json
 output/ValueSet-ValueSet-informant-relationship-to-mother.json
-output/ValueSet-ValueSet-method-of-disposition.json
+output/ValueSet-ValueSet-fetal-remains-disposition-method.json
 output/ValueSet-ValueSet-newborn-congenital-anomalies.json
 output/ValueSet-ValueSet-obstetric-procedure-outcome.json
 output/ValueSet-ValueSet-obstetric-procedure.json

@@ -68,18 +68,24 @@ Usage: #example
   * answer.valueCoding = $HL7_EducationLevelCS#SEC "Some secondary or high school education"
 * item[+]
   * linkId = "mother-ethnicity"
-  * text = "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box."
-  * item
-    * linkId = "mother-shl"
-    * text = "Are you Spanish/Hispanic/Latina"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#2135-2 "Hispanic or Latino"
+  * answer.valueBoolean = true
+* item[+]
+  * linkId = "mother-ethnicity-mexican"
+  * answer.valueBoolean = true
+* item[+]
+  * linkId = "mother-ethnicity-puerto-rican"
+  * answer.valueBoolean = true
+* item[+]
+  * linkId = "mother-ethnicity-cuban"
+  * answer.valueBoolean = true
+* item[+]
+  * linkId = "mother-ethnicity-other"
+  * answer.valueBoolean = false
 * item[+]
   * linkId = "mother-race"
-  * text = "What is your race? (Please check one or more races to indicate what you consider yourself to be)."
-  * item
-    * linkId = "mother-race-category"
-    * text = "Race categories"
-    * answer.valueCoding = urn:oid:2.16.840.1.113883.6.238#2054-5 "Black or African American"
+  * item[0]
+    * linkId = "mother-race-black-or-aa"
+    * answer.valueBoolean = true
 * item[+]
   * linkId = "father-current-legal-name"
   * text = "What is the current legal name of your baby's father?"

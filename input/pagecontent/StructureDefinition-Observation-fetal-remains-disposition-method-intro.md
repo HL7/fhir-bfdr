@@ -70,7 +70,7 @@ This information is not required for submission of a fetal death report, but may
 <tr>
   <td style='text-align: center'>25</td>
   <td>Method of Disposition</td>
-  <td>-</td>
+  <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 </tbody>

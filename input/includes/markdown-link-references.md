@@ -46,6 +46,9 @@
 [HL7EncounterAdmitSourceVS]: http://hl7.org/fhir/ValueSet/encounter-admit-source
 [USCoreDischargeDispositionVS]: http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition
 [USCoreBirthSexVS]: http://hl7.org/fhir/us/core/ValueSet/birthsex
+[DecedentDispositionMethod]: https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-decedent-disposition-method.html
+[ObservationMethodOfDisposition]:https://hl7.org/fhir/us/bfdr/StructureDefinition-Observation-method-of-disposition.html
+[MethodOfDispositionVS]: https://build.fhir.org/ig/HL7/vrdr/ValueSet-vrdr-method-of-disposition-vs.html
 {% include fsh-link-references.md %} 
 <!--- Extensions -->
 [patient-birthPlace]: http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html
@@ -192,3 +195,5 @@
 [ObservationEditFlagNumberPreviousCesareans]: StructureDefinition-Observation-edit-flag-number-previous-cesareans.html
 [ObservationEditFlagPlurality]: StructureDefinition-Observation-edit-flag-plurality.html
 [Extension-relatedperson-birthplace-vr]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-relatedperson-birthplace-vr.html
+<!-- other -->
+[PHIN VADS - Cause of Fetal Death]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933

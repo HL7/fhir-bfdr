@@ -1,6 +1,6 @@
 ValueSet: FetalDeathCauseOrConditionVS
 Id: ValueSet-fetal-death-cause-or-condition
-Title: "ValueSet - Fetal Death Cause or Condition"
+Title: "Fetal Death Cause or Condition"
 Description: "This valueset contains codes to represent fetal death cause or condition.  This valueset is based on [PHVS_FetalDeathCauseOrCondition_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=DC1C6A94-C9FF-42CD-B546-E789003ED793)."
 * ^experimental = false
 * insert SNOMEDCopyright
