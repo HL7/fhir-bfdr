@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -128,7 +128,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -255,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   }
 </style>
 
-<p>This example provides a narrative description of the live birth report for <a href="Patient-patient-child-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Baby Girl Quinn</code></a>, following the birth report form.
+<p>This example provides a narrative description of the live birth report for <a href="Patient-patient-child-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Baby Girl Quinn</code></a>, following the <a href="appendix_b_-_example_live_birth_certificate.html">birth report form</a>.
 This information is transmitted in both a <a href="Bundle-bundle-provider-live-birth-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Provider bundle to the VRO</code></a>, and in a <a href="Bundle-bundle-jurisdiction-live-birth-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Jurisdiction bundle to NCHS</code></a>.  The main difference between the two bundles is the inclusion of edit flags.</p>
 
 <table class="grid">
@@ -263,250 +263,211 @@ This information is transmitted in both a <a href="Bundle-bundle-provider-live-b
     <tr>
       <th>Field(s)</th>
       <th>Example Instance</th>
-      <th> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Child</td>
       <td><a href="Patient-patient-child-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Baby Girl Quinn</code></a>, Time of Birth: 2019-02-12 07:00</td>
-      <td> </td>
     </tr>
     <tr>
       <td>Mother</td>
       <td><a href="Patient-patient-mother-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Jada Ann Quinn</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Mother Married</td>
-      <td><a href="Observation-observation-mother-married-during-pregnancy-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Married</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>SSN REquested</td>
-      <td><a href="Observation-observation-ssn-requested-for-child-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Paternity Acknowledged</td>
-      <td><a href="Observation-observation-paternity-acknowledgement-signed-james-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Father</td>
       <td><a href="RelatedPerson-relatedperson-father-natural-james-brandon-quinn.html"><code class="language-plaintext highlighter-rouge">James Brandon Quinn</code></a></td>
-      <td> </td>
     </tr>
     <tr>
-      <td>Attendant</td>
-      <td><a href="Practitioner-practitioner-vital-records-avery-jones.html"><code class="language-plaintext highlighter-rouge">Avery Jones</code></a> see <a href="Encounter-encounter-birth-babyg-quinn.html">Birth Encounter</a></td>
-      <td> </td>
+      <td>Certifier</td>
+      <td><a href="Practitioner-practitioner-vital-records-avery-jones.html"><code class="language-plaintext highlighter-rouge">Avery Jones</code></a></td>
+    </tr>
+    <tr>
+      <td>Birth Encounter</td>
+      <td><a href="Encounter-encounter-birth-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Birth Encounter</code></a></td>
+    </tr>
+    <tr>
+      <td>Mother Married During Pregancy</td>
+      <td><a href="Observation-observation-mother-married-during-pregnancy-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Married</code></a></td>
+    </tr>
+    <tr>
+      <td>Paternity Acknowledgement Signed</td>
+      <td><a href="Observation-observation-paternity-acknowledgement-signed-james-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
+    </tr>
+    <tr>
+      <td>SSN Requested for Child</td>
+      <td><a href="Observation-observation-ssn-requested-for-child-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">True</code></a></td>
     </tr>
     <tr>
       <td>Mother’s Education</td>
-      <td><a href="Observation-observation-parent-education-level-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Post-Graduate</code></a></td>
-      <td> </td>
+      <td><a href="Observation-observation-parent-education-level-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Doctoral or Post-Graduate</code></a></td>
     </tr>
     <tr>
       <td>Mother’s Usual Work-Occupation</td>
       <td><a href="Observation-observation-usual-work-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Carpenter</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Mother’s Usual Work-Industry</td>
       <td><a href="Observation-observation-usual-work-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Construction</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Mother’s Race and Ethnicity</td>
-      <td><a href="Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">White/AmericanIndian, Non-Hispanic</code></a></td>
-      <td> </td>
+      <td><a href="Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">White/AIAN/OtherAsian, Non-Hispanic</code></a></td>
     </tr>
     <tr>
       <td>Father’s Education</td>
-      <td><a href="Observation-observation-parent-education-level-james-quinn.html"><code class="language-plaintext highlighter-rouge">Post Graduate</code></a></td>
-      <td> </td>
+      <td><a href="Observation-observation-parent-education-level-james-quinn.html"><code class="language-plaintext highlighter-rouge">Doctoral or Post-Graduate</code></a></td>
     </tr>
     <tr>
       <td>Father’s Usual Work-Occupation</td>
       <td><a href="Observation-observation-usual-work-james-brandon-quinn.html"><code class="language-plaintext highlighter-rouge">Lawyer</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Father’s Usual Work-Industry</td>
       <td><a href="Observation-observation-usual-work-james-brandon-quinn.html"><code class="language-plaintext highlighter-rouge">Legal Services</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Father’s Race and Ethnicity</td>
-      <td><a href="Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">White / Non-Hispanic</code></a></td>
-      <td> </td>
+      <td><a href="Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">White/AIAN/OtherAsian, Non-Hispanic</code></a></td>
     </tr>
     <tr>
       <td>Place of Birth</td>
       <td>Birth at <a href="Location-location-south-hospital.html"><code class="language-plaintext highlighter-rouge">South Hospital</code></a> , Discharge to <a href="Location-location-east-hospital.html"><code class="language-plaintext highlighter-rouge">East Hospital</code></a></td>
-      <td> </td>
     </tr>
     <tr>
-      <td>Certifier</td>
-      <td><a href="Practitioner-practitioner-vital-records-janet-seito.html"><code class="language-plaintext highlighter-rouge">Janet Seito</code></a></td>
-      <td> </td>
+      <td>Attendant</td>
+      <td><a href="Practitioner-practitioner-vital-records-avery-jones.html"><code class="language-plaintext highlighter-rouge">Avery Jones</code></a></td>
     </tr>
     <tr>
-      <td>First Prenatal Care</td>
+      <td>Mother Transferred</td>
+      <td><a href="Encounter-encounter-maternity-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
+    </tr>
+    <tr>
+      <td>First Prenatal Care Visit Date</td>
       <td><a href="Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">2018-07-20</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Number of Prenatal Care Visits</td>
       <td><a href="Observation-observation-number-prenatal-visits-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">8</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Mother’s Height</td>
       <td><a href="Observation-observation-mother-height-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">67 in</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Mother’s Prepregnancy Weight</td>
       <td><a href="Observation-observation-mother-prepregnancy-weight-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">145 lb</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Mother’s Weight at Delivery</td>
       <td><a href="Observation-observation-mother-delivery-weight-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">175 lb</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Mother WIC Food</td>
       <td><a href="Observation-observation-mother-received-wic-food-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Cigarette Smoking</td>
-      <td><a href="Observation-observation-cig-smoking-pregnancy-1-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Prepregnancy = 20</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-2-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">First Trimester = 3</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-3-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Second Trimester = 1</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-4-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Third Trimester = 0</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Number of Previous Live Births</td>
       <td><a href="Observation-observation-number-births-now-living-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Living = 1</code></a>, <a href="Observation-observation-number-births-now-dead-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Dead = 0</code></a></td>
-      <td> </td>
     </tr>
     <tr>
-      <td>Other Pregnancy Outcomes</td>
+      <td>Number of Other Pregnancy Outcomes</td>
       <td><a href="Observation-observation-number-other-pregnancy-outcomes-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Other Outcomes = 0 </code></a></td>
-      <td> </td>
     </tr>
     <tr>
-      <td>Last Live Outcome</td>
+      <td>Cigarette Smoking</td>
+      <td><a href="Observation-observation-cig-smoking-pregnancy-1-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Prepregnancy = 20</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-2-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">First Trimester = 3</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-3-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Second Trimester = 1</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-4-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Third Trimester = 0</code></a></td>
+    </tr>
+    <tr>
+      <td>Principal Source of Payment</td>
+      <td><a href="Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Private Health Insurance</code></a></td>
+    </tr>
+    <tr>
+      <td>Last Live Birth Date</td>
       <td><a href="Observation-observation-date-of-last-live-birth-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">2014-11-20</code></a></td>
-      <td> </td>
     </tr>
     <tr>
-      <td>Last Other  Outcomes</td>
+      <td>Last Other Outcomes Date</td>
       <td><a href="Observation-observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">2015-05</code></a></td>
-      <td> </td>
     </tr>
     <tr>
-      <td>Last Normal Menses</td>
+      <td>Last Normal Menses Date</td>
       <td><a href="Observation-observation-last-menstrual-period-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">2018-06-05</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Risk Factors During Pregnancy</td>
-      <td><a href="Condition-condition-gestational-hypertension-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Gestational Hypertension</code></a>, <a href="Procedure-procedure-infertility-treatment-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Infertility Treatment</code></a>, <a href="Procedure-procedure-artificial-insemination-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Artificial Insemination</code></a>, <a href="Observation-observation-number-previous-cesareans-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Previous Caesarean = 1']</code></a></td>
-      <td> </td>
+      <td><a href="Condition-condition-gestational-hypertension-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Gestational Hypertension</code></a>, <a href="Condition-condition-prepregnancy-diabetes-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Prepregnancy Diabetes</code></a>, <a href="Procedure-procedure-infertility-treatment-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Infertility Treatment</code></a>, <a href="Procedure-procedure-artificial-insemination-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Artificial Insemination</code></a>, <a href="Observation-observation-number-previous-cesareans-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Previous Caesarean = 1']</code></a></td>
+    </tr>
+    <tr>
+      <td>Infections During Pregnancy</td>
+      <td><a href="Condition-condition-infection-present-during-pregnancy-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Chlamydial Infection </code></a></td>
     </tr>
     <tr>
       <td>Obstetric Procedures</td>
       <td><a href="Procedure-procedure-obstetric-procedure-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">External Cephalic Version - Unsuccessful</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Infections During Pregnancy</td>
-      <td><a href="Condition-condition-infection-present-during-pregnancy-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Chlamidiya</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Characteristics of Labor and Delivery</td>
-      <td><a href="Condition-condition-infection-present-during-pregnancy-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Induction</code></a>, <a href="Observation-observation-antibiotics-during-labor-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Antibiotics</code></a>, <a href="Condition-condition-chorioamnionitis-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">ChorioAmnioontis</code></a>, <a href="Procedure-procedure-epidural-or-spinal-anesthesia-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Epidural</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Maternal Morbidity</td>
-      <td><a href="Condition-condition-ruptured-uterus-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Ruptured Uterus</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Newborn Birthweight</td>
-      <td><a href="Observation-observation-birth-weight-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">2500g</code></a></td>
-      <td> </td>
+      <td><a href="Procedure-procedure-induction-of-labor-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Induction</code></a>, <a href="Observation-observation-antibiotics-during-labor-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Antibiotics</code></a>, <a href="Condition-condition-chorioamnionitis-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Chorioamnionitis</code></a>, <a href="Procedure-procedure-epidural-or-spinal-anesthesia-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Epidural</code></a></td>
     </tr>
     <tr>
       <td>Fetal Presentation</td>
       <td><a href="Observation-observation-fetal-presentation-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Breech</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Final Route/Method of Delivery</td>
-      <td><a href="Procedure-procedure-final-route-method-delivery-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Caesarean</code></a> with trial labor attempted</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Obstetric Estimate of Gestation</td>
-      <td><a href="Observation-observation-gestational-age-at-delivery-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">36 wk</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Apgar Score</td>
-      <td><a href="Observation-observation-apgar-score-babyg-quinn-1-min.html"><code class="language-plaintext highlighter-rouge">1min = 5</code></a>, <a href="Observation-observation-apgar-score-babyg-quinn-5-min.html"><code class="language-plaintext highlighter-rouge">5min = 7</code></a></td>
-      <td> </td>
+      <td><a href="Procedure-procedure-final-route-method-delivery-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Cesarean</code></a> with trial labor attempted</td>
     </tr>
     <tr>
       <td>Maternal Morbidity</td>
       <td><a href="Condition-condition-ruptured-uterus-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Ruptured Uterus</code></a></td>
-      <td> </td>
+    </tr>
+    <tr>
+      <td>Newborn Birthweight</td>
+      <td><a href="Observation-observation-birth-weight-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">2500g</code></a></td>
+    </tr>
+    <tr>
+      <td>Obstetric Estimate of Gestation</td>
+      <td><a href="Observation-observation-gestational-age-at-delivery-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">36 wk</code></a></td>
+    </tr>
+    <tr>
+      <td>Apgar Score</td>
+      <td><a href="Observation-observation-apgar-score-babyg-quinn-1-min.html"><code class="language-plaintext highlighter-rouge">1min = 5</code></a>, <a href="Observation-observation-apgar-score-babyg-quinn-5-min.html"><code class="language-plaintext highlighter-rouge">5min = 7</code></a></td>
+    </tr>
+    <tr>
+      <td>Number of Live Births this Delivery</td>
+      <td><a href="Observation-observation-number-live-births-this-delivery-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">2</code></a></td>
     </tr>
     <tr>
       <td>Plurality / Birth Order</td>
       <td><a href="Patient-patient-child-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Plurality = 1</code></a> , <a href="Patient-patient-child-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Order = 1</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Abnormal Conditions of the Newborn</td>
       <td><a href="Procedure-procedure-antibiotic-sepsis-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Antibiotics Received</code></a></td>
-      <td> </td>
     </tr>
     <tr>
       <td>Congenital Anomolies of the Newborn</td>
-      <td><a href="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Cyanotic Congenital Heart Disease 1</code></a>, <a href="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn-2.html"><code class="language-plaintext highlighter-rouge">Chrom21</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Infant Living</td>
-      <td><a href="Observation-observation-infant-living-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Infant Breastfed</td>
-      <td><a href="Observation-observation-infant-breastfed-at-discharge-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
-      <td> </td>
+      <td><a href="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Cyanotic Congenital Heart Disease</code></a>, <a href="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn-2.html"><code class="language-plaintext highlighter-rouge">Anomaly of Chromosome Pair 21</code></a></td>
     </tr>
     <tr>
       <td>Infant Transferred</td>
-      <td><a href="Encounter-encounter-maternity-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
-      <td> </td>
+      <td><a href="Encounter-encounter-birth-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
     </tr>
     <tr>
-      <td>Payer</td>
-      <td><a href="Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn.html"><code class="language-plaintext highlighter-rouge">PRIVATE HEALTH INSURANCE</code></a></td>
-      <td> </td>
+      <td>Infant Living</td>
+      <td><a href="Observation-observation-infant-living-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">True</code></a></td>
+    </tr>
+    <tr>
+      <td>Infant Breastfed at Discharge</td>
+      <td><a href="Observation-observation-infant-breastfed-at-discharge-babyg-quinn.html"><code class="language-plaintext highlighter-rouge">True</code></a></td>
     </tr>
   </tbody>
 </table>
 
 <!--- Extensions -->
 <!---from VRCL-->
+<!-- other -->
 
 
 
@@ -533,7 +494,7 @@ This information is transmitted in both a <a href="Bundle-bundle-provider-live-b
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

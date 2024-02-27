@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-149",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-149",
+  "id" : "5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-158",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-158",
   "name" : "UnionObservationMotherPrepregnancyWeightAndObservationMotherPrepregnancyWeight",
   "title" : "Union of Observation - Mother Prepregnancy Weight And Observation - Mother Prepregnancy Weight",
   "status" : "draft",
-  "date" : "2024-02-13T11:57:33-05:00",
+  "date" : "2024-02-27T09:45:50-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -665,7 +665,8 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"]
+        "targetProfile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr",
+        "#sd-Patient-mother-vr-Patient-mother-vr"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1216,7 +1217,7 @@
     },
     {
       "path" : "Observation.value[x].code",
-      "short" : "Coded form of the unit",
+      "short" : "left: Coded form of the unit; right: pound",
       "definition" : "A computer processable form of the unit in some unit representation system.",
       "comment" : "The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.",
       "requirements" : "Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.",

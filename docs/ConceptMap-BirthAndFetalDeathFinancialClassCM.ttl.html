@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"22.116"}
-    h3,h4,h5,h6{--heading-prefix:"22.116"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.122"}
+    h3,h4,h5,h6{--heading-prefix:"22.122"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -65,7 +65,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -130,7 +130,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -274,7 +274,7 @@
         
           Draft
           
-            as of 2024-02-13
+            as of 2024-02-27
           
         
       </td>
@@ -303,7 +303,7 @@
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BirthAndFetalDeathFinancialClassCM&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Mapping from (not specified) to &lt;a href=\&quot;ValueSet-ValueSet-birth-and-fetal-death-financial-class.html\&quot;&gt;ValueSet - Birth and Fetal Death Financial Class&lt;/a&gt;&lt;/p&gt;&lt;p&gt;DRAFT. Published on 2024-02-13 11:56:10-0500 by HL7 International / Public Health (HL7 International / Public Health: &lt;a href=\&quot;http://www.hl7.org/Special/committees/pher\&quot;&gt;http://www.hl7.org/Special/com...&lt;/a&gt;). &lt;/p&gt;&lt;div&gt;&lt;p&gt;A mapping between NCHS IJE and FHIR BirthAndFetalDeathFinancialClass Value Sets&lt;/p&gt;\n&lt;/div&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1&lt;/b&gt;Mapping from &lt;a href=\&quot;https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html\&quot;&gt;Placeholder Code System for IJE in Vital Records&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-CodeSystem-local-bfdr-codes.html\&quot;&gt;Local BFDR Codes&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1 (Medicaid)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;finclass_medicaid (MEDICAID)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2 (Private Insurance)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;finclass_privateinsurance (PRIVATE HEALTH INSURANCE)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3 (Self-pay)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;finclass_selfpay (Self-pay)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4 (Indian Health Service)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;finclass_indianhealth (Indian Health Service or Tribe)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5 (CHAMPUS/TRICARE)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;finclass_tricare (TRICARE (CHAMPUS))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6 (Other Government (Fed, State, Local))&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;finclass_othergov (Other Government (Federal, State, Local not specified))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8 (Other)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;finclass_nosource (No Typology Code available for payment source)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9 (Unknown)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;finclass_unknown (Unavailable / Unknown)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Mapping from (not specified) to &lt;a href=\&quot;ValueSet-ValueSet-birth-and-fetal-death-financial-class.html\&quot;&gt;Birth and Fetal Death Financial Class&lt;/a&gt;&lt;/p&gt;&lt;p&gt;DRAFT. Published on 2024-02-27 09:44:15-0500 by HL7 International / Public Health (HL7 International / Public Health: &lt;a href=\&quot;http://www.hl7.org/Special/committees/pher\&quot;&gt;http://www.hl7.org/Special/com...&lt;/a&gt;). &lt;/p&gt;&lt;div&gt;&lt;p&gt;A mapping between NCHS IJE and FHIR BirthAndFetalDeathFinancialClass Value Sets&lt;/p&gt;\n&lt;/div&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1&lt;/b&gt;Mapping from &lt;a href=\&quot;https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html\&quot;&gt;Placeholder Code System for IJE in Vital Records&lt;/a&gt; to &lt;a href=\&quot;https://nahdo.org/sopt\&quot;&gt;Source of Payment Typology&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1 (Medicaid)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;2 (MEDICAID)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2 (Private Insurance)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;5 (PRIVATE HEALTH INSURANCE)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3 (Self-pay)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;81 (Self-pay (Includes applicants for insurance and Medicaid applicants))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4 (Indian Health Service)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;33 (Indian Health Service or Tribe)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5 (CHAMPUS/TRICARE)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;311 (TRICARE (CHAMPUS))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6 (Other Government (Fed, State, Local))&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;38 (Other Government (Federal, State, Local not specified))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8 (Other)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;99 (No Typology Code available for payment source)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9 (Unknown)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;9999 (Unavailable / No Payer Specified / Blank)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.extension">fhir:extension</a> ( [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-wg&quot;^^xsd:anyURI ] ;
@@ -315,7 +315,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BirthAndFetalDeathFinancialClass Concept Map&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-02-13T11:56:10-05:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-02-27T09:44:15-05:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 International / Public Health&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 International / Public Health&quot; ] ;
@@ -345,7 +345,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">fhir:group</a> ( [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">fhir:source</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">fhir:target</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">fhir:target</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://nahdo.org/sopt&quot;^^xsd:anyURI ] ;
     ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">fhir:element</a> [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Medicaid&quot; ] ;
@@ -353,7 +353,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
         ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finclass_medicaid&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;2&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MEDICAID&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;2&quot; ] ;
@@ -362,7 +362,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
         ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finclass_privateinsurance&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;5&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PRIVATE HEALTH INSURANCE&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;3&quot; ] ;
@@ -371,8 +371,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
         ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finclass_selfpay&quot; ] ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Self-pay&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;81&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Self-pay (Includes applicants for insurance and Medicaid applicants)&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;4&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Indian Health Service&quot; ] ;
@@ -380,7 +380,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
         ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finclass_indianhealth&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;33&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Indian Health Service or Tribe&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;5&quot; ] ;
@@ -389,7 +389,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
         ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finclass_tricare&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;311&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TRICARE (CHAMPUS)&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;6&quot; ] ;
@@ -398,7 +398,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
         ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finclass_othergov&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;38&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Other Government (Federal, State, Local not specified)&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;8&quot; ] ;
@@ -407,7 +407,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
         ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finclass_nosource&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;99&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;No Typology Code available for payment source&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;9&quot; ] ;
@@ -416,8 +416,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
         ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]         ] ) ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finclass_unknown&quot; ] ;
-<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unavailable / Unknown&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;9999&quot; ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unavailable / No Payer Specified / Blank&quot; ] ;
 <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] )
   ] ) . # 
 
@@ -452,7 +452,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

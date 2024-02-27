@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "15222225-6da1-45ff-b8c4-8970f3074fbd-1091",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/15222225-6da1-45ff-b8c4-8970f3074fbd-1091",
+  "id" : "b3ecc59c-2434-4b5d-9b6c-274645dfde39-1172",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b3ecc59c-2434-4b5d-9b6c-274645dfde39-1172",
   "name" : "UnionUSCoreObservationClinicalResultProfileAndObservationGestationalAgeAtDelivery",
   "title" : "Union of US Core Observation Clinical Result Profile And Observation - Gestational Age at Delivery",
   "status" : "active",
-  "date" : "2024-02-13T11:56:57-05:00",
+  "date" : "2024-02-27T09:45:03-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -690,7 +690,7 @@
     },
     {
       "path" : "Observation.code",
-      "short" : "left: Clinical Test or Procedure Name; right: Type of observation (code / type)",
+      "short" : "left: Clinical Test or Procedure Name; right: Gestational age Estimated",
       "definition" : "left: The name of the clinical test or procedure performed on a patient.  A LOINC **SHALL** be used if the concept is present in LOINC.; right: Describes what was observed. Sometimes this is called the observation \"name\".",
       "comment" : "left: The typical patterns for codes are:  1)  a LOINC code either as a translation from a \"local\" code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists.  When using LOINC , Use either the SHORTNAME or LONG_COMMON_NAME field for the display.; right: *All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "Knowing what kind of observation is being made is essential to understanding the observation.",
@@ -1113,7 +1113,7 @@
     },
     {
       "path" : "Observation.value[x]",
-      "short" : "left: Result Value; right: Age in weeks",
+      "short" : "left: Result Value; right: Age in weeks or days",
       "definition" : "left: The clinical test or procedure result value. If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM].  A FHIR [UCUM Codes value set] that defines all UCUM codes is in the FHIR specification.; right: The information determined as a result of making the observation, if the information has a simple value.",
       "comment" : "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section] below.",
       "requirements" : "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
@@ -1506,7 +1506,6 @@
       "type" : [{
         "code" : "code"
       }],
-      "fixedCode" : "wk",
       "condition" : ["ele-1"],
       "constraint" : [{
         "extension" : [{
@@ -1520,6 +1519,10 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isSummary" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age"
+      },
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"

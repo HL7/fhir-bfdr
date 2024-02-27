@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "15222225-6da1-45ff-b8c4-8970f3074fbd-975",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/15222225-6da1-45ff-b8c4-8970f3074fbd-975",
+  "id" : "b3ecc59c-2434-4b5d-9b6c-274645dfde39-975",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b3ecc59c-2434-4b5d-9b6c-274645dfde39-975",
   "name" : "IntersectionUSCorePediatricHeadOccipitalFrontalCircumferencePercentileProfileAndObservationFetalPresentation",
   "title" : "Intersection of US Core Pediatric Head Occipital Frontal Circumference Percentile Profile And Observation - Fetal Presentation at Birth/Delivery",
   "status" : "active",
-  "date" : "2024-02-13T11:56:57-05:00",
+  "date" : "2024-02-27T09:45:03-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1095,7 +1095,7 @@
     },
     {
       "path" : "Observation.value[x]",
-      "short" : "left: Vital Signs Value; right: The value set contains the list of the different presentations (orientations within the mother's womb) that a fetus may be in prior to delivery.",
+      "short" : "left: Vital Signs Value; right: The preferred value set contains the list of reportable presentations (orientations within the mother's womb) that a fetus may be in prior to delivery.",
       "definition" : "left: Vital Signs value are typically recorded using the Quantity data type.; right: The presentation (orientation within the mother's womb) that a fetus may be in prior to delivery/birth.",
       "comment" : "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section] below.",
       "requirements" : "left: 9. SHALL contain exactly one [1..1] value with @xsi:type=\"PQ\" (CONF:7305).; right: An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
@@ -1153,9 +1153,9 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "required",
-        "description" : "left: Common UCUM units for recording Vital Signs.; right: Fetal Presentations (NCHS)",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/15222225-6da1-45ff-b8c4-8970f3074fbd-978"
+        "strength" : "extensible",
+        "description" : "Common UCUM units for recording Vital Signs.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1"
       },
       "mapping" : [{
         "identity" : "sct-concept",

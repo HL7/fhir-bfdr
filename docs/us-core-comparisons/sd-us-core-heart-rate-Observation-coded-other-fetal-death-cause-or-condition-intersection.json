@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "15222225-6da1-45ff-b8c4-8970f3074fbd-627",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/15222225-6da1-45ff-b8c4-8970f3074fbd-627",
+  "id" : "b3ecc59c-2434-4b5d-9b6c-274645dfde39-627",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b3ecc59c-2434-4b5d-9b6c-274645dfde39-627",
   "name" : "IntersectionUSCoreHeartRateProfileAndObservationCodedOtherFetalDeathCauseOrCondition",
   "title" : "Intersection of US Core Heart Rate Profile And Observation - Coded Other Fetal Death Cause or Condition",
   "status" : "active",
-  "date" : "2024-02-13T11:56:57-05:00",
+  "date" : "2024-02-27T09:45:02-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -703,7 +703,7 @@
     },
     {
       "path" : "Observation.code",
-      "short" : "left: Heart Rate; right: Type of observation (code / type)",
+      "short" : "left: Heart Rate; right: Coded other significant causes or conditions of fetal death",
       "definition" : "left: Coded Responses from C-CDA Vital Sign Results.; right: Describes what was observed. Sometimes this is called the observation \"name\".",
       "comment" : "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "left: 5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).; right: Knowing what kind of observation is being made is essential to understanding the observation.",
@@ -1154,7 +1154,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "left: Common UCUM units for recording Vital Signs.; right: Cause of Fetal Death ICD-10",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/15222225-6da1-45ff-b8c4-8970f3074fbd-516"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b3ecc59c-2434-4b5d-9b6c-274645dfde39-516"
       },
       "mapping" : [{
         "identity" : "sct-concept",

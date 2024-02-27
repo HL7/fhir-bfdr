@@ -434,6 +434,13 @@
     "name" : "ObservationFetalPresentation"
   },
   {
+    "id" : "Observation-fetal-remains-disposition-method",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-remains-disposition-method",
+    "version" : "2.0.0-Ballot",
+    "name" : "ObservationFetalRemainsDispositionMethod"
+  },
+  {
     "id" : "Observation-gestational-age-at-delivery",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery",
@@ -481,13 +488,6 @@
     "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period",
     "version" : "2.0.0-Ballot",
     "name" : "ObservationLastMenstrualPeriod"
-  },
-  {
-    "id" : "Observation-method-of-disposition",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition",
-    "version" : "2.0.0-Ballot",
-    "name" : "ObservationMethodOfDisposition"
   },
   {
     "id" : "Observation-mother-delivery-weight",
@@ -679,6 +679,20 @@
     "name" : "PatientDecedentFetus"
   },
   {
+    "id" : "Practitioner-birth-attendant",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Practitioner-birth-attendant",
+    "version" : "2.0.0-Ballot",
+    "name" : "PractitionerBirthAttendant"
+  },
+  {
+    "id" : "Practitioner-birth-certifier",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Practitioner-birth-certifier",
+    "version" : "2.0.0-Ballot",
+    "name" : "PractitionerBirthCertifier"
+  },
+  {
     "id" : "Procedure-antibiotic-suspected-neonatal-sepsis",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis",
@@ -777,6 +791,20 @@
     "name" : "ProcedureUnplannedHysterectomy"
   },
   {
+    "id" : "practitioner-role-birth-attendant",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant",
+    "version" : "2.0.0-Ballot",
+    "name" : "PractitionerRoleBirthAttendant"
+  },
+  {
+    "id" : "practitioner-role-birth-certifier",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier",
+    "version" : "2.0.0-Ballot",
+    "name" : "PractitionerRoleBirthCertifier"
+  },
+  {
     "id" : "ValueSet-apgar-timing",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing",
@@ -847,6 +875,20 @@
     "name" : "FetalPresentationsVS"
   },
   {
+    "id" : "ValueSet-fetal-presentations-max",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations-max",
+    "version" : "2.0.0-Ballot",
+    "name" : "FetalPresentationsMaxVS"
+  },
+  {
+    "id" : "ValueSet-fetal-remains-disposition-method",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-remains-disposition-method",
+    "version" : "2.0.0-Ballot",
+    "name" : "FetalRemainsDispositionMethodVS"
+  },
+  {
     "id" : "ValueSet-histological-placental-examination",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-histological-placental-examination",
@@ -875,13 +917,6 @@
     "name" : "LocationTypeVS"
   },
   {
-    "id" : "ValueSet-method-of-disposition",
-    "type" : "ValueSet",
-    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-method-of-disposition",
-    "version" : "2.0.0-Ballot",
-    "name" : "MethodOfDispositionVS"
-  },
-  {
     "id" : "ValueSet-newborn-congenital-anomalies",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies",
@@ -896,13 +931,6 @@
     "name" : "NumberPreviousCesareansEditFlagsVS"
   },
   {
-    "id" : "ValueSet-obstetric-procedure",
-    "type" : "ValueSet",
-    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure",
-    "version" : "2.0.0-Ballot",
-    "name" : "ObstetricProcedureVS"
-  },
-  {
     "id" : "ValueSet-obstetric-procedure-outcome",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure-outcome",
@@ -915,6 +943,13 @@
     "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-pregnancy-report-edit-flags",
     "version" : "2.0.0-Ballot",
     "name" : "PregnancyReportEditFlagsVS"
+  },
+  {
+    "id" : "ValueSet-units-of-gestational-age",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age",
+    "version" : "2.0.0-Ballot",
+    "name" : "ValueSetUnitsOfGestationalAge"
   },
   {
     "id" : "cigarette-smoking-before-during-pregnancy",

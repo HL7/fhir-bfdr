@@ -65,7 +65,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -130,7 +130,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -344,9 +344,7 @@
 
   &lt;br/&gt;
     &lt;!-- TODO - Make this a summary of capabilities, including system wide and each paradigm --&gt;
-  &lt;p&gt;
-    &lt;b&gt;Jump to:&lt;/b&gt;
-  &lt;/p&gt;
+    &lt;!-- &lt;p&gt; &lt;b&gt;Jump to:&lt;/b&gt; &lt;/p&gt; --&gt; 
   &lt;ul&gt;
     
     
@@ -393,7 +391,8 @@
                   &lt;a href=&quot;StructureDefinition-Composition-jurisdiction-live-birth-report.html&quot;&gt;Composition - Jurisdiction Live Birth Report&lt;/a&gt;
                 
               &lt;/td&gt;
-              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;div&gt;&lt;p&gt;Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
             &lt;/tr&gt;
           
             &lt;tr&gt;
@@ -403,7 +402,8 @@
                   &lt;a href=&quot;StructureDefinition-Composition-jurisdiction-fetal-death-report.html&quot;&gt;Composition - Jurisdiction Fetal Death Report&lt;/a&gt;
                 
               &lt;/td&gt;
-              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;div&gt;&lt;p&gt;Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
             &lt;/tr&gt;
           
             &lt;tr&gt;
@@ -413,7 +413,8 @@
                   &lt;a href=&quot;StructureDefinition-Composition-provider-live-birth-report.html&quot;&gt;Composition - Provider Live Birth Report&lt;/a&gt;
                 
               &lt;/td&gt;
-              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;div&gt;&lt;p&gt;Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
             &lt;/tr&gt;
           
             &lt;tr&gt;
@@ -423,7 +424,8 @@
                   &lt;a href=&quot;StructureDefinition-Composition-provider-fetal-death-report.html&quot;&gt;Composition - Provider Fetal Death Report&lt;/a&gt;
                 
               &lt;/td&gt;
-              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;div&gt;&lt;p&gt;Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
             &lt;/tr&gt;
           
             &lt;tr&gt;
@@ -433,7 +435,8 @@
                   &lt;a href=&quot;StructureDefinition-Composition-coded-cause-of-fetal-death.html&quot;&gt;Composition - Coded Cause of Fetal Death&lt;/a&gt;
                 
               &lt;/td&gt;
-              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;div&gt;&lt;p&gt;Produced by NCHS and consumed by the source of the reports&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
             &lt;/tr&gt;
           
             &lt;tr&gt;
@@ -443,7 +446,8 @@
                   &lt;a href=&quot;StructureDefinition-Composition-coded-race-and-ethnicity.html&quot;&gt;Composition - Coded Race and Ethnicity&lt;/a&gt;
                 
               &lt;/td&gt;
-              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;div&gt;&lt;p&gt;Produced by NCHS and consumed by the source of the reports&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
             &lt;/tr&gt;
           
         &lt;/tbody&gt;
@@ -488,31 +492,43 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;json&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document">document</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;producer&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.documentation">documentation</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report&quot;/&gt;
   &lt;/document&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document">document</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;producer&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.documentation">documentation</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report&quot;/&gt;
   &lt;/document&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document">document</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;producer&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.documentation">documentation</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report&quot;/&gt;
   &lt;/document&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document">document</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;producer&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.documentation">documentation</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report&quot;/&gt;
   &lt;/document&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document">document</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;consumer&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.documentation">documentation</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Produced by NCHS and consumed by the source of the reports&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death&quot;/&gt;
   &lt;/document&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document">document</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;consumer&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.documentation">documentation</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Produced by NCHS and consumed by the source of the reports&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.document.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity&quot;/&gt;
   &lt;/document&gt;
@@ -546,7 +562,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

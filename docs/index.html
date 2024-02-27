@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -128,7 +128,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -255,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2024-02-13
+            as of 2024-02-27
           
         
       </td>
@@ -293,33 +293,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<div class="note-to-balloters">
-
-  <h4 id="january-2024-ballot-of-stu2">January 2024 Ballot of STU2</h4>
-
-  <p>This STU2 ballot addresses the following:</p>
-
-  <ul>
-    <li>Reorganization of vital-records related content and harmonization to reduce redunancy and near redundancy. See <a href="vr_ig_harmonization.html">Vital Records IG Harmonization</a>.</li>
-    <li>This reorganization and harmonization includes
-      <ul>
-        <li>Addition of profiles supporting NCHS-standard submission of race and ethnicity inputs, and return of coded race and ethnicity. These profiles are referenced in BFDR, but defined in VRCL.</li>
-        <li>Movement of content (i.e., profiles, valuesets, examples) that is used exclusively in the birth and fetal death use cases from VRCL to the Birth and Fetal Death Reporting IG.  As a result, the total content of this IG has dramatically increased in size.</li>
-        <li>Inclusion of valuesets formerly hosted in PHINVADs.  This follows the pattern established by the VRDR IG.</li>
-      </ul>
-
-      <p>For a description of the changes to BFDR from STU1.1, see the <a href="content-transitions.html">Change table</a>.</p>
-    </li>
-  </ul>
-
-</div>
-<!-- note-to-balloters -->
-
-<div class="stu-note">
-  <p>Key updates and detailed changes between this and prior versions are available on the VRCL <a href="change_log.html">Change Log</a> and <a href="content-transitions.html">Changes Between Versions</a> pages.</p>
-</div>
-<!-- note-to-balloters -->
-
 <h3 id="overview">Overview</h3>
 
 <h3 id="description">Description</h3>
@@ -327,6 +300,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Birth and fetal death reporting includes the transmission of data from health care providers to jurisdictional vital records offices (VROs) and from VROs to the CDC National Center for Health Statistics (<a href="https://www.cdc.gov/nchs/index.htm">NCHS</a>). Data associated with the mother of the baby or delivered fetus may be communicated independently from data associated directly with the labor and delivery encounter at the responsible healthcare facility. Note that for the purposes of this guide, "mother" always refers to the woman who delivered the infant or fetus. In cases of surrogacy or gestational carrier, the information reported should be for the surrogate or the gestational carrier, that is, the woman who delivered the infant.</p>
 
 <p>This implementation guide (IG) defines a series of Health Level Seven (HL7®) Fast Healthcare Interoperability Resources (FHIR®) profiles on the Composition resource to represent electronic birth and fetal death reporting (BFDR). It includes the content of medical/health information on live births and fetal deaths for select state and federal birth and fetal death reporting, as indicated in the <a href="https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf">2003 Revision of the U.S. Standard Certificate of Live Birth</a> and the <a href="https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf">2003 Revision of the U.S. Standard Report of Fetal Death</a>. Additionally, it includes the content that is exchanged between electronic health record (EHR) systems, VROs and NCHS.</p>
+
+<p>The STU2 version of the Birth and Fetal Death Reporting (BFDR) IG was focused on enabling submission of records from Electronic Birth Registration Systems hosted by Vital Records Organizations (VROs) to the Center for Disease Control (CDC) National Center for Health Statistics (NCHS) National Vital Statistics System (NVSS).  This involved the addition of profiles supporting NCHS-standard submission of race and ethnicity inputs, and return of coded race and ethnicity. These profiles are referenced in BFDR, but defined in the Vital Records Common Library (<a href="https://build.fhir.org/ig/HL7/vr-common-library/">VRCL</a>) IG.  Content (i.e., profiles, valuesets, examples) that is used exclusively in the birth and fetal death use cases was moved from VRCL to the BFDR.  As a result, the total content of this IG has dramatically increased in size. Valuesets formerly hosted in PHINVADs have been included within the IG, and are referenced in valueset descriptions.  This follows the pattern established by the VRDR IG.</p>
+
+<p>For a description of the changes to BFDR from STU1.1, see the <a href="content-transitions.html">Change table</a>.</p>
 
 <h3 id="relationship-to-other-standards">Relationship to Other Standards</h3>
 <p>This BFDR IG standard complements other vital records standards to support the expansion of information flows to and from the national statistics agency. The BFDR STU 1 drew on foundational work of early standards listed in the Background section, below. This current version of the BFDR IG is informed by :</p>
@@ -402,6 +379,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <!--- Extensions -->
 <!---from VRCL-->
+<!-- other -->
 
 
 
@@ -428,7 +406,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

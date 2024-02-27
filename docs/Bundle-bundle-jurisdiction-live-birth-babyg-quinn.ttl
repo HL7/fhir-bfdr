@@ -206,6 +206,18 @@
   ] [
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Condition/condition-prepregnancy-diabetes-jada-ann-quinn"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Condition/condition-prepregnancy-diabetes-jada-ann-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Procedure/procedure-infertility-treatment-jada-ann-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Procedure/procedure-infertility-treatment-jada-ann-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Procedure/procedure-artificial-insemination-jada-ann-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Procedure/procedure-artificial-insemination-jada-ann-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-antibiotics-during-labor-jada-ann-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-antibiotics-during-labor-jada-ann-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> )
   ] ) . # 
 
 <http://www.example.org/fhir/Composition/composition-jurisdiction-live-birth-babyg-quinn> a fhir:Composition ;
@@ -346,11 +358,23 @@
        fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-prepregnancy-diabetes-jada-ann-quinn> ;
        fhir:reference [ fhir:v "Condition/condition-prepregnancy-diabetes-jada-ann-quinn" ]
      ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-infertility-treatment-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-infertility-treatment-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-artificial-insemination-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-artificial-insemination-jada-ann-quinn" ]
+     ] [
        fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-chorioamnionitis-jada-ann-quinn> ;
        fhir:reference [ fhir:v "Condition/condition-chorioamnionitis-jada-ann-quinn" ]
      ] [
        fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-induction-of-labor-jada-ann-quinn> ;
        fhir:reference [ fhir:v "Procedure/procedure-induction-of-labor-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-antibiotics-during-labor-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-antibiotics-during-labor-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn" ]
      ] [
        fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-babyg-quinn> ;
        fhir:reference [ fhir:v "Observation/observation-fetal-presentation-babyg-quinn" ]
@@ -506,9 +530,17 @@
 
 <http://hl7.org/fhir/us/bfdr/Condition/condition-prepregnancy-diabetes-jada-ann-quinn> a fhir:us .
 
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-infertility-treatment-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-artificial-insemination-jada-ann-quinn> a fhir:us .
+
 <http://hl7.org/fhir/us/bfdr/Condition/condition-chorioamnionitis-jada-ann-quinn> a fhir:us .
 
 <http://hl7.org/fhir/us/bfdr/Procedure/procedure-induction-of-labor-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-antibiotics-during-labor-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> a fhir:us .
 
 <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-babyg-quinn> a fhir:us .
 
@@ -564,7 +596,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-child-babyg-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-child-babyg-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-child-vr.html\">Patient - Child Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Salt Lake City UT </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number: 9932702 (use: USUAL)</p><p><b>name</b>: Baby G Quinn (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-02-12</p><p><b>multipleBirth</b>: 1</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-child-babyg-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-child-babyg-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-child-vr.html\">Patient - Child Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Salt Lake City UT </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number: 9932702 (use: USUAL)</p><p><b>name</b>: Baby G Quinn (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-02-12</p><p><b>deceased</b>: false</p><p><b>multipleBirth</b>: 1</p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
@@ -615,7 +647,7 @@
          fhir:code [ fhir:v "a" ]
        ]
      ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:url [ fhir:v "motherOrFather"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
@@ -636,7 +668,7 @@
          fhir:code [ fhir:v "a" ]
        ]
      ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:url [ fhir:v "motherOrFather"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
@@ -673,6 +705,7 @@
        fhir:value [ fhir:v "2019-02-12T13:00:00-07:00"^^xsd:dateTime ]
      ] )
   ] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:multipleBirth [ fhir:v "1"^^xsd:integer] . # 
 
 <http://www.example.org/fhir/Encounter/encounter-birth-babyg-quinn> a fhir:Encounter ;
@@ -1319,14 +1352,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"coverage-principal-payer-for-delivery-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;coverage-principal-payer-for-delivery-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Coverage-principal-payer-delivery.html\">Coverage - Principal Payer for Delivery</a></p></div><p><b>status</b>: active</p><p><b>type</b>: Private Health Insurance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a>#finclass_privateinsurance &quot;PRIVATE HEALTH INSURANCE&quot;)</span></p><p><b>beneficiary</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>payor</b>: <span>: Not asked</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"coverage-principal-payer-for-delivery-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;coverage-principal-payer-for-delivery-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Coverage-principal-payer-delivery.html\">Coverage - Principal Payer for Delivery</a></p></div><p><b>status</b>: active</p><p><b>type</b>: Private Health Insurance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://nahdo.org/sopt\">Source of Payment Typology</a>#5)</span></p><p><b>beneficiary</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>payor</b>: <span>: Not asked</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "finclass_privateinsurance" ] ;
-       fhir:display [ fhir:v "PRIVATE HEALTH INSURANCE" ]
+       fhir:system [ fhir:v "https://nahdo.org/sopt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5" ] ;
+       fhir:display [ fhir:v "Private Health Insurance" ]
      ] ) ;
      fhir:text [ fhir:v "Private Health Insurance" ]
   ] ; # 
@@ -2853,37 +2886,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-james-brandon-quinn-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-james-brandon-quinn-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>identifier</b>: Social Security number: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-ssn.html\">#</a>132225987</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-child-babyg-quinn\">See above (Patient/patient-child-babyg-quinn)</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: James Brandon Quinn (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1972-11-24</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-james-brandon-quinn-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-james-brandon-quinn-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>identifier</b>: Social Security number: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-ssn.html\">#</a>132225987</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-child-babyg-quinn\">See above (Patient/patient-child-babyg-quinn)</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: James Brandon Quinn (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1972-11-24</p></div>"
   ] ; # 
   fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2106-3" ] ;
-         fhir:display [ fhir:v "White" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "White" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2186-5" ] ;
-         fhir:display [ fhir:v "Not Hispanic or Latino" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Not Hispanic or Latino" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
-  ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Address ;
@@ -3324,9 +3329,16 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-avery-jones\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-avery-jones&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>76231001</p><p><b>name</b>: Avery Jones </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-avery-jones\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-avery-jones&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>Practitioner Role - Birth Attendant</b>: attendant</p><p><b>Practitioner Role - Certifier</b>: certifier</p><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>76231001</p><p><b>name</b>: Avery Jones </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "attendant" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "certifier" ]
+  ] ) ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "76231001" ]
@@ -3356,9 +3368,16 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>Practitioner Role - Birth Attendant</b>: attendant</p><p><b>Practitioner Role - Certifier</b>: certifier</p><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "attendant" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "certifier" ]
+  ] ) ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "223347044" ]
@@ -3654,6 +3673,152 @@
      fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
   ] ; # 
   fhir:onset [ fhir:v "2015-02-12"^^xsd:date] . # 
+
+<http://www.example.org/fhir/Procedure/procedure-infertility-treatment-jada-ann-quinn> a fhir:Procedure ;
+  fhir:id [ fhir:v "procedure-infertility-treatment-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-infertility-treatment-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-infertility-treatment-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-infertility-treatment.html\">Procedure - Infertility Treatment</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Fertility enhancing drug therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#445151000124101)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>performed</b>: 2019-02-07 08:30:00-0700 --&gt; 2019-02-07 08:45:00-0700</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:445151000124101 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "445151000124101" ] ;
+       fhir:display [ fhir:v "Fertility enhancing drug therapy (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-02-07T08:30:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-02-07T08:45:00-07:00"^^xsd:dateTime ]
+  ] . # 
+
+<http://www.example.org/fhir/Procedure/procedure-artificial-insemination-jada-ann-quinn> a fhir:Procedure ;
+  fhir:id [ fhir:v "procedure-artificial-insemination-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-06-21T01:45:22.509Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-artificial-insemination"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-artificial-insemination>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-artificial-insemination-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-artificial-insemination-jada-ann-quinn&quot; Version &quot;1&quot; Updated &quot;2023-06-21 01:45:22+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-artificial-insemination.html\">Procedure - Artificial Insemination</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Artificial insemination (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#58533008)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>performed</b>: 2019-02-07 08:30:00-0700 --&gt; 2019-02-07 08:45:00-0700</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:58533008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "58533008" ] ;
+       fhir:display [ fhir:v "Artificial insemination (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-02-07T08:30:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-02-07T08:45:00-07:00"^^xsd:dateTime ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-antibiotics-during-labor-jada-ann-quinn> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-antibiotics-during-labor-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-administered-during-labor"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-administered-during-labor>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-antibiotics-during-labor-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-antibiotics-during-labor-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-antibiotics-administered-during-labor.html\">Observation - Antibiotics Administered During Labor</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Characteristics of labor and delivery <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73813-8 &quot;Characteristics of labor and delivery [US Standard Certificate of Live Birth]&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-child-babyg-quinn\">See above (Patient/patient-child-babyg-quinn: BabyG Quinn)</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Antibiotics received during labor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#434691000124101 &quot;Antibacterial administered during labor&quot;)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73813-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73813-8" ] ;
+       fhir:display [ fhir:v "Characteristics of labor and delivery [US Standard Certificate of Live Birth]" ]
+     ] ) ;
+     fhir:text [ fhir:v "Characteristics of labor and delivery" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-child-babyg-quinn" ] ;
+     fhir:display [ fhir:v "BabyG Quinn" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:434691000124101 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "434691000124101" ] ;
+       fhir:display [ fhir:v "Antibacterial administered during labor" ]
+     ] ) ;
+     fhir:text [ fhir:v "Antibiotics received during labor" ]
+  ] . # 
+
+<http://www.example.org/fhir/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> a fhir:Procedure ;
+  fhir:id [ fhir:v "procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-epidural-or-spinal-anesthesia-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-epidural-or-spinal-anesthesia-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html\">Procedure - Epidural or Spinal Anesthesia</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Epidural anesthesia (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#18946005)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>performed</b>: 2019-02-07 08:30:00-0700 --&gt; 2019-02-07 08:45:00-0700</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:18946005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "18946005" ] ;
+       fhir:display [ fhir:v "Epidural anesthesia (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-02-07T08:30:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-02-07T08:45:00-07:00"^^xsd:dateTime ]
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

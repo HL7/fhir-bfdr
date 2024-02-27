@@ -212,16 +212,9 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-decedent-fetus-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-decedent-fetus-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-decedent-fetus.html\">Patient - Decedent Fetus</a></p></div><p><b>Patient Fetal Death Vital Records</b>: Fetal death (Details: SNOMED CT code 276507005 = 'Fetal death', stated as 'null')</p><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Ann Arbor MI 48103 </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number:\u00a09932702\u00a0(use:\u00a0USUAL)</p><p><b>name</b>: null (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-01-09</p><p><b>deceased</b>: true</p><p><b>multipleBirth</b>: 3</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-decedent-fetus-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-decedent-fetus-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-decedent-fetus.html\">Patient - Decedent Fetus</a></p></div><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Ann Arbor MI 48103 </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number:\u00a09932702\u00a0(use:\u00a0USUAL)</p><p><b>name</b>: null (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-01-09</p><p><b>multipleBirth</b>: 3</p></div>"
       },
       "extension" : [{
-        "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr",
-        "valueCoding" : {
-          "system" : "http://snomed.info/sct",
-          "code" : "276507005"
-        }
-      },
-      {
         "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
         "valueCode" : "F"
       },
@@ -243,7 +236,7 @@
           }
         },
         {
-          "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr",
+          "url" : "motherOrFather",
           "valueCodeableConcept" : {
             "coding" : [{
               "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -264,7 +257,7 @@
           }
         },
         {
-          "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr",
+          "url" : "motherOrFather",
           "valueCodeableConcept" : {
             "coding" : [{
               "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -304,7 +297,6 @@
           "valueDateTime" : "2019-01-09T18:23:00-07:00"
         }]
       },
-      "deceasedBoolean" : true,
       "multipleBirthInteger" : 3
     }
   },
@@ -318,7 +310,7 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-maternity-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-maternity-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-maternity.html\">Encounter - Maternity</a></p></div><p><b>Role Vital Records</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>identifier</b>: id:\u00a08937015</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Under Observation or Inpatient Care Services (Including Admission and Discharge Services) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99234)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>Birth attendant [Extended Identifier] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87286-1)</span></td><td><a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito: Practitioner - Vital Records (Janet Seito, MD))</a></td></tr></table><p><b>period</b>: 2019-01-08 10:00:00-0700 --&gt; 2019-01-09 17:00:00-0700</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_location-south-hospital\">See above (Location/location-south-hospital: Location - US Core Location (South Hospital))</a></td><td>Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#22232009)</span></td></tr></table><p><b>serviceProvider</b>: <a href=\"#Organization_organization-south-hospital\">See above (Organization/organization-south-hospital: Organization - US Core Organization (South Hospital Organization))</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-maternity-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-maternity-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-maternity.html\">Encounter - Maternity</a></p></div><p><b>Role Vital Records</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>identifier</b>: id:\u00a08937015</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Under Observation or Inpatient Care Services (Including Admission and Discharge Services) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99234)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>Birth attendant [Extended Identifier] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87286-1)</span></td><td><a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito: Practitioner - Vital Records (Janet Seito, DO))</a></td></tr></table><p><b>period</b>: 2019-01-08 10:00:00-0700 --&gt; 2019-01-09 17:00:00-0700</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_location-south-hospital\">See above (Location/location-south-hospital: Location - US Core Location (South Hospital))</a></td><td>Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#22232009)</span></td></tr></table><p><b>serviceProvider</b>: <a href=\"#Organization_organization-south-hospital\">See above (Organization/organization-south-hospital: Organization - US Core Organization (South Hospital Organization))</a></p></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr",
@@ -360,7 +352,7 @@
         }],
         "individual" : {
           "reference" : "Practitioner/practitioner-vital-records-janet-seito",
-          "display" : "Practitioner - Vital Records (Janet Seito, MD)"
+          "display" : "Practitioner - Vital Records (Janet Seito, DO)"
         }
       }],
       "period" : {
@@ -1742,7 +1734,7 @@
       "id" : "QuestionnaireResponse-patients-fetal-death-carmen-lee",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: QuestionnaireResponse</b><a name=\"QuestionnaireResponse-patients-fetal-death-carmen-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource QuestionnaireResponse &quot;QuestionnaireResponse-patients-fetal-death-carmen-lee&quot; </p></div><p><b>questionnaire</b>: <a href=\"Questionnaire-Questionnaire-patients-fetal-death.html\">Questionnaire - Patient's Worksheet for the Report of Fetal Death</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>source</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-current-legal-name</p><p><b>text</b>: What is your current legal name?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-address</p><p><b>text</b>: Where do you usually live - that is - where is your household/residence located?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-nbr-street</p><p><b>text</b>: Complete number and street (do not enter rural route numbers)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-city</p><p><b>text</b>: City, Town, or Location</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-state</p><p><b>text</b>: State (or U.S. Territory, Canadian Province)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-zip</p><p><b>text</b>: Zip Code</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: inside-city-limits</p><p><b>text</b>: Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>No (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code N = 'No', stated as 'No')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail</p><p><b>text</b>: What is your mailing address</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-same</p><p><b>text</b>: Same as residence [Go to next question]</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-dob</p><p><b>text</b>: What is your date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1986-02-15</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country were you born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace-territory</p><p><b>text</b>: or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-education</p><p><b>text</b>: What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received).</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Some secondary or high school education (Details: http://terminology.hl7.org/CodeSystem/v3-EducationLevel code SEC = 'Some secondary or high school education', stated as 'Some secondary or high school education')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity</p><p><b>text</b>: Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-shl</p><p><b>text</b>: Are you Spanish/Hispanic/Latina</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race</p><p><b>text</b>: What is your race? (Please check one or more races to indicate what you consider yourself to be).</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race-category</p><p><b>text</b>: Race categories</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-current-legal-name</p><p><b>text</b>: What is the current legal name of your baby's father?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-dob</p><p><b>text</b>: What is the father's date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1984-02-27</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace-state</p><p><b>text</b>: State</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: receive-wic</p><p><b>text</b>: Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>No (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code N = 'No', stated as 'No')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height</p><p><b>text</b>: What is your height?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height-inches</p><p><b>text</b>: Inches</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-prepregnancy-weight</p><p><b>text</b>: lbs</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>180 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking</p><p><b>text</b>: How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? If you NEVER smoked, enter zero for each time period.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-3-months-prior</p><p><b>text</b>: Three months before pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-1</p><p><b>text</b>: First three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-2</p><p><b>text</b>: Second three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-3</p><p><b>text</b>: Third trimester of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></blockquote></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: QuestionnaireResponse</b><a name=\"QuestionnaireResponse-patients-fetal-death-carmen-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource QuestionnaireResponse &quot;QuestionnaireResponse-patients-fetal-death-carmen-lee&quot; </p></div><p><b>questionnaire</b>: <a href=\"Questionnaire-Questionnaire-patients-fetal-death.html\">Questionnaire - Patient's Worksheet for the Report of Fetal Death</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>source</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-current-legal-name</p><p><b>text</b>: What is your current legal name?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-address</p><p><b>text</b>: Where do you usually live - that is - where is your household/residence located?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-nbr-street</p><p><b>text</b>: Complete number and street (do not enter rural route numbers)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-city</p><p><b>text</b>: City, Town, or Location</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-state</p><p><b>text</b>: State (or U.S. Territory, Canadian Province)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-zip</p><p><b>text</b>: Zip Code</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: inside-city-limits</p><p><b>text</b>: Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>No (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code N = 'No', stated as 'No')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail</p><p><b>text</b>: What is your mailing address</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-same</p><p><b>text</b>: Same as residence [Go to next question]</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-dob</p><p><b>text</b>: What is your date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1986-02-15</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country were you born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace-territory</p><p><b>text</b>: or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-education</p><p><b>text</b>: What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received).</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Some secondary or high school education (Details: http://terminology.hl7.org/CodeSystem/v3-EducationLevel code SEC = 'Some secondary or high school education', stated as 'Some secondary or high school education')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity-mexican</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity-puerto-rican</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity-cuban</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity-other</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race-black-or-aa</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-current-legal-name</p><p><b>text</b>: What is the current legal name of your baby's father?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-dob</p><p><b>text</b>: What is the father's date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1984-02-27</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace-state</p><p><b>text</b>: State</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: receive-wic</p><p><b>text</b>: Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>No (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code N = 'No', stated as 'No')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height</p><p><b>text</b>: What is your height?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height-inches</p><p><b>text</b>: Inches</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-prepregnancy-weight</p><p><b>text</b>: lbs</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>180 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking</p><p><b>text</b>: How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? If you NEVER smoked, enter zero for each time period.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-3-months-prior</p><p><b>text</b>: Three months before pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-1</p><p><b>text</b>: First three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-2</p><p><b>text</b>: Second three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-3</p><p><b>text</b>: Third trimester of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></blockquote></div>"
       },
       "questionnaire" : "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-patients-fetal-death",
       "status" : "completed",
@@ -1861,31 +1853,40 @@
       },
       {
         "linkId" : "mother-ethnicity",
-        "text" : "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box.",
-        "item" : [{
-          "linkId" : "mother-shl",
-          "text" : "Are you Spanish/Hispanic/Latina",
-          "answer" : [{
-            "valueCoding" : {
-              "system" : "urn:oid:2.16.840.1.113883.6.238",
-              "code" : "2135-2",
-              "display" : "Hispanic or Latino"
-            }
-          }]
+        "answer" : [{
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity-mexican",
+        "answer" : [{
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity-puerto-rican",
+        "answer" : [{
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity-cuban",
+        "answer" : [{
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity-other",
+        "answer" : [{
+          "valueBoolean" : false
         }]
       },
       {
         "linkId" : "mother-race",
-        "text" : "What is your race? (Please check one or more races to indicate what you consider yourself to be).",
         "item" : [{
-          "linkId" : "mother-race-category",
-          "text" : "Race categories",
+          "linkId" : "mother-race-black-or-aa",
           "answer" : [{
-            "valueCoding" : {
-              "system" : "urn:oid:2.16.840.1.113883.6.238",
-              "code" : "2054-5",
-              "display" : "Black or African American"
-            }
+            "valueBoolean" : true
           }]
         }]
       },
@@ -2058,9 +2059,17 @@
         "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"]
       },
       "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>identifier</b>: id:\u00a0<a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>Practitioner Role - Birth Attendant</b>: attendant</p><p><b>Practitioner Role - Certifier</b>: certifier</p><p><b>identifier</b>: id:\u00a0<a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
       },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant",
+        "valueCode" : "attendant"
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier",
+        "valueCode" : "certifier"
+      }],
       "identifier" : [{
         "system" : "http://hl7.org/fhir/sid/us-npi",
         "value" : "223347044"
@@ -2183,39 +2192,9 @@
         "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"]
       },
       "text" : {
-        "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Black or African American (Details: urn:oid:2.16.840.1.113883.6.238 code 2054-5 = 'Black or African American', stated as 'Black or African American')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Black or African America</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Carmen Teresa Lee (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-02-15</p></div>"
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Carmen Teresa Lee (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-02-15</p></div>"
       },
-      "extension" : [{
-        "extension" : [{
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2054-5",
-            "display" : "Black or African American"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "Black or African America"
-        }],
-        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-      },
-      {
-        "extension" : [{
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2135-2",
-            "display" : "Hispanic or Latino"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "Hispanic or Latino"
-        }],
-        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-      }],
       "active" : true,
       "patient" : {
         "reference" : "Patient/patient-decedent-fetus-not-named",
@@ -2249,39 +2228,9 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-tom-yan-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-tom-yan-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: Tom Yan Lee (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1984-02-27</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-tom-yan-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-tom-yan-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: Tom Yan Lee (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1984-02-27</p></div>"
       },
       "extension" : [{
-        "extension" : [{
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2106-3",
-            "display" : "White"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "White"
-        }],
-        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-      },
-      {
-        "extension" : [{
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2186-5",
-            "display" : "Not Hispanic or Latino"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "Not Hispanic or Latino"
-        }],
-        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-      },
-      {
         "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr",
         "valueAddress" : {
           "state" : "NY"

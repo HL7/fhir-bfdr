@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-26",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-26",
+  "id" : "5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-32",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-32",
   "name" : "UnionCompositionProviderFetalDeathReportAndCompositionProviderFetalDeathReport",
   "title" : "Union of Composition - Provider Fetal Death Report And Composition - Provider Fetal Death Report",
   "status" : "draft",
-  "date" : "2024-02-13T11:57:33-05:00",
+  "date" : "2024-02-27T09:45:50-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -766,7 +766,7 @@
     },
     {
       "path" : "Composition.encounter.extension",
-      "short" : "Extension - Encounter Maternity Reference",
+      "short" : "left: Extension - Encounter Maternity Reference; right: Encounter Maternity Reference",
       "definition" : "This Extension profile is a reference to the maternity encounter.",
       "min" : 0,
       "max" : "*",
@@ -1009,7 +1009,8 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"]
+        "targetProfile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr",
+        "#sd-Practitioner-vr-Practitioner-vr"]
       }],
       "constraint" : [{
         "extension" : [{

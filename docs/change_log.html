@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -128,7 +128,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -259,6 +259,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="minor">Minor</h3>
 <ul>
+  <li><a href="https://jira.hl7.org/browse/FHIR-44679">FHIR-44679</a> Clarified precedence of QuestionnaireResponse data in patient_worksheet_questionnaries(patient_worksheet-questionnaires.html)</li>
+  <li>Added <a href="StructureDefinition-Practitioner-birth-attendant.html">PractitionerBirthAttendant</a> and <a href="StructureDefinition-Practitioner-birth-certifier.html">PractitionerBirthCertifier</a> profiles with corresponding extensions that distinguish these two types of Practitioner</li>
+  <li><a href="https://jira.hl7.org/browse/FHIR-44554">FHIR-44554</a> Corrected <a href="ValueSet-ValueSet-fetal-presentations.html">FetalPresentationsVS</a> and [FetalPresentationsCM] added a max binding that includes all abnormal presentations.</li>
+  <li><a href="https://jira.hl7.org/browse/FHIR-44555">FHIR-44555</a> Extended <a href="StructureDefinition-Observation-gestational-age-at-delivery.html">ObservationGestationalAgeAtDelivery</a> for partial weeks and added two examples of its usage.</li>
   <li>Removed composition references to <a href="StructureDefinition-Observation-planned-to-deliver-at-home.html">ObservationPlannedToDeliverAtHome</a> profile. Reporting of home delivery plan relies on <a href="StructureDefinition-Encounter-maternity.html">EncounterMaternity</a> and <a href="StructureDefinition-Encounter-birth.html">EncounterBirth</a> (using <a href="ValueSet-ValueSet-birth-delivery-occurred.html">BirthDeliveryOccurredVS</a>)</li>
   <li><a href="https://jira.hl7.org/browse/FHIR-43506">FHIR-43506</a> - Added forms mappings for <a href="StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html">ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></li>
   <li>Fixing broken links in IJE mapping tables (<a href="https://github.com/HL7/fhir-bfdr/pull/55">PR</a>)</li>
@@ -272,6 +276,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Removed ‘None’ value from valueset <a href="ValueSet-ValueSet-newborn-congenital-anomalies.html">NewbornCongenitalAnomaliesVS</a> since <a href="StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html">ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a> is used for indicating ‘none’ and included ‘Other’ value in valueset for general utility with documentation in <a href="usage.html">Usage page</a> that it’s not allowed for NCHS submission</li>
   <li><a href="StructureDefinition-Patient-decedent-fetus.html">PatientDecedentFetus</a> made to reference <a href="https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-sex-assigned-at-birth-vr.html">ValueSetSexAssignedAtBirthVitalRecords</a></li>
   <li>Consolidated miscellaneous local codesystems into a single codesystem called <a href="CodeSystem-CodeSystem-local-bfdr-codes.html">LocalBFDRCodesCS</a></li>
+  <li>Drop prefixes in titles so words like codesystem, valueset, extension, and conceptmap don’t appear twice</li>
+  <li>renamed <a href="https://hl7.org/fhir/us/bfdr/StructureDefinition-Observation-method-of-disposition.html">ObservationMethodOfDisposition</a> to <a href="StructureDefinition-Observation-fetal-remains-disposition-method.html">ObservationFetalRemainsDispositionMethod</a> to help clearly distinguish it from <a href="https://build.fhir.org/ig/HL7/vrdr/StructureDefinition-vrdr-decedent-disposition-method.html">DecedentDispositionMethod</a></li>
+  <li>minor narrative corrections (<a href="https://jira.hl7.org/browse/FHIR-43953">FHIR-43953</a>,<a href="https://jira.hl7.org/browse/FHIR-43951">FHIR-43951</a>,<a href="https://jira.hl7.org/browse/FHIR-43950">FHIR-43950</a>)</li>
 </ul>
 
 <h3 id="stu2-ballot-january-2024">STU2 Ballot, January 2024</h3>
@@ -382,6 +389,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <!--- Extensions -->
 <!---from VRCL-->
+<!-- other -->
 
 
 
@@ -408,7 +416,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

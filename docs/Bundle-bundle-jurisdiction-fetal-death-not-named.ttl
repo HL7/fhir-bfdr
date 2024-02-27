@@ -403,16 +403,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-decedent-fetus-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-decedent-fetus-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-decedent-fetus.html\">Patient - Decedent Fetus</a></p></div><p><b>Patient Fetal Death Vital Records</b>: Fetal death (Details: SNOMED CT code 276507005 = 'Fetal death', stated as 'null')</p><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Ann Arbor MI 48103 </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number: 9932702 (use: USUAL)</p><p><b>name</b>: null (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-01-09</p><p><b>deceased</b>: true</p><p><b>multipleBirth</b>: 3</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-decedent-fetus-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-decedent-fetus-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-decedent-fetus.html\">Patient - Decedent Fetus</a></p></div><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Ann Arbor MI 48103 </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number: 9932702 (use: USUAL)</p><p><b>name</b>: null (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-01-09</p><p><b>multipleBirth</b>: 3</p></div>"
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:Coding, sct:276507005 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "276507005" ]
-     ]
-  ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "F" ]
   ] [
@@ -433,7 +426,7 @@
          fhir:code [ fhir:v "a" ]
        ]
      ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:url [ fhir:v "motherOrFather"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
@@ -454,7 +447,7 @@
          fhir:code [ fhir:v "a" ]
        ]
      ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:url [ fhir:v "motherOrFather"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
@@ -495,7 +488,6 @@
        fhir:value [ fhir:v "2019-01-09T18:23:00-07:00"^^xsd:dateTime ]
      ] )
   ] ; # 
-  fhir:deceased [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:multipleBirth [ fhir:v "3"^^xsd:integer] . # 
 
 <http://www.example.org/fhir/Encounter/encounter-maternity-carmen-teresa-lee> a fhir:Encounter ;
@@ -508,7 +500,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-maternity-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-maternity-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-maternity.html\">Encounter - Maternity</a></p></div><p><b>Role Vital Records</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>identifier</b>: id: 8937015</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Under Observation or Inpatient Care Services (Including Admission and Discharge Services) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99234)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>Birth attendant [Extended Identifier] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87286-1)</span></td><td><a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito: Practitioner - Vital Records (Janet Seito, MD))</a></td></tr></table><p><b>period</b>: 2019-01-08 10:00:00-0700 --&gt; 2019-01-09 17:00:00-0700</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_location-south-hospital\">See above (Location/location-south-hospital: Location - US Core Location (South Hospital))</a></td><td>Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#22232009)</span></td></tr></table><p><b>serviceProvider</b>: <a href=\"#Organization_organization-south-hospital\">See above (Organization/organization-south-hospital: Organization - US Core Organization (South Hospital Organization))</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-maternity-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-maternity-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-maternity.html\">Encounter - Maternity</a></p></div><p><b>Role Vital Records</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>identifier</b>: id: 8937015</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Under Observation or Inpatient Care Services (Including Admission and Discharge Services) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99234)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>Birth attendant [Extended Identifier] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87286-1)</span></td><td><a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito: Practitioner - Vital Records (Janet Seito, DO))</a></td></tr></table><p><b>period</b>: 2019-01-08 10:00:00-0700 --&gt; 2019-01-09 17:00:00-0700</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_location-south-hospital\">See above (Location/location-south-hospital: Location - US Core Location (South Hospital))</a></td><td>Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#22232009)</span></td></tr></table><p><b>serviceProvider</b>: <a href=\"#Organization_organization-south-hospital\">See above (Organization/organization-south-hospital: Organization - US Core Organization (South Hospital Organization))</a></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
@@ -554,7 +546,7 @@
      fhir:individual [
        fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
        fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ] ;
-       fhir:display [ fhir:v "Practitioner - Vital Records (Janet Seito, MD)" ]
+       fhir:display [ fhir:v "Practitioner - Vital Records (Janet Seito, DO)" ]
      ]
   ] ) ; # 
   fhir:period [
@@ -2087,9 +2079,16 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>Practitioner Role - Birth Attendant</b>: attendant</p><p><b>Practitioner Role - Certifier</b>: certifier</p><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "attendant" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "certifier" ]
+  ] ) ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "223347044" ]
@@ -2206,38 +2205,9 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Black or African American (Details: urn:oid:2.16.840.1.113883.6.238 code 2054-5 = 'Black or African American', stated as 'Black or African American')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Black or African America</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Carmen Teresa Lee (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-02-15</p></div>"
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Carmen Teresa Lee (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-02-15</p></div>"
   ] ; # 
-  fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2054-5" ] ;
-         fhir:display [ fhir:v "Black or African American" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Black or African America" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2135-2" ] ;
-         fhir:display [ fhir:v "Hispanic or Latino" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Hispanic or Latino" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
-  ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:patient [
      fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
@@ -2270,37 +2240,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-tom-yan-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-tom-yan-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: Tom Yan Lee (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1984-02-27</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-tom-yan-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-tom-yan-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: Tom Yan Lee (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1984-02-27</p></div>"
   ] ; # 
   fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2106-3" ] ;
-         fhir:display [ fhir:v "White" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "White" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2186-5" ] ;
-         fhir:display [ fhir:v "Not Hispanic or Latino" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Not Hispanic or Latino" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
-  ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Address ;

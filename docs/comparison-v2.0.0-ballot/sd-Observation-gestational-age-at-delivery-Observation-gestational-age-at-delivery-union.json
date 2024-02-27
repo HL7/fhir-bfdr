@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-116",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-116",
+  "id" : "5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-128",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-128",
   "name" : "UnionObservationGestationalAgeAtDeliveryAndObservationGestationalAgeAtDelivery",
   "title" : "Union of Observation - Gestational Age at Delivery And Observation - Gestational Age at Delivery",
   "status" : "draft",
-  "date" : "2024-02-13T11:57:33-05:00",
+  "date" : "2024-02-27T09:45:50-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -680,7 +680,7 @@
     },
     {
       "path" : "Observation.code",
-      "short" : "Type of observation (code / type)",
+      "short" : "left: Type of observation (code / type); right: Gestational age Estimated",
       "definition" : "Describes what was observed. Sometimes this is called the observation \"name\".",
       "comment" : "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "Knowing what kind of observation is being made is essential to understanding the observation.",
@@ -761,7 +761,8 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr",
-        "http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"]
+        "http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus",
+        "#sd-Patient-child-vr-Patient-child-vr"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1063,7 +1064,7 @@
     },
     {
       "path" : "Observation.value[x]",
-      "short" : "left: Actual result; right: Age in weeks",
+      "short" : "left: Actual result; right: Age in weeks or days",
       "definition" : "The information determined as a result of making the observation, if the information has a simple value.",
       "comment" : "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section] below.",
       "requirements" : "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
@@ -1358,6 +1359,10 @@
       "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age"
+      },
       "mapping" : [{
         "identity" : "v2",
         "map" : "(see OBX.6 etc.) / CQ.2"

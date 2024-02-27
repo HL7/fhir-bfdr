@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-140",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-140",
+  "id" : "5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-149",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-149",
   "name" : "UnionObservationMotherDeliveryWeightAndObservationMotherDeliveryWeight",
   "title" : "Union of Observation - Mother Delivery Weight And Observation - Mother Delivery Weight",
   "status" : "draft",
-  "date" : "2024-02-13T11:57:33-05:00",
+  "date" : "2024-02-27T09:45:50-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -765,7 +765,7 @@
     },
     {
       "path" : "Observation.code",
-      "short" : "Coded Responses from C-CDA Vital Sign Results",
+      "short" : "left: Coded Responses from C-CDA Vital Sign Results; right: Mother's body weight --at delivery",
       "definition" : "Coded Responses from C-CDA Vital Sign Results.",
       "comment" : "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).",
@@ -829,7 +829,8 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"]
+        "targetProfile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr",
+        "#sd-Patient-mother-vr-Patient-mother-vr"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1380,7 +1381,7 @@
     },
     {
       "path" : "Observation.value[x].code",
-      "short" : "Coded form of the unit",
+      "short" : "left: Coded form of the unit; right: pound",
       "definition" : "A computer processable form of the unit in some unit representation system.",
       "comment" : "The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.",
       "requirements" : "Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.",

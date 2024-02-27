@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"22.122"}
-    h3,h4,h5,h6{--heading-prefix:"22.122"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.128"}
+    h3,h4,h5,h6{--heading-prefix:"22.128"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -128,7 +128,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -287,7 +287,7 @@
         
           Draft
           
-            as of 2024-02-13
+            as of 2024-02-27
           
         
       </td>
@@ -331,7 +331,7 @@
   
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from (not specified) to <a href="ValueSet-ValueSet-fetal-death-cause-or-condition.html">ValueSet - Fetal Death Cause or Condition</a></p><p>DRAFT. Published on 2024-02-13 11:56:10-0500 by HL7 International / Public Health (HL7 International / Public Health: <a href="http://www.hl7.org/Special/committees/pher">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR FetalDeathCauseOrCondition Value Sets</p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from (not specified) to <a href="ValueSet-ValueSet-fetal-death-cause-or-condition.html">Fetal Death Cause or Condition</a></p><p>DRAFT. Published on 2024-02-27 09:44:15-0500 by HL7 International / Public Health (HL7 International / Public Health: <a href="http://www.hl7.org/Special/committees/pher">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR FetalDeathCauseOrCondition Value Sets</p>
 </div><br/><p><b>Group 1</b>Mapping from <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html">Placeholder Code System for IJE in Vital Records</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>COD18a1 (Initiating cause/condition - Rupture of membranes prior to onset of labor)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>44223004 (Premature rupture of membranes)</td></tr><tr><td>COD18a2 (Initiating cause/condition - Abruptio placenta)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>415105001 (Placental abruption)</td></tr><tr><td>COD18a3 (Initiating cause/condition - Placental insufficiency)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>237292005 (Placental insufficiency)</td></tr><tr><td>COD18a4 (Initiating cause/condition - Prolapsed cord)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>270500004 (Prolapsed cord)</td></tr><tr><td>COD18a5 (Initiating cause/condition - Chorioamnionitis)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>11612004 (Chorioamnionitis)</td></tr><tr><td>COD18a11 (Initiating cause/condition - Fetal anomaly literal)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>702709008 (Congenital anomaly of fetus (Specify))</td></tr><tr><td>COD18a12 (Initiating cause/condition - Fetal injury literal)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>277489001 (Fetal trauma (Specify))</td></tr><tr><td>COD18a13 (Initiating cause/condition - Fetal infection literal)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>128270001 (Infectious disorder of the fetus (Specify))</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html">Placeholder Code System for IJE in Vital Records</a> to <a href="CodeSystem-CodeSystem-local-bfdr-codes.html">Local BFDR Codes</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>COD18a8 (Initiating cause/condition - Maternal conditions/diseases literal)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>FCOD_maternalconditions (Maternal Conditions/Diseases (Specify))</td></tr><tr><td>COD18a9 (Initiating cause/condition - Other complications of placenta, cord, or membranes literal)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>FCOD_membranes (Complications of Placenta, Cord, or Membranes: Other (Specify))</td></tr><tr><td>COD18a10 (Initiating cause/condition - Other obstetrical or pregnancy complications literal)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>FCOD_obstetricalcomplications (Other Obstetrical or Pregnancy Complications (Specify))</td></tr><tr><td>COD18a14 (Initiating cause/condition - Other fetal conditions/disorders literal)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>FCOD_fetalconditions (Other Fetal Conditions/Disorder (Specify))</td></tr></table><hr/><p><b>Group 3</b>Mapping from <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html">Placeholder Code System for IJE in Vital Records</a> to <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>COD18a7 (Initiating cause/condition - Unknown)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>UNK (Unknown)</td></tr></table></div>
 
   <!-- insert notes if present -->
@@ -363,7 +363,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

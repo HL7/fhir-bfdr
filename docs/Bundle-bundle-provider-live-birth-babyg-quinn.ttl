@@ -206,6 +206,18 @@
   ] [
      fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn"^^xsd:anyURI ] ;
      fhir:resource ( <http://www.example.org/fhir/Observation/observation-labor-trial-attempted-babyg-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Procedure/procedure-infertility-treatment-jada-ann-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Procedure/procedure-infertility-treatment-jada-ann-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Procedure/procedure-artificial-insemination-jada-ann-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Procedure/procedure-artificial-insemination-jada-ann-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-antibiotics-during-labor-jada-ann-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-antibiotics-during-labor-jada-ann-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> )
   ] ) . # 
 
 <http://www.example.org/fhir/Composition/composition-provider-live-birth-babyg-quinn> a fhir:Composition ;
@@ -331,9 +343,6 @@
        fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-obstetric-procedure-jada-ann-quinn> ;
        fhir:reference [ fhir:v "Procedure/procedure-obstetric-procedure-jada-ann-quinn" ]
      ] [
-       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-gestational-hypertension-jada-ann-quinn> ;
-       fhir:reference [ fhir:v "Condition/condition-gestational-hypertension-jada-ann-quinn" ]
-     ] [
        fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-previous-cesareans-jada-ann-quinn> ;
        fhir:reference [ fhir:v "Observation/observation-number-previous-cesareans-jada-ann-quinn" ]
      ] [
@@ -346,11 +355,23 @@
        fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-prepregnancy-diabetes-jada-ann-quinn> ;
        fhir:reference [ fhir:v "Condition/condition-prepregnancy-diabetes-jada-ann-quinn" ]
      ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-infertility-treatment-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-infertility-treatment-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-artificial-insemination-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-artificial-insemination-jada-ann-quinn" ]
+     ] [
        fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-chorioamnionitis-jada-ann-quinn> ;
        fhir:reference [ fhir:v "Condition/condition-chorioamnionitis-jada-ann-quinn" ]
      ] [
        fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-induction-of-labor-jada-ann-quinn> ;
        fhir:reference [ fhir:v "Procedure/procedure-induction-of-labor-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-antibiotics-during-labor-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-antibiotics-during-labor-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn" ]
      ] [
        fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-babyg-quinn> ;
        fhir:reference [ fhir:v "Observation/observation-fetal-presentation-babyg-quinn" ]
@@ -514,17 +535,25 @@
 
 <http://hl7.org/fhir/us/bfdr/Procedure/procedure-obstetric-procedure-jada-ann-quinn> a fhir:us .
 
-<http://hl7.org/fhir/us/bfdr/Condition/condition-gestational-hypertension-jada-ann-quinn> a fhir:us .
-
 <http://hl7.org/fhir/us/bfdr/Observation/observation-number-previous-cesareans-jada-ann-quinn> a fhir:us .
 
 <http://hl7.org/fhir/us/bfdr/Condition/condition-infection-present-during-pregnancy-jada-ann-quinn> a fhir:us .
 
+<http://hl7.org/fhir/us/bfdr/Condition/condition-gestational-hypertension-jada-ann-quinn> a fhir:us .
+
 <http://hl7.org/fhir/us/bfdr/Condition/condition-prepregnancy-diabetes-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-infertility-treatment-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-artificial-insemination-jada-ann-quinn> a fhir:us .
 
 <http://hl7.org/fhir/us/bfdr/Condition/condition-chorioamnionitis-jada-ann-quinn> a fhir:us .
 
 <http://hl7.org/fhir/us/bfdr/Procedure/procedure-induction-of-labor-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-antibiotics-during-labor-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> a fhir:us .
 
 <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-babyg-quinn> a fhir:us .
 
@@ -582,7 +611,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-child-babyg-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-child-babyg-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-child-vr.html\">Patient - Child Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Salt Lake City UT </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Extension-role-vr.html\">Role Vital Records</a></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number: 9932702 (use: USUAL)</p><p><b>name</b>: Baby G Quinn (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-02-12</p><p><b>multipleBirth</b>: 1</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-child-babyg-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-child-babyg-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-child-vr.html\">Patient - Child Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Birth Place</b>: Salt Lake City UT </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number: 9932702 (use: USUAL)</p><p><b>name</b>: Baby G Quinn (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-02-12</p><p><b>deceased</b>: false</p><p><b>multipleBirth</b>: 1</p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
@@ -633,7 +662,7 @@
          fhir:code [ fhir:v "a" ]
        ]
      ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:url [ fhir:v "motherOrFather"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
@@ -654,7 +683,7 @@
          fhir:code [ fhir:v "a" ]
        ]
      ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr"^^xsd:anyURI ] ;
+       fhir:url [ fhir:v "motherOrFather"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
@@ -691,6 +720,7 @@
        fhir:value [ fhir:v "2019-02-12T13:00:00-07:00"^^xsd:dateTime ]
      ] )
   ] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:multipleBirth [ fhir:v "1"^^xsd:integer] . # 
 
 <http://www.example.org/fhir/Encounter/encounter-birth-babyg-quinn> a fhir:Encounter ;
@@ -925,9 +955,16 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-avery-jones\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-avery-jones&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>76231001</p><p><b>name</b>: Avery Jones </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-avery-jones\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-avery-jones&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>Practitioner Role - Birth Attendant</b>: attendant</p><p><b>Practitioner Role - Certifier</b>: certifier</p><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>76231001</p><p><b>name</b>: Avery Jones </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "attendant" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "certifier" ]
+  ] ) ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "76231001" ]
@@ -957,9 +994,16 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>Practitioner Role - Birth Attendant</b>: attendant</p><p><b>Practitioner Role - Certifier</b>: certifier</p><p><b>identifier</b>: id: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Seito Janet </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "attendant" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "certifier" ]
+  ] ) ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "223347044" ]
@@ -1390,14 +1434,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"coverage-principal-payer-for-delivery-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;coverage-principal-payer-for-delivery-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Coverage-principal-payer-delivery.html\">Coverage - Principal Payer for Delivery</a></p></div><p><b>status</b>: active</p><p><b>type</b>: Private Health Insurance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a>#finclass_privateinsurance &quot;PRIVATE HEALTH INSURANCE&quot;)</span></p><p><b>beneficiary</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>payor</b>: <span>: Not asked</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"coverage-principal-payer-for-delivery-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;coverage-principal-payer-for-delivery-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Coverage-principal-payer-delivery.html\">Coverage - Principal Payer for Delivery</a></p></div><p><b>status</b>: active</p><p><b>type</b>: Private Health Insurance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://nahdo.org/sopt\">Source of Payment Typology</a>#5)</span></p><p><b>beneficiary</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>payor</b>: <span>: Not asked</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "finclass_privateinsurance" ] ;
-       fhir:display [ fhir:v "PRIVATE HEALTH INSURANCE" ]
+       fhir:system [ fhir:v "https://nahdo.org/sopt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5" ] ;
+       fhir:display [ fhir:v "Private Health Insurance" ]
      ] ) ;
      fhir:text [ fhir:v "Private Health Insurance" ]
   ] ; # 
@@ -2940,37 +2984,9 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-james-brandon-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-james-brandon-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>identifier</b>: Social Security number: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-ssn.html\">#</a>132225987</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-child-babyg-quinn\">See above (Patient/patient-child-babyg-quinn)</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: James Brandon Quinn (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1972-11-24</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-james-brandon-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-james-brandon-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>identifier</b>: Social Security number: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-ssn.html\">#</a>132225987</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-child-babyg-quinn\">See above (Patient/patient-child-babyg-quinn)</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: James Brandon Quinn (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1972-11-24</p></div>"
   ] ; # 
   fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2106-3" ] ;
-         fhir:display [ fhir:v "White" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "White" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2186-5" ] ;
-         fhir:display [ fhir:v "Not Hispanic or Latino" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Not Hispanic or Latino" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
-  ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Address ;
@@ -3382,7 +3398,7 @@
   fhir:id [ fhir:v "QuestionnaireResponse-mothers-live-birth-jada-quinn"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: QuestionnaireResponse</b><a name=\"QuestionnaireResponse-mothers-live-birth-jada-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource QuestionnaireResponse &quot;QuestionnaireResponse-mothers-live-birth-jada-quinn&quot; </p></div><p><b>questionnaire</b>: <a href=\"Questionnaire-Questionnaire-mothers-live-birth.html\">Questionnaire - Mother's Worksheet for Child's Birth Certificate</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#Patient_patient-child-babyg-quinn\">See above (Patient/patient-child-babyg-quinn: BabyG Quinn)</a></p><p><b>source</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-current-legal-name</p><p><b>text</b>: What is your current legal name?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: child-name</p><p><b>text</b>: What will be your baby's legal name (as it should appear on the birth certificate)?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: child-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: child-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: child-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-address</p><p><b>text</b>: Where do you usually live - that is - where is your household/residence located?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-nbr-street</p><p><b>text</b>: Complete number and street (do not enter rural route numbers)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-city</p><p><b>text</b>: City, Town, or Location</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-county</p><p><b>text</b>: County</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-state</p><p><b>text</b>: State (or U.S. Territory, Canadian Province)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-zip</p><p><b>text</b>: Zip Code</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: inside-city-limits</p><p><b>text</b>: Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Yes (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code Y = 'Yes', stated as 'Yes')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail</p><p><b>text</b>: What is your mailing address</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-same</p><p><b>text</b>: Same as residence [Go to next question]</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-nbr-street</p><p><b>text</b>: Complete number and street</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-city</p><p><b>text</b>: City, Town, or Location</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-state</p><p><b>text</b>: State (or U.S. Territory, Canadian Province)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-zip</p><p><b>text</b>: Zip Code</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-dob</p><p><b>text</b>: What is your date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1985-01-15</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country were you born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace-state</p><p><b>text</b>: State</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-education</p><p><b>text</b>: What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received).</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Doctoral or post graduate education (Details: http://terminology.hl7.org/CodeSystem/v3-EducationLevel code POSTG = 'Doctoral or post graduate education', stated as 'Doctoral or post graduate education')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity</p><p><b>text</b>: Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-shl</p><p><b>text</b>: Are you Spanish/Hispanic/Latina</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race</p><p><b>text</b>: What is your race? (Please check one or more races to indicate what you consider yourself to be).</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race-category</p><p><b>text</b>: Race categories</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-detailed-race</p><p><b>text</b>: Extended race codes</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: receive-wic</p><p><b>text</b>: Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Yes (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code Y = 'Yes', stated as 'Yes')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: infertility-treatment</p><p><b>text</b>: Did this pregnancy result from infertility treatment? (If yes, please answer 12a and 12b)</p><blockquote><p><b>answer</b></p><p><b>value</b>: true</p><blockquote><p><b>item</b></p><p><b>linkId</b>: drugs-ai-ii</p><p><b>text</b>: If yes, did this pregnancy result from fertility-enhancing drugs, artificial insemination, or intrauterine insemination?</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: art-ivf-gift</p><p><b>text</b>: If yes, did this pregnancy result from assisted reproductive technology (e.g., in-vitro fertilization (IVF), gamete intrafallopian transfer (GIFT))?</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height</p><p><b>text</b>: What is your height?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height-feet</p><p><b>text</b>: Feet</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height-inches</p><p><b>text</b>: Inches</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-prepregnancy-weight</p><p><b>text</b>: lbs</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>145 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking</p><p><b>text</b>: How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? If you NEVER smoked, enter zero for each time period.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-3-months-prior</p><p><b>text</b>: Three months before pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-1</p><p><b>text</b>: First three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-2</p><p><b>text</b>: Second three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-3</p><p><b>text</b>: Third trimester of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-prior-name</p><p><b>text</b>: What name did you use prior to your first marriage?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-prior-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-prior-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-prior-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: married-conception</p><p><b>text</b>: Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth? [If yes, please go to question 19; If no, please see below]</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-current-legal-name</p><p><b>text</b>: What is the current legal name of your baby's father?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-dob</p><p><b>text</b>: What the father's date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1983-09-27</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace-state</p><p><b>text</b>: State</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-education</p><p><b>text</b>: What is the highest level of schooling that the father will have completed at the time of delivery? (Check the box that best describes his education. If he is currently enrolled, check the box that indicates the previous grade or highest degree received).</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Doctoral or post graduate education (Details: http://terminology.hl7.org/CodeSystem/v3-EducationLevel code POSTG = 'Doctoral or post graduate education', stated as 'Doctoral or post graduate education')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-ethnicity</p><p><b>text</b>: Is the father Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-shl</p><p><b>text</b>: Is the father Spanish/Hispanic/Latina</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-race</p><p><b>text</b>: What is the father's race? (Please check one or more races to indicate what he considers himself to be).</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-race-category</p><p><b>text</b>: Race categories</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: parents-ssn</p><p><b>text</b>: Furnishing parent(s) Social Security Number(s) (SSNs) is required by Federal Law, 42 USC 405(c) (section 205(c) of the Social Security Act). The number(s) will be made available to the (State Social Services Agency) to assist with child support enforcement activities and to the Internal Revenue Service for the purpose of determining Earned Income Tax Credit compliance.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ssn</p><p><b>text</b>: What is your Social Security Number?</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-ssn</p><p><b>text</b>: What is the father’s Social Security Number? If you are not married, and if a paternity acknowledgment has not been completed, leave this item blank.</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: baby-ssn</p><p><b>text</b>: Do you want a Social Security Number issued for your baby? [If yes, please sign request below</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: informant-name</p><p><b>text</b>: If other than the mother, what is the name of the person providing information for this worksheet?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: informant-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: informant-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: informant-relationship</p><p><b>text</b>: What is your relationship to the baby's mother?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Other relative (Details: http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes code rel_otherrelative = 'Other relative', stated as 'Other relative')</td></tr></table></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: QuestionnaireResponse</b><a name=\"QuestionnaireResponse-mothers-live-birth-jada-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource QuestionnaireResponse &quot;QuestionnaireResponse-mothers-live-birth-jada-quinn&quot; </p></div><p><b>questionnaire</b>: <a href=\"Questionnaire-Questionnaire-mothers-live-birth.html\">Questionnaire - Mother's Worksheet for Child's Birth Certificate</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#Patient_patient-child-babyg-quinn\">See above (Patient/patient-child-babyg-quinn: BabyG Quinn)</a></p><p><b>source</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-current-legal-name</p><p><b>text</b>: What is your current legal name?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: child-name</p><p><b>text</b>: What will be your baby's legal name (as it should appear on the birth certificate)?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: child-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: child-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: child-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-address</p><p><b>text</b>: Where do you usually live - that is - where is your household/residence located?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-nbr-street</p><p><b>text</b>: Complete number and street (do not enter rural route numbers)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-city</p><p><b>text</b>: City, Town, or Location</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-county</p><p><b>text</b>: County</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-state</p><p><b>text</b>: State (or U.S. Territory, Canadian Province)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-zip</p><p><b>text</b>: Zip Code</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: inside-city-limits</p><p><b>text</b>: Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Yes (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code Y = 'Yes', stated as 'Yes')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail</p><p><b>text</b>: What is your mailing address</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-same</p><p><b>text</b>: Same as residence [Go to next question]</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-nbr-street</p><p><b>text</b>: Complete number and street</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-city</p><p><b>text</b>: City, Town, or Location</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-state</p><p><b>text</b>: State (or U.S. Territory, Canadian Province)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-zip</p><p><b>text</b>: Zip Code</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-dob</p><p><b>text</b>: What is your date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1985-01-15</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country were you born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace-state</p><p><b>text</b>: State</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-education</p><p><b>text</b>: What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received).</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Doctoral or post graduate education (Details: http://terminology.hl7.org/CodeSystem/v3-EducationLevel code POSTG = 'Doctoral or post graduate education', stated as 'Doctoral or post graduate education')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race-white</p><p><b>text</b>: White</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race-aian</p><p><b>text</b>: American Indian or Alaskan Native</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: receive-wic</p><p><b>text</b>: Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Yes (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code Y = 'Yes', stated as 'Yes')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: infertility-treatment</p><p><b>text</b>: Did this pregnancy result from infertility treatment? (If yes, please answer 12a and 12b)</p><blockquote><p><b>answer</b></p><p><b>value</b>: true</p><blockquote><p><b>item</b></p><p><b>linkId</b>: drugs-ai-ii</p><p><b>text</b>: If yes, did this pregnancy result from fertility-enhancing drugs, artificial insemination, or intrauterine insemination?</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: art-ivf-gift</p><p><b>text</b>: If yes, did this pregnancy result from assisted reproductive technology (e.g., in-vitro fertilization (IVF), gamete intrafallopian transfer (GIFT))?</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height</p><p><b>text</b>: What is your height?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height-feet</p><p><b>text</b>: Feet</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height-inches</p><p><b>text</b>: Inches</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-prepregnancy-weight</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>145 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking</p><p><b>text</b>: How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? If you NEVER smoked, enter zero for each time period.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-3-months-prior</p><p><b>text</b>: Three months before pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-1</p><p><b>text</b>: First three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-2</p><p><b>text</b>: Second three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-3</p><p><b>text</b>: Third trimester of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-prior-name</p><p><b>text</b>: What name did you use prior to your first marriage?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-prior-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-prior-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-prior-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: married-conception</p><p><b>text</b>: Were you married at the time you conceived this child, at the time of birth, or at any time between conception and giving birth? [If yes, please go to question 19; If no, please see below]</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-current-legal-name</p><p><b>text</b>: What is the current legal name of your baby's father?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-dob</p><p><b>text</b>: What the father's date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1983-09-27</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace-state</p><p><b>text</b>: State</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-education</p><p><b>text</b>: What is the highest level of schooling that the father will have completed at the time of delivery? (Check the box that best describes his education. If he is currently enrolled, check the box that indicates the previous grade or highest degree received).</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Doctoral or post graduate education (Details: http://terminology.hl7.org/CodeSystem/v3-EducationLevel code POSTG = 'Doctoral or post graduate education', stated as 'Doctoral or post graduate education')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-ethnicity</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-race</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-race-white</p><p><b>text</b>: White</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: parents-ssn</p><p><b>text</b>: Furnishing parent(s) Social Security Number(s) (SSNs) is required by Federal Law, 42 USC 405(c) (section 205(c) of the Social Security Act). The number(s) will be made available to the (State Social Services Agency) to assist with child support enforcement activities and to the Internal Revenue Service for the purpose of determining Earned Income Tax Credit compliance.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ssn</p><p><b>text</b>: What is your Social Security Number?</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-ssn</p><p><b>text</b>: What is the father’s Social Security Number? If you are not married, and if a paternity acknowledgment has not been completed, leave this item blank.</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: baby-ssn</p><p><b>text</b>: Do you want a Social Security Number issued for your baby? [If yes, please sign request below</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: informant-name</p><p><b>text</b>: If other than the mother, what is the name of the person providing information for this worksheet?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: informant-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: informant-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: informant-relationship</p><p><b>text</b>: What is your relationship to the baby's mother?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Other relative (Details: http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes code rel_otherrelative = 'Other relative', stated as 'Other relative')</td></tr></table></blockquote></div>"
   ] ; # 
   fhir:questionnaire [
      fhir:v "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-mothers-live-birth"^^xsd:anyURI ;
@@ -3551,43 +3567,22 @@
      ] )
   ] [
      fhir:linkId [ fhir:v "mother-ethnicity" ] ;
-     fhir:text [ fhir:v "Are you Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box." ] ;
-     fhir:item ( [
-       fhir:linkId [ fhir:v "mother-shl" ] ;
-       fhir:text [ fhir:v "Are you Spanish/Hispanic/Latina" ] ;
-       fhir:answer ( [
-         fhir:value [
-           a fhir:Coding ;
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "2186-5" ] ;
-           fhir:display [ fhir:v "Not Hispanic or Latino" ]
-         ]
-       ] )
+     fhir:answer ( [
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
      ] )
   ] [
      fhir:linkId [ fhir:v "mother-race" ] ;
-     fhir:text [ fhir:v "What is your race? (Please check one or more races to indicate what you consider yourself to be)." ] ;
      fhir:item ( [
-       fhir:linkId [ fhir:v "mother-race-category" ] ;
-       fhir:text [ fhir:v "Race categories" ] ;
+       fhir:linkId [ fhir:v "mother-race-white" ] ;
+       fhir:text [ fhir:v "White" ] ;
        fhir:answer ( [
-         fhir:value [
-           a fhir:Coding ;
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "2106-3" ] ;
-           fhir:display [ fhir:v "White" ]
-         ]
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] )
      ] [
-       fhir:linkId [ fhir:v "mother-detailed-race" ] ;
-       fhir:text [ fhir:v "Extended race codes" ] ;
+       fhir:linkId [ fhir:v "mother-race-aian" ] ;
+       fhir:text [ fhir:v "American Indian or Alaskan Native" ] ;
        fhir:answer ( [
-         fhir:value [
-           a fhir:Coding ;
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "1004-1" ] ;
-           fhir:display [ fhir:v "American Indian" ]
-         ]
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] )
      ] )
   ] [
@@ -3650,7 +3645,6 @@
      ] )
   ] [
      fhir:linkId [ fhir:v "mothers-prepregnancy-weight" ] ;
-     fhir:text [ fhir:v "lbs" ] ;
      fhir:answer ( [
        fhir:value [
          a fhir:Quantity ;
@@ -3807,32 +3801,16 @@
      ] )
   ] [
      fhir:linkId [ fhir:v "father-ethnicity" ] ;
-     fhir:text [ fhir:v "Is the father Spanish/Hispanic/Latina? If not Spanish/Hispanic/Latina, check the “No” box. If Spanish/Hispanic/Latina, check the appropriate box." ] ;
-     fhir:item ( [
-       fhir:linkId [ fhir:v "father-shl" ] ;
-       fhir:text [ fhir:v "Is the father Spanish/Hispanic/Latina" ] ;
-       fhir:answer ( [
-         fhir:value [
-           a fhir:Coding ;
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "2186-5" ] ;
-           fhir:display [ fhir:v "Not Hispanic or Latino" ]
-         ]
-       ] )
+     fhir:answer ( [
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
      ] )
   ] [
      fhir:linkId [ fhir:v "father-race" ] ;
-     fhir:text [ fhir:v "What is the father's race? (Please check one or more races to indicate what he considers himself to be)." ] ;
      fhir:item ( [
-       fhir:linkId [ fhir:v "father-race-category" ] ;
-       fhir:text [ fhir:v "Race categories" ] ;
+       fhir:linkId [ fhir:v "father-race-white" ] ;
+       fhir:text [ fhir:v "White" ] ;
        fhir:answer ( [
-         fhir:value [
-           a fhir:Coding ;
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "2106-3" ] ;
-           fhir:display [ fhir:v "White" ]
-         ]
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
        ] )
      ] )
   ] [
@@ -4066,6 +4044,152 @@
      fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
   ] ) ; # 
   fhir:value [ fhir:v "true"^^xsd:boolean] . # 
+
+<http://www.example.org/fhir/Procedure/procedure-infertility-treatment-jada-ann-quinn> a fhir:Procedure ;
+  fhir:id [ fhir:v "procedure-infertility-treatment-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-infertility-treatment-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-infertility-treatment-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-infertility-treatment.html\">Procedure - Infertility Treatment</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Fertility enhancing drug therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#445151000124101)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>performed</b>: 2019-02-07 08:30:00-0700 --&gt; 2019-02-07 08:45:00-0700</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:445151000124101 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "445151000124101" ] ;
+       fhir:display [ fhir:v "Fertility enhancing drug therapy (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-02-07T08:30:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-02-07T08:45:00-07:00"^^xsd:dateTime ]
+  ] . # 
+
+<http://www.example.org/fhir/Procedure/procedure-artificial-insemination-jada-ann-quinn> a fhir:Procedure ;
+  fhir:id [ fhir:v "procedure-artificial-insemination-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-06-21T01:45:22.509Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-artificial-insemination"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-artificial-insemination>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-artificial-insemination-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-artificial-insemination-jada-ann-quinn&quot; Version &quot;1&quot; Updated &quot;2023-06-21 01:45:22+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-artificial-insemination.html\">Procedure - Artificial Insemination</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Artificial insemination (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#58533008)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>performed</b>: 2019-02-07 08:30:00-0700 --&gt; 2019-02-07 08:45:00-0700</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:58533008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "58533008" ] ;
+       fhir:display [ fhir:v "Artificial insemination (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-02-07T08:30:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-02-07T08:45:00-07:00"^^xsd:dateTime ]
+  ] . # 
+
+<http://www.example.org/fhir/Observation/observation-antibiotics-during-labor-jada-ann-quinn> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-antibiotics-during-labor-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-administered-during-labor"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-administered-during-labor>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-antibiotics-during-labor-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-antibiotics-during-labor-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-antibiotics-administered-during-labor.html\">Observation - Antibiotics Administered During Labor</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Characteristics of labor and delivery <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73813-8 &quot;Characteristics of labor and delivery [US Standard Certificate of Live Birth]&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-child-babyg-quinn\">See above (Patient/patient-child-babyg-quinn: BabyG Quinn)</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Antibiotics received during labor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#434691000124101 &quot;Antibacterial administered during labor&quot;)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73813-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73813-8" ] ;
+       fhir:display [ fhir:v "Characteristics of labor and delivery [US Standard Certificate of Live Birth]" ]
+     ] ) ;
+     fhir:text [ fhir:v "Characteristics of labor and delivery" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-child-babyg-quinn" ] ;
+     fhir:display [ fhir:v "BabyG Quinn" ]
+  ] ) ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:434691000124101 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "434691000124101" ] ;
+       fhir:display [ fhir:v "Antibacterial administered during labor" ]
+     ] ) ;
+     fhir:text [ fhir:v "Antibiotics received during labor" ]
+  ] . # 
+
+<http://www.example.org/fhir/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> a fhir:Procedure ;
+  fhir:id [ fhir:v "procedure-epidural-or-spinal-anesthesia-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-epidural-or-spinal-anesthesia-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-epidural-or-spinal-anesthesia-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html\">Procedure - Epidural or Spinal Anesthesia</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Epidural anesthesia (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#18946005)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-jada-ann-quinn\">See above (Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn))</a></p><p><b>performed</b>: 2019-02-07 08:30:00-0700 --&gt; 2019-02-07 08:45:00-0700</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:18946005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "18946005" ] ;
+       fhir:display [ fhir:v "Epidural anesthesia (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2019-02-07T08:30:00-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2019-02-07T08:45:00-07:00"^^xsd:dateTime ]
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

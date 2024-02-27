@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "15222225-6da1-45ff-b8c4-8970f3074fbd-629",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/15222225-6da1-45ff-b8c4-8970f3074fbd-629",
+  "id" : "b3ecc59c-2434-4b5d-9b6c-274645dfde39-629",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b3ecc59c-2434-4b5d-9b6c-274645dfde39-629",
   "name" : "UnionUSCoreObservationClinicalResultProfileAndObservationCodedOtherFetalDeathCauseOrCondition",
   "title" : "Union of US Core Observation Clinical Result Profile And Observation - Coded Other Fetal Death Cause or Condition",
   "status" : "active",
-  "date" : "2024-02-13T11:56:57-05:00",
+  "date" : "2024-02-27T09:45:02-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -690,7 +690,7 @@
     },
     {
       "path" : "Observation.code",
-      "short" : "left: Clinical Test or Procedure Name; right: Type of observation (code / type)",
+      "short" : "left: Clinical Test or Procedure Name; right: Coded other significant causes or conditions of fetal death",
       "definition" : "left: The name of the clinical test or procedure performed on a patient.  A LOINC **SHALL** be used if the concept is present in LOINC.; right: Describes what was observed. Sometimes this is called the observation \"name\".",
       "comment" : "left: The typical patterns for codes are:  1)  a LOINC code either as a translation from a \"local\" code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists.  When using LOINC , Use either the SHORTNAME or LONG_COMMON_NAME field for the display.; right: *All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "Knowing what kind of observation is being made is essential to understanding the observation.",

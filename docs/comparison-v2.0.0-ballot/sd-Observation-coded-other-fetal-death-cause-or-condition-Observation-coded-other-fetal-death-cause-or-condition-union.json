@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-98",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/aa0fdd0a-75c1-4b22-ba77-ec4cdb7d98b7-98",
+  "id" : "5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-110",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5cdb3dcf-a31f-409e-96b6-ccdb59ff5055-110",
   "name" : "UnionObservationCodedOtherFetalDeathCauseOrConditionAndObservationCodedOtherFetalDeathCauseOrCondition",
   "title" : "Union of Observation - Coded Other Fetal Death Cause or Condition And Observation - Coded Other Fetal Death Cause or Condition",
   "status" : "draft",
-  "date" : "2024-02-13T11:57:33-05:00",
+  "date" : "2024-02-27T09:45:50-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -680,7 +680,7 @@
     },
     {
       "path" : "Observation.code",
-      "short" : "Type of observation (code / type)",
+      "short" : "left: Type of observation (code / type); right: Coded other significant causes or conditions of fetal death",
       "definition" : "Describes what was observed. Sometimes this is called the observation \"name\".",
       "comment" : "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "Knowing what kind of observation is being made is essential to understanding the observation.",

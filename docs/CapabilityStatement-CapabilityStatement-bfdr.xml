@@ -51,9 +51,7 @@
 
   <br/>
     <!-- TODO - Make this a summary of capabilities, including system wide and each paradigm -->
-  <p>
-    <b>Jump to:</b>
-  </p>
+    <!-- <p> <b>Jump to:</b> </p> --> 
   <ul>
     
     
@@ -100,7 +98,8 @@
                   <a href="StructureDefinition-Composition-jurisdiction-live-birth-report.html">Composition - Jurisdiction Live Birth Report</a>
                 
               </td>
-              <td></td>
+              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>
+</div></td>
             </tr>
           
             <tr>
@@ -110,7 +109,8 @@
                   <a href="StructureDefinition-Composition-jurisdiction-fetal-death-report.html">Composition - Jurisdiction Fetal Death Report</a>
                 
               </td>
-              <td></td>
+              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>
+</div></td>
             </tr>
           
             <tr>
@@ -120,7 +120,8 @@
                   <a href="StructureDefinition-Composition-provider-live-birth-report.html">Composition - Provider Live Birth Report</a>
                 
               </td>
-              <td></td>
+              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>
+</div></td>
             </tr>
           
             <tr>
@@ -130,7 +131,8 @@
                   <a href="StructureDefinition-Composition-provider-fetal-death-report.html">Composition - Provider Fetal Death Report</a>
                 
               </td>
-              <td></td>
+              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>
+</div></td>
             </tr>
           
             <tr>
@@ -140,7 +142,8 @@
                   <a href="StructureDefinition-Composition-coded-cause-of-fetal-death.html">Composition - Coded Cause of Fetal Death</a>
                 
               </td>
-              <td></td>
+              <td><div><p>Produced by NCHS and consumed by the source of the reports</p>
+</div></td>
             </tr>
           
             <tr>
@@ -150,7 +153,8 @@
                   <a href="StructureDefinition-Composition-coded-race-and-ethnicity.html">Composition - Coded Race and Ethnicity</a>
                 
               </td>
-              <td></td>
+              <td><div><p>Produced by NCHS and consumed by the source of the reports</p>
+</div></td>
             </tr>
           
         </tbody>
@@ -192,26 +196,32 @@
   <format value="json"/>
   <document>
     <mode value="producer"/>
+    <documentation value="Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS"/>
     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"/>
   </document>
   <document>
     <mode value="producer"/>
+    <documentation value="Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS"/>
     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"/>
   </document>
   <document>
     <mode value="producer"/>
+    <documentation value="Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS"/>
     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"/>
   </document>
   <document>
     <mode value="producer"/>
+    <documentation value="Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS"/>
     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"/>
   </document>
   <document>
     <mode value="consumer"/>
+    <documentation value="Produced by NCHS and consumed by the source of the reports"/>
     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"/>
   </document>
   <document>
     <mode value="consumer"/>
+    <documentation value="Produced by NCHS and consumed by the source of the reports"/>
     <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"/>
   </document>
 </CapabilityStatement>

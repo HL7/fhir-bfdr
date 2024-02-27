@@ -329,16 +329,16 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "EditFlagsCS",
-      "title" : "CodeSystem - Birth Edit Flags",
+      "title" : "Birth Edit Flags",
       "description" : "This code system contains codes to represent edit flags specific to BFDR. Additional edit flag codes are located in [CodeSystemEditFlagsVitalRecords]",
       "uses" : {
       },
-      "ValueSet-ValueSet-birth-weight-edit-flags.html" : "ValueSet - Birth Weight Edit Flags (NCHS)",
-      "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map",
-      "ValueSet-ValueSet-estimate-of-gestation-edit-flags.html" : "ValueSet - Estimate of Gestation Edit Flags (NCHS)",
-      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
       "ConceptMap-BirthWeightEditFlagsCM.html" : "BirthWeightEditFlags Concept Map",
-      "ValueSet-ValueSet-number-previous-cesareans-edit-flags.html" : "ValueSet - Number of Previous Cesareans Edit Flags (NCHS)"
+      "ValueSet-ValueSet-estimate-of-gestation-edit-flags.html" : "Estimate of Gestation Edit Flags (NCHS)",
+      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
+      "ValueSet-ValueSet-birth-weight-edit-flags.html" : "Birth Weight Edit Flags (NCHS)",
+      "ValueSet-ValueSet-number-previous-cesareans-edit-flags.html" : "Number of Previous Cesareans Edit Flags (NCHS)",
+      "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map"
     },
     {
       "url" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
@@ -349,14 +349,12 @@
       "description" : "Local Codes for concepts in BFDR that lack an appropriate LOINC or SCT code",
       "uses" : {
       },
-      "ValueSet-ValueSet-informant-relationship-to-mother.html" : "ValueSet - Informant Relationship to Mother",
+      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "Fetal Death Cause or Condition",
       "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
-      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "ValueSet - Fetal Death Cause or Condition",
-      "ValueSet-ValueSet-birth-and-fetal-death-financial-class.html" : "ValueSet - Birth and Fetal Death Financial Class",
-      "ConceptMap-BirthAndFetalDeathFinancialClassCM.html" : "BirthAndFetalDeathFinancialClass Concept Map",
-      "ValueSet-ValueSet-birth-delivery-occurred.html" : "ValueSet - Birth Delivery Occurred",
-      "ValueSet-ValueSet-location-types.html" : "ValueSet - Location Types",
-      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map"
+      "ValueSet-ValueSet-location-types.html" : "Location Types",
+      "ValueSet-ValueSet-informant-relationship-to-mother.html" : "Informant Relationship to Mother",
+      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
+      "ValueSet-ValueSet-birth-delivery-occurred.html" : "Birth Delivery Occurred"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
@@ -371,8 +369,8 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-canadian-provinces-vr",
-      "version" : "2.0.0-ballot",
-      "status" : "draft",
+      "version" : "2.0.0",
+      "status" : "active",
       "name" : "CodeSystemCanadianProvincesVitalRecords",
       "title" : "Canadian Provinces Vital Records",
       "description" : "Canadian Provinces",
@@ -382,8 +380,8 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-country-code-vr",
-      "version" : "2.0.0-ballot",
-      "status" : "draft",
+      "version" : "2.0.0",
+      "status" : "active",
       "name" : "CodeSystemCountryCodeVitalRecords",
       "title" : "Country Codes Vital Records",
       "description" : "2 Letter Country Codes from GEC and ISO 3166-1",
@@ -393,48 +391,61 @@
       "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-birthplace-country-vr.html" : "Birthplace Country Vital Records"
     },
     {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemUSStatesTerritoriesVitalRecords",
+      "title" : "US States and Territories",
+      "description" : "Surrogate for usps.com codesystem.  IG Publisher is not happy with that codesystem.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-usterritories-vr.html" : "US Territories Vital Records",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-states-territories-provinces-vr.html" : "States, Territories and Provinces Vital Records",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-usstates-vr.html" : "US States Vital Records"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags",
-      "version" : "2.0.0-ballot",
-      "status" : "draft",
+      "version" : "2.0.0",
+      "status" : "active",
       "name" : "CodeSystemEditFlagsVitalRecords",
       "title" : "Birth and Death Edit Flags Vital Records",
       "description" : "This code system contains codes to represent all edit flags",
       "uses" : {
       },
-      "ValueSet-ValueSet-birth-weight-edit-flags.html" : "ValueSet - Birth Weight Edit Flags (NCHS)",
-      "ConceptMap-PregnancyReportEditFlagsCM.html" : "PregnancyReportEditFlags Concept Map",
-      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-date-of-birth-edit-flags-vr.html" : "Date of Birth Edit Flags (NCHS) Vital Records",
-      "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map",
-      "ValueSet-ValueSet-estimate-of-gestation-edit-flags.html" : "ValueSet - Estimate of Gestation Edit Flags (NCHS)",
-      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
-      "ValueSet-ValueSet-pregnancy-report-edit-flags.html" : "ValueSet - Pregnancy Report Edit Flags (NCHS)",
-      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-plurality-edit-flags-vr.html" : "Plurality Edit Flags (NCHS) Vital Records",
       "ConceptMap-BirthWeightEditFlagsCM.html" : "BirthWeightEditFlags Concept Map",
-      "ValueSet-ValueSet-number-previous-cesareans-edit-flags.html" : "ValueSet - Number of Previous Cesareans Edit Flags (NCHS)"
+      "ValueSet-ValueSet-estimate-of-gestation-edit-flags.html" : "Estimate of Gestation Edit Flags (NCHS)",
+      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
+      "ValueSet-ValueSet-pregnancy-report-edit-flags.html" : "Pregnancy Report Edit Flags (NCHS)",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-plurality-edit-flags-vr.html" : "Plurality Edit Flags (NCHS) Vital Records",
+      "ConceptMap-PregnancyReportEditFlagsCM.html" : "PregnancyReportEditFlags Concept Map",
+      "ValueSet-ValueSet-birth-weight-edit-flags.html" : "Birth Weight Edit Flags (NCHS)",
+      "ValueSet-ValueSet-number-previous-cesareans-edit-flags.html" : "Number of Previous Cesareans Edit Flags (NCHS)",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-date-of-birth-edit-flags-vr.html" : "Date of Birth Edit Flags (NCHS) Vital Records",
+      "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map"
     },
     {
       "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr",
-      "version" : "2.0.0-ballot",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "CodeSystemIJEVitalRecords",
       "title" : "Placeholder Code System for IJE in Vital Records",
       "description" : "IJE Code System Placeholder is needed to provide a URL upon which to anchor concept maps.",
       "uses" : {
       },
-      "ConceptMap-HistologicalPlacentalExaminationCM.html" : "HistologicalPlacentalExamination Concept Map",
-      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map",
-      "ConceptMap-PregnancyReportEditFlagsCM.html" : "PregnancyReportEditFlags Concept Map",
-      "ConceptMap-DeliveryRoutesCM.html" : "DeliveryRoutes Concept Map",
-      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
       "ConceptMap-BirthWeightEditFlagsCM.html" : "BirthWeightEditFlags Concept Map",
-      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
-      "ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html" : "InfectionsDuringPregnancyLiveBirth Concept Map",
-      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
       "ConceptMap-FetalDeathTimePointsCM.html" : "FetalDeathTimePoints Concept Map",
+      "ConceptMap-PregnancyReportEditFlagsCM.html" : "PregnancyReportEditFlags Concept Map",
+      "ConceptMap-BirthAndFetalDeathFinancialClassCM.html" : "BirthAndFetalDeathFinancialClass Concept Map",
       "ConceptMap-BirthAttendantTitlesCM.html" : "BirthAttendantTitles Concept Map",
-      "ConceptMap-NewbornCongenitalAnomaliesCM.html" : "NewbornCongenitalAnomalies Concept Map",
+      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
       "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map",
-      "ConceptMap-BirthAndFetalDeathFinancialClassCM.html" : "BirthAndFetalDeathFinancialClass Concept Map"
+      "ConceptMap-DeliveryRoutesCM.html" : "DeliveryRoutes Concept Map",
+      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "ConceptMap-HistologicalPlacentalExaminationCM.html" : "HistologicalPlacentalExamination Concept Map",
+      "ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html" : "InfectionsDuringPregnancyLiveBirth Concept Map",
+      "ConceptMap-NewbornCongenitalAnomaliesCM.html" : "NewbornCongenitalAnomalies Concept Map",
+      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map"
     },
     {
       "url" : "http://loinc.org",
@@ -446,14 +457,14 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-ValueSet-apgar-timing.html" : "ValueSet - APGAR Score Timing",
-      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-      "ValueSet-cigarette-smoking-before-during-pregnancy.html" : "ValueSet - Cigarette Smoking Before and During Pregnancy",
+      "ValueSet-ValueSet-apgar-timing.html" : "APGAR Score Timing",
       "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-vital-signs.html" : "US Core Vital Signs ValueSet",
-      "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
       "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+      "ValueSet-cigarette-smoking-before-during-pregnancy.html" : "Cigarette Smoking Before and During Pregnancy",
+      "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -465,48 +476,49 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ConceptMap-HistologicalPlacentalExaminationCM.html" : "HistologicalPlacentalExamination Concept Map",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "ValueSet-ValueSet-infections-during-pregnancy-live-birth.html" : "ValueSet - Infections During Pregnancy Live Birth",
-      "ValueSet-ValueSet-birth-delivery-occurred.html" : "ValueSet - Birth Delivery Occurred",
-      "ConceptMap-DeliveryRoutesCM.html" : "DeliveryRoutes Concept Map",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "ValueSet-ValueSet-delivery-routes.html" : "ValueSet - Delivery Routes",
-      "ValueSet-ValueSet-histological-placental-examination.html" : "ValueSet - Histological Placental Examination",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "ValueSet-ValueSet-fetal-presentations.html" : "ValueSet - Fetal Presentations",
-      "ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html" : "InfectionsDuringPregnancyLiveBirth Concept Map",
-      "ConceptMap-FetalDeathTimePointsCM.html" : "FetalDeathTimePoints Concept Map",
-      "ConceptMap-BirthAttendantTitlesCM.html" : "BirthAttendantTitles Concept Map",
-      "ConceptMap-NewbornCongenitalAnomaliesCM.html" : "NewbornCongenitalAnomalies Concept Map",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map",
-      "ValueSet-ValueSet-obstetric-procedure-outcome.html" : "ValueSet - Obstetric Procedure Outcome",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "ValueSet - Fetal Death Cause or Condition",
-      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "ValueSet-ValueSet-birth-attendant-titles.html" : "Birth Attendants Titles",
+      "ValueSet-ValueSet-infections-during-pregnancy-live-birth.html" : "Infections During Pregnancy Live Birth",
       "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "ValueSet-ValueSet-birth-attendant-titles.html" : "ValueSet - Birth Attendants Titles",
-      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
-      "ValueSet-ValueSet-newborn-congenital-anomalies.html" : "ValueSet - Newborn Congenital Anomalies",
-      "ValueSet-ValueSet-apgar-timing.html" : "ValueSet - APGAR Score Timing",
-      "ValueSet-ValueSet-method-of-disposition.html" : "Method of Disposition VS",
-      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "ValueSet-ValueSet-obstetric-procedure.html" : "ValueSet - Obstetric Procedures",
+      "ConceptMap-FetalDeathTimePointsCM.html" : "FetalDeathTimePoints Concept Map",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "ConceptMap-BirthAttendantTitlesCM.html" : "BirthAttendantTitles Concept Map",
+      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "Fetal Death Cause or Condition",
+      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
       "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "ValueSet-ValueSet-fetal-death-time-points.html" : "ValueSet - Fetal Death Time Points",
-      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
+      "ValueSet-ValueSet-delivery-routes.html" : "Delivery Routes",
+      "ValueSet-ValueSet-birth-delivery-occurred.html" : "Birth Delivery Occurred",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-ValueSet-histological-placental-examination.html" : "Histological Placental Examination",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "ValueSet-ValueSet-fetal-presentations.html" : "Fetal Presentations",
+      "ConceptMap-DeliveryRoutesCM.html" : "DeliveryRoutes Concept Map",
+      "ValueSet-ValueSet-apgar-timing.html" : "APGAR Score Timing",
+      "ValueSet-ValueSet-newborn-congenital-anomalies.html" : "Newborn Congenital Anomalies",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-birth-attendant-titles-vr.html" : "Birth Attendants Titles Vital Records",
+      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "ConceptMap-HistologicalPlacentalExaminationCM.html" : "HistologicalPlacentalExamination Concept Map",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "ValueSet-ValueSet-fetal-remains-disposition-method.html" : "Fetal Remains Disposition Method VS",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html" : "InfectionsDuringPregnancyLiveBirth Concept Map",
+      "ValueSet-ValueSet-fetal-death-time-points.html" : "Fetal Death Time Points",
+      "ValueSet-ValueSet-obstetric-procedure-outcome.html" : "Obstetric Procedure Outcome",
+      "ValueSet-ValueSet-fetal-presentations-max.html" : "Fetal Presentations - Max",
+      "ConceptMap-NewbornCongenitalAnomaliesCM.html" : "NewbornCongenitalAnomalies Concept Map",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -530,8 +542,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1073"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-problem-or-health-concern.html" : "US Core Problem or Health Concern",
-      "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
+      "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes",
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-problem-or-health-concern.html" : "US Core Problem or Health Concern"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -820,8 +832,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -834,6 +846,18 @@
       "uses" : {
       },
       "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for adminstrative purposes (as opposed to clinical gender)",
+      "oids" : ["2.16.840.1.113883.5.1"],
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-sex-assigned-at-birth-vr.html" : "Sex Assigned At Birth Vital Records"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
@@ -893,25 +917,27 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-states-territories-provinces-vr.html" : "States, Territories and Provinces Vital Records",
-      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map",
-      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "ValueSet - Fetal Death Cause or Condition",
-      "ValueSet-ValueSet-infections-during-pregnancy-live-birth.html" : "ValueSet - Infections During Pregnancy Live Birth",
-      "ValueSet-ValueSet-birth-attendant-titles.html" : "ValueSet - Birth Attendants Titles",
-      "ValueSet-ValueSet-birth-delivery-occurred.html" : "ValueSet - Birth Delivery Occurred",
-      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
-      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-education-level-vr.html" : "Education Level Vital Records",
-      "ValueSet-ValueSet-fetal-presentations.html" : "ValueSet - Fetal Presentations",
-      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
-      "ConceptMap-FetalDeathTimePointsCM.html" : "FetalDeathTimePoints Concept Map",
-      "ValueSet-ValueSet-newborn-congenital-anomalies.html" : "ValueSet - Newborn Congenital Anomalies",
-      "ConceptMap-BirthAttendantTitlesCM.html" : "BirthAttendantTitles Concept Map",
-      "ValueSet-ValueSet-method-of-disposition.html" : "Method of Disposition VS",
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-yes-no-unknown-vr.html" : "Yes No Unknown Vital Records",
       "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-yes-no-not-applicable-vr.html" : "Yes No Not Applicable Vital Records",
-      "ValueSet-ValueSet-fetal-death-time-points.html" : "ValueSet - Fetal Death Time Points"
+      "ValueSet-ValueSet-birth-attendant-titles.html" : "Birth Attendants Titles",
+      "ValueSet-ValueSet-infections-during-pregnancy-live-birth.html" : "Infections During Pregnancy Live Birth",
+      "ConceptMap-FetalDeathTimePointsCM.html" : "FetalDeathTimePoints Concept Map",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-education-level-vr.html" : "Education Level Vital Records",
+      "ConceptMap-BirthAttendantTitlesCM.html" : "BirthAttendantTitles Concept Map",
+      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-sex-assigned-at-birth-vr.html" : "Sex Assigned At Birth Vital Records",
+      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "Fetal Death Cause or Condition",
+      "ValueSet-ValueSet-fetal-presentations.html" : "Fetal Presentations",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-yes-no-unknown-vr.html" : "Yes No Unknown Vital Records",
+      "ValueSet-ValueSet-newborn-congenital-anomalies.html" : "Newborn Congenital Anomalies",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-states-territories-provinces-vr.html" : "States, Territories and Provinces Vital Records",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-birth-attendant-titles-vr.html" : "Birth Attendants Titles Vital Records",
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+      "ValueSet-ValueSet-fetal-remains-disposition-method.html" : "Fetal Remains Disposition Method VS",
+      "ValueSet-ValueSet-fetal-death-time-points.html" : "Fetal Death Time Points",
+      "ValueSet-ValueSet-birth-delivery-occurred.html" : "Birth Delivery Occurred",
+      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -947,8 +973,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-role-vr.html" : "Role Vital Records",
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-role-vr.html" : "Role Vital Records"
     },
     {
       "url" : "http://unitsofmeasure.org",
@@ -960,8 +986,9 @@
       "oids" : ["2.16.840.1.113883.6.8"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
-      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units"
+      "ValueSet-ValueSet-units-of-gestational-age.html" : "Units of Gestational Age Vital",
+      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units",
+      "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units"
     },
     {
       "url" : "http://www.ada.org/cdt",
@@ -1001,6 +1028,18 @@
       "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
     },
     {
+      "url" : "https://nahdo.org/sopt",
+      "version" : "9.2",
+      "status" : "active",
+      "name" : "SOP",
+      "title" : "Source of Payment Typology",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-ValueSet-birth-and-fetal-death-financial-class.html" : "Birth and Fetal Death Financial Class",
+      "ConceptMap-BirthAndFetalDeathFinancialClassCM.html" : "BirthAndFetalDeathFinancialClass Concept Map"
+    },
+    {
       "url" : "urn:ietf:bcp:47",
       "version" : "2.0.1",
       "status" : "active",
@@ -1012,20 +1051,6 @@
       },
       "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
       "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
-    },
-    {
-      "url" : "urn:oid:2.16.840.1.113883.6.238",
-      "version" : "1.2",
-      "status" : "active",
-      "name" : "CDCREC",
-      "title" : "CDC Race and Ethnicity",
-      "description" : null,
-      "oids" : ["2.16.840.1.113883.6.238"],
-      "uses" : {
-      },
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.837/expansion" : "Ethnicity",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.877/expansion" : "Detailed Ethnicity",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.14914/expansion" : "Race Value Set"
     }
   ]
 }

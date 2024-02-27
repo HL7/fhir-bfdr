@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -128,7 +128,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -267,7 +267,7 @@ This information is transmitted in both a <a href="Bundle-bundle-provider-fetal-
   </thead>
   <tbody>
     <tr>
-      <td>Child</td>
+      <td>Decedent Fetus</td>
       <td><a href="Patient-patient-decedent-fetus-not-named.html"><code class="language-plaintext highlighter-rouge">Fetus Not Named</code></a></td>
     </tr>
     <tr>
@@ -291,40 +291,20 @@ This information is transmitted in both a <a href="Bundle-bundle-provider-fetal-
       <td><a href="Practitioner-practitioner-vital-records-jessica-leung.html"><code class="language-plaintext highlighter-rouge">Jessica Leung</code></a></td>
     </tr>
     <tr>
-      <td>Mother’s Education</td>
-      <td><a href="Observation-observation-parent-education-level-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Secondary</code></a></td>
-    </tr>
-    <tr>
-      <td>Mother’s Race and Ethnicity</td>
-      <td><a href="Observation-observation-input-race-and-ethnicity-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">White / Non-Hispanic</code></a></td>
-    </tr>
-    <tr>
-      <td>Mother’s Usual Work-Occupation</td>
-      <td><a href="Observation-observation-usual-work-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Secretary</code></a></td>
-    </tr>
-    <tr>
-      <td>Mother’s Usual Work-Industry</td>
-      <td><a href="Observation-observation-usual-work-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">State Agency</code></a></td>
-    </tr>
-    <tr>
-      <td>Father’s Usual Work-Occupation</td>
-      <td><a href="Observation-observation-usual-work-tom-yan-lee.html"><code class="language-plaintext highlighter-rouge">Teaching Assistant</code></a></td>
-    </tr>
-    <tr>
-      <td>Father’s Usual Work-Industry</td>
-      <td><a href="Observation-observation-usual-work-tom-yan-lee.html"><code class="language-plaintext highlighter-rouge">Elementary and Secondary Schools</code></a></td>
-    </tr>
-    <tr>
-      <td>Mother Transferred</td>
-      <td><a href="Encounter-encounter-maternity-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Maternity Encounter</code></a></td>
-    </tr>
-    <tr>
       <td>Intiating Cause of Fetal Death</td>
       <td><a href="Condition-condition-fetal-death-cause-or-condition-not-named.html"><code class="language-plaintext highlighter-rouge">Premature Rupture of Membrances</code></a></td>
     </tr>
     <tr>
       <td>Other Causes of Fetal Death</td>
       <td><a href="Condition-condition-fetal-death-other-significant-cause-not-named.html"><code class="language-plaintext highlighter-rouge">Placental insufficiency</code></a></td>
+    </tr>
+    <tr>
+      <td>Newborn Birthweight</td>
+      <td><a href="Observation-observation-birth-weight-not-named.html"><code class="language-plaintext highlighter-rouge">1530g</code></a></td>
+    </tr>
+    <tr>
+      <td>Obstetric Estimate of Gestation</td>
+      <td><a href="Observation-observation-gestational-age-at-delivery-not-named.html"><code class="language-plaintext highlighter-rouge">20 wk</code></a></td>
     </tr>
     <tr>
       <td>Fetal Death Time Point</td>
@@ -343,16 +323,36 @@ This information is transmitted in both a <a href="Bundle-bundle-provider-fetal-
       <td><a href="Observation-observation-autopsy-histological-exam-results-used-not-named.html"><code class="language-plaintext highlighter-rouge">Yes</code></a></td>
     </tr>
     <tr>
-      <td>Number of deaths this delivery</td>
-      <td><a href="Observation-observation-number-deaths-this-delivery-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">1</code></a></td>
+      <td>Mother’s Education</td>
+      <td><a href="Observation-observation-parent-education-level-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Some secondary or high school education</code></a></td>
     </tr>
     <tr>
-      <td>First Prenatal Care</td>
+      <td>Mother’s Usual Work-Occupation</td>
+      <td><a href="Observation-observation-usual-work-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Secretary</code></a></td>
+    </tr>
+    <tr>
+      <td>Mother’s Usual Work-Industry</td>
+      <td><a href="Observation-observation-usual-work-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">State Agency</code></a></td>
+    </tr>
+    <tr>
+      <td>Mother’s Race and Ethnicity</td>
+      <td><a href="Observation-observation-input-race-and-ethnicity-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">White/Black/AIAN/Hispanic</code></a></td>
+    </tr>
+    <tr>
+      <td>Father’s Usual Work-Occupation</td>
+      <td><a href="Observation-observation-usual-work-tom-yan-lee.html"><code class="language-plaintext highlighter-rouge">Teaching Assistant</code></a></td>
+    </tr>
+    <tr>
+      <td>Father’s Usual Work-Industry</td>
+      <td><a href="Observation-observation-usual-work-tom-yan-lee.html"><code class="language-plaintext highlighter-rouge">Elementary and Secondary Schools</code></a></td>
+    </tr>
+    <tr>
+      <td>First Prenatal Care Visit Date</td>
       <td><a href="Observation-observation-date-of-first-prenatal-care-visit-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">2018-05-18</code></a></td>
     </tr>
     <tr>
       <td>Mother’s Height</td>
-      <td><a href="Observation-observation-mother-height-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">56 in</code></a></td>
+      <td><a href="Observation-observation-mother-height-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">65 in</code></a></td>
     </tr>
     <tr>
       <td>Mother’s Prepregnancy Weight</td>
@@ -363,46 +363,51 @@ This information is transmitted in both a <a href="Bundle-bundle-provider-fetal-
       <td><a href="Observation-observation-mother-received-wic-food-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">No</code></a></td>
     </tr>
     <tr>
-      <td>Cigarette Smoking</td>
-      <td><a href="Observation-observation-cig-smoking-pregnancy-1-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">First Trimester = 0</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-2-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Second Trimester = 0</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-3-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">THird Trimester = 1</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-4-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Fourth Trimester = 0</code></a></td>
-    </tr>
-    <tr>
       <td>Number of Previous Live Births</td>
       <td><a href="Observation-observation-number-births-now-living-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Living = 1</code></a>, <a href="Observation-observation-number-births-now-dead-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Dead = 0</code></a></td>
     </tr>
     <tr>
-      <td>Last Live Outcome</td>
+      <td>Last Live Birth Date</td>
       <td><a href="Observation-observation-date-of-last-live-birth-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">2016-01-28</code></a></td>
     </tr>
     <tr>
-      <td>Last Normal Menses</td>
-      <td><a href="Observation-observation-last-menstrual-period-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Last Normal Menses</code></a></td>
+      <td>Cigarette Smoking</td>
+      <td><a href="Observation-observation-cig-smoking-pregnancy-1-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">First Trimester = 0</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-2-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Second Trimester = 0</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-3-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Third Trimester = 1</code></a>, <a href="Observation-observation-cig-smoking-pregnancy-4-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Fourth Trimester = 0</code></a></td>
+    </tr>
+    <tr>
+      <td>Last Normal Menses Date</td>
+      <td><a href="Observation-observation-last-menstrual-period-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">2018-04-18</code></a></td>
+    </tr>
+    <tr>
+      <td>Number of Deaths this Delivery</td>
+      <td><a href="Observation-observation-number-deaths-this-delivery-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">1</code></a></td>
+    </tr>
+    <tr>
+      <td>Mother Transferred</td>
+      <td><a href="Encounter-encounter-maternity-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">No</code></a></td>
     </tr>
     <tr>
       <td>Risk Factors During Pregnancy</td>
-      <td><a href="Condition-condition-gestational-diabetes-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Gestational Diabetes</code></a>, <a href="Observation-observation-number-previous-cesareans-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Cesareans = 1</code></a></td>
+      <td><a href="Condition-condition-gestational-diabetes-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Gestational Diabetes</code></a></td>
     </tr>
     <tr>
-      <td>Final Route/Method of Delivery</td>
-      <td><a href="Procedure-procedure-final-route-method-delivery-not-named.html"><code class="language-plaintext highlighter-rouge">Vaginal</code></a> with trial labor attempted</td>
+      <td>Number of Previous Cesareans</td>
+      <td><a href="Observation-observation-number-previous-cesareans-carmen-teresa-lee.html"><code class="language-plaintext highlighter-rouge">Cesareans = 1</code></a></td>
     </tr>
     <tr>
       <td>Fetal Presentation</td>
       <td><a href="Observation-observation-fetal-presentation-not-named.html"><code class="language-plaintext highlighter-rouge">Breech</code></a></td>
     </tr>
     <tr>
-      <td>Newborn Birthweight</td>
-      <td><a href="Observation-observation-birth-weight-not-named.html"><code class="language-plaintext highlighter-rouge">1530g</code></a></td>
-    </tr>
-    <tr>
-      <td>Obstetric Estimate of Gestation</td>
-      <td><a href="Observation-observation-gestational-age-at-delivery-not-named.html"><code class="language-plaintext highlighter-rouge">20 wk</code></a></td>
+      <td>Final Route/Method of Delivery</td>
+      <td><a href="Procedure-procedure-final-route-method-delivery-not-named.html"><code class="language-plaintext highlighter-rouge">Vaginal</code></a></td>
     </tr>
   </tbody>
 </table>
 
 <!--- Extensions -->
 <!---from VRCL-->
+<!-- other -->
 
 
 
@@ -429,7 +434,7 @@ This information is transmitted in both a <a href="Bundle-bundle-provider-fetal-
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

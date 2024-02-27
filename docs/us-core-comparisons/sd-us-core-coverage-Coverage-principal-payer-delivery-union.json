@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "15222225-6da1-45ff-b8c4-8970f3074fbd-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/15222225-6da1-45ff-b8c4-8970f3074fbd-2",
+  "id" : "b3ecc59c-2434-4b5d-9b6c-274645dfde39-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b3ecc59c-2434-4b5d-9b6c-274645dfde39-2",
   "name" : "UnionUSCoreCoverageProfileAndCoveragePrincipalPayerDelivery",
   "title" : "Union of US Core Coverage Profile And Coverage - Principal Payer for Delivery",
   "status" : "active",
-  "date" : "2024-02-13T11:56:57-05:00",
+  "date" : "2024-02-27T09:45:02-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -497,7 +497,7 @@
     },
     {
       "path" : "Coverage.type",
-      "short" : "left: Coverage category such as medical or accident; right: The value set contains the list of values used to indicate the principle source of payment for the labor and delivery.",
+      "short" : "left: Coverage category such as medical or accident; right: The value set contains the list of values used to indicate the principle source of payment for the labor and delivery (from codesystem https://nahdo.org/sopt).",
       "definition" : "The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization.",
       "comment" : "left: Identifies if the coverage is PPO, HMO, POS, etc.; right: Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
       "requirements" : "The order of application of coverages is dependent on the types of coverage.",
@@ -523,7 +523,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: US Public Health Data Consortium Source of Payment Codes; right: Birth and Fetal Death Financial Class (NCHS)",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/15222225-6da1-45ff-b8c4-8970f3074fbd-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b3ecc59c-2434-4b5d-9b6c-274645dfde39-5"
       },
       "mapping" : [{
         "identity" : "w5",
