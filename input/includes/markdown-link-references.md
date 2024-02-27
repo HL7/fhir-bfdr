@@ -195,3 +195,5 @@
 [ObservationEditFlagNumberPreviousCesareans]: StructureDefinition-Observation-edit-flag-number-previous-cesareans.html
 [ObservationEditFlagPlurality]: StructureDefinition-Observation-edit-flag-plurality.html
 [Extension-relatedperson-birthplace-vr]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Extension-relatedperson-birthplace-vr.html
+<!-- other -->
+[PHIN VADS - Cause of Fetal Death]: https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933
