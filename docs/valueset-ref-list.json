@@ -1,53 +1,11 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.14914",
-      "version" : "20190522",
-      "status" : "active",
-      "name" : "RaceValueSet",
-      "title" : "Race Value Set",
-      "description" : "Duplicate of official CDC Detailed Race 16.840.1.114222.4.11.876\nAll concepts that can describe a person's \"race\" as defined by the United States Bureau of Census. This includes the US Office of Management and Budget (OMB) five main categories, along with a sixth \"Other race\" category, plus all the more detailed descendant race concepts used by the US Bureau of Census.",
-      "systems" : ["urn:oid:2.16.840.1.113883.6.238"],
-      "oids" : ["2.16.840.1.113883.1.11.14914"],
-      "sources" : ["2.16.840.1.113883.1.11.14914"],
-      "uses" : {
-      },
-      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
-    },
-    {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837",
-      "version" : "20121025",
-      "status" : "active",
-      "name" : "Ethnicity",
-      "title" : "Ethnicity",
-      "description" : null,
-      "systems" : ["urn:oid:2.16.840.1.113883.6.238"],
-      "oids" : ["2.16.840.1.114222.4.11.837"],
-      "sources" : ["2.16.840.1.114222.4.11.837"],
-      "uses" : {
-      },
-      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
-    },
-    {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.877",
-      "version" : "20190518",
-      "status" : "active",
-      "name" : "DetailedEthnicity",
-      "title" : "Detailed Ethnicity",
-      "description" : null,
-      "systems" : ["urn:oid:2.16.840.1.113883.6.238"],
-      "oids" : ["2.16.840.1.114222.4.11.877"],
-      "sources" : ["2.16.840.1.114222.4.11.877"],
-      "uses" : {
-      },
-      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
-    },
-    {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing",
       "version" : "2.0.0-Ballot",
       "status" : "active",
       "name" : "ApgarTimingVS",
-      "title" : "ValueSet - APGAR Score Timing",
+      "title" : "APGAR Score Timing",
       "description" : "This valueset contains codes to represent standard timings for APGAR assessments.",
       "systems" : ["http://loinc.org", "http://snomed.info/sct"],
       "uses" : {
@@ -59,22 +17,20 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "BirthAndFetalDeathFinancialClassVS",
-      "title" : "ValueSet - Birth and Fetal Death Financial Class",
-      "description" : "This valueset contains codes to represent birth and fetal death financial class. This valueset is based on [PHVS_BirthAndFetalDeathFinancialClass_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A).",
-      "systems" : [
-        "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"
-      ],
+      "title" : "Birth and Fetal Death Financial Class",
+      "description" : "This valueset contains codes to represent birth and fetal death financial class. This valueset is based on \n[PHVS_BirthAndFetalDeathFinancialClass_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A). using codes from\nthe [Source of Payment Typology](https://terminology.hl7.org/3.0.0/CodeSystem-SOPT.html) codesystem.",
+      "systems" : ["https://nahdo.org/sopt"],
       "uses" : {
       },
-      "ConceptMap-BirthAndFetalDeathFinancialClassCM.html" : "BirthAndFetalDeathFinancialClass Concept Map",
-      "StructureDefinition-Coverage-principal-payer-delivery.html" : "Coverage - Principal Payer for Delivery"
+      "StructureDefinition-Coverage-principal-payer-delivery.html" : "Coverage - Principal Payer for Delivery",
+      "ConceptMap-BirthAndFetalDeathFinancialClassCM.html" : "BirthAndFetalDeathFinancialClass Concept Map"
     },
     {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-attendant-titles",
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "BirthAttendantTitlesVS",
-      "title" : "ValueSet - Birth Attendants Titles",
+      "title" : "Birth Attendants Titles",
       "description" : "This valueset contains codes to represent the type of birth attendant titles. This valueset is based on [PHVS_BirthAttendantTitles_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2)",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
@@ -89,7 +45,7 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "BirthDeliveryOccurredVS",
-      "title" : "ValueSet - Birth Delivery Occurred",
+      "title" : "Birth Delivery Occurred",
       "description" : "This valueset contains codes to represent the type of place where birth or delivery occurred. This valueset is based on [PHVS_BirthDeliveryOccurred_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51)",
       "systems" : [
         "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
@@ -98,16 +54,16 @@
       ],
       "uses" : {
       },
-      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "StructureDefinition-Encounter-maternity.html" : "Encounter - Maternity",
       "StructureDefinition-Encounter-birth.html" : "Encounter - Birth",
-      "StructureDefinition-Encounter-maternity.html" : "Encounter - Maternity"
+      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map"
     },
     {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-weight-edit-flags",
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "BirthWeightEditFlagsVS",
-      "title" : "ValueSet - Birth Weight Edit Flags (NCHS)",
+      "title" : "Birth Weight Edit Flags (NCHS)",
       "description" : "This valueset contains codes to represent Birth Weight Edit Flags. This valueset is based on [PHVS_BirthWeightEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=FA7A83A3-FCFD-E611-A856-0017A477041A)",
       "systems" : [
         "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
@@ -115,15 +71,15 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-Observation-birth-weight.html" : "Observation - Birth Weight",
-      "ConceptMap-BirthWeightEditFlagsCM.html" : "BirthWeightEditFlags Concept Map"
+      "ConceptMap-BirthWeightEditFlagsCM.html" : "BirthWeightEditFlags Concept Map",
+      "StructureDefinition-Observation-birth-weight.html" : "Observation - Birth Weight"
     },
     {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-delivery-routes",
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "DeliveryRoutesVS",
-      "title" : "ValueSet - Delivery Routes",
+      "title" : "Delivery Routes",
       "description" : "This valueset contains codes to represent Delivery Routes. This valueset is based on [PHVS_DeliveryRoutes_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=0C9E4D45-3FFD-4E97-AEF3-18CE5B878F46)",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
@@ -136,7 +92,7 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "EstimateOfGestationEditFlagsVS",
-      "title" : "ValueSet - Estimate of Gestation Edit Flags (NCHS)",
+      "title" : "Estimate of Gestation Edit Flags (NCHS)",
       "description" : "This valueset contains codes to represent Estimate of Gestation Edit Flags. This valueset is based on [PHVS_EstimateOfGestationEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7567)",
       "systems" : [
         "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
@@ -144,15 +100,15 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-Observation-gestational-age-at-delivery.html" : "Observation - Gestational Age at Delivery",
-      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map"
+      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
+      "StructureDefinition-Observation-gestational-age-at-delivery.html" : "Observation - Gestational Age at Delivery"
     },
     {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-cause-or-condition",
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "FetalDeathCauseOrConditionVS",
-      "title" : "ValueSet - Fetal Death Cause or Condition",
+      "title" : "Fetal Death Cause or Condition",
       "description" : "This valueset contains codes to represent fetal death cause or condition.  This valueset is based on [PHVS_FetalDeathCauseOrCondition_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=DC1C6A94-C9FF-42CD-B546-E789003ED793).",
       "systems" : [
         "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
@@ -161,8 +117,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-Condition-fetal-death-other-cause-or-condition.html" : "Condition - Fetal Death Other Cause or Condition",
       "StructureDefinition-Condition-fetal-death-cause-or-condition.html" : "Condition - Fetal Death Cause or Condition",
+      "StructureDefinition-Condition-fetal-death-other-cause-or-condition.html" : "Condition - Fetal Death Other Cause or Condition",
       "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map"
     },
     {
@@ -170,7 +126,7 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "FetalDeathTimePointsVS",
-      "title" : "ValueSet - Fetal Death Time Points",
+      "title" : "Fetal Death Time Points",
       "description" : "This valueset contains codes to represent fetal death time points. This valueset is based on [PHVS_FetalDeathTimePoints_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=52F8C812-2C70-4038-8F0F-D6E0532D4EBD)",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
@@ -186,23 +142,51 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "FetalPresentationsVS",
-      "title" : "ValueSet - Fetal Presentations",
-      "description" : "This valueset contains codes to represent fetal presentations. This valueset is based on [PHVS_FetalPresentations_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3C696B7B-BB33-4818-8996-1E3461E3F512)",
+      "title" : "Fetal Presentations",
+      "description" : "This valueset contains codes to represent fetal presentations. This valueset is based on \n[PHVS_FetalPresentations_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3C696B7B-BB33-4818-8996-1E3461E3F512).  \nOnly these codes are supported for exchange with NCHS.",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
         "http://snomed.info/sct"
       ],
       "uses" : {
       },
-      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map",
-      "StructureDefinition-Observation-fetal-presentation.html" : "Observation - Fetal Presentation at Birth/Delivery"
+      "StructureDefinition-Observation-fetal-presentation.html" : "Observation - Fetal Presentation at Birth/Delivery",
+      "ValueSet-ValueSet-fetal-presentations-max.html" : "Fetal Presentations - Max",
+      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations-max",
+      "version" : "2.0.0-Ballot",
+      "status" : "draft",
+      "name" : "FetalPresentationsMaxVS",
+      "title" : "Fetal Presentations - Max",
+      "description" : "This valueset contains codes to represent fetal presentations. It expands on the [FetalPresentationsVS] by including intensionally all codes for abnormal presentations, \nas suggested by [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-remains-disposition-method",
+      "version" : "2.0.0-Ballot",
+      "status" : "draft",
+      "name" : "FetalRemainsDispositionMethodVS",
+      "title" : "Fetal Remains Disposition Method VS",
+      "description" : "This valueset contains codes to represent Fetal Remains Method of Disposition. This valueset is based on [PHVS_FetalRemainsDispositionMethod_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7585).\nIt differs from the [MethodOfDispositionVS] valueset in that includes 'Hospital Disposition', but not 'Entombment'. ",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-fetal-remains-disposition-method.html" : "Observation - Fetal Remains Disposition Method"
     },
     {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-histological-placental-examination",
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "HistologicalPlacentalExaminationVS",
-      "title" : "ValueSet - Histological Placental Examination",
+      "title" : "Histological Placental Examination",
       "description" : "This valueset contains codes to represent histological placental examinations. This valueset is based on [PHVS_HistologicalPlacentalExamination_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=82BF4C7F-D01F-4019-A1E1-9F7CAACB7FC6)",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
@@ -215,7 +199,7 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "InfectionsDuringPregnancyLiveBirthVS",
-      "title" : "ValueSet - Infections During Pregnancy Live Birth",
+      "title" : "Infections During Pregnancy Live Birth",
       "description" : "This valueset contains codes to represent Infections During Pregnancy Live Birth. This valueset is based on [PHVS_InfectionsDuringPregnancyLiveBirth_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=AEF5A3D4-960C-4194-8BB6-392C7282D216). Includes 'Other' value for general utility, although #OTH is not allowed for birth submissions to NCHS.",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
@@ -223,15 +207,15 @@
       ],
       "uses" : {
       },
-      "ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html" : "InfectionsDuringPregnancyLiveBirth Concept Map",
-      "StructureDefinition-Condition-infection-present-during-pregnancy.html" : "Condition - Infection Present During Pregnancy"
+      "StructureDefinition-Condition-infection-present-during-pregnancy.html" : "Condition - Infection Present During Pregnancy",
+      "ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html" : "InfectionsDuringPregnancyLiveBirth Concept Map"
     },
     {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-informant-relationship-to-mother",
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "InformantRelationshipToMotherVS",
-      "title" : "ValueSet - Informant Relationship to Mother",
+      "title" : "Informant Relationship to Mother",
       "description" : "This valueset contains codes to represent informants relationship to mother. This valueset is based on [PHVS_InformantRelationshiptoMother_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=ADF95682-912A-E711-BE3F-0017A477041A).",
       "systems" : [
         "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"
@@ -245,7 +229,7 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "LocationTypeVS",
-      "title" : "ValueSet - Location Types",
+      "title" : "Location Types",
       "description" : "Valueset for location types used to differentate transfer and birth locations",
       "systems" : [
         "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"
@@ -255,26 +239,11 @@
       "StructureDefinition-Location-bfdr.html" : "Birth and Fetal Death Location"
     },
     {
-      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-method-of-disposition",
-      "version" : "2.0.0-Ballot",
-      "status" : "draft",
-      "name" : "MethodOfDispositionVS",
-      "title" : "Method of Disposition VS",
-      "description" : "This valueset contains codes to represent Fetal Remains Method of Disposition. This valueset is based on [PHVS_FetalRemainsDispositionMethod_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7585)",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-        "http://snomed.info/sct"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-Observation-method-of-disposition.html" : "Observation - Method of Disposition"
-    },
-    {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies",
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "NewbornCongenitalAnomaliesVS",
-      "title" : "ValueSet - Newborn Congenital Anomalies",
+      "title" : "Newborn Congenital Anomalies",
       "description" : "The valueset contains codes to represent newborn congenital anomalies. This valueset is based on [PHVS_NewbornCongenitalAnomalies_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51). Includes 'Other' value for general utility, although #OTH is not allowed for birth submissions to NCHS.",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
@@ -290,7 +259,7 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "NumberPreviousCesareansEditFlagsVS",
-      "title" : "ValueSet - Number of Previous Cesareans Edit Flags (NCHS)",
+      "title" : "Number of Previous Cesareans Edit Flags (NCHS)",
       "description" : "This valueset contains codes to represent Number of Previous Cesareans Edit Flags. This valueset is based on [PHVS_NumberOfPreviousCesareansEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=C5BC6D8B-DDFA-E611-A856-0017A477041A)",
       "systems" : [
         "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
@@ -302,20 +271,11 @@
       "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map"
     },
     {
-      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure",
-      "version" : "2.0.0-Ballot",
-      "status" : "draft",
-      "name" : "ObstetricProcedureVS",
-      "title" : "ValueSet - Obstetric Procedures",
-      "description" : "This valueset contains codes to represent obstetric procedures. This valueset is based on [PHVS_ObstetricProcedures_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=6D41E52D-2415-4EC4-A38A-87B0FEC503FB)",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure-outcome",
       "version" : "2.0.0-Ballot",
       "status" : "active",
       "name" : "ValueSetObstetricProcedureOutcome",
-      "title" : "ValueSet - Obstetric Procedure Outcome",
+      "title" : "Obstetric Procedure Outcome",
       "description" : "This valueset contains codes that represent the successful or unsuccessful outcome of an obstretric procedure",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
@@ -327,25 +287,37 @@
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "PregnancyReportEditFlagsVS",
-      "title" : "ValueSet - Pregnancy Report Edit Flags (NCHS)",
+      "title" : "Pregnancy Report Edit Flags (NCHS)",
       "description" : "This valueset contains codes to represent Pregnancy Report Edit Flags. This valueset is based on [PHVS_PregnancyReportEditFlags_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BD25B456-85EC-45D7-B578-1024EE2920F4). Used for MothersHeight, MothersDeliveryWeight, MothersPrepregnancyWeight, NumberPrenatalCareVisits",
       "systems" : [
         "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"
       ],
       "uses" : {
       },
-      "ConceptMap-PregnancyReportEditFlagsCM.html" : "PregnancyReportEditFlags Concept Map",
-      "StructureDefinition-Observation-mother-delivery-weight.html" : "Observation - Mother Delivery Weight",
-      "StructureDefinition-Observation-mother-prepregnancy-weight.html" : "Observation - Mother Prepregnancy Weight",
       "StructureDefinition-Observation-mother-height.html" : "Observation - Mother Height",
+      "ConceptMap-PregnancyReportEditFlagsCM.html" : "PregnancyReportEditFlags Concept Map",
+      "StructureDefinition-Observation-mother-prepregnancy-weight.html" : "Observation - Mother Prepregnancy Weight",
+      "StructureDefinition-Observation-mother-delivery-weight.html" : "Observation - Mother Delivery Weight",
       "StructureDefinition-Observation-number-prenatal-visits.html" : "Observation - Number of Prenatal Visits"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age",
+      "version" : "2.0.0-Ballot",
+      "status" : "active",
+      "name" : "ValueSetUnitsOfGestationalAge",
+      "title" : "Units of Gestational Age Vital",
+      "description" : "This valueset contains the set of codes for specifying the units used when recording gestational age (days, weeks.).\n\nReporting to NCHS is always in units of weeks, but other users of the associated [ObservationGestationalAgeAtDelivery] profile may want to record days.\n",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-gestational-age-at-delivery.html" : "Observation - Gestational Age at Delivery"
     },
     {
       "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/cigarette-smoking-before-during-pregnancy",
       "version" : "2.0.0-Ballot",
       "status" : "draft",
       "name" : "CigaretteSmokingBeforeAndDuringPregnancyVS",
-      "title" : "ValueSet - Cigarette Smoking Before and During Pregnancy",
+      "title" : "Cigarette Smoking Before and During Pregnancy",
       "description" : "This valueset contains codes to represent the number of cigarettes smoked in specific periods before and during pregnancy.",
       "systems" : ["http://loinc.org"],
       "uses" : {
@@ -353,66 +325,31 @@
       "StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html" : "Observation - Cigarette Smoking Before and During Pregnancy"
     },
     {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity",
-      "version" : "5.0.1",
+      "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-birth-attendant-titles-vr",
+      "version" : "2.0.0",
       "status" : "active",
-      "name" : "DetailedEthnicity",
-      "title" : "Detailed ethnicity",
-      "description" : "The codes for the concepts 'Unknown', 'Asked but no answer', 'other, and the 41 [CDC ethnicity codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 2 OMB ethnicity category codes.",
+      "name" : "ValueSetBirthAttendantTitlesVitalRecords",
+      "title" : "Birth Attendants Titles Vital Records",
+      "description" : "This valueset contains codes to represent the type of birth attendant titles. This valueset is based on [PHVS_BirthAttendantTitles_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2)\n\nMapping to IJE codes [here](ConceptMap-ConceptMapBirthAttendantTitlesVitalRecords.html).",
       "systems" : [
-        "urn:oid:2.16.840.1.113883.6.238",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
       ],
       "uses" : {
       },
-      "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
-      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
+      "StructureDefinition-Practitioner-birth-attendant.html" : "Practitioner - Birth Attendant",
+      "StructureDefinition-Practitioner-birth-certifier.html" : "Practitioner - Birth Certifier"
     },
     {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/detailed-race",
-      "version" : "5.0.1",
+      "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-birthplace-country-vr",
+      "version" : "2.0.0",
       "status" : "active",
-      "name" : "DetailedRace",
-      "title" : "Detailed Race",
-      "description" : "The codes for the concepts 'Unknown', 'Asked but no answer', 'other, and the 900+ [CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes.",
+      "name" : "ValueSetBirthplaceCountryVitalRecords",
+      "title" : "Birthplace Country Vital Records",
+      "description" : "This valueset contains the set of codes used to represent 2 Letter Birthplace Country Codes from GEC and ISO 3166-1.  Includes historic countries that no longer exist.",
       "systems" : [
-        "urn:oid:2.16.840.1.113883.6.238",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-country-code-vr"
       ],
-      "uses" : {
-      },
-      "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
-      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category",
-      "version" : "5.0.1",
-      "status" : "active",
-      "name" : "OmbEthnicityCategories",
-      "title" : "OMB Ethnicity Categories",
-      "description" : "The codes for the concepts 'Unknown', 'Asked but no answer', and the ethnicity categories - 'Hispanic or Latino' and 'Not Hispanic or Latino' - as defined by the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf).",
-      "systems" : [
-        "urn:oid:2.16.840.1.113883.6.238",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
-      ],
-      "uses" : {
-      },
-      "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
-      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/omb-race-category",
-      "version" : "5.0.1",
-      "status" : "active",
-      "name" : "OmbRaceCategories",
-      "title" : "OMB Race Categories",
-      "description" : "The codes for the concepts 'Unknown', 'Asked but Unknown', 'Other Race'* and\nthe codes for the five race categories - 'American Indian' or 'Alaska Native',\n'Asian', 'Black or African American', 'Native Hawaiian or Other Pacific\nIslander', and 'White' - as defined by the [OMB Standards for Maintaining,\nCollecting, and Presenting Federal Data on Race and Ethnicity, Statistical\nPolicy Directive No. 15, as revised, October 30,\n1997](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)\n\n\\* The use of 'Other Race' is discouraged for statistical analysis.",
-      "systems" : [
-        "urn:oid:2.16.840.1.113883.6.238",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.2.575"],
-      "sources" : ["2.16.840.1.113883.4.642.2.575"],
       "uses" : {
       },
       "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
@@ -420,8 +357,8 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-education-level-vr",
-      "version" : "2.0.0-ballot",
-      "status" : "draft",
+      "version" : "2.0.0",
+      "status" : "active",
       "name" : "ValueSetEducationLevelVitalRecords",
       "title" : "Education Level Vital Records",
       "description" : "This valueset contains the set of codes used to represent the Highest educational level achieved.\r\n\r\nMapping to IJE codes [here](ConceptMap-ConceptMapEducationLevelVitalRecords.html).",
@@ -436,8 +373,23 @@
       "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
     },
     {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-residence-country-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ValueSetResidenceCountryVitalRecords",
+      "title" : "Residence Country Vital Records",
+      "description" : "This valueset contains the set of codes used to represent 2 Letter Residence Country Codes from GEC and ISO 3166-1.  Excludes historic countries that no longer exist",
+      "systems" : [
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-country-code-vr"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
+      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-sex-assigned-at-birth-vr",
-      "version" : "2.0.0-ballot",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ValueSetSexAssignedAtBirthVitalRecords",
       "title" : "Sex Assigned At Birth Vital Records",
@@ -451,8 +403,55 @@
       "StructureDefinition-Patient-decedent-fetus.html" : "Patient - Decedent Fetus"
     },
     {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-states-territories-provinces-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ValueSetStatesTerritoriesAndProvincesVitalRecords",
+      "title" : "States, Territories and Provinces Vital Records",
+      "description" : "This valueset contains the set of codes used to represent 2 Letter States and Provinces",
+      "systems" : [
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr",
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-canadian-provinces-vr",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
+      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-usstates-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ValueSetUSStatesVitalRecords",
+      "title" : "US States Vital Records",
+      "description" : "This valueset contains the set of 2 Letter codes used to represent the 50 US States and DC",
+      "systems" : [
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
+      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-usterritories-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ValueSetUSTerritoriesVitalRecords",
+      "title" : "US Territories Vital Records",
+      "description" : "This valueset contains the set of 2 Letter codes used to represent US Territories",
+      "systems" : [
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
+      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-not-applicable-vr",
-      "version" : "2.0.0-ballot",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ValueSetYesNoNotApplicableVitalRecords",
       "title" : "Yes No Not Applicable Vital Records",
@@ -468,7 +467,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-yes-no-unknown-vr",
-      "version" : "2.0.0-ballot",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ValueSetYesNoUnknownVitalRecords",
       "title" : "Yes No Unknown Vital Records",
@@ -480,9 +479,9 @@
       "uses" : {
       },
       "Questionnaire-Questionnaire-patients-fetal-death.html" : "Questionnaire - Patient's Worksheet for the Report of Fetal Death",
+      "StructureDefinition-Observation-mother-received-wic-food.html" : "Observation - Mother Recieved WIC Food",
       "StructureDefinition-Observation-mother-married-during-pregnancy.html" : "Observation - Mother Married During Pregnancy",
-      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate",
-      "StructureDefinition-Observation-mother-received-wic-food.html" : "Observation - Mother Recieved WIC Food"
+      "Questionnaire-Questionnaire-mothers-live-birth.html" : "Questionnaire - Mother's Worksheet for Child's Birth Certificate"
     },
     {
       "url" : "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7933",

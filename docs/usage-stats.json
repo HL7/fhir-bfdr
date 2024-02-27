@@ -6,9 +6,23 @@
   "extensions": [
     {
       "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference",
-      "title": "Extension - Encounter Maternity Reference",
+      "title": "Encounter Maternity Reference",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant",
+      "title": "Practitioner Role - Birth Attendant",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier",
+      "title": "Practitioner Role - Certifier",
+      "types": [
+        "code"
       ]
     }
   ],
@@ -191,6 +205,10 @@
         "title": "Observation - Fetal Presentation at Birth/Delivery"
       },
       {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-remains-disposition-method",
+        "title": "Observation - Fetal Remains Disposition Method"
+      },
+      {
         "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery",
         "title": "Observation - Gestational Age at Delivery"
       },
@@ -217,10 +235,6 @@
       {
         "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period",
         "title": "Observation - Last Menstrual Period"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition",
-        "title": "Observation - Method of Disposition"
       },
       {
         "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-delivery-weight",
@@ -333,6 +347,16 @@
         "title": "Patient - Decedent Fetus"
       }
     ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Practitioner-birth-attendant",
+        "title": "Practitioner - Birth Attendant"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Practitioner-birth-certifier",
+        "title": "Practitioner - Birth Certifier"
+      }
+    ],
     "Procedure": [
       {
         "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis",
@@ -416,6 +440,7 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
@@ -485,22 +510,28 @@
       "Bundle.entry.resource.encounter",
       "Composition.encounter"
     ],
+    "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant": [
+      "Bundle.entry.resource",
+      "Practitioner"
+    ],
+    "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier": [
+      "Bundle.entry.resource",
+      "Practitioner"
+    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
       "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
       "Bundle.entry.resource",
-      "Patient",
-      "RelatedPerson"
+      "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Bundle.entry.resource",
-      "Patient",
-      "RelatedPerson"
+      "Patient"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1": [
       "Bundle.entry.resource.identifier",
@@ -530,12 +561,14 @@
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CityCode": [
       "Location.address.city",
       "Patient.address.city",
-      "Patient.extension.value[x].city"
+      "Patient.extension.value[x].city",
+      "Practitioner.address.city"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/DistrictCode": [
       "Location.address.district",
       "Patient.address.district",
-      "Patient.extension.value[x].district"
+      "Patient.extension.value[x].district",
+      "Practitioner.address.district"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-jurisdiction-id-vr": [
       "Location.address.state",
@@ -545,8 +578,7 @@
       "Patient.birthDate"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr": [
-      "Bundle.entry.resource",
-      "Patient"
+      "Patient.deceased[x]"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr": [
       "Bundle.entry.resource",
@@ -559,8 +591,7 @@
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-role-vr": [
       "Bundle.entry.resource",
       "Encounter",
-      "Observation",
-      "Patient.extension"
+      "Observation"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr": [
       "Bundle.entry.resource.address",
@@ -568,27 +599,33 @@
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/PostDirectional": [
       "Location.address",
-      "Patient.address"
+      "Patient.address",
+      "Practitioner.address"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/PreDirectional": [
       "Location.address",
-      "Patient.address"
+      "Patient.address",
+      "Practitioner.address"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/StreetDesignator": [
       "Location.address",
-      "Patient.address"
+      "Patient.address",
+      "Practitioner.address"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/StreetName": [
       "Location.address",
-      "Patient.address"
+      "Patient.address",
+      "Practitioner.address"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/StreetNumber": [
       "Location.address",
-      "Patient.address"
+      "Patient.address",
+      "Practitioner.address"
     ],
     "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/UnitOrAptNumber": [
       "Location.address",
-      "Patient.address"
+      "Patient.address",
+      "Practitioner.address"
     ]
   }
 }

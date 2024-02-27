@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ValueSet - Birth and Fetal Death Financial Class - Birth And Fetal Death (BFDR) - STU2-ballot v2.0.0-Ballot</title>
+    <title>Birth and Fetal Death Financial Class - Birth And Fetal Death (BFDR) - STU2-ballot v2.0.0-Ballot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"22.96"}
-    h3,h4,h5,h6{--heading-prefix:"22.96"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.102"}
+    h3,h4,h5,h6{--heading-prefix:"22.102"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -128,7 +128,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -204,7 +204,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet - Birth and Fetal Death Financial Class</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Birth and Fetal Death Financial Class</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -260,7 +260,7 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: ValueSet - Birth and Fetal Death Financial Class
+  <h2 id="root">ValueSet: Birth and Fetal Death Financial Class
 
   </h2>
   <table class="colsd">
@@ -285,7 +285,7 @@
         
           Draft
           
-            as of 2024-02-13
+            as of 2024-02-27
           
         
       </td>
@@ -298,15 +298,12 @@
 
 
 
-    <tr>
-      <td colspan="5"><p><em>Copyright/Legal</em>: include appropriate copyright ruleset</p>
-</td>
-    </tr>
-
   </table>
 
 <p>
-<p>This valueset contains codes to represent birth and fetal death financial class. This valueset is based on <a href="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A">PHVS_BirthAndFetalDeathFinancialClass_NCHS</a>.</p>
+<p>This valueset contains codes to represent birth and fetal death financial class. This valueset is based on 
+<a href="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A">PHVS_BirthAndFetalDeathFinancialClass_NCHS</a>. using codes from
+the <a href="https://terminology.hl7.org/3.0.0/CodeSystem-SOPT.html">Source of Payment Typology</a> codesystem.</p>
 
 </p>
 
@@ -329,21 +326,13 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-CodeSystem-local-bfdr-codes.html"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_indianhealth">finclass_indianhealth</a></td><td>Indian Health Service or Tribe</td><td>Indian Health Service or Tribe</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_medicaid">finclass_medicaid</a></td><td>MEDICAID</td><td>MEDICAID</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_nosource">finclass_nosource</a></td><td>No Typology Code available for payment source</td><td>No Typology Code available for payment source</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_othergov">finclass_othergov</a></td><td>Other Government (Federal, State, Local not specified)</td><td>Other Government (Federal, State, Local not specified)</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_privateinsurance">finclass_privateinsurance</a></td><td>PRIVATE HEALTH INSURANCE</td><td>PRIVATE HEALTH INSURANCE</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_selfpay">finclass_selfpay</a></td><td>Self-pay</td><td>Self-pay</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_tricare">finclass_tricare</a></td><td>TRICARE (CHAMPUS)</td><td>TRICARE (CHAMPUS)</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_unknown">finclass_unknown</a></td><td>Unavailable / Unknown</td><td>Unavailable / Unknown</td></tr></table></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="https://nahdo.org/sopt"><code>https://nahdo.org/sopt</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-33">33</a></td><td>Indian Health Service or Tribe</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-2">2</a></td><td>MEDICAID</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-99">99</a></td><td>No Typology Code available for payment source</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-38">38</a></td><td>Other Government (Federal, State, Local not specified)</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-5">5</a></td><td>PRIVATE HEALTH INSURANCE</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-81">81</a></td><td>Self-pay</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-311">311</a></td><td>TRICARE (CHAMPUS)</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-9999">9999</a></td><td>Unavailable / Unknown</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-CodeSystem-local-bfdr-codes.html">codesystem Local BFDR Codes v2.0.0-Ballot (CodeSystem)</a></p><p>This value set contains 8 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-finclass-indianhealth"> </a>  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_indianhealth">finclass_indianhealth</a></td><td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td><td>Indian Health Service or Tribe</td><td><div><p>Indian Health Service or Tribe</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-finclass-medicaid"> </a>  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_medicaid">finclass_medicaid</a></td><td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td><td>MEDICAID</td><td><div><p>MEDICAID</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-finclass-nosource"> </a>  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_nosource">finclass_nosource</a></td><td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td><td>No Typology Code available for payment source</td><td><div><p>No Typology Code available for payment source</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-finclass-othergov"> </a>  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_othergov">finclass_othergov</a></td><td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td><td>Other Government (Federal, State, Local not specified)</td><td><div><p>Other Government (Federal, State, Local not specified)</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-finclass-privateinsurance"> </a>  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_privateinsurance">finclass_privateinsurance</a></td><td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td><td>PRIVATE HEALTH INSURANCE</td><td><div><p>PRIVATE HEALTH INSURANCE</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-finclass-selfpay"> </a>  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_selfpay">finclass_selfpay</a></td><td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td><td>Self-pay</td><td><div><p>Self-pay</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-finclass-tricare"> </a>  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_tricare">finclass_tricare</a></td><td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td><td>TRICARE (CHAMPUS)</td><td><div><p>TRICARE (CHAMPUS)</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-finclass-unknown"> </a>  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-finclass_unknown">finclass_unknown</a></td><td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td><td>Unavailable / Unknown</td><td><div><p>Unavailable / Unknown</p>
-</div></td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="https://nahdo.org/sopt">codesystem Source of Payment Typology v9.2 (CodeSystem)</a></p><p>This value set contains 8 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="https---nahdo.org-sopt-33"> </a>  <a href="https://nahdo.org/sopt.html#SOP-33">33</a></td><td>https://nahdo.org/sopt</td><td>Indian Health Service or Tribe</td></tr><tr><td style="white-space:nowrap"><a name="https---nahdo.org-sopt-2"> </a>  <a href="https://nahdo.org/sopt.html#SOP-2">2</a></td><td>https://nahdo.org/sopt</td><td>MEDICAID</td></tr><tr><td style="white-space:nowrap"><a name="https---nahdo.org-sopt-99"> </a>  <a href="https://nahdo.org/sopt.html#SOP-99">99</a></td><td>https://nahdo.org/sopt</td><td>No Typology Code available for payment source</td></tr><tr><td style="white-space:nowrap"><a name="https---nahdo.org-sopt-38"> </a>  <a href="https://nahdo.org/sopt.html#SOP-38">38</a></td><td>https://nahdo.org/sopt</td><td>Other Government (Federal, State, Local not specified)</td></tr><tr><td style="white-space:nowrap"><a name="https---nahdo.org-sopt-5"> </a>  <a href="https://nahdo.org/sopt.html#SOP-5">5</a></td><td>https://nahdo.org/sopt</td><td>PRIVATE HEALTH INSURANCE</td></tr><tr><td style="white-space:nowrap"><a name="https---nahdo.org-sopt-81"> </a>  <a href="https://nahdo.org/sopt.html#SOP-81">81</a></td><td>https://nahdo.org/sopt</td><td>Self-pay</td></tr><tr><td style="white-space:nowrap"><a name="https---nahdo.org-sopt-311"> </a>  <a href="https://nahdo.org/sopt.html#SOP-311">311</a></td><td>https://nahdo.org/sopt</td><td>TRICARE (CHAMPUS)</td></tr><tr><td style="white-space:nowrap"><a name="https---nahdo.org-sopt-9999"> </a>  <a href="https://nahdo.org/sopt.html#SOP-9999">9999</a></td><td>https://nahdo.org/sopt</td><td>Unavailable / Unknown</td></tr></table></div>
 
   <hr/>
   <p>
@@ -408,7 +397,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

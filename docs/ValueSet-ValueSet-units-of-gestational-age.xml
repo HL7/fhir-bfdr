@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-units-of-gestational-age"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>d</td><td>Days</td></tr><tr><td>wk</td><td>Weeks</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age"/>
+  <version value="2.0.0-Ballot"/>
+  <name value="ValueSetUnitsOfGestationalAge"/>
+  <title value="Units of Gestational Age Vital"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-02-27T09:44:15-05:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains the set of codes for specifying the units used when recording gestational age (days, weeks.).&#xA;&#xA;Reporting to NCHS is always in units of weeks, but other users of the associated [ObservationGestationalAgeAtDelivery] profile may want to record days.&#xA;"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+      <concept>
+        <code value="d"/>
+        <display value="Days"/>
+      </concept>
+      <concept>
+        <code value="wk"/>
+        <display value="Weeks"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
