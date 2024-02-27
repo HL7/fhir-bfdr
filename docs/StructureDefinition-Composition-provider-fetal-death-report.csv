@@ -72,7 +72,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 "Composition.encounter.id","Composition.encounter.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Composition.encounter.extension","Composition.encounter.extension","","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference]]} {[]}
-","Extension - Encounter Maternity Reference","This Extension profile is a reference to the maternity encounter.","","","","","","","","","",,,,,"","value:url}
+","Encounter Maternity Reference","This Extension profile is a reference to the maternity encounter.","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -531,7 +531,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Obstetric estimate of gestation","The obstetric estimate of the infant's gestation in completed weeks based on the birth/delivery attendant's final estimate of gestation which should be determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam","If there are no entries in the list, an emptyReason SHOULD be provided.","","","","","","","","",,,,,"",,,,"Composition.section.entry",0,*,"ele-1
 cmp-2","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
-"Composition.section:fetus.entry:methodOfDisposition","Composition.section.entry","methodOfDisposition","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-method-of-disposition]]}
+"Composition.section:fetus.entry:fetalRemainsDispositionMethod","Composition.section.entry","fetalRemainsDispositionMethod","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-remains-disposition-method]]}
 ","Method of decedent fetus disposition","Method of decedent fetus disposition","If there are no entries in the list, an emptyReason SHOULD be provided.","","","","","","","","",,,,,"",,,,"Composition.section.entry",0,*,"ele-1
 cmp-2","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"

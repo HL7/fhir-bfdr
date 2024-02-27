@@ -15,38 +15,9 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: American Indian or Alaska Native (Details: urn:oid:2.16.840.1.113883.6.238 code 1002-5 = 'American Indian or Alaska Native', stated as 'American Indian or Alaska Native')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: White, American Indian or Alaska Native</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>identifier</b>: Social Security number: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-ssn.html\">#</a>132225986 (use: USUAL)</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Jada Ann Quinn (OFFICIAL)</p><p><b>telecom</b>: ph: 1-(404)555-1212(HOME), <a href=\"mailto:jadaann.quinn@example.com\">jadaann.quinn@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-01-15</p><p><b>address</b>: 1875 West Morton Avenue Salt Lake City UT 84116 US (HOME)</p></div>"
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><p><b>identifier</b>: Social Security number: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-ssn.html\">#</a>132225986 (use: USUAL)</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Jada Ann Quinn (OFFICIAL)</p><p><b>telecom</b>: ph: 1-(404)555-1212(HOME), <a href=\"mailto:jadaann.quinn@example.com\">jadaann.quinn@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-01-15</p><p><b>address</b>: 1875 West Morton Avenue Salt Lake City UT 84116 US (HOME)</p></div>"
   ] ; # 
-  fhir:extension ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "1002-5" ] ;
-         fhir:display [ fhir:v "American Indian or Alaska Native" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "White, American Indian or Alaska Native" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
-  ] [
-     fhir:extension ( [
-       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:Coding ;
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "2186-5" ] ;
-         fhir:display [ fhir:v "Not Hispanic or Latino" ]
-       ]
-     ] [
-       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Not Hispanic or Latino" ]
-     ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
-  ] ) ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "usual" ] ;
      fhir:type [

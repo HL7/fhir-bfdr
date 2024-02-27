@@ -105,7 +105,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
 "Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Coded Responses from C-CDA Vital Sign Results","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","Mother's body weight --at delivery","Coded Responses from C-CDA Vital Sign Results.","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
     <code value=""69461-2""/>
@@ -178,7 +178,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 qty-3","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(see OBX.6 etc.) / CQ.2","n/a","CO.codeSystem, PQ.translation.codeSystem"
 "Observation.value[x].code","Observation.value[x].code","","","",0,1,"","","Y","code {[]} {[]}
-","Coded form of the unit","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""[lb_av]""/>","","","","",,,,,"",,,,"Quantity.code",0,1,"ele-1
+","pound","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""[lb_av]""/>","","","","",,,,,"",,,,"Quantity.code",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(see OBX.6 etc.) / CQ.2","n/a","PQ.code, MO.currency, PQ.translation.code"
 "Observation.dataAbsentReason","Observation.dataAbsentReason","","","",0,1,"Y","","","CodeableConcept {[]} {[]}

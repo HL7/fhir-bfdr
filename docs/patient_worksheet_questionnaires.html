@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-ballot</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-Ballot - ballot
+            <span style="display:inline-block;">2.0.0-Ballot - trial-use
 
 
 
@@ -128,7 +128,7 @@
         <a href="usage.html">Usage Notes</a>
       </li>
       <li>
-        <a href="patient_worksheet_questionnaires.html">Worksheet Questionaires</a>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
       </li>
       <li>
         <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
@@ -266,18 +266,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <h3 id="implementation-notes">Implementation Notes</h3>
+<h4 id="inclusion-of-the-questionnaireresponse-in-submissions">Inclusion of the QuestionnaireResponse in Submissions</h4>
 <ul>
-  <li>The Questionnaire instances include all the questions in the standard worksheets.</li>
+  <li>The Questionnaire instances include all the questions in the standard worksheets and support the standard controlled vocabularies for all relevant fields.</li>
+  <li>Information gathered using the Questionnaire should be reviewed by the birth clerk or clinician before it is sent.</li>
+  <li>QuestionnaireResponses may be included in the provider-sourced bundles (<a href="StructureDefinition-Bundle-document-birth-report.html">birth</a> and <a href="StructureDefinition-Bundle-document-fetal-death-report.html">fetal death</a>), and referenced from the respective compositions (<a href="StructureDefinition-Composition-provider-live-birth-report.html">birth</a> and <a href="StructureDefinition-Composition-provider-fetal-death-report.html">fetal death</a>).</li>
+  <li>The inclusion of the QuestionnaireResponse is optional and is not “Must Support”</li>
+  <li>For data elements that are present in both the QuestionnaireResponse as responses, and in the other FHIR resources within the submission, the authoritative data in the submission SHALL NOT be the QuestionnaireResponse.  The full content of the QuestionnaireResponse should be delivered via the other FHIR resources in the submission, unless the sender has confirmed with the receiver that they are capable of extracting the content of the QuestionnaireResponse.</li>
+  <li>Jurisdictional submissions SHALL NOT contain the QuestionnaireResponse.
+    <h4 id="customization-of-the-questionnare-for-state-specific-requirements">Customization of the Questionnare for State-Specific Requirements</h4>
+  </li>
   <li>To address state/jurisdiction specific requirements, it is possible to make a copy of the Questionnaire and add questions (Questionnaire.item) to gather data over and above that defined in the standard worksheets. (See <a href="https://www.hl7.org/fhir/questionnaire.html">FHIR Questionnaire</a> for futher information).</li>
   <li>All Questionnaire items are optional in the provided Questionnaire instances, however, it is possible to make a copy of the Questionnaire and set Questionnaire.item.required to “true” to make selected items required.</li>
-  <li>Information gathered using the Questionnaire should be reviewed by the birth clerk or clinician before it is sent.</li>
-  <li>It is possible to send the resulting QuestionnaireResponse contained in the relevant Composition ([Composition - Provider Live Birth Report][CompositionProviderLiveBirthReport] or [Composition - Provider Fetal Death Report][CompositionProviderFetalDeathReport]).
-    <ul>
-      <li>The containment of the QuestionnaireResponse is optional and is not “Must Support”</li>
-      <li>If sending the QuestionnaireResponse in the Composition is a consideration, it is important to work with the receiving jurisdication to ensure they can support receipt of the instance</li>
-    </ul>
-  </li>
 </ul>
+
 
 
 
@@ -303,7 +305,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 11:56-0500">2024-02-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 09:44-0500">2024-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

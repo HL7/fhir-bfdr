@@ -43,7 +43,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v3-RoleCode""/>
     <code value=""MTH""/>
   </coding>
-</valueCodeableConcept>","","","",,"extensible","Father, Mother","http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-role-vr","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","Vital Records Role","http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-role-vr","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Encounter.modifierExtension","Encounter.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
@@ -198,7 +198,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.participant:attendant.period","Encounter.participant.period","","","",0,1,"Y","","","Period {[]} {[]}
 ","Period of time during the encounter that the participant participated","The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.","","","","","","","","","",,,,,"",,,,"Encounter.participant.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".time","ROL-5, ROL-6 (or maybe PRT-5)"
-"Encounter.participant:attendant.individual","Encounter.participant.individual","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr]]}
+"Encounter.participant:attendant.individual","Encounter.participant.individual","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/bfdr/StructureDefinition/Practitioner-birth-attendant]]}
 ","Persons involved in the encounter other than the patient","Persons involved in the encounter other than the patient.","","","","","","","","","",,,,,"",,,,"Encounter.participant.individual",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor",".role","FiveWs.who","ROL-4"
 "Encounter.participant:certifier","Encounter.participant","certifier","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
@@ -243,7 +243,7 @@ per-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 ","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"ele-1
 per-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","./high","DR.2"
-"Encounter.participant:certifier.individual","Encounter.participant.individual","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr]]}
+"Encounter.participant:certifier.individual","Encounter.participant.individual","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/bfdr/StructureDefinition/Practitioner-birth-certifier]]}
 ","Persons involved in the encounter other than the patient","Persons involved in the encounter other than the patient.","","","","","","","","","",,,,,"",,,,"Encounter.participant.individual",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor",".role","FiveWs.who","ROL-4"
 "Encounter.appointment","Encounter.appointment","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Appointment]]}
