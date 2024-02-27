@@ -10,6 +10,7 @@ Usage: #example
   * family = "Janet"
   * given = "Seito"
   * suffix = "D.O."
+  * text = "Janet Seito"
 // This seems like a mistake (not by us)
 // * name
 //   * family = "Jones"
