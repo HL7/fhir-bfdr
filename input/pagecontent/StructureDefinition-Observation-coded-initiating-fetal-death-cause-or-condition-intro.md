@@ -31,7 +31,7 @@
   <td>ICOD</td>
   <td>value</td>
   <td>codeable</td>
-  <td>[https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933]</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933'>PHIN VADS - Cause of Fetal Death</a></td>
 </tr>
 
 </tbody>
