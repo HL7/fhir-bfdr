@@ -10,6 +10,7 @@ Usage: #example
   * family = "Jones"
   * given = "Avery"
   * suffix = "D.O."
+  * text = "Avery Jones"
 * qualification.code = $sct#76231001 "Osteopath (occupation)"
 * extension[0]
   * url = "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant" 
