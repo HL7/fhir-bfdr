@@ -73,4 +73,5 @@ Usage: #example
 * insert addentry(Procedure, procedure-infertility-treatment-jada-ann-quinn) 
 * insert addentry(Procedure, procedure-artificial-insemination-jada-ann-quinn) 
 * insert addentry(Observation, observation-antibiotics-during-labor-jada-ann-quinn) 
+* insert addentry(Procedure, procedure-antibiotic-sepsis-babyg-quinn)
 * insert addentry(Procedure,  procedure-epidural-or-spinal-anesthesia-jada-ann-quinn) 

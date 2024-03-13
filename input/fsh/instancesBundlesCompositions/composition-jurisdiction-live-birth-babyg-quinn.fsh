@@ -71,6 +71,7 @@ Usage: #example
     // * entry[+]
   //   * reference = "Observation/observation-plurality-jada-ann-quinn"
   //   * display = "Observation - Plurality (Jada Ann Quinn)"
+  * insert addNamedEntryComposition(abnormalConditionsNewborn, Procedure, procedure-antibiotic-sepsis-babyg-quinn) 
   * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn) 
   * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn-2) 
   * insert addNamedEntryComposition(infantLiving, Observation, observation-infant-living-babyg-quinn) 
