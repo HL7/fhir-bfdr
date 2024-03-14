@@ -65,7 +65,8 @@ Usage: #example
   * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-5-min) 
   * insert addNamedEntryComposition(numberLiveBirthsThisDelivery, Observation, observation-number-live-births-this-delivery-jada-ann-quinn) 
   * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn) 
-  * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn-2) 
+  * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn-2)
+  * insert addNamedEntryComposition(abnormalConditionsNewborn, Procedure, procedure-antibiotic-sepsis-babyg-quinn)  
   * insert addNamedEntryComposition(infantLiving, Observation, observation-infant-living-babyg-quinn) 
   * insert addNamedEntryComposition(infantBreastfedAtDischarge, Observation, observation-infant-breastfed-at-discharge-babyg-quinn) 
 * section[motherInformation]
