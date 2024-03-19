@@ -6,24 +6,12 @@ require 'open-uri'
 require "pry"
 require "roo"
 require "csv"
-# method 1: #Invoke-Webrequest https://github.com/HL7/vr-common-library/blob/master/input/mapping/Forms_Mapping.csv?raw=true -Outfile "./input/mapping/BFDR_Forms_Mapping.csv"
 
-# method 2:
-# download2 = URI.open('https://github.com/HL7/vr-common-library/blob/master/input/mapping/BFDR_Forms_Mapping.csv?raw=true')
-# IO.copy_stream(download2, 'input/mapping/BFDR_Forms_Mapping.csv')
 
 def get_file_type(file)
   File.extname(file).gsub(".", "")
 end
 
-# def open_spreadsheet(file)
-#   extension = get_file_type(file)
-#   if ["csv", "xls", "xlsx"].include? extension
-#     Roo::Spreadsheet.open(file, extension: extension)
-#   else
-#     raise "Unknown file type: #{file}"
-#   end
-# end
 
 # BFDR_Forms_mapping.csv columns
 FORMS_ORDER_COL = 0

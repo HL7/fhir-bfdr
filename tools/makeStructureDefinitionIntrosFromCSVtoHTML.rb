@@ -385,8 +385,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
           if NONE_SPECIFIED_BIRTH.key?(vProfileName)
             if NONE_SPECIFIED_BIRTH[vProfileName].include?(row[IJE_PROFILE_COL].to_s) 
-          # if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
-          #   || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
               next if (row[IJE_USECASE_COL].to_s != "Natality")
             else 
               next if (row[IJE_USECASE_COL].to_s != "Natality" || row[IJE_PROFILE_COL].to_s != vProfileName)
@@ -447,8 +445,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         CSV.foreach(pIJEMappingSpreadsheet) do |row|
           if NONE_SPECIFIED_DEATH.key?(vProfileName)
             if NONE_SPECIFIED_DEATH[vProfileName].include?(row[IJE_PROFILE_COL].to_s) 
-          # if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
-          #   || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
               next if (row[IJE_USECASE_COL].to_s != "Fetal Death")
             else 
               next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName)
@@ -456,7 +452,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           else
             next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName)
           end
-          # next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName)
           if firstEntry
             if firstTable
               vIntroOutputFile.puts "<details open>"
@@ -571,8 +566,6 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
       CSV.foreach(pIJEMappingSpreadsheet) do |row|
         if NONE_SPECIFIED_DEATH.key?(vProfileName)
           if NONE_SPECIFIED_DEATH[vProfileName].include?(row[IJE_PROFILE_COL].to_s) 
-        # if (row[IJE_PROFILE_COL].to_s == "ConditionInfectionPresentDuringPregnancy" && vProfileName == "ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy") \
-        #   || (row[IJE_PROFILE_COL].to_s == "ProcedureObstetric" && vProfileName == "ObservationNoneOfSpecifiedObstetricProcedures")
             next if (row[IJE_USECASE_COL].to_s != "Mortality Roster")
           else 
             next if (row[IJE_USECASE_COL].to_s != "Mortality Roster" || row[IJE_PROFILE_COL].to_s != vProfileName)
