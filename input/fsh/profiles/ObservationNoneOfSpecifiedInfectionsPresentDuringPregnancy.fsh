@@ -6,7 +6,7 @@ Description: "This profile indicates that none of the specified infections durin
 * code = $loinc#72519-2 
   * ^short = "Infections present and/or treated during this pregnancy for live birth [US Standard Certificate of Live Birth]"
 * subject 1..
-* subject only Reference(PatientChildVitalRecords)
+* subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] = $sct#260413007 
