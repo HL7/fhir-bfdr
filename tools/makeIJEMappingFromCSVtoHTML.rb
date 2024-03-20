@@ -175,7 +175,6 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
                 pOutputFile.puts "<tr><td style='text-align: center;'>" + field.chomp + "</td><td>" + description.chomp + "</td><td style='text-align: center;'>" + ijename + "</td><td>" + profile + "</td><td>" + fhirfield + "</td><td>" + fhirtype + "</td><td>" + fhirencoding + "</td></tr>"
             end
         end
-        #pOutputFile.puts "</tbody>"
     end
     pOutputFile.puts "</tbody>"
     pOutputFile.puts "</table>"
