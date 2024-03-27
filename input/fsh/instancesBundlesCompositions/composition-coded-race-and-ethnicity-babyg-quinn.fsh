@@ -57,7 +57,6 @@ InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - InputRaceAndEthnicity example [Mother]"
 Description: "Example of input-race-and-ethnicity-vr profile (Mother)"
-//* insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother
 * status = #final
 * subject.display = "EBRS-generated - mother"
@@ -90,7 +89,6 @@ InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - InputRaceAndEthnicity example [Father]"
 Description: "Example of input-race-and-ethnicity-vr profile (Father)"
-//* insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather
 * status = #final
 * subject.display = "EBRS-generated - father"

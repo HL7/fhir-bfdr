@@ -3,6 +3,7 @@ Parent: USCoreProcedureProfile
 Id: Procedure-final-route-method-delivery
 Title: "Procedure - Final Route and Method of Delivery"
 Description: "This profile represents the final route and method of delivery."
+* category 1..1
 * category = $loinc#73762-7 
   * ^short = "Final route and method of delivery [US Standard Certificate of Live Birth]"
 * code from DeliveryRoutesVS (required)

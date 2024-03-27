@@ -4,7 +4,6 @@ InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - InputRaceAndEthnicity example [jada ann quinn]"
 Description: "Example of input-race-and-ethnicity-vr profile (jada-ann-quinn)"
-//* insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother
 * status = #final
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
@@ -35,7 +34,6 @@ InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - InputRaceAndEthnicity example [carmen teresa lee]"
 Description: "Example of input-race-and-ethnicity-vr profile (carmen-teresa-lee)"
-//* insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother
 * status = #final
 * subject = Reference(patient-mother-carmen-teresa-lee) "Patient - Mother (Carmen Teresa Lee)"
@@ -66,7 +64,6 @@ InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - InputRaceAndEthnicity example [james-quinn with edit]"
 Description: "Example of input-race-and-ethnicity-vr profile (James Quinn with edit)"
-//* insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather
 * status = #final
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
@@ -99,7 +96,6 @@ InstanceOf: ObservationInputRaceAndEthnicityVitalRecords
 Usage: #example
 Title: "Observation - InputRaceAndEthnicity example [james-quinn]"
 Description: "Example of input-race-and-ethnicity-vr profile (James Quinn)"
-//* insert AddMetaProfile(InputRaceAndEthnicity)
 * code = CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather
 * status = #final
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"

@@ -47,9 +47,9 @@ RuleSet: RequireMetaProfile(profile)
 * hello
 
 RuleSet: AddMetaProfile(profile)
-//* meta.profile = Canonical({profile})
-// this does nothing
-* hello
+* meta
+  * profile[+] = Canonical({profile})
+
 
 RuleSet: SNOMEDCopyright
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
@@ -68,6 +68,12 @@ RuleSet: ExtensionContext(path)
 RuleSet: ExtensionContextResource(path)
 * insert ExtensionContext({path})
 //* insert ExtensionContext({path}.Extension)
+
+RuleSet: ExtensionContextFhirpath(fhirpath)
+* ^context[+].type = #fhirpath
+* ^context[=].expression = "{fhirpath}"
+
+
 
 RuleSet: ParameterSlicing
 * parameter ^slicing.discriminator.type = #value
