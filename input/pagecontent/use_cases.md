@@ -18,7 +18,7 @@ Information flows are supported by the FHIR Composition resources embedded in a 
 | Provider Live Birth           | [Composition - Provider Live Birth Report][CompositionProviderLiveBirthReport]           | EHR | VRO  |
 | Provider Fetal Death          | [Composition - Provider Fetal Death Report][CompositionProviderFetalDeathReport]         | EHR | VRO |
 | Jurisdiction Live Birth       | [Composition - Jurisdiction Live Birth Report][CompositionJurisdictionLiveBirthReport]   | VRO | NCHS | 
-| Jurisdiction Fetal Death      | [Composition - Jurisdiction Fetal Death Report][CompositionJurisdictionFetalDeathReport] | VRO | NCH  | 
+| Jurisdiction Fetal Death      | [Composition - Jurisdiction Fetal Death Report][CompositionJurisdictionFetalDeathReport] | VRO | NCHS  | 
 | Coded Race and Ethnicity      | [Composition - Coded Race and Ethnicity][CompositionCodedRaceAndEthnicity]               | NCHS | VRO |
 | Coded Cause of Fetal Death    | [Composition - Coded Cause of Fetal Death][CompositionCodedCauseOfFetalDeath]            | NCHS | VRO |
 {: .grid }
