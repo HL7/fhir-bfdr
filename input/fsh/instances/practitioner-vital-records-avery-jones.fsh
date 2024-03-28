@@ -1,8 +1,10 @@
 Instance: practitioner-vital-records-avery-jones
 InstanceOf: PractitionerVitalRecords
 Title: "Practitioner - Vital Records - Avery Jones, MD"
-Description: "Practitioner - Vital Records: Avery Jones, MD example"
+Description: "Practitioner - Vital Records: Avery Jones, MD example.   This instance satisfies both the Birth Attendant and BirthCertifier profiles."
 Usage: #example
+* insert AddMetaProfile(PractitionerBirthCertifier)
+* insert AddMetaProfile(PractitionerBirthAttendant)
 * identifier
   * system = "http://hl7.org/fhir/sid/us-npi"
   * value = "76231001"
