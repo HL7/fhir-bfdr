@@ -20,6 +20,7 @@ Usage: #example
     * city = "Salt Lake City"
     * district = "Salt Lake"
     * state = "UT"
+* deceasedBoolean = false 
 * identifier
   * use = #usual
   * type = $v2-0203#MR "Medical Record Number"

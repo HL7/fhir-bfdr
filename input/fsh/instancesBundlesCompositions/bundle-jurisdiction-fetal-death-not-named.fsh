@@ -30,6 +30,7 @@ Usage: #example
 * insert addentry(Observation, observation-cig-smoking-pregnancy-3-carmen-teresa-lee)
 * insert addentry(Observation, observation-cig-smoking-pregnancy-4-carmen-teresa-lee)
 * insert addentry(Observation, observation-number-previous-cesareans-carmen-teresa-lee-w-edit)
+* insert addentry(Condition, condition-gestational-diabetes-carmen-teresa-lee)
 * insert addentry(Observation, observation-fetal-presentation-not-named)
 * insert addentry(Procedure, procedure-final-route-method-delivery-not-named)
 * insert addentry(Observation, observation-birth-weight-not-named-w-edit)
