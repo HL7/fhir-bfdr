@@ -1,4 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
@@ -17,9 +18,16 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-final-route-method-delivery-babyg-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-final-route-method-delivery-babyg-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-final-route-method-delivery.html\">Procedure - Final Route and Method of Delivery</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Cesarean section <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11466000)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mother-jada-ann-quinn.html\">Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn)</a> &quot; QUINN&quot;</p><p><b>performed</b>: 2019-02-12 12:45:00-0700 --&gt; 2019-02-12 13:15:00-0700</p><p><b>reasonReference</b>: <a href=\"Observation-observation-labor-trial-attempted-babyg-quinn.html\">Observation/observation-labor-trial-attempted-babyg-quinn: Labor trial attempted - true</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-final-route-method-delivery-babyg-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-final-route-method-delivery-babyg-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-final-route-method-delivery.html\">Procedure - Final Route and Method of Delivery</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: Final route and method of delivery [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73762-7)</span></p><p><b>code</b>: Cesarean section <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11466000)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mother-jada-ann-quinn.html\">Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn)</a> &quot; QUINN&quot;</p><p><b>performed</b>: 2019-02-12 12:45:00-0700 --&gt; 2019-02-12 13:15:00-0700</p><p><b>reasonReference</b>: <a href=\"Observation-observation-labor-trial-attempted-babyg-quinn.html\">Observation/observation-labor-trial-attempted-babyg-quinn: Labor trial attempted - true</a></p></div>"
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a loinc:73762-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73762-7" ]
+     ] )
+  ] ; # 
   fhir:code [
      fhir:coding ( [
        a sct:11466000 ;
