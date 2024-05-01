@@ -57,7 +57,7 @@ This element is labeled as a modifier because the status contains codes that mar
 Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Reason for current status","Captures the reason for the current state of the procedure.","This is generally only used for ""exception"" statuses such as ""not-done"", ""suspended"" or ""aborted"". The reason for performing the event at all is captured in reasonCode, not here.","","","","","","","","",,"example","A code that identifies the reason a procedure was not performed.","http://hl7.org/fhir/ValueSet/procedure-not-performed-reason","",,,,"Procedure.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.statusReason",".reason.Observation.value"
-"Procedure.category","Procedure.category","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+"Procedure.category","Procedure.category","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Abnormal conditions of the newborn [US Standard Certificate of Live Birth]","A code that classifies the procedure for searching, sorting and display purposes (e.g. ""Surgical Procedure"").","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
