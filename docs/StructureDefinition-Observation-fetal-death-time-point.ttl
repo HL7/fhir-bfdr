@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "ObservationFetalDeathTimePoint"] ; # 
   fhir:title [ fhir:v "Observation - Fetal Death Time Point"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-05T09:43:17-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-01T14:05:02-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Public Health" ] ;
@@ -41,6 +41,11 @@
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
+     fhir:identity [ fhir:v "fetal-death-report" ] ;
+     fhir:uri [ fhir:v "https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "U.S. Standard Report of Fetal Death (rev. 2003)" ] ;
+     fhir:comment [ fhir:v "This table maps profile elements to  U.S. Standard Report of Fetal Death (rev. 2003)" ]
+  ] [
      fhir:identity [ fhir:v "workflow" ] ;
      fhir:uri [ fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ] ;
      fhir:name [ fhir:v "Workflow Pattern" ]
@@ -64,11 +69,6 @@
      fhir:identity [ fhir:v "sct-attr" ] ;
      fhir:uri [ fhir:v "http://snomed.org/attributebinding"^^xsd:anyURI ] ;
      fhir:name [ fhir:v "SNOMED CT Attribute Binding" ]
-  ] [
-     fhir:identity [ fhir:v "fetal-death-report" ] ;
-     fhir:uri [ fhir:v "https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf"^^xsd:anyURI ] ;
-     fhir:name [ fhir:v "U.S. Standard Report of Fetal Death (rev. 2003)" ] ;
-     fhir:comment [ fhir:v "This table maps profile elements to  U.S. Standard Report of Fetal Death (rev. 2003)" ]
   ] ) ; # 
   fhir:kind [ fhir:v "resource"] ; # 
   fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 

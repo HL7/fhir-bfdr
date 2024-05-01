@@ -308,7 +308,7 @@
         
           Draft
           
-            as of 2024-03-05
+            as of 2024-05-01
           
         
       </td>
@@ -351,7 +351,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;t
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ObservationFetalPresentation&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation - Fetal Presentation at Birth/Delivery&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-03-05T09:43:17-05:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-05-01T14:05:02-04:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 International / Public Health&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 International / Public Health&quot; ] ;
@@ -368,6 +368,16 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;t
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhir:fhirVersion</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;4.0.1&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">fhir:mapping</a> ( [
+<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;fetal-death-report&quot; ] ;
+<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;U.S. Standard Report of Fetal Death (rev. 2003)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;This table maps profile elements to  U.S. Standard Report of Fetal Death (rev. 2003)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;live-birth-certificate&quot; ] ;
+<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;U.S. Standard Certificate of Live Birth (rev. 2003)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;This table maps profile elements to U.S. Standard Certificate of Live Birth (rev. 2003)&quot; ]
+  ] [
 <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/workflow&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Workflow Pattern&quot; ]
@@ -391,16 +401,6 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;t
 <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;sct-attr&quot; ] ;
 <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.org/attributebinding&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SNOMED CT Attribute Binding&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;fetal-death-report&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;U.S. Standard Report of Fetal Death (rev. 2003)&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;This table maps profile elements to  U.S. Standard Report of Fetal Death (rev. 2003)&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;live-birth-certificate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;U.S. Standard Certificate of Live Birth (rev. 2003)&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.comment">fhir:comment</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;This table maps profile elements to U.S. Standard Certificate of Live Birth (rev. 2003)&quot; ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;resource&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.abstract">fhir:abstract</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
@@ -2714,7 +2714,7 @@ a loinc:73761-9 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 5, 2024 09:43-0500">2024-03-05</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 1, 2024 14:05-0400">2024-05-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
