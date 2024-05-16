@@ -130,7 +130,7 @@ This IG uses profiles based on the [US Core Patient]({{site.data.fhir.ver.hl7fhi
 
 To record that a Patient is a member of a multiple birth (plurality as a characteristic of a patient), and their place in the delivery order (set order), requires the use of the following:
 1. Patient.[multipleBirthInteger]({{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr-definitions.html#diff_Patient.multipleBirth[x]): requires an integer (not boolean) to indicate the delivery order (delivered first, second, third, etc.)
-2. Extension: [patient-multipleBirthTotal](http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html): indicates the total number of deliveries that occurred
+2. Extension: [patient-multipleBirthTotal](https://hl7.org/fhir/extensions/1.0.0/StructureDefinition-patient-multipleBirthTotal.html): indicates the total number of deliveries that occurred
 
 Both data elements are required for meaningful transmission of the information about plurality as a characteristic of the patient. See [example](Patient-patient-decedent-fetus-not-named.html).
 
