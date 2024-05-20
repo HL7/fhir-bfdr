@@ -144,6 +144,18 @@
 </tbody>
 </table>
 
+### STU2 Extensions
+<table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
+<tbody>
+<tr>
+<td style='background-color:#98c1d9; text-align: center; width: 37%;'><b>Name</b></td>
+<td style='background-color:#98c1d9; text-align: center; width: 20%;'><b>Previous Version/Location</b></td>
+<td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
+</tr>
+<tr><td> <a href='StructureDefinition-Extension-jurisdictional-facility-identifier.html'>JurisdictionalFacilityIdentifier</a></td><td> New </td><td> New Addition </td></tr>
+</tbody>
+</table>
+
 ### STU2 Valuesets
 
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
