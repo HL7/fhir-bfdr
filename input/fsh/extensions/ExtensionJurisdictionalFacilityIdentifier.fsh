@@ -1,5 +1,5 @@
 Extension: JurisdictionalFacilityIdentifier
-Id: JurisdictionalFacilityIdentifier
+Id: Extension-jurisdictional-facility-identifier
 Title: "Jurisdictional Facility Identifier"
 Description: "An identifier associated with a birth or fetal death facility location.  Four character string per NCHS edit specifications."
 * insert ExtensionContextResource(Meta)
