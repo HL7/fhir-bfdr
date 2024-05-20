@@ -6,7 +6,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
-<details open>
+<details>
 
 <summary>
 

@@ -6,7 +6,7 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
  .context-menu {cursor: context-menu; color: #438bca;}
  .context-menu:hover {opacity: 0.5;}
 </style>
-<details open>
+<details>
 
 <summary>
 

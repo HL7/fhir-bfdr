@@ -19,7 +19,7 @@
 #output: after running script, generated files will be in the /generated/VRDR folder. Copy or move generated files to /input/pagecontent in order for updated content to be included in IG
 
 require "json"
-require "pry"
+#require "pry"
 require "roo"
 require "csv"
 
@@ -184,7 +184,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           next if (row[IJE_USECASE_COL].to_s != "Natality" || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M")
           if firstEntry
             firstTable = false
-            vIntroOutputFile.puts "<details open>"
+            vIntroOutputFile.puts "<details>" #details open if you want first table to show by default
             vIntroOutputFile.puts ""
             vIntroOutputFile.puts "<summary>"
             vIntroOutputFile.puts ""
@@ -233,7 +233,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           next if (row[IJE_USECASE_COL].to_s != "Natality" || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F")
           if firstEntry
             if firstTable
-              vIntroOutputFile.puts "<details open>"
+              vIntroOutputFile.puts "<details>" #details open if you want first table to show by default
               firstTable = false
             else
               vIntroOutputFile.puts "<details>"
@@ -286,7 +286,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "M")
           if firstEntry
             if firstTable
-              vIntroOutputFile.puts "<details open>"
+              vIntroOutputFile.puts "<details>" #details open if you want first table to show by default
               firstTable = false
             else
               vIntroOutputFile.puts "<details>"
@@ -338,7 +338,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName || row[IJE_NAME_COL].to_s[0] != "F")
           if firstEntry
             if firstTable
-              vIntroOutputFile.puts "<details open>"
+              vIntroOutputFile.puts "<details>" #details open if you want first table to show by default
               firstTable = false
             else
               vIntroOutputFile.puts "<details>"
@@ -400,7 +400,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           end
           if firstEntry
             if firstTable
-              vIntroOutputFile.puts "<details open>"
+              vIntroOutputFile.puts "<details>" #details open if you want first table to show by default
               firstTable = false
             else
               vIntroOutputFile.puts "<details>"
@@ -463,7 +463,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
           # next if (row[IJE_USECASE_COL].to_s != "Fetal Death" || row[IJE_PROFILE_COL].to_s != vProfileName)
           if firstEntry
             if firstTable
-              vIntroOutputFile.puts "<details open>"
+              vIntroOutputFile.puts "<details>" #details open if you want first table to show by default
               firstTable = false
             else
               vIntroOutputFile.puts "<details>"
@@ -524,7 +524,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         end
         if firstEntry
           if firstTable
-            vIntroOutputFile.puts "<details open>"
+            vIntroOutputFile.puts "<details>" #details open if you want first table to show by default
             firstTable = false
           else
             vIntroOutputFile.puts "<details>"
@@ -586,7 +586,7 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         end
         if firstEntry
           if firstTable
-            vIntroOutputFile.puts "<details open>"
+            vIntroOutputFile.puts "<details>" #details open if you want first table to show by default
             firstTable = false
           else
             vIntroOutputFile.puts "<details>"
