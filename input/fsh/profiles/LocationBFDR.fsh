@@ -20,7 +20,7 @@ Description: "Location used for source/destination of transfers and location of 
 * identifier contains NPI 0..1
 * identifier[NPI] ^patternIdentifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI] ^short = "Facility NPI Number"
-* identifier.extension contains AuxiliaryStateIdentifier1 named JFI 0..1
+* identifier.extension contains JurisdictionalFacilityIdentifier named JFI 0..1
 * identifier.extension[JFI] ^short = "Jurisdictional Facility Identifier"
 * address ^short = "Address of Location"
   * line ^short = "Street Address"

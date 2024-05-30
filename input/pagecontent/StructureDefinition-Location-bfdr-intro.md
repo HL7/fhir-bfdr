@@ -40,7 +40,7 @@
   <td>Facility ID (State-Assigned)</td>
   <td>SFN</td>
   <td>identifier.extension[JFI], type:BFDR = "birth"</td>
-  <td>Identifier</td>
+  <td>string(4)</td>
   <td></td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@
   <td>Facility ID (State-Assigned)</td>
   <td>SFN</td>
   <td>identifier.extension[JFI], type:BFDR = "birth"</td>
-  <td>Identifier</td>
+  <td>string(4)</td>
   <td></td>
 </tr>
 <tr>

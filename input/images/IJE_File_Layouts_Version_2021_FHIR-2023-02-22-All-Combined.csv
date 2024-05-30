@@ -313,8 +313,8 @@ Codes: If AGETYPE = 1 then 001-135, 999
 F = Female
 U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,y,,,,Decedent,
 442,Mortality Roster,13,207,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent,
-477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",Identifier,,B,,,,,Location-bfdr,
-830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",Identifier,,B,,,,,Location-bfdr,
+477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",string(4),,B,,,,,Location-bfdr,
+830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",string(4),,B,,,,,Location-bfdr,
 1354,Birth Infant Death,13,51,4,Facility ID (State-Assigned),SFN,,,,,,,,,,,,,,
 1195,ITOP,13,51,1,Place Type Where Termination Occurred,TPLACE,"1 = Hospital
 2 = Clinic
