@@ -2,7 +2,7 @@ Instance: HistologicalPlacentalExaminationCM
 InstanceOf: ConceptMap
 Usage: #definition
 * experimental = false
-* insert ConceptMapIntro(HistologicalPlacentalExamination, HistologicalPlacentalExaminationVS)
+* insert ConceptMapIntro(HistologicalPlacentalExamination, PerformedNotPerformedPlannedVS)
 * insert AddGroup($IJE, $sct)
 * insert MapConcept( #Y,  "Yes", #398166005, "Performed")
 * insert MapConcept( #N,  "No", #262008008, "Not Performed")

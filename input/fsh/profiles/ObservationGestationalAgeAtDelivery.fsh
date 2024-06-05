@@ -13,7 +13,7 @@ in weeks will be rounded down to an integer."
 * value[x] 1..
 * value[x] only Quantity
 * valueQuantity ^short = "Age in weeks or days"
-  * code from ValueSetUnitsOfGestationalAge (required) // = $UCUM#wk (exactly)
+  * code from UnitsOfGestationalAgeVS (required) // = $UCUM#wk (exactly)
   * value 1..1
 * method MS
 // Add Edit Flags, a la VRDR 

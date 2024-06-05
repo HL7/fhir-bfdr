@@ -186,7 +186,7 @@ For Canadian Provinces:
 1345,Birth Infant Death,4,13,1,Void flag,VOID,"0 = default; valid record
 1 = VOID record",,,,,,,,,,,,,
 10,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,,DeathCertificateDocument,
-11,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,,CauseOfDeathCodedContentBundle,
+11,Mortality,5 or 121,14,12,Auxiliary State file number,AUXNO or AUXNO2,000000000001-999999999999; Blank,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),"When the Jurisdiction provides AUXNO2, it will be stored in this field.  If the Jurisdiction only provides AUXNO, that value will be stored in this field",,y,,,,CauseOfDeathCodedContentBundle,
 12,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DemographicCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,,DemographicCodedContentBundle,
 469,Natality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,BundleDocumentBirthReport,identifier.extension[localFileNumber1].value,string(12),,B,,,,,AuxiliaryStateIdentifier1,
 1187,ITOP,5,14,12,Auxiliary State File Number,AUXNO,000000000001-999999999999; blank,,not implemented,not implemented,,,,,,,,,not implemented,
@@ -1644,7 +1644,7 @@ Blank for natural death.",i,VRDR,InjuryLocation,address.district.extension[distr
 N = No
 U = Unknown",,not implemented,not implemented,,,,-,,,,,not implemented,
 131,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,,DeathCertificateDocument,
-132,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,,CauseOfDeathCodedContentBundle,
+132,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,,,
 133,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,DemographicCodedContentBundle,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,,DemographicCodedContentBundle,
 1303,ITOP,121,967,1,"Other complications 
 (at time of followup at other facility) ",OTHER_F2,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
@@ -1925,7 +1925,7 @@ year of child's birth, 8888, 9999",,,,,,,,,,,,,
 1490,Birth Infant Death,149,803,2,Number of Cigarettes Smoked in 3 months prior to Pregnancy,CIGPN,"00-98, 99",,,,,,,,,,,,,
 966,Fetal Death,149,534,1,Was a Histological Placental Examination Performed?,HISTOP,"Y = Yes
 N = No
-P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,[HistologicalPlacentalExaminationVS],B,,,,,Observation-histological-placental-exam-performed,
+P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,[PerformedNotPerformedPlannedVS],B,,,,,Observation-histological-placental-exam-performed,
 420,Surveillance,149,3505,30,Informant's Relationship,INFORMRELATE,,i,VRDR,Decedent,contact.type.text ,string (30 characters),-,,,,,,Decedent,
 161,Mortality,149,1533,10,Decedent's Residence - Street designator,STDESIG_R,,,VRDR,Decedent,address.extension[stdesig],string,-,,y,,,,Decedent,
 1331,ITOP,149,1191,1,Reason for Termination -- Contraceptive failure,REASON_CONTRA_FAIL,"Y, N",,not implemented,not implemented,,,,,,,,,not implemented,
