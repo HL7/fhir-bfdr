@@ -4,6 +4,7 @@
  - [FHIR-43473](https://jira.hl7.org/browse/FHIR-43473) - To improve consistency with VRDR the key reporting identifiers (birth cert no, fetal death report number, local file numbers, and overall record identifier) were moved from the Composition.identifier to the Bundle.identifier and were updated to use standardized extensions. The definitions of these extensions will also be moved to the Vital Records Common Library.
 
 ### Minor
+- [FHIR-44187](https://jira.hl7.org/browse/FHIR-44187) Renamed HistologicalPlacentalExaminationVS to [PerformedNotPerformedPlannedVS], and corresponding concept map for discoverability. Additionally renamed ValuesetUnitsOfGestationalAge and ValuesetObstetricProcedureOutcome to UnitsOfGestationalAgeVS and ObstetricProcedureOutcomeVS, respectively, for consistency in naming convention.
 - [FHIR-45500](https://jira.hl7.org/browse/FHIR-45500) Created extension for [jurisdictional facility identifier][JurisdictionalFacilityIdentifier] to be used in [LocationBFDR] in lieu of AuxiliaryStateIdentifier1. 
 - [FHIR-44679](https://jira.hl7.org/browse/FHIR-44679) Clarified precedence of QuestionnaireResponse data in patient_worksheet_questionnaries(patient_worksheet-questionnaires.html)
 - Added [PractitionerBirthAttendant] and [PractitionerBirthCertifier] profiles with corresponding extensions that distinguish these two types of Practitioner
