@@ -13,6 +13,7 @@
 
 #output file: generated/BFDR/vital_records_forms_mapping.md. Copy or move generated file to /input/pagecontent in order for updated page to be included in IG
 
+require_relative "makeExcelFromCSV"
 require "json"
 require 'open-uri'
 require "pry"
@@ -22,15 +23,6 @@ require "csv"
 def get_file_type(file)
   File.extname(file).gsub(".", "")
 end
-
-# def open_spreadsheet(file)
-#   extension = get_file_type(file)
-#   if ["csv", "xls", "xlsx"].include? extension
-#     Roo::Spreadsheet.open(file, extension: extension)
-#   else
-#     raise "Unknown file type: #{file}"
-#   end
-# end
 
 # BFDR_Forms_mapping.csv columns
 FORMS_ORDER_COL = 0
