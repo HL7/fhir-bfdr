@@ -1,17 +1,17 @@
 # NOTE: Before running this script, you should download a local copy of the latest spreadsheets from https://github.com/nightingaleproject/vital_records_sheets using either method below:
 
 #method 1 (Windows PC):
-#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
-#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true -Outfile "./input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv"
+#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true -Outfile "./input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv"
+#Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true -Outfile "./input/images/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv"
 
 #method 2 (MAC):
 # require 'open-uri'
-# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv?raw=true')
-# IO.copy_stream(download1, 'input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
-# IO.copy_stream(download1, 'input/images/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv')
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
+# IO.copy_stream(download1, 'input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
+# IO.copy_stream(download1, 'input/images/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
 
 #run:
-#ruby tools/makeIJEMappingFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.csv 
+#ruby tools/makeIJEMappingFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv 
 
 #output files: after running script, generated files will be in the /generated/dataDictionaries folder. Copy or move generated files to /input/pagecontent in order for updated pages to be included in IG
 
@@ -35,7 +35,7 @@ def open_spreadsheet(file)
   end
 end
 
-# IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx columns
+# IJE_File_Layouts_and_FHIR_Mapping_24-06-21.xlsx columns
 IJE_USECASE_COL = 1
 IJE_FIELD_COL = 2
 IJE_BEGIN_COL = 3
@@ -67,7 +67,7 @@ vProfileIntrosSpreadsheet = ARGV[0]
 #vProfileIntrosSpreadsheet = open_spreadsheet(ARGV[0])
 #vProfileIntrosSpreadsheet.default_sheet = "BFDR"
 
-# ARGV[1] input/mapping/IJE_File_Layouts_Version_2021_FHIR-2023-02-22-All-Combined.xlsx 
+# ARGV[1] input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.xlsx 
 vSpreadsheet = ARGV[1]
 #vSpreadsheet = open_spreadsheet(ARGV[1])
 #vSpreadsheet.default_sheet = "IJE_File_Layouts_Version_2021_F"
