@@ -103,12 +103,12 @@ The Coded Cause of Fetal Death use case is represented by the [Composition - Cod
 
 ### Mother - Baby Linkage
 
-The FHIR specification gives guidance on representing the relationship between a mothe and her baby in the [Mother and newborn relationships section](https://hl7.org/fhir/R4/patient.html#maternity) of the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource. 
+The FHIR specification gives guidance on representing the relationship between a mother and her baby in the [Mother and newborn relationships section](https://hl7.org/fhir/R4/patient.html#maternity) of the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource. 
 
-For the purposes of modeling the linkage between a mother and her baby and relating the encounters of a mother and her baby in a maternity encounter for birth and fetal death reporting , we have followed the FHIR guidance. 
+For the purposes of modeling the linkage between a mother and her baby and relating the encounters of a mother and her baby in a maternity encounter for birth and fetal death reporting, we have followed the FHIR guidance. 
 
 See the following examples for further details:
-* Baby's Encounter (partOf Mother's Encounter): [Encounter - Birth - Baby G Quinn](Encounter-encounter-birth-babyg-quinn.html) 
+* Baby's Encounter (part of Mother's Encounter): [Encounter - Birth - Baby G Quinn](Encounter-encounter-birth-babyg-quinn.html) 
 * Mother's Encounter: [Encounter - Maternity - Jada Ann Quinn](Encounter-encounter-maternity-jada-ann-quinn.html)
 * Baby Patient: [Patient - Child - Vital Records - Baby G Quinn](Patient-patient-child-babyg-quinn.html)
 * Mother Patient: [Patient - Mother - Vital Records - Jada Ann Quinn](Patient-patient-mother-jada-ann-quinn.html)
