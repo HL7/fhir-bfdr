@@ -13,9 +13,11 @@ Description: "A stillborn for whom clinical data is included in the report."
 * extension[birthsex].valueCode from ValueSetSexAssignedAtBirthVitalRecords (required)
 * insert decedentFetusName 
 * insert birthDateAndTime 
-* deceasedBoolean = true (exactly)
+* deceasedBoolean 1..1 
+* deceasedBoolean = true
   * ^short = "The fetus is deceased"
-* deceasedBoolean.extension[fetalDeath].valueBoolean = true 
+* deceasedBoolean.extension[fetalDeath] 1..1
+* deceasedBoolean.extension[fetalDeath].valueBoolean = true
 * multipleBirth[x] only integer
 * multipleBirth[x] MS
   * .extension[bypassEditFlag].value[x]
