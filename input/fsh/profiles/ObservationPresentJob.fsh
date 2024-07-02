@@ -1,6 +1,6 @@
 Profile: ObservationPresentJob
 Parent: PastOrPresentJob
-Id: Observation-past-or-present-job
+Id: Observation-present-job
 Title: "Observation - Present Job"
 Description: "Used to send text-string present job information from Jurisdictions to NCHS, and coded versions from NCHS to Jurisdictions."
 * subject only Reference(PatientVitalRecords)  // Mother, Child... required by the Past or Present Job Profile

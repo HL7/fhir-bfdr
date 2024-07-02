@@ -154,6 +154,7 @@
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
 <tr><td> <a href='StructureDefinition-Extension-jurisdictional-facility-identifier.html'>JurisdictionalFacilityIdentifier</a></td><td> New </td><td> New Addition </td></tr>
+<tr><td> <a href='StructureDefinition-Extension-role.html'>ExtensionRole</a> </td><td> New </td><td> New Addition </td></tr>
 </tbody>
 </table>
 
