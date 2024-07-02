@@ -3,7 +3,7 @@ Profile: ObservationNumberLiveBirthsThisDelivery
 Parent: Observation
 Id: Observation-number-live-births-this-delivery
 Title: "Observation - Number of Live Births This Delivery"
-Description: "The number of live births in this delivery. Migrated from VRCL."
+Description: "The number of live births in this delivery."
 * code = $loinc#73773-4
   * ^short = "Number of infants in this delivery delivered alive"
 * subject 1..
