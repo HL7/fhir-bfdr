@@ -18,7 +18,7 @@ Mapping to IJE codes [here](ConceptMap-FetalPresentationCM.html)."
 ValueSet: FetalPresentationsMaxVS
 Id: ValueSet-fetal-presentations-max
 Title: "Fetal Presentations - Max"
-Description: "This valueset contains codes to represent fetal presentations. It expands on the [FetalPresentationsVS] by including intensionally all codes for abnormal presentations, 
+Description: "This valueset contains codes to represent fetal presentations. It expands on the [FetalPresentationsVS](ValueSet-ValueSet-fetal-presentations.html) by including intensionally all codes for abnormal presentations, 
 as suggested by [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554)."
 * ^experimental = false
 * insert SNOMEDCopyright
