@@ -29,7 +29,7 @@ Description: "Certifier (USCorePractitioner) used in BFDR"
 Extension: PractitionerRoleBirthCertifier
 Id: practitioner-role-birth-certifier
 Title: "Practitioner Role - Certifier"
-Description: "Used to indicate that an instance relates to the birth certifier."
+Description: "This extension profile is used to indicate that an instance relates to the birth certifier."
 * insert ExtensionContextResource(Practitioner)
 * value[x] 1..1
 * value[x] only code

@@ -3,7 +3,7 @@ Profile: ObservationLastMenstrualPeriod
 Parent: Observation
 Id: Observation-last-menstrual-period
 Title: "Observation - Last Menstrual Period"
-Description: "This profile represents the date of the last menstrual period of the patient. The first day of last menstrual period should be captured. The effectiveTime captures the observation date. Migrated from VRCL."
+Description: "This profile represents the date of the last menstrual period of the patient. The first day of last menstrual period should be captured. The effectiveTime captures the observation date."
 * code = $loinc#8665-2
 * code MS
   * ^short = "Last menstrual period start date"

@@ -3,7 +3,7 @@ Profile: ObservationMotherHeight
 Parent: USCoreBodyHeightProfile
 Id: Observation-mother-height
 Title: "Observation - Mother Height"
-Description: "The height of the mother. Migrated from VRCL."
+Description: "The height of the mother."
 //* code = $loinc#3137-7
 //  * ^short = "Body height Measured"
 * subject 1..

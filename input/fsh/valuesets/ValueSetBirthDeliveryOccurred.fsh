@@ -1,7 +1,9 @@
 ValueSet: BirthDeliveryOccurredVS
 Id: ValueSet-birth-delivery-occurred
 Title: "Birth Delivery Occurred"
-Description: "This valueset contains codes to represent the type of place where birth or delivery occurred. This valueset is based on [PHVS_BirthDeliveryOccurred_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51)"
+Description: "This valueset contains codes to represent the type of place where birth or delivery occurred.
+
+Mapping to IJE codes [here](ConceptMap-BirthDeliveryOccurredCM.html)."
 * ^experimental = false
 * insert SNOMEDCopyright
 * $sct#22232009 "Hospital"

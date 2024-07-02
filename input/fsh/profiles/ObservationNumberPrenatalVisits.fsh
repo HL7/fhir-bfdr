@@ -3,7 +3,7 @@ Profile: ObservationNumberPrenatalVisits
 Parent: Observation
 Id: Observation-number-prenatal-visits
 Title: "Observation - Number of Prenatal Visits"
-Description: "The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits. Migrated from VRCL."
+Description: "The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."
 * code = $loinc#68493-6
   * ^short = "Prenatal visits for this pregnancy #"
 * code MS

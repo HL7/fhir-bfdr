@@ -3,7 +3,7 @@ Profile: ObservationNumberBirthsNowLiving
 Parent: Observation
 Id: Observation-number-births-now-living
 Title: "Observation - Number of Births Now Living"
-Description: "The total number of previous live-born infants for the mother now living. Migrated from VRCL."
+Description: "The total number of previous live-born infants for the mother now living."
 * code = $loinc#11638-4
   * ^short = "[#] Births.still living"
 * subject 1..
