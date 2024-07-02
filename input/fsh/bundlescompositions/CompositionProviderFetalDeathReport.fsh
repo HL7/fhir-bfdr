@@ -66,7 +66,7 @@ Description: "This Composition profile contains constraints to address the use c
 * insert BFDRCompositionSectionEntrySlicing(motherInformation, 0, 92014-0, Provider Fetal Death)
 * insert FocusRule(motherInformation, The focus of this section is the mother, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the mother., PatientMotherVitalRecords)
 * insert BFDRCompositionSectionSlice(motherInformation, mothersEducation, 0, 1, Mother's Education, Mother's Education, ObservationEducationLevelVitalRecords) 
-* insert BFDRCompositionSectionSlice(motherInformation, mothersUsualWork, 0, 1, Mother's Usual Work, Mother's Usual Work, ObservationUsualWorkVitalRecords)   
+* insert BFDRCompositionSectionSlice(motherInformation, mothersPresentJob, 0, 1, Mother's Present Job, Mother's Present Job, ObservationPresentJob) 
 * insert BFDRCompositionSectionSlice(motherInformation, mothersRaceEthnicity, 0, 1, Mother's Input Race and Ethnicity, Mother's Input Race and Ethnicity, ObservationInputRaceAndEthnicityVitalRecords)  
 * insert BFDRCompositionSectionEntrySlicing(fatherInformation, 0, 92013-2, Provider Fetal Death)
 //* section contains fatherInformation 0..1
@@ -77,7 +77,7 @@ Description: "This Composition profile contains constraints to address the use c
     * ^short = "Father's administrative information"
     * ^definition = "Father's administrative information"
 * insert FocusRule(fatherInformation, The focus of this section is the father, The subject of the composition as a whole is the fetus baby. The focus of this section in the composition is the father., RelatedPersonFatherNaturalVitalRecords)
-* insert BFDRCompositionSectionSlice(fatherInformation, fathersUsualWork, 0, 1, Father's Usual Work, Father's Usual Work, ObservationUsualWorkVitalRecords) 
+* insert BFDRCompositionSectionSlice(fatherInformation, fathersPresentJob, 0, 1, Father's Present Job, Father's Present Job, ObservationPresentJob) 
 * section contains patientsQuestionnaireResponse 0..1
 * section[patientsQuestionnaireResponse] ^short = "Optional section containing a QuestionnaireResponse with recorded answers to the Questionnaire - Mother's Worksheet for Child's Birth Certificate"
   * code 1..

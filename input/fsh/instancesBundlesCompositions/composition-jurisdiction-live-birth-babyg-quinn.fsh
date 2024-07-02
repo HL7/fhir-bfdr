@@ -82,7 +82,7 @@ Usage: #example
   * insert addReferenceComposition(focus,Patient, patient-mother-jada-ann-quinn)
   * insert addNamedEntryComposition(marriedDuringPregnancy, Observation, observation-mother-married-during-pregnancy-jada-ann-quinn) 
   * insert addNamedEntryComposition(mothersEducation, Observation, observation-parent-education-level-jada-ann-quinn-w-edit)
-  * insert addNamedEntryComposition(mothersUsualWork, Observation, observation-usual-work-jada-ann-quinn)
+  * insert addNamedEntryComposition(mothersPresentJob, Observation, observation-present-job-jada-ann-quinn)
   * insert addNamedEntryComposition(mothersRaceEthnicity, Observation, observation-input-race-and-ethnicity-jada-ann-quinn)
   * insert addNamedEntryComposition(ssnRequestedForChild, Observation, observation-ssn-requested-for-child-babyg-quinn) 
 * section[fatherInformation]
@@ -91,7 +91,7 @@ Usage: #example
   * insert addReferenceComposition(focus,RelatedPerson, relatedperson-father-natural-james-brandon-quinn-w-edit)
   * insert addNamedEntryComposition(paternityAcknowledgementSigned, Observation, observation-paternity-acknowledgement-signed-james-quinn-w-edit)
   * insert addNamedEntryComposition(fathersEducation, Observation, observation-parent-education-level-james-quinn-w-edit) 
-  * insert addNamedEntryComposition(fathersUsualWork, Observation, observation-usual-work-james-brandon-quinn)
+  * insert addNamedEntryComposition(fathersPresentJob, Observation, observation-present-job-james-brandon-quinn)
   * insert addNamedEntryComposition(fathersRaceEthnicity, Observation, observation-input-race-and-ethnicity-james-quinn-w-edit)
 
   //* section[editFlags]
