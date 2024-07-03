@@ -1,10 +1,10 @@
-This IG supports five use cases for communicating information from the electronic health record (EHR) system to the jurisdictional vital records offices (VRO) and to the national statistical agency, 
+There are two core uses defined by this IG - birth and fetal death reporting. This IG supports reporting of **birth** and **fetal death** information as part of four use cases for communicating information from the electronic health record (EHR) system to the jurisdictional vital records offices (VRO) and to the national statistical agency, 
 the Centers for Disease Control and Prevention/ National Center for Health Statistics (NCHS):
 
-1. Live Birth  - Provider to Jurisdictional VRO
-2. Live Birth  - Jurisdictional VRO to NCHS
-3. Fetal Death - Provider to Jurisdictional VRO
-4. Fetal Death Jurisdictional VRO to NCHS
+1. Live **Birth**  - Provider to Jurisdictional VRO
+2. Live **Birth**  - Jurisdictional VRO to NCHS
+3. **Fetal Death** - Provider to Jurisdictional VRO
+4. **Fetal Death** - Jurisdictional VRO to NCHS
 
 This IG also supports two uses cases for returning information from the NCHS to the VRO:
 
