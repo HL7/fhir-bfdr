@@ -25,12 +25,12 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Paternity Acknowledgement Signed |  [`Yes`](Observation-observation-paternity-acknowledgement-signed-james-quinn.html) |
 | SSN Requested for Child |   [`True`](Observation-observation-ssn-requested-for-child-babyg-quinn.html) |
 | Mother's Education | [`Doctoral or Post-Graduate`](Observation-observation-parent-education-level-jada-ann-quinn.html) |
-| Mother's Usual Work-Occupation | [`Carpenter`](Observation-observation-usual-work-jada-ann-quinn.html) |
-| Mother's Usual Work-Industry | [`Construction`](Observation-observation-usual-work-jada-ann-quinn.html) |
+| Mother's Present Job-Occupation | [`Carpenter`](Observation-observation-present-job-jada-ann-quinn.html) |
+| Mother's Present Job-Industry | [`Construction`](Observation-observation-present-job-jada-ann-quinn.html) |
 | Mother's Race and Ethnicity   | [`White/AIAN/OtherAsian, Non-Hispanic`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) |
 | Father's Education | [`Doctoral or Post-Graduate`](Observation-observation-parent-education-level-james-quinn.html) | 
-| Father's Usual Work-Occupation | [`Lawyer`](Observation-observation-usual-work-james-brandon-quinn.html) |
-| Father's Usual Work-Industry | [`Legal Services`](Observation-observation-usual-work-james-brandon-quinn.html) |
+| Father's Present Job-Occupation | [`Lawyer`](Observation-observation-present-job-james-brandon-quinn.html) |
+| Father's Present Job-Industry | [`Legal Services`](Observation-observation-present-job-james-brandon-quinn.html) |
 | Father's Race and Ethnicity   | [`White/AIAN/OtherAsian, Non-Hispanic`](Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html) | 
 | Place of Birth   |  Birth at [`South Hospital`](Location-location-south-hospital.html) , Discharge to [`East Hospital`](Location-location-east-hospital.html) | 
 | Attendant | [`Avery Jones`](Practitioner-practitioner-vital-records-avery-jones.html) |  

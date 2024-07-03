@@ -31,11 +31,11 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Placental Exam | [`Performed`](Observation-observation-histological-placental-exam-performed-not-named.html)  |
 | Histological Exam Results Used | [`Yes`](Observation-observation-autopsy-histological-exam-results-used-not-named.html)  |
 | Mother's Education | [`Some secondary or high school education`](Observation-observation-parent-education-level-carmen-teresa-lee.html) |    
-| Mother's Usual Work-Occupation | [`Secretary`](Observation-observation-usual-work-carmen-teresa-lee.html) |
-| Mother's Usual Work-Industry | [`State Agency`](Observation-observation-usual-work-carmen-teresa-lee.html) |
+| Mother's Present Job-Occupation | [`Secretary`](Observation-observation-present-job-carmen-teresa-lee.html) |
+| Mother's Present Job-Industry | [`State Agency`](Observation-observation-present-job-carmen-teresa-lee.html) |
 | Mother's Race and Ethnicity   | [`White/Black/AIAN/Hispanic`](Observation-observation-input-race-and-ethnicity-carmen-teresa-lee.html) | 
-| Father's Usual Work-Occupation | [`Teaching Assistant`](Observation-observation-usual-work-tom-yan-lee.html) |
-| Father's Usual Work-Industry | [`Elementary and Secondary Schools`](Observation-observation-usual-work-tom-yan-lee.html) |
+| Father's Present Job-Occupation | [`Teaching Assistant`](Observation-observation-present-job-tom-yan-lee.html) |
+| Father's Present Job-Industry | [`Elementary and Secondary Schools`](Observation-observation-present-job-tom-yan-lee.html) |
 | First Prenatal Care Visit Date | [`2018-05-18`](Observation-observation-date-of-first-prenatal-care-visit-carmen-teresa-lee.html)  |
 | Mother's Height     | [`65 in`](Observation-observation-mother-height-carmen-teresa-lee.html)  |
 | Mother's Prepregnancy Weight     | [`180 lb`](Observation-observation-mother-prepregnancy-weight-carmen-teresa-lee.html)  |
