@@ -41,8 +41,8 @@ Usage: #example
 * insert addentry(Condition, condition-ruptured-uterus-jada-ann-quinn)
 * insert addentry(Observation, observation-birth-weight-babyg-quinn-w-edit)
 * insert addentry(Observation, observation-gestational-age-at-delivery-babyg-quinn-w-edit)
-* insert addentry(Observation, observation-apgar-score-babyg-quinn-1-min)
 * insert addentry(Observation, observation-apgar-score-babyg-quinn-5-min)
+* insert addentry(Observation, observation-apgar-score-babyg-quinn-10-min)
 * insert addentry(Observation, observation-number-live-births-this-delivery-jada-ann-quinn)
 // no plurality in STU1.1
 // * insert addentry(Observation, observation-plurality-jada-ann-quinn)
