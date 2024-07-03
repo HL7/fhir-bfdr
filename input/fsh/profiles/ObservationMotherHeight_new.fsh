@@ -3,7 +3,7 @@ Profile: ObservationMotherHeight
 Parent: USCoreBodyHeightProfile
 Id: Observation-mother-height
 Title: "Observation - Mother Height"
-Description: "The height of the mother."
+Description: "The height of the mother (reported in inches)."
 //* code = $loinc#3137-7
 //  * ^short = "Body height Measured"
 * subject 1..
