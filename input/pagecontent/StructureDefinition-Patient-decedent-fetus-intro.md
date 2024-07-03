@@ -239,6 +239,12 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
+  <td style='text-align: center'>33</td>
+  <td>Plurality</td>
+  <td>-</td>
+  <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
+</tr>
+<tr>
   <td style='text-align: center'>34</td>
   <td>If Not Single Birth-Born First, Second, Third, etc.</td>
   <td>multipleBirthInteger</td>
