@@ -57,7 +57,7 @@ This information is transmitted in both a [`Provider bundle to the VRO`](Bundle-
 | Maternal Morbidity     | [`Ruptured Uterus`](Condition-condition-ruptured-uterus-jada-ann-quinn.html) | 
 | Newborn Birthweight | [`2500g`](Observation-observation-birth-weight-babyg-quinn.html) | 
 | Obstetric Estimate of Gestation | [`36 wk`](Observation-observation-gestational-age-at-delivery-babyg-quinn.html) |
-| Apgar Score | [`1min = 5`](Observation-observation-apgar-score-babyg-quinn-1-min.html), [`5min = 7`](Observation-observation-apgar-score-babyg-quinn-5-min.html) | 
+| Apgar Score | [`5min = 5`](Observation-observation-apgar-score-babyg-quinn-5-min.html), [`10min = 7`](Observation-observation-apgar-score-babyg-quinn-10-min.html) | 
 | Number of Live Births this Delivery | [`2`](Observation-observation-number-live-births-this-delivery-jada-ann-quinn.html)   | 
 | Plurality / Birth Order | [`Plurality = 1`](Patient-patient-child-babyg-quinn.html) , [`Order = 1`](Patient-patient-child-babyg-quinn.html) |
 | Abnormal Conditions of the Newborn | [`Antibiotics Received`](Procedure-procedure-antibiotic-sepsis-babyg-quinn.html) | 

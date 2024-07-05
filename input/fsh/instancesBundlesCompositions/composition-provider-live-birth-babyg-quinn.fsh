@@ -61,8 +61,8 @@ Usage: #example
   // * code = $loinc#57075-4 "Newborn delivery information"
   * insert addNamedEntryComposition(birthWeight, Observation, observation-birth-weight-babyg-quinn) 
   * insert addNamedEntryComposition(gestationalAgeAtDelivery, Observation, observation-gestational-age-at-delivery-babyg-quinn) 
-  * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-1-min) 
   * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-5-min) 
+  * insert addNamedEntryComposition(APGARScore, Observation, observation-apgar-score-babyg-quinn-10-min) 
   * insert addNamedEntryComposition(numberLiveBirthsThisDelivery, Observation, observation-number-live-births-this-delivery-jada-ann-quinn) 
   * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn) 
   * insert addNamedEntryComposition(congenitalAnomaliesNewborn, Condition, condition-congenital-anomaly-of-newborn-babyg-quinn-2)

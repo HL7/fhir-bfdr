@@ -1,16 +1,5 @@
- Presence of this observation indicates that none of the pregnancy risk factors specifyable in this IG are reported including:
-* <a href='StructureDefinition-Condition-eclampsia-hypertension.html'>ConditionEclampsiaHypertension</a>
-* <a href='StructureDefinition-Condition-gestational-diabetes.html'>ConditionGestationalDiabetes</a>
-* <a href='StructureDefinition-Condition-gestational-hypertension.html'>ConditionGestationalHypertension</a>
-* <a href='StructureDefinition-Condition-prepregnancy-diabetes.html'>ConditionPrepregnancyDiabetes</a>
-* <a href='StructureDefinition-Condition-prepregnancy-hypertension.html'>ConditionPrepregnancyHypertension</a>
-* <a href='StructureDefinition-Observation-previous-cesarean.html'>ObservationPreviousCesarean</a>
-* <a href='StructureDefinition-Observation-previous-preterm-birth.html'>ObservationPreviousPretermBirth</a>
-* <a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a>
-* <a href='StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a>
-* <a href='StructureDefinition-Procedure-infertility-treatment.html'>ProcedureInfertilityTreatment</a>
-
-If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#infection-present-during-pregnancy'>note on missing infections present data</a>)
+Presence of this observation indicates that none of the pregnancy risk factors specifyable in this IG are reported.
+If the none-of-the-above observation is present in the bundle, then none of the pregnancy risk factors listed in the IJE mapping table below should be used (see <a href='usage.html#infection-present-during-pregnancy'>note on missing infections present data</a>)
 
 ### IJE Mapping
 

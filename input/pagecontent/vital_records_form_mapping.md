@@ -681,7 +681,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>55.13</td>
   <td>Congenital Anomalies of the Newborn: None of the above</td>
-  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
+  <td><a href='StructureDefinition-Observation-none-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
   <td></td>
 </tr>
 <tr>
@@ -947,7 +947,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>37.13</td>
   <td>Congenital anomalies of the newborn: None of the above</td>
-  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
+  <td><a href='StructureDefinition-Observation-none-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
   <td></td>
 </tr>
 <tr>
@@ -1447,7 +1447,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>37.13</td>
   <td>Congenital anomalies of the newborn: None of the above</td>
-  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
+  <td><a href='StructureDefinition-Observation-none-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
   <td></td>
 </tr>
 <tr>
