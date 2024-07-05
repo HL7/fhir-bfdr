@@ -7,6 +7,9 @@ If mother transferred for delivery, hospitalization.admitSource in the Encounter
 
 Similarly, if the infant transferred within 24 hours of delivery, hospitalization.dischargeDisposition in the EncounterBirth profile should be provided with code "other-hcf" (from [HL7 discharge-disposition codesystem](https://terminology.hl7.org/5.4.0/CodeSystem-discharge-disposition.html)) Any other dischargeDisposition code will be interpreted as 'N', with "oth" being the recommended code to express infant did not transfer. The absence of a code will be interpreted as Blank (NCHS may interpret as Unknown). If destination of transfer is unknown, hospitalization.destination.name should be set to "UNKNOWN" in the EncounterBirth profile.
 
+### Partial Dates
+While IJE supports individual components of a date, FHIR [dateTime](https://build.fhir.org/datatypes.html#dateTime) supports partial dates only when the components with greater units than the missing component are included. That is, YYYY, YYYY-MM, and YYYY-MM-DD are supported by default, while YYY-XX-DD, for example, would not be.
+
 ### Specifying None of the Above and Missing Data
 See the discussion of [categories].  
 ##### Abnormal Conditions of Newborn
