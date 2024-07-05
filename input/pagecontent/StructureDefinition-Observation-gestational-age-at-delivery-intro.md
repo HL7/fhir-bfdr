@@ -33,7 +33,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
   <td>OWGEST</td>
   <td>value</td>
   <td>quantity</td>
-  <td></td>
+  <td>value is a decimal; unit is from <a href='ValueSet-ValueSet-units-of-gestational-age.html'>UnitsOfGestationalAgeVS</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -78,7 +78,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
   <td>OWGEST</td>
   <td>value</td>
   <td>quantity</td>
-  <td></td>
+  <td>value is a decimal; unit is from <a href='ValueSet-ValueSet-units-of-gestational-age.html'>UnitsOfGestationalAgeVS</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
