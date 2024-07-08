@@ -405,8 +405,6 @@ groups:
       - ConditionFetalDeathCauseOrCondition
       - ConditionFetalDeathOtherCauseOrCondition
       - ObservationAutopsyHistologicalExamResultsUsed
-      - ObservationCodedInitiatingFetalDeathCauseOrCondition
-      - ObservationCodedOtherFetalDeathCauseOrCondition
       - ObservationFetalDeathTimePoint
       - ObservationFetalRemainsDispositionMethod
       - ObservationHistologicalPlacentalExamPerformed
@@ -424,6 +422,13 @@ groups:
     resources:
       - ObservationBirthPluralityOfPregnancy
       - ObservationPlannedToDeliverAtHome
+
+
+  BFDRProfilesCodedFetalDeath:
+    name: Fetal Death Coded Cause of Death Profiles (NCHS to VRO)
+    resources:
+      - ObservationCodedInitiatingFetalDeathCauseOrCondition
+      - ObservationCodedOtherFetalDeathCauseOrCondition
 
   BFDRCodeSystems:
     name: CodeSystems
@@ -493,7 +498,7 @@ groups:
       - expansion-parameters
 
   BFDRExamples1:
-    name: Fetal Death Examples (Not Named)
+    name: Fetal Death Record Examples (Not Named)
     resources:
       - bundle-coded-cause-of-fetal-death-not-named
       - bundle-jurisdiction-fetal-death-not-named
