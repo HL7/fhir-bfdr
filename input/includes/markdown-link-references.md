@@ -16,6 +16,7 @@
 [districtCode]: https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-DistrictCode.html
 [StateLiterals]: https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#state-literals
 [CountryLiterals]: https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#country-literals
+[note on partial dates]: usage.html#partial-date
 [note on missing data]: usage.html#specifying-none-of-the-above-and-missing-data
 [note on missing abnormal conditions of newborn data]: usage.html#abnormal-conditions-of-newborn
 [note on missing maternal morbidity data]: usage.html#maternal-morbidities

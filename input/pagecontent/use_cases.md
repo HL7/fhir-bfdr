@@ -1,17 +1,6 @@
-This IG supports five use cases for communicating information from the electronic health record (EHR) system to the jurisdictional vital records offices (VRO) and to the national statistical agency, 
-the Centers for Disease Control and Prevention/ National Center for Health Statistics (NCHS):
+Births and fetal deaths are initially reported by a Provider to a Jurisdictional VRO.  The VRO then reports the births and fetal deaths to NCHS.  NCHS codes certain elements of these reports and sends the coded data back to the VRO.  This FHIR IG documents how to represent these reports and coded responses in FHIR, but does not define the mechanism used to exchange the data.  All exchanges involve sending a FHIR Bundle of type Document.  NCHS has defined a mechanism based on FHIR Messaging for the exchanges between the VRO and NCHS.  The mechanism of exchange between EHR systems and the VRO has not yet been standardized.
 
-1. Live Birth  - Provider to Jurisdictional VRO
-2. Live Birth  - Jurisdictional VRO to NCHS
-3. Fetal Death - Provider to Jurisdictional VRO
-4. Fetal Death Jurisdictional VRO to NCHS
-
-This IG also supports two uses cases for returning information from the NCHS to the VRO:
-
-1. Coded Race and Ethnicity - NCHS to VRO
-2. Coded Cause of Fetal Death - NCHS to VROVRO
-
-Information flows are supported by the FHIR Composition resources embedded in a FHIR Bundle (Document) indicated in the following table:
+The following table enumerates the use cases supported by this IG, and lists the profile of FHIR Composition that is provided as the first element in the FHIR Bundle for that use case.
   
 | Use Case                      | FHIR Composition                                                                | Data Source  | Data Receiver   |
 | ----------------------------- | ------------------------------------------------------------------------------- | --- | --- |

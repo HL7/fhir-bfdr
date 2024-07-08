@@ -1,4 +1,5 @@
-Presence of this observation indicates that none of the obstetric procedures specifyable in this IG are reported. If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#obstetric-procedures'>note on missing obstetric procedures data</a>)
+Presence of this observation indicates that none of the obstetric procedures specifyable in this IG are reported. 
+If the none-of-the-above observation is present in the bundle, then none of the obstetric procedures listed in the IJE mapping table below should be used (see <a href='usage.html#obstetric-procedures'>note on missing obstetric procedures data</a>)
 
 ### IJE Mapping
 

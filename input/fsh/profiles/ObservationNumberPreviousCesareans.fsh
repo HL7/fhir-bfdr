@@ -3,7 +3,7 @@ Profile: ObservationNumberPreviousCesareans
 Parent: Observation
 Id: Observation-number-previous-cesareans
 Title: "Observation - Number of Previous Cesareans"
-Description: "The total number of prior cesarean deliveries for the mother. Migrated from VRCL."
+Description: "The total number of prior cesarean deliveries for the mother."
 * code = $loinc#68497-7
   * ^short = "Previous cesarean deliveries #"
 * subject 1..

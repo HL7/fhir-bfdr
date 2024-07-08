@@ -40,7 +40,7 @@ Description: "The attendant at birth is defined as the individual at the deliver
 Extension: PractitionerRoleBirthAttendant
 Id: practitioner-role-birth-attendant
 Title: "Practitioner Role - Birth Attendant"
-Description: "Used to indicate that an instance relates to the birth attendant."
+Description: "This extension profile is used to indicate that an instance relates to the birth attendant."
 * insert ExtensionContextResource(Practitioner)
 * value[x] 1..1
 * value[x] only code

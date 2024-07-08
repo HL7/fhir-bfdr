@@ -130,7 +130,7 @@ The edit flag extension supports validation as part of the Jurisdiction to NCHS 
 <tr>
   <td style='text-align: center'>29</td>
   <td>Birthweight</td>
-  <td>-</td>
+  <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/multiple-births-worksheet-2016.pdf'> Attachment to the Facility Worksheet for the Live Birth Certificate for Multiple Births</a></td>
 </tr>
 <tr>

@@ -1,4 +1,5 @@
-Presence of this observation indicates that none of the abnormal conditions of newborn specifyable in this IG are reported.If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a>)
+Presence of this observation indicates that none of the abnormal conditions of newborn specifyable in this IG are reported. 
+If the none-of-the-above observation is present in the bundle, then none of the abnormal conditions listed in the IJE mapping table below should be used (see <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a>)
 
 ### IJE Mapping
 
@@ -31,6 +32,15 @@ Presence of this observation indicates that none of the abnormal conditions of n
   <td>212</td>
   <td>Abnormal Conditions of the Newborn--Assisted Ventilation</td>
   <td>AVEN1</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td>213</td>
+  <td>Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours</td>
+  <td>AVEN6</td>
   <td>-</td>
   <td>na</td>
   <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>

@@ -1,4 +1,5 @@
-Presence of this observation indicates that none of the maternal morbidities specifyable in this IG are reported. If the none-of-the-above observation is present in the bundle, then its complement should not be used (see <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a>)
+Presence of this observation indicates that none of the maternal morbidities specifyable in this IG are reported. 
+If the none-of-the-above observation is present in the bundle, then none of the maternal morbidities listed in the IJE mapping table below should be used (see <a href='usage.html#maternal-morbidities'>note on missing maternal morbidity data</a>)
 
 ### IJE Mapping
 

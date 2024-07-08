@@ -2,7 +2,7 @@ Profile: ConditionFetalDeathOtherCauseOrCondition
 Parent: USCoreConditionEncounterDiagnosisProfile
 Id: Condition-fetal-death-other-cause-or-condition
 Title: "Condition - Fetal Death Other Cause or Condition"
-Description: "This Condition profile represents another significant cause or condition for the death of the fetus."
+Description: "This profile should be used to indicate other significant causes or conditions for the death of the fetus. One code should be selected from the Fetal Death Cause Or Condition valueset, and the code.text field used to record the provider’s view of the cause."
 * . ^short = "Another significant cause or condition for the death of the fetus."
 * insert CategorySlicingRules
 * category[requiredCategory] = $loinc#76061-1

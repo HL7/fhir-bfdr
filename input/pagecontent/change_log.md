@@ -9,12 +9,12 @@
 - [FHIR-45500](https://jira.hl7.org/browse/FHIR-45500) Created extension for [jurisdictional facility identifier][JurisdictionalFacilityIdentifier] to be used in [LocationBFDR] in lieu of AuxiliaryStateIdentifier1. 
 - [FHIR-44679](https://jira.hl7.org/browse/FHIR-44679) Clarified precedence of QuestionnaireResponse data in patient_worksheet_questionnaries(patient_worksheet-questionnaires.html)
 - Added [PractitionerBirthAttendant] and [PractitionerBirthCertifier] profiles with corresponding extensions that distinguish these two types of Practitioner
-- [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554) Corrected [FetalPresentationsVS] and [FetalPresentationsCM] added a max binding that includes all abnormal presentations.
+- [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554) Corrected [FetalPresentationsVS] and [FetalPresentationCM] added a max binding that includes all abnormal presentations.
 - [FHIR-44555](https://jira.hl7.org/browse/FHIR-44555) Extended [ObservationGestationalAgeAtDelivery] for partial weeks and added two examples of its usage.
 - Removed composition references to [ObservationPlannedToDeliverAtHome] profile. Reporting of home delivery plan relies on [EncounterMaternity] and [EncounterBirth] (using [BirthDeliveryOccurredVS])
 - [FHIR-43506](https://jira.hl7.org/browse/FHIR-43506) - Added forms mappings for [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn]
 - Fixing broken links in IJE mapping tables ([PR](https://github.com/HL7/fhir-bfdr/pull/55))
-- [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - Constrained units of all quantity values -- [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherDeliveryHeight], [ObservationMotherPrepregnancyWeight].
+- [FHIR-43403](https://jira.hl7.org/browse/FHIR-43403) - Constrained units of all quantity values -- [ObservationBirthWeight], [ObservationGestationalAgeAtDelivery], [ObservationMotherDeliveryWeight], [ObservationMotherHeight], [ObservationMotherPrepregnancyWeight].
 - reinstate missing [Observation - Birth Plurality of Pregnancy][ObservationBirthPluralityOfPregnancy] [FHIR-43383](https://jira.hl7.org/browse/FHIR-43383)
 - Added narrative content to clarify indicating 'Y', 'N', and 'U' for TRAN and ITRAN in the data dictionary usage page [FHIR-43414](https://jira.hl7.org/browse/FHIR-43414)
 - Added missing IJE mappings for [RelatedPersonFatherNatural](https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-RelatedPerson-father-natural-vr.html) profile

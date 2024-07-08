@@ -1,9 +1,9 @@
 ValueSet: FetalPresentationsVS
 Id: ValueSet-fetal-presentations
 Title: "Fetal Presentations"
-Description: "This valueset contains codes to represent fetal presentations. This valueset is based on 
-[PHVS_FetalPresentations_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3C696B7B-BB33-4818-8996-1E3461E3F512).  
-Only these codes are supported for exchange with NCHS."
+Description: "This valueset contains codes to represent fetal presentations. Only these codes are supported for exchange with NCHS.
+
+Mapping to IJE codes [here](ConceptMap-FetalPresentationCM.html)."
 * ^experimental = false
 * insert SNOMEDCopyright
 * $sct#70028003 "Vertex presentation (finding)" // 1 Cephalic
@@ -18,7 +18,7 @@ Only these codes are supported for exchange with NCHS."
 ValueSet: FetalPresentationsMaxVS
 Id: ValueSet-fetal-presentations-max
 Title: "Fetal Presentations - Max"
-Description: "This valueset contains codes to represent fetal presentations. It expands on the [FetalPresentationsVS] by including intensionally all codes for abnormal presentations, 
+Description: "This valueset contains codes to represent fetal presentations. It expands on the [FetalPresentationsVS](ValueSet-ValueSet-fetal-presentations.html) by including intensionally all codes for abnormal presentations, 
 as suggested by [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554)."
 * ^experimental = false
 * insert SNOMEDCopyright

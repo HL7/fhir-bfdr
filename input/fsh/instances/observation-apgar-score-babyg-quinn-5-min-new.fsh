@@ -11,4 +11,4 @@ Usage: #example
 * subject = Reference(patient-child-babyg-quinn) "BabyG Quinn"
 * effectiveDateTime = "2019-12-02"
 * performer = Reference(practitioner-vital-records-janet-seito)
-* valueInteger = 7
+* valueInteger = 5

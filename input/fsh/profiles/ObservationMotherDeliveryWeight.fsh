@@ -2,8 +2,8 @@
 Profile: ObservationMotherDeliveryWeight
 Parent: USCoreVitalSignsProfile
 Id: Observation-mother-delivery-weight
-Title: "Observation - Mother Delivery Weight"
-Description: "The weight of the mother at the time of birth/delivery. Migrated from VRCL."
+Title: "Observation - Mother Delivery Weight (reported in pounds)"
+Description: "The weight of the mother at the time of birth/delivery."
 * subject 1..
 * subject only Reference(PatientMotherVitalRecords)
 * value[x] 1..
