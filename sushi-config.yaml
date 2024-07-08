@@ -276,7 +276,7 @@ groups:
       - Questionnaire-patients-fetal-death
   
   BFDRProfilesEncounter:
-    name: Profiles Encounter and Location 
+    name: Encounter and Location Profiles and Extensions
     resources:
       - EncounterBirth
       - EncounterMaternity
@@ -293,7 +293,7 @@ groups:
       - PractitionerRoleBirthCertifier
 
   BFDRProfilesNewbornFetus:
-    name: Profiles Newborn/Fetus
+    name: Newborn/Fetus Profiles
     resources:
       - ObservationApgarScore
       - ObservationBirthWeight
@@ -303,11 +303,10 @@ groups:
       - ObservationInfantLiving
       - ObservationMotherDeliveryWeight
       - ObservationNumberFetalDeathsThisDelivery
-      - ObservationNumberLiveBirthsThisDelivery
-      
+      - ObservationNumberLiveBirthsThisDelivery  
       
   BFDRProfilesAbnormalConditionoftheNewborn:
-    name: Profiles Abnormal Condition of the Newborn (73812-0)
+    name: Profiles - Abnormal Condition of the Newborn (73812-0)
     resources:
       - ConditionSeizure
       - ObservationNICUAdmission
@@ -318,13 +317,13 @@ groups:
       - ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn
 
   BFDRProfilesCongenitalAnomoliesoftheNewborn:
-    name: Profiles Congenital Anomolies of the Newborn (73780-9) 
+    name: Profiles - Congenital Anomolies of the Newborn (73780-9) 
     resources:
       - ConditionCongenitalAnomalyOfNewborn
       - ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
 
   BFDRProfilesCharacteristicsofLaborandDelivery :
-    name: Profiles Characteristics of Labor and Delivery (73813-8)
+    name: Profiles - Characteristics of Labor and Delivery (73813-8)
     resources:
       - ConditionChorioamnionitis
       - ObservationAntibioticsAdministeredDuringLabor
@@ -352,7 +351,7 @@ groups:
       - ObservationNumberPrenatalVisits
 
   BFDRProfilesInfections:
-    name: Infections During Pregnancy (73769-2)
+    name: Profiles - Infections During Pregnancy (73769-2)
     resources:
       - ConditionInfectionPresentDuringPregnancy
       - ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy   
@@ -362,18 +361,21 @@ groups:
     resources:
       - ObservationLaborTrialAttempted
       - ObservationNumberPreviousCesareans
+
   BFDRProfilesObstetricProcedures: 
-    name: Obstetric Procedures (73814-6)
+    name: Profiles - Obstetric Procedures (73814-6)
     resources:
       - ProcedureObstetric
       - ObservationNoneOfSpecifiedObstetricProcedures
+
   BFDRProfilesFinalRouteMethodDelivery:
-    name: Final Route and Method of Delivery (73762-7)
+    name: Profiles - Final Route and Method of Delivery (73762-7)
     resources:
       - ProcedureFinalRouteMethodDelivery
       - ObservationUnknownFinalRouteMethodDelivery
+
   BFDRProfilesPregnancyRiskFactors:
-    name: Pregnancy Risk Factors Profiles (73769-2)
+    name: Profiles - Pregnancy Risk Factors (73769-2)
     resources:
       - ConditionEclampsiaHypertension
       - ConditionGestationalDiabetes
@@ -388,7 +390,7 @@ groups:
       - ObservationNoneOfSpecifiedPregnancyRiskFactors
       
   BFDRProfilesMaternalMorbidity:
-    name: Maternal Morbidity Profiles (73781-7)
+    name: Profiles - Maternal Morbidity Profiles (73781-7)
     resources:
       - ConditionPerinealLaceration
       - ConditionRupturedUterus

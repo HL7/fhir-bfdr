@@ -1,7 +1,9 @@
 ValueSet: InfectionsDuringPregnancyLiveBirthVS
 Id: ValueSet-infections-during-pregnancy-live-birth
 Title: "Infections During Pregnancy Live Birth"
-Description: "This valueset contains codes to represent Infections During Pregnancy Live Birth. This valueset is based on [PHVS_InfectionsDuringPregnancyLiveBirth_NCHS](https://phinvads.cdc.gov/vads/ViewValueSet.action?id=AEF5A3D4-960C-4194-8BB6-392C7282D216). Includes 'Other' value for general utility, although #OTH is not allowed for birth submissions to NCHS."
+Description: "This valueset contains codes to represent Infections During Pregnancy Live Birth. Includes 'Other' value for general utility, although #OTH is not allowed for birth submissions to NCHS.
+
+Mapping to IJE codes [here](ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html)."
 * ^experimental = false
 * insert SNOMEDCopyright
 * SNOMED_CT#15628003 "Gonorrhea (disorder)"

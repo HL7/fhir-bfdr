@@ -3,7 +3,7 @@ Profile: ObservationMotherPrepregnancyWeight
 Parent: USCoreVitalSignsProfile
 Id: Observation-mother-prepregnancy-weight
 Title: "Observation - Mother Prepregnancy Weight"
-Description: "The weight of the mother before becoming pregnant. Migrated from VRCL."
+Description: "The weight of the mother before becoming pregnant."
 * code = $loinc#56077-1
   * ^short = "Body weight --pre current pregnancy"
 * subject 1..
