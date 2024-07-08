@@ -38,6 +38,15 @@ If the none-of-the-above observation is present in the bundle, then none of the 
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
+  <td>213</td>
+  <td>Abnormal Conditions of the Newborn--Assisted Ventilation > 6 hours</td>
+  <td>AVEN6</td>
+  <td>-</td>
+  <td>na</td>
+  <td>See <a href='usage.html#abnormal-conditions-of-newborn'>note on missing abnormal conditions of newborn data</a></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
   <td>214</td>
   <td>Abnormal Conditions of the Newborn--Admission to NICU</td>
   <td>NICU</td>

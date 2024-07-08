@@ -3,7 +3,7 @@ Profile: ObservationBirthWeight
 Parent: USCoreVitalSignsProfile
 Id: Observation-birth-weight
 Title: "Observation - Birth Weight"
-Description: "The weight of the infant/fetus at birth/delivery."
+Description: "The weight of the infant/fetus at birth/delivery (reported in grams)."
 * code = $loinc#8339-4
   * ^short = "Birth weight Measured"
 * category[VSCat] = $observation-category#vital-signs

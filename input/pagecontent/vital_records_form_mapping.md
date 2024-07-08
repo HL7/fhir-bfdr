@@ -876,7 +876,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>29</td>
   <td>Birthweight</td>
   <td><a href='StructureDefinition-Observation-birth-weight.html'>ObservationBirthWeight</a></td>
-  <td></td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>30</td>
@@ -1248,7 +1248,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
-  <td>Attendant’s N.P.I.</td>
+  <td>Attendant’s NPI</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>identifier</td>
 </tr>
@@ -2023,7 +2023,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>33</td>
   <td>Plurality</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td>
+  <td><a href='StructureDefinition-Patient-decedent-fetus.html'>PatientDecedentFetus</a></td>
   <td><a href='http://hl7.org/fhir/extensions/StructureDefinition-patient-multipleBirthTotal.html'>multipleBirthInteger.extension:multipleBirthTotal</a></td>
 </tr>
 <tr>
@@ -2342,7 +2342,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 </tr>
 <tr>
   <td style='text-align: center'>16</td>
-  <td>Attendant’s N.P.I.</td>
+  <td>Attendant’s NPI</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td>identifier</td>
 </tr>

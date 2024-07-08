@@ -103,7 +103,7 @@ NONE_SPECIFIED_DEATH = {
 }
 
 NONE_SPECIFIED_BIRTH = {
-  "ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn" => ["ProcedureAssistedVentilationFollowingDelivery", "ProcedureAssistedVentilationFollowingDelivery", \
+  "ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn" => ["ProcedureAssistedVentilationFollowingDelivery", "ProcedureAssistedVentilationMoreThanSixHours", \
     "ObservationNICUAdmission", "ProcedureSurfactantReplacementTherapy", "ProcedureAntibioticSuspectedNeonatalSepsis", "ConditionSeizure"],
   "ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery" => ["ProcedureInductionOfLabor", "ProcedureAugmentationOfLabor", \
     "ObservationSteroidsFetalLungMaturation", "ObservationAntibioticsAdministeredDuringLabor", "ConditionChorioamnionitis", "ProcedureEpiduralOrSpinalAnesthesia"],
