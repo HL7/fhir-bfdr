@@ -1,7 +1,7 @@
 ValueSet: FetalRemainsDispositionMethodVS
 Id: ValueSet-fetal-remains-disposition-method
 Title: "Fetal Remains Disposition Method"
-Description: "This valueset contains codes to represent Fetal Remains Method of Disposition. It differs from the [MethodOfDispositionVS] valueset in that it includes 'Hospital Disposition', but not 'Entombment'. "
+Description: "This valueset contains codes to represent Fetal Remains Method of Disposition. Fetal Remains Disposition Method Value Set differs from the related VRDR [MethodOfDispositionVS](https://hl7.org/fhir/us/vrdr/ValueSet-vrdr-method-of-disposition-vs.html) since it includes 'Hospital Disposition', but not 'Entombment'."
 * insert boilerplate
 * insert SNOMEDCopyright
 * $sct#449971000124106 "Burial"
