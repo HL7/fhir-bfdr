@@ -32,7 +32,7 @@
   <td>HISTOP</td>
   <td>value</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-performed-not-performed-planned.html'>PerformedNotPerformedPlannedVS</a></td>
+  <td>[HistologicalPlacentalExaminationVS]</td>
 </tr>
 
 </tbody>

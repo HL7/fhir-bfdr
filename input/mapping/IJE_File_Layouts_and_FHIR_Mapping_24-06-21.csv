@@ -185,19 +185,18 @@ For Canadian Provinces:
 821,Fetal Death,4,13,1,Void flag,VOID,"0 = default; valid record
 1 = VOID record",,not implemented,not implemented,,,The NCHS Vital Records FHIR Messaging Implementation Guide is used to indicate that a record should be voided.,-,,,,,not implemented,
 1345,Birth Infant Death,4,13,1,Void flag,VOID,"0 = default; valid record
-1 = VOID record",,,,,,,,,,,,,
-10,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,,DeathCertificateDocument,
-11,Mortality,5 or 121,14,12,Auxiliary State file number,AUXNO or AUXNO2,000000000001-999999999999; Blank,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),"When the Jurisdiction provides AUXNO2, it will be stored in this field.  If the Jurisdiction only provides AUXNO, that value will be stored in this field",,y,,,,CauseOfDeathCodedContentBundle,
-12,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DemographicCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,,DemographicCodedContentBundle,
-13,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,IndustryOccupationCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,,IndustryOccupationCodedContentBundle,
-469,Natality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,BundleDocumentBirthReport,identifier.extension[localFileNumber1].value,string(12),,B,,,,,AuxiliaryStateIdentifier1,
-1187,ITOP,5,14,12,Auxiliary State File Number,AUXNO,000000000001-999999999999; blank,,not implemented,not implemented,,,,,,,,,not implemented,
-822,Fetal Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,BundleDocumentFetalDeathReport,identifier.extension[localFileNumber1].value,string(12),,B,,,,,AuxiliaryStateIdentifier1,
-1346,Birth Infant Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,,,,,,,,,,,,
-NA,Natality,NA,NA,NA,Auxiliary State file number (2),*NO IJE MAPPING*,000000000001-999999999999; blank,,BFDR,BundleDocumentBirthReport,identifier.extension[localFileNumber2].value,string(12),,B,,,,,AuxiliaryStateIdentifier2,
-NA,Fetal Death,NA,NA,NA,Auxiliary State file number (2),*NO IJE MAPPING*,000000000001-999999999999; blank,,BFDR,BundleDocumentFetalDeathReport,identifier.extension[localFileNumber2].value,string(12),,B,,,,,AuxiliaryStateIdentifier2,
-434,Mortality Roster,5,123,50,Decedent's Legal Name--Last,LNAME,Free form alpha literal; left justified,,VRDR,Decedent,"name.family , name.use = official",string,See [Note on Decedent Name],,,,,,Decedent,
-277,Surveillance,5,25,50,Decedent's Legal Name--Given ,GNAME,,,VRDR,Decedent,"name.given , name.use = official",string,-,,y,,,,Decedent,
+1 = VOID record",,,,,,,,,,,
+10,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,
+11,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,
+12,Mortality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; Blank,,VRDR,DemographicCodedContentBundle,identifier.extension[auxiliaryStateIdentifier1].value,string(12),-,,y,,,
+469,Natality,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,BundleDocumentBirthReport,identifier.extension[localFileNumber1].value,string(12),,B,,,,
+1187,ITOP,5,14,12,Auxiliary State File Number,AUXNO,000000000001-999999999999; blank,,not implemented,not implemented,,,,,,,,
+822,Fetal Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,BFDR,BundleDocumentFetalDeathReport,identifier.extension[localFileNumber1].value,string(12),,B,,,,
+1346,Birth Infant Death,5,14,12,Auxiliary State file number,AUXNO,000000000001-999999999999; blank,,,,,,,,,,,
+NA,Natality,NA,NA,NA,Auxiliary State file number (2),*NO IJE MAPPING*,000000000001-999999999999; blank,,BFDR,BundleDocumentBirthReport,identifier.extension[localFileNumber2].value,string(12),,B,,,,
+NA,Fetal Death,NA,NA,NA,Auxiliary State file number (2),*NO IJE MAPPING*,000000000001-999999999999; blank,,BFDR,BundleDocumentFetalDeathReport,identifier.extension[localFileNumber2].value,string(12),,B,,,,
+434,Mortality Roster,5,123,50,Decedent's Legal Name--Last,LNAME,Free form alpha literal; left justified,,VRDR,Decedent,"name.family , name.use = official",string,See [Note on Decedent Name],,,,,
+277,Surveillance,5,25,50,Decedent's Legal Name--Given ,GNAME,,,VRDR,Decedent,"name.given , name.use = official",string,-,,y,,,
 13,Mortality,6,26,1,Source flag: paper/electronic,MFILED,"0 = Electronic Mode
 1 = Paper Mode
 2 = Mixed Mode",,VRDR,DeathCertificate,extension[filingFormat] ,codeable, [FilingFormatVS],,y,,,,DeathCertificate,
@@ -313,11 +312,11 @@ Codes: If AGETYPE = 1 then 001-135, 999
                                         9 then 999",,VRDR,DecedentAge,valueQuantity.value,decimal,-,,y,,,,DecedentAge,
 20,Mortality,13,189,1,Sex,SEX,"M = Male
 F = Female
-U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,y,,,,Decedent,
-442,Mortality Roster,13,207,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,,Decedent,
-477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",string(4),,B,,,,,Location-bfdr,
-830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",string(4),,B,,,,,Location-bfdr,
-1354,Birth Infant Death,13,51,4,Facility ID (State-Assigned),SFN,,,,,,,,,,,,,,
+U = Unknown",,VRDR,Decedent,extension[NVSS-SexAtDeath] ,codeable,[AdministrativeGenderVS],,y,,,
+442,Mortality Roster,13,207,4,Date of Birth--Year,DOB_YR,"4 digit year; <=year of death, 9999",,VRDR,Decedent,birthDate,dateTime,See [PartialDatesAndTimes],,,,,
+477,Natality,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",Identifier,,B,,,,
+830,Fetal Death,13,51,4,Facility ID (State-Assigned),SFN,,,BFDR,LocationBFDR,"identifier.extension[JFI], type:BFDR = ""birth""",Identifier,,B,,,,
+1354,Birth Infant Death,13,51,4,Facility ID (State-Assigned),SFN,,,,,,,,,,,,
 1195,ITOP,13,51,1,Place Type Where Termination Occurred,TPLACE,"1 = Hospital
 2 = Clinic
 3 = Doctor's Office
@@ -699,9 +698,9 @@ Variable description (""Contents"") edited; same as NCHS ""Facility Name--County
 35,Mortality,28,229,1,Decedent's Residence--Inside City Limits,LIMITS,Y = Yes N = No.  U = Unknown ,,VRDR,Decedent,address.city.extension[withinCityLimits] ,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,Decedent,
 300,Surveillance,28,231,2,Date of Death--Month,DOD_MO,"01-12, 99",,VRDR,DeathDate,value,dateTime,See [PartialDatesAndTimes],,y,,,,DeathDate,
 492,Natality,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
-1 = Data Queried",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-date-of-birth,
+1 = Data Queried",,VRCPL,RelatedPersonFatherNaturalVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,
 845,Fetal Death,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
-1 = Data Queried ",,VRCPL,RelatedPersonFatherVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,,Observation-edit-flag-fathers-date-of-birth,
+1 = Data Queried ",,VRCPL,RelatedPersonFatherNaturalVitalRecords,birthDate.extension[bypassEditFlag].value,codeable,"[ValueSetDateOfBirthEditFlagsVitalRecords], <br />See [Handling of edit flags]",J,,,,
 1369,Birth Infant Death,28,89,1,Date of Birth (Father)--Edit Flag,FAGE_BYPASS,"0 = Edit Passed
 1 = Data Queried",,,,,,,,,,,,,
 457,Mortality Roster,28,628,2,"State, U.S. Territory or Canadian Province of Decedent's Residence - code",STATEC,"NCHS Instruction Manual: Part 8
@@ -781,7 +780,7 @@ X = Not Applicable",,,,,,,,,,,,,
 9 = Unknown",,VRDR,DeathDate,component[placeOfDeath].value,codeable,[PlaceOfDeathVS],,y,,,,DeathDate,
 303,Surveillance,31,239,1,Decedent of Hispanic Origin?--Mexican,DETHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
-U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicMexican].valueCoding,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
+U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicMexican].valueCoding,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
 1213,ITOP,31,285,1,Patient's Marital Status,MARITAL,"1 = Never Married
 2 = Now Married
 3 = Widowed
@@ -794,8 +793,8 @@ U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicMexican].valueCoding,
 Variable description (""Contents"") edited; same as NCHS ""Facility Name--County""",,VRDR,DeathLocation,address.district.extension[districtCode],integer,see [CountyCodes],,y,,,,DeathLocation,
 304,Surveillance,32,240,1,Decedent of Hispanic Origin?--Puerto Rican,DETHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
-U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicPuertoRican].valueCoding,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
-1214,ITOP,32,286,50,Patient's Marital Descriptor,MARITAL_DESCRIP,Free text for use of jurisdictions with domestic partnerships and other types or relationships.,,not implemented,not implemented,,,,,,,,,not implemented,
+U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicPuertoRican].valueCoding,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
+1214,ITOP,32,286,50,Patient's Marital Descriptor,MARITAL_DESCRIP,Free text for use of jurisdictions with domestic partnerships and other types or relationships.,,not implemented,not implemented,,,,,,,,
 496,Natality,32,93,1,Mother's Education,MEDUC,"1 = 8th grade or less
 2 = 9th through 12th grade; no diploma
 3 = High School Graduate or GED Completed
@@ -833,7 +832,7 @@ O = Other
 U = Unknown",,VRDR,DecedentDispositionMethod,value,codeable,[MethodOfDispositionVS],,y,,,,DecedentDispositionMethod,
 305,Surveillance,33,241,1,Decedent of Hispanic Origin?--Cuban,DETHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
-U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicCuban].valueCoding,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
+U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicCuban].valueCoding,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
 1215,ITOP,33,336,1,Education,EDUC,"1 = 8th grade or less
 2 = 9th through 12th grade; no diploma
 3 = High School Graduate or GED Completed
@@ -857,16 +856,16 @@ U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicCuban].valueCoding,co
 41,Mortality,34,237,2,Date of Death--Month,DOD_MO,"01-12, 99",,VRDR,DeathDate,value,dateTime,See [PartialDatesAndTimes],,y,,,,DeathDate,
 306,Surveillance,34,242,1,Decedent of Hispanic Origin?--Other,DETHNIC4,"N = No, Not other Hispanic
 H = Yes, other Hispanic
-U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicOther].valueCoding,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
+U = Unknown",,VRDR,InputRaceAndEthnicity,component[HispanicOther].valueCoding,codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
 1216,ITOP,34,337,1,Patient of Hispanic Origin?--Mexican,ETHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
 U = Unknown",,not implemented,not implemented,,,,,,,,,not implemented,
 498,Natality,34,95,1,Mother of Hispanic Origin?--Mexican,METHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Patient-mother-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 851,Fetal Death,34,95,1,Mother of Hispanic Origin?--Mexican,METHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Patient-mother-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1375,Birth Infant Death,34,95,1,Mother of Hispanic Origin?--Mexican,METHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
 U = Unknown",,,,,,,,,,,,,
@@ -878,10 +877,10 @@ H = Yes, Puerto Rican
 U = Unknown",,not implemented,not implemented,,,,,,,,,not implemented,
 499,Natality,35,96,1,Mother of Hispanic Origin?--Puerto Rican,METHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Patient-mother-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 852,Fetal Death,35,96,1,Mother of Hispanic Origin?--Puerto Rican,METHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Patient-mother-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1376,Birth Infant Death,35,96,1,Mother of Hispanic Origin?--Puerto Rican,METHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
 U = Unknown",,,,,,,,,,,,,
@@ -892,10 +891,10 @@ H = Yes, Cuban
 U = Unknown",,not implemented,not implemented,,,,,,,,,not implemented,
 500,Natality,36,97,1,Mother of Hispanic Origin?--Cuban,METHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Patient-mother-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 853,Fetal Death,36,97,1,Mother of Hispanic Origin?--Cuban,METHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Patient-mother-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1377,Birth Infant Death,36,97,1,Mother of Hispanic Origin?--Cuban,METHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
 U = Unknown",,,,,,,,,,,,,
@@ -915,10 +914,10 @@ H = Yes, other Hispanic
 U = Unknown",,not implemented,not implemented,,,,,,,,,not implemented,
 501,Natality,37,98,1,Mother of Hispanic Origin?--Other,METHNIC4,"N = No, Not other Hispanic
 H = Yes, other Hispanic
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Patient-mother-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 854,Fetal Death,37,98,1,Mother of Hispanic Origin?--Other,METHNIC4,"N = No, Not other Hispanic
 H = Yes, other Hispanic
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,Patient-mother-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1378,Birth Infant Death,37,98,1,Mother of Hispanic Origin?--Other,METHNIC4,"N = No, Not other Hispanic
 H = Yes, other Hispanic
 U = Unknown",,,,,,,,,,,,,
@@ -935,7 +934,7 @@ U = Unknown",,,,,,,,,,,,,
 310,Surveillance,38,265,1,Decedent's Race--American Indian or Alaska Native,RACE3,"Y, N",,VRDR,InputRaceAndEthnicity,component[AmericanIndianOrAlaskanNative].valueBoolean,boolean,-,,y,,,,InputRaceAndEthnicity,
 46,Mortality,39,247,1,Decedent of Hispanic Origin?--Mexican,DETHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
 1221,ITOP,39,361,3,Hispanic old NCHS single ethnicity codes,ETHNIC_OLD,"from single choice versus mark all
 0 = non-hispanic
 1 = Mexican
@@ -953,7 +952,7 @@ N = No, box for race not checked",,,,,,,,,,,,,
 311,Surveillance,39,266,1,Decedent's Race--Asian Indian,RACE4,"Y, N",,VRDR,InputRaceAndEthnicity,component[AsianIndian].valueBoolean,boolean,-,,y,,,,InputRaceAndEthnicity,
 47,Mortality,40,248,1,Decedent of Hispanic Origin?--Puerto Rican,DETHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
 1222,ITOP,40,364,30,Hispanic Origin - specify,ETHNIC_OTH,"Comma delimit multiple entries; 
 Some states keep a version of multiple Hispanic origin that is not in the new format but something in between.",,not implemented,not implemented,,,,,,,,,not implemented,
 504,Natality,40,120,1,Mother's Race--Black or African American,MRACE2,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[BlackOrAfricanAmerican].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,,Patient-mother-vr,
@@ -962,28 +961,28 @@ Some states keep a version of multiple Hispanic origin that is not in the new fo
 312,Surveillance,40,267,1,Decedent's Race--Chinese,RACE5,"Y, N",,VRDR,InputRaceAndEthnicity,component[Chinese].valueBoolean,boolean,-,,y,,,,InputRaceAndEthnicity,
 48,Mortality,41,249,1,Decedent of Hispanic Origin?--Cuban,DETHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
-505,Natality,41,121,1,Mother's Race--American Indian or Alaska Native,MRACE3,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[AmericanIndianOrAlaskanNative].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,,Patient-mother-vr,
-858,Fetal Death,41,121,1,Mother's Race--American Indian or Alaska Native,MRACE3,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[AmericanIndianOrAlaskanNative].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,,Patient-mother-vr,
-1382,Birth Infant Death,41,121,1,Mother's Race--American Indian or Alaska Native,MRACE3,"Y, N",,,,,,,,,,,,,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
+505,Natality,41,121,1,Mother's Race--American Indian or Alaska Native,MRACE3,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[AmericanIndianOrAlaskanNative].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,
+858,Fetal Death,41,121,1,Mother's Race--American Indian or Alaska Native,MRACE3,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[AmericanIndianOrAlaskanNative].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,
+1382,Birth Infant Death,41,121,1,Mother's Race--American Indian or Alaska Native,MRACE3,"Y, N",,,,,,,,,,,
 1223,ITOP,41,394,1,Patient's Race--White,RACE1,"Y = Yes, box for race checked
 N = No, box for race not checked
 U = Unknown race (U in all race fields)",,not implemented,not implemented,,,,,,,,,not implemented,
 313,Surveillance,41,268,1,Decedent's Race--Filipino,RACE6,"Y, N",,VRDR,InputRaceAndEthnicity,component[Filipino].valueBoolean,boolean,-,,y,,,,InputRaceAndEthnicity,
 49,Mortality,42,250,1,Decedent of Hispanic Origin?--Other,DETHNIC4,"N = No, Not other Hispanic
 H = Yes, other Hispanic
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,,InputRaceAndEthnicity,
-506,Natality,42,122,1,Mother's Race--Asian Indian,MRACE4,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[AsianIndian].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,,Patient-mother-vr,
-859,Fetal Death,42,122,1,Mother's Race--Asian Indian,MRACE4,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[AsianIndian].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,,Patient-mother-vr,
-1383,Birth Infant Death,42,122,1,Mother's Race--Asian Indian,MRACE4,"Y, N",,,,,,,,,,,,,
-1224,ITOP,42,395,1,Patient's Race--Black or African American,RACE2,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
-314,Surveillance,42,269,1,Decedent's Race--Japanese,RACE7,"Y, N",,VRDR,InputRaceAndEthnicity,component[Japanese].valueBoolean,boolean,-,,y,,,,InputRaceAndEthnicity,
-50,Mortality,43,251,20,"Decedent of Hispanic Origin?--Other, Literal",DETHNIC5,Literal; Blank ,,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",string,-,,y,,,,InputRaceAndEthnicity,
-507,Natality,43,123,1,Mother's Race--Chinese,MRACE5,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[Chinese].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,,Patient-mother-vr,
-860,Fetal Death,43,123,1,Mother's Race--Chinese,MRACE5,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[Chinese].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,,Patient-mother-vr,
-1384,Birth Infant Death,43,123,1,Mother's Race--Chinese,MRACE5,"Y, N",,,,,,,,,,,,,
-1225,ITOP,43,396,1,Patient's Race--American Indian or Alaska Native,RACE3,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
-315,Surveillance,43,270,1,Decedent's Race--Korean,RACE8,"Y, N",,VRDR,InputRaceAndEthnicity,component[Korean].valueBoolean,boolean,-,,y,,,,InputRaceAndEthnicity,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",codeable,[ValueSetYesNoUnknownVitalRecords],,y,,,
+506,Natality,42,122,1,Mother's Race--Asian Indian,MRACE4,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[AsianIndian].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,
+859,Fetal Death,42,122,1,Mother's Race--Asian Indian,MRACE4,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[AsianIndian].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,
+1383,Birth Infant Death,42,122,1,Mother's Race--Asian Indian,MRACE4,"Y, N",,,,,,,,,,,
+1224,ITOP,42,395,1,Patient's Race--Black or African American,RACE2,"Y, N, U",,not implemented,not implemented,,,,,,,,
+314,Surveillance,42,269,1,Decedent's Race--Japanese,RACE7,"Y, N",,VRDR,InputRaceAndEthnicity,component[Japanese].valueBoolean,boolean,-,,y,,,
+50,Mortality,43,251,20,"Decedent of Hispanic Origin?--Other, Literal",DETHNIC5,Literal; Blank ,,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",string,-,,y,,,
+507,Natality,43,123,1,Mother's Race--Chinese,MRACE5,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[Chinese].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,
+860,Fetal Death,43,123,1,Mother's Race--Chinese,MRACE5,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[Chinese].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,
+1384,Birth Infant Death,43,123,1,Mother's Race--Chinese,MRACE5,"Y, N",,,,,,,,,,,
+1225,ITOP,43,396,1,Patient's Race--American Indian or Alaska Native,RACE3,"Y, N, U",,not implemented,not implemented,,,,,,,,
+315,Surveillance,43,270,1,Decedent's Race--Korean,RACE8,"Y, N",,VRDR,InputRaceAndEthnicity,component[Korean].valueBoolean,boolean,-,,y,,,
 51,Mortality,44,271,1,Decedent's Race--White,RACE1,"Y = Yes, box for race checked
 N = No, box for race not checked",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[White].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityDecedent",boolean,-,,y,,,,InputRaceAndEthnicity,
 508,Natality,44,124,1,Mother's Race--Filipino,MRACE6,"Y, N",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[Filipino].valueBoolean, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityMother",boolean,,B,,,,,Patient-mother-vr,
@@ -1258,7 +1257,7 @@ U = Unknown",,not implemented,not implemented,"Encounter-maternity.hospitalizati
 897,Fetal Death,80,424,2,Date of First Prenatal Care Visit--Month,DOFP_MO,"01-12, 88, 99",,BFDR,ObservationDateOfFirstPrenatalCareVisit,value,dateTime,See [note on partial dates],B,,,,,Observation-date-of-first-prenatal-care-visit,
 544,Natality,80,424,1,Father of Hispanic Origin?--Mexican,FETHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,RelatedPerson-father-natural-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1421,Birth Infant Death,80,424,1,Father of Hispanic Origin?--Mexican,FETHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
 U = Unknown",,,,,,,,,,,,,
@@ -1268,7 +1267,7 @@ U = Unknown",,,,,,,,,,,,,
 898,Fetal Death,81,426,2,Date of First Prenatal Care Visit--Day,DOFP_DY,"01-31 (based on month), 88, 99",,BFDR,ObservationDateOfFirstPrenatalCareVisit,value,dateTime,See [note on partial dates],B,,,,,Observation-date-of-first-prenatal-care-visit,
 545,Natality,81,425,1,Father of Hispanic Origin?--Puerto Rican,FETHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,RelatedPerson-father-natural-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1422,Birth Infant Death,81,425,1,Father of Hispanic Origin?--Puerto Rican,FETHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
 U = Unknown",,,,,,,,,,,,,
@@ -1280,7 +1279,7 @@ U = Unknown",,,,,,,,,,,,,
 (year of delivery - 1), 8888, 9999",,BFDR,ObservationDateOfFirstPrenatalCareVisit,value,dateTime,See [note on partial dates],B,,,,,Observation-date-of-first-prenatal-care-visit,
 546,Natality,82,426,1,Father of Hispanic Origin?--Cuban,FETHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,RelatedPerson-father-natural-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1423,Birth Infant Death,82,426,1,Father of Hispanic Origin?--Cuban,FETHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
 U = Unknown",,,,,,,,,,,,,
@@ -1292,7 +1291,7 @@ C = Not Obtainable",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"compone
 900,Fetal Death,83,432,2,Date of Last Prenatal Care Visit--Month(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),DOLP_MO,"01-12, 88, 99",,not implemented,not implemented,,,,-,,,,,not implemented,
 547,Natality,83,427,1,Father of Hispanic Origin?--Other,FETHNIC4,"N = No, Not other Hispanic
 H = Yes, other Hispanic
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,RelatedPerson-father-natural-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1424,Birth Infant Death,83,427,1,Father of Hispanic Origin?--Other,FETHNIC4,"N = No, Not other Hispanic
 H = Yes, other Hispanic
 U = Unknown",,,,,,,,,,,,,
@@ -1644,11 +1643,10 @@ Blank for natural death.",i,VRDR,InjuryLocation,address.district.extension[distr
 1462,Birth Infant Death,121,742,3,Father's Race Tabulation Variable 21C,FRACE21C,NCHS Appendix E,,,,,,,,,,,,,
 938,Fetal Death,121,502,1,Infections Present--Gonorrhea(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),GON,"Y = Yes
 N = No
-U = Unknown",,not implemented,not implemented,,,,-,,,,,not implemented,
-131,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,,DeathCertificateDocument,
-132,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,,,
-133,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,DemographicCodedContentBundle,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,,DemographicCodedContentBundle,
-134,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,IndustryOccupationCodedContentBundle,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,,IndustryOccupationCodedContentBundle,
+U = Unknown",,not implemented,not implemented,,,,-,,,,
+131,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,DeathCertificateDocument,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,
+132,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,CauseOfDeathCodedContentBundle,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,
+133,Mortality,121,1025,12,Auxiliary State file number,AUXNO2,,,VRDR,DemographicCodedContentBundle,identifier.extension[auxiliaryStateIdentifier2].value,string(12),-,,,,,
 1303,ITOP,121,967,1,"Other complications 
 (at time of followup at other facility) ",OTHER_F2,"Y, N, U",,not implemented,not implemented,,,,,,,,,not implemented,
 393,Surveillance,122,2386,28,Town/city of Injury - literal,CITYTEXT_I,Valid town/city literal; blank for natural death.,i,VRDR,InjuryLocation,address.city,string,-,,,,,,InjuryLocation,
@@ -1929,10 +1927,10 @@ year of child's birth, 8888, 9999",,,,,,,,,,,,,
 1490,Birth Infant Death,149,803,2,Number of Cigarettes Smoked in 3 months prior to Pregnancy,CIGPN,"00-98, 99",,,,,,,,,,,,,
 966,Fetal Death,149,534,1,Was a Histological Placental Examination Performed?,HISTOP,"Y = Yes
 N = No
-P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,[PerformedNotPerformedPlannedVS],B,,,,,Observation-histological-placental-exam-performed,
-420,Surveillance,149,3505,30,Informant's Relationship,INFORMRELATE,,i,VRDR,Decedent,contact.type.text ,string (30 characters),-,,,,,,Decedent,
-161,Mortality,149,1533,10,Decedent's Residence - Street designator,STDESIG_R,,,VRDR,Decedent,address.extension[stdesig],string,-,,y,,,,Decedent,
-1331,ITOP,149,1191,1,Reason for Termination -- Contraceptive failure,REASON_CONTRA_FAIL,"Y, N",,not implemented,not implemented,,,,,,,,,not implemented,
+P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,[HistologicalPlacentalExaminationVS],B,,,,
+420,Surveillance,149,3505,30,Informant's Relationship,INFORMRELATE,,i,VRDR,Decedent,contact.type.text ,string (30 characters),-,,,,,
+161,Mortality,149,1533,10,Decedent's Residence - Street designator,STDESIG_R,,,VRDR,Decedent,address.extension[stdesig],string,-,,y,,,
+1331,ITOP,149,1191,1,Reason for Termination -- Contraceptive failure,REASON_CONTRA_FAIL,"Y, N",,not implemented,not implemented,,,,,,,,
 967,Fetal Death,150,535,1,Were Autopsy or Histological Placental Examination Results Used in Determining the Cause of Fetal Death?,AUTOPF,"Y = Yes
 N = No
 X = Not Applicable",,BFDR,ObservationAutopsyHistologicalExamResultsUsed,value,codeable,[ValueSetYesNoNotApplicableVitalRecords],B,,,,,Observation-autopsy-histological-exam-results-used,
@@ -2861,17 +2859,17 @@ Decision: BFDR should mimic VRDR",Needs work,FHIR-41389,odh-UsualWork,
 1626,Birth Infant Death,285,2075,3,Occupation of Father (coded),DAD_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,,,
 1102,Fetal Death,285,4291,1,Father of Hispanic Origin?--Mexican,FETHNIC1,"N = No, Not Mexican
 H = Yes, Mexican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,RelatedPerson-father-natural-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicMexican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 1103,Fetal Death,286,4292,1,Father of Hispanic Origin?--Puerto Rican,FETHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,RelatedPerson-father-natural-vr,
-750,Natality,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,ObservationUsualWorkVitalRecords,"component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='MTH'",string(25),,B,,,Needs work,FHIR-41389,odh-UsualWork,
-1627,Birth Infant Death,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,,,,,,,,,,,,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
+750,Natality,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,ObservationUsualWorkVitalRecords,"component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='MTH'",string(25),,B,,,Needs work,FHIR-41389
+1627,Birth Infant Death,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,,,,,,,,,,
 1104,Fetal Death,287,4293,1,Father of Hispanic Origin?--Cuban,FETHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,RelatedPerson-father-natural-vr,
-751,Natality,287,2103,3,Industry of Mother (coded),MOM_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,-,,,,,not implemented,
-1628,Birth Infant Death,287,2103,3,Industry of Mother (coded),MOM_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,,,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
+751,Natality,287,2103,3,Industry of Mother (coded),MOM_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,-,,,,
+1628,Birth Infant Death,287,2103,3,Industry of Mother (coded),MOM_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,
 752,Natality,288,2106,25,Industry of Father,DAD_IN_T,Literal for father's corresponding industry,,ODH,ObservationUsualWorkVitalRecords,"component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
 NCHS does not use
 VRCL defines ""ObservationUsualWorkVitalRecords"" profile. 
@@ -2879,10 +2877,10 @@ Decision: BFDR should mimic VRDR",Needs work,FHIR-41389,odh-UsualWork,
 1629,Birth Infant Death,288,2106,25,Industry of Father,DAD_IN_T,Literal for father's corresponding industry,,,,,,,,,,,,,
 1105,Fetal Death,288,4294,1,Father of Hispanic Origin?--Other,FETHNIC4,"N = No, Not other Hispanic
 H = Yes, other Hispanic
-U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,,RelatedPerson-father-natural-vr,
-753,Natality,289,2131,3,Industry of Father (coded),DAD_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,-,,,,,not implemented,
-1630,Birth Infant Death,289,2131,3,Industry of Father (coded),DAD_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,,,
-1106,Fetal Death,289,4295,20,Father of Hispanic Origin?--Other Literal,FETHNIC5,"Literal text, or Blank",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",string,,B,,,,,RelatedPerson-father-natural-vr,
+U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicOther].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
+753,Natality,289,2131,3,Industry of Father (coded),DAD_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,-,,,,
+1630,Birth Infant Death,289,2131,3,Industry of Father (coded),DAD_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,
+1106,Fetal Death,289,4295,20,Father of Hispanic Origin?--Other Literal,FETHNIC5,"Literal text, or Blank",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicLiteral].valueString, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",string,,B,,,,
 754,Natality,290,2134,2,"State, U.S. Territory or Canadian Province of Birth (Father) - code",FBPLACD_ST_TER_C,"NCHS Instruction Manual: Part 8
    ZZ = UNKNOWN OR BLANK U.S. STATE OR TERRITORY OR UNKNOWN/ UNCLASSIFIABLE COUNTRY
    XX = COUNTRY IS CANADA BUT UNKNOWN CANADIAN PROVINCE OR ANY COUNTRY THAT IS KNOWN, BUT NOT U.S. OR CANADA           For U.S. Territories:

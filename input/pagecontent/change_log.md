@@ -1,5 +1,6 @@
 ### Post-Ballot Changes
 ### Major
+- [FHIR-46274](https://jira.hl7.org/browse/FHIR-46274) - Added a new [ObservationPresentJob] profile to capture the industry and occupation of the father and mother.   Previously the IG used a UsualWork profile whose definition made it inappropriate for capturing the relevant information about the father and mother.
 - [FHIR-43458](https://jira.hl7.org/browse/FHIR-43458) - Improve support for birth, transfer-from, and transfer-to locations.   Added new [BFDR Location Profile][LocationBFDR], and updated [EncounterMaternity] and [EncounterBirth] to reference the new profile.   Data dictionary has been updated to correctly document mapping of SFN and FNPI fields, and all other facility-related fields.
  - [FHIR-43473](https://jira.hl7.org/browse/FHIR-43473) - To improve consistency with VRDR the key reporting identifiers (birth cert no, fetal death report number, local file numbers, and overall record identifier) were moved from the Composition.identifier to the Bundle.identifier and were updated to use standardized extensions. The definitions of these extensions will also be moved to the Vital Records Common Library.
 
