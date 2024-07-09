@@ -221,7 +221,7 @@
   <td>STATE_D</td>
   <td>address.state (expanded from 2 letter code)</td>
   <td>string</td>
-  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#state-literals'>StateLiterals</a></td>
+  <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#state-literals'>StateLiterals</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -230,7 +230,7 @@
   <td>COUNTRY_D</td>
   <td>address.country (expanded from 2 letter code)</td>
   <td>string</td>
-  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#country-literals'>CountryLiterals</a></td>
+  <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#country-literals'>CountryLiterals</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
