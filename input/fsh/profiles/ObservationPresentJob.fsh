@@ -6,8 +6,8 @@ Description: "Used to send text-string present job information from Jurisdiction
 * subject only Reference(PatientVitalRecords)  // Mother, Child... required by the Past or Present Job Profile
 * focus only  Reference(RelatedPersonParentVitalRecords)  // Mother or Father
 * extension[ODHIsCurrentJobExtension].valueBoolean = true 
-* extension contains ExtensionRoleVitalRecords named roleVitalRecords 0..1 
-* extension[roleVitalRecords] ^short = "Vital Records Role (father,mother if present)"
+* extension contains ExtensionRole named roleMotherOrFather 0..1 
+* extension[roleMotherOrFather] ^short = "Vital Records Role (father,mother if present)"
   * value[x] ^short = "Parent (MTH | FTH)"
 * component[odh-PastOrPresentIndustry] ^short = "Literal text string submitted to NCHS for present Industry"
   * valueCodeableConcept
