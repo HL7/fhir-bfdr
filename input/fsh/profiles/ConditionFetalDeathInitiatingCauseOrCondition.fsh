@@ -1,9 +1,9 @@
-Profile: ConditionFetalDeathCauseOrCondition
+Profile: ConditionFetalDeathInitiatingCauseOrCondition
 Parent: USCoreConditionEncounterDiagnosisProfile
-Id: Condition-fetal-death-cause-or-condition
-Title: "Condition - Fetal Death Cause or Condition"
-Description: "This Condition profile contains information provided by the clinician to indicate the cause or causes of the fetal death."
-* . ^short = "Information provided by the clinician to indicate the cause or causes of the fetal death."
+Id: Condition-fetal-death-initiating-cause-or-condition
+Title: "Condition - Fetal Death Initiating Cause or Condition"
+Description: "This Condition profile should be used by the clinician to indicate the initiating cause of fetal death."
+* . ^short = "Information provided by the clinician to indicate the initiating cause of the fetal death."
 * category contains initiatingCauseOrCondition 1..1 MS
 * category[initiatingCauseOrCondition] = $loinc#76060-3
   * ^short = "Initiating cause or condition of fetal death [US Standard Report of Fetal Death]"

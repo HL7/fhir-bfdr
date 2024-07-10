@@ -1744,7 +1744,11 @@ U = Unknown",,,,,,,,,,,
 945,Fetal Death,128,509,1,Infections Present--Parvo virus(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),B19,"Y, N, U",,not implemented,not implemented,,,,-,,,,
 399,Surveillance,128,2456,120,Cause of Death Part I Line a (literal),COD1A,Literal information reported on Line a,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 1",string(120),-,,y,,,
 592,Natality,128,757,4,Date of First Prenatal Care Visit--Year,DOFP_YR,"4 digit year; year of child's birth or
+<<<<<<< HEAD
 (year of child's birth - 1), 8888=no care, 9999=unknown ",,BFDR,ObservationDateOfFirstPrenatalCareVisit,value,dateTime,See [note on partial dates],B,,,,,
+=======
+(year of child's birth - 1), 8888=no care, 9999=unknown ",,BFDR,ObservationDateOfFirstPrenatalCareVisit,value,dateTime,See [note on partial dates],B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 1469,Birth Infant Death,128,757,4,Date of First Prenatal Care Visit--Year,DOFP_YR,"4 digit year; year of child's birth or
 (year of child's birth - 1), 8888=no care, 9999=unknown ",,,,,,,,,,,
 1310,ITOP,128,1121,1,Secondary management -- hospitalization,HOSP_MAN,"Y, N, U",,not implemented,not implemented,,,,,,,,
@@ -1906,7 +1910,11 @@ blank if not reported",I,VRDR,Decedent,extension[SpouseAlive] ,codeable, [Spouse
 609,Natality,145,791,2,Date of Last Live Birth--Month,MLLB,"01-12, 88, 99",,BFDR,ObservationDateOfLastLiveBirth,value,dateTime,See [PartialDatesAndTimes],B,,,,
 1486,Birth Infant Death,145,791,2,Date of Last Live Birth--Month,MLLB,"01-12, 88, 99",,,,,,,,,,,
 157,Mortality,145,1435,50,Husband's Surname/Wife's Maiden Last Name,SPOUSEL ,"Free form literal; if unknown, leave blank",I,VRDR,DecedentSpouse,"name.family, name.use = 'maiden",string,-,,,,,
+<<<<<<< HEAD
 962,Fetal Death,145,529,2,Obstetric Estimation of Gestation,OWGEST,"00-98, 99",,BFDR,ObservationGestationalAgeAtDelivery,value,quantity,value is a decimal; unit is from [UnitsOfGestationalAgeVS],B,,,,,
+=======
+962,Fetal Death,145,529,2,Obstetric Estimation of Gestation,OWGEST,"00-98, 99",,BFDR,ObservationGestationalAgeAtDelivery,value,quantity,value is a decimal; unit is from [UnitsOfGestationalAgeVS],B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 1327,ITOP,145,1187,1,Reason for Termination -- Fetal anomaly,REASON_FET_ANOM,"Y, N",,not implemented,not implemented,,,,,,,,
 416,Surveillance,145,3425,50,Spouse's Middle Name,SPOUSEMIDNAME,,i,VRDR,DecedentSpouse,"name.given , name.use = official",string,-,,,,,
 158,Mortality,146,1485,10,Decedent's Residence - Street number,STNUM_R,,,VRDR,Decedent,address.extension[stnum],string,-,,y,,,
@@ -2188,7 +2196,11 @@ U = Unknown",,,,,,,,,,,
 1520,Birth Infant Death,179,843,1,Onset of Labor--Precipitous Labor,PRIC,"Y, N, U",,,,,,,,,,,
 191,Mortality,179,2498,5,Town/city of Injury code,CITYCODE_I,NCHS Instruction Manual: Part 8; blank for natural death.,i,VRDR,InjuryLocation,address.city.extension[cityCode].value,integer,see [CityCodes],,,,,
 997,Fetal Death,180,587,1,Initiating cause/condition - Rupture of membranes prior to onset of labor,COD18a1,"Y = Yes
+<<<<<<< HEAD
 N = No",,BFDR,ConditionFetalDeathCauseOrCondition,code=44223004 (Premature rupture of membranes (disorder)),na,,B,,,,
+=======
+N = No",,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,code=44223004 (Premature rupture of membranes (disorder)),na,,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 644,Natality,180,844,1,Onset of Labor--Prolonged Labor(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),PROL,"Y, N, U",,not implemented,not implemented,,,,-,,,,
 1521,Birth Infant Death,180,844,1,Onset of Labor--Prolonged Labor,PROL,"Y, N, U",,,,,,,,,,,
 192,Mortality,180,2503,2,"State, U.S. Territory or Canadian Province of Injury - code",STATECODE_I,"NCHS Instruction Manual: Part 8
@@ -2213,7 +2225,11 @@ For Canadian Provinces:
    QC  QUEBEC  
    SK  SASKATCHEWAN
    YT  YUKON",i,VRDR,InjuryLocation,address.state,string,[ValueSetStatesTerritoriesAndProvincesVitalRecords],,,,,
+<<<<<<< HEAD
 998,Fetal Death,181,588,1,Initiating cause/condition - Abruptio placenta,COD18a2,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=415105001 (Placental abruption (disorder)),na,,B,,,,
+=======
+998,Fetal Death,181,588,1,Initiating cause/condition - Abruptio placenta,COD18a2,"Y, N",,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,code=415105001 (Placental abruption (disorder)),na,,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 645,Natality,181,845,1,Characteristics of Labor & Delivery--Induction of Labor,INDL,"Y = Yes
 N = No
 U = Unknown",,BFDR,ProcedureInductionOfLabor,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
@@ -2227,15 +2243,25 @@ U = Unknown",,,,,,,,,,,
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680
 1523,Birth Infant Death,182,846,1,Characteristics of Labor & Delivery--Augmentation of Labor,AUGL,"Y, N, U",,,,,,,,,,,
+<<<<<<< HEAD
 999,Fetal Death,182,589,1,Initiating cause/condition - Placental insufficiency,COD18a3,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=237292005 (Placental insufficiency (disorder)),na,,B,,,,
 194,Mortality,182,2522,17,Place of injury. Latitude,LAT_I,"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 2 bytes, a decimal divider, and 6 decimal places (blank if natural death).",i,VRDR,InjuryLocation,position.latitude,float,-,,,,,
 1000,Fetal Death,183,590,1,Initiating cause/condition - Prolapsed cord,COD18a4,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=270500004 (Prolapsed cord (disorder)),na,,B,,,,
+=======
+999,Fetal Death,182,589,1,Initiating cause/condition - Placental insufficiency,COD18a3,"Y, N",,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,code=237292005 (Placental insufficiency (disorder)),na,,B,,,,
+194,Mortality,182,2522,17,Place of injury. Latitude,LAT_I,"As coded by state of occurrence.  Commonly coded with space for a negative sign followed by 2 bytes, a decimal divider, and 6 decimal places (blank if natural death).",i,VRDR,InjuryLocation,position.latitude,float,-,,,,,
+1000,Fetal Death,183,590,1,Initiating cause/condition - Prolapsed cord,COD18a4,"Y, N",,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,code=270500004 (Prolapsed cord (disorder)),na,,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 647,Natality,183,847,1,Characteristics of Labor & Delivery--Non-vertex Presentation (NCHS DELETED THIS ITEM EFFECTIVE 2011),NVPR,"Y, N, U (BLANK IF DELETED)",,not implemented,not implemented,,,,-,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680
 1524,Birth Infant Death,183,847,1,Characteristics of Labor & Delivery--Non-vertex Presentation (NCHS DELETED THIS ITEM EFFECTIVE 2011),NVPR,"Y, N, U (BLANK IF DELETED)",,,,,,,,,,,
 195,Mortality,183,2539,2,Old NCHS education code if collected - receiving state will recode as they prefer,OLDEDUC,,,not implemented,not implemented,,,-,,,,,
+<<<<<<< HEAD
 1001,Fetal Death,184,591,1,Initiating cause/condition - Chorioamnionitis,COD18a5,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=11612004 (Chorioamnionitis (disorder)),na,,B,,,,
+=======
+1001,Fetal Death,184,591,1,Initiating cause/condition - Chorioamnionitis,COD18a5,"Y, N",,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,code=11612004 (Chorioamnionitis (disorder)),na,,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 196,Mortality,184,2541,1,Replacement Record ,REPLACE (*deprecated*),"0=original record; 1=updated record; 2=updated, do not send to NCHS.  For FHIR-base submissions to NCHS, this flag in the DeathCertificate has been deprecated.   See the Vital Records Messaging IG.",,VRDR,DeathCertificate,extension[replaceStatus].value,codeable,[ReplaceStatusVS],,,,,
 648,Natality,184,848,1,Characteristics of Labor & Delivery--Steroids,STER,"Y, N, U",,BFDR,ObservationSteroidsFetalLungMaturation,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
@@ -2245,29 +2271,47 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680
 1526,Birth Infant Death,185,849,1,Characteristics of Labor & Delivery--Antibiotics,ANTB,"Y, N, U",,,,,,,,,,,
+<<<<<<< HEAD
 1002,Fetal Death,185,592,1,"Initiating cause/condition - Other complications of placenta, cord, or membranes",COD18a6,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=FetalDeathCauseOrConditionCS#membranes,na,,B,,,,
+=======
+1002,Fetal Death,185,592,1,"Initiating cause/condition - Other complications of placenta, cord, or membranes",COD18a6,"Y, N",,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,code=FetalDeathCauseOrConditionCS#membranes,na,,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 197,Mortality,185,2542,120,Cause of Death Part I Line a,COD1A,Literal information reported on Line a,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 1",string(120),-,,y,,,
 650,Natality,186,850,1,Characteristics of Labor & Delivery--Chorioamnionitis,CHOR,"Y, N, U",,BFDR,ConditionChorioamnionitis,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680
 1527,Birth Infant Death,186,850,1,Characteristics of Labor & Delivery--Chorioamnionitis,CHOR,"Y, N, U",,,,,,,,,,,
+<<<<<<< HEAD
 1003,Fetal Death,186,593,1,Initiating cause/condition - Unknown,COD18a7,"Y, N",,BFDR,ConditionFetalDeathCauseOrCondition,code=UNK,na,,B,,,,
 198,Mortality,186,2662,20,"Cause of Death Part I Interval, Line a",INTERVAL1A,Duration reported on Line a,,VRDR,CauseOfDeathPart1,"component[interval].value, component[lineNumber] = 1",string(20),-,,y,,,
 1004,Fetal Death,187,594,60,Initiating cause/condition - Maternal conditions/diseases literal,COD18a8,Literal text or Blank,,BFDR,ConditionFetalDeathCauseOrCondition,"code=FetalDeathCauseOrConditionCS#maternalconditions, code.text",string,code.text should contain description,B,,,,
+=======
+1003,Fetal Death,186,593,1,Initiating cause/condition - Unknown,COD18a7,"Y, N",,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,code=UNK,na,,B,,,,
+198,Mortality,186,2662,20,"Cause of Death Part I Interval, Line a",INTERVAL1A,Duration reported on Line a,,VRDR,CauseOfDeathPart1,"component[interval].value, component[lineNumber] = 1",string(20),-,,y,,,
+1004,Fetal Death,187,594,60,Initiating cause/condition - Maternal conditions/diseases literal,COD18a8,Literal text or Blank,,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,"code=FetalDeathCauseOrConditionCS#maternalconditions, code.text",string,code.text should contain description,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 651,Natality,187,851,1,Characteristics of Labor & Delivery--Meconium Staining(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),MECS,"Y, N, U",,not implemented,not implemented,,,,-,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN
 (new) MECS",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680
 1528,Birth Infant Death,187,851,1,Characteristics of Labor & Delivery--Meconium Staining,MECS,"Y, N, U",,,,,,,,,,,
 199,Mortality,187,2682,120,Cause of Death Part I Line b,COD1B,Literal information reported on Line b,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 2",string(120),-,,y,,,
+<<<<<<< HEAD
 1005,Fetal Death,188,654,60,"Initiating cause/condition - Other complications of placenta, cord, or membranes literal",COD18a9,Literal text or Blank,,BFDR,ConditionFetalDeathCauseOrCondition,"code=FetalDeathCauseOrConditionCS#membranes, code.text",string,code.text should contain description,B,,,,
+=======
+1005,Fetal Death,188,654,60,"Initiating cause/condition - Other complications of placenta, cord, or membranes literal",COD18a9,Literal text or Blank,,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,"code=FetalDeathCauseOrConditionCS#membranes, code.text",string,code.text should contain description,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 652,Natality,188,852,1,Characteristics of Labor & Delivery--Fetal Intolerance(NCHS DELETED THIS ITEM EFFECTIVE 2014/2015),FINT,"Y, N, U",,not implemented,not implemented,,,,-,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN
 (new) FINT",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680
 1529,Birth Infant Death,188,852,1,Characteristics of Labor & Delivery--Fetal Intolerance,FINT,"Y, N, U",,,,,,,,,,,
 200,Mortality,188,2802,20,"Cause of Death Part I Interval, Line b",INTERVAL1B,Duration reported on Line b,,VRDR,CauseOfDeathPart1,"component[interval].value, component[lineNumber] = 2",string(20),-,,y,,,
+<<<<<<< HEAD
 1006,Fetal Death,189,714,60,Initiating cause/condition - Other obstetrical or pregnancy complications literal,COD18a10,Literal text or Blank,,BFDR,ConditionFetalDeathCauseOrCondition,"code=FetalDeathCauseOrConditionCS#obstetricalcomplications, code.text",string,code.text should contain description,B,,,,
+=======
+1006,Fetal Death,189,714,60,Initiating cause/condition - Other obstetrical or pregnancy complications literal,COD18a10,Literal text or Blank,,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,"code=FetalDeathCauseOrConditionCS#obstetricalcomplications, code.text",string,code.text should contain description,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 653,Natality,189,853,1,Characteristics of Labor & Delivery--Anesthesia,ESAN,"Y, N, U",,BFDR,ProcedureEpiduralOrSpinalAnesthesia,,na,See [note on missing characteristics of labor and delivery data],B,,"Update L&D (old Observation-characteristic-of-labor-and-delivery)
 STU 1 listed:
 IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Observation-characteristic-of-labor-and-delivery,FHIR-40680
@@ -2275,6 +2319,7 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 201,Mortality,189,2822,120,Cause of Death Part I Line c,COD1C,Literal information reported on Line c,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 3",string(120),-,,y,,,
 654,Natality,190,854,1,Method of Delivery--Attempted Forceps (NCHS DELETED THIS ITEM EFFECTIVE 2011),ATTF,"Y, N, U (BLANK IF DELETED)",,not implemented,not implemented,,,,-,,,,
 1531,Birth Infant Death,190,854,1,Method of Delivery--Attempted Forceps (NCHS DELETED THIS ITEM EFFECTIVE 2011),ATTF,"Y, N, U (BLANK IF DELETED)",,,,,,,,,,,
+<<<<<<< HEAD
 1007,Fetal Death,190,774,60,Initiating cause/condition - Fetal anomaly literal,COD18a11,Literal text or Blank,,BFDR,ConditionFetalDeathCauseOrCondition,"code=702709008 (Fetal Anomaly (Specify)), <br />code.text",string,code.text should contain description,B,,,,
 202,Mortality,190,2942,20,"Cause of Death Part I Interval, Line c",INTERVAL1C,Duration reported on Line c,,VRDR,CauseOfDeathPart1,"component[interval].value, component[lineNumber] = 3",string(20),-,,y,,,
 655,Natality,191,855,1,Method of Delivery--Attempted Vacuum (NCHS DELETED THIS ITEM EFFECTIVE 2011),ATTV,"Y, N, U (BLANK IF DELETED)",,not implemented,not implemented,,,,-,,,,
@@ -2282,6 +2327,15 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 1008,Fetal Death,191,834,60,Initiating cause/condition - Fetal injury literal,COD18a12,Literal text or Blank,,BFDR,ConditionFetalDeathCauseOrCondition,"code=277489001 (Fetal trauma (disorder)), <br />code.text",string,specific description of fetal trauma should be provided in the code.text field,B,,,,
 203,Mortality,191,2962,120,Cause of Death Part I Line d,COD1D,Literal information reported on Line d,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 4",string(120),-,,y,,,
 1009,Fetal Death,192,894,60,Initiating cause/condition - Fetal infection literal,COD18a13,Literal text or Blank,,BFDR,ConditionFetalDeathCauseOrCondition,"code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text",string,specific description of fetal infection should be provided in the code.text field,B,,,,
+=======
+1007,Fetal Death,190,774,60,Initiating cause/condition - Fetal anomaly literal,COD18a11,Literal text or Blank,,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,"code=702709008 (Fetal Anomaly (Specify)), <br />code.text",string,code.text should contain description,B,,,,
+202,Mortality,190,2942,20,"Cause of Death Part I Interval, Line c",INTERVAL1C,Duration reported on Line c,,VRDR,CauseOfDeathPart1,"component[interval].value, component[lineNumber] = 3",string(20),-,,y,,,
+655,Natality,191,855,1,Method of Delivery--Attempted Vacuum (NCHS DELETED THIS ITEM EFFECTIVE 2011),ATTV,"Y, N, U (BLANK IF DELETED)",,not implemented,not implemented,,,,-,,,,
+1532,Birth Infant Death,191,855,1,Method of Delivery--Attempted Vacuum (NCHS DELETED THIS ITEM EFFECTIVE 2011),ATTV,"Y, N, U (BLANK IF DELETED)",,,,,,,,,,,
+1008,Fetal Death,191,834,60,Initiating cause/condition - Fetal injury literal,COD18a12,Literal text or Blank,,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,"code=277489001 (Fetal trauma (disorder)), <br />code.text",string,specific description of fetal trauma should be provided in the code.text field,B,,,,
+203,Mortality,191,2962,120,Cause of Death Part I Line d,COD1D,Literal information reported on Line d,,VRDR,CauseOfDeathPart1,"value.text,   component[lineNumber] = 4",string(120),-,,y,,,
+1009,Fetal Death,192,894,60,Initiating cause/condition - Fetal infection literal,COD18a13,Literal text or Blank,,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,"code=128270001 (Infectious disorder of the fetus (disorder)), <br />code.text",string,specific description of fetal infection should be provided in the code.text field,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 656,Natality,192,856,1,Method of Delivery--Fetal Presentation,PRES,"1 = Cephalic
 2 = Breech
 3 = Other
@@ -2291,7 +2345,11 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 3 = Other
 9 = Unknown",,,,,,,,,,,
 204,Mortality,192,3082,20,"Cause of Death Part I Interval, Line d",INTERVAL1D,Duration reported on Line d,,VRDR,CauseOfDeathPart1,"component[interval].value, component[lineNumber] = 4",string(20),-,,y,,,
+<<<<<<< HEAD
 1010,Fetal Death,193,954,60,Initiating cause/condition - Other fetal conditions/disorders literal,COD18a14,Literal text or Blank,,BFDR,ConditionFetalDeathCauseOrCondition,"code=FetalDeathCauseOrConditionCS#fetalconditions, <br />code.text",string,code.text should contain description,B,,,,
+=======
+1010,Fetal Death,193,954,60,Initiating cause/condition - Other fetal conditions/disorders literal,COD18a14,Literal text or Blank,,BFDR,ConditionFetalDeathInitiatingCauseOrCondition,"code=FetalDeathCauseOrConditionCS#fetalconditions, <br />code.text",string,code.text should contain description,B,,,,
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 205,Mortality,193,3102,240,Cause of Death Part II,OTHERCONDITION,Literal information reported in Part II,,VRDR,CauseOfDeathPart2,value.text,string(240),-,,y,,,
 657,Natality,193,857,1,Method of Delivery--Route and Method of Delivery,ROUT,"1 = Spontaneous
 2 = Forceps
@@ -2775,7 +2833,11 @@ types of relationships.",i,VRDR,Decedent,maritalStatus.text ,string,-,,,,,
 732,Natality,268,1672,50,Mother's Residence Street Address,ADDRESS,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Mother's Residence address that's used in their system versus reprogramming.",,VRCPL,PatientMotherVitalRecords,address.line,string,,B,,,,
 1609,Birth Infant Death,268,1672,50,Mother's Residence Street Address,ADDRESS,"The item is made up of one long string that includes Street number, Pre Directional, Street name, Street designator, Post Directional, and Unit or Apartment Number. Jurisdiction should use version of Mother's Residence address that's used in their system versus reprogramming.",,,,,,,,,,,
 1085,Fetal Death,268,4059,2,Father's Age (Calculated),FAGE_CALC,"0-98, 99",,not implemented,not implemented,,,,-,,,,
+<<<<<<< HEAD
 1086,Fetal Death,269,4061,25,Occupation of Mother,MOM_OC_T,Literal for mother's current occupation,,ODH,ObservationPresentJob,"value.text, <br />extension[roleMotherOrFather].value='MTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+=======
+1086,Fetal Death,269,4061,25,Occupation of Mother,MOM_OC_T,Literal for mother's current occupation,,ODH,ObservationPresentJob,"value.text, <br />extension[roleVitalRecords].value='MTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 NCHS does not use
 BFDR defines ""ObservationPresentJob"" profile. 
 BFDR and VRDR use different profiles",,FHIR-41389
@@ -2786,7 +2848,11 @@ BFDR and VRDR use different profiles",,FHIR-41389
 1087,Fetal Death,270,4086,3,Occupation of Mother (coded),MOM_OC_C,,,not implemented,not implemented,,,,-,,,,
 735,Natality,271,1759,28,Mother's Residence City/Town (Literal),CITYTEXT,Valid city/town/place literal,,VRCPL,PatientMotherVitalRecords,address.city,string,,B,,,,
 1612,Birth Infant Death,271,1759,28,Mother's Residence City/Town (Literal),CITYTEXT,Valid city/town/place literal,,,,,,,,,,,
+<<<<<<< HEAD
 1088,Fetal Death,271,4089,25,Occupation of Father,DAD_OC_T,Literal for father's current occupation,,ODH,ObservationPresentJob,"value.text, <br />extension[roleMotherOrFather].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+=======
+1088,Fetal Death,271,4089,25,Occupation of Father,DAD_OC_T,Literal for father's current occupation,,ODH,ObservationPresentJob,"value.text, <br />extension[roleVitalRecords].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 NCHS does not use
 BFDR defines ""ObservationPresentJob"" profile. 
 BFDR and VRDR use different profiles",,FHIR-41389
@@ -2795,11 +2861,19 @@ BFDR and VRDR use different profiles",,FHIR-41389
 1613,Birth Infant Death,272,1787,28,"State, U.S. Territory or Canadian Province of Residence (Mother) - literal",STATETXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,,,,,,,,,,
 737,Natality,273,1815,28,Mother's Residence Country (Literal),CNTRYTXT,Valid text for country of residence,,VRCPL,PatientMotherVitalRecords,address.country (expanded from 2 letter code),string,See [CountryLiterals],B,,,,
 1614,Birth Infant Death,273,1815,28,Mother's Residence Country (Literal),CNTRYTXT,Valid text for country of residence,,,,,,,,,,,
+<<<<<<< HEAD
 1090,Fetal Death,273,4117,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,ObservationPresentJob,"component[odh-PastOrPresentIndustry].value.text, <br />extension[roleMotherOrFather].value='MTH'",string(25),,B,,,Needs work,FHIR-41389
 738,Natality,274,1843,50,Father's First Name,DADFNAME,Free form literal ,,VRCPL,RelatedPersonFatherNaturalVitalRecords,"name.given, <br />name.use = official",string,,B,,,,
 1615,Birth Infant Death,274,1843,50,Father's First Name,DADFNAME,Free form literal ,,,,,,,,,,,
 1091,Fetal Death,274,4142,3,Industry of Mother (coded),MOM_IN_C,,,not implemented,not implemented,,,,-,,,,
 1092,Fetal Death,275,4145,25,Industry of Father,DAD_IN_T,Literal for father's corresponding industry,,ODH,ObservationPresentJob,"component[odh-PastOrPresentIndustry].value.text, <br />extension[roleMotherOrFather].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+=======
+1090,Fetal Death,273,4117,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,ObservationPresentJob,"component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='MTH'",string(25),,B,,,Needs work,FHIR-41389
+738,Natality,274,1843,50,Father's First Name,DADFNAME,Free form literal ,,VRCPL,RelatedPersonFatherNaturalVitalRecords,"name.given, <br />name.use = official",string,,B,,,,
+1615,Birth Infant Death,274,1843,50,Father's First Name,DADFNAME,Free form literal ,,,,,,,,,,,
+1091,Fetal Death,274,4142,3,Industry of Mother (coded),MOM_IN_C,,,not implemented,not implemented,,,,-,,,,
+1092,Fetal Death,275,4145,25,Industry of Father,DAD_IN_T,Literal for father's corresponding industry,,ODH,ObservationPresentJob,"component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 NCHS does not use
 BFDR defines ""ObservationPresentJob"" profile. 
 BFDR and VRDR use different profiles",,FHIR-41389
@@ -2845,7 +2919,11 @@ For Canadian Provinces:
 1622,Birth Infant Death,281,2020,2,Father's Age (Calculated),FAGE_CALC,"0-98, 99",,,,,,,,,,,
 1098,Fetal Death,281,4233,28,"State, U.S. Territory or Canadian Province of Birth (Father) - literal",FBPLACE_ST_TER_TXT,"Valid state, U.S. territory or Canadian province literal, otherwise blank",,VRCPL,RelatedPersonFatherNaturalVitalRecords,extension[Extension-relatedperson-birthplace-vr].value[x].state (expanded from 2 letter code),string,See [StateLiterals],B,,,,
 1099,Fetal Death,282,4261,28,Father's Country of Birth (Literal),FBPLACE_CNTRY_TXT,"Valid country literal when foreign, otherwise U.S.",,VRCPL,RelatedPersonFatherNaturalVitalRecords,extension[Extension-relatedperson-birthplace-vr].value[x].country (expanded from 2 letter code),string,See [CountryLiterals],B,,,,
+<<<<<<< HEAD
 746,Natality,282,2022,25,Occupation of Mother,MOM_OC_T,Literal for mother's current occupation,,ODH,ObservationPresentJob,"value.text, <br />extension[roleMotherOrFather].value='MTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+=======
+746,Natality,282,2022,25,Occupation of Mother,MOM_OC_T,Literal for mother's current occupation,,ODH,ObservationPresentJob,"value.text, <br />extension[roleVitalRecords].value='MTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 NCHS does not use
 BFDR defines ""ObservationPresentJob"" profile. 
 BFDR and VRDR use different profiles",,FHIR-41389
@@ -2861,7 +2939,11 @@ BFDR and VRDR use different profiles",,FHIR-41389
 9 = Unknown",,VRCPL,ObservationEducationLevelVitalRecords,"value, <br />code=87300-0 (Highest level of education Father)",codeable,[ValueSetEducationLevelVitalRecords],B,,,,
 747,Natality,283,2047,3,Occupation of Mother (coded),MOM_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,-,,,,
 1624,Birth Infant Death,283,2047,3,Occupation of Mother (coded),MOM_OC_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,
+<<<<<<< HEAD
 748,Natality,284,2050,25,Occupation of Father,DAD_OC_T,Literal for father's current occupation,,ODH,ObservationPresentJob,"value.text, <br />extension[roleMotherOrFather].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+=======
+748,Natality,284,2050,25,Occupation of Father,DAD_OC_T,Literal for father's current occupation,,ODH,ObservationPresentJob,"value.text, <br />extension[roleVitalRecords].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 NCHS does not use
 BFDR defines ""ObservationPresentJob"" profile. 
 BFDR and VRDR use different profiles",,FHIR-41389
@@ -2877,14 +2959,22 @@ U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[Hisp
 1103,Fetal Death,286,4292,1,Father of Hispanic Origin?--Puerto Rican,FETHNIC2,"N = No, Not Puerto Rican
 H = Yes, Puerto Rican
 U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicPuertoRican].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
+<<<<<<< HEAD
 750,Natality,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,ObservationPresentJob,"component[odh-PastOrPresentIndustry].value.text, <br />extension[roleMotherOrFather].value='MTH'",string(25),,B,,,Needs work,FHIR-41389
+=======
+750,Natality,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,ODH,ObservationPresentJob,"component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='MTH'",string(25),,B,,,Needs work,FHIR-41389
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 1627,Birth Infant Death,286,2078,25,Industry of Mother,MOM_IN_T,Literal for mother's corresponding industry,,,,,,,,,,,
 1104,Fetal Death,287,4293,1,Father of Hispanic Origin?--Cuban,FETHNIC3,"N = No, Not Cuban
 H = Yes, Cuban
 U = Unknown",,VRCPL,ObservationInputRaceAndEthnicityVitalRecords,"component[HispanicCuban].valueCoding, <br />code=CodeSystemLocalObservationsCodesVitalRecords#inputraceandethnicityFather",codeable,[ValueSetYesNoUnknownVitalRecords],B,,,,
 751,Natality,287,2103,3,Industry of Mother (coded),MOM_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,not implemented,not implemented,,,,-,,,,
 1628,Birth Infant Death,287,2103,3,Industry of Mother (coded),MOM_IN_C,"Refer to NCHS Instruction Manual Part 19, Industry and Occupation Coding for Death Certificates, 2003. Leave blank if using a coding system other than this",,,,,,,,,,,
+<<<<<<< HEAD
 752,Natality,288,2106,25,Industry of Father,DAD_IN_T,Literal for father's corresponding industry,,ODH,ObservationPresentJob,"component[odh-PastOrPresentIndustry].value.text, <br />extension[roleMotherOrFather].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+=======
+752,Natality,288,2106,25,Industry of Father,DAD_IN_T,Literal for father's corresponding industry,,ODH,ObservationPresentJob,"component [odh-UsualIndustry].value.text, <br />extension[roleVitalRecords].value='FTH'",string(25),,B,,"Code used on 3 tabs: N, FD, & BID
+>>>>>>> 301b8523 (update for fetal death initiating cause or condition)
 NCHS does not use
 BFDR defines ""ObservationPresentJob"" profile. 
 BFDR and VRDR use different profiles",,FHIR-41389
