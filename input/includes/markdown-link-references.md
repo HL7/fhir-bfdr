@@ -75,8 +75,9 @@
 [roleVitalRecords]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-role-vr.html
 [withinCityLimitsIndicator]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html
 [motherOrFather]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-role-vr.html
-[JFI]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}//StructureDefinition-AuxiliaryStateIdentifier1.html
+[JFI]: StructureDefinition-Extension-jurisdictional-facility-identifier.html
 [birthPlace]: http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+[roleMotherOrFather]: StructureDefinition-Extension-role.html
 <!---from VRCL-->
 [ObservationAutopsyPerformedIndicatorVitalRecords]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-autopsy-performed-indicator-vr.html
 [ObservationCodedRaceAndEthnicityVitalRecords]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-coded-race-and-ethnicity-vr.html
