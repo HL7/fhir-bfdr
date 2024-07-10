@@ -16,7 +16,7 @@
 [districtCode]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-DistrictCode.html
 [StateLiterals]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#state-literals
 [CountryLiterals]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#country-literals
-[note on partial dates]: usage.html#partial-date
+[note on partial dates]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#partial-date
 [note on missing data]: usage.html#specifying-none-of-the-above-and-missing-data
 [note on missing abnormal conditions of newborn data]: usage.html#abnormal-conditions-of-newborn
 [note on missing maternal morbidity data]: usage.html#maternal-morbidities

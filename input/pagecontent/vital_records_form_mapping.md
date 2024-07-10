@@ -171,7 +171,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>10a</td>
   <td>Father’s Current Legal Name</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords</a></td>
-  <td>name:currentLegalName</td>
+  <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>10b</td>
@@ -261,14 +261,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>21</td>
   <td>Mother of Hispanic Origin?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Mother</td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
   <td>Mother’s Race</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Mother</td>
 </tr>
 <tr>
   <td style='text-align: center'>23</td>
@@ -279,14 +279,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>24</td>
   <td>Father of Hispanic Origin?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Father</td>
 </tr>
 <tr>
   <td style='text-align: center'>25</td>
   <td>Father’s Race</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Father</td>
 </tr>
 <tr>
   <td style='text-align: center'>26</td>
@@ -732,7 +732,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>-</td>
   <td>Mother’s name</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>-</td>
@@ -998,7 +998,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>-</td>
   <td>Mother’s name</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
@@ -1486,7 +1486,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>1</td>
   <td>What is your current legal name?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>2</td>
@@ -1533,14 +1533,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>9</td>
   <td>Are you Spanish/Hispanic/Latina?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Mother</td>
 </tr>
 <tr>
   <td style='text-align: center'>10</td>
   <td>What is your race?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Mother</td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
@@ -1576,7 +1576,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>17</td>
   <td>What name did you use prior to your first marriage?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>name</td>
+  <td>name:namePriorToFirstMarriage</td>
 </tr>
 <tr>
   <td style='text-align: center'>18</td>
@@ -1617,14 +1617,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>23</td>
   <td>Is the father Spanish/Hispanic/Latino?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnictiy</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Father</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
   <td>What is the father’s race?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:ethnicity</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Father</td>
 </tr>
 <tr>
   <td style='text-align: center'>25a</td>
@@ -1825,7 +1825,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>12a</td>
   <td>Father’s Current Legal Name</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords</a></td>
-  <td>name:currentLegalName</td>
+  <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>12b</td>
@@ -1945,14 +1945,14 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>20</td>
   <td>Mother of Hispanic Origin?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Mother</td>
 </tr>
 <tr>
   <td style='text-align: center'>21</td>
   <td>Mother’s Race</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Mother</td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
@@ -2158,7 +2158,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>-</td>
   <td>Patient’s name</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
@@ -2434,7 +2434,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>28</td>
   <td>Was an autopsy performed?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords</a></td>
-  <td></td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>29</td>
@@ -2478,7 +2478,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>-</td>
   <td>Patient’s Name</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>1</td>
@@ -2490,7 +2490,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>2</td>
   <td>What is your current legal name?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td>name</td>
+  <td>name:currentLegalName</td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
@@ -2531,20 +2531,20 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>9</td>
   <td>Are you Spanish/Hispanic/Latina?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-ethnicity.html'>extension:ethnicity</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Mother</td>
 </tr>
 <tr>
   <td style='text-align: center'>10</td>
   <td>What is your race?</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-mother-vr.html'>PatientMotherVitalRecords</a></td>
-  <td><a href='{{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-race.html'>extension:race</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-input-race-and-ethnicity-vr.html'>ObservationInputRaceAndEthnicityVitalRecords</a></td>
+  <td>component.value, subject is Mother</td>
 </tr>
 <tr>
   <td style='text-align: center'>11</td>
   <td>What is the current legal name of your baby’s father?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-RelatedPerson-father-natural-vr.html'>RelatedPersonFatherNaturalVitalRecords</a></td>
-  <td>name:currentLegalName</td>
+  <td>name</td>
 </tr>
 <tr>
   <td style='text-align: center'>12</td>
