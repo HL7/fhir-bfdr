@@ -1,4 +1,5 @@
-Profile conformance requires that gender be provided, see <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#gender'>note on patient gender</a>(https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender).
+ Note: The PatientDecedentFetus profile is based on the [US Core Patient Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
+ Complete fetal death record submissions may fail FHIR validation due to lack of a value for gender.
 
 ### IJE Mapping
 

@@ -159,7 +159,8 @@ This information is currently not used by NCHS, but may be of interest for inter
     * use not-applicable if the name hasn't been chosen
 
 Profile conformance requires that gender be provided, see [note on patient gender](https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender).",x,x,VRCPL
-116,Input,PatientDecedentFetus,Patient-decedent-fetus,"Profile conformance requires that gender be provided, see [note on patient gender](https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender).",x,x,BFDR
+116,Input,PatientDecedentFetus,Patient-decedent-fetus," Note: The PatientDecedentFetus profile is based on the [US Core Patient Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
+ Complete fetal death record submissions may fail FHIR validation due to lack of a value for gender.",x,x,BFDR
 117,Input,PatientMotherVitalRecords,Patient-mother-vr,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,VRCPL
 118,Input,PractitionerVitalRecords,Practitioner-vr,,x,x,VRCPL
 119,Input,PractitionerBirthAttendant,Practitioner-birth-attendant,,x,x,BFDR
