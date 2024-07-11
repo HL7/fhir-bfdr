@@ -1,4 +1,4 @@
-Profile conformance requires that gender be provided, see <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender'>note on patient gender</a>(https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender).
+Profile conformance requires that gender be provided, see <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#gender'>note on patient gender</a>(https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#gender).
 
 ### IJE Mapping
 
@@ -33,7 +33,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>FDOD_YR</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time'>note on birth date and time</a></td>
+  <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -42,7 +42,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>DSTATE</td>
   <td>extension[birthPlace].value[x].state</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> </td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> </td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -51,7 +51,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>TD</td>
   <td>birthDate.extension[patient-birthTime]</td>
   <td>dateTime</td>
-  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time'>note on birth date and time</a></td>
+  <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -60,7 +60,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>FSEX</td>
   <td>extension[birthsex].value</td>
   <td>codeable</td>
-  <td><a href='https://build.fhir.org/ig/HL7/vr-common-library/ValueSet-ValueSet-sex-assigned-at-birth-vr.html'>ValueSetSexAssignedAtBirthVitalRecords</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/ValueSet-ValueSet-sex-assigned-at-birth-vr.html'>ValueSetSexAssignedAtBirthVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -69,7 +69,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>FDOD_MO</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time'>note on birth date and time</a></td>
+  <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -78,7 +78,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>FDOD_DY</td>
   <td>birthDate</td>
   <td>date</td>
-  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#birth-date-and-time'>note on birth date and time</a></td>
+  <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -87,7 +87,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>CNTYO</td>
   <td>extension[birthPlace].value[x].district.extension[districtCode]</td>
   <td>integer</td>
-  <td>See <a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/usage.html#county-codes'>CountyCodes</a></td>
+  <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#county-codes'>CountyCodes</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -114,7 +114,7 @@ Profile conformance requires that gender be provided, see <a href='https://hl7.o
   <td>PLUR_BYPASS</td>
   <td>multipleBirth.extension[bypassEditFlag].value</td>
   <td>codeable</td>
-  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/ValueSet-ValueSet-plurality-edit-flags-vr.html'>ValueSetPluralityEditFlagsVitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/ValueSet-ValueSet-plurality-edit-flags-vr.html'>ValueSetPluralityEditFlagsVitalRecords</a>, <br />See <a href='usage.html#handling-of-edit-flags'>Handling of edit flags</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
