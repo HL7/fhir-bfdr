@@ -1,3 +1,4 @@
+One code should be selected from the Fetal Death Cause Or Condition valueset, and the code.text field used to record the provider’s view of the cause.
 
 ### IJE Mapping
 
@@ -157,6 +158,7 @@
 
 </details>
 <p></p>
+
 
 ### Form Mapping
 <details>

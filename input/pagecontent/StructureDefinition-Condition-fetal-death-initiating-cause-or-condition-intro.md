@@ -1,4 +1,4 @@
-The type of cause or condition (code.coding) should be selected from the value set Fetal Death Cause or Condition and any further specification should be entered as free text (code.text) to fully record the provider's view of the cause. One or more optional contained Other Significant Cause/Condition of Fetal Death profiles represent another significant cause or condition for the death of the fetus.
+One code should be selected from the Fetal Death Cause Or Condition valueset, and the code.text field used to record the provider’s view of the cause.  Additional significant causes of fetal death can be provided using multiple instances of Other Cause of Fetal Death profiles.
 
 ### IJE Mapping
 

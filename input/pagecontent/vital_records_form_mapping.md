@@ -1891,7 +1891,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>18a</td>
   <td>Initiating Cause/Condition</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-fetal-death-cause-or-condition.html'>ConditionFetalDeathCauseOrCondition</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-fetal-death-initiating-cause-or-condition.html'>ConditionFetalDeathInitiatingCauseOrCondition</a></td>
   <td>code</td>
 </tr>
 <tr>
@@ -2421,7 +2421,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>26</td>
   <td>Initiating Cause/Condition</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-fetal-death-cause-or-condition.html'>ConditionFetalDeathCauseOrCondition</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Condition-fetal-death-initiating-cause-or-condition.html'>ConditionFetalDeathInitiatingCauseOrCondition</a></td>
   <td>code</td>
 </tr>
 <tr>
