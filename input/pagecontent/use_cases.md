@@ -90,6 +90,78 @@ This use case represents the communication of coded cause of fetal death informa
 
 The Coded Cause of Fetal Death use case is represented by the [Composition - Coded Cause of Fetal Death][CompositionCodedCauseOfFetalDeath]. 
 
+The content of the Coded Cause of Death bundle is equivalent to that of the Cause of Fetal Death (CFD) packet.  Since there is no published description of this packet, we provide a description of this legacy data packet here.
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+</style>
+<table border="1">
+  <tr>
+    <th><b>Position</b></th>
+    <th><b>Description</b></th>
+    <th><b>Example or ValueSet</b></th>
+  </tr>
+  <tr>
+    <td>1-4</td>
+    <td>Data Year</td>
+    <td>2023</td>
+  </tr>
+  <tr>
+    <td>5-6</td>
+    <td>Jurisdiction</td>
+    <td>NY</td>
+  </tr>
+  <tr>
+    <td>7-12</td>
+    <td>Certificate Number</td>
+    <td>123456</td>
+  </tr>
+  <tr>
+    <td>13-17</td>
+    <td>Initiating Cause of Death</td>
+    <td><a href="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933">ICD10 Cause of Fetal Death</a></td>
+  </tr>
+  <tr>
+    <td>18-22</td>
+    <td>Multiple Cause 1</td>
+    <td rowspan="8"><a href="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933">ICD10 Cause of Fetal Death</a></td>
+  </tr>
+  <tr>
+    <td>23-27</td>
+    <td>Multiple Cause 2</td>
+  </tr>
+  <tr>
+    <td>28-32</td>
+    <td>Multiple Cause 3</td>
+  </tr>
+  <tr>
+    <td>33-36</td>
+    <td>Multiple Cause 4</td>
+  </tr>
+  <tr>
+    <td>38-42</td>
+    <td>Multiple Cause 5</td>
+  </tr>
+  <tr>
+    <td>43-47</td>
+    <td>Multiple Cause 6</td>
+  </tr>
+  <tr>
+    <td>48-52</td>
+    <td>Multiple Cause 7</td>
+  </tr>
+  <tr>
+    <td>53-57</td>
+    <td>Multiple Cause 8</td>
+  </tr>
+</table>
+
+
 ### Mother - Baby Linkage
 
 The FHIR specification gives guidance on representing the relationship between a mother and her baby in the [Mother and newborn relationships section](https://hl7.org/fhir/R4/patient.html#maternity) of the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource. 
