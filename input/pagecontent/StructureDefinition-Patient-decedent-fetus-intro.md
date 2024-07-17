@@ -70,7 +70,7 @@
   <td>*NO IJE MAPPING*</td>
   <td>gender</td>
   <td>codeable</td>
-  <td><a href='http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. genderIdentity field is not required.</td>
+  <td><a href='http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#gender'>Note on Gender</a> </td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
