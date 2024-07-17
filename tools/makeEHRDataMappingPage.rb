@@ -67,9 +67,11 @@ vOutputFile.puts"<style>
 
 vOutputFile.puts "Data elements that are included in a birth or fetal death report are based on data that are part of the mother, child or fetus' electronic health record (EHR).
 The following PHINVADs-hosted valuesets were published as part of the [IHE Quality, Research and Public Health Technical Framework Supplement Birth and Fetal Death Reporting-Enhanced (BFDR-E)](https://www.ihe.net/uploadedFiles/Documents/QRPH/IHE_QRPH_Suppl_BFDR-E.pdf) to support query of data elements from an EHR.
-The table shows the name of the data element, the FHIR profile in this IG used to represent the data element, the type of element, and the valueset that can be used as part of a query.  For example, to determine whether the the newborn suffered from Anencephaly, an EHR could be queried for Conditions where the Condition.code is a member of the associated [SNOMED-CT](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.53) valueset. 
+The table shows the name of the data element, the IJE element that corresponds to the data element, the FHIR profile in this IG used to represent the data element, the type of element, and the valueset that can be used as part of a query.  For example, to determine whether the the newborn suffered from Anencephaly, an EHR could be queried for Conditions where the Condition.code is a member of the associated [SNOMED-CT](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.53) valueset. 
 
-This content is provided in support of implementers of this IG, but is not formally a part of the FHIR specification for exchange of birth and fetal death records."
+This content is provided in support of implementers of this IG, but is not formally a part of the FHIR specification for exchange of birth and fetal death records.
+
+Note: In some cases, there is not a direct mapping between data element and IJE element, and the IJE element that is most closely associated with the the data element is denoted with an asterisk."
 
 vOutputFile.puts ""
 
@@ -84,7 +86,7 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
     igMap["FHIR"] = "http://hl7.org/fhir/extensions/"
     igMap["ODH"] = "{{site.data.fhir.ver.hl7fhirusodh}}"
     
-    pOutputFile.puts "###FHIR Data Type: " + pRowFilter 
+    pOutputFile.puts "### FHIR Data Type: " + pRowFilter 
     pOutputFile.puts ""
     pOutputFile.puts "<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>"
     pOutputFile.puts "<thead>"
@@ -98,64 +100,40 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
     pOutputFile.puts "  </tr>"
     pOutputFile.puts "</thead>"
     pOutputFile.puts "<tbody>"
-    
-    if pRowFilter == "Miscellaneous"
-        CSV.foreach(pSpreadsheet) do |row|
+
+    CSV.foreach(pSpreadsheet) do |row|
+        if pRowFilter == "Miscellaneous"
             next if (row[FHIRTYPE_COL].to_s == "Condition" || row[FHIRTYPE_COL].to_s == "Observation" || row[FHIRTYPE_COL].to_s == "Procedure" || row[FHIRTYPE_COL].to_s == "Medication" || row[FHIRTYPE_COL].to_s == "Location")
-            vName = vIJEName = vPurpose = vProfile = vCodesystem = vPhinvad = vFhirType = vProfileWithURL = vPhinvadsWithURL = ""
-
-            vName = row[NAME_COL].to_s
-            vIJEName = row[IJE_NAME_COL].to_s if row[IJE_NAME_COL]
-            vPurpose = row[PURPOSE_COL].to_s if row[PURPOSE_COL]
-            vProfile = "[" + row[PROFILE_COL] + "]" if row[PROFILE_COL] 
-            vCodesystem = row[CODESYSTEM_COL].to_s if row[CODESYSTEM_COL]
-            vPhinvad = row[PHINVAD_COL].to_s if row[PHINVAD_COL]
-            vFhirType = row[FHIRTYPE_COL].to_s if row[FHIRTYPE_COL]
-
-            vPhinvadsWithURL = "<a href='#{vPhinvad}'>#{vCodesystem}</a>" 
- 
-            pOutputFile.puts ""
-            pOutputFile.puts "<tr>"
-            pOutputFile.puts "  <td style='text-align: center'>" + vName + "</td>"
-            pOutputFile.puts "  <td>" + vIJEName + "</td>"
-            pOutputFile.puts "  <td>" + vPurpose + "</td>"
-            pOutputFile.puts "  <td>" + vProfile + "</td>"
-            pOutputFile.puts "  <td>" + vPhinvadsWithURL + "</td>"
-            pOutputFile.puts "  <td>" + vFhirType + "</td>"
-            pOutputFile.puts "</tr>"
-        end
-        pOutputFile.puts "</tbody>"
-        pOutputFile.puts "</table>"
-    else 
-        CSV.foreach(pSpreadsheet) do |row|
+        else 
             next if row[FHIRTYPE_COL].to_s != pRowFilter
-            vName = vIJEName = vPurpose = vProfile = vCodesystem = vPhinvad = vFhirType = vProfileWithURL = vPhinvadsWithURL = ""
-
-            vName = row[NAME_COL].to_s
-            vIJEName = row[IJE_NAME_COL].to_s if row[IJE_NAME_COL]
-            vPurpose = row[PURPOSE_COL].to_s if row[PURPOSE_COL]
-            vProfile = "[" + row[PROFILE_COL] + "]" if row[PROFILE_COL] 
-            vCodesystem = row[CODESYSTEM_COL].to_s if row[CODESYSTEM_COL]
-            vPhinvad = row[PHINVAD_COL].to_s if row[PHINVAD_COL]
-            vFhirType = row[FHIRTYPE_COL].to_s if row[FHIRTYPE_COL]
-
-            vPhinvadsWithURL = "<a href='#{vPhinvad}'>#{vCodesystem}</a>" 
-
-            pOutputFile.puts ""
-            pOutputFile.puts "<tr>"
-            pOutputFile.puts "  <td style='text-align: center'>" + vName + "</td>"
-            pOutputFile.puts "  <td>" + vIJEName + "</td>"
-            pOutputFile.puts "  <td>" + vPurpose + "</td>"
-            pOutputFile.puts "  <td>" + vProfile + "</td>"
-            pOutputFile.puts "  <td>" + vPhinvadsWithURL + "</td>"
-            pOutputFile.puts "  <td>" + vFhirType + "</td>"
-            pOutputFile.puts "</tr>"
         end
-        pOutputFile.puts "</tbody>"
-        pOutputFile.puts "</table>"
+        vName = vIJEName = vPurpose = vProfile = vCodesystem = vPhinvad = vFhirType = vProfileWithURL = vPhinvadsWithURL = ""
+
+        vName = row[NAME_COL].to_s
+        vIJEName = row[IJE_NAME_COL].to_s if row[IJE_NAME_COL]
+        vPurpose = row[PURPOSE_COL].to_s if row[PURPOSE_COL]
+        vProfile = "[" + row[PROFILE_COL] + "]" if row[PROFILE_COL] 
+        vCodesystem = row[CODESYSTEM_COL].to_s if row[CODESYSTEM_COL]
+        vPhinvad = row[PHINVAD_COL].to_s if row[PHINVAD_COL]
+        vFhirType = row[FHIRTYPE_COL].to_s if row[FHIRTYPE_COL]
+
+        vPhinvadsWithURL = "<a href='#{vPhinvad}'>#{vCodesystem}</a>" 
+
         pOutputFile.puts ""
+        pOutputFile.puts "<tr>"
+        pOutputFile.puts "  <td style='text-align: center'>" + vName + "</td>"
+        pOutputFile.puts "  <td>" + vIJEName + "</td>"
+        pOutputFile.puts "  <td>" + vPurpose + "</td>"
+        pOutputFile.puts "  <td>" + vProfile + "</td>"
+        pOutputFile.puts "  <td>" + vPhinvadsWithURL + "</td>"
+        pOutputFile.puts "  <td>" + vFhirType + "</td>"
+        pOutputFile.puts "</tr>"
     end
+    pOutputFile.puts "</tbody>"
+    pOutputFile.puts "</table>"
+    pOutputFile.puts ""
 end
+
 createMappingTable("Observation", vOutputFile, vSpreadsheet)
 createMappingTable("Condition", vOutputFile, vSpreadsheet)
 createMappingTable("Procedure", vOutputFile, vSpreadsheet)

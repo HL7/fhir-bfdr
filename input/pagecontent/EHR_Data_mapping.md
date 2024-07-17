@@ -25,11 +25,13 @@
 </style>
 Data elements that are included in a birth or fetal death report are based on data that are part of the mother, child or fetus' electronic health record (EHR).
 The following PHINVADs-hosted valuesets were published as part of the [IHE Quality, Research and Public Health Technical Framework Supplement Birth and Fetal Death Reporting-Enhanced (BFDR-E)](https://www.ihe.net/uploadedFiles/Documents/QRPH/IHE_QRPH_Suppl_BFDR-E.pdf) to support query of data elements from an EHR.
-The table shows the name of the data element, the FHIR profile in this IG used to represent the data element, the type of element, and the valueset that can be used as part of a query.  For example, to determine whether the the newborn suffered from Anencephaly, an EHR could be queried for Conditions where the Condition.code is a member of the associated [SNOMED-CT](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.53) valueset. 
+The table shows the name of the data element, the IJE element that corresponds to the data element, the FHIR profile in this IG used to represent the data element, the type of element, and the valueset that can be used as part of a query.  For example, to determine whether the the newborn suffered from Anencephaly, an EHR could be queried for Conditions where the Condition.code is a member of the associated [SNOMED-CT](https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.53) valueset. 
 
 This content is provided in support of implementers of this IG, but is not formally a part of the FHIR specification for exchange of birth and fetal death records.
 
-###FHIR Data Type: Observation
+Note: In some cases, there is not a direct mapping between data element and IJE element, and the IJE element that is most closely associated with the the data element is denoted with an asterisk.
+
+### FHIR Data Type: Observation
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -64,9 +66,9 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Augmentation of Labor Finding</td>
-  <td></td>
+  <td>AUGL*</td>
   <td>Labor was augmented</td>
-  <td></td>
+  <td><a href='StructureDefinition-Procedure-augmentation-of-labor.html'>ProcedureAugmentationOfLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7532'>SNOMED-CT</a></td>
   <td>Observation</td>
 </tr>
@@ -75,7 +77,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Birth Plurality of Delivery</td>
   <td>PLUR</td>
   <td>Plurality, which is the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. (“Reabsorbed” fetuses, those which are not “delivered” (expulsed or extracted from the mother) should not be counted.)</td>
-  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.132'>LOINC</a></td>
   <td>Observation</td>
 </tr>
@@ -93,7 +95,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Birth Place Home Intended</td>
   <td></td>
   <td>Birth occurred in the at home as intended</td>
-  <td></td>
+  <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.193'>SNOMED-CT</a></td>
   <td>Observation</td>
 </tr>
@@ -102,7 +104,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Birth Place Home Unintended</td>
   <td></td>
   <td>Birth occurred in the at home as unintended</td>
-  <td></td>
+  <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.194'>SNOMED-CT</a></td>
   <td>Observation</td>
 </tr>
@@ -181,7 +183,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Fetal Presentation at Birth- Breech</td>
-  <td>PRES</td>
+  <td>PRES*</td>
   <td>Fetal Presentation at Birth- Breech method of delivery</td>
   <td><a href='StructureDefinition-Observation-fetal-presentation.html'>ObservationFetalPresentation</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.108'>SNOMED-CT</a></td>
@@ -190,7 +192,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Fetal Presentation at Birth- Cephalic</td>
-  <td>PRES</td>
+  <td>PRES*</td>
   <td>Fetal Presentation at Birth- Cephalic method of delivery</td>
   <td><a href='StructureDefinition-Observation-fetal-presentation.html'>ObservationFetalPresentation</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.109'>SNOMED-CT</a></td>
@@ -199,7 +201,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Fetal Presentation at Birth- Other</td>
-  <td>PRES</td>
+  <td>PRES*</td>
   <td>Fetal Presentation at Birth- Other</td>
   <td><a href='StructureDefinition-Observation-fetal-presentation.html'>ObservationFetalPresentation</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.110'>SNOMED-CT</a></td>
@@ -235,9 +237,9 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Induction of Labor Finding</td>
-  <td></td>
+  <td>INDL*</td>
   <td>Labor was induced</td>
-  <td></td>
+  <td><a href='StructureDefinition-Procedure-induction-of-labor.html'>ProcedureInductionOfLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7531'>SNOMED-CT</a></td>
   <td>Observation</td>
 </tr>
@@ -280,7 +282,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Method of Delivery Vaginal Forceps Finding</td>
-  <td></td>
+  <td>ATTF - NOT IMPLEMENTED</td>
   <td>Delivery of the fetus using vaginal forceps</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7528'>SNOMED-CT</a></td>
@@ -298,7 +300,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Method of Delivery Vaginal Vacuum Finding</td>
-  <td></td>
+  <td>ATTV - NOT IMPLEMENTED</td>
   <td>Delivery of the fetus using vaginal vacuum</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7529'>SNOMED-CT</a></td>
@@ -325,7 +327,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Number of Live Births</td>
-  <td></td>
+  <td>LIVEB</td>
   <td>Number of Live Births for the current pregnancy</td>
   <td><a href='StructureDefinition-Observation-number-live-births-this-delivery.html'>ObservationNumberLiveBirthsThisDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.68'>LOINC</a></td>
@@ -451,7 +453,7 @@ This content is provided in support of implementers of this IG, but is not forma
 </tbody>
 </table>
 
-###FHIR Data Type: Condition
+### FHIR Data Type: Condition
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -497,7 +499,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Cleft Lip with or without Cleft Palate</td>
   <td>CL</td>
   <td>Cleft Lip with/without Cleft Palate as an anomaly of the newborn</td>
-  <td></td>
+  <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.58'>SNOMED-CT</a></td>
   <td>Condition</td>
 </tr>
@@ -603,7 +605,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Group B Streptococcus</td>
-  <td></td>
+  <td>GBS - NOT IMPLEMENTED</td>
   <td>Infection with Group B Streptococcus</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.166'>SNOMED-CT</a></td>
@@ -668,7 +670,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Neonatal Sepsis</td>
   <td></td>
   <td>Newborn had suspected neonatal sepsis reflecting an abnormal condition of the newborn</td>
-  <td><a href='StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html'>ProcedureAntibioticSuspectedNeonatalSepsis</a></td>
+  <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.6'>SNOMED-CT</a></td>
   <td>Condition</td>
 </tr>
@@ -693,7 +695,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Precipitous Labor</td>
-  <td></td>
+  <td>PRIC - NOT IMPLEMENTED</td>
   <td>Onset of labor with Precipitous Labor</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.130'>SNOMED-CT</a></td>
@@ -702,7 +704,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Premature Rupture</td>
-  <td></td>
+  <td>PROM  - NOT IMPLEMENTED</td>
   <td>Onset of labor with Premature Rupture</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.129'>SNOMED-CT</a></td>
@@ -729,7 +731,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Prolonged Labor</td>
-  <td></td>
+  <td>PROL - NOT IMPLEMENTED</td>
   <td>Onset of labor with Prolonged Labor</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.131'>SNOMED-CT</a></td>
@@ -747,7 +749,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Significant Birth Injury</td>
-  <td></td>
+  <td>BINJ - NOT IMPLEMENTED</td>
   <td>Newborn suffered a Significant Birth Injury (skeletal fracture(s), peripheral nerve injury, and/ or soft tissue/solid organ hemorrhage which requires intervention) reflecting an abnormal condition of the newborn</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.9'>SNOMED-CT</a></td>
@@ -792,7 +794,7 @@ This content is provided in support of implementers of this IG, but is not forma
 </tbody>
 </table>
 
-###FHIR Data Type: Procedure
+### FHIR Data Type: Procedure
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -809,9 +811,9 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Antibiotic Administration Procedure</td>
-  <td></td>
+  <td>ANTI*</td>
   <td>Antibiotic Administration Procedure during labor and delivery</td>
-  <td></td>
+  <td><a href='StructureDefinition-Observation-antibiotics-administered-during-labor.html'>ObservationAntibioticsAdministeredDuringLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.178'>SNOMED-CT</a></td>
   <td>Procedure</td>
 </tr>
@@ -845,16 +847,16 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Cervical Cerclage</td>
-  <td></td>
+  <td>CERV - NOT IMPLEMENTED</td>
   <td>Obstetric Procedures as Cervical Cerclage</td>
-  <td><a href='StructureDefinition-Procedure-obstetric.html'>ProcedureObstetric</a></td>
+  <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.125'>SNOMED-CT</a></td>
   <td>Procedure</td>
 </tr>
 
 <tr>
   <td style='text-align: center'>Delivery</td>
-  <td>ROUT/td></td>
+  <td>ROUT</td>
   <td>Delivery Procedure</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.14'>SNOMED-CT</a></td>
@@ -883,7 +885,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Autopsy Performed</td>
   <td>AUTOP</td>
   <td>Autopsy was performed</td>
-  <td><a href='https://hl7.org/fhir/us/vr-common-library/2024Jan/StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.23.8.1'>SNOMED-CT</a></td>
   <td>Procedure</td>
 </tr>
@@ -935,7 +937,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Pregnancy Resulting From Fertility Enhancing Drugs</td>
-  <td></td>
+  <td>INFT_DRG*</td>
   <td>Indicate whether a pregnancy resulted from fertility enhancing drugs</td>
   <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
   <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7423'>SNOMED-CT</a></td>
@@ -944,9 +946,9 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Surfactant Replacement Therapy</td>
-  <td></td>
+  <td>SURF</td>
   <td>Surfactant Replacement Therapy</td>
-  <td></td>
+  <td><a href='StructureDefinition-Procedure-surfactant-replacement-therapy.html'>ProcedureSurfactantReplacementTherapy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7431'>SNOMED-CT</a></td>
   <td>Procedure</td>
 </tr>
@@ -962,7 +964,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Route and Method of Delivery - Cesarean</td>
-  <td></td>
+  <td>ROUT*</td>
   <td>Route and Method of Delivery as Cesarean Delivery</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.114'>SNOMED-CT</a></td>
@@ -971,7 +973,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Route and Method of Delivery - Forceps</td>
-  <td></td>
+  <td>ROUT*</td>
   <td>Route and Method of Delivery as Forceps Delivery</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.112'>SNOMED-CT</a></td>
@@ -980,7 +982,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Route and Method of Delivery - Scheduled C</td>
-  <td></td>
+  <td>ROUT*</td>
   <td>Route and Method of Delivery as Scheduled Cesarean</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.116'>SNOMED-CT</a></td>
@@ -989,7 +991,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Route and Method of Delivery - Spontaneous</td>
-  <td></td>
+  <td>ROUT*</td>
   <td>Route and Method of Delivery as Spontaneous Delivery</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.111'>SNOMED-CT</a></td>
@@ -1007,7 +1009,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Route and Method of Delivery - Vacuum</td>
-  <td></td>
+  <td>ROUT*</td>
   <td>Route and Method of Delivery as Vacuum Delivery</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.113'>SNOMED-CT</a></td>
@@ -1016,9 +1018,9 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Spinal Anesthesia - Procedure</td>
-  <td></td>
+  <td>ESAN*</td>
   <td>Spinal Anesthesia Procedure</td>
-  <td></td>
+  <td><a href='StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html'>ProcedureEpiduralOrSpinalAnesthesia</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.29'>SNOMED-CT</a></td>
   <td>Procedure</td>
 </tr>
@@ -1034,7 +1036,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Tocolysis</td>
-  <td></td>
+  <td>TOC - NOT IMPLEMENTED</td>
   <td>Obstetric Procedures as Tocolysis</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.128'>SNOMED-CT</a></td>
@@ -1079,7 +1081,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Unplanned Operation</td>
-  <td></td>
+  <td>UOPR - NOT IMPLEMENTED</td>
   <td>Unplanned operation as a maternal morbidity</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.105'>SNOMED-CT</a></td>
@@ -1088,7 +1090,7 @@ This content is provided in support of implementers of this IG, but is not forma
 </tbody>
 </table>
 
-###FHIR Data Type: Medication
+### FHIR Data Type: Medication
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -1114,18 +1116,18 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Augmentation of Labor - Medication</td>
-  <td></td>
+  <td>AUGL*</td>
   <td>Medication used for the of Augmentation of Labor</td>
-  <td></td>
+  <td><a href='StructureDefinition-Procedure-augmentation-of-labor.html'>ProcedureAugmentationOfLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.23'>RxNorm</a></td>
   <td>Medication</td>
 </tr>
 
 <tr>
   <td style='text-align: center'>Epidural/Spinal Anesthesia - Medication</td>
-  <td></td>
+  <td>ESAN*</td>
   <td>Epidural and Spinal Anesthesia Medication</td>
-  <td></td>
+  <td><a href='StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html'>ProcedureEpiduralOrSpinalAnesthesia</a></td>
   <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7475'>RxNorm</a></td>
   <td>Medication</td>
 </tr>
@@ -1141,7 +1143,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Newborn Receiving Surfactant Replacement Therapy</td>
-  <td>SURF</td>
+  <td>SURF*</td>
   <td>Newborn received Surfactant Replacement Therapy reflecting an abnormal condition of the newborn</td>
   <td><a href='StructureDefinition-Procedure-surfactant-replacement-therapy.html'>ProcedureSurfactantReplacementTherapy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.11'>RxNorm</a></td>
@@ -1150,7 +1152,7 @@ This content is provided in support of implementers of this IG, but is not forma
 </tbody>
 </table>
 
-###FHIR Data Type: Location
+### FHIR Data Type: Location
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -1194,7 +1196,7 @@ This content is provided in support of implementers of this IG, but is not forma
 </tbody>
 </table>
 
-###FHIR Data Type: Miscellaneous
+### FHIR Data Type: Miscellaneous
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -1214,13 +1216,13 @@ This content is provided in support of implementers of this IG, but is not forma
   <td>ANTB</td>
   <td>Mother has received antibiotics during labor.</td>
   <td><a href='StructureDefinition-Observation-antibiotics-administered-during-labor.html'>ObservationAntibioticsAdministeredDuringLabor</a></td>
-  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7535'>SNOMED-CT</a></td>
-  <td>NOT FOUND</td>
+  <td><a href=''>SNOMED-CT</a></td>
+  <td></td>
 </tr>
 
 <tr>
   <td style='text-align: center'>Assisted Ventilation</td>
-  <td></td>
+  <td>AVEN1*, AVEN6*</td>
   <td>Newborn was provided assisted ventilation reflecting an abnormal condition of the newborn</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7156'>SNOMED-CT</a></td>
@@ -1247,7 +1249,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Autopsy Planned</td>
-  <td></td>
+  <td>AUTOP*</td>
   <td>Autopsy was planned</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7140'>SNOMED-CT</a></td>
@@ -1258,7 +1260,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Birth Place Clinic Office</td>
   <td></td>
   <td>Birth occurred in the at clinic or office</td>
-  <td></td>
+  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.197'>SNOMED-CT</a></td>
   <td>Environment</td>
 </tr>
@@ -1267,7 +1269,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Birth Place Freestanding Birthing Center</td>
   <td></td>
   <td>Birth occurred at a freestanding birthing center</td>
-  <td></td>
+  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.196'>SNOMED-CT</a></td>
   <td>Environment</td>
 </tr>
@@ -1276,7 +1278,7 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Birth Place Home Unknown Intention</td>
   <td></td>
   <td>Birth occurred in the at home with intention unknown</td>
-  <td></td>
+  <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.195'>SNOMED-CT</a></td>
   <td></td>
 </tr>
@@ -1285,14 +1287,14 @@ This content is provided in support of implementers of this IG, but is not forma
   <td style='text-align: center'>Birthplace Hospital</td>
   <td></td>
   <td>Birth occurred in the hospital</td>
-  <td></td>
+  <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.192'>SNOMED-CT</a></td>
   <td>Environment</td>
 </tr>
 
 <tr>
   <td style='text-align: center'>Certified Midwife</td>
-  <td></td>
+  <td>ATTEND*</td>
   <td>Title of the Attendant responsible for the delivery Procedure as a Certified Midwife</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.17'>SNOMED-CT</a></td>
@@ -1301,9 +1303,9 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Doctor of Osteopathic Medicine</td>
-  <td></td>
+  <td>ATTEND*</td>
   <td>Title of the Attendant responsible for the delivery Procedure as a Doctor of Osteopathic Medicine</td>
-  <td></td>
+  <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.16'>SNOMED-CT</a></td>
   <td>Occupation</td>
 </tr>
@@ -1346,7 +1348,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Midwife</td>
-  <td></td>
+  <td>ATTEND*</td>
   <td>Title of the Attendant responsible for the delivery Procedure as a Midwife excluding registered midwife which is reflected in the ‘certified midwife’ value set</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.18'>SNOMED-CT</a></td>
@@ -1364,7 +1366,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 <tr>
   <td style='text-align: center'>Physician</td>
-  <td></td>
+  <td>ATTEND*</td>
   <td>Title of the Attendant responsible for the delivery Procedure as a Physician</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.15'>SNOMED-CT</a></td>
@@ -1408,3 +1410,4 @@ This content is provided in support of implementers of this IG, but is not forma
 </tr>
 </tbody>
 </table>
+
