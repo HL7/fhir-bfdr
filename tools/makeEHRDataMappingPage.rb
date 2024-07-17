@@ -86,7 +86,11 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
     igMap["FHIR"] = "http://hl7.org/fhir/extensions/"
     igMap["ODH"] = "{{site.data.fhir.ver.hl7fhirusodh}}"
     
-    pOutputFile.puts "### FHIR Data Type: " + pRowFilter 
+    if pRowFilter == "Miscellaneous"
+        pOutputFile.puts "### " + pRowFilter 
+    else
+        pOutputFile.puts "### " + pRowFilter + "s"
+    end
     pOutputFile.puts ""
     pOutputFile.puts "<table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>"
     pOutputFile.puts "<thead>"
