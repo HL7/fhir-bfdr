@@ -37,7 +37,7 @@ Here is an overview of this IG as organized by the top level menu.
 [use cases](use_cases.html) supported by this IG.
 * Implementer Guidance: Provides detailed information useful to implementers including general fhir [specification](the_specification.html) guidance, [usage notes](usage.html), notes about the use of [categories](categories.html), [questionaires](patient_worksheet_questionnaires.html), mapping of data elements to FHIR resources, and to forms.
 * [FHIR Artifacts](artifacts.html): A list of the FHIR artifacts (profiles, examples, and value sets) defined in this guide.  Each of the profiles is annotated with the data dictionary content assocaited with that profile.
-* [Examples](examples.html):  Annotated examples of a Live Birth and Fetal Death report.
+* [Example Live Birth](example_baby_g_quinn.html), [Example Fetal Death](example_fetal_death.html):  Annotated examples of a Live Birth and Fetal Death report.
 * [Changes](change_log.html): A change log.
 * Appendices: Examples of live birth and fetal death reports and worksheets
 * [Downloads](downloads.html): Links to downloadable artifacts
