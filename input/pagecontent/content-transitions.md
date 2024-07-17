@@ -168,7 +168,7 @@
 <td style='background-color:#98c1d9; text-align: center;'><b>Comments/Updates</b></td>
 </tr>
 <tr><td> <a href='ValueSet-ValueSet-apgar-timing.html'>ApgarTimingVS</a> </td><td><a href='https://hl7.org/fhir/us/vr-common-library/STU1.1//ValueSet-ValueSet-apgar-timing-vr.html'>VRCL</a></td><td> - </td></tr>
-<tr><td> <a href='ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttendantTitlesVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2'>PHINVADS</a></td><td> - </td></tr>
+<tr><td> <a href='ValueSet-ValueSet-birth-attendant-titles.html'>BirthAttenfdantTitlesVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=7B108BDB-5F50-482F-9E9D-643EC75364A2'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-birth-and-fetal-death-financial-class.html'>BirthAndFetalDeathFinancialClassVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=D20CD804-8487-E311-AE2A-0017A477041A'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-birth-delivery-occurred.html'>BirthDeliveryOccurredVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=BC64CB23-8210-4CE0-B2AE-F45169BBDC51'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-birth-weight-edit-flags.html'>BirthWeightEditFlagsVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=FA7A83A3-FCFD-E611-A856-0017A477041A'>PHINVADS</a></td><td> - </td></tr>
@@ -178,6 +178,7 @@
 <tr><td> <a href='ValueSet-ValueSet-fetal-death-cause-or-condition.html'>FetalDeathCauseOrConditionVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=DC1C6A94-C9FF-42CD-B546-E789003ED793'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-fetal-death-time-points.html'>FetalDeathTimePointsVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=52F8C812-2C70-4038-8F0F-D6E0532D4EBD'>PHINVADS</a></td><td> -  </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-fetal-presentations.html'>FetalPresentationsVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3C696B7B-BB33-4818-8996-1E3461E3F512'>PHINVADS</a></td><td> - </td></tr>
+<tr><td> <a href='ValueSet-ValueSet-fertility-enhancing-drug-therapy.html'>FertilityEnhancingDrugTherapyVS</a> </td><td> New </td><td> New Addition, including two SNOMEDCT codes for artificial insemination and fertility enhancing drug therapy </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-infections-during-pregnancy-live-birth.html'>InfectionsDuringPregnancyLiveBirthVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=AEF5A3D4-960C-4194-8BB6-392C7282D216'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-informant-relationship-to-mother.html'>InformantRelationshipToMotherVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?id=ADF95682-912A-E711-BE3F-0017A477041A'>PHINVADS</a></td><td> - </td></tr>
 <tr><td> <a href='ValueSet-ValueSet-fetal-remains-disposition-method.html'>FetalRemainsDispositionMethodVS</a> </td><td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7585'>PHINVADS</a></td><td> - </td></tr>
