@@ -1,6 +1,6 @@
 Profile: ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn
 Parent: Observation
-Id: Observation-None-congenital-anomolies-of-the-newborn 
+Id: Observation-none-congenital-anomolies-of-the-newborn 
 Title: "Observation - None Of Specified Congenital Anomolies Of The Newborn"
 Description: "This profile indicates that none of the specified congenital anomolies of the newborn were present."
 * code = $loinc#73780-9 
