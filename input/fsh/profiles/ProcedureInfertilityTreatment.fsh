@@ -6,7 +6,7 @@ Description: "This Procedure profile records that a pregnancy risk factor of inf
 * category 1..1
 * category = $loinc#73775-9
   * ^short = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
-* code = $sct#445151000124101
+* code = $sct#773261007 
 * code MS
-  * ^short = "Fertility enhancing drug therapy (procedure)"
+  * ^short = "Procedure relating to reproduction (procedure)"
 * subject only Reference(PatientMotherVitalRecords)
