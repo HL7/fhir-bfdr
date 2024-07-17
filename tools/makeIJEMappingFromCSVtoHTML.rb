@@ -5,11 +5,11 @@
 #Invoke-Webrequest https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true -Outfile "./input/images/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv"
 
 #method 2 (MAC):
-require 'open-uri'
-download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
-IO.copy_stream(download1, 'input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
-download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
-IO.copy_stream(download1, 'input/images/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
+# require 'open-uri'
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
+# IO.copy_stream(download1, 'input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
+# IO.copy_stream(download1, 'input/images/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
 
 #run:
 #ruby tools/makeIJEMappingFromCSVtoHTML.rb input/mapping/BFDR_Profile_Intros.csv input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv 
