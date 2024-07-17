@@ -7,6 +7,7 @@
 [USCorePractitionerRole]: http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitionerrole.html
 [QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
 [PartialDatesAndTimes]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#partial-dates-and-times
+[Note on Gender]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#gender
 [note on Child and Decedent Fetus name]: usage.html#child-and-decedent-fetus-name
 [note on birth date and time]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#birth-date-and-time
 [note on patient gender]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#gender
