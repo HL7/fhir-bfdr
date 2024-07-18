@@ -31,7 +31,7 @@ This content is provided in support of implementers of this IG, but is not forma
 
 Note: In some cases, there is not a direct mapping between data element and IJE element, and the IJE element that is most closely associated with the the data element is denoted with an asterisk.
 
-### FHIR Data Type: Observation
+### Observations
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -41,7 +41,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
     <td style='background-color:#98c1d9; text-align: center;'><b>Purpose</b></td>
     <td style='background-color:#98c1d9; text-align: center;'><b>Profile</b></td>
     <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>Codesystem</b></td>
-    <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>FHIR Type</b></td>
   </tr>
 </thead>
 <tbody>
@@ -52,7 +51,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>10 Min Apgar Score</td>
   <td><a href='StructureDefinition-Observation-apgar-score.html'>ObservationApgarScore</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.13'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -61,7 +59,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>5 Min Apgar Score</td>
   <td><a href='StructureDefinition-Observation-apgar-score.html'>ObservationApgarScore</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.12'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -70,7 +67,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Labor was augmented</td>
   <td><a href='StructureDefinition-Procedure-augmentation-of-labor.html'>ProcedureAugmentationOfLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7532'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -79,7 +75,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Plurality, which is the number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age or if the fetuses were delivered at different dates in the pregnancy. (“Reabsorbed” fetuses, those which are not “delivered” (expulsed or extracted from the mother) should not be counted.)</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Patient-child-vr.html'>PatientChildVitalRecords</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.132'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -88,7 +83,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Birth Weight</td>
   <td><a href='StructureDefinition-Observation-birth-weight.html'>ObservationBirthWeight</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.20'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -97,7 +91,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Birth occurred in the at home as intended</td>
   <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.193'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -106,7 +99,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Birth occurred in the at home as unintended</td>
   <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.194'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -115,7 +107,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Birthplace of the newborn (setting)</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.184'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -124,7 +115,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Body weight of the patient</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7421'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -133,7 +123,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Breastfed Infant at discharge</td>
   <td><a href='StructureDefinition-Observation-infant-breastfed-at-discharge.html'>ObservationInfantBreastfedAtDischarge</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.41'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -142,7 +131,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Conception Date</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.180'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -151,7 +139,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Date of Last Live Birth</td>
   <td><a href='StructureDefinition-Observation-date-of-last-live-birth.html'>ObservationDateOfLastLiveBirth</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.67'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -160,7 +147,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Date of Last Menses</td>
   <td><a href='StructureDefinition-Observation-last-menstrual-period.html'>ObservationLastMenstrualPeriod</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.69'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -169,7 +155,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Date of Last Other Pregnancy Outcome such as spontaneous or induced losses or ectopic pregnancy</td>
   <td><a href='StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html'>ObservationDateOfLastOtherPregnancyOutcome</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.70'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -178,7 +163,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Question as to the estimated time of fetal death</td>
   <td><a href='StructureDefinition-Observation-fetal-death-time-point.html'>ObservationFetalDeathTimePoint</a></td>
   <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7426'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -187,7 +171,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Fetal Presentation at Birth- Breech method of delivery</td>
   <td><a href='StructureDefinition-Observation-fetal-presentation.html'>ObservationFetalPresentation</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.108'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -196,7 +179,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Fetal Presentation at Birth- Cephalic method of delivery</td>
   <td><a href='StructureDefinition-Observation-fetal-presentation.html'>ObservationFetalPresentation</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.109'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -205,7 +187,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Fetal Presentation at Birth- Other</td>
   <td><a href='StructureDefinition-Observation-fetal-presentation.html'>ObservationFetalPresentation</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.110'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -214,7 +195,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Fever Greater Than 100.4 During Labor</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.25'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -223,7 +203,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Date of the First Prenatal Care Visit</td>
   <td><a href='StructureDefinition-Observation-date-of-first-prenatal-care-visit.html'>ObservationDateOfFirstPrenatalCareVisit</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.133'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -232,7 +211,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Mother’s height</td>
   <td><a href='StructureDefinition-Observation-mother-height.html'>ObservationMotherHeight</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7155'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -241,7 +219,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Labor was induced</td>
   <td><a href='StructureDefinition-Procedure-induction-of-labor.html'>ProcedureInductionOfLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7531'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -250,7 +227,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Institution to which the patient was referred</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.191'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -259,7 +235,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Karyotype Confirmed as an anomaly of the newborn</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.56'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -268,7 +243,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Karyotyping to determine that the result is pending</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.59'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -277,7 +251,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Delivery of the entire fetus through the vaginal wall (cesarean)</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7527'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -286,7 +259,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Delivery of the fetus using vaginal forceps</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7528'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -295,7 +267,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Delivery of the entire fetus through the vagina by the natural force of labor with or without manual assistance from the delivery attendant.</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7526'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -304,7 +275,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Delivery of the fetus using vaginal vacuum</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7529'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -313,7 +283,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Mother’s Delivery Weight</td>
   <td><a href='StructureDefinition-Observation-mother-delivery-weight.html'>ObservationMotherDeliveryWeight</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.120'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -322,7 +291,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Number of Fetal Deaths This Delivery</td>
   <td><a href='StructureDefinition-Observation-number-fetal-deaths-this-delivery.html'>ObservationNumberFetalDeathsThisDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.164'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -331,7 +299,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Number of Live Births for the current pregnancy</td>
   <td><a href='StructureDefinition-Observation-number-live-births-this-delivery.html'>ObservationNumberLiveBirthsThisDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.68'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -340,7 +307,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Number of preterm births in prior pregnancies</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.187'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -349,7 +315,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Number of Previous Cesareans as a Risk Factor in Pregnancy</td>
   <td><a href='StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.148'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -358,7 +323,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Number of Previous Live Births Now Dead</td>
   <td><a href='StructureDefinition-Observation-number-births-now-dead.html'>ObservationNumberBirthsNowDead</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.122'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -367,7 +331,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Number of Live Births Now Living</td>
   <td><a href='StructureDefinition-Observation-number-births-now-living.html'>ObservationNumberBirthsNowLiving</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.123'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -376,7 +339,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Number of Prior Pregnancies</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.71'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -385,7 +347,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Number Prenatal Care Visits</td>
   <td><a href='StructureDefinition-Observation-number-prenatal-visits.html'>ObservationNumberPrenatalVisits</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.135'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -394,7 +355,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Obstetric Estimate of Gestation of the newborn</td>
   <td><a href='StructureDefinition-Observation-gestational-age-at-delivery.html'>ObservationGestationalAgeAtDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.124'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -403,7 +363,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Mother’s Pre-Pregnancy Weight</td>
   <td><a href='StructureDefinition-Observation-mother-prepregnancy-weight.html'>ObservationMotherPrepregnancyWeight</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.118'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -412,7 +371,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Risk Factors of Pregnancy Previous Cesarean</td>
   <td><a href='StructureDefinition-Observation-previous-cesarean.html'>ObservationPreviousCesarean</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7165'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -421,7 +379,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Previous Other Pregnancy Outcomes</td>
   <td><a href='StructureDefinition-Observation-number-other-pregnancy-outcomes.html'>ObservationNumberOtherPregnancyOutcomes</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.121'>LOINC</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -430,7 +387,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Cesarean Section was scheduled</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7530'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -439,7 +395,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Newborn suffered a Seizure or Serious Neurologic Dysfunction reflecting an abnormal condition of the newborn</td>
   <td><a href='StructureDefinition-Condition-seizure.html'>ConditionSeizure</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.10'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 
 <tr>
@@ -448,12 +403,11 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Spontaneous Onset of Labor</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.35'>SNOMED-CT</a></td>
-  <td>Observation</td>
 </tr>
 </tbody>
 </table>
 
-### FHIR Data Type: Condition
+### Conditions
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -463,7 +417,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
     <td style='background-color:#98c1d9; text-align: center;'><b>Purpose</b></td>
     <td style='background-color:#98c1d9; text-align: center;'><b>Profile</b></td>
     <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>Codesystem</b></td>
-    <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>FHIR Type</b></td>
   </tr>
 </thead>
 <tbody>
@@ -474,7 +427,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Anencephaly of the Newborn as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.53'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -483,7 +435,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Chlamydia as Infections present and treated during this pregnancy</td>
   <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.93'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -492,7 +443,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Chorioamnionitis During Labor</td>
   <td><a href='StructureDefinition-Condition-chorioamnionitis.html'>ConditionChorioamnionitis</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.24'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -501,7 +451,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Cleft Lip with/without Cleft Palate as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.58'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -510,7 +459,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Cleft Palate alone as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.189'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -519,7 +467,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Congenital Diaphragmatic Hernia as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.55'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -528,7 +475,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Cyanotic Congenital Heart Disease as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.54'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -537,7 +483,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Infection with Cytomegalovirus</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.167'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -546,7 +491,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Downs Syndrome as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.61'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -555,7 +499,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Risk Factors of Eclampsia</td>
   <td><a href='StructureDefinition-Condition-eclampsia-hypertension.html'>ConditionEclampsiaHypertension</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.140'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -564,7 +507,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Fourth Degree Perineal Laceration as a maternal morbidity</td>
   <td><a href='StructureDefinition-Condition-perineal-laceration.html'>ConditionPerinealLaceration</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.101'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -573,7 +515,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Gastroschisis of the Newborn as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.62'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -582,7 +523,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Risk Factors of Gestational Diabetes</td>
   <td><a href='StructureDefinition-Condition-gestational-diabetes.html'>ConditionGestationalDiabetes</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.137'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -591,7 +531,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Risk Factors of Gestational Hypertension</td>
   <td><a href='StructureDefinition-Condition-gestational-hypertension.html'>ConditionGestationalHypertension</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.139'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -600,16 +539,14 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Gonorrhea as Infections present and treated during this pregnancy</td>
   <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6071'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
   <td style='text-align: center'>Group B Streptococcus</td>
   <td>GBS - NOT IMPLEMENTED</td>
   <td>Infection with Group B Streptococcus</td>
-  <td></td>
+  <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.166'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -618,7 +555,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Hepatitis B as Infections present and treated during this pregnancy</td>
   <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.96'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -627,7 +563,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Hepatitis C as Infections present and treated during this pregnancy</td>
   <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.97'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -636,7 +571,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Hypospadias as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.63'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -645,16 +579,14 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Limb Reduction Defect as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=6.1.4.1.19376.1.7.3.1.1.13.8.64'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
   <td style='text-align: center'>Listeria</td>
   <td></td>
   <td>Listeria as Infections present and treated during this pregnancy</td>
-  <td></td>
+  <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.147'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -663,7 +595,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Meningomyelocele/Spina Bifida of the Newborn as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.65'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -672,7 +603,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Newborn had suspected neonatal sepsis reflecting an abnormal condition of the newborn</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.6'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -681,16 +611,14 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Omphalocele of the Newborn as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.66'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
   <td style='text-align: center'>Parvovirus</td>
   <td></td>
   <td>Infection with Parvovirus</td>
-  <td></td>
+  <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.168'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -699,7 +627,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Onset of labor with Precipitous Labor</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.130'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -708,7 +635,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Onset of labor with Premature Rupture</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.129'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -717,7 +643,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Risk Factors of Prepregnancy Diabetes</td>
   <td><a href='StructureDefinition-Condition-prepregnancy-diabetes.html'>ConditionPrepregnancyDiabetes</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.136'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -726,7 +651,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Risk Factors of Prepregnancy Hypertension</td>
   <td><a href='StructureDefinition-Condition-prepregnancy-hypertension.html'>ConditionPrepregnancyHypertension</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.138'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -735,7 +659,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Onset of labor with Prolonged Labor</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.131'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -744,7 +667,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Ruptured Uterus as a maternal morbidity</td>
   <td><a href='StructureDefinition-Condition-ruptured-uterus.html'>ConditionRupturedUterus</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.102'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -753,7 +675,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Newborn suffered a Significant Birth Injury (skeletal fracture(s), peripheral nerve injury, and/ or soft tissue/solid organ hemorrhage which requires intervention) reflecting an abnormal condition of the newborn</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.9'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -762,7 +683,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Suspected Chromosomal Disorder as an anomaly of the newborn</td>
   <td><a href='StructureDefinition-Condition-congenital-anomaly-of-newborn.html'>ConditionCongenitalAnomalyOfNewborn</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.57'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -771,7 +691,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Syphilis as Infections present and treated during this pregnancy</td>
   <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.98'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
@@ -780,21 +699,19 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Third Degree Perineal Laceration as a maternal morbidity</td>
   <td><a href='StructureDefinition-Condition-perineal-laceration.html'>ConditionPerinealLaceration</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.100'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 
 <tr>
   <td style='text-align: center'>Toxoplasmosis</td>
   <td></td>
   <td>Infection with Toxoplasmosis</td>
-  <td></td>
+  <td><a href='StructureDefinition-Condition-infection-present-during-pregnancy.html'>ConditionInfectionPresentDuringPregnancy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.169'>SNOMED-CT</a></td>
-  <td>Condition</td>
 </tr>
 </tbody>
 </table>
 
-### FHIR Data Type: Procedure
+### Procedures
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -804,7 +721,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
     <td style='background-color:#98c1d9; text-align: center;'><b>Purpose</b></td>
     <td style='background-color:#98c1d9; text-align: center;'><b>Profile</b></td>
     <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>Codesystem</b></td>
-    <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>FHIR Type</b></td>
   </tr>
 </thead>
 <tbody>
@@ -815,7 +731,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Antibiotic Administration Procedure during labor and delivery</td>
   <td><a href='StructureDefinition-Observation-antibiotics-administered-during-labor.html'>ObservationAntibioticsAdministeredDuringLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.178'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -824,7 +739,14 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Artificial or Intrauterine Insemination as a Risk Factor in Pregnancy</td>
   <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.145'>SNOMED-CT</a></td>
-  <td>Procedure</td>
+</tr>
+
+<tr>
+  <td style='text-align: center'>Assisted Ventilation</td>
+  <td>AVEN1*, AVEN6*</td>
+  <td>Newborn was provided assisted ventilation reflecting an abnormal condition of the newborn</td>
+  <td></td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7156'>SNOMED-CT</a></td>
 </tr>
 
 <tr>
@@ -833,7 +755,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Assistive Reproductive Technology as a Risk Factor in Pregnancy</td>
   <td><a href='StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.146'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -842,7 +763,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Procedure of Augmentation of Labor</td>
   <td><a href='StructureDefinition-Procedure-augmentation-of-labor.html'>ProcedureAugmentationOfLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.22'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -851,7 +771,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Obstetric Procedures as Cervical Cerclage</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.125'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -860,7 +779,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Delivery Procedure</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.14'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -869,7 +787,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Epidural Anesthesia Procedure</td>
   <td><a href='StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html'>ProcedureEpiduralOrSpinalAnesthesia</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.27'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -878,7 +795,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Obstetric Procedures as External Cephalic Version</td>
   <td><a href='StructureDefinition-Procedure-obstetric.html'>ProcedureObstetric</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.127'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -887,7 +803,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Autopsy was performed</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.23.8.1'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -896,7 +811,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>hysterotomy/hysterectomy as the method of delivery in fetal death</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.150'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -905,7 +819,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Mother was transferred to ICU following the birth</td>
   <td><a href='StructureDefinition-Observation-icu-admission.html'>ObservationICUAdmission</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.188'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -914,7 +827,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Induction of Labor</td>
   <td><a href='StructureDefinition-Procedure-induction-of-labor.html'>ProcedureInductionOfLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.34'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -923,7 +835,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Risk Factors of Pregnancy Infertility Treatment</td>
   <td><a href='StructureDefinition-Procedure-infertility-treatment.html'>ProcedureInfertilityTreatment</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.143'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -932,7 +843,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Karyotype determination as an anomaly of the newborn</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.154'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -941,7 +851,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Indicate whether a pregnancy resulted from fertility enhancing drugs</td>
   <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
   <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7423'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -950,7 +859,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Surfactant Replacement Therapy</td>
   <td><a href='StructureDefinition-Procedure-surfactant-replacement-therapy.html'>ProcedureSurfactantReplacementTherapy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7431'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -959,7 +867,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Baby was transferred to NICU following the birth</td>
   <td><a href='StructureDefinition-Observation-nicu-admission.html'>ObservationNICUAdmission</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.198'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -968,7 +875,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Route and Method of Delivery as Cesarean Delivery</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.114'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -977,7 +883,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Route and Method of Delivery as Forceps Delivery</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.112'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -986,7 +891,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Route and Method of Delivery as Scheduled Cesarean</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.116'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -995,7 +899,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Route and Method of Delivery as Spontaneous Delivery</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.111'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1004,7 +907,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Route and Method of Delivery if Cesarean was as Trial of Labor Attempted</td>
   <td><a href='StructureDefinition-Observation-labor-trial-attempted.html'>ObservationLaborTrialAttempted</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.115'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1013,7 +915,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Route and Method of Delivery as Vacuum Delivery</td>
   <td><a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.113'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1022,7 +923,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Spinal Anesthesia Procedure</td>
   <td><a href='StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html'>ProcedureEpiduralOrSpinalAnesthesia</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.29'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1031,7 +931,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Indicate whether steroids (glucocorticoids) for fetal lung maturation was received by the mother before delivery</td>
   <td><a href='StructureDefinition-Observation-steroids-fetal-lung-maturation.html'>ObservationSteroidsFetalLungMaturation</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7423'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1040,7 +939,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Obstetric Procedures as Tocolysis</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.128'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1049,7 +947,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>If the infant was transferred within 24 hours of delivery to another facility</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.190'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1058,7 +955,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Transferred for Maternal Medical or Fetal Indications for Delivery</td>
   <td><a href='StructureDefinition-Encounter-maternity.html'>EncounterMaternity</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.176'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1067,7 +963,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Transfusion Whole Blood or Packed Red Blood as a maternal morbidity</td>
   <td><a href='StructureDefinition-Procedure-blood-transfusion.html'>ProcedureBloodTransfusion</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.99'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1076,7 +971,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Unplanned hysterectomy as a maternal morbidity</td>
   <td><a href='StructureDefinition-Procedure-unplanned-hysterectomy.html'>ProcedureUnplannedHysterectomy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.103'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 
 <tr>
@@ -1085,12 +979,11 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Unplanned operation as a maternal morbidity</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.105'>SNOMED-CT</a></td>
-  <td>Procedure</td>
 </tr>
 </tbody>
 </table>
 
-### FHIR Data Type: Medication
+### Medications
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -1100,7 +993,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
     <td style='background-color:#98c1d9; text-align: center;'><b>Purpose</b></td>
     <td style='background-color:#98c1d9; text-align: center;'><b>Profile</b></td>
     <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>Codesystem</b></td>
-    <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>FHIR Type</b></td>
   </tr>
 </thead>
 <tbody>
@@ -1111,7 +1003,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Antibiotics were received by the mother during delivery and by the newborn for suspected neonatal sepsis</td>
   <td><a href='StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html'>ProcedureAntibioticSuspectedNeonatalSepsis</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.3'>RxNorm</a></td>
-  <td>Medication</td>
 </tr>
 
 <tr>
@@ -1120,7 +1011,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Medication used for the of Augmentation of Labor</td>
   <td><a href='StructureDefinition-Procedure-augmentation-of-labor.html'>ProcedureAugmentationOfLabor</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.23'>RxNorm</a></td>
-  <td>Medication</td>
 </tr>
 
 <tr>
@@ -1129,7 +1019,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Epidural and Spinal Anesthesia Medication</td>
   <td><a href='StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html'>ProcedureEpiduralOrSpinalAnesthesia</a></td>
   <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7475'>RxNorm</a></td>
-  <td>Medication</td>
 </tr>
 
 <tr>
@@ -1138,7 +1027,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Fertility Enhancing Drugs were administered as a risk factor for pregnancy</td>
   <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.144'>RxNorm</a></td>
-  <td>Medication</td>
 </tr>
 
 <tr>
@@ -1147,12 +1035,11 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Newborn received Surfactant Replacement Therapy reflecting an abnormal condition of the newborn</td>
   <td><a href='StructureDefinition-Procedure-surfactant-replacement-therapy.html'>ProcedureSurfactantReplacementTherapy</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.11'>RxNorm</a></td>
-  <td>Medication</td>
 </tr>
 </tbody>
 </table>
 
-### FHIR Data Type: Location
+### Locations
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -1162,7 +1049,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
     <td style='background-color:#98c1d9; text-align: center;'><b>Purpose</b></td>
     <td style='background-color:#98c1d9; text-align: center;'><b>Profile</b></td>
     <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>Codesystem</b></td>
-    <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>FHIR Type</b></td>
   </tr>
 </thead>
 <tbody>
@@ -1173,7 +1059,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Patient (mother) was treated in the ICU for complications associated with labor and delivery reflecting a maternal morbidity.</td>
   <td><a href='StructureDefinition-Observation-icu-admission.html'>ObservationICUAdmission</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.2'>HL7 Service Delivery Location</a></td>
-  <td>Location</td>
 </tr>
 
 <tr>
@@ -1182,7 +1067,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Newborn was admitted to the NICU reflecting an abnormal condition of the newborn</td>
   <td><a href='StructureDefinition-Observation-nicu-admission.html'>ObservationNICUAdmission</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.1'>HL7 Service Delivery Location</a></td>
-  <td>Location</td>
 </tr>
 
 <tr>
@@ -1191,12 +1075,11 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Patient (mother) was treated in the OR for an unplanned operation for complications associated with labor and delivery reflecting unplanned operation</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.104'>HL7 Service Delivery Location</a></td>
-  <td>Location</td>
 </tr>
 </tbody>
 </table>
 
-### FHIR Data Type: Miscellaneous
+### Miscellaneous
 
 <table  align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <thead>
@@ -1206,46 +1089,9 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
     <td style='background-color:#98c1d9; text-align: center;'><b>Purpose</b></td>
     <td style='background-color:#98c1d9; text-align: center;'><b>Profile</b></td>
     <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>Codesystem</b></td>
-    <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>FHIR Type</b></td>
   </tr>
 </thead>
 <tbody>
-
-<tr>
-  <td style='text-align: center'>Antibiotics Received During Labor Finding</td>
-  <td>ANTB</td>
-  <td>Mother has received antibiotics during labor.</td>
-  <td><a href='StructureDefinition-Observation-antibiotics-administered-during-labor.html'>ObservationAntibioticsAdministeredDuringLabor</a></td>
-  <td><a href=''>SNOMED-CT</a></td>
-  <td></td>
-</tr>
-
-<tr>
-  <td style='text-align: center'>Assisted Ventilation</td>
-  <td>AVEN1*, AVEN6*</td>
-  <td>Newborn was provided assisted ventilation reflecting an abnormal condition of the newborn</td>
-  <td></td>
-  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7156'>SNOMED-CT</a></td>
-  <td>Regime/Therapy</td>
-</tr>
-
-<tr>
-  <td style='text-align: center'>Assisted Ventilation Finding</td>
-  <td>AVEN1</td>
-  <td>Newborn received assisted ventilation immediately following delivery.</td>
-  <td><a href='StructureDefinition-Procedure-assisted-ventilation-following-delivery.html'>ProcedureAssistedVentilationFollowingDelivery</a></td>
-  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7533'></a></td>
-  <td></td>
-</tr>
-
-<tr>
-  <td style='text-align: center'>Assisted Ventilation for >6 hours Finding</td>
-  <td>AVEN6</td>
-  <td>Newborn received assisted ventilation for >6 hours following delivery.</td>
-  <td><a href='StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html'>ProcedureAssistedVentilationMoreThanSixHours</a></td>
-  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7533'></a></td>
-  <td></td>
-</tr>
 
 <tr>
   <td style='text-align: center'>Autopsy Planned</td>
@@ -1253,7 +1099,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Autopsy was planned</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7140'>SNOMED-CT</a></td>
-  <td>Situation</td>
 </tr>
 
 <tr>
@@ -1262,7 +1107,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Birth occurred in the at clinic or office</td>
   <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.197'>SNOMED-CT</a></td>
-  <td>Environment</td>
 </tr>
 
 <tr>
@@ -1271,16 +1115,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Birth occurred at a freestanding birthing center</td>
   <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.196'>SNOMED-CT</a></td>
-  <td>Environment</td>
-</tr>
-
-<tr>
-  <td style='text-align: center'>Birth Place Home Unknown Intention</td>
-  <td></td>
-  <td>Birth occurred in the at home with intention unknown</td>
-  <td><a href='StructureDefinition-Observation-planned-to-deliver-at-home.html'>ObservationPlannedToDeliverAtHome</a></td>
-  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.195'>SNOMED-CT</a></td>
-  <td></td>
 </tr>
 
 <tr>
@@ -1289,7 +1123,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Birth occurred in the hospital</td>
   <td><a href='StructureDefinition-Encounter-birth.html'>EncounterBirth</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.192'>SNOMED-CT</a></td>
-  <td>Environment</td>
 </tr>
 
 <tr>
@@ -1298,7 +1131,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Title of the Attendant responsible for the delivery Procedure as a Certified Midwife</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.17'>SNOMED-CT</a></td>
-  <td></td>
 </tr>
 
 <tr>
@@ -1307,7 +1139,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Title of the Attendant responsible for the delivery Procedure as a Doctor of Osteopathic Medicine</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.16'>SNOMED-CT</a></td>
-  <td>Occupation</td>
 </tr>
 
 <tr>
@@ -1316,7 +1147,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>A list of time points during the delivery process at which the fetal death is thought to have occurred. Note, SNOMED is being used as the primary source for codes within the value set.</td>
   <td><a href='StructureDefinition-Observation-fetal-death-time-point.html'>ObservationFetalDeathTimePoint</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7112'>SNOMED-CT</a></td>
-  <td>Event</td>
 </tr>
 
 <tr>
@@ -1325,7 +1155,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Histological Placental Examination for fetal death</td>
   <td><a href='StructureDefinition-Observation-histological-placental-exam-performed.html'>ObservationHistologicalPlacentalExamPerformed</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7138'>SNOMED-CT</a></td>
-  <td>Qualifier</td>
 </tr>
 
 <tr>
@@ -1334,7 +1163,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Intramuscular Medication Administration Route was used to administer a medication</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.5'>HL7 Route of Administration</a></td>
-  <td></td>
 </tr>
 
 <tr>
@@ -1343,7 +1171,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>IV Medication Administration Route was used to administer a medication</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.4'>HL7 Route of Administration</a></td>
-  <td></td>
 </tr>
 
 <tr>
@@ -1352,7 +1179,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Title of the Attendant responsible for the delivery Procedure as a Midwife excluding registered midwife which is reflected in the ‘certified midwife’ value set</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.18'>SNOMED-CT</a></td>
-  <td></td>
 </tr>
 
 <tr>
@@ -1361,7 +1187,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Newborn died</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.149'>SNOMED-CT</a></td>
-  <td>Event</td>
 </tr>
 
 <tr>
@@ -1370,7 +1195,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Title of the Attendant responsible for the delivery Procedure as a Physician</td>
   <td><a href='StructureDefinition-Practitioner-birth-attendant.html'>PractitionerBirthAttendant</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.15'>SNOMED-CT</a></td>
-  <td>Occupation</td>
 </tr>
 
 <tr>
@@ -1379,7 +1203,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Risk Factors of Preterm Birth (history)</td>
   <td><a href='StructureDefinition-Observation-previous-preterm-birth.html'>ObservationPreviousPretermBirth</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.141'>SNOMED-CT</a></td>
-  <td>Situation</td>
 </tr>
 
 <tr>
@@ -1388,7 +1211,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>Problem Status Active</td>
   <td></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.119'>SNOMED-CT</a></td>
-  <td>Qualifier</td>
 </tr>
 
 <tr>
@@ -1397,16 +1219,6 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td>If the mother was transferred to this facility</td>
   <td><a href='StructureDefinition-Location-bfdr.html'>LocationBFDR</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.177'>Admit source (HL7)</a></td>
-  <td></td>
-</tr>
-
-<tr>
-  <td style='text-align: center'>U.S. Territories</td>
-  <td></td>
-  <td>U.S. Territories</td>
-  <td></td>
-  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.19'>FIPS 5-2</a></td>
-  <td></td>
 </tr>
 </tbody>
 </table>

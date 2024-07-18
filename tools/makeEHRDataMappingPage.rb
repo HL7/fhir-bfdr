@@ -1,7 +1,7 @@
 #run:
 #ruby tools/makeEHRDataMappingPage.rb input/mapping/EHR_Data_Mapping.csv
 
-#output file: generated/BFDR/vital_records_forms_mapping.md. Copy or move generated file to /input/pagecontent in order for updated page to be included in IG
+#output file: generated/BFDR/EHR_Data_Mapping.md. Copy or move generated file to /input/pagecontent in order for updated page to be included in IG
 
 require_relative "makeExcelFromCSV"
 require "json"
@@ -100,7 +100,6 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
     pOutputFile.puts "    <td style='background-color:#98c1d9; text-align: center;'><b>Purpose</b></td>"
     pOutputFile.puts "    <td style='background-color:#98c1d9; text-align: center;'><b>Profile</b></td>"
     pOutputFile.puts "    <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>Codesystem</b></td>"
-    pOutputFile.puts "    <td style='background-color:#98c1d9; text-align: center; width: 10%'><b>FHIR Type</b></td>"
     pOutputFile.puts "  </tr>"
     pOutputFile.puts "</thead>"
     pOutputFile.puts "<tbody>"
@@ -130,7 +129,6 @@ def createMappingTable(pRowFilter, pOutputFile, pSpreadsheet)
         pOutputFile.puts "  <td>" + vPurpose + "</td>"
         pOutputFile.puts "  <td>" + vProfile + "</td>"
         pOutputFile.puts "  <td>" + vPhinvadsWithURL + "</td>"
-        pOutputFile.puts "  <td>" + vFhirType + "</td>"
         pOutputFile.puts "</tr>"
     end
     pOutputFile.puts "</tbody>"
