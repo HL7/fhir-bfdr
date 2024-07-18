@@ -20,7 +20,6 @@ Description: "This Composition profile contains constraints to address the use c
 * encounter 
   * ^short = "The Encounter for the Composition is the mother's maternity encounter."
   * ^definition = "The Encounter for the Composition is the mother's maternity encounter."
-  * extension only ExtensionEncounterMaternityReference
 * date
   * ^short = "Date report completed"
 * author ..1 
