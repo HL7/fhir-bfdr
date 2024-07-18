@@ -1,5 +1,5 @@
 Instance: procedure-artificial-insemination-jada-ann-quinn
-InstanceOf: Procedure-fertility-enhancing-drug-therapy
+InstanceOf: ProcedureFertilityEnhancingDrugTherapyArtificialInsemination
 Title: "Procedure - Artificial Insemniation - Jada Ann Quinn"
 Description: "Procedure - Artificial Insemniation: Jada Ann Quinn example"
 Usage: #example

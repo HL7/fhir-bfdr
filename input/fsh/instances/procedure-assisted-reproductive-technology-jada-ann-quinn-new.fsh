@@ -1,7 +1,7 @@
-Instance: procedure-assisted-fertilization-jada-ann-quinn
-InstanceOf: ProcedureAssistedFertilization
-Title: "Procedure - Assisted Fertilization - Jada Ann Quinn"
-Description: "Procedure - Assisted Fertilization: Jada Ann Quinn example"
+Instance: procedure-assisted-reproductive-technology-jada-ann-quinn
+InstanceOf: ProcedureAssistedReproductiveTechnology
+Title: "Procedure - Assisted Reproductive Technology - Jada Ann Quinn"
+Description: "Procedure - Assisted Reproductive Technology: Jada Ann Quinn example"
 Usage: #example
 * status = #completed
 * code = $sct#63487001 "Assisted fertilization (procedure)"
