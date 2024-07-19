@@ -210,6 +210,8 @@
 
 
 ### Removed Profiles
+This section has been updated to reflect changes at ballot time, allowing the reader to follow the harmonization process.
+For details on the subsequent evolution of these profiles, see their new home IG.
 
 <table align='left' border='1' class='style1' cellpadding='1' cellspacing='1'>
 <tbody>
