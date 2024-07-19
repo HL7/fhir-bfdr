@@ -8,6 +8,7 @@
 # require 'open-uri'
 # download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
 # IO.copy_stream(download1, 'input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
 # IO.copy_stream(download1, 'input/images/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
 
 #run:
