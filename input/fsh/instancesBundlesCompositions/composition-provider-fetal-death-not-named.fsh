@@ -35,6 +35,7 @@ Usage: #example
   * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-carmen-teresa-lee)
   * insert addNamedEntryComposition(fetalPresentation, Observation, observation-fetal-presentation-not-named)
   * insert addNamedEntryComposition(finalRouteMethodDelivery, Procedure, procedure-final-route-method-delivery-not-named)
+  * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-diabetes-carmen-teresa-lee)
 * section[fetus]
   // * title = "Fetal delivery information section on the Fetal Death Report"
   // * code = $loinc#76400-1 "Fetal delivery information Document [US Standard Report of Fetal Death]"
