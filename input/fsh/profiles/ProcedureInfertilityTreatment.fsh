@@ -2,7 +2,7 @@ Profile: ProcedureInfertilityTreatment
 Parent: USCoreProcedureProfile
 Id: Procedure-infertility-treatment
 Title: "Procedure - Infertility Treatment"
-Description: "This Procedure profile records that assisted reproduction treatment was used to initiate the pregnancy. Includes
+Description: "This Procedure profile records that infertility treatment was used to initiate the pregnancy. Includes
 fertility-enhancing drugs (e.g., Clomid, Pergonal), artificial insemination, or intrauterine insemination and assisted reproduction technology
 procedures (e.g., IVF, GIFT and ZIFT)."
 * category 1..1
