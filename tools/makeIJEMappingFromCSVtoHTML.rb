@@ -206,7 +206,7 @@ vOutputFile.puts "| [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] 
 vOutputFile.puts "| [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] | [ConditionInfectionPresentDuringPregnancy] |"
 vOutputFile.puts "| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |"
 vOutputFile.puts "| [ObservationNoneOfSpecifiedObstetricProcedures] | [ProcedureObstetric] |"
-vOutputFile.puts "| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |"
+vOutputFile.puts "| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureFertilityEnhancingDrugTherapyArtificialInsemination], [ProcedureAssistedReproductiveTechnology], [ObservationPreviousCesarean] |"
 vOutputFile.puts "| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |"
 vOutputFile.puts "{: .grid }"
 
@@ -226,7 +226,7 @@ vOutputFile1.puts ""
 vOutputFile1.puts "| **Observation** |  **Complements**   |"
 vOutputFile1.puts "| --------------- | ------------------ |"
 vOutputFile1.puts "| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |"
-vOutputFile1.puts "| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |"
+vOutputFile1.puts "| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureFertilityEnhancingDrugTherapyArtificialInsemination], [ProcedureAssistedReproductiveTechnology], [ObservationPreviousCesarean] |"
 vOutputFile1.puts "| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |"
 vOutputFile1.puts "{: .grid }"
 

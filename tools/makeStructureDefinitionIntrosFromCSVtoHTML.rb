@@ -99,7 +99,7 @@ NONE_SPECIFIED_DEATH = {
     "ProcedureUnplannedHysterectomy", "ObservationICUAdmission"],
   "ObservationNoneOfSpecifiedPregnancyRiskFactors" => ["ConditionPrepregnancyDiabetes", "ConditionGestationalDiabetes", "ConditionPrepregnancyHypertension", \
     "ConditionGestationalHypertension", "ConditionEclampsiaHypertension", "ObservationPreviousPretermBirth", "ProcedureInfertilityTreatment", \
-    "ProcedureArtificialInsemination", "ProcedureAssistedFertilization", "ObservationPreviousCesarean"],
+    "ProcedureFertilityEnhancingDrugTherapyArtificialInsemination", "ProcedureAssistedReproductiveTechnology", "ObservationPreviousCesarean"],
   "ObservationUnknownFinalRouteMethodDelivery" => ["ProcedureFinalRouteMethodDelivery"]
 }
 
@@ -115,7 +115,7 @@ NONE_SPECIFIED_BIRTH = {
   "ObservationNoneOfSpecifiedObstetricProcedures" => ["ProcedureObstetric"],
   "ObservationNoneOfSpecifiedPregnancyRiskFactors" => ["ConditionPrepregnancyDiabetes", "ConditionGestationalDiabetes", "ConditionPrepregnancyHypertension", \
     "ConditionGestationalHypertension", "ConditionEclampsiaHypertension", "ObservationPreviousPretermBirth", "ProcedureInfertilityTreatment", \
-    "ProcedureArtificialInsemination", "ProcedureAssistedFertilization", "ObservationPreviousCesarean"],
+    "ProcedureFertilityEnhancingDrugTherapyArtificialInsemination", "ProcedureAssistedReproductiveTechnology", "ObservationPreviousCesarean"],
   "ObservationUnknownFinalRouteMethodDelivery" => ["ProcedureFinalRouteMethodDelivery"]
 }
 
