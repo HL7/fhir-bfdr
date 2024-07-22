@@ -746,7 +746,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Assisted Ventilation</td>
   <td>AVEN1*, AVEN6*</td>
   <td>Newborn was provided assisted ventilation reflecting an abnormal condition of the newborn</td>
-  <td></td>
+  <td><a href='StructureDefinition-Procedure-assisted-ventilation-following-delivery.html'>ProcedureAssistedVentilationFollowingDelivery</a>, <a href='StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html'>ProcedureAssistedVentilationMoreThanSixHours</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7156'>SNOMED-CT</a></td>
 </tr>
 
