@@ -80,6 +80,7 @@
 [birthPlace]: http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 [roleMotherOrFather]: StructureDefinition-Extension-role.html
 <!---from VRCL-->
+[nationalReportingJurisdictionId]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-jurisdiction-id-vr.html
 [ObservationAutopsyPerformedIndicatorVitalRecords]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-autopsy-performed-indicator-vr.html
 [ObservationCodedRaceAndEthnicityVitalRecords]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-coded-race-and-ethnicity-vr.html
 [ObservationEducationLevelVitalRecords]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html
