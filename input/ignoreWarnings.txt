@@ -1,5 +1,6 @@
 == Suppressed Messages ==
 # APPROVED: by HL7 Cross Group Projects WG: https://confluence.hl7.org/pages/viewpage.action?pageId=97453270
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-plurality-of-pregnancy').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-delivery').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-None-congenital-anomolies-of-the-newborn').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
@@ -173,6 +174,18 @@ WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[45].resourc
 WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[45].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[51].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[51].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[31].resource/*Observation/observation-present-job-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[32].resource/*Observation/observation-present-job-tom-yan-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[42].resource/*Observation/observation-present-job-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-jurisdiction-live-birth-babyg-quinn: Bundle.entry[48].resource/*Observation/observation-present-job-james-brandon-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[30].resource/*Observation/observation-present-job-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[31].resource/*Observation/observation-present-job-tom-yan-lee*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[45].resource/*Observation/observation-present-job-jada-ann-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[51].resource/*Observation/observation-present-job-james-brandon-quinn*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-present-job-carmen-teresa-lee: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-present-job-jada-ann-quinn: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-present-job-james-brandon-quinn: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-present-job-tom-yan-lee: Observation: Best Practice Recommendation: In general, all observations should have a performer
 
 # We have inspected these and consider these Composition.section entry messages spurious.
 INFORMATION: Composition/composition-coded-cause-of-fetal-death-not-named: Composition.section[0].entry[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death|2.0.0-CIbuild (this may not be a problem, but you should check that it's not intended to match a slice)

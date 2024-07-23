@@ -15,3 +15,4 @@ Description: "This Condition profile should be used to indicate other significan
   * text MS
     * ^short = "Any further specification should be entered as free text to fully record the provider's view of the cause."
 * subject only Reference(PatientDecedentFetus)
+* clinicalStatus = $condition-clinical#active "Active"
