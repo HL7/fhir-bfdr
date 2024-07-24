@@ -614,7 +614,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 </tr>
 <tr>
   <td style='text-align: center'>51</td>
-  <td>Apgar Score:</td>
+  <td>Apgar Score</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-apgar-score.html'>ObservationApgarScore</a></td>
   <td>value</td>
 </tr>
