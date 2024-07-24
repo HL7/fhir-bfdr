@@ -738,7 +738,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Artificial or Intrauterine Insemination</td>
   <td>INFT_DRG</td>
   <td>Artificial or Intrauterine Insemination as a Risk Factor in Pregnancy</td>
-  <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.145'>SNOMED-CT</a></td>
 </tr>
 
@@ -850,7 +850,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Pregnancy Resulting From Fertility Enhancing Drugs</td>
   <td>INFT_DRG*</td>
   <td>Indicate whether a pregnancy resulted from fertility enhancing drugs</td>
-  <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7423'>SNOMED-CT</a></td>
 </tr>
 
@@ -1026,7 +1026,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Fertility Enhancing Drugs Medications</td>
   <td>INFT_DRG</td>
   <td>Fertility Enhancing Drugs were administered as a risk factor for pregnancy</td>
-  <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.144'>RxNorm</a></td>
 </tr>
 
