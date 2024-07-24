@@ -8,6 +8,7 @@
 # require 'open-uri'
 # download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
 # IO.copy_stream(download1, 'input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
 # IO.copy_stream(download1, 'input/images/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
 
 #run:
@@ -205,7 +206,7 @@ vOutputFile.puts "| [ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn] 
 vOutputFile.puts "| [ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy] | [ConditionInfectionPresentDuringPregnancy] |"
 vOutputFile.puts "| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |"
 vOutputFile.puts "| [ObservationNoneOfSpecifiedObstetricProcedures] | [ProcedureObstetric] |"
-vOutputFile.puts "| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |"
+vOutputFile.puts "| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureFertilityEnhancingDrugTherapyArtificialInsemination], [ProcedureAssistedReproductiveTechnology], [ObservationPreviousCesarean] |"
 vOutputFile.puts "| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |"
 vOutputFile.puts "{: .grid }"
 
@@ -225,7 +226,7 @@ vOutputFile1.puts ""
 vOutputFile1.puts "| **Observation** |  **Complements**   |"
 vOutputFile1.puts "| --------------- | ------------------ |"
 vOutputFile1.puts "| [ObservationNoneOfSpecifiedMaternalMorbidities] | [ProcedureBloodTransfusion], [ConditionPerinealLaceration], [ConditionRupturedUterus], [ProcedureUnplannedHysterectomy], [ObservationICUAdmission] |"
-vOutputFile1.puts "| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureArtificialInsemination], [ProcedureAssistedFertilization], [ObservationPreviousCesarean] |"
+vOutputFile1.puts "| [ObservationNoneOfSpecifiedPregnancyRiskFactors] | [ConditionPrepregnancyDiabetes], [ConditionGestationalDiabetes], [ConditionPrepregnancyHypertension], [ConditionGestationalHypertension], [ConditionEclampsiaHypertension], [ObservationPreviousPretermBirth], [ProcedureInfertilityTreatment], [ProcedureFertilityEnhancingDrugTherapyArtificialInsemination], [ProcedureAssistedReproductiveTechnology], [ObservationPreviousCesarean] |"
 vOutputFile1.puts "| [ObservationUnknownFinalRouteMethodDelivery] | [ProcedureFinalRouteMethodDelivery] |"
 vOutputFile1.puts "{: .grid }"
 

@@ -9,6 +9,7 @@
 # require 'open-uri'
 # download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
 # IO.copy_stream(download1, 'input/mapping/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
+# download1 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv?raw=true')
 # IO.copy_stream(download1, 'input/images/IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv')
 # download2 = URI.open('https://github.com/nightingaleproject/vital_records_sheets/blob/main/Forms_Mapping.csv?raw=true')
 # IO.copy_stream(download2, 'input/mapping/Forms_Mapping.csv')
@@ -98,7 +99,7 @@ NONE_SPECIFIED_DEATH = {
     "ProcedureUnplannedHysterectomy", "ObservationICUAdmission"],
   "ObservationNoneOfSpecifiedPregnancyRiskFactors" => ["ConditionPrepregnancyDiabetes", "ConditionGestationalDiabetes", "ConditionPrepregnancyHypertension", \
     "ConditionGestationalHypertension", "ConditionEclampsiaHypertension", "ObservationPreviousPretermBirth", "ProcedureInfertilityTreatment", \
-    "ProcedureArtificialInsemination", "ProcedureAssistedFertilization", "ObservationPreviousCesarean"],
+    "ProcedureFertilityEnhancingDrugTherapyArtificialInsemination", "ProcedureAssistedReproductiveTechnology", "ObservationPreviousCesarean"],
   "ObservationUnknownFinalRouteMethodDelivery" => ["ProcedureFinalRouteMethodDelivery"]
 }
 
@@ -114,7 +115,7 @@ NONE_SPECIFIED_BIRTH = {
   "ObservationNoneOfSpecifiedObstetricProcedures" => ["ProcedureObstetric"],
   "ObservationNoneOfSpecifiedPregnancyRiskFactors" => ["ConditionPrepregnancyDiabetes", "ConditionGestationalDiabetes", "ConditionPrepregnancyHypertension", \
     "ConditionGestationalHypertension", "ConditionEclampsiaHypertension", "ObservationPreviousPretermBirth", "ProcedureInfertilityTreatment", \
-    "ProcedureArtificialInsemination", "ProcedureAssistedFertilization", "ObservationPreviousCesarean"],
+    "ProcedureFertilityEnhancingDrugTherapyArtificialInsemination", "ProcedureAssistedReproductiveTechnology", "ObservationPreviousCesarean"],
   "ObservationUnknownFinalRouteMethodDelivery" => ["ProcedureFinalRouteMethodDelivery"]
 }
 

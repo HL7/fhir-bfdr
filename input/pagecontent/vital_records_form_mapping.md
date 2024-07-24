@@ -447,13 +447,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>41.9</td>
   <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>41.10</td>
   <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td></td>
 </tr>
 <tr>
@@ -1129,13 +1129,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>14.8</td>
   <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>14.9</td>
   <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td></td>
 </tr>
 <tr>
@@ -2071,13 +2071,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>36.9</td>
   <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>36.10</td>
   <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td></td>
 </tr>
 <tr>
@@ -2271,13 +2271,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>11.7</td>
   <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>11.8</td>
   <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td></td>
 </tr>
 <tr>

@@ -36,6 +36,7 @@ Usage: #example
   * insert addNamedEntryComposition(numberPreviousCesareans, Observation, observation-number-previous-cesareans-carmen-teresa-lee-w-edit)
   * insert addNamedEntryComposition(fetalPresentation, Observation, observation-fetal-presentation-not-named)
   * insert addNamedEntryComposition(finalRouteMethodDelivery, Procedure, procedure-final-route-method-delivery-not-named)
+  * insert addNamedEntryComposition(pregnancyRiskFactors, Condition, condition-gestational-diabetes-carmen-teresa-lee)
   // No maternal morbidity
   // No pregnancy risk factors
 * section[fetus]
