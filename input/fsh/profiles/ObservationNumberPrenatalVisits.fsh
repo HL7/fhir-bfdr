@@ -6,14 +6,13 @@ Title: "Observation - Number of Prenatal Visits"
 Description: "The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits."
 * code = $loinc#68493-6
   * ^short = "Prenatal visits for this pregnancy #"
-* code MS
-* subject 1.. MS
+* subject 1.. 
 * subject only Reference(PatientMotherVitalRecords)
 * effective[x] only dateTime
 // updated to accommodate effective date time inserted everywhere instances
 // * effective[x] only Period
-* effective[x] MS
-* value[x] 1.. MS
+* effective[x] 
+* value[x] 1.. 
 * value[x] only integer
 // Add Edit Flags, a la VRDR 
 * value[x].extension contains

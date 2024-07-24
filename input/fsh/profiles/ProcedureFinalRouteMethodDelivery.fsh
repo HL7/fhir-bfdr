@@ -11,5 +11,5 @@ Description: "This profile represents the final route and method of delivery."
   * ^binding.description = "Delivery Routes (NCHS)"
 * subject only Reference(PatientMotherVitalRecords)
 * reasonReference only Reference(ObservationLaborTrialAttempted)
-* reasonReference MS
+* reasonReference 
   * ^short = "If cesarean, was a trial of labor attempted?"

@@ -7,6 +7,6 @@ Description: "This profile represents an abnormal condition of the newborn of as
 * category = $loinc#73812-0
   * ^short = "Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"
 * code = LocalBFDRCodesCS#assistedventmorethan6hrs
-* code MS
+* code 
   * ^short = "Assisted ventilation required for more than six hours"
 * subject only Reference(PatientChildVitalRecords)

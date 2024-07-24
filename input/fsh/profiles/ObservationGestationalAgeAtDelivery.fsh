@@ -15,7 +15,7 @@ in weeks will be rounded down to an integer."
 * valueQuantity ^short = "Age in weeks or days"
   * code from UnitsOfGestationalAgeVS (required) // = $UCUM#wk (exactly)
   * value 1..1
-* method MS
+* method 
 // Add Edit Flags, a la VRDR 
 * value[x].extension contains
     BypassEditFlag named bypassEditFlag 0..1

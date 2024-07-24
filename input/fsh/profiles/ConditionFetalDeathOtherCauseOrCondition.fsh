@@ -10,9 +10,9 @@ Description: "This Condition profile should be used to indicate other significan
 * code from FetalDeathCauseOrConditionVS (required)
   * ^short = "The value sets contains the list of values used to report initiating cause or condition or other significant causes or conditions contributing to fetal death."
   * ^binding.description = "Fetal Death Cause or Condition (NCHS)"
-  * coding MS
+  * coding 
     * ^short = "The type of cause or condition should be selected from the bound value set."
-  * text MS
+  * text 
     * ^short = "Any further specification should be entered as free text to fully record the provider's view of the cause."
 * subject only Reference(PatientDecedentFetus)
 * clinicalStatus = $condition-clinical#active "Active"

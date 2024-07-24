@@ -6,8 +6,8 @@ Description: "This profile represents the coded initiating cause/condition of fe
 * . ^short = "This profile represents the coded initiating cause/condition of fetal death."
 * code = $loinc#92022-3 "Coded initiating cause or condition of fetal death"
   * ^short = "Coded initiating cause or condition of fetal death"
-* code 1..1 MS 
-* value[x] 1..1 MS
+* code 1..1 
+* value[x] 1..1 
 * value[x] only CodeableConcept
 * value[x] from $2.16.840.1.114222.4.11.7933 (required)
   * ^short = "This value set contains the ICD10 codes for causes of fetal death as defined by the ICD-10-Mortality Fetal Manual (2016)."
