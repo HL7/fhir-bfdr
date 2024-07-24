@@ -754,7 +754,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Assistive Reproductive Technology</td>
   <td>INFT_ART</td>
   <td>Assistive Reproductive Technology as a Risk Factor in Pregnancy</td>
-  <td><a href='StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='StructureDefinition/Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.146'>SNOMED-CT</a></td>
 </tr>
 
