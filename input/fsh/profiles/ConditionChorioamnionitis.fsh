@@ -10,3 +10,4 @@ Description: "This Condition profile indicates a labor and delivery characterist
 * code = $sct#11612004
   * ^short = "Chorioamnionitis (disorder)"
 * subject only Reference(PatientMotherVitalRecords)
+* clinicalStatus = $condition-clinical#active "Active"
