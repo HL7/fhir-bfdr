@@ -3,10 +3,10 @@ Parent: PatientVitalRecords
 Id: Patient-decedent-fetus
 Title: "Patient - Decedent Fetus"
 Description: "A stillborn for whom clinical data is included in the report."
-* extension[birthPlace] MS
+* extension[birthPlace]
   * value[x].state ^short = "State"
   * value[x].district.extension[districtCode] ^short = "County"
-* extension[parentReportedAgeAtDelivery] MS 
+* extension[parentReportedAgeAtDelivery]
   * ^short = "The mother or father's reported age at the time of delivery of the child"
   * extension[reportedAge].value[x] ^short = "Parent's reported age"
   * extension[motherOrFather].valueCodeableConcept ^short = "Indicates mother/Father code"
@@ -19,24 +19,24 @@ Description: "A stillborn for whom clinical data is included in the report."
 * deceasedBoolean.extension[fetalDeath] 1..1
 * deceasedBoolean.extension[fetalDeath].valueBoolean = true
 * multipleBirth[x] only integer
-* multipleBirth[x] MS
+* multipleBirth[x]
   * .extension[bypassEditFlag].value[x]
     * ^short = "To reflect the relevant edit possibilities for plurality."
-  * .extension[multipleBirthTotal] MS
+  * .extension[multipleBirthTotal]
     * ^short = "Where a patient is a part of a multiple delivery, this is the total number of deliveries that occurred in this pregnancy."
     * value[x] ^short = "Plurality"
 
 
 RuleSet: decedentFetusName
-* name MS
-  * family 1.. MS
+* name 
+  * family 1.. 
     * extension[dataAbsentReason] ^short = "When fetus not named use code \"unknown\""
-  * given MS
+  * given 
     * extension[dataAbsentReason] ^short = "When fetus not named use code \"unknown\""
   * use ^short = "The use of a human name"
   * suffix ^short = "Surname suffix"
 
 RuleSet: birthDateAndTime 
 * birthDate 1..
-  * extension[birthTime] MS 
-  * extension[partialDateTime] MS 
+  * extension[birthTime] 
+  * extension[partialDateTime] 

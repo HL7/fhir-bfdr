@@ -5,9 +5,9 @@ Title: "Observation - Coded Other Fetal Death Cause or Condition"
 Description: "This profile represents a coded other significant cause/condition of fetal death."
 * code = $loinc#92023-1 "Coded other significant causes or conditions of fetal death"
   * ^short = "Coded other significant causes or conditions of fetal death"
-* code 1..1 MS 
+* code 1..1 
 * subject only Reference(PatientDecedentFetus)
-* value[x] 1..1 MS
+* value[x] 1..1 
 * value[x] only CodeableConcept
 * value[x] from $2.16.840.1.114222.4.11.7933 (required)
 * value[x] ^short = "This value set contains the ICD10 codes for causes of fetal death as defined by the ICD-10-Mortality Fetal Manual (2016)."  

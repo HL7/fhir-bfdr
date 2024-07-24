@@ -9,6 +9,5 @@ procedures (e.g., IVF, GIFT and ZIFT)."
 * category = $loinc#73775-9
   * ^short = "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]"
 * code = $sct#773261007 
-* code MS
   * ^short = "Procedure relating to reproduction (procedure)"
 * subject only Reference(PatientMotherVitalRecords)

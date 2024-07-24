@@ -9,7 +9,6 @@ Description: "This profile represents information about a particular medical tre
 * category = $loinc#73814-6 
   * ^short = "Obstetric procedures performed [US Standard Certificate of Live Birth]"
 * subject only Reference(PatientMotherVitalRecords)
-* outcome MS
 * outcome from ObstetricProcedureOutcomeVS (required)
   * ^short = "Outcome, if procedure was performed."
   * ^binding.description = "Subset of ProcedureOutcomeCodes(SNOMEDCT) including successful or unsuccessful"
