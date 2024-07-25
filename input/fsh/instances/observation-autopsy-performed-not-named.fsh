@@ -9,4 +9,4 @@ Usage: #example
 * effectiveDateTime = "2019-12-02"
 * performer = Reference(practitioner-vital-records-janet-seito)
 //* valueCodeableConcept = $sct#716347009 "Autopsy performed (situation)"
-* valueCodeableConcept = $v2-0136#Y "Yes"
+* valueCodeableConcept = $sct#398166005 "Performed"
