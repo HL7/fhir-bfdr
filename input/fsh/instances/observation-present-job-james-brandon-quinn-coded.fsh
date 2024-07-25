@@ -7,6 +7,10 @@ Usage: #example
 * extension[roleMotherOrFather].valueCodeableConcept = $v3-RoleCode#FTH "father"
 * subject = Reference(patient-child-babyg-quinn)
 * focus.display = "James Brandon Quinn - Father"
-* valueCodeableConcept.text = "Lawyer"
-* component[odh-PastOrPresentIndustry].valueCodeableConcept.text = "Legal Services"
+
 * effectivePeriod.start = "2019-01-09"
+* valueCodeableConcept.text = "Lawyer"
+* valueCodeableConcept = urn:oid:2.16.840.1.114222.4.11.8068#23-1011
+* component[odh-PastOrPresentIndustry]
+  * valueCodeableConcept.text = "Legal Services"
+  * valueCodeableConcept = urn:oid:2.16.840.1.114222.4.11.8067#5411
