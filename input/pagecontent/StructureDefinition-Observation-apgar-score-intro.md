@@ -72,7 +72,7 @@ Birth certificates only require 5 and 10 minute timings. Other use cases may req
 <tbody>
 <tr>
   <td style='text-align: center'>51</td>
-  <td>Apgar Score:</td>
+  <td>Apgar Score</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/birth11-03final-ACC.pdf'> Certificate of Live Birth</a></td>
 </tr>

@@ -466,7 +466,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>41.11</td>
   <td>Risk factors in this pregnancy: previous cesarean delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
-  <td></td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>41.12</td>
@@ -1148,7 +1148,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>14.10</td>
   <td>Risk factors in this pregnancy: previous cesarean delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
-  <td></td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>14.11</td>
@@ -2090,7 +2090,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>36.11</td>
   <td>Risk factors in this pregnancy: Previous cesarean delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
-  <td></td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>36.12</td>
@@ -2290,7 +2290,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>11.9</td>
   <td>Risk factors in this pregnancy: previous cesarean delivery</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Observation-number-previous-cesareans.html'>ObservationNumberPreviousCesareans</a></td>
-  <td></td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>11.10</td>
