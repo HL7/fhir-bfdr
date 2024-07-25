@@ -1,5 +1,5 @@
 Instance: observation-autopsy-performed-not-named
-InstanceOf: ObservationAutopsyPerformedIndicatorVitalRecords
+InstanceOf: ObservationAutopsyPerformedIndicator
 Title: "Observation - Autopsy Performed - Fetus Not Named"
 Description: "Observation - Autopsy Performed: Fetus Not Named example"
 Usage: #example
