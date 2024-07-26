@@ -683,7 +683,11 @@ def createSDIntros(pIG, pProfileIntrosSpreadsheet, pIJEMappingSpreadsheet, pForm
         end
         formName = row[FORMS_FORM_COL].to_s.partition('Standard').last
         if row[FORMS_FIELD_COL].to_s.strip.empty?
-          fhirField = "-"
+          if !row[FORMS_CONTEXT_COL].to_s.strip.empty?
+            fhirField = row[FORMS_CONTEXT_COL].to_s.strip
+          else
+            fhirField = "-"
+          end
         else
           fhirField = row[FORMS_FIELD_COL].to_s
         end
