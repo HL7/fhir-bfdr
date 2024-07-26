@@ -738,7 +738,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Artificial or Intrauterine Insemination</td>
   <td>INFT_DRG</td>
   <td>Artificial or Intrauterine Insemination as a Risk Factor in Pregnancy</td>
-  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
+  <td>[ProcedureArtificialInsemination]</td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.145'>SNOMED-CT</a></td>
 </tr>
 
@@ -754,7 +754,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Assistive Reproductive Technology</td>
   <td>INFT_ART</td>
   <td>Assistive Reproductive Technology as a Risk Factor in Pregnancy</td>
-  <td><a href='StructureDefinition/Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
+  <td>[ProcedureAssistedFertilization]</td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.146'>SNOMED-CT</a></td>
 </tr>
 
@@ -802,7 +802,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Autopsy Performed</td>
   <td>AUTOP</td>
   <td>Autopsy was performed</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-autopsy-performed-indicator-vr.html'>ObservationAutopsyPerformedIndicatorVitalRecords</a></td>
+  <td><a href='StructureDefinition-Observation-autopsy-performed-indicator.html'>ObservationAutopsyPerformedIndicator</a></td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.23.8.1'>SNOMED-CT</a></td>
 </tr>
 
@@ -850,7 +850,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Pregnancy Resulting From Fertility Enhancing Drugs</td>
   <td>INFT_DRG*</td>
   <td>Indicate whether a pregnancy resulted from fertility enhancing drugs</td>
-  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
+  <td>[ProcedureArtificialInsemination]</td>
   <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7423'>SNOMED-CT</a></td>
 </tr>
 
@@ -1026,7 +1026,7 @@ Note: In some cases, there is not a direct mapping between data element and IJE 
   <td style='text-align: center'>Fertility Enhancing Drugs Medications</td>
   <td>INFT_DRG</td>
   <td>Fertility Enhancing Drugs were administered as a risk factor for pregnancy</td>
-  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
+  <td>[ProcedureArtificialInsemination]</td>
   <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=1.3.6.1.4.1.19376.1.7.3.1.1.13.8.144'>RxNorm</a></td>
 </tr>
 

@@ -1935,7 +1935,7 @@ U = Unknown",,BFDR,ObservationFetalDeathTimePoint,value,codeable,[FetalDeathTime
 1329,ITOP,147,1189,1,Reason for Termination -- Sexual assault,REASON_ASSAULT,"Y, N",,not implemented,not implemented,,,,,,,,
 965,Fetal Death,148,533,1,Was an Autopsy Performed?,AUTOP,"Y = Yes
 N = No
-P = Planned",,VRCPL,ObservationAutopsyPerformedIndicatorVitalRecords,value,codeable,[ValueSetYesNoUnknownNotApplicableVitalRecords],B,,,,
+P = Planned",,BFDR,ObservationAutopsyPerformedIndicator,value,codeable,[PerformedNotPerformedPlannedVS],B,,,,
 419,Surveillance,148,3495,10,Mother's Suffix,MOTHERSSUFFIX,,i,VRDR,DecedentMother,"name.suffix , name.use = official",string,-,,,,,
 160,Mortality,148,1505,28,Decedent's Residence - Street name,STNAME_R,,,VRDR,Decedent,address.extension[stname],string,-,,y,,,
 1330,ITOP,148,1190,1,Reason for Termination -- Incest,REASON_INCEST,"Y, N",,not implemented,not implemented,,,,,,,,
@@ -1947,7 +1947,7 @@ year of child's birth, 8888, 9999",,,,,,,,,,,
 1490,Birth Infant Death,149,803,2,Number of Cigarettes Smoked in 3 months prior to Pregnancy,CIGPN,"00-98, 99",,,,,,,,,,,
 966,Fetal Death,149,534,1,Was a Histological Placental Examination Performed?,HISTOP,"Y = Yes
 N = No
-P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,[HistologicalPlacentalExaminationVS],B,,,,
+P = Planned",,BFDR,ObservationHistologicalPlacentalExamPerformed,value,codeable,[PerformedNotPerformedPlannedVS],B,,,,
 420,Surveillance,149,3505,30,Informant's Relationship,INFORMRELATE,,i,VRDR,Decedent,contact.type.text ,string (30 characters),-,,,,,
 161,Mortality,149,1533,10,Decedent's Residence - Street designator,STDESIG_R,,,VRDR,Decedent,address.extension[stdesig],string,-,,y,,,
 1331,ITOP,149,1191,1,Reason for Termination -- Contraceptive failure,REASON_CONTRA_FAIL,"Y, N",,not implemented,not implemented,,,,,,,,
