@@ -27,9 +27,9 @@
 <tbody>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
-  <td>149</td>
-  <td>Was a Histological Placental Examination Performed?</td>
-  <td>HISTOP</td>
+  <td>148</td>
+  <td>Was an Autopsy Performed?</td>
+  <td>AUTOP</td>
   <td>value</td>
   <td>codeable</td>
   <td><a href='ValueSet-ValueSet-performed-not-performed-planned.html'>PerformedNotPerformedPlannedVS</a></td>
@@ -60,14 +60,14 @@
 </thead>
 <tbody>
 <tr>
-  <td style='text-align: center'>18g</td>
-  <td>Was a Histological Placental Examination Performed?</td>
+  <td style='text-align: center'>18f</td>
+  <td>Was an Autopsy Performed?</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
-  <td style='text-align: center'>29</td>
-  <td>Was a histological placental examination performed?</td>
+  <td style='text-align: center'>28</td>
+  <td>Was an autopsy performed?</td>
   <td>value</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
