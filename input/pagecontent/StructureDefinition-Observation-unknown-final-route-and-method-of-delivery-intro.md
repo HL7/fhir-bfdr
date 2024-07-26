@@ -1,3 +1,5 @@
+Presence of this observation indicates that the final route and method of delivery is unknown. 
+If the unknown observation is present in the bundle, then the <a href='StructureDefinition-Procedure-final-route-method-delivery.html'>ProcedureFinalRouteMethodDelivery</a> should not be used (see <a href='usage.html#method-of-delivery'>note on missing method of delivery data</a>)
 
 ### IJE Mapping
 
@@ -76,6 +78,7 @@
 
 </details>
 <p></p>
+
 
 ### Form Mapping
 <details>

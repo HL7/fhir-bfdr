@@ -112,19 +112,19 @@ See [Patient Worksheet Questionnaires](patient_worksheet_questionnaires.html) fo
 85,Input,ObservationMotherPrepregnancyWeight,Observation-mother-prepregnancy-weight,The edit flag extension supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case.  The validation checks  are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the Birth Edit Specifications for the 2003 Proposed Revision of the U.S. Standard Certificate of Birth and the Fetal Death Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death.,x,x,BFDR
 86,Input,ObservationMotherReceivedWICFood,Observation-mother-received-wic-food,,x,x,BFDR
 87,Input,ObservationNICUAdmission,Observation-nicu-admission,,x,x,BFDR
-88,Input,ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn,Observation-none-of-specified-abnormal-conditions-of-newborn,"Presence of this observation indicates that none of the abnormal conditions of newborn specifyable in this IG are reported. 
+88,Input,ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn,Observation-none-of-specified-abnormal-conditions-of-newborn,"Presence of this observation indicates that none of the abnormal conditions of newborn specifiable in this IG are reported. 
 If the none-of-the-above observation is present in the bundle, then none of the abnormal conditions listed in the IJE mapping table below should be used (see [note on missing abnormal conditions of newborn data])",x,x,BFDR
-89,Input,ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery,Observation-none-of-specified-characteristics-labor-delivery,"Presence of this observation indicates that none of the characteristics of labor and delivery specifyable in this IG are reported. 
+89,Input,ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery,Observation-none-of-specified-characteristics-labor-delivery,"Presence of this observation indicates that none of the characteristics of labor and delivery specifiable in this IG are reported. 
 If the none-of-the-above observation is present in the bundle, then none of the characteristics of labor and delivery listed in the IJE mapping table below should be used (see [note on missing characteristics of labor and delivery data])",x,x,BFDR
-90,Input,ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn,Observation-none-congenital-anomolies-of-the-newborn,"Presence of this observation indicates that none of the congenital anomalies specifyable in this IG are reported. 
+90,Input,ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn,Observation-none-congenital-anomolies-of-the-newborn,"Presence of this observation indicates that none of the congenital anomalies specifiable in this IG are reported. 
 If the none-of-the-above observation is present in the bundle, then none of the congenital anomalies listed in the IJE mapping table below should be used (see [note on missing congenital anomaly data])",x,x,BFDR
-91,Input,ObservationNoneOfSpecifiedMaternalMorbidities,Observation-none-of-specified-maternal-morbidities,"Presence of this observation indicates that none of the maternal morbidities specifyable in this IG are reported. 
+91,Input,ObservationNoneOfSpecifiedMaternalMorbidities,Observation-none-of-specified-maternal-morbidities,"Presence of this observation indicates that none of the maternal morbidities specifiable in this IG are reported. 
 If the none-of-the-above observation is present in the bundle, then none of the maternal morbidities listed in the IJE mapping table below should be used (see [note on missing maternal morbidity data])",x,x,BFDR
-92,Input,ObservationNoneOfSpecifiedPregnancyRiskFactors,Observation-none-of-specified-pregnancy-risk-factors,"Presence of this observation indicates that none of the pregnancy risk factors specifyable in this IG are reported.
+92,Input,ObservationNoneOfSpecifiedPregnancyRiskFactors,Observation-none-of-specified-pregnancy-risk-factors,"Presence of this observation indicates that none of the pregnancy risk factors specifiable in this IG are reported.
 If the none-of-the-above observation is present in the bundle, then none of the pregnancy risk factors listed in the IJE mapping table below should be used (see [note on missing infections present data])",x,x,BFDR
-93,Input,ObservationNoneOfSpecifiedObstetricProcedures,Observation-none-of-specified-obstetric-procedures,"Presence of this observation indicates that none of the obstetric procedures specifyable in this IG are reported. 
+93,Input,ObservationNoneOfSpecifiedObstetricProcedures,Observation-none-of-specified-obstetric-procedures,"Presence of this observation indicates that none of the obstetric procedures specifiable in this IG are reported. 
 If the none-of-the-above observation is present in the bundle, then none of the obstetric procedures listed in the IJE mapping table below should be used (see [note on missing obstetric procedures data])",x,x,BFDR
-94,Input,ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy,Observation-no-infections-present-during-pregnancy,"Presence of this observation indicates that none of the infections specifyable in this IG are reported. 
+94,Input,ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy,Observation-no-infections-present-during-pregnancy,"Presence of this observation indicates that none of the infections specifiable in this IG are reported. 
 If the none-of-the-above observation is present in the bundle, then none of the infections listed in the IJE mapping table below should be used (see [note on missing infections present data])",x,x,BFDR
 95,Input,ObservationNumberBirthsNowDead,Observation-number-births-now-dead,,x,x,BFDR
 96,Input,ObservationNumberBirthsNowLiving,Observation-number-births-now-living,,x,x,BFDR
@@ -147,7 +147,8 @@ This information is currently not used by NCHS, but may be of interest for inter
 109,Input,ObservationSSNRequestedForChild,Observation-ssn-requested-for-child,,x,x,BFDR
 110,Input,ObservationSteroidsFetalLungMaturation,Observation-steroids-fetal-lung-maturation,,x,x,BFDR
 111,Input,ObservationTobaccoUseContributedToDeathVitalRecords,Observation-tobacco-use-contributed-to-death-vr,,,,VRCPL
-112,Input,ObservationUnknownFinalRouteMethodDelivery,Observation-unknown-final-route-and-method-of-delivery,,x,x,BFDR
+112,Input,ObservationUnknownFinalRouteMethodDelivery,Observation-unknown-final-route-and-method-of-delivery,"Presence of this observation indicates that the final route and method of delivery is unknown. 
+If the unknown observation is present in the bundle, then the [ProcedureFinalRouteMethodDelivery] should not be used (see [note on missing method of delivery data])",x,x,BFDR
 113,Input,ObservationUsualWorkVitalRecords,Observation-usual-work-vr,,,x,VRCPL
 114,Input,ParametersCodingStatusValuesVitalRecords,Parameters-coding-status-values-vr,,,,VRCPL
 115,Input,PatientChildVitalRecords,Patient-child-vr,"This profile adds further constraints to the [US Core Patient]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) such as:
