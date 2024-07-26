@@ -34,7 +34,7 @@ If the unknown observation is present in the bundle, then the <a href='Structure
   <td>ROUT</td>
   <td>code</td>
   <td>codeable</td>
-  <td>See  <a href='usage.html#method-of-delivery'>note on missing method of delivery data</a></td>
+  <td><a href='ValueSet-ValueSet-delivery-routes.html'>DeliveryRoutesVS</a> unless unknown, <br />See  <a href='usage.html#method-of-delivery'>note on missing method of delivery data</a></td>
 </tr>
 
 </tbody>
@@ -70,7 +70,7 @@ If the unknown observation is present in the bundle, then the <a href='Structure
   <td>ROUT</td>
   <td>code</td>
   <td>codeable</td>
-  <td>See  <a href='usage.html#method-of-delivery'>note on missing method of delivery data</a></td>
+  <td><a href='ValueSet-ValueSet-delivery-routes.html'>DeliveryRoutesVS</a> unless unknown, <br />See  <a href='usage.html#method-of-delivery'>note on missing method of delivery data</a></td>
 </tr>
 
 </tbody>

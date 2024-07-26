@@ -215,13 +215,13 @@
 <tr>
   <td style='text-align: center'>2</td>
   <td>Time of Delivery</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.birthDate.extension:birthTime</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>3</td>
   <td>Sex</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.extension:birthsex</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
@@ -233,25 +233,25 @@
 <tr>
   <td style='text-align: center'>5a</td>
   <td>City, Town, or Location of Delivery</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>5b</td>
   <td>Zip Code of Delivery</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>6</td>
   <td>County of Delivery</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>33</td>
   <td>Plurality</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.multipleBirthInteger.extension:multipleBirthTotal</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/FDEATH11-03finalACC.pdf'> Report of Fetal Death</a></td>
 </tr>
 <tr>
@@ -263,13 +263,13 @@
 <tr>
   <td style='text-align: center'>3</td>
   <td>City, Town or Location of delivery</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>4</td>
   <td>County of delivery</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.extension:birthPlace</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
@@ -281,19 +281,19 @@
 <tr>
   <td style='text-align: center'>13</td>
   <td>Time of delivery</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.extension:birthTime</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>21</td>
   <td>Sex</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.extension:birthsex</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>22</td>
   <td>Plurality</td>
-  <td>-</td>
+  <td>Patient-decedent-fetus.multipleBirth[x].extension:multipleBirthTotal</td>
   <td><a href='https://www.cdc.gov/nchs/data/dvs/fetal-death-facility-worksheet-2019-508.pdf'> Facility Worksheet for the Report of Fetal Death</a></td>
 </tr>
 <tr>
