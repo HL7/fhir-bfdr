@@ -1,0 +1,802 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2><pre>
+
+</pre><hr/>
+<a name="l1"> </a><h3>1</h3>
+<pre>
+Request: 
+
+GET http://tx.fhir.org/r4/metadata?_summary=true HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1519
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:05:06 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1004383
+
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.4.6","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-07-30T21:05:06.724Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.4.6","releaseDate" : "2024-05-18T12:36:55.539Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+
+</pre><hr/>
+<a name="l2"> </a><h3>2</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.840.1.114222.4.11.8068","code":"47-2031"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:891
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:07:04 GMT
+last-modified:Tue, 30 Jul 2024 21:07:04 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1004984
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.840.1.114222.4.11.8068"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.840.1.114222.4.11.8068"},{"name" : "code","valueCode" : "47-2031"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
+
+</pre><hr/>
+<a name="l3"> </a><h3>3</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.840.1.114222.4.11.8067","code":"23"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:886
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:07:04 GMT
+last-modified:Tue, 30 Jul 2024 21:07:04 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1004985
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.840.1.114222.4.11.8067"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.840.1.114222.4.11.8067"},{"name" : "code","valueCode" : "23"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
+
+</pre><hr/>
+<a name="l4"> </a><h3>4</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","id":"exp-params","parameter":[{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"58533008","display":"Artificial Insemination (procedure)"},{"code":"265064001","display":"Intrauterine artificial insemination (procedure)"},{"code":"445151000124101","display":"Fertility Enhancing Drug Therapy Procedure (procedure)"}]}]}}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:917
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:17 GMT
+last-modified:Tue, 30 Jul 2024 21:09:17 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005331
+
+{"resourceType" : "ValueSet","status" : "active","expansion" : {"identifier" : "urn:uuid:f6e94155-170f-4593-84d6-dc733f8e1e21","timestamp" : "2024-07-30T21:09:17.895Z","total" : 3,"offset" : 0,"parameter" : [{"name" : "excludeNested","valueBoolean" : false},{"name" : "offset","valueInteger" : 0},{"name" : "count","valueInteger" : 1000},{"name" : "used-codesystem","valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"},{"name" : "version","valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"}],"contains" : [{"system" : "http://snomed.info/sct","code" : "58533008","display" : "Artificial insemination"},{"system" : "http://snomed.info/sct","code" : "265064001","display" : "Intrauterine artificial insemination"},{"system" : "http://snomed.info/sct","code" : "445151000124101","display" : "Fertility enhancing drug therapy (procedure)"}]}}
+
+</pre><hr/>
+<a name="l5"> </a><h3>5</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"85699-7"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:288
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005378
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "85699-7"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Autopsy was performed"}]}
+
+</pre><hr/>
+<a name="l6"> </a><h3>6</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"69436-4"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:292
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005380
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "69436-4"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Autopsy results available"}]}
+
+</pre><hr/>
+<a name="l7"> </a><h3>7</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"85104-8"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:306
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005381
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "85104-8"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Compensation and sector employment type"}]}
+
+</pre><hr/>
+<a name="l8"> </a><h3>8</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"87707-6"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:301
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005382
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "87707-6"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Job supervisory level or pay grade"}]}
+
+</pre><hr/>
+<a name="l9"> </a><h3>9</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"63761-1"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:329
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005383
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "63761-1"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "What were your main activities or duties for this job [NHANES]"}]}
+
+</pre><hr/>
+<a name="l10"> </a><h3>10</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"87729-0"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:297
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005384
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "87729-0"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "History of Occupational hazard"}]}
+
+</pre><hr/>
+<a name="l11"> </a><h3>11</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"74159-5"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:286
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005385
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "74159-5"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Work schedule NIOSH"}]}
+
+</pre><hr/>
+<a name="l12"> </a><h3>12</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"74160-3"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:285
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005386
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "74160-3"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Work days per week"}]}
+
+</pre><hr/>
+<a name="l13"> </a><h3>13</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"87512-0"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:285
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005387
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "87512-0"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Work hours per day"}]}
+
+--- 1 -----------------
+Request: 
+
+GET http://tx.fhir.org/r4/metadata?_summary=true HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1519
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:05:06 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1004383
+
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.4.6","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-07-30T21:05:06.724Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.4.6","releaseDate" : "2024-05-18T12:36:55.539Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+
+--- 2 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.840.1.114222.4.11.8068","code":"47-2031"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:891
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:07:04 GMT
+last-modified:Tue, 30 Jul 2024 21:07:04 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1004984
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.840.1.114222.4.11.8068"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.840.1.114222.4.11.8068"},{"name" : "code","valueCode" : "47-2031"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
+
+--- 3 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.840.1.114222.4.11.8067","code":"23"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:886
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:07:04 GMT
+last-modified:Tue, 30 Jul 2024 21:07:04 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1004985
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "urn:oid:2.16.840.1.114222.4.11.8067"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "urn:oid:2.16.840.1.114222.4.11.8067"},{"name" : "code","valueCode" : "23"},{"name" : "message","valueString" : "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
+
+--- 4 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","id":"exp-params","parameter":[{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://snomed.info/sct","concept":[{"code":"58533008","display":"Artificial Insemination (procedure)"},{"code":"265064001","display":"Intrauterine artificial insemination (procedure)"},{"code":"445151000124101","display":"Fertility Enhancing Drug Therapy Procedure (procedure)"}]}]}}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:917
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:17 GMT
+last-modified:Tue, 30 Jul 2024 21:09:17 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005331
+
+{"resourceType" : "ValueSet","status" : "active","expansion" : {"identifier" : "urn:uuid:f6e94155-170f-4593-84d6-dc733f8e1e21","timestamp" : "2024-07-30T21:09:17.895Z","total" : 3,"offset" : 0,"parameter" : [{"name" : "excludeNested","valueBoolean" : false},{"name" : "offset","valueInteger" : 0},{"name" : "count","valueInteger" : 1000},{"name" : "used-codesystem","valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"},{"name" : "version","valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"}],"contains" : [{"system" : "http://snomed.info/sct","code" : "58533008","display" : "Artificial insemination"},{"system" : "http://snomed.info/sct","code" : "265064001","display" : "Intrauterine artificial insemination"},{"system" : "http://snomed.info/sct","code" : "445151000124101","display" : "Fertility enhancing drug therapy (procedure)"}]}}
+
+--- 5 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"85699-7"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:288
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005378
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "85699-7"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Autopsy was performed"}]}
+
+--- 6 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"69436-4"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:292
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005380
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "69436-4"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Autopsy results available"}]}
+
+--- 7 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"85104-8"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:306
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005381
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "85104-8"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Compensation and sector employment type"}]}
+
+--- 8 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"87707-6"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:301
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005382
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "87707-6"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Job supervisory level or pay grade"}]}
+
+--- 9 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"63761-1"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:329
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005383
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "63761-1"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "What were your main activities or duties for this job [NHANES]"}]}
+
+--- 10 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"87729-0"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:297
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005384
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "87729-0"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "History of Occupational hazard"}]}
+
+--- 11 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"74159-5"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:286
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005385
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "74159-5"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Work schedule NIOSH"}]}
+
+--- 12 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"74160-3"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:285
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005386
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "74160-3"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Work days per week"}]}
+
+--- 13 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept-Charset: UTF-8
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"87512-0"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"63aa5d11-af4e-43d3-9d23-0430ae67dd58"},{"name":"system-version","valueUri":"http://snomed.info/sct|http://snomed.info/sct/731000124108"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:285
+content-type:application/fhir+json
+date:Tue, 30 Jul 2024 21:09:40 GMT
+last-modified:Tue, 30 Jul 2024 21:09:40 GMT
+pragma:no-cache
+server:nginx
+x-request-id:150-1005387
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : true},{"name" : "system","valueUri" : "http://loinc.org"},{"name" : "code","valueCode" : "87512-0"},{"name" : "version","valueString" : "2.77"},{"name" : "display","valueString" : "Work hours per day"}]}
+</pre></head></html>

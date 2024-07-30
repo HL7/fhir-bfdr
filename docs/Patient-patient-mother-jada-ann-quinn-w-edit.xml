@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-mother-jada-ann-quinn-w-edit"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Jada Ann Quinn (OFFICIAL)</b> female, DoB: 1985-01-15 ( Social Security number: <a href="http://terminology.hl7.org/5.0.0/NamingSystem-ssn.html">#</a>132225986 (use: USUAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">Medical Record Number: 1032702 (use: USUAL)</td></tr><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt. Name:</td><td colspan="3">Jada Ann King (MAIDEN)</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 1-(404)555-1212(HOME)</li><li><a href="mailto:jadaann.quinn@example.com">jadaann.quinn@example.com</a></li><li>1875 West Morton Avenue Salt Lake City UT 84116 US (HOME)</li><li>1848 South 1300 East Salt Lake City UT 84401 US (BILLING)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2186-5">CDC Race and Ethnicity</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-birthPlace.html">Patient Birth Place:</a></td><td colspan="3"><ul><li>UT </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension:</a></td><td colspan="3"><ul><li>F</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-1002-5">CDC Race and Ethnicity</a> 1002-5: American Indian or Alaska Native</li><li>text: White, American Indian or Alaska Native</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="1002-5"/>
+        <display value="American Indian or Alaska Native"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="White, American Indian or Alaska Native"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2186-5"/>
+        <display value="Not Hispanic or Latino"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Not Hispanic or Latino"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+    <valueCode value="F"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <state value="UT"/>
+    </valueAddress>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="SS"/>
+        <display value="Social Security number"/>
+      </coding>
+    </type>
+    <system value="http://hl7.org/fhir/sid/us-ssn"/>
+    <value value="132225986"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical Record Number"/>
+      </coding>
+    </type>
+    <system value="http://hospital.smarthealthit.org"/>
+    <value value="1032702"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Quinn"/>
+    <given value="Jada"/>
+    <given value="Ann"/>
+  </name>
+  <name>
+    <use value="maiden"/>
+    <family value="King"/>
+    <given value="Jada"/>
+    <given value="Ann"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="1-(404)555-1212"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="jadaann.quinn@example.com"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1985-01-15">
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+          <code value="0"/>
+          <display value="Edit Passed"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </birthDate>
+  <address>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr">
+      <valueCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </valueCoding>
+    </extension>
+    <use value="home"/>
+    <line value="1875 West Morton Avenue"/>
+    <city value="Salt Lake City"/>
+    <district value="Salt Lake"/>
+    <state value="UT"/>
+    <postalCode value="84116"/>
+    <country value="US"/>
+  </address>
+  <address>
+    <use value="billing"/>
+    <line value="1848 South 1300 East"/>
+    <city value="Salt Lake City"/>
+    <state value="UT"/>
+    <postalCode value="84401"/>
+    <country value="US"/>
+  </address>
+</Patient>

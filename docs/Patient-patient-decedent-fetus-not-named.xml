@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-decedent-fetus-not-named"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>null (OFFICIAL)</b> female, DoB: 2019-01-09 ( Medical Record Number: 9932702 (use: USUAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td>true</td><td style="background-color: #f3f5da" title="Known multipleBirth status of Patient">Multiple Birth:</td><td colspan="3">3</td></tr><tr><td style="background-color: #f3f5da" title="This Extension profile represents the reported age of the parent (either the gestational mother or the natural father - as defined by NCHS) at the delivery time of the newborn or fetus. 
+A required code indicates whether the mother or father's age is provided. It can optionally contain a reference to the reporter (**US Core Patient Profile** or **US Core RelatedPerson Profile**).">Reported Parent Age At Delivery Vital Records:</td><td colspan="3"><ul><li>reportedAge: 34 a</li><li>motherOrFather: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}">mother</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="This Extension profile represents the reported age of the parent (either the gestational mother or the natural father - as defined by NCHS) at the delivery time of the newborn or fetus. 
+A required code indicates whether the mother or father's age is provided. It can optionally contain a reference to the reporter (**US Core Patient Profile** or **US Core RelatedPerson Profile**).">Reported Parent Age At Delivery Vital Records:</td><td colspan="3"><ul><li>reportedAge: 35 a</li><li>motherOrFather: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}">father</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-birthPlace.html">Patient Birth Place:</a></td><td colspan="3"><ul><li>Ann Arbor MI 48103 </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension:</a></td><td colspan="3"><ul><li>F</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+    <valueCode value="F"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <city value="Ann Arbor"/>
+      <state value="MI"/>
+      <postalCode value="48103"/>
+    </valueAddress>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr">
+    <extension url="reportedAge">
+      <valueQuantity>
+        <value value="34"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="a"/>
+      </valueQuantity>
+    </extension>
+    <extension url="motherOrFather">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+          <code value="MTH"/>
+          <display value="mother"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr">
+    <extension url="reportedAge">
+      <valueQuantity>
+        <value value="35"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="a"/>
+      </valueQuantity>
+    </extension>
+    <extension url="motherOrFather">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+          <code value="FTH"/>
+          <display value="father"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical Record Number"/>
+      </coding>
+    </type>
+    <system value="http://hospital.smarthealthit.org"/>
+    <value value="9932702"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </family>
+  </name>
+  <gender value="female"/>
+  <birthDate value="2019-01-09">
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+      <valueDateTime value="2019-01-09T18:23:00-07:00"/>
+    </extension>
+  </birthDate>
+  <deceasedBoolean value="true">
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr">
+      <valueBoolean value="true"/>
+    </extension>
+  </deceasedBoolean>
+  <multipleBirthInteger value="3"/>
+</Patient>

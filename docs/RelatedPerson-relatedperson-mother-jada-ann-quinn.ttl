@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-mother-jada-ann-quinn> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "relatedperson-mother-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-jada-ann-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><p><b>identifier</b>: Social Security number: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-ssn.html\">#</a>132225986 (use: USUAL)</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Jada Ann Quinn (OFFICIAL)</p><p><b>telecom</b>: ph: 1-(404)555-1212(HOME), <a href=\"mailto:jadaann.quinn@example.com\">jadaann.quinn@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1985-01-15</p><p><b>address</b>: 1875 West Morton Avenue Salt Lake City UT 84116 US (HOME)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SS" ] ;
+         fhir:display [ fhir:v "Social Security number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "132225986" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-child-babyg-quinn" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GESTM" ] ;
+       fhir:display [ fhir:v "gestational mother" ]
+     ] ) ;
+     fhir:text [ fhir:v "Gestational Mother" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Quinn" ] ;
+     fhir:given ( [ fhir:v "Jada" ] [ fhir:v "Ann" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "1-(404)555-1212" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "jadaann.quinn@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-01-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "1875 West Morton Avenue" ] ) ;
+     fhir:city [ fhir:v "Salt Lake City" ] ;
+     fhir:district [ fhir:v "Salt Lake" ] ;
+     fhir:state [ fhir:v "UT" ] ;
+     fhir:postalCode [ fhir:v "84116" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

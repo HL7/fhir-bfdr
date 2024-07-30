@@ -1,0 +1,135 @@
+{
+  "resourceType" : "Patient",
+  "id" : "patient-child-babyg-quinn-w-edit",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-child-vr"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Baby G Quinn (OFFICIAL)</b> female, DoB: 2019-02-12 ( Medical Record Number:\u00a09932702\u00a0(use:\u00a0USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td>false</td><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">1</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2186-5\">CDC Race and Ethnicity</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This Extension profile represents the reported age of the parent (either the gestational mother or the natural father - as defined by NCHS) at the delivery time of the newborn or fetus. \nA required code indicates whether the mother or father's age is provided. It can optionally contain a reference to the reporter (**US Core Patient Profile** or **US Core RelatedPerson Profile**).\">Reported Parent Age At Delivery Vital Records:</td><td colspan=\"3\"><ul><li>reportedAge: 34 a</li><li>motherOrFather: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">mother</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This Extension profile represents the reported age of the parent (either the gestational mother or the natural father - as defined by NCHS) at the delivery time of the newborn or fetus. \nA required code indicates whether the mother or father's age is provided. It can optionally contain a reference to the reporter (**US Core Patient Profile** or **US Core RelatedPerson Profile**).\">Reported Parent Age At Delivery Vital Records:</td><td colspan=\"3\"><ul><li>reportedAge: 35 a</li><li>motherOrFather: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}\">father</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place:</a></td><td colspan=\"3\"><ul><li>Salt Lake City UT </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9).\"><a href=\"http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension:</a></td><td colspan=\"3\"><ul><li>F</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2106-3\">CDC Race and Ethnicity</a> 2106-3: White</li><li>text: White</li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2106-3",
+        "display" : "White"
+      }
+    },
+    {
+      "url" : "text",
+      "valueString" : "White"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2186-5",
+        "display" : "Not Hispanic or Latino"
+      }
+    },
+    {
+      "url" : "text",
+      "valueString" : "Not Hispanic or Latino"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+    "valueCode" : "F"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress" : {
+      "city" : "Salt Lake City",
+      "district" : "Salt Lake",
+      "state" : "UT"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "reportedAge",
+      "valueQuantity" : {
+        "value" : 34,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      }
+    },
+    {
+      "url" : "motherOrFather",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MTH",
+          "display" : "mother"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"
+  },
+  {
+    "extension" : [{
+      "url" : "reportedAge",
+      "valueQuantity" : {
+        "value" : 35,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      }
+    },
+    {
+      "url" : "motherOrFather",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "FTH",
+          "display" : "father"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"
+  }],
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR",
+        "display" : "Medical Record Number"
+      }]
+    },
+    "system" : "http://hospital.smarthealthit.org",
+    "value" : "9932702"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Quinn",
+    "given" : ["Baby",
+    "G"]
+  }],
+  "gender" : "female",
+  "birthDate" : "2019-02-12",
+  "_birthDate" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+      "valueDateTime" : "2019-02-12T13:00:00-07:00"
+    }]
+  },
+  "deceasedBoolean" : false,
+  "multipleBirthInteger" : 1,
+  "_multipleBirthInteger" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags",
+          "code" : "1queriedCorrect",
+          "display" : "Queried, and Correct"
+        }]
+      }
+    }]
+  }
+}
