@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CodeSystem-edit-flags"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1correctOutOfRange<a name=\"CodeSystem-edit-flags-1correctOutOfRange\"> </a></td><td>Queried data correct, out of range</td><td>Queried data correct, out of range</td></tr><tr><td style=\"white-space:nowrap\">1failedVerified<a name=\"CodeSystem-edit-flags-1failedVerified\"> </a></td><td>Edit Failed, Verified</td><td>Edit Failed, Verified</td></tr><tr><td style=\"white-space:nowrap\">2failedBirthWeightGestationEdit<a name=\"CodeSystem-edit-flags-2failedBirthWeightGestationEdit\"> </a></td><td>Queried, failed birthweight/gestation edit</td><td>Queried, failed birthweight/gestation edit</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Preview3"] ; # 
+  fhir:name [ fhir:v "EditFlagsCS"] ; # 
+  fhir:title [ fhir:v "Birth Edit Flags"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-30T17:05:21-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This code system contains codes to represent edit flags specific to BFDR. Additional edit flag codes are located in [CodeSystemEditFlagsVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/CodeSystem-CodeSystem-vr-edit-flags.html)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1correctOutOfRange" ] ;
+     fhir:display [ fhir:v "Queried data correct, out of range" ] ;
+     fhir:definition [ fhir:v "Queried data correct, out of range" ]
+  ] [
+     fhir:code [ fhir:v "1failedVerified" ] ;
+     fhir:display [ fhir:v "Edit Failed, Verified" ] ;
+     fhir:definition [ fhir:v "Edit Failed, Verified" ]
+  ] [
+     fhir:code [ fhir:v "2failedBirthWeightGestationEdit" ] ;
+     fhir:display [ fhir:v "Queried, failed birthweight/gestation edit" ] ;
+     fhir:definition [ fhir:v "Queried, failed birthweight/gestation edit" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

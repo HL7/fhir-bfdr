@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-icu-admission-jada-ann-quinn"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-icu-admission-jada-ann-quinn"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-icu-admission-jada-ann-quinn&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-icu-admission.html">Observation - ICU Admission</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Maternal morbidity [US Standard Certificate of Live Birth] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#73781-7)</span></p><p><b>subject</b>: <a href="Patient-patient-mother-jada-ann-quinn.html">Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn)</a> &quot; QUINN&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href="Practitioner-practitioner-vital-records-janet-seito.html">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: Intensive care unit (environment) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#309904001)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="73781-7"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+    <display value="Patient - Mother (Jada Ann Quinn)"/>
+  </subject>
+  <effectiveDateTime value="2019-12-02"/>
+  <performer>
+    <reference value="Practitioner/practitioner-vital-records-janet-seito"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="309904001"/>
+      <display value="Intensive care unit (environment)"/>
+    </coding>
+    <text value="Intensive care unit (environment)"/>
+  </valueCodeableConcept>
+</Observation>

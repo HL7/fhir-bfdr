@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Composition/composition-coded-industry-and-occupation-baby-g-quinn> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composition-coded-industry-and-occupation-baby-g-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-industry-and-occupation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-industry-and-occupation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-coded-industry-and-occupation-baby-g-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-coded-industry-and-occupation-baby-g-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-coded-industry-and-occupation.html\">Composition - Coded Industry and Occupation</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Industry and Occupation information Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a>#industry_occupation_document)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Industry and Occupation</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "industry_occupation_document" ] ;
+       fhir:display [ fhir:v "Industry and Occupation information Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "Patient - Child (Baby G Quinn)" ]
+  ] ; # 
+  fhir:date [ fhir:v "2019-01-09"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:display [ fhir:v "National Center for Health Statistics" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Coded Industry and Occupation"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Mother's Industry and Occupation" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MTH" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:display [ fhir:v "patient-mother-jada-ann-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-industry-and-occupation-mother> ;
+       fhir:reference [ fhir:v "Observation/observation-industry-and-occupation-mother" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Father's Industry and Occupationi" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NFTH" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:display [ fhir:v "relatedperson-father-natural-james-brandon-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-industry-and-occupation-father> ;
+       fhir:reference [ fhir:v "Observation/observation-industry-and-occupation-father" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-industry-and-occupation-mother> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-industry-and-occupation-father> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

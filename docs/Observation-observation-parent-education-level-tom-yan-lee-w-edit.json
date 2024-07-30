@@ -1,0 +1,47 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-parent-education-level-tom-yan-lee-w-edit",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-parent-education-level-tom-yan-lee-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-parent-education-level-tom-yan-lee-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Observation-education-level-vr.html\">Observation - Education Level Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Highest level of education Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87300-0)</span></p><p><b>subject</b>: <a href=\"Patient-patient-decedent-fetus-not-named.html\">Patient/patient-decedent-fetus-not-named</a> &quot;&quot;</p><p><b>focus</b>: <a href=\"RelatedPerson-relatedperson-father-natural-tom-yan-lee.html\">RelatedPerson/relatedperson-father-natural-tom-yan-lee</a> &quot; LEE&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-vital-records-janet-seito.html\">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: Doctoral or post graduate education <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-EducationLevel.html\">Education Level</a>#POSTG)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "87300-0",
+      "display" : "Highest level of education Father"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-decedent-fetus-not-named"
+  },
+  "focus" : [{
+    "reference" : "RelatedPerson/relatedperson-father-natural-tom-yan-lee"
+  }],
+  "effectiveDateTime" : "2019-12-02",
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+  }],
+  "valueCodeableConcept" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags",
+          "code" : "0",
+          "display" : "Edit Passed"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+      "code" : "POSTG",
+      "display" : "Doctoral or post graduate education"
+    }],
+    "text" : "Doctoral or post graduate education"
+  }
+}

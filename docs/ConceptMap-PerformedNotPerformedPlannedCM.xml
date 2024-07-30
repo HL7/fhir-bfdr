@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="PerformedNotPerformedPlannedCM"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from (not specified) to <a href="ValueSet-ValueSet-performed-not-performed-planned.html">Performed NotPerformed Planned</a></p><p>DRAFT. Published on 2024-07-30 17:05:21-0400 by HL7 International / Public Health (HL7 International / Public Health: <a href="http://www.hl7.org/Special/committees/pher">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR PerformedNotPerformedPlanned Value Sets</p>
+</div><br/><p><b>Group 1</b>Mapping from <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html">Placeholder Code System for IJE in Vital Records</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Y (Yes)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>398166005 (Performed)</td></tr><tr><td>N (No)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>262008008 (Not Performed)</td></tr><tr><td>P (Planned)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>397943006 (Planned)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ConceptMap/PerformedNotPerformedPlannedCM"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="PerformedNotPerformedPlanned"/>
+  <title value="PerformedNotPerformedPlanned Concept Map"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="A mapping between NCHS IJE and FHIR PerformedNotPerformedPlanned Value Sets"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="focus"/>
+    </code>
+    <valueCodeableConcept>
+      <text value="for IJE to FHIR alignment"/>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="To help implementers map from IJE to FHIR Vocabulary"/>
+  <targetCanonical value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-performed-not-performed-planned"/>
+  <group>
+    <source value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="Y"/>
+      <display value="Yes"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="398166005"/>
+        <display value="Performed"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="N"/>
+      <display value="No"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="262008008"/>
+        <display value="Not Performed"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="P"/>
+      <display value="Planned"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="397943006"/>
+        <display value="Planned"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

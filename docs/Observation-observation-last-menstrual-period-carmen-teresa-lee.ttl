@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-last-menstrual-period-carmen-teresa-lee> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-last-menstrual-period-carmen-teresa-lee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-last-menstrual-period-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-last-menstrual-period-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-last-menstrual-period.html\">Observation - Last Menstrual Period</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Last menstrual period start date <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8665-2)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mother-carmen-teresa-lee.html\">Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee)</a> &quot; LEE&quot;</p><p><b>effective</b>: 2018-05-02</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-vital-records-janet-seito.html\">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: 2018-04-18</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8665-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8665-2" ] ;
+       fhir:display [ fhir:v "Last menstrual period start date" ]
+     ] ) ;
+     fhir:text [ fhir:v "Last menstrual period start date" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Carmen Teresa Lee)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2018-05-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "2018-04-18"^^xsd:date] . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

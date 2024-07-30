@@ -1,0 +1,283 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Composition/composition-provider-fetal-death-not-named> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composition-provider-fetal-death-not-named"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-provider-fetal-death-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-provider-fetal-death-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-provider-fetal-death-report.html\">Composition - Provider Fetal Death Report</a></p></div><p><b>status</b>: final</p><p><b>type</b>: U.S. standard report of fetal death - 2003 revision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69045-3)</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-maternity-carmen-teresa-lee.html\">Encounter/encounter-maternity-carmen-teresa-lee</a></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <a href=\"Practitioner-practitioner-vital-records-jessica-leung.html\">Practitioner/practitioner-vital-records-jessica-leung</a> &quot; JESSICA&quot;</p><p><b>title</b>: Provider fetal death report Document</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:69045-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69045-3" ] ;
+       fhir:display [ fhir:v "U.S. standard report of fetal death - 2003 revision" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Encounter/encounter-maternity-carmen-teresa-lee> ;
+     fhir:reference [ fhir:v "Encounter/encounter-maternity-carmen-teresa-lee" ]
+  ] ; # 
+  fhir:date [ fhir:v "2019-01-09"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-jessica-leung> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-jessica-leung" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Provider fetal death report Document"] ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57073-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57073-9" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-last-menstrual-period-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-last-menstrual-period-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-living-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-number-births-now-living-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-dead-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-number-births-now-dead-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-last-live-birth-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-date-of-last-live-birth-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-height-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-height-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-received-wic-food-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-received-wic-food-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:55752-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "55752-0" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-previous-cesareans-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-number-previous-cesareans-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-fetal-presentation-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-final-route-method-delivery-not-named> ;
+       fhir:reference [ fhir:v "Procedure/procedure-final-route-method-delivery-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-gestational-diabetes-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Condition/condition-gestational-diabetes-carmen-teresa-lee" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:76400-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76400-1" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-birth-weight-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-birth-weight-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-gestational-age-at-delivery-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-gestational-age-at-delivery-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-fetal-death-cause-or-condition-not-named> ;
+       fhir:reference [ fhir:v "Condition/condition-fetal-death-cause-or-condition-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-fetal-death-other-significant-cause-not-named> ;
+       fhir:reference [ fhir:v "Condition/condition-fetal-death-other-significant-cause-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-death-time-point-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-fetal-death-time-point-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-autopsy-performed-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-autopsy-performed-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-histological-placental-exam-performed-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-histological-placental-exam-performed-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-autopsy-histological-exam-results-used-not-named> ;
+       fhir:reference [ fhir:v "Observation/observation-autopsy-histological-exam-results-used-not-named" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-number-deaths-this-delivery-carmen-teresa-lee" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:92014-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "92014-0" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-parent-education-level-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-parent-education-level-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-present-job-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-present-job-carmen-teresa-lee" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-input-race-and-ethnicity-carmen-teresa-lee" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:92013-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "92013-2" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-father-natural-tom-yan-lee> ;
+       fhir:reference [ fhir:v "RelatedPerson/relatedperson-father-natural-tom-yan-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-present-job-tom-yan-lee> ;
+       fhir:reference [ fhir:v "Observation/observation-present-job-tom-yan-lee" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Patient's QuestionnaireResponse Section" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:74465-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "74465-6" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-carmen-teresa-lee" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee> ;
+       fhir:reference [ fhir:v "QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Encounter/encounter-maternity-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-jessica-leung> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-mother-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-last-menstrual-period-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-living-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-dead-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-last-live-birth-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-height-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-received-wic-food-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-previous-cesareans-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-final-route-method-delivery-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-gestational-diabetes-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-birth-weight-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-gestational-age-at-delivery-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-fetal-death-cause-or-condition-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-fetal-death-other-significant-cause-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-death-time-point-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-autopsy-performed-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-histological-placental-exam-performed-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-autopsy-histological-exam-results-used-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-parent-education-level-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-present-job-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-carmen-teresa-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-father-natural-tom-yan-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-present-job-tom-yan-lee> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="composition-coded-industry-and-occupation-baby-g-quinn"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-industry-and-occupation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="composition-coded-industry-and-occupation-baby-g-quinn"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;composition-coded-industry-and-occupation-baby-g-quinn&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-coded-industry-and-occupation.html">Composition - Coded Industry and Occupation</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Industry and Occupation information Document <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystem-local-bfdr-codes.html">Local BFDR Codes</a>#industry_occupation_document)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Industry and Occupation</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+      <code value="industry_occupation_document"/>
+      <display value="Industry and Occupation information Document"/>
+    </coding>
+  </type>
+  <subject>
+    <display value="Patient - Child (Baby G Quinn)"/>
+  </subject>
+  <date value="2019-01-09"/>
+  <author>
+    <display value="National Center for Health Statistics"/>
+  </author>
+  <title value="Coded Industry and Occupation"/>
+  <section>
+    <title value="Mother's Industry and Occupation"/>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+        <code value="MTH"/>
+      </coding>
+    </code>
+    <focus>
+      <display value="patient-mother-jada-ann-quinn"/>
+    </focus>
+    <entry>
+      <reference value="Observation/observation-industry-and-occupation-mother"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Father's Industry and Occupationi"/>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+        <code value="NFTH"/>
+      </coding>
+    </code>
+    <focus>
+      <display value="relatedperson-father-natural-james-brandon-quinn"/>
+    </focus>
+    <entry>
+      <reference value="Observation/observation-industry-and-occupation-father"/>
+    </entry>
+  </section>
+</Composition>

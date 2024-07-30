@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="organization-south-hospital"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="organization-south-hospital"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;organization-south-hospital&quot; </p></div><p><b>identifier</b>: id: <a href="http://terminology.hl7.org/5.0.0/NamingSystem-npi.html">#</a>5555512</p><p><b>active</b>: true</p><p><b>type</b>: Hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html">RoleCode</a>#HOSP)</span></p><p><b>name</b>: South Hospital</p><p><b>telecom</b>: <a href="tel:+1-555-555-1111">+1-555-555-1111</a>, <a href="mailto:mail@southhospital.com">mail@southhospital.com</a></p><p><b>address</b>: 2100 North Ave Salt Lake City UT 84116 US </p></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="5555512"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+      <display value="Hospital"/>
+    </coding>
+  </type>
+  <name value="South Hospital"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+1-555-555-1111"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="mail@southhospital.com"/>
+  </telecom>
+  <address>
+    <line value="2100 North Ave"/>
+    <city value="Salt Lake City"/>
+    <state value="UT"/>
+    <postalCode value="84116"/>
+    <country value="US"/>
+  </address>
+</Organization>

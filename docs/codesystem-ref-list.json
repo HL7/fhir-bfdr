@@ -1,0 +1,278 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10",
+      "version" : "2.1.1",
+      "status" : "retired",
+      "name" : "Icd10",
+      "title" : "ICD-10",
+      "description" : "International Classification of Diseases revision 10 (ICD 10)",
+      "oids" : ["2.16.840.1.113883.6.3"],
+      "uses" : {
+      },
+      "https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7933" : "Cause of Fetal Death ICD-10"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "EditFlagsCS",
+      "title" : "Birth Edit Flags",
+      "description" : "This code system contains codes to represent edit flags specific to BFDR. Additional edit flag codes are located in [CodeSystemEditFlagsVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/CodeSystem-CodeSystem-vr-edit-flags.html)",
+      "uses" : {
+      },
+      "ValueSet-ValueSet-birth-weight-edit-flags.html" : "Birth Weight Edit Flags (NCHS)",
+      "ConceptMap-BirthWeightEditFlagsCM.html" : "BirthWeightEditFlags Concept Map",
+      "ValueSet-ValueSet-number-previous-cesareans-edit-flags.html" : "Number of Previous Cesareans Edit Flags (NCHS)",
+      "ValueSet-ValueSet-estimate-of-gestation-edit-flags.html" : "Estimate of Gestation Edit Flags (NCHS)",
+      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
+      "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "LocalBFDRCodesCS",
+      "title" : "Local BFDR Codes",
+      "description" : "Local Codes for concepts in BFDR that lack an appropriate LOINC or SCT code",
+      "uses" : {
+      },
+      "ValueSet-ValueSet-location-types.html" : "Location Types",
+      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
+      "ValueSet-ValueSet-birth-delivery-occurred.html" : "Birth Delivery Occurred",
+      "ValueSet-ValueSet-informant-relationship-to-mother.html" : "Informant Relationship to Mother",
+      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "Fetal Death Cause or Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-country-code-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemCountryCodeVitalRecords",
+      "title" : "Country Codes Vital Records",
+      "description" : "2 Letter Country Codes from GEC and ISO 3166-1.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-residence-country-vr.html" : "Residence Country Vital Records",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-birthplace-country-vr.html" : "Birthplace Country Vital Records"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-us-states-territories-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemUSStatesTerritoriesVitalRecords",
+      "title" : "US States and Territories",
+      "description" : "Surrogate for usps.com codesystem - IG Publisher found issues with that codesystem.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-usstates-vr.html" : "US States Vital Records",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-usterritories-vr.html" : "US Territories Vital Records",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-states-territories-provinces-vr.html" : "States, Territories and Provinces Vital Records"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemEditFlagsVitalRecords",
+      "title" : "Birth and Death Edit Flags Vital Records",
+      "description" : "This code system contains codes to represent all edit flags.\r\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "ValueSet-ValueSet-birth-weight-edit-flags.html" : "Birth Weight Edit Flags (NCHS)",
+      "ConceptMap-PregnancyReportEditFlagsCM.html" : "PregnancyReportEditFlags Concept Map",
+      "ValueSet-ValueSet-pregnancy-report-edit-flags.html" : "Pregnancy Report Edit Flags (NCHS)",
+      "ConceptMap-BirthWeightEditFlagsCM.html" : "BirthWeightEditFlags Concept Map",
+      "ValueSet-ValueSet-number-previous-cesareans-edit-flags.html" : "Number of Previous Cesareans Edit Flags (NCHS)",
+      "ValueSet-ValueSet-estimate-of-gestation-edit-flags.html" : "Estimate of Gestation Edit Flags (NCHS)",
+      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
+      "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CodeSystemIJEVitalRecords",
+      "title" : "Placeholder Code System for IJE in Vital Records",
+      "description" : "IJE Code System Placeholder is needed to provide a URL upon which to anchor concept maps.\nThis codesystem is only for use in the vital records use cases supported by this Implementation guide, and should not be used elsewhere.",
+      "uses" : {
+      },
+      "ConceptMap-PregnancyReportEditFlagsCM.html" : "PregnancyReportEditFlags Concept Map",
+      "ConceptMap-DeliveryRoutesCM.html" : "DeliveryRoutes Concept Map",
+      "ConceptMap-BirthAndFetalDeathFinancialClassCM.html" : "BirthAndFetalDeathFinancialClass Concept Map",
+      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
+      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map",
+      "ConceptMap-PerformedNotPerformedPlannedCM.html" : "PerformedNotPerformedPlanned Concept Map",
+      "ConceptMap-BirthAttendantTitlesCM.html" : "BirthAttendantTitles Concept Map",
+      "ConceptMap-NewbornCongenitalAnomaliesCM.html" : "NewbornCongenitalAnomalies Concept Map",
+      "ConceptMap-BirthWeightEditFlagsCM.html" : "BirthWeightEditFlags Concept Map",
+      "ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html" : "InfectionsDuringPregnancyLiveBirth Concept Map",
+      "ConceptMap-EstimateOfGestationEditFlagsCM.html" : "EstimateOfGestationEditFlags Concept Map",
+      "ConceptMap-FetalDeathTimePointsCM.html" : "FetalDeathTimePoints Concept Map",
+      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "ConceptMap-NumberPreviousCesareansEditFlagsCM.html" : "NumberPreviousCesareansEditFlags Concept Map"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-ValueSet-apgar-timing.html" : "APGAR Score Timing",
+      "ValueSet-cigarette-smoking-before-during-pregnancy.html" : "Cigarette Smoking Before and During Pregnancy"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ConceptMap-DeliveryRoutesCM.html" : "DeliveryRoutes Concept Map",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-birth-attendant-titles-vr.html" : "Birth Attendants Titles Vital Records",
+      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
+      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map",
+      "ValueSet-ValueSet-fertility-enhancing-drug-therapy-artificial-insem.html" : "Fertility Enhancing Drug Therapy and Artificial Insemination Value Set",
+      "ConceptMap-PerformedNotPerformedPlannedCM.html" : "PerformedNotPerformedPlanned Concept Map",
+      "ValueSet-ValueSet-performed-not-performed-planned.html" : "Performed NotPerformed Planned",
+      "ValueSet-ValueSet-fetal-remains-disposition-method.html" : "Fetal Remains Disposition Method",
+      "ConceptMap-BirthAttendantTitlesCM.html" : "BirthAttendantTitles Concept Map",
+      "ConceptMap-NewbornCongenitalAnomaliesCM.html" : "NewbornCongenitalAnomalies Concept Map",
+      "ValueSet-ValueSet-fetal-presentations.html" : "Fetal Presentations",
+      "ValueSet-ValueSet-apgar-timing.html" : "APGAR Score Timing",
+      "ValueSet-ValueSet-fetal-presentations-max.html" : "Fetal Presentations - Max",
+      "ValueSet-ValueSet-fetal-death-time-points.html" : "Fetal Death Time Points",
+      "ValueSet-ValueSet-newborn-congenital-anomalies.html" : "Newborn Congenital Anomalies",
+      "ValueSet-ValueSet-birth-attendant-titles.html" : "Birth Attendants Titles",
+      "ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html" : "InfectionsDuringPregnancyLiveBirth Concept Map",
+      "ValueSet-ValueSet-obstetric-procedure-outcome.html" : "Obstetric Procedure Outcome",
+      "ValueSet-ValueSet-birth-delivery-occurred.html" : "Birth Delivery Occurred",
+      "ConceptMap-FetalDeathTimePointsCM.html" : "FetalDeathTimePoints Concept Map",
+      "ValueSet-ValueSet-delivery-routes.html" : "Delivery Routes",
+      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "Fetal Death Cause or Condition",
+      "ValueSet-ValueSet-infections-during-pregnancy-live-birth.html" : "Infections During Pregnancy Live Birth"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "version" : "2.9",
+      "status" : "active",
+      "name" : "v2.0136",
+      "title" : "v2 Y/N Indicator",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0136 ( Y/N Indicator)",
+      "oids" : ["2.16.840.1.113883.18.347"],
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-yes-no-not-applicable-vr.html" : "Yes No Not Applicable Vital Records",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-yes-no-unknown-vr.html" : "Yes No Unknown Vital Records"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0360",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "DegreeLicenseCertificate",
+      "title" : "degreeLicenseCertificate",
+      "description" : "Code system of concepts specifying an educational degree (e.g., MD).  Used in the CNN datatype (names and identifiers of clinicians) in Version 2 messaging.  Used in HL7 Version 2.x messaging in the CNN segment; note that in releases of HL7 prior to 2.3.1, was also used in person names (XPN), but this use was deprecated, then withdrawn in 2.7.",
+      "oids" : ["2.16.840.1.113883.18.220"],
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-education-level-vr.html" : "Education Level Vital Records"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for adminstrative purposes (as opposed to clinical gender)",
+      "oids" : ["2.16.840.1.113883.5.1"],
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-sex-assigned-at-birth-vr.html" : "Sex Assigned At Birth Vital Records"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "EducationLevel",
+      "title" : "Education Level",
+      "description" : "Years of education that a person has completed",
+      "oids" : ["2.16.840.1.113883.5.1077"],
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-education-level-vr.html" : "Education Level Vital Records"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-sex-assigned-at-birth-vr.html" : "Sex Assigned At Birth Vital Records",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-birth-attendant-titles-vr.html" : "Birth Attendants Titles Vital Records",
+      "ConceptMap-FetalDeathCauseOrConditionCM.html" : "FetalDeathCauseOrCondition Concept Map",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-yes-no-not-applicable-vr.html" : "Yes No Not Applicable Vital Records",
+      "ConceptMap-FetalPresentationCM.html" : "FetalPresentation Concept Map",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-yes-no-unknown-vr.html" : "Yes No Unknown Vital Records",
+      "ValueSet-ValueSet-fetal-remains-disposition-method.html" : "Fetal Remains Disposition Method",
+      "ConceptMap-BirthAttendantTitlesCM.html" : "BirthAttendantTitles Concept Map",
+      "ValueSet-ValueSet-fetal-presentations.html" : "Fetal Presentations",
+      "ValueSet-ValueSet-fetal-death-time-points.html" : "Fetal Death Time Points",
+      "ValueSet-ValueSet-newborn-congenital-anomalies.html" : "Newborn Congenital Anomalies",
+      "ValueSet-ValueSet-birth-attendant-titles.html" : "Birth Attendants Titles",
+      "ValueSet-ValueSet-birth-delivery-occurred.html" : "Birth Delivery Occurred",
+      "ConceptMap-FetalDeathTimePointsCM.html" : "FetalDeathTimePoints Concept Map",
+      "ConceptMap-BirthDeliveryOccurredCM.html" : "BirthDeliveryOccurred Concept Map",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-education-level-vr.html" : "Education Level Vital Records",
+      "ValueSet-ValueSet-fetal-death-cause-or-condition.html" : "Fetal Death Cause or Condition",
+      "ValueSet-ValueSet-infections-during-pregnancy-live-birth.html" : "Infections During Pregnancy Live Birth",
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-states-territories-provinces-vr.html" : "States, Territories and Provinces Vital Records"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "https://build.fhir.org/ig/HL7/vr-common-library//ValueSet-ValueSet-role-vr.html" : "Role Vital Records"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "ValueSet-ValueSet-units-of-gestational-age.html" : "Units of Gestational Age"
+    },
+    {
+      "url" : "https://nahdo.org/sopt",
+      "version" : "9.2",
+      "status" : "active",
+      "name" : "SOP",
+      "title" : "Source of Payment Typology",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-ValueSet-birth-and-fetal-death-financial-class.html" : "Birth and Fetal Death Financial Class",
+      "ConceptMap-BirthAndFetalDeathFinancialClassCM.html" : "BirthAndFetalDeathFinancialClass Concept Map"
+    }
+  ]
+}

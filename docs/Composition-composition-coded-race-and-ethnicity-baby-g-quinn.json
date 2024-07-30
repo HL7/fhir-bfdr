@@ -1,0 +1,63 @@
+{
+  "resourceType" : "Composition",
+  "id" : "composition-coded-race-and-ethnicity-baby-g-quinn",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-coded-race-and-ethnicity-baby-g-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-coded-race-and-ethnicity-baby-g-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-coded-race-and-ethnicity.html\">Composition - Coded Race and Ethnicity</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Race and ethnicity information Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86805-9)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Race and Ethnicity</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "86805-9",
+      "display" : "Race and ethnicity information Document"
+    }]
+  },
+  "subject" : {
+    "display" : "Patient - Child (Baby G Quinn)"
+  },
+  "date" : "2019-01-09",
+  "author" : [{
+    "display" : "National Center for Health Statistics"
+  }],
+  "title" : "Coded Race and Ethnicity",
+  "section" : [{
+    "title" : "Mother's Coded Race and Ethnicity",
+    "code" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "code" : "MTH"
+      }]
+    },
+    "focus" : {
+      "display" : "patient-mother-jada-ann-quinn"
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-input-race-and-ethnicity-mother"
+    },
+    {
+      "reference" : "Observation/observation-coded-race-and-ethnicity-mother"
+    }]
+  },
+  {
+    "title" : "Father's Coded Race and Ethnicity",
+    "code" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "code" : "NFTH"
+      }]
+    },
+    "focus" : {
+      "display" : "relatedperson-father-natural-james-brandon-quinn"
+    },
+    "entry" : [{
+      "reference" : "Observation/observation-input-race-and-ethnicity-father"
+    },
+    {
+      "reference" : "Observation/observation-coded-race-and-ethnicity-father"
+    }]
+  }]
+}

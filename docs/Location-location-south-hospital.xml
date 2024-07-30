@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location-south-hospital"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Location-bfdr"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="location-south-hospital"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;location-south-hospital&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Location-bfdr.html">Birth and Fetal Death Location</a></p></div><p><b>identifier</b>: id: <a href="http://terminology.hl7.org/5.0.0/NamingSystem-npi.html">#</a>116441967701</p><p><b>status</b>: active</p><p><b>name</b>: South Hospital</p><p><b>type</b>: Hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html">RoleCode</a>#HOSP)</span>, Birth Location <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystem-local-bfdr-codes.html">Local BFDR Codes</a>#loc_birth)</span></p><p><b>address</b>: 2100 North Ave Salt Lake City UT 84116 US </p><h3>Positions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style="display: none">*</td><td>40.8</td><td>111.9</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-organization-south-hospital.html">Organization/organization-south-hospital: Organization - South Hospital</a> &quot;South Hospital&quot;</p></div>
+  </text>
+  <identifier>
+    <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-jurisdictional-facility-identifier">
+      <valueString value="UT12"/>
+    </extension>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="116441967701"/>
+  </identifier>
+  <status value="active"/>
+  <name value="South Hospital"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+      <display value="Hospital"/>
+    </coding>
+  </type>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+      <code value="loc_birth"/>
+      <display value="Birth Location"/>
+    </coding>
+  </type>
+  <address>
+    <line value="2100 North Ave"/>
+    <city value="Salt Lake City"/>
+    <district value="Made Up"/>
+    <state value="UT"/>
+    <postalCode value="84116"/>
+    <country value="US"/>
+  </address>
+  <position>
+    <longitude value="40.8"/>
+    <latitude value="111.9"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/organization-south-hospital"/>
+    <display value="Organization - South Hospital"/>
+  </managingOrganization>
+</Location>

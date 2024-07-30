@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-mother-married-during-pregnancy-jada-ann-quinn"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-mother-married-during-pregnancy-jada-ann-quinn"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-mother-married-during-pregnancy-jada-ann-quinn&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-mother-married-during-pregnancy.html">Observation - Mother Married During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mother was married at any time during pregnancy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#87301-8)</span></p><p><b>subject</b>: <a href="Patient-patient-mother-jada-ann-quinn.html">Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn)</a> &quot; QUINN&quot;</p><p><b>focus</b>: <a href="Patient-patient-child-babyg-quinn.html">Patient/patient-child-babyg-quinn: BabyG Quinn</a> &quot; QUINN&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>value</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="87301-8"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-mother-jada-ann-quinn"/>
+    <display value="Patient - Mother (Jada Ann Quinn)"/>
+  </subject>
+  <focus>
+    <reference value="Patient/patient-child-babyg-quinn"/>
+    <display value="BabyG Quinn"/>
+  </focus>
+  <effectiveDateTime value="2019-12-02"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+      <code value="Y"/>
+      <display value="Yes"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

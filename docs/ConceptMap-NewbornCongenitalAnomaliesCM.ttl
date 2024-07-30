@@ -1,0 +1,208 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/ConceptMap/NewbornCongenitalAnomaliesCM> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NewbornCongenitalAnomaliesCM"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to <a href=\"ValueSet-ValueSet-newborn-congenital-anomalies.html\">Newborn Congenital Anomalies</a></p><p>DRAFT. Published on 2024-07-30 17:05:21-0400 by HL7 International / Public Health (HL7 International / Public Health: <a href=\"http://www.hl7.org/Special/committees/pher\">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR NewbornCongenitalAnomalies Value Sets</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html\">Placeholder Code System for IJE in Vital Records</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ANEN (Congenital Anomalies of the Newborn--Anencephaly)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>89369001 (Anencephaly)</td></tr><tr><td>MNSB (Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>67531005 (Meningomyelocele/Spina bifida)</td></tr><tr><td>CCHD (Congenital Anomalies of the Newborn--Cyanotic congenital heart disease)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>12770006 (Cyanotic congenital heart disease)</td></tr><tr><td>CDH (Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>17190001 (Congenital diaphragmatic hernia)</td></tr><tr><td>OMPH (Congenital Anomalies of the Newborn--Omphalocele)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>18735004 (Omphalocele)</td></tr><tr><td>GAST (Congenital Anomalies of the Newborn--Gastroschisis)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>72951007 (Gastroschisis)</td></tr><tr><td>LIMB (Congenital Anomalies of the Newborn--Limb Reduction Defect)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>67341007 (Limb reduction defect (excluding congenital amputation and dwarfing syndromes))</td></tr><tr><td>CL (Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>80281008 (Cleft Lip with or without Cleft Palate)</td></tr><tr><td>CP (Congenital Anomalies of the Newborn--Cleft Palate Alone)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>87979003 (Cleft Palate alone)</td></tr><tr><td>DOWT (Congenital Anomalies of the Newborn--Down Syndrome)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>70156005 (Down Syndrome)</td></tr><tr><td>CDIT (Congenital Anomalies of the Newborn--Suspected Chromosomal disorder)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>409709004 (Suspected chromosomal disorder)</td></tr><tr><td>HYPO (Congenital Anomalies of the Newborn--Hypospadias)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>416010008 (Hypospadias)</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/ConceptMap/NewbornCongenitalAnomaliesCM"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Preview3"] ; # 
+  fhir:name [ fhir:v "NewbornCongenitalAnomalies"] ; # 
+  fhir:title [ fhir:v "NewbornCongenitalAnomalies Concept Map"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-30T17:05:21-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A mapping between NCHS IJE and FHIR NewbornCongenitalAnomalies Value Sets"] ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "focus" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "for IJE to FHIR alignment" ]
+     ]
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:purpose [ fhir:v "To help implementers map from IJE to FHIR Vocabulary"] ; # 
+  fhir:target [
+     fhir:v "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "ANEN" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Anencephaly" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "89369001" ] ;
+         fhir:display [ fhir:v "Anencephaly" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "MNSB" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "67531005" ] ;
+         fhir:display [ fhir:v "Meningomyelocele/Spina bifida" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "CCHD" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Cyanotic congenital heart disease" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "12770006" ] ;
+         fhir:display [ fhir:v "Cyanotic congenital heart disease" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "CDH" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "17190001" ] ;
+         fhir:display [ fhir:v "Congenital diaphragmatic hernia" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "OMPH" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Omphalocele" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "18735004" ] ;
+         fhir:display [ fhir:v "Omphalocele" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "GAST" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Gastroschisis" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "72951007" ] ;
+         fhir:display [ fhir:v "Gastroschisis" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "LIMB" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Limb Reduction Defect" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "67341007" ] ;
+         fhir:display [ fhir:v "Limb reduction defect (excluding congenital amputation and dwarfing syndromes)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "80281008" ] ;
+         fhir:display [ fhir:v "Cleft Lip with or without Cleft Palate" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "CP" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Cleft Palate Alone" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "87979003" ] ;
+         fhir:display [ fhir:v "Cleft Palate alone" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DOWT" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Down Syndrome" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "70156005" ] ;
+         fhir:display [ fhir:v "Down Syndrome" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "CDIT" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Suspected Chromosomal disorder" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "409709004" ] ;
+         fhir:display [ fhir:v "Suspected chromosomal disorder" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HYPO" ] ;
+       fhir:display [ fhir:v "Congenital Anomalies of the Newborn--Hypospadias" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "416010008" ] ;
+         fhir:display [ fhir:v "Hypospadias" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

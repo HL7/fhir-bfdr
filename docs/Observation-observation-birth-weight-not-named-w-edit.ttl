@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-birth-weight-not-named-w-edit> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-birth-weight-not-named-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-birth-weight-not-named-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-birth-weight-not-named-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-birth-weight.html\">Observation - Birth Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Birth weight Measured <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8339-4)</span></p><p><b>subject</b>: <a href=\"Patient-patient-decedent-fetus-not-named.html\">Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named)</a> &quot;&quot;</p><p><b>effective</b>: 2019-02-10</p><p><b>performer</b>: <a href=\"Organization-organization-jurisdictional-vital-records-office.html\">Organization/organization-jurisdictional-vital-records-office</a> &quot;Jurisdictional Vital Records Office&quot;</p><p><b>value</b>: 1530 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8339-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8339-4" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> ;
+     fhir:reference [ fhir:v "Patient/patient-decedent-fetus-not-named" ] ;
+     fhir:display [ fhir:v "Patient - Decedent Fetus (Fetus Not Named)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-02-10"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Organization/organization-jurisdictional-vital-records-office> ;
+     fhir:reference [ fhir:v "Organization/organization-jurisdictional-vital-records-office" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0off" ] ;
+           fhir:display [ fhir:v "Off" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:value [ fhir:v "1530"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "g" ]
+  ] . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-decedent-fetus-not-named> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Organization/organization-jurisdictional-vital-records-office> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

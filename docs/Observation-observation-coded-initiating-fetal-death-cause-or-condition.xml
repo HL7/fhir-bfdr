@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-coded-initiating-fetal-death-cause-or-condition"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-coded-initiating-fetal-death-cause-or-condition"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-coded-initiating-fetal-death-cause-or-condition&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-coded-initiating-fetal-death-cause-or-condition.html">Observation - Coded Initiating Fetal Death Cause or Condition</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Coded initiating cause or condition of fetal death <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#92022-3)</span></p><p><b>subject</b>: <span>: Patient - Decedent Fetus (Fetus Not Named)</span></p><p><b>value</b>: Fetus and newborn affected by premature rupture of membranes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html">ICD-10</a>#P01.1)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="92022-3"/>
+      <display value="Coded initiating cause or condition of fetal death"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="P01.1"/>
+      <display value="Fetus and newborn affected by premature rupture of membranes"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

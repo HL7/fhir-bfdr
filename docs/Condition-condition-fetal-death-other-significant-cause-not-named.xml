@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-fetal-death-other-significant-cause-not-named"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="condition-fetal-death-other-significant-cause-not-named"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;condition-fetal-death-other-significant-cause-not-named&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Condition-fetal-death-other-cause-or-condition.html">Condition - Fetal Death Other Cause or Condition</a></p></div><p><b>category</b>: Encounter Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html">Condition Category Codes</a>#encounter-diagnosis)</span>, Other significant causes or conditions of fetal death [US Standard Report of Fetal Death] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#76061-1)</span></p><p><b>code</b>: Placental insufficiency (disorder) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#237292005)</span></p><p><b>subject</b>: <a href="Patient-patient-decedent-fetus-not-named.html">Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named)</a> &quot;&quot;</p></div>
+  </text>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="76061-1"/>
+      <display value="Other significant causes or conditions of fetal death [US Standard Report of Fetal Death]"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="237292005"/>
+      <display value="Placental insufficiency (disorder)"/>
+    </coding>
+    <text value="Placental insufficiency (disorder)"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-decedent-fetus-not-named"/>
+    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+  </subject>
+</Condition>

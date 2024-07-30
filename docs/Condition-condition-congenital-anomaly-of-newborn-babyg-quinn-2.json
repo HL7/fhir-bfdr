@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Condition",
+  "id" : "condition-congenital-anomaly-of-newborn-babyg-quinn-2",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-congenital-anomaly-of-newborn-babyg-quinn-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-congenital-anomaly-of-newborn-babyg-quinn-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-congenital-anomaly-of-newborn.html\">Condition - Congenital Anomaly of Newborn</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span>, Congenital anomalies of the newborn [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73780-9)</span></p><p><b>code</b>: Anomaly of chromosome pair 21 (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#70156005)</span></p><p><b>subject</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn: Patient - Child (Baby G Quinn)</a> &quot; QUINN&quot;</p><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Karyotype determination pending <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#312948004 &quot;Karyotype determination&quot;)</span></td></tr></table></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }],
+    "text" : "Active"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item",
+      "display" : "Problem List Item"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "73780-9",
+      "display" : "Congenital anomalies of the newborn [US Standard Certificate of Live Birth]"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "70156005",
+      "display" : "Anomaly of chromosome pair 21 (disorder)"
+    }],
+    "text" : "Anomaly of chromosome pair 21 (disorder)"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-child-babyg-quinn",
+    "display" : "Patient - Child (Baby G Quinn)"
+  },
+  "evidence" : [{
+    "code" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "312948004",
+        "display" : "Karyotype determination"
+      }],
+      "text" : "Karyotype determination pending"
+    }]
+  }]
+}

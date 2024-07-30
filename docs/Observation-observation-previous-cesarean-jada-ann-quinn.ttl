@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-previous-cesarean-jada-ann-quinn> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-previous-cesarean-jada-ann-quinn"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-06-21T01:56:46.788Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-previous-cesarean"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-previous-cesarean>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-previous-cesarean-jada-ann-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-previous-cesarean-jada-ann-quinn&quot; Version &quot;1&quot; Updated &quot;2023-06-21 01:56:46+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-previous-cesarean.html\">Observation - Previous Cesarean</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73775-9)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mother-jada-ann-quinn.html\">Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn)</a> &quot; QUINN&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-vital-records-janet-seito.html\">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: Deliveries by cesarean (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#200144004)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73775-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73775-9" ] ;
+       fhir:display [ fhir:v "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]" ]
+     ] ) ;
+     fhir:text [ fhir:v "Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth]" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-12-02"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:200144004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200144004" ] ;
+       fhir:display [ fhir:v "Deliveries by cesarean (finding)" ]
+     ] )
+  ] . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

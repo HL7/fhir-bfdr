@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-planned-to-deliver-at-home-not-named",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-planned-to-deliver-at-home-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-planned-to-deliver-at-home-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-planned-to-deliver-at-home.html\">Observation - Planned to Deliver at Home</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mother Planned to deliver at home [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73765-0)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mother-carmen-teresa-lee.html\">Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee)</a> &quot; LEE&quot;</p><p><b>focus</b>: <a href=\"Patient-patient-decedent-fetus-not-named.html\">Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named)</a> &quot;&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"Patient-patient-mother-carmen-teresa-lee.html\">Patient/patient-mother-carmen-teresa-lee</a> &quot; LEE&quot;</p><p><b>value</b>: false</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "73765-0"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-mother-carmen-teresa-lee",
+    "display" : "Patient - Mother (Carmen Teresa Lee)"
+  },
+  "focus" : [{
+    "reference" : "Patient/patient-decedent-fetus-not-named",
+    "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+  }],
+  "effectiveDateTime" : "2019-12-02",
+  "performer" : [{
+    "reference" : "Patient/patient-mother-carmen-teresa-lee"
+  }],
+  "valueBoolean" : false
+}

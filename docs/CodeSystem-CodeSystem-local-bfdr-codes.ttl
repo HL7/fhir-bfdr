@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CodeSystem-local-bfdr-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unknownplannedhomebirth<a name=\"CodeSystem-local-bfdr-codes-unknownplannedhomebirth\"> </a></td><td>Unknown if Planned Home Birth</td><td>Unknown if Planned Home Birth</td></tr><tr><td style=\"white-space:nowrap\">assistedventfollowingdelivery<a name=\"CodeSystem-local-bfdr-codes-assistedventfollowingdelivery\"> </a></td><td>Assisted ventilation required immediately following delivery</td><td>Assisted ventilation required immediately following delivery</td></tr><tr><td style=\"white-space:nowrap\">assistedventmorethan6hrs<a name=\"CodeSystem-local-bfdr-codes-assistedventmorethan6hrs\"> </a></td><td>Assisted ventilation required for more than six hours</td><td>Assisted ventilation required for more than six hours</td></tr><tr><td style=\"white-space:nowrap\">FCOD_maternalconditions<a name=\"CodeSystem-local-bfdr-codes-FCOD_maternalconditions\"> </a></td><td>Maternal Conditions/Diseases (Specify)</td><td>Maternal Conditions/Diseases (Specify)</td></tr><tr><td style=\"white-space:nowrap\">FCOD_membranes<a name=\"CodeSystem-local-bfdr-codes-FCOD_membranes\"> </a></td><td>Complications of Placenta, Cord, or Membranes: Other (Specify)</td><td>Complications of Placenta, Cord, or Membranes: Other (Specify)</td></tr><tr><td style=\"white-space:nowrap\">FCOD_obstetricalcomplications<a name=\"CodeSystem-local-bfdr-codes-FCOD_obstetricalcomplications\"> </a></td><td>Other Obstetrical or Pregnancy Complications (Specify)</td><td>Other Obstetrical or Pregnancy Complications (Specify)</td></tr><tr><td style=\"white-space:nowrap\">FCOD_fetalconditions<a name=\"CodeSystem-local-bfdr-codes-FCOD_fetalconditions\"> </a></td><td>Other Fetal Conditions/Disorder (Specify)</td><td>Other Fetal Conditions/Disorder (Specify)</td></tr><tr><td style=\"white-space:nowrap\">rel_fatherofbaby<a name=\"CodeSystem-local-bfdr-codes-rel_fatherofbaby\"> </a></td><td>Father of baby</td><td>Father of baby</td></tr><tr><td style=\"white-space:nowrap\">rel_hospitalemployee<a name=\"CodeSystem-local-bfdr-codes-rel_hospitalemployee\"> </a></td><td>Hospital employee</td><td>Hospital employee</td></tr><tr><td style=\"white-space:nowrap\">rel_other<a name=\"CodeSystem-local-bfdr-codes-rel_other\"> </a></td><td>Other (with write in text)</td><td>Other (with write in text)</td></tr><tr><td style=\"white-space:nowrap\">rel_otherrelative<a name=\"CodeSystem-local-bfdr-codes-rel_otherrelative\"> </a></td><td>Other relative</td><td>Other relative</td></tr><tr><td style=\"white-space:nowrap\">loc_birth<a name=\"CodeSystem-local-bfdr-codes-loc_birth\"> </a></td><td>Birth Location</td><td/></tr><tr><td style=\"white-space:nowrap\">loc_transfer-from<a name=\"CodeSystem-local-bfdr-codes-loc_transfer-from\"> </a></td><td>Transfer-from Location</td><td/></tr><tr><td style=\"white-space:nowrap\">loc_transfer-to<a name=\"CodeSystem-local-bfdr-codes-loc_transfer-to\"> </a></td><td>Transfer-to Location</td><td/></tr><tr><td style=\"white-space:nowrap\">industry_occupation_document<a name=\"CodeSystem-local-bfdr-codes-industry_occupation_document\"> </a></td><td>Industry and Occupation Document</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Preview3"] ; # 
+  fhir:name [ fhir:v "LocalBFDRCodesCS"] ; # 
+  fhir:title [ fhir:v "Local BFDR Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-30T17:05:21-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Local Codes for concepts in BFDR that lack an appropriate LOINC or SCT code"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "unknownplannedhomebirth" ] ;
+     fhir:display [ fhir:v "Unknown if Planned Home Birth" ] ;
+     fhir:definition [ fhir:v "Unknown if Planned Home Birth" ]
+  ] [
+     fhir:code [ fhir:v "assistedventfollowingdelivery" ] ;
+     fhir:display [ fhir:v "Assisted ventilation required immediately following delivery" ] ;
+     fhir:definition [ fhir:v "Assisted ventilation required immediately following delivery" ]
+  ] [
+     fhir:code [ fhir:v "assistedventmorethan6hrs" ] ;
+     fhir:display [ fhir:v "Assisted ventilation required for more than six hours" ] ;
+     fhir:definition [ fhir:v "Assisted ventilation required for more than six hours" ]
+  ] [
+     fhir:code [ fhir:v "FCOD_maternalconditions" ] ;
+     fhir:display [ fhir:v "Maternal Conditions/Diseases (Specify)" ] ;
+     fhir:definition [ fhir:v "Maternal Conditions/Diseases (Specify)" ]
+  ] [
+     fhir:code [ fhir:v "FCOD_membranes" ] ;
+     fhir:display [ fhir:v "Complications of Placenta, Cord, or Membranes: Other (Specify)" ] ;
+     fhir:definition [ fhir:v "Complications of Placenta, Cord, or Membranes: Other (Specify)" ]
+  ] [
+     fhir:code [ fhir:v "FCOD_obstetricalcomplications" ] ;
+     fhir:display [ fhir:v "Other Obstetrical or Pregnancy Complications (Specify)" ] ;
+     fhir:definition [ fhir:v "Other Obstetrical or Pregnancy Complications (Specify)" ]
+  ] [
+     fhir:code [ fhir:v "FCOD_fetalconditions" ] ;
+     fhir:display [ fhir:v "Other Fetal Conditions/Disorder (Specify)" ] ;
+     fhir:definition [ fhir:v "Other Fetal Conditions/Disorder (Specify)" ]
+  ] [
+     fhir:code [ fhir:v "rel_fatherofbaby" ] ;
+     fhir:display [ fhir:v "Father of baby" ] ;
+     fhir:definition [ fhir:v "Father of baby" ]
+  ] [
+     fhir:code [ fhir:v "rel_hospitalemployee" ] ;
+     fhir:display [ fhir:v "Hospital employee" ] ;
+     fhir:definition [ fhir:v "Hospital employee" ]
+  ] [
+     fhir:code [ fhir:v "rel_other" ] ;
+     fhir:display [ fhir:v "Other (with write in text)" ] ;
+     fhir:definition [ fhir:v "Other (with write in text)" ]
+  ] [
+     fhir:code [ fhir:v "rel_otherrelative" ] ;
+     fhir:display [ fhir:v "Other relative" ] ;
+     fhir:definition [ fhir:v "Other relative" ]
+  ] [
+     fhir:code [ fhir:v "loc_birth" ] ;
+     fhir:display [ fhir:v "Birth Location" ]
+  ] [
+     fhir:code [ fhir:v "loc_transfer-from" ] ;
+     fhir:display [ fhir:v "Transfer-from Location" ]
+  ] [
+     fhir:code [ fhir:v "loc_transfer-to" ] ;
+     fhir:display [ fhir:v "Transfer-to Location" ]
+  ] [
+     fhir:code [ fhir:v "industry_occupation_document" ] ;
+     fhir:display [ fhir:v "Industry and Occupation Document" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

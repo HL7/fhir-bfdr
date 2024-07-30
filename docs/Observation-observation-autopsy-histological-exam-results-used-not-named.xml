@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-autopsy-histological-exam-results-used-not-named"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-autopsy-histological-exam-results-used-not-named"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-autopsy-histological-exam-results-used-not-named&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-autopsy-histological-exam-results-used.html">Observation - Autopsy or Histological Exam Results Used</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Autopsy or histological placental examination results were used [US Standard Report of Fetal Death] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#74498-7)</span></p><p><b>subject</b>: <a href="Patient-patient-decedent-fetus-not-named.html">Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named)</a> &quot;&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href="Practitioner-practitioner-vital-records-janet-seito.html">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/v2/0136/index.html">v2 Y/N Indicator</a>#Y)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="74498-7"/>
+      <display value="Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-decedent-fetus-not-named"/>
+    <display value="Patient - Decedent Fetus (Fetus Not Named)"/>
+  </subject>
+  <effectiveDateTime value="2019-12-02"/>
+  <performer>
+    <reference value="Practitioner/practitioner-vital-records-janet-seito"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+      <code value="Y"/>
+      <display value="Yes"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

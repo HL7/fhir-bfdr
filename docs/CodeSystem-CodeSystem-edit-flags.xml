@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CodeSystem-edit-flags"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1correctOutOfRange<a name="CodeSystem-edit-flags-1correctOutOfRange"> </a></td><td>Queried data correct, out of range</td><td>Queried data correct, out of range</td></tr><tr><td style="white-space:nowrap">1failedVerified<a name="CodeSystem-edit-flags-1failedVerified"> </a></td><td>Edit Failed, Verified</td><td>Edit Failed, Verified</td></tr><tr><td style="white-space:nowrap">2failedBirthWeightGestationEdit<a name="CodeSystem-edit-flags-2failedBirthWeightGestationEdit"> </a></td><td>Queried, failed birthweight/gestation edit</td><td>Queried, failed birthweight/gestation edit</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="EditFlagsCS"/>
+  <title value="Birth Edit Flags"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This code system contains codes to represent edit flags specific to BFDR. Additional edit flag codes are located in [CodeSystemEditFlagsVitalRecords](https://hl7.org/fhir/us/vr-common-library/2024Jan/CodeSystem-CodeSystem-vr-edit-flags.html)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="1correctOutOfRange"/>
+    <display value="Queried data correct, out of range"/>
+    <definition value="Queried data correct, out of range"/>
+  </concept>
+  <concept>
+    <code value="1failedVerified"/>
+    <display value="Edit Failed, Verified"/>
+    <definition value="Edit Failed, Verified"/>
+  </concept>
+  <concept>
+    <code value="2failedBirthWeightGestationEdit"/>
+    <display value="Queried, failed birthweight/gestation edit"/>
+    <definition value="Queried, failed birthweight/gestation edit"/>
+  </concept>
+</CodeSystem>

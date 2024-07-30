@@ -1,0 +1,4069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="d51b43dd-c641-4a97-aaf6-3ded88bb26b8"/>
+  <meta>
+    <lastUpdated value="2024-07-30T17:05:21.283-04:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.74</li>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <p>This value set contains 5 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-9272-6"> </a>  
+                  <a href="https://loinc.org/9272-6/">9272-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>1 minute Apgar Score</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-9274-2"> </a>  
+                  <a href="https://loinc.org/9274-2/">9274-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>5 minute Apgar Score</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-9271-8"> </a>  
+                  <a href="https://loinc.org/9271-8/">9271-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>10 minute Apgar Score</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-443848000"> </a>  
+                  <a href="http://snomed.info/id/443848000">443848000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Apgar score at 15 minutes (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-443849008"> </a>  
+                  <a href="http://snomed.info/id/443849008">443849008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Apgar score at 20 minutes (observable entity)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="ApgarTimingVS"/>
+        <title value="APGAR Score Timing"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ddc46700-3300-440d-a4b0-e1de392ce547"/>
+          <timestamp value="2024-07-30T17:09:15-04:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9272-6"/>
+            <display value="1 minute Apgar Score"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9274-2"/>
+            <display value="5 minute Apgar Score"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9271-8"/>
+            <display value="10 minute Apgar Score"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443848000"/>
+            <display value="Apgar score at 15 minutes (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443849008"/>
+            <display value="Apgar score at 20 minutes (observable entity)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="https://nahdo.org/sopt">codesystem Source of Payment Typology v9.2 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 8 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nahdo.org-sopt-33"> </a>  
+                  <a href="https://nahdo.org/sopt.html#SOP-33">33</a>
+                </td>
+                <td>https://nahdo.org/sopt</td>
+                <td>Indian Health Service or Tribe</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nahdo.org-sopt-2"> </a>  
+                  <a href="https://nahdo.org/sopt.html#SOP-2">2</a>
+                </td>
+                <td>https://nahdo.org/sopt</td>
+                <td>MEDICAID</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nahdo.org-sopt-99"> </a>  
+                  <a href="https://nahdo.org/sopt.html#SOP-99">99</a>
+                </td>
+                <td>https://nahdo.org/sopt</td>
+                <td>No Typology Code available for payment source</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nahdo.org-sopt-38"> </a>  
+                  <a href="https://nahdo.org/sopt.html#SOP-38">38</a>
+                </td>
+                <td>https://nahdo.org/sopt</td>
+                <td>Other Government (Federal, State, Local not specified)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nahdo.org-sopt-5"> </a>  
+                  <a href="https://nahdo.org/sopt.html#SOP-5">5</a>
+                </td>
+                <td>https://nahdo.org/sopt</td>
+                <td>PRIVATE HEALTH INSURANCE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nahdo.org-sopt-81"> </a>  
+                  <a href="https://nahdo.org/sopt.html#SOP-81">81</a>
+                </td>
+                <td>https://nahdo.org/sopt</td>
+                <td>Self-pay</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nahdo.org-sopt-311"> </a>  
+                  <a href="https://nahdo.org/sopt.html#SOP-311">311</a>
+                </td>
+                <td>https://nahdo.org/sopt</td>
+                <td>TRICARE (CHAMPUS)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nahdo.org-sopt-9999"> </a>  
+                  <a href="https://nahdo.org/sopt.html#SOP-9999">9999</a>
+                </td>
+                <td>https://nahdo.org/sopt</td>
+                <td>Unavailable / Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="BirthAndFetalDeathFinancialClassVS"/>
+        <title value="Birth and Fetal Death Financial Class"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:09940cb5-c05a-4c96-9c0d-624a11c20450"/>
+          <timestamp value="2024-07-30T17:09:16-04:00"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nahdo.org/sopt|9.2"/>
+          </parameter>
+          <contains>
+            <system value="https://nahdo.org/sopt"/>
+            <code value="33"/>
+            <display value="Indian Health Service or Tribe"/>
+          </contains>
+          <contains>
+            <system value="https://nahdo.org/sopt"/>
+            <code value="2"/>
+            <display value="MEDICAID"/>
+          </contains>
+          <contains>
+            <system value="https://nahdo.org/sopt"/>
+            <code value="99"/>
+            <display value="No Typology Code available for payment source"/>
+          </contains>
+          <contains>
+            <system value="https://nahdo.org/sopt"/>
+            <code value="38"/>
+            <display value="Other Government (Federal, State, Local not specified)"/>
+          </contains>
+          <contains>
+            <system value="https://nahdo.org/sopt"/>
+            <code value="5"/>
+            <display value="PRIVATE HEALTH INSURANCE"/>
+          </contains>
+          <contains>
+            <system value="https://nahdo.org/sopt"/>
+            <code value="81"/>
+            <display value="Self-pay"/>
+          </contains>
+          <contains>
+            <system value="https://nahdo.org/sopt"/>
+            <code value="311"/>
+            <display value="TRICARE (CHAMPUS)"/>
+          </contains>
+          <contains>
+            <system value="https://nahdo.org/sopt"/>
+            <code value="9999"/>
+            <display value="Unavailable / Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-attendant-titles"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 6 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-112247003"> </a>  
+                  <a href="http://snomed.info/id/112247003">112247003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medical Doctor</td>
+                <td>inactive</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-76231001"> </a>  
+                  <a href="http://snomed.info/id/76231001">76231001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Osteopath</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-445521000124102"> </a>  
+                  <a href="http://snomed.info/id/445521000124102">445521000124102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Advanced Practice Midwife</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-445531000124104"> </a>  
+                  <a href="http://snomed.info/id/445531000124104">445531000124104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lay Midwife</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Other</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                    </p>
+
+                    <p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Unknown</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>**Description:**A proper value is applicable, but not known.</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+                    </p>
+
+                    <ol>
+
+                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
+
+                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
+
+                    </ol>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-attendant-titles"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="BirthAttendantTitlesVS"/>
+        <title value="Birth Attendants Titles"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:30f72c31-9514-4656-901e-ea7544e2c3e8"/>
+          <timestamp value="2024-07-30T17:09:16-04:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
+            <code value="112247003"/>
+            <display value="Medical Doctor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76231001"/>
+            <display value="Osteopath"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="445521000124102"/>
+            <display value="Advanced Practice Midwife"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="445531000124104"/>
+            <display value="Lay Midwife"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-delivery-occurred"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html">codesystem Local BFDR Codes v2.0.0-Preview3 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 8 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-22232009"> </a>  
+                  <a href="http://snomed.info/id/22232009">22232009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hospital</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-91154008"> </a>  
+                  <a href="http://snomed.info/id/91154008">91154008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Free-standing birthing center</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-408839006"> </a>  
+                  <a href="http://snomed.info/id/408839006">408839006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Planned home birth</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-408838003"> </a>  
+                  <a href="http://snomed.info/id/408838003">408838003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Unplanned home birth</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-67190003"> </a>  
+                  <a href="http://snomed.info/id/67190003">67190003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Free-standing clinic</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-unknownplannedhomebirth"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-unknownplannedhomebirth">unknownplannedhomebirth</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Unknown if Planned Home Birth</td>
+                <td>
+                  <div>
+                    <p>Unknown if Planned Home Birth</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Other</td>
+                <td>
+                  <div>
+                    <p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                    </p>
+
+                    <p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Unknown</td>
+                <td>
+                  <div>
+                    <p>**Description:**A proper value is applicable, but not known.</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+                    </p>
+
+                    <ol>
+
+                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
+
+                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
+
+                    </ol>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-delivery-occurred"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="BirthDeliveryOccurredVS"/>
+        <title value="Birth Delivery Occurred"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:48caf171-eed6-481a-be4b-eb46123e933d"/>
+          <timestamp value="2024-07-30T17:09:16-04:00"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes|2.0.0-Preview3"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22232009"/>
+            <display value="Hospital"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="91154008"/>
+            <display value="Free-standing birthing center"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="408839006"/>
+            <display value="Planned home birth"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="408838003"/>
+            <display value="Unplanned home birth"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67190003"/>
+            <display value="Free-standing clinic"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="unknownplannedhomebirth"/>
+            <display value="Unknown if Planned Home Birth"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-weight-edit-flags"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-CodeSystem-edit-flags.html">codesystem Birth Edit Flags v2.0.0-Preview3 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html">codesystem Birth and Death Edit Flags Vital Records v2.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-vr-common-library-CodeSystem-CodeSystem-vr-edit-flags-0off"> </a>  
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html#CodeSystem-vr-edit-flags-0off">0off</a>
+                </td>
+                <td>http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags</td>
+                <td>Off</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-edit-flags-1correctOutOfRange"> </a>  
+                  <a href="CodeSystem-CodeSystem-edit-flags.html#CodeSystem-edit-flags-1correctOutOfRange">1correctOutOfRange</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</td>
+                <td>Queried data correct, out of range</td>
+                <td>
+                  <div>
+                    <p>Queried data correct, out of range</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-edit-flags-2failedBirthWeightGestationEdit"> </a>  
+                  <a href="CodeSystem-CodeSystem-edit-flags.html#CodeSystem-edit-flags-2failedBirthWeightGestationEdit">2failedBirthWeightGestationEdit</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</td>
+                <td>Queried, failed birthweight/gestation edit</td>
+                <td>
+                  <div>
+                    <p>Queried, failed birthweight/gestation edit</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-weight-edit-flags"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="BirthWeightEditFlagsVS"/>
+        <title value="Birth Weight Edit Flags (NCHS)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:601f0316-76a1-48e4-99af-4642fecfe73a"/>
+          <timestamp value="2024-07-30T17:09:16-04:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags|2.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags|2.0.0-Preview3"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+            <code value="0off"/>
+            <display value="Off"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags"/>
+            <code value="1correctOutOfRange"/>
+            <display value="Queried data correct, out of range"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags"/>
+            <code value="2failedBirthWeightGestationEdit"/>
+            <display value="Queried, failed birthweight/gestation edit"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-delivery-routes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Sep 2023</p>
+            <p>This value set contains 4 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-700000006"> </a>  
+                  <a href="http://snomed.info/id/700000006">700000006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vaginal delivery of fetus (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-302383004"> </a>  
+                  <a href="http://snomed.info/id/302383004">302383004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Forceps delivery (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-61586001"> </a>  
+                  <a href="http://snomed.info/id/61586001">61586001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Delivery by vacuum extraction (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-11466000"> </a>  
+                  <a href="http://snomed.info/id/11466000">11466000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cesarean section (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-delivery-routes"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="DeliveryRoutesVS"/>
+        <title value="Delivery Routes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4ce338e6-957a-4eab-8fc7-42afc1f83582"/>
+          <timestamp value="2024-07-30T17:09:17-04:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="700000006"/>
+            <display value="Vaginal delivery of fetus (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="302383004"/>
+            <display value="Forceps delivery (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61586001"/>
+            <display value="Delivery by vacuum extraction (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11466000"/>
+            <display value="Cesarean section (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-estimate-of-gestation-edit-flags"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-CodeSystem-edit-flags.html">codesystem Birth Edit Flags v2.0.0-Preview3 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html">codesystem Birth and Death Edit Flags Vital Records v2.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 2 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-vr-common-library-CodeSystem-CodeSystem-vr-edit-flags-0off"> </a>  
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html#CodeSystem-vr-edit-flags-0off">0off</a>
+                </td>
+                <td>http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags</td>
+                <td>Off</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-edit-flags-1correctOutOfRange"> </a>  
+                  <a href="CodeSystem-CodeSystem-edit-flags.html#CodeSystem-edit-flags-1correctOutOfRange">1correctOutOfRange</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</td>
+                <td>Queried data correct, out of range</td>
+                <td>
+                  <div>
+                    <p>Queried data correct, out of range</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-estimate-of-gestation-edit-flags"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="EstimateOfGestationEditFlagsVS"/>
+        <title value="Estimate of Gestation Edit Flags (NCHS)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:86cecb86-6eb8-4013-b4cd-1b53bbfeb0e0"/>
+          <timestamp value="2024-07-30T17:09:17-04:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags|2.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags|2.0.0-Preview3"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+            <code value="0off"/>
+            <display value="Off"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags"/>
+            <code value="1correctOutOfRange"/>
+            <display value="Queried data correct, out of range"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fertility-enhancing-drug-therapy-artificial-insem"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Mar 2024</p>
+            <p>This value set contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-58533008"> </a>  
+                  <a href="http://snomed.info/id/58533008">58533008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Artificial insemination</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-265064001"> </a>  
+                  <a href="http://snomed.info/id/265064001">265064001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intrauterine artificial insemination</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-445151000124101"> </a>  
+                  <a href="http://snomed.info/id/445151000124101">445151000124101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fertility enhancing drug therapy (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fertility-enhancing-drug-therapy-artificial-insem"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="FertilityEnhancingDrugTherapyArtificialInseminationVS"/>
+        <title value="Fertility Enhancing Drug Therapy and Artificial Insemination Value Set"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:208ef222-44d1-4955-bc1f-73912722636c"/>
+          <timestamp value="2024-07-30T17:09:17-04:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="58533008"/>
+            <display value="Artificial insemination"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="265064001"/>
+            <display value="Intrauterine artificial insemination"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="445151000124101"/>
+            <display value="Fertility enhancing drug therapy (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-cause-or-condition"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html">codesystem Local BFDR Codes v2.0.0-Preview3 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 13 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-44223004"> </a>  
+                  <a href="http://snomed.info/id/44223004">44223004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Premature rupture of membranes (disorder)</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-415105001"> </a>  
+                  <a href="http://snomed.info/id/415105001">415105001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Placental abruption (disorder)</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-237292005"> </a>  
+                  <a href="http://snomed.info/id/237292005">237292005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Placental insufficiency (disorder)</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-270500004"> </a>  
+                  <a href="http://snomed.info/id/270500004">270500004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Prolapsed cord (disorder)</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-11612004"> </a>  
+                  <a href="http://snomed.info/id/11612004">11612004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chorioamnionitis (disorder)</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-702709008"> </a>  
+                  <a href="http://snomed.info/id/702709008">702709008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Congenital anomaly of fetus (Specify) (disorder)</td>
+                <td>inactive</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-277489001"> </a>  
+                  <a href="http://snomed.info/id/277489001">277489001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fetal trauma (Specify) (disorder)</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128270001"> </a>  
+                  <a href="http://snomed.info/id/128270001">128270001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Infectious disorder of the fetus (Specify) (disorder)</td>
+                <td/>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-FCOD-maternalconditions"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-FCOD_maternalconditions">FCOD_maternalconditions</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Maternal Conditions/Diseases (Specify)(disorder)</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Maternal Conditions/Diseases (Specify)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-FCOD-membranes"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-FCOD_membranes">FCOD_membranes</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Complications of Placenta, Cord, or Membranes: Other (Specify)(disorder)</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Complications of Placenta, Cord, or Membranes: Other (Specify)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-FCOD-obstetricalcomplications"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-FCOD_obstetricalcomplications">FCOD_obstetricalcomplications</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Other Obstetrical or Pregnancy Complications (Specify)(disorder)</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Other Obstetrical or Pregnancy Complications (Specify)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-FCOD-fetalconditions"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-FCOD_fetalconditions">FCOD_fetalconditions</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Other Fetal Conditions/Disorder (Specify)(disorder)</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Other Fetal Conditions/Disorder (Specify)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>unknown</td>
+                <td/>
+                <td>
+                  <div>
+                    <p>**Description:**A proper value is applicable, but not known.</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+                    </p>
+
+                    <ol>
+
+                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
+
+                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
+
+                    </ol>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-cause-or-condition"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="FetalDeathCauseOrConditionVS"/>
+        <title value="Fetal Death Cause or Condition"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7bcdc1ea-0a3a-4795-a8f1-8ac1a59566b3"/>
+          <timestamp value="2024-07-30T17:09:18-04:00"/>
+          <total value="13"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes|2.0.0-Preview3"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="44223004"/>
+            <display value="Premature rupture of membranes (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="415105001"/>
+            <display value="Placental abruption (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="237292005"/>
+            <display value="Placental insufficiency (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="270500004"/>
+            <display value="Prolapsed cord (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11612004"/>
+            <display value="Chorioamnionitis (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
+            <code value="702709008"/>
+            <display value="Congenital anomaly of fetus (Specify) (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="277489001"/>
+            <display value="Fetal trauma (Specify) (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128270001"/>
+            <display value="Infectious disorder of the fetus (Specify) (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="FCOD_maternalconditions"/>
+            <display value="Maternal Conditions/Diseases (Specify)(disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="FCOD_membranes"/>
+            <display value="Complications of Placenta, Cord, or Membranes: Other (Specify)(disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="FCOD_obstetricalcomplications"/>
+            <display value="Other Obstetrical or Pregnancy Complications (Specify)(disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="FCOD_fetalconditions"/>
+            <display value="Other Fetal Conditions/Disorder (Specify)(disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-time-points"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-434681000124104"> </a>  
+                  <a href="http://snomed.info/id/434681000124104">434681000124104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Antepartum fetal death with cessation of labor</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-434671000124102"> </a>  
+                  <a href="http://snomed.info/id/434671000124102">434671000124102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Antepartum fetal death with continued labor</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-434631000124100"> </a>  
+                  <a href="http://snomed.info/id/434631000124100">434631000124100</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fetal intrapartum death after first assessment</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Unknown</td>
+                <td>
+                  <div>
+                    <p>**Description:**A proper value is applicable, but not known.</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+                    </p>
+
+                    <ol>
+
+                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
+
+                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
+
+                    </ol>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-time-points"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="FetalDeathTimePointsVS"/>
+        <title value="Fetal Death Time Points"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a630b805-06fa-474a-9a12-9e805cf515f8"/>
+          <timestamp value="2024-07-30T17:09:18-04:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="434681000124104"/>
+            <display value="Antepartum fetal death with cessation of labor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="434671000124102"/>
+            <display value="Antepartum fetal death with continued labor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="434631000124100"/>
+            <display value="Fetal intrapartum death after first assessment"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations-max"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-ValueSet-fetal-presentations.html">valueset Fetal Presentations v2.0.0-Preview3 (ValueSet)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set expansion contains 21 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-70028003"> </a>  
+                  <a href="http://snomed.info/id/70028003">70028003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vertex presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-6096002"> </a>  
+                  <a href="http://snomed.info/id/6096002">6096002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Breech presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Other</td>
+                <td>
+                  <div>
+                    <p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                    </p>
+
+                    <p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>unknown</td>
+                <td>
+                  <div>
+                    <p>**Description:**A proper value is applicable, but not known.</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+                    </p>
+
+                    <ol>
+
+                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
+
+                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
+
+                    </ol>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-15028002"> </a>  
+                  <a href="http://snomed.info/id/15028002">15028002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Abnormal fetal presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-14058000"> </a>  
+                  <a href="http://snomed.info/id/14058000">14058000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Asynclitism</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-18559007"> </a>  
+                  <a href="http://snomed.info/id/18559007">18559007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Frank breech presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-23954006"> </a>  
+                  <a href="http://snomed.info/id/23954006">23954006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Acromion presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-38049006"> </a>  
+                  <a href="http://snomed.info/id/38049006">38049006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Incomplete breech presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-46200004"> </a>  
+                  <a href="http://snomed.info/id/46200004">46200004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Funic presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-46917002"> </a>  
+                  <a href="http://snomed.info/id/46917002">46917002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anterior asynclitism</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-48906005"> </a>  
+                  <a href="http://snomed.info/id/48906005">48906005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Breech presentation, double footling</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-49168004"> </a>  
+                  <a href="http://snomed.info/id/49168004">49168004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Complete breech presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-50724007"> </a>  
+                  <a href="http://snomed.info/id/50724007">50724007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Longitudinal fetal presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-58903006"> </a>  
+                  <a href="http://snomed.info/id/58903006">58903006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Breech presentation, single footling</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-90731001"> </a>  
+                  <a href="http://snomed.info/id/90731001">90731001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Posterior asynclitism</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-124736009"> </a>  
+                  <a href="http://snomed.info/id/124736009">124736009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Compound presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-199355003"> </a>  
+                  <a href="http://snomed.info/id/199355003">199355003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Breech presentation with antenatal problem</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-249097002"> </a>  
+                  <a href="http://snomed.info/id/249097002">249097002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fetal foot presenting</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-289398000"> </a>  
+                  <a href="http://snomed.info/id/289398000">289398000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fetal breech palpable vaginally</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-289399008"> </a>  
+                  <a href="http://snomed.info/id/289399008">289399008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Compound presentation palpable vaginally</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations-max"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="FetalPresentationsMaxVS"/>
+        <title value="Fetal Presentations - Max"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:4e21ee92-5816-494e-99c0-86ce26a06691"/>
+          <timestamp value="2024-07-30T17:09:18-04:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations|2.0.0-Preview3"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="70028003"/>
+            <display value="Vertex presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="6096002"/>
+            <display value="Breech presentation"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="unknown"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="15028002"/>
+            <display value="Abnormal fetal presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="14058000"/>
+            <display value="Asynclitism"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="18559007"/>
+            <display value="Frank breech presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="23954006"/>
+            <display value="Acromion presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="38049006"/>
+            <display value="Incomplete breech presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="46200004"/>
+            <display value="Funic presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="46917002"/>
+            <display value="Anterior asynclitism"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="48906005"/>
+            <display value="Breech presentation, double footling"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="49168004"/>
+            <display value="Complete breech presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="50724007"/>
+            <display value="Longitudinal fetal presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="58903006"/>
+            <display value="Breech presentation, single footling"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90731001"/>
+            <display value="Posterior asynclitism"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="124736009"/>
+            <display value="Compound presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="199355003"/>
+            <display value="Breech presentation with antenatal problem"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="249097002"/>
+            <display value="Fetal foot presenting"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="289398000"/>
+            <display value="Fetal breech palpable vaginally"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="289399008"/>
+            <display value="Compound presentation palpable vaginally"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-70028003"> </a>  
+                  <a href="http://snomed.info/id/70028003">70028003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vertex presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-6096002"> </a>  
+                  <a href="http://snomed.info/id/6096002">6096002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Breech presentation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Other</td>
+                <td>
+                  <div>
+                    <p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                    </p>
+
+                    <p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>unknown</td>
+                <td>
+                  <div>
+                    <p>**Description:**A proper value is applicable, but not known.</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+                    </p>
+
+                    <ol>
+
+                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
+
+                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
+
+                    </ol>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="FetalPresentationsVS"/>
+        <title value="Fetal Presentations"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:04ef2af1-1d49-49ac-9fa8-e689695622ad"/>
+          <timestamp value="2024-07-30T17:09:18-04:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="70028003"/>
+            <display value="Vertex presentation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="6096002"/>
+            <display value="Breech presentation"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-remains-disposition-method"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 7 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-449971000124106"> </a>  
+                  <a href="http://snomed.info/id/449971000124106">449971000124106</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Burial</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-449961000124104"> </a>  
+                  <a href="http://snomed.info/id/449961000124104">449961000124104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cremation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-449951000124101"> </a>  
+                  <a href="http://snomed.info/id/449951000124101">449951000124101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Donation</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-455401000124109"> </a>  
+                  <a href="http://snomed.info/id/455401000124109">455401000124109</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hospital Disposition</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-449941000124103"> </a>  
+                  <a href="http://snomed.info/id/449941000124103">449941000124103</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Removal from state</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Other</td>
+                <td>
+                  <div>
+                    <p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                    </p>
+
+                    <p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Unknown</td>
+                <td>
+                  <div>
+                    <p>**Description:**A proper value is applicable, but not known.</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+                    </p>
+
+                    <ol>
+
+                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
+
+                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
+
+                    </ol>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-remains-disposition-method"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="FetalRemainsDispositionMethodVS"/>
+        <title value="Fetal Remains Disposition Method"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a21b0c25-629a-4c55-b0f8-e1a8eeb12723"/>
+          <timestamp value="2024-07-30T17:09:19-04:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="449971000124106"/>
+            <display value="Burial"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="449961000124104"/>
+            <display value="Cremation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="449951000124101"/>
+            <display value="Donation"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="455401000124109"/>
+            <display value="Hospital Disposition"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="449941000124103"/>
+            <display value="Removal from state"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-infections-during-pregnancy-live-birth"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 7 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-15628003"> </a>  
+                  <a href="http://snomed.info/id/15628003">15628003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gonorrhea (disorder)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-76272004"> </a>  
+                  <a href="http://snomed.info/id/76272004">76272004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Syphilis (disorder)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-105629000"> </a>  
+                  <a href="http://snomed.info/id/105629000">105629000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chlamydia (disorder)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-66071002"> </a>  
+                  <a href="http://snomed.info/id/66071002">66071002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hepatitis B (disorder)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-50711007"> </a>  
+                  <a href="http://snomed.info/id/50711007">50711007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hepatitis C (disorder)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-33839006"> </a>  
+                  <a href="http://snomed.info/id/33839006">33839006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Genital herpes simplex (disorder)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Other</td>
+                <td>
+                  <div>
+                    <p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                    </p>
+
+                    <p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-infections-during-pregnancy-live-birth"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="InfectionsDuringPregnancyLiveBirthVS"/>
+        <title value="Infections During Pregnancy Live Birth"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:469031c1-38dc-41e4-b58e-fbc93df0a905"/>
+          <timestamp value="2024-07-30T17:09:19-04:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="15628003"/>
+            <display value="Gonorrhea (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76272004"/>
+            <display value="Syphilis (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="105629000"/>
+            <display value="Chlamydia (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="66071002"/>
+            <display value="Hepatitis B (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="50711007"/>
+            <display value="Hepatitis C (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="33839006"/>
+            <display value="Genital herpes simplex (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-informant-relationship-to-mother"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CodeSystem-local-bfdr-codes.html">codesystem Local BFDR Codes v2.0.0-Preview3 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-rel-fatherofbaby"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_fatherofbaby">rel_fatherofbaby</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Father of baby</td>
+                <td>
+                  <div>
+                    <p>Father of baby</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-rel-hospitalemployee"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_hospitalemployee">rel_hospitalemployee</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Hospital employee</td>
+                <td>
+                  <div>
+                    <p>Hospital employee</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-rel-other"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_other">rel_other</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Other (with write in text)</td>
+                <td>
+                  <div>
+                    <p>Other (with write in text)</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-rel-otherrelative"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_otherrelative">rel_otherrelative</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Other relative</td>
+                <td>
+                  <div>
+                    <p>Other relative</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-informant-relationship-to-mother"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="InformantRelationshipToMotherVS"/>
+        <title value="Informant Relationship to Mother"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:31c0593f-cff7-4dc6-823f-9b933ae49a27"/>
+          <timestamp value="2024-07-30T17:09:19-04:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes|2.0.0-Preview3"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="rel_fatherofbaby"/>
+            <display value="Father of baby"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="rel_hospitalemployee"/>
+            <display value="Hospital employee"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="rel_other"/>
+            <display value="Other (with write in text)"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="rel_otherrelative"/>
+            <display value="Other relative"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-location-types"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CodeSystem-local-bfdr-codes.html">codesystem Local BFDR Codes v2.0.0-Preview3 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-loc-birth"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_birth">loc_birth</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Birth Location</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-loc-transfer-from"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_transfer-from">loc_transfer-from</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Transfer-from Location</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-local-bfdr-codes-loc-transfer-to"> </a>  
+                  <a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_transfer-to">loc_transfer-to</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</td>
+                <td>Transfer-to Location</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-location-types"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="LocationTypeVS"/>
+        <title value="Location Types"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d09794da-c3a0-49f2-9d12-19aeef36666a"/>
+          <timestamp value="2024-07-30T17:09:20-04:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes|2.0.0-Preview3"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="loc_birth"/>
+            <display value="Birth Location"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="loc_transfer-from"/>
+            <display value="Transfer-from Location"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="loc_transfer-to"/>
+            <display value="Transfer-to Location"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT United States edition 01-Sep 2023</li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 13 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-89369001"> </a>  
+                  <a href="http://snomed.info/id/89369001">89369001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anencephalus</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-67531005"> </a>  
+                  <a href="http://snomed.info/id/67531005">67531005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Spina bifida</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-12770006"> </a>  
+                  <a href="http://snomed.info/id/12770006">12770006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cyanotic congenital heart disease</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-17190001"> </a>  
+                  <a href="http://snomed.info/id/17190001">17190001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Congenital diaphragmatic hernia</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-18735004"> </a>  
+                  <a href="http://snomed.info/id/18735004">18735004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Congenital omphalocele</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-72951007"> </a>  
+                  <a href="http://snomed.info/id/72951007">72951007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gastroschisis</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-67341007"> </a>  
+                  <a href="http://snomed.info/id/67341007">67341007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Longitudinal deficiency of limb</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-80281008"> </a>  
+                  <a href="http://snomed.info/id/80281008">80281008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cleft lip</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-87979003"> </a>  
+                  <a href="http://snomed.info/id/87979003">87979003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cleft palate</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-70156005"> </a>  
+                  <a href="http://snomed.info/id/70156005">70156005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anomaly of chromosome pair 21</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-409709004"> </a>  
+                  <a href="http://snomed.info/id/409709004">409709004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chromosomal disorder (disorder)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-416010008"> </a>  
+                  <a href="http://snomed.info/id/416010008">416010008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hypospadias (disorder)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>  
+                  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>Other</td>
+                <td>
+                  <div>
+                    <p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+                    </p>
+
+                    <p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="NewbornCongenitalAnomaliesVS"/>
+        <title value="Newborn Congenital Anomalies"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7f6a835d-d6a3-4bf8-84e8-e32ac8ce2c6a"/>
+          <timestamp value="2024-07-30T17:09:20-04:00"/>
+          <total value="13"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="89369001"/>
+            <display value="Anencephalus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67531005"/>
+            <display value="Spina bifida"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="12770006"/>
+            <display value="Cyanotic congenital heart disease"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="17190001"/>
+            <display value="Congenital diaphragmatic hernia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="18735004"/>
+            <display value="Congenital omphalocele"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72951007"/>
+            <display value="Gastroschisis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="67341007"/>
+            <display value="Longitudinal deficiency of limb"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="80281008"/>
+            <display value="Cleft lip"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="87979003"/>
+            <display value="Cleft palate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="70156005"/>
+            <display value="Anomaly of chromosome pair 21"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="409709004"/>
+            <display value="Chromosomal disorder (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="416010008"/>
+            <display value="Hypospadias (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-number-previous-cesareans-edit-flags"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-CodeSystem-edit-flags.html">codesystem Birth Edit Flags v2.0.0-Preview3 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html">codesystem Birth and Death Edit Flags Vital Records v2.0.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 2 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-vr-common-library-CodeSystem-CodeSystem-vr-edit-flags-0"> </a>  
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html#CodeSystem-vr-edit-flags-0">0</a>
+                </td>
+                <td>http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags</td>
+                <td>Edit Passed</td>
+                <td>
+                  <div>
+                    <p>Edit Passed</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-bfdr-CodeSystem-CodeSystem-edit-flags-1failedVerified"> </a>  
+                  <a href="CodeSystem-CodeSystem-edit-flags.html#CodeSystem-edit-flags-1failedVerified">1failedVerified</a>
+                </td>
+                <td>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</td>
+                <td>Edit Failed, Verified</td>
+                <td>
+                  <div>
+                    <p>Edit Failed, Verified</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-number-previous-cesareans-edit-flags"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="NumberPreviousCesareansEditFlagsVS"/>
+        <title value="Number of Previous Cesareans Edit Flags (NCHS)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:efc6b825-335b-4353-b80d-3364603042dc"/>
+          <timestamp value="2024-07-30T17:09:20-04:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags|2.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags|2.0.0-Preview3"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+            <code value="0"/>
+            <display value="Edit Passed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags"/>
+            <code value="1failedVerified"/>
+            <display value="Edit Failed, Verified"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure-outcome"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Sep 2023</p>
+            <p>This value set contains 2 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-385669000"> </a>  
+                  <a href="http://snomed.info/id/385669000">385669000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Successful (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-385671000"> </a>  
+                  <a href="http://snomed.info/id/385671000">385671000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Unsuccessful (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure-outcome"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="ObstetricProcedureOutcomeVS"/>
+        <title value="Obstetric Procedure Outcome"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a63c1088-9a2c-451e-823e-ce444d6a2ed1"/>
+          <timestamp value="2024-07-30T17:09:20-04:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="385669000"/>
+            <display value="Successful (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="385671000"/>
+            <display value="Unsuccessful (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-performed-not-performed-planned"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Sep 2023</p>
+            <p>This value set contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-398166005"> </a>  
+                  <a href="http://snomed.info/id/398166005">398166005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Performed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-262008008"> </a>  
+                  <a href="http://snomed.info/id/262008008">262008008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Not Performed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-397943006"> </a>  
+                  <a href="http://snomed.info/id/397943006">397943006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Planned</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-performed-not-performed-planned"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="PerformedNotPerformedPlannedVS"/>
+        <title value="Performed NotPerformed Planned"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cc19a325-7b69-4659-8ffd-f5713f23125f"/>
+          <timestamp value="2024-07-30T17:09:21-04:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="398166005"/>
+            <display value="Performed"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="262008008"/>
+            <display value="Not Performed"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="397943006"/>
+            <display value="Planned"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-pregnancy-report-edit-flags"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html">codesystem Birth and Death Edit Flags Vital Records v2.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-vr-common-library-CodeSystem-CodeSystem-vr-edit-flags-0"> </a>  
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html#CodeSystem-vr-edit-flags-0">0</a>
+                </td>
+                <td>http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags</td>
+                <td>Edit Passed</td>
+                <td>
+                  <div>
+                    <p>Edit Passed</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-vr-common-library-CodeSystem-CodeSystem-vr-edit-flags-1"> </a>  
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html#CodeSystem-vr-edit-flags-1">1</a>
+                </td>
+                <td>http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags</td>
+                <td>Edit Failed, Data Queried, and Verified</td>
+                <td>
+                  <div>
+                    <p>Edit Failed, Data Queried, and Verified</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-vr-common-library-CodeSystem-CodeSystem-vr-edit-flags-2"> </a>  
+                  <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html#CodeSystem-vr-edit-flags-2">2</a>
+                </td>
+                <td>http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags</td>
+                <td>Edit Failed, Data Queried, but not Verified</td>
+                <td>
+                  <div>
+                    <p>Edit Failed, Data Queried, but not Verified</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-pregnancy-report-edit-flags"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="PregnancyReportEditFlagsVS"/>
+        <title value="Pregnancy Report Edit Flags (NCHS)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:b0211668-3bbc-459b-a2bc-f8427f980f9c"/>
+          <timestamp value="2024-07-30T17:09:21-04:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+            <code value="0"/>
+            <display value="Edit Passed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+            <code value="1"/>
+            <display value="Edit Failed, Data Queried, and Verified"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+            <code value="2"/>
+            <display value="Edit Failed, Data Queried, but not Verified"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on codesystem UCUM version 2.0.1</p>
+            <p>This value set contains 2 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-d"> </a>  d
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>d</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-wk"> </a>  wk
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>wk</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="UnitsOfGestationalAgeVS"/>
+        <title value="Units of Gestational Age"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fa168b0f-bbeb-4f14-a663-1d1902006e8e"/>
+          <timestamp value="2024-07-30T17:09:21-04:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="d"/>
+            <display value="d"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="wk"/>
+            <display value="wk"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/bfdr/ValueSet/cigarette-smoking-before-during-pregnancy"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <p>This value set contains 4 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-64794-1"> </a>  
+                  <a href="https://loinc.org/64794-1/">64794-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-87298-6"> </a>  
+                  <a href="https://loinc.org/87298-6/">87298-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Cigarettes smoked per day by Mother--1st trimester</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-87299-4"> </a>  
+                  <a href="https://loinc.org/87299-4/">87299-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Cigarettes smoked per day by Mother--2nd trimester</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-64795-8"> </a>  
+                  <a href="https://loinc.org/64795-8/">64795-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/bfdr/ValueSet/cigarette-smoking-before-during-pregnancy"/>
+        <version value="2.0.0-Preview3"/>
+        <name value="CigaretteSmokingBeforeAndDuringPregnancyVS"/>
+        <title value="Cigarette Smoking Before and During Pregnancy"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2024-07-30T17:05:21-04:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a85ea3fd-3be2-4ce4-8ba9-6810341fd203"/>
+          <timestamp value="2024-07-30T17:09:22-04:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="64794-1"/>
+            <display value="In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="87298-6"/>
+            <display value="Cigarettes smoked per day by Mother--1st trimester"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="87299-4"/>
+            <display value="Cigarettes smoked per day by Mother--2nd trimester"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="64795-8"/>
+            <display value="In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

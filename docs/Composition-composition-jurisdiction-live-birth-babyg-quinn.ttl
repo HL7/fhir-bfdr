@@ -1,0 +1,382 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Composition/composition-jurisdiction-live-birth-babyg-quinn> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composition-jurisdiction-live-birth-babyg-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-jurisdiction-live-birth-babyg-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-jurisdiction-live-birth-babyg-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-jurisdiction-live-birth-report.html\">Composition - Jurisdiction Live Birth Report</a></p></div><p><b>identifier</b>: id: c03eab8c-11e8-4d0c-ad2a-b385395e27df</p><p><b>status</b>: final</p><p><b>type</b>: Jurisdiction live birth report Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#92011-6)</span></p><p><b>encounter</b>: <a href=\"Encounter-encounter-birth-babyg-quinn.html\">Encounter/encounter-birth-babyg-quinn</a></p><p><b>date</b>: 2019-02-12</p><p><b>author</b>: <a href=\"Organization-organization-jurisdictional-vital-records-office.html\">Organization/organization-jurisdictional-vital-records-office</a> &quot;Jurisdictional Vital Records Office&quot;</p><p><b>title</b>: Jurisdiction live birth report Document</p></div>"
+  ] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "c03eab8c-11e8-4d0c-ad2a-b385395e27df" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:92011-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "92011-6" ] ;
+       fhir:display [ fhir:v "Jurisdiction live birth report Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-child-babyg-quinn" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Encounter/encounter-birth-babyg-quinn> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://hl7.org/fhir/us/bfdr/Encounter/encounter-maternity-jada-ann-quinn> ;
+         fhir:reference [ fhir:v "Encounter/encounter-maternity-jada-ann-quinn" ]
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "Encounter/encounter-birth-babyg-quinn" ]
+  ] ; # 
+  fhir:date [ fhir:v "2019-02-12"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Organization/organization-jurisdictional-vital-records-office> ;
+     fhir:reference [ fhir:v "Organization/organization-jurisdictional-vital-records-office" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Jurisdiction live birth report Document"] ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57073-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57073-9" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-prenatal-visits-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-number-prenatal-visits-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-last-menstrual-period-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-last-menstrual-period-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-living-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-number-births-now-living-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-dead-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-number-births-now-dead-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-last-live-birth-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-date-of-last-live-birth-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-delivery-weight-jada-ann-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-delivery-weight-jada-ann-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-height-jada-ann-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-height-jada-ann-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-received-wic-food-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-received-wic-food-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:55752-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "55752-0" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-obstetric-procedure-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-obstetric-procedure-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-previous-cesareans-jada-ann-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-number-previous-cesareans-jada-ann-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-infection-present-during-pregnancy-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Condition/condition-infection-present-during-pregnancy-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-gestational-hypertension-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Condition/condition-gestational-hypertension-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-prepregnancy-diabetes-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Condition/condition-prepregnancy-diabetes-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-infertility-treatment-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-infertility-treatment-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-artificial-insemination-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-artificial-insemination-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-chorioamnionitis-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Condition/condition-chorioamnionitis-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-induction-of-labor-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-induction-of-labor-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-antibiotics-during-labor-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-antibiotics-during-labor-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-babyg-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-fetal-presentation-babyg-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-final-route-method-delivery-babyg-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-final-route-method-delivery-babyg-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-ruptured-uterus-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Condition/condition-ruptured-uterus-jada-ann-quinn" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57075-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "57075-4" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-birth-weight-babyg-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-birth-weight-babyg-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-gestational-age-at-delivery-babyg-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-gestational-age-at-delivery-babyg-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-apgar-score-babyg-quinn-5-min> ;
+       fhir:reference [ fhir:v "Observation/observation-apgar-score-babyg-quinn-5-min" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-apgar-score-babyg-quinn-10-min> ;
+       fhir:reference [ fhir:v "Observation/observation-apgar-score-babyg-quinn-10-min" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-number-live-births-this-delivery-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-number-live-births-this-delivery-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Procedure/procedure-antibiotic-sepsis-babyg-quinn> ;
+       fhir:reference [ fhir:v "Procedure/procedure-antibiotic-sepsis-babyg-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-congenital-anomaly-of-newborn-babyg-quinn> ;
+       fhir:reference [ fhir:v "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2> ;
+       fhir:reference [ fhir:v "Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-infant-living-babyg-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-infant-living-babyg-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-infant-breastfed-at-discharge-babyg-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-infant-breastfed-at-discharge-babyg-quinn" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:92014-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "92014-0" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-mother-married-during-pregnancy-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-mother-married-during-pregnancy-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-parent-education-level-jada-ann-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-parent-education-level-jada-ann-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-present-job-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-present-job-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-jada-ann-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-input-race-and-ethnicity-jada-ann-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-ssn-requested-for-child-babyg-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-ssn-requested-for-child-babyg-quinn" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:92013-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "92013-2" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:link <http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit> ;
+       fhir:reference [ fhir:v "RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-paternity-acknowledgement-signed-james-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-paternity-acknowledgement-signed-james-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-parent-education-level-james-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-parent-education-level-james-quinn-w-edit" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-present-job-james-brandon-quinn> ;
+       fhir:reference [ fhir:v "Observation/observation-present-job-james-brandon-quinn" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-james-quinn-w-edit> ;
+       fhir:reference [ fhir:v "Observation/observation-input-race-and-ethnicity-james-quinn-w-edit" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-child-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Encounter/encounter-birth-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Encounter/encounter-maternity-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Organization/organization-jurisdictional-vital-records-office> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-prenatal-visits-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-last-menstrual-period-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-living-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-births-now-dead-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-last-live-birth-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-delivery-weight-jada-ann-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-height-jada-ann-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-received-wic-food-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-obstetric-procedure-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-previous-cesareans-jada-ann-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-infection-present-during-pregnancy-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-gestational-hypertension-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-prepregnancy-diabetes-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-infertility-treatment-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-artificial-insemination-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-chorioamnionitis-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-induction-of-labor-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-antibiotics-during-labor-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-fetal-presentation-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-final-route-method-delivery-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-ruptured-uterus-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-birth-weight-babyg-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-gestational-age-at-delivery-babyg-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-apgar-score-babyg-quinn-5-min> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-apgar-score-babyg-quinn-10-min> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-number-live-births-this-delivery-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Procedure/procedure-antibiotic-sepsis-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-congenital-anomaly-of-newborn-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-infant-living-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-infant-breastfed-at-discharge-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-married-during-pregnancy-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-parent-education-level-jada-ann-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-present-job-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-ssn-requested-for-child-babyg-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-paternity-acknowledgement-signed-james-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-parent-education-level-james-quinn-w-edit> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-present-job-james-brandon-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-james-quinn-w-edit> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

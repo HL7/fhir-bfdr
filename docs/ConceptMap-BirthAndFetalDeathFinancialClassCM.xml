@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="BirthAndFetalDeathFinancialClassCM"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from (not specified) to <a href="ValueSet-ValueSet-birth-and-fetal-death-financial-class.html">Birth and Fetal Death Financial Class</a></p><p>DRAFT. Published on 2024-07-30 17:05:21-0400 by HL7 International / Public Health (HL7 International / Public Health: <a href="http://www.hl7.org/Special/committees/pher">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR BirthAndFetalDeathFinancialClass Value Sets</p>
+</div><br/><p><b>Group 1</b>Mapping from <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html">Placeholder Code System for IJE in Vital Records</a> to <a href="https://nahdo.org/sopt">Source of Payment Typology</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>1 (Medicaid)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>2 (MEDICAID)</td></tr><tr><td>2 (Private Insurance)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>5 (PRIVATE HEALTH INSURANCE)</td></tr><tr><td>3 (Self-pay)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>81 (Self-pay (Includes applicants for insurance and Medicaid applicants))</td></tr><tr><td>4 (Indian Health Service)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>33 (Indian Health Service or Tribe)</td></tr><tr><td>5 (CHAMPUS/TRICARE)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>311 (TRICARE (CHAMPUS))</td></tr><tr><td>6 (Other Government (Fed, State, Local))</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>38 (Other Government (Federal, State, Local not specified))</td></tr><tr><td>8 (Other)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>99 (No Typology Code available for payment source)</td></tr><tr><td>9 (Unknown)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>9999 (Unavailable / No Payer Specified / Blank)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ConceptMap/BirthAndFetalDeathFinancialClassCM"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="BirthAndFetalDeathFinancialClass"/>
+  <title value="BirthAndFetalDeathFinancialClass Concept Map"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="A mapping between NCHS IJE and FHIR BirthAndFetalDeathFinancialClass Value Sets"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="focus"/>
+    </code>
+    <valueCodeableConcept>
+      <text value="for IJE to FHIR alignment"/>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="To help implementers map from IJE to FHIR Vocabulary"/>
+  <targetCanonical value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class"/>
+  <group>
+    <source value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"/>
+    <target value="https://nahdo.org/sopt"/>
+    <element>
+      <code value="1"/>
+      <display value="Medicaid"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="2"/>
+        <display value="MEDICAID"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="2"/>
+      <display value="Private Insurance"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="5"/>
+        <display value="PRIVATE HEALTH INSURANCE"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="3"/>
+      <display value="Self-pay"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="81"/>
+        <display value="Self-pay (Includes applicants for insurance and Medicaid applicants)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="4"/>
+      <display value="Indian Health Service"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="33"/>
+        <display value="Indian Health Service or Tribe"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="5"/>
+      <display value="CHAMPUS/TRICARE"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="311"/>
+        <display value="TRICARE (CHAMPUS)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="6"/>
+      <display value="Other Government (Fed, State, Local)"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="38"/>
+        <display value="Other Government (Federal, State, Local not specified)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="8"/>
+      <display value="Other"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="99"/>
+        <display value="No Typology Code available for payment source"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="9"/>
+      <display value="Unknown"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="9999"/>
+        <display value="Unavailable / No Payer Specified / Blank"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-gestational-age-at-delivery-babyg-quinn-w-edit",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-gestational-age-at-delivery-babyg-quinn-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-gestational-age-at-delivery-babyg-quinn-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-gestational-age-at-delivery.html\">Observation - Gestational Age at Delivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Gestational age Estimated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11884-4)</span></p><p><b>subject</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn: BabyG Quinn</a> &quot; QUINN&quot;</p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-vital-records-janet-seito.html\">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: 36 wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code wk = 'wk')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11884-4",
+      "display" : "Gestational age Estimated"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-child-babyg-quinn",
+    "display" : "BabyG Quinn"
+  },
+  "effectiveDateTime" : "2019-12-02",
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+  }],
+  "valueQuantity" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags",
+          "code" : "0off",
+          "display" : "Off"
+        }]
+      }
+    }],
+    "value" : 36,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "wk"
+  }
+}

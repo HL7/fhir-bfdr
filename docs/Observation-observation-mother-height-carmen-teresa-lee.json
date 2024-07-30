@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-mother-height-carmen-teresa-lee",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-mother-height-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-mother-height-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-mother-height.html\">Observation - Mother Height</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mother-carmen-teresa-lee.html\">Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee)</a> &quot; LEE&quot;</p><p><b>effective</b>: 2019-01-10</p><p><b>performer</b>: <a href=\"Patient-patient-mother-carmen-teresa-lee.html\">Patient/patient-mother-carmen-teresa-lee</a> &quot; LEE&quot;</p><p><b>value</b>: 65 in<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [in_i] = '[in_i]')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8302-2"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-mother-carmen-teresa-lee",
+    "display" : "Patient - Mother (Carmen Teresa Lee)"
+  },
+  "effectiveDateTime" : "2019-01-10",
+  "performer" : [{
+    "reference" : "Patient/patient-mother-carmen-teresa-lee"
+  }],
+  "valueQuantity" : {
+    "value" : 65,
+    "unit" : "in",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "[in_i]"
+  }
+}

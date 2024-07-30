@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Composition/composition-coded-race-and-ethnicity-baby-g-quinn> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composition-coded-race-and-ethnicity-baby-g-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-coded-race-and-ethnicity-baby-g-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-coded-race-and-ethnicity-baby-g-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-coded-race-and-ethnicity.html\">Composition - Coded Race and Ethnicity</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Race and ethnicity information Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86805-9)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Race and Ethnicity</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:86805-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86805-9" ] ;
+       fhir:display [ fhir:v "Race and ethnicity information Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "Patient - Child (Baby G Quinn)" ]
+  ] ; # 
+  fhir:date [ fhir:v "2019-01-09"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:display [ fhir:v "National Center for Health Statistics" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Coded Race and Ethnicity"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Mother's Coded Race and Ethnicity" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MTH" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:display [ fhir:v "patient-mother-jada-ann-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-mother> ;
+       fhir:reference [ fhir:v "Observation/observation-input-race-and-ethnicity-mother" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-coded-race-and-ethnicity-mother> ;
+       fhir:reference [ fhir:v "Observation/observation-coded-race-and-ethnicity-mother" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Father's Coded Race and Ethnicity" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NFTH" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:display [ fhir:v "relatedperson-father-natural-james-brandon-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-father> ;
+       fhir:reference [ fhir:v "Observation/observation-input-race-and-ethnicity-father" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-coded-race-and-ethnicity-father> ;
+       fhir:reference [ fhir:v "Observation/observation-coded-race-and-ethnicity-father" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-mother> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-coded-race-and-ethnicity-mother> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-father> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-coded-race-and-ethnicity-father> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

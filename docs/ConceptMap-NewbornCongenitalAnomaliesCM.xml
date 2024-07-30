@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="NewbornCongenitalAnomaliesCM"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from (not specified) to <a href="ValueSet-ValueSet-newborn-congenital-anomalies.html">Newborn Congenital Anomalies</a></p><p>DRAFT. Published on 2024-07-30 17:05:21-0400 by HL7 International / Public Health (HL7 International / Public Health: <a href="http://www.hl7.org/Special/committees/pher">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR NewbornCongenitalAnomalies Value Sets</p>
+</div><br/><p><b>Group 1</b>Mapping from <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html">Placeholder Code System for IJE in Vital Records</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ANEN (Congenital Anomalies of the Newborn--Anencephaly)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>89369001 (Anencephaly)</td></tr><tr><td>MNSB (Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>67531005 (Meningomyelocele/Spina bifida)</td></tr><tr><td>CCHD (Congenital Anomalies of the Newborn--Cyanotic congenital heart disease)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>12770006 (Cyanotic congenital heart disease)</td></tr><tr><td>CDH (Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>17190001 (Congenital diaphragmatic hernia)</td></tr><tr><td>OMPH (Congenital Anomalies of the Newborn--Omphalocele)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>18735004 (Omphalocele)</td></tr><tr><td>GAST (Congenital Anomalies of the Newborn--Gastroschisis)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>72951007 (Gastroschisis)</td></tr><tr><td>LIMB (Congenital Anomalies of the Newborn--Limb Reduction Defect)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>67341007 (Limb reduction defect (excluding congenital amputation and dwarfing syndromes))</td></tr><tr><td>CL (Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>80281008 (Cleft Lip with or without Cleft Palate)</td></tr><tr><td>CP (Congenital Anomalies of the Newborn--Cleft Palate Alone)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>87979003 (Cleft Palate alone)</td></tr><tr><td>DOWT (Congenital Anomalies of the Newborn--Down Syndrome)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>70156005 (Down Syndrome)</td></tr><tr><td>CDIT (Congenital Anomalies of the Newborn--Suspected Chromosomal disorder)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>409709004 (Suspected chromosomal disorder)</td></tr><tr><td>HYPO (Congenital Anomalies of the Newborn--Hypospadias)</td><td><a href="http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null"/></td><td>416010008 (Hypospadias)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ConceptMap/NewbornCongenitalAnomaliesCM"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="NewbornCongenitalAnomalies"/>
+  <title value="NewbornCongenitalAnomalies Concept Map"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="A mapping between NCHS IJE and FHIR NewbornCongenitalAnomalies Value Sets"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="focus"/>
+    </code>
+    <valueCodeableConcept>
+      <text value="for IJE to FHIR alignment"/>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="To help implementers map from IJE to FHIR Vocabulary"/>
+  <targetCanonical value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies"/>
+  <group>
+    <source value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="ANEN"/>
+      <display value="Congenital Anomalies of the Newborn--Anencephaly"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="89369001"/>
+        <display value="Anencephaly"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MNSB"/>
+      <display value="Congenital Anomalies of the Newborn--Meningomyelocele/Spina Bifida"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="67531005"/>
+        <display value="Meningomyelocele/Spina bifida"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CCHD"/>
+      <display value="Congenital Anomalies of the Newborn--Cyanotic congenital heart disease"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="12770006"/>
+        <display value="Cyanotic congenital heart disease"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CDH"/>
+      <display value="Congenital Anomalies of the Newborn--Congenital diaphragmatic hernia"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="17190001"/>
+        <display value="Congenital diaphragmatic hernia"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="OMPH"/>
+      <display value="Congenital Anomalies of the Newborn--Omphalocele"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="18735004"/>
+        <display value="Omphalocele"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="GAST"/>
+      <display value="Congenital Anomalies of the Newborn--Gastroschisis"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="72951007"/>
+        <display value="Gastroschisis"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LIMB"/>
+      <display value="Congenital Anomalies of the Newborn--Limb Reduction Defect"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="67341007"/>
+        <display value="Limb reduction defect (excluding congenital amputation and dwarfing syndromes)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CL"/>
+      <display value="Congenital Anomalies of the Newborn--Cleft Lip with or without Cleft Palate"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="80281008"/>
+        <display value="Cleft Lip with or without Cleft Palate"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CP"/>
+      <display value="Congenital Anomalies of the Newborn--Cleft Palate Alone"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="87979003"/>
+        <display value="Cleft Palate alone"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DOWT"/>
+      <display value="Congenital Anomalies of the Newborn--Down Syndrome"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="70156005"/>
+        <display value="Down Syndrome"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="CDIT"/>
+      <display value="Congenital Anomalies of the Newborn--Suspected Chromosomal disorder"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="409709004"/>
+        <display value="Suspected chromosomal disorder"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="HYPO"/>
+      <display value="Congenital Anomalies of the Newborn--Hypospadias"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="416010008"/>
+        <display value="Hypospadias"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

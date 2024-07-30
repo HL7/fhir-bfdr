@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-present-job-jada-ann-quinn-coded"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-present-job-jada-ann-quinn-coded"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-present-job-jada-ann-quinn-coded&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-present-job.html">Observation - Present Job</a></p></div><p><b>Extension Parental Role</b>: mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html">RoleCode</a>#MTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11341-5)</span></p><p><b>subject</b>: <a href="Patient-patient-child-babyg-quinn.html">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>focus</b>: <span>: Jada Ann Quinn - Mother</span></p><p><b>effective</b>: 2019-01-09 --&gt; (ongoing)</p><p><b>value</b>: Carpenter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#47-2031)</span></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>History of Occupation industry <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#86188-0)</span></td><td>Construction <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#23)</span></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+        <code value="MTH"/>
+        <display value="mother"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11341-5"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-child-babyg-quinn"/>
+  </subject>
+  <focus>
+    <display value="Jada Ann Quinn - Mother"/>
+  </focus>
+  <effectivePeriod>
+    <start value="2019-01-09"/>
+  </effectivePeriod>
+  <valueCodeableConcept>
+    <coding>
+      <system value="urn:oid:2.16.840.1.114222.4.11.8068"/>
+      <code value="47-2031"/>
+    </coding>
+    <text value="Carpenter"/>
+  </valueCodeableConcept>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="86188-0"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.114222.4.11.8067"/>
+        <code value="23"/>
+      </coding>
+      <text value="Construction"/>
+    </valueCodeableConcept>
+  </component>
+</Observation>

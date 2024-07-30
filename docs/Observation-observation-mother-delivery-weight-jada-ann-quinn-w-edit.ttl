@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-mother-delivery-weight-jada-ann-quinn-w-edit> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-mother-delivery-weight-jada-ann-quinn-w-edit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-delivery-weight"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-delivery-weight>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-mother-delivery-weight-jada-ann-quinn-w-edit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-mother-delivery-weight-jada-ann-quinn-w-edit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-mother-delivery-weight.html\">Observation - Mother Delivery Weight (reported in pounds)</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Mother's body weight --at delivery <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69461-2)</span></p><p><b>subject</b>: <a href=\"Patient-patient-mother-jada-ann-quinn.html\">Patient/patient-mother-jada-ann-quinn: Patient - Mother (Jada Ann Quinn)</a> &quot; QUINN&quot;</p><p><b>effective</b>: 2019-02-12</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-vital-records-janet-seito.html\">Practitioner/practitioner-vital-records-janet-seito</a> &quot; JANET&quot;</p><p><b>value</b>: 175 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69461-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69461-2" ] ;
+       fhir:display [ fhir:v "Mother's body weight --at delivery" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> ;
+     fhir:reference [ fhir:v "Patient/patient-mother-jada-ann-quinn" ] ;
+     fhir:display [ fhir:v "Patient - Mother (Jada Ann Quinn)" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-02-12"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-vital-records-janet-seito" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "0" ] ;
+           fhir:display [ fhir:v "Edit Passed" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:value [ fhir:v "175"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "[lb_av]" ]
+  ] . # 
+
+<http://hl7.org/fhir/us/bfdr/Patient/patient-mother-jada-ann-quinn> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Practitioner/practitioner-vital-records-janet-seito> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

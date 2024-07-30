@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/ConceptMap/BirthAttendantTitlesCM> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BirthAttendantTitlesCM"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to <a href=\"ValueSet-ValueSet-birth-attendant-titles.html\">Birth Attendants Titles</a></p><p>DRAFT. Published on 2024-07-30 17:05:21-0400 by HL7 International / Public Health (HL7 International / Public Health: <a href=\"http://www.hl7.org/Special/committees/pher\">http://www.hl7.org/Special/com...</a>). </p><div><p>A mapping between NCHS IJE and FHIR BirthAttendantTitles Value Sets</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html\">Placeholder Code System for IJE in Vital Records</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>1 (MD)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>112247003 (Medical Doctor)</td></tr><tr><td>2 (DO)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>76231001 (Osteopath)</td></tr><tr><td>3 (CNM/CM)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>445521000124102 (Advanced Practice Midwife)</td></tr><tr><td>4 (Other Midwife)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>445531000124104 (Lay Midwife)</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-ije-vr.html\">Placeholder Code System for IJE in Vital Records</a> to <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html\">NullFlavor</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>5 (Other (specify))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>OTH (other)</td></tr><tr><td>9 (Unknown)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#null\"/></td><td>UNK (Unknown)</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/ConceptMap/BirthAttendantTitlesCM"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Preview3"] ; # 
+  fhir:name [ fhir:v "BirthAttendantTitles"] ; # 
+  fhir:title [ fhir:v "BirthAttendantTitles Concept Map"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-30T17:05:21-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A mapping between NCHS IJE and FHIR BirthAttendantTitles Value Sets"] ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "focus" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "for IJE to FHIR alignment" ]
+     ]
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:purpose [ fhir:v "To help implementers map from IJE to FHIR Vocabulary"] ; # 
+  fhir:target [
+     fhir:v "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-attendant-titles"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-attendant-titles>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "MD" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "112247003" ] ;
+         fhir:display [ fhir:v "Medical Doctor" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "DO" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "76231001" ] ;
+         fhir:display [ fhir:v "Osteopath" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "CNM/CM" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "445521000124102" ] ;
+         fhir:display [ fhir:v "Advanced Practice Midwife" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "4" ] ;
+       fhir:display [ fhir:v "Other Midwife" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "445531000124104" ] ;
+         fhir:display [ fhir:v "Lay Midwife" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "5" ] ;
+       fhir:display [ fhir:v "Other (specify)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "OTH" ] ;
+         fhir:display [ fhir:v "other" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "9" ] ;
+       fhir:display [ fhir:v "Unknown" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "UNK" ] ;
+         fhir:display [ fhir:v "Unknown" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
