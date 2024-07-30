@@ -1800,7 +1800,7 @@ U = Unknown",,,,,,,,,,,
 2 = Forceps
 3 = Vacuum
 4 = Cesarean
-9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,See  [note on missing method of delivery data],B,,,,
+9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,"[DeliveryRoutesVS] unless unknown, <br />See  [note on missing method of delivery data]",B,,,,
 406,Surveillance,135,,,Cause of Death Part I Line c (coded),*NO IJE MAPPING*,Coded Cause(s) of Death Associated with Text on  Line 1c,,VRDR,CauseOfDeathPart1,"value.coding,   component[lineNumber] = 3",codeable,[ICD10CausesOfDeathVS],,y,,,
 1317,ITOP,135,1128,1,Diagnostic Proc -- Cordocentesis,DIAG_CORD,"Y, N, U",,not implemented,not implemented,,,,,,,,
 599,Natality,135,773,2,Mother's Height--Inches,HIN,"00-11, 99",,BFDR,ObservationMotherHeight,value,quantity,,B,,,,
@@ -2300,7 +2300,7 @@ IJE Natality Data Elements: INDL, AUGL, NVPR, STER, ANTB, CHOR, ESAN",Replace Ob
 2 = Forceps
 3 = Vacuum
 4 = Cesarean
-9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,See  [note on missing method of delivery data],B,,,,
+9 = Unknown",,BFDR,ProcedureFinalRouteMethodDelivery,code,codeable,"[DeliveryRoutesVS] unless unknown, <br />See  [note on missing method of delivery data]",B,,,,
 1534,Birth Infant Death,193,857,1,Method of Delivery--Route and Method of Delivery,ROUT,"1 = Spontaneous
 2 = Forceps
 3 = Vacuum
@@ -2772,10 +2772,10 @@ other = Other unknown = Unknown",,VRCPL,PatientMotherVitalRecords,gender,codeabl
 1081,Fetal Death,264,4029,10,Father's Legal Surname Suffix,DADSUFFIX,Valid suffix,,VRCPL,RelatedPersonFatherNaturalVitalRecords,"name.suffix, <br />name.use = official",string,,B,,,,
 728,Natality,264,1617,28,Residence Street name,STNAME,parsed residence address,,VRCPL,PatientMotherVitalRecords,address.extension[stname],string,,B,,,,
 1605,Birth Infant Death,264,1617,28,Residence Street name,STNAME,parsed residence address,,,,,,,,,,,
-1082,Fetal Death,265,4039,9,Mother's Social Security Number,MOM_SSN,9 digit SSN; blank if unknown or not sharable,,VRCPL,PatientMotherVitalRecords,identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” ,string,"type.coding.code=""SB"" is deprecated but also supported for compatibility",B,,,,
+1082,Fetal Death,265,4039,9,Mother's Social Security Number,MOM_SSN,9 digit SSN; blank if unknown or not sharable,,VRCPL,PatientMotherVitalRecords,identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” ,string,,B,,,,
 729,Natality,265,1645,10,Residence Street designator,STDESIG,parsed residence address,,VRCPL,PatientMotherVitalRecords,address.extension[stdesig],string,,B,,,,
 1606,Birth Infant Death,265,1645,10,Residence Street designator,STDESIG,parsed residence address,,,,,,,,,,,
-1083,Fetal Death,266,4048,9,Father's Social Security Number,DAD_SSN,9 digit SSN; blank if unknown or not sharable,,VRCPL,RelatedPersonFatherNaturalVitalRecords,identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” ,string,"type.coding.code=""SB"" is deprecated but also supported for compatibility",B,,,,
+1083,Fetal Death,266,4048,9,Father's Social Security Number,DAD_SSN,9 digit SSN; blank if unknown or not sharable,,VRCPL,RelatedPersonFatherNaturalVitalRecords,identifier.value where system = ‘http://terminology.hl7.org/CodeSystem/v2-0203' <br />and type.coding.code=”SS” ,string,,B,,,,
 730,Natality,266,1655,10,Residence Post Directional,POSTDIR,parsed residence address,,VRCPL,PatientMotherVitalRecords,address.extension[postdir],string,,B,,,,
 1607,Birth Infant Death,266,1655,10,Residence Post Directional,POSTDIR,parsed residence address,,,,,,,,,,,
 1084,Fetal Death,267,4057,2,Mother's Age (Calculated),MAGE_CALC,"0-98, 99",,not implemented,not implemented,,,,-,,,,
