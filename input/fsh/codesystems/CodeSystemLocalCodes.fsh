@@ -19,3 +19,4 @@ Description: "Local Codes for concepts in BFDR that lack an appropriate LOINC or
 * #loc_birth "Birth Location"                  // birth and maternity encounters
 * #loc_transfer-from "Transfer-from Location"  // maternity encounter
 * #loc_transfer-to "Transfer-to Location"      // birth encounter
+* #industry_occupation_document "Industry and Occupation Document" // 
