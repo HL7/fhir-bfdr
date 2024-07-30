@@ -92,7 +92,7 @@
   <td>3</td>
   <td>Certificate Number</td>
   <td>FILENO</td>
-  <td>identifier.extension[filetNumber].value</td>
+  <td>identifier.extension[fileNumber].value</td>
   <td>string(6)</td>
   <td></td>
 </tr>

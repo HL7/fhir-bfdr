@@ -1,4 +1,4 @@
- Note: The PatientDecedentFetus profile is based on the [US Core Patient Profile]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
+ Note: The PatientDecedentFetus profile is based on the [US Core Patient Profile]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
  Complete fetal death record submissions may fail FHIR validation due to lack of a value for gender.
 
 ### IJE Mapping
@@ -32,7 +32,7 @@
   <td>1</td>
   <td>Date of Delivery (Fetus)--Year</td>
   <td>FDOD_YR</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
@@ -77,7 +77,7 @@
   <td>8</td>
   <td>Date of Delivery (Fetus)--Month</td>
   <td>FDOD_MO</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>
@@ -86,7 +86,7 @@
   <td>9</td>
   <td>Date of Delivery (Fetus)--Day</td>
   <td>FDOD_DY</td>
-  <td>birthDate</td>
+  <td>birthDate.value</td>
   <td>date</td>
   <td>See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#birth-date-and-time'>note on birth date and time</a></td>
 </tr>

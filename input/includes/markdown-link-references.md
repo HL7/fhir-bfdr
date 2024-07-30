@@ -56,6 +56,7 @@
 [patient-birthPlace]: http://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html
 [birthCertificateNumber]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-CertificateNumber.html 
 [fetalDeathReportNumber]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-CertificateNumber.html
+[fileNumber]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-CertificateNumber.html
 [localFileNumber1]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-AuxiliaryStateIdentifier1.html
 [localFileNumber2]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-AuxiliaryStateIdentifier2.html
 [patient-birthTime]: http://hl7.org/fhir/extensions/StructureDefinition-patient-birthTime.html
