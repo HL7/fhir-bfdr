@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-birth-and-fetal-death-financial-class"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="https://nahdo.org/sopt"><code>https://nahdo.org/sopt</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-33">33</a></td><td>Indian Health Service or Tribe</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-2">2</a></td><td>MEDICAID</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-99">99</a></td><td>No Typology Code available for payment source</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-38">38</a></td><td>Other Government (Federal, State, Local not specified)</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-5">5</a></td><td>PRIVATE HEALTH INSURANCE</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-81">81</a></td><td>Self-pay</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-311">311</a></td><td>TRICARE (CHAMPUS)</td></tr><tr><td><a href="https://nahdo.org/sopt.html#SOP-9999">9999</a></td><td>Unavailable / Unknown</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="BirthAndFetalDeathFinancialClassVS"/>
+  <title value="Birth and Fetal Death Financial Class"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes to represent birth and fetal death financial class. &#xA;&#xA;Mapping to IJE codes [here](ConceptMap-BirthAndFetalDeathFinancialClassCM.html)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://nahdo.org/sopt"/>
+      <concept>
+        <code value="33"/>
+        <display value="Indian Health Service or Tribe"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="MEDICAID"/>
+      </concept>
+      <concept>
+        <code value="99"/>
+        <display value="No Typology Code available for payment source"/>
+      </concept>
+      <concept>
+        <code value="38"/>
+        <display value="Other Government (Federal, State, Local not specified)"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="PRIVATE HEALTH INSURANCE"/>
+      </concept>
+      <concept>
+        <code value="81"/>
+        <display value="Self-pay"/>
+      </concept>
+      <concept>
+        <code value="311"/>
+        <display value="TRICARE (CHAMPUS)"/>
+      </concept>
+      <concept>
+        <code value="9999"/>
+        <display value="Unavailable / Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

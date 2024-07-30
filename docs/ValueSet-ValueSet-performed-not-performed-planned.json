@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ValueSet-performed-not-performed-planned",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/398166005\">398166005</a></td><td>Performed</td></tr><tr><td><a href=\"http://snomed.info/id/262008008\">262008008</a></td><td>Not Performed</td></tr><tr><td><a href=\"http://snomed.info/id/397943006\">397943006</a></td><td>Planned</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pher"
+  }],
+  "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-performed-not-performed-planned",
+  "version" : "2.0.0-Preview3",
+  "name" : "PerformedNotPerformedPlannedVS",
+  "title" : "Performed NotPerformed Planned",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-07-30T17:05:21-04:00",
+  "publisher" : "HL7 International / Public Health",
+  "contact" : [{
+    "name" : "HL7 International / Public Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/pher"
+    }]
+  }],
+  "description" : "This valueset contains codes to represent the status (performed, not performed, planned) of histological placental examinations.\n\nMapping to IJE codes [here](ConceptMap-PerformedNotPerformedPlannedCM.html).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "398166005",
+        "display" : "Performed"
+      },
+      {
+        "code" : "262008008",
+        "display" : "Not Performed"
+      },
+      {
+        "code" : "397943006",
+        "display" : "Planned"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ValueSet-informant-relationship-to-mother",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_fatherofbaby\">rel_fatherofbaby</a></td><td>Father of baby</td><td>Father of baby</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_hospitalemployee\">rel_hospitalemployee</a></td><td>Hospital employee</td><td>Hospital employee</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_other\">rel_other</a></td><td>Other (with write in text)</td><td>Other (with write in text)</td></tr><tr><td><a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-rel_otherrelative\">rel_otherrelative</a></td><td>Other relative</td><td>Other relative</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pher"
+  }],
+  "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-informant-relationship-to-mother",
+  "version" : "2.0.0-Preview3",
+  "name" : "InformantRelationshipToMotherVS",
+  "title" : "Informant Relationship to Mother",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-07-30T17:05:21-04:00",
+  "publisher" : "HL7 International / Public Health",
+  "contact" : [{
+    "name" : "HL7 International / Public Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/pher"
+    }]
+  }],
+  "description" : "This valueset contains codes to represent informants relationship to mother.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "copyright" : "include appropriate copyright ruleset",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+      "concept" : [{
+        "code" : "rel_fatherofbaby",
+        "display" : "Father of baby"
+      },
+      {
+        "code" : "rel_hospitalemployee",
+        "display" : "Hospital employee"
+      },
+      {
+        "code" : "rel_other",
+        "display" : "Other (with write in text)"
+      },
+      {
+        "code" : "rel_otherrelative",
+        "display" : "Other relative"
+      }]
+    }]
+  }
+}

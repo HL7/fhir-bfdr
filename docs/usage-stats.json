@@ -1,0 +1,671 @@
+{
+  "package": "hl7.fhir.us.bfdr",
+  "version": "2.0.0-Preview3",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference",
+      "title": "Encounter Maternity Reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-jurisdictional-facility-identifier",
+      "title": "Jurisdictional Facility Identifier",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role",
+      "title": "Extension Parental Role",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant",
+      "title": "Practitioner Role - Birth Attendant",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier",
+      "title": "Practitioner Role - Certifier",
+      "types": [
+        "code"
+      ]
+    }
+  ],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-birth-report",
+        "title": "Bundle - Document Birth Report"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-cause-of-fetal-death",
+        "title": "Bundle - Document Coded Cause of Fetal Death"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-industry-occupation",
+        "title": "Bundle - Document Coded Industry and Occupation"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-demographic-coded-content",
+        "title": "Bundle - Document Demographic Coded Content"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-fetal-death-report",
+        "title": "Bundle - Document Fetal Death Report"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death",
+        "title": "Composition - Coded Cause of Fetal Death"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-industry-and-occupation",
+        "title": "Composition - Coded Industry and Occupation"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity",
+        "title": "Composition - Coded Race and Ethnicity"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report",
+        "title": "Composition - Jurisdiction Fetal Death Report"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report",
+        "title": "Composition - Jurisdiction Live Birth Report"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report",
+        "title": "Composition - Provider Fetal Death Report"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report",
+        "title": "Composition - Provider Live Birth Report"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-chorioamnionitis",
+        "title": "Condition - Chorioamnionitis"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-congenital-anomaly-of-newborn",
+        "title": "Condition - Congenital Anomaly of Newborn"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-eclampsia-hypertension",
+        "title": "Condition - Eclampsia Hypertension"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-initiating-cause-or-condition",
+        "title": "Condition - Fetal Death Initiating Cause or Condition"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition",
+        "title": "Condition - Fetal Death Other Cause or Condition"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-diabetes",
+        "title": "Condition - Gestational Diabetes"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-hypertension",
+        "title": "Condition - Gestational Hypertension"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-infection-present-during-pregnancy",
+        "title": "Condition - Infection Present During Pregnancy"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-perineal-laceration",
+        "title": "Condition - Perineal Laceration"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-prepregnancy-diabetes",
+        "title": "Condition - Prepregnancy Diabetes"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-prepregnancy-hypertension",
+        "title": "Condition - Prepregnancy Hypertension"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-ruptured-uterus",
+        "title": "Condition - Ruptured Uterus"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-seizure",
+        "title": "Condition - Seizure"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Coverage-principal-payer-delivery",
+        "title": "Coverage - Principal Payer for Delivery"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-birth",
+        "title": "Encounter - Birth"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity",
+        "title": "Encounter - Maternity"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Location-bfdr",
+        "title": "Birth and Fetal Death Location"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-antibiotics-administered-during-labor",
+        "title": "Observation - Antibiotics Administered During Labor"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-apgar-score",
+        "title": "Observation - APGAR Score"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used",
+        "title": "Observation - Autopsy or Histological Exam Results Used"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-performed-indicator",
+        "title": "Observation - Autopsy Performed Indicator"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-plurality-of-pregnancy",
+        "title": "Observation - Birth Plurality of Pregnancy"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight",
+        "title": "Observation - Birth Weight"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy",
+        "title": "Observation - Cigarette Smoking Before and During Pregnancy"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition",
+        "title": "Observation - Coded Initiating Fetal Death Cause or Condition"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition",
+        "title": "Observation - Coded Other Fetal Death Cause or Condition"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit",
+        "title": "Observation - Date of First Prenatal Care Visit"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth",
+        "title": "Observation - Date of Last Live Birth"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-other-pregnancy-outcome",
+        "title": "Observation - Date of Last Other Pregnancy Outcome"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point",
+        "title": "Observation - Fetal Death Time Point"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation",
+        "title": "Observation - Fetal Presentation at Birth/Delivery"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-remains-disposition-method",
+        "title": "Observation - Fetal Remains Disposition Method"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery",
+        "title": "Observation - Gestational Age at Delivery"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed",
+        "title": "Observation - Histological Placental Exam Performed"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-icu-admission",
+        "title": "Observation - ICU Admission"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-breastfed-at-discharge",
+        "title": "Observation - Infant Breastfed at Discharge"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-infant-living",
+        "title": "Observation - Infant Living"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-labor-trial-attempted",
+        "title": "Observation - Labor Trial Attempted"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period",
+        "title": "Observation - Last Menstrual Period"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-delivery-weight",
+        "title": "Observation - Mother Delivery Weight (reported in pounds)"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height",
+        "title": "Observation - Mother Height"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-married-during-pregnancy",
+        "title": "Observation - Mother Married During Pregnancy"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight",
+        "title": "Observation - Mother Prepregnancy Weight"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food",
+        "title": "Observation - Mother Recieved WIC Food"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-nicu-admission",
+        "title": "Observation - NICU Admission"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-no-infections-present-during-pregnancy",
+        "title": "Observation - None Of Specified Infections During Pregnancy"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-congenital-anomolies-of-the-newborn",
+        "title": "Observation - None Of Specified Congenital Anomolies Of The Newborn"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn",
+        "title": "Observation - None Of Specified Abnormal Conditions of Newborn"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery",
+        "title": "Observation - None Of Specified Characteristics of Labor and Delivery"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-maternal-morbidities",
+        "title": "Observation - None Of Specified Maternal Morbidities"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-obstetric-procedures",
+        "title": "Observation - None Of Specified Obstetric Procedures"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors",
+        "title": "Observation - None Of Specified Pregnancy Risk Factors"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-dead",
+        "title": "Observation - Number of Births Now Dead"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-living",
+        "title": "Observation - Number of Births Now Living"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-fetal-deaths-this-delivery",
+        "title": "Observation - Number of Fetal Deaths This Delivery"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-live-births-this-delivery",
+        "title": "Observation - Number of Live Births This Delivery"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-other-pregnancy-outcomes",
+        "title": "Observation - Number of Other Pregnancy Outcomes"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-prenatal-visits",
+        "title": "Observation - Number of Prenatal Visits"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans",
+        "title": "Observation - Number of Previous Cesareans"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-paternity-acknowledgement-signed",
+        "title": "Observation - Paternity Acknowledgement Signed"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-planned-to-deliver-at-home",
+        "title": "Observation - Planned to Deliver at Home"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job",
+        "title": "Observation - Present Job"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-previous-cesarean",
+        "title": "Observation - Previous Cesarean"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-previous-preterm-birth",
+        "title": "Observation - Previous Preterm Birth"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child",
+        "title": "Observation - Social Security Number Requested For Child"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation",
+        "title": "Observation - Administration of Steroids for Fetal Lung Maturation"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-unknown-final-route-and-method-of-delivery",
+        "title": "Observation - Unknown Final Route and Method of Delivery"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus",
+        "title": "Patient - Decedent Fetus"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Practitioner-birth-attendant",
+        "title": "Practitioner - Birth Attendant"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Practitioner-birth-certifier",
+        "title": "Practitioner - Birth Certifier"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis",
+        "title": "Procedure - Antibiotic for Suspected Neonatal Sepsis"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-reproductive-technology",
+        "title": "Procedure - Assisted Reproductive Technology"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-following-delivery",
+        "title": "Procedure - Assisted Ventilation Following Delivery"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours",
+        "title": "Procedure - Assisted Ventilation More Than Six Hours"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-augmentation-of-labor",
+        "title": "Procedure - Augmentation of Labor"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-blood-transfusion",
+        "title": "Procedure - Blood Transfusion"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-epidural-or-spinal-anesthesia",
+        "title": "Procedure - Epidural or Spinal Anesthesia"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-fertility-enhancing-drug-therapy-artificial-insem",
+        "title": "Procedure - Fertility Enhancing Drug Therapy, Artificial or Intrauterine Insemination"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery",
+        "title": "Procedure - Final Route and Method of Delivery"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-induction-of-labor",
+        "title": "Procedure - Induction of Labor"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-infertility-treatment",
+        "title": "Procedure - Infertility Treatment"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-obstetric",
+        "title": "Procedure - Obstetric"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-surfactant-replacement-therapy",
+        "title": "Procedure - Surfactant Replacement Therapy"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-unplanned-hysterectomy",
+        "title": "Procedure - Unplanned Hysterectomy"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence": [
+      "ConceptMap.group.element.target"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Bundle.entry.resource.name.family",
+      "Bundle.entry.resource.payor",
+      "Coverage.payor",
+      "Patient.name.family",
+      "Patient.name.given"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
+      "Bundle.entry.resource.birthDate",
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-multipleBirthTotal": [
+      "Patient.multipleBirth[x]"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "CapabilityStatement",
+      "CodeSystem",
+      "ConceptMap",
+      "ImplementationGuide",
+      "Questionnaire",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-encounter-maternity-reference": [
+      "Bundle.entry.resource.encounter",
+      "Composition.encounter"
+    ],
+    "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-jurisdictional-facility-identifier": [
+      "Bundle.entry.resource.identifier",
+      "Location.identifier"
+    ],
+    "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role": [
+      "Bundle.entry.resource",
+      "Encounter",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant": [
+      "Bundle.entry.resource",
+      "Practitioner"
+    ],
+    "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier": [
+      "Bundle.entry.resource",
+      "Practitioner"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/odh/StructureDefinition/odh-Employer-extension": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/odh/StructureDefinition/odh-isCurrentJob-extension": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1": [
+      "Bundle.identifier"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier2": [
+      "Bundle.identifier"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/BypassEditFlag": [
+      "Bundle.entry.resource.birthDate",
+      "Bundle.entry.resource.valueCodeableConcept",
+      "Bundle.entry.resource.valueInteger",
+      "Bundle.entry.resource.valueQuantity",
+      "Observation.valueCodeableConcept",
+      "Observation.valueInteger",
+      "Observation.valueQuantity",
+      "Observation.value[x]",
+      "Patient.birthDate",
+      "Patient.multipleBirthInteger",
+      "Patient.multipleBirth[x]",
+      "RelatedPerson.birthDate"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber": [
+      "Bundle.identifier"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CityCode": [
+      "Location.address.city",
+      "Patient.address.city",
+      "Patient.extension.value[x].city",
+      "Practitioner.address.city"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/DistrictCode": [
+      "Location.address.district",
+      "Patient.address.district",
+      "Patient.extension.value[x].district",
+      "Practitioner.address.district"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-jurisdiction-id-vr": [
+      "Location.address.state",
+      "Patient.extension.value[x].state"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-partial-date-time-vr": [
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr": [
+      "Bundle.entry.resource.deceasedBoolean",
+      "Patient.deceasedBoolean",
+      "Patient.deceased[x]"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr": [
+      "Bundle.entry.resource",
+      "RelatedPerson"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr": [
+      "Bundle.entry.resource.address",
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/PostDirectional": [
+      "Location.address",
+      "Patient.address",
+      "Practitioner.address"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/PreDirectional": [
+      "Location.address",
+      "Patient.address",
+      "Practitioner.address"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/StreetDesignator": [
+      "Location.address",
+      "Patient.address",
+      "Practitioner.address"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/StreetName": [
+      "Location.address",
+      "Patient.address",
+      "Practitioner.address"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/StreetNumber": [
+      "Location.address",
+      "Patient.address",
+      "Practitioner.address"
+    ],
+    "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/UnitOrAptNumber": [
+      "Location.address",
+      "Patient.address",
+      "Practitioner.address"
+    ]
+  }
+}

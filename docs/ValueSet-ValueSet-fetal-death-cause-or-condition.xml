@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-fetal-death-cause-or-condition"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/44223004">44223004</a></td><td>Premature rupture of membranes (disorder)</td></tr><tr><td><a href="http://snomed.info/id/415105001">415105001</a></td><td>Placental abruption (disorder)</td></tr><tr><td><a href="http://snomed.info/id/237292005">237292005</a></td><td>Placental insufficiency (disorder)</td></tr><tr><td><a href="http://snomed.info/id/270500004">270500004</a></td><td>Prolapsed cord (disorder)</td></tr><tr><td><a href="http://snomed.info/id/11612004">11612004</a></td><td>Chorioamnionitis (disorder)</td></tr><tr><td><a href="http://snomed.info/id/702709008">702709008</a></td><td>Congenital anomaly of fetus (Specify) (disorder)</td></tr><tr><td><a href="http://snomed.info/id/277489001">277489001</a></td><td>Fetal trauma (Specify) (disorder)</td></tr><tr><td><a href="http://snomed.info/id/128270001">128270001</a></td><td>Infectious disorder of the fetus (Specify) (disorder)</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-CodeSystem-local-bfdr-codes.html"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-FCOD_maternalconditions">FCOD_maternalconditions</a></td><td>Maternal Conditions/Diseases (Specify)(disorder)</td><td>Maternal Conditions/Diseases (Specify)</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-FCOD_membranes">FCOD_membranes</a></td><td>Complications of Placenta, Cord, or Membranes: Other (Specify)(disorder)</td><td>Complications of Placenta, Cord, or Membranes: Other (Specify)</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-FCOD_obstetricalcomplications">FCOD_obstetricalcomplications</a></td><td>Other Obstetrical or Pregnancy Complications (Specify)(disorder)</td><td>Other Obstetrical or Pregnancy Complications (Specify)</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-FCOD_fetalconditions">FCOD_fetalconditions</a></td><td>Other Fetal Conditions/Disorder (Specify)(disorder)</td><td>Other Fetal Conditions/Disorder (Specify)</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a></td><td>unknown</td><td>**Description:**A proper value is applicable, but not known.<br/><br/>**Usage Notes**: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:<br/><br/>1.  Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')<br/>2.  Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-cause-or-condition"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="FetalDeathCauseOrConditionVS"/>
+  <title value="Fetal Death Cause or Condition"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes to represent fetal death cause or condition. &#xA;&#xA;Mapping to IJE codes [here](ConceptMap-FetalDeathCauseOrConditionCM.html)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="44223004"/>
+        <display value="Premature rupture of membranes (disorder)"/>
+      </concept>
+      <concept>
+        <code value="415105001"/>
+        <display value="Placental abruption (disorder)"/>
+      </concept>
+      <concept>
+        <code value="237292005"/>
+        <display value="Placental insufficiency (disorder)"/>
+      </concept>
+      <concept>
+        <code value="270500004"/>
+        <display value="Prolapsed cord (disorder)"/>
+      </concept>
+      <concept>
+        <code value="11612004"/>
+        <display value="Chorioamnionitis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="702709008"/>
+        <display value="Congenital anomaly of fetus (Specify) (disorder)"/>
+      </concept>
+      <concept>
+        <code value="277489001"/>
+        <display value="Fetal trauma (Specify) (disorder)"/>
+      </concept>
+      <concept>
+        <code value="128270001"/>
+        <display value="Infectious disorder of the fetus (Specify) (disorder)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+      <concept>
+        <code value="FCOD_maternalconditions"/>
+        <display value="Maternal Conditions/Diseases (Specify)(disorder)"/>
+      </concept>
+      <concept>
+        <code value="FCOD_membranes"/>
+        <display value="Complications of Placenta, Cord, or Membranes: Other (Specify)(disorder)"/>
+      </concept>
+      <concept>
+        <code value="FCOD_obstetricalcomplications"/>
+        <display value="Other Obstetrical or Pregnancy Complications (Specify)(disorder)"/>
+      </concept>
+      <concept>
+        <code value="FCOD_fetalconditions"/>
+        <display value="Other Fetal Conditions/Disorder (Specify)(disorder)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <concept>
+        <code value="UNK"/>
+        <display value="unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

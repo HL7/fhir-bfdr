@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-performed-not-performed-planned> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ValueSet-performed-not-performed-planned"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/398166005\">398166005</a></td><td>Performed</td></tr><tr><td><a href=\"http://snomed.info/id/262008008\">262008008</a></td><td>Not Performed</td></tr><tr><td><a href=\"http://snomed.info/id/397943006\">397943006</a></td><td>Planned</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-performed-not-performed-planned"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Preview3"] ; # 
+  fhir:name [ fhir:v "PerformedNotPerformedPlannedVS"] ; # 
+  fhir:title [ fhir:v "Performed NotPerformed Planned"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-30T17:05:21-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This valueset contains codes to represent the status (performed, not performed, planned) of histological placental examinations.\n\nMapping to IJE codes [here](ConceptMap-PerformedNotPerformedPlannedCM.html)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "398166005" ] ;
+         fhir:display [ fhir:v "Performed" ]
+       ] [
+         fhir:code [ fhir:v "262008008" ] ;
+         fhir:display [ fhir:v "Not Performed" ]
+       ] [
+         fhir:code [ fhir:v "397943006" ] ;
+         fhir:display [ fhir:v "Planned" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

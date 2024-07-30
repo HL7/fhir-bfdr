@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Usage - Birth And Fetal Death (BFDR) - STU2-preview3 v2.0.0-Preview3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"18"}
+    h3,h4,h5,h6{--heading-prefix:"18"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-preview3</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-Preview3 - trial-use
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="use_cases.html">UseCases</a>
+      </li>
+      <li>
+        <a href="vr_ig_harmonization.html">Vital Records IG Harmonization</a>
+      </li>
+      <li>
+        <a href="credits.html">Credits</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementer Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="the_specification.html">Specification</a>
+      </li>
+      <li>
+        <a href="categories.html">Categories</a>
+      </li>
+      <li>
+        <a href="usage.html">Usage Notes</a>
+      </li>
+      <li>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
+      </li>
+      <li>
+        <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
+      </li>
+      <li>
+        <a href="ije_mapping_fetalDeath.html">Fetal Death Data Dictionary</a>
+      </li>
+      <li>
+        <a href="vital_records_form_mapping.html">Forms Mapping</a>
+      </li>
+      <li>
+        <a href="EHR_Data_mapping.html">EHR Data Mapping</a>
+      </li>
+      <li>
+        <a href="IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv">IJE Mapping to FHIR (csv)</a>
+      </li>
+      <li>
+        <a href="IJE_File_Layouts_and_FHIR_Mapping_24-06-21.xlsx">IJE Mapping to FHIR (xlsx)</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="example_baby_g_quinn.html">Example Live Birth</a>
+      </li>
+      <li>
+        <a href="example_fetal_death.html">Example Fetal Death</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Changes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="change_log.html">Change Log</a>
+      </li>
+      <li>
+        <a href="content-transitions.html">STU1.1 to STU2 Changes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Appendices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html">A Live Birth Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_b_-_example_live_birth_certificate.html">B Live Birth Certificate</a>
+      </li>
+      <li>
+        <a href="appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html">C Fetal Death Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_d_-_example_fetal_death_report.html">D Fetal Death Report</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Usage</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Birth And Fetal Death (BFDR) - STU2-preview3 - Local Development build (v2.0.0-Preview3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/bfdr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Usage</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#child-and-decedent-fetus-name" id="markdown-toc-child-and-decedent-fetus-name">Child and Decedent Fetus Name</a></li>
+  <li><a href="#mother-or-infant-transferred" id="markdown-toc-mother-or-infant-transferred">Mother or Infant Transferred</a></li>
+  <li><a href="#partial-dates" id="markdown-toc-partial-dates">Partial Dates</a></li>
+  <li><a href="#specifying-none-of-the-above-and-missing-data" id="markdown-toc-specifying-none-of-the-above-and-missing-data">Specifying None of the Above and Missing Data</a></li>
+  <li><a href="#other-in-infectionsduringpregnancylivebirth-and-newborncongenitalanomalies" id="markdown-toc-other-in-infectionsduringpregnancylivebirth-and-newborncongenitalanomalies">‘Other’ in InfectionsDuringPregnancyLiveBirth and NewbornCongenitalAnomalies</a></li>
+  <li><a href="#handling-of-edit-flags" id="markdown-toc-handling-of-edit-flags">Handling of Edit Flags</a></li>
+</ul>
+
+</div>
+<h3 id="child-and-decedent-fetus-name">Child and Decedent Fetus Name</h3>
+<p>Natality: When the child’s name is not chosen, a dataAbsentReason should be provided with code “temp-unknown.”
+<br />Fetal Death: When the decedent fetus is not named, a dataAbsentReason should be provided with code “unknown.”</p>
+
+<h3 id="mother-or-infant-transferred">Mother or Infant Transferred</h3>
+<p>If mother transferred for delivery, hospitalization.admitSource in the EncounterMaternity profile should be provided with code “hosp-trans” (from <a href="http://terminology.hl7.org/CodeSystem/admit-source">HL7 admit-source codesystem</a>). Any other admitSource code will be interpreted as ‘N’, with “other” being the recommended code to express mother did not transfer. The absence of a code will be interpreted as Blank (NCHS may interpret as Unknown). If source of transfer is unknown, hospitalization.admitSource should be set to “hosp-trans” and hospitalization.origin.name should be set to “UNKNOWN” in the EncounterMaternity profile.</p>
+
+<p>Similarly, if the infant transferred within 24 hours of delivery, hospitalization.dischargeDisposition in the EncounterBirth profile should be provided with code “other-hcf” (from <a href="https://terminology.hl7.org/5.4.0/CodeSystem-discharge-disposition.html">HL7 discharge-disposition codesystem</a>) Any other dischargeDisposition code will be interpreted as ‘N’, with “oth” being the recommended code to express infant did not transfer. The absence of a code will be interpreted as Blank (NCHS may interpret as Unknown). If destination of transfer is unknown, hospitalization.destination.name should be set to “UNKNOWN” in the EncounterBirth profile.</p>
+
+<h3 id="partial-dates">Partial Dates</h3>
+<p>While IJE supports individual components of a date, FHIR <a href="https://build.fhir.org/datatypes.html#dateTime">dateTime</a> supports partial dates only when the components with greater units than the missing component are included. That is, YYYY, YYYY-MM, and YYYY-MM-DD are supported by default, while YYY-XX-DD, for example, would not be.</p>
+
+<h3 id="specifying-none-of-the-above-and-missing-data">Specifying None of the Above and Missing Data</h3>
+<p>See the discussion of <a href="categories.html">categories</a>.</p>
+<h5 id="abnormal-conditions-of-newborn">Abnormal Conditions of Newborn</h5>
+<p>If <a href="StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html">ObservationNoneOfSpecifiedAbnormalConditionsOfNewborn</a> is present in bundle, then the interpretation is that all individual <a href="artifacts.html#8">Abnormal Conditions of the Newborn</a> are ‘N’</p>
+<h5 id="maternal-morbidities">Maternal Morbidities</h5>
+<p>If <a href="StructureDefinition-Observation-none-of-specified-maternal-morbidities.html">ObservationNoneOfSpecifiedMaternalMorbidities</a> is present in bundle, then the interpretation is that all individual <a href="artifacts.html#17">Maternal Morbities</a> are ‘N’</p>
+<h5 id="characteristics-of-labor-and-delivery">Characteristics of Labor and Delivery</h5>
+<p>If <a href="StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery.html">ObservationNoneOfSpecifiedCharacteristicsOfLaborAndDelivery</a> is present in bundle, then the interpretation is that all individual  <a href="artifacts.html#10">Characteristics of Labor and Delivery</a> are ‘N’</p>
+<h5 id="pregnancy-risk-factors">Pregnancy Risk Factors</h5>
+<p>If <a href="StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html">ObservationNoneOfSpecifiedPregnancyRiskFactors</a> is present in bundle, then the interpretation is that all individual <a href="artifacts.html#16">Pregnancy Risk Factors</a> are ‘N’</p>
+<h5 id="congenital-anomalies-of-newborn">Congenital Anomalies of Newborn</h5>
+<p>If <a href="StructureDefinition-Observation-none-congenital-anomolies-of-the-newborn.html">ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a> is present in bundle, then the interpretation is that all individual <a href="artifacts.html#9">Congenital Anomolies of the Newborn</a> are ‘N’ and <a href="StructureDefinition-Condition-congenital-anomaly-of-newborn.html">ConditionCongenitalAnomalyOfNewborn</a> should not be used.</p>
+<h5 id="infection-present-during-pregnancy">Infection Present During Pregnancy</h5>
+<p>If <a href="StructureDefinition-Observation-no-infections-present-during-pregnancy.html">ObservationNoneOfSpecifiedInfectionsPresentDuringPregnancy</a> is present in bundle, then the interpretation is that all <a href="artifacts.html#12">Infections During Pregnancy</a> are ‘N’ and <a href="StructureDefinition-Condition-infection-present-during-pregnancy.html">ConditionInfectionPresentDuringPregnancy</a> should not be used.</p>
+<h5 id="method-of-delivery">Method of Delivery</h5>
+<p>If <a href="StructureDefinition-Observation-unknown-final-route-and-method-of-delivery.html">ObservationUnknownFinalRouteMethodDelivery</a> is present in bundle, then the interpretation is that the method of delivery is unknown, and <a href="StructureDefinition-Procedure-final-route-method-delivery.html">ProcedureFinalRouteMethodDelivery</a> should not be used.</p>
+<h5 id="obstetric-procedures">Obstetric Procedures</h5>
+<p>If <a href="StructureDefinition-Observation-none-of-specified-obstetric-procedures.html">ObservationNoneOfSpecifiedObstetricProcedures</a> is present in bundle, then the interpretation is that external cephalic procedure was not performed, and <a href="StructureDefinition-Procedure-obstetric.html">ProcedureObstetric</a> should not be used.</p>
+
+<h3 id="other-in-infectionsduringpregnancylivebirth-and-newborncongenitalanomalies">‘Other’ in InfectionsDuringPregnancyLiveBirth and NewbornCongenitalAnomalies</h3>
+<p>Since other infections and congenital anomalies could be of interest/value for use cases outside of natality, the value ‘Other’ is included in these valuesets (see <a href="ValueSet-ValueSet-infections-during-pregnancy-live-birth.html">InfectionsDuringPregnancyLiveBirthVS</a> and <a href="ValueSet-ValueSet-newborn-congenital-anomalies.html">NewbornCongenitalAnomaliesVS</a>). However, use of #OTH is not allowed for submissions to NCHS.</p>
+
+<h3 id="handling-of-edit-flags">Handling of Edit Flags</h3>
+<p>Edit flags supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case. The validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the <a href="https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf">Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth</a> and the <a href="https://www.cdc.gov/nchs/data/dvs/death_edit_specifications.pdf">Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death</a>.</p>
+
+<!--- Extensions -->
+<!---from VRCL-->
+<!-- other -->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Preview3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 30, 2024 17:05-0400">2024-07-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/bfdr/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ValueSet-units-of-gestational-age",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>d</td><td>Days</td></tr><tr><td>wk</td><td>Weeks</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pher"
+  }],
+  "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age",
+  "version" : "2.0.0-Preview3",
+  "name" : "UnitsOfGestationalAgeVS",
+  "title" : "Units of Gestational Age",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-07-30T17:05:21-04:00",
+  "publisher" : "HL7 International / Public Health",
+  "contact" : [{
+    "name" : "HL7 International / Public Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/pher"
+    }]
+  }],
+  "description" : "This valueset contains the set of codes for specifying the units used when recording gestational age (days, weeks.).\n\nReporting to NCHS is always in units of weeks, but other users of the associated [ObservationGestationalAgeAtDelivery](StructureDefinition-Observation-gestational-age-at-delivery.html) profile may want to record days.\n",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "d",
+        "display" : "Days"
+      },
+      {
+        "code" : "wk",
+        "display" : "Weeks"
+      }]
+    }]
+  }
+}

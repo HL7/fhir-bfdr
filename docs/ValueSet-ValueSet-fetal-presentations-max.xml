@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-fetal-presentations-max"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-ValueSet-fetal-presentations.html">Fetal Presentations</a></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  15028002 (Abnormal fetal presentation)</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations-max"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="FetalPresentationsMaxVS"/>
+  <title value="Fetal Presentations - Max"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes to represent fetal presentations. It expands on the [FetalPresentationsVS](ValueSet-ValueSet-fetal-presentations.html) by including intensionally all codes for abnormal presentations, &#xA;as suggested by [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="15028002"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

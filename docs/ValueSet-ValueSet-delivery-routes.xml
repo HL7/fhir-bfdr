@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-delivery-routes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/700000006">700000006</a></td><td>Vaginal delivery of fetus (procedure)</td></tr><tr><td><a href="http://snomed.info/id/302383004">302383004</a></td><td>Forceps delivery (procedure)</td></tr><tr><td><a href="http://snomed.info/id/61586001">61586001</a></td><td>Delivery by vacuum extraction (procedure)</td></tr><tr><td><a href="http://snomed.info/id/11466000">11466000</a></td><td>Cesarean section (procedure)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-delivery-routes"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="DeliveryRoutesVS"/>
+  <title value="Delivery Routes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes to represent Delivery Routes. &#xA;&#xA;Mapping to IJE codes [here](ConceptMap-DeliveryRoutesCM.html)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="700000006"/>
+        <display value="Vaginal delivery of fetus (procedure)"/>
+      </concept>
+      <concept>
+        <code value="302383004"/>
+        <display value="Forceps delivery (procedure)"/>
+      </concept>
+      <concept>
+        <code value="61586001"/>
+        <display value="Delivery by vacuum extraction (procedure)"/>
+      </concept>
+      <concept>
+        <code value="11466000"/>
+        <display value="Cesarean section (procedure)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

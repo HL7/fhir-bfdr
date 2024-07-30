@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-birth-weight-edit-flags"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html"><code>http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-vr-edit-flags.html#CodeSystem-vr-edit-flags-0off">0off</a></td><td>Off</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-CodeSystem-edit-flags.html"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-CodeSystem-edit-flags.html#CodeSystem-edit-flags-1correctOutOfRange">1correctOutOfRange</a></td><td>Queried data correct, out of range</td><td>Queried data correct, out of range</td></tr><tr><td><a href="CodeSystem-CodeSystem-edit-flags.html#CodeSystem-edit-flags-2failedBirthWeightGestationEdit">2failedBirthWeightGestationEdit</a></td><td>Queried, failed birthweight/gestation edit</td><td>Queried, failed birthweight/gestation edit</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-weight-edit-flags"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="BirthWeightEditFlagsVS"/>
+  <title value="Birth Weight Edit Flags (NCHS)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes to represent Birth Weight Edit Flags.&#xA;&#xA;Mapping to IJE codes [here](ConceptMap-BirthWeightEditFlagsCM.html)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"/>
+      <concept>
+        <code value="0off"/>
+        <display value="Off"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags"/>
+      <concept>
+        <code value="1correctOutOfRange"/>
+        <display value="Queried data correct, out of range"/>
+      </concept>
+      <concept>
+        <code value="2failedBirthWeightGestationEdit"/>
+        <display value="Queried, failed birthweight/gestation edit"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

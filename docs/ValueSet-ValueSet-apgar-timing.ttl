@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ValueSet-apgar-timing"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/9272-6/\">9272-6</a></td><td>1 minute Apgar Score</td></tr><tr><td><a href=\"https://loinc.org/9274-2/\">9274-2</a></td><td>5 minute Apgar Score</td></tr><tr><td><a href=\"https://loinc.org/9271-8/\">9271-8</a></td><td>10 minute Apgar Score</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/443848000\">443848000</a></td><td>Apgar score at 15 minutes (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/443849008\">443849008</a></td><td>Apgar score at 20 minutes (observable entity)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Preview3"] ; # 
+  fhir:name [ fhir:v "ApgarTimingVS"] ; # 
+  fhir:title [ fhir:v "APGAR Score Timing"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-30T17:05:21-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This valueset contains codes to represent standard timings for APGAR assessments."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.\nThis material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "9272-6" ] ;
+         fhir:display [ fhir:v "1 minute Apgar Score" ]
+       ] [
+         fhir:code [ fhir:v "9274-2" ] ;
+         fhir:display [ fhir:v "5 minute Apgar Score" ]
+       ] [
+         fhir:code [ fhir:v "9271-8" ] ;
+         fhir:display [ fhir:v "10 minute Apgar Score" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "443848000" ] ;
+         fhir:display [ fhir:v "Apgar score at 15 minutes (observable entity)" ]
+       ] [
+         fhir:code [ fhir:v "443849008" ] ;
+         fhir:display [ fhir:v "Apgar score at 20 minutes (observable entity)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

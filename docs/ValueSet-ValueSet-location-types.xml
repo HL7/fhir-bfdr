@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-location-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-CodeSystem-local-bfdr-codes.html"><code>http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_birth">loc_birth</a></td><td>Birth Location</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_transfer-from">loc_transfer-from</a></td><td>Transfer-from Location</td></tr><tr><td><a href="CodeSystem-CodeSystem-local-bfdr-codes.html#CodeSystem-local-bfdr-codes-loc_transfer-to">loc_transfer-to</a></td><td>Transfer-to Location</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-location-types"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="LocationTypeVS"/>
+  <title value="Location Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes used to differentate transfer and birth locations"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+      <concept>
+        <code value="loc_birth"/>
+        <display value="Birth Location"/>
+      </concept>
+      <concept>
+        <code value="loc_transfer-from"/>
+        <display value="Transfer-from Location"/>
+      </concept>
+      <concept>
+        <code value="loc_transfer-to"/>
+        <display value="Transfer-to Location"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ValueSet-newborn-congenital-anomalies"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/89369001\">89369001</a></td><td>Anencephalus</td></tr><tr><td><a href=\"http://snomed.info/id/67531005\">67531005</a></td><td>Meningomyelocele/Spina bifida</td></tr><tr><td><a href=\"http://snomed.info/id/12770006\">12770006</a></td><td>Cyanotic congenital heart disease</td></tr><tr><td><a href=\"http://snomed.info/id/17190001\">17190001</a></td><td>Congenital diaphragmatic hernia</td></tr><tr><td><a href=\"http://snomed.info/id/18735004\">18735004</a></td><td>Congenital omphalocele</td></tr><tr><td><a href=\"http://snomed.info/id/72951007\">72951007</a></td><td>Gastroschisis</td></tr><tr><td><a href=\"http://snomed.info/id/67341007\">67341007</a></td><td>Longitudinal deficiency of limb - Limb reduction defect (excluding congenital amputation and dwarfing syndromes)</td></tr><tr><td><a href=\"http://snomed.info/id/80281008\">80281008</a></td><td>Cleft Lip with or without Cleft Palate</td></tr><tr><td><a href=\"http://snomed.info/id/87979003\">87979003</a></td><td>Cleft palate</td></tr><tr><td><a href=\"http://snomed.info/id/70156005\">70156005</a></td><td>Anomaly of chromosome pair 21</td></tr><tr><td><a href=\"http://snomed.info/id/409709004\">409709004</a></td><td>Chromosomal disorder</td></tr><tr><td><a href=\"http://snomed.info/id/416010008\">416010008</a></td><td>Hypospadias</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html\"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>Other</td><td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/><br/>**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \\*any\\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/><br/>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Preview3"] ; # 
+  fhir:name [ fhir:v "NewbornCongenitalAnomaliesVS"] ; # 
+  fhir:title [ fhir:v "Newborn Congenital Anomalies"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-30T17:05:21-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The valueset contains codes to represent newborn congenital anomalies. Includes 'Other' value for general utility, although #OTH is not allowed for birth submissions to NCHS.\n\nMapping to IJE codes [here](ConceptMap-NewbornCongenitalAnomaliesCM.html)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "89369001" ] ;
+         fhir:display [ fhir:v "Anencephalus" ]
+       ] [
+         fhir:code [ fhir:v "67531005" ] ;
+         fhir:display [ fhir:v "Meningomyelocele/Spina bifida" ]
+       ] [
+         fhir:code [ fhir:v "12770006" ] ;
+         fhir:display [ fhir:v "Cyanotic congenital heart disease" ]
+       ] [
+         fhir:code [ fhir:v "17190001" ] ;
+         fhir:display [ fhir:v "Congenital diaphragmatic hernia" ]
+       ] [
+         fhir:code [ fhir:v "18735004" ] ;
+         fhir:display [ fhir:v "Congenital omphalocele" ]
+       ] [
+         fhir:code [ fhir:v "72951007" ] ;
+         fhir:display [ fhir:v "Gastroschisis" ]
+       ] [
+         fhir:code [ fhir:v "67341007" ] ;
+         fhir:display [ fhir:v "Longitudinal deficiency of limb - Limb reduction defect (excluding congenital amputation and dwarfing syndromes)" ]
+       ] [
+         fhir:code [ fhir:v "80281008" ] ;
+         fhir:display [ fhir:v "Cleft Lip with or without Cleft Palate" ]
+       ] [
+         fhir:code [ fhir:v "87979003" ] ;
+         fhir:display [ fhir:v "Cleft palate" ]
+       ] [
+         fhir:code [ fhir:v "70156005" ] ;
+         fhir:display [ fhir:v "Anomaly of chromosome pair 21" ]
+       ] [
+         fhir:code [ fhir:v "409709004" ] ;
+         fhir:display [ fhir:v "Chromosomal disorder" ]
+       ] [
+         fhir:code [ fhir:v "416010008" ] ;
+         fhir:display [ fhir:v "Hypospadias" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "OTH" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

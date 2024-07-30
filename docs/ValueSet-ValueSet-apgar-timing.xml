@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-apgar-timing"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/9272-6/">9272-6</a></td><td>1 minute Apgar Score</td></tr><tr><td><a href="https://loinc.org/9274-2/">9274-2</a></td><td>5 minute Apgar Score</td></tr><tr><td><a href="https://loinc.org/9271-8/">9271-8</a></td><td>10 minute Apgar Score</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/443848000">443848000</a></td><td>Apgar score at 15 minutes (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/443849008">443849008</a></td><td>Apgar score at 20 minutes (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pher"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing"/>
+  <version value="2.0.0-Preview3"/>
+  <name value="ApgarTimingVS"/>
+  <title value="APGAR Score Timing"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-30T17:05:21-04:00"/>
+  <publisher value="HL7 International / Public Health"/>
+  <contact>
+    <name value="HL7 International / Public Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pher"/>
+    </telecom>
+  </contact>
+  <description value="This valueset contains codes to represent standard timings for APGAR assessments."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.&#xA;This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="9272-6"/>
+        <display value="1 minute Apgar Score"/>
+      </concept>
+      <concept>
+        <code value="9274-2"/>
+        <display value="5 minute Apgar Score"/>
+      </concept>
+      <concept>
+        <code value="9271-8"/>
+        <display value="10 minute Apgar Score"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="443848000"/>
+        <display value="Apgar score at 15 minutes (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="443849008"/>
+        <display value="Apgar score at 20 minutes (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

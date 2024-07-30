@@ -1,0 +1,255 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-apgar-timing",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "ApgarTimingVS",
+      "title" : "APGAR Score Timing",
+      "description" : "This valueset contains codes to represent standard timings for APGAR assessments.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-and-fetal-death-financial-class",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "BirthAndFetalDeathFinancialClassVS",
+      "title" : "Birth and Fetal Death Financial Class",
+      "description" : "This valueset contains codes to represent birth and fetal death financial class. \n\nMapping to IJE codes [here](ConceptMap-BirthAndFetalDeathFinancialClassCM.html).",
+      "systems" : ["https://nahdo.org/sopt"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-attendant-titles",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "BirthAttendantTitlesVS",
+      "title" : "Birth Attendants Titles",
+      "description" : "This valueset contains codes to represent the type of birth attendant titles. \n\nMapping to IJE codes [here](ConceptMap-BirthAttendantTitlesCM.html).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-delivery-occurred",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "BirthDeliveryOccurredVS",
+      "title" : "Birth Delivery Occurred",
+      "description" : "This valueset contains codes to represent the type of place where birth or delivery occurred.\n\nMapping to IJE codes [here](ConceptMap-BirthDeliveryOccurredCM.html).",
+      "systems" : [
+        "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-birth-weight-edit-flags",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "BirthWeightEditFlagsVS",
+      "title" : "Birth Weight Edit Flags (NCHS)",
+      "description" : "This valueset contains codes to represent Birth Weight Edit Flags.\n\nMapping to IJE codes [here](ConceptMap-BirthWeightEditFlagsCM.html).",
+      "systems" : [
+        "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-delivery-routes",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "DeliveryRoutesVS",
+      "title" : "Delivery Routes",
+      "description" : "This valueset contains codes to represent Delivery Routes. \n\nMapping to IJE codes [here](ConceptMap-DeliveryRoutesCM.html).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-estimate-of-gestation-edit-flags",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "EstimateOfGestationEditFlagsVS",
+      "title" : "Estimate of Gestation Edit Flags (NCHS)",
+      "description" : "This valueset contains codes to represent Estimate of Gestation Edit Flags. \n\nMapping to IJE codes [here](ConceptMap-EstimateOfGestationEditFlagsCM.html).",
+      "systems" : [
+        "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fertility-enhancing-drug-therapy-artificial-insem",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "FertilityEnhancingDrugTherapyArtificialInseminationVS",
+      "title" : "Fertility Enhancing Drug Therapy and Artificial Insemination Value Set",
+      "description" : "This valueset contains codes to represent fertility enhancing drug therapy and artificial insemination.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-cause-or-condition",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "FetalDeathCauseOrConditionVS",
+      "title" : "Fetal Death Cause or Condition",
+      "description" : "This valueset contains codes to represent fetal death cause or condition. \n\nMapping to IJE codes [here](ConceptMap-FetalDeathCauseOrConditionCM.html).",
+      "systems" : [
+        "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-death-time-points",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "FetalDeathTimePointsVS",
+      "title" : "Fetal Death Time Points",
+      "description" : "This valueset contains codes to represent fetal death time points. \n\nMapping to IJE codes [here](ConceptMap-FetalDeathTimePointsCM.html).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "FetalPresentationsVS",
+      "title" : "Fetal Presentations",
+      "description" : "This valueset contains codes to represent fetal presentations. Only these codes are supported for exchange with NCHS.\n\nMapping to IJE codes [here](ConceptMap-FetalPresentationCM.html).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-presentations-max",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "FetalPresentationsMaxVS",
+      "title" : "Fetal Presentations - Max",
+      "description" : "This valueset contains codes to represent fetal presentations. It expands on the [FetalPresentationsVS](ValueSet-ValueSet-fetal-presentations.html) by including intensionally all codes for abnormal presentations, \nas suggested by [FHIR-44554](https://jira.hl7.org/browse/FHIR-44554).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-fetal-remains-disposition-method",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "FetalRemainsDispositionMethodVS",
+      "title" : "Fetal Remains Disposition Method",
+      "description" : "This valueset contains codes to represent Fetal Remains Method of Disposition. Fetal Remains Disposition Method Value Set differs from the related VRDR [MethodOfDispositionVS](https://hl7.org/fhir/us/vrdr/ValueSet-vrdr-method-of-disposition-vs.html) since it includes 'Hospital Disposition', but not 'Entombment'.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-infections-during-pregnancy-live-birth",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "InfectionsDuringPregnancyLiveBirthVS",
+      "title" : "Infections During Pregnancy Live Birth",
+      "description" : "This valueset contains codes to represent Infections During Pregnancy Live Birth. Includes 'Other' value for general utility, although #OTH is not allowed for birth submissions to NCHS.\n\nMapping to IJE codes [here](ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-informant-relationship-to-mother",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "InformantRelationshipToMotherVS",
+      "title" : "Informant Relationship to Mother",
+      "description" : "This valueset contains codes to represent informants relationship to mother.",
+      "systems" : [
+        "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-location-types",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "LocationTypeVS",
+      "title" : "Location Types",
+      "description" : "This valueset contains codes used to differentate transfer and birth locations",
+      "systems" : [
+        "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-newborn-congenital-anomalies",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "NewbornCongenitalAnomaliesVS",
+      "title" : "Newborn Congenital Anomalies",
+      "description" : "The valueset contains codes to represent newborn congenital anomalies. Includes 'Other' value for general utility, although #OTH is not allowed for birth submissions to NCHS.\n\nMapping to IJE codes [here](ConceptMap-NewbornCongenitalAnomaliesCM.html).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-number-previous-cesareans-edit-flags",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "NumberPreviousCesareansEditFlagsVS",
+      "title" : "Number of Previous Cesareans Edit Flags (NCHS)",
+      "description" : "This valueset contains codes to represent Number of Previous Cesareans Edit Flags.\n\nMapping to IJE codes [here](ConceptMap-NumberPreviousCesareansEditFlagsCM.html).",
+      "systems" : [
+        "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-obstetric-procedure-outcome",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "ObstetricProcedureOutcomeVS",
+      "title" : "Obstetric Procedure Outcome",
+      "description" : "This valueset contains codes that represent the successful or unsuccessful outcome of an obstretric procedure",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-performed-not-performed-planned",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "PerformedNotPerformedPlannedVS",
+      "title" : "Performed NotPerformed Planned",
+      "description" : "This valueset contains codes to represent the status (performed, not performed, planned) of histological placental examinations.\n\nMapping to IJE codes [here](ConceptMap-PerformedNotPerformedPlannedCM.html).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-pregnancy-report-edit-flags",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "PregnancyReportEditFlagsVS",
+      "title" : "Pregnancy Report Edit Flags (NCHS)",
+      "description" : "This valueset contains codes to represent Pregnancy Report Edit Flags. Used for MothersHeight, MothersDeliveryWeight, MothersPrepregnancyWeight, NumberPrenatalCareVisits.\n\nMapping to IJE codes [here](ConceptMap-PregnancyReportEditFlagsCM.html).",
+      "systems" : [
+        "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-vr-edit-flags"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/ValueSet-units-of-gestational-age",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "UnitsOfGestationalAgeVS",
+      "title" : "Units of Gestational Age",
+      "description" : "This valueset contains the set of codes for specifying the units used when recording gestational age (days, weeks.).\n\nReporting to NCHS is always in units of weeks, but other users of the associated [ObservationGestationalAgeAtDelivery](StructureDefinition-Observation-gestational-age-at-delivery.html) profile may want to record days.\n",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/bfdr/ValueSet/cigarette-smoking-before-during-pregnancy",
+      "version" : "2.0.0-Preview3",
+      "status" : "active",
+      "name" : "CigaretteSmokingBeforeAndDuringPregnancyVS",
+      "title" : "Cigarette Smoking Before and During Pregnancy",
+      "description" : "This valueset contains codes to represent the number of cigarettes smoked in specific periods before and during pregnancy.",
+      "systems" : ["http://loinc.org"]
+    }
+  ]
+}
