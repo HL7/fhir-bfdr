@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "631abe68-6530-4050-a57d-6322ad9c1156-305",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/631abe68-6530-4050-a57d-6322ad9c1156-305",
+  "name" : "UnionNumberPreviousCesareansEditFlagsVSAndNumberPreviousCesareansEditFlagsVS",
+  "title" : "Union of ValueSet - Number of Previous Cesareans Edit Flags (NCHS) And Number of Previous Cesareans Edit Flags (NCHS)",
+  "status" : "draft",
+  "date" : "2024-07-30T17:07:02-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "editBypass0",
+        "display" : "Edit Passed"
+      },
+      {
+        "code" : "failedVerified",
+        "display" : "Edit Failed, Verified"
+      },
+      {
+        "code" : "0",
+        "display" : "Edit Passed"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-edit-flags",
+      "concept" : [{
+        "code" : "1failedVerified",
+        "display" : "Edit Failed, Verified"
+      }]
+    }]
+  }
+}

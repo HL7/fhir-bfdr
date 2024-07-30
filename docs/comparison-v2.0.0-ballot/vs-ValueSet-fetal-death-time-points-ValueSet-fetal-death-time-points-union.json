@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "631abe68-6530-4050-a57d-6322ad9c1156-290",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/631abe68-6530-4050-a57d-6322ad9c1156-290",
+  "name" : "UnionFetalDeathTimePointsVSAndFetalDeathTimePointsVS",
+  "title" : "Union of ValueSet - Fetal Death Time Points And Fetal Death Time Points",
+  "status" : "draft",
+  "date" : "2024-07-30T17:07:02-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "434681000124104",
+        "display" : "Antepartum fetal death with cessation of labor"
+      },
+      {
+        "code" : "434671000124102",
+        "display" : "Antepartum fetal death with continued labor"
+      },
+      {
+        "code" : "434631000124100",
+        "display" : "Fetal intrapartum death after first assessment"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

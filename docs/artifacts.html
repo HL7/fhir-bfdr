@@ -1,0 +1,3660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Birth And Fetal Death (BFDR) - STU2-preview3 v2.0.0-Preview3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"23"}
+    h3,h4,h5,h6{--heading-prefix:"23.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Birth And Fetal Death (BFDR) - STU2-preview3</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-Preview3 - trial-use
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="use_cases.html">UseCases</a>
+      </li>
+      <li>
+        <a href="vr_ig_harmonization.html">Vital Records IG Harmonization</a>
+      </li>
+      <li>
+        <a href="credits.html">Credits</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementer Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="the_specification.html">Specification</a>
+      </li>
+      <li>
+        <a href="categories.html">Categories</a>
+      </li>
+      <li>
+        <a href="usage.html">Usage Notes</a>
+      </li>
+      <li>
+        <a href="patient_worksheet_questionnaires.html">Worksheet Questionnaires</a>
+      </li>
+      <li>
+        <a href="ije_mapping_natality.html">Natality Data Dictionary</a>
+      </li>
+      <li>
+        <a href="ije_mapping_fetalDeath.html">Fetal Death Data Dictionary</a>
+      </li>
+      <li>
+        <a href="vital_records_form_mapping.html">Forms Mapping</a>
+      </li>
+      <li>
+        <a href="EHR_Data_mapping.html">EHR Data Mapping</a>
+      </li>
+      <li>
+        <a href="IJE_File_Layouts_and_FHIR_Mapping_24-06-21.csv">IJE Mapping to FHIR (csv)</a>
+      </li>
+      <li>
+        <a href="IJE_File_Layouts_and_FHIR_Mapping_24-06-21.xlsx">IJE Mapping to FHIR (xlsx)</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="example_baby_g_quinn.html">Example Live Birth</a>
+      </li>
+      <li>
+        <a href="example_fetal_death.html">Example Fetal Death</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Changes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="change_log.html">Change Log</a>
+      </li>
+      <li>
+        <a href="content-transitions.html">STU1.1 to STU2 Changes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Appendices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate.html">A Live Birth Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_b_-_example_live_birth_certificate.html">B Live Birth Certificate</a>
+      </li>
+      <li>
+        <a href="appendix_c_-_example_facility_worksheet_for_the_fetal_death_report.html">C Fetal Death Worksheet</a>
+      </li>
+      <li>
+        <a href="appendix_d_-_example_fetal_death_report.html">D Fetal Death Report</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Birth And Fetal Death (BFDR) - STU2-preview3 - Local Development build (v2.0.0-Preview3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/bfdr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Bundles</a>
+      </li>
+      <li>
+         <a href="#3">Compositions EHR to VRO</a>
+      </li>
+      <li>
+         <a href="#4">Compositions VRO to NCHS</a>
+      </li>
+      <li>
+         <a href="#5">Compositions NCHS to VRO</a>
+      </li>
+      <li>
+         <a href="#6">Questionnaires</a>
+      </li>
+      <li>
+         <a href="#7">Encounter and Location Profiles and Extensions</a>
+      </li>
+      <li>
+         <a href="#8">Practitioner Profiles and Extensions</a>
+      </li>
+      <li>
+         <a href="#9">Newborn/Fetus Profiles</a>
+      </li>
+      <li>
+         <a href="#10">Profiles - Abnormal Condition of the Newborn (73812-0)</a>
+      </li>
+      <li>
+         <a href="#11">Profiles - Congenital Anomolies of the Newborn (73780-9)</a>
+      </li>
+      <li>
+         <a href="#12">Profiles - Characteristics of Labor and Delivery (73813-8)</a>
+      </li>
+      <li>
+         <a href="#13">Mother Prenatal Profiles</a>
+      </li>
+      <li>
+         <a href="#14">Profiles - Infections During Pregnancy (73769-2)</a>
+      </li>
+      <li>
+         <a href="#15">Medical and Health Information Profiles</a>
+      </li>
+      <li>
+         <a href="#16">Profiles - Obstetric Procedures (73814-6)</a>
+      </li>
+      <li>
+         <a href="#17">Profiles - Final Route and Method of Delivery (73762-7)</a>
+      </li>
+      <li>
+         <a href="#18">Profiles - Pregnancy Risk Factors (73769-2)</a>
+      </li>
+      <li>
+         <a href="#19">Profiles - Maternal Morbidity Profiles (73781-7)</a>
+      </li>
+      <li>
+         <a href="#20">Fetal Death Information Profiles</a>
+      </li>
+      <li>
+         <a href="#21">Parent Information Profiles</a>
+      </li>
+      <li>
+         <a href="#22">Other information about pregnancy (not used by birth and fetal death use cases)</a>
+      </li>
+      <li>
+         <a href="#23">Fetal Death Coded Cause of Death Profiles (NCHS to VRO)</a>
+      </li>
+      <li>
+         <a href="#24">CodeSystems</a>
+      </li>
+      <li>
+         <a href="#25">ValueSets</a>
+      </li>
+      <li>
+         <a href="#26">Concept Maps</a>
+      </li>
+      <li>
+         <a href="#27">Parameters</a>
+      </li>
+      <li>
+         <a href="#28">Fetal Death Record Examples (Not Named)</a>
+      </li>
+      <li>
+         <a href="#29">Live Birth Examples - Baby G Quinn</a>
+      </li>
+      <li>
+         <a href="#30">Misc Examples</a>
+      </li>
+      <li>
+         <a href="#31">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#32">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Capability Statements </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-CapabilityStatement-bfdr.html"
+                  title="CapabilityStatement/CapabilityStatement-bfdr">CapabilityStatement - Birth and Fetal Death</a>
+            </td>
+            <td>
+<p>This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Bundles </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Bundle-document-birth-report.html"
+                  title="StructureDefinition/Bundle-document-birth-report">Bundle - Document Birth Report</a>
+            </td>
+            <td>
+<p>This Bundle profile represents a Birth Document Bundle. It contains any one of the Birth Report Compositions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Bundle-document-coded-cause-of-fetal-death.html"
+                  title="StructureDefinition/Bundle-document-coded-cause-of-fetal-death">Bundle - Document Coded Cause of Fetal Death</a>
+            </td>
+            <td>
+<p>This bundle profile contains instances of the resources comprising  cause of fetal death coded content.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Bundle-document-demographic-coded-content.html"
+                  title="StructureDefinition/Bundle-document-demographic-coded-content">Bundle - Document Demographic Coded Content</a>
+            </td>
+            <td>
+<p>This bundle profile contains instances of the resources comprising demographic (race and ethnicity) coded content. 
+This bundle is information-content equivalent to the traditional NCHS <a href="https://www.cdc.gov/nchs/data/dvs/200XMOR_web_with%20clearance%20revisions-acc.pdf">MRE</a>/NRE format.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Bundle-document-fetal-death-report.html"
+                  title="StructureDefinition/Bundle-document-fetal-death-report">Bundle - Document Fetal Death Report</a>
+            </td>
+            <td>
+<p>This Bundle profile represents a Fetal Death Document Bundle. It contains any one of the Fetal Death Compositions.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Compositions EHR to VRO </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-provider-fetal-death-report.html"
+                  title="StructureDefinition/Composition-provider-fetal-death-report">Composition - Provider Fetal Death Report</a>
+            </td>
+            <td>
+<p>This Composition profile contains constraints to address the use case describing the need for fetal death information to be recorded and communicated to the jurisdictional Vital Records Office.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-provider-live-birth-report.html"
+                  title="StructureDefinition/Composition-provider-live-birth-report">Composition - Provider Live Birth Report</a>
+            </td>
+            <td>
+<p>This Composition profile defines constraints to address the use case in which information for live birth information is recorded and communicated to the jurisdictional Vital Records Office.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Compositions VRO to NCHS </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-jurisdiction-fetal-death-report.html"
+                  title="StructureDefinition/Composition-jurisdiction-fetal-death-report">Composition - Jurisdiction Fetal Death Report</a>
+            </td>
+            <td>
+<p>This Composition profile contains information of a fetal death and the creation of a jurisdictional file to be recorded and communicated to the national statistics agency.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-jurisdiction-live-birth-report.html"
+                  title="StructureDefinition/Composition-jurisdiction-live-birth-report">Composition - Jurisdiction Live Birth Report</a>
+            </td>
+            <td>
+<p>This Composition profile contains information of a live birth and the issuance of a Birth Certificate to be recorded and communicated to the national statistics agency.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Compositions NCHS to VRO </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-coded-cause-of-fetal-death.html"
+                  title="StructureDefinition/Composition-coded-cause-of-fetal-death">Composition - Coded Cause of Fetal Death</a>
+            </td>
+            <td>
+<p>This profile communicates coded cause of fetal death information to appropriate jurisdictional Vital Records Offices.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-coded-industry-and-occupation.html"
+                  title="StructureDefinition/Composition-coded-industry-and-occupation">Composition - Coded Industry and Occupation</a>
+            </td>
+            <td>
+<p>This Composition profile communicates coded industry and occupation information to the appropriate jurisdictional Vital Records Office.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-coded-race-and-ethnicity.html"
+                  title="StructureDefinition/Composition-coded-race-and-ethnicity">Composition - Coded Race and Ethnicity</a>
+            </td>
+            <td>
+<p>This Composition profile communicates coded race and ethnicity information to the appropriate jurisdictional Vital Records Office, along with the submitted input race and ethnicity information.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Questionnaires </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-Questionnaire-mothers-live-birth.html"
+                  title="Questionnaire/Questionnaire-mothers-live-birth">Questionnaire - Mother's Worksheet for Child's Birth Certificate</a>
+            </td>
+            <td>
+<p>This Questionnaire represents the <a href="https://www.cdc.gov/nchs/data/dvs/moms-worksheet-2016-508.pdf">Mother’s Worksheet for Child’s Birth Certificate</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-Questionnaire-patients-fetal-death.html"
+                  title="Questionnaire/Questionnaire-patients-fetal-death">Questionnaire - Patient's Fetal Death Worksheet</a>
+            </td>
+            <td>
+<p>This Questionnaire represents the <a href="https://www.cdc.gov/nchs/data/dvs/fetal-death-mother-worksheet-english-2019-508.pdf">Patient’s Worksheet for the Report of Fetal Death</a>.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Encounter and Location Profiles and Extensions </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Location-bfdr.html"
+                  title="StructureDefinition/Location-bfdr">Birth and Fetal Death Location</a>
+            </td>
+            <td>
+<p>Location used for source/destination of transfers and location of birth.  Includes all standard extensions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Encounter-birth.html"
+                  title="StructureDefinition/Encounter-birth">Encounter - Birth</a>
+            </td>
+            <td>
+<p>This Encounter profile represents the child’s birth encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Encounter-maternity.html"
+                  title="StructureDefinition/Encounter-maternity">Encounter - Maternity</a>
+            </td>
+            <td>
+<p>This Encounter profile represents the mother’s maternity encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Extension-encounter-maternity-reference.html"
+                  title="StructureDefinition/Extension-encounter-maternity-reference">Encounter Maternity Reference</a>
+            </td>
+            <td>
+<p>This Extension profile is a reference to the maternity encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Extension-jurisdictional-facility-identifier.html"
+                  title="StructureDefinition/Extension-jurisdictional-facility-identifier">Jurisdictional Facility Identifier</a>
+            </td>
+            <td>
+<p>This extension profile is an identifier associated with a birth or fetal death facility location.  Four character string per NCHS edit specifications.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Practitioner Profiles and Extensions </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Practitioner-birth-attendant.html"
+                  title="StructureDefinition/Practitioner-birth-attendant">Practitioner - Birth Attendant</a>
+            </td>
+            <td>
+<p>The attendant at birth is defined as the individual at the delivery who is responsible for the delivery.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Practitioner-birth-certifier.html"
+                  title="StructureDefinition/Practitioner-birth-certifier">Practitioner - Birth Certifier</a>
+            </td>
+            <td>
+<p>Certifier (USCorePractitioner) used in BFDR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-practitioner-role-birth-attendant.html"
+                  title="StructureDefinition/practitioner-role-birth-attendant">Practitioner Role - Birth Attendant</a>
+            </td>
+            <td>
+<p>This extension profile is used to indicate that an instance relates to the birth attendant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-practitioner-role-birth-certifier.html"
+                  title="StructureDefinition/practitioner-role-birth-certifier">Practitioner Role - Certifier</a>
+            </td>
+            <td>
+<p>This extension profile is used to indicate that an instance relates to the birth certifier.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="9"> </a>
+   <h3>Newborn/Fetus Profiles </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-apgar-score.html"
+                  title="StructureDefinition/Observation-apgar-score">Observation - APGAR Score</a>
+            </td>
+            <td>
+<p>APGAR score post-birth.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-birth-weight.html"
+                  title="StructureDefinition/Observation-birth-weight">Observation - Birth Weight</a>
+            </td>
+            <td>
+<p>The weight of the infant/fetus at birth/delivery (reported in grams).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-fetal-presentation.html"
+                  title="StructureDefinition/Observation-fetal-presentation">Observation - Fetal Presentation at Birth/Delivery</a>
+            </td>
+            <td>
+<p>This Observation profile represents the fetal presentation (orientation within the mother’s womb) of a fetus prior to delivery/birth. Only the presentations in the preferred
+binding can be reported to NCHS.  The full set of abnormal presentations is included to support more general use.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-gestational-age-at-delivery.html"
+                  title="StructureDefinition/Observation-gestational-age-at-delivery">Observation - Gestational Age at Delivery</a>
+            </td>
+            <td>
+<p>The obstetric estimate of the infant’s gestation in completed weeks based on the birth/delivery attendant’s final estimate of gestation which should be 
+determined by all perinatal factors and assessments such as ultrasound, but not the neonatal exam.  For submission to NCHS, values in days will be divided by 7 without remainder, and values
+in weeks will be rounded down to an integer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-infant-breastfed-at-discharge.html"
+                  title="StructureDefinition/Observation-infant-breastfed-at-discharge">Observation - Infant Breastfed at Discharge</a>
+            </td>
+            <td>
+<p>This profile represents whether or not the infant was being breastfed at discharge.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-infant-living.html"
+                  title="StructureDefinition/Observation-infant-living">Observation - Infant Living</a>
+            </td>
+            <td>
+<p>An indication of whether the infant is living at the time the report is being submitted.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-mother-delivery-weight.html"
+                  title="StructureDefinition/Observation-mother-delivery-weight">Observation - Mother Delivery Weight (reported in pounds)</a>
+            </td>
+            <td>
+<p>The weight of the mother at the time of birth/delivery.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-number-fetal-deaths-this-delivery.html"
+                  title="StructureDefinition/Observation-number-fetal-deaths-this-delivery">Observation - Number of Fetal Deaths This Delivery</a>
+            </td>
+            <td>
+<p>The number of fetal deaths in this delivery.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-number-live-births-this-delivery.html"
+                  title="StructureDefinition/Observation-number-live-births-this-delivery">Observation - Number of Live Births This Delivery</a>
+            </td>
+            <td>
+<p>The number of live births in this delivery.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="10"> </a>
+   <h3>Profiles - Abnormal Condition of the Newborn (73812-0) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-seizure.html"
+                  title="StructureDefinition/Condition-seizure">Condition - Seizure</a>
+            </td>
+            <td>
+<p>This Condition profile indicates the newborn had an abnormal condition of seizure.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-nicu-admission.html"
+                  title="StructureDefinition/Observation-nicu-admission">Observation - NICU Admission</a>
+            </td>
+            <td>
+<p>This profile indicates that the abnormal condition of an admission to the NICU was present. NOTE: this may be better modeled as an Encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn.html"
+                  title="StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn">Observation - None Of Specified Abnormal Conditions of Newborn</a>
+            </td>
+            <td>
+<p>This profile indicates that none of the specified abnormal conditions of the newborn were present.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis.html"
+                  title="StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis">Procedure - Antibiotic for Suspected Neonatal Sepsis</a>
+            </td>
+            <td>
+<p>This profile represents an abnormal condition of antibiotic given for suspected neonatal sepsis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-assisted-ventilation-following-delivery.html"
+                  title="StructureDefinition/Procedure-assisted-ventilation-following-delivery">Procedure - Assisted Ventilation Following Delivery</a>
+            </td>
+            <td>
+<p>This profile represents an abnormal condition of the newborn of assisted ventilation immediately following delivery.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours.html"
+                  title="StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours">Procedure - Assisted Ventilation More Than Six Hours</a>
+            </td>
+            <td>
+<p>This profile represents an abnormal condition of the newborn of assisted ventilation for more than six hours.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-surfactant-replacement-therapy.html"
+                  title="StructureDefinition/Procedure-surfactant-replacement-therapy">Procedure - Surfactant Replacement Therapy</a>
+            </td>
+            <td>
+<p>This profile represents an abnormal condition of the newborn of surfactant replacement therapy.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="11"> </a>
+   <h3>Profiles - Congenital Anomolies of the Newborn (73780-9) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-congenital-anomaly-of-newborn.html"
+                  title="StructureDefinition/Condition-congenital-anomaly-of-newborn">Condition - Congenital Anomaly of Newborn</a>
+            </td>
+            <td>
+<p>This Condition profile represents information on whether the infant suffered from one or more of a list of known malformations diagnosed prenatally or after delivery.</p>
+
+<p>In the case the infant suffers from a chromosomal disorder or Down syndrome, a Karyotype status of confirmed or pending can be provided.  If neither is provided the status is unknown.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-none-congenital-anomolies-of-the-newborn.html"
+                  title="StructureDefinition/Observation-none-congenital-anomolies-of-the-newborn">Observation - None Of Specified Congenital Anomolies Of The Newborn</a>
+            </td>
+            <td>
+<p>This profile indicates that none of the specified congenital anomolies of the newborn were present.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="12"> </a>
+   <h3>Profiles - Characteristics of Labor and Delivery (73813-8) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-chorioamnionitis.html"
+                  title="StructureDefinition/Condition-chorioamnionitis">Condition - Chorioamnionitis</a>
+            </td>
+            <td>
+<p>This Condition profile indicates a labor and delivery characteristic of chorioamnionitis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-steroids-fetal-lung-maturation.html"
+                  title="StructureDefinition/Observation-steroids-fetal-lung-maturation">Observation - Administration of Steroids for Fetal Lung Maturation</a>
+            </td>
+            <td>
+<p>This Observation profile indicates a characteristic of labor of administration of steroids for fetal lung maturation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-antibiotics-administered-during-labor.html"
+                  title="StructureDefinition/Observation-antibiotics-administered-during-labor">Observation - Antibiotics Administered During Labor</a>
+            </td>
+            <td>
+<p>This Observation profile indicates a characteristic of labor of antibiotics administered during labor.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery.html"
+                  title="StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery">Observation - None Of Specified Characteristics of Labor and Delivery</a>
+            </td>
+            <td>
+<p>This profile indicates that none of the specified characteristics of labor and delivery were present.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-augmentation-of-labor.html"
+                  title="StructureDefinition/Procedure-augmentation-of-labor">Procedure - Augmentation of Labor</a>
+            </td>
+            <td>
+<p>This Procedure profile indicates a characteristic of labor of augmentation of labor.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-epidural-or-spinal-anesthesia.html"
+                  title="StructureDefinition/Procedure-epidural-or-spinal-anesthesia">Procedure - Epidural or Spinal Anesthesia</a>
+            </td>
+            <td>
+<p>This Procedure profile indicates a characteristic of labor of epidural or spinal anesthesia.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-induction-of-labor.html"
+                  title="StructureDefinition/Procedure-induction-of-labor">Procedure - Induction of Labor</a>
+            </td>
+            <td>
+<p>This Procedure profile indicates a characteristic of labor of induction of labor.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="13"> </a>
+   <h3>Mother Prenatal Profiles </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Coverage-principal-payer-delivery.html"
+                  title="StructureDefinition/Coverage-principal-payer-delivery">Coverage - Principal Payer for Delivery</a>
+            </td>
+            <td>
+<p>This Coverage profile represents the principal payer for this delivery.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html"
+                  title="StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy">Observation - Cigarette Smoking Before and During Pregnancy</a>
+            </td>
+            <td>
+<p>This profile represents the average number of cigarettes smoked per day for each time period indicated by the value selected for code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-date-of-first-prenatal-care-visit.html"
+                  title="StructureDefinition/Observation-date-of-first-prenatal-care-visit">Observation - Date of First Prenatal Care Visit</a>
+            </td>
+            <td>
+<p>This profile represents the date of the first prenatal care visit for this pregnancy. A prenatal visit is where a physician or other health care professional examined and/or counseled the pregnant woman for the pregnancy. If this profile is not present it indicates that the mother did not receive prenatal care at any time during the pregnancy.
+FHIR observations do not support date as a value and if a date is partial. It must follow FHIR requirements for <a href="https://build.fhir.org/datatypes.html#dateTime">dateTime</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-date-of-last-live-birth.html"
+                  title="StructureDefinition/Observation-date-of-last-live-birth">Observation - Date of Last Live Birth</a>
+            </td>
+            <td>
+<p>This profile represents the date of the mother’s last live born infant (do not include this birth).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-date-of-last-other-pregnancy-outcome.html"
+                  title="StructureDefinition/Observation-date-of-last-other-pregnancy-outcome">Observation - Date of Last Other Pregnancy Outcome</a>
+            </td>
+            <td>
+<p>This profile represents the date of the mother’s last other pregnancy outcome (includes pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies) (do not include this birth).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-last-menstrual-period.html"
+                  title="StructureDefinition/Observation-last-menstrual-period">Observation - Last Menstrual Period</a>
+            </td>
+            <td>
+<p>This profile represents the date of the last menstrual period of the patient. The first day of last menstrual period should be captured. The effectiveDateTime captures the observation date.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-mother-height.html"
+                  title="StructureDefinition/Observation-mother-height">Observation - Mother Height</a>
+            </td>
+            <td>
+<p>The height of the mother (reported in inches).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-mother-prepregnancy-weight.html"
+                  title="StructureDefinition/Observation-mother-prepregnancy-weight">Observation - Mother Prepregnancy Weight</a>
+            </td>
+            <td>
+<p>The weight of the mother before becoming pregnant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-mother-received-wic-food.html"
+                  title="StructureDefinition/Observation-mother-received-wic-food">Observation - Mother Recieved WIC Food</a>
+            </td>
+            <td>
+<p>This profile represents whether or not the mother made use of the Women, Infants and Children (WIC) nutritional program during the pregnancy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-number-births-now-dead.html"
+                  title="StructureDefinition/Observation-number-births-now-dead">Observation - Number of Births Now Dead</a>
+            </td>
+            <td>
+<p>The total number of previous live-born infants for the mother now dead.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-number-births-now-living.html"
+                  title="StructureDefinition/Observation-number-births-now-living">Observation - Number of Births Now Living</a>
+            </td>
+            <td>
+<p>The total number of previous live-born infants for the mother now living.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-number-other-pregnancy-outcomes.html"
+                  title="StructureDefinition/Observation-number-other-pregnancy-outcomes">Observation - Number of Other Pregnancy Outcomes</a>
+            </td>
+            <td>
+<p>The total number of other pregnancy outcomes for the mother that did not result in a live birth  (included pregnancy losses of any gestational age, e.g., spontaneous or induced losses or ectopic pregnancies).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-number-prenatal-visits.html"
+                  title="StructureDefinition/Observation-number-prenatal-visits">Observation - Number of Prenatal Visits</a>
+            </td>
+            <td>
+<p>The total number of prenatal visits for the mother. The dates of the first and last prenatal visit are indicated by the effective date range. If the mother received no prenatal care, the value should indicate 0 visits.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="14"> </a>
+   <h3>Profiles - Infections During Pregnancy (73769-2) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-infection-present-during-pregnancy.html"
+                  title="StructureDefinition/Condition-infection-present-during-pregnancy">Condition - Infection Present During Pregnancy</a>
+            </td>
+            <td>
+<p>This Condition profile represents infections present and/or treated during the pregnancy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-no-infections-present-during-pregnancy.html"
+                  title="StructureDefinition/Observation-no-infections-present-during-pregnancy">Observation - None Of Specified Infections During Pregnancy</a>
+            </td>
+            <td>
+<p>This profile indicates that none of the specified infections during pregnancy were present.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="15"> </a>
+   <h3>Medical and Health Information Profiles </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-labor-trial-attempted.html"
+                  title="StructureDefinition/Observation-labor-trial-attempted">Observation - Labor Trial Attempted</a>
+            </td>
+            <td>
+<p>This Observation profile represents whether, in the case of a cesarean delivery, a trial of labor was attempted.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-number-previous-cesareans.html"
+                  title="StructureDefinition/Observation-number-previous-cesareans">Observation - Number of Previous Cesareans</a>
+            </td>
+            <td>
+<p>The total number of prior cesarean deliveries for the mother.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="16"> </a>
+   <h3>Profiles - Obstetric Procedures (73814-6) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-none-of-specified-obstetric-procedures.html"
+                  title="StructureDefinition/Observation-none-of-specified-obstetric-procedures">Observation - None Of Specified Obstetric Procedures</a>
+            </td>
+            <td>
+<p>This profile indicates that none of the specified obstetric procedures were present.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-obstetric.html"
+                  title="StructureDefinition/Procedure-obstetric">Procedure - Obstetric</a>
+            </td>
+            <td>
+<p>This profile represents information about a particular medical treatment or invasive/manipulative procedure that was performed during this pregnancy specifically in the treatment of the pregnancy, management of labor and/or delivery.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="17"> </a>
+   <h3>Profiles - Final Route and Method of Delivery (73762-7) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-unknown-final-route-and-method-of-delivery.html"
+                  title="StructureDefinition/Observation-unknown-final-route-and-method-of-delivery">Observation - Unknown Final Route and Method of Delivery</a>
+            </td>
+            <td>
+<p>Unknown Final route and method of delivery as defined by the US Standard Certificate of Live Birth (2003) and US Standard Fetal Death Report (2003).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-final-route-method-delivery.html"
+                  title="StructureDefinition/Procedure-final-route-method-delivery">Procedure - Final Route and Method of Delivery</a>
+            </td>
+            <td>
+<p>This profile represents the final route and method of delivery.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="18"> </a>
+   <h3>Profiles - Pregnancy Risk Factors (73769-2) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-eclampsia-hypertension.html"
+                  title="StructureDefinition/Condition-eclampsia-hypertension">Condition - Eclampsia Hypertension</a>
+            </td>
+            <td>
+<p>This Condition profile indicates that the mother had a pregnancy risk factor of eclampsia hypertension.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-gestational-diabetes.html"
+                  title="StructureDefinition/Condition-gestational-diabetes">Condition - Gestational Diabetes</a>
+            </td>
+            <td>
+<p>This Condition profile indicates that the mother had a pregnancy risk factor of gestational diabetes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-gestational-hypertension.html"
+                  title="StructureDefinition/Condition-gestational-hypertension">Condition - Gestational Hypertension</a>
+            </td>
+            <td>
+<p>This Condition profile indicates that the mother had a pregnancy risk factor of gestational hypertension.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-prepregnancy-diabetes.html"
+                  title="StructureDefinition/Condition-prepregnancy-diabetes">Condition - Prepregnancy Diabetes</a>
+            </td>
+            <td>
+<p>This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy diabetes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-prepregnancy-hypertension.html"
+                  title="StructureDefinition/Condition-prepregnancy-hypertension">Condition - Prepregnancy Hypertension</a>
+            </td>
+            <td>
+<p>This Condition profile indicates that the mother had a pregnancy risk factor of prepregnancy hypertension.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors.html"
+                  title="StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors">Observation - None Of Specified Pregnancy Risk Factors</a>
+            </td>
+            <td>
+<p>This profile indicates that none of the specified pregnancy risk factors specifiable in this IG (73775-9) are present.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-previous-cesarean.html"
+                  title="StructureDefinition/Observation-previous-cesarean">Observation - Previous Cesarean</a>
+            </td>
+            <td>
+<p>This profile indicates that the mother had a pregnancy risk factor of previous cesarean.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-previous-preterm-birth.html"
+                  title="StructureDefinition/Observation-previous-preterm-birth">Observation - Previous Preterm Birth</a>
+            </td>
+            <td>
+<p>This Observation profile indicates that the mother had a pregnancy risk factor of previous preterm birth.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-assisted-reproductive-technology.html"
+                  title="StructureDefinition/Procedure-assisted-reproductive-technology">Procedure - Assisted Reproductive Technology</a>
+            </td>
+            <td>
+<p>This Procedure profile records that Any assisted reproduction technology (ART)/technical procedures (e.g., in vitro
+fertilization (IVF), gamete intrafallopian transfer (GIFT), ZIFT)) used to initiate the pregnancy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html"
+                  title="StructureDefinition/Procedure-fertility-enhancing-drug-therapy-artificial-insem">Procedure - Fertility Enhancing Drug Therapy, Artificial or Intrauterine Insemination</a>
+            </td>
+            <td>
+<p>This Procedure profile records that fertility-enhancing drug therapy (e.g., Clomid, Pergonal), artificial insemination, or intrauterine insemination was used to initiate the pregnancy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-infertility-treatment.html"
+                  title="StructureDefinition/Procedure-infertility-treatment">Procedure - Infertility Treatment</a>
+            </td>
+            <td>
+<p>This Procedure profile records that infertility treatment was used to initiate the pregnancy. Includes
+fertility-enhancing drugs (e.g., Clomid, Pergonal), artificial insemination, or intrauterine insemination and assisted reproduction technology
+procedures (e.g., IVF, GIFT and ZIFT).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="19"> </a>
+   <h3>Profiles - Maternal Morbidity Profiles (73781-7) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-perineal-laceration.html"
+                  title="StructureDefinition/Condition-perineal-laceration">Condition - Perineal Laceration</a>
+            </td>
+            <td>
+<p>This Condition profile indicates a maternal morbidity of perineal laceration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-ruptured-uterus.html"
+                  title="StructureDefinition/Condition-ruptured-uterus">Condition - Ruptured Uterus</a>
+            </td>
+            <td>
+<p>This Condition profile indicates a maternal morbidity of ruptured uterus.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-icu-admission.html"
+                  title="StructureDefinition/Observation-icu-admission">Observation - ICU Admission</a>
+            </td>
+            <td>
+<p>This profile indicates that the maternal morbidity of an admission to the ICU was present. NOTE: this may be better modeled as an Encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-none-of-specified-maternal-morbidities.html"
+                  title="StructureDefinition/Observation-none-of-specified-maternal-morbidities">Observation - None Of Specified Maternal Morbidities</a>
+            </td>
+            <td>
+<p>This profile indicates that none of the specified maternal morbidities were present.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-blood-transfusion.html"
+                  title="StructureDefinition/Procedure-blood-transfusion">Procedure - Blood Transfusion</a>
+            </td>
+            <td>
+<p>This Procedure profile indicates a maternal morbidity of a blood transfusion.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Procedure-unplanned-hysterectomy.html"
+                  title="StructureDefinition/Procedure-unplanned-hysterectomy">Procedure - Unplanned Hysterectomy</a>
+            </td>
+            <td>
+<p>This Procedure profile indicates a maternal morbidity of unplanned hysterectomy.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="20"> </a>
+   <h3>Fetal Death Information Profiles </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-fetal-death-initiating-cause-or-condition.html"
+                  title="StructureDefinition/Condition-fetal-death-initiating-cause-or-condition">Condition - Fetal Death Initiating Cause or Condition</a>
+            </td>
+            <td>
+<p>This Condition profile should be used by the clinician to indicate the initiating cause of fetal death.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-fetal-death-other-cause-or-condition.html"
+                  title="StructureDefinition/Condition-fetal-death-other-cause-or-condition">Condition - Fetal Death Other Cause or Condition</a>
+            </td>
+            <td>
+<p>This Condition profile should be used to indicate other significant causes or conditions for the death of the fetus.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-autopsy-histological-exam-results-used.html"
+                  title="StructureDefinition/Observation-autopsy-histological-exam-results-used">Observation - Autopsy or Histological Exam Results Used</a>
+            </td>
+            <td>
+<p>This profile represents whether or not the results of a performed autopsy or a performed histological placental examination were used as part of determining the cause of death.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-autopsy-performed-indicator.html"
+                  title="StructureDefinition/Observation-autopsy-performed-indicator">Observation - Autopsy Performed Indicator</a>
+            </td>
+            <td>
+<p>This Observation records if an autopsy was performed, if autopsy findings are available, and the autopsy Performer (US Core Practioner).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-fetal-death-time-point.html"
+                  title="StructureDefinition/Observation-fetal-death-time-point">Observation - Fetal Death Time Point</a>
+            </td>
+            <td>
+<p>This Observation profile represents the estimated time of fetal death; the time of death is characterized by the relationship to the time of delivery.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-fetal-remains-disposition-method.html"
+                  title="StructureDefinition/Observation-fetal-remains-disposition-method">Observation - Fetal Remains Disposition Method</a>
+            </td>
+            <td>
+<p>This Observation profile represents the method of disposition of the deceased fetus.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-histological-placental-exam-performed.html"
+                  title="StructureDefinition/Observation-histological-placental-exam-performed">Observation - Histological Placental Exam Performed</a>
+            </td>
+            <td>
+<p>This profile represents whether or not a histological placental examination was performed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Patient-decedent-fetus.html"
+                  title="StructureDefinition/Patient-decedent-fetus">Patient - Decedent Fetus</a>
+            </td>
+            <td>
+<p>A stillborn for whom clinical data is included in the report.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="21"> </a>
+   <h3>Parent Information Profiles </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Extension-role.html"
+                  title="StructureDefinition/Extension-role">Extension Parental Role</a>
+            </td>
+            <td>
+<p>Used to indicate whether an instance relates to the father or the mother.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-mother-married-during-pregnancy.html"
+                  title="StructureDefinition/Observation-mother-married-during-pregnancy">Observation - Mother Married During Pregnancy</a>
+            </td>
+            <td>
+<p>This profile represents whether or not the mother was married at conception, at the time of birth, or at any time between conception and giving birth.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-paternity-acknowledgement-signed.html"
+                  title="StructureDefinition/Observation-paternity-acknowledgement-signed">Observation - Paternity Acknowledgement Signed</a>
+            </td>
+            <td>
+<p>This Observation represents whether or not a paternity acknowledgement was signed by the father if the mother was not married at conception, at the time of birth, or at any time between conception and giving birth.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-present-job.html"
+                  title="StructureDefinition/Observation-present-job">Observation - Present Job</a>
+            </td>
+            <td>
+<p>Used to send text-string present job information from Jurisdictions to NCHS, and coded versions from NCHS to Jurisdictions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-ssn-requested-for-child.html"
+                  title="StructureDefinition/Observation-ssn-requested-for-child">Observation - Social Security Number Requested For Child</a>
+            </td>
+            <td>
+<p>This Observation profile represents whether or not a social security number has been requested for the child. If a social security number was requested, set valueBoolean=true and enter the time requested in the effectiveDateTime data element.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="22"> </a>
+   <h3>Other information about pregnancy (not used by birth and fetal death use cases) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-birth-plurality-of-pregnancy.html"
+                  title="StructureDefinition/Observation-birth-plurality-of-pregnancy">Observation - Birth Plurality of Pregnancy</a>
+            </td>
+            <td>
+<p>The number of fetuses delivered live or dead at any time in the pregnancy regardless of gestational age, or if the fetuses were delivered at different dates in the pregnancy.</p>
+
+<p>This profile is not explicitly mapped to an IJE value and supports encoding plurality as a characteristic of pregnancy (outside of the core BFDR use case).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-planned-to-deliver-at-home.html"
+                  title="StructureDefinition/Observation-planned-to-deliver-at-home">Observation - Planned to Deliver at Home</a>
+            </td>
+            <td>
+<p>This Observation profile represents whether or not a home birth was planned for the infant.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="23"> </a>
+   <h3>Fetal Death Coded Cause of Death Profiles (NCHS to VRO) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-coded-initiating-fetal-death-cause-or-condition.html"
+                  title="StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition">Observation - Coded Initiating Fetal Death Cause or Condition</a>
+            </td>
+            <td>
+<p>This profile represents the coded initiating cause/condition of fetal death.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-coded-other-fetal-death-cause-or-condition.html"
+                  title="StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition">Observation - Coded Other Fetal Death Cause or Condition</a>
+            </td>
+            <td>
+<p>This profile represents a coded other significant cause/condition of fetal death.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="24"> </a>
+   <h3>CodeSystems </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CodeSystem-edit-flags.html"
+                  title="CodeSystem/CodeSystem-edit-flags">Birth Edit Flags</a>
+            </td>
+            <td>
+<p>This code system contains codes to represent edit flags specific to BFDR. Additional edit flag codes are located in <a href="https://hl7.org/fhir/us/vr-common-library/2024Jan/CodeSystem-CodeSystem-vr-edit-flags.html">CodeSystemEditFlagsVitalRecords</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CodeSystem-local-bfdr-codes.html"
+                  title="CodeSystem/CodeSystem-local-bfdr-codes">Local BFDR Codes</a>
+            </td>
+            <td>
+<p>Local Codes for concepts in BFDR that lack an appropriate LOINC or SCT code</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="25"> </a>
+   <h3>ValueSets </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-apgar-timing.html"
+                  title="ValueSet/ValueSet-apgar-timing">APGAR Score Timing</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent standard timings for APGAR assessments.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-birth-and-fetal-death-financial-class.html"
+                  title="ValueSet/ValueSet-birth-and-fetal-death-financial-class">Birth and Fetal Death Financial Class</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent birth and fetal death financial class.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-BirthAndFetalDeathFinancialClassCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-birth-attendant-titles.html"
+                  title="ValueSet/ValueSet-birth-attendant-titles">Birth Attendants Titles</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent the type of birth attendant titles.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-BirthAttendantTitlesCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-birth-delivery-occurred.html"
+                  title="ValueSet/ValueSet-birth-delivery-occurred">Birth Delivery Occurred</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent the type of place where birth or delivery occurred.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-BirthDeliveryOccurredCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-birth-weight-edit-flags.html"
+                  title="ValueSet/ValueSet-birth-weight-edit-flags">Birth Weight Edit Flags (NCHS)</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent Birth Weight Edit Flags.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-BirthWeightEditFlagsCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-cigarette-smoking-before-during-pregnancy.html"
+                  title="ValueSet/cigarette-smoking-before-during-pregnancy">Cigarette Smoking Before and During Pregnancy</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent the number of cigarettes smoked in specific periods before and during pregnancy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-delivery-routes.html"
+                  title="ValueSet/ValueSet-delivery-routes">Delivery Routes</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent Delivery Routes.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-DeliveryRoutesCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-estimate-of-gestation-edit-flags.html"
+                  title="ValueSet/ValueSet-estimate-of-gestation-edit-flags">Estimate of Gestation Edit Flags (NCHS)</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent Estimate of Gestation Edit Flags.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-EstimateOfGestationEditFlagsCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-fertility-enhancing-drug-therapy-artificial-insem.html"
+                  title="ValueSet/ValueSet-fertility-enhancing-drug-therapy-artificial-insem">Fertility Enhancing Drug Therapy and Artificial Insemination Value Set</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent fertility enhancing drug therapy and artificial insemination.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-fetal-death-cause-or-condition.html"
+                  title="ValueSet/ValueSet-fetal-death-cause-or-condition">Fetal Death Cause or Condition</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent fetal death cause or condition.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-FetalDeathCauseOrConditionCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-fetal-death-time-points.html"
+                  title="ValueSet/ValueSet-fetal-death-time-points">Fetal Death Time Points</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent fetal death time points.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-FetalDeathTimePointsCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-fetal-presentations.html"
+                  title="ValueSet/ValueSet-fetal-presentations">Fetal Presentations</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent fetal presentations. Only these codes are supported for exchange with NCHS.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-FetalPresentationCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-fetal-presentations-max.html"
+                  title="ValueSet/ValueSet-fetal-presentations-max">Fetal Presentations - Max</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent fetal presentations. It expands on the <a href="ValueSet-ValueSet-fetal-presentations.html">FetalPresentationsVS</a> by including intensionally all codes for abnormal presentations, 
+as suggested by <a href="https://jira.hl7.org/browse/FHIR-44554">FHIR-44554</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-fetal-remains-disposition-method.html"
+                  title="ValueSet/ValueSet-fetal-remains-disposition-method">Fetal Remains Disposition Method</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent Fetal Remains Method of Disposition. Fetal Remains Disposition Method Value Set differs from the related VRDR <a href="https://hl7.org/fhir/us/vrdr/ValueSet-vrdr-method-of-disposition-vs.html">MethodOfDispositionVS</a> since it includes ‘Hospital Disposition’, but not ‘Entombment’.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-infections-during-pregnancy-live-birth.html"
+                  title="ValueSet/ValueSet-infections-during-pregnancy-live-birth">Infections During Pregnancy Live Birth</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent Infections During Pregnancy Live Birth. Includes ‘Other’ value for general utility, although #OTH is not allowed for birth submissions to NCHS.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-informant-relationship-to-mother.html"
+                  title="ValueSet/ValueSet-informant-relationship-to-mother">Informant Relationship to Mother</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent informants relationship to mother.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-location-types.html"
+                  title="ValueSet/ValueSet-location-types">Location Types</a>
+            </td>
+            <td>
+<p>This valueset contains codes used to differentate transfer and birth locations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-newborn-congenital-anomalies.html"
+                  title="ValueSet/ValueSet-newborn-congenital-anomalies">Newborn Congenital Anomalies</a>
+            </td>
+            <td>
+<p>The valueset contains codes to represent newborn congenital anomalies. Includes ‘Other’ value for general utility, although #OTH is not allowed for birth submissions to NCHS.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-NewbornCongenitalAnomaliesCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-number-previous-cesareans-edit-flags.html"
+                  title="ValueSet/ValueSet-number-previous-cesareans-edit-flags">Number of Previous Cesareans Edit Flags (NCHS)</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent Number of Previous Cesareans Edit Flags.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-NumberPreviousCesareansEditFlagsCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-obstetric-procedure-outcome.html"
+                  title="ValueSet/ValueSet-obstetric-procedure-outcome">Obstetric Procedure Outcome</a>
+            </td>
+            <td>
+<p>This valueset contains codes that represent the successful or unsuccessful outcome of an obstretric procedure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-performed-not-performed-planned.html"
+                  title="ValueSet/ValueSet-performed-not-performed-planned">Performed NotPerformed Planned</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent the status (performed, not performed, planned) of histological placental examinations.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-PerformedNotPerformedPlannedCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-pregnancy-report-edit-flags.html"
+                  title="ValueSet/ValueSet-pregnancy-report-edit-flags">Pregnancy Report Edit Flags (NCHS)</a>
+            </td>
+            <td>
+<p>This valueset contains codes to represent Pregnancy Report Edit Flags. Used for MothersHeight, MothersDeliveryWeight, MothersPrepregnancyWeight, NumberPrenatalCareVisits.</p>
+
+<p>Mapping to IJE codes <a href="ConceptMap-PregnancyReportEditFlagsCM.html">here</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ValueSet-units-of-gestational-age.html"
+                  title="ValueSet/ValueSet-units-of-gestational-age">Units of Gestational Age</a>
+            </td>
+            <td>
+<p>This valueset contains the set of codes for specifying the units used when recording gestational age (days, weeks.).</p>
+
+<p>Reporting to NCHS is always in units of weeks, but other users of the associated <a href="StructureDefinition-Observation-gestational-age-at-delivery.html">ObservationGestationalAgeAtDelivery</a> profile may want to record days.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="26"> </a>
+   <h3>Concept Maps </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-BirthAndFetalDeathFinancialClassCM.html"
+                  title="ConceptMap/BirthAndFetalDeathFinancialClassCM">BirthAndFetalDeathFinancialClass Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR BirthAndFetalDeathFinancialClass Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-BirthAttendantTitlesCM.html"
+                  title="ConceptMap/BirthAttendantTitlesCM">BirthAttendantTitles Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR BirthAttendantTitles Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-BirthDeliveryOccurredCM.html"
+                  title="ConceptMap/BirthDeliveryOccurredCM">BirthDeliveryOccurred Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR BirthDeliveryOccurred Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-BirthWeightEditFlagsCM.html"
+                  title="ConceptMap/BirthWeightEditFlagsCM">BirthWeightEditFlags Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR BirthWeightEditFlags Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-DeliveryRoutesCM.html"
+                  title="ConceptMap/DeliveryRoutesCM">DeliveryRoutes Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR DeliveryRoutes Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-EstimateOfGestationEditFlagsCM.html"
+                  title="ConceptMap/EstimateOfGestationEditFlagsCM">EstimateOfGestationEditFlags Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR EstimateOfGestationEditFlags Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FetalDeathCauseOrConditionCM.html"
+                  title="ConceptMap/FetalDeathCauseOrConditionCM">FetalDeathCauseOrCondition Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR FetalDeathCauseOrCondition Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FetalDeathTimePointsCM.html"
+                  title="ConceptMap/FetalDeathTimePointsCM">FetalDeathTimePoints Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR FetalDeathTimePoints Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FetalPresentationCM.html"
+                  title="ConceptMap/FetalPresentationCM">FetalPresentation Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR FetalPresentation Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-InfectionsDuringPregnancyLiveBirthCM.html"
+                  title="ConceptMap/InfectionsDuringPregnancyLiveBirthCM">InfectionsDuringPregnancyLiveBirth Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR InfectionsDuringPregnancyLiveBirth Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-NewbornCongenitalAnomaliesCM.html"
+                  title="ConceptMap/NewbornCongenitalAnomaliesCM">NewbornCongenitalAnomalies Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR NewbornCongenitalAnomalies Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-NumberPreviousCesareansEditFlagsCM.html"
+                  title="ConceptMap/NumberPreviousCesareansEditFlagsCM">NumberPreviousCesareansEditFlags Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR NumberPreviousCesareansEditFlags Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-PerformedNotPerformedPlannedCM.html"
+                  title="ConceptMap/PerformedNotPerformedPlannedCM">PerformedNotPerformedPlanned Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR PerformedNotPerformedPlanned Value Sets</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-PregnancyReportEditFlagsCM.html"
+                  title="ConceptMap/PregnancyReportEditFlagsCM">PregnancyReportEditFlags Concept Map</a>
+            </td>
+            <td>
+<p>A mapping between NCHS IJE and FHIR PregnancyReportEditFlags Value Sets</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="27"> </a>
+   <h3>Parameters </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Parameters-expansion-parameters.html"
+                  title="Parameters/expansion-parameters">USA SNOMED-CT</a>
+            </td>
+            <td>
+<p>USA SNOMED-CT</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="28"> </a>
+   <h3>Fetal Death Record Examples (Not Named) </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-coded-cause-of-fetal-death-not-named.html"
+                  title="Bundle/bundle-coded-cause-of-fetal-death-not-named">Bundle - Coded Cause of Fetal Death - not named</a>
+            </td>
+            <td>
+<p>Bundle - Coded Cause of Fetal Death - not named</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-jurisdiction-fetal-death-not-named.html"
+                  title="Bundle/bundle-jurisdiction-fetal-death-not-named">Bundle - Jurisdiction Fetal Death Report - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Bundle - Jurisdiction Fetal Death Report: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-provider-fetal-death-not-named.html"
+                  title="Bundle/bundle-provider-fetal-death-not-named">Bundle - Provider Fetal Death Report - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Bundle - Provider Fetal Death Report: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-composition-coded-cause-of-fetal-death-not-named.html"
+                  title="Composition/composition-coded-cause-of-fetal-death-not-named">Composition - Coded Cause of Fetal Death - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Composition - Coded Cause of Fetal Death: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-composition-jurisdiction-fetal-death-not-named.html"
+                  title="Composition/composition-jurisdiction-fetal-death-not-named">Composition - Jurisdiction Fetal Death Report - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Composition Jurisdiction Fetal Death Report: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-composition-provider-fetal-death-not-named.html"
+                  title="Composition/composition-provider-fetal-death-not-named">Composition - Provider Fetal Death Report - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Composition - Provider Fetal Death Report: Fetus Not Named</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-fetal-death-cause-or-condition-not-named.html"
+                  title="Condition/condition-fetal-death-cause-or-condition-not-named">Condition - Fetal Death Initiating Cause or Condition - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Condition - Fetal Death Initiating Cause or Condition: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-fetal-death-other-significant-cause-not-named.html"
+                  title="Condition/condition-fetal-death-other-significant-cause-not-named">Condition - Fetal Death Other Cause or Condition - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Condition - Fetal Death Other Cause or Condition: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-gestational-diabetes-carmen-teresa-lee.html"
+                  title="Condition/condition-gestational-diabetes-carmen-teresa-lee">Condition - Gestational Diabetes - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Condition - Gestational Diabetes: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-encounter-maternity-carmen-teresa-lee.html"
+                  title="Encounter/encounter-maternity-carmen-teresa-lee">Encounter - Maternity - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Encounter - Maternity: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-autopsy-histological-exam-results-used-not-named.html"
+                  title="Observation/observation-autopsy-histological-exam-results-used-not-named">Observation - Autopsy or Histological Exam Results Used - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Autopsy or Histological Exam Results Used: Fetus Note Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-autopsy-performed-not-named.html"
+                  title="Observation/observation-autopsy-performed-not-named">Observation - Autopsy Performed - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Autopsy Performed: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-birth-weight-not-named.html"
+                  title="Observation/observation-birth-weight-not-named">Observation - Birth Weight - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Birth Weight: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-birth-weight-not-named-w-edit.html"
+                  title="Observation/observation-birth-weight-not-named-w-edit">Observation - Birth Weight - Fetus Not Named, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Birth Weight: Fetus Not Named example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-cig-smoking-pregnancy-1-carmen-teresa-lee.html"
+                  title="Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee">Observation - Cigarette Smoking Before During Pregnancy - 3 months prior: Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Cigarette Smoking Before During Pregnancy - 3 months prior: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-cig-smoking-pregnancy-2-carmen-teresa-lee.html"
+                  title="Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee">Observation - Cigarette Smoking Before During Pregnancy - first 3 months: Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Cigarette Smoking Before During Pregnancy - first 3 months: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-cig-smoking-pregnancy-4-carmen-teresa-lee.html"
+                  title="Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee">Observation - Cigarette Smoking Before During Pregnancy - last 3 months: Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Cigarette Smoking Before During Pregnancy - last 3 months: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-cig-smoking-pregnancy-3-carmen-teresa-lee.html"
+                  title="Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee">Observation - Cigarette Smoking Before During Pregnancy example - second 3 months: Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Cigarette Smoking Before During Pregnancy example - second 3 months: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-coded-initiating-fetal-death-cause-or-condition.html"
+                  title="Observation/observation-coded-initiating-fetal-death-cause-or-condition">Observation - Coded Initiating Cause of Fetal Death</a>
+            </td>
+            <td>
+<p>Observation - Coded Initiating Cause of Fetal Death example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-coded-other-fetal-death-cause-or-condition-not-named.html"
+                  title="Observation/observation-coded-other-fetal-death-cause-or-condition-not-named">Observation - Coded Other Cause of Fetal Death</a>
+            </td>
+            <td>
+<p>Observation - Coded Other Cause of Fetal Death example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-date-of-first-prenatal-care-visit-carmen-teresa-lee.html"
+                  title="Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee">Observation - Date of First Prenatal Care Visit - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Date of First Prenatal Care Visit: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-date-of-last-live-birth-carmen-teresa-lee.html"
+                  title="Observation/observation-date-of-last-live-birth-carmen-teresa-lee">Observation - Date of Last Live Birth - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Date of Last Live Birth: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-present-job-tom-yan-lee.html"
+                  title="Observation/observation-present-job-tom-yan-lee">Observation - Father Present Job - Tom Yan Lee</a>
+            </td>
+            <td>
+<p>Observation - Father Present Job: Tom Yan Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-fetal-presentation-not-named.html"
+                  title="Observation/observation-fetal-presentation-not-named">Observation - Fetal Presentation - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Fetal Presentation: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-gestational-age-at-delivery-not-named.html"
+                  title="Observation/observation-gestational-age-at-delivery-not-named">Observation - Gestational Age at Delivery - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Gestational Age at Delivery: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-gestational-age-at-delivery-not-named-w-edit.html"
+                  title="Observation/observation-gestational-age-at-delivery-not-named-w-edit">Observation - Gestational Age at Delivery - Fetus Not Named, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Gestational Age at Delivery: Fetus Not Named example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-histological-placental-exam-performed-not-named.html"
+                  title="Observation/observation-histological-placental-exam-performed-not-named">Observation - Histological Placental Exam Performed - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Histological Placental Exam Performed: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-input-race-and-ethnicity-carmen-teresa-lee.html"
+                  title="Observation/observation-input-race-and-ethnicity-carmen-teresa-lee">Observation - InputRaceAndEthnicity example [carmen teresa lee]</a>
+            </td>
+            <td>
+<p>Example of input-race-and-ethnicity-vr profile (carmen-teresa-lee)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-last-menstrual-period-carmen-teresa-lee.html"
+                  title="Observation/observation-last-menstrual-period-carmen-teresa-lee">Observation - Last Menstrual Period - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Last Menstrual Period: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-method-of-disposition-not-named.html"
+                  title="Observation/observation-method-of-disposition-not-named">Observation - Method of Disposition - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Method of Disposition: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-height-carmen-teresa-lee.html"
+                  title="Observation/observation-mother-height-carmen-teresa-lee">Observation - Mother Height - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Mother Height: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-height-carmen-teresa-lee-w-edit.html"
+                  title="Observation/observation-mother-height-carmen-teresa-lee-w-edit">Observation - Mother Height - Carmen Teresa Lee, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Mother Height: Carmen Teresa Lee example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-prepregnancy-weight-carmen-teresa-lee.html"
+                  title="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee">Observation - Mother Prepregnancy Weight - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Mother Prepregnancy Weight: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit.html"
+                  title="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit">Observation - Mother Prepregnancy Weight - Carmen Teresa Lee, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Mother Prepregnancy Weight: Carmen Teresa Lee example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-present-job-carmen-teresa-lee.html"
+                  title="Observation/observation-present-job-carmen-teresa-lee">Observation - Mother Present Job - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Mother Present Job: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-received-wic-food-carmen-teresa-lee.html"
+                  title="Observation/observation-mother-received-wic-food-carmen-teresa-lee">Observation - Mother Received WIC Food - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Mother Received WIC Food: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-live-births-this-delivery-carmen-teresa-lee.html"
+                  title="Observation/observation-number-live-births-this-delivery-carmen-teresa-lee">Observation - Number Live Births This Delivery - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Number Live Births This Delivery: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-births-now-dead-carmen-teresa-lee.html"
+                  title="Observation/observation-number-births-now-dead-carmen-teresa-lee">Observation - Number of Births Now Dead - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Number of Births Now Dead: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-births-now-living-carmen-teresa-lee.html"
+                  title="Observation/observation-number-births-now-living-carmen-teresa-lee">Observation - Number of Births Now Living - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Number of Births Now Living: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-deaths-this-delivery-carmen-teresa-lee.html"
+                  title="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee">Observation - Number of Fetal Deaths This Delivery - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Number of Fetal Deaths This Delivery: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-fetal-death-time-point-not-named.html"
+                  title="Observation/observation-fetal-death-time-point-not-named">Observation - Observation Estimated Fetal Death Time Point - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Observation Estimated Fetal Death Time Point: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-parent-education-level-carmen-teresa-lee.html"
+                  title="Observation/observation-parent-education-level-carmen-teresa-lee">Observation - Parent Education Level - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observation - Parent Education Level: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-parent-education-level-carmen-teresa-lee-w-edit.html"
+                  title="Observation/observation-parent-education-level-carmen-teresa-lee-w-edit">Observation - Parent Education Level - Carmen Teresa Lee, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Parent Education Level: Carmen Teresa Lee example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-previous-cesareans-carmen-teresa-lee.html"
+                  title="Observation/observation-number-previous-cesareans-carmen-teresa-lee">Observations - Number Previous Cesareans - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Observations - Number Previous Cesareans: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-previous-cesareans-carmen-teresa-lee-w-edit.html"
+                  title="Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit">Observations - Number Previous Cesareans - Carmen Teresa Lee, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observations - Number Previous Cesareans: Carmen Teresa Lee example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-decedent-fetus-not-named.html"
+                  title="Patient/patient-decedent-fetus-not-named">Patient - Decedent Fetus example [Fetus Not Named]</a>
+            </td>
+            <td>
+<p>Example of Patient-decedent-fetus profile (Fetus Not Named)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-decedent-fetus-not-named-w-edit.html"
+                  title="Patient/patient-decedent-fetus-not-named-w-edit">Patient - Decedent Fetus example [Fetus Not Named], with Edit Flag</a>
+            </td>
+            <td>
+<p>Example of Patient-decedent-fetus-vr profile (Fetus Not Named) with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-mother-carmen-teresa-lee.html"
+                  title="Patient/patient-mother-carmen-teresa-lee">Patient - Mother example [Carmen Teresa Lee]</a>
+            </td>
+            <td>
+<p>Example of Patient-mother-vr profile (Carmen Teresa Lee)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-mother-carmen-teresa-lee-w-edit.html"
+                  title="Patient/patient-mother-carmen-teresa-lee-w-edit">Patient - Mother example [Carmen Teresa Lee], with Edit Flag</a>
+            </td>
+            <td>
+<p>Example of Patient-mother-vr profile (Carmen Teresa Lee), with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-final-route-method-delivery-not-named.html"
+                  title="Procedure/procedure-final-route-method-delivery-not-named">Procedure - Final Route / Method of Delivery - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Procedure - Final Route / Method of Delivery: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponse-patients-fetal-death-carmen-lee.html"
+                  title="QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee">QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee</a>
+            </td>
+            <td>
+<p>QuestionnaireResponse - Patient’s Fetal Death Worksheet: Carmen Lee</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-relatedperson-father-natural-tom-yan-lee.html"
+                  title="RelatedPerson/relatedperson-father-natural-tom-yan-lee">RelatedPerson - Father Natural - Vital Records - Tom Yan Lee</a>
+            </td>
+            <td>
+<p>RelatedPerson - Father Natural - Vital Records - Tom Yan Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-relatedperson-father-natural-tom-yan-lee-w-edit.html"
+                  title="RelatedPerson/relatedperson-father-natural-tom-yan-lee-w-edit">RelatedPerson - Father Natural - Vital Records - Tom Yan Lee, with Edit Flag</a>
+            </td>
+            <td>
+<p>RelatedPerson - Father Natural - Vital Records - Tom Yan Lee example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-relatedperson-mother-carmen-teresa-lee.html"
+                  title="RelatedPerson/relatedperson-mother-carmen-teresa-lee">RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee example</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="29"> </a>
+   <h3>Live Birth Examples - Baby G Quinn </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-coded-industry-occupation-baby-g-quinn.html"
+                  title="Bundle/bundle-coded-industry-occupation-baby-g-quinn">Bundle - Coded Industry and Occupation - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Bundle - Coded Industry and Occupation - example Baby G Quinn</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-coded-race-and-ethnicity-baby-g-quinn.html"
+                  title="Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn">Bundle - Coded Race and Ethnicity - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Bundle - Coded Race and Ethnicity - example Baby G Quinn</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-jurisdiction-live-birth-babyg-quinn.html"
+                  title="Bundle/bundle-jurisdiction-live-birth-babyg-quinn">Bundle - Jurisdiction Live Birth Report - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Bundle - Jurisdiction Live Birth Report: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-provider-live-birth-babyg-quinn.html"
+                  title="Bundle/bundle-provider-live-birth-babyg-quinn">Bundle - Provider Live Birth - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Bundle - Provider Live Birth: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-composition-coded-industry-and-occupation-baby-g-quinn.html"
+                  title="Composition/composition-coded-industry-and-occupation-baby-g-quinn">Composition - Coded Industry and Occuption - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Composition - Coded Industry and Occupation: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-composition-coded-race-and-ethnicity-baby-g-quinn.html"
+                  title="Composition/composition-coded-race-and-ethnicity-baby-g-quinn">Composition - Coded Race and Ethnicity - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Composition - Coded Race and Ethnicity: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-composition-jurisdiction-live-birth-babyg-quinn.html"
+                  title="Composition/composition-jurisdiction-live-birth-babyg-quinn">Composition - Jurisdiction Live Birth Report - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Composition - Jurisdiction Live Birth Report: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-composition-provider-live-birth-babyg-quinn.html"
+                  title="Composition/composition-provider-live-birth-babyg-quinn">Composition - Provider Live Birth Report - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Composition - Provider Live Birth Report: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-chorioamnionitis-jada-ann-quinn.html"
+                  title="Condition/condition-chorioamnionitis-jada-ann-quinn">Condition - Chorioamnionitis - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Chorioamnionitis: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn-2.html"
+                  title="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2">Condition - Congenital Anomaly of Newborn - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Condition - Congenital Anomaly of Newborn: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn.html"
+                  title="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn">Condition - Congenital Anomaly of Newborn - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Condition - Congenital Anomaly of Newborn: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-eclampsia-hypertension-jada-ann-quinn.html"
+                  title="Condition/condition-eclampsia-hypertension-jada-ann-quinn">Condition - Eclampsia Hypertension - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Eclampsia Hypertension: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-gestational-diabetes-jada-ann-quinn.html"
+                  title="Condition/condition-gestational-diabetes-jada-ann-quinn">Condition - Gestational Diabetes - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Gestational Diabetes: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-gestational-hypertension-jada-ann-quinn.html"
+                  title="Condition/condition-gestational-hypertension-jada-ann-quinn">Condition - Gestational Hypertension - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Gestational Hypertension: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-infection-present-during-pregnancy-jada-ann-quinn.html"
+                  title="Condition/condition-infection-present-during-pregnancy-jada-ann-quinn">Condition - Infection Present During Pregnancy - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Infection Present During Pregnancy: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-perineal-laceration-jada-ann-quinn.html"
+                  title="Condition/condition-perineal-laceration-jada-ann-quinn">Condition - Perineal Laceration - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Perineal Laceration: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-prepregnancy-diabetes-jada-ann-quinn.html"
+                  title="Condition/condition-prepregnancy-diabetes-jada-ann-quinn">Condition - Prepregnancy Diabetes - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Prepregnancy Diabetes: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-prepregnancy-hypertension-carmen-teresa-lee.html"
+                  title="Condition/condition-prepregnancy-hypertension-carmen-teresa-lee">Condition - Prepregnancy Hypertension - Carmen Teresa Lee</a>
+            </td>
+            <td>
+<p>Condition - Prepregnancy Hypertension: Carmen Teresa Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-prepregnancy-hypertension-jada-ann-quinn.html"
+                  title="Condition/condition-prepregnancy-hypertension-jada-ann-quinn">Condition - Prepregnancy Hypertension - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Prepregnancy Hypertension: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-ruptured-uterus-jada-ann-quinn.html"
+                  title="Condition/condition-ruptured-uterus-jada-ann-quinn">Condition - Ruptured Uterus - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Condition - Ruptured Uterus: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-condition-seizure-babyg-quinn.html"
+                  title="Condition/condition-seizure-babyg-quinn">Condition - Seizure - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Condition - Seizure: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn.html"
+                  title="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn">Coverage - Principal Payer for Delivery - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Coverage - Principal Payer for Delivery: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-encounter-birth-babyg-quinn.html"
+                  title="Encounter/encounter-birth-babyg-quinn">Encounter - Birth - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Encounter - Birth: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-encounter-maternity-jada-ann-quinn.html"
+                  title="Encounter/encounter-maternity-jada-ann-quinn">Encounter - Maternity - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Encounter - Maternity: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-steroids-fetal-lung-maturation-jada-ann-quinn.html"
+                  title="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn">Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Administration of Steroids for Fetal Lung Maturation: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-antibiotics-during-labor-jada-ann-quinn.html"
+                  title="Observation/observation-antibiotics-during-labor-jada-ann-quinn">Observation - Antibiotics Administered During Labor - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Antibiotics Administered During Labor: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-apgar-score-babyg-quinn-10-min.html"
+                  title="Observation/observation-apgar-score-babyg-quinn-10-min">Observation - Apgar Score - BabyG Quinn: 10 min</a>
+            </td>
+            <td>
+<p>Observation - Apgar Score: BabyG Quinn: 10 min example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-apgar-score-babyg-quinn-5-min.html"
+                  title="Observation/observation-apgar-score-babyg-quinn-5-min">Observation - Apgar Score - BabyG Quinn: 5 min</a>
+            </td>
+            <td>
+<p>Observation - Apgar Score: BabyG Quinn: 5 min example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-birth-weight-babyg-quinn.html"
+                  title="Observation/observation-birth-weight-babyg-quinn">Observation - Birth Weight - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Observation - Birth Weight: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-birth-weight-babyg-quinn-w-edit.html"
+                  title="Observation/observation-birth-weight-babyg-quinn-w-edit">Observation - Birth Weight - Baby G Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Birth Weight: Baby G Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-cig-smoking-pregnancy-1-jada-ann-quinn.html"
+                  title="Observation/observation-cig-smoking-pregnancy-1-jada-ann-quinn">Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: 3 months prior</a>
+            </td>
+            <td>
+<p>Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: 3 months prior example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-cig-smoking-pregnancy-2-jada-ann-quinn.html"
+                  title="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn">Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: first 3 months</a>
+            </td>
+            <td>
+<p>Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: first 3 months example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-cig-smoking-pregnancy-4-jada-ann-quinn.html"
+                  title="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn">Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: last 3 months</a>
+            </td>
+            <td>
+<p>Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: last 3 months example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-cig-smoking-pregnancy-3-jada-ann-quinn.html"
+                  title="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn">Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: second 3 months</a>
+            </td>
+            <td>
+<p>Observation - Cigarette Smoking Before/During Pregnancy: Jada Ann Quinn: second 3 months example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn.html"
+                  title="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn">Observation - Date of First Prenatal Care Visit - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Date of First Prenatal Care Visit: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-date-of-last-live-birth-jada-ann-quinn.html"
+                  title="Observation/observation-date-of-last-live-birth-jada-ann-quinn">Observation - Date of Last Live Birth - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Date of Last Live Birth: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn.html"
+                  title="Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn">Observation - Date of Last Other Pregnancy Outcome - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Date of Last Other Pregnancy Outcome: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-present-job-james-brandon-quinn-coded.html"
+                  title="Observation/observation-present-job-james-brandon-quinn-coded">Observation - Father Present Job - James Brandon Quinn</a>
+            </td>
+            <td>
+<p>Observation - Father Present Job: James Brandon Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-present-job-james-brandon-quinn.html"
+                  title="Observation/observation-present-job-james-brandon-quinn">Observation - Father Present Job - James Brandon Quinn</a>
+            </td>
+            <td>
+<p>Observation - Father Present Job: James Brandon Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-fetal-presentation-babyg-quinn.html"
+                  title="Observation/observation-fetal-presentation-babyg-quinn">Observation - Fetal Presentation Baby G Quinn</a>
+            </td>
+            <td>
+<p>Observation - Fetal Presentation Baby G Quinn</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-gestational-age-at-delivery-babyg-quinn.html"
+                  title="Observation/observation-gestational-age-at-delivery-babyg-quinn">Observation - Gestational Age at Delivery - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Observation - Gestational Age at Delivery: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-gestational-age-at-delivery-babyg-quinn-w-edit.html"
+                  title="Observation/observation-gestational-age-at-delivery-babyg-quinn-w-edit">Observation - Gestational Age at Delivery - Baby G Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Gestational Age at Delivery: Baby G Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-icu-admission-jada-ann-quinn.html"
+                  title="Observation/observation-icu-admission-jada-ann-quinn">Observation - ICU Admission - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - ICU Admission: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-infant-breastfed-at-discharge-babyg-quinn.html"
+                  title="Observation/observation-infant-breastfed-at-discharge-babyg-quinn">Observation - Infant Breastfed at Discharge - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Observation - Infant Breastfed at Discharge: BabyG Quinn</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-infant-living-babyg-quinn.html"
+                  title="Observation/observation-infant-living-babyg-quinn">Observation - Infant Living - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Observation - Infant Living: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-input-race-and-ethnicity-jada-ann-quinn.html"
+                  title="Observation/observation-input-race-and-ethnicity-jada-ann-quinn">Observation - InputRaceAndEthnicity example [jada ann quinn]</a>
+            </td>
+            <td>
+<p>Example of input-race-and-ethnicity-vr profile (jada-ann-quinn)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-input-race-and-ethnicity-james-quinn-w-edit.html"
+                  title="Observation/observation-input-race-and-ethnicity-james-quinn-w-edit">Observation - InputRaceAndEthnicity example [james-quinn with edit]</a>
+            </td>
+            <td>
+<p>Example of input-race-and-ethnicity-vr profile (James Quinn with edit)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-input-race-and-ethnicity-james-quinn.html"
+                  title="Observation/observation-input-race-and-ethnicity-james-quinn">Observation - InputRaceAndEthnicity example [james-quinn]</a>
+            </td>
+            <td>
+<p>Example of input-race-and-ethnicity-vr profile (James Quinn)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-labor-trial-attempted-babyg-quinn.html"
+                  title="Observation/observation-labor-trial-attempted-babyg-quinn">Observation - Labor Trial Attempted - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Observation - Labor Trial Attempted: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-last-menstrual-period-jada-ann-quinn.html"
+                  title="Observation/observation-last-menstrual-period-jada-ann-quinn">Observation - Last Menstrual Period - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Last Menstrual Period: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-delivery-weight-jada-ann-quinn.html"
+                  title="Observation/observation-mother-delivery-weight-jada-ann-quinn">Observation - Mother Delivery Weight - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Mother Delivery Weight: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-delivery-weight-jada-ann-quinn-w-edit.html"
+                  title="Observation/observation-mother-delivery-weight-jada-ann-quinn-w-edit">Observation - Mother Delivery Weight - Jada Ann Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Mother Delivery Weight: Jada Ann Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-height-jada-ann-quinn.html"
+                  title="Observation/observation-mother-height-jada-ann-quinn">Observation - Mother Height - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Mother Height: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-height-jada-ann-quinn-w-edit.html"
+                  title="Observation/observation-mother-height-jada-ann-quinn-w-edit">Observation - Mother Height - Jada Ann Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Mother Height: Jada Ann Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-married-during-pregnancy-jada-ann-quinn.html"
+                  title="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn">Observation - Mother Married During Pregnancy - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Mother Married During Pregnancy: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-prepregnancy-weight-jada-ann-quinn.html"
+                  title="Observation/observation-mother-prepregnancy-weight-jada-ann-quinn">Observation - Mother Prepregnancy Weight - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Mother Prepregnancy Weight: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit.html"
+                  title="Observation/observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit">Observation - Mother Prepregnancy Weight - Jada Ann Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Mother Prepregnancy Weight: Jada Ann Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-present-job-jada-ann-quinn.html"
+                  title="Observation/observation-present-job-jada-ann-quinn">Observation - Mother Present Job - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Mother Present Job: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-mother-received-wic-food-jada-ann-quinn.html"
+                  title="Observation/observation-mother-received-wic-food-jada-ann-quinn">Observation - Mother Received WIC Food - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Mother Received WIC Food: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-nicu-admission-babyg-quinn.html"
+                  title="Observation/observation-nicu-admission-babyg-quinn">Observation - NICU Admission - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Observation - NICU Admission: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-none-abnormal-conditions-babyg-quinn.html"
+                  title="Observation/observation-none-abnormal-conditions-babyg-quinn">Observation - None Of Specified Abnormal Conditions of Newborn - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Observation - None Of Specified Abnormal Conditions of Newborn: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-none-chars-labor-delivery-jada-ann-quinn.html"
+                  title="Observation/observation-none-chars-labor-delivery-jada-ann-quinn">Observation - None Of Specified Characteristics of Labor and Delivery - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - None Of Specified Characteristics of Labor and Delivery: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-no-infections-present-jada-ann-quinn.html"
+                  title="Observation/observation-no-infections-present-jada-ann-quinn">Observation - None Of Specified Infections During Pregnancy - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - None Of Specified Infections During Pregnancy: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-none-maternal-morbidities-jada-ann-quinn.html"
+                  title="Observation/observation-none-maternal-morbidities-jada-ann-quinn">Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - None Of Specified Maternal Morbidities: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-none-obstetric-procedures-jada-ann-quinn.html"
+                  title="Observation/observation-none-obstetric-procedures-jada-ann-quinn">Observation - None Of Specified Obstetric Procedures - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - None Of Specified Obstetric Procedures: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-none-specified-risk-factors-jada-ann-quinn.html"
+                  title="Observation/observation-none-specified-risk-factors-jada-ann-quinn">Observation - None of Specified Risk Factors - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Previous Cesarean: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-births-now-dead-jada-ann-quinn.html"
+                  title="Observation/observation-number-births-now-dead-jada-ann-quinn">Observation - Number Births Now Dead - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Number Births Now Dead: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-births-now-living-jada-ann-quinn.html"
+                  title="Observation/observation-number-births-now-living-jada-ann-quinn">Observation - Number Births Now Living - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Number Births Now Living: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-live-births-this-delivery-jada-ann-quinn.html"
+                  title="Observation/observation-number-live-births-this-delivery-jada-ann-quinn">Observation - Number Live Births This Delivery - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Number Live Births This Delivery: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-other-pregnancy-outcomes-jada-ann-quinn.html"
+                  title="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn">Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Number Other Pregnancy Outcomes: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-prenatal-visits-jada-ann-quinn.html"
+                  title="Observation/observation-number-prenatal-visits-jada-ann-quinn">Observation - Number Prenatal Visits - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Number Prenatal Visits: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-prenatal-visits-jada-ann-quinn-w-edit.html"
+                  title="Observation/observation-number-prenatal-visits-jada-ann-quinn-w-edit">Observation - Number Prenatal Visits - Jada Ann Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Number Prenatal Visits: Jada Ann Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-previous-cesareans-jada-ann-quinn.html"
+                  title="Observation/observation-number-previous-cesareans-jada-ann-quinn">Observation - Number Previous Cesareans - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Number Previous Cesareans: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-number-previous-cesareans-jada-ann-quinn-w-edit.html"
+                  title="Observation/observation-number-previous-cesareans-jada-ann-quinn-w-edit">Observation - Number Previous Cesareans - Jada Ann Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Number Previous Cesareans: Jada Ann Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-parent-education-level-jada-ann-quinn.html"
+                  title="Observation/observation-parent-education-level-jada-ann-quinn">Observation - Parent Education Level - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Parent Education Level: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-parent-education-level-jada-ann-quinn-w-edit.html"
+                  title="Observation/observation-parent-education-level-jada-ann-quinn-w-edit">Observation - Parent Education Level - Jada Ann Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Parent Education Level: Jada Ann Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-parent-education-level-james-quinn.html"
+                  title="Observation/observation-parent-education-level-james-quinn">Observation - Parent Education Level - James Quinn</a>
+            </td>
+            <td>
+<p>Observation - Parent Education Level: James Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-parent-education-level-james-quinn-w-edit.html"
+                  title="Observation/observation-parent-education-level-james-quinn-w-edit">Observation - Parent Education Level - James Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Parent Education Level: James Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-parent-education-level-tom-yan-lee.html"
+                  title="Observation/observation-parent-education-level-tom-yan-lee">Observation - Parent Education Level - Tom Yan Lee</a>
+            </td>
+            <td>
+<p>Observation - Parent Education Level: Tom Yan Lee example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-parent-education-level-tom-yan-lee-w-edit.html"
+                  title="Observation/observation-parent-education-level-tom-yan-lee-w-edit">Observation - Parent Education Level - Tom Yan Lee, with Edit Flag</a>
+            </td>
+            <td>
+<p>Observation - Parent Education Level: Tom Yan Lee example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-paternity-acknowledgement-signed-james-quinn.html"
+                  title="Observation/observation-paternity-acknowledgement-signed-james-quinn">Observation - Paternity Acknowledgement Signed - James Quinn</a>
+            </td>
+            <td>
+<p>Observation - Paternity Acknowledgement Signed: James Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-paternity-acknowledgement-signed-james-quinn-w-edit.html"
+                  title="Observation/observation-paternity-acknowledgement-signed-james-quinn-w-edit">Observation - Paternity Acknowledgement Signed - James Quinn with edit reference</a>
+            </td>
+            <td>
+<p>Observation - Paternity Acknowledgement Signed: James Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-planned-to-deliver-at-home-babyg-quinn.html"
+                  title="Observation/observation-planned-to-deliver-at-home-babyg-quinn">Observation - Planned to Deliver at Home - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Observation - Planned to Deliver at Home: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-planned-to-deliver-at-home-not-named.html"
+                  title="Observation/observation-planned-to-deliver-at-home-not-named">Observation - Planned to Delivery at Home - Fetus Not Named</a>
+            </td>
+            <td>
+<p>Observation - Planned to Delivery at Home: Fetus Not Named example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-previous-cesarean-jada-ann-quinn.html"
+                  title="Observation/observation-previous-cesarean-jada-ann-quinn">Observation - Previous Cesarean - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Previous Cesarean: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-previous-preterm-births-jada-ann-quinn.html"
+                  title="Observation/observation-previous-preterm-births-jada-ann-quinn">Observation - Previous Preterm Births - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Previous Preterm Births: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-ssn-requested-for-child-babyg-quinn.html"
+                  title="Observation/observation-ssn-requested-for-child-babyg-quinn">Observation - SSN Requested for Child - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Observation - SSN Requested for Child: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-unknown-route-method-delivery-jada-ann-quinn.html"
+                  title="Observation/observation-unknown-route-method-delivery-jada-ann-quinn">Observation - Unknown Final Route Method of Delivery - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Unknown Final Route Method of Delivery: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-child-babyg-quinn.html"
+                  title="Patient/patient-child-babyg-quinn">Patient - Child example [Baby G Quinn]</a>
+            </td>
+            <td>
+<p>Example of Patient-child-vr profile (Baby G Quinn)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-child-babyg-quinn-w-edit.html"
+                  title="Patient/patient-child-babyg-quinn-w-edit">Patient - Child example [Baby G Quinn], with Edit Flag</a>
+            </td>
+            <td>
+<p>Example of Patient-child-vr profile (Baby G Quinn), with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-mother-birth-date-part-absent.html"
+                  title="Patient/patient-mother-birth-date-part-absent">Patient - Mother Date Part Absent</a>
+            </td>
+            <td>
+<p>Example of Patient-mother-vr profile (Date Part Absent)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-mother-jada-ann-quinn.html"
+                  title="Patient/patient-mother-jada-ann-quinn">Patient - Mother Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Example of Patient-mother-vr profile (Jada Ann Quinn)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-mother-jada-ann-quinn-w-edit.html"
+                  title="Patient/patient-mother-jada-ann-quinn-w-edit">Patient - Mother Jada Ann Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>Example of Patient-mother-vr profile (Jada Ann Quinn), with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-antibiotic-sepsis-babyg-quinn.html"
+                  title="Procedure/procedure-antibiotic-sepsis-babyg-quinn">Procedure - Antibiotic for Suspected Neonatal Sepsis - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Antibiotic for Suspected Neonatal Sepsis: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-artificial-insemination-jada-ann-quinn.html"
+                  title="Procedure/procedure-artificial-insemination-jada-ann-quinn">Procedure - Artificial Insemniation - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Artificial Insemniation: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-assisted-reproductive-technology-jada-ann-quinn.html"
+                  title="Procedure/procedure-assisted-reproductive-technology-jada-ann-quinn">Procedure - Assisted Reproductive Technology - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Assisted Reproductive Technology: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-ventilation-following-babyg-quinn.html"
+                  title="Procedure/procedure-ventilation-following-babyg-quinn">Procedure - Assisted Ventilation Following Delivery - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Assisted Ventilation Following Delivery: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-ventilation-more-6-hours-babyg-quinn.html"
+                  title="Procedure/procedure-ventilation-more-6-hours-babyg-quinn">Procedure - Assisted Ventilation More Than Six Hours - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Assisted Ventilation More Than Six Hours: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-augmentation-of-labor-quinn.html"
+                  title="Procedure/procedure-augmentation-of-labor-quinn">Procedure - Augmentation of Labor - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Augmentation of Labor: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-blood-transfusion-jada-ann-quinn.html"
+                  title="Procedure/procedure-blood-transfusion-jada-ann-quinn">Procedure - Blood Transfusion - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Blood Transfusion: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-epidural-or-spinal-anesthesia-jada-ann-quinn.html"
+                  title="Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn">Procedure - Epidural or Spinal Anesthesia - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Epidural or Spinal Anesthesia: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-final-route-method-delivery-babyg-quinn.html"
+                  title="Procedure/procedure-final-route-method-delivery-babyg-quinn">Procedure - Final Route and Method of Delivery - Baby G Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Final Route and Method of Delivery: Baby G Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-induction-of-labor-jada-ann-quinn.html"
+                  title="Procedure/procedure-induction-of-labor-jada-ann-quinn">Procedure - Induction of Labor - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Induction of Labor: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-infertility-treatment-jada-ann-quinn.html"
+                  title="Procedure/procedure-infertility-treatment-jada-ann-quinn">Procedure - Infertility Treatment - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Infertility Treatment: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-obstetric-procedure-jada-ann-quinn.html"
+                  title="Procedure/procedure-obstetric-procedure-jada-ann-quinn">Procedure - Obstetric Procedure - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Obstetric Procedure: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-surfactant-replacement-babyg-quinn.html"
+                  title="Procedure/procedure-surfactant-replacement-babyg-quinn">Procedure - Surfactant Replacement - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Procedure - Surfactant Replacement: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-procedure-unplanned-hysterectomy-quinn.html"
+                  title="Procedure/procedure-unplanned-hysterectomy-quinn">Procedure Unplanned Hysterectomy - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Procedure Unplanned Hysterectomy: Jada Ann Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-QuestionnaireResponse-mothers-live-birth-jada-quinn.html"
+                  title="QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn">QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Questionnaire - Mother’s Worksheet for Child’s Birth Certificate: Jada Ann Quinn</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-relatedperson-father-natural-james-brandon-quinn.html"
+                  title="RelatedPerson/relatedperson-father-natural-james-brandon-quinn">RelatedPerson - Father Natural - Vital Records - James Brandon Quinn</a>
+            </td>
+            <td>
+<p>RelatedPerson - Father Natural - Vital Records: James Brandon Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-relatedperson-father-natural-james-brandon-quinn-w-edit.html"
+                  title="RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit">RelatedPerson - Father Natural - Vital Records - James Brandon Quinn, with Edit Flag</a>
+            </td>
+            <td>
+<p>RelatedPerson - Father Natural - Vital Records: James Brandon Quinn example, with Edit Flag</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-relatedperson-mother-jada-ann-quinn.html"
+                  title="RelatedPerson/relatedperson-mother-jada-ann-quinn">RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn example</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="30"> </a>
+   <h3>Misc Examples </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-location-east-hospital.html"
+                  title="Location/location-east-hospital">Location BFDR - East Hospital</a>
+            </td>
+            <td>
+<p>Location BFDR: East Hospital example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-location-north-hospital.html"
+                  title="Location/location-north-hospital">Location BFDR - North Hospital</a>
+            </td>
+            <td>
+<p>Location BFDR: North Hospital example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-location-south-hospital.html"
+                  title="Location/location-south-hospital">Location BFDR - South Hospital</a>
+            </td>
+            <td>
+<p>Location BFDR: South Hospital example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-coded-race-and-ethnicity-father.html"
+                  title="Observation/observation-coded-race-and-ethnicity-father">Observation - CodedRaceAndEthnicity example [Father]</a>
+            </td>
+            <td>
+<p>Example of coded-race-and-ethnicity-vr profile (Father)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-coded-race-and-ethnicity-mother.html"
+                  title="Observation/observation-coded-race-and-ethnicity-mother">Observation - CodedRaceAndEthnicity example [Mother]</a>
+            </td>
+            <td>
+<p>Example of coded-race-and-ethnicity-vr profile (Mother)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-gestational-age-at-delivery-babyg-quinn-prem-d.html"
+                  title="Observation/observation-gestational-age-at-delivery-babyg-quinn-prem-d">Observation - Gestational Age at Delivery - Baby G Quinn - Premature</a>
+            </td>
+            <td>
+<p>Observation - Gestational Age at Delivery: Baby G Quinn example of reporting gestational age of 33 weeks and 5 days in days.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-gestational-age-at-delivery-babyg-quinn-prem-w.html"
+                  title="Observation/observation-gestational-age-at-delivery-babyg-quinn-prem-w">Observation - Gestational Age at Delivery - Baby G Quinn - Premature</a>
+            </td>
+            <td>
+<p>Observation - Gestational Age at Delivery: Baby G Quinn example of reporting gestational age of 33 weeks and 5 days in weeks.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-input-race-and-ethnicity-father.html"
+                  title="Observation/observation-input-race-and-ethnicity-father">Observation - InputRaceAndEthnicity example [Father]</a>
+            </td>
+            <td>
+<p>Example of input-race-and-ethnicity-vr profile (Father)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-input-race-and-ethnicity-mother.html"
+                  title="Observation/observation-input-race-and-ethnicity-mother">Observation - InputRaceAndEthnicity example [Mother]</a>
+            </td>
+            <td>
+<p>Example of input-race-and-ethnicity-vr profile (Mother)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-none-congenital-anomolies-babyg-quinn.html"
+                  title="Observation/observation-none-congenital-anomolies-babyg-quinn">Observation - None Of Specified Congenital Anomolies of Newborn - BabyG Quinn</a>
+            </td>
+            <td>
+<p>Observation - None Of Specified Congenital Anomolies of Newborn: BabyG Quinn example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-plurality-carmen-teresa-lee.html"
+                  title="Observation/observation-plurality-carmen-teresa-lee">Observation - Plurality of Pregnancy example [Carmen Teresa Lee]</a>
+            </td>
+            <td>
+<p>Example of Observation-birth-plurality-of-pregnancy profile (Carmen Teresa Lee)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-vital-records-avery-jones.html"
+                  title="Practitioner/practitioner-vital-records-avery-jones">Practitioner - Vital Records - Avery Jones, MD</a>
+            </td>
+            <td>
+<p>Practitioner - Vital Records: Avery Jones, MD example.   This instance satisfies both the Birth Attendant and BirthCertifier profiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-vital-records-janet-seito.html"
+                  title="Practitioner/practitioner-vital-records-janet-seito">Practitioner - Vital Records - Janet Seito</a>
+            </td>
+            <td>
+<p>Practitioner - Vital Records: Janet Seito example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-vital-records-jessica-leung.html"
+                  title="Practitioner/practitioner-vital-records-jessica-leung">Practitioner - Vital Records - Jessica Leung</a>
+            </td>
+            <td>
+<p>Practitioner - Vital Records: Jessica Leung example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-jurisdictional-vital-records-office.html"
+                  title="Organization/organization-jurisdictional-vital-records-office">US Core Organization - Jurisdictional Vital Records Office</a>
+            </td>
+            <td>
+<p>US Core Organization: Jurisdictional Vital Records Office example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-nchs.html"
+                  title="Organization/organization-nchs">US Core Organization - National Center for Health Statistics [NCHS]</a>
+            </td>
+            <td>
+<p>US Core Organization: National Center for Health Statistics [NCHS] example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-south-hospital.html"
+                  title="Organization/organization-south-hospital">US Core Organization - South Hospital</a>
+            </td>
+            <td>
+<p>US Core Organization: South Hospital example</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="31"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Bundle-document-coded-industry-occupation.html"
+                  title="StructureDefinition/Bundle-document-coded-industry-occupation">Bundle - Document Coded Industry and Occupation</a>
+            </td>
+            <td>
+<p>This bundle profile contains instances of the resources comprising coded industry and occupation.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="32"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-present-job-jada-ann-quinn-coded.html"
+                  title="Observation/observation-present-job-jada-ann-quinn-coded">Observation - Mother Present Job - Jada Ann Quinn</a>
+            </td>
+            <td>
+<p>Observation - Mother Present Job: Jada Ann Quinn example</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/pher">HL7 International / Public Health</a>.  Package hl7.fhir.us.bfdr#2.0.0-Preview3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 30, 2024 17:05-0400">2024-07-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/bfdr/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

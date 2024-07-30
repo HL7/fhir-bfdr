@@ -1,0 +1,205 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "bundle-coded-industry-occupation-baby-g-quinn",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-industry-occupation"]
+  },
+  "identifier" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber",
+      "valueString" : "15075"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1",
+      "valueString" : "444455555"
+    }],
+    "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr",
+    "value" : "2019NJ15075"
+  },
+  "type" : "document",
+  "timestamp" : "2019-10-15T08:51:14.637+00:00",
+  "entry" : [{
+    "fullUrl" : "http://www.example.org/fhir/Composition/composition-coded-industry-and-occupation-baby-g-quinn",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "composition-coded-industry-and-occupation-baby-g-quinn",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-industry-and-occupation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-coded-industry-and-occupation-baby-g-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-coded-industry-and-occupation-baby-g-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-coded-industry-and-occupation.html\">Composition - Coded Industry and Occupation</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Industry and Occupation information Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a>#industry_occupation_document)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Industry and Occupation</p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+          "code" : "industry_occupation_document",
+          "display" : "Industry and Occupation information Document"
+        }]
+      },
+      "subject" : {
+        "display" : "Patient - Child (Baby G Quinn)"
+      },
+      "date" : "2019-01-09",
+      "author" : [{
+        "display" : "National Center for Health Statistics"
+      }],
+      "title" : "Coded Industry and Occupation",
+      "section" : [{
+        "title" : "Mother's Industry and Occupation",
+        "code" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "MTH"
+          }]
+        },
+        "focus" : {
+          "display" : "patient-mother-jada-ann-quinn"
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-industry-and-occupation-mother"
+        }]
+      },
+      {
+        "title" : "Father's Industry and Occupationi",
+        "code" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "NFTH"
+          }]
+        },
+        "focus" : {
+          "display" : "relatedperson-father-natural-james-brandon-quinn"
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-industry-and-occupation-father"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-present-job-jada-ann-quinn-coded",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-present-job-jada-ann-quinn-coded",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-present-job-jada-ann-quinn-coded\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-present-job-jada-ann-quinn-coded&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-present-job.html\">Observation - Present Job</a></p></div><p><b>Extension Parental Role</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11341-5)</span></p><p><b>subject</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>focus</b>: <span>: Jada Ann Quinn - Mother</span></p><p><b>effective</b>: 2019-01-09 --&gt; (ongoing)</p><p><b>value</b>: Carpenter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#47-2031)</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>History of Occupation industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86188-0)</span></td><td>Construction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#23)</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "MTH",
+            "display" : "mother"
+          }]
+        }
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11341-5"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-child-babyg-quinn"
+      },
+      "focus" : [{
+        "display" : "Jada Ann Quinn - Mother"
+      }],
+      "effectivePeriod" : {
+        "start" : "2019-01-09"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.114222.4.11.8068",
+          "code" : "47-2031"
+        }],
+        "text" : "Carpenter"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "86188-0"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.114222.4.11.8067",
+            "code" : "23"
+          }],
+          "text" : "Construction"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-present-job-james-brandon-quinn-coded",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-present-job-james-brandon-quinn-coded",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-present-job-james-brandon-quinn-coded\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-present-job-james-brandon-quinn-coded&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-present-job.html\">Observation - Present Job</a></p></div><p><b>Extension Parental Role</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11341-5)</span></p><p><b>subject</b>: <a href=\"Patient-patient-child-babyg-quinn.html\">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>focus</b>: <span>: James Brandon Quinn - Father</span></p><p><b>effective</b>: 2019-01-09 --&gt; (ongoing)</p><p><b>value</b>: Lawyer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#23-1011)</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>History of Occupation industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86188-0)</span></td><td>Legal Services <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#5411)</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "FTH",
+            "display" : "father"
+          }]
+        }
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11341-5"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-child-babyg-quinn"
+      },
+      "focus" : [{
+        "display" : "James Brandon Quinn - Father"
+      }],
+      "effectivePeriod" : {
+        "start" : "2019-01-09"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.114222.4.11.8068",
+          "code" : "23-1011"
+        }],
+        "text" : "Lawyer"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "86188-0"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.114222.4.11.8067",
+            "code" : "5411"
+          }],
+          "text" : "Legal Services"
+        }
+      }]
+    }
+  }]
+}

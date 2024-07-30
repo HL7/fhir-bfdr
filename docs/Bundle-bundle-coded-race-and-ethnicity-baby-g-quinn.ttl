@@ -1,0 +1,762 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-coded-race-and-ethnicity-baby-g-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-demographic-coded-content"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-demographic-coded-content>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "15075" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "444455555" ]
+     ] ) ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2019NJ15075" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2019-10-15T08:51:14.637+00:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Composition/composition-coded-race-and-ethnicity-baby-g-quinn"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Composition/composition-coded-race-and-ethnicity-baby-g-quinn> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-mother"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-mother> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-father"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-father> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-coded-race-and-ethnicity-mother"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-coded-race-and-ethnicity-mother> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://www.example.org/fhir/Observation/observation-coded-race-and-ethnicity-father"^^xsd:anyURI ] ;
+     fhir:resource ( <http://www.example.org/fhir/Observation/observation-coded-race-and-ethnicity-father> )
+  ] ) . # 
+
+<http://www.example.org/fhir/Composition/composition-coded-race-and-ethnicity-baby-g-quinn> a fhir:Composition ;
+  fhir:id [ fhir:v "composition-coded-race-and-ethnicity-baby-g-quinn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-coded-race-and-ethnicity-baby-g-quinn\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-coded-race-and-ethnicity-baby-g-quinn&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-coded-race-and-ethnicity.html\">Composition - Coded Race and Ethnicity</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Race and ethnicity information Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86805-9)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Race and Ethnicity</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:86805-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86805-9" ] ;
+       fhir:display [ fhir:v "Race and ethnicity information Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "Patient - Child (Baby G Quinn)" ]
+  ] ; # 
+  fhir:date [ fhir:v "2019-01-09"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:display [ fhir:v "National Center for Health Statistics" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Coded Race and Ethnicity"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Mother's Coded Race and Ethnicity" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MTH" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:display [ fhir:v "patient-mother-jada-ann-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-mother> ;
+       fhir:reference [ fhir:v "Observation/observation-input-race-and-ethnicity-mother" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-coded-race-and-ethnicity-mother> ;
+       fhir:reference [ fhir:v "Observation/observation-coded-race-and-ethnicity-mother" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Father's Coded Race and Ethnicity" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NFTH" ]
+       ] )
+     ] ;
+     fhir:focus [
+       fhir:display [ fhir:v "relatedperson-father-natural-james-brandon-quinn" ]
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-father> ;
+       fhir:reference [ fhir:v "Observation/observation-input-race-and-ethnicity-father" ]
+     ] [
+       fhir:link <http://hl7.org/fhir/us/bfdr/Observation/observation-coded-race-and-ethnicity-father> ;
+       fhir:reference [ fhir:v "Observation/observation-coded-race-and-ethnicity-father" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-mother> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-coded-race-and-ethnicity-mother> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-input-race-and-ethnicity-father> a fhir:us .
+
+<http://hl7.org/fhir/us/bfdr/Observation/observation-coded-race-and-ethnicity-father> a fhir:us .
+
+<http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-mother> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-input-race-and-ethnicity-mother"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-input-race-and-ethnicity-mother\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-input-race-and-ethnicity-mother&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-input-race-and-ethnicity-vr.html\">Observation - Input Race and Ethnicity Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mother Input Race and Ethnicity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-local-observation-codes-vr.html\">Local Observation Codes Vital Records</a>#inputraceandethnicityMother)</span></p><p><b>subject</b>: <span>: EBRS-generated - mother</span></p><blockquote><p><b>component</b></p><p><b>code</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#White)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Black Or African American <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#BlackOrAfricanAmerican)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: American Indian Or Alaska Native <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#AmericanIndianOrAlaskanNative)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Asian Indian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#AsianIndian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Chinese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Chinese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Filipino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Filipino)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Japanese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Japanese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Korean <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Korean)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Vietnamese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Vietnamese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Asian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherAsian)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Native Hawaiian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#NativeHawaiian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Guamanian Or Chamorro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#GuamanianOrChamorro)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Samoan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Samoan)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Pacific Islander <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherPacificIslander)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Race <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherRace)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First Other Asian Literal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstOtherAsianLiteral)</span></p><p><b>value</b>: Malaysian</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First American Indian Or Alaska Native Literal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstAmericanIndianOrAlaskanNativeLiteral)</span></p><p><b>value</b>: Arikara</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Mexican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicMexican)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Cuban <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicCuban)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Puerto Rican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicPuertoRican)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicOther)</span></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inputraceandethnicityMother" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "EBRS-generated - mother" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "White" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BlackOrAfricanAmerican" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AmericanIndianOrAlaskanNative" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AsianIndian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Chinese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Filipino" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Japanese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Korean" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Vietnamese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherAsian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NativeHawaiian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GuamanianOrChamorro" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Samoan" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherPacificIslander" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherRace" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstOtherAsianLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Malaysian" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstAmericanIndianOrAlaskanNativeLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Arikara" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicMexican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCuban" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicPuertoRican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicOther" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-father> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-input-race-and-ethnicity-father"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-input-race-and-ethnicity-father\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-input-race-and-ethnicity-father&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-input-race-and-ethnicity-vr.html\">Observation - Input Race and Ethnicity Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Father Input Race and Ethnicity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-local-observation-codes-vr.html\">Local Observation Codes Vital Records</a>#inputraceandethnicityFather)</span></p><p><b>subject</b>: <span>: EBRS-generated - father</span></p><blockquote><p><b>component</b></p><p><b>code</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#White)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Black Or African American <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#BlackOrAfricanAmerican)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: American Indian Or Alaska Native <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#AmericanIndianOrAlaskanNative)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Asian Indian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#AsianIndian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Chinese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Chinese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Filipino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Filipino)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Japanese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Japanese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Korean <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Korean)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Vietnamese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Vietnamese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Asian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherAsian)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Native Hawaiian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#NativeHawaiian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Guamanian Or Chamorro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#GuamanianOrChamorro)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Samoan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Samoan)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Pacific Islander <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherPacificIslander)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Race <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherRace)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First Other Asian Literal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstOtherAsianLiteral)</span></p><p><b>value</b>: Malaysian</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First American Indian Or Alaska Native Literal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstAmericanIndianOrAlaskanNativeLiteral)</span></p><p><b>value</b>: Arikara</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Mexican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicMexican)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Cuban <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicCuban)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Puerto Rican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicPuertoRican)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicOther)</span></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inputraceandethnicityFather" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "EBRS-generated - father" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "White" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BlackOrAfricanAmerican" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AmericanIndianOrAlaskanNative" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AsianIndian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Chinese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Filipino" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Japanese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Korean" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Vietnamese" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherAsian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NativeHawaiian" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GuamanianOrChamorro" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Samoan" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherPacificIslander" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "OtherRace" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstOtherAsianLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Malaysian" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstAmericanIndianOrAlaskanNativeLiteral" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Arikara" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicMexican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCuban" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicPuertoRican" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Y" ] ;
+         fhir:display [ fhir:v "Yes" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicOther" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "No" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/observation-coded-race-and-ethnicity-mother> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-coded-race-and-ethnicity-mother"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-coded-race-and-ethnicity-mother\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-coded-race-and-ethnicity-mother&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-coded-race-and-ethnicity-vr.html\">Observation - Coded Race and Ethnicity Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mother Coded Race and Ethnicity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-local-observation-codes-vr.html\">Local Observation Codes Vital Records</a>#codedraceandethnicityMother)</span></p><p><b>subject</b>: <span>: NCHS generated - mother</span></p><blockquote><p><b>component</b></p><p><b>code</b>: First Edited Race Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstEditedCode)</span></p><p><b>value</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-race-code-vr.html\">Race Code Vital Records</a>#101)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Second Edited Race Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#SecondEditedCode)</span></p><p><b>value</b>: Israeli <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-race-code-vr.html\">Race Code Vital Records</a>#122)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First Edited American Indian Race Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstAmericanIndianCode)</span></p><p><b>value</b>: Arikara <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-race-code-vr.html\">Race Code Vital Records</a>#A31)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Race Recode 40 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#RaceRecode40)</span></p><p><b>value</b>: AIAN and Asian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-race-recode-40-vr.html\">Race Recode 40 Vital Records</a>#20)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicCode)</span></p><p><b>value</b>: Chilean <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-hispanic-origin-vr.html\">HispanicOrigin Vital Records</a>#233)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "codedraceandethnicityMother" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "NCHS generated - mother" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstEditedCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-code-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "White" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SecondEditedCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-code-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "122" ] ;
+         fhir:display [ fhir:v "Israeli" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstAmericanIndianCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-code-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A31" ] ;
+         fhir:display [ fhir:v "Arikara" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RaceRecode40" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-recode-40-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "AIAN and Asian" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-hispanic-origin-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "233" ] ;
+         fhir:display [ fhir:v "Chilean" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://www.example.org/fhir/Observation/observation-coded-race-and-ethnicity-father> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-coded-race-and-ethnicity-father"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/vr-common-library/StructureDefinition/coded-race-and-ethnicity-vr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-coded-race-and-ethnicity-father\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-coded-race-and-ethnicity-father&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-coded-race-and-ethnicity-vr.html\">Observation - Coded Race and Ethnicity Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Father Coded Race and Ethnicity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-local-observation-codes-vr.html\">Local Observation Codes Vital Records</a>#codedraceandethnicityFather)</span></p><p><b>subject</b>: <span>: NCHS generated - father</span></p><blockquote><p><b>component</b></p><p><b>code</b>: First Edited Race Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstEditedCode)</span></p><p><b>value</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-race-code-vr.html\">Race Code Vital Records</a>#101)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Second Edited Race Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#SecondEditedCode)</span></p><p><b>value</b>: Israeli <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-race-code-vr.html\">Race Code Vital Records</a>#122)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First Edited American Indian Race Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstAmericanIndianCode)</span></p><p><b>value</b>: Arikara <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-race-code-vr.html\">Race Code Vital Records</a>#A31)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Race Recode 40 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#RaceRecode40)</span></p><p><b>value</b>: AIAN and Asian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-race-recode-40-vr.html\">Race Recode 40 Vital Records</a>#20)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Code <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicCode)</span></p><p><b>value</b>: Chilean <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-hispanic-origin-vr.html\">HispanicOrigin Vital Records</a>#233)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "codedraceandethnicityFather" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "NCHS generated - father" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstEditedCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-code-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "White" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SecondEditedCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-code-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "122" ] ;
+         fhir:display [ fhir:v "Israeli" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FirstAmericanIndianCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-code-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A31" ] ;
+         fhir:display [ fhir:v "Arikara" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RaceRecode40" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-race-recode-40-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "AIAN and Asian" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HispanicCode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-hispanic-origin-vr"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "233" ] ;
+         fhir:display [ fhir:v "Chilean" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "631abe68-6530-4050-a57d-6322ad9c1156-281",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/631abe68-6530-4050-a57d-6322ad9c1156-281",
+  "name" : "UnionDeliveryRoutesVSAndDeliveryRoutesVS",
+  "title" : "Union of ValueSet - Delivery Routes And Delivery Routes",
+  "status" : "draft",
+  "date" : "2024-07-30T17:07:02-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "700000006",
+        "display" : "Vaginal delivery of fetus (procedure)"
+      },
+      {
+        "code" : "302383004",
+        "display" : "Forceps delivery (procedure)"
+      },
+      {
+        "code" : "61586001",
+        "display" : "Delivery by vacuum extraction (procedure)"
+      },
+      {
+        "code" : "11466000",
+        "display" : "Cesarean section (procedure)"
+      }]
+    }]
+  }
+}

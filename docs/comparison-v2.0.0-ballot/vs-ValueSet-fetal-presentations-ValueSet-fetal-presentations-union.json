@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "631abe68-6530-4050-a57d-6322ad9c1156-293",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/631abe68-6530-4050-a57d-6322ad9c1156-293",
+  "name" : "UnionFetalPresentationsVSAndFetalPresentationsVS",
+  "title" : "Union of ValueSet - Fetal Presentations And Fetal Presentations",
+  "status" : "draft",
+  "date" : "2024-07-30T17:07:02-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "70028003",
+        "display" : "Vertex presentation (finding)"
+      },
+      {
+        "code" : "6096002",
+        "display" : "Breech presentation (finding)"
+      },
+      {
+        "code" : "163518000",
+        "display" : "On examination - fetal presentation unsure\tUnknown fetal presentation (finding)"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "OTH",
+        "display" : "Other"
+      },
+      {
+        "code" : "UNK",
+        "display" : "unknown"
+      }]
+    }]
+  }
+}

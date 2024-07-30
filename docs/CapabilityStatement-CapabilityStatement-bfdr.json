@@ -1,0 +1,69 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "CapabilityStatement-bfdr",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <!-- TODO \n    Jurisdiction \n    Prohibited extension - http://hl7.org/fhir/StructureDefinition/capabilitystatement-prohibited -->\n    <!-- set include_symbols = false to turn off confonrmance symbols and legen, true to turn on -->\n  \n  \n  <h2 id=\"title\">CapabilityStatement - Birth and Fetal Death</h2>\n  <ul>\n    <li><b>Title:</b>CapabilityStatement - Birth and Fetal Death</li>\n    <li><b>Implementation Guide Version:</b> 2.0.0-Preview3</li>\n    <li><b>FHIR Version:</b> 4.0.1</li>\n    <li><b>Intended Use:</b> requirements</li>\n    <li><b>Supported Formats: </b> \n\n    \n      \n      \n      xml;\n    \n      \n      \n      json;\n    \n\n    </li>\n    \n    <li><b>Published:</b> 2020-11-01</li>\n  \n    <li><b>Published by:</b> HL7 International / Public Health</li>\n    <li><b>Status:</b> active</li>\n    \n  </ul>\n  <br/>\n\n\n\n  \n    <strong>Description:</strong> <div><div><p>This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents.</p>\n</div></div>\n  \n  <br/>\n  \n  \n\n\n  \n\n  <br/>\n    <!-- TODO - Make this a summary of capabilities, including system wide and each paradigm -->\n  <p>\n    <b>Jump to:</b>\n  </p>\n  <ul>\n    \n    \n    \n  </ul>\n\n\n\n    <!-- REST Capabilities -->\n  \n\n\n\n\n\n\n\n\n\n    <!-- Messaging Capabilities -->\n  \n\n    <!-- Document Capabilities -->\n  \n    <br/>\n    <br/>\n    <a name=\"documents\"> </a>\n    <h2>Documents</h2>\n    <div class=\"table-wrapper\">\n      <table class=\"grid\">\n        <thead>\n          <tr>\n            <th>Mode</th>\n            <th>Profile</th>\n            <th>Notes</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n            <tr>\n              <td>producer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-jurisdiction-live-birth-report.html\">Composition - Jurisdiction Live Birth Report</a>\n                \n              </td>\n              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>producer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-jurisdiction-fetal-death-report.html\">Composition - Jurisdiction Fetal Death Report</a>\n                \n              </td>\n              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>producer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-provider-live-birth-report.html\">Composition - Provider Live Birth Report</a>\n                \n              </td>\n              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>producer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-provider-fetal-death-report.html\">Composition - Provider Fetal Death Report</a>\n                \n              </td>\n              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>consumer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-coded-cause-of-fetal-death.html\">Composition - Coded Cause of Fetal Death</a>\n                \n              </td>\n              <td><div><p>Produced by NCHS and consumed by the source of the reports</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>consumer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-coded-race-and-ethnicity.html\">Composition - Coded Race and Ethnicity</a>\n                \n              </td>\n              <td><div><p>Produced by NCHS and consumed by the source of the reports</p>\n</div></td>\n            </tr>\n          \n        </tbody>\n      </table>\n    </div>\n  \n\n</div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pher"
+  }],
+  "url" : "http://hl7.org/fhir/us/bfdr/CapabilityStatement/CapabilityStatement-bfdr",
+  "version" : "2.0.0-Preview3",
+  "name" : "CapabilityStatementBFDR",
+  "title" : "CapabilityStatement - Birth and Fetal Death",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-11-01",
+  "publisher" : "HL7 International / Public Health",
+  "contact" : [{
+    "name" : "HL7 International / Public Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/pher"
+    }]
+  }],
+  "description" : "This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "kind" : "requirements",
+  "fhirVersion" : "4.0.1",
+  "format" : ["xml",
+  "json"],
+  "document" : [{
+    "mode" : "producer",
+    "documentation" : "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS",
+    "profile" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"
+  },
+  {
+    "mode" : "producer",
+    "documentation" : "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS",
+    "profile" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"
+  },
+  {
+    "mode" : "producer",
+    "documentation" : "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS",
+    "profile" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"
+  },
+  {
+    "mode" : "producer",
+    "documentation" : "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS",
+    "profile" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"
+  },
+  {
+    "mode" : "consumer",
+    "documentation" : "Produced by NCHS and consumed by the source of the reports",
+    "profile" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"
+  },
+  {
+    "mode" : "consumer",
+    "documentation" : "Produced by NCHS and consumed by the source of the reports",
+    "profile" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"
+  }]
+}

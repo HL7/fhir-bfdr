@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ef42cbfe-2aad-4c58-9fd5-6cc68ef85170-131",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ef42cbfe-2aad-4c58-9fd5-6cc68ef85170-131",
+  "name" : "UnionLOINCCodesAndApgarTimingVS",
+  "title" : "Union of LOINC Codes And APGAR Score Timing",
+  "status" : "draft",
+  "date" : "2024-07-30T17:06:20-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "9272-6",
+        "display" : "1 minute Apgar Score"
+      },
+      {
+        "code" : "9274-2",
+        "display" : "5 minute Apgar Score"
+      },
+      {
+        "code" : "9271-8",
+        "display" : "10 minute Apgar Score"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "443848000",
+        "display" : "Apgar score at 15 minutes (observable entity)"
+      },
+      {
+        "code" : "443849008",
+        "display" : "Apgar score at 20 minutes (observable entity)"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/bfdr/CapabilityStatement/CapabilityStatement-bfdr> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CapabilityStatement-bfdr"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <!-- TODO \n    Jurisdiction \n    Prohibited extension - http://hl7.org/fhir/StructureDefinition/capabilitystatement-prohibited -->\n    <!-- set include_symbols = false to turn off confonrmance symbols and legen, true to turn on -->\n  \n  \n  <h2 id=\"title\">CapabilityStatement - Birth and Fetal Death</h2>\n  <ul>\n    <li><b>Title:</b>CapabilityStatement - Birth and Fetal Death</li>\n    <li><b>Implementation Guide Version:</b> 2.0.0-Preview3</li>\n    <li><b>FHIR Version:</b> 4.0.1</li>\n    <li><b>Intended Use:</b> requirements</li>\n    <li><b>Supported Formats: </b> \n\n    \n      \n      \n      xml;\n    \n      \n      \n      json;\n    \n\n    </li>\n    \n    <li><b>Published:</b> 2020-11-01</li>\n  \n    <li><b>Published by:</b> HL7 International / Public Health</li>\n    <li><b>Status:</b> active</li>\n    \n  </ul>\n  <br/>\n\n\n\n  \n    <strong>Description:</strong> <div><div><p>This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents.</p>\n</div></div>\n  \n  <br/>\n  \n  \n\n\n  \n\n  <br/>\n    <!-- TODO - Make this a summary of capabilities, including system wide and each paradigm -->\n  <p>\n    <b>Jump to:</b>\n  </p>\n  <ul>\n    \n    \n    \n  </ul>\n\n\n\n    <!-- REST Capabilities -->\n  \n\n\n\n\n\n\n\n\n\n    <!-- Messaging Capabilities -->\n  \n\n    <!-- Document Capabilities -->\n  \n    <br/>\n    <br/>\n    <a name=\"documents\"> </a>\n    <h2>Documents</h2>\n    <div class=\"table-wrapper\">\n      <table class=\"grid\">\n        <thead>\n          <tr>\n            <th>Mode</th>\n            <th>Profile</th>\n            <th>Notes</th>\n          </tr>\n        </thead>\n        <tbody>\n          \n            <tr>\n              <td>producer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-jurisdiction-live-birth-report.html\">Composition - Jurisdiction Live Birth Report</a>\n                \n              </td>\n              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>producer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-jurisdiction-fetal-death-report.html\">Composition - Jurisdiction Fetal Death Report</a>\n                \n              </td>\n              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>producer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-provider-live-birth-report.html\">Composition - Provider Live Birth Report</a>\n                \n              </td>\n              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>producer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-provider-fetal-death-report.html\">Composition - Provider Fetal Death Report</a>\n                \n              </td>\n              <td><div><p>Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>consumer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-coded-cause-of-fetal-death.html\">Composition - Coded Cause of Fetal Death</a>\n                \n              </td>\n              <td><div><p>Produced by NCHS and consumed by the source of the reports</p>\n</div></td>\n            </tr>\n          \n            <tr>\n              <td>consumer</td>\n              <td>\n                \n                  <a href=\"StructureDefinition-Composition-coded-race-and-ethnicity.html\">Composition - Coded Race and Ethnicity</a>\n                \n              </td>\n              <td><div><p>Produced by NCHS and consumed by the source of the reports</p>\n</div></td>\n            </tr>\n          \n        </tbody>\n      </table>\n    </div>\n  \n\n</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pher" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/bfdr/CapabilityStatement/CapabilityStatement-bfdr"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-Preview3"] ; # 
+  fhir:name [ fhir:v "CapabilityStatementBFDR"] ; # 
+  fhir:title [ fhir:v "CapabilityStatement - Birth and Fetal Death"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2020-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Public Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Public Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/pher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This section describes the expected capabilities of a BFDR Document producer actor who is responsible for producing clinical documents and a BFDR Document consumer who receives and consumes the clinical documents."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 
+  fhir:document ( [
+     fhir:mode [ fhir:v "producer" ] ;
+     fhir:documentation [ fhir:v "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS" ] ;
+     fhir:profile [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-live-birth-report>
+     ]
+  ] [
+     fhir:mode [ fhir:v "producer" ] ;
+     fhir:documentation [ fhir:v "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS" ] ;
+     fhir:profile [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-jurisdiction-fetal-death-report>
+     ]
+  ] [
+     fhir:mode [ fhir:v "producer" ] ;
+     fhir:documentation [ fhir:v "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS" ] ;
+     fhir:profile [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-live-birth-report>
+     ]
+  ] [
+     fhir:mode [ fhir:v "producer" ] ;
+     fhir:documentation [ fhir:v "Produced by the source of the reports and sent to a Jurisdiction VRO or to NCHS" ] ;
+     fhir:profile [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report>
+     ]
+  ] [
+     fhir:mode [ fhir:v "consumer" ] ;
+     fhir:documentation [ fhir:v "Produced by NCHS and consumed by the source of the reports" ] ;
+     fhir:profile [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-cause-of-fetal-death>
+     ]
+  ] [
+     fhir:mode [ fhir:v "consumer" ] ;
+     fhir:documentation [ fhir:v "Produced by NCHS and consumed by the source of the reports" ] ;
+     fhir:profile [
+       fhir:v "http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-race-and-ethnicity>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

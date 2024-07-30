@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-coded-industry-occupation-baby-g-quinn"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-industry-occupation"/>
+  </meta>
+  <identifier>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber">
+      <valueString value="15075"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1">
+      <valueString value="444455555"/>
+    </extension>
+    <system value="http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr"/>
+    <value value="2019NJ15075"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2019-10-15T08:51:14.637+00:00"/>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Composition/composition-coded-industry-and-occupation-baby-g-quinn"/>
+    <resource>
+      <Composition>
+        <id value="composition-coded-industry-and-occupation-baby-g-quinn"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-coded-industry-and-occupation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="composition-coded-industry-and-occupation-baby-g-quinn"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;composition-coded-industry-and-occupation-baby-g-quinn&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Composition-coded-industry-and-occupation.html">Composition - Coded Industry and Occupation</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Industry and Occupation information Document <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CodeSystem-local-bfdr-codes.html">Local BFDR Codes</a>#industry_occupation_document)</span></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <span>: National Center for Health Statistics</span></p><p><b>title</b>: Coded Industry and Occupation</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes"/>
+            <code value="industry_occupation_document"/>
+            <display value="Industry and Occupation information Document"/>
+          </coding>
+        </type>
+        <subject>
+          <display value="Patient - Child (Baby G Quinn)"/>
+        </subject>
+        <date value="2019-01-09"/>
+        <author>
+          <display value="National Center for Health Statistics"/>
+        </author>
+        <title value="Coded Industry and Occupation"/>
+        <section>
+          <title value="Mother's Industry and Occupation"/>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+              <code value="MTH"/>
+            </coding>
+          </code>
+          <focus>
+            <display value="patient-mother-jada-ann-quinn"/>
+          </focus>
+          <entry>
+            <reference value="Observation/observation-industry-and-occupation-mother"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Father's Industry and Occupationi"/>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+              <code value="NFTH"/>
+            </coding>
+          </code>
+          <focus>
+            <display value="relatedperson-father-natural-james-brandon-quinn"/>
+          </focus>
+          <entry>
+            <reference value="Observation/observation-industry-and-occupation-father"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Observation/observation-present-job-jada-ann-quinn-coded"/>
+    <resource>
+      <Observation>
+        <id value="observation-present-job-jada-ann-quinn-coded"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-present-job-jada-ann-quinn-coded"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-present-job-jada-ann-quinn-coded&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-present-job.html">Observation - Present Job</a></p></div><p><b>Extension Parental Role</b>: mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html">RoleCode</a>#MTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11341-5)</span></p><p><b>subject</b>: <a href="Patient-patient-child-babyg-quinn.html">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>focus</b>: <span>: Jada Ann Quinn - Mother</span></p><p><b>effective</b>: 2019-01-09 --&gt; (ongoing)</p><p><b>value</b>: Carpenter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#47-2031)</span></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>History of Occupation industry <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#86188-0)</span></td><td>Construction <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#23)</span></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+              <code value="MTH"/>
+              <display value="mother"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11341-5"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-child-babyg-quinn"/>
+        </subject>
+        <focus>
+          <display value="Jada Ann Quinn - Mother"/>
+        </focus>
+        <effectivePeriod>
+          <start value="2019-01-09"/>
+        </effectivePeriod>
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:oid:2.16.840.1.114222.4.11.8068"/>
+            <code value="47-2031"/>
+          </coding>
+          <text value="Carpenter"/>
+        </valueCodeableConcept>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="86188-0"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="urn:oid:2.16.840.1.114222.4.11.8067"/>
+              <code value="23"/>
+            </coding>
+            <text value="Construction"/>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Observation/observation-present-job-james-brandon-quinn-coded"/>
+    <resource>
+      <Observation>
+        <id value="observation-present-job-james-brandon-quinn-coded"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="observation-present-job-james-brandon-quinn-coded"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;observation-present-job-james-brandon-quinn-coded&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Observation-present-job.html">Observation - Present Job</a></p></div><p><b>Extension Parental Role</b>: father <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html">RoleCode</a>#FTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11341-5)</span></p><p><b>subject</b>: <a href="Patient-patient-child-babyg-quinn.html">Patient/patient-child-babyg-quinn</a> &quot; QUINN&quot;</p><p><b>focus</b>: <span>: James Brandon Quinn - Father</span></p><p><b>effective</b>: 2019-01-09 --&gt; (ongoing)</p><p><b>value</b>: Lawyer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#23-1011)</span></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>History of Occupation industry <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#86188-0)</span></td><td>Legal Services <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#5411)</span></td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+              <code value="FTH"/>
+              <display value="father"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11341-5"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-child-babyg-quinn"/>
+        </subject>
+        <focus>
+          <display value="James Brandon Quinn - Father"/>
+        </focus>
+        <effectivePeriod>
+          <start value="2019-01-09"/>
+        </effectivePeriod>
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:oid:2.16.840.1.114222.4.11.8068"/>
+            <code value="23-1011"/>
+          </coding>
+          <text value="Lawyer"/>
+        </valueCodeableConcept>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="86188-0"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="urn:oid:2.16.840.1.114222.4.11.8067"/>
+              <code value="5411"/>
+            </coding>
+            <text value="Legal Services"/>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

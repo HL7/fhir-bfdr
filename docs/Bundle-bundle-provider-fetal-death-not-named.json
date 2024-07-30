@@ -1,0 +1,2364 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "bundle-provider-fetal-death-not-named",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-fetal-death-report"]
+  },
+  "identifier" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/CertificateNumber",
+      "valueString" : "9876"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/AuxiliaryStateIdentifier1",
+      "valueString" : "11111-11111"
+    }],
+    "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr",
+    "value" : "2019NJ009876"
+  },
+  "type" : "document",
+  "timestamp" : "2019-02-11T02:05:44.434Z",
+  "entry" : [{
+    "fullUrl" : "http://www.example.org/fhir/Composition/composition-provider-fetal-death-not-named",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "composition-provider-fetal-death-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Composition-provider-fetal-death-report"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"composition-provider-fetal-death-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;composition-provider-fetal-death-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Composition-provider-fetal-death-report.html\">Composition - Provider Fetal Death Report</a></p></div><p><b>status</b>: final</p><p><b>type</b>: U.S. standard report of fetal death - 2003 revision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69045-3)</span></p><p><b>encounter</b>: <a href=\"#Encounter_encounter-maternity-carmen-teresa-lee\">See above (Encounter/encounter-maternity-carmen-teresa-lee)</a></p><p><b>date</b>: 2019-01-09</p><p><b>author</b>: <a href=\"#Practitioner_practitioner-vital-records-jessica-leung\">See above (Practitioner/practitioner-vital-records-jessica-leung)</a></p><p><b>title</b>: Provider fetal death report Document</p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69045-3",
+          "display" : "U.S. standard report of fetal death - 2003 revision"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named"
+      },
+      "encounter" : {
+        "reference" : "Encounter/encounter-maternity-carmen-teresa-lee"
+      },
+      "date" : "2019-01-09",
+      "author" : [{
+        "reference" : "Practitioner/practitioner-vital-records-jessica-leung"
+      }],
+      "title" : "Provider fetal death report Document",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "57073-9"
+          }]
+        },
+        "focus" : {
+          "reference" : "Patient/patient-mother-carmen-teresa-lee"
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-last-menstrual-period-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-number-births-now-living-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-number-births-now-dead-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-date-of-last-live-birth-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-mother-height-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-mother-received-wic-food-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "55752-0"
+          }]
+        },
+        "focus" : {
+          "reference" : "Patient/patient-mother-carmen-teresa-lee"
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-number-previous-cesareans-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-fetal-presentation-not-named"
+        },
+        {
+          "reference" : "Procedure/procedure-final-route-method-delivery-not-named"
+        },
+        {
+          "reference" : "Condition/condition-gestational-diabetes-carmen-teresa-lee"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "76400-1"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-birth-weight-not-named"
+        },
+        {
+          "reference" : "Observation/observation-gestational-age-at-delivery-not-named"
+        },
+        {
+          "reference" : "Condition/condition-fetal-death-cause-or-condition-not-named"
+        },
+        {
+          "reference" : "Condition/condition-fetal-death-other-significant-cause-not-named"
+        },
+        {
+          "reference" : "Observation/observation-fetal-death-time-point-not-named"
+        },
+        {
+          "reference" : "Observation/observation-autopsy-performed-not-named"
+        },
+        {
+          "reference" : "Observation/observation-histological-placental-exam-performed-not-named"
+        },
+        {
+          "reference" : "Observation/observation-autopsy-histological-exam-results-used-not-named"
+        },
+        {
+          "reference" : "Observation/observation-number-deaths-this-delivery-carmen-teresa-lee"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "92014-0"
+          }]
+        },
+        "focus" : {
+          "reference" : "Patient/patient-mother-carmen-teresa-lee"
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-parent-education-level-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-present-job-carmen-teresa-lee"
+        },
+        {
+          "reference" : "Observation/observation-input-race-and-ethnicity-carmen-teresa-lee"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "92013-2"
+          }]
+        },
+        "focus" : {
+          "reference" : "RelatedPerson/relatedperson-father-natural-tom-yan-lee"
+        },
+        "entry" : [{
+          "reference" : "Observation/observation-present-job-tom-yan-lee"
+        }]
+      },
+      {
+        "title" : "Patient's QuestionnaireResponse Section",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "74465-6"
+          }]
+        },
+        "focus" : {
+          "reference" : "Patient/patient-mother-carmen-teresa-lee"
+        },
+        "entry" : [{
+          "reference" : "QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Patient/patient-decedent-fetus-not-named",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-decedent-fetus-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Patient-decedent-fetus"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-decedent-fetus-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-decedent-fetus-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient-decedent-fetus.html\">Patient - Decedent Fetus</a></p></div><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Patient Birth Place</b>: Ann Arbor MI 48103 </p><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 34 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p></blockquote><blockquote><p><b>Reported Parent Age At Delivery Vital Records</b></p><blockquote><p><b>url</b></p><code>reportedAge</code></blockquote><p><b>value</b>: 35 a<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><blockquote><p><b>url</b></p><code>motherOrFather</code></blockquote><p><b>value</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p></blockquote><p><b>identifier</b>: Medical Record Number:\u00a09932702\u00a0(use:\u00a0USUAL)</p><p><b>name</b>: null (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2019-01-09</p><p><b>deceased</b>: true</p><p><b>multipleBirth</b>: 3</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode" : "F"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "city" : "Ann Arbor",
+          "state" : "MI",
+          "postalCode" : "48103"
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "reportedAge",
+          "valueQuantity" : {
+            "value" : 34,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "a"
+          }
+        },
+        {
+          "url" : "motherOrFather",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code" : "MTH",
+              "display" : "mother"
+            }]
+          }
+        }],
+        "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"
+      },
+      {
+        "extension" : [{
+          "url" : "reportedAge",
+          "valueQuantity" : {
+            "value" : 35,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "a"
+          }
+        },
+        {
+          "url" : "motherOrFather",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code" : "FTH",
+              "display" : "father"
+            }]
+          }
+        }],
+        "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-reported-parent-age-at-delivery-vr"
+      }],
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR",
+            "display" : "Medical Record Number"
+          }]
+        },
+        "system" : "http://hospital.smarthealthit.org",
+        "value" : "9932702"
+      }],
+      "name" : [{
+        "use" : "official",
+        "_family" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "not-applicable"
+          }]
+        }
+      }],
+      "gender" : "female",
+      "birthDate" : "2019-01-09",
+      "_birthDate" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+          "valueDateTime" : "2019-01-09T18:23:00-07:00"
+        }]
+      },
+      "deceasedBoolean" : true,
+      "_deceasedBoolean" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-patient-fetal-death-vr",
+          "valueBoolean" : true
+        }]
+      },
+      "multipleBirthInteger" : 3
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Encounter/encounter-maternity-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "encounter-maternity-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Encounter-maternity"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"encounter-maternity-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;encounter-maternity-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter-maternity.html\">Encounter - Maternity</a></p></div><p><b>Extension Parental Role</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>identifier</b>: id:\u00a08937015</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: Under Observation or Inpatient Care Services (Including Admission and Discharge Services) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99234)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>Birth attendant [Extended Identifier] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87286-1)</span></td><td><a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito: Practitioner - Vital Records (Janet Seito, DO))</a></td></tr></table><p><b>period</b>: 2019-01-08 10:00:00-0700 --&gt; 2019-01-09 17:00:00-0700</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>PhysicalType</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Location_location-south-hospital\">See above (Location/location-south-hospital: Location - US Core Location (South Hospital))</a></td><td>Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#22232009)</span></td></tr></table><p><b>serviceProvider</b>: <a href=\"#Organization_organization-south-hospital\">See above (Organization/organization-south-hospital: Organization - US Core Organization (South Hospital Organization))</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "MTH"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "system" : "http://hospital.smarthealthit.org",
+        "value" : "8937015"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP",
+        "display" : "inpatient encounter"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://www.ama-assn.org/go/cpt",
+          "code" : "99234"
+        }],
+        "text" : "Under Observation or Inpatient Care Services (Including Admission and Discharge Services)"
+      }],
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "87286-1",
+            "display" : "Birth attendant [Extended Identifier]"
+          }]
+        }],
+        "individual" : {
+          "reference" : "Practitioner/practitioner-vital-records-janet-seito",
+          "display" : "Practitioner - Vital Records (Janet Seito, DO)"
+        }
+      }],
+      "period" : {
+        "start" : "2019-01-08T10:00:00-07:00",
+        "end" : "2019-01-09T17:00:00-07:00"
+      },
+      "location" : [{
+        "location" : {
+          "reference" : "Location/location-south-hospital",
+          "display" : "Location - US Core Location (South Hospital)"
+        },
+        "physicalType" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "22232009",
+            "display" : "Hospital"
+          }]
+        }
+      }],
+      "serviceProvider" : {
+        "reference" : "Organization/organization-south-hospital",
+        "display" : "Organization - US Core Organization (South Hospital Organization)"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Patient/patient-mother-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-mother-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Patient-mother-vr"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"patient-mother-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;patient-mother-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Patient-mother-vr.html\">Patient - Mother Vital Records</a></p></div><blockquote><p><b>US Core Race Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Black or African American (Details: urn:oid:2.16.840.1.113883.6.238 code 2054-5 = 'Black or African American', stated as 'Black or African American')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Black or African America</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><blockquote><p><b>url</b></p><code>ombCategory</code></blockquote><p><b>value</b>: Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2135-2 = 'Hispanic or Latino', stated as 'Hispanic or Latino')</p><blockquote><p><b>url</b></p><code>text</code></blockquote><p><b>value</b>: Hispanic or Latino</p></blockquote><p><b>US Core Birth Sex Extension</b>: F</p><p><b>Patient Birth Place</b>: PR </p><p><b>identifier</b>: Medical Record Number:\u00a09992702\u00a0(use:\u00a0USUAL)</p><p><b>name</b>: Carmen Teresa Lee (OFFICIAL), Carmen Teresa Santos (MAIDEN)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-02-15</p><p><b>address</b>: 3670 Miller Road Ann Arbor MI 48103 US (HOME)</p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Other</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#RelatedPerson_relatedperson-mother-carmen-teresa-lee\">See above (RelatedPerson/relatedperson-mother-carmen-teresa-lee)</a></td><td>seealso</td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2054-5",
+            "display" : "Black or African American"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Black or African America"
+        }],
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension" : [{
+          "url" : "ombCategory",
+          "valueCoding" : {
+            "system" : "urn:oid:2.16.840.1.113883.6.238",
+            "code" : "2135-2",
+            "display" : "Hispanic or Latino"
+          }
+        },
+        {
+          "url" : "text",
+          "valueString" : "Hispanic or Latino"
+        }],
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode" : "F"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "state" : "PR"
+        }
+      }],
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR",
+            "display" : "Medical Record Number"
+          }]
+        },
+        "system" : "http://hospital.smarthealthit.org",
+        "value" : "9992702"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Lee",
+        "given" : ["Carmen",
+        "Teresa"]
+      },
+      {
+        "use" : "maiden",
+        "family" : "Santos",
+        "given" : ["Carmen",
+        "Teresa"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1986-02-15",
+      "address" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-within-city-limits-indicator-vr",
+          "valueCoding" : {
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "N",
+            "display" : "No"
+          }
+        }],
+        "use" : "home",
+        "line" : ["3670 Miller Road"],
+        "city" : "Ann Arbor",
+        "state" : "MI",
+        "postalCode" : "48103",
+        "country" : "US"
+      }],
+      "link" : [{
+        "other" : {
+          "reference" : "RelatedPerson/relatedperson-mother-carmen-teresa-lee"
+        },
+        "type" : "seealso"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-date-of-first-prenatal-care-visit-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-first-prenatal-care-visit"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-date-of-first-prenatal-care-visit-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-date-of-first-prenatal-care-visit-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-date-of-first-prenatal-care-visit.html\">Observation - Date of First Prenatal Care Visit</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Date first prenatal visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69044-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 2018-05-18</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69044-6"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "focus" : [{
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }],
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueDateTime" : "2018-05-18"
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-last-menstrual-period-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-last-menstrual-period-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-last-menstrual-period"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-last-menstrual-period-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-last-menstrual-period-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-last-menstrual-period.html\">Observation - Last Menstrual Period</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Last menstrual period start date <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8665-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2018-05-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 2018-04-18</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8665-2",
+          "display" : "Last menstrual period start date"
+        }],
+        "text" : "Last menstrual period start date"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "effectiveDateTime" : "2018-05-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueDateTime" : "2018-04-18"
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-number-births-now-living-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-number-births-now-living-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-living"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-number-births-now-living-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-number-births-now-living-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-number-births-now-living.html\">Observation - Number of Births Now Living</a></p></div><p><b>status</b>: final</p><p><b>code</b>: [#] Births.still living <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11638-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11638-4",
+          "display" : "[#] Births.still living"
+        }],
+        "text" : "[#] Births.still living"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueInteger" : 1
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-number-births-now-dead-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-number-births-now-dead-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-births-now-dead"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-number-births-now-dead-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-number-births-now-dead-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-number-births-now-dead.html\">Observation - Number of Births Now Dead</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Previous live births now dead # <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#68496-9)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 0</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "68496-9",
+          "display" : "Previous live births now dead #"
+        }],
+        "text" : "Previous live births now dead #"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueInteger" : 0
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-date-of-last-live-birth-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-date-of-last-live-birth-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-date-of-last-live-birth"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-date-of-last-live-birth-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-date-of-last-live-birth-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-date-of-last-live-birth.html\">Observation - Date of Last Live Birth</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Date of last live birth <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#68499-3 &quot;Date last live birth&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 2016-01-28</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "68499-3",
+          "display" : "Date last live birth"
+        }],
+        "text" : "Date of last live birth"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueDateTime" : "2016-01-28"
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-mother-height-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-mother-height-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-height"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-mother-height-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-mother-height-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-mother-height.html\">Observation - Mother Height</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-01-10</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 65 in<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [in_i] = '[in_i]')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8302-2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "effectiveDateTime" : "2019-01-10",
+      "performer" : [{
+        "reference" : "Patient/patient-mother-carmen-teresa-lee"
+      }],
+      "valueQuantity" : {
+        "value" : 65,
+        "unit" : "in",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "[in_i]"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-mother-prepregnancy-weight-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-prepregnancy-weight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-mother-prepregnancy-weight-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-mother-prepregnancy-weight-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-mother-prepregnancy-weight.html\">Observation - Mother Prepregnancy Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight --pre current pregnancy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#56077-1)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 180 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs",
+          "display" : "Vital Signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "56077-1",
+          "display" : "Body weight --pre current pregnancy"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueQuantity" : {
+        "value" : 180,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "[lb_av]"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-mother-received-wic-food-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-mother-received-wic-food-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-mother-received-wic-food"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-mother-received-wic-food-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-mother-received-wic-food-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-mother-received-wic-food.html\">Observation - Mother Recieved WIC Food</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mother WIC food recipient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87303-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "87303-4"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "focus" : [{
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }],
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Patient/patient-mother-carmen-teresa-lee"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+          "code" : "N",
+          "display" : "No"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-1-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-cig-smoking-pregnancy-1-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-cig-smoking-pregnancy-1-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-cig-smoking-pregnancy-1-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html\">Observation - Cigarette Smoking Before and During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64794-1)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 0</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "64794-1",
+          "display" : "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+        }],
+        "text" : "In the 3 months before you got pregnant, how many cigarettes did you smoke on an average day [PhenX]"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "focus" : [{
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }],
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Patient/patient-mother-carmen-teresa-lee"
+      }],
+      "valueInteger" : 0
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-2-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-cig-smoking-pregnancy-2-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-cig-smoking-pregnancy-2-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-cig-smoking-pregnancy-2-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html\">Observation - Cigarette Smoking Before and During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cigarettes smoked per day by Mother--1st trimester <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87298-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 0</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "87298-6",
+          "display" : "Cigarettes smoked per day by Mother--1st trimester"
+        }],
+        "text" : "Cigarettes smoked per day by Mother--1st trimester"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "focus" : [{
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }],
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Patient/patient-mother-carmen-teresa-lee"
+      }],
+      "valueInteger" : 0
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-3-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-cig-smoking-pregnancy-3-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-cig-smoking-pregnancy-3-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-cig-smoking-pregnancy-3-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html\">Observation - Cigarette Smoking Before and During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cigarettes smoked per day by Mother--2nd trimester <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87299-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "87299-4",
+          "display" : "Cigarettes smoked per day by Mother--2nd trimester"
+        }],
+        "text" : "Cigarettes smoked per day by Mother--2nd trimester"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "focus" : [{
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }],
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Patient/patient-mother-carmen-teresa-lee"
+      }],
+      "valueInteger" : 1
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-cig-smoking-pregnancy-4-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-cig-smoking-pregnancy-4-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-cigarette-smoking-before-during-pregnancy"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-cig-smoking-pregnancy-4-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-cig-smoking-pregnancy-4-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-cigarette-smoking-before-during-pregnancy.html\">Observation - Cigarette Smoking Before and During Pregnancy</a></p></div><p><b>status</b>: final</p><p><b>code</b>: In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#64795-8)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 0</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "64795-8",
+          "display" : "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
+        }],
+        "text" : "In the last 3 months of your pregnancy, how many cigarettes did you smoke on an average day [PhenX]"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "focus" : [{
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }],
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Patient/patient-mother-carmen-teresa-lee"
+      }],
+      "valueInteger" : 0
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-number-previous-cesareans-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-number-previous-cesareans-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-previous-cesareans"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-number-previous-cesareans-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-number-previous-cesareans-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-number-previous-cesareans.html\">Observation - Number of Previous Cesareans</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Previous cesarean deliveries # <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#68497-7)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "68497-7",
+          "display" : "Previous cesarean deliveries #"
+        }],
+        "text" : "Previous cesarean deliveries #"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueInteger" : 1
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Condition/condition-gestational-diabetes-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "condition-gestational-diabetes-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-gestational-diabetes"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-gestational-diabetes-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-gestational-diabetes-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-gestational-diabetes.html\">Condition - Gestational Diabetes</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Problem List Item <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span>, Mothers Risk factors in this pregnancy [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73775-9)</span></p><p><b>code</b>: Gestational diabetes mellitus (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11687002)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>onset</b>: 2018-12-12</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }],
+        "text" : "Active"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "73775-9"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "11687002",
+          "display" : "Gestational diabetes mellitus (disorder)"
+        }],
+        "text" : "Gestational diabetes mellitus (disorder)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "onsetDateTime" : "2018-12-12"
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-fetal-presentation-not-named",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-fetal-presentation-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-presentation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-fetal-presentation-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-fetal-presentation-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-fetal-presentation.html\">Observation - Fetal Presentation at Birth/Delivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Fetal presentation--at birth [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73761-9)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Breech presentation (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#6096002)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "73761-9"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6096002",
+          "display" : "Breech presentation (finding)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Procedure/procedure-final-route-method-delivery-not-named",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "procedure-final-route-method-delivery-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Procedure-final-route-method-delivery"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"procedure-final-route-method-delivery-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;procedure-final-route-method-delivery-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Procedure-final-route-method-delivery.html\">Procedure - Final Route and Method of Delivery</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: Final route and method of delivery [US Standard Certificate of Live Birth] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73762-7)</span></p><p><b>code</b>: Spontaneous vaginal delivery <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#700000006 &quot;Vaginal delivery of fetus (procedure)&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>performed</b>: 2019-01-19 18:00:00-0700 --&gt; 2019-01-19 18:23:00-0700</p></div>"
+      },
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "73762-7"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "700000006",
+          "display" : "Vaginal delivery of fetus (procedure)"
+        }],
+        "text" : "Spontaneous vaginal delivery"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "performedPeriod" : {
+        "start" : "2019-01-19T18:00:00-07:00",
+        "end" : "2019-01-19T18:23:00-07:00"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-birth-weight-not-named",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-birth-weight-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-birth-weight"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-birth-weight-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-birth-weight-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-birth-weight.html\">Observation - Birth Weight</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Birth weight Measured <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8339-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-01-10</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 1530 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8339-4"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "effectiveDateTime" : "2019-01-10",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueQuantity" : {
+        "value" : 1530,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-gestational-age-at-delivery-not-named",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-gestational-age-at-delivery-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-gestational-age-at-delivery"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-gestational-age-at-delivery-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-gestational-age-at-delivery-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-gestational-age-at-delivery.html\">Observation - Gestational Age at Delivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Gestational age Estimated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11884-4)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 20 wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code wk = 'wk')</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11884-4",
+          "display" : "Gestational age Estimated"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueQuantity" : {
+        "value" : 20,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "wk"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Condition/condition-fetal-death-cause-or-condition-not-named",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "condition-fetal-death-cause-or-condition-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-initiating-cause-or-condition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-fetal-death-cause-or-condition-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-fetal-death-cause-or-condition-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-fetal-death-initiating-cause-or-condition.html\">Condition - Fetal Death Initiating Cause or Condition</a></p></div><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span>, Initiating cause or condition of fetal death [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#76060-3)</span></p><p><b>code</b>: Premature rupture of membranes (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#44223004)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p></div>"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "76060-3",
+          "display" : "Initiating cause or condition of fetal death [US Standard Report of Fetal Death]"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "44223004",
+          "display" : "Premature rupture of membranes (disorder)"
+        }],
+        "text" : "Premature rupture of membranes (disorder)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Condition/condition-fetal-death-other-significant-cause-not-named",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "condition-fetal-death-other-significant-cause-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Condition-fetal-death-other-cause-or-condition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-fetal-death-other-significant-cause-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-fetal-death-other-significant-cause-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Condition-fetal-death-other-cause-or-condition.html\">Condition - Fetal Death Other Cause or Condition</a></p></div><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span>, Other significant causes or conditions of fetal death [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#76061-1)</span></p><p><b>code</b>: Placental insufficiency (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#237292005)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p></div>"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "76061-1",
+          "display" : "Other significant causes or conditions of fetal death [US Standard Report of Fetal Death]"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "237292005",
+          "display" : "Placental insufficiency (disorder)"
+        }],
+        "text" : "Placental insufficiency (disorder)"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-fetal-death-time-point-not-named",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-fetal-death-time-point-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-fetal-death-time-point"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-fetal-death-time-point-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-fetal-death-time-point-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-fetal-death-time-point.html\">Observation - Fetal Death Time Point</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Estimated timing of fetal death [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73811-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Fetal intrapartum death after first assessment (event) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#434631000124100)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "73811-2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "434631000124100",
+          "display" : "Fetal intrapartum death after first assessment (event)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-autopsy-performed-not-named",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-autopsy-performed-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-performed-indicator"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-autopsy-performed-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-autopsy-performed-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-autopsy-performed-indicator.html\">Observation - Autopsy Performed Indicator</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Autopsy was performed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85699-7)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Performed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398166005)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "85699-7",
+          "display" : "Autopsy was performed"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "398166005",
+          "display" : "Performed"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-histological-placental-exam-performed-not-named",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-histological-placental-exam-performed-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-histological-placental-exam-performed"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-histological-placental-exam-performed-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-histological-placental-exam-performed-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-histological-placental-exam-performed.html\">Observation - Histological Placental Exam Performed</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Histological placental examination was performed [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73767-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Performed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398166005)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "73767-6"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "398166005",
+          "display" : "Performed"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-autopsy-histological-exam-results-used-not-named",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-autopsy-histological-exam-results-used-not-named",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-histological-exam-results-used"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-autopsy-histological-exam-results-used-not-named\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-autopsy-histological-exam-results-used-not-named&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-autopsy-histological-exam-results-used.html\">Observation - Autopsy or Histological Exam Results Used</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Autopsy or histological placental examination results were used [US Standard Report of Fetal Death] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#74498-7)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "74498-7",
+          "display" : "Autopsy or histological placental examination results were used [US Standard Report of Fetal Death]"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+          "code" : "Y",
+          "display" : "Yes"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-number-deaths-this-delivery-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-number-deaths-this-delivery-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-number-fetal-deaths-this-delivery"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-number-deaths-this-delivery-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-number-deaths-this-delivery-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-number-fetal-deaths-this-delivery.html\">Observation - Number of Fetal Deaths This Delivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Number of fetal deaths delivered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#73772-6)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Practitioner_practitioner-vital-records-janet-seito\">See above (Practitioner/practitioner-vital-records-janet-seito)</a></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "73772-6",
+          "display" : "Number of fetal deaths delivered"
+        }],
+        "text" : "Number of fetal deaths delivered"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "focus" : [{
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      }],
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Practitioner/practitioner-vital-records-janet-seito"
+      }],
+      "valueInteger" : 1
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-parent-education-level-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-parent-education-level-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Observation-education-level-vr"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-parent-education-level-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-parent-education-level-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Observation-education-level-vr.html\">Observation - Education Level Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Highest level of education Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#57712-2)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>focus</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><p><b>effective</b>: 2019-12-02</p><p><b>performer</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee)</a></p><p><b>value</b>: 9th through 12th grade; no diploma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-EducationLevel.html\">Education Level</a>#SEC &quot;Some secondary or high school education&quot;)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "57712-2",
+          "display" : "Highest level of education Mother"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "focus" : [{
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      }],
+      "effectiveDateTime" : "2019-12-02",
+      "performer" : [{
+        "reference" : "Patient/patient-mother-carmen-teresa-lee"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+          "code" : "SEC",
+          "display" : "Some secondary or high school education"
+        }],
+        "text" : "9th through 12th grade; no diploma"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-present-job-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-present-job-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-present-job-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-present-job-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-present-job.html\">Observation - Present Job</a></p></div><p><b>Extension Parental Role</b>: mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11341-5)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named)</a></p><p><b>focus</b>: <a href=\"#RelatedPerson_relatedperson-mother-carmen-teresa-lee\">See above (RelatedPerson/relatedperson-mother-carmen-teresa-lee)</a></p><p><b>effective</b>: 2019-01-09 --&gt; (ongoing)</p><p><b>value</b>: Secretary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>History of Occupation industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86188-0)</span></td><td>State Agency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "MTH",
+            "display" : "mother"
+          }]
+        }
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11341-5"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named"
+      },
+      "focus" : [{
+        "reference" : "RelatedPerson/relatedperson-mother-carmen-teresa-lee"
+      }],
+      "effectivePeriod" : {
+        "start" : "2019-01-09"
+      },
+      "valueCodeableConcept" : {
+        "text" : "Secretary"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "86188-0"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "text" : "State Agency"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-present-job-tom-yan-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-present-job-tom-yan-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-present-job-tom-yan-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-present-job-tom-yan-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-present-job.html\">Observation - Present Job</a></p></div><p><b>Extension Parental Role</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11341-5)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named)</a></p><p><b>focus</b>: <a href=\"#RelatedPerson_relatedperson-father-natural-tom-yan-lee\">See above (RelatedPerson/relatedperson-father-natural-tom-yan-lee)</a></p><p><b>effective</b>: 2019-01-09 --&gt; (ongoing)</p><p><b>value</b>: Teaching Assistant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>History of Occupation industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86188-0)</span></td><td>Elementary and Secondary Schools <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-role",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "code" : "FTH",
+            "display" : "father"
+          }]
+        }
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11341-5"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named"
+      },
+      "focus" : [{
+        "reference" : "RelatedPerson/relatedperson-father-natural-tom-yan-lee"
+      }],
+      "effectivePeriod" : {
+        "start" : "2019-01-09"
+      },
+      "valueCodeableConcept" : {
+        "text" : "Teaching Assistant"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "86188-0"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "text" : "Elementary and Secondary Schools"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Observation/observation-input-race-and-ethnicity-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-input-race-and-ethnicity-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/input-race-and-ethnicity-vr"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-input-race-and-ethnicity-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-input-race-and-ethnicity-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-input-race-and-ethnicity-vr.html\">Observation - Input Race and Ethnicity Vital Records</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Mother Input Race and Ethnicity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-CodeSystem-local-observation-codes-vr.html\">Local Observation Codes Vital Records</a>#inputraceandethnicityMother)</span></p><p><b>subject</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><blockquote><p><b>component</b></p><p><b>code</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#White)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Black Or African American <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#BlackOrAfricanAmerican)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: American Indian Or Alaska Native <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#AmericanIndianOrAlaskanNative)</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Asian Indian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#AsianIndian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Chinese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Chinese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Filipino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Filipino)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Japanese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Japanese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Korean <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Korean)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Vietnamese <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Vietnamese)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Asian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherAsian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Native Hawaiian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#NativeHawaiian)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Guamanian Or Chamorro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#GuamanianOrChamorro)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Samoan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#Samoan)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Pacific Islander <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherPacificIslander)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Other Race <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#OtherRace)</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First Other Asian Literal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstOtherAsianLiteral)</span></p><p><b>value</b>: Malaysian</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: First American Indian Or Alaska Native Literal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#FirstAmericanIndianOrAlaskanNativeLiteral)</span></p><p><b>value</b>: Arikara</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Mexican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicMexican)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Cuban <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicCuban)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Puerto Rican <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicPuertoRican)</span></p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#Y)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Hispanic Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/HL7/vr-common-library//CodeSystem-codesystem-vr-component.html\">Local Component Codes</a>#HispanicOther)</span></p><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/v2/0136/index.html\">v2 Y/N Indicator</a>#N)</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/CodeSystem-local-observation-codes-vr",
+          "code" : "inputraceandethnicityMother"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "White"
+          }]
+        },
+        "valueBoolean" : true
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "BlackOrAfricanAmerican"
+          }]
+        },
+        "valueBoolean" : true
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "AmericanIndianOrAlaskanNative"
+          }]
+        },
+        "valueBoolean" : true
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "AsianIndian"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "Chinese"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "Filipino"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "Japanese"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "Korean"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "Vietnamese"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "OtherAsian"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "NativeHawaiian"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "GuamanianOrChamorro"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "Samoan"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "OtherPacificIslander"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "OtherRace"
+          }]
+        },
+        "valueBoolean" : false
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "FirstOtherAsianLiteral"
+          }]
+        },
+        "valueString" : "Malaysian"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "FirstAmericanIndianOrAlaskanNativeLiteral"
+          }]
+        },
+        "valueString" : "Arikara"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "HispanicMexican"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "Y",
+            "display" : "Yes"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "HispanicCuban"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "Y",
+            "display" : "Yes"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "HispanicPuertoRican"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "Y",
+            "display" : "Yes"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-vr-component",
+            "code" : "HispanicOther"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "N",
+            "display" : "No"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee",
+    "resource" : {
+      "resourceType" : "QuestionnaireResponse",
+      "id" : "QuestionnaireResponse-patients-fetal-death-carmen-lee",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: QuestionnaireResponse</b><a name=\"QuestionnaireResponse-patients-fetal-death-carmen-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource QuestionnaireResponse &quot;QuestionnaireResponse-patients-fetal-death-carmen-lee&quot; </p></div><p><b>questionnaire</b>: <a href=\"Questionnaire-Questionnaire-patients-fetal-death.html\">Questionnaire - Patient's Worksheet for the Report of Fetal Death</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>source</b>: <a href=\"#Patient_patient-mother-carmen-teresa-lee\">See above (Patient/patient-mother-carmen-teresa-lee: Patient - Mother (Carmen Teresa Lee))</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-current-legal-name</p><p><b>text</b>: What is your current legal name?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-address</p><p><b>text</b>: Where do you usually live - that is - where is your household/residence located?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-nbr-street</p><p><b>text</b>: Complete number and street (do not enter rural route numbers)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-city</p><p><b>text</b>: City, Town, or Location</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-state</p><p><b>text</b>: State (or U.S. Territory, Canadian Province)</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-zip</p><p><b>text</b>: Zip Code</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: inside-city-limits</p><p><b>text</b>: Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>No (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code N = 'No', stated as 'No')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail</p><p><b>text</b>: What is your mailing address</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-mail-same</p><p><b>text</b>: Same as residence [Go to next question]</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-dob</p><p><b>text</b>: What is your date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1986-02-15</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country were you born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-birthplace-territory</p><p><b>text</b>: or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-education</p><p><b>text</b>: What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received).</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Some secondary or high school education (Details: http://terminology.hl7.org/CodeSystem/v3-EducationLevel code SEC = 'Some secondary or high school education', stated as 'Some secondary or high school education')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity-mexican</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity-puerto-rican</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity-cuban</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-ethnicity-other</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mother-race-black-or-aa</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-current-legal-name</p><p><b>text</b>: What is the current legal name of your baby's father?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-first-name</p><p><b>text</b>: First</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-middle-name</p><p><b>text</b>: Middle</p><blockquote><p><b>answer</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-last-name</p><p><b>text</b>: Last</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-dob</p><p><b>text</b>: What is the father's date of birth?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1984-02-27</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace</p><p><b>text</b>: In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:</p><blockquote><p><b>item</b></p><p><b>linkId</b>: father-birthplace-state</p><p><b>text</b>: State</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: receive-wic</p><p><b>text</b>: Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>No (Details: http://terminology.hl7.org/CodeSystem/v2-0136 code N = 'No', stated as 'No')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height</p><p><b>text</b>: What is your height?</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-height-inches</p><p><b>text</b>: Inches</p><blockquote><p><b>answer</b></p></blockquote></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-prepregnancy-weight</p><p><b>text</b>: lbs</p><h3>Answers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>180 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking</p><p><b>text</b>: How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? If you NEVER smoked, enter zero for each time period.</p><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-3-months-prior</p><p><b>text</b>: Three months before pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-1</p><p><b>text</b>: First three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-2</p><p><b>text</b>: Second three months of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: mothers-smoking-trimester-3</p><p><b>text</b>: Third trimester of pregnancy</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></blockquote></div>"
+      },
+      "questionnaire" : "http://hl7.org/fhir/us/bfdr/Questionnaire/Questionnaire-patients-fetal-death",
+      "status" : "completed",
+      "subject" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "source" : {
+        "reference" : "Patient/patient-mother-carmen-teresa-lee",
+        "display" : "Patient - Mother (Carmen Teresa Lee)"
+      },
+      "item" : [{
+        "linkId" : "mother-current-legal-name",
+        "text" : "What is your current legal name?",
+        "item" : [{
+          "linkId" : "mother-first-name",
+          "text" : "First",
+          "answer" : [{
+            "valueString" : "Carmen"
+          }]
+        },
+        {
+          "linkId" : "mother-middle-name",
+          "text" : "Middle",
+          "answer" : [{
+            "valueString" : "Teresa"
+          }]
+        },
+        {
+          "linkId" : "mother-last-name",
+          "text" : "Last",
+          "answer" : [{
+            "valueString" : "Lee"
+          }]
+        }]
+      },
+      {
+        "linkId" : "mother-address",
+        "text" : "Where do you usually live - that is - where is your household/residence located?",
+        "item" : [{
+          "linkId" : "mother-nbr-street",
+          "text" : "Complete number and street (do not enter rural route numbers)",
+          "answer" : [{
+            "valueString" : "3670 Miller Road"
+          }]
+        },
+        {
+          "linkId" : "mother-city",
+          "text" : "City, Town, or Location"
+        },
+        {
+          "linkId" : "mother-state",
+          "text" : "State (or U.S. Territory, Canadian Province)",
+          "answer" : [{
+            "valueString" : "MI"
+          }]
+        },
+        {
+          "linkId" : "mother-zip",
+          "text" : "Zip Code",
+          "answer" : [{
+            "valueString" : "48103"
+          }]
+        }]
+      },
+      {
+        "linkId" : "inside-city-limits",
+        "text" : "Is this household inside city limits (inside the incorporated limits of the city, town, or location where you live)?",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "N",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "mother-mail",
+        "text" : "What is your mailing address",
+        "item" : [{
+          "linkId" : "mother-mail-same",
+          "text" : "Same as residence [Go to next question]",
+          "answer" : [{
+            "valueBoolean" : true
+          }]
+        }]
+      },
+      {
+        "linkId" : "mother-dob",
+        "text" : "What is your date of birth?",
+        "answer" : [{
+          "valueDate" : "1986-02-15"
+        }]
+      },
+      {
+        "linkId" : "mother-birthplace",
+        "text" : "In what State, U.S. territory, or foreign country were you born? Please specify one of the following:",
+        "item" : [{
+          "linkId" : "mother-birthplace-territory",
+          "text" : "or U.S. territory, i.e., Puerto Rico, U.S. Virgin Islands, Guam, American Samoa or Norther Marianas",
+          "answer" : [{
+            "valueString" : "PR"
+          }]
+        }]
+      },
+      {
+        "linkId" : "mother-education",
+        "text" : "What is the highest level of schooling that you have completed at the time of delivery? (Check the box that best describes your education. If you are currently enrolled, check the box that indicates the previous grade or highest degree received).",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+            "code" : "SEC",
+            "display" : "Some secondary or high school education"
+          }
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity",
+        "answer" : [{
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity-mexican",
+        "answer" : [{
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity-puerto-rican",
+        "answer" : [{
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity-cuban",
+        "answer" : [{
+          "valueBoolean" : true
+        }]
+      },
+      {
+        "linkId" : "mother-ethnicity-other",
+        "answer" : [{
+          "valueBoolean" : false
+        }]
+      },
+      {
+        "linkId" : "mother-race",
+        "item" : [{
+          "linkId" : "mother-race-black-or-aa",
+          "answer" : [{
+            "valueBoolean" : true
+          }]
+        }]
+      },
+      {
+        "linkId" : "father-current-legal-name",
+        "text" : "What is the current legal name of your baby's father?",
+        "item" : [{
+          "linkId" : "father-first-name",
+          "text" : "First",
+          "answer" : [{
+            "valueString" : "Tom"
+          }]
+        },
+        {
+          "linkId" : "father-middle-name",
+          "text" : "Middle",
+          "answer" : [{
+            "valueString" : "Yan"
+          }]
+        },
+        {
+          "linkId" : "father-last-name",
+          "text" : "Last",
+          "answer" : [{
+            "valueString" : "Lee"
+          }]
+        }]
+      },
+      {
+        "linkId" : "father-dob",
+        "text" : "What is the father's date of birth?",
+        "answer" : [{
+          "valueDate" : "1984-02-27"
+        }]
+      },
+      {
+        "linkId" : "father-birthplace",
+        "text" : "In what State, U.S. territory, or foreign country was the father born? Please specify one of the following:",
+        "item" : [{
+          "linkId" : "father-birthplace-state",
+          "text" : "State",
+          "answer" : [{
+            "valueString" : "NY"
+          }]
+        }]
+      },
+      {
+        "linkId" : "receive-wic",
+        "text" : "Did you receive WIC (Women, Infants and Children) food for yourself during this pregnancy?",
+        "answer" : [{
+          "valueCoding" : {
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+            "code" : "N",
+            "display" : "No"
+          }
+        }]
+      },
+      {
+        "linkId" : "mothers-height",
+        "text" : "What is your height?",
+        "item" : [{
+          "linkId" : "mothers-height-inches",
+          "text" : "Inches",
+          "answer" : [{
+            "valueQuantity" : {
+              "value" : 65,
+              "unit" : "[in_i]",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "[in_i]"
+            }
+          }]
+        }]
+      },
+      {
+        "linkId" : "mothers-prepregnancy-weight",
+        "text" : "lbs",
+        "answer" : [{
+          "valueQuantity" : {
+            "value" : 180,
+            "unit" : "[lb_av]",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "[lb_av]"
+          }
+        }]
+      },
+      {
+        "linkId" : "mothers-smoking",
+        "text" : "How many cigarettes OR packs of cigarettes did you smoke on an average day during each of the following time periods? If you NEVER smoked, enter zero for each time period.",
+        "item" : [{
+          "linkId" : "mothers-smoking-3-months-prior",
+          "text" : "Three months before pregnancy",
+          "item" : [{
+            "linkId" : "mothers-smoking-3-months-prior-cig",
+            "text" : "# of cigarettes*",
+            "answer" : [{
+              "valueInteger" : 0
+            }]
+          },
+          {
+            "linkId" : "mothers-smoking-3-months-prior-pck",
+            "text" : "# of packs",
+            "answer" : [{
+              "valueInteger" : 0
+            }]
+          }]
+        },
+        {
+          "linkId" : "mothers-smoking-trimester-1",
+          "text" : "First three months of pregnancy",
+          "item" : [{
+            "linkId" : "mothers-smoking-trimester-1-cig",
+            "text" : "# of cigarettes*",
+            "answer" : [{
+              "valueInteger" : 0
+            }]
+          },
+          {
+            "linkId" : "mothers-smoking-trimester-1-pck",
+            "text" : "# of packs",
+            "answer" : [{
+              "valueInteger" : 0
+            }]
+          }]
+        },
+        {
+          "linkId" : "mothers-smoking-trimester-2",
+          "text" : "Second three months of pregnancy",
+          "item" : [{
+            "linkId" : "mothers-smoking-trimester-2-cig",
+            "text" : "# of cigarettes*",
+            "answer" : [{
+              "valueInteger" : 0
+            }]
+          },
+          {
+            "linkId" : "mothers-smoking-trimester-2-pck",
+            "text" : "# of packs",
+            "answer" : [{
+              "valueInteger" : 0
+            }]
+          }]
+        },
+        {
+          "linkId" : "mothers-smoking-trimester-3",
+          "text" : "Third trimester of pregnancy",
+          "item" : [{
+            "linkId" : "mothers-smoking-trimester-3-cig",
+            "text" : "# of cigarettes*",
+            "answer" : [{
+              "valueInteger" : 0
+            }]
+          },
+          {
+            "linkId" : "mothers-smoking-trimester-3-pck",
+            "text" : "# of packs",
+            "answer" : [{
+              "valueInteger" : 0
+            }]
+          }]
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Practitioner/practitioner-vital-records-janet-seito",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "practitioner-vital-records-janet-seito",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-janet-seito\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-janet-seito&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>Practitioner Role - Birth Attendant</b>: attendant</p><p><b>Practitioner Role - Certifier</b>: certifier</p><p><b>identifier</b>: id:\u00a0<a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347044</p><p><b>name</b>: Janet Seito</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Osteopath (occupation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76231001)</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-attendant",
+        "valueCode" : "attendant"
+      },
+      {
+        "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/practitioner-role-birth-certifier",
+        "valueCode" : "certifier"
+      }],
+      "identifier" : [{
+        "system" : "http://hl7.org/fhir/sid/us-npi",
+        "value" : "223347044"
+      }],
+      "name" : [{
+        "text" : "Janet Seito",
+        "family" : "Janet",
+        "given" : ["Seito"],
+        "suffix" : ["D.O."]
+      }],
+      "qualification" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "76231001",
+            "display" : "Osteopath (occupation)"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Location/location-south-hospital",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "location-south-hospital",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/bfdr/StructureDefinition/Location-bfdr"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"location-south-hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;location-south-hospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Location-bfdr.html\">Birth and Fetal Death Location</a></p></div><p><b>identifier</b>: id:\u00a0<a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>116441967701</p><p><b>status</b>: active</p><p><b>name</b>: South Hospital</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span>, Birth Location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CodeSystem-local-bfdr-codes.html\">Local BFDR Codes</a>#loc_birth)</span></p><p><b>address</b>: 2100 North Ave Salt Lake City UT 84116 US </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>40.8</td><td>111.9</td></tr></table><p><b>managingOrganization</b>: <a href=\"#Organization_organization-south-hospital\">See above (Organization/organization-south-hospital: Organization - South Hospital)</a></p></div>"
+      },
+      "identifier" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/bfdr/StructureDefinition/Extension-jurisdictional-facility-identifier",
+          "valueString" : "UT12"
+        }],
+        "system" : "http://hl7.org/fhir/sid/us-npi",
+        "value" : "116441967701"
+      }],
+      "status" : "active",
+      "name" : "South Hospital",
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HOSP",
+          "display" : "Hospital"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+          "code" : "loc_birth",
+          "display" : "Birth Location"
+        }]
+      }],
+      "address" : {
+        "line" : ["2100 North Ave"],
+        "city" : "Salt Lake City",
+        "district" : "Made Up",
+        "state" : "UT",
+        "postalCode" : "84116",
+        "country" : "US"
+      },
+      "position" : {
+        "longitude" : 40.8,
+        "latitude" : 111.9
+      },
+      "managingOrganization" : {
+        "reference" : "Organization/organization-south-hospital",
+        "display" : "Organization - South Hospital"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Organization/organization-south-hospital",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "organization-south-hospital",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"organization-south-hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;organization-south-hospital&quot; </p></div><p><b>identifier</b>: id:\u00a0<a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>5555512</p><p><b>active</b>: true</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HOSP)</span></p><p><b>name</b>: South Hospital</p><p><b>telecom</b>: <a href=\"tel:+1-555-555-1111\">+1-555-555-1111</a>, <a href=\"mailto:mail@southhospital.com\">mail@southhospital.com</a></p><p><b>address</b>: 2100 North Ave Salt Lake City UT 84116 US </p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://hl7.org/fhir/sid/us-npi",
+        "value" : "5555512"
+      }],
+      "active" : true,
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HOSP",
+          "display" : "Hospital"
+        }]
+      }],
+      "name" : "South Hospital",
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+1-555-555-1111"
+      },
+      {
+        "system" : "email",
+        "value" : "mail@southhospital.com"
+      }],
+      "address" : [{
+        "line" : ["2100 North Ave"],
+        "city" : "Salt Lake City",
+        "state" : "UT",
+        "postalCode" : "84116",
+        "country" : "US"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/RelatedPerson/relatedperson-mother-carmen-teresa-lee",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "relatedperson-mother-carmen-teresa-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-mother-vr"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-mother-carmen-teresa-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-mother-carmen-teresa-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-mother-vr.html\">RelatedPerson - Mother Vital Records</a></p></div><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Gestational Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#GESTM &quot;gestational mother&quot;)</span></p><p><b>name</b>: Carmen Teresa Lee (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1986-02-15</p></div>"
+      },
+      "active" : true,
+      "patient" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "GESTM",
+          "display" : "gestational mother"
+        }],
+        "text" : "Gestational Mother"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Lee",
+        "given" : ["Carmen",
+        "Teresa"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1986-02-15"
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/RelatedPerson/relatedperson-father-natural-tom-yan-lee",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "relatedperson-father-natural-tom-yan-lee",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/RelatedPerson-father-natural-vr"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"relatedperson-father-natural-tom-yan-lee\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;relatedperson-father-natural-tom-yan-lee&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-RelatedPerson-father-natural-vr.html\">RelatedPerson - Father Natural Vital Records</a></p></div><p><b>RelatedPerson Birth Place Vital Records</b>: NY </p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"#Patient_patient-decedent-fetus-not-named\">See above (Patient/patient-decedent-fetus-not-named: Patient - Decedent Fetus (Fetus Not Named))</a></p><p><b>relationship</b>: Natural Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html\">RoleCode</a>#NFTH &quot;natural father&quot;)</span></p><p><b>name</b>: Tom Yan Lee (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1984-02-27</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Extension-relatedperson-birthplace-vr",
+        "valueAddress" : {
+          "state" : "NY"
+        }
+      }],
+      "active" : true,
+      "patient" : {
+        "reference" : "Patient/patient-decedent-fetus-not-named",
+        "display" : "Patient - Decedent Fetus (Fetus Not Named)"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "NFTH",
+          "display" : "natural father"
+        }],
+        "text" : "Natural Father"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Lee",
+        "given" : ["Tom",
+        "Yan"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1984-02-27"
+    }
+  },
+  {
+    "fullUrl" : "http://www.example.org/fhir/Practitioner/practitioner-vital-records-jessica-leung",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "practitioner-vital-records-jessica-leung",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/us/vr-common-library/StructureDefinition/Practitioner-vr"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-vital-records-jessica-leung\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-vital-records-jessica-leung&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/HL7/vr-common-library//StructureDefinition-Practitioner-vr.html\">Practitioner - Vital Records</a></p></div><p><b>identifier</b>: id:\u00a0<a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-npi.html\">#</a>223347055</p><p><b>name</b>: Leung Jessica </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Birth Clerk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#OTH &quot;other&quot;)</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "http://hl7.org/fhir/sid/us-npi",
+        "value" : "223347055"
+      }],
+      "name" : [{
+        "family" : "Jessica",
+        "given" : ["Leung"]
+      }],
+      "qualification" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code" : "OTH",
+            "display" : "other"
+          }],
+          "text" : "Birth Clerk"
+        }
+      }]
+    }
+  }]
+}

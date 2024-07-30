@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ef42cbfe-2aad-4c58-9fd5-6cc68ef85170-101",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ef42cbfe-2aad-4c58-9fd5-6cc68ef85170-101",
+  "name" : "UnionUsCoreVitalSignsAndApgarTimingVS",
+  "title" : "Union of US Core Vital Signs ValueSet And APGAR Score Timing",
+  "status" : "active",
+  "date" : "2024-07-30T17:06:20-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "59576-9"
+      },
+      {
+        "code" : "8289-1"
+      },
+      {
+        "code" : "77606-2"
+      },
+      {
+        "code" : "59408-5"
+      },
+      {
+        "code" : "3150-0"
+      },
+      {
+        "code" : "3151-8"
+      },
+      {
+        "code" : "9272-6",
+        "display" : "1 minute Apgar Score"
+      },
+      {
+        "code" : "9274-2",
+        "display" : "5 minute Apgar Score"
+      },
+      {
+        "code" : "9271-8",
+        "display" : "10 minute Apgar Score"
+      }]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/observation-vitalsignresult"]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "443848000",
+        "display" : "Apgar score at 15 minutes (observable entity)"
+      },
+      {
+        "code" : "443849008",
+        "display" : "Apgar score at 20 minutes (observable entity)"
+      }]
+    }]
+  }
+}

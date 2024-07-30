@@ -1,0 +1,96 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "631abe68-6530-4050-a57d-6322ad9c1156-287",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/631abe68-6530-4050-a57d-6322ad9c1156-287",
+  "name" : "UnionFetalDeathCauseOrConditionVSAndFetalDeathCauseOrConditionVS",
+  "title" : "Union of ValueSet - Fetal Death Cause or Condition And Fetal Death Cause or Condition",
+  "status" : "draft",
+  "date" : "2024-07-30T17:07:02-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "44223004",
+        "display" : "Premature rupture of membranes (disorder)"
+      },
+      {
+        "code" : "415105001",
+        "display" : "Placental abruption (disorder)"
+      },
+      {
+        "code" : "237292005",
+        "display" : "Placental insufficiency (disorder)"
+      },
+      {
+        "code" : "270500004",
+        "display" : "Prolapsed cord (disorder)"
+      },
+      {
+        "code" : "11612004",
+        "display" : "Chorioamnionitis (disorder)"
+      },
+      {
+        "code" : "702709008",
+        "display" : "Congenital anomaly of fetus (Specify) (disorder)"
+      },
+      {
+        "code" : "277489001",
+        "display" : "Fetal trauma (Specify) (disorder)"
+      },
+      {
+        "code" : "128270001",
+        "display" : "Infectious disorder of the fetus (Specify) (disorder)"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition",
+      "concept" : [{
+        "code" : "maternalconditions",
+        "display" : "Maternal Conditions/Diseases (Specify)(disorder)"
+      },
+      {
+        "code" : "membranes",
+        "display" : "Complications of Placenta, Cord, or Membranes: Other (Specify)(disorder)"
+      },
+      {
+        "code" : "obstetricalcomplications",
+        "display" : "Other Obstetrical or Pregnancy Complications (Specify)(disorder)"
+      },
+      {
+        "code" : "fetalconditions",
+        "display" : "Other Fetal Conditions/Disorder (Specify)(disorder)"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "unknown"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/us/bfdr/CodeSystem/CodeSystem-local-bfdr-codes",
+      "concept" : [{
+        "code" : "FCOD_maternalconditions",
+        "display" : "Maternal Conditions/Diseases (Specify)(disorder)"
+      },
+      {
+        "code" : "FCOD_membranes",
+        "display" : "Complications of Placenta, Cord, or Membranes: Other (Specify)(disorder)"
+      },
+      {
+        "code" : "FCOD_obstetricalcomplications",
+        "display" : "Other Obstetrical or Pregnancy Complications (Specify)(disorder)"
+      },
+      {
+        "code" : "FCOD_fetalconditions",
+        "display" : "Other Fetal Conditions/Disorder (Specify)(disorder)"
+      }]
+    }]
+  }
+}
