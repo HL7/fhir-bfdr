@@ -77,10 +77,7 @@ def printHeader(hHeading, pOutputFile, pIG, tableStyle)
     pOutputFile.puts hHeading
     if hHeading == "### Natality (Live Birth) IJE Mapping" || hHeading == "### Fetal Death IJE Mapping"
         pOutputFile.puts "*IJE Names in <span style='color:darkviolet'>purple</span> text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports"
-    elsif hHeading == "### Coded Content (Fetal Death Cause or Condition)"
-        pOutputFile.puts ""
-        pOutputFile.puts "*Coded content is used for compositions from NCHS to VRO, and is not included in Jurisdiction or Provider reports"
-    elsif hHeading == "### Coded Content (Demographic)"
+    elsif hHeading == "### Coded Content (Fetal Death Cause or Condition)" || hHeading == "### Coded Content (Demographic)" || hHeading == "### Coded Content (Industry & Occupation)"
         pOutputFile.puts ""
         pOutputFile.puts "*Coded content is used for compositions from NCHS to VRO, and is not included in Jurisdiction or Provider reports"
     end
@@ -129,6 +126,7 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
 
     codedFDHeader = false
     codedDHeader = false
+    codedWHeader = false
     notImplementedHeader = false
     profiles.each do |(x, y)| 
         #pOutputFile.puts "<tbody>"
@@ -143,6 +141,11 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
                 pOutputFile.puts "</tbody>"
                 pOutputFile.puts "</table>"
                 codedDHeader = printHeader("### Coded Content (Demographic)", pOutputFile, pRowFilterIG, "Coding-Demographic")
+            end
+            if codedWHeader == false && y.to_s == "Coding-Work"
+              pOutputFile.puts "</tbody>"
+              pOutputFile.puts "</table>"
+              codedWHeader = printHeader("### Coded Content (Industry & Occupation)", pOutputFile, pRowFilterIG, "Coding-Work")
             end
             if notImplementedHeader == false && y.to_s == "Not Implemented"
                 pOutputFile.puts "</tbody>"
