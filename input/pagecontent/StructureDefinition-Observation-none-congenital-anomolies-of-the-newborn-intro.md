@@ -1,4 +1,4 @@
-Presence of this observation indicates that none of the congenital anomalies specifiable in this IG are reported. 
+Presence of this observation indicates that none of the congenital anomalies specifiable in this IG are reported. 
 If the none-of-the-above observation is present in the bundle, then none of the congenital anomalies listed in the IJE mapping table below should be used (see <a href='usage.html#congenital-anomalies-of-newborn'>note on missing congenital anomaly data</a>)
 
 ### IJE Mapping

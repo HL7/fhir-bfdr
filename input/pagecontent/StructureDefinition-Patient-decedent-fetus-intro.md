@@ -1,4 +1,4 @@
- Note: The PatientDecedentFetus profile is based on the [US Core Patient Profile]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
+ Note: The PatientDecedentFetus profile is based on the [US Core Patient Profile]({{site.data.fhir.ver.hl7fhiruscore}}/StructureDefinition-us-core-patient.html) which requires gender.  A value of 'unknown' will satisfy this requirement.
  Complete fetal death record submissions may fail FHIR validation due to lack of a value for gender.
 
 ### IJE Mapping
