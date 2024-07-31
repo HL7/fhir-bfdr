@@ -206,7 +206,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>13</td>
   <td>Date Filed By Registrar</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-live-birth-report.html'>CompositionProviderLiveBirthReport
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-live-birth-report.html'>CompositionProviderLiveBirthReport
 </a></td>
   <td>date</td>
 </tr>
@@ -256,7 +256,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>20</td>
   <td>Mother’s Education</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords</a></td>
-  <td>code</td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>21</td>
@@ -274,7 +274,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>23</td>
   <td>Father’s Education</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords</a></td>
-  <td>code</td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>24</td>
@@ -1528,7 +1528,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>8</td>
   <td>What is the highest level of schooling that you will have completed at the time of delivery?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords</a></td>
-  <td>code</td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>9</td>
@@ -1612,7 +1612,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>22</td>
   <td>What is the highest level of schooling that the father will have completed at the time of delivery?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords</a></td>
-  <td>code</td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>23</td>
@@ -1679,7 +1679,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>-</td>
   <td>Local File No</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Bundle-document-fetal-death-report.html'>BundleDocumentFetalDeathReport
 </a></td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-CertificateNumber.html'>identifier.extension:localFileNumber1</a></td>
 </tr>
@@ -1884,7 +1884,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>17</td>
   <td>Date Received By Registrar</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-fetal-death-report.html'>CompositionProviderFetalDeathReport
+  <td><a href='{{site.data.fhir.ver.hl7fhirusbfdr}}StructureDefinition-Composition-provider-fetal-death-report.html'>CompositionProviderFetalDeathReport
 </a></td>
   <td>date</td>
 </tr>
@@ -1940,7 +1940,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>19</td>
   <td>Mother’s Education</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords</a></td>
-  <td>code</td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>20</td>
@@ -2526,7 +2526,7 @@ Information on updates to the live birth and fetal death forms can be found at N
   <td style='text-align: center'>8</td>
   <td>What is the highest level of schooling that you have completed at the time of delivery?</td>
   <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Observation-education-level-vr.html'>ObservationEducationLevelVitalRecords</a></td>
-  <td>code</td>
+  <td>value</td>
 </tr>
 <tr>
   <td style='text-align: center'>9</td>
