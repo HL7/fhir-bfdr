@@ -13,11 +13,11 @@ Usage: #example
   * title = "Mother's Industry and Occupation"
   //* focus = Reference(patient-mother-jada-ann-quinn)
   * focus.display = "patient-mother-jada-ann-quinn"
-  * insert addentryComposition(Observation, observation-industry-and-occupation-mother )
+  * insert addentryComposition(Observation, observation-present-job-jada-ann-quinn-coded)
 * section[father]
   * title = "Father's Industry and Occupationi"
   //* focus = Reference(relatedperson-father-natural-james-brandon-quinn)
   * focus.display = "relatedperson-father-natural-james-brandon-quinn"
-  * insert addentryComposition(Observation, observation-industry-and-occupation-father )
+  * insert addentryComposition(Observation, observation-present-job-james-brandon-quinn-coded)
 
 
