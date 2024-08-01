@@ -4,7 +4,7 @@ Title: "Composition - Coded Industry and Occuption - Baby G Quinn"
 Description: "Composition - Coded Industry and Occupation: Baby G Quinn example"
 Usage: #example
 * status = #final
-* type = LocalBFDRCodesCS#industry_occupation_document  "Industry and Occupation information Document"
+* type = LocalBFDRCodesCS#industry_occupation_document  "Industry and Occupation Document"
 * subject.display = "Patient - Child (Baby G Quinn)" // = Reference(patient-child-babyg-quinn) "Patient - Child (Baby G Quinn)"
 * date = "2019-01-09"
 * author.display =  "National Center for Health Statistics"

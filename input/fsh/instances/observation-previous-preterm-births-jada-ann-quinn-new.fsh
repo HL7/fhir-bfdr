@@ -9,4 +9,4 @@ Usage: #example
 * subject = Reference(patient-mother-jada-ann-quinn) "Patient - Mother (Jada Ann Quinn)"
 * effectiveDateTime = "2019-12-02"
 * performer = Reference(practitioner-vital-records-janet-seito)
-* valueCodeableConcept = $sct#161765003 "History of premature delivery (situation)"
+* valueCodeableConcept = $sct#161765003 "History of premature delivery"
