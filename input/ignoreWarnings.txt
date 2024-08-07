@@ -46,6 +46,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureD
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-ssn-requested-for-child').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-steroids-fetal-lung-maturation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-unknown-final-route-and-method-of-delivery').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-performed-indicator').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 #  These are bad FHIRPath expressions in R4.  Referred to IGCreation for resolution See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Warnings.20on.20Conditions.20Based.20on.20Bad.20FHIRR4.20FHIRPAth
 WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[23].resource: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
@@ -1007,6 +1008,12 @@ WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[32].resource
 WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[32].resource/*Observation/observation-input-race-and-ethnicity-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[32].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[32].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-present-job-jada-ann-quinn-coded*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource/*Observation/observation-present-job-james-brandon-quinn-coded*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-present-job-jada-ann-quinn-coded: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-present-job-james-brandon-quinn-coded: Observation: Best Practice Recommendation: In general, all observations should have a performer
 
 # Codesystem can't be found -- no mitigation possible 
 INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-present-job-jada-ann-quinn-coded*/.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
@@ -1021,3 +1028,10 @@ INFORMATION: Observation/observation-present-job-jada-ann-quinn-coded: Observati
 INFORMATION: Observation/observation-present-job-jada-ann-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
 INFORMATION: Observation/observation-present-job-james-brandon-quinn-coded: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
 INFORMATION: Observation/observation-present-job-james-brandon-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
+
+# The reference to the subject is non-essential and is provided as a display value.   The link between this record and the submission is the certificate number
+INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle: Can't find 'Patient/patient-child-babyg-quinn' in the bundle (Bundle.entry[1].resource.subject)
+INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle: Can't find 'Patient/patient-child-babyg-quinn' in the bundle (Bundle.entry[2].resource.subject)
+
+# This seems like a Publisher Issue -- what is mitigation?
+WARNING: /scratch/repo/output/StructureDefinition-Observation-mother-height-definitions.html: The html source has duplicate anchor Ids: Observation.value[x].code,Observation.value[x].comparator,Observation.value[x].extension,Observation.value[x].id,Observation.value[x].system,Observation.value[x].unit,Observation.value[x].value,key_Observation.value[x].comparator
