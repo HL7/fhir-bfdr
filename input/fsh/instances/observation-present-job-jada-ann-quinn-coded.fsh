@@ -5,7 +5,7 @@ Description: "Observation - Mother Present Job: Jada Ann Quinn example"
 Usage: #example
 * status = #final
 * extension[roleMotherOrFather].valueCodeableConcept = $v3-RoleCode#MTH "mother"
-* subject = Reference(patient-child-babyg-quinn)
+* subject.display = "Patient - Child (Baby G Quinn)" // subject = Reference(patient-child-babyg-quinn)
 * focus.display = "Jada Ann Quinn - Mother"
 * valueCodeableConcept.text = "Carpenter"
 * valueCodeableConcept = urn:oid:2.16.840.1.114222.4.11.8068#47-2031

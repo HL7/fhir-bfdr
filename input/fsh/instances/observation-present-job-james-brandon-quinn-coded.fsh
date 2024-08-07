@@ -5,7 +5,7 @@ Description: "Observation - Father Present Job: James Brandon Quinn example"
 Usage: #example
 * status = #final
 * extension[roleMotherOrFather].valueCodeableConcept = $v3-RoleCode#FTH "father"
-* subject = Reference(patient-child-babyg-quinn)
+* subject.display = "Patient - Child (Baby G Quinn)" // subject = Reference(patient-child-babyg-quinn)
 * focus.display = "James Brandon Quinn - Father"
 
 * effectivePeriod.start = "2019-01-09"
