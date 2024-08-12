@@ -1,6 +1,6 @@
 Instance: observation-gestational-age-at-delivery-babyg-quinn-prem-w
 InstanceOf: ObservationGestationalAgeAtDelivery
-Title: "Observation - Gestational Age at Delivery - Baby G Quinn - Premature"
+Title: "Observation - Gestational Age at Delivery - Baby G Quinn - Premature in weeks"
 Description: "Observation - Gestational Age at Delivery: Baby G Quinn example of reporting gestational age of 33 weeks and 5 days in weeks."
 Usage: #example
 * status = #final
