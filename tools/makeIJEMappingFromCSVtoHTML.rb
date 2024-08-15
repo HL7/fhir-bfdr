@@ -18,7 +18,7 @@
 
 require_relative "makeExcelFromCSV"
 require "json"
-require "pry"
+#require "pry"
 require "roo"
 require "csv"
 require 'set'
@@ -51,7 +51,8 @@ IJE_FHIR_FIELD_COL = 11
 IJE_FHIR_TYPE_COL = 12
 IJE_FHIR_COMMENTS_COL = 13
 IJE_UNIQUENESS_COL = 14
-#IJE_MAPPING_PROFILE_COL = 19 #NOT USED
+IJE_NATIONAL_REPORTING_FLAG = 19
+
 
 # BFDR_Profile_Intros.xlsx columns
 INTRO_ORDER_COL = 0
@@ -76,7 +77,7 @@ vSpreadsheet = ARGV[1]
 def printHeader(hHeading, pOutputFile, pIG, tableStyle)
     pOutputFile.puts hHeading
     if hHeading == "### Natality (Live Birth) IJE Mapping" || hHeading == "### Fetal Death IJE Mapping"
-        pOutputFile.puts "*IJE Names in <span style='color:darkviolet'>purple</span> text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports"
+        pOutputFile.puts "*IJE Names in <span style='color:darkviolet'>purple</span> text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports. IJE fields that are part of the national reporting standard are denoted with a US Flag symbol. <img height='16' src='usflag.png' alt='usflag'/>"
     elsif hHeading == "### Coded Content (Fetal Death Cause or Condition)" || hHeading == "### Coded Content (Demographic)" || hHeading == "### Coded Content (Industry & Occupation)"
         pOutputFile.puts ""
         pOutputFile.puts "*Coded content is used for compositions from NCHS to VRO, and is not included in Jurisdiction or Provider reports"
@@ -156,6 +157,10 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
             field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = fhirunique = ""
             field = row[IJE_FIELD_COL] if row[IJE_FIELD_COL]
             ijename = row[IJE_NAME_COL] if row[IJE_NAME_COL]
+            if row[IJE_NATIONAL_REPORTING_FLAG].to_s == 'X'
+                #ijename = ijename + " &#x1F1FA;&#x1F1F8;"
+                ijename = "#{ijename} <img height='16' img src='usflag.png' alt='#{ijename}'/>"
+            end
             fhirig = row[IJE_FHIR_IG_COL] if row[IJE_FHIR_IG_COL]
             profile = "[" + row[IJE_PROFILE_COL] + "]" if row[IJE_PROFILE_COL] 
             fhirfield = row[IJE_FHIR_FIELD_COL] if row[IJE_FHIR_FIELD_COL]
@@ -195,7 +200,10 @@ end
 vOutputFilename = "/generated/dataDictionaries/ije_mapping_natality.md"
 puts vOutputFilename
 vOutputFile = File.open(Dir.pwd + vOutputFilename, "w")
-vOutputFile.puts "The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for birth to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format for this information."
+vOutputFile.puts "The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for birth to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format for this information.
+
+Note that string fields in FHIR-formatted data will often be subject to the same string length limitations of the IJE format for the same content.
+For example, name fields in IJE (e.g., HOSP, KIDFNAME) are restricted to 50 characters. Including strings longer than the IJE strength length limitations may lead to data truncation and/or business rule violations when data is sent to certain receivers, including NCHS. The IG includes maximum length restrictions on FHIR strings for some fields, and the FHIR validator will flag violations of these conformance restrictions. The IG does not impose maximum length restrictions for general FHIR fields like names and addresses since this seemed an unnatural constraint of widely used FHIR resources."
 
 vOutputFile.puts ""
 vOutputFile.puts "#### Specifying None of the Above and Missing Data"
@@ -220,7 +228,10 @@ createMappingTable("BFDR", "Natality", "### Natality (Live Birth) IJE Mapping", 
 vOutputFilename1 = "/generated/dataDictionaries/ije_mapping_fetalDeath.md"
 puts vOutputFilename1
 vOutputFile1 = File.open(Dir.pwd + vOutputFilename1, "w")
-vOutputFile1.puts "The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for fetal death to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format for this information."
+vOutputFile1.puts "The following table illustrates the mappings of fields in the Interjurisdictional Exchange (IJE) formats for fetal death to profiles and fields within this FHIR Implementation guide. This information is provided to guide implementers who are transitioning from the familiar IJE to the new FHIR format for this information.
+
+Note that string fields in FHIR-formatted data will often be subject to the same string length limitations of the IJE format for the same content.
+For example, name fields in IJE (e.g., HOSP_D, FETFNAME) are restricted to 50 characters. Including strings longer than the IJE strength length limitations may lead to data truncation and/or business rule violations when data is sent to certain receivers, including NCHS. The IG includes maximum length restrictions on FHIR strings for some fields, and the FHIR validator will flag violations of these conformance restrictions. The IG does not impose maximum length restrictions for general FHIR fields like names and addresses since this seemed an unnatural constraint of widely used FHIR resources."
 
 vOutputFile1.puts ""
 vOutputFile1.puts "#### Specifying None of the Above and Missing Data"
