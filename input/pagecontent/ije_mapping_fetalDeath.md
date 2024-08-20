@@ -37,7 +37,7 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr>
 <td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
 <td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; width: 14%;'><b>IJE Name*</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>IJE Name*</b></td>
 <td style='background-color:#98c1d9; width: 27%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
 <td style='background-color:#98c1d9; text-align: center; width: 7%;'><b>Type</b></td>
@@ -298,7 +298,7 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr>
 <td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
 <td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; width: 14%;'><b>IJE Name*</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>IJE Name*</b></td>
 <td style='background-color:#98c1d9; width: 27%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
 <td style='background-color:#98c1d9; text-align: center; width: 7%;'><b>Type</b></td>
@@ -327,7 +327,7 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr>
 <td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
 <td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; width: 14%;'><b>IJE Name*</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>IJE Name*</b></td>
 <td style='background-color:#98c1d9; width: 27%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
 <td style='background-color:#98c1d9; text-align: center; width: 7%;'><b>Type</b></td>
@@ -440,7 +440,7 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr>
 <td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
 <td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; width: 14%;'><b>IJE Name*</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>IJE Name*</b></td>
 <td style='background-color:#98c1d9; width: 27%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
 <td style='background-color:#98c1d9; text-align: center; width: 7%;'><b>Type</b></td>
@@ -463,7 +463,7 @@ All of the none-of-the-above values are represented as observations with a clear
 <tr>
 <td style='background-color:#98c1d9; text-align: center; width: 4%;'><b>#</b></td>
 <td style='background-color:#98c1d9; width: 16%;'><b>Description</b></td>
-<td style='background-color:#98c1d9; width: 14%;'><b>IJE Name*</b></td>
+<td style='background-color:#98c1d9; width: 16%;'><b>IJE Name*</b></td>
 <td style='background-color:#98c1d9; width: 27%;'><b>Profile</b></td>
 <td style='background-color:#98c1d9;'><b>Field</b></td>
 <td style='background-color:#98c1d9; text-align: center; width: 7%;'><b>Type</b></td>
