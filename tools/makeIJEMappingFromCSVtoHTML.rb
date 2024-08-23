@@ -77,7 +77,7 @@ vSpreadsheet = ARGV[1]
 def printHeader(hHeading, pOutputFile, pIG, tableStyle)
     pOutputFile.puts hHeading
     if hHeading == "### Natality (Live Birth) IJE Mapping" || hHeading == "### Fetal Death IJE Mapping"
-        pOutputFile.puts "*IJE Names in <span style='color:darkviolet'>purple</span> text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports. IJE fields that are part of the national reporting standard are denoted with a US Flag symbol. <img height='16' src='usflag.png' alt='usflag'/>"
+        pOutputFile.puts "*IJE Names in <span style='color:darkviolet'>purple</span> text indicate element is unique to the Jurisdiction report, otherwise element is used for both Jurisdiction and Provider reports. IJE fields that are part of the [Vital Statistics Cooperative Program (VSCP)](https://www.ncbi.nlm.nih.gov/books/NBK219877/pdf/Bookshelf_NBK219877.pdf) reporting requirements as of 2022 are denoted with a US Flag."
     elsif hHeading == "### Coded Content (Fetal Death Cause or Condition)" || hHeading == "### Coded Content (Demographic)" || hHeading == "### Coded Content (Industry & Occupation)"
         pOutputFile.puts ""
         pOutputFile.puts "*Coded content is used for compositions from NCHS to VRO, and is not included in Jurisdiction or Provider reports"
