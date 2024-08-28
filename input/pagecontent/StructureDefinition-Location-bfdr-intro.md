@@ -208,7 +208,7 @@
 <tr>
   <td style='text-align: center'>Fetal Death</td>
   <td>234</td>
-  <td>Place of Delivery City/Town/Place (literal) </td>
+  <td>Place of Delivery City/Town/Place (literal)</td>
   <td>CITY_D</td>
   <td>address.city</td>
   <td>string</td>

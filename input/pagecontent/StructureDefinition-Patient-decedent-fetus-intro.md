@@ -43,7 +43,7 @@
   <td>DSTATE</td>
   <td>extension[birthPlace].value[x].state</td>
   <td>codeable</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> </td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -70,7 +70,7 @@
   <td>*NO IJE MAPPING*</td>
   <td>gender</td>
   <td>codeable</td>
-  <td><a href='http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#gender'>Note on Gender</a> </td>
+  <td><a href='http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html'>USCorePatient</a> requires gender - can be 'unknown'. See <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/usage.html#gender'>Note on Gender</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -168,7 +168,7 @@
   <td>Fetus Last Name</td>
   <td>FETLNAME</td>
   <td>name.family, name.use = official. (absence is equivalent to ‘UNKNOWN’.)</td>
-  <td>string </td>
+  <td>string</td>
   <td>See <a href='usage.html#child-and-decedent-fetus-name'>note on Child and Decedent Fetus name</a></td>
 </tr>
 <tr>

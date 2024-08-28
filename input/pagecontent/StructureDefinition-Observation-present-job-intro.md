@@ -38,12 +38,30 @@ This information is currently not used by NCHS, but may be of interest for inter
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
+  <td></td>
+  <td>Occupation of Mother (coded)-- 2018 Standard Occupational Classification (SOC)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>valueCodeableConcept.coding[occupationCDCSOC2018], <br />extension[roleMotherOrFather].value='MTH'</td>
+  <td>codeable</td>
+  <td>[PHVS_Occupation_CDC_SOC2018]</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
   <td>284</td>
   <td>Occupation of Father</td>
   <td>DAD_OC_T</td>
   <td>value.text, <br />extension[roleMotherOrFather].value='FTH'</td>
   <td>string(25)</td>
   <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td></td>
+  <td>Occupation of Father (coded)-- 2018 Standard Occupational Classification (SOC)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>valueCodeableConcept.coding[occupationCDCSOC2018], <br />extension[roleMotherOrFather].value='FTH'</td>
+  <td>codeable</td>
+  <td>[PHVS_Occupation_CDC_SOC2018]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -56,12 +74,30 @@ This information is currently not used by NCHS, but may be of interest for inter
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
+  <td></td>
+  <td>Industry of Mother (coded)-- North American Industry Classification System (NAICS)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCNAICS2017], <br />extension[roleMotherOrFather].value='MTH'</td>
+  <td>codeable</td>
+  <td>[PHVS_Industry_CDC_NAICS2017]</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
   <td>288</td>
   <td>Industry of Father</td>
   <td>DAD_IN_T</td>
   <td>component[odh-PastOrPresentIndustry].value.text, <br />extension[roleMotherOrFather].value='FTH'</td>
   <td>string(25)</td>
   <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Natality</td>
+  <td></td>
+  <td>Industry of Father (coded)-- North American Industry Classification System (NAICS)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCNAICS2017], <br />extension[roleMotherOrFather].value='FTH'</td>
+  <td>codeable</td>
+  <td>[PHVS_Industry_CDC_NAICS2017]</td>
 </tr>
 
 </tbody>
@@ -101,12 +137,30 @@ This information is currently not used by NCHS, but may be of interest for inter
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
+  <td></td>
+  <td>Occupation of Mother (coded)-- 2018 Standard Occupational Classification (SOC)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>valueCodeableConcept.coding[occupationCDCSOC2018], <br />extension[roleMotherOrFather].value='MTH'</td>
+  <td>codeable</td>
+  <td>[PHVS_Occupation_CDC_SOC2018]</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
   <td>271</td>
   <td>Occupation of Father</td>
   <td>DAD_OC_T</td>
   <td>value.text, <br />extension[roleMotherOrFather].value='FTH'</td>
   <td>string(25)</td>
   <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td></td>
+  <td>Occupation of Father (coded)-- 2018 Standard Occupational Classification (SOC)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>valueCodeableConcept.coding[occupationCDCSOC2018], <br />extension[roleMotherOrFather].value='FTH'</td>
+  <td>codeable</td>
+  <td>[PHVS_Occupation_CDC_SOC2018]</td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -119,12 +173,30 @@ This information is currently not used by NCHS, but may be of interest for inter
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
+  <td></td>
+  <td>Industry of Mother (coded)-- North American Industry Classification System (NAICS)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCNAICS2017], <br />extension[roleMotherOrFather].value='MTH'</td>
+  <td>codeable</td>
+  <td>[PHVS_Industry_CDC_NAICS2017]</td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
   <td>275</td>
   <td>Industry of Father</td>
   <td>DAD_IN_T</td>
   <td>component[odh-PastOrPresentIndustry].value.text, <br />extension[roleMotherOrFather].value='FTH'</td>
   <td>string(25)</td>
   <td></td>
+</tr>
+<tr>
+  <td style='text-align: center'>Fetal Death</td>
+  <td></td>
+  <td>Industry of Father (coded)-- North American Industry Classification System (NAICS)</td>
+  <td>*NO IJE MAPPING*</td>
+  <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCNAICS2017], <br />extension[roleMotherOrFather].value='FTH'</td>
+  <td>codeable</td>
+  <td>[PHVS_Industry_CDC_NAICS2017]</td>
 </tr>
 
 </tbody>

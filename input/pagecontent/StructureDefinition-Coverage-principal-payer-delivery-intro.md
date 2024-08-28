@@ -32,7 +32,7 @@
   <td>PAY</td>
   <td>type</td>
   <td>codeable</td>
-  <td><a href='ValueSet-ValueSet-birth-and-fetal-death-financial-class.html'>BirthAndFetalDeathFinancialClassVS</a> </td>
+  <td><a href='ValueSet-ValueSet-birth-and-fetal-death-financial-class.html'>BirthAndFetalDeathFinancialClassVS</a></td>
 </tr>
 
 </tbody>

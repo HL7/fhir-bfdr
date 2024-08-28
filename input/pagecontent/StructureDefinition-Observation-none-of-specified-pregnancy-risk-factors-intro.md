@@ -48,7 +48,7 @@ If the none-of-the-above observation is present in the bundle, then none of the 
 <tr>
   <td style='text-align: center'>Natality</td>
   <td>159</td>
-  <td>Risk Factors--Prepregnancy Hypertension </td>
+  <td>Risk Factors--Prepregnancy Hypertension</td>
   <td>PHYPE</td>
   <td>-</td>
   <td>na</td>

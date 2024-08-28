@@ -157,6 +157,8 @@ def createMappingTable(pRowFilterIG, pRowFilter, pHeading, pOutputFile, pIntroSp
             field = description = ijename = profile = vProvOutputFilename = fhirfield = fhirtype = fhirencoding = fhirig = fhirunique = ""
             field = row[IJE_FIELD_COL] if row[IJE_FIELD_COL]
             ijename = row[IJE_NAME_COL] if row[IJE_NAME_COL]
+            next if y.to_s != "Coding-Work" && row[IJE_PROFILE_COL] == "ObservationPresentJob" && (row[IJE_NAME_COL] != "MOM_OC_T" && row[IJE_NAME_COL] != "MOM_IN_T" &&
+                                                                                                   row[IJE_NAME_COL] != "DAD_IN_T" && row[IJE_NAME_COL] != "DAD_OC_T")
             if inputHeader == true && codedFDHeader == false && codedDHeader == false && codedWHeader == false && notImplementedHeader == false
                 if row[IJE_NATIONAL_REPORTING_FLAG].to_s == 'X'
                     #ijename = ijename + " &#x1F1FA;&#x1F1F8;"
