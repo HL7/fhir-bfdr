@@ -447,13 +447,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>41.9</td>
   <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
-  <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureArtificProcedureFertilityEnhancingDrugTherapy</a></td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>41.10</td>
   <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
-  <td><a href='StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='StructureDefinition-Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td></td>
 </tr>
 <tr>
@@ -681,7 +681,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>55.13</td>
   <td>Congenital Anomalies of the Newborn: None of the above</td>
-  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
+  <td><a href='StructureDefinition-Observation-none-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
   <td></td>
 </tr>
 <tr>
@@ -947,7 +947,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>37.13</td>
   <td>Congenital anomalies of the newborn: None of the above</td>
-  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
+  <td><a href='StructureDefinition-Observation-none-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
   <td></td>
 </tr>
 <tr>
@@ -1129,13 +1129,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>14.8</td>
   <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
-  <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>14.9</td>
   <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
-  <td><a href='StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='StructureDefinition-Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td></td>
 </tr>
 <tr>
@@ -1447,7 +1447,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>37.13</td>
   <td>Congenital anomalies of the newborn: None of the above</td>
-  <td><a href='StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
+  <td><a href='StructureDefinition-Observation-none-congenital-anomolies-of-the-newborn.html'>ObservationNoneOfSpecifiedCongenitalAnomoliesOfTheNewborn</a></td>
   <td></td>
 </tr>
 <tr>
@@ -1891,7 +1891,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>18a</td>
   <td>Initiating Cause/Condition</td>
-  <td><a href='StructureDefinition-Condition-fetal-death-cause-or-condition.html'>ConditionFetalDeathCauseOrCondition</a></td>
+  <td><a href='StructureDefinition-Condition-fetal-death-initiating-cause-or-condition.html'>ConditionFetalDeathInitiatingCauseOrCondition</a></td>
   <td>code</td>
 </tr>
 <tr>
@@ -2071,13 +2071,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>36.9</td>
   <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
-  <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>36.10</td>
   <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
-  <td><a href='StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='StructureDefinition-Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td></td>
 </tr>
 <tr>
@@ -2271,13 +2271,13 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>11.7</td>
   <td>Risk factors in this pregnancy: Fertility-enhancing drugs, artificial insemination or intrauterine insemination</td>
-  <td><a href='StructureDefinition-Procedure-artificial-insemination.html'>ProcedureArtificialInsemination</a></td>
+  <td><a href='StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem.html'>ProcedureFertilityEnhancingDrugTherapyArtificialInsemination</a></td>
   <td></td>
 </tr>
 <tr>
   <td style='text-align: center'>11.8</td>
   <td>Risk factors in this pregnancy: Assisted reproductive technology</td>
-  <td><a href='StructureDefinition-Procedure-assisted-fertilization.html'>ProcedureAssistedFertilization</a></td>
+  <td><a href='StructureDefinition-Procedure-assisted-reproductive-technology.html'>ProcedureAssistedReproductiveTechnology</a></td>
   <td></td>
 </tr>
 <tr>
@@ -2421,7 +2421,7 @@ Information on updates to the live birth and fetal death forms can be found at N
 <tr>
   <td style='text-align: center'>26</td>
   <td>Initiating Cause/Condition</td>
-  <td><a href='StructureDefinition-Condition-fetal-death-cause-or-condition.html'>ConditionFetalDeathCauseOrCondition</a></td>
+  <td><a href='StructureDefinition-Condition-fetal-death-initiating-cause-or-condition.html'>ConditionFetalDeathInitiatingCauseOrCondition</a></td>
   <td>code</td>
 </tr>
 <tr>
