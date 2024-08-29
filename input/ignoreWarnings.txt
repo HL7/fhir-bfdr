@@ -54,10 +54,6 @@ WARNING: Condition/condition-fetal-death-cause-or-condition-not-named: Condition
 WARNING: Condition/condition-fetal-death-other-significant-cause-not-named: Condition: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[22].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 
-# This is a publisher induced issue.  x The extension in question is introduced by the publisher, not sushi.   See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher 
-The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
-
-
 # All of these slices are expected and have been verified 
 INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-industry-occupation|2.0.0-Preview1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-industry-occupation|2.0.0-Preview1 (this may not be a problem, but you should check that it's not intended to match a slice)
