@@ -48,11 +48,15 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureD
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-unknown-final-route-and-method-of-delivery').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-performed-indicator').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
-#  These are bad FHIRPath expressions in R4.  Referred to IGCreation for resolution See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Warnings.20on.20Conditions.20Based.20on.20Bad.20FHIRR4.20FHIRPAth
-WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[23].resource: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
+#  Primary cause -- These are bad FHIRPath expressions in R4.  Referred to IGCreation for resolution See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Warnings.20on.20Conditions.20Based.20on.20Bad.20FHIRR4.20FHIRPAth
 WARNING: Condition/condition-fetal-death-cause-or-condition-not-named: Condition: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 WARNING: Condition/condition-fetal-death-other-significant-cause-not-named: Condition: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
+
+#  Secondary.  Inclusion of the above conditions in a bundle triggers the warning again.  These are bad FHIRPath expressions in R4.  Referred to IGCreation for resolution See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Warnings.20on.20Conditions.20Based.20on.20Bad.20FHIRR4.20FHIRPAth
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[23].resource: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[22].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
+WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[23].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
+WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[24].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
 
 # All of these slices are expected and have been verified 
 INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Bundle-document-coded-industry-occupation|2.0.0-Preview1 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -80,7 +84,7 @@ INFORMATION: Observation/observation-present-job-jada-ann-quinn-coded: Observati
 INFORMATION: Observation/observation-present-job-james-brandon-quinn-coded: Observation.value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job|2.0.0-Preview1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Observation/observation-present-job-james-brandon-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-present-job|2.0.0-Preview1 (this may not be a problem, but you should check that it's not intended to match a slice)
 
- # can't validate because no list is provided....can't do anything about that
+ # Lack of validation is not an issue.  Can't validate because no list is provided.
 INFORMATION: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[53].resource/*QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn*/.item[2].item[3].answer[0]: Cannot validate string answer option because no option list is provided
 INFORMATION: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[53].resource/*QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn*/.item[4].item[3].answer[0]: Cannot validate string answer option because no option list is provided
 INFORMATION: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[53].resource/*QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn*/.item[6].item[0].answer[0]: Cannot validate string answer option because no option list is provided
@@ -103,7 +107,7 @@ INFORMATION: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[33].reso
 INFORMATION: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[33].resource.item[5].item[0].answer[0]: Cannot validate string answer option because no option list is provided
 INFORMATION: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[33].resource.item[15].item[0].answer[0]: Cannot validate string answer option because no option list is provided
 
-# Terminology server not under our control
+# This is a feature of the publisher -- https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/.E2.9C.94.20Validation.20of.20Concept.20Maps.20with.20SNOMEDCT.20Codes
 INFORMATION: ConceptMap/BirthAttendantTitlesCM: ConceptMap.group[0].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
 INFORMATION: ConceptMap/BirthDeliveryOccurredCM: ConceptMap.group[0].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
 INFORMATION: ConceptMap/DeliveryRoutesCM: ConceptMap.group[0].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
@@ -114,11 +118,11 @@ INFORMATION: ConceptMap/InfectionsDuringPregnancyLiveBirthCM: ConceptMap.group[0
 INFORMATION: ConceptMap/NewbornCongenitalAnomaliesCM: ConceptMap.group[0].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
 INFORMATION: ConceptMap/PerformedNotPerformedPlannedCM: ConceptMap.group[0].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
 
-# TSMG Has give variances for these codesystems 
+# TSMG Has given variances for these codesystems 
 INFORMATION: CodeSystem/CodeSystem-edit-flags: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/CodeSystem-local-bfdr-codes: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# SOurce Code System not Available.  That is not actionable.
+# The source code system is a placefholder for codes used in legacy systems.  All of these mappings have been tested/verified. 
 WARNING: ConceptMap/BirthAndFetalDeathFinancialClassCM: ConceptMap.group[0].source: Source Code System http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr doesn't have all content (content = not-present), so the source codes cannot be checked
 WARNING: ConceptMap/BirthAttendantTitlesCM: ConceptMap.group[0].source: Source Code System http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr doesn't have all content (content = not-present), so the source codes cannot be checked
 WARNING: ConceptMap/BirthAttendantTitlesCM: ConceptMap.group[1].source: Source Code System http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr doesn't have all content (content = not-present), so the source codes cannot be checked
@@ -144,7 +148,7 @@ WARNING: ConceptMap/NumberPreviousCesareansEditFlagsCM: ConceptMap.group[1].sour
 WARNING: ConceptMap/PerformedNotPerformedPlannedCM: ConceptMap.group[0].source: Source Code System http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr doesn't have all content (content = not-present), so the source codes cannot be checked
 WARNING: ConceptMap/PregnancyReportEditFlagsCM: ConceptMap.group[0].source: Source Code System http://hl7.org/fhir/us/vr-common-library/CodeSystem/codesystem-ije-vr doesn't have all content (content = not-present), so the source codes cannot be checked
 
-# Observations in vital records use cases do not need performer or effective time 
+# May be best practice, but not needed in this IG.  For vital records reporting the performer and effective time are  either/or/both not known, or not important.  These are not really clinical observations, but abstracted facts represented using Observation resources.
 WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[33].resource/*Observation/observation-input-race-and-ethnicity-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[33].resource/*Observation/observation-input-race-and-ethnicity-carmen-teresa-lee*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[33].resource: Best Practice Recommendation: In general, all observations should have a performer
@@ -160,7 +164,7 @@ WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].r
 WARNING: Observation/observation-present-job-jada-ann-quinn-coded: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/observation-present-job-james-brandon-quinn-coded: Observation: Best Practice Recommendation: In general, all observations should have a performer
 
-# Codesystem can't be found -- no mitigation possible.  Code has been checked. 
+# These codes have been validated.  
 INFORMATION: Observation/observation-present-job-jada-ann-quinn-coded: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
 INFORMATION: Observation/observation-present-job-jada-ann-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
 INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-present-job-jada-ann-quinn-coded*/.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
@@ -174,7 +178,7 @@ INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[
 INFORMATION: Observation/observation-present-job-james-brandon-quinn-coded: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
 INFORMATION: Observation/observation-present-job-james-brandon-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
 
-# 8/8/24 - Resolved in next publisher version - https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Hyperlink.20.2E.2E.2E.20does.20not.20resolve
+# Reported 8/8/24 - Remains unresolved - https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Hyperlink.20.2E.2E.2E.20does.20not.20resolve
 ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-33' at 'div/ul/li/table/tr/td/a' for '33' does not resolve
 ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-2' at 'div/ul/li/table/tr/td/a' for '2' does not resolve
 ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-99' at 'div/ul/li/table/tr/td/a' for '99' does not resolve
@@ -184,11 +188,7 @@ ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#S
 ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-311' at 'div/ul/li/table/tr/td/a' for '311' does not resolve
 ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-9999' at 'div/ul/li/table/tr/td/a' for '9999' does not resolve
 
-# Conditions of cause of death don't really fit this model, so best practice not relevant.
-WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[23].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[24].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-
-# Publisher oddity -- not under my control
+# This issue is in publisher generated HTML.   Can be ignored. 
 WARNING: /Users/skravitz/git/fhir-bfdr/output/StructureDefinition-Observation-mother-height-definitions.html: The html source has duplicate anchor Ids: Observation.value[x].code,Observation.value[x].comparator,Observation.value[x].extension,Observation.value[x].id,Observation.value[x].system,Observation.value[x].unit,Observation.value[x].value,key_Observation.value[x].comparator
 
 # Open Slicing -- all have been confirmed
