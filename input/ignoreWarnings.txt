@@ -48,16 +48,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureD
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-unknown-final-route-and-method-of-delivery').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/bfdr/StructureDefinition/Observation-autopsy-performed-indicator').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
-#  Primary cause -- These are bad FHIRPath expressions in R4.  Referred to IGCreation for resolution See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Warnings.20on.20Conditions.20Based.20on.20Bad.20FHIRR4.20FHIRPAth
-WARNING: Condition/condition-fetal-death-cause-or-condition-not-named: Condition: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-WARNING: Condition/condition-fetal-death-other-significant-cause-not-named: Condition: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-
-#  Secondary.  Inclusion of the above conditions in a bundle triggers the warning again.  These are bad FHIRPath expressions in R4.  Referred to IGCreation for resolution See https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Warnings.20on.20Conditions.20Based.20on.20Bad.20FHIRR4.20FHIRPAth
-WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[23].resource: Rule con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' Failed (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[22].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-WARNING: Bundle/bundle-provider-fetal-death-not-named: Bundle.entry[23].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-WARNING: Bundle/bundle-jurisdiction-fetal-death-not-named: Bundle.entry[24].resource: Constraint failed: con-3: 'Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item' (defined in http://hl7.org/fhir/StructureDefinition/Condition) (Best Practice Recommendation)
-
 
  # Lack of validation is not an issue.  Can't validate because no list is provided.
 INFORMATION: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[53].resource/*QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn*/.item[2].item[3].answer[0]: Cannot validate string answer option because no option list is provided
@@ -228,34 +218,22 @@ WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[51].resourc
 WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[52].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/bundle-provider-live-birth-babyg-quinn: Bundle.entry[52].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
-
-# These codes have been validated.  
-INFORMATION: Observation/observation-present-job-jada-ann-quinn-coded: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
-INFORMATION: Observation/observation-present-job-jada-ann-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-present-job-jada-ann-quinn-coded*/.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-present-job-jada-ann-quinn-coded*/.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource/*Observation/observation-present-job-james-brandon-quinn-coded*/.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource/*Observation/observation-present-job-james-brandon-quinn-coded*/.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
-INFORMATION: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
-INFORMATION: Observation/observation-present-job-james-brandon-quinn-coded: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
-INFORMATION: Observation/observation-present-job-james-brandon-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
-
-# Reported 8/8/24 - Remains unresolved - https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Hyperlink.20.2E.2E.2E.20does.20not.20resolve
-ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-33' at 'div/ul/li/table/tr/td/a' for '33' does not resolve
-ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-2' at 'div/ul/li/table/tr/td/a' for '2' does not resolve
-ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-99' at 'div/ul/li/table/tr/td/a' for '99' does not resolve
-ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-38' at 'div/ul/li/table/tr/td/a' for '38' does not resolve
-ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-5' at 'div/ul/li/table/tr/td/a' for '5' does not resolve
-ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-81' at 'div/ul/li/table/tr/td/a' for '81' does not resolve
-ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-311' at 'div/ul/li/table/tr/td/a' for '311' does not resolve
-ERROR: ValueSet.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac.html#SOP-9999' at 'div/ul/li/table/tr/td/a' for '9999' does not resolve
-
 # This issue is in publisher generated HTML.   Can be ignored. 
 WARNING: /Users/skravitz/git/fhir-bfdr/output/StructureDefinition-Observation-mother-height-definitions.html: The html source has duplicate anchor Ids: Observation.value[x].code,Observation.value[x].comparator,Observation.value[x].extension,Observation.value[x].id,Observation.value[x].system,Observation.value[x].unit,Observation.value[x].value,key_Observation.value[x].comparator
 
+# These codes have all been validated 
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-present-job-jada-ann-quinn-coded*/.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource/*Observation/observation-present-job-jada-ann-quinn-coded*/.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[1].resource.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource/*Observation/observation-present-job-james-brandon-quinn-coded*/.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource/*Observation/observation-present-job-james-brandon-quinn-coded*/.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-coded-industry-occupation-baby-g-quinn: Bundle.entry[2].resource.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
+WARNING: Observation/observation-present-job-jada-ann-quinn-coded: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
+WARNING: Observation/observation-present-job-jada-ann-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
+WARNING: Observation/observation-present-job-james-brandon-quinn-coded: Observation.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8068' could not be found, so the code cannot be validated
+WARNING: Observation/observation-present-job-james-brandon-quinn-coded: Observation.component[0].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.114222.4.11.8067' could not be found, so the code cannot be validated
 
 
 # Open Slicing -- all have been confirmed
