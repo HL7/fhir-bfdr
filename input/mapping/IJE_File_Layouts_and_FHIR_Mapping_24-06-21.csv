@@ -75,7 +75,7 @@ ON  ONTARIO
 PE  PRINCE EDWARD ISLAND
 QC  QUEBEC
 SK  SASKATCHEWAN
-YT  YUKON",,VRCPL,PatientChildVitalRecords,extension[birthPlace].value[x].state.extension[nationalReportingJurisdictionId],string,[ValueSetJurisdictionVitalRecords],B,,,,,X
+YT  YUKON",,VRCPL,PatientChildVitalRecords,extension[birthPlace].value[x].state or extension[birthPlace].value[x].state.extension[nationalReportingJurisdictionId],string,[ValueSetStatesTerritoriesAndProvincesVitalRecords] in state field or [ValueSetJurisdictionVitalRecords] in extension,B,,,,,X
 1343,Birth Infant Death,2,5,2,"State, U.S. Territory or Canadian Province of Birth (Infant) - code",BSTATE,"NCHS Instruction Manual: Part 8
 For US Territories:
 MP  NORTHERN MARIANAS
@@ -142,7 +142,7 @@ ON  ONTARIO
 PE  PRINCE EDWARD ISLAND
 QC  QUEBEC
 SK  SASKATCHEWAN
-YT  YUKON",,BFDR,PatientDecedentFetus,extension[birthPlace].value[x].state,codeable,[ValueSetJurisdictionVitalRecords],B,,,,,X
+YT  YUKON",,BFDR,PatientDecedentFetus,extension[birthPlace].value[x].state or extension[birthPlace].value[x].state.extension[nationalReportingJurisdictionId],string,[ValueSetStatesTerritoriesAndProvincesVitalRecords] in state field or [ValueSetJurisdictionVitalRecords] in extension,B,,,,,X
 1184,ITOP,2,5,2,"State, U.S. Territory or Canadian Province of Termination - code",STATE_T,"NCHS Instruction Manual: Part 8
 For US Territories:
 MP  NORTHERN MARIANAS
