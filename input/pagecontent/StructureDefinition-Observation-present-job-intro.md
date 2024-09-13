@@ -43,7 +43,7 @@ This information is currently not used by NCHS, but may be of interest for inter
   <td>*NO IJE MAPPING*</td>
   <td>valueCodeableConcept.coding[occupationCDCSOC2018], <br />extension[roleMotherOrFather].value='MTH'</td>
   <td>codeable</td>
-  <td>[PHVS_Occupation_CDC_SOC2018]</td>
+  <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8068'>PHVS_Occupation_CDC_SOC2018</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -61,7 +61,7 @@ This information is currently not used by NCHS, but may be of interest for inter
   <td>*NO IJE MAPPING*</td>
   <td>valueCodeableConcept.coding[occupationCDCSOC2018], <br />extension[roleMotherOrFather].value='FTH'</td>
   <td>codeable</td>
-  <td>[PHVS_Occupation_CDC_SOC2018]</td>
+  <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8068'>PHVS_Occupation_CDC_SOC2018</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -79,7 +79,7 @@ This information is currently not used by NCHS, but may be of interest for inter
   <td>*NO IJE MAPPING*</td>
   <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCNAICS2017], <br />extension[roleMotherOrFather].value='MTH'</td>
   <td>codeable</td>
-  <td>[PHVS_Industry_CDC_NAICS2017]</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8067'>PHVS_Industry_CDC_NAICS2017</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Natality</td>
@@ -97,7 +97,7 @@ This information is currently not used by NCHS, but may be of interest for inter
   <td>*NO IJE MAPPING*</td>
   <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCNAICS2017], <br />extension[roleMotherOrFather].value='FTH'</td>
   <td>codeable</td>
-  <td>[PHVS_Industry_CDC_NAICS2017]</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8067'>PHVS_Industry_CDC_NAICS2017</a></td>
 </tr>
 
 </tbody>
@@ -142,7 +142,7 @@ This information is currently not used by NCHS, but may be of interest for inter
   <td>*NO IJE MAPPING*</td>
   <td>valueCodeableConcept.coding[occupationCDCSOC2018], <br />extension[roleMotherOrFather].value='MTH'</td>
   <td>codeable</td>
-  <td>[PHVS_Occupation_CDC_SOC2018]</td>
+  <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8068'>PHVS_Occupation_CDC_SOC2018</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -160,7 +160,7 @@ This information is currently not used by NCHS, but may be of interest for inter
   <td>*NO IJE MAPPING*</td>
   <td>valueCodeableConcept.coding[occupationCDCSOC2018], <br />extension[roleMotherOrFather].value='FTH'</td>
   <td>codeable</td>
-  <td>[PHVS_Occupation_CDC_SOC2018]</td>
+  <td><a href='http://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8068'>PHVS_Occupation_CDC_SOC2018</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -178,7 +178,7 @@ This information is currently not used by NCHS, but may be of interest for inter
   <td>*NO IJE MAPPING*</td>
   <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCNAICS2017], <br />extension[roleMotherOrFather].value='MTH'</td>
   <td>codeable</td>
-  <td>[PHVS_Industry_CDC_NAICS2017]</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8067'>PHVS_Industry_CDC_NAICS2017</a></td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
@@ -196,7 +196,7 @@ This information is currently not used by NCHS, but may be of interest for inter
   <td>*NO IJE MAPPING*</td>
   <td>component[odh-UsualIndustry].valueCodeableConcept.coding[industryCDCNAICS2017], <br />extension[roleMotherOrFather].value='FTH'</td>
   <td>codeable</td>
-  <td>[PHVS_Industry_CDC_NAICS2017]</td>
+  <td><a href='https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.8067'>PHVS_Industry_CDC_NAICS2017</a></td>
 </tr>
 
 </tbody>

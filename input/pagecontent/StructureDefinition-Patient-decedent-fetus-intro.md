@@ -41,9 +41,9 @@
   <td>2</td>
   <td>State, U.S. Territory or Canadian Province of Place of Delivery - code</td>
   <td>DSTATE</td>
-  <td>extension[birthPlace].value[x].state</td>
-  <td>codeable</td>
-  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a></td>
+  <td>extension[birthPlace].value[x].state or extension[birthPlace].value[x].state.extension[nationalReportingJurisdictionId]</td>
+  <td>string</td>
+  <td><a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/ValueSet-ValueSet-states-territories-provinces-vr.html'>ValueSetStatesTerritoriesAndProvincesVitalRecords</a> in state field or <a href='{{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/ValueSet-ValueSet-jurisdiction-vr.html'>ValueSetJurisdictionVitalRecords</a> in extension</td>
 </tr>
 <tr>
   <td style='text-align: center'>Fetal Death</td>
