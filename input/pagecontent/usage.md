@@ -33,7 +33,7 @@ If [ObservationNoneOfSpecifiedObstetricProcedures] is present in bundle, then th
 Since other infections and congenital anomalies could be of interest/value for use cases outside of natality, the value 'Other' is included in these valuesets (see [InfectionsDuringPregnancyLiveBirthVS] and [NewbornCongenitalAnomaliesVS]). However, use of #OTH is not allowed for submissions to NCHS.
 
 ### Handling of Edit Flags
-Edit flags supports validation as part of the Jurisdiction to NCHS use case and can be ingnored for the provider to jurisdiction use case. The validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf) and the [Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/death_edit_specifications.pdf).
+Edit flags supports validation as part of the Jurisdiction to NCHS use case and can be ignored for the provider to jurisdiction use case. The validation checks are done at the jurisdiction prior to sending to the National Statistical Agency and are based on the item specific edit criteria specified in the [Edit Specifications for the 2003 Revision of the U.S. Standard Certificate of Birth](https://www.cdc.gov/nchs/data/dvs/birth-edit-specifications.pdf) and the [Edit Specifications for the 2003 Revision of the U.S. Standard Report of Fetal Death](https://www.cdc.gov/nchs/data/dvs/death_edit_specifications.pdf).
 
 {% include markdown-link-references.md %}
 
