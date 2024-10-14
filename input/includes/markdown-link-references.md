@@ -76,9 +76,9 @@
 [postdir]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-PostDirectional.html
 [unitnum]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-UnitOrAptNumber.html
 [dateFiledByRegistrar]: StructureDefinition-Extension-date-filed-by-registrar.html
-[roleVitalRecords]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-role-vr.html
+[roleVitalRecords]: StructureDefinition-Extension-role.html
 [withinCityLimitsIndicator]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-within-city-limits-indicator-vr.html
-[motherOrFather]: {{site.data.fhir.ver.hl7fhirusvrcommonlibrary}}/StructureDefinition-Extension-role-vr.html
+[motherOrFather]: StructureDefinition-Extension-role-vr.html
 [JFI]: StructureDefinition-Extension-jurisdictional-facility-identifier.html
 [birthPlace]: http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 [roleMotherOrFather]: StructureDefinition-Extension-role.html
