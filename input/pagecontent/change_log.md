@@ -1,4 +1,7 @@
-### Post-Ballot Changes
+### Unpublished Changes 
+* [FHIR-49764](https://jira.hl7.org/browse/FHIR-49764): IJE has two distinct 2-letter codoes for unknown.  The [States, Territories, and Provinces Value Set](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-states-territories-provinces-vr.html) has incorporated a null flavor code of UNK since its inception in VRDR STU2, but that isn't adequate to represent IJE content.  This change needs to be propogated to BFDR that reference this value set.
+
+### Post-Ballot Changes in STU2
 ### Major
 - [FHIR-46274](https://jira.hl7.org/browse/FHIR-46274) - Added a new [ObservationPresentJob] profile to capture the industry and occupation of the father and mother.   Previously the IG used a UsualWork profile whose definition made it inappropriate for capturing the relevant information about the father and mother.
 - [FHIR-43458](https://jira.hl7.org/browse/FHIR-43458) - Improve support for birth, transfer-from, and transfer-to locations.   Added new [BFDR Location Profile][LocationBFDR], and updated [EncounterMaternity] and [EncounterBirth] to reference the new profile.   Data dictionary has been updated to correctly document mapping of SFN and FNPI fields, and all other facility-related fields.
