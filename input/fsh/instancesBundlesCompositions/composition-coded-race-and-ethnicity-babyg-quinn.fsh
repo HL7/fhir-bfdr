@@ -12,15 +12,15 @@ Usage: #example
 * section[mother]
   * title = "Mother's Coded Race and Ethnicity"
   //* focus = Reference(patient-mother-jada-ann-quinn)
-  * focus.display = "patient-mother-jada-ann-quinn"
+  // optional reference to mother is not included in example .  The mother instance is not included.  The JVRO has the mother information.
   * insert addentryComposition(Observation, observation-input-race-and-ethnicity-mother )
   * insert addentryComposition(Observation, observation-coded-race-and-ethnicity-mother )
 * section[father]
   * title = "Father's Coded Race and Ethnicity"
-  //* focus = Reference(relatedperson-father-natural-james-brandon-quinn)
-  * focus.display = "relatedperson-father-natural-james-brandon-quinn"
   * insert addentryComposition(Observation, observation-input-race-and-ethnicity-father )
   * insert addentryComposition(Observation, observation-coded-race-and-ethnicity-father )
+  // optional reference to father is not included in example .  The father instance is not included.  The JVRO has the father information.
+
 
 
 Instance: observation-coded-race-and-ethnicity-mother

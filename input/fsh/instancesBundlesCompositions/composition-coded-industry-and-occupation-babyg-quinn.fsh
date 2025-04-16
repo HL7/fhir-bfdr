@@ -12,12 +12,14 @@ Usage: #example
 * section[mother]
   * title = "Mother's Industry and Occupation"
   //* focus = Reference(patient-mother-jada-ann-quinn)
-  * focus.display = "patient-mother-jada-ann-quinn"
   * insert addentryComposition(Observation, observation-present-job-jada-ann-quinn-coded)
+  // optional reference to mother is not included in example .  The mother instance is not included.  The JVRO has the mother information.
+
 * section[father]
   * title = "Father's Industry and Occupationi"
   //* focus = Reference(relatedperson-father-natural-james-brandon-quinn)
-  * focus.display = "relatedperson-father-natural-james-brandon-quinn"
   * insert addentryComposition(Observation, observation-present-job-james-brandon-quinn-coded)
+  // optional reference to father is not included in example .  The father instance is not included.  The JVRO has the father information.
+
 
 
