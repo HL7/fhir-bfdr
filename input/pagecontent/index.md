@@ -28,7 +28,7 @@ This FHIR IG builds on previous electronic data standards for transmitting vital
 
 This IG provides standardized data structures for transmission of reliable and relevant clinical information to jurisdictional vital records offices and transfer of information from vital records offices to the national statistics agency. 
 
-Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, in 2018, with Release 3, and in November 2020 as Release 4. [VR DAM, Release 5](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=466) was published in May 2022. Implementers who review or reference the VR DAM should note that the active vital records FHIR IGs (such as BFDR and VRDR) may no longer aligned with the VR DAM. 
+Electronic vital records work started with the HL7 Vital Records Domain Analysis Model (VR DAM), published as an Informative Specification in 2011. The VR DAM was updated in 2017 with the HL7 Cross-Paradigm Domain Analysis Model: Vital Records, Release 2, in 2018, with Release 3, and in November 2020 as Release 4. [VR DAM, Release 5](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=466) was published in May 2022. Implementers who review or reference the VR DAM should note that the active vital records FHIR IGs (such as BFDR and VRDR) may no longer aligned with the VR DAM. Test.
 
 ### How to Read This Guide
 
