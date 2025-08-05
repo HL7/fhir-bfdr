@@ -7,5 +7,5 @@ Description: "This profile represents an abnormal condition of the newborn of su
 * category = $loinc#73812-0
   * ^short = "Abnormal conditions of the newborn [US Standard Certificate of Live Birth]"
 * code = $sct#434701000124101
-  * ^short = "Surfactant replacement therapy (procedure)"
+  * ^short = "Administration of lung surfactant"
 * subject only Reference(PatientChildVitalRecords)
