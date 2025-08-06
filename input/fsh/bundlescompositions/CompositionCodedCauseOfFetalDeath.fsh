@@ -10,6 +10,7 @@ Id: Composition-coded-cause-of-fetal-death
 * type = $loinc#86804-2
   * ^short = "Cause of death classification and related information Document"
   * ^definition = "Cause of death classification and related information Document"
+* subject 0..
 * subject only Reference(PatientDecedentFetus)
 * author ..1 
   * ^short = "The author is the NCHS."
