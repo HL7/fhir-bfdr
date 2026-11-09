@@ -1,5 +1,8 @@
 ### Unpublished Changes 
 * [FHIR-49764](https://jira.hl7.org/browse/FHIR-49764): IJE has two distinct 2-letter codoes for unknown.  The [States, Territories, and Provinces Value Set](https://hl7.org/fhir/us/vr-common-library/STU2/ValueSet-ValueSet-states-territories-provinces-vr.html) has incorporated a null flavor code of UNK since its inception in VRDR STU2, but that isn't adequate to represent IJE content.  This change needs to be propogated to BFDR that reference this value set.
+* [FHIR-49904](https://jira.hl7.org/browse/FHIR-49904): All 3 Compositions in the NCHS->VRO section should have optional subject.
+Currently 2/3 do, but Coded Cause of Fetal Death composition has a required (1..1) subject.  This inconsistency should be corrected.
+* Update reference links to VRCL data absent reason- ([FHIR-59516] Update data absent reason extension - Jira)
 
 ### Post-Ballot Changes in STU2
 ### Major

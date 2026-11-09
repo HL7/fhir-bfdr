@@ -82,7 +82,7 @@ Usage: #example
     * linkId = "mother-state"
     * text = "State (or U.S. Territory, Canadian Province)"
     * type = #choice
-    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  // "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-states-territories-provinces-vr"
   * item[+]
     * linkId = "mother-zip"
     * text = "Zip Code"
@@ -144,7 +144,7 @@ Usage: #example
     * linkId = "mother-mail-state"
     * text = "State (or U.S. Territory, Canadian Province)"
     * type = #choice
-    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  //    "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.888"
+    * answerValueSet =   Canonical(ValueSetStatesTerritoriesAndProvincesVitalRecords)  //  "http://hl7.org/fhir/us/vr-common-library/ValueSet/ValueSet-states-territories-provinces-vr"
 
     * enableWhen
       * question = "mother-mail-same"
